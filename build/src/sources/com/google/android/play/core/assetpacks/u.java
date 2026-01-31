@@ -28,8 +28,10 @@ final class u extends o {
 
     @Override // com.google.android.play.core.assetpacks.o, th.d0
     public final void g(Bundle bundle) {
+        th.v0 v0Var;
         th.k0 k0Var;
-        this.f17050h.f17095d.u(this.f16945c);
+        v0Var = this.f17050h.f17095d;
+        v0Var.u(this.f16945c);
         int i10 = bundle.getInt("error_code");
         k0Var = x.f17090g;
         k0Var.b("onError(%d), retrying notifyModuleCompleted...", Integer.valueOf(i10));
