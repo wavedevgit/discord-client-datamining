@@ -1,6 +1,7 @@
 package com.google.android.play.core.assetpacks;
+/* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-final class s0 extends AssetPackState {
+public final class s0 extends AssetPackState {
 
     /* renamed from: a  reason: collision with root package name */
     private final String f17001a;
