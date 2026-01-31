@@ -14,13 +14,10 @@ public abstract class i {
 
     /* JADX INFO: Access modifiers changed from: protected */
     public final void a(char[] array) {
-        int i10;
         Intrinsics.checkNotNullParameter(array, "array");
         synchronized (this) {
             try {
-                int length = this.f21354b + array.length;
-                i10 = e.f21338a;
-                if (length < i10) {
+                if (this.f21354b + array.length < e.f21338a) {
                     this.f21354b += array.length;
                     this.f21353a.addLast(array);
                 }
