@@ -32,6 +32,7 @@ final class g extends th.l0 {
 
     @Override // th.l0
     protected final void a() {
+        th.k0 k0Var;
         String str;
         b2 b2Var;
         o3 o3Var;
@@ -45,7 +46,9 @@ final class g extends th.l0 {
             o3Var = xVar.f17094c;
             ((th.b0) this.f16784p.f17095d.e()).m0(str, w10, o10, new w(xVar, kVar, b2Var, o3Var));
         } catch (RemoteException e10) {
-            x.f17090g.c(e10, "startDownload(%s)", this.f16781e);
+            List list = this.f16781e;
+            k0Var = x.f17090g;
+            k0Var.c(e10, "startDownload(%s)", list);
             this.f16783o.d(new RuntimeException(e10));
         }
     }

@@ -25,6 +25,7 @@ final class l extends th.l0 {
 
     @Override // th.l0
     protected final void a() {
+        th.k0 k0Var;
         String str;
         Bundle i10;
         Bundle h10;
@@ -34,7 +35,8 @@ final class l extends th.l0 {
             h10 = x.h();
             ((th.b0) this.f16879o.f17095d.e()).M0(str, i10, h10, new v(this.f16879o, this.f16878i));
         } catch (RemoteException e10) {
-            x.f17090g.c(e10, "notifySessionFailed", new Object[0]);
+            k0Var = x.f17090g;
+            k0Var.c(e10, "notifySessionFailed", new Object[0]);
         }
     }
 }
