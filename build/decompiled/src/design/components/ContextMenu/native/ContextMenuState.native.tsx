@@ -38,7 +38,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot4 = var3;
     var3 = function() { // Environment: var1
         var0 = function(arg0, arg1, arg2) { // Original name: updateContextMenuState, environment: var0
-            _fun46372: for (var _fun46372_ip = 0;;) switch (_fun46372_ip) {
+            _fun46389: for (var _fun46389_ip = 0;;) switch (_fun46389_ip) {
                 case 0:
                     var11 = arg0;
                     var10 = arg1;
@@ -59,8 +59,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var6 = 1;
                     var3 = 0;
                     if (!var0) {
-                        _fun46372_ip = 146;
-                        continue _fun46372
+                        _fun46389_ip = 146;
+                        continue _fun46389
                     }
                 case 74:
                     var0 = var3 + var7;
@@ -73,32 +73,32 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1 = var9[var0];
                     var0 = var3;
                     if (!(var10 >= var13)) {
-                        _fun46372_ip = 133;
-                        continue _fun46372
+                        _fun46389_ip = 133;
+                        continue _fun46389
                     }
                 case 113:
                     var13 = var13 + var14;
                     if (!(var10 <= var13)) {
-                        _fun46372_ip = 133;
-                        continue _fun46372
+                        _fun46389_ip = 133;
+                        continue _fun46389
                     }
                 case 121:
                     if (!(var11 >= var1)) {
-                        _fun46372_ip = 133;
-                        continue _fun46372
+                        _fun46389_ip = 133;
+                        continue _fun46389
                     }
                 case 125:
                     var1 = var1 + var12;
                     if (!(!(var11 <= var1))) {
-                        _fun46372_ip = 166;
-                        continue _fun46372
+                        _fun46389_ip = 166;
+                        continue _fun46389
                     }
                 case 133:
                     var3 = var0 + var5;
                     var1 = var9.length;
                     if (var3 < var1) {
-                        _fun46372_ip = 74;
-                        continue _fun46372
+                        _fun46389_ip = 74;
+                        continue _fun46389
                     }
                 case 146:
                     var3 = var4.set;
@@ -112,8 +112,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = var0.bind(var4)();
                     var0 = var0 !== var3;
                     if (!var0) {
-                        _fun46372_ip = 269;
-                        continue _fun46372
+                        _fun46389_ip = 269;
+                        continue _fun46389
                     }
                 case 186:
                     var1 = var4.set;
@@ -220,14 +220,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var2 = _closure1_slot3;
             var1 = var2.setState;
             var0 = function(arg0) { // Environment: var0
-                _fun46377: for (var _fun46377_ip = 0;;) switch (_fun46377_ip) {
+                _fun46394: for (var _fun46394_ip = 0;;) switch (_fun46394_ip) {
                     case 0:
                         var0 = arg0;
                         var1 = var0.menu;
                         var2 = null;
                         if (!(var2 != var1)) {
-                            _fun46377_ip = 25;
-                            continue _fun46377
+                            _fun46394_ip = 25;
+                            continue _fun46394
                         }
                     case 15:
                         var1 = {};
@@ -301,7 +301,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useContextMenuState = var3;
     var1 = function(arg0) { // Original name: resetContextMenuState, environment: var1
-        _fun46382: for (var _fun46382_ip = 0;;) switch (_fun46382_ip) {
+        _fun46399: for (var _fun46399_ip = 0;;) switch (_fun46399_ip) {
             case 0:
                 var0 = arg0;
                 var4 = var0.activeIndex;
@@ -317,8 +317,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var0.length;
                 var0 = 0;
                 if (!(var1 > var0)) {
-                    _fun46382_ip = 81;
-                    continue _fun46382
+                    _fun46399_ip = 81;
+                    continue _fun46399
                 }
             case 67:
                 var1 = var2.set;

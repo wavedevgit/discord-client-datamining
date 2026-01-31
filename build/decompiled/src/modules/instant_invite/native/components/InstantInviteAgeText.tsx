@@ -56,7 +56,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/instant_invite/native/components/InstantInviteAgeText.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: _default, environment: var1
-        _fun67497: for (var _fun67497_ip = 0;;) switch (_fun67497_ip) {
+        _fun67520: for (var _fun67520_ip = 0;;) switch (_fun67520_ip) {
             case 0:
                 var0 = arg0;
                 var8 = var0.style;
@@ -67,8 +67,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var0.canEditInvite;
                 var4 = undefined;
                 if (!(var6 === var4)) {
-                    _fun67497_ip = 43;
-                    continue _fun67497
+                    _fun67520_ip = 43;
+                    continue _fun67520
                 }
             case 41:
                 var6 = true;
@@ -98,8 +98,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = null;
                 var1 = var0 == var9;
                 if (var1) {
-                    _fun67497_ip = 509;
-                    continue _fun67497
+                    _fun67520_ip = 509;
+                    continue _fun67520
                 }
             case 135:
                 var3 = _closure1_slot4;
@@ -135,8 +135,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = new Array(2);
                 var5[0] = var8;
                 if (!var6) {
-                    _fun67497_ip = 495;
-                    continue _fun67497
+                    _fun67520_ip = 495;
+                    continue _fun67520
                 }
             case 282:
                 var9 = _closure1_slot5;
@@ -148,7 +148,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var7.PressableOpacity;
                 var7 = {};
                 var11 = function() { // Original name: onPress, environment: var11
-                    _fun67499: for (var _fun67499_ip = 0;;) switch (_fun67499_ip) {
+                    _fun67522: for (var _fun67522_ip = 0;;) switch (_fun67522_ip) {
                         case 0:
                             var2 = _closure1_slot0;
                             var1 = _closure1_slot1;
@@ -164,8 +164,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var3 = _closure2_slot2;
                             var2 = null;
                             if (!(var2 != var3)) {
-                                _fun67499_ip = 71;
-                                continue _fun67499
+                                _fun67522_ip = 71;
+                                continue _fun67522
                             }
                         case 63:
                             var1 = _closure2_slot2;
@@ -225,4 +225,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 8291, 33, 1297, 566, 3901, 8292, 4864, 8290, 1234, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 8290, 33, 1297, 566, 3900, 8291, 4865, 8289, 1234, 2]);

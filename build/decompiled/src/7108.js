@@ -1,134 +1,126 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var2 = exports;
+    var4 = dependencyMap;
     var0 = global;
-    var5 = var0.Object;
-    var4 = var5.defineProperty;
+    var6 = var0.Object;
+    var5 = var6.defineProperty;
     var3 = {};
     var0 = true;
     var3.value = var0;
     var0 = '__esModule';
-    var0 = var4.bind(var5)(var2, var0, var3);
-    var3 = dependencyMap;
+    var0 = var5.bind(var6)(var2, var0, var3);
     var0 = 0;
-    var4 = var3[var0];
+    var5 = var4[var0];
     var3 = metroImportDefault;
     var0 = undefined;
-    var3 = var3.bind(var0)(var4);
+    var3 = var3.bind(var0)(var5);
     var _closure1_slot0 = var3;
+    var3 = 1;
+    var4 = var4[var3];
+    var3 = require;
+    var3 = var3.bind(var0)(var4);
+    var3 = var3.NativeModules;
+    var3 = var3.RNIapAmazonModule;
+    var _closure1_slot1 = var3;
     var1 = function() { // Environment: var1
         var3 = _closure1_slot0;
         var2 = undefined;
-        var1 = function*(arg0, arg1) { // Environment: var0
-            var0 = function*(arg0, arg1) { // Original name: ?anon_0_, environment: var0
-                _fun58290: for (var _fun58290_ip = 0;;) switch (_fun58290_ip) {
+        var1 = function*(arg0) { // Environment: var0
+            var0 = function*(arg0) { // Original name: ?anon_0_, environment: var0
+                _fun58307: for (var _fun58307_ip = 0;;) switch (_fun58307_ip) {
                     case 0:
                         StartGenerator();
-                        var9 = arg1;
+                        var2 = arg0;
                         ResumeGenerator(result_out_reg = 0, return_bool_out_reg = 1);
                         if (var1) {
-                            _fun58290_ip = 253;
-                            continue _fun58290
+                            _fun58307_ip = 103;
+                            continue _fun58307
                         }
-                    case 13:
-                        var2 = global;
-                        var5 = var2.fetch;
-                        var7 = var2.Object;
-                        var6 = var7.assign;
-                        var3 = {};
-                        var1 = null;
-                        var8 = var1 == var9;
-                        var4 = undefined;
-                        var10 = undefined;
-                        if (var8) {
-                            _fun58290_ip = 53;
-                            continue _fun58290
+                    case 12:
+                        var1 = undefined;
+                        var _closure4_slot0 = var1;
+                        var4 = _closure1_slot1;
+                        if (!var4) {
+                            _fun58307_ip = 97;
+                            continue _fun58307
                         }
-                    case 47:
-                        var10 = var9.method;
-                    case 53:
-                        var11 = var1 != var10;
-                        var8 = 'GET';
-                        if (!var11) {
-                            _fun58290_ip = 69;
-                            continue _fun58290
+                    case 28:
+                        var4 = _closure1_slot1;
+                        var1 = var4.getUser;
+                        var1 = var1.bind(var4)();
+                        SaveGenerator(address = 46);
+                    case 44:
+                        return var1;
+                    case 46:
+                        ResumeGenerator(result_out_reg = 1, return_bool_out_reg = 4);
+                        if (var4) {
+                            _fun58307_ip = 100;
+                            continue _fun58307
                         }
-                    case 66:
-                        var8 = var10;
-                    case 69:
-                        var3.method = var8;
-                        var8 = {
-                            'Accept': 'application/json',
-                            'Content-Type': 'application/json'
+                    case 52:
+                        var5 = var1.userMarketplaceAmazon;
+                        var4 = {
+                            'CA': 'CAD',
+                            'ES': 'EUR',
+                            'AU': 'AUD',
+                            'DE': 'EUR',
+                            'IN': 'INR',
+                            'US': 'USD',
+                            'JP': 'JPY',
+                            'GB': 'GBP',
+                            'IT': 'EUR',
+                            'BR': 'BRL',
+                            'FR': 'EUR'
                         };
-                        var3.headers = var8;
-                        if (!(var1 != var9)) {
-                            _fun58290_ip = 105;
-                            continue _fun58290
-                        }
-                    case 97:
-                        var1 = var9.body;
-                        if (var1) {
-                            _fun58290_ip = 109;
-                            continue _fun58290
-                        }
-                    case 105:
-                        var1 = {};
-                        _fun58290_ip = 140;
-                        continue _fun58290;
-                    case 109:
-                        var8 = {};
-                        var11 = var2.JSON;
-                        var10 = var11.stringify;
-                        var9 = var9.body;
-                        var9 = var10.bind(var11)(var9);
-                        var8.body = var9;
-                        var1 = var8;
-                    case 140:
-                        var3 = var6.bind(var7)(var3, var1);
-                        var1 = arg0;
-                        var1 = var5.bind(var4)(var1, var3);
-                        SaveGenerator(address = 159);
-                    case 157:
-                        return var1;
-                    case 159:
-                        ResumeGenerator(result_out_reg = 1, return_bool_out_reg = 3);
-                        if (var3) {
-                            _fun58290_ip = 250;
-                            continue _fun58290
-                        }
-                    case 165:
-                        var3 = var1.ok;
-                        if (var3) {
-                            _fun58290_ip = 237;
-                            continue _fun58290
-                        }
-                    case 174:
-                        var5 = var2.Object;
-                        var4 = var5.assign;
-                        var6 = var2.Error;
-                        var13 = var1.statusText;
-                        var3 = var6.prototype;
-                        var3 = Object.create(var3, {
-                            constructor: {
-                                value: var6
+                        var4 = var4[var5];
+                        _closure4_slot0 = var4;
+                        var4 = var2.forEach;
+                        var3 = function(arg0) { // Environment: var3
+                            _fun58308: for (var _fun58308_ip = 0;;) switch (_fun58308_ip) {
+                                case 0:
+                                    var1 = arg0;
+                                    var2 = _closure4_slot0;
+                                    if (!var2) {
+                                        _fun58308_ip = 72;
+                                        continue _fun58308
+                                    }
+                                case 13:
+                                    var2 = var1.originalPrice;
+                                    var0 = _closure4_slot0;
+                                    var1.currency = var0;
+                                    var3 = null;
+                                    var5 = var3 != var2;
+                                    var0 = '0.0';
+                                    var4 = var0;
+                                    if (!var5) {
+                                        _fun58308_ip = 50;
+                                        continue _fun58308
+                                    }
+                                case 47:
+                                    var4 = var2;
+                                case 50:
+                                    var1.price = var4;
+                                    var3 = var3 != var2;
+                                    if (!var3) {
+                                        _fun58308_ip = 66;
+                                        continue _fun58308
+                                    }
+                                case 63:
+                                    var0 = var2;
+                                case 66:
+                                    var1.localizedPrice = var0;
+                                case 72:
+                                    var0 = undefined;
+                                    return var0;
                             }
-                        });
-                        var14 = var3;
-                        var2 = new var14[var6](var13, var12);
-                        var3 = var2 instanceof Object ? var2 : var3;
-                        var2 = {};
-                        var6 = var1.status;
-                        var2.statusCode = var6;
-                        var2 = var4.bind(var5)(var3, var2);
-                        throw var2;
-                    case 237:
-                        var2 = var1.json;
-                        var2 = var2.bind(var1)();
+                        };
+                        var3 = var4.bind(var2)(var3);
+                    case 97:
                         return var2;
-                    case 250:
+                    case 100:
                         return var1;
-                    case 253:
+                    case 103:
                         return var0;
                 }
             };
@@ -136,7 +128,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         };
         var1 = var3.bind(var2)(var1);
         var _closure2_slot0 = var1;
-        var0 = function(arg0, arg1) { // Original name: enhancedFetch, environment: var0
+        var0 = function(arg0) { // Original name: fillProductsWithAdditionalData, environment: var0
             var0 = undefined;
             var3 = _closure2_slot0;
             var2 = var3.apply;
@@ -149,6 +141,6 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var1 = var1.bind(var0)();
-    var2.enhancedFetch = var1;
+    var2.fillProductsWithAdditionalData = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 27]);

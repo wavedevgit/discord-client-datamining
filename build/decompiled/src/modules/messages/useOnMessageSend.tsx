@@ -33,15 +33,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/messages/useOnMessageSend.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: useOnMessageSend, environment: var1
-        _fun107850: for (var _fun107850_ip = 0;;) switch (_fun107850_ip) {
+        _fun107206: for (var _fun107206_ip = 0;;) switch (_fun107206_ip) {
             case 0:
                 var6 = arg0;
                 var5 = arguments[1];
                 var _closure2_slot0 = var6;
                 var0 = undefined;
                 if (!(var5 === var0)) {
-                    _fun107850_ip = 20;
-                    continue _fun107850
+                    _fun107206_ip = 20;
+                    continue _fun107206
                 }
             case 18:
                 var5 = undefined;
@@ -54,14 +54,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2[1] = var5;
                 var1 = function() { // Environment: var1
                     var4 = function(arg0) { // Original name: handleMessage, environment: var0
-                        _fun107852: for (var _fun107852_ip = 0;;) switch (_fun107852_ip) {
+                        _fun107208: for (var _fun107208_ip = 0;;) switch (_fun107208_ip) {
                             case 0:
                                 var2 = _closure2_slot1;
                                 var0 = undefined;
                                 var2 = var0 !== var2;
                                 if (!var2) {
-                                    _fun107852_ip = 32;
-                                    continue _fun107852
+                                    _fun107208_ip = 32;
+                                    continue _fun107208
                                 }
                             case 16:
                                 var3 = arg0;
@@ -70,8 +70,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var2 = var4 !== var3;
                             case 32:
                                 if (var2) {
-                                    _fun107852_ip = 43;
-                                    continue _fun107852
+                                    _fun107208_ip = 43;
+                                    continue _fun107208
                                 }
                             case 35:
                                 var1 = _closure2_slot0;
@@ -82,13 +82,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     };
                     var _closure3_slot0 = var4;
                     var9 = function(arg0) { // Original name: handleMessageCreate, environment: var0
-                        _fun107853: for (var _fun107853_ip = 0;;) switch (_fun107853_ip) {
+                        _fun107209: for (var _fun107209_ip = 0;;) switch (_fun107209_ip) {
                             case 0:
                                 var2 = arg0;
                                 var0 = var2.optimistic;
                                 if (var0) {
-                                    _fun107853_ip = 39;
-                                    continue _fun107853
+                                    _fun107209_ip = 39;
+                                    continue _fun107209
                                 }
                             case 12:
                                 var1 = var2.message;
@@ -98,8 +98,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var0 = var3 === var1;
                             case 39:
                                 if (!var0) {
-                                    _fun107853_ip = 56;
-                                    continue _fun107853
+                                    _fun107209_ip = 56;
+                                    continue _fun107209
                                 }
                             case 42:
                                 var1 = _closure3_slot0;

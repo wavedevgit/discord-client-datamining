@@ -28,7 +28,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/premium/promotions/MarketingComponentHooks.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0, arg1) { // Original name: useThemeAndReducedMotionAwareAssetUrl, environment: var1
-        _fun74759: for (var _fun74759_ip = 0;;) switch (_fun74759_ip) {
+        _fun74789: for (var _fun74789_ip = 0;;) switch (_fun74789_ip) {
             case 0:
                 var3 = arg0;
                 var2 = _closure1_slot1;
@@ -55,8 +55,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = null;
                 var4 = var0 == var3;
                 if (var4) {
-                    _fun74759_ip = 171;
-                    continue _fun74759
+                    _fun74789_ip = 171;
+                    continue _fun74789
                 }
             case 89:
                 var4 = _closure1_slot0;
@@ -67,38 +67,38 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var4.isThemeDark;
                 var1 = var1.bind(var4)(var5);
                 if (var1) {
-                    _fun74759_ip = 148;
-                    continue _fun74759
+                    _fun74789_ip = 148;
+                    continue _fun74789
                 }
             case 123:
                 var1 = arg1;
                 if (var1) {
-                    _fun74759_ip = 148;
-                    continue _fun74759
+                    _fun74789_ip = 148;
+                    continue _fun74789
                 }
             case 129:
                 if (var2) {
-                    _fun74759_ip = 140;
-                    continue _fun74759
+                    _fun74789_ip = 140;
+                    continue _fun74789
                 }
             case 132:
                 var1 = var3.lightUrl;
-                _fun74759_ip = 146;
-                continue _fun74759;
+                _fun74789_ip = 146;
+                continue _fun74789;
             case 140:
                 var1 = var3.lightStaticUrl;
             case 146:
-                _fun74759_ip = 168;
-                continue _fun74759;
+                _fun74789_ip = 168;
+                continue _fun74789;
             case 148:
                 if (var2) {
-                    _fun74759_ip = 159;
-                    continue _fun74759
+                    _fun74789_ip = 159;
+                    continue _fun74789
                 }
             case 151:
                 var2 = var3.darkUrl;
-                _fun74759_ip = 165;
-                continue _fun74759;
+                _fun74789_ip = 165;
+                continue _fun74789;
             case 159:
                 var2 = var3.darkStaticUrl;
             case 165:

@@ -79,7 +79,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/forums/native/posts/list/ForumPostListBody.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: ForumPostListBody, environment: var1
-        _fun90221: for (var _fun90221_ip = 0;;) switch (_fun90221_ip) {
+        _fun89569: for (var _fun89569_ip = 0;;) switch (_fun89569_ip) {
             case 0:
                 var0 = arg0;
                 var5 = var0.containerStyle;
@@ -111,8 +111,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var9.details;
                 var5.style = var7;
                 if (!var8) {
-                    _fun90221_ip = 183;
-                    continue _fun90221
+                    _fun89569_ip = 183;
+                    continue _fun89569
                 }
             case 140:
                 var20 = _closure1_slot5;
@@ -188,22 +188,22 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4[0] = var5;
                 var10 = null;
                 if (!(var10 != var11)) {
-                    _fun90221_ip = 455;
-                    continue _fun90221
+                    _fun89569_ip = 455;
+                    continue _fun89569
                 }
             case 444:
                 var7 = var11.blocked;
                 var5 = null;
                 if (var7) {
-                    _fun90221_ip = 551;
-                    continue _fun90221
+                    _fun89569_ip = 551;
+                    continue _fun89569
                 }
             case 455:
                 var7 = var10 == var14;
                 var5 = null;
                 if (var7) {
-                    _fun90221_ip = 551;
-                    continue _fun90221
+                    _fun89569_ip = 551;
+                    continue _fun89569
                 }
             case 464:
                 var8 = _closure1_slot5;
@@ -221,8 +221,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var12 = var10 == var11;
                 var10 = undefined;
                 if (var12) {
-                    _fun90221_ip = 529;
-                    continue _fun90221
+                    _fun89569_ip = 529;
+                    continue _fun89569
                 }
             case 524:
                 var10 = var11.id;
@@ -240,4 +240,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 6439, 33, 1297, 11651, 11641, 11650, 11652, 11662, 11645, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 6440, 33, 1297, 11586, 11576, 11585, 11587, 11597, 11580, 2]);

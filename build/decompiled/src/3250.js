@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = dependencyMap;
     var _closure1_slot1 = var1;
     var1 = function(arg0, arg1) { // Original name: getNative, environment: var0
-        _fun28128: for (var _fun28128_ip = 0;;) switch (_fun28128_ip) {
+        _fun28129: for (var _fun28129_ip = 0;;) switch (_fun28129_ip) {
             case 0:
                 var3 = _closure1_slot0;
                 var4 = _closure1_slot1;
@@ -21,8 +21,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = var3.bind(var0)(var2);
                 var2 = var2.bind(var0)(var1);
                 if (!var2) {
-                    _fun28128_ip = 59;
-                    continue _fun28128
+                    _fun28129_ip = 59;
+                    continue _fun28129
                 }
             case 56:
                 var0 = var1;

@@ -11,7 +11,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = var2.bind(var0)();
     var _closure1_slot2 = var2;
     var2 = function() { // Original name: shimStringTrim, environment: var1
-        _fun28940: for (var _fun28940_ip = 0;;) switch (_fun28940_ip) {
+        _fun28941: for (var _fun28941_ip = 0;;) switch (_fun28941_ip) {
             case 0:
                 var1 = _closure1_slot0;
                 var2 = _closure1_slot1;
@@ -25,8 +25,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = var1.prototype;
                 var1 = var1.trim;
                 if (!(var1 !== var0)) {
-                    _fun28940_ip = 120;
-                    continue _fun28940
+                    _fun28941_ip = 120;
+                    continue _fun28941
                 }
             case 52:
                 var1 = _closure1_slot2;
@@ -39,13 +39,13 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var3 = var2.prototype;
                 var2 = 'trim';
                 if (var1) {
-                    _fun28940_ip = 103;
-                    continue _fun28940
+                    _fun28941_ip = 103;
+                    continue _fun28941
                 }
             case 94:
                 var1 = var4.bind(var5)(var3, var2, var0);
-                _fun28940_ip = 120;
-                continue _fun28940;
+                _fun28941_ip = 120;
+                continue _fun28941;
             case 103:
                 var7 = true;
                 var11 = undefined;

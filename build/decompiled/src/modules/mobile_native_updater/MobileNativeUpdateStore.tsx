@@ -9,7 +9,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
     var0 = function() { // Original name: _isNativeReflectConstruct, environment: var3
-        _fun88220: for (var _fun88220_ip = 0;;) switch (_fun88220_ip) {
+        _fun87562: for (var _fun87562_ip = 0;;) switch (_fun87562_ip) {
             case 0:
             case 2: // try_start_0
                 var1 = global;
@@ -30,8 +30,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = !var1;
                 var _closure2_slot0 = var1;
             case 72: // try_end0
-                _fun88220_ip = 76;
-                continue _fun88220;
+                _fun87562_ip = 76;
+                continue _fun87562;
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
@@ -113,7 +113,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8 = var7.Store;
     var7 = function(arg0) { // Environment: var3
         var3 = function(arg0) { // Original name: MobileNativeUpdateStore, environment: var5
-            _fun88224: for (var _fun88224_ip = 0;;) switch (_fun88224_ip) {
+            _fun87566: for (var _fun87566_ip = 0;;) switch (_fun87566_ip) {
                 case 0:
                     var4 = this;
                     var12 = 0;
@@ -133,14 +133,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = _closure1_slot13;
                     var0 = var0.bind(var3)();
                     if (var0) {
-                        _fun88224_ip = 84;
-                        continue _fun88224
+                        _fun87566_ip = 84;
+                        continue _fun87566
                     }
                 case 71:
                     var0 = var8.apply;
                     var0 = var0.bind(var8)(var4, var9);
-                    _fun88224_ip = 118;
-                    continue _fun88224;
+                    _fun87566_ip = 118;
+                    continue _fun87566;
                 case 84:
                     var5 = global;
                     var7 = var5.Reflect;
@@ -168,14 +168,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = 'checkForNewerBuild';
         var4.key = var0;
         var0 = function() { // Original name: value, environment: var5
-            _fun88225: for (var _fun88225_ip = 0;;) switch (_fun88225_ip) {
+            _fun87567: for (var _fun87567_ip = 0;;) switch (_fun87567_ip) {
                 case 0:
                     var2 = _closure1_slot11;
                     var3 = var2.checking;
                     var2 = true;
                     if (!(var2 !== var3)) {
-                        _fun88225_ip = 116;
-                        continue _fun88225
+                        _fun87567_ip = 116;
+                        continue _fun87567
                     }
                 case 21:
                     var5 = _closure1_slot1;
@@ -239,21 +239,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var6 = 'ensureInitialized';
         var4.key = var6;
         var6 = function() { // Original name: value, environment: var5
-            _fun88228: for (var _fun88228_ip = 0;;) switch (_fun88228_ip) {
+            _fun87570: for (var _fun87570_ip = 0;;) switch (_fun87570_ip) {
                 case 0:
                     var1 = this;
                     var _closure3_slot0 = var1;
                     var1 = var1.hasUpdatesConfigured;
                     if (!var1) {
-                        _fun88228_ip = 90;
-                        continue _fun88228
+                        _fun87570_ip = 90;
+                        continue _fun87570
                     }
                 case 18:
                     var2 = _closure1_slot12;
                     var1 = null;
                     if (!(var1 === var2)) {
-                        _fun88228_ip = 90;
-                        continue _fun88228
+                        _fun87570_ip = 90;
+                        continue _fun87570
                     }
                 case 31:
                     var3 = function() { // Original name: backgroundUpdateCheck, environment: var0
@@ -374,4 +374,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 15, 17, 18, 3279, 3, 806, 11358, 566, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 15, 17, 18, 3279, 3, 806, 11292, 566, 2]);

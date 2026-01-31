@@ -15,12 +15,6 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.GENERIC_SUBSCRIPTION = var0;
     var0 = 'api_generic_consumable';
     var1.GENERIC_CONSUMABLE = var0;
-    var0 = 'acom_generic_subscription';
-    var1.ACOM_GENERIC_SUBSCRIPTION = var0;
-    var0 = 'acom_generic_consumable';
-    var1.ACOM_GENERIC_CONSUMABLE = var0;
-    var0 = 'acom_generic_gift_consumable';
-    var1.ACOM_GENERIC_GIFT_CONSUMABLE = var0;
     var3 = dependencyMap;
     var0 = 0;
     var4 = var3[var0];

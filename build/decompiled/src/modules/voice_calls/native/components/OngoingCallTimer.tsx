@@ -37,7 +37,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/voice_calls/native/components/OngoingCallTimer.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: _default, environment: var1
-        _fun69361: for (var _fun69361_ip = 0;;) switch (_fun69361_ip) {
+        _fun69385: for (var _fun69385_ip = 0;;) switch (_fun69385_ip) {
             case 0:
                 var0 = arg0;
                 var5 = var0.style;
@@ -56,7 +56,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = new Array(1);
                 var2[0] = var8;
                 var1 = function() { // Environment: var1
-                    _fun69362: for (var _fun69362_ip = 0;;) switch (_fun69362_ip) {
+                    _fun69386: for (var _fun69386_ip = 0;;) switch (_fun69386_ip) {
                         case 0:
                             var2 = _closure1_slot3;
                             var1 = var2.getCall;
@@ -66,8 +66,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var2 = var0 == var1;
                             var0 = undefined;
                             if (var2) {
-                                _fun69362_ip = 41;
-                                continue _fun69362
+                                _fun69386_ip = 41;
+                                continue _fun69386
                             }
                         case 36:
                             var0 = var1.messageId;
@@ -80,8 +80,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1 != var6;
                 var4 = 0;
                 if (!var1) {
-                    _fun69361_ip = 125;
-                    continue _fun69361
+                    _fun69385_ip = 125;
+                    continue _fun69385
                 }
             case 94:
                 var2 = _closure1_slot1;

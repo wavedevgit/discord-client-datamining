@@ -14,168 +14,197 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = '__esModule';
     var2 = var4.bind(var5)(var1, var2, var3);
     var2 = {};
-    var3 = 'function pnpm_useOnProgressChangeTs1(){const{offsetX}=this.__closure;return offsetX.value;}';
+    var3 = 'function pnpm_parallaxTs1(value){const{interpolate,size,parallaxScrollingOffset,Extrapolation,parallaxAdjacentItemScale,parallaxScrollingScale,vertical}=this.__closure;const translate=interpolate(value,[-1,0,1],[-size+parallaxScrollingOffset,0,size-parallaxScrollingOffset]);const zIndex=Math.round(interpolate(value,[-1,0,1],[0,size,0],Extrapolation.CLAMP));const scale=interpolate(value,[-1,0,1],[parallaxAdjacentItemScale,parallaxScrollingScale,parallaxAdjacentItemScale],Extrapolation.CLAMP);return{transform:[vertical?{translateY:translate}:{translateX:translate},{scale:scale}],zIndex:zIndex};}';
     var2.code = var3;
     var _closure1_slot2 = var2;
-    var2 = {};
-    var3 = 'function pnpm_useOnProgressChangeTs2(_value){const{computedOffsetXValueWithAutoFillData,rawDataLength,size,autoFillData,loop,onProgressChange,isFunc,runOnJS}=this.__closure;let value=computedOffsetXValueWithAutoFillData({value:_value,rawDataLength:rawDataLength,size:size,autoFillData:autoFillData,loop:loop});if(!loop){value=Math.max(-((rawDataLength-1)*size),Math.min(value,0));}let absoluteProgress=Math.abs(value/size);if(value>0)absoluteProgress=rawDataLength-absoluteProgress;if(onProgressChange){if(isFunc)runOnJS(onProgressChange)(value,absoluteProgress);else onProgressChange.value=absoluteProgress;}}';
-    var2.code = var3;
-    var _closure1_slot3 = var2;
-    var0 = function(arg0) { // Original name: useOnProgressChange, environment: var0
-        var0 = arg0;
-        var9 = var0.autoFillData;
-        var _closure2_slot0 = var9;
-        var10 = var0.loop;
-        var _closure2_slot1 = var10;
-        var16 = var0.offsetX;
-        var _closure2_slot2 = var16;
-        var6 = var0.size;
-        var _closure2_slot3 = var6;
-        var8 = var0.rawDataLength;
-        var _closure2_slot4 = var8;
-        var7 = var0.onProgressChange;
-        var _closure2_slot5 = var7;
-        var1 = 'function';
-        var0 = typeof var7;
-        var15 = var1 === var0;
-        var _closure2_slot6 = var15;
-        var13 = _closure1_slot0;
-        var14 = _closure1_slot1;
-        var12 = 0;
-        var3 = var14[var12];
-        var0 = undefined;
-        var5 = var13.bind(var0)(var3);
-        var4 = var5.useAnimatedReaction;
-        var3 = function() { // Original name: pnpm_useOnProgressChangeTs1, environment: var2
-            var0 = _closure2_slot2;
-            var0 = var0.value;
-            return var0;
-        };
-        var11 = {};
-        var11.offsetX = var16;
-        var3.__closure = var11;
-        var11 = 355184931449.0;
-        var3.__workletHash = var11;
-        var11 = _closure1_slot2;
-        var3.__initData = var11;
-        var2 = function(arg0) { // Original name: pnpm_useOnProgressChangeTs2, environment: var2
-            _fun74856: for (var _fun74856_ip = 0;;) switch (_fun74856_ip) {
-                case 0:
-                    var2 = _closure1_slot0;
-                    var0 = _closure1_slot1;
-                    var8 = 1;
-                    var1 = var0[var8];
-                    var0 = undefined;
-                    var6 = var2.bind(var0)(var1);
-                    var5 = var6.computedOffsetXValueWithAutoFillData;
-                    var3 = {};
-                    var1 = arg0;
-                    var3.value = var1;
-                    var2 = _closure2_slot4;
-                    var3.rawDataLength = var2;
-                    var2 = _closure2_slot3;
-                    var3.size = var2;
-                    var2 = _closure2_slot0;
-                    var3.autoFillData = var2;
-                    var2 = _closure2_slot1;
-                    var3.loop = var2;
-                    var10 = var5.bind(var6)(var3);
-                    var3 = var10;
-                    if (var2) {
-                        _fun74856_ip = 146;
-                        continue _fun74856
+    var0 = function(arg0) { // Original name: parallaxLayout, environment: var0
+        _fun74869: for (var _fun74869_ip = 0;;) switch (_fun74869_ip) {
+            case 0:
+                var2 = arg0;
+                var8 = undefined;
+                var4 = undefined;
+                var1 = arguments.length;
+                var3 = 1;
+                if (!(var1 > var3)) {
+                    _fun74869_ip = 27;
+                    continue _fun74869
+                }
+            case 19:
+                var1 = arguments[var3];
+                if (!(var8 === var1)) {
+                    _fun74869_ip = 31;
+                    continue _fun74869
+                }
+            case 27:
+                var1 = {};
+                _fun74869_ip = 35;
+                continue _fun74869;
+            case 31:
+                var1 = arguments[var3];
+            case 35:
+                var11 = var2.size;
+                var _closure2_slot0 = var11;
+                var3 = var2.vertical;
+                var _closure2_slot1 = var3;
+                var2 = var1.parallaxScrollingOffset;
+                var10 = 100;
+                if (!(var8 !== var2)) {
+                    _fun74869_ip = 70;
+                    continue _fun74869
+                }
+            case 67:
+                var10 = var2;
+            case 70:
+                var _closure2_slot2 = var10;
+                var2 = var1.parallaxScrollingScale;
+                var4 = 0.8;
+                if (!(var8 !== var2)) {
+                    _fun74869_ip = 97;
+                    continue _fun74869
+                }
+            case 94:
+                var4 = var2;
+            case 97:
+                var _closure2_slot3 = var4;
+                var5 = var1.parallaxAdjacentItemScale;
+                if (!(var8 === var5)) {
+                    _fun74869_ip = 121;
+                    continue _fun74869
+                }
+            case 111:
+                var13 = 2;
+                var14 = var4;
+                var5 = exponentiationOperator(var14, var13);
+            case 121:
+                var _closure2_slot4 = var5;
+                var0 = function(arg0) { // Original name: pnpm_parallaxTs1, environment: var0
+                    _fun74870: for (var _fun74870_ip = 0;;) switch (_fun74870_ip) {
+                        case 0:
+                            var8 = arg0;
+                            var10 = _closure1_slot0;
+                            var11 = _closure1_slot1;
+                            var0 = 0;
+                            var1 = var11[var0];
+                            var9 = undefined;
+                            var6 = var10.bind(var9)(var1);
+                            var5 = var6.interpolate;
+                            var4 = new Array(3);
+                            var12 = -1;
+                            var4[0] = var12;
+                            var4[1] = var0;
+                            var3 = 1;
+                            var4[2] = var3;
+                            var1 = _closure2_slot0;
+                            var7 = -var1;
+                            var1 = _closure2_slot2;
+                            var7 = var7 + var1;
+                            var1 = new Array(3);
+                            var1[0] = var7;
+                            var1[1] = var0;
+                            var13 = _closure2_slot0;
+                            var7 = _closure2_slot2;
+                            var7 = var13 - var7;
+                            var1[2] = var7;
+                            var5 = var5.bind(var6)(var8, var4, var1);
+                            var1 = global;
+                            var6 = var1.Math;
+                            var4 = var6.round;
+                            var1 = var11[var0];
+                            var15 = var10.bind(var9)(var1);
+                            var14 = var15.interpolate;
+                            var13 = new Array(3);
+                            var13[0] = var12;
+                            var13[1] = var0;
+                            var13[2] = var3;
+                            var1 = _closure2_slot0;
+                            var7 = [0];
+                            var7[1] = var1;
+                            var7[2] = var0;
+                            var1 = var11[var0];
+                            var1 = var10.bind(var9)(var1);
+                            var1 = var1.Extrapolation;
+                            var16 = var1.CLAMP;
+                            var20 = var15;
+                            var19 = var8;
+                            var18 = var13;
+                            var17 = var7;
+                            var1 = var20[var14](var19, var18, var17, var16, var15);
+                            var1 = var4.bind(var6)(var1);
+                            var4 = var11[var0];
+                            var7 = var10.bind(var9)(var4);
+                            var6 = var7.interpolate;
+                            var4 = new Array(3);
+                            var4[0] = var12;
+                            var4[1] = var0;
+                            var4[2] = var3;
+                            var12 = _closure2_slot4;
+                            var3 = new Array(3);
+                            var3[0] = var12;
+                            var12 = _closure2_slot3;
+                            var3[1] = var12;
+                            var12 = _closure2_slot4;
+                            var3[2] = var12;
+                            var0 = var11[var0];
+                            var0 = var10.bind(var9)(var0);
+                            var0 = var0.Extrapolation;
+                            var16 = var0.CLAMP;
+                            var20 = var7;
+                            var19 = var8;
+                            var18 = var4;
+                            var17 = var3;
+                            var4 = var20[var6](var19, var18, var17, var16, var15);
+                            var0 = {};
+                            var3 = _closure2_slot1;
+                            var2 = {};
+                            if (var3) {
+                                _fun74870_ip = 336;
+                                continue _fun74870
+                            }
+                        case 326:
+                            var2.translateX = var5;
+                            var3 = var2;
+                            _fun74870_ip = 344;
+                            continue _fun74870;
+                        case 336:
+                            var2.translateY = var5;
+                            var3 = var2;
+                        case 344:
+                            var2 = new Array(2);
+                            var2[0] = var3;
+                            var3 = {};
+                            var3.scale = var4;
+                            var2[1] = var3;
+                            var0.transform = var2;
+                            var0.zIndex = var1;
+                            return var0;
                     }
-                case 89:
-                    var2 = global;
-                    var7 = var2.Math;
-                    var6 = var7.max;
-                    var5 = _closure2_slot4;
-                    var5 = var5 - var8;
-                    var8 = _closure2_slot3;
-                    var5 = -var5;
-                    var5 = var5 * var8;
-                    var9 = var2.Math;
-                    var8 = var9.min;
-                    var2 = 0;
-                    var2 = var8.bind(var9)(var10, var2);
-                    var3 = var6.bind(var7)(var5, var2);
-                case 146:
-                    var2 = global;
-                    var6 = var2.Math;
-                    var5 = var6.abs;
-                    var2 = _closure2_slot3;
-                    var2 = var3 / var2;
-                    var7 = var5.bind(var6)(var2);
-                    var6 = 0;
-                    var2 = var7;
-                    if (!(var3 > var6)) {
-                        _fun74856_ip = 190;
-                        continue _fun74856
-                    }
-                case 182:
-                    var5 = _closure2_slot4;
-                    var2 = var5 - var7;
-                case 190:
-                    var5 = _closure2_slot5;
-                    if (!var5) {
-                        _fun74856_ip = 253;
-                        continue _fun74856
-                    }
-                case 197:
-                    var5 = _closure2_slot6;
-                    if (var5) {
-                        _fun74856_ip = 216;
-                        continue _fun74856
-                    }
-                case 204:
-                    var5 = _closure2_slot5;
-                    var5.value = var2;
-                    _fun74856_ip = 253;
-                    continue _fun74856;
-                case 216:
-                    var5 = _closure1_slot0;
-                    var4 = _closure1_slot1;
-                    var4 = var4[var6];
-                    var5 = var5.bind(var0)(var4);
-                    var4 = var5.runOnJS;
-                    var1 = _closure2_slot5;
-                    var1 = var4.bind(var5)(var1);
-                    var1 = var1.bind(var0)(var3, var2);
-                case 253:
-                    return var0;
-            }
-        };
-        var11 = {};
-        var16 = 1;
-        var16 = var14[var16];
-        var16 = var13.bind(var0)(var16);
-        var16 = var16.computedOffsetXValueWithAutoFillData;
-        var11.computedOffsetXValueWithAutoFillData = var16;
-        var11.rawDataLength = var8;
-        var11.size = var6;
-        var11.autoFillData = var9;
-        var11.loop = var10;
-        var11.onProgressChange = var7;
-        var11.isFunc = var15;
-        var12 = var14[var12];
-        var12 = var13.bind(var0)(var12);
-        var12 = var12.runOnJS;
-        var11.runOnJS = var12;
-        var2.__closure = var11;
-        var11 = 12473781608319.0;
-        var2.__workletHash = var11;
-        var1 = _closure1_slot3;
-        var2.__initData = var1;
-        var1 = new Array(5);
-        var1[0] = var10;
-        var1[1] = var9;
-        var1[2] = var8;
-        var1[3] = var7;
-        var1[4] = var6;
-        var1 = var4.bind(var5)(var3, var2, var1);
-        return var0;
+                };
+                var2 = {};
+                var7 = _closure1_slot0;
+                var9 = _closure1_slot1;
+                var6 = 0;
+                var12 = var9[var6];
+                var12 = var7.bind(var8)(var12);
+                var12 = var12.interpolate;
+                var2.interpolate = var12;
+                var2.size = var11;
+                var2.parallaxScrollingOffset = var10;
+                var6 = var9[var6];
+                var6 = var7.bind(var8)(var6);
+                var6 = var6.Extrapolation;
+                var2.Extrapolation = var6;
+                var2.parallaxAdjacentItemScale = var5;
+                var2.parallaxScrollingScale = var4;
+                var2.vertical = var3;
+                var0.__closure = var2;
+                var2 = 8790326555138.0;
+                var0.__workletHash = var2;
+                var1 = _closure1_slot2;
+                var0.__initData = var1;
+                return var0;
+        }
     };
-    var1.useOnProgressChange = var0;
+    var1.parallaxLayout = var0;
     var0 = undefined;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3680, 9398]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3680]);

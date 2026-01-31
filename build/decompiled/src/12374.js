@@ -1,58 +1,84 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = function(arg0, arg1) { // Environment: var0
-        _fun94964: for (var _fun94964_ip = 0;;) switch (_fun94964_ip) {
-            case 0:
-                var1 = arg1;
-                var0 = var1.className;
-                var2 = ' ';
-                var0 = var2 + var0;
-                var3 = var0 + var2;
-                var2 = var3.indexOf;
-                var0 = ' combokeys ';
-                var2 = var2.bind(var3)(var0);
-                var0 = -1;
-                if (!(!(var2 > var0))) {
-                    _fun94964_ip = 107;
-                    continue _fun94964
+    _fun94791: for (var _fun94791_ip = 0;;) switch (_fun94791_ip) {
+        case 0:
+            var1 = new Array(0);
+            var6 = 256;
+            var5 = 8;
+            var4 = 3988292384.0;
+            var3 = 1;
+            var2 = 0;
+        case 30:
+            var10 = var2;
+            var9 = 0;
+        case 35:
+            var8 = var3 & var10;
+            var11 = var10 >>> var3;
+            if (var8) {
+                _fun94791_ip = 51;
+                continue _fun94791
+            }
+        case 46:
+            var8 = var11;
+            _fun94791_ip = 55;
+            continue _fun94791;
+        case 51:
+            var8 = var4 ^ var11;
+        case 55:
+            var9 = var9 + 1;
+            var10 = var8;
+            if (var9 < var5) {
+                _fun94791_ip = 35;
+                continue _fun94791
+            }
+        case 65:
+            var1[var2] = var8;
+            var2 = var2 + 1;
+            if (var2 < var6) {
+                _fun94791_ip = 30;
+                continue _fun94791
+            }
+        case 76:
+            var _closure1_slot0 = var1;
+            var1 = function(arg0, arg1, arg2, arg3) { // Original name: crc32, environment: var0
+                _fun94792: for (var _fun94792_ip = 0;;) switch (_fun94792_ip) {
+                    case 0:
+                        var7 = arg1;
+                        var6 = arg3;
+                        var5 = _closure1_slot0;
+                        var0 = arg2;
+                        var4 = var6 + var0;
+                        var1 = arg0;
+                        var0 = -1;
+                        var1 = var1 ^ var0;
+                        var3 = 255;
+                        var2 = 8;
+                        var0 = var1;
+                        if (!(var6 < var4)) {
+                            _fun94792_ip = 80;
+                            continue _fun94792
+                        }
+                    case 46:
+                        var8 = var7[var6];
+                        var8 = var1 ^ var8;
+                        var8 = var3 & var8;
+                        var9 = var5[var8];
+                        var8 = var1 >>> var2;
+                        var1 = var8 ^ var9;
+                        var6 = var6 + 1;
+                        var0 = var1;
+                        if (var6 < var4) {
+                            _fun94792_ip = 46;
+                            continue _fun94792
+                        }
+                    case 80:
+                        var0 = ~var0;
+                        return var0;
                 }
-            case 50:
-                var2 = var1.tagName;
-                var0 = var2.toLowerCase;
-                var3 = var0.bind(var2)();
-                var0 = 'input';
-                var0 = var0 === var3;
-                if (var0) {
-                    _fun94964_ip = 85;
-                    continue _fun94964
-                }
-            case 77:
-                var2 = 'select';
-                var0 = var2 === var3;
-            case 85:
-                if (var0) {
-                    _fun94964_ip = 96;
-                    continue _fun94964
-                }
-            case 88:
-                var2 = 'textarea';
-                var0 = var2 === var3;
-            case 96:
-                if (var0) {
-                    _fun94964_ip = 105;
-                    continue _fun94964
-                }
-            case 99:
-                var0 = var1.isContentEditable;
-            case 105:
-                return var0;
-            case 107:
-                var0 = false;
-                return var0;
-        }
-    };
-    var0 = arg4;
-    var0.exports = var1;
-    var0 = undefined;
-    return var0;
+            };
+            var0 = arg4;
+            var0.exports = var1;
+            var0 = undefined;
+            return var0;
+    }
 })(undefined, undefined, undefined, undefined, undefined, undefined, []);

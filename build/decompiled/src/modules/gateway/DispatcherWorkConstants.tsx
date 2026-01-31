@@ -24,15 +24,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = function() { // Environment: var1
         var3 = _closure1_slot1;
         var2 = function(arg0) { // Original name: WorkIdleDeadline, environment: var4
-            _fun95228: for (var _fun95228_ip = 0;;) switch (_fun95228_ip) {
+            _fun94591: for (var _fun94591_ip = 0;;) switch (_fun94591_ip) {
                 case 0:
                     var4 = arg0;
                     var3 = arguments[1];
                     var2 = this;
                     var0 = undefined;
                     if (!(var3 === var0)) {
-                        _fun95228_ip = 17;
-                        continue _fun95228
+                        _fun94591_ip = 17;
+                        continue _fun94591
                     }
                 case 15:
                     var3 = false;

@@ -64,7 +64,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2 = var9.bind(var10)(var1);
         var1 = var2.useAnimatedStyle;
         var0 = function() { // Original name: S, environment: var0
-            _fun112159: for (var _fun112159_ip = 0;;) switch (_fun112159_ip) {
+            _fun111509: for (var _fun111509_ip = 0;;) switch (_fun111509_ip) {
                 case 0:
                     var0 = {};
                     var2 = {};
@@ -92,8 +92,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var4 = var8.get;
                     var4 = var4.bind(var8)();
                     if (var4) {
-                        _fun112159_ip = 177;
-                        continue _fun112159
+                        _fun111509_ip = 177;
+                        continue _fun111509
                     }
                 case 110:
                     var8 = _closure2_slot0;
@@ -101,8 +101,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var4 = var4.bind(var8)();
                     var4 = var4.hidden;
                     if (!var4) {
-                        _fun112159_ip = 177;
-                        continue _fun112159
+                        _fun111509_ip = 177;
+                        continue _fun111509
                     }
                 case 132:
                     var8 = _closure2_slot0;
@@ -115,8 +115,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var4 = var9.get;
                     var4 = var4.bind(var9)();
                     var4 = var8 + var4;
-                    _fun112159_ip = 195;
-                    continue _fun112159;
+                    _fun111509_ip = 195;
+                    continue _fun111509;
                 case 177:
                     var8 = _closure2_slot0;
                     var7 = var8.get;
@@ -154,4 +154,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 11838, 11841, 11837, 3679, 4040, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 11771, 11774, 11770, 3679, 4040, 2]);

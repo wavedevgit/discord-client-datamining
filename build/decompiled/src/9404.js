@@ -9,142 +9,156 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.value = var0;
     var0 = '__esModule';
     var0 = var4.bind(var5)(var2, var0, var3);
-    var3 = dependencyMap;
-    var0 = 0;
-    var4 = var3[var0];
-    var3 = metroImportDefault;
-    var0 = undefined;
-    var3 = var3.bind(var0)(var4);
-    var _closure1_slot0 = var3;
-    var1 = function(arg0) { // Original name: usePropsErrorBoundary, environment: var1
-        var4 = arg0;
-        var _closure2_slot0 = var4;
-        var3 = _closure1_slot0;
-        var2 = var3.useEffect;
-        var1 = new Array(1);
-        var1[0] = var4;
-        var0 = function() { // Environment: var0
-            _fun74816: for (var _fun74816_ip = 0;;) switch (_fun74816_ip) {
+    var0 = {};
+    var3 = 'function omitZero_Pnpm_computeOffsetIfDataChangedTs1(a,b){if(a===0)return 0;return b;}';
+    var0.code = var3;
+    var _closure1_slot0 = var0;
+    var3 = function() { // Environment: var1
+        var0 = function(arg0, arg1) { // Original name: omitZero, environment: var0
+            _fun74838: for (var _fun74838_ip = 0;;) switch (_fun74838_ip) {
                 case 0:
-                    var1 = _closure2_slot0;
-                    var2 = var1.defaultIndex;
-                    var1 = var1.dataLength;
-                    var4 = 'number';
-                    var3 = typeof var2;
-                    if (!(var4 === var3)) {
-                        _fun74816_ip = 50;
-                        continue _fun74816
+                    var1 = arg1;
+                    var2 = arg0;
+                    var0 = 0;
+                    if (!(var0 !== var2)) {
+                        _fun74838_ip = 15;
+                        continue _fun74838
                     }
-                case 30:
-                    var3 = 0;
-                    if (!(var1 > var3)) {
-                        _fun74816_ip = 50;
-                        continue _fun74816
-                    }
-                case 36:
-                    if (!(!(var2 < var3))) {
-                        _fun74816_ip = 208;
-                        continue _fun74816
-                    }
-                case 43:
-                    if (!(!(var2 >= var1))) {
-                        _fun74816_ip = 208;
-                        continue _fun74816
-                    }
-                case 50:
-                    var1 = _closure2_slot0;
-                    var1 = var1.mode;
-                    if (!var1) {
-                        _fun74816_ip = 82;
-                        continue _fun74816
-                    }
-                case 62:
-                    var1 = _closure2_slot0;
-                    var2 = var1.mode;
-                    var1 = 'parallax';
-                    if (!(var1 === var2)) {
-                        _fun74816_ip = 204;
-                        continue _fun74816
-                    }
-                case 82:
-                    var1 = _closure2_slot0;
-                    var1 = var1.vertical;
-                    if (var1) {
-                        _fun74816_ip = 143;
-                        continue _fun74816
-                    }
-                case 95:
-                    var1 = _closure2_slot0;
-                    var1 = var1.width;
-                    if (var1) {
-                        _fun74816_ip = 143;
-                        continue _fun74816
-                    }
-                case 107:
-                    var1 = global;
-                    var3 = var1.Error;
-                    var1 = var3.prototype;
-                    var2 = Object.create(var1, {
-                        constructor: {
-                            value: var3
-                        }
-                    });
-                    var5 = '`width` must be specified for horizontal carousels.';
-                    var6 = var2;
-                    var1 = new var6[var3](var5, var4);
-                    var1 = var1 instanceof Object ? var1 : var2;
-                    throw var1;
-                case 143:
-                    var1 = _closure2_slot0;
-                    var1 = var1.vertical;
-                    if (!var1) {
-                        _fun74816_ip = 204;
-                        continue _fun74816
-                    }
-                case 156:
-                    var0 = _closure2_slot0;
-                    var0 = var0.height;
-                    if (var0) {
-                        _fun74816_ip = 204;
-                        continue _fun74816
-                    }
-                case 168:
-                    var0 = global;
-                    var2 = var0.Error;
-                    var0 = var2.prototype;
-                    var1 = Object.create(var0, {
-                        constructor: {
-                            value: var2
-                        }
-                    });
-                    var5 = '`height` must be specified for vertical carousels.';
-                    var6 = var1;
-                    var0 = new var6[var2](var5, var4);
-                    var0 = var0 instanceof Object ? var0 : var1;
-                    throw var0;
-                case 204:
-                    var0 = undefined;
+                case 12:
+                    var0 = var1;
+                case 15:
                     return var0;
-                case 208:
-                    var0 = global;
-                    var2 = var0.Error;
-                    var0 = var2.prototype;
-                    var1 = Object.create(var0, {
-                        constructor: {
-                            value: var2
-                        }
-                    });
-                    var5 = 'DefaultIndex must be in the range of data length.';
-                    var6 = var1;
-                    var0 = new var6[var2](var5, var4);
-                    var0 = var0 instanceof Object ? var0 : var1;
-                    throw var0;
             }
         };
-        var0 = var2.bind(var3)(var0, var1);
-        var0 = undefined;
+        var1 = {};
+        var0.__closure = var1;
+        var1 = 6139220182928.0;
+        var0.__workletHash = var1;
+        var1 = _closure1_slot0;
+        var0.__initData = var1;
         return var0;
     };
-    var2.usePropsErrorBoundary = var1;
+    var0 = undefined;
+    var3 = var3.bind(var0)();
+    var _closure1_slot1 = var3;
+    var4 = {};
+    var5 = 'function computeOffsetIfDataChanged_Pnpm_computeOffsetIfDataChangedTs2(params){const{omitZero}=this.__closure;const{direction:direction,handlerOffset:_handlerOffset,size:size,previousLength:previousLength,currentLength:currentLength}=params;let handlerOffset=_handlerOffset;let positionIndex;let round;const isPositive=direction<0;if(isPositive){positionIndex=Math.abs(handlerOffset)/size;round=Number.parseInt(String(omitZero(previousLength,positionIndex/previousLength)));}else{positionIndex=(Math.abs(handlerOffset)-size)/size;round=Number.parseInt(String(omitZero(previousLength,positionIndex/previousLength)))+1;}const prevOffset=omitZero(previousLength,positionIndex%previousLength);const prevIndex=isPositive?prevOffset:previousLength-prevOffset-1;const changedLength=round*(currentLength-previousLength);const changedOffset=changedLength*size;if(prevIndex>currentLength-1&&currentLength<previousLength){if(isPositive)handlerOffset=(currentLength-1)*size*direction;else handlerOffset=(currentLength-1)*size*-1;}else{handlerOffset+=changedOffset*direction;}return handlerOffset;}';
+    var4.code = var5;
+    var _closure1_slot2 = var4;
+    var1 = function() { // Environment: var1
+        var0 = function(arg0) { // Original name: computeOffsetIfDataChanged, environment: var0
+            _fun74840: for (var _fun74840_ip = 0;;) switch (_fun74840_ip) {
+                case 0:
+                    var1 = arg0;
+                    var3 = var1.direction;
+                    var6 = var1.handlerOffset;
+                    var4 = var1.size;
+                    var0 = var1.previousLength;
+                    var5 = var1.currentLength;
+                    var1 = 0;
+                    var1 = var3 < var1;
+                    var8 = global;
+                    var7 = var8.Math;
+                    var2 = var7.abs;
+                    var9 = var2.bind(var7)(var6);
+                    if (var1) {
+                        _fun74840_ip = 124;
+                        continue _fun74840
+                    }
+                case 60:
+                    var2 = var9 - var4;
+                    var2 = var2 / var4;
+                    var11 = var8.Number;
+                    var10 = var11.parseInt;
+                    var13 = var8.String;
+                    var14 = _closure1_slot1;
+                    var7 = var2 / var0;
+                    var12 = undefined;
+                    var7 = var14.bind(var12)(var0, var7);
+                    var7 = var13.bind(var12)(var7);
+                    var10 = var10.bind(var11)(var7);
+                    var7 = 1;
+                    var7 = var10 + var7;
+                    _fun74840_ip = 178;
+                    continue _fun74840;
+                case 124:
+                    var9 = var9 / var4;
+                    var11 = var8.Number;
+                    var10 = var11.parseInt;
+                    var13 = var8.String;
+                    var14 = _closure1_slot1;
+                    var8 = var9 / var0;
+                    var12 = undefined;
+                    var8 = var14.bind(var12)(var0, var8);
+                    var8 = var13.bind(var12)(var8);
+                    var7 = var10.bind(var11)(var8);
+                    var2 = var9;
+                case 178:
+                    var9 = _closure1_slot1;
+                    var8 = var2 % var0;
+                    var2 = undefined;
+                    var2 = var9.bind(var2)(var0, var8);
+                    var9 = var2;
+                    if (var1) {
+                        _fun74840_ip = 214;
+                        continue _fun74840
+                    }
+                case 203:
+                    var8 = var0 - var2;
+                    var2 = 1;
+                    var9 = var8 - var2;
+                case 214:
+                    var2 = 1;
+                    var8 = var5 - var2;
+                    if (!(var9 > var8)) {
+                        _fun74840_ip = 229;
+                        continue _fun74840
+                    }
+                case 225:
+                    if (!(!(var5 < var0))) {
+                        _fun74840_ip = 251;
+                        continue _fun74840
+                    }
+                case 229:
+                    var0 = var5 - var0;
+                    var0 = var7 * var0;
+                    var0 = var0 * var4;
+                    var0 = var0 * var3;
+                    var0 = var6 + var0;
+                    _fun74840_ip = 281;
+                    continue _fun74840;
+                case 251:
+                    var2 = var5 - var2;
+                    var2 = var2 * var4;
+                    if (var1) {
+                        _fun74840_ip = 274;
+                        continue _fun74840
+                    }
+                case 262:
+                    var1 = -1;
+                    var1 = var2 * var1;
+                    _fun74840_ip = 278;
+                    continue _fun74840;
+                case 274:
+                    var1 = var2 * var3;
+                case 278:
+                    var0 = var1;
+                case 281:
+                    return var0;
+            }
+        };
+        var2 = {};
+        var3 = _closure1_slot1;
+        var2.omitZero = var3;
+        var0.__closure = var2;
+        var2 = 15766064123809.0;
+        var0.__workletHash = var2;
+        var1 = _closure1_slot2;
+        var0.__initData = var1;
+        return var0;
+    };
+    var1 = var1.bind(var0)();
+    var2.omitZero = var3;
+    var2.computeOffsetIfDataChanged = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, []);

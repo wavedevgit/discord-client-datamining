@@ -8,13 +8,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var7;
     var3 = function(arg0) { // Original name: isGuildEligibleForFriendsInServer, environment: var1
-        _fun80172: for (var _fun80172_ip = 0;;) switch (_fun80172_ip) {
+        _fun80202: for (var _fun80202_ip = 0;;) switch (_fun80202_ip) {
             case 0:
                 var0 = arg0;
                 var1 = null;
                 if (!(var1 != var0)) {
-                    _fun80172_ip = 108;
-                    continue _fun80172
+                    _fun80202_ip = 108;
+                    continue _fun80202
                 }
             case 9:
                 var3 = var0.features;
@@ -23,16 +23,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var2.isArray;
                 var1 = var1.bind(var2)(var3);
                 if (var1) {
-                    _fun80172_ip = 80;
-                    continue _fun80172
+                    _fun80202_ip = 80;
+                    continue _fun80202
                 }
             case 36:
                 var0 = var0.Set;
                 var1 = var3 instanceof var0;
                 var0 = !var1;
                 if (!var1) {
-                    _fun80172_ip = 78;
-                    continue _fun80172
+                    _fun80202_ip = 78;
+                    continue _fun80202
                 }
             case 52:
                 var2 = var3.has;
@@ -41,8 +41,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var2.bind(var3)(var1);
                 var0 = !var1;
             case 78:
-                _fun80172_ip = 106;
-                continue _fun80172;
+                _fun80202_ip = 106;
+                continue _fun80202;
             case 80:
                 var2 = var3.includes;
                 var1 = _closure1_slot7;
@@ -167,7 +167,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.getInviteFriendMembersExperiment = var4;
     var2.isGuildEligibleForFriendsInServer = var3;
     var3 = function(arg0) { // Original name: useEligibleInviteFriendMembersExperiment, environment: var1
-        _fun80175: for (var _fun80175_ip = 0;;) switch (_fun80175_ip) {
+        _fun80205: for (var _fun80205_ip = 0;;) switch (_fun80205_ip) {
             case 0:
                 var6 = arg0;
                 var5 = var6.guild;
@@ -209,15 +209,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = _closure1_slot10;
                 var0 = var0.bind(var4)(var5);
                 if (!var2) {
-                    _fun80175_ip = 133;
-                    continue _fun80175
+                    _fun80205_ip = 133;
+                    continue _fun80205
                 }
             case 130:
                 var2 = var3;
             case 133:
                 if (!var2) {
-                    _fun80175_ip = 139;
-                    continue _fun80175
+                    _fun80205_ip = 139;
+                    continue _fun80205
                 }
             case 136:
                 var2 = var0;
@@ -238,8 +238,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0[var6] = var7;
                 var0 = var4.bind(var5)(var3, var0);
                 if (var2) {
-                    _fun80175_ip = 206;
-                    continue _fun80175
+                    _fun80205_ip = 206;
+                    continue _fun80205
                 }
             case 202:
                 var0 = _closure1_slot9;
@@ -249,7 +249,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useEligibleInviteFriendMembersExperiment = var3;
     var1 = function(arg0) { // Original name: getEligibleInviteFriendMembersExperiment, environment: var1
-        _fun80178: for (var _fun80178_ip = 0;;) switch (_fun80178_ip) {
+        _fun80208: for (var _fun80208_ip = 0;;) switch (_fun80208_ip) {
             case 0:
                 var4 = arg0;
                 var2 = var4.guild;
@@ -266,25 +266,25 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = 0;
                 var0 = var6 > var0;
                 if (!var3) {
-                    _fun80178_ip = 79;
-                    continue _fun80178
+                    _fun80208_ip = 79;
+                    continue _fun80208
                 }
             case 64:
                 if (!var0) {
-                    _fun80178_ip = 79;
-                    continue _fun80178
+                    _fun80208_ip = 79;
+                    continue _fun80208
                 }
             case 67:
                 var0 = _closure1_slot10;
                 var0 = var0.bind(var5)(var2);
                 if (var0) {
-                    _fun80178_ip = 85;
-                    continue _fun80178
+                    _fun80208_ip = 85;
+                    continue _fun80208
                 }
             case 79:
                 var0 = _closure1_slot9;
-                _fun80178_ip = 121;
-                continue _fun80178;
+                _fun80208_ip = 121;
+                continue _fun80208;
             case 85:
                 var3 = _closure1_slot0;
                 var6 = _closure1_slot1;
@@ -300,4 +300,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getEligibleInviteFriendMembersExperiment = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [29, 1216, 3059, 660, 3074, 7443, 566, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [29, 1216, 3059, 660, 3074, 7442, 566, 2]);

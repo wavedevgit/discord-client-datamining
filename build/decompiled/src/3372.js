@@ -1,6 +1,6 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun28968: for (var _fun28968_ip = 0;;) switch (_fun28968_ip) {
+    _fun28969: for (var _fun28969_ip = 0;;) switch (_fun28969_ip) {
         case 0:
             var6 = require;
             var1 = dependencyMap;
@@ -18,38 +18,38 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var6 = null;
             var10.__proto__ = var6;
         case 44: // try_end0
-            _fun28968_ip = 112;
-            continue _fun28968;
+            _fun28969_ip = 112;
+            continue _fun28969;
         case 46: // catch_target0
             CatchBlockStart(arg_register = 6);
             var0 = var6;
             if (!var6) {
-                _fun28968_ip = 291;
-                continue _fun28968
+                _fun28969_ip = 291;
+                continue _fun28969
             }
         case 57:
             var6 = var0;
             var10 = 'object';
             var6 = typeof var6;
             if (!(var10 === var6)) {
-                _fun28968_ip = 291;
-                continue _fun28968
+                _fun28969_ip = 291;
+                continue _fun28969
             }
         case 74:
             var10 = var0;
             var6 = 'code';
             var6 = var6 in var10;
             if (!var6) {
-                _fun28968_ip = 291;
-                continue _fun28968
+                _fun28969_ip = 291;
+                continue _fun28969
             }
         case 91:
             var6 = var0;
             var10 = var6.code;
             var6 = 'ERR_PROTO_ACCESS';
             if (!(var6 === var10)) {
-                _fun28968_ip = 291;
-                continue _fun28968
+                _fun28969_ip = 291;
+                continue _fun28969
             }
         case 112:
             var6 = var3;
@@ -63,8 +63,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var6 = var10.bind(var1)(var6);
             var3 = var6;
             if (!var6) {
-                _fun28968_ip = 187;
-                continue _fun28968
+                _fun28969_ip = 187;
+                continue _fun28969
             }
         case 149:
             var10 = var9;
@@ -81,16 +81,16 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var3 = var2;
             var2 = var4;
             if (!var4) {
-                _fun28968_ip = 283;
-                continue _fun28968
+                _fun28969_ip = 283;
+                continue _fun28969
             }
         case 199:
             var11 = var7;
             var11 = !var11;
             var10 = !var11;
             if (var11) {
-                _fun28968_ip = 230;
-                continue _fun28968
+                _fun28969_ip = 230;
+                continue _fun28969
             }
         case 211:
             var11 = var7;
@@ -101,8 +101,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         case 230:
             var6 = var10;
             if (!var10) {
-                _fun28968_ip = 269;
-                continue _fun28968
+                _fun28969_ip = 269;
+                continue _fun28969
             }
         case 236:
             var10 = var8;
@@ -116,19 +116,19 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         case 269:
             var4 = var6;
             if (var6) {
-                _fun28968_ip = 280;
-                continue _fun28968
+                _fun28969_ip = 280;
+                continue _fun28969
             }
         case 275:
             var4 = function(arg0, arg1) { // Original name: setDunder, environment: var5
-                _fun28969: for (var _fun28969_ip = 0;;) switch (_fun28969_ip) {
+                _fun28970: for (var _fun28970_ip = 0;;) switch (_fun28970_ip) {
                     case 0:
                         var1 = arg0;
                         var0 = arg1;
                         var2 = null;
                         if (!(var2 != var1)) {
-                            _fun28969_ip = 20;
-                            continue _fun28969
+                            _fun28970_ip = 20;
+                            continue _fun28970
                         }
                     case 12:
                         var1.__proto__ = var0;

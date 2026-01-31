@@ -313,7 +313,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var7[1] = var8;
         var9 = var10.map;
         var8 = function(arg0) { // Environment: var15
-            _fun79137: for (var _fun79137_ip = 0;;) switch (_fun79137_ip) {
+            _fun79167: for (var _fun79167_ip = 0;;) switch (_fun79167_ip) {
                 case 0:
                     var0 = arg0;
                     var10 = var0.text;
@@ -339,7 +339,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var11 = function() { // Original name: onPress, environment: var11
                         var2 = _closure3_slot0;
                         var1 = function(arg0) { // Original name: onCheckboxChange, environment: var0
-                            _fun79139: for (var _fun79139_ip = 0;;) switch (_fun79139_ip) {
+                            _fun79169: for (var _fun79169_ip = 0;;) switch (_fun79169_ip) {
                                 case 0:
                                     var4 = arg0;
                                     var _closure5_slot0 = var4;
@@ -348,8 +348,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                     var1 = var1.bind(var3)(var4);
                                     var2 = _closure2_slot4;
                                     if (var1) {
-                                        _fun79139_ip = 42;
-                                        continue _fun79139
+                                        _fun79169_ip = 42;
+                                        continue _fun79169
                                     }
                                 case 33:
                                     var1 = function(arg0) { // Environment: var0
@@ -364,8 +364,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                         var1 = var2 + var1;
                                         return var0;
                                     };
-                                    _fun79139_ip = 49;
-                                    continue _fun79139;
+                                    _fun79169_ip = 49;
+                                    continue _fun79169;
                                 case 42:
                                     var1 = function(arg0) { // Environment: var0
                                         var2 = arg0;
@@ -412,8 +412,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var6 = var6.OTHER;
                     var6 = var4 === var6;
                     if (!var6) {
-                        _fun79137_ip = 244;
-                        continue _fun79137
+                        _fun79167_ip = 244;
+                        continue _fun79167
                     }
                 case 201:
                     var9 = _closure2_slot3;
@@ -427,8 +427,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var6 = var8.bind(var9)(var7);
                 case 244:
                     if (!var6) {
-                        _fun79137_ip = 404;
-                        continue _fun79137
+                        _fun79167_ip = 404;
+                        continue _fun79167
                     }
                 case 250:
                     var9 = _closure1_slot8;
@@ -591,4 +591,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 660, 5878, 33, 1297, 671, 1234, 4503, 3237, 5170, 5733, 3901, 5339, 4880, 4840, 4835, 4265, 10000, 5885, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 660, 5879, 33, 1297, 671, 1234, 4504, 3237, 5171, 5734, 3900, 5340, 4881, 4841, 4836, 4266, 10002, 5886, 2]);

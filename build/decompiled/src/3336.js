@@ -5,15 +5,15 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = dependencyMap;
     var _closure1_slot1 = var1;
     var1 = function(arg0) { // Original name: RequireObjectCoercible, environment: var0
-        _fun28895: for (var _fun28895_ip = 0;;) switch (_fun28895_ip) {
+        _fun28896: for (var _fun28896_ip = 0;;) switch (_fun28896_ip) {
             case 0:
                 var3 = arg0;
                 var5 = undefined;
                 var4 = undefined;
                 var0 = null;
                 if (!(var0 != var3)) {
-                    _fun28895_ip = 15;
-                    continue _fun28895
+                    _fun28896_ip = 15;
+                    continue _fun28896
                 }
             case 13:
                 return var3;
@@ -26,16 +26,16 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = arguments.length;
                 var0 = var0 > var1;
                 if (!var0) {
-                    _fun28895_ip = 54;
-                    continue _fun28895
+                    _fun28896_ip = 54;
+                    continue _fun28896
                 }
             case 47:
                 var1 = 1;
                 var0 = arguments[var1];
             case 54:
                 if (var0) {
-                    _fun28895_ip = 67;
-                    continue _fun28895
+                    _fun28896_ip = 67;
+                    continue _fun28896
                 }
             case 57:
                 var1 = 'Cannot call method on ';

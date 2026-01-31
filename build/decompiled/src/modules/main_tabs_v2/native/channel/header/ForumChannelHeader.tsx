@@ -53,7 +53,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot5 = var3;
     var3 = var6.memo;
     var1 = function(arg0) { // Environment: var1
-        _fun72148: for (var _fun72148_ip = 0;;) switch (_fun72148_ip) {
+        _fun72172: for (var _fun72172_ip = 0;;) switch (_fun72172_ip) {
             case 0:
                 var0 = arg0;
                 var9 = var0.channelId;
@@ -75,8 +75,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0.bind(var1)(var9);
                 var3 = _closure1_slot4;
                 if (var0) {
-                    _fun72148_ip = 152;
-                    continue _fun72148
+                    _fun72172_ip = 152;
+                    continue _fun72172
                 }
             case 94:
                 var1 = _closure1_slot1;
@@ -92,8 +92,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0.isNavigationScreen = var10;
                 var0.screenIndex = var2;
                 var0 = var3.bind(var4)(var1, var0);
-                _fun72148_ip = 225;
-                continue _fun72148;
+                _fun72172_ip = 225;
+                continue _fun72172;
             case 152:
                 var2 = _closure1_slot3;
                 var1 = {};

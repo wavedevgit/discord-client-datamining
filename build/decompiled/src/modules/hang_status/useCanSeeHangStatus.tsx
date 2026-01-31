@@ -32,7 +32,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/hang_status/useCanSeeHangStatus.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0, arg1) { // Original name: useCanSeeHangStatus, environment: var1
-        _fun61906: for (var _fun61906_ip = 0;;) switch (_fun61906_ip) {
+        _fun61918: for (var _fun61918_ip = 0;;) switch (_fun61918_ip) {
             case 0:
                 var7 = arg1;
                 var _closure2_slot0 = var7;
@@ -48,8 +48,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var6 == var7;
                 var6 = undefined;
                 if (var8) {
-                    _fun61906_ip = 58;
-                    continue _fun61906
+                    _fun61918_ip = 58;
+                    continue _fun61918
                 }
             case 53:
                 var6 = var7.guild_id;
@@ -79,8 +79,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 };
                 var1 = var3.bind(var4)(var2, var1);
                 if (!var0) {
-                    _fun61906_ip = 134;
-                    continue _fun61906
+                    _fun61918_ip = 134;
+                    continue _fun61918
                 }
             case 131:
                 var0 = var1;

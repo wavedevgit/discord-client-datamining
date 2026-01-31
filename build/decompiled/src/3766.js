@@ -25,15 +25,15 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = var2 instanceof Object ? var2 : var3;
     var1.snapshots = var2;
     var2 = function(arg0, arg1) { // Original name: makeElementVisible, environment: var0
-        _fun33830: for (var _fun33830_ip = 0;;) switch (_fun33830_ip) {
+        _fun33846: for (var _fun33846_ip = 0;;) switch (_fun33846_ip) {
             case 0:
                 var3 = arg0;
                 var4 = arg1;
                 var _closure2_slot0 = var3;
                 var1 = 0;
                 if (!(var1 !== var4)) {
-                    _fun33830_ip = 51;
-                    continue _fun33830
+                    _fun33846_ip = 51;
+                    continue _fun33846
                 }
             case 18:
                 var2 = global;
@@ -57,8 +57,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     return var0;
                 };
                 var0 = var5.bind(var2)(var0, var4);
-                _fun33830_ip = 96;
-                continue _fun33830;
+                _fun33846_ip = 96;
+                continue _fun33846;
             case 51:
                 var2 = _closure1_slot0;
                 var0 = _closure1_slot1;
@@ -77,7 +77,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var1.makeElementVisible = var2;
     var0 = function(arg0, arg1) { // Original name: setElementPosition, environment: var0
-        _fun33832: for (var _fun33832_ip = 0;;) switch (_fun33832_ip) {
+        _fun33848: for (var _fun33848_ip = 0;;) switch (_fun33848_ip) {
             case 0:
                 var1 = arg0;
                 var4 = arg1;
@@ -118,8 +118,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var5.margin = var0;
                 var0 = var1.parentElement;
                 if (!var0) {
-                    _fun33832_ip = 381;
-                    continue _fun33832
+                    _fun33848_ip = 381;
+                    continue _fun33848
                 }
             case 203:
                 var7 = var1.parentElement;
@@ -141,8 +141,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var7 = var5.top;
                 var6 = var4.top;
                 if (!(var7 !== var6)) {
-                    _fun33832_ip = 334;
-                    continue _fun33832
+                    _fun33848_ip = 334;
+                    continue _fun33848
                 }
             case 301:
                 var7 = var1.style;
@@ -156,8 +156,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var6 = var5.left;
                 var5 = var4.left;
                 if (!(var6 !== var5)) {
-                    _fun33832_ip = 381;
-                    continue _fun33832
+                    _fun33848_ip = 381;
+                    continue _fun33848
                 }
             case 348:
                 var1 = var1.style;

@@ -28,7 +28,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'design/components/mana-assets/native/generated/GemLeftUpwards3dIllustration.native.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: GemLeftUpwards3dIllustration, environment: var1
-        _fun52450: for (var _fun52450_ip = 0;;) switch (_fun52450_ip) {
+        _fun52467: for (var _fun52467_ip = 0;;) switch (_fun52467_ip) {
             case 0:
                 var0 = arg0;
                 var6 = var0.accessible;
@@ -37,16 +37,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var0.width;
                 var3 = undefined;
                 if (!(var9 === var3)) {
-                    _fun52450_ip = 35;
-                    continue _fun52450
+                    _fun52467_ip = 35;
+                    continue _fun52467
                 }
             case 29:
                 var9 = 288;
             case 35:
                 var7 = var0.height;
                 if (!(var7 === var3)) {
-                    _fun52450_ip = 47;
-                    continue _fun52450
+                    _fun52467_ip = 47;
+                    continue _fun52467
                 }
             case 44:
                 var7 = 192;
@@ -81,4 +81,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.GemLeftUpwards3dIllustration = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [33, 4666, 6113, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [33, 4667, 6114, 2]);

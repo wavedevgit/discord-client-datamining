@@ -24,14 +24,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/frames/native/getDefaultOrientationLockState.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0, arg1) { // Original name: setOrientationLockState, environment: var1
-        _fun111129: for (var _fun111129_ip = 0;;) switch (_fun111129_ip) {
+        _fun110479: for (var _fun110479_ip = 0;;) switch (_fun110479_ip) {
             case 0:
                 var4 = arg0;
                 var3 = arg1;
                 var0 = null;
                 if (!(var0 == var3)) {
-                    _fun111129_ip = 47;
-                    continue _fun111129
+                    _fun110479_ip = 47;
+                    continue _fun110479
                 }
             case 12:
                 var5 = _closure1_slot0;
@@ -44,8 +44,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var1.bind(var2)(var4);
             case 47:
                 if (!(var0 != var3)) {
-                    _fun111129_ip = 112;
-                    continue _fun111129
+                    _fun110479_ip = 112;
+                    continue _fun110479
                 }
             case 51:
                 var2 = _closure1_slot1;
@@ -69,4 +69,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.setOrientationLockState = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [8017, 806, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [8016, 806, 2]);

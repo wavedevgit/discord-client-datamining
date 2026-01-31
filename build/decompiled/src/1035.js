@@ -15,7 +15,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2.value = var6;
     var2 = var4.bind(var5)(var1, var3, var2);
     var0 = function(arg0) { // Original name: whenActivated, environment: var0
-        _fun10752: for (var _fun10752_ip = 0;;) switch (_fun10752_ip) {
+        _fun10754: for (var _fun10754_ip = 0;;) switch (_fun10754_ip) {
             case 0:
                 var2 = arg0;
                 var _closure2_slot0 = var2;
@@ -29,19 +29,19 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var3 = var3.document;
                 var4 = null;
                 if (!(var4 != var3)) {
-                    _fun10752_ip = 60;
-                    continue _fun10752
+                    _fun10754_ip = 60;
+                    continue _fun10754
                 }
             case 51:
                 var3 = var3.prerendering;
                 if (var3) {
-                    _fun10752_ip = 66;
-                    continue _fun10752
+                    _fun10754_ip = 66;
+                    continue _fun10754
                 }
             case 60:
                 var2 = var2.bind(var0)();
-                _fun10752_ip = 94;
-                continue _fun10752;
+                _fun10754_ip = 94;
+                continue _fun10754;
             case 66:
                 var2 = global;
                 var4 = var2.addEventListener;

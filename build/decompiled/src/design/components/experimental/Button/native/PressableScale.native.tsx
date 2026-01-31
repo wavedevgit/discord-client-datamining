@@ -43,15 +43,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot5 = var3;
     var3 = var6.forwardRef;
     var1 = function(arg0, arg1) { // Environment: var1
-        _fun57380: for (var _fun57380_ip = 0;;) switch (_fun57380_ip) {
+        _fun57392: for (var _fun57392_ip = 0;;) switch (_fun57392_ip) {
             case 0:
                 var2 = arg0;
                 var4 = var2.style;
                 var10 = var2.scaleAmountInPx;
                 var3 = undefined;
                 if (!(var10 === var3)) {
-                    _fun57380_ip = 23;
-                    continue _fun57380
+                    _fun57392_ip = 23;
+                    continue _fun57392
                 }
             case 20:
                 var10 = 8;

@@ -59,15 +59,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/user_settings/native/premium_marketing/PremiumFeaturesBackground.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: PremiumFeaturesBackground, environment: var1
-        _fun50861: for (var _fun50861_ip = 0;;) switch (_fun50861_ip) {
+        _fun50878: for (var _fun50878_ip = 0;;) switch (_fun50878_ip) {
             case 0:
                 var6 = arg0;
                 var2 = var6.premiumType;
                 var8 = var6.opacity;
                 var3 = undefined;
                 if (!(var8 === var3)) {
-                    _fun50861_ip = 25;
-                    continue _fun50861
+                    _fun50878_ip = 25;
+                    continue _fun50878
                 }
             case 22:
                 var8 = 1;
@@ -93,8 +93,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = _closure1_slot3;
                 var1 = var1.TIER_0;
                 if (!(var2 !== var1)) {
-                    _fun50861_ip = 133;
-                    continue _fun50861
+                    _fun50878_ip = 133;
+                    continue _fun50878
                 }
             case 99:
                 var2 = _closure1_slot0;
@@ -104,8 +104,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var2.bind(var3)(var1);
                 var1 = var1.Gradients;
                 var2 = var1.PREMIUM_TIER_2_TRI_COLOR;
-                _fun50861_ip = 165;
-                continue _fun50861;
+                _fun50878_ip = 165;
+                continue _fun50878;
             case 133:
                 var7 = _closure1_slot0;
                 var11 = _closure1_slot2;
@@ -118,8 +118,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = 1;
                 var7 = var2;
                 if (!(var8 < var1)) {
-                    _fun50861_ip = 190;
-                    continue _fun50861
+                    _fun50878_ip = 190;
+                    continue _fun50878
                 }
             case 175:
                 var1 = var2.map;

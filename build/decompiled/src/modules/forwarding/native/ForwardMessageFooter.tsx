@@ -46,7 +46,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/forwarding/native/ForwardMessageFooter.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: ForwardMessageFooter, environment: var1
-        _fun72847: for (var _fun72847_ip = 0;;) switch (_fun72847_ip) {
+        _fun72879: for (var _fun72879_ip = 0;;) switch (_fun72879_ip) {
             case 0:
                 var0 = arg0;
                 var24 = var0.message;
@@ -185,16 +185,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0 > var1;
                 var5 = undefined;
                 if (!var0) {
-                    _fun72847_ip = 512;
-                    continue _fun72847
+                    _fun72879_ip = 512;
+                    continue _fun72879
                 }
             case 405:
                 var0 = var15.length;
                 var0 = var0 > var1;
                 var5 = undefined;
                 if (!var0) {
-                    _fun72847_ip = 512;
-                    continue _fun72847
+                    _fun72879_ip = 512;
+                    continue _fun72879
                 }
             case 419:
                 var1 = _closure1_slot0;
@@ -248,8 +248,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7.disabled = var18;
                 var18 = undefined;
                 if (var17) {
-                    _fun72847_ip = 637;
-                    continue _fun72847
+                    _fun72879_ip = 637;
+                    continue _fun72879
                 }
             case 634:
                 var18 = var9;
@@ -283,4 +283,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.ForwardMessageFooter = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 3960, 33, 8839, 6583, 566, 6442, 9118, 1234, 9119, 9120, 4043, 9128, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 3960, 33, 8839, 6584, 566, 6443, 9121, 1234, 9122, 9123, 4043, 9130, 2]);

@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var4;
     var0 = function() { // Original name: _isNativeReflectConstruct, environment: var3
-        _fun41180: for (var _fun41180_ip = 0;;) switch (_fun41180_ip) {
+        _fun41197: for (var _fun41197_ip = 0;;) switch (_fun41197_ip) {
             case 0:
             case 2: // try_start_0
                 var1 = global;
@@ -28,8 +28,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = !var1;
                 var _closure2_slot0 = var1;
             case 70: // try_end0
-                _fun41180_ip = 74;
-                continue _fun41180;
+                _fun41197_ip = 74;
+                continue _fun41197;
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
@@ -58,7 +58,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var3 = var2.bind(var3)(var1);
         var2 = var3.forEach;
         var1 = function(arg0) { // Environment: var1
-            _fun41184: for (var _fun41184_ip = 0;;) switch (_fun41184_ip) {
+            _fun41201: for (var _fun41201_ip = 0;;) switch (_fun41201_ip) {
                 case 0:
                     var1 = arg0;
                     var3 = _closure1_slot7;
@@ -66,8 +66,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var3 = var2.bind(var3)(var1);
                     var2 = null;
                     if (!(var2 == var3)) {
-                        _fun41184_ip = 34;
-                        continue _fun41184
+                        _fun41201_ip = 34;
+                        continue _fun41201
                     }
                 case 26:
                     var0 = _closure1_slot9;
@@ -122,7 +122,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var1.PersistedStore;
     var1 = function(arg0) { // Environment: var3
         var3 = function() { // Original name: CollapsedVoiceChannelStore, environment: var5
-            _fun41186: for (var _fun41186_ip = 0;;) switch (_fun41186_ip) {
+            _fun41203: for (var _fun41203_ip = 0;;) switch (_fun41203_ip) {
                 case 0:
                     var3 = this;
                     var2 = undefined;
@@ -136,16 +136,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = _closure1_slot10;
                     var0 = var0.bind(var2)();
                     if (var0) {
-                        _fun41186_ip = 69;
-                        continue _fun41186
+                        _fun41203_ip = 69;
+                        continue _fun41203
                     }
                 case 51:
                     var6 = var8.apply;
                     var4 = arguments;
                     var0 = var4;
                     var0 = var6.bind(var8)(var3, var0);
-                    _fun41186_ip = 105;
-                    continue _fun41186;
+                    _fun41203_ip = 105;
+                    continue _fun41203;
                 case 69:
                     var6 = global;
                     var7 = var6.Reflect;
@@ -170,7 +170,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = 'initialize';
         var4.key = var0;
         var0 = function(arg0) { // Original name: value, environment: var5
-            _fun41187: for (var _fun41187_ip = 0;;) switch (_fun41187_ip) {
+            _fun41204: for (var _fun41204_ip = 0;;) switch (_fun41204_ip) {
                 case 0:
                     var1 = arg0;
                     var4 = this;
@@ -179,8 +179,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = var3.bind(var4)(var2);
                     var2 = null;
                     if (!(var2 == var1)) {
-                        _fun41187_ip = 34;
-                        continue _fun41187
+                        _fun41204_ip = 34;
+                        continue _fun41204
                     }
                 case 30:
                     var1 = _closure1_slot8;
@@ -215,14 +215,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var6 = 'isCollapsed';
         var4.key = var6;
         var5 = function(arg0) { // Original name: value, environment: var5
-            _fun41190: for (var _fun41190_ip = 0;;) switch (_fun41190_ip) {
+            _fun41207: for (var _fun41207_ip = 0;;) switch (_fun41207_ip) {
                 case 0:
                     var1 = _closure1_slot9;
                     var0 = arg0;
                     var0 = var1[var0];
                     if (var0) {
-                        _fun41190_ip = 19;
-                        continue _fun41190
+                        _fun41207_ip = 19;
+                        continue _fun41207
                     }
                 case 17:
                     var0 = false;
@@ -247,7 +247,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.CONNECTION_OPEN = var7;
     var1.OVERLAY_INITIALIZE = var7;
     var3 = function(arg0) { // Original name: handleChannelCollapse, environment: var3
-        _fun41191: for (var _fun41191_ip = 0;;) switch (_fun41191_ip) {
+        _fun41208: for (var _fun41208_ip = 0;;) switch (_fun41208_ip) {
             case 0:
                 var0 = arg0;
                 var2 = var0.channelId;
@@ -255,14 +255,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var0[var2];
                 var0 = _closure1_slot9;
                 if (var3) {
-                    _fun41191_ip = 34;
-                    continue _fun41191
+                    _fun41208_ip = 34;
+                    continue _fun41208
                 }
             case 26:
                 var3 = true;
                 var0[var2] = var3;
-                _fun41191_ip = 38;
-                continue _fun41191;
+                _fun41208_ip = 38;
+                continue _fun41208;
             case 34:
                 var0 = delete var0[var2];
             case 38:

@@ -16,7 +16,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = undefined;
     var2.reflectionScalarDefault = var0;
     var1 = function(arg0) { // Original name: reflectionScalarDefault, environment: var1
-        _fun14964: for (var _fun14964_ip = 0;;) switch (_fun14964_ip) {
+        _fun14966: for (var _fun14966_ip = 0;;) switch (_fun14966_ip) {
             case 0:
                 var6 = arg0;
                 var5 = undefined;
@@ -24,14 +24,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = arguments.length;
                 var0 = 1;
                 if (!(var2 > var0)) {
-                    _fun14964_ip = 25;
-                    continue _fun14964
+                    _fun14966_ip = 25;
+                    continue _fun14966
                 }
             case 17:
                 var2 = arguments[var0];
                 if (!(var5 === var2)) {
-                    _fun14964_ip = 61;
-                    continue _fun14964
+                    _fun14966_ip = 61;
+                    continue _fun14966
                 }
             case 25:
                 var3 = _closure1_slot0;
@@ -41,8 +41,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = var3.bind(var5)(var2);
                 var2 = var2.LongType;
                 var3 = var2.STRING;
-                _fun14964_ip = 65;
-                continue _fun14964;
+                _fun14966_ip = 65;
+                continue _fun14966;
             case 61:
                 var3 = arguments[var0];
             case 65:
@@ -54,8 +54,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var4 = var4.ScalarType;
                 var4 = var4.BOOL;
                 if (!(var4 !== var6)) {
-                    _fun14964_ip = 573;
-                    continue _fun14964
+                    _fun14966_ip = 573;
+                    continue _fun14966
                 }
             case 106:
                 var7 = _closure1_slot0;
@@ -65,8 +65,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var4 = var4.ScalarType;
                 var4 = var4.UINT64;
                 if (!(var4 !== var6)) {
-                    _fun14964_ip = 518;
-                    continue _fun14964
+                    _fun14966_ip = 518;
+                    continue _fun14966
                 }
             case 142:
                 var7 = _closure1_slot0;
@@ -76,8 +76,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var4 = var4.ScalarType;
                 var4 = var4.FIXED64;
                 if (!(var4 !== var6)) {
-                    _fun14964_ip = 518;
-                    continue _fun14964
+                    _fun14966_ip = 518;
+                    continue _fun14966
                 }
             case 178:
                 var7 = _closure1_slot0;
@@ -87,8 +87,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var4 = var4.ScalarType;
                 var4 = var4.INT64;
                 if (!(var4 !== var6)) {
-                    _fun14964_ip = 463;
-                    continue _fun14964
+                    _fun14966_ip = 463;
+                    continue _fun14966
                 }
             case 214:
                 var7 = _closure1_slot0;
@@ -98,8 +98,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var4 = var4.ScalarType;
                 var4 = var4.SFIXED64;
                 if (!(var4 !== var6)) {
-                    _fun14964_ip = 463;
-                    continue _fun14964
+                    _fun14966_ip = 463;
+                    continue _fun14966
                 }
             case 250:
                 var7 = _closure1_slot0;
@@ -109,8 +109,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var4 = var4.ScalarType;
                 var4 = var4.SINT64;
                 if (!(var4 !== var6)) {
-                    _fun14964_ip = 463;
-                    continue _fun14964
+                    _fun14966_ip = 463;
+                    continue _fun14966
                 }
             case 286:
                 var7 = _closure1_slot0;
@@ -120,8 +120,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var4 = var4.ScalarType;
                 var4 = var4.DOUBLE;
                 if (!(var4 !== var6)) {
-                    _fun14964_ip = 461;
-                    continue _fun14964
+                    _fun14966_ip = 461;
+                    continue _fun14966
                 }
             case 322:
                 var7 = _closure1_slot0;
@@ -131,8 +131,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var4 = var4.ScalarType;
                 var4 = var4.FLOAT;
                 if (!(var4 !== var6)) {
-                    _fun14964_ip = 461;
-                    continue _fun14964
+                    _fun14966_ip = 461;
+                    continue _fun14966
                 }
             case 355:
                 var7 = _closure1_slot0;
@@ -142,8 +142,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var4 = var4.ScalarType;
                 var4 = var4.BYTES;
                 if (!(var4 !== var6)) {
-                    _fun14964_ip = 429;
-                    continue _fun14964
+                    _fun14966_ip = 429;
+                    continue _fun14966
                 }
             case 388:
                 var7 = _closure1_slot0;
@@ -153,8 +153,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var4 = var4.ScalarType;
                 var4 = var4.STRING;
                 if (!(var4 !== var6)) {
-                    _fun14964_ip = 423;
-                    continue _fun14964
+                    _fun14966_ip = 423;
+                    continue _fun14966
                 }
             case 421:
                 return var2;

@@ -13,31 +13,28 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.value = var2;
     var2 = '__esModule';
     var2 = var4.bind(var5)(var1, var2, var3);
-    var0 = function(arg0) { // Original name: _optionalChainDelete, environment: var0
-        _fun58878: for (var _fun58878_ip = 0;;) switch (_fun58878_ip) {
-            case 0:
-                var2 = _closure1_slot0;
-                var1 = _closure1_slot1;
-                var0 = 0;
-                var1 = var1[var0];
-                var0 = undefined;
-                var2 = var2.bind(var0)(var1);
-                var1 = var2._optionalChain;
-                var0 = arg0;
-                var1 = var1.bind(var2)(var0);
-                var0 = null;
-                var0 = var0 == var1;
-                if (var0) {
-                    _fun58878_ip = 50;
-                    continue _fun58878
-                }
-            case 47:
-                var0 = var1;
-            case 50:
-                return var0;
-        }
+    var0 = function() { // Original name: generatePropagationContext, environment: var0
+        var0 = {};
+        var3 = _closure1_slot0;
+        var4 = _closure1_slot1;
+        var1 = 0;
+        var5 = var4[var1];
+        var2 = undefined;
+        var6 = var3.bind(var2)(var5);
+        var5 = var6.uuid4;
+        var5 = var5.bind(var6)();
+        var0.traceId = var5;
+        var1 = var4[var1];
+        var2 = var3.bind(var2)(var1);
+        var1 = var2.uuid4;
+        var3 = var1.bind(var2)();
+        var2 = var3.substring;
+        var1 = 16;
+        var1 = var2.bind(var3)(var1);
+        var0.spanId = var1;
+        return var0;
     };
-    var1._optionalChainDelete = var0;
+    var1.generatePropagationContext = var0;
     var0 = undefined;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [7175]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [7151]);

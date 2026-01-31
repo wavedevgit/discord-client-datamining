@@ -40,7 +40,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/game_console/trackVoiceCallTransfer.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0, arg1, arg2) { // Original name: trackVoiceCallTransfer, environment: var1
-        _fun66908: for (var _fun66908_ip = 0;;) switch (_fun66908_ip) {
+        _fun66920: for (var _fun66920_ip = 0;;) switch (_fun66920_ip) {
             case 0:
                 var6 = arg0;
                 var11 = arg2;
@@ -58,8 +58,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var7 != var11;
                 var8 = 'discord_client';
                 if (!var9) {
-                    _fun66908_ip = 102;
-                    continue _fun66908
+                    _fun66920_ip = 102;
+                    continue _fun66920
                 }
             case 63:
                 var10 = _closure1_slot4;
@@ -68,8 +68,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = var7 == var10;
                 var9 = undefined;
                 if (var11) {
-                    _fun66908_ip = 99;
-                    continue _fun66908
+                    _fun66920_ip = 99;
+                    continue _fun66920
                 }
             case 87:
                 var10 = var10.clientInfo;
@@ -84,8 +84,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var7 == var8;
                 var7 = undefined;
                 if (var9) {
-                    _fun66908_ip = 137;
-                    continue _fun66908
+                    _fun66920_ip = 137;
+                    continue _fun66920
                 }
             case 132:
                 var7 = var8.guild_id;

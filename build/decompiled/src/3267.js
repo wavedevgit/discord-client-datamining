@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = dependencyMap;
     var _closure1_slot1 = var1;
     var1 = function(arg0) { // Original name: toInteger, environment: var0
-        _fun28166: for (var _fun28166_ip = 0;;) switch (_fun28166_ip) {
+        _fun28167: for (var _fun28167_ip = 0;;) switch (_fun28167_ip) {
             case 0:
                 var2 = _closure1_slot0;
                 var1 = _closure1_slot1;
@@ -19,14 +19,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = var3 % var1;
                 var1 = var3 == var3;
                 if (!var1) {
-                    _fun28166_ip = 59;
-                    continue _fun28166
+                    _fun28167_ip = 59;
+                    continue _fun28167
                 }
             case 46:
                 var1 = var3;
                 if (!var2) {
-                    _fun28166_ip = 56;
-                    continue _fun28166
+                    _fun28167_ip = 56;
+                    continue _fun28167
                 }
             case 52:
                 var1 = var3 - var2;

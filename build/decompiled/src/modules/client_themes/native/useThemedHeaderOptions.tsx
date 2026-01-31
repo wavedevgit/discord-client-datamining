@@ -75,12 +75,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1[0] = var5;
         var1[1] = var4;
         var0 = function() { // Environment: var0
-            _fun107771: for (var _fun107771_ip = 0;;) switch (_fun107771_ip) {
+            _fun107127: for (var _fun107127_ip = 0;;) switch (_fun107127_ip) {
                 case 0:
                     var0 = _closure2_slot0;
                     if (var0) {
-                        _fun107771_ip = 19;
-                        continue _fun107771
+                        _fun107127_ip = 19;
+                        continue _fun107127
                     }
                 case 13:
                     var0 = _closure1_slot5;
@@ -95,8 +95,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var3 = var4.isIOS;
                     var3 = var3.bind(var4)();
                     if (var3) {
-                        _fun107771_ip = 82;
-                        continue _fun107771
+                        _fun107127_ip = 82;
+                        continue _fun107127
                     }
                 case 54:
                     var3 = {};
@@ -112,8 +112,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var4 = var4 > var3;
                     var3 = 0;
                     if (!var4) {
-                        _fun107771_ip = 101;
-                        continue _fun107771
+                        _fun107127_ip = 101;
+                        continue _fun107127
                     }
                 case 98:
                     var3 = var0;
@@ -127,8 +127,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = var0.bind(var4)();
                     var4 = 44;
                     if (!var0) {
-                        _fun107771_ip = 140;
-                        continue _fun107771
+                        _fun107127_ip = 140;
+                        continue _fun107127
                     }
                 case 137:
                     var4 = 46;

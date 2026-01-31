@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var10;
     var _closure1_slot1 = var11;
     var7 = function(arg0) { // Original name: isGroupDMInvite, environment: var1
-        _fun28577: for (var _fun28577_ip = 0;;) switch (_fun28577_ip) {
+        _fun28578: for (var _fun28578_ip = 0;;) switch (_fun28578_ip) {
             case 0:
                 var2 = arg0;
                 var1 = var2.type;
@@ -15,16 +15,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0.GROUP_DM;
                 var0 = var1 === var0;
                 if (var0) {
-                    _fun28577_ip = 66;
-                    continue _fun28577
+                    _fun28578_ip = 66;
+                    continue _fun28578
                 }
             case 28:
                 var4 = var2.channel;
                 var1 = null;
                 var1 = var1 != var4;
                 if (!var1) {
-                    _fun28577_ip = 63;
-                    continue _fun28577
+                    _fun28578_ip = 63;
+                    continue _fun28578
                 }
             case 42:
                 var4 = _closure1_slot3;
@@ -40,15 +40,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var _closure1_slot7 = var7;
     var6 = function(arg0) { // Original name: isGuildScheduledEventInviteEmbed, environment: var1
-        _fun28578: for (var _fun28578_ip = 0;;) switch (_fun28578_ip) {
+        _fun28579: for (var _fun28579_ip = 0;;) switch (_fun28579_ip) {
             case 0:
                 var0 = arg0;
                 var3 = var0.guild_scheduled_event;
                 var0 = null;
                 var0 = var0 != var3;
                 if (!var0) {
-                    _fun28578_ip = 32;
-                    continue _fun28578
+                    _fun28579_ip = 32;
+                    continue _fun28579
                 }
             case 18:
                 var2 = _closure1_slot2;
@@ -60,7 +60,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var _closure1_slot8 = var6;
     var5 = function(arg0) { // Original name: isFriendInvite, environment: var1
-        _fun28579: for (var _fun28579_ip = 0;;) switch (_fun28579_ip) {
+        _fun28580: for (var _fun28580_ip = 0;;) switch (_fun28580_ip) {
             case 0:
                 var2 = arg0;
                 var1 = var2.type;
@@ -68,16 +68,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0.FRIEND;
                 var0 = var1 === var0;
                 if (var0) {
-                    _fun28579_ip = 55;
-                    continue _fun28579
+                    _fun28580_ip = 55;
+                    continue _fun28580
                 }
             case 28:
                 var1 = var2.guild;
                 var3 = null;
                 var1 = var3 == var1;
                 if (!var1) {
-                    _fun28579_ip = 52;
-                    continue _fun28579
+                    _fun28580_ip = 52;
+                    continue _fun28580
                 }
             case 42:
                 var2 = var2.inviter;
@@ -156,7 +156,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.isRoleSubscriptionInvite = var6;
     var6 = function(arg0) { // Original name: isStreamInvite, environment: var1
-        _fun28582: for (var _fun28582_ip = 0;;) switch (_fun28582_ip) {
+        _fun28583: for (var _fun28583_ip = 0;;) switch (_fun28583_ip) {
             case 0:
                 var1 = arg0;
                 var2 = var1.target_type;
@@ -164,8 +164,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0.STREAM;
                 var0 = var2 === var0;
                 if (!var0) {
-                    _fun28582_ip = 41;
-                    continue _fun28582
+                    _fun28583_ip = 41;
+                    continue _fun28583
                 }
             case 29:
                 var2 = var1.target_user;
@@ -179,47 +179,47 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.isFriendInvite = var5;
     var2.isEmbeddedApplicationInvite = var4;
     var4 = function(arg0) { // Original name: getInviteType, environment: var1
-        _fun28583: for (var _fun28583_ip = 0;;) switch (_fun28583_ip) {
+        _fun28584: for (var _fun28584_ip = 0;;) switch (_fun28584_ip) {
             case 0:
                 var1 = arg0;
                 var0 = var1.type;
                 var2 = 'number';
                 var0 = typeof var0;
                 if (!(var2 !== var0)) {
-                    _fun28583_ip = 80;
-                    continue _fun28583
+                    _fun28584_ip = 80;
+                    continue _fun28584
                 }
             case 19:
                 var0 = _closure1_slot7;
                 var3 = undefined;
                 var0 = var0.bind(var3)(var1);
                 if (var0) {
-                    _fun28583_ip = 68;
-                    continue _fun28583
+                    _fun28584_ip = 68;
+                    continue _fun28584
                 }
             case 36:
                 var0 = _closure1_slot9;
                 var0 = var0.bind(var3)(var1);
                 var3 = _closure1_slot5;
                 if (var0) {
-                    _fun28583_ip = 60;
-                    continue _fun28583
+                    _fun28584_ip = 60;
+                    continue _fun28584
                 }
             case 52:
                 var0 = var3.GUILD;
-                _fun28583_ip = 66;
-                continue _fun28583;
+                _fun28584_ip = 66;
+                continue _fun28584;
             case 60:
                 var0 = var3.FRIEND;
             case 66:
-                _fun28583_ip = 78;
-                continue _fun28583;
+                _fun28584_ip = 78;
+                continue _fun28584;
             case 68:
                 var2 = _closure1_slot5;
                 var0 = var2.GROUP_DM;
             case 78:
-                _fun28583_ip = 85;
-                continue _fun28583;
+                _fun28584_ip = 85;
+                continue _fun28584;
             case 80:
                 var0 = var1.type;
             case 85:
@@ -229,22 +229,22 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.getInviteType = var4;
     var2.GuildInviteExtendedType = var3;
     var1 = function(arg0) { // Original name: getGuildInviteExtendedType, environment: var1
-        _fun28584: for (var _fun28584_ip = 0;;) switch (_fun28584_ip) {
+        _fun28585: for (var _fun28585_ip = 0;;) switch (_fun28585_ip) {
             case 0:
                 var3 = arg0;
                 var0 = _closure1_slot8;
                 var4 = undefined;
                 var0 = var0.bind(var4)(var3);
                 if (var0) {
-                    _fun28584_ip = 98;
-                    continue _fun28584
+                    _fun28585_ip = 98;
+                    continue _fun28585
                 }
             case 20:
                 var0 = _closure1_slot10;
                 var0 = var0.bind(var4)(var3);
                 if (var0) {
-                    _fun28584_ip = 86;
-                    continue _fun28584
+                    _fun28585_ip = 86;
+                    continue _fun28585
                 }
             case 32:
                 var2 = _closure1_slot0;
@@ -256,24 +256,24 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0.bind(var2)(var3);
                 var2 = _closure1_slot6;
                 if (var0) {
-                    _fun28584_ip = 78;
-                    continue _fun28584
+                    _fun28585_ip = 78;
+                    continue _fun28585
                 }
             case 70:
                 var0 = var2.DEFAULT;
-                _fun28584_ip = 84;
-                continue _fun28584;
+                _fun28585_ip = 84;
+                continue _fun28585;
             case 78:
                 var0 = var2.PROFILE;
             case 84:
-                _fun28584_ip = 96;
-                continue _fun28584;
+                _fun28585_ip = 96;
+                continue _fun28585;
             case 86:
                 var2 = _closure1_slot6;
                 var0 = var2.APPLICATION;
             case 96:
-                _fun28584_ip = 108;
-                continue _fun28584;
+                _fun28585_ip = 108;
+                continue _fun28585;
             case 98:
                 var1 = _closure1_slot6;
                 var0 = var1.EVENT;

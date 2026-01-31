@@ -118,7 +118,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/reactions/native/useBurstToggleCoachmark.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: useBurstToggleCoachmark, environment: var1
-        _fun57302: for (var _fun57302_ip = 0;;) switch (_fun57302_ip) {
+        _fun57314: for (var _fun57314_ip = 0;;) switch (_fun57314_ip) {
             case 0:
                 var2 = _closure1_slot0;
                 var6 = _closure1_slot2;
@@ -143,13 +143,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var2.isPremium;
                 var0 = var0.bind(var2)(var5);
                 if (var0) {
-                    _fun57302_ip = 87;
-                    continue _fun57302
+                    _fun57314_ip = 87;
+                    continue _fun57314
                 }
             case 81:
                 var7 = new Array(0);
-                _fun57302_ip = 102;
-                continue _fun57302;
+                _fun57314_ip = 102;
+                continue _fun57314;
             case 87:
                 var2 = _closure1_slot9;
                 var0 = new Array(1);
@@ -241,4 +241,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 1613, 1369, 33, 1358, 1297, 671, 6977, 566, 3068, 5918, 1234, 6979, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 1613, 1369, 33, 1358, 1297, 671, 6976, 566, 3068, 5919, 1234, 6978, 2]);

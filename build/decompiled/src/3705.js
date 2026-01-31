@@ -41,15 +41,15 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var1;
     var1 = function() { // Environment: var0
         var0 = function(arg0) { // Original name: isWorkletFunction, environment: var0
-            _fun33129: for (var _fun33129_ip = 0;;) switch (_fun33129_ip) {
+            _fun33145: for (var _fun33145_ip = 0;;) switch (_fun33145_ip) {
                 case 0:
                     var1 = arg0;
                     var2 = 'function';
                     var0 = typeof var1;
                     var0 = var2 === var0;
                     if (!var0) {
-                        _fun33129_ip = 28;
-                        continue _fun33129
+                        _fun33145_ip = 28;
+                        continue _fun33145
                     }
                 case 17:
                     var1 = var1.__workletHash;

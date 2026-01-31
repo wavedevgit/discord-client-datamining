@@ -28,7 +28,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var3.jsx;
     var _closure1_slot4 = var3;
     var3 = function(arg0) { // Original name: MessageRequestRestrictedGuildPrivacyOption, environment: var1
-        _fun97077: for (var _fun97077_ip = 0;;) switch (_fun97077_ip) {
+        _fun96441: for (var _fun96441_ip = 0;;) switch (_fun96441_ip) {
             case 0:
                 var0 = arg0;
                 var2 = var0.guild;
@@ -58,7 +58,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = new Array(1);
                 var2[0] = var8;
                 var1 = function(arg0) { // Environment: var1
-                    _fun97078: for (var _fun97078_ip = 0;;) switch (_fun97078_ip) {
+                    _fun96442: for (var _fun96442_ip = 0;;) switch (_fun96442_ip) {
                         case 0:
                             var3 = _closure1_slot0;
                             var2 = _closure1_slot2;
@@ -70,15 +70,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var5 = var2.bind(var3)();
                             var2 = arg0;
                             if (var2) {
-                                _fun97078_ip = 60;
-                                continue _fun97078
+                                _fun96442_ip = 60;
+                                continue _fun96442
                             }
                         case 41:
                             var3 = var5.add;
                             var2 = _closure2_slot0;
                             var2 = var3.bind(var5)(var2);
-                            _fun97078_ip = 77;
-                            continue _fun97078;
+                            _fun96442_ip = 77;
+                            continue _fun96442;
                         case 60:
                             var3 = var5.delete;
                             var2 = _closure2_slot0;
@@ -129,8 +129,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0.subLabel = var6;
                 var6 = !var4;
                 if (!var6) {
-                    _fun97077_ip = 277;
-                    continue _fun97077
+                    _fun96441_ip = 277;
+                    continue _fun96441
                 }
             case 274:
                 var6 = !var7;
@@ -150,7 +150,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/message_request/native/hooks/useMessageRequestPrivacyOption.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: useMessageRequestPrivacyOption, environment: var1
-        _fun97079: for (var _fun97079_ip = 0;;) switch (_fun97079_ip) {
+        _fun96443: for (var _fun96443_ip = 0;;) switch (_fun96443_ip) {
             case 0:
                 var0 = arg0;
                 var5 = var0.guild;
@@ -163,8 +163,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var0.bind(var4)();
                 var0 = null;
                 if (var2) {
-                    _fun97079_ip = 62;
-                    continue _fun97079
+                    _fun96443_ip = 62;
+                    continue _fun96443
                 }
             case 42:
                 var3 = _closure1_slot4;
@@ -178,4 +178,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useMessageRequestPrivacyOption = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 1348, 7188, 7695, 1234, 11787, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 1348, 7187, 7694, 1234, 11722, 2]);

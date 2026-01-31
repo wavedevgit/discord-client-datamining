@@ -42,7 +42,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/notifications/settings/native/NotificationSettingsChannelPost.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: NotificationSettingsChannelPost, environment: var1
-        _fun69898: for (var _fun69898_ip = 0;;) switch (_fun69898_ip) {
+        _fun69922: for (var _fun69922_ip = 0;;) switch (_fun69922_ip) {
             case 0:
                 var4 = arg0;
                 var _closure2_slot0 = var4;
@@ -122,8 +122,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6.label = var12;
                 var6.checked = var11;
                 if (var9) {
-                    _fun69898_ip = 279;
-                    continue _fun69898
+                    _fun69922_ip = 279;
+                    continue _fun69922
                 }
             case 276:
                 var9 = var10;
@@ -155,4 +155,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.NotificationSettingsChannelPost = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 4266, 33, 566, 5324, 1234, 8732, 4660, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 4267, 33, 566, 5325, 1234, 8732, 4661, 2]);

@@ -1,6 +1,6 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun34965: for (var _fun34965_ip = 0;;) switch (_fun34965_ip) {
+    _fun34981: for (var _fun34981_ip = 0;;) switch (_fun34981_ip) {
         case 0:
             var5 = require;
             var2 = exports;
@@ -23,14 +23,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var _closure1_slot3 = var0;
             var1 = function() { // Environment: var4
                 var0 = function(arg0, arg1) { // Original name: setNativePropsFabric, environment: var0
-                    _fun34967: for (var _fun34967_ip = 0;;) switch (_fun34967_ip) {
+                    _fun34983: for (var _fun34983_ip = 0;;) switch (_fun34983_ip) {
                         case 0:
                             var0 = arg1;
                             var1 = global;
                             var2 = var1._WORKLET;
                             if (var2) {
-                                _fun34967_ip = 62;
-                                continue _fun34967
+                                _fun34983_ip = 62;
+                                continue _fun34983
                             }
                         case 17:
                             var4 = _closure1_slot1;
@@ -43,8 +43,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var3 = var4.warn;
                             var2 = 'setNativeProps() can only be used on the UI runtime.';
                             var2 = var3.bind(var4)(var2);
-                            _fun34967_ip = 137;
-                            continue _fun34967;
+                            _fun34983_ip = 137;
+                            continue _fun34983;
                         case 62:
                             var2 = arg0;
                             var5 = undefined;
@@ -98,15 +98,15 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var _closure1_slot4 = var1;
             var1 = function() { // Environment: var4
                 var0 = function(arg0, arg1) { // Original name: setNativePropsPaper, environment: var0
-                    _fun34969: for (var _fun34969_ip = 0;;) switch (_fun34969_ip) {
+                    _fun34985: for (var _fun34985_ip = 0;;) switch (_fun34985_ip) {
                         case 0:
                             var1 = arg0;
                             var0 = arg1;
                             var2 = global;
                             var2 = var2._WORKLET;
                             if (var2) {
-                                _fun34969_ip = 65;
-                                continue _fun34969
+                                _fun34985_ip = 65;
+                                continue _fun34985
                             }
                         case 17:
                             var4 = _closure1_slot1;
@@ -119,8 +119,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var3 = var4.warn;
                             var2 = 'setNativeProps() can only be used on the UI runtime.';
                             var2 = var3.bind(var4)(var2);
-                            _fun34969_ip = 177;
-                            continue _fun34969;
+                            _fun34985_ip = 177;
+                            continue _fun34985;
                         case 65:
                             var6 = undefined;
                             var5 = var1.bind(var6)();
@@ -129,8 +129,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var3 = var4 == var2;
                             var1 = undefined;
                             if (var3) {
-                                _fun34969_ip = 93;
-                                continue _fun34969
+                                _fun34985_ip = 93;
+                                continue _fun34985
                             }
                         case 88:
                             var1 = var2.value;
@@ -138,8 +138,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var2 = var4 != var1;
                             var4 = null;
                             if (!var2) {
-                                _fun34969_ip = 105;
-                                continue _fun34969
+                                _fun34985_ip = 105;
+                                continue _fun34985
                             }
                         case 102:
                             var4 = var1;
@@ -195,27 +195,27 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var8 = var6[var3];
             var8 = var5.bind(var0)(var8);
             if (var9) {
-                _fun34965_ip = 162;
-                continue _fun34965
+                _fun34981_ip = 162;
+                continue _fun34981
             }
         case 144:
             var9 = var8.isFabric;
             var9 = var9.bind(var8)();
             if (!var9) {
-                _fun34965_ip = 160;
-                continue _fun34965
+                _fun34981_ip = 160;
+                continue _fun34981
             }
         case 157:
             var1 = var7;
         case 160:
-            _fun34965_ip = 219;
-            continue _fun34965;
+            _fun34981_ip = 219;
+            continue _fun34981;
         case 162:
             var7 = var8.isJest;
             var7 = var7.bind(var8)();
             if (var7) {
-                _fun34965_ip = 211;
-                continue _fun34965
+                _fun34981_ip = 211;
+                continue _fun34981
             }
         case 175:
             var3 = var6[var3];
@@ -223,8 +223,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var3 = var5.isChromeDebugger;
             var3 = var3.bind(var5)();
             if (var3) {
-                _fun34965_ip = 204;
-                continue _fun34965
+                _fun34981_ip = 204;
+                continue _fun34981
             }
         case 197:
             var3 = function() { // Original name: setNativePropsDefault, environment: var4
@@ -240,8 +240,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = var2.bind(var3)(var1);
                 return var0;
             };
-            _fun34965_ip = 209;
-            continue _fun34965;
+            _fun34981_ip = 209;
+            continue _fun34981;
         case 204:
             var3 = function() { // Original name: setNativePropsChromeDebugger, environment: var4
                 var2 = _closure1_slot1;
@@ -257,8 +257,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var0;
             };
         case 209:
-            _fun34965_ip = 216;
-            continue _fun34965;
+            _fun34981_ip = 216;
+            continue _fun34981;
         case 211:
             var3 = function() { // Original name: setNativePropsJest, environment: var4
                 var2 = _closure1_slot1;

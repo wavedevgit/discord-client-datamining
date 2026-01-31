@@ -1,7 +1,7 @@
 // modules/gateway/GatewayEncoding.tsx
 // @ts-nocheck
 export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun95184: for (var _fun95184_ip = 0;;) switch (_fun95184_ip) {
+    _fun94547: for (var _fun94547_ip = 0;;) switch (_fun94547_ip) {
         case 0:
             var4 = require;
             var6 = metroImportDefault;
@@ -58,14 +58,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = 'unpack';
                 var0.key = var5;
                 var5 = function(arg0) { // Original name: value, environment: var4
-                    _fun95188: for (var _fun95188_ip = 0;;) switch (_fun95188_ip) {
+                    _fun94551: for (var _fun94551_ip = 0;;) switch (_fun94551_ip) {
                         case 0:
                             var4 = arg0;
                             var1 = typeof var4;
                             var0 = 'string';
                             if (!(var0 === var1)) {
-                                _fun95188_ip = 35;
-                                continue _fun95188
+                                _fun94551_ip = 35;
+                                continue _fun94551
                             }
                         case 14:
                             var0 = global;
@@ -79,8 +79,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var3 = null;
                             var4 = var3 == var4;
                             if (var4) {
-                                _fun95188_ip = 55;
-                                continue _fun95188
+                                _fun94551_ip = 55;
+                                continue _fun94551
                             }
                         case 52:
                             var3 = var1;
@@ -128,8 +128,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var3 = var1.bind(var0)();
             var1 = var3;
             if (!(var0 !== var6)) {
-                _fun95184_ip = 122;
-                continue _fun95184
+                _fun94547_ip = 122;
+                continue _fun94547
             }
         case 119:
             var1 = var6;
@@ -141,8 +141,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var6 = var7.isDiscordGatewayPlaintextSet;
             var6 = var6.bind(var7)();
             if (!var6) {
-                _fun95184_ip = 156;
-                continue _fun95184
+                _fun94547_ip = 156;
+                continue _fun94547
             }
         case 153:
             var1 = var3;
@@ -156,4 +156,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var2.default = var1;
             return var0;
     }
-})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 12415, 3976, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 12351, 3976, 2]);

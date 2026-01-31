@@ -71,7 +71,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.RegistrationSteps = var4;
     var2.RegisterTransitionSteps = var3;
     var1 = function(arg0) { // Original name: authStateToRegisterTransitionStep, environment: var1
-        _fun100840: for (var _fun100840_ip = 0;;) switch (_fun100840_ip) {
+        _fun100211: for (var _fun100211_ip = 0;;) switch (_fun100211_ip) {
             case 0:
                 var3 = arg0;
                 var4 = _closure1_slot0;
@@ -83,8 +83,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var2.AuthStates;
                 var2 = var2.REGISTER_IDENTITY;
                 if (!(var2 !== var3)) {
-                    _fun100840_ip = 231;
-                    continue _fun100840
+                    _fun100211_ip = 231;
+                    continue _fun100211
                 }
             case 46:
                 var4 = _closure1_slot0;
@@ -94,8 +94,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var2.AuthStates;
                 var2 = var2.REGISTER_DISPLAY_NAME;
                 if (!(var2 !== var3)) {
-                    _fun100840_ip = 219;
-                    continue _fun100840
+                    _fun100211_ip = 219;
+                    continue _fun100211
                 }
             case 82:
                 var4 = _closure1_slot0;
@@ -105,8 +105,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var2.AuthStates;
                 var2 = var2.REGISTER_ACCOUNT_INFORMATION;
                 if (!(var2 !== var3)) {
-                    _fun100840_ip = 207;
-                    continue _fun100840
+                    _fun100211_ip = 207;
+                    continue _fun100211
                 }
             case 115:
                 var4 = _closure1_slot0;
@@ -116,8 +116,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var2.AuthStates;
                 var2 = var2.AGE_GATE;
                 if (!(var2 !== var3)) {
-                    _fun100840_ip = 195;
-                    continue _fun100840
+                    _fun100211_ip = 195;
+                    continue _fun100211
                 }
             case 148:
                 var4 = _closure1_slot0;
@@ -127,8 +127,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var2.AuthStates;
                 var2 = var2.VERIFY_PHONE;
                 if (!(var2 !== var3)) {
-                    _fun100840_ip = 183;
-                    continue _fun100840
+                    _fun100211_ip = 183;
+                    continue _fun100211
                 }
             case 181:
                 return var1;

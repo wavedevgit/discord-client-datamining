@@ -43,7 +43,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot8 = var3;
     var4 = var7.forwardRef;
     var3 = function(arg0, arg1) { // Environment: var1
-        _fun37214: for (var _fun37214_ip = 0;;) switch (_fun37214_ip) {
+        _fun37231: for (var _fun37231_ip = 0;;) switch (_fun37231_ip) {
             case 0:
                 var7 = arg0;
                 var3 = _closure1_slot8;
@@ -67,8 +67,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var9 = !var8;
                 var8 = !var9;
                 if (!var9) {
-                    _fun37214_ip = 91;
-                    continue _fun37214
+                    _fun37231_ip = 91;
+                    continue _fun37231
                 }
             case 85:
                 var8 = var7.topInsetEnabled;

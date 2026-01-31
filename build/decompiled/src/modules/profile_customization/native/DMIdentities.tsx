@@ -94,7 +94,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/profile_customization/native/DMIdentities.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: DMIdentities, environment: var1
-        _fun87811: for (var _fun87811_ip = 0;;) switch (_fun87811_ip) {
+        _fun87115: for (var _fun87115_ip = 0;;) switch (_fun87115_ip) {
             case 0:
                 var1 = arg0;
                 var0 = var1.user;
@@ -123,8 +123,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var14 = var2.bind(var3)(var0);
                 var0 = null;
                 if (!var1) {
-                    _fun87811_ip = 478;
-                    continue _fun87811
+                    _fun87115_ip = 477;
+                    continue _fun87115
                 }
             case 126:
                 var3 = _closure1_slot5;
@@ -188,7 +188,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var14 = -5;
                 var11.offsetAmount = var14;
                 var13 = function(arg0, arg1) { // Original name: renderItem, environment: var13
-                    _fun87812: for (var _fun87812_ip = 0;;) switch (_fun87812_ip) {
+                    _fun87116: for (var _fun87116_ip = 0;;) switch (_fun87116_ip) {
                         case 0:
                             var3 = _closure1_slot4;
                             var1 = _closure1_slot1;
@@ -211,8 +211,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var5 = arg1;
                             var4 = undefined;
                             if (var5) {
-                                _fun87812_ip = 100;
-                                continue _fun87812
+                                _fun87116_ip = 100;
+                                continue _fun87116
                             }
                         case 86:
                             var4 = {
@@ -246,10 +246,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5[2] = var6;
                 var1.children = var5;
                 var0 = var3.bind(var4)(var2, var1);
-            case 478:
+            case 477:
                 return var0;
         }
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 11295, 5546, 3901, 1234, 8032, 5413, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 11228, 5547, 3900, 1234, 8031, 5414, 2]);

@@ -10,11 +10,11 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = {
         '__packager_asset': true,
         'httpServerLocation': '/assets/images/native/premium/illustrations',
-        'width': 134.5,
-        'height': 82,
+        'width': 180,
+        'height': 108.5,
         'scales': null,
-        'hash': 'db25e5ae76d4f6a3f9af5fda0e269762',
-        'name': 'img_what_you_lose_uploads',
+        'hash': '9b8bd10d33176958273580b349a5855d',
+        'name': 'img_what_you_lose_hd_video',
         'type': 'png'
     };
     var4 = [2, 3];

@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = dependencyMap;
     var _closure1_slot1 = var1;
     var1 = function() { // Original name: mapCacheClear, environment: var0
-        _fun31505: for (var _fun31505_ip = 0;;) switch (_fun31505_ip) {
+        _fun31513: for (var _fun31513_ip = 0;;) switch (_fun31513_ip) {
             case 0:
                 var2 = this;
                 var5 = 0;
@@ -30,8 +30,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var4 = var7[var4];
                 var4 = var6.bind(var0)(var4);
                 if (var4) {
-                    _fun31505_ip = 93;
-                    continue _fun31505
+                    _fun31513_ip = 93;
+                    continue _fun31513
                 }
             case 73:
                 var7 = _closure1_slot0;

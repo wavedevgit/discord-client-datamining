@@ -15,7 +15,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2.value = var6;
     var2 = var4.bind(var5)(var1, var3, var2);
     var0 = function(arg0) { // Original name: whenIdleOrHidden, environment: var0
-        _fun10801: for (var _fun10801_ip = 0;;) switch (_fun10801_ip) {
+        _fun10803: for (var _fun10803_ip = 0;;) switch (_fun10803_ip) {
             case 0:
                 var1 = arg0;
                 var _closure2_slot0 = var1;
@@ -28,8 +28,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var3 = var3.WINDOW;
                 var6 = var3.requestIdleCallback;
                 if (var6) {
-                    _fun10801_ip = 76;
-                    continue _fun10801
+                    _fun10803_ip = 76;
+                    continue _fun10803
                 }
             case 48:
                 var5 = _closure1_slot0;
@@ -49,16 +49,16 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var7 = var5 == var3;
                 var5 = undefined;
                 if (var7) {
-                    _fun10801_ip = 122;
-                    continue _fun10801
+                    _fun10803_ip = 122;
+                    continue _fun10803
                 }
             case 116:
                 var5 = var3.visibilityState;
             case 122:
                 var3 = 'hidden';
                 if (!(var3 !== var5)) {
-                    _fun10801_ip = 241;
-                    continue _fun10801
+                    _fun10803_ip = 241;
+                    continue _fun10803
                 }
             case 130:
                 var3 = _closure1_slot0;
@@ -103,8 +103,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var3 = var3.bind(var0)(var2);
                 var2 = var3.onHidden;
                 var2 = var2.bind(var3)(var4);
-                _fun10801_ip = 245;
-                continue _fun10801;
+                _fun10803_ip = 245;
+                continue _fun10803;
             case 241:
                 var1 = var1.bind(var0)();
             case 245:

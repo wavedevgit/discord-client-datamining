@@ -27,12 +27,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/panels/morphable/native/triggerIOSHaptic.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function() { // Original name: triggerIOSHaptic, environment: var1
-        _fun111025: for (var _fun111025_ip = 0;;) switch (_fun111025_ip) {
+        _fun110375: for (var _fun110375_ip = 0;;) switch (_fun110375_ip) {
             case 0:
                 var1 = _closure1_slot2;
                 if (!var1) {
-                    _fun111025_ip = 64;
-                    continue _fun111025
+                    _fun110375_ip = 64;
+                    continue _fun110375
                 }
             case 10:
                 var4 = _closure1_slot0;
@@ -54,4 +54,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [11839, 3238, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [11772, 3238, 2]);

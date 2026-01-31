@@ -8,7 +8,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot1 = var3;
     var _closure1_slot2 = var4;
     var9 = function(arg0, arg1) { // Original name: parseBezierKnot, environment: var5
-        _fun38249: for (var _fun38249_ip = 0;;) switch (_fun38249_ip) {
+        _fun38266: for (var _fun38266_ip = 0;;) switch (_fun38266_ip) {
             case 0:
                 var7 = arg0;
                 var6 = arg1;
@@ -25,8 +25,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var8 = var9.bind(var0)(var8);
                 var5 = var5 + var2;
                 if (var5 < var1) {
-                    _fun38249_ip = 23;
-                    continue _fun38249
+                    _fun38266_ip = 23;
+                    continue _fun38266
                 }
             case 55:
                 return var0;
@@ -49,7 +49,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var _closure1_slot5 = var0;
     var0 = function(arg0, arg1, arg2) { // Original name: getFixedPointNumber, environment: var5
-        _fun38251: for (var _fun38251_ip = 0;;) switch (_fun38251_ip) {
+        _fun38268: for (var _fun38268_ip = 0;;) switch (_fun38268_ip) {
             case 0:
                 var6 = arg2;
                 var1 = _closure1_slot1;
@@ -67,8 +67,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = -1;
                 var0 = 0;
                 if (!(var4 === var0)) {
-                    _fun38251_ip = 68;
-                    continue _fun38251
+                    _fun38268_ip = 68;
+                    continue _fun38268
                 }
             case 65:
                 var1 = 1;
@@ -145,7 +145,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var6 = 'PathInformation';
     var4.name = var6;
     var6 = function(arg0) { // Original name: pathResource, environment: var5
-        _fun38252: for (var _fun38252_ip = 0;;) switch (_fun38252_ip) {
+        _fun38269: for (var _fun38269_ip = 0;;) switch (_fun38269_ip) {
             case 0:
                 var9 = arg0;
                 var4 = {};
@@ -158,8 +158,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = 3;
                 var1 = undefined;
                 if (!var0) {
-                    _fun38252_ip = 167;
-                    continue _fun38252
+                    _fun38269_ip = 167;
+                    continue _fun38269
                 }
             case 41:
                 var10 = _closure1_slot1;
@@ -172,14 +172,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var10 = var0[var13];
                 var0 = var8;
                 if (!var10) {
-                    _fun38252_ip = 153;
-                    continue _fun38252
+                    _fun38269_ip = 153;
+                    continue _fun38269
                 }
             case 84:
                 var10 = var4[var13];
                 if (var10) {
-                    _fun38252_ip = 108;
-                    continue _fun38252
+                    _fun38269_ip = 108;
+                    continue _fun38269
                 }
             case 91:
                 var10 = _closure1_slot4;
@@ -201,8 +201,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var8 = var0 + var7;
                 var0 = var9.byteLength;
                 if (var8 < var0) {
-                    _fun38252_ip = 41;
-                    continue _fun38252
+                    _fun38269_ip = 41;
+                    continue _fun38269
                 }
             case 167:
                 var0 = global;

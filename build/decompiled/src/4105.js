@@ -41,7 +41,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2.isMP3 = var0;
     var2.isWAV = var0;
     var4 = function(arg0, arg1) { // Original name: isAAC, environment: var1
-        _fun37723: for (var _fun37723_ip = 0;;) switch (_fun37723_ip) {
+        _fun37740: for (var _fun37740_ip = 0;;) switch (_fun37740_ip) {
             case 0:
                 var5 = arg1;
                 var1 = _closure1_slot0;
@@ -63,24 +63,24 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = !var0;
                 var0 = !var1;
                 if (!var1) {
-                    _fun37723_ip = 121;
-                    continue _fun37723
+                    _fun37740_ip = 121;
+                    continue _fun37740
                 }
             case 86:
                 var1 = null;
                 var6 = var1 == var5;
                 var1 = undefined;
                 if (var6) {
-                    _fun37723_ip = 103;
-                    continue _fun37723
+                    _fun37740_ip = 103;
+                    continue _fun37740
                 }
             case 97:
                 var1 = var5.excludeSimilarTypes;
             case 103:
                 var1 = !var1;
                 if (!var1) {
-                    _fun37723_ip = 118;
-                    continue _fun37723
+                    _fun37740_ip = 118;
+                    continue _fun37740
                 }
             case 109:
                 var2 = _closure1_slot2;

@@ -102,7 +102,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/app_launcher/native/options/user/AppLauncherUserListActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: AppLauncherUserListActionSheet, environment: var1
-        _fun108866: for (var _fun108866_ip = 0;;) switch (_fun108866_ip) {
+        _fun108222: for (var _fun108222_ip = 0;;) switch (_fun108222_ip) {
             case 0:
                 var2 = arg0;
                 var1 = var2.onUserPress;
@@ -155,7 +155,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = new Array(1);
                 var1[0] = var8;
                 var0 = function(arg0) { // Environment: var0
-                    _fun108869: for (var _fun108869_ip = 0;;) switch (_fun108869_ip) {
+                    _fun108225: for (var _fun108225_ip = 0;;) switch (_fun108225_ip) {
                         case 0:
                             var6 = arg0;
                             var _closure3_slot0 = var6;
@@ -169,8 +169,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var0 = var0.bind(var2)(var6);
                             var3 = _closure1_slot4;
                             if (var0) {
-                                _fun108869_ip = 233;
-                                continue _fun108869
+                                _fun108225_ip = 233;
+                                continue _fun108225
                             }
                         case 55:
                             var8 = _closure1_slot1;
@@ -213,8 +213,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var7 = var8.bind(var9)(var7);
                             var0.body = var7;
                             var0 = var3.bind(var4)(var2, var0);
-                            _fun108869_ip = 262;
-                            continue _fun108869;
+                            _fun108225_ip = 262;
+                            continue _fun108225;
                         case 233:
                             var2 = _closure1_slot6;
                             var1 = {};
@@ -256,8 +256,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = _closure1_slot1;
                 var10 = _closure1_slot2;
                 if (var4) {
-                    _fun108866_ip = 294;
-                    continue _fun108866
+                    _fun108222_ip = 294;
+                    continue _fun108222
                 }
             case 225:
                 var4 = 11;
@@ -279,8 +279,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4.inActionSheet = var11;
                 var4.disableThemedGradient = var11;
                 var4 = var7.bind(var2)(var5, var4);
-                _fun108866_ip = 338;
-                continue _fun108866;
+                _fun108222_ip = 338;
+                continue _fun108222;
             case 294:
                 var5 = 10;
                 var5 = var10[var5];
@@ -307,4 +307,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = 'AppLauncherUserListActionSheet';
     var2.APP_LAUNCHER_USER_LIST_ACTION_SHEET_KEY = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 1468, 33, 1297, 3237, 4507, 7321, 13777, 1234, 13773, 13817, 13809, 13774, 4860, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 1468, 33, 1297, 3237, 4508, 7320, 13708, 1234, 13704, 13748, 13740, 13705, 4861, 2]);

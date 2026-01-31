@@ -22,7 +22,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/links/getLocalizedLink.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: getLocalizedLink, environment: var1
-        _fun24468: for (var _fun24468_ip = 0;;) switch (_fun24468_ip) {
+        _fun24470: for (var _fun24470_ip = 0;;) switch (_fun24470_ip) {
             case 0:
                 var2 = arg0;
                 var3 = _closure1_slot0;
@@ -37,13 +37,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var0.bind(var1)();
                 var0 = var1 in var2;
                 if (var0) {
-                    _fun24468_ip = 62;
-                    continue _fun24468
+                    _fun24470_ip = 62;
+                    continue _fun24470
                 }
             case 55:
                 var0 = var2.default;
-                _fun24468_ip = 66;
-                continue _fun24468;
+                _fun24470_ip = 66;
+                continue _fun24470;
             case 62:
                 var0 = var2[var1];
             case 66:

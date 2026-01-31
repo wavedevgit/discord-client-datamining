@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2 = exports;
     var6 = dependencyMap;
     var3 = function(arg0) { // Original name: isLimitedChannel, environment: var1
-        _fun40071: for (var _fun40071_ip = 0;;) switch (_fun40071_ip) {
+        _fun40087: for (var _fun40087_ip = 0;;) switch (_fun40087_ip) {
             case 0:
                 var3 = arg0;
                 var5 = _closure1_slot1;
@@ -15,8 +15,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var0 == var3;
                 var2 = undefined;
                 if (var6) {
-                    _fun40071_ip = 32;
-                    continue _fun40071
+                    _fun40087_ip = 32;
+                    continue _fun40087
                 }
             case 27:
                 var2 = var3.guild_id;
@@ -25,16 +25,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var0 != var4;
                 var2 = 0;
                 if (!var5) {
-                    _fun40071_ip = 49;
-                    continue _fun40071
+                    _fun40087_ip = 49;
+                    continue _fun40087
                 }
             case 46:
                 var2 = var4;
             case 49:
                 var0 = var0 != var3;
                 if (!var0) {
-                    _fun40071_ip = 75;
-                    continue _fun40071
+                    _fun40087_ip = 75;
+                    continue _fun40087
                 }
             case 56:
                 var5 = var3.type;
@@ -43,8 +43,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var5 !== var4;
             case 75:
                 if (!var0) {
-                    _fun40071_ip = 97;
-                    continue _fun40071
+                    _fun40087_ip = 97;
+                    continue _fun40087
                 }
             case 78:
                 var3 = var3.type;
@@ -53,8 +53,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var3 !== var1;
             case 97:
                 if (!var0) {
-                    _fun40071_ip = 110;
-                    continue _fun40071
+                    _fun40087_ip = 110;
+                    continue _fun40087
                 }
             case 100:
                 var1 = 10000;
@@ -96,7 +96,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.LIMITED_GUILD_MEMBER_THRESHOLD = var4;
     var2.isLimitedChannel = var3;
     var1 = function(arg0) { // Original name: isLimitedChannelId, environment: var1
-        _fun40072: for (var _fun40072_ip = 0;;) switch (_fun40072_ip) {
+        _fun40088: for (var _fun40088_ip = 0;;) switch (_fun40088_ip) {
             case 0:
                 var4 = arg0;
                 var2 = _closure1_slot3;
@@ -106,8 +106,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var0 != var4;
                 var0 = '_';
                 if (!var5) {
-                    _fun40072_ip = 36;
-                    continue _fun40072
+                    _fun40088_ip = 36;
+                    continue _fun40088
                 }
             case 33:
                 var0 = var4;

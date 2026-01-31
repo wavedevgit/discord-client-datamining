@@ -9,7 +9,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var4;
     var1 = function(arg0) { // Original name: formatExpirationLabel, environment: var3
-        _fun56071: for (var _fun56071_ip = 0;;) switch (_fun56071_ip) {
+        _fun56088: for (var _fun56088_ip = 0;;) switch (_fun56088_ip) {
             case 0:
                 var7 = arg0;
                 var3 = _closure1_slot1;
@@ -20,8 +20,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var3.bind(var0)(var2);
                 var4 = var2.bind(var0)();
                 if (!(!(var7 <= var4))) {
-                    _fun56071_ip = 292;
-                    continue _fun56071
+                    _fun56088_ip = 292;
+                    continue _fun56088
                 }
             case 38:
                 var3 = var7.diff;
@@ -29,16 +29,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var3.bind(var7)(var4, var2);
                 var6 = 1;
                 if (!(!(var5 > var6))) {
-                    _fun56071_ip = 228;
-                    continue _fun56071
+                    _fun56088_ip = 228;
+                    continue _fun56088
                 }
             case 64:
                 var3 = var7.diff;
                 var2 = 'hours';
                 var8 = var3.bind(var7)(var4, var2);
                 if (!(!(var8 > var6))) {
-                    _fun56071_ip = 164;
-                    continue _fun56071
+                    _fun56088_ip = 164;
+                    continue _fun56088
                 }
             case 84:
                 var3 = var7.diff;
@@ -109,13 +109,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/polls/chat/useFormattedExpirationLabel.tsx';
     var4 = var5.bind(var6)(var4);
     var3 = function(arg0) { // Original name: useFormattedExpirationLabel, environment: var3
-        _fun56072: for (var _fun56072_ip = 0;;) switch (_fun56072_ip) {
+        _fun56089: for (var _fun56089_ip = 0;;) switch (_fun56089_ip) {
             case 0:
                 var2 = arg0;
                 var0 = null;
                 if (!(var0 == var2)) {
-                    _fun56072_ip = 13;
-                    continue _fun56072
+                    _fun56089_ip = 13;
+                    continue _fun56089
                 }
             case 9:
                 var0 = undefined;

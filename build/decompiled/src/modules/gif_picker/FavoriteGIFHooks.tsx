@@ -9,7 +9,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var6;
     var3 = function() { // Original name: useFavoriteGIFs, environment: var1
-        _fun72997: for (var _fun72997_ip = 0;;) switch (_fun72997_ip) {
+        _fun73027: for (var _fun73027_ip = 0;;) switch (_fun73027_ip) {
             case 0:
                 var3 = _closure1_slot0;
                 var2 = _closure1_slot2;
@@ -23,15 +23,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = null;
                 var4 = var2 == var3;
                 if (var4) {
-                    _fun72997_ip = 56;
-                    continue _fun72997
+                    _fun73027_ip = 56;
+                    continue _fun73027
                 }
             case 50:
                 var0 = var3.gifs;
             case 56:
                 if (!(var2 == var0)) {
-                    _fun72997_ip = 64;
-                    continue _fun72997
+                    _fun73027_ip = 64;
+                    continue _fun73027
                 }
             case 60:
                 var0 = _closure1_slot4;
@@ -86,7 +86,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var2 = var1.bind(var2)(var0);
             var1 = var2.map;
             var0 = function(arg0, arg1) { // Environment: var0
-                _fun73000: for (var _fun73000_ip = 0;;) switch (_fun73000_ip) {
+                _fun73030: for (var _fun73030_ip = 0;;) switch (_fun73030_ip) {
                     case 0:
                         var1 = arg0;
                         var7 = arg1;
@@ -102,8 +102,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var6 = undefined;
                         var2 = undefined;
                         if (var5) {
-                            _fun73000_ip = 63;
-                            continue _fun73000
+                            _fun73030_ip = 63;
+                            continue _fun73030
                         }
                     case 47:
                         var5 = _closure2_slot0;
@@ -111,8 +111,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var2 = var5.bind(var6)(var4, var7);
                     case 63:
                         if (!(var3 == var2)) {
-                            _fun73000_ip = 73;
-                            continue _fun73000
+                            _fun73030_ip = 73;
+                            continue _fun73030
                         }
                     case 67:
                         var2 = var1.src;
@@ -137,7 +137,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useSortedFavoriteGIFs = var3;
     var3 = function() { // Original name: useShouldShowTooltipOnFavorite, environment: var1
-        _fun73001: for (var _fun73001_ip = 0;;) switch (_fun73001_ip) {
+        _fun73031: for (var _fun73031_ip = 0;;) switch (_fun73031_ip) {
             case 0:
                 var2 = _closure1_slot0;
                 var1 = _closure1_slot2;
@@ -151,16 +151,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = null;
                 var3 = var0 == var2;
                 if (var3) {
-                    _fun73001_ip = 56;
-                    continue _fun73001
+                    _fun73031_ip = 56;
+                    continue _fun73031
                 }
             case 50:
                 var1 = var2.hideTooltip;
             case 56:
                 var0 = var0 != var1;
                 if (!var0) {
-                    _fun73001_ip = 66;
-                    continue _fun73001
+                    _fun73031_ip = 66;
+                    continue _fun73031
                 }
             case 63:
                 var0 = var1;

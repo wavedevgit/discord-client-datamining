@@ -9,7 +9,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var5;
     var0 = function(arg0, arg1, arg2, arg3) { // Original name: renderChatInputActionButtonGiftAndThread, environment: var1
-        _fun91019: for (var _fun91019_ip = 0;;) switch (_fun91019_ip) {
+        _fun90367: for (var _fun90367_ip = 0;;) switch (_fun90367_ip) {
             case 0:
                 var1 = arg1;
                 var13 = var1.accessible;
@@ -36,8 +36,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = _closure1_slot1;
                 var12 = _closure1_slot2;
                 if (var0) {
-                    _fun91019_ip = 155;
-                    continue _fun91019
+                    _fun90367_ip = 155;
+                    continue _fun90367
                 }
             case 109:
                 var0 = 9;
@@ -50,8 +50,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0.style = var14;
                 var0.styleButton = var8;
                 var0 = var7.bind(var3)(var5, var0);
-                _fun91019_ip = 278;
-                continue _fun91019;
+                _fun90367_ip = 278;
+                continue _fun90367;
             case 155:
                 var5 = 6;
                 var5 = var12[var5];
@@ -98,14 +98,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var _closure1_slot8 = var0;
     var0 = function(arg0) { // Original name: getChatInputActionButtonGiftAndThreadKey, environment: var1
-        _fun91021: for (var _fun91021_ip = 0;;) switch (_fun91021_ip) {
+        _fun90369: for (var _fun90369_ip = 0;;) switch (_fun90369_ip) {
             case 0:
                 var0 = arg0;
                 var1 = var0.shouldShowThread;
                 var0 = 'gift';
                 if (!var1) {
-                    _fun91021_ip = 20;
-                    continue _fun91021
+                    _fun90369_ip = 20;
+                    continue _fun90369
                 }
             case 16:
                 var0 = 'thread';
@@ -206,4 +206,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 11624, 33, 1297, 11762, 11744, 1234, 11763, 11765, 3987, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 11559, 33, 1297, 11697, 11679, 1234, 11698, 11700, 3987, 2]);

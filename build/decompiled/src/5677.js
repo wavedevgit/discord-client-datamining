@@ -8,7 +8,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         'op': 89,
         'w': 1280,
         'h': 720,
-        'nm': 'FrameEffect_09-5_Out',
+        'nm': 'FrameEffect_09-4_Out',
         'ddd': 0
     };
     var0 = {
@@ -19,8 +19,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         'tc': ''
     };
     var1.meta = var0;
-    var8 = 60;
-    var7 = 0;
+    var8 = 0;
     var0 = new Array(2);
     var2 = {
         'id': 'image_0',
@@ -116,7 +115,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0.o = var3;
     var3 = {
         'a': 0,
-        'k': 45,
+        'k': 0,
         'ix': 10
     };
     var0.r = var3;
@@ -138,10 +137,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var5.o = var4;
     var4 = 18;
     var5.t = var4;
-    var4 = [136.54];
-    var6 = -437.616;
-    var4[1] = var6;
-    var4[2] = var7;
+    var4 = [1520, 156, 0];
     var5.s = var4;
     var4 = [0, 0, 0];
     var5.to = var4;
@@ -152,7 +148,12 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var5 = {};
     var6 = 76;
     var5.t = var6;
-    var6 = [1406.504, 838.004, 0];
+    var6 = new Array(3);
+    var9 = -280;
+    var6[0] = var9;
+    var7 = 152;
+    var6[1] = var7;
+    var6[2] = var8;
     var5.s = var6;
     var4[1] = var5;
     var3.k = var4;
@@ -174,97 +175,11 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.k = var4;
     var0.s = var3;
     var2.ks = var0;
-    var0 = new Array(7);
+    var0 = new Array(5);
     var0[0] = var2;
     var2 = {
         'ddd': 0,
         'ind': 2,
-        'ty': 0,
-        'nm': 'particle',
-        'refId': 'comp_0',
-        'sr': 1,
-        'ks': null,
-        'ao': 0,
-        'w': 40,
-        'h': 40,
-        'ip': 29,
-        'op': 123,
-        'st': 27,
-        'bm': 0
-    };
-    var3 = {};
-    var4 = {
-        'a': 0,
-        'k': 100,
-        'ix': 11
-    };
-    var3.o = var4;
-    var4 = {
-        'a': 0,
-        'k': 45,
-        'ix': 10
-    };
-    var3.r = var4;
-    var4 = {
-        'a': 1,
-        'k': null,
-        'ix': 2
-    };
-    var6 = {};
-    var5 = {
-        'x': 0.833,
-        'y': 0.833
-    };
-    var6.i = var5;
-    var5 = {
-        'x': 0.167,
-        'y': 0.167
-    };
-    var6.o = var5;
-    var5 = 30;
-    var6.t = var5;
-    var5 = new Array(3);
-    var9 = -676.93;
-    var5[0] = var9;
-    var9 = -288.146;
-    var5[1] = var9;
-    var5[2] = var7;
-    var6.s = var5;
-    var5 = [0, 0, 0];
-    var6.to = var5;
-    var5 = [0, 0, 0];
-    var6.ti = var5;
-    var5 = new Array(2);
-    var5[0] = var6;
-    var6 = {};
-    var6.t = var8;
-    var8 = [593.034, 987.474, 0];
-    var6.s = var8;
-    var5[1] = var6;
-    var4.k = var5;
-    var3.p = var4;
-    var4 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var5 = [20, 20, 0];
-    var4.k = var5;
-    var3.a = var4;
-    var4 = {
-        'a': 0,
-        'k': null,
-        'ix': 6
-    };
-    var5 = [702.1, 702.1, 100];
-    var4.k = var5;
-    var3.s = var4;
-    var2.ks = var3;
-    var5 = 29;
-    var0[1] = var2;
-    var2 = {
-        'ddd': 0,
-        'ind': 3,
         'ty': 0,
         'nm': 'particle',
         'refId': 'comp_0',
@@ -287,176 +202,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.o = var4;
     var4 = {
         'a': 0,
-        'k': 45,
-        'ix': 10
-    };
-    var3.r = var4;
-    var4 = {
-        'a': 1,
-        'k': null,
-        'ix': 2
-    };
-    var8 = {};
-    var6 = {
-        'x': 0.833,
-        'y': 0.833
-    };
-    var8.i = var6;
-    var6 = {
-        'x': 0.167,
-        'y': 0.167
-    };
-    var8.o = var6;
-    var6 = 9;
-    var8.t = var6;
-    var6 = new Array(3);
-    var9 = -168.93;
-    var6[0] = var9;
-    var9 = -132.146;
-    var6[1] = var9;
-    var6[2] = var7;
-    var8.s = var6;
-    var6 = [0, 0, 0];
-    var8.to = var6;
-    var6 = [0, 0, 0];
-    var8.ti = var6;
-    var6 = new Array(2);
-    var6[0] = var8;
-    var8 = {};
-    var9 = 73;
-    var8.t = var9;
-    var9 = [1101.034, 1143.474, 0];
-    var8.s = var9;
-    var6[1] = var8;
-    var4.k = var6;
-    var3.p = var4;
-    var4 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var6 = [20, 20, 0];
-    var4.k = var6;
-    var3.a = var4;
-    var4 = {
-        'a': 0,
-        'k': null,
-        'ix': 6
-    };
-    var6 = [385.1, 385.1, 100];
-    var4.k = var6;
-    var3.s = var4;
-    var2.ks = var3;
-    var0[2] = var2;
-    var2 = {
-        'ddd': 0,
-        'ind': 4,
-        'ty': 0,
-        'nm': 'particle',
-        'refId': 'comp_0',
-        'sr': 1,
-        'ks': null,
-        'ao': 0,
-        'w': 40,
-        'h': 40,
-        'ip': 29,
-        'op': 113,
-        'st': 27,
-        'bm': 0
-    };
-    var3 = {};
-    var4 = {
-        'a': 0,
-        'k': 100,
-        'ix': 11
-    };
-    var3.o = var4;
-    var4 = {
-        'a': 0,
-        'k': 45,
-        'ix': 10
-    };
-    var3.r = var4;
-    var4 = {
-        'a': 1,
-        'k': null,
-        'ix': 2
-    };
-    var8 = {};
-    var6 = {
-        'x': 0.833,
-        'y': 0.833
-    };
-    var8.i = var6;
-    var6 = {
-        'x': 0.167,
-        'y': 0.167
-    };
-    var8.o = var6;
-    var8.t = var5;
-    var6 = [356.124];
-    var9 = -653.2;
-    var6[1] = var9;
-    var6[2] = var7;
-    var8.s = var6;
-    var6 = [0, 0, 0];
-    var8.to = var6;
-    var6 = [0, 0, 0];
-    var8.ti = var6;
-    var6 = new Array(2);
-    var6[0] = var8;
-    var8 = {};
-    var9 = 66;
-    var8.t = var9;
-    var9 = [1626.087, 622.42, 0];
-    var8.s = var9;
-    var6[1] = var8;
-    var4.k = var6;
-    var3.p = var4;
-    var4 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var6 = [20, 20, 0];
-    var4.k = var6;
-    var3.a = var4;
-    var4 = {
-        'a': 0,
-        'k': null,
-        'ix': 6
-    };
-    var6 = [512, 512, 100];
-    var4.k = var6;
-    var3.s = var4;
-    var2.ks = var3;
-    var0[3] = var2;
-    var2 = {
-        'ddd': 0,
-        'ind': 5,
-        'ty': 0,
-        'nm': 'particle',
-        'refId': 'comp_0',
-        'sr': 1,
-        'ks': null,
-        'ao': 0,
-        'w': 40,
-        'h': 40,
-        'ip': 29,
-        'op': 113,
-        'st': 27,
-        'bm': 0
-    };
-    var3 = {};
-    var4 = {
-        'a': 0,
-        'k': 100,
-        'ix': 11
-    };
-    var3.o = var4;
-    var4 = {
-        'a': 0,
-        'k': 45,
+        'k': 0,
         'ix': 10
     };
     var3.r = var4;
@@ -466,23 +212,19 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         'ix': 2
     };
     var6 = {};
-    var8 = {
+    var5 = {
         'x': 0.833,
         'y': 0.833
     };
-    var6.i = var8;
-    var8 = {
+    var6.i = var5;
+    var5 = {
         'x': 0.167,
         'y': 0.167
     };
-    var6.o = var8;
+    var6.o = var5;
+    var5 = 9;
     var6.t = var5;
-    var5 = new Array(3);
-    var8 = -103.876;
-    var5[0] = var8;
-    var8 = -197.2;
-    var5[1] = var8;
-    var5[2] = var7;
+    var5 = [1520, 588, 0];
     var6.s = var5;
     var5 = [0, 0, 0];
     var6.to = var5;
@@ -491,10 +233,99 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var5 = new Array(2);
     var5[0] = var6;
     var6 = {};
-    var8 = 78;
-    var6.t = var8;
-    var8 = [1166.087, 1078.42, 0];
-    var6.s = var8;
+    var7 = 73;
+    var6.t = var7;
+    var7 = new Array(3);
+    var7[0] = var9;
+    var10 = 584;
+    var7[1] = var10;
+    var7[2] = var8;
+    var6.s = var7;
+    var5[1] = var6;
+    var4.k = var5;
+    var3.p = var4;
+    var4 = {
+        'a': 0,
+        'k': null,
+        'ix': 1
+    };
+    var5 = [20, 20, 0];
+    var4.k = var5;
+    var3.a = var4;
+    var4 = {
+        'a': 0,
+        'k': null,
+        'ix': 6
+    };
+    var5 = [385.1, 385.1, 100];
+    var4.k = var5;
+    var3.s = var4;
+    var2.ks = var3;
+    var0[1] = var2;
+    var2 = {
+        'ddd': 0,
+        'ind': 3,
+        'ty': 0,
+        'nm': 'particle',
+        'refId': 'comp_0',
+        'sr': 1,
+        'ks': null,
+        'ao': 0,
+        'w': 40,
+        'h': 40,
+        'ip': 29,
+        'op': 113,
+        'st': 27,
+        'bm': 0
+    };
+    var3 = {};
+    var4 = {
+        'a': 0,
+        'k': 100,
+        'ix': 11
+    };
+    var3.o = var4;
+    var4 = {
+        'a': 0,
+        'k': 0,
+        'ix': 10
+    };
+    var3.r = var4;
+    var4 = {
+        'a': 1,
+        'k': null,
+        'ix': 2
+    };
+    var6 = {};
+    var5 = {
+        'x': 0.833,
+        'y': 0.833
+    };
+    var6.i = var5;
+    var5 = {
+        'x': 0.167,
+        'y': 0.167
+    };
+    var6.o = var5;
+    var5 = 29;
+    var6.t = var5;
+    var5 = [1520, 496, 0];
+    var6.s = var5;
+    var5 = [0, 0, 0];
+    var6.to = var5;
+    var5 = [0, 0, 0];
+    var6.ti = var5;
+    var5 = new Array(2);
+    var5[0] = var6;
+    var6 = {};
+    var7 = 78;
+    var6.t = var7;
+    var7 = new Array(3);
+    var7[0] = var9;
+    var10 = 492;
+    var7[1] = var10;
+    var7[2] = var8;
+    var6.s = var7;
     var5[1] = var6;
     var4.k = var5;
     var3.p = var4;
@@ -515,10 +346,10 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4.k = var5;
     var3.s = var4;
     var2.ks = var3;
-    var0[4] = var2;
+    var0[2] = var2;
     var2 = {
         'ddd': 0,
-        'ind': 6,
+        'ind': 4,
         'ty': 0,
         'nm': 'particle',
         'refId': 'comp_0',
@@ -541,7 +372,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.o = var4;
     var4 = {
         'a': 0,
-        'k': 45,
+        'k': 0,
         'ix': 10
     };
     var3.r = var4;
@@ -563,10 +394,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var6.o = var5;
     var5 = 41;
     var6.t = var5;
-    var5 = [60.172];
-    var8 = -361.249;
-    var5[1] = var8;
-    var5[2] = var7;
+    var5 = [1520, 264, 0];
     var6.s = var5;
     var5 = [0, 0, 0];
     var6.to = var5;
@@ -575,10 +403,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var5 = new Array(2);
     var5[0] = var6;
     var6 = {};
-    var8 = 79;
-    var6.t = var8;
-    var8 = [1330.136, 914.372, 0];
-    var6.s = var8;
+    var7 = 79;
+    var6.t = var7;
+    var7 = new Array(3);
+    var7[0] = var9;
+    var10 = 260;
+    var7[1] = var10;
+    var7[2] = var8;
+    var6.s = var7;
     var5[1] = var6;
     var4.k = var5;
     var3.p = var4;
@@ -599,10 +431,10 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4.k = var5;
     var3.s = var4;
     var2.ks = var3;
-    var0[5] = var2;
+    var0[3] = var2;
     var2 = {
         'ddd': 0,
-        'ind': 7,
+        'ind': 5,
         'ty': 0,
         'nm': 'particle',
         'refId': 'comp_0',
@@ -625,7 +457,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.o = var4;
     var4 = {
         'a': 0,
-        'k': 45,
+        'k': 0,
         'ix': 10
     };
     var3.r = var4;
@@ -647,10 +479,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var6.o = var5;
     var5 = 17;
     var6.t = var5;
-    var5 = [105.427];
-    var8 = -406.504;
-    var5[1] = var8;
-    var5[2] = var7;
+    var5 = [1520, 200, 0];
     var6.s = var5;
     var5 = [0, 0, 0];
     var6.to = var5;
@@ -661,7 +490,11 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var6 = {};
     var7 = 59;
     var6.t = var7;
-    var7 = [1375.391, 869.117, 0];
+    var7 = new Array(3);
+    var7[0] = var9;
+    var9 = 196;
+    var7[1] = var9;
+    var7[2] = var8;
     var6.s = var7;
     var5[1] = var6;
     var4.k = var5;
@@ -683,7 +516,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4.k = var5;
     var3.s = var4;
     var2.ks = var3;
-    var0[6] = var2;
+    var0[4] = var2;
     var1.layers = var0;
     var0 = new Array(0);
     var1.markers = var0;

@@ -14,7 +14,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = '__esModule';
     var2 = var4.bind(var5)(var1, var2, var3);
     var0 = function(arg0) { // Original name: processFonts, environment: var0
-        _fun72673: for (var _fun72673_ip = 0;;) switch (_fun72673_ip) {
+        _fun72699: for (var _fun72699_ip = 0;;) switch (_fun72699_ip) {
             case 0:
                 var3 = arg0;
                 var1 = _closure1_slot0;
@@ -27,8 +27,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = null;
                 var1 = var1 == var0;
                 if (var1) {
-                    _fun72673_ip = 48;
-                    continue _fun72673
+                    _fun72699_ip = 48;
+                    continue _fun72699
                 }
             case 42:
                 var2 = var0.process;
@@ -37,8 +37,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = typeof var2;
                 var0 = var3;
                 if (!(var4 === var1)) {
-                    _fun72673_ip = 72;
-                    continue _fun72673
+                    _fun72699_ip = 72;
+                    continue _fun72699
                 }
             case 62:
                 var1 = var3.map;

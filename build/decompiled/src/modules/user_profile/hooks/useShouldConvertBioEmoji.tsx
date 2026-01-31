@@ -22,7 +22,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/user_profile/hooks/useShouldConvertBioEmoji.tsx';
     var3 = var4.bind(var5)(var3);
     var3 = function() { // Original name: useShouldConvertBioEmoji, environment: var1
-        _fun49125: for (var _fun49125_ip = 0;;) switch (_fun49125_ip) {
+        _fun49142: for (var _fun49142_ip = 0;;) switch (_fun49142_ip) {
             case 0:
                 var3 = _closure1_slot0;
                 var4 = _closure1_slot1;
@@ -39,8 +39,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var2.useSetting;
                 var1 = var1.bind(var2)();
                 if (var0) {
-                    _fun49125_ip = 71;
-                    continue _fun49125
+                    _fun49142_ip = 71;
+                    continue _fun49142
                 }
             case 68:
                 var0 = !var1;
@@ -50,7 +50,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var3;
     var1 = function() { // Original name: getShouldConvertBioEmoji, environment: var1
-        _fun49126: for (var _fun49126_ip = 0;;) switch (_fun49126_ip) {
+        _fun49143: for (var _fun49143_ip = 0;;) switch (_fun49143_ip) {
             case 0:
                 var2 = _closure1_slot0;
                 var0 = _closure1_slot1;
@@ -62,8 +62,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var2.getSetting;
                 var0 = var0.bind(var2)();
                 if (var0) {
-                    _fun49126_ip = 79;
-                    continue _fun49126
+                    _fun49143_ip = 79;
+                    continue _fun49143
                 }
             case 43:
                 var2 = _closure1_slot0;

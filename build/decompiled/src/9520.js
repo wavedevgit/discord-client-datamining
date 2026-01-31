@@ -13,20 +13,22 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.value = var2;
     var2 = '__esModule';
     var2 = var4.bind(var5)(var1, var2, var3);
-    var0 = function(arg0) { // Original name: keepLocalCopy, environment: var0
-        var2 = _closure1_slot0;
+    var0 = function(arg0) { // Original name: isKnownType, environment: var0
+        var0 = arg0;
+        var3 = var0.kind;
+        var2 = var0.value;
+        var4 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 0;
         var1 = var1[var0];
         var0 = undefined;
-        var0 = var2.bind(var0)(var1);
-        var2 = var0.NativeDocumentPicker;
-        var1 = var2.keepLocalCopy;
-        var0 = arg0;
-        var0 = var1.bind(var2)(var0);
+        var0 = var4.bind(var0)(var1);
+        var1 = var0.NativeDocumentPicker;
+        var0 = var1.isKnownType;
+        var0 = var0.bind(var1)(var3, var2);
         return var0;
     };
-    var1.keepLocalCopy = var0;
+    var1.isKnownType = var0;
     var0 = undefined;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [9519]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [9521]);

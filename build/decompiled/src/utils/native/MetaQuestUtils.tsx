@@ -26,7 +26,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'utils/native/MetaQuestUtils.tsx';
     var3 = var4.bind(var5)(var3);
     var3 = function() { // Original name: isMetaQuest, environment: var1
-        _fun37485: for (var _fun37485_ip = 0;;) switch (_fun37485_ip) {
+        _fun37502: for (var _fun37502_ip = 0;;) switch (_fun37502_ip) {
             case 0:
                 var2 = _closure1_slot0;
                 var3 = _closure1_slot3;
@@ -39,8 +39,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = !var0;
                 var0 = !var2;
                 if (var2) {
-                    _fun37485_ip = 117;
-                    continue _fun37485
+                    _fun37502_ip = 117;
+                    continue _fun37502
                 }
             case 43:
                 var3 = _closure1_slot1;
@@ -52,8 +52,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var2 == var3;
                 var2 = undefined;
                 if (var3) {
-                    _fun37485_ip = 107;
-                    continue _fun37485
+                    _fun37502_ip = 107;
+                    continue _fun37502
                 }
             case 74:
                 var3 = _closure1_slot1;
@@ -72,7 +72,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.isMetaQuest = var3;
     var1 = function() { // Original name: isQuestRelease, environment: var1
-        _fun37486: for (var _fun37486_ip = 0;;) switch (_fun37486_ip) {
+        _fun37503: for (var _fun37503_ip = 0;;) switch (_fun37503_ip) {
             case 0:
                 var1 = _closure1_slot2;
                 var2 = _closure1_slot3;
@@ -86,16 +86,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var0 == var2;
                 var1 = undefined;
                 if (var4) {
-                    _fun37486_ip = 76;
-                    continue _fun37486
+                    _fun37503_ip = 76;
+                    continue _fun37503
                 }
             case 46:
                 var4 = var2.ReleaseChannel;
                 var2 = var0 == var4;
                 var1 = undefined;
                 if (var2) {
-                    _fun37486_ip = 76;
-                    continue _fun37486
+                    _fun37503_ip = 76;
+                    continue _fun37503
                 }
             case 61:
                 var3 = var4.startsWith;
@@ -104,8 +104,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 76:
                 var0 = var0 != var1;
                 if (!var0) {
-                    _fun37486_ip = 86;
-                    continue _fun37486
+                    _fun37503_ip = 86;
+                    continue _fun37503
                 }
             case 83:
                 var0 = var1;

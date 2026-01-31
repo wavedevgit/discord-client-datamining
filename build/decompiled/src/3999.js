@@ -29,7 +29,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var3.jsx;
     var _closure1_slot4 = var3;
     var1 = function(arg0) { // Original name: DelayedFreeze, environment: var1
-        _fun37202: for (var _fun37202_ip = 0;;) switch (_fun37202_ip) {
+        _fun37219: for (var _fun37219_ip = 0;;) switch (_fun37219_ip) {
             case 0:
                 var0 = arg0;
                 var5 = var0.freeze;
@@ -86,8 +86,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var7 = !var5;
                 var5 = !var7;
                 if (var7) {
-                    _fun37202_ip = 139;
-                    continue _fun37202
+                    _fun37219_ip = 139;
+                    continue _fun37219
                 }
             case 136:
                 var5 = var6;

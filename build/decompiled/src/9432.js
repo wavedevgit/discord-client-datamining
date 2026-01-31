@@ -1,42 +1,34 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = require;
-    var _closure1_slot0 = var1;
-    var1 = dependencyMap;
-    var _closure1_slot1 = var1;
-    var1 = function(arg0, arg1, arg2) { // Original name: shallowCompare, environment: var0
-        _fun75057: for (var _fun75057_ip = 0;;) switch (_fun75057_ip) {
-            case 0:
-                var1 = arg0;
-                var3 = _closure1_slot0;
-                var0 = _closure1_slot1;
-                var5 = 0;
-                var0 = var0[var5];
-                var4 = undefined;
-                var6 = var3.bind(var4)(var0);
-                var3 = var1.props;
-                var0 = arg1;
-                var0 = var6.bind(var4)(var3, var0);
-                var0 = !var0;
-                if (var0) {
-                    _fun75057_ip = 81;
-                    continue _fun75057
-                }
-            case 47:
-                var3 = _closure1_slot0;
-                var2 = _closure1_slot1;
-                var2 = var2[var5];
-                var3 = var3.bind(var4)(var2);
-                var2 = var1.state;
-                var1 = arg2;
-                var1 = var3.bind(var4)(var2, var1);
-                var0 = !var1;
-            case 81:
-                return var0;
-        }
-    };
-    var0 = arg4;
-    var0.exports = var1;
+    var4 = metroImportDefault;
+    var2 = exports;
+    var3 = dependencyMap;
+    var0 = global;
+    var6 = var0.Object;
+    var5 = var6.defineProperty;
+    var1 = {};
+    var0 = true;
+    var1.value = var0;
+    var0 = '__esModule';
+    var0 = var5.bind(var6)(var2, var0, var1);
+    var0 = 0;
+    var1 = var3[var0];
     var0 = undefined;
+    var1 = var4.bind(var0)(var1);
+    var2.default = var1;
+    var1 = 1;
+    var1 = var3[var1];
+    var1 = var4.bind(var0)(var1);
+    var2.Pagination = var1;
+    var1 = 2;
+    var1 = var3[var1];
+    var1 = var4.bind(var0)(var1);
+    var2.ParallaxImage = var1;
+    var1 = 3;
+    var3 = var3[var1];
+    var1 = require;
+    var1 = var1.bind(var0)(var3);
+    var1 = var1.getInputRangeFromIndexes;
+    var2.getInputRangeFromIndexes = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [9433]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [9433, 9437, 9440, 9436]);

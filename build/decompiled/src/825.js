@@ -6,13 +6,13 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = dependencyMap;
     var _closure1_slot1 = var0;
     var0 = function(arg0) { // Original name: getSentryCarrier, environment: var2
-        _fun8769: for (var _fun8769_ip = 0;;) switch (_fun8769_ip) {
+        _fun8771: for (var _fun8771_ip = 0;;) switch (_fun8771_ip) {
             case 0:
                 var0 = arg0;
                 var2 = var0.__SENTRY__;
                 if (var2) {
-                    _fun8769_ip = 14;
-                    continue _fun8769
+                    _fun8771_ip = 14;
+                    continue _fun8771
                 }
             case 12:
                 var2 = {};
@@ -20,8 +20,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0.__SENTRY__ = var2;
                 var0 = var2.version;
                 if (var0) {
-                    _fun8769_ip = 60;
-                    continue _fun8769
+                    _fun8771_ip = 60;
+                    continue _fun8771
                 }
             case 29:
                 var4 = _closure1_slot0;
@@ -45,8 +45,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = var0.SDK_VERSION;
                 var0 = var2[var0];
                 if (var0) {
-                    _fun8769_ip = 121;
-                    continue _fun8769
+                    _fun8771_ip = 121;
+                    continue _fun8771
                 }
             case 119:
                 var0 = {};
@@ -66,7 +66,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.value = var7;
     var3 = var5.bind(var6)(var1, var4, var3);
     var3 = function(arg0, arg1) { // Original name: getGlobalSingleton, environment: var2
-        _fun8770: for (var _fun8770_ip = 0;;) switch (_fun8770_ip) {
+        _fun8772: for (var _fun8772_ip = 0;;) switch (_fun8772_ip) {
             case 0:
                 var3 = arg0;
                 var4 = undefined;
@@ -74,14 +74,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = arguments.length;
                 var1 = 2;
                 if (!(var0 > var1)) {
-                    _fun8770_ip = 25;
-                    continue _fun8770
+                    _fun8772_ip = 25;
+                    continue _fun8772
                 }
             case 17:
                 var0 = arguments[var1];
                 if (!(var4 === var0)) {
-                    _fun8770_ip = 55;
-                    continue _fun8770
+                    _fun8772_ip = 55;
+                    continue _fun8772
                 }
             case 25:
                 var5 = _closure1_slot0;
@@ -90,15 +90,15 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = var6[var0];
                 var0 = var5.bind(var4)(var0);
                 var0 = var0.GLOBAL_OBJ;
-                _fun8770_ip = 59;
-                continue _fun8770;
+                _fun8772_ip = 59;
+                continue _fun8772;
             case 55:
                 var0 = arguments[var1];
             case 59:
                 var1 = var0.__SENTRY__;
                 if (var1) {
-                    _fun8770_ip = 70;
-                    continue _fun8770
+                    _fun8772_ip = 70;
+                    continue _fun8772
                 }
             case 68:
                 var1 = {};
@@ -115,8 +115,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = var2.SDK_VERSION;
                 var2 = var1[var2];
                 if (var2) {
-                    _fun8770_ip = 129;
-                    continue _fun8770
+                    _fun8772_ip = 129;
+                    continue _fun8772
                 }
             case 127:
                 var2 = {};
@@ -124,8 +124,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1[var0] = var2;
                 var0 = var2[var3];
                 if (var0) {
-                    _fun8770_ip = 154;
-                    continue _fun8770
+                    _fun8772_ip = 154;
+                    continue _fun8772
                 }
             case 140:
                 var1 = arg1;

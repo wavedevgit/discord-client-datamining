@@ -49,7 +49,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var1.restoreFailedUpload = var6;
     var6 = function(arg0, arg1) { // Original name: cancel, environment: var3
-        _fun78305: for (var _fun78305_ip = 0;;) switch (_fun78305_ip) {
+        _fun78335: for (var _fun78335_ip = 0;;) switch (_fun78335_ip) {
             case 0:
                 var1 = arg1;
                 var5 = _closure1_slot0;
@@ -72,8 +72,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var2.bind(var5)(var1);
                 var1 = null;
                 if (!(var1 != var5)) {
-                    _fun78305_ip = 198;
-                    continue _fun78305
+                    _fun78335_ip = 198;
+                    continue _fun78335
                 }
             case 86:
                 var7 = _closure1_slot2;
@@ -84,8 +84,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var6.bind(var7)(var2, var1);
                 var1 = '';
                 if (!(var1 === var2)) {
-                    _fun78305_ip = 198;
-                    continue _fun78305
+                    _fun78335_ip = 198;
+                    continue _fun78335
                 }
             case 125:
                 var2 = _closure1_slot0;
@@ -136,4 +136,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3960, 6575, 806, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3960, 6576, 806, 2]);

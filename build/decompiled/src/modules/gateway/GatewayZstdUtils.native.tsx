@@ -29,7 +29,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/gateway/GatewayZstdUtils.native.tsx';
     var3 = var4.bind(var5)(var3);
     var3 = function() { // Original name: supportsZstd, environment: var1
-        _fun95356: for (var _fun95356_ip = 0;;) switch (_fun95356_ip) {
+        _fun94719: for (var _fun94719_ip = 0;;) switch (_fun94719_ip) {
             case 0:
                 var2 = _closure1_slot0;
                 var3 = _closure1_slot2;
@@ -40,8 +40,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var2.isAndroid;
                 var0 = var0.bind(var2)();
                 if (var0) {
-                    _fun95356_ip = 77;
-                    continue _fun95356
+                    _fun94719_ip = 77;
+                    continue _fun94719
                 }
             case 38:
                 var0 = _closure1_slot3;
@@ -50,22 +50,22 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var0 == var4;
                 var2 = undefined;
                 if (var5) {
-                    _fun95356_ip = 65;
-                    continue _fun95356
+                    _fun94719_ip = 65;
+                    continue _fun94719
                 }
             case 59:
                 var2 = var4.supportsZstd;
             case 65:
                 var0 = var0 != var2;
                 if (!var0) {
-                    _fun95356_ip = 75;
-                    continue _fun95356
+                    _fun94719_ip = 75;
+                    continue _fun94719
                 }
             case 72:
                 var0 = var2;
             case 75:
-                _fun95356_ip = 113;
-                continue _fun95356;
+                _fun94719_ip = 113;
+                continue _fun94719;
             case 77:
                 var2 = _closure1_slot1;
                 var4 = _closure1_slot2;
@@ -97,4 +97,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.createZstdContextWeb = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 478, 12429, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 478, 12365, 2]);

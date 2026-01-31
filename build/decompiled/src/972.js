@@ -15,15 +15,15 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2.value = var6;
     var2 = var4.bind(var5)(var1, var3, var2);
     var2 = function(arg0) { // Original name: isStreamingMethod, environment: var0
-        _fun10013: for (var _fun10013_ip = 0;;) switch (_fun10013_ip) {
+        _fun10015: for (var _fun10015_ip = 0;;) switch (_fun10015_ip) {
             case 0:
                 var3 = arg0;
                 var1 = var3.includes;
                 var0 = 'Stream';
                 var0 = var1.bind(var3)(var0);
                 if (var0) {
-                    _fun10013_ip = 37;
-                    continue _fun10013
+                    _fun10015_ip = 37;
+                    continue _fun10015
                 }
             case 20:
                 var2 = var3.endsWith;
@@ -31,8 +31,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = var2.bind(var3)(var1);
             case 37:
                 if (var0) {
-                    _fun10013_ip = 57;
-                    continue _fun10013
+                    _fun10015_ip = 57;
+                    continue _fun10015
                 }
             case 40:
                 var2 = var3.endsWith;
@@ -44,7 +44,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var1.isStreamingMethod = var2;
     var0 = function(arg0) { // Original name: shouldInstrument, environment: var0
-        _fun10014: for (var _fun10014_ip = 0;;) switch (_fun10014_ip) {
+        _fun10016: for (var _fun10016_ip = 0;;) switch (_fun10016_ip) {
             case 0:
                 var5 = arg0;
                 var2 = _closure1_slot0;
@@ -57,8 +57,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = var2.includes;
                 var1 = var1.bind(var2)(var5);
                 if (var1) {
-                    _fun10014_ip = 105;
-                    continue _fun10014
+                    _fun10016_ip = 105;
+                    continue _fun10016
                 }
             case 46:
                 var2 = var5.split;

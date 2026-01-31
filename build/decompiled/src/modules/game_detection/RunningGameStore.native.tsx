@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var6;
     var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
-        _fun30470: for (var _fun30470_ip = 0;;) switch (_fun30470_ip) {
+        _fun30478: for (var _fun30478_ip = 0;;) switch (_fun30478_ip) {
             case 0:
             case 2: // try_start_0
                 var1 = global;
@@ -29,8 +29,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = !var1;
                 var _closure2_slot0 = var1;
             case 70: // try_end0
-                _fun30470_ip = 74;
-                continue _fun30470;
+                _fun30478_ip = 74;
+                continue _fun30478;
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
@@ -90,7 +90,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = var3.Store;
     var3 = function(arg0) { // Environment: var1
         var3 = function() { // Original name: RunningGameStore, environment: var5
-            _fun30474: for (var _fun30474_ip = 0;;) switch (_fun30474_ip) {
+            _fun30482: for (var _fun30482_ip = 0;;) switch (_fun30482_ip) {
                 case 0:
                     var3 = this;
                     var2 = undefined;
@@ -104,16 +104,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = _closure1_slot9;
                     var0 = var0.bind(var2)();
                     if (var0) {
-                        _fun30474_ip = 69;
-                        continue _fun30474
+                        _fun30482_ip = 69;
+                        continue _fun30482
                     }
                 case 51:
                     var6 = var8.apply;
                     var4 = arguments;
                     var0 = var4;
                     var0 = var6.bind(var8)(var3, var0);
-                    _fun30474_ip = 105;
-                    continue _fun30474;
+                    _fun30482_ip = 105;
+                    continue _fun30482;
                 case 69:
                     var6 = global;
                     var7 = var6.Reflect;
@@ -448,13 +448,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.gameKey = var3;
     var3 = function() { // Original name: getRawOverlayGameStatus, environment: var1
-        _fun30507: for (var _fun30507_ip = 0;;) switch (_fun30507_ip) {
+        _fun30515: for (var _fun30515_ip = 0;;) switch (_fun30515_ip) {
             case 0:
                 var0 = arguments[1];
                 var3 = undefined;
                 if (!(var0 === var3)) {
-                    _fun30507_ip = 32;
-                    continue _fun30507
+                    _fun30515_ip = 32;
+                    continue _fun30515
                 }
             case 9:
                 var2 = _closure1_slot7;

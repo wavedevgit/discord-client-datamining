@@ -10,11 +10,11 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = {
         '__packager_asset': true,
         'httpServerLocation': '/assets/images/native/premium/illustrations',
-        'width': 218.5,
-        'height': 126.5,
+        'width': 222.5,
+        'height': 118,
         'scales': null,
-        'hash': '9848ee06b371032f5a5c789cab987d6c',
-        'name': 'img_tier_0_perk_bigger_files',
+        'hash': '2762ca199009f1ddb659b515502ab30e',
+        'name': 'img_tier_0_perk_custom_video_backgrounds',
         'type': 'png'
     };
     var4 = [2, 3];

@@ -89,13 +89,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var6 = 'cancelText';
         var0[var6] = var7;
         var6 = function() { // Original name: onCancel, environment: var5
-            _fun64190: for (var _fun64190_ip = 0;;) switch (_fun64190_ip) {
+            _fun64202: for (var _fun64202_ip = 0;;) switch (_fun64202_ip) {
                 case 0:
                     var2 = _closure2_slot0;
                     var1 = null;
                     if (!(var1 != var2)) {
-                        _fun64190_ip = 23;
-                        continue _fun64190
+                        _fun64202_ip = 23;
+                        continue _fun64202
                     }
                 case 13:
                     var1 = _closure2_slot0;
@@ -178,4 +178,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.IgnoreThermalStateAlert = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 1297, 3897, 1234, 7875, 3901, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 1297, 3896, 1234, 7874, 3900, 2]);

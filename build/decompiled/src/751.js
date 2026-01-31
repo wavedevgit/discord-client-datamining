@@ -33,7 +33,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2['[object Array]'] = var1;
     var2['[object Arguments]'] = var1;
     var1 = function(arg0) { // Original name: baseIsTypedArray, environment: var0
-        _fun8373: for (var _fun8373_ip = 0;;) switch (_fun8373_ip) {
+        _fun8375: for (var _fun8375_ip = 0;;) switch (_fun8375_ip) {
             case 0:
                 var4 = arg0;
                 var2 = _closure1_slot0;
@@ -44,8 +44,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = var2.bind(var3)(var0);
                 var0 = var0.bind(var3)(var4);
                 if (!var0) {
-                    _fun8373_ip = 65;
-                    continue _fun8373
+                    _fun8375_ip = 65;
+                    continue _fun8375
                 }
             case 35:
                 var5 = _closure1_slot0;
@@ -57,8 +57,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = var5.bind(var3)(var2);
             case 65:
                 if (!var0) {
-                    _fun8373_ip = 107;
-                    continue _fun8373
+                    _fun8375_ip = 107;
+                    continue _fun8375
                 }
             case 68:
                 var2 = _closure1_slot2;

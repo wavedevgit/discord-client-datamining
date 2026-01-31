@@ -86,7 +86,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var _closure1_slot15 = var4;
     var1 = function() { // Original name: VoiceProcessingOptions, environment: var7
-        _fun67976: for (var _fun67976_ip = 0;;) switch (_fun67976_ip) {
+        _fun68000: for (var _fun68000_ip = 0;;) switch (_fun68000_ip) {
             case 0:
                 var0 = _closure1_slot11;
                 var4 = undefined;
@@ -128,29 +128,29 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2[0] = var1;
                 var2[1] = var7;
                 var1 = function() { // Environment: var15
-                    _fun67978: for (var _fun67978_ip = 0;;) switch (_fun67978_ip) {
+                    _fun68002: for (var _fun68002_ip = 0;;) switch (_fun68002_ip) {
                         case 0:
                             var2 = _closure2_slot0;
                             if (var2) {
-                                _fun67978_ip = 40;
-                                continue _fun67978
+                                _fun68002_ip = 40;
+                                continue _fun68002
                             }
                         case 13:
                             var0 = _closure2_slot1;
                             var2 = _closure1_slot12;
                             if (var0) {
-                                _fun67978_ip = 32;
-                                continue _fun67978
+                                _fun68002_ip = 32;
+                                continue _fun68002
                             }
                         case 24:
                             var0 = var2.NONE;
-                            _fun67978_ip = 38;
-                            continue _fun67978;
+                            _fun68002_ip = 38;
+                            continue _fun68002;
                         case 32:
                             var0 = var2.STANDARD;
                         case 38:
-                            _fun67978_ip = 50;
-                            continue _fun67978;
+                            _fun68002_ip = 50;
+                            continue _fun68002;
                         case 40:
                             var1 = _closure1_slot12;
                             var0 = var1.KRISP;
@@ -160,8 +160,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 };
                 var17 = var3.bind(var5)(var1, var2);
                 if (var0) {
-                    _fun67976_ip = 325;
-                    continue _fun67976
+                    _fun68000_ip = 325;
+                    continue _fun68000
                 }
             case 132:
                 var2 = _closure1_slot8;
@@ -201,19 +201,19 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3.subLabel = var8;
                 var3.value = var7;
                 var7 = function(arg0) { // Original name: onValueChange, environment: var15
-                    _fun67980: for (var _fun67980_ip = 0;;) switch (_fun67980_ip) {
+                    _fun68004: for (var _fun68004_ip = 0;;) switch (_fun68004_ip) {
                         case 0:
                             var2 = _closure1_slot15;
                             var0 = _closure1_slot12;
                             var1 = arg0;
                             if (var1) {
-                                _fun67980_ip = 25;
-                                continue _fun67980
+                                _fun68004_ip = 25;
+                                continue _fun68004
                             }
                         case 17:
                             var1 = var0.NONE;
-                            _fun67980_ip = 31;
-                            continue _fun67980;
+                            _fun68004_ip = 31;
+                            continue _fun68004;
                         case 25:
                             var1 = var0.STANDARD;
                         case 31:
@@ -226,8 +226,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var6.bind(var4)(var5, var3);
                 var0.children = var3;
                 var0 = var2.bind(var4)(var1, var0);
-                _fun67976_ip = 1022;
-                continue _fun67976;
+                _fun68000_ip = 1022;
+                continue _fun68000;
             case 325:
                 var3 = _closure1_slot9;
                 var2 = _closure1_slot4;
@@ -518,7 +518,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8 = 'modules/user_settings/native/voice/redesign/NewUserSettingsVoiceProcessing.tsx';
     var8 = var9.bind(var10)(var8);
     var7 = function() { // Original name: NewUserSettingsVoiceProcessing, environment: var7
-        _fun67981: for (var _fun67981_ip = 0;;) switch (_fun67981_ip) {
+        _fun68005: for (var _fun68005_ip = 0;;) switch (_fun68005_ip) {
             case 0:
                 var21 = _closure1_slot0;
                 var17 = _closure1_slot2;
@@ -648,8 +648,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = new Array(2);
                 var8[0] = var12;
                 if (!var9) {
-                    _fun67981_ip = 626;
-                    continue _fun67981
+                    _fun68005_ip = 626;
+                    continue _fun68005
                 }
             case 478:
                 var12 = _closure1_slot8;
@@ -714,4 +714,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.NoiseSuppressionOpt = var3;
     var2.VoiceProcessingOptions = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 3435, 660, 33, 8170, 1297, 4833, 671, 566, 5324, 1234, 5383, 5382, 3901, 8439, 8426, 5377, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 3435, 660, 33, 8169, 1297, 4834, 671, 566, 5325, 1234, 5384, 5383, 3900, 8439, 8426, 5378, 2]);

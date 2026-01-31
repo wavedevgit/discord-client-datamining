@@ -9,13 +9,15 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = var3.registerAsset;
     var1 = {
         '__packager_asset': true,
-        'httpServerLocation': '/assets/design/components/LottieIcon/native/generated/lotties',
+        'httpServerLocation': '/assets/images/native/premium/illustrations',
+        'width': 233,
+        'height': 131.5,
         'scales': null,
-        'hash': '42c5142fba4f2f3f3d86c5b7ea6fd4ac',
-        'name': 'YouTab',
-        'type': 'lottie'
+        'hash': '8477337f8ec309d9db0fedfc91570d28',
+        'name': 'img_marketing_boosting_hands',
+        'type': 'png'
     };
-    var4 = [1];
+    var4 = [2, 3];
     var1.scales = var4;
     var2 = var2.bind(var3)(var1);
     var1 = module;

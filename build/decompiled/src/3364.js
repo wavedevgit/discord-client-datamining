@@ -5,14 +5,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = dependencyMap;
     var _closure1_slot1 = var1;
     var1 = function(arg0) { // Original name: isInteger, environment: var0
-        _fun28956: for (var _fun28956_ip = 0;;) switch (_fun28956_ip) {
+        _fun28957: for (var _fun28957_ip = 0;;) switch (_fun28957_ip) {
             case 0:
                 var1 = arg0;
                 var2 = 'number';
                 var0 = typeof var1;
                 if (!(var2 === var0)) {
-                    _fun28956_ip = 122;
-                    continue _fun28956
+                    _fun28957_ip = 122;
+                    continue _fun28957
                 }
             case 14:
                 var4 = _closure1_slot0;
@@ -23,8 +23,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var3 = var4.bind(var2)(var3);
                 var3 = var3.bind(var2)(var1);
                 if (var3) {
-                    _fun28956_ip = 122;
-                    continue _fun28956
+                    _fun28957_ip = 122;
+                    continue _fun28957
                 }
             case 46:
                 var4 = _closure1_slot0;
@@ -34,8 +34,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var3 = var4.bind(var2)(var3);
                 var3 = var3.bind(var2)(var1);
                 if (!var3) {
-                    _fun28956_ip = 122;
-                    continue _fun28956
+                    _fun28957_ip = 122;
+                    continue _fun28957
                 }
             case 74:
                 var3 = _closure1_slot0;

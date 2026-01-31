@@ -1,6 +1,6 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun16436: for (var _fun16436_ip = 0;;) switch (_fun16436_ip) {
+    _fun16438: for (var _fun16438_ip = 0;;) switch (_fun16438_ip) {
         case 0:
             var1 = module;
             var2 = global;
@@ -9,18 +9,18 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var3 = 'function';
             var2 = typeof var2;
             if (!(var3 !== var2)) {
-                _fun16436_ip = 42;
-                continue _fun16436
+                _fun16438_ip = 42;
+                continue _fun16438
             }
         case 29:
             var2 = function(arg0, arg1) { // Original name: inherits, environment: var0
-                _fun16438: for (var _fun16438_ip = 0;;) switch (_fun16438_ip) {
+                _fun16440: for (var _fun16440_ip = 0;;) switch (_fun16440_ip) {
                     case 0:
                         var1 = arg0;
                         var2 = arg1;
                         if (!var2) {
-                            _fun16438_ip = 70;
-                            continue _fun16438
+                            _fun16440_ip = 70;
+                            continue _fun16440
                         }
                     case 9:
                         var1.super_ = var2;
@@ -48,17 +48,17 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var1.exports = var2;
-            _fun16436_ip = 53;
-            continue _fun16436;
+            _fun16438_ip = 53;
+            continue _fun16438;
         case 42:
             var0 = function(arg0, arg1) { // Original name: inherits, environment: var0
-                _fun16437: for (var _fun16437_ip = 0;;) switch (_fun16437_ip) {
+                _fun16439: for (var _fun16439_ip = 0;;) switch (_fun16439_ip) {
                     case 0:
                         var1 = arg0;
                         var0 = arg1;
                         if (!var0) {
-                            _fun16437_ip = 67;
-                            continue _fun16437
+                            _fun16439_ip = 67;
+                            continue _fun16439
                         }
                     case 9:
                         var1.super_ = var0;

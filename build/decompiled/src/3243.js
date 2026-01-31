@@ -1,7 +1,7 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var1 = function(arg0) { // Original name: fromPairs, environment: var0
-        _fun28116: for (var _fun28116_ip = 0;;) switch (_fun28116_ip) {
+        _fun28117: for (var _fun28117_ip = 0;;) switch (_fun28117_ip) {
             case 0:
                 var5 = arg0;
                 var0 = null;
@@ -9,8 +9,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var4 = 0;
                 var3 = 0;
                 if (var0) {
-                    _fun28116_ip = 21;
-                    continue _fun28116
+                    _fun28117_ip = 21;
+                    continue _fun28117
                 }
             case 16:
                 var3 = var5.length;
@@ -20,8 +20,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = 1;
                 var1 = 0;
                 if (!var6) {
-                    _fun28116_ip = 58;
-                    continue _fun28116
+                    _fun28117_ip = 58;
+                    continue _fun28117
                 }
             case 35:
                 var6 = var5[var1];
@@ -30,8 +30,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0[var7] = var6;
                 var1 = var1 + 1;
                 if (var1 < var3) {
-                    _fun28116_ip = 35;
-                    continue _fun28116
+                    _fun28117_ip = 35;
+                    continue _fun28117
                 }
             case 58:
                 return var0;

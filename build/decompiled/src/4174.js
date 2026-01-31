@@ -8,7 +8,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = dependencyMap;
     var _closure1_slot2 = var0;
     var0 = function(arg0, arg1, arg2, arg3) { // Original name: getImageNumberValue, environment: var3
-        _fun38299: for (var _fun38299_ip = 0;;) switch (_fun38299_ip) {
+        _fun38316: for (var _fun38316_ip = 0;;) switch (_fun38316_ip) {
             case 0:
                 var6 = arg0;
                 var5 = arg1;
@@ -22,8 +22,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = var1.LITTLE_ENDIAN;
                 var1 = arg3;
                 if (!(var1 !== var2)) {
-                    _fun38299_ip = 105;
-                    continue _fun38299
+                    _fun38316_ip = 105;
+                    continue _fun38316
                 }
             case 46:
                 var9 = var0 < var4;
@@ -33,8 +33,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = 0;
                 var1 = 0;
                 if (!var9) {
-                    _fun38299_ip = 103;
-                    continue _fun38299
+                    _fun38316_ip = 103;
+                    continue _fun38316
                 }
             case 65:
                 var9 = var5 + var2;
@@ -47,8 +47,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = var2 + 1;
                 var1 = var3;
                 if (var2 < var4) {
-                    _fun38299_ip = 65;
-                    continue _fun38299
+                    _fun38316_ip = 65;
+                    continue _fun38316
                 }
             case 103:
                 return var1;
@@ -59,8 +59,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = 0;
                 var0 = 0;
                 if (!var7) {
-                    _fun38299_ip = 151;
-                    continue _fun38299
+                    _fun38316_ip = 151;
+                    continue _fun38316
                 }
             case 121:
                 var7 = var5 + var1;
@@ -71,8 +71,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = var1 + 1;
                 var0 = var2;
                 if (var1 < var4) {
-                    _fun38299_ip = 121;
-                    continue _fun38299
+                    _fun38316_ip = 121;
+                    continue _fun38316
                 }
             case 151:
                 return var0;
@@ -80,7 +80,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var _closure1_slot4 = var0;
     var0 = function(arg0) { // Original name: getImageFlags, environment: var3
-        _fun38300: for (var _fun38300_ip = 0;;) switch (_fun38300_ip) {
+        _fun38317: for (var _fun38317_ip = 0;;) switch (_fun38317_ip) {
             case 0:
                 var3 = arg0;
                 var0 = 31;
@@ -101,8 +101,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = 0;
                 var2 = var1[var2];
                 if (!var2) {
-                    _fun38300_ip = 84;
-                    continue _fun38300
+                    _fun38317_ip = 84;
+                    continue _fun38317
                 }
             case 68:
                 var4 = var3.push;
@@ -111,8 +111,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             case 84:
                 var0 = var1[var0];
                 if (!var0) {
-                    _fun38300_ip = 107;
-                    continue _fun38300
+                    _fun38317_ip = 107;
+                    continue _fun38317
                 }
             case 91:
                 var2 = var3.push;
@@ -122,8 +122,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = 2;
                 var0 = var1[var0];
                 if (!var0) {
-                    _fun38300_ip = 133;
-                    continue _fun38300
+                    _fun38317_ip = 133;
+                    continue _fun38317
                 }
             case 117:
                 var2 = var3.push;
@@ -136,8 +136,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = ', ';
                 var1 = var2.bind(var3)(var1);
                 if (var1) {
-                    _fun38300_ip = 162;
-                    continue _fun38300
+                    _fun38317_ip = 162;
+                    continue _fun38317
                 }
             case 158:
                 var1 = 'None';
@@ -148,7 +148,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var _closure1_slot5 = var0;
     var0 = function(arg0) { // Original name: getImageFormat, environment: var3
-        _fun38301: for (var _fun38301_ip = 0;;) switch (_fun38301_ip) {
+        _fun38318: for (var _fun38318_ip = 0;;) switch (_fun38318_ip) {
             case 0:
                 var1 = arg0;
                 var0 = 24;
@@ -160,8 +160,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = 'Unknown';
                 var2 = 0;
                 if (!(var2 === var3)) {
-                    _fun38301_ip = 37;
-                    continue _fun38301
+                    _fun38318_ip = 37;
+                    continue _fun38318
                 }
             case 33:
                 var1 = 'JPEG';
@@ -172,7 +172,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var _closure1_slot6 = var0;
     var0 = function(arg0) { // Original name: getImageType, environment: var3
-        _fun38302: for (var _fun38302_ip = 0;;) switch (_fun38302_ip) {
+        _fun38319: for (var _fun38319_ip = 0;;) switch (_fun38319_ip) {
             case 0:
                 var1 = 16777215;
                 var0 = arg0;
@@ -190,8 +190,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 };
                 var1 = var1[var2];
                 if (var1) {
-                    _fun38302_ip = 44;
-                    continue _fun38302
+                    _fun38319_ip = 44;
+                    continue _fun38319
                 }
             case 40:
                 var1 = 'Unknown';
@@ -202,13 +202,13 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var _closure1_slot7 = var0;
     var0 = function(arg0, arg1, arg2, arg3) { // Original name: getImageOffset, environment: var3
-        _fun38303: for (var _fun38303_ip = 0;;) switch (_fun38303_ip) {
+        _fun38320: for (var _fun38320_ip = 0;;) switch (_fun38320_ip) {
             case 0:
                 var3 = arg0;
                 var0 = 0;
                 if (!(var0 !== var3)) {
-                    _fun38303_ip = 95;
-                    continue _fun38303
+                    _fun38320_ip = 95;
+                    continue _fun38320
                 }
             case 9:
                 var6 = _closure1_slot4;
@@ -279,7 +279,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var11 = var2;
         var0 = var16[var7](var15, var14, var13, var12, var11, var10, var9);
         var1 = function(arg0, arg1, arg2, arg3) { // Original name: addMpfImages, environment: var1
-            _fun38305: for (var _fun38305_ip = 0;;) switch (_fun38305_ip) {
+            _fun38322: for (var _fun38322_ip = 0;;) switch (_fun38322_ip) {
                 case 0:
                     var16 = arg0;
                     var15 = arg1;
@@ -287,8 +287,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var14 = arg3;
                     var1 = var0.MPEntry;
                     if (var1) {
-                        _fun38305_ip = 25;
-                        continue _fun38305
+                        _fun38322_ip = 25;
+                        continue _fun38322
                     }
                 case 23:
                     return var0;
@@ -314,8 +314,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var4 = 14;
                     var3 = 'base64';
                     if (!var2) {
-                        _fun38305_ip = 650;
-                        continue _fun38305
+                        _fun38322_ip = 650;
+                        continue _fun38322
                     }
                 case 113:
                     var2 = {};
@@ -451,8 +451,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var2 = var20 / var2;
                     var2 = var18.bind(var19)(var2);
                     if (var11 < var2) {
-                        _fun38305_ip = 113;
-                        continue _fun38305
+                        _fun38322_ip = 113;
+                        continue _fun38322
                     }
                 case 650:
                     var0.Images = var1;

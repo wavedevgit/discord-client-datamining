@@ -38,7 +38,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = function() { // Environment: var1
         var3 = _closure1_slot4;
         var2 = function() { // Original name: NativeWorklets, environment: var1
-            _fun33116: for (var _fun33116_ip = 0;;) switch (_fun33116_ip) {
+            _fun33132: for (var _fun33132_ip = 0;;) switch (_fun33132_ip) {
                 case 0:
                     var3 = this;
                     var4 = _closure1_slot3;
@@ -57,8 +57,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var1 = _closure1_slot0;
                     var1 = var1.__workletsModuleProxy;
                     if (!(var2 === var1)) {
-                        _fun33116_ip = 164;
-                        continue _fun33116
+                        _fun33132_ip = 164;
+                        continue _fun33132
                     }
                 case 76:
                     var4 = _closure1_slot1;
@@ -74,8 +74,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var4 = var1.WorkletsTurboModule;
                     var1 = null;
                     if (!(var1 != var4)) {
-                        _fun33116_ip = 164;
-                        continue _fun33116
+                        _fun33132_ip = 164;
+                        continue _fun33132
                     }
                 case 130:
                     var4 = _closure1_slot1;
@@ -89,8 +89,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var1 = _closure1_slot0;
                     var1 = var1.__workletsModuleProxy;
                     if (!(var2 !== var1)) {
-                        _fun33116_ip = 208;
-                        continue _fun33116
+                        _fun33132_ip = 208;
+                        continue _fun33132
                     }
                 case 178:
                     var1 = _closure1_slot5;

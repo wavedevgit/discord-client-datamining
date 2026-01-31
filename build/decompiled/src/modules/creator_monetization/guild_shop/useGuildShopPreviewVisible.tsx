@@ -34,7 +34,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/creator_monetization/guild_shop/useGuildShopPreviewVisible.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0, arg1) { // Original name: useGuildShopPreviewVisible, environment: var1
-        _fun49842: for (var _fun49842_ip = 0;;) switch (_fun49842_ip) {
+        _fun49859: for (var _fun49859_ip = 0;;) switch (_fun49859_ip) {
             case 0:
                 var7 = arg0;
                 var _closure2_slot0 = var7;
@@ -65,14 +65,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = new Array(1);
                 var2[0] = var0;
                 var0 = function() { // Environment: var4
-                    _fun49843: for (var _fun49843_ip = 0;;) switch (_fun49843_ip) {
+                    _fun49860: for (var _fun49860_ip = 0;;) switch (_fun49860_ip) {
                         case 0:
                             var2 = _closure2_slot0;
                             var0 = null;
                             var0 = var0 != var2;
                             if (!var0) {
-                                _fun49843_ip = 49;
-                                continue _fun49843
+                                _fun49860_ip = 49;
+                                continue _fun49860
                             }
                         case 16:
                             var4 = _closure1_slot2;
@@ -90,8 +90,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var0 == var7;
                 var2 = undefined;
                 if (var5) {
-                    _fun49842_ip = 172;
-                    continue _fun49842
+                    _fun49859_ip = 172;
+                    continue _fun49859
                 }
             case 146:
                 var11 = var7.features;
@@ -102,8 +102,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 172:
                 var5 = var0 != var2;
                 if (!var5) {
-                    _fun49842_ip = 182;
-                    continue _fun49842
+                    _fun49859_ip = 182;
+                    continue _fun49859
                 }
             case 179:
                 var5 = var2;
@@ -117,8 +117,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var0 == var7;
                 var9 = undefined;
                 if (var2) {
-                    _fun49842_ip = 222;
-                    continue _fun49842
+                    _fun49859_ip = 222;
+                    continue _fun49859
                 }
             case 217:
                 var9 = var7.id;
@@ -135,15 +135,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9[2] = var8;
                 var8 = var9.some;
                 var4 = function(arg0) { // Environment: var4
-                    _fun49844: for (var _fun49844_ip = 0;;) switch (_fun49844_ip) {
+                    _fun49861: for (var _fun49861_ip = 0;;) switch (_fun49861_ip) {
                         case 0:
                             var2 = _closure2_slot0;
                             var0 = null;
                             var2 = var0 == var2;
                             var0 = undefined;
                             if (var2) {
-                                _fun49844_ip = 41;
-                                continue _fun49844
+                                _fun49861_ip = 41;
+                                continue _fun49861
                             }
                         case 18:
                             var1 = _closure2_slot0;
@@ -158,43 +158,43 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var8.bind(var9)(var4);
                 var0 = var0 != var7;
                 if (!var0) {
-                    _fun49842_ip = 296;
-                    continue _fun49842
+                    _fun49859_ip = 296;
+                    continue _fun49859
                 }
             case 293:
                 var0 = var6;
             case 296:
                 if (!var0) {
-                    _fun49842_ip = 302;
-                    continue _fun49842
+                    _fun49859_ip = 302;
+                    continue _fun49859
                 }
             case 299:
                 var0 = !var5;
             case 302:
                 if (!var0) {
-                    _fun49842_ip = 308;
-                    continue _fun49842
+                    _fun49859_ip = 308;
+                    continue _fun49859
                 }
             case 305:
                 var0 = var4;
             case 308:
                 if (!var0) {
-                    _fun49842_ip = 314;
-                    continue _fun49842
+                    _fun49859_ip = 314;
+                    continue _fun49859
                 }
             case 311:
                 var0 = var3;
             case 314:
                 if (!var0) {
-                    _fun49842_ip = 320;
-                    continue _fun49842
+                    _fun49859_ip = 320;
+                    continue _fun49859
                 }
             case 317:
                 var0 = var2;
             case 320:
                 if (!var0) {
-                    _fun49842_ip = 326;
-                    continue _fun49842
+                    _fun49859_ip = 326;
+                    continue _fun49859
                 }
             case 323:
                 var0 = !var1;
@@ -204,4 +204,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useGuildShopPreviewVisible = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3050, 660, 5588, 3171, 1358, 632, 5590, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3050, 660, 5589, 3171, 1358, 632, 5591, 2]);

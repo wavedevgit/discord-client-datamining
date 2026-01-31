@@ -74,4 +74,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.SOUND_ROW_SPACING = var3;
     var2.SoundboardOrientationConfig = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [7780, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [7779, 2]);

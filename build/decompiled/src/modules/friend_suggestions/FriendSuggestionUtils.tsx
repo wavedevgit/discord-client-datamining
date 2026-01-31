@@ -20,7 +20,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = 'modules/friend_suggestions/FriendSuggestionUtils.tsx';
     var1 = var3.bind(var4)(var1);
     var1 = function(arg0, arg1) { // Original name: getSuggestedContactNameForSuggestion, environment: var1
-        _fun102010: for (var _fun102010_ip = 0;;) switch (_fun102010_ip) {
+        _fun101381: for (var _fun101381_ip = 0;;) switch (_fun101381_ip) {
             case 0:
                 var3 = arg0;
                 var5 = arg1;
@@ -29,8 +29,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = undefined;
                 var0 = undefined;
                 if (var4) {
-                    _fun102010_ip = 25;
-                    continue _fun102010
+                    _fun101381_ip = 25;
+                    continue _fun101381
                 }
             case 19:
                 var0 = var5.contactNames;
@@ -38,15 +38,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var2 != var0;
                 var0 = undefined;
                 if (!var4) {
-                    _fun102010_ip = 123;
-                    continue _fun102010
+                    _fun101381_ip = 123;
+                    continue _fun101381
                 }
             case 34:
                 var6 = var2 == var5;
                 var4 = undefined;
                 if (var6) {
-                    _fun102010_ip = 54;
-                    continue _fun102010
+                    _fun101381_ip = 54;
+                    continue _fun101381
                 }
             case 43:
                 var6 = var5.contactNames;
@@ -56,15 +56,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var4 >= var8;
                 var0 = undefined;
                 if (!var4) {
-                    _fun102010_ip = 123;
-                    continue _fun102010
+                    _fun101381_ip = 123;
+                    continue _fun101381
                 }
             case 66:
                 var6 = var2 == var5;
                 var4 = undefined;
                 if (var6) {
-                    _fun102010_ip = 120;
-                    continue _fun102010
+                    _fun101381_ip = 120;
+                    continue _fun101381
                 }
             case 75:
                 var7 = var5.contactNames;
@@ -80,28 +80,28 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var4;
             case 123:
                 if (!(var2 != var0)) {
-                    _fun102010_ip = 183;
-                    continue _fun102010
+                    _fun101381_ip = 183;
+                    continue _fun101381
                 }
             case 127:
                 if (!(var2 == var3)) {
-                    _fun102010_ip = 135;
-                    continue _fun102010
+                    _fun101381_ip = 135;
+                    continue _fun101381
                 }
             case 131:
                 if (!(var2 == var0)) {
-                    _fun102010_ip = 187;
-                    continue _fun102010
+                    _fun101381_ip = 187;
+                    continue _fun101381
                 }
             case 135:
                 if (!(var2 != var3)) {
-                    _fun102010_ip = 183;
-                    continue _fun102010
+                    _fun101381_ip = 183;
+                    continue _fun101381
                 }
             case 139:
                 if (!(var3 !== var0)) {
-                    _fun102010_ip = 183;
-                    continue _fun102010
+                    _fun101381_ip = 183;
+                    continue _fun101381
                 }
             case 143:
                 var2 = var3.split;
@@ -113,8 +113,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var2.bind(var0)(var5);
                 var2 = var2[var4];
                 if (!(var3 === var2)) {
-                    _fun102010_ip = 185;
-                    continue _fun102010
+                    _fun101381_ip = 185;
+                    continue _fun101381
                 }
             case 183:
                 return var1;

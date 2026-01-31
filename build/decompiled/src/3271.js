@@ -1,27 +1,27 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var1 = function(arg0, arg1, arg2) { // Original name: baseClamp, environment: var0
-        _fun28174: for (var _fun28174_ip = 0;;) switch (_fun28174_ip) {
+        _fun28175: for (var _fun28175_ip = 0;;) switch (_fun28175_ip) {
             case 0:
                 var5 = arg0;
                 var2 = arg1;
                 var1 = arg2;
                 var0 = var5;
                 if (!(var0 == var0)) {
-                    _fun28174_ip = 55;
-                    continue _fun28174
+                    _fun28175_ip = 55;
+                    continue _fun28175
                 }
             case 16:
                 var4 = undefined;
                 var3 = var5;
                 if (!(var4 !== var1)) {
-                    _fun28174_ip = 35;
-                    continue _fun28174
+                    _fun28175_ip = 35;
+                    continue _fun28175
                 }
             case 25:
                 if (!(var5 <= var1)) {
-                    _fun28174_ip = 32;
-                    continue _fun28174
+                    _fun28175_ip = 32;
+                    continue _fun28175
                 }
             case 29:
                 var1 = var5;
@@ -30,13 +30,13 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             case 35:
                 var1 = var3;
                 if (!(var4 !== var2)) {
-                    _fun28174_ip = 52;
-                    continue _fun28174
+                    _fun28175_ip = 52;
+                    continue _fun28175
                 }
             case 42:
                 if (!(var3 >= var2)) {
-                    _fun28174_ip = 49;
-                    continue _fun28174
+                    _fun28175_ip = 49;
+                    continue _fun28175
                 }
             case 46:
                 var2 = var3;

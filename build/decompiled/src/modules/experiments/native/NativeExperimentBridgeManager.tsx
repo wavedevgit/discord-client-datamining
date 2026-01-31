@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
     var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
-        _fun118096: for (var _fun118096_ip = 0;;) switch (_fun118096_ip) {
+        _fun117446: for (var _fun117446_ip = 0;;) switch (_fun117446_ip) {
             case 0:
             case 2: // try_start_0
                 var1 = global;
@@ -29,8 +29,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = !var1;
                 var _closure2_slot0 = var1;
             case 72: // try_end0
-                _fun118096_ip = 76;
-                continue _fun118096;
+                _fun117446_ip = 76;
+                continue _fun117446;
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
@@ -48,60 +48,87 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var _closure1_slot8 = var0;
     var0 = function() { // Original name: updateIOSExperiments, environment: var1
-        _fun118099: for (var _fun118099_ip = 0;;) switch (_fun118099_ip) {
+        _fun117449: for (var _fun117449_ip = 0;;) switch (_fun117449_ip) {
             case 0:
                 var1 = _closure1_slot7;
-                var4 = var1.NSUserDefaultsBridge;
-                var1 = null;
-                var2 = var1 == var4;
-                if (var2) {
-                    _fun118099_ip = 32;
-                    continue _fun118099
+                var3 = var1.NSUserDefaultsBridge;
+                var4 = null;
+                var1 = var4 == var3;
+                if (var1) {
+                    _fun117449_ip = 32;
+                    continue _fun117449
                 }
             case 22:
-                var3 = var4.setShouldClearChannelNotificationsOnPushAck;
-                var2 = var1 == var3;
+                var2 = var3.setShouldClearChannelNotificationsOnPushAck;
+                var1 = var4 == var2;
             case 32:
-                if (var2) {
-                    _fun118099_ip = 91;
-                    continue _fun118099
+                if (var1) {
+                    _fun117449_ip = 91;
+                    continue _fun117449
                 }
             case 35:
-                var3 = var4.setShouldClearChannelNotificationsOnPushAck;
+                var2 = var3.setShouldClearChannelNotificationsOnPushAck;
                 var6 = _closure1_slot0;
                 var5 = _closure1_slot1;
-                var2 = 6;
-                var5 = var5[var2];
-                var2 = undefined;
-                var6 = var6.bind(var2)(var5);
+                var1 = 6;
+                var5 = var5[var1];
+                var1 = undefined;
+                var6 = var6.bind(var1)(var5);
                 var5 = var6.shouldClearChannelNotificationsOnPushAck;
-                var2 = {};
+                var1 = {};
                 var7 = 'NativeExperimentBridgeManager';
-                var2.location = var7;
-                var2 = var5.bind(var6)(var2);
-                var2 = var3.bind(var4)(var2);
+                var1.location = var7;
+                var1 = var5.bind(var6)(var1);
+                var1 = var2.bind(var3)(var1);
             case 91:
-                var2 = _closure1_slot7;
-                var2 = var2.NSUserDefaultsBridge;
-                if (!(var1 != var2)) {
-                    _fun118099_ip = 163;
-                    continue _fun118099
+                var1 = _closure1_slot7;
+                var3 = var1.NSUserDefaultsBridge;
+                if (!(var4 != var3)) {
+                    _fun117449_ip = 163;
+                    continue _fun117449
                 }
             case 105:
-                var1 = var2.setShouldEnableAnimatedReactionUpdates;
+                var2 = var3.setShouldEnableAnimatedReactionUpdates;
+                var6 = _closure1_slot0;
+                var5 = _closure1_slot1;
+                var1 = 7;
+                var5 = var5[var1];
+                var1 = undefined;
+                var6 = var6.bind(var1)(var5);
+                var5 = var6.shouldEnableAnimatedReactionUpdates;
+                var1 = {};
+                var7 = 'NativeExperimentBridgeManager';
+                var1.location = var7;
+                var1 = var5.bind(var6)(var1);
+                var1 = var2.bind(var3)(var1);
+            case 163:
+                var1 = _closure1_slot7;
+                var2 = var1.NSUserDefaultsBridge;
+                var1 = var4 == var2;
+                if (var1) {
+                    _fun117449_ip = 190;
+                    continue _fun117449
+                }
+            case 180:
+                var3 = var2.setShouldFixPushNotificationRawPayload;
+                var1 = var4 == var3;
+            case 190:
+                if (var1) {
+                    _fun117449_ip = 236;
+                    continue _fun117449
+                }
+            case 193:
+                var1 = var2.setShouldFixPushNotificationRawPayload;
                 var4 = _closure1_slot0;
                 var3 = _closure1_slot1;
-                var0 = 7;
+                var0 = 8;
                 var3 = var3[var0];
                 var0 = undefined;
-                var4 = var4.bind(var0)(var3);
-                var3 = var4.shouldEnableAnimatedReactionUpdates;
-                var0 = {};
-                var5 = 'NativeExperimentBridgeManager';
-                var0.location = var5;
-                var0 = var3.bind(var4)(var0);
+                var3 = var4.bind(var0)(var3);
+                var0 = var3.isIOSPushNotificationRawPayloadFixExperimentEnabled;
+                var0 = var0.bind(var3)();
                 var0 = var1.bind(var2)(var0);
-            case 163:
+            case 236:
                 var0 = undefined;
                 return var0;
         }
@@ -146,12 +173,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var0)(var3);
     var3 = var3.NativeModules;
     var _closure1_slot7 = var3;
-    var3 = 9;
+    var3 = 10;
     var3 = var5[var3];
     var3 = var6.bind(var0)(var3);
     var1 = function(arg0) { // Environment: var1
         var2 = function(arg0) { // Original name: NativeExperimentBridgeManager, environment: var0
-            _fun118102: for (var _fun118102_ip = 0;;) switch (_fun118102_ip) {
+            _fun117452: for (var _fun117452_ip = 0;;) switch (_fun117452_ip) {
                 case 0:
                     var3 = this;
                     var12 = 0;
@@ -171,14 +198,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = _closure1_slot8;
                     var0 = var0.bind(var4)();
                     if (var0) {
-                        _fun118102_ip = 84;
-                        continue _fun118102
+                        _fun117452_ip = 84;
+                        continue _fun117452
                     }
                 case 71:
                     var0 = var8.apply;
                     var0 = var0.bind(var8)(var3, var9);
-                    _fun118102_ip = 118;
-                    continue _fun118102;
+                    _fun117452_ip = 118;
+                    continue _fun117452;
                 case 84:
                     var5 = global;
                     var7 = var5.Reflect;
@@ -191,14 +218,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = var1.bind(var4)(var3, var0);
                     var3 = _closure1_slot0;
                     var1 = _closure1_slot1;
-                    var5 = 8;
+                    var5 = 9;
                     var1 = var1[var5];
                     var3 = var3.bind(var4)(var1);
                     var1 = var3.isIOS;
                     var1 = var1.bind(var3)();
                     if (var1) {
-                        _fun118102_ip = 204;
-                        continue _fun118102
+                        _fun117452_ip = 204;
+                        continue _fun117452
                     }
                 case 157:
                     var3 = _closure1_slot0;
@@ -208,21 +235,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1 = var3.isAndroid;
                     var1 = var1.bind(var3)();
                     if (var1) {
-                        _fun118102_ip = 198;
-                        continue _fun118102
+                        _fun117452_ip = 198;
+                        continue _fun117452
                     }
                 case 187:
                     var1 = function() { // Environment: var1
                         var0 = undefined;
                         return var0;
                     };
-                    _fun118102_ip = 202;
-                    continue _fun118102;
+                    _fun117452_ip = 202;
+                    continue _fun117452;
                 case 198:
                     var1 = _closure1_slot10;
                 case 202:
-                    _fun118102_ip = 208;
-                    continue _fun118102;
+                    _fun117452_ip = 208;
+                    continue _fun117452;
                 case 204:
                     var1 = _closure1_slot9;
                 case 208:
@@ -253,7 +280,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var12 = var3;
     var1 = new var12[var1](var11);
     var1 = var1 instanceof Object ? var1 : var3;
-    var3 = 10;
+    var3 = 11;
     var3 = var5[var3];
     var5 = var4.bind(var0)(var3);
     var4 = var5.fileFinishedImporting;
@@ -261,4 +288,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [7, 6, 15, 17, 18, 27, 14996, 14997, 478, 4262, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [7, 6, 15, 17, 18, 27, 14926, 14927, 4217, 478, 4263, 2]);

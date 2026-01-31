@@ -190,7 +190,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'uikit-native/modals/JoinServer.tsx';
     var4 = var5.bind(var6)(var4);
     var3 = function(arg0) { // Original name: JoinServer, environment: var3
-        _fun60813: for (var _fun60813_ip = 0;;) switch (_fun60813_ip) {
+        _fun60825: for (var _fun60825_ip = 0;;) switch (_fun60825_ip) {
             case 0:
                 var0 = arg0;
                 var21 = var0.error;
@@ -260,8 +260,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var8 <= var7;
                 var8 = null;
                 if (var7) {
-                    _fun60813_ip = 503;
-                    continue _fun60813
+                    _fun60825_ip = 503;
+                    continue _fun60825
                 }
             case 261:
                 var11 = _closure1_slot9;
@@ -521,4 +521,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.default = var3;
     var2.OrSeparator = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 7506, 33, 1297, 671, 3901, 1234, 4855, 1469, 1464, 5843, 4043, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 7505, 33, 1297, 671, 3900, 1234, 4856, 1469, 1464, 5844, 4043, 2]);

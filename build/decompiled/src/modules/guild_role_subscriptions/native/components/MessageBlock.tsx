@@ -9,21 +9,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var6;
     var0 = function(arg0) { // Original name: getContainerStyles, environment: var3
-        _fun109064: for (var _fun109064_ip = 0;;) switch (_fun109064_ip) {
+        _fun108420: for (var _fun108420_ip = 0;;) switch (_fun108420_ip) {
             case 0:
                 var2 = arg0;
                 var0 = _closure1_slot5;
                 var0 = var0.RED;
                 if (!(var0 !== var2)) {
-                    _fun109064_ip = 104;
-                    continue _fun109064
+                    _fun108420_ip = 104;
+                    continue _fun108420
                 }
             case 20:
                 var0 = _closure1_slot5;
                 var0 = var0.YELLOW;
                 if (!(var0 !== var2)) {
-                    _fun109064_ip = 38;
-                    continue _fun109064
+                    _fun108420_ip = 38;
+                    continue _fun108420
                 }
             case 34:
                 var0 = undefined;
@@ -66,21 +66,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var _closure1_slot7 = var0;
     var0 = function(arg0) { // Original name: getTextColor, environment: var3
-        _fun109065: for (var _fun109065_ip = 0;;) switch (_fun109065_ip) {
+        _fun108421: for (var _fun108421_ip = 0;;) switch (_fun108421_ip) {
             case 0:
                 var2 = arg0;
                 var1 = _closure1_slot5;
                 var1 = var1.RED;
                 if (!(var1 !== var2)) {
-                    _fun109065_ip = 73;
-                    continue _fun109065
+                    _fun108421_ip = 73;
+                    continue _fun108421
                 }
             case 20:
                 var1 = _closure1_slot5;
                 var1 = var1.YELLOW;
                 if (!(var1 !== var2)) {
-                    _fun109065_ip = 38;
-                    continue _fun109065
+                    _fun108421_ip = 38;
+                    continue _fun108421
                 }
             case 34:
                 var1 = undefined;
@@ -220,4 +220,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.default = var3;
     var2.MessageBlockColors = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 671, 1297, 4838, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 671, 1297, 4839, 2]);

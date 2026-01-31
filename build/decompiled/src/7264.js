@@ -13,8 +13,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         'width': 300.5,
         'height': 175,
         'scales': null,
-        'hash': '034593f3dac51b7d85899e7191ac5a9f',
-        'name': 'client_theme',
+        'hash': '767971903774f3e283939a2d77b5c958',
+        'name': 'server_boosts',
         'type': 'png'
     };
     var4 = [2, 3];

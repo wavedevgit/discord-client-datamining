@@ -5,7 +5,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2 = exports;
     var4 = dependencyMap;
     var0 = function() { // Original name: _isNativeReflectConstruct, environment: var3
-        _fun67584: for (var _fun67584_ip = 0;;) switch (_fun67584_ip) {
+        _fun67607: for (var _fun67607_ip = 0;;) switch (_fun67607_ip) {
             case 0:
             case 2: // try_start_0
                 var1 = global;
@@ -26,8 +26,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = !var1;
                 var _closure2_slot0 = var1;
             case 72: // try_end0
-                _fun67584_ip = 76;
-                continue _fun67584;
+                _fun67607_ip = 76;
+                continue _fun67607;
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
@@ -82,7 +82,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var1.DeviceSettingsStore;
     var1 = function(arg0) { // Environment: var3
         var3 = function() { // Original name: StageMusicStore, environment: var5
-            _fun67588: for (var _fun67588_ip = 0;;) switch (_fun67588_ip) {
+            _fun67611: for (var _fun67611_ip = 0;;) switch (_fun67611_ip) {
                 case 0:
                     var3 = this;
                     var2 = undefined;
@@ -96,16 +96,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = _closure1_slot7;
                     var0 = var0.bind(var2)();
                     if (var0) {
-                        _fun67588_ip = 69;
-                        continue _fun67588
+                        _fun67611_ip = 69;
+                        continue _fun67611
                     }
                 case 51:
                     var6 = var8.apply;
                     var4 = arguments;
                     var0 = var4;
                     var0 = var6.bind(var8)(var3, var0);
-                    _fun67588_ip = 105;
-                    continue _fun67588;
+                    _fun67611_ip = 105;
+                    continue _fun67611;
                 case 69:
                     var6 = global;
                     var7 = var6.Reflect;
@@ -130,13 +130,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = 'initialize';
         var4.key = var0;
         var0 = function(arg0) { // Original name: value, environment: var5
-            _fun67589: for (var _fun67589_ip = 0;;) switch (_fun67589_ip) {
+            _fun67612: for (var _fun67612_ip = 0;;) switch (_fun67612_ip) {
                 case 0:
                     var1 = arg0;
                     var0 = null;
                     if (!(var0 != var1)) {
-                        _fun67589_ip = 16;
-                        continue _fun67589
+                        _fun67612_ip = 16;
+                        continue _fun67612
                     }
                 case 9:
                     _closure1_slot5 = var1;

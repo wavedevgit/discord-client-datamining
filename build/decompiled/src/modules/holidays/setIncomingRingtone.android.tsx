@@ -25,23 +25,23 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/holidays/setIncomingRingtone.android.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: setIncomingRingtone, environment: var1
-        _fun114000: for (var _fun114000_ip = 0;;) switch (_fun114000_ip) {
+        _fun113350: for (var _fun113350_ip = 0;;) switch (_fun113350_ip) {
             case 0:
                 var0 = _closure1_slot0;
                 var2 = var0.DCDNotificationCategoryUtils;
                 var3 = null;
                 var0 = var3 == var2;
                 if (var0) {
-                    _fun114000_ip = 32;
-                    continue _fun114000
+                    _fun113350_ip = 32;
+                    continue _fun113350
                 }
             case 22:
                 var1 = var2.setIncomingRingtone;
                 var0 = var3 == var1;
             case 32:
                 if (var0) {
-                    _fun114000_ip = 49;
-                    continue _fun114000
+                    _fun113350_ip = 49;
+                    continue _fun113350
                 }
             case 35:
                 var1 = var2.setIncomingRingtone;

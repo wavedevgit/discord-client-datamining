@@ -247,7 +247,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/guild_role_subscriptions/native/components/GuildRoleSubscriptionGroupDetailsModal.tsx';
     var4 = var5.bind(var6)(var4);
     var3 = function(arg0) { // Original name: GuildRoleSubscriptionTierDetailsModal, environment: var3
-        _fun117240: for (var _fun117240_ip = 0;;) switch (_fun117240_ip) {
+        _fun116590: for (var _fun116590_ip = 0;;) switch (_fun116590_ip) {
             case 0:
                 var7 = arg0;
                 var8 = _closure1_slot5;
@@ -269,8 +269,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var9.length;
                 var5 = var0 > var1;
                 if (!var5) {
-                    _fun117240_ip = 90;
-                    continue _fun117240
+                    _fun116590_ip = 90;
+                    continue _fun116590
                 }
             case 84:
                 var0 = null;
@@ -336,4 +336,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.default = var3;
     var2.Content = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 14907, 5596, 660, 33, 1297, 12582, 14895, 5891, 1234, 14908, 3901, 10712, 5339, 14910, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 14837, 5597, 660, 33, 1297, 12518, 14825, 5892, 1234, 14838, 3900, 10714, 5340, 14840, 2]);

@@ -61,7 +61,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot6 = var3;
     var3 = var6.memo;
     var1 = function(arg0) { // Environment: var1
-        _fun69298: for (var _fun69298_ip = 0;;) switch (_fun69298_ip) {
+        _fun69322: for (var _fun69322_ip = 0;;) switch (_fun69322_ip) {
             case 0:
                 var0 = arg0;
                 var8 = var0.channel;
@@ -79,8 +79,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1 == var0;
                 var6 = undefined;
                 if (var1) {
-                    _fun69298_ip = 68;
-                    continue _fun69298
+                    _fun69322_ip = 68;
+                    continue _fun69322
                 }
             case 62:
                 var6 = var0.speaker;
@@ -112,8 +112,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var11.bind(var3)(var10, var7);
                 var4[1] = var7;
                 if (!var6) {
-                    _fun69298_ip = 226;
-                    continue _fun69298
+                    _fun69322_ip = 226;
+                    continue _fun69322
                 }
             case 182:
                 var11 = _closure1_slot4;
@@ -153,4 +153,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 4665, 8595, 8584, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 4666, 8595, 8584, 2]);

@@ -20,115 +20,100 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = 'modules/messages/parseReactionPermissions.tsx';
     var1 = var3.bind(var4)(var1);
     var1 = function(arg0) { // Original name: parseReactionPermissions, environment: var1
-        _fun73155: for (var _fun73155_ip = 0;;) switch (_fun73155_ip) {
+        _fun73185: for (var _fun73185_ip = 0;;) switch (_fun73185_ip) {
             case 0:
                 var0 = arg0;
-                var7 = var0.channel;
+                var6 = var0.channel;
                 var2 = var0.canChat;
-                var6 = var0.renderReactions;
-                var11 = var0.canAddNewReactions;
+                var5 = var0.renderReactions;
+                var10 = var0.canAddNewReactions;
                 var1 = var0.isLurking;
-                var5 = var0.isGuest;
                 var4 = var0.communicationDisabled;
-                var8 = var0.isActiveChannelOrUnarchivableThread;
+                var7 = var0.isActiveChannelOrUnarchivableThread;
                 var3 = var0.isAutomodQuarantined;
-                var0 = var7.isPrivate;
-                var10 = var0.bind(var7)();
-                var0 = var7.isSystemDM;
-                var9 = var0.bind(var7)();
+                var0 = var6.isPrivate;
+                var9 = var0.bind(var6)();
+                var0 = var6.isSystemDM;
+                var8 = var0.bind(var6)();
                 if (var2) {
-                    _fun73155_ip = 82;
-                    continue _fun73155
+                    _fun73185_ip = 76;
+                    continue _fun73185
+                }
+            case 73:
+                var2 = var9;
+            case 76:
+                if (!var2) {
+                    _fun73185_ip = 82;
+                    continue _fun73185
                 }
             case 79:
-                var2 = var10;
+                var2 = var7;
             case 82:
-                if (!var2) {
-                    _fun73155_ip = 88;
-                    continue _fun73155
-                }
-            case 85:
-                var2 = var8;
-            case 88:
                 var0 = {};
-                var6 = !var6;
-                var0.disableReactionReads = var6;
-                var6 = var1;
+                var5 = !var5;
+                var0.disableReactionReads = var5;
+                var5 = var1;
                 if (var1) {
-                    _fun73155_ip = 107;
-                    continue _fun73155
+                    _fun73185_ip = 101;
+                    continue _fun73185
+                }
+            case 98:
+                var5 = !var2;
+            case 101:
+                if (var5) {
+                    _fun73185_ip = 131;
+                    continue _fun73185
                 }
             case 104:
-                var6 = var5;
-            case 107:
+                var6 = true;
+                var6 = var6 === var10;
                 if (var6) {
-                    _fun73155_ip = 113;
-                    continue _fun73155
+                    _fun73185_ip = 116;
+                    continue _fun73185
                 }
-            case 110:
-                var6 = !var2;
             case 113:
-                if (var6) {
-                    _fun73155_ip = 143;
-                    continue _fun73155
-                }
+                var6 = var9;
             case 116:
-                var7 = true;
-                var7 = var7 === var11;
-                if (var7) {
-                    _fun73155_ip = 128;
-                    continue _fun73155
+                if (!var6) {
+                    _fun73185_ip = 122;
+                    continue _fun73185
+                }
+            case 119:
+                var6 = !var8;
+            case 122:
+                if (!var6) {
+                    _fun73185_ip = 128;
+                    continue _fun73185
                 }
             case 125:
-                var7 = var10;
+                var6 = var7;
             case 128:
-                if (!var7) {
-                    _fun73155_ip = 134;
-                    continue _fun73155
-                }
+                var5 = !var6;
             case 131:
-                var7 = !var9;
-            case 134:
-                if (!var7) {
-                    _fun73155_ip = 140;
-                    continue _fun73155
-                }
-            case 137:
-                var7 = var8;
-            case 140:
-                var6 = !var7;
-            case 143:
-                var0.disableReactionCreates = var6;
+                var0.disableReactionCreates = var5;
                 if (var1) {
-                    _fun73155_ip = 154;
-                    continue _fun73155
+                    _fun73185_ip = 142;
+                    continue _fun73185
                 }
-            case 151:
-                var1 = var5;
-            case 154:
-                if (var1) {
-                    _fun73155_ip = 160;
-                    continue _fun73155
-                }
-            case 157:
+            case 139:
                 var1 = !var2;
-            case 160:
+            case 142:
                 if (var1) {
-                    _fun73155_ip = 169;
-                    continue _fun73155
+                    _fun73185_ip = 151;
+                    continue _fun73185
                 }
-            case 163:
+            case 145:
                 var2 = true;
                 var1 = var2 === var4;
-            case 169:
+            case 151:
                 if (var1) {
-                    _fun73155_ip = 178;
-                    continue _fun73155
+                    _fun73185_ip = 160;
+                    continue _fun73185
                 }
-            case 172:
+            case 154:
                 var2 = true;
                 var1 = var2 === var3;
-            case 178:
+            case 160:
                 var0.disableReactionUpdates = var1;
                 return var0;
         }

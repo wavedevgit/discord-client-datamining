@@ -28,7 +28,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/user_profile/hooks/native/useUserProfileColors.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: useUserProfileColors, environment: var1
-        _fun56956: for (var _fun56956_ip = 0;;) switch (_fun56956_ip) {
+        _fun56968: for (var _fun56968_ip = 0;;) switch (_fun56968_ip) {
             case 0:
                 var0 = arg0;
                 var3 = var0.theme;
@@ -110,18 +110,18 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0.statusBackground = var3;
                 var3 = null;
                 if (!(var3 != var5)) {
-                    _fun56956_ip = 602;
-                    continue _fun56956
+                    _fun56968_ip = 602;
+                    continue _fun56968
                 }
             case 366:
                 if (!(var3 != var14)) {
-                    _fun56956_ip = 602;
-                    continue _fun56956
+                    _fun56968_ip = 602;
+                    continue _fun56968
                 }
             case 373:
                 if (!(var3 != var1)) {
-                    _fun56956_ip = 602;
-                    continue _fun56956
+                    _fun56968_ip = 602;
+                    continue _fun56968
                 }
             case 380:
                 var7 = var1.sectionBox;
@@ -135,8 +135,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var4.calculateOverlayedColor;
                 var1 = var13;
                 if (!var10) {
-                    _fun56956_ip = 433;
-                    continue _fun56956
+                    _fun56968_ip = 433;
+                    continue _fun56968
                 }
             case 430:
                 var1 = var6;
@@ -184,4 +184,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useUserProfileColors = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1298, 3205, 5346, 566, 3110, 671, 6923, 668, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1298, 3205, 5347, 566, 3110, 671, 6922, 668, 2]);

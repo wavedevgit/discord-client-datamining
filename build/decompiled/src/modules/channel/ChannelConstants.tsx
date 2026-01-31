@@ -130,14 +130,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.buildGuildStaticChannelId = var7;
     var6 = function(arg0) { // Original name: isGuildHomeChannel, environment: var6
-        _fun16175: for (var _fun16175_ip = 0;;) switch (_fun16175_ip) {
+        _fun16177: for (var _fun16177_ip = 0;;) switch (_fun16177_ip) {
             case 0:
                 var3 = arg0;
                 var0 = null;
                 var0 = var0 == var3;
                 if (var0) {
-                    _fun16175_ip = 38;
-                    continue _fun16175
+                    _fun16177_ip = 38;
+                    continue _fun16177
                 }
             case 12:
                 var2 = var3.includes;

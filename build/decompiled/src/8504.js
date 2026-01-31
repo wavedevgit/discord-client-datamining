@@ -18,14 +18,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var3.useColorScheme;
     var _closure1_slot0 = var3;
     var1 = function() { // Original name: useColorScheme, environment: var1
-        _fun68370: for (var _fun68370_ip = 0;;) switch (_fun68370_ip) {
+        _fun68394: for (var _fun68394_ip = 0;;) switch (_fun68394_ip) {
             case 0:
                 var1 = _closure1_slot0;
                 var0 = undefined;
                 var0 = var1.bind(var0)();
                 if (var0) {
-                    _fun68370_ip = 20;
-                    continue _fun68370
+                    _fun68394_ip = 20;
+                    continue _fun68394
                 }
             case 16:
                 var0 = 'light';

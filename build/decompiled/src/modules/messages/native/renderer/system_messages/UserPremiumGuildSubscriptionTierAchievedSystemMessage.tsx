@@ -32,7 +32,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/messages/native/renderer/system_messages/UserPremiumGuildSubscriptionTierAchievedSystemMessage.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0, arg1) { // Original name: createUserPremiumGuildSubscriptionTierAchievedSystemMessage, environment: var1
-        _fun55489: for (var _fun55489_ip = 0;;) switch (_fun55489_ip) {
+        _fun55506: for (var _fun55506_ip = 0;;) switch (_fun55506_ip) {
             case 0:
                 var2 = arg0;
                 var12 = arg1;
@@ -46,8 +46,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var3.bind(var4)(var1);
                 var16 = null;
                 if (!(var16 != var5)) {
-                    _fun55489_ip = 714;
-                    continue _fun55489
+                    _fun55506_ip = 714;
+                    continue _fun55506
                 }
             case 59:
                 var4 = _closure1_slot4;
@@ -56,8 +56,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.bind(var5)();
                 var10 = var3.bind(var4)(var1);
                 if (!(var16 != var10)) {
-                    _fun55489_ip = 679;
-                    continue _fun55489
+                    _fun55506_ip = 679;
+                    continue _fun55506
                 }
             case 90:
                 var3 = _closure1_slot1;
@@ -86,8 +86,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = {};
                 var3 = 1;
                 if (!(!(var9 > var3))) {
-                    _fun55489_ip = 421;
-                    continue _fun55489
+                    _fun55506_ip = 421;
+                    continue _fun55506
                 }
             case 209:
                 var5 = _closure1_slot0;
@@ -112,8 +112,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var21 = 'username';
                 var20 = null;
                 if (!(var21 === var17)) {
-                    _fun55489_ip = 307;
-                    continue _fun55489
+                    _fun55506_ip = 307;
+                    continue _fun55506
                 }
             case 304:
                 var20 = var15;
@@ -124,8 +124,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var20 = 'dot';
                 var20 = var20 === var17;
                 if (!var20) {
-                    _fun55489_ip = 337;
-                    continue _fun55489
+                    _fun55506_ip = 337;
+                    continue _fun55506
                 }
             case 333:
                 var20 = var16 != var15;
@@ -147,8 +147,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var8.bind(var20)(var12);
                 var3.newTierName = var8;
                 var3 = var6.bind(var7)(var5, var3);
-                _fun55489_ip = 641;
-                continue _fun55489;
+                _fun55506_ip = 641;
+                continue _fun55506;
             case 421:
                 var6 = _closure1_slot0;
                 var20 = _closure1_slot2;
@@ -172,8 +172,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var20 = 'username';
                 var14 = null;
                 if (!(var20 === var17)) {
-                    _fun55489_ip = 519;
-                    continue _fun55489
+                    _fun55506_ip = 519;
+                    continue _fun55506
                 }
             case 516:
                 var14 = var15;
@@ -182,8 +182,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11.roleColor = var15;
                 var14 = null;
                 if (!var19) {
-                    _fun55489_ip = 537;
-                    continue _fun55489
+                    _fun55506_ip = 537;
+                    continue _fun55506
                 }
             case 534:
                 var14 = var18;
@@ -192,8 +192,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var14 = 'dot';
                 var14 = var14 === var17;
                 if (!var14) {
-                    _fun55489_ip = 557;
-                    continue _fun55489
+                    _fun55506_ip = 557;
+                    continue _fun55506
                 }
             case 553:
                 var14 = var16 != var15;
@@ -251,4 +251,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.createUserPremiumGuildSubscriptionTierAchievedSystemMessage = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1372, 1410, 6665, 6666, 6637, 6638, 1234, 6668, 6639, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1372, 1410, 6666, 6667, 6638, 6639, 1234, 6669, 6640, 2]);

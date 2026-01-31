@@ -95,7 +95,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/main_tabs_v2/native/tabs/messages/MessagesEmptyState.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function() { // Original name: MessagesEmptyState, environment: var1
-        _fun102418: for (var _fun102418_ip = 0;;) switch (_fun102418_ip) {
+        _fun101787: for (var _fun101787_ip = 0;;) switch (_fun101787_ip) {
             case 0:
                 var1 = _closure1_slot10;
                 var3 = undefined;
@@ -165,8 +165,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = 'messages-empty';
                 var6 = var2.bind(var4)(var1);
                 if (!var6) {
-                    _fun102418_ip = 247;
-                    continue _fun102418
+                    _fun101787_ip = 247;
+                    continue _fun101787
                 }
             case 244:
                 var6 = var0;
@@ -184,8 +184,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4[0] = var5;
                 var5 = undefined;
                 if (!var6) {
-                    _fun102418_ip = 306;
-                    continue _fun102418
+                    _fun101787_ip = 306;
+                    continue _fun101787
                 }
             case 296:
                 var6 = {};
@@ -221,8 +221,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var18 = 622;
                 var16 = var20;
                 if (!(var19 < var18)) {
-                    _fun102418_ip = 429;
-                    continue _fun102418
+                    _fun101787_ip = 429;
+                    continue _fun101787
                 }
             case 421:
                 var17 = var19 / var18;
@@ -334,4 +334,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 13146, 33, 1297, 1464, 1469, 5176, 481, 5323, 12173, 13292, 3901, 1234, 4043, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 13083, 33, 1297, 1464, 1469, 5177, 481, 5324, 12108, 13229, 3900, 1234, 4043, 2]);

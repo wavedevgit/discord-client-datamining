@@ -31,14 +31,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/guild_action_sheet/native/openGuildActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: openGuildActionSheet, environment: var1
-        _fun97071: for (var _fun97071_ip = 0;;) switch (_fun97071_ip) {
+        _fun96435: for (var _fun96435_ip = 0;;) switch (_fun96435_ip) {
             case 0:
                 var1 = arg0;
                 var8 = arguments[1];
                 var0 = undefined;
                 if (!(var8 === var0)) {
-                    _fun97071_ip = 14;
-                    continue _fun97071
+                    _fun96435_ip = 14;
+                    continue _fun96435
                 }
             case 12:
                 var8 = true;
@@ -65,8 +65,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var1.id;
                 var2 = var4.bind(var5)(var2);
                 if (var2) {
-                    _fun97071_ip = 325;
-                    continue _fun97071
+                    _fun96435_ip = 325;
+                    continue _fun96435
                 }
             case 117:
                 var5 = var1.features;
@@ -85,8 +85,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var2[var5];
                 var5 = var9.bind(var0)(var5);
                 if (var4) {
-                    _fun97071_ip = 258;
-                    continue _fun97071
+                    _fun96435_ip = 258;
+                    continue _fun96435
                 }
             case 188:
                 var4 = 7;
@@ -103,8 +103,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4.guild = var1;
                 var4.expanded = var8;
                 var4 = var6.bind(var7)(var10, var9, var4);
-                _fun97071_ip = 404;
-                continue _fun97071;
+                _fun96435_ip = 404;
+                continue _fun96435;
             case 258:
                 var4 = 6;
                 var4 = var2[var4];
@@ -120,8 +120,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2.guild = var1;
                 var2.expanded = var8;
                 var2 = var6.bind(var7)(var5, var4, var2);
-                _fun97071_ip = 404;
-                continue _fun97071;
+                _fun96435_ip = 404;
+                continue _fun96435;
             case 325:
                 var5 = _closure1_slot1;
                 var2 = _closure1_slot2;
@@ -147,4 +147,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 795, 8992, 3237, 12591, 1307, 12599, 12606, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 795, 8992, 3237, 12527, 1307, 12535, 12542, 2]);

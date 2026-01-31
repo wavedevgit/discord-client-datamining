@@ -9,14 +9,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var6;
     var1 = function(arg0, arg1) { // Original name: isUserAccountOldEnough, environment: var3
-        _fun27865: for (var _fun27865_ip = 0;;) switch (_fun27865_ip) {
+        _fun27866: for (var _fun27866_ip = 0;;) switch (_fun27866_ip) {
             case 0:
                 var5 = arg0;
                 var4 = null;
                 var0 = var4 != var5;
                 if (!var0) {
-                    _fun27865_ip = 71;
-                    continue _fun27865
+                    _fun27866_ip = 71;
+                    continue _fun27866
                 }
             case 12:
                 var6 = _closure1_slot1;
@@ -31,8 +31,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = arg1;
                 var1 = var5[var1];
                 if (!(var4 == var1)) {
-                    _fun27865_ip = 67;
-                    continue _fun27865
+                    _fun27866_ip = 67;
+                    continue _fun27866
                 }
             case 63:
                 var1 = _closure1_slot6;
@@ -236,7 +236,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/dismissible_content/NewUserDismissibleContentRegistry.tsx';
     var4 = var5.bind(var6)(var4);
     var4 = function(arg0) { // Original name: useNewUserDismissibleContent, environment: var3
-        _fun27866: for (var _fun27866_ip = 0;;) switch (_fun27866_ip) {
+        _fun27867: for (var _fun27867_ip = 0;;) switch (_fun27867_ip) {
             case 0:
                 var3 = arg0;
                 var5 = _closure1_slot0;
@@ -268,8 +268,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var0.newUserMinAgeRequiredOverridden;
                 var0 = var3;
                 if (var2) {
-                    _fun27866_ip = 103;
-                    continue _fun27866
+                    _fun27867_ip = 103;
+                    continue _fun27867
                 }
             case 88:
                 var2 = var3.filter;
@@ -288,14 +288,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useNewUserDismissibleContent = var4;
     var3 = function(arg0) { // Original name: disableNewUserDismissibleContent, environment: var3
-        _fun27869: for (var _fun27869_ip = 0;;) switch (_fun27869_ip) {
+        _fun27870: for (var _fun27870_ip = 0;;) switch (_fun27870_ip) {
             case 0:
                 var0 = _closure1_slot4;
                 var0 = var0.newUserMinAgeRequiredOverridden;
                 var0 = !var0;
                 if (!var0) {
-                    _fun27869_ip = 51;
-                    continue _fun27869
+                    _fun27870_ip = 51;
+                    continue _fun27870
                 }
             case 19:
                 var4 = _closure1_slot7;

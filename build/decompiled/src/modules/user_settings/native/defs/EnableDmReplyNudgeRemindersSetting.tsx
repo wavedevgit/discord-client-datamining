@@ -97,7 +97,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var3 = 'EnableDmReplyNudgeRemindersSetting';
         var0.location = var3;
         var0 = var1.bind(var2)(var0);
-        var0 = var0.enabled;
+        var0 = var0.displayNudges;
         return var0;
     };
     var1.usePredicate = var7;
@@ -110,4 +110,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [6968, 8943, 1234, 1348, 8295, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [6967, 8943, 1234, 1348, 8295, 2]);

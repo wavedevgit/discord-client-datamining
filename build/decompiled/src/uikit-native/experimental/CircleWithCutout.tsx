@@ -68,7 +68,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = 'uikit-native/experimental/CircleWithCutout.tsx';
     var5 = var6.bind(var7)(var5);
     var5 = function(arg0) { // Original name: CircleWithCutout, environment: var4
-        _fun62857: for (var _fun62857_ip = 0;;) switch (_fun62857_ip) {
+        _fun62869: for (var _fun62869_ip = 0;;) switch (_fun62869_ip) {
             case 0:
                 var0 = arg0;
                 var10 = var0.circleRadius;
@@ -141,8 +141,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5.fill = var8;
                 var8 = undefined;
                 if (!var9) {
-                    _fun62857_ip = 319;
-                    continue _fun62857
+                    _fun62869_ip = 319;
+                    continue _fun62869
                 }
             case 313:
                 var8 = 'url(#mask)';
@@ -181,4 +181,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.getCutoutCenterX = var3;
     var2.getCutoutCenterY = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 5421, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 5422, 2]);

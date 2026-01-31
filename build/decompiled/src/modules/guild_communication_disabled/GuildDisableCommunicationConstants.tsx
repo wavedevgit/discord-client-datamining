@@ -7,49 +7,49 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var7;
     var _closure1_slot1 = var8;
     var4 = function(arg0) { // Original name: getFriendlyDurationString, environment: var3
-        _fun19125: for (var _fun19125_ip = 0;;) switch (_fun19125_ip) {
+        _fun19127: for (var _fun19127_ip = 0;;) switch (_fun19127_ip) {
             case 0:
                 var2 = arg0;
                 var1 = _closure1_slot2;
                 var1 = var1.DURATION_60_SEC;
                 if (!(var1 !== var2)) {
-                    _fun19125_ip = 447;
-                    continue _fun19125
+                    _fun19127_ip = 447;
+                    continue _fun19127
                 }
             case 23:
                 var1 = _closure1_slot2;
                 var1 = var1.DURATION_5_MIN;
                 if (!(var1 !== var2)) {
-                    _fun19125_ip = 377;
-                    continue _fun19125
+                    _fun19127_ip = 377;
+                    continue _fun19127
                 }
             case 40:
                 var1 = _closure1_slot2;
                 var1 = var1.DURATION_10_MIN;
                 if (!(var1 !== var2)) {
-                    _fun19125_ip = 307;
-                    continue _fun19125
+                    _fun19127_ip = 307;
+                    continue _fun19127
                 }
             case 57:
                 var1 = _closure1_slot2;
                 var1 = var1.DURATION_1_HOUR;
                 if (!(var1 !== var2)) {
-                    _fun19125_ip = 240;
-                    continue _fun19125
+                    _fun19127_ip = 240;
+                    continue _fun19127
                 }
             case 74:
                 var1 = _closure1_slot2;
                 var1 = var1.DURATION_1_DAY;
                 if (!(var1 !== var2)) {
-                    _fun19125_ip = 173;
-                    continue _fun19125
+                    _fun19127_ip = 173;
+                    continue _fun19127
                 }
             case 88:
                 var1 = _closure1_slot2;
                 var1 = var1.DURATION_1_WEEK;
                 if (!(var1 !== var2)) {
-                    _fun19125_ip = 106;
-                    continue _fun19125
+                    _fun19127_ip = 106;
+                    continue _fun19127
                 }
             case 102:
                 var1 = undefined;
@@ -236,7 +236,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2 = var2.bind(var3)(var1);
         var1 = var2.map;
         var0 = function(arg0) { // Environment: var0
-            _fun19128: for (var _fun19128_ip = 0;;) switch (_fun19128_ip) {
+            _fun19130: for (var _fun19130_ip = 0;;) switch (_fun19130_ip) {
                 case 0:
                     var2 = arg0;
                     var0 = {};
@@ -250,8 +250,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var5 = var3 != var4;
                     var3 = '';
                     if (!var5) {
-                        _fun19128_ip = 47;
-                        continue _fun19128
+                        _fun19130_ip = 47;
+                        continue _fun19130
                     }
                 case 44:
                     var3 = var4;

@@ -64,4 +64,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.TextArea = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 5350, 5355, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 5351, 5356, 2]);

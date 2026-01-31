@@ -51,7 +51,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/collectibles/utils/bundleUtils.tsx';
     var3 = var4.bind(var5)(var3);
     var3 = function(arg0) { // Original name: isValidCollectiblesBundle, environment: var1
-        _fun87747: for (var _fun87747_ip = 0;;) switch (_fun87747_ip) {
+        _fun87051: for (var _fun87051_ip = 0;;) switch (_fun87051_ip) {
             case 0:
                 var2 = _closure1_slot2;
                 var1 = undefined;
@@ -63,35 +63,35 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = null;
                 var0 = var2 != var1;
                 if (!var0) {
-                    _fun87747_ip = 48;
-                    continue _fun87747
+                    _fun87051_ip = 48;
+                    continue _fun87051
                 }
             case 44:
                 var0 = var2 != var4;
             case 48:
                 if (!var0) {
-                    _fun87747_ip = 55;
-                    continue _fun87747
+                    _fun87051_ip = 55;
+                    continue _fun87051
                 }
             case 51:
                 var0 = var2 == var3;
             case 55:
                 if (var0) {
-                    _fun87747_ip = 79;
-                    continue _fun87747
+                    _fun87051_ip = 79;
+                    continue _fun87051
                 }
             case 58:
                 var1 = var2 != var1;
                 if (!var1) {
-                    _fun87747_ip = 69;
-                    continue _fun87747
+                    _fun87051_ip = 69;
+                    continue _fun87051
                 }
             case 65:
                 var1 = var2 != var4;
             case 69:
                 if (!var1) {
-                    _fun87747_ip = 76;
-                    continue _fun87747
+                    _fun87051_ip = 76;
+                    continue _fun87051
                 }
             case 72:
                 var1 = var2 != var3;
@@ -103,7 +103,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.isValidCollectiblesBundle = var3;
     var1 = function(arg0) { // Original name: bundleContainsNameplates, environment: var1
-        _fun87748: for (var _fun87748_ip = 0;;) switch (_fun87748_ip) {
+        _fun87052: for (var _fun87052_ip = 0;;) switch (_fun87052_ip) {
             case 0:
                 var3 = arg0;
                 var4 = _closure1_slot0;
@@ -117,8 +117,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = !var0;
                 var0 = !var4;
                 if (var4) {
-                    _fun87748_ip = 69;
-                    continue _fun87748
+                    _fun87052_ip = 69;
+                    continue _fun87052
                 }
             case 48:
                 var1 = _closure1_slot2;
@@ -132,4 +132,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.bundleContainsNameplates = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [6844, 4562, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [6843, 4563, 2]);

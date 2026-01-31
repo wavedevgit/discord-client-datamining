@@ -52,7 +52,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/notifications/settings/native/NotificationSettingsMessageUnreadChannelActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: NotificationSettingsMessageUnreadChannelActionSheet, environment: var1
-        _fun69895: for (var _fun69895_ip = 0;;) switch (_fun69895_ip) {
+        _fun69919: for (var _fun69919_ip = 0;;) switch (_fun69919_ip) {
             case 0:
                 var0 = arg0;
                 var _closure2_slot0 = var0;
@@ -78,8 +78,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var5.ALL_MESSAGES;
                 var5 = undefined;
                 if (!(var8 === var7)) {
-                    _fun69895_ip = 159;
-                    continue _fun69895
+                    _fun69919_ip = 159;
+                    continue _fun69919
                 }
             case 104:
                 var9 = _closure1_slot0;
@@ -97,7 +97,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 159:
                 var0.disabledMentionOnlyWithReason = var5;
                 var4 = function(arg0) { // Original name: onChange, environment: var4
-                    _fun69896: for (var _fun69896_ip = 0;;) switch (_fun69896_ip) {
+                    _fun69920: for (var _fun69920_ip = 0;;) switch (_fun69920_ip) {
                         case 0:
                             var8 = arg0;
                             var5 = _closure1_slot3;
@@ -128,14 +128,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var7 = _closure1_slot5;
                             var7 = var7.ALL_MESSAGES;
                             if (!(var8 !== var7)) {
-                                _fun69896_ip = 147;
-                                continue _fun69896
+                                _fun69920_ip = 147;
+                                continue _fun69920
                             }
                         case 135:
                             var7 = _closure1_slot6;
                             var7 = var7.UNREADS_ONLY_MENTIONS;
-                            _fun69896_ip = 157;
-                            continue _fun69896;
+                            _fun69920_ip = 157;
+                            continue _fun69920;
                         case 147:
                             var12 = _closure1_slot6;
                             var7 = var12.UNREADS_ALL_MESSAGES;
@@ -165,4 +165,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 4266, 660, 4267, 665, 33, 8709, 8729, 1234, 4660, 8710, 4657, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 4267, 660, 4268, 665, 33, 8709, 8729, 1234, 4661, 8710, 4658, 2]);

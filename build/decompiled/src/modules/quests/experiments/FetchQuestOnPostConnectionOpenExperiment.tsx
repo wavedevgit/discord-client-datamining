@@ -53,15 +53,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/quests/experiments/FetchQuestOnPostConnectionOpenExperiment.tsx';
     var3 = var4.bind(var5)(var3);
     var3 = function(arg0) { // Environment: var1
-        _fun118038: for (var _fun118038_ip = 0;;) switch (_fun118038_ip) {
+        _fun117388: for (var _fun117388_ip = 0;;) switch (_fun117388_ip) {
             case 0:
                 var1 = arg0;
                 var0 = var1.location;
                 var4 = var1.autoTrackExposure;
                 var1 = undefined;
                 if (!(var4 === var1)) {
-                    _fun118038_ip = 22;
-                    continue _fun118038
+                    _fun117388_ip = 22;
+                    continue _fun117388
                 }
             case 20:
                 var4 = false;
@@ -79,15 +79,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getIsEligibleForFetchQuestOnPostConnectionOpen = var3;
     var1 = function(arg0) { // Environment: var1
-        _fun118039: for (var _fun118039_ip = 0;;) switch (_fun118039_ip) {
+        _fun117389: for (var _fun117389_ip = 0;;) switch (_fun117389_ip) {
             case 0:
                 var1 = arg0;
                 var0 = var1.location;
                 var4 = var1.autoTrackExposure;
                 var1 = undefined;
                 if (!(var4 === var1)) {
-                    _fun118039_ip = 22;
-                    continue _fun118039
+                    _fun117389_ip = 22;
+                    continue _fun117389
                 }
             case 20:
                 var4 = false;

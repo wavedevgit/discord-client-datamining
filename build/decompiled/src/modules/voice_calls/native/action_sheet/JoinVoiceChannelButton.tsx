@@ -60,7 +60,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/voice_calls/native/action_sheet/JoinVoiceChannelButton.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: _default, environment: var1
-        _fun92200: for (var _fun92200_ip = 0;;) switch (_fun92200_ip) {
+        _fun91545: for (var _fun91545_ip = 0;;) switch (_fun91545_ip) {
             case 0:
                 var2 = arg0;
                 var1 = var2.channel;
@@ -105,15 +105,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var6.eIi3Om;
                 var6 = var8.bind(var10)(var6);
                 if (var7) {
-                    _fun92200_ip = 217;
-                    continue _fun92200
+                    _fun91545_ip = 217;
+                    continue _fun91545
                 }
             case 153:
                 var7 = var6;
                 var8 = false;
                 if (!var2) {
-                    _fun92200_ip = 271;
-                    continue _fun92200
+                    _fun91545_ip = 271;
+                    continue _fun91545
                 }
             case 161:
                 var11 = _closure1_slot0;
@@ -128,8 +128,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var2.TVBCKZ;
                 var7 = var6.bind(var10)(var2);
                 var8 = true;
-                _fun92200_ip = 271;
-                continue _fun92200;
+                _fun91545_ip = 271;
+                continue _fun91545;
             case 217:
                 var11 = _closure1_slot0;
                 var2 = _closure1_slot3;
@@ -194,4 +194,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 3050, 660, 33, 1297, 8403, 566, 1234, 1582, 4195, 4835, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 3050, 660, 33, 1297, 8403, 566, 1234, 1582, 4195, 4836, 2]);

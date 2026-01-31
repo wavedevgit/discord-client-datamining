@@ -75,14 +75,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 200;
     var2.APPLICATION_USER_INSTALL_BETA_USER_LIMIT = var3;
     var1 = function(arg0) { // Original name: getValidationErrorText, environment: var1
-        _fun40821: for (var _fun40821_ip = 0;;) switch (_fun40821_ip) {
+        _fun40837: for (var _fun40837_ip = 0;;) switch (_fun40837_ip) {
             case 0:
                 var0 = arg0;
                 var2 = var0.choices;
                 var1 = null;
                 if (!(var1 == var2)) {
-                    _fun40821_ip = 744;
-                    continue _fun40821
+                    _fun40837_ip = 744;
+                    continue _fun40837
                 }
             case 18:
                 var2 = var0.type;
@@ -95,8 +95,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.ApplicationCommandOptionType;
                 var1 = var1.BOOLEAN;
                 if (!(var1 !== var2)) {
-                    _fun40821_ip = 686;
-                    continue _fun40821
+                    _fun40837_ip = 686;
+                    continue _fun40837
                 }
             case 67:
                 var3 = _closure1_slot0;
@@ -106,8 +106,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.ApplicationCommandOptionType;
                 var1 = var1.CHANNEL;
                 if (!(var1 !== var2)) {
-                    _fun40821_ip = 628;
-                    continue _fun40821
+                    _fun40837_ip = 628;
+                    continue _fun40837
                 }
             case 103:
                 var3 = _closure1_slot0;
@@ -117,8 +117,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.ApplicationCommandOptionType;
                 var1 = var1.INTEGER;
                 if (!(var1 !== var2)) {
-                    _fun40821_ip = 570;
-                    continue _fun40821
+                    _fun40837_ip = 570;
+                    continue _fun40837
                 }
             case 139:
                 var3 = _closure1_slot0;
@@ -128,8 +128,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.ApplicationCommandOptionType;
                 var1 = var1.NUMBER;
                 if (!(var1 !== var2)) {
-                    _fun40821_ip = 512;
-                    continue _fun40821
+                    _fun40837_ip = 512;
+                    continue _fun40837
                 }
             case 175:
                 var3 = _closure1_slot0;
@@ -139,8 +139,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.ApplicationCommandOptionType;
                 var1 = var1.ROLE;
                 if (!(var1 !== var2)) {
-                    _fun40821_ip = 454;
-                    continue _fun40821
+                    _fun40837_ip = 454;
+                    continue _fun40837
                 }
             case 211:
                 var3 = _closure1_slot0;
@@ -150,8 +150,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.ApplicationCommandOptionType;
                 var1 = var1.USER;
                 if (!(var1 !== var2)) {
-                    _fun40821_ip = 396;
-                    continue _fun40821
+                    _fun40837_ip = 396;
+                    continue _fun40837
                 }
             case 247:
                 var3 = _closure1_slot0;
@@ -161,8 +161,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.ApplicationCommandOptionType;
                 var1 = var1.MENTIONABLE;
                 if (!(var1 !== var2)) {
-                    _fun40821_ip = 338;
-                    continue _fun40821
+                    _fun40837_ip = 338;
+                    continue _fun40837
                 }
             case 280:
                 var5 = _closure1_slot0;

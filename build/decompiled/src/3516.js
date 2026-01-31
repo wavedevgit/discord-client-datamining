@@ -10,7 +10,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = var1.splice;
     var _closure1_slot2 = var1;
     var1 = function(arg0) { // Original name: listCacheDelete, environment: var0
-        _fun31525: for (var _fun31525_ip = 0;;) switch (_fun31525_ip) {
+        _fun31533: for (var _fun31533_ip = 0;;) switch (_fun31533_ip) {
             case 0:
                 var2 = this;
                 var3 = var2.__data__;
@@ -25,23 +25,23 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var4 = var6 < var0;
                 var0 = !var4;
                 if (var4) {
-                    _fun31525_ip = 111;
-                    continue _fun31525
+                    _fun31533_ip = 111;
+                    continue _fun31533
                 }
             case 51:
                 var4 = var3.length;
                 var5 = 1;
                 var4 = var4 - var5;
                 if (!(var6 != var4)) {
-                    _fun31525_ip = 85;
-                    continue _fun31525
+                    _fun31533_ip = 85;
+                    continue _fun31533
                 }
             case 67:
                 var4 = _closure1_slot2;
                 var1 = var4.call;
                 var1 = var1.bind(var4)(var3, var6, var5);
-                _fun31525_ip = 95;
-                continue _fun31525;
+                _fun31533_ip = 95;
+                continue _fun31533;
             case 85:
                 var1 = var3.pop;
                 var1 = var1.bind(var3)();

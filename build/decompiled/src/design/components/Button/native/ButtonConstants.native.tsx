@@ -87,14 +87,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 3;
     var2.BUTTON_DEFAULT_MAX_FONT_SIZE_MULTIPLIER = var4;
     var3 = function(arg0) { // Original name: getButtonDefaultTextVariant, environment: var3
-        _fun37386: for (var _fun37386_ip = 0;;) switch (_fun37386_ip) {
+        _fun37403: for (var _fun37403_ip = 0;;) switch (_fun37403_ip) {
             case 0:
                 var0 = 'text-sm/semibold';
                 var2 = 'lg';
                 var1 = arg0;
                 if (!(var2 === var1)) {
-                    _fun37386_ip = 21;
-                    continue _fun37386
+                    _fun37403_ip = 21;
+                    continue _fun37403
                 }
             case 17:
                 var0 = 'text-md/semibold';

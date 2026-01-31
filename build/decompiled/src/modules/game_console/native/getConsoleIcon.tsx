@@ -55,22 +55,22 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var3;
     var1 = function(arg0) { // Original name: getConsoleIconForVoicePlatform, environment: var1
-        _fun66949: for (var _fun66949_ip = 0;;) switch (_fun66949_ip) {
+        _fun66961: for (var _fun66961_ip = 0;;) switch (_fun66961_ip) {
             case 0:
                 var3 = arg0;
                 var0 = _closure1_slot2;
                 var0 = var0.XBOX;
                 if (!(var3 !== var0)) {
-                    _fun66949_ip = 60;
-                    continue _fun66949
+                    _fun66961_ip = 60;
+                    continue _fun66961
                 }
             case 20:
                 var0 = _closure1_slot2;
                 var2 = var0.PLAYSTATION;
                 var0 = null;
                 if (!(var3 === var2)) {
-                    _fun66949_ip = 58;
-                    continue _fun66949
+                    _fun66961_ip = 58;
+                    continue _fun66961
                 }
             case 36:
                 var4 = _closure1_slot0;
@@ -80,8 +80,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = undefined;
                 var0 = var4.bind(var2)(var3);
             case 58:
-                _fun66949_ip = 82;
-                continue _fun66949;
+                _fun66961_ip = 82;
+                continue _fun66961;
             case 60:
                 var3 = _closure1_slot0;
                 var2 = _closure1_slot1;
@@ -95,4 +95,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getConsoleIconForVoicePlatform = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 3482, 5737, 8271, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 3482, 5738, 8270, 2]);

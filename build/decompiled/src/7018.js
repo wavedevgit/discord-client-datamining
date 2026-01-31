@@ -10,11 +10,11 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = {
         '__packager_asset': true,
         'httpServerLocation': '/assets/images/native/premium/logos',
-        'width': 77.5,
-        'height': 30,
+        'width': 89.5,
+        'height': 35.5,
         'scales': null,
-        'hash': 'eb98ab037be2f7c5d6e15b4152c0f9cb',
-        'name': 'img_logo_nitro_basic_stacked',
+        'hash': '9af123a40395902e23c1c21c516a826d',
+        'name': 'img_logo_nitro_classic_stacked',
         'type': 'png'
     };
     var4 = [2, 3];

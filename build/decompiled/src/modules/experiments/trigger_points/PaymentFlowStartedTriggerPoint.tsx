@@ -53,13 +53,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.bind(var6)(var4);
     var2.PaymentFlowStartedTriggerPoint = var3;
     var1 = function(arg0) { // Original name: trackPaymentFlowStartedAnalyticsAndCTP, environment: var1
-        _fun58031: for (var _fun58031_ip = 0;;) switch (_fun58031_ip) {
+        _fun58043: for (var _fun58043_ip = 0;;) switch (_fun58043_ip) {
             case 0:
                 var6 = arguments[1];
                 var0 = undefined;
                 if (!(var6 === var0)) {
-                    _fun58031_ip = 11;
-                    continue _fun58031
+                    _fun58043_ip = 11;
+                    continue _fun58043
                 }
             case 9:
                 var6 = {};
@@ -82,4 +82,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.trackPaymentFlowStartedAnalyticsAndCTP = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1591, 660, 7067, 795, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1591, 660, 7066, 795, 2]);

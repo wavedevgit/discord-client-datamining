@@ -64,7 +64,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8 = var8.APPEARANCE;
     var1.parent = var8;
     var7 = function() { // Original name: useFontScaleSliderProps, environment: var7
-        _fun84577: for (var _fun84577_ip = 0;;) switch (_fun84577_ip) {
+        _fun84607: for (var _fun84607_ip = 0;;) switch (_fun84607_ip) {
             case 0:
                 var2 = _closure1_slot3;
                 var3 = undefined;
@@ -75,8 +75,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var2 != var5;
                 var6 = undefined;
                 if (!var2) {
-                    _fun84577_ip = 57;
-                    continue _fun84577
+                    _fun84607_ip = 57;
+                    continue _fun84607
                 }
             case 36:
                 var5 = _closure1_slot4;
@@ -198,4 +198,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 4050, 6968, 1351, 33, 802, 10808, 10811, 1234, 8943, 478, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 4050, 6967, 1351, 33, 802, 10810, 10813, 1234, 8943, 478, 2]);

@@ -34,7 +34,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/activities/utils/getActivityChannelId.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: getActivityChannelId, environment: var1
-        _fun92312: for (var _fun92312_ip = 0;;) switch (_fun92312_ip) {
+        _fun91657: for (var _fun91657_ip = 0;;) switch (_fun91657_ip) {
             case 0:
                 var0 = arg0;
                 var5 = var0.channelId;
@@ -48,21 +48,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = undefined;
                 var8 = undefined;
                 if (var1) {
-                    _fun92312_ip = 55;
-                    continue _fun92312
+                    _fun91657_ip = 55;
+                    continue _fun91657
                 }
             case 49:
                 var8 = var7.session_id;
             case 55:
                 var1 = var5;
                 if (!(var2 != var8)) {
-                    _fun92312_ip = 134;
-                    continue _fun92312
+                    _fun91657_ip = 134;
+                    continue _fun91657
                 }
             case 62:
                 if (!(var2 != var4)) {
-                    _fun92312_ip = 86;
-                    continue _fun92312
+                    _fun91657_ip = 86;
+                    continue _fun91657
                 }
             case 66:
                 var8 = _closure1_slot0;
@@ -70,8 +70,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var8.bind(var0)(var4);
                 var1 = var5;
                 if (var4) {
-                    _fun92312_ip = 134;
-                    continue _fun92312
+                    _fun91657_ip = 134;
+                    continue _fun91657
                 }
             case 86:
                 var5 = _closure1_slot2;
@@ -79,8 +79,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var2 == var7;
                 var3 = undefined;
                 if (var8) {
-                    _fun92312_ip = 111;
-                    continue _fun92312
+                    _fun91657_ip = 111;
+                    continue _fun91657
                 }
             case 105:
                 var3 = var7.session_id;
@@ -89,8 +89,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var2 == var4;
                 var3 = undefined;
                 if (var5) {
-                    _fun92312_ip = 131;
-                    continue _fun92312
+                    _fun91657_ip = 131;
+                    continue _fun91657
                 }
             case 126:
                 var3 = var4.channelId;
@@ -100,8 +100,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var2 != var1;
                 var0 = undefined;
                 if (!var2) {
-                    _fun92312_ip = 146;
-                    continue _fun92312
+                    _fun91657_ip = 146;
+                    continue _fun91657
                 }
             case 143:
                 var0 = var1;

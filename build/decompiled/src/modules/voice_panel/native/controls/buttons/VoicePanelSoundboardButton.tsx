@@ -62,7 +62,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/voice_panel/native/controls/buttons/VoicePanelSoundboardButton.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: SoundboardButton, environment: var1
-        _fun112269: for (var _fun112269_ip = 0;;) switch (_fun112269_ip) {
+        _fun111619: for (var _fun111619_ip = 0;;) switch (_fun111619_ip) {
             case 0:
                 var0 = arg0;
                 var6 = var0.props;
@@ -99,14 +99,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var1.disabled;
                 var1 = var1.visible;
                 if (var8) {
-                    _fun112269_ip = 177;
-                    continue _fun112269
+                    _fun111619_ip = 177;
+                    continue _fun111619
                 }
             case 164:
                 var0 = var0.iconFill;
                 var11 = var0.color;
-                _fun112269_ip = 208;
-                continue _fun112269;
+                _fun111619_ip = 208;
+                continue _fun111619;
             case 177:
                 var2 = _closure1_slot1;
                 var3 = _closure1_slot2;
@@ -118,8 +118,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 208:
                 var0 = null;
                 if (!var1) {
-                    _fun112269_ip = 444;
-                    continue _fun112269
+                    _fun111619_ip = 444;
+                    continue _fun111619
                 }
             case 216:
                 var3 = _closure1_slot5;
@@ -182,4 +182,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 1297, 671, 11837, 14372, 14272, 14373, 1234, 6418, 11956, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 1297, 671, 11770, 14302, 14202, 14303, 1234, 6419, 11889, 2]);

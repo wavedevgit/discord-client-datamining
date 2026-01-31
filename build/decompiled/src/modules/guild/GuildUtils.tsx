@@ -23,14 +23,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/guild/GuildUtils.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Environment: var1
-        _fun74005: for (var _fun74005_ip = 0;;) switch (_fun74005_ip) {
+        _fun74035: for (var _fun74035_ip = 0;;) switch (_fun74035_ip) {
             case 0:
                 var3 = arg0;
                 var _closure2_slot0 = var3;
                 var1 = null;
                 if (!(var1 != var3)) {
-                    _fun74005_ip = 67;
-                    continue _fun74005
+                    _fun74035_ip = 67;
+                    continue _fun74035
                 }
             case 15:
                 var4 = _closure1_slot0;
@@ -62,4 +62,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.handleJoinGuild = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [4641, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [4642, 2]);

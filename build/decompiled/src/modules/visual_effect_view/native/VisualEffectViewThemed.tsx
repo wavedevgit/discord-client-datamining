@@ -28,7 +28,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot3 = var3;
     var3 = var6.forwardRef;
     var1 = function(arg0, arg1) { // Original name: VisualEffectViewThemed, environment: var1
-        _fun67480: for (var _fun67480_ip = 0;;) switch (_fun67480_ip) {
+        _fun67503: for (var _fun67503_ip = 0;;) switch (_fun67503_ip) {
             case 0:
                 var2 = _closure1_slot1;
                 var5 = _closure1_slot2;
@@ -45,8 +45,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.bind(var2)(var4);
                 var4 = 'dark';
                 if (!var1) {
-                    _fun67480_ip = 67;
-                    continue _fun67480
+                    _fun67503_ip = 67;
+                    continue _fun67503
                 }
             case 63:
                 var4 = 'light';

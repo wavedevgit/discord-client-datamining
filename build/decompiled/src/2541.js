@@ -324,7 +324,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.almostXYears = var4;
     var _closure1_slot0 = var3;
     var2 = function(arg0, arg1, arg2) { // Original name: formatDistance, environment: var2
-        _fun21804: for (var _fun21804_ip = 0;;) switch (_fun21804_ip) {
+        _fun21806: for (var _fun21806_ip = 0;;) switch (_fun21806_ip) {
             case 0:
                 var4 = arg1;
                 var5 = arg2;
@@ -334,40 +334,40 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = var1.type;
                 var0 = 'other';
                 if (!(var0 !== var2)) {
-                    _fun21804_ip = 75;
-                    continue _fun21804
+                    _fun21806_ip = 75;
+                    continue _fun21806
                 }
             case 33:
                 var0 = 1;
                 if (!(var0 !== var4)) {
-                    _fun21804_ip = 67;
-                    continue _fun21804
+                    _fun21806_ip = 67;
+                    continue _fun21806
                 }
             case 40:
                 if (!(var4 > var0)) {
-                    _fun21804_ip = 51;
-                    continue _fun21804
+                    _fun21806_ip = 51;
+                    continue _fun21806
                 }
             case 44:
                 var0 = 5;
                 if (!(!(var4 < var0))) {
-                    _fun21804_ip = 59;
-                    continue _fun21804
+                    _fun21806_ip = 59;
+                    continue _fun21806
                 }
             case 51:
                 var0 = var1.many;
-                _fun21804_ip = 65;
-                continue _fun21804;
+                _fun21806_ip = 65;
+                continue _fun21806;
             case 59:
                 var0 = var1.few;
             case 65:
-                _fun21804_ip = 73;
-                continue _fun21804;
+                _fun21806_ip = 73;
+                continue _fun21806;
             case 67:
                 var0 = var1.one;
             case 73:
-                _fun21804_ip = 81;
-                continue _fun21804;
+                _fun21806_ip = 81;
+                continue _fun21806;
             case 75:
                 var0 = var1.other;
             case 81:
@@ -376,8 +376,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = undefined;
                 var6 = undefined;
                 if (var2) {
-                    _fun21804_ip = 100;
-                    continue _fun21804
+                    _fun21806_ip = 100;
+                    continue _fun21806
                 }
             case 94:
                 var6 = var5.addSuffix;
@@ -387,42 +387,42 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var6 = var3 == var5;
                 var3 = undefined;
                 if (var6) {
-                    _fun21804_ip = 121;
-                    continue _fun21804
+                    _fun21806_ip = 121;
+                    continue _fun21806
                 }
             case 115:
                 var3 = var5.comparison;
             case 121:
                 if (!var2) {
-                    _fun21804_ip = 134;
-                    continue _fun21804
+                    _fun21806_ip = 134;
+                    continue _fun21806
                 }
             case 124:
                 var5 = -1;
                 if (!(var5 !== var3)) {
-                    _fun21804_ip = 160;
-                    continue _fun21804
+                    _fun21806_ip = 160;
+                    continue _fun21806
                 }
             case 134:
                 if (!var2) {
-                    _fun21804_ip = 144;
-                    continue _fun21804
+                    _fun21806_ip = 144;
+                    continue _fun21806
                 }
             case 137:
                 var2 = 1;
                 if (!(var2 !== var3)) {
-                    _fun21804_ip = 152;
-                    continue _fun21804
+                    _fun21806_ip = 152;
+                    continue _fun21806
                 }
             case 144:
                 var3 = var0.regular;
-                _fun21804_ip = 158;
-                continue _fun21804;
+                _fun21806_ip = 158;
+                continue _fun21806;
             case 152:
                 var3 = var0.future;
             case 158:
-                _fun21804_ip = 166;
-                continue _fun21804;
+                _fun21806_ip = 166;
+                continue _fun21806;
             case 160:
                 var3 = var0.past;
             case 166:

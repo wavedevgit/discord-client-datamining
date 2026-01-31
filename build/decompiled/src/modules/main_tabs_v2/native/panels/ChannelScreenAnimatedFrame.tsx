@@ -85,7 +85,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/main_tabs_v2/native/panels/ChannelScreenAnimatedFrame.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: ChannelScreenAnimatedFrame, environment: var1
-        _fun101281: for (var _fun101281_ip = 0;;) switch (_fun101281_ip) {
+        _fun100652: for (var _fun100652_ip = 0;;) switch (_fun100652_ip) {
             case 0:
                 var0 = arg0;
                 var15 = var0.translateX;
@@ -111,7 +111,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var7.bind(var3)(var6);
                 var6 = var9.useAnimatedStyle;
                 var2 = function() { // Original name: S, environment: var2
-                    _fun101282: for (var _fun101282_ip = 0;;) switch (_fun101282_ip) {
+                    _fun100653: for (var _fun100653_ip = 0;;) switch (_fun100653_ip) {
                         case 0:
                             var2 = _closure2_slot0;
                             var1 = var2.get;
@@ -119,8 +119,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var1 = _closure2_slot1;
                             var5 = var2 === var1;
                             if (var5) {
-                                _fun101282_ip = 31;
-                                continue _fun101282
+                                _fun100653_ip = 31;
+                                continue _fun100653
                             }
                         case 27:
                             var5 = _closure2_slot2;
@@ -135,8 +135,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var3 = var4.withTiming;
                             var2 = 1;
                             if (!var5) {
-                                _fun101282_ip = 71;
-                                continue _fun101282
+                                _fun100653_ip = 71;
+                                continue _fun100653
                             }
                         case 69:
                             var2 = 0;
@@ -155,13 +155,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var6 = var9[var6];
                             var6 = var7.bind(var8)(var6);
                             if (var5) {
-                                _fun101282_ip = 135;
-                                continue _fun101282
+                                _fun100653_ip = 135;
+                                continue _fun100653
                             }
                         case 127:
                             var5 = var6.SIDE_PANEL_OPEN_DURATION_MS;
-                            _fun101282_ip = 141;
-                            continue _fun101282;
+                            _fun100653_ip = 141;
+                            continue _fun100653;
                         case 135:
                             var5 = var6.SIDE_PANEL_CLOSE_DURATION_MS;
                         case 141:
@@ -217,8 +217,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4[0] = var9;
                 var9 = undefined;
                 if (!(var11 === var10)) {
-                    _fun101281_ip = 328;
-                    continue _fun101281
+                    _fun100652_ip = 328;
+                    continue _fun100652
                 }
             case 322:
                 var9 = var8.midnightContainer;
@@ -253,4 +253,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 8849, 660, 33, 1297, 671, 3205, 3679, 4056, 4846, 13133, 8857, 4696, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 8849, 660, 33, 1297, 671, 3205, 3679, 4056, 4847, 13070, 8857, 4697, 2]);

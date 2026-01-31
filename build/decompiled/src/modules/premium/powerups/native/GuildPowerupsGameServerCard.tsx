@@ -62,7 +62,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/premium/powerups/native/GuildPowerupsGameServerCard.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: GuildPowerupsGameServerCard, environment: var1
-        _fun103164: for (var _fun103164_ip = 0;;) switch (_fun103164_ip) {
+        _fun102533: for (var _fun102533_ip = 0;;) switch (_fun102533_ip) {
             case 0:
                 var0 = arg0;
                 var2 = var0.guildId;
@@ -116,15 +116,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var2 == var0;
                 var0 = null;
                 if (var1) {
-                    _fun103164_ip = 360;
-                    continue _fun103164
+                    _fun102533_ip = 360;
+                    continue _fun102533
                 }
             case 186:
                 var1 = var2 == var7;
                 var0 = null;
                 if (var1) {
-                    _fun103164_ip = 360;
-                    continue _fun103164
+                    _fun102533_ip = 360;
+                    continue _fun102533
                 }
             case 198:
                 var3 = _closure1_slot6;
@@ -170,4 +170,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1298, 6675, 33, 1297, 671, 566, 13420, 9870, 13385, 13411, 3118, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1298, 6676, 33, 1297, 671, 566, 13356, 9872, 13321, 13347, 3118, 2]);

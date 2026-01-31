@@ -4,7 +4,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = exports;
     var6 = dependencyMap;
     var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
-        _fun13904: for (var _fun13904_ip = 0;;) switch (_fun13904_ip) {
+        _fun13906: for (var _fun13906_ip = 0;;) switch (_fun13906_ip) {
             case 0:
             case 2: // try_start_0
                 var1 = global;
@@ -25,8 +25,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = !var1;
                 var _closure2_slot0 = var1;
             case 70: // try_end0
-                _fun13904_ip = 74;
-                continue _fun13904;
+                _fun13906_ip = 74;
+                continue _fun13906;
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
@@ -44,7 +44,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var _closure1_slot8 = var0;
     var4 = function(arg0, arg1) { // Original name: formatToMarkdownString, environment: var1
-        _fun13907: for (var _fun13907_ip = 0;;) switch (_fun13907_ip) {
+        _fun13909: for (var _fun13909_ip = 0;;) switch (_fun13909_ip) {
             case 0:
                 var5 = arg0;
                 var4 = this;
@@ -53,19 +53,19 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = arguments.length;
                 var0 = 2;
                 if (!(var2 > var0)) {
-                    _fun13907_ip = 28;
-                    continue _fun13907
+                    _fun13909_ip = 28;
+                    continue _fun13909
                 }
             case 20:
                 var2 = arguments[var0];
                 if (!(var3 === var2)) {
-                    _fun13907_ip = 37;
-                    continue _fun13907
+                    _fun13909_ip = 37;
+                    continue _fun13909
                 }
             case 28:
                 var3 = _closure1_slot7;
-                _fun13907_ip = 41;
-                continue _fun13907;
+                _fun13909_ip = 41;
+                continue _fun13909;
             case 37:
                 var3 = arguments[var0];
             case 41:
@@ -73,8 +73,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = typeof var5;
                 var0 = var5;
                 if (!(var2 !== var1)) {
-                    _fun13907_ip = 77;
-                    continue _fun13907
+                    _fun13909_ip = 77;
+                    continue _fun13909
                 }
             case 55:
                 var2 = var4.bindFormatValues;
@@ -205,7 +205,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var5 = var3.StringBuilder;
     var3 = function(arg0) { // Environment: var1
         var3 = function() { // Original name: MarkdownBuilder, environment: var0
-            _fun13915: for (var _fun13915_ip = 0;;) switch (_fun13915_ip) {
+            _fun13917: for (var _fun13917_ip = 0;;) switch (_fun13917_ip) {
                 case 0:
                     var3 = this;
                     var2 = undefined;
@@ -219,16 +219,16 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var0 = _closure1_slot8;
                     var0 = var0.bind(var2)();
                     if (var0) {
-                        _fun13915_ip = 69;
-                        continue _fun13915
+                        _fun13917_ip = 69;
+                        continue _fun13917
                     }
                 case 51:
                     var6 = var8.apply;
                     var4 = arguments;
                     var0 = var4;
                     var0 = var6.bind(var8)(var3, var0);
-                    _fun13915_ip = 105;
-                    continue _fun13915;
+                    _fun13917_ip = 105;
+                    continue _fun13917;
                 case 69:
                     var6 = global;
                     var7 = var6.Reflect;

@@ -5,13 +5,13 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = dependencyMap;
     var _closure1_slot1 = var1;
     var1 = function(arg0) { // Original name: FromPropertyDescriptor, environment: var0
-        _fun28995: for (var _fun28995_ip = 0;;) switch (_fun28995_ip) {
+        _fun28996: for (var _fun28996_ip = 0;;) switch (_fun28996_ip) {
             case 0:
                 var2 = arg0;
                 var1 = undefined;
                 if (!(var1 !== var2)) {
-                    _fun28995_ip = 87;
-                    continue _fun28995
+                    _fun28996_ip = 87;
+                    continue _fun28996
                 }
             case 9:
                 var4 = _closure1_slot0;
@@ -21,8 +21,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var3 = var4.bind(var1)(var3);
                 var3 = var3.bind(var1)(var2);
                 if (var3) {
-                    _fun28995_ip = 87;
-                    continue _fun28995
+                    _fun28996_ip = 87;
+                    continue _fun28996
                 }
             case 39:
                 var3 = _closure1_slot0;

@@ -24,7 +24,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/user_settings/native/profiles/maybeShowDiscardChangesAlert.tsx';
     var3 = var4.bind(var5)(var3);
     var3 = function(arg0) { // Original name: maybeShowDiscardChangesAlert, environment: var1
-        _fun72637: for (var _fun72637_ip = 0;;) switch (_fun72637_ip) {
+        _fun72663: for (var _fun72663_ip = 0;;) switch (_fun72663_ip) {
             case 0:
                 var2 = arg0;
                 var0 = var2.hasEdits;
@@ -34,19 +34,19 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var _closure2_slot1 = var1;
                 var2 = var2.onHasEdits;
                 if (var0) {
-                    _fun72637_ip = 51;
-                    continue _fun72637
+                    _fun72663_ip = 51;
+                    continue _fun72663
                 }
             case 40:
                 var0 = undefined;
                 var0 = var1.bind(var0)();
-                _fun72637_ip = 325;
-                continue _fun72637;
+                _fun72663_ip = 325;
+                continue _fun72663;
             case 51:
                 var1 = null;
                 if (!(var1 != var2)) {
-                    _fun72637_ip = 63;
-                    continue _fun72637
+                    _fun72663_ip = 63;
+                    continue _fun72663
                 }
             case 57:
                 var1 = undefined;
@@ -190,4 +190,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.showDiscardChangesAlert = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3896, 1234, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3895, 1234, 2]);

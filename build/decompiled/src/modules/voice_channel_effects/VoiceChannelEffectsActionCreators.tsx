@@ -31,15 +31,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = var4.bind(var1)(var3);
         var3 = var4.throttle;
         var1 = function() { // Environment: var0
-            _fun50603: for (var _fun50603_ip = 0;;) switch (_fun50603_ip) {
+            _fun50620: for (var _fun50620_ip = 0;;) switch (_fun50620_ip) {
                 case 0:
                     var1 = _closure1_slot4;
                     var0 = var1.getVoiceChannelId;
                     var2 = var0.bind(var1)();
                     var1 = _closure2_slot0;
                     if (!(var2 !== var1)) {
-                        _fun50603_ip = 42;
-                        continue _fun50603
+                        _fun50620_ip = 42;
+                        continue _fun50620
                     }
                 case 28:
                     var1 = _closure2_slot1;
@@ -109,7 +109,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.bind(var6)(var4);
     var2.VoiceChannelEffectSentLocation = var3;
     var3 = function(arg0, arg1, arg2) { // Original name: sendVoiceChannelCustomCallSoundEffect, environment: var1
-        _fun50604: for (var _fun50604_ip = 0;;) switch (_fun50604_ip) {
+        _fun50621: for (var _fun50621_ip = 0;;) switch (_fun50621_ip) {
             case 0:
                 var13 = arg0;
                 var2 = _closure1_slot10;
@@ -124,8 +124,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = var2.animationType;
                 var2 = null;
                 if (!(var2 == var11)) {
-                    _fun50604_ip = 71;
-                    continue _fun50604
+                    _fun50621_ip = 71;
+                    continue _fun50621
                 }
             case 61:
                 var2 = _closure1_slot6;
@@ -196,7 +196,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.sendVoiceChannelCustomCallSoundEffect = var3;
     var1 = function(arg0, arg1, arg2, arg3, arg4) { // Original name: sendVoiceChannelSoundboardEffect, environment: var1
-        _fun50606: for (var _fun50606_ip = 0;;) switch (_fun50606_ip) {
+        _fun50623: for (var _fun50623_ip = 0;;) switch (_fun50623_ip) {
             case 0:
                 var15 = arg0;
                 var6 = arg1;
@@ -206,8 +206,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var2 != var0;
                 var8 = null;
                 if (!var0) {
-                    _fun50606_ip = 52;
-                    continue _fun50606
+                    _fun50623_ip = 52;
+                    continue _fun50623
                 }
             case 28:
                 var4 = _closure1_slot3;
@@ -228,15 +228,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var12.emoji_id = var4;
                 var4 = var6.emojiName;
                 if (!(var2 == var4)) {
-                    _fun50606_ip = 133;
-                    continue _fun50606
+                    _fun50623_ip = 133;
+                    continue _fun50623
                 }
             case 116:
                 var9 = var2 == var8;
                 var7 = undefined;
                 if (var9) {
-                    _fun50606_ip = 130;
-                    continue _fun50606
+                    _fun50623_ip = 130;
+                    continue _fun50623
                 }
             case 125:
                 var7 = var8.name;
@@ -247,8 +247,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var6.guildId;
                 var4 = _closure1_slot9;
                 if (!(var7 !== var4)) {
-                    _fun50606_ip = 162;
-                    continue _fun50606
+                    _fun50623_ip = 162;
+                    continue _fun50623
                 }
             case 151:
                 var4 = var6.guildId;
@@ -288,8 +288,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var7[var3];
                 var4 = var4.bind(var0)(var3);
                 if (!(var2 == var5)) {
-                    _fun50606_ip = 289;
-                    continue _fun50606
+                    _fun50623_ip = 289;
+                    continue _fun50623
                 }
             case 285:
                 var5 = new Array(0);
@@ -312,4 +312,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.sendVoiceChannelSoundboardEffect = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [4699, 1661, 5653, 5654, 660, 3917, 22, 5655, 507, 5678, 5540, 4761, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [4700, 1661, 5654, 5655, 660, 3916, 22, 5656, 507, 5679, 5541, 4762, 2]);

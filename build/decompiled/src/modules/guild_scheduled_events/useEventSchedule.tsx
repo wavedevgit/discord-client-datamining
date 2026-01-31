@@ -9,20 +9,20 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
     var0 = function(arg0, arg1, arg2) { // Original name: _getEventSchedule, environment: var1
-        _fun65153: for (var _fun65153_ip = 0;;) switch (_fun65153_ip) {
+        _fun65165: for (var _fun65165_ip = 0;;) switch (_fun65165_ip) {
             case 0:
                 var2 = arg0;
                 var8 = arg2;
                 var0 = var2.recurrence_rule;
                 var1 = null;
                 if (!(var1 != var0)) {
-                    _fun65153_ip = 136;
-                    continue _fun65153
+                    _fun65165_ip = 136;
+                    continue _fun65165
                 }
             case 18:
                 if (!(var1 != var8)) {
-                    _fun65153_ip = 136;
-                    continue _fun65153
+                    _fun65165_ip = 136;
+                    continue _fun65165
                 }
             case 22:
                 var4 = _closure1_slot0;
@@ -46,8 +46,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0.startTime = var4;
                 var4 = var1 == var5;
                 if (var4) {
-                    _fun65153_ip = 129;
-                    continue _fun65153
+                    _fun65165_ip = 129;
+                    continue _fun65165
                 }
             case 119:
                 var4 = var5.toDate;
@@ -74,8 +74,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var1 != var4;
                 var1 = null;
                 if (!var4) {
-                    _fun65153_ip = 224;
-                    continue _fun65153
+                    _fun65165_ip = 224;
+                    continue _fun65165
                 }
             case 192:
                 var4 = var3.Date;
@@ -115,14 +115,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/guild_scheduled_events/useEventSchedule.tsx';
     var3 = var4.bind(var5)(var3);
     var3 = function(arg0, arg1) { // Original name: useEventSchedule, environment: var1
-        _fun65154: for (var _fun65154_ip = 0;;) switch (_fun65154_ip) {
+        _fun65166: for (var _fun65166_ip = 0;;) switch (_fun65166_ip) {
             case 0:
                 var4 = arg0;
                 var3 = arg1;
                 var0 = null;
                 if (!(var0 == var3)) {
-                    _fun65154_ip = 48;
-                    continue _fun65154
+                    _fun65166_ip = 48;
+                    continue _fun65166
                 }
             case 12:
                 var2 = _closure1_slot0;
@@ -149,7 +149,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var3;
     var3 = function(arg0, arg1) { // Original name: useEventScheduleById, environment: var1
-        _fun65155: for (var _fun65155_ip = 0;;) switch (_fun65155_ip) {
+        _fun65167: for (var _fun65167_ip = 0;;) switch (_fun65167_ip) {
             case 0:
                 var5 = arg1;
                 var1 = arg0;
@@ -174,8 +174,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var3.bind(var6)(var2, var0);
                 var0 = null;
                 if (!(var0 == var5)) {
-                    _fun65155_ip = 102;
-                    continue _fun65155
+                    _fun65167_ip = 102;
+                    continue _fun65167
                 }
             case 71:
                 var6 = _closure1_slot0;
@@ -194,8 +194,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var0 == var3;
                 var2 = undefined;
                 if (var7) {
-                    _fun65155_ip = 136;
-                    continue _fun65155
+                    _fun65167_ip = 136;
+                    continue _fun65167
                 }
             case 131:
                 var2 = var3.id;
@@ -204,8 +204,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var0 == var3;
                 var0 = null;
                 if (var6) {
-                    _fun65155_ip = 162;
-                    continue _fun65155
+                    _fun65167_ip = 162;
+                    continue _fun65167
                 }
             case 151:
                 var1 = _closure1_slot4;
@@ -233,4 +233,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getEventSchedule = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3293, 8046, 8050, 566, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3293, 8045, 8049, 566, 2]);

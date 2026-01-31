@@ -28,7 +28,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/guild_scheduled_events/useActiveEventOrStageInstanceChannel.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: useActiveEventOrStageInstanceChannel, environment: var1
-        _fun102584: for (var _fun102584_ip = 0;;) switch (_fun102584_ip) {
+        _fun101953: for (var _fun101953_ip = 0;;) switch (_fun101953_ip) {
             case 0:
                 var4 = arg0;
                 var3 = _closure1_slot0;
@@ -51,16 +51,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = null;
                 var6 = var2 == var5;
                 if (var6) {
-                    _fun102584_ip = 89;
-                    continue _fun102584
+                    _fun101953_ip = 89;
+                    continue _fun101953
                 }
             case 84:
                 var0 = var5.id;
             case 89:
                 var0 = var3.bind(var4)(var0);
                 if (!(var2 != var1)) {
-                    _fun102584_ip = 101;
-                    continue _fun102584
+                    _fun101953_ip = 101;
+                    continue _fun101953
                 }
             case 98:
                 var0 = var1;
@@ -70,4 +70,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useActiveEventOrStageInstanceChannel = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1372, 8043, 13311, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1372, 8042, 13247, 2]);

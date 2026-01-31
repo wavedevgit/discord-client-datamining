@@ -85,7 +85,7 @@ var _closure1_slot28 = var3;
 var3 = /games\\/([ ^ \\/]+)\\/updates\\ / ([ ^ \\/]+)/;
                 var _closure1_slot29 = var3;
                 var3 = function(arg0) { // Original name: parseQuery, environment: var1
-                    _fun28106: for (var _fun28106_ip = 0;;) switch (_fun28106_ip) {
+                    _fun28107: for (var _fun28107_ip = 0;;) switch (_fun28107_ip) {
                         case 0:
                             var0 = arg0;
                         case 3: // try_start_0
@@ -105,7 +105,7 @@ var3 = /games\\/([ ^ \\/]+)\\/updates\\ / ([ ^ \\/]+)/;
                             var4 = var0.bind(var3)(var4);
                             var3 = var4.map;
                             var0 = function(arg0) { // Environment: var0
-                                _fun28107: for (var _fun28107_ip = 0;;) switch (_fun28107_ip) {
+                                _fun28108: for (var _fun28108_ip = 0;;) switch (_fun28108_ip) {
                                     case 0:
                                         var4 = arg0;
                                         var0 = var4[Symbol.iterator];
@@ -116,16 +116,16 @@ var3 = /games\\/([ ^ \\/]+)\\/updates\\ / ([ ^ \\/]+)/;
                                         var2 = var1 === var6;
                                         var1 = undefined;
                                         if (var2) {
-                                            _fun28107_ip = 27;
-                                            continue _fun28107
+                                            _fun28108_ip = 27;
+                                            continue _fun28108
                                         }
                                     case 24:
                                         var1 = var3;
                                     case 27:
                                         var3 = undefined;
                                         if (var2) {
-                                            _fun28107_ip = 57;
-                                            continue _fun28107
+                                            _fun28108_ip = 57;
+                                            continue _fun28108
                                         }
                                     case 32:
                                         var5 = var4().value;
@@ -134,16 +134,16 @@ var3 = /games\\/([ ^ \\/]+)\\/updates\\ / ([ ^ \\/]+)/;
                                         var3 = undefined;
                                         var2 = var4;
                                         if (var4) {
-                                            _fun28107_ip = 57;
-                                            continue _fun28107
+                                            _fun28108_ip = 57;
+                                            continue _fun28108
                                         }
                                     case 51:
                                         var3 = var5;
                                         var2 = var4;
                                     case 57:
                                         if (var2) {
-                                            _fun28107_ip = 63;
-                                            continue _fun28107
+                                            _fun28108_ip = 63;
+                                            continue _fun28108
                                         }
                                     case 60:
                                         var0.return();
@@ -156,8 +156,8 @@ var3 = /games\\/([ ^ \\/]+)\\/updates\\ / ([ ^ \\/]+)/;
                                         var2 = var1.bind(var2)(var3);
                                         var1 = var3;
                                         if (!var2) {
-                                            _fun28107_ip = 101;
-                                            continue _fun28107
+                                            _fun28108_ip = 101;
+                                            continue _fun28108
                                         }
                                     case 95:
                                         var2 = 0;
@@ -185,13 +185,13 @@ var3 = /games\\/([ ^ \\/]+)\\/updates\\ / ([ ^ \\/]+)/;
                 var3 = 'utils/native/parseURL.tsx';
                 var3 = var4.bind(var5)(var3);
                 var1 = function(arg0) { // Original name: parseURL, environment: var1
-                    _fun28108: for (var _fun28108_ip = 0;;) switch (_fun28108_ip) {
+                    _fun28109: for (var _fun28109_ip = 0;;) switch (_fun28109_ip) {
                         case 0:
                             var26 = arguments[1];
                             var10 = undefined;
                             if (!(var26 === var10)) {
-                                _fun28108_ip = 13;
-                                continue _fun28108
+                                _fun28109_ip = 13;
+                                continue _fun28109
                             }
                         case 11:
                             var26 = false;
@@ -207,8 +207,8 @@ var3 = /games\\/([ ^ \\/]+)\\/updates\\ / ([ ^ \\/]+)/;
                             var37 = var1.bind(var3)(var0);
                             var13 = null;
                             if (!(var13 != var37)) {
-                                _fun28108_ip = 5607;
-                                continue _fun28108
+                                _fun28109_ip = 5607;
+                                continue _fun28109
                             }
                         case 63:
                             var1 = _closure1_slot1;
@@ -228,8 +228,8 @@ var3 = /games\\/([ ^ \\/]+)\\/updates\\ / ([ ^ \\/]+)/;
                             var0 = '';
                             var1 = var0;
                             if (!var4) {
-                                _fun28108_ip = 145;
-                                continue _fun28108
+                                _fun28109_ip = 145;
+                                continue _fun28109
                             }
                         case 142:
                             var1 = var12;
@@ -251,8 +251,8 @@ var3 = /games\\/([ ^ \\/]+)\\/updates\\ / ([ ^ \\/]+)/;
                             var5 = var6.findCodedLink;
                             var5 = var5.bind(var6)(var37);
                             if (!(var13 != var5)) {
-                                _fun28108_ip = 1262;
-                                continue _fun28108
+                                _fun28109_ip = 1262;
+                                continue _fun28109
                             }
                         case 234:
                             var7 = var5.type;
@@ -264,8 +264,8 @@ var3 = /games\\/([ ^ \\/]+)\\/updates\\ / ([ ^ \\/]+)/;
                             var6 = var6.CodedLinkType;
                             var6 = var6.INVITE;
                             if (!(var7 !== var6)) {
-                                _fun28108_ip = 5553;
-                                continue _fun28108
+                                _fun28109_ip = 5553;
+                                continue _fun28109
                             }
                         case 278:
                             var7 = var5.type;
@@ -276,8 +276,8 @@ var3 = /games\\/([ ^ \\/]+)\\/updates\\ / ([ ^ \\/]+)/;
                             var6 = var6.CodedLinkType;
                             var6 = var6.TEMPLATE;
                             if (!(var7 !== var6)) {
-                                _fun28108_ip = 5508;
-                                continue _fun28108
+                                _fun28109_ip = 5508;
+                                continue _fun28109
                             }
                         case 319:
                             var7 = var5.type;
@@ -288,8 +288,8 @@ var3 = /games\\/([ ^ \\/]+)\\/updates\\ / ([ ^ \\/]+)/;
                             var6 = var6.CodedLinkType;
                             var6 = var6.BUILD_OVERRIDE;
                             if (!(var7 !== var6)) {
-                                _fun28108_ip = 5463;
-                                continue _fun28108
+                                _fun28109_ip = 5463;
+                                continue _fun28109
                             }
                         case 360:
                             var7 = var5.type;
@@ -300,8 +300,8 @@ var3 = /games\\/([ ^ \\/]+)\\/updates\\ / ([ ^ \\/]+)/;
                             var6 = var6.CodedLinkType;
                             var6 = var6.MANUAL_BUILD_OVERRIDE;
                             if (!(var7 !== var6)) {
-                                _fun28108_ip = 5463;
-                                continue _fun28108
+                                _fun28109_ip = 5463;
+                                continue _fun28109
                             }
                         case 401:
                             var7 = var5.type;
@@ -312,8 +312,8 @@ var3 = /games\\/([ ^ \\/]+)\\/updates\\ / ([ ^ \\/]+)/;
                             var6 = var6.CodedLinkType;
                             var6 = var6.EXPERIMENT;
                             if (!(var7 !== var6)) {
-                                _fun28108_ip = 1262;
-                                continue _fun28108
+                                _fun28109_ip = 1262;
+                                continue _fun28109
                             }
                         case 442:
                             var7 = var5.type;
@@ -324,8 +324,8 @@ var3 = /games\\/([ ^ \\/]+)\\/updates\\ / ([ ^ \\/]+)/;
                             var6 = var6.CodedLinkType;
                             var6 = var6.EVENT;
                             if (!(var7 !== var6)) {
-                                _fun28108_ip = 1262;
-                                continue _fun28108
+                                _fun28109_ip = 1262;
+                                continue _fun28109
                             }
                         case 483:
                             var7 = var5.type;
@@ -336,8 +336,8 @@ var3 = /games\\/([ ^ \\/]+)\\/updates\\ / ([ ^ \\/]+)/;
                             var6 = var6.CodedLinkType;
                             var6 = var6.CHANNEL_LINK;
                             if (!(var7 !== var6)) {
-                                _fun28108_ip = 1262;
-                                continue _fun28108
+                                _fun28109_ip = 1262;
+                                continue _fun28109
                             }
                         case 524:
                             var7 = var5.type;
@@ -348,8 +348,8 @@ var3 = /games\\/([ ^ \\/]+)\\/updates\\ / ([ ^ \\/]+)/;
                             var6 = var6.CodedLinkType;
                             var6 = var6.APP_DIRECTORY_PROFILE;
                             if (!(var7 !== var6)) {
-                                _fun28108_ip = 1262;
-                                continue _fun28108
+                                _fun28109_ip = 1262;
+                                continue _fun28109
                             }
                         case 565:
                             var7 = var5.type;
@@ -360,8 +360,8 @@ var3 = /games\\/([ ^ \\/]+)\\/updates\\ / ([ ^ \\/]+)/;
                             var6 = var6.CodedLinkType;
                             var6 = var6.ACTIVITY_BOOKMARK;
                             if (!(var7 !== var6)) {
-                                _fun28108_ip = 1198;
-                                continue _fun28108
+                                _fun28109_ip = 1198;
+                                continue _fun28109
                             }
                         case 606:
                             var7 = var5.type;
@@ -372,8 +372,8 @@ var3 = /games\\/([ ^ \\/]+)\\/updates\\ / ([ ^ \\/]+)/;
                             var6 = var6.CodedLinkType;
                             var6 = var6.EMBEDDED_ACTIVITY_INVITE;
                             if (!(var7 !== var6)) {
-                                _fun28108_ip = 1262;
-                                continue _fun28108
+                                _fun28109_ip = 1262;
+                                continue _fun28109
                             }
                         case 647:
                             var7 = var5.type;
@@ -384,8 +384,8 @@ var3 = /games\\/([ ^ \\/]+)\\/updates\\ / ([ ^ \\/]+)/;
                             var6 = var6.CodedLinkType;
                             var6 = var6.GUILD_PRODUCT;
                             if (!(var7 !== var6)) {
-                                _fun28108_ip = 1262;
-                                continue _fun28108
+                                _fun28109_ip = 1262;
+                                continue _fun28109
                             }
                         case 688:
                             var7 = var5.type;
@@ -396,8 +396,8 @@ var3 = /games\\/([ ^ \\/]+)\\/updates\\ / ([ ^ \\/]+)/;
                             var6 = var6.CodedLinkType;
                             var6 = var6.SERVER_SHOP;
                             if (!(var7 !== var6)) {
-                                _fun28108_ip = 1262;
-                                continue _fun28108
+                                _fun28109_ip = 1262;
+                                continue _fun28109
                             }
                         case 729:
                             var7 = var5.type;
@@ -408,8 +408,8 @@ var3 = /games\\/([ ^ \\/]+)\\/updates\\ / ([ ^ \\/]+)/;
                             var6 = var6.CodedLinkType;
                             var6 = var6.SOCIAL_LAYER_STOREFRONT;
                             if (!(var7 !== var6)) {
-                                _fun28108_ip = 1262;
-                                continue _fun28108
+                                _fun28109_ip = 1262;
+                                continue _fun28109
                             }
                         case 770:
                             var7 = var5.type;
@@ -420,8 +420,8 @@ var3 = /games\\/([ ^ \\/]+)\\/updates\\ / ([ ^ \\/]+)/;
                             var6 = var6.CodedLinkType;
                             var6 = var6.QUESTS_EMBED;
                             if (!(var7 !== var6)) {
-                                _fun28108_ip = 1262;
-                                continue _fun28108
+                                _fun28109_ip = 1262;
+                                continue _fun28109
                             }
                         case 811:
                             var7 = var5.type;
@@ -432,8 +432,8 @@ var3 = /games\\/([ ^ \\/]+)\\/updates\\ / ([ ^ \\/]+)/;
                             var6 = var6.CodedLinkType;
                             var6 = var6.APP_DIRECTORY_STOREFRONT;
                             if (!(var7 !== var6)) {
-                                _fun28108_ip = 1262;
-                                continue _fun28108
+                                _fun28109_ip = 1262;
+                                continue _fun28109
                             }
                         case 852:
                             var7 = var5.type;
@@ -444,8 +444,8 @@ var3 = /games\\/([ ^ \\/]+)\\/updates\\ / ([ ^ \\/]+)/;
                             var6 = var6.CodedLinkType;
                             var6 = var6.APP_DIRECTORY_STOREFRONT_SKU;
                             if (!(var7 !== var6)) {
-                                _fun28108_ip = 1262;
-                                continue _fun28108
+                                _fun28109_ip = 1262;
+                                continue _fun28109
                             }
                         case 893:
                             var7 = var5.type;
@@ -456,8 +456,8 @@ var3 = /games\\/([ ^ \\/]+)\\/updates\\ / ([ ^ \\/]+)/;
                             var6 = var6.CodedLinkType;
                             var6 = var6.APP_OAUTH2_LINK;
                             if (!(var7 !== var6)) {
-                                _fun28108_ip = 1262;
-                                continue _fun28108
+                                _fun28109_ip = 1262;
+                                continue _fun28109
                             }
                         case 934:
                             var7 = var5.type;
@@ -468,8 +468,8 @@ var3 = /games\\/([ ^ \\/]+)\\/updates\\ / ([ ^ \\/]+)/;
                             var6 = var6.CodedLinkType;
                             var6 = var6.COLLECTIBLES_SHOP;
                             if (!(var7 !== var6)) {
-                                _fun28108_ip = 1014;
-                                continue _fun28108
+                                _fun28109_ip = 1014;
+                                continue _fun28109
                             }
                         case 972:
                             var6 = global;
@@ -505,21 +505,21 @@ var3 = /games\\/([ ^ \\/]+)\\/updates\\ / ([ ^ \\/]+)/;
                             var11 = 1;
                             var18 = var18[var11];
                             if (!var6) {
-                                _fun28108_ip = 1122;
-                                continue _fun28108
+                                _fun28109_ip = 1122;
+                                continue _fun28109
                             }
                         case 1108:
                             var6 = _closure1_slot8;
                             var6 = var6.ORBS;
                             if (!(var7 !== var6)) {
-                                _fun28108_ip = 1134;
-                                continue _fun28108
+                                _fun28109_ip = 1134;
+                                continue _fun28109
                             }
                         case 1122:
                             var6 = _closure1_slot9;
                             var11 = var6.FEATURED_PAGE;
-                            _fun28108_ip = 1144;
-                            continue _fun28108;
+                            _fun28109_ip = 1144;
+                            continue _fun28109;
                         case 1134:
                             var6 = _closure1_slot9;
                             var11 = var6.ORBS;
@@ -534,8 +534,8 @@ var3 = /games\\/([ ^ \\/]+)\\/updates\\ / ([ ^ \\/]+)/;
                             var7.screen = var11;
                             var11 = undefined;
                             if (!(var0 !== var18)) {
-                                _fun28108_ip = 1186;
-                                continue _fun28108
+                                _fun28109_ip = 1186;
+                                continue _fun28109
                             }
                         case 1183:
                             var11 = var18;
@@ -570,8 +570,8 @@ var3 = /games\\/([ ^ \\/]+)\\/updates\\ / ([ ^ \\/]+)/;
                             var6 = var8.length;
                             var7 = 0;
                             if (!(!(var6 > var7))) {
-                                _fun28108_ip = 5419;
-                                continue _fun28108
+                                _fun28109_ip = 5419;
+                                continue _fun28109
                             }
                         case 1307:
                             var9 = _closure1_slot0;
@@ -582,14 +582,14 @@ var3 = /games\\/([ ^ \\/]+)\\/updates\\ / ([ ^ \\/]+)/;
                             var6 = var9.findRemoteAuthFingerprint;
                             var9 = var6.bind(var9)(var32, var38);
                             if (!(var13 != var9)) {
-                                _fun28108_ip = 1355;
-                                continue _fun28108
+                                _fun28109_ip = 1355;
+                                continue _fun28109
                             }
                         case 1343:
                             var6 = var9.length;
                             if (!(!(var6 > var7))) {
-                                _fun28108_ip = 5379;
-                                continue _fun28108
+                                _fun28109_ip = 5379;
+                                continue _fun28109
                             }
                         case 1355:
                             var11 = _closure1_slot1;
@@ -600,8 +600,8 @@ var3 = /games\\/([ ^ \\/]+)\\/updates\\ / ([ ^ \\/]+)/;
                             var6 = var11.isDiscordHostname;
                             var6 = var6.bind(var11)(var32);
                             if (var6) {
-                                _fun28108_ip = 1455;
-                                continue _fun28108
+                                _fun28109_ip = 1455;
+                                continue _fun28109
                             }
                         case 1389:
                             var11 = _closure1_slot1;
@@ -611,8 +611,8 @@ var3 = /games\\/([ ^ \\/]+)\\/updates\\ / ([ ^ \\/]+)/;
                             var6 = var11.isDiscordProtocol;
                             var6 = var6.bind(var11)(var19);
                             if (var6) {
-                                _fun28108_ip = 1455;
-                                continue _fun28108
+                                _fun28109_ip = 1455;
+                                continue _fun28109
                             }
                         case 1420:
                             var11 = _closure1_slot1;
@@ -622,13 +622,13 @@ var3 = /games\\/([ ^ \\/]+)\\/updates\\ / ([ ^ \\/]+)/;
                             var6 = var11.isDiscordLocalhost;
                             var6 = var6.bind(var11)(var32, var14);
                             if (!var6) {
-                                _fun28108_ip = 3628;
-                                continue _fun28108
+                                _fun28109_ip = 3628;
+                                continue _fun28109
                             }
                         case 1455:
                             if (!(var13 != var38)) {
-                                _fun28108_ip = 3628;
-                                continue _fun28108
+                                _fun28109_ip = 3628;
+                                continue _fun28109
                             }
                         case 1462:
                             var11 = _closure1_slot0;
@@ -639,77 +639,77 @@ var3 = /games\\/([ ^ \\/]+)\\/updates\\ / ([ ^ \\/]+)/;
                             var6 = var11.tryParseChannelPath;
                             var11 = var6.bind(var11)(var38);
                             if (!(var13 == var11)) {
-                                _fun28108_ip = 5266;
-                                continue _fun28108
+                                _fun28109_ip = 5266;
+                                continue _fun28109
                             }
                         case 1500:
                             var14 = var38.match;
                             var6 = _closure1_slot25;
                             var19 = var14.bind(var38)(var6);
                             if (!(var13 != var19)) {
-                                _fun28108_ip = 1534;
-                                continue _fun28108
+                                _fun28109_ip = 1534;
+                                continue _fun28109
                             }
                         case 1519:
                             var6 = var19.length;
                             var18 = 1;
                             if (!(!(var6 > var18))) {
-                                _fun28108_ip = 5208;
-                                continue _fun28108
+                                _fun28109_ip = 5208;
+                                continue _fun28109
                             }
                         case 1534:
                             var14 = var38.match;
                             var6 = _closure1_slot26;
                             var21 = var14.bind(var38)(var6);
                             if (!(var13 != var21)) {
-                                _fun28108_ip = 1568;
-                                continue _fun28108
+                                _fun28109_ip = 1568;
+                                continue _fun28109
                             }
                         case 1553:
                             var6 = var21.length;
                             var20 = 1;
                             if (!(!(var6 > var20))) {
-                                _fun28108_ip = 5164;
-                                continue _fun28108
+                                _fun28109_ip = 5164;
+                                continue _fun28109
                             }
                         case 1568:
                             var14 = var38.match;
                             var6 = _closure1_slot27;
                             var6 = var14.bind(var38)(var6);
                             if (!(var13 == var6)) {
-                                _fun28108_ip = 5115;
-                                continue _fun28108
+                                _fun28109_ip = 5115;
+                                continue _fun28109
                             }
                         case 1590:
                             var14 = var38.match;
                             var6 = _closure1_slot28;
                             var6 = var14.bind(var38)(var6);
                             if (!(var13 == var6)) {
-                                _fun28108_ip = 5080;
-                                continue _fun28108
+                                _fun28109_ip = 5080;
+                                continue _fun28109
                             }
                         case 1612:
                             var14 = var38.match;
                             var6 = _closure1_slot15;
                             var23 = var14.bind(var38)(var6);
                             if (!(var13 != var23)) {
-                                _fun28108_ip = 1646;
-                                continue _fun28108
+                                _fun28109_ip = 1646;
+                                continue _fun28109
                             }
                         case 1631:
                             var6 = var23.length;
                             var22 = 1;
                             if (!(!(var6 > var22))) {
-                                _fun28108_ip = 5037;
-                                continue _fun28108
+                                _fun28109_ip = 5037;
+                                continue _fun28109
                             }
                         case 1646:
                             var14 = var38.match;
                             var6 = _closure1_slot16;
                             var6 = var14.bind(var38)(var6);
                             if (!(var13 != var6)) {
-                                _fun28108_ip = 1716;
-                                continue _fun28108
+                                _fun28109_ip = 1716;
+                                continue _fun28109
                             }
                         case 1665:
                             var14 = _closure1_slot0;
@@ -721,215 +721,215 @@ var3 = /games\\/([ ^ \\/]+)\\/updates\\ / ([ ^ \\/]+)/;
                             var27 = var13 != var12;
                             var6 = var0;
                             if (!var27) {
-                                _fun28108_ip = 1704;
-                                continue _fun28108
+                                _fun28109_ip = 1704;
+                                continue _fun28109
                             }
                         case 1701:
                             var6 = var12;
                         case 1704:
                             var25 = var14.bind(var25)(var6);
                             if (!(var13 == var25)) {
-                                _fun28108_ip = 4977;
-                                continue _fun28108
+                                _fun28109_ip = 4977;
+                                continue _fun28109
                             }
                         case 1716:
                             var14 = var38.match;
                             var6 = _closure1_slot17;
                             var6 = var14.bind(var38)(var6);
                             if (!(var13 == var6)) {
-                                _fun28108_ip = 4897;
-                                continue _fun28108
+                                _fun28109_ip = 4897;
+                                continue _fun28109
                             }
                         case 1738:
                             var14 = var38.match;
                             var6 = _closure1_slot14;
                             var14 = var14.bind(var38)(var6);
                             if (!(var13 != var14)) {
-                                _fun28108_ip = 1772;
-                                continue _fun28108
+                                _fun28109_ip = 1772;
+                                continue _fun28109
                             }
                         case 1757:
                             var27 = var14.length;
                             var6 = 1;
                             if (!(!(var27 > var6))) {
-                                _fun28108_ip = 4854;
-                                continue _fun28108
+                                _fun28109_ip = 4854;
+                                continue _fun28109
                             }
                         case 1772:
                             var28 = var38.match;
                             var27 = _closure1_slot29;
                             var29 = var28.bind(var38)(var27);
                             if (!(var13 != var29)) {
-                                _fun28108_ip = 1806;
-                                continue _fun28108
+                                _fun28109_ip = 1806;
+                                continue _fun28109
                             }
                         case 1791:
                             var27 = var29.length;
                             var28 = 2;
                             if (!(!(var27 > var28))) {
-                                _fun28108_ip = 4798;
-                                continue _fun28108
+                                _fun28109_ip = 4798;
+                                continue _fun28109
                             }
                         case 1806:
                             var30 = var38.match;
                             var27 = _closure1_slot13;
                             var30 = var30.bind(var38)(var27);
                             if (!(var13 != var30)) {
-                                _fun28108_ip = 3461;
-                                continue _fun28108
+                                _fun28109_ip = 3461;
+                                continue _fun28109
                             }
                         case 1828:
                             var33 = var30.length;
                             var27 = 1;
                             if (!(var33 > var27)) {
-                                _fun28108_ip = 3461;
-                                continue _fun28108
+                                _fun28109_ip = 3461;
+                                continue _fun28109
                             }
                         case 1843:
                             var33 = var30[var27];
                             var27 = 'composeMessage';
                             if (!(var27 !== var33)) {
-                                _fun28108_ip = 3435;
-                                continue _fun28108
+                                _fun28109_ip = 3435;
+                                continue _fun28109
                             }
                         case 1860:
                             var27 = 'contactSync';
                             if (!(var27 !== var33)) {
-                                _fun28108_ip = 3414;
-                                continue _fun28108
+                                _fun28109_ip = 3414;
+                                continue _fun28109
                             }
                         case 1873:
                             var27 = 'addFriends';
                             if (!(var27 !== var33)) {
-                                _fun28108_ip = 3393;
-                                continue _fun28108
+                                _fun28109_ip = 3393;
+                                continue _fun28109
                             }
                         case 1886:
                             var27 = 'friends';
                             if (!(var27 !== var33)) {
-                                _fun28108_ip = 3340;
-                                continue _fun28108
+                                _fun28109_ip = 3340;
+                                continue _fun28109
                             }
                         case 1897:
                             var27 = 'editProfile';
                             if (!(var27 !== var33)) {
-                                _fun28108_ip = 3319;
-                                continue _fun28108
+                                _fun28109_ip = 3319;
+                                continue _fun28109
                             }
                         case 1910:
                             var27 = 'voiceChannel';
                             if (!(var27 !== var33)) {
-                                _fun28108_ip = 3225;
-                                continue _fun28108
+                                _fun28109_ip = 3225;
+                                continue _fun28109
                             }
                         case 1921:
                             var27 = 'sessionManagement';
                             if (!(var27 !== var33)) {
-                                _fun28108_ip = 3201;
-                                continue _fun28108
+                                _fun28109_ip = 3201;
+                                continue _fun28109
                             }
                         case 1934:
                             var27 = 'home';
                             if (!(var27 !== var33)) {
-                                _fun28108_ip = 3124;
-                                continue _fun28108
+                                _fun28109_ip = 3124;
+                                continue _fun28109
                             }
                         case 1945:
                             var27 = 'icymi';
                             if (!(var27 !== var33)) {
-                                _fun28108_ip = 3100;
-                                continue _fun28108
+                                _fun28109_ip = 3100;
+                                continue _fun28109
                             }
                         case 1956:
                             var27 = 'connections';
                             if (!(var27 !== var33)) {
-                                _fun28108_ip = 3045;
-                                continue _fun28108
+                                _fun28109_ip = 3045;
+                                continue _fun28109
                             }
                         case 1967:
                             var27 = 'family-center';
                             if (!(var27 !== var33)) {
-                                _fun28108_ip = 3016;
-                                continue _fun28108
+                                _fun28109_ip = 3016;
+                                continue _fun28109
                             }
                         case 1980:
                             var27 = 'promo-url';
                             if (!(var27 !== var33)) {
-                                _fun28108_ip = 2948;
-                                continue _fun28108
+                                _fun28109_ip = 2948;
+                                continue _fun28109
                             }
                         case 1993:
                             var27 = 'account-standing';
                             if (!(var27 !== var33)) {
-                                _fun28108_ip = 2919;
-                                continue _fun28108
+                                _fun28109_ip = 2919;
+                                continue _fun28109
                             }
                         case 2006:
                             var27 = 'apple-payment-link';
                             if (!(var27 !== var33)) {
-                                _fun28108_ip = 2739;
-                                continue _fun28108
+                                _fun28109_ip = 2739;
+                                continue _fun28109
                             }
                         case 2019:
                             var27 = 'open-shop';
                             if (!(var27 !== var33)) {
-                                _fun28108_ip = 2715;
-                                continue _fun28108
+                                _fun28109_ip = 2715;
+                                continue _fun28109
                             }
                         case 2032:
                             var27 = 'authorized-apps';
                             if (!(var27 !== var33)) {
-                                _fun28108_ip = 2691;
-                                continue _fun28108
+                                _fun28109_ip = 2691;
+                                continue _fun28109
                             }
                         case 2045:
                             var27 = 'share';
                             if (!(var27 !== var33)) {
-                                _fun28108_ip = 2460;
-                                continue _fun28108
+                                _fun28109_ip = 2460;
+                                continue _fun28109
                             }
                         case 2056:
                             var27 = 'dave-protocol-verification';
                             if (!(var27 !== var33)) {
-                                _fun28108_ip = 2316;
-                                continue _fun28108
+                                _fun28109_ip = 2316;
+                                continue _fun28109
                             }
                         case 2069:
                             var27 = 'gift';
                             if (!(var27 !== var33)) {
-                                _fun28108_ip = 2292;
-                                continue _fun28108
+                                _fun28109_ip = 2292;
+                                continue _fun28109
                             }
                         case 2080:
                             var27 = 'store';
                             if (!(var27 !== var33)) {
-                                _fun28108_ip = 2268;
-                                continue _fun28108
+                                _fun28109_ip = 2268;
+                                continue _fun28109
                             }
                         case 2091:
                             var27 = 'connected-games';
                             if (!(var27 !== var33)) {
-                                _fun28108_ip = 2244;
-                                continue _fun28108
+                                _fun28109_ip = 2244;
+                                continue _fun28109
                             }
                         case 2104:
                             var27 = 'boost-settings';
                             if (!(var27 !== var33)) {
-                                _fun28108_ip = 2220;
-                                continue _fun28108
+                                _fun28109_ip = 2220;
+                                continue _fun28109
                             }
                         case 2114:
                             var27 = 'quest-preview-tool';
                             if (!(var27 !== var33)) {
-                                _fun28108_ip = 2163;
-                                continue _fun28108
+                                _fun28109_ip = 2163;
+                                continue _fun28109
                             }
                         case 2124:
                             var30 = 'subscription-settings';
                             var27 = null;
                             if (!(var30 === var33)) {
-                                _fun28108_ip = 3454;
-                                continue _fun28108
+                                _fun28109_ip = 3454;
+                                continue _fun28109
                             }
                         case 2139:
                             var30 = {};
@@ -937,15 +937,15 @@ var3 = /games\\/([ ^ \\/]+)\\/updates\\ / ([ ^ \\/]+)/;
                             var33 = var33.SUBSCRIPTION_SETTINGS;
                             var30.type = var33;
                             var27 = var30;
-                            _fun28108_ip = 3454;
-                            continue _fun28108;
+                            _fun28109_ip = 3454;
+                            continue _fun28109;
                         case 2163:
                             var33 = _closure1_slot30;
                             var34 = var13 != var12;
                             var30 = var0;
                             if (!var34) {
-                                _fun28108_ip = 2180;
-                                continue _fun28108
+                                _fun28109_ip = 2180;
+                                continue _fun28109
                             }
                         case 2177:
                             var30 = var12;
@@ -958,47 +958,47 @@ var3 = /games\\/([ ^ \\/]+)\\/updates\\ / ([ ^ \\/]+)/;
                             var30.type = var34;
                             var30.questId = var33;
                             var27 = var30;
-                            _fun28108_ip = 3454;
-                            continue _fun28108;
+                            _fun28109_ip = 3454;
+                            continue _fun28109;
                         case 2220:
                             var30 = {};
                             var33 = _closure1_slot7;
                             var33 = var33.BOOST_SETTINGS;
                             var30.type = var33;
                             var27 = var30;
-                            _fun28108_ip = 3454;
-                            continue _fun28108;
+                            _fun28109_ip = 3454;
+                            continue _fun28109;
                         case 2244:
                             var30 = {};
                             var33 = _closure1_slot7;
                             var33 = var33.CONNECTED_GAMES;
                             var30.type = var33;
                             var27 = var30;
-                            _fun28108_ip = 3454;
-                            continue _fun28108;
+                            _fun28109_ip = 3454;
+                            continue _fun28109;
                         case 2268:
                             var30 = {};
                             var33 = _closure1_slot7;
                             var33 = var33.NITRO_HOME;
                             var30.type = var33;
                             var27 = var30;
-                            _fun28108_ip = 3454;
-                            continue _fun28108;
+                            _fun28109_ip = 3454;
+                            continue _fun28109;
                         case 2292:
                             var30 = {};
                             var33 = _closure1_slot7;
                             var33 = var33.GIFT;
                             var30.type = var33;
                             var27 = var30;
-                            _fun28108_ip = 3454;
-                            continue _fun28108;
+                            _fun28109_ip = 3454;
+                            continue _fun28109;
                         case 2316:
                             var33 = _closure1_slot30;
                             var34 = var13 != var12;
                             var30 = var0;
                             if (!var34) {
-                                _fun28108_ip = 2333;
-                                continue _fun28108
+                                _fun28109_ip = 2333;
+                                continue _fun28109
                             }
                         case 2330:
                             var30 = var12;
@@ -1009,15 +1009,15 @@ var3 = /games\\/([ ^ \\/]+)\\/updates\\ / ([ ^ \\/]+)/;
                             var30 = var13 != var34;
                             var27 = null;
                             if (!var30) {
-                                _fun28108_ip = 3454;
-                                continue _fun28108
+                                _fun28109_ip = 3454;
+                                continue _fun28109
                             }
                         case 2361:
                             var30 = var13 != var33;
                             var27 = null;
                             if (!var30) {
-                                _fun28108_ip = 3454;
-                                continue _fun28108
+                                _fun28109_ip = 3454;
+                                continue _fun28109
                             }
                         case 2373:
                             var35 = _closure1_slot0;
@@ -1033,8 +1033,8 @@ var3 = /games\\/([ ^ \\/]+)\\/updates\\ / ([ ^ \\/]+)/;
                             var30 = var30.enabled;
                             var27 = null;
                             if (!var30) {
-                                _fun28108_ip = 3454;
-                                continue _fun28108
+                                _fun28109_ip = 3454;
+                                continue _fun28109
                             }
                         case 2427:
                             var30 = {};
@@ -1044,8 +1044,8 @@ var3 = /games\\/([ ^ \\/]+)\\/updates\\ / ([ ^ \\/]+)/;
                             var30.userId = var34;
                             var30.fingerprint = var33;
                             var27 = var30;
-                            _fun28108_ip = 3454;
-                            continue _fun28108;
+                            _fun28109_ip = 3454;
+                            continue _fun28109;
                         case 2460:
                             var33 = _closure1_slot0;
                             var34 = _closure1_slot2;
@@ -1056,16 +1056,16 @@ var3 = /games\\/([ ^ \\/]+)\\/updates\\ / ([ ^ \\/]+)/;
                             var30 = var30.bind(var33)();
                             var27 = null;
                             if (!var30) {
-                                _fun28108_ip = 3454;
-                                continue _fun28108
+                                _fun28109_ip = 3454;
+                                continue _fun28109
                             }
                         case 2498:
                             var33 = _closure1_slot30;
                             var34 = var13 != var12;
                             var30 = var0;
                             if (!var34) {
-                                _fun28108_ip = 2515;
-                                continue _fun28108
+                                _fun28109_ip = 2515;
+                                continue _fun28109
                             }
                         case 2512:
                             var30 = var12;
@@ -1087,28 +1087,28 @@ var3 = /games\\/([ ^ \\/]+)\\/updates\\ / ([ ^ \\/]+)/;
                             var41 = typeof var30;
                             var33 = undefined;
                             if (!(var36 === var41)) {
-                                _fun28108_ip = 2577;
-                                continue _fun28108
+                                _fun28109_ip = 2577;
+                                continue _fun28109
                             }
                         case 2564:
                             var39 = var39.bind(var10)(var30);
                             var33 = undefined;
                             if (!var39) {
-                                _fun28108_ip = 2577;
-                                continue _fun28108
+                                _fun28109_ip = 2577;
+                                continue _fun28109
                             }
                         case 2574:
                             var33 = var30;
                         case 2577:
                             var30 = typeof var40;
                             if (!(var36 !== var30)) {
-                                _fun28108_ip = 2590;
-                                continue _fun28108
+                                _fun28109_ip = 2590;
+                                continue _fun28109
                             }
                         case 2584:
                             var36 = new Array(0);
-                            _fun28108_ip = 2609;
-                            continue _fun28108;
+                            _fun28109_ip = 2609;
+                            continue _fun28109;
                         case 2590:
                             var30 = global;
                             var39 = var30.JSON;
@@ -1120,15 +1120,15 @@ var3 = /games\\/([ ^ \\/]+)\\/updates\\ / ([ ^ \\/]+)/;
                             var30 = var39.isArray;
                             var30 = var30.bind(var39)(var36);
                             if (var30) {
-                                _fun28108_ip = 2634;
-                                continue _fun28108
+                                _fun28109_ip = 2634;
+                                continue _fun28109
                             }
                         case 2630:
                             var36 = new Array(0);
                         case 2634:
                             var30 = var36.filter;
                             var24 = function(arg0) { // Environment: var24
-                                _fun28110: for (var _fun28110_ip = 0;;) switch (_fun28110_ip) {
+                                _fun28111: for (var _fun28111_ip = 0;;) switch (_fun28111_ip) {
                                     case 0:
                                         var1 = arg0;
                                         var0 = var1.originalFilename;
@@ -1136,8 +1136,8 @@ var3 = /games\\/([ ^ \\/]+)\\/updates\\ / ([ ^ \\/]+)/;
                                         var0 = typeof var0;
                                         var0 = var3 === var0;
                                         if (!var0) {
-                                            _fun28110_ip = 38;
-                                            continue _fun28110
+                                            _fun28111_ip = 38;
+                                            continue _fun28111
                                         }
                                     case 25:
                                         var2 = var1.temporaryFilename;
@@ -1145,8 +1145,8 @@ var3 = /games\\/([ ^ \\/]+)\\/updates\\ / ([ ^ \\/]+)/;
                                         var0 = var3 === var2;
                                     case 38:
                                         if (!var0) {
-                                            _fun28110_ip = 61;
-                                            continue _fun28110
+                                            _fun28111_ip = 61;
+                                            continue _fun28111
                                         }
                                     case 41:
                                         var3 = _closure2_slot0;
@@ -1167,24 +1167,24 @@ var3 = /games\\/([ ^ \\/]+)\\/updates\\ / ([ ^ \\/]+)/;
                             var24.shareId = var33;
                             var24.attachmentManifest = var30;
                             var27 = var24;
-                            _fun28108_ip = 3454;
-                            continue _fun28108;
+                            _fun28109_ip = 3454;
+                            continue _fun28109;
                         case 2691:
                             var24 = {};
                             var30 = _closure1_slot7;
                             var30 = var30.AUTHORIZED_APPS;
                             var24.type = var30;
                             var27 = var24;
-                            _fun28108_ip = 3454;
-                            continue _fun28108;
+                            _fun28109_ip = 3454;
+                            continue _fun28109;
                         case 2715:
                             var24 = {};
                             var30 = _closure1_slot7;
                             var30 = var30.SHOP;
                             var24.type = var30;
                             var27 = var24;
-                            _fun28108_ip = 3454;
-                            continue _fun28108;
+                            _fun28109_ip = 3454;
+                            continue _fun28109;
                         case 2739:
                             var30 = _closure1_slot0;
                             var33 = _closure1_slot2;
@@ -1201,8 +1201,8 @@ var3 = /games\\/([ ^ \\/]+)\\/updates\\ / ([ ^ \\/]+)/;
                             var34 = var13 != var12;
                             var30 = var0;
                             if (!var34) {
-                                _fun28108_ip = 2802;
-                                continue _fun28108
+                                _fun28109_ip = 2802;
+                                continue _fun28109
                             }
                         case 2799:
                             var30 = var12;
@@ -1214,8 +1214,8 @@ var3 = /games\\/([ ^ \\/]+)\\/updates\\ / ([ ^ \\/]+)/;
                             var30 = var30.GUILD_ID;
                             var30 = var34[var30];
                             if (!var24) {
-                                _fun28108_ip = 2864;
-                                continue _fun28108
+                                _fun28109_ip = 2864;
+                                continue _fun28109
                             }
                         case 2834:
                             var35 = _closure1_slot0;
@@ -1228,8 +1228,8 @@ var3 = /games\\/([ ^ \\/]+)\\/updates\\ / ([ ^ \\/]+)/;
                         case 2864:
                             var27 = null;
                             if (!var24) {
-                                _fun28108_ip = 3454;
-                                continue _fun28108
+                                _fun28109_ip = 3454;
+                                continue _fun28109
                             }
                         case 2872:
                             var24 = {};
@@ -1237,8 +1237,8 @@ var3 = /games\\/([ ^ \\/]+)\\/updates\\ / ([ ^ \\/]+)/;
                             var34 = var34.APPLE_PAYMENT_LINK;
                             var24.type = var34;
                             if (!(var13 == var33)) {
-                                _fun28108_ip = 2902;
-                                continue _fun28108
+                                _fun28109_ip = 2902;
+                                continue _fun28109
                             }
                         case 2892:
                             var34 = _closure1_slot11;
@@ -1247,8 +1247,8 @@ var3 = /games\\/([ ^ \\/]+)\\/updates\\ / ([ ^ \\/]+)/;
                             var24.deepLinkAction = var33;
                             var24.guildId = var30;
                             var27 = var24;
-                            _fun28108_ip = 3454;
-                            continue _fun28108;
+                            _fun28109_ip = 3454;
+                            continue _fun28109;
                         case 2919:
                             var24 = {};
                             var30 = _closure1_slot7;
@@ -1256,15 +1256,15 @@ var3 = /games\\/([ ^ \\/]+)\\/updates\\ / ([ ^ \\/]+)/;
                             var24.type = var30;
                             var24.pathname = var38;
                             var27 = var24;
-                            _fun28108_ip = 3454;
-                            continue _fun28108;
+                            _fun28109_ip = 3454;
+                            continue _fun28109;
                         case 2948:
                             var30 = _closure1_slot30;
                             var33 = var13 != var12;
                             var24 = var0;
                             if (!var33) {
-                                _fun28108_ip = 2965;
-                                continue _fun28108
+                                _fun28109_ip = 2965;
+                                continue _fun28109
                             }
                         case 2962:
                             var24 = var12;
@@ -1273,8 +1273,8 @@ var3 = /games\\/([ ^ \\/]+)\\/updates\\ / ([ ^ \\/]+)/;
                             var30 = var24.promo_url;
                             var27 = null;
                             if (!(var10 !== var30)) {
-                                _fun28108_ip = 3454;
-                                continue _fun28108
+                                _fun28109_ip = 3454;
+                                continue _fun28109
                             }
                         case 2987:
                             var24 = {};
@@ -1283,8 +1283,8 @@ var3 = /games\\/([ ^ \\/]+)\\/updates\\ / ([ ^ \\/]+)/;
                             var24.type = var33;
                             var24.promoUrl = var30;
                             var27 = var24;
-                            _fun28108_ip = 3454;
-                            continue _fun28108;
+                            _fun28109_ip = 3454;
+                            continue _fun28109;
                         case 3016:
                             var24 = {};
                             var30 = _closure1_slot7;
@@ -1292,15 +1292,15 @@ var3 = /games\\/([ ^ \\/]+)\\/updates\\ / ([ ^ \\/]+)/;
                             var24.type = var30;
                             var24.pathname = var38;
                             var27 = var24;
-                            _fun28108_ip = 3454;
-                            continue _fun28108;
+                            _fun28109_ip = 3454;
+                            continue _fun28109;
                         case 3045:
                             var30 = _closure1_slot30;
                             var33 = var13 != var12;
                             var24 = var0;
                             if (!var33) {
-                                _fun28108_ip = 3062;
-                                continue _fun28108
+                                _fun28109_ip = 3062;
+                                continue _fun28109
                             }
                         case 3059:
                             var24 = var12;
@@ -1313,23 +1313,23 @@ var3 = /games\\/([ ^ \\/]+)\\/updates\\ / ([ ^ \\/]+)/;
                             var24.type = var33;
                             var24.source = var30;
                             var27 = var24;
-                            _fun28108_ip = 3454;
-                            continue _fun28108;
+                            _fun28109_ip = 3454;
+                            continue _fun28109;
                         case 3100:
                             var24 = {};
                             var30 = _closure1_slot7;
                             var30 = var30.ICYMI;
                             var24.type = var30;
                             var27 = var24;
-                            _fun28108_ip = 3454;
-                            continue _fun28108;
+                            _fun28109_ip = 3454;
+                            continue _fun28109;
                         case 3124:
                             var30 = _closure1_slot30;
                             var33 = var13 != var12;
                             var24 = var0;
                             if (!var33) {
-                                _fun28108_ip = 3141;
-                                continue _fun28108
+                                _fun28109_ip = 3141;
+                                continue _fun28109
                             }
                         case 3138:
                             var24 = var12;
@@ -1346,23 +1346,23 @@ var3 = /games\\/([ ^ \\/]+)\\/updates\\ / ([ ^ \\/]+)/;
                             var24.highlightChannelId = var33;
                             var24.highlightMessageId = var30;
                             var27 = var24;
-                            _fun28108_ip = 3454;
-                            continue _fun28108;
+                            _fun28109_ip = 3454;
+                            continue _fun28109;
                         case 3201:
                             var24 = {};
                             var30 = _closure1_slot7;
                             var30 = var30.SESSION_MANAGEMENT;
                             var24.type = var30;
                             var27 = var24;
-                            _fun28108_ip = 3454;
-                            continue _fun28108;
+                            _fun28109_ip = 3454;
+                            continue _fun28109;
                         case 3225:
                             var30 = _closure1_slot30;
                             var33 = var13 != var12;
                             var24 = var0;
                             if (!var33) {
-                                _fun28108_ip = 3242;
-                                continue _fun28108
+                                _fun28109_ip = 3242;
+                                continue _fun28109
                             }
                         case 3239:
                             var24 = var12;
@@ -1383,23 +1383,23 @@ var3 = /games\\/([ ^ \\/]+)\\/updates\\ / ([ ^ \\/]+)/;
                             var24.via = var33;
                             var24.action = var30;
                             var27 = var24;
-                            _fun28108_ip = 3454;
-                            continue _fun28108;
+                            _fun28109_ip = 3454;
+                            continue _fun28109;
                         case 3319:
                             var24 = {};
                             var30 = _closure1_slot7;
                             var30 = var30.EDIT_PROFILE;
                             var24.type = var30;
                             var27 = var24;
-                            _fun28108_ip = 3454;
-                            continue _fun28108;
+                            _fun28109_ip = 3454;
+                            continue _fun28109;
                         case 3340:
                             var30 = _closure1_slot30;
                             var33 = var13 != var12;
                             var24 = var0;
                             if (!var33) {
-                                _fun28108_ip = 3357;
-                                continue _fun28108
+                                _fun28109_ip = 3357;
+                                continue _fun28109
                             }
                         case 3354:
                             var24 = var12;
@@ -1412,24 +1412,24 @@ var3 = /games\\/([ ^ \\/]+)\\/updates\\ / ([ ^ \\/]+)/;
                             var24.type = var33;
                             var24.userId = var30;
                             var27 = var24;
-                            _fun28108_ip = 3454;
-                            continue _fun28108;
+                            _fun28109_ip = 3454;
+                            continue _fun28109;
                         case 3393:
                             var24 = {};
                             var30 = _closure1_slot7;
                             var30 = var30.ADD_FRIENDS;
                             var24.type = var30;
                             var27 = var24;
-                            _fun28108_ip = 3454;
-                            continue _fun28108;
+                            _fun28109_ip = 3454;
+                            continue _fun28109;
                         case 3414:
                             var24 = {};
                             var30 = _closure1_slot7;
                             var30 = var30.CONTACT_SYNC;
                             var24.type = var30;
                             var27 = var24;
-                            _fun28108_ip = 3454;
-                            continue _fun28108;
+                            _fun28109_ip = 3454;
+                            continue _fun28109;
                         case 3435:
                             var24 = {};
                             var30 = _closure1_slot7;
@@ -1438,8 +1438,8 @@ var3 = /games\\/([ ^ \\/]+)\\/updates\\ / ([ ^ \\/]+)/;
                             var27 = var24;
                         case 3454:
                             if (!(var13 == var27)) {
-                                _fun28108_ip = 4779;
-                                continue _fun28108
+                                _fun28109_ip = 4779;
+                                continue _fun28109
                             }
                         case 3461:
                             var30 = _closure1_slot0;
@@ -1449,63 +1449,63 @@ var3 = /games\\/([ ^ \\/]+)\\/updates\\ / ([ ^ \\/]+)/;
                             var24 = var30.tryParseEventDetailsPath;
                             var31 = var24.bind(var30)(var38);
                             if (!(var13 == var31)) {
-                                _fun28108_ip = 4713;
-                                continue _fun28108
+                                _fun28109_ip = 4713;
+                                continue _fun28109
                             }
                         case 3496:
                             var30 = var38.match;
                             var24 = _closure1_slot19;
                             var24 = var30.bind(var38)(var24);
                             if (!(var13 == var24)) {
-                                _fun28108_ip = 4380;
-                                continue _fun28108
+                                _fun28109_ip = 4380;
+                                continue _fun28109
                             }
                         case 3518:
                             var30 = var38.match;
                             var24 = _closure1_slot20;
                             var30 = var30.bind(var38)(var24);
                             if (!(var13 == var30)) {
-                                _fun28108_ip = 4278;
-                                continue _fun28108
+                                _fun28109_ip = 4278;
+                                continue _fun28109
                             }
                         case 3540:
                             var33 = var38.match;
                             var24 = _closure1_slot21;
                             var33 = var33.bind(var38)(var24);
                             if (!(var13 == var33)) {
-                                _fun28108_ip = 4174;
-                                continue _fun28108
+                                _fun28109_ip = 4174;
+                                continue _fun28109
                             }
                         case 3562:
                             var34 = var38.match;
                             var24 = _closure1_slot22;
                             var34 = var34.bind(var38)(var24);
                             if (!(var13 == var34)) {
-                                _fun28108_ip = 4042;
-                                continue _fun28108
+                                _fun28109_ip = 4042;
+                                continue _fun28109
                             }
                         case 3584:
                             var35 = var38.match;
                             var24 = _closure1_slot23;
                             var35 = var35.bind(var38)(var24);
                             if (!(var13 == var35)) {
-                                _fun28108_ip = 3888;
-                                continue _fun28108
+                                _fun28109_ip = 3888;
+                                continue _fun28109
                             }
                         case 3606:
                             var36 = var38.match;
                             var24 = _closure1_slot24;
                             var24 = var36.bind(var38)(var24);
                             if (!(var13 == var24)) {
-                                _fun28108_ip = 3807;
-                                continue _fun28108
+                                _fun28109_ip = 3807;
+                                continue _fun28109
                             }
                         case 3628:
                             var36 = var13 == var32;
                             var24 = undefined;
                             if (var36) {
-                                _fun28108_ip = 3652;
-                                continue _fun28108
+                                _fun28109_ip = 3652;
+                                continue _fun28109
                             }
                         case 3637:
                             var38 = var32.match;
@@ -1513,16 +1513,16 @@ var3 = /games\\/([ ^ \\/]+)\\/updates\\ / ([ ^ \\/]+)/;
                             var24 = var38.bind(var32)(var36);
                         case 3652:
                             if (!(var13 == var24)) {
-                                _fun28108_ip = 3765;
-                                continue _fun28108
+                                _fun28109_ip = 3765;
+                                continue _fun28109
                             }
                         case 3656:
                             var24 = _closure1_slot10;
                             var36 = var13 == var24;
                             var24 = undefined;
                             if (var36) {
-                                _fun28108_ip = 3684;
-                                continue _fun28108
+                                _fun28109_ip = 3684;
+                                continue _fun28109
                             }
                         case 3669:
                             var36 = _closure1_slot10;
@@ -1530,8 +1530,8 @@ var3 = /games\\/([ ^ \\/]+)\\/updates\\ / ([ ^ \\/]+)/;
                             var24 = var36.host;
                         case 3684:
                             if (!(var32 !== var24)) {
-                                _fun28108_ip = 3723;
-                                continue _fun28108
+                                _fun28109_ip = 3723;
+                                continue _fun28109
                             }
                         case 3688:
                             var24 = {};
@@ -1542,8 +1542,8 @@ var3 = /games\\/([ ^ \\/]+)\\/updates\\ / ([ ^ \\/]+)/;
                             var36 = var36.NONE;
                             var32.type = var36;
                             var24.payload = var32;
-                            _fun28108_ip = 3763;
-                            continue _fun28108;
+                            _fun28109_ip = 3763;
+                            continue _fun28109;
                         case 3723:
                             var32 = {};
                             var32.fingerprint = var1;
@@ -1556,8 +1556,8 @@ var3 = /games\\/([ ^ \\/]+)\\/updates\\ / ([ ^ \\/]+)/;
                             var32.payload = var36;
                             var24 = var32;
                         case 3763:
-                            _fun28108_ip = 3805;
-                            continue _fun28108;
+                            _fun28109_ip = 3805;
+                            continue _fun28109;
                         case 3765:
                             var32 = {};
                             var32.fingerprint = var1;
@@ -1578,8 +1578,8 @@ var3 = /games\\/([ ^ \\/]+)\\/updates\\ / ([ ^ \\/]+)/;
                             var37 = var13 != var12;
                             var24 = var0;
                             if (!var37) {
-                                _fun28108_ip = 3832;
-                                continue _fun28108
+                                _fun28109_ip = 3832;
+                                continue _fun28109
                             }
                         case 3829:
                             var24 = var12;
@@ -1609,8 +1609,8 @@ var3 = /games\\/([ ^ \\/]+)\\/updates\\ / ([ ^ \\/]+)/;
                             var35 = var13 != var12;
                             var24 = var0;
                             if (!var35) {
-                                _fun28108_ip = 3932;
-                                continue _fun28108
+                                _fun28109_ip = 3932;
+                                continue _fun28109
                             }
                         case 3929:
                             var24 = var12;
@@ -1686,8 +1686,8 @@ var3 = /games\\/([ ^ \\/]+)\\/updates\\ / ([ ^ \\/]+)/;
                             var35 = var13 != var12;
                             var24 = var0;
                             if (!var35) {
-                                _fun28108_ip = 4223;
-                                continue _fun28108
+                                _fun28109_ip = 4223;
+                                continue _fun28109
                             }
                         case 4220:
                             var24 = var12;
@@ -1712,8 +1712,8 @@ var3 = /games\\/([ ^ \\/]+)\\/updates\\ / ([ ^ \\/]+)/;
                             var34 = var13 != var12;
                             var24 = var0;
                             if (!var34) {
-                                _fun28108_ip = 4303;
-                                continue _fun28108
+                                _fun28109_ip = 4303;
+                                continue _fun28109
                             }
                         case 4300:
                             var24 = var12;
@@ -1746,13 +1746,13 @@ var3 = /games\\/([ ^ \\/]+)\\/updates\\ / ([ ^ \\/]+)/;
                             var35 = var30.redirect;
                             var36 = var30.fingerprint;
                             if (!(var13 != var34)) {
-                                _fun28108_ip = 4585;
-                                continue _fun28108
+                                _fun28109_ip = 4585;
+                                continue _fun28109
                             }
                         case 4426:
                             if (!(var13 != var35)) {
-                                _fun28108_ip = 4585;
-                                continue _fun28108
+                                _fun28109_ip = 4585;
+                                continue _fun28109
                             }
                         case 4433:
                             var33 = var24.URL;
@@ -1775,8 +1775,8 @@ var3 = /games\\/([ ^ \\/]+)\\/updates\\ / ([ ^ \\/]+)/;
                             var30 = new var46[var33](var45, var44, var43);
                             var33 = var30 instanceof Object ? var30 : var32;
                             if (!(var13 != var36)) {
-                                _fun28108_ip = 4535;
-                                continue _fun28108
+                                _fun28109_ip = 4535;
+                                continue _fun28109
                             }
                         case 4513:
                             var35 = var33.searchParams;
@@ -1884,8 +1884,8 @@ var3 = /games\\/([ ^ \\/]+)\\/updates\\ / ([ ^ \\/]+)/;
                             var24 = var13 != var12;
                             var6 = var0;
                             if (!var24) {
-                                _fun28108_ip = 4914;
-                                continue _fun28108
+                                _fun28109_ip = 4914;
+                                continue _fun28109
                             }
                         case 4911:
                             var6 = var12;
@@ -1902,8 +1902,8 @@ var3 = /games\\/([ ^ \\/]+)\\/updates\\ / ([ ^ \\/]+)/;
                             var28 = var13 != var27;
                             var24 = null;
                             if (!var28) {
-                                _fun28108_ip = 4965;
-                                continue _fun28108
+                                _fun28109_ip = 4965;
+                                continue _fun28109
                             }
                         case 4962:
                             var24 = var27;
@@ -1994,8 +1994,8 @@ var3 = /games\\/([ ^ \\/]+)\\/updates\\ / ([ ^ \\/]+)/;
                             var6 = _closure1_slot30;
                             var14 = var13 != var12;
                             if (!var14) {
-                                _fun28108_ip = 5280;
-                                continue _fun28108
+                                _fun28109_ip = 5280;
+                                continue _fun28109
                             }
                         case 5277:
                             var0 = var12;
@@ -2008,14 +2008,14 @@ var3 = /games\\/([ ^ \\/]+)\\/updates\\ / ([ ^ \\/]+)/;
                             var6 = {};
                             var12 = var11.messageId;
                             if (!(var13 == var12)) {
-                                _fun28108_ip = 5326;
-                                continue _fun28108
+                                _fun28109_ip = 5326;
+                                continue _fun28109
                             }
                         case 5314:
                             var12 = _closure1_slot7;
                             var12 = var12.CHANNEL;
-                            _fun28108_ip = 5336;
-                            continue _fun28108;
+                            _fun28109_ip = 5336;
+                            continue _fun28109;
                         case 5326:
                             var13 = _closure1_slot7;
                             var12 = var13.MESSAGE;

@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var7;
     var4 = function() { // Original name: isClipsEnabled, environment: var1
-        _fun94066: for (var _fun94066_ip = 0;;) switch (_fun94066_ip) {
+        _fun93425: for (var _fun93425_ip = 0;;) switch (_fun93425_ip) {
             case 0:
                 var3 = _closure1_slot0;
                 var2 = _closure1_slot1;
@@ -23,8 +23,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.clipsSettings;
                 var1 = var1.clipsEnabled;
                 if (!var0) {
-                    _fun94066_ip = 67;
-                    continue _fun94066
+                    _fun93425_ip = 67;
+                    continue _fun93425
                 }
             case 64:
                 var0 = var1;
@@ -34,7 +34,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var _closure1_slot3 = var4;
     var3 = function() { // Original name: useIsClipsEnabled, environment: var1
-        _fun94067: for (var _fun94067_ip = 0;;) switch (_fun94067_ip) {
+        _fun93426: for (var _fun93426_ip = 0;;) switch (_fun93426_ip) {
             case 0:
                 var4 = _closure1_slot0;
                 var5 = _closure1_slot1;
@@ -61,8 +61,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 };
                 var1 = var3.bind(var4)(var2, var1);
                 if (!var0) {
-                    _fun94067_ip = 85;
-                    continue _fun94067
+                    _fun93426_ip = 85;
+                    continue _fun93426
                 }
             case 82:
                 var0 = var1;
@@ -94,7 +94,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.isClipsEnabled = var4;
     var2.useIsClipsEnabled = var3;
     var3 = function() { // Original name: isDecoupledClipsEnabled, environment: var1
-        _fun94069: for (var _fun94069_ip = 0;;) switch (_fun94069_ip) {
+        _fun93428: for (var _fun93428_ip = 0;;) switch (_fun93428_ip) {
             case 0:
                 var0 = _closure1_slot3;
                 var4 = undefined;
@@ -112,15 +112,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.clipsSettings;
                 var1 = var1.decoupledClipsEnabled;
                 if (!var0) {
-                    _fun94069_ip = 75;
-                    continue _fun94069
+                    _fun93428_ip = 75;
+                    continue _fun93428
                 }
             case 72:
                 var0 = var2;
             case 75:
                 if (!var0) {
-                    _fun94069_ip = 81;
-                    continue _fun94069
+                    _fun93428_ip = 81;
+                    continue _fun93428
                 }
             case 78:
                 var0 = var1;
@@ -130,7 +130,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.isDecoupledClipsEnabled = var3;
     var1 = function() { // Original name: useIsDecoupledClipsEnabled, environment: var1
-        _fun94070: for (var _fun94070_ip = 0;;) switch (_fun94070_ip) {
+        _fun93429: for (var _fun93429_ip = 0;;) switch (_fun93429_ip) {
             case 0:
                 var0 = _closure1_slot4;
                 var5 = undefined;
@@ -159,15 +159,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 };
                 var1 = var4.bind(var5)(var3, var1);
                 if (!var0) {
-                    _fun94070_ip = 93;
-                    continue _fun94070
+                    _fun93429_ip = 93;
+                    continue _fun93429
                 }
             case 90:
                 var0 = var2;
             case 93:
                 if (!var0) {
-                    _fun94070_ip = 99;
-                    continue _fun94070
+                    _fun93429_ip = 99;
+                    continue _fun93429
                 }
             case 96:
                 var0 = var1;

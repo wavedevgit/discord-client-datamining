@@ -76,7 +76,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/safety_hub/native/AppealIngestionPolicySummary.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: AppealIngestionPolicySummary, environment: var1
-        _fun79508: for (var _fun79508_ip = 0;;) switch (_fun79508_ip) {
+        _fun79538: for (var _fun79538_ip = 0;;) switch (_fun79538_ip) {
             case 0:
                 var0 = arg0;
                 var5 = var0.classification;
@@ -93,8 +93,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var0 == var5;
                 var0 = undefined;
                 if (var6) {
-                    _fun79508_ip = 64;
-                    continue _fun79508
+                    _fun79538_ip = 64;
+                    continue _fun79538
                 }
             case 59:
                 var0 = var5.description;
@@ -165,4 +165,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 5901, 3199, 3901, 1234, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 5902, 3199, 3900, 1234, 2]);

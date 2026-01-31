@@ -29,7 +29,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/app_database/system/StartupData.native.tsx';
     var3 = var4.bind(var5)(var3);
     var3 = function() { // Original name: getUserId, environment: var1
-        _fun18754: for (var _fun18754_ip = 0;;) switch (_fun18754_ip) {
+        _fun18756: for (var _fun18756_ip = 0;;) switch (_fun18756_ip) {
             case 0:
                 var3 = _closure1_slot0;
                 var2 = _closure1_slot2;
@@ -40,8 +40,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var3.isAndroid;
                 var1 = var1.bind(var3)();
                 if (var1) {
-                    _fun18754_ip = 67;
-                    continue _fun18754
+                    _fun18756_ip = 67;
+                    continue _fun18756
                 }
             case 38:
                 var1 = _closure1_slot3;
@@ -50,8 +50,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = null;
                 var4 = var1 != var3;
                 if (!var4) {
-                    _fun18754_ip = 65;
-                    continue _fun18754
+                    _fun18756_ip = 65;
+                    continue _fun18756
                 }
             case 62:
                 var1 = var3;
@@ -69,8 +69,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = null;
                 var2 = var0 != var1;
                 if (!var2) {
-                    _fun18754_ip = 114;
-                    continue _fun18754
+                    _fun18756_ip = 114;
+                    continue _fun18756
                 }
             case 111:
                 var0 = var1;
@@ -80,7 +80,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getUserId = var3;
     var1 = function(arg0) { // Original name: setUserId, environment: var1
-        _fun18755: for (var _fun18755_ip = 0;;) switch (_fun18755_ip) {
+        _fun18757: for (var _fun18757_ip = 0;;) switch (_fun18757_ip) {
             case 0:
                 var3 = arg0;
                 var4 = _closure1_slot0;
@@ -92,16 +92,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var4.isAndroid;
                 var2 = var2.bind(var4)();
                 if (var2) {
-                    _fun18755_ip = 64;
-                    continue _fun18755
+                    _fun18757_ip = 64;
+                    continue _fun18757
                 }
             case 41:
                 var2 = _closure1_slot3;
                 var4 = var2.DCDAppDatabase;
                 var2 = var4.setUserId;
                 var2 = var2.bind(var4)(var3);
-                _fun18755_ip = 95;
-                continue _fun18755;
+                _fun18757_ip = 95;
+                continue _fun18757;
             case 64:
                 var2 = _closure1_slot1;
                 var4 = _closure1_slot2;

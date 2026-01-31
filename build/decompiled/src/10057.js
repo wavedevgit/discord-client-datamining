@@ -1,50 +1,44 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = require;
-    var _closure1_slot0 = var1;
-    var1 = dependencyMap;
-    var _closure1_slot1 = var1;
-    var1 = function(arg0, arg1, arg2) { // Original name: baseAssignValue, environment: var0
-        _fun79354: for (var _fun79354_ip = 0;;) switch (_fun79354_ip) {
+    var1 = function(arg0, arg1, arg2, arg3) { // Original name: arrayAggregator, environment: var0
+        _fun79379: for (var _fun79379_ip = 0;;) switch (_fun79379_ip) {
             case 0:
-                var4 = arg0;
-                var3 = arg1;
-                var5 = arg2;
-                var0 = '__proto__';
-                if (!(var0 == var3)) {
-                    _fun79354_ip = 44;
-                    continue _fun79354
-                }
-            case 17:
-                var7 = _closure1_slot0;
-                var1 = _closure1_slot1;
-                var6 = 0;
-                var1 = var1[var6];
-                var2 = undefined;
-                var1 = var7.bind(var2)(var1);
+                var6 = arg0;
+                var5 = arg1;
+                var4 = arg2;
+                var0 = arg3;
+                var1 = null;
+                var1 = var1 == var6;
+                var3 = 0;
+                var2 = 0;
                 if (var1) {
-                    _fun79354_ip = 50;
-                    continue _fun79354
+                    _fun79379_ip = 30;
+                    continue _fun79379
                 }
-            case 44:
-                var4[var3] = var5;
-                _fun79354_ip = 90;
-                continue _fun79354;
-            case 50:
-                var1 = _closure1_slot0;
-                var0 = _closure1_slot1;
-                var0 = var0[var6];
-                var1 = var1.bind(var2)(var0);
-                var0 = {
-                    'configurable': true,
-                    'enumerable': true,
-                    'value': null,
-                    'writable': true
-                };
-                var0.value = var5;
-                var0 = var1.bind(var2)(var4, var3, var0);
-            case 90:
-                var0 = undefined;
+            case 25:
+                var2 = var6.length;
+            case 30:
+                var7 = var3 < var2;
+                var1 = undefined;
+                var3 = 0;
+                if (!var7) {
+                    _fun79379_ip = 72;
+                    continue _fun79379
+                }
+            case 41:
+                var8 = var6[var3];
+                var10 = var4.bind(var1)(var8);
+                var13 = undefined;
+                var12 = var0;
+                var11 = var8;
+                var9 = var6;
+                var7 = var13[var5](var12, var11, var10, var9, var8);
+                var3 = var3 + 1;
+                if (var3 < var2) {
+                    _fun79379_ip = 41;
+                    continue _fun79379
+                }
+            case 72:
                 return var0;
         }
     };
@@ -52,4 +46,4 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0.exports = var1;
     var0 = undefined;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3249]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, []);

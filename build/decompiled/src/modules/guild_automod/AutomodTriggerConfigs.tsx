@@ -579,7 +579,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getAvailableActionTypes = var3;
     var3 = function(arg0, arg1) { // Original name: validateRuleByTriggerConfigOrThrow, environment: var1
-        _fun115767: for (var _fun115767_ip = 0;;) switch (_fun115767_ip) {
+        _fun115117: for (var _fun115117_ip = 0;;) switch (_fun115117_ip) {
             case 0:
                 var0 = arg0;
                 var7 = arg1;
@@ -594,15 +594,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var _closure2_slot2 = var0;
                 var6 = var7.filter;
                 var4 = function(arg0) { // Environment: var2
-                    _fun115768: for (var _fun115768_ip = 0;;) switch (_fun115768_ip) {
+                    _fun115118: for (var _fun115118_ip = 0;;) switch (_fun115118_ip) {
                         case 0:
                             var2 = arg0;
                             var3 = _closure2_slot0;
                             var0 = var2.id;
                             var0 = var3 !== var0;
                             if (!var0) {
-                                _fun115768_ip = 36;
-                                continue _fun115768
+                                _fun115118_ip = 36;
+                                continue _fun115118
                             }
                         case 22:
                             var2 = var2.triggerType;
@@ -616,8 +616,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var4.length;
                 var4 = var0.perGuildMaxCount;
                 if (!(!(var6 > var4))) {
-                    _fun115767_ip = 193;
-                    continue _fun115767
+                    _fun115117_ip = 193;
+                    continue _fun115117
                 }
             case 86:
                 var4 = var5.some;
@@ -633,14 +633,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 };
                 var2 = var4.bind(var5)(var2);
                 if (var2) {
-                    _fun115767_ip = 157;
-                    continue _fun115767
+                    _fun115117_ip = 157;
+                    continue _fun115117
                 }
             case 107:
                 var0 = var0.eventType;
                 if (!(var1 === var0)) {
-                    _fun115767_ip = 121;
-                    continue _fun115767
+                    _fun115117_ip = 121;
+                    continue _fun115117
                 }
             case 117:
                 var0 = undefined;
@@ -730,7 +730,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var3[var2];
                 var4 = var5.filter;
                 var3 = function(arg0) { // Environment: var1
-                    _fun115773: for (var _fun115773_ip = 0;;) switch (_fun115773_ip) {
+                    _fun115123: for (var _fun115123_ip = 0;;) switch (_fun115123_ip) {
                         case 0:
                             var2 = arg0;
                             var3 = var2.type;
@@ -738,8 +738,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var0 = var0.SERVER_POLICY;
                             var0 = var3 !== var0;
                             if (!var0) {
-                                _fun115773_ip = 81;
-                                continue _fun115773
+                                _fun115123_ip = 81;
+                                continue _fun115123
                             }
                         case 28:
                             var3 = var2.type;
@@ -747,8 +747,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var1 = var1.USER_PROFILE;
                             var3 = var3 === var1;
                             if (!var3) {
-                                _fun115773_ip = 60;
-                                continue _fun115773
+                                _fun115123_ip = 60;
+                                continue _fun115123
                             }
                         case 50:
                             var1 = _closure2_slot0;
@@ -756,8 +756,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         case 60:
                             var1 = !var3;
                             if (var3) {
-                                _fun115773_ip = 78;
-                                continue _fun115773
+                                _fun115123_ip = 78;
+                                continue _fun115123
                             }
                         case 66:
                             var3 = var2.perGuildMaxCount;
@@ -788,7 +788,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useAvailableTriggerTypes = var3;
     var1 = function(arg0, arg1) { // Original name: getDefaultTriggerMetadataForTriggerType, environment: var1
-        _fun115775: for (var _fun115775_ip = 0;;) switch (_fun115775_ip) {
+        _fun115125: for (var _fun115125_ip = 0;;) switch (_fun115125_ip) {
             case 0:
                 var4 = arg0;
                 var3 = _closure1_slot0;
@@ -803,36 +803,36 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = _closure1_slot3;
                 var3 = var3.DEFAULT_KEYWORD_LIST;
                 if (!(var3 !== var4)) {
-                    _fun115775_ip = 180;
-                    continue _fun115775
+                    _fun115125_ip = 180;
+                    continue _fun115125
                 }
             case 59:
                 var3 = _closure1_slot3;
                 var3 = var3.USER_PROFILE;
                 if (!(var3 !== var4)) {
-                    _fun115775_ip = 149;
-                    continue _fun115775
+                    _fun115125_ip = 149;
+                    continue _fun115125
                 }
             case 73:
                 var3 = _closure1_slot3;
                 var3 = var3.KEYWORD;
                 if (!(var3 !== var4)) {
-                    _fun115775_ip = 149;
-                    continue _fun115775
+                    _fun115125_ip = 149;
+                    continue _fun115125
                 }
             case 87:
                 var3 = _closure1_slot3;
                 var3 = var3.MENTION_SPAM;
                 if (!(var3 !== var4)) {
-                    _fun115775_ip = 127;
-                    continue _fun115775
+                    _fun115125_ip = 127;
+                    continue _fun115125
                 }
             case 101:
                 var3 = _closure1_slot3;
                 var3 = var3.ML_SPAM;
                 if (!(var3 !== var4)) {
-                    _fun115775_ip = 125;
-                    continue _fun115775
+                    _fun115125_ip = 125;
+                    continue _fun115125
                 }
             case 115:
                 var3 = _closure1_slot3;
@@ -865,4 +865,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getDefaultTriggerMetadataForTriggerType = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 10032, 1234, 14073, 8691, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 10034, 1234, 14004, 8691, 2]);

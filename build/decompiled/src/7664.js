@@ -10,22 +10,10 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = '__esModule';
     var0 = var3.bind(var4)(var1, var0, var2);
     var0 = {
-        'NONE': '',
-        'INVERT': 'CIColorInvert',
-        'MONOCHROME': 'CIColorMonochrome',
-        'POSTERIZE': 'CIColorPosterize',
-        'FALSE': 'CIFalseColor',
-        'MAXIMUMCOMPONENT': 'CIMaximumComponent',
-        'MINIMUMCOMPONENT': 'CIMinimumComponent',
-        'CHROME': 'CIPhotoEffectChrome',
-        'FADE': 'CIPhotoEffectFade',
-        'INSTANT': 'CIPhotoEffectInstant',
-        'MONO': 'CIPhotoEffectMono',
-        'NOIR': 'CIPhotoEffectNoir',
-        'PROCESS': 'CIPhotoEffectProcess',
-        'TONAL': 'CIPhotoEffectTonal',
-        'TRANSFER': 'CIPhotoEffectTransfer',
-        'SEPIA': 'CISepiaTone'
+        'WIDEVINE': 'widevine',
+        'PLAYREADY': 'playready',
+        'CLEARKEY': 'clearkey',
+        'FAIRPLAY': 'fairplay'
     };
     var1.default = var0;
     var0 = undefined;

@@ -18,14 +18,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var3.useCallback;
     var _closure1_slot0 = var3;
     var1 = function(arg0, arg1) { // Original name: useWorkletCallback, environment: var1
-        _fun34835: for (var _fun34835_ip = 0;;) switch (_fun34835_ip) {
+        _fun34851: for (var _fun34851_ip = 0;;) switch (_fun34851_ip) {
             case 0:
                 var3 = arg1;
                 var2 = _closure1_slot0;
                 var0 = null;
                 if (!(var0 == var3)) {
-                    _fun34835_ip = 20;
-                    continue _fun34835
+                    _fun34851_ip = 20;
+                    continue _fun34851
                 }
             case 16:
                 var3 = new Array(0);

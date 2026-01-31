@@ -77,21 +77,6 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = var7.AppleProductIds;
     var7 = var7.GENERIC_CONSUMABLE;
     var4.GENERIC_CONSUMABLE = var7;
-    var7 = var10[var20];
-    var7 = var9.bind(var0)(var7);
-    var7 = var7.AppleProductIds;
-    var7 = var7.ACOM_GENERIC_CONSUMABLE;
-    var4.ACOM_GENERIC_CONSUMABLE = var7;
-    var7 = var10[var20];
-    var7 = var9.bind(var0)(var7);
-    var7 = var7.AppleProductIds;
-    var7 = var7.ACOM_GENERIC_GIFT_CONSUMABLE;
-    var4.ACOM_GENERIC_GIFT_CONSUMABLE = var7;
-    var7 = var10[var20];
-    var7 = var9.bind(var0)(var7);
-    var7 = var7.AppleProductIds;
-    var7 = var7.ACOM_GENERIC_SUBSCRIPTION;
-    var4.ACOM_GENERIC_SUBSCRIPTION = var7;
     var7 = var5.bind(var6)(var4);
     var _closure1_slot1 = var7;
     var5 = var3.Object;
@@ -675,49 +660,49 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'premium-tier-2-monthly-bogo';
     var2.BOGO_OFFER_ID = var3;
     var3 = function(arg0) { // Original name: getProductIdForGift, environment: var1
-        _fun56479: for (var _fun56479_ip = 0;;) switch (_fun56479_ip) {
+        _fun56491: for (var _fun56491_ip = 0;;) switch (_fun56491_ip) {
             case 0:
                 var2 = arg0;
                 var1 = _closure1_slot0;
                 var1 = var1.PREMIUM_MONTH_TIER_0;
                 if (!(var1 !== var2)) {
-                    _fun56479_ip = 192;
-                    continue _fun56479
+                    _fun56491_ip = 192;
+                    continue _fun56491
                 }
             case 23:
                 var1 = _closure1_slot0;
                 var1 = var1.PREMIUM_YEAR_TIER_0;
                 if (!(var1 !== var2)) {
-                    _fun56479_ip = 180;
-                    continue _fun56479
+                    _fun56491_ip = 180;
+                    continue _fun56491
                 }
             case 40:
                 var1 = _closure1_slot0;
                 var1 = var1.PREMIUM_MONTH_TIER_1;
                 if (!(var1 !== var2)) {
-                    _fun56479_ip = 168;
-                    continue _fun56479
+                    _fun56491_ip = 168;
+                    continue _fun56491
                 }
             case 54:
                 var1 = _closure1_slot0;
                 var1 = var1.PREMIUM_YEAR_TIER_1;
                 if (!(var1 !== var2)) {
-                    _fun56479_ip = 156;
-                    continue _fun56479
+                    _fun56491_ip = 156;
+                    continue _fun56491
                 }
             case 68:
                 var1 = _closure1_slot0;
                 var1 = var1.PREMIUM_MONTH_TIER_2;
                 if (!(var1 !== var2)) {
-                    _fun56479_ip = 144;
-                    continue _fun56479
+                    _fun56491_ip = 144;
+                    continue _fun56491
                 }
             case 82:
                 var1 = _closure1_slot0;
                 var1 = var1.PREMIUM_YEAR_TIER_2;
                 if (!(var1 !== var2)) {
-                    _fun56479_ip = 132;
-                    continue _fun56479
+                    _fun56491_ip = 132;
+                    continue _fun56491
                 }
             case 96:
                 var1 = global;
@@ -761,49 +746,49 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getProductIdForGift = var3;
     var1 = function(arg0) { // Original name: getPlanIdForGift, environment: var1
-        _fun56480: for (var _fun56480_ip = 0;;) switch (_fun56480_ip) {
+        _fun56492: for (var _fun56492_ip = 0;;) switch (_fun56492_ip) {
             case 0:
                 var2 = arg0;
                 var1 = _closure1_slot1;
                 var1 = var1.PREMIUM_GIFT_MONTH_TIER_0;
                 if (!(var1 !== var2)) {
-                    _fun56480_ip = 192;
-                    continue _fun56480
+                    _fun56492_ip = 192;
+                    continue _fun56492
                 }
             case 23:
                 var1 = _closure1_slot1;
                 var1 = var1.PREMIUM_GIFT_YEAR_TIER_0;
                 if (!(var1 !== var2)) {
-                    _fun56480_ip = 180;
-                    continue _fun56480
+                    _fun56492_ip = 180;
+                    continue _fun56492
                 }
             case 40:
                 var1 = _closure1_slot1;
                 var1 = var1.PREMIUM_GIFT_MONTH_TIER_1;
                 if (!(var1 !== var2)) {
-                    _fun56480_ip = 168;
-                    continue _fun56480
+                    _fun56492_ip = 168;
+                    continue _fun56492
                 }
             case 54:
                 var1 = _closure1_slot1;
                 var1 = var1.PREMIUM_GIFT_YEAR_TIER_1;
                 if (!(var1 !== var2)) {
-                    _fun56480_ip = 156;
-                    continue _fun56480
+                    _fun56492_ip = 156;
+                    continue _fun56492
                 }
             case 68:
                 var1 = _closure1_slot1;
                 var1 = var1.PREMIUM_GIFT_MONTH_TIER_2;
                 if (!(var1 !== var2)) {
-                    _fun56480_ip = 144;
-                    continue _fun56480
+                    _fun56492_ip = 144;
+                    continue _fun56492
                 }
             case 82:
                 var1 = _closure1_slot1;
                 var1 = var1.PREMIUM_GIFT_YEAR_TIER_2;
                 if (!(var1 !== var2)) {
-                    _fun56480_ip = 132;
-                    continue _fun56480
+                    _fun56492_ip = 132;
+                    continue _fun56492
                 }
             case 96:
                 var1 = global;
@@ -847,4 +832,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getPlanIdForGift = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1615, 6831, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1615, 6830, 2]);

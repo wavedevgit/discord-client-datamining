@@ -116,7 +116,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/guild_scheduled_events/native/components/StageChannelUpsell.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: StageChannelUpsell, environment: var1
-        _fun65445: for (var _fun65445_ip = 0;;) switch (_fun65445_ip) {
+        _fun65457: for (var _fun65457_ip = 0;;) switch (_fun65457_ip) {
             case 0:
                 var0 = arg0;
                 var1 = var0.guildId;
@@ -138,8 +138,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var _closure2_slot2 = var10;
                 var0 = null;
                 if (var1) {
-                    _fun65445_ip = 727;
-                    continue _fun65445
+                    _fun65457_ip = 727;
+                    continue _fun65457
                 }
             case 83:
                 var3 = _closure1_slot11;
@@ -327,7 +327,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var9 = var9.GUILD_STAGE_VOICE;
                     var5.channelType = var9;
                     var9 = function(arg0) { // Original name: onChannelCreated, environment: var4
-                        _fun65448: for (var _fun65448_ip = 0;;) switch (_fun65448_ip) {
+                        _fun65460: for (var _fun65460_ip = 0;;) switch (_fun65460_ip) {
                             case 0:
                                 var2 = _closure1_slot6;
                                 var1 = {};
@@ -340,8 +340,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var2 = var2.bind(var0)(var1);
                                 var1 = null;
                                 if (!(var1 != var2)) {
-                                    _fun65448_ip = 55;
-                                    continue _fun65448
+                                    _fun65460_ip = 55;
+                                    continue _fun65460
                                 }
                             case 43:
                                 var1 = _closure2_slot1;
@@ -386,4 +386,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 1376, 8089, 8059, 660, 33, 1297, 671, 4864, 4045, 5284, 8090, 3901, 1234, 4835, 4524, 8091, 1307, 3237, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 1376, 8088, 8058, 660, 33, 1297, 671, 4865, 4045, 5285, 8089, 3900, 1234, 4836, 4525, 8090, 1307, 3237, 2]);

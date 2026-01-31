@@ -179,7 +179,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = 'put';
         var0.key = var5;
         var5 = function(arg0, arg1) { // Original name: value, environment: var4
-            _fun40056: for (var _fun40056_ip = 0;;) switch (_fun40056_ip) {
+            _fun40072: for (var _fun40072_ip = 0;;) switch (_fun40072_ip) {
                 case 0:
                     var4 = arg0;
                     var0 = this;
@@ -194,13 +194,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = var1.size;
                     var1 = var0.limit;
                     if (!(!(var2 > var1))) {
-                        _fun40056_ip = 66;
-                        continue _fun40056
+                        _fun40072_ip = 63;
+                        continue _fun40072
                     }
-                case 62:
+                case 59:
                     var1 = undefined;
                     return var1;
-                case 66:
+                case 63:
                     var1 = var0.oldestKey;
                     var2 = var1.bind(var0)();
                     var3 = var0.items;

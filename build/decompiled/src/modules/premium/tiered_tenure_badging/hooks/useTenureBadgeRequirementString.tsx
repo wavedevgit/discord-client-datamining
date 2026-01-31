@@ -21,64 +21,64 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var1.TieredTenureBadge;
     var _closure1_slot2 = var1;
     var1 = function(arg0, arg1) { // Original name: getTenureBadgeRequirementString, environment: var3
-        _fun59447: for (var _fun59447_ip = 0;;) switch (_fun59447_ip) {
+        _fun59459: for (var _fun59459_ip = 0;;) switch (_fun59459_ip) {
             case 0:
                 var2 = arg0;
                 var4 = arg1;
                 var1 = _closure1_slot2;
                 var1 = var1.PREMIUM_TENURE_1_MONTH;
                 if (!(var1 !== var2)) {
-                    _fun59447_ip = 210;
-                    continue _fun59447
+                    _fun59459_ip = 210;
+                    continue _fun59459
                 }
             case 26:
                 var1 = _closure1_slot2;
                 var1 = var1.PREMIUM_TENURE_3_MONTH;
                 if (!(var1 !== var2)) {
-                    _fun59447_ip = 210;
-                    continue _fun59447
+                    _fun59459_ip = 210;
+                    continue _fun59459
                 }
             case 43:
                 var1 = _closure1_slot2;
                 var1 = var1.PREMIUM_TENURE_6_MONTH;
                 if (!(var1 !== var2)) {
-                    _fun59447_ip = 210;
-                    continue _fun59447
+                    _fun59459_ip = 210;
+                    continue _fun59459
                 }
             case 60:
                 var1 = _closure1_slot2;
                 var1 = var1.PREMIUM_TENURE_12_MONTH;
                 if (!(var1 !== var2)) {
-                    _fun59447_ip = 134;
-                    continue _fun59447
+                    _fun59459_ip = 134;
+                    continue _fun59459
                 }
             case 74:
                 var1 = _closure1_slot2;
                 var1 = var1.PREMIUM_TENURE_24_MONTH;
                 if (!(var1 !== var2)) {
-                    _fun59447_ip = 134;
-                    continue _fun59447
+                    _fun59459_ip = 134;
+                    continue _fun59459
                 }
             case 88:
                 var1 = _closure1_slot2;
                 var1 = var1.PREMIUM_TENURE_36_MONTH;
                 if (!(var1 !== var2)) {
-                    _fun59447_ip = 134;
-                    continue _fun59447
+                    _fun59459_ip = 134;
+                    continue _fun59459
                 }
             case 102:
                 var1 = _closure1_slot2;
                 var1 = var1.PREMIUM_TENURE_60_MONTH;
                 if (!(var1 !== var2)) {
-                    _fun59447_ip = 134;
-                    continue _fun59447
+                    _fun59459_ip = 134;
+                    continue _fun59459
                 }
             case 116:
                 var1 = _closure1_slot2;
                 var1 = var1.PREMIUM_TENURE_72_MONTH;
                 if (!(var1 !== var2)) {
-                    _fun59447_ip = 134;
-                    continue _fun59447
+                    _fun59459_ip = 134;
+                    continue _fun59459
                 }
             case 130:
                 var1 = null;
@@ -129,7 +129,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/premium/tiered_tenure_badging/hooks/useTenureBadgeRequirementString.tsx';
     var4 = var5.bind(var6)(var4);
     var3 = function() { // Environment: var3
-        _fun59448: for (var _fun59448_ip = 0;;) switch (_fun59448_ip) {
+        _fun59460: for (var _fun59460_ip = 0;;) switch (_fun59460_ip) {
             case 0:
                 var2 = _closure1_slot0;
                 var3 = _closure1_slot1;
@@ -141,8 +141,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var0.bind(var2)();
                 var0 = null;
                 if (!(var0 != var5)) {
-                    _fun59448_ip = 95;
-                    continue _fun59448
+                    _fun59460_ip = 95;
+                    continue _fun59460
                 }
             case 41:
                 var3 = _closure1_slot0;
@@ -164,4 +164,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.useTenureBadgeRequirementString = var3;
     var2.getTenureBadgeRequirementString = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1615, 7283, 7285, 1234, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1615, 7282, 7284, 1234, 2]);

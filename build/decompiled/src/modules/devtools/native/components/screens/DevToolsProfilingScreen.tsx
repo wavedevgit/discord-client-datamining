@@ -140,7 +140,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/devtools/native/components/screens/DevToolsProfilingScreen.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function() { // Original name: DevToolsProfilingScreen, environment: var1
-        _fun86187: for (var _fun86187_ip = 0;;) switch (_fun86187_ip) {
+        _fun86217: for (var _fun86217_ip = 0;;) switch (_fun86217_ip) {
             case 0:
                 var2 = _closure1_slot4;
                 var1 = var2.useState;
@@ -204,8 +204,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = 16;
                 var4.spacing = var8;
                 if (var7) {
-                    _fun86187_ip = 429;
-                    continue _fun86187
+                    _fun86217_ip = 429;
+                    continue _fun86217
                 }
             case 208:
                 var10 = _closure1_slot6;
@@ -257,8 +257,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = var15.bind(var3)(var12, var11);
                 var7.children = var11;
                 var8 = var10.bind(var3)(var8, var7);
-                _fun86187_ip = 592;
-                continue _fun86187;
+                _fun86217_ip = 592;
+                continue _fun86217;
             case 429:
                 var11 = _closure1_slot8;
                 var10 = _closure1_slot7;
@@ -426,8 +426,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = var8.bind(var10)();
                 var8 = null;
                 if (!var10) {
-                    _fun86187_ip = 685;
-                    continue _fun86187
+                    _fun86217_ip = 685;
+                    continue _fun86217
                 }
             case 669:
                 var11 = _closure1_slot6;
@@ -445,4 +445,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 660, 33, 1297, 671, 277, 5324, 5377, 8778, 4039, 4860, 3901, 11109, 478, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 660, 33, 1297, 671, 277, 5325, 5378, 8778, 4039, 4861, 3900, 11111, 478, 2]);

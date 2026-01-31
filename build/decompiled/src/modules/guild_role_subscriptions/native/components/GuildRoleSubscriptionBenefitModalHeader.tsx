@@ -135,7 +135,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/guild_role_subscriptions/native/components/GuildRoleSubscriptionBenefitModalHeader.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: GuildRoleSubscriptionBenefitModalHeader, environment: var1
-        _fun117496: for (var _fun117496_ip = 0;;) switch (_fun117496_ip) {
+        _fun116846: for (var _fun116846_ip = 0;;) switch (_fun116846_ip) {
             case 0:
                 var0 = arg0;
                 var23 = var0.title;
@@ -266,8 +266,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11[0] = var15;
                 var12 = !var12;
                 if (!var12) {
-                    _fun117496_ip = 555;
-                    continue _fun117496
+                    _fun116846_ip = 555;
+                    continue _fun116846
                 }
             case 549:
                 var12 = var13.disabledButton;
@@ -297,4 +297,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 660, 33, 1297, 671, 4644, 10723, 4696, 6740, 3901, 1234, 4838, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 660, 33, 1297, 671, 4645, 10725, 4697, 6741, 3900, 1234, 4839, 2]);

@@ -4,7 +4,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = global;
     var _closure1_slot0 = var0;
     var0 = function(arg0) { // Original name: processStack, environment: var1
-        _fun33064: for (var _fun33064_ip = 0;;) switch (_fun33064_ip) {
+        _fun33080: for (var _fun33080_ip = 0;;) switch (_fun33080_ip) {
             case 0:
                 var1 = arg0;
                 var3 = var1.match;
@@ -13,13 +13,13 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var _closure2_slot0 = var1;
                 var1 = null;
                 if (!(var1 != var3)) {
-                    _fun33064_ip = 55;
-                    continue _fun33064
+                    _fun33080_ip = 55;
+                    continue _fun33080
                 }
             case 40:
                 var2 = var3.forEach;
                 var1 = function(arg0) { // Environment: var0
-                    _fun33065: for (var _fun33065_ip = 0;;) switch (_fun33065_ip) {
+                    _fun33081: for (var _fun33081_ip = 0;;) switch (_fun33081_ip) {
                         case 0:
                             var5 = arg0;
                             var1 = var5.split;
@@ -43,8 +43,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var3 = var8.get;
                             var8 = var3.bind(var8)(var10);
                             if (!var8) {
-                                _fun33065_ip = 367;
-                                continue _fun33065
+                                _fun33081_ip = 367;
+                                continue _fun33081
                             }
                         case 104:
                             var3 = _closure1_slot1;
@@ -58,8 +58,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var11 = var13 == var17;
                             var14 = undefined;
                             if (var11) {
-                                _fun33065_ip = 172;
-                                continue _fun33065
+                                _fun33081_ip = 172;
+                                continue _fun33081
                             }
                         case 145:
                             var16 = var17.split;
@@ -68,28 +68,28 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var13 = var13 == var11;
                             var14 = undefined;
                             if (var13) {
-                                _fun33065_ip = 172;
-                                continue _fun33065
+                                _fun33081_ip = 172;
+                                continue _fun33081
                             }
                         case 168:
                             var14 = var11[var10];
                         case 172:
                             if (!var14) {
-                                _fun33065_ip = 203;
-                                continue _fun33065
+                                _fun33081_ip = 203;
+                                continue _fun33081
                             }
                         case 175:
                             var13 = /@([^@]+):(\d+):(\d+)/;
                             var11 = var13.exec;
                             var14 = var11.bind(var13)(var14);
                             if (var14) {
-                                _fun33065_ip = 215;
-                                continue _fun33065
+                                _fun33081_ip = 215;
+                                continue _fun33081
                             }
                         case 203:
                             var11 = ['unknown', 0, 0];
-                            _fun33065_ip = 278;
-                            continue _fun33065;
+                            _fun33081_ip = 278;
+                            continue _fun33081;
                         case 215:
                             var13 = _closure1_slot1;
                             var13 = var13.bind(var0)(var14, var15);
@@ -156,7 +156,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = 'function ReanimatedError_Pnpm_errorsTs1(message){const prefix=\'[Reanimated]\';const errorInstance=new Error(message?prefix+" "+message:prefix);errorInstance.name=\'ReanimatedError\';return errorInstance;}';
     var3.code = var4;
     var4 = function(arg0) { // Original name: ReanimatedError, environment: var1
-        _fun33066: for (var _fun33066_ip = 0;;) switch (_fun33066_ip) {
+        _fun33082: for (var _fun33082_ip = 0;;) switch (_fun33082_ip) {
             case 0:
                 var6 = arg0;
                 var1 = global;
@@ -164,8 +164,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var5 = '[Reanimated]';
                 var0 = var5;
                 if (!var6) {
-                    _fun33066_ip = 51;
-                    continue _fun33066
+                    _fun33082_ip = 51;
+                    continue _fun33082
                 }
             case 23:
                 var1 = var1.HermesInternal;
@@ -201,13 +201,13 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot3 = var3;
     var3 = function() { // Environment: var1
         var0 = function() { // Original name: registerReanimatedError, environment: var0
-            _fun33068: for (var _fun33068_ip = 0;;) switch (_fun33068_ip) {
+            _fun33084: for (var _fun33084_ip = 0;;) switch (_fun33084_ip) {
                 case 0:
                     var0 = global;
                     var1 = var0._WORKLET;
                     if (var1) {
-                        _fun33068_ip = 45;
-                        continue _fun33068
+                        _fun33084_ip = 45;
+                        continue _fun33084
                     }
                 case 11:
                     var2 = var0.Error;
@@ -265,7 +265,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var2.registerWorkletStackDetails = var3;
     var1 = function(arg0) { // Original name: reportFatalErrorOnJS, environment: var1
-        _fun33070: for (var _fun33070_ip = 0;;) switch (_fun33070_ip) {
+        _fun33086: for (var _fun33086_ip = 0;;) switch (_fun33086_ip) {
             case 0:
                 var1 = arg0;
                 var0 = var1.message;
@@ -285,8 +285,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = undefined;
                 var1 = undefined;
                 if (!var4) {
-                    _fun33070_ip = 67;
-                    continue _fun33070
+                    _fun33086_ip = 67;
+                    continue _fun33086
                 }
             case 55:
                 var2 = _closure1_slot5;

@@ -20,7 +20,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = 'utils/QueryStringUtils.tsx';
     var1 = var3.bind(var4)(var1);
     var1 = function(arg0) { // Original name: getFirstQueryStringValue, environment: var1
-        _fun28249: for (var _fun28249_ip = 0;;) switch (_fun28249_ip) {
+        _fun28250: for (var _fun28250_ip = 0;;) switch (_fun28250_ip) {
             case 0:
                 var2 = arg0;
                 var0 = global;
@@ -29,8 +29,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var0.bind(var1)(var2);
                 var0 = var2;
                 if (!var1) {
-                    _fun28249_ip = 33;
-                    continue _fun28249
+                    _fun28250_ip = 33;
+                    continue _fun28250
                 }
             case 27:
                 var1 = 0;

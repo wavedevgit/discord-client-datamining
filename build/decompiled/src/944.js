@@ -15,7 +15,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2.value = var6;
     var2 = var4.bind(var5)(var1, var3, var2);
     var0 = function(arg0, arg1, arg2) { // Original name: captureError, environment: var0
-        _fun9789: for (var _fun9789_ip = 0;;) switch (_fun9789_ip) {
+        _fun9791: for (var _fun9791_ip = 0;;) switch (_fun9791_ip) {
             case 0:
                 var1 = arg0;
                 var11 = arg1;
@@ -31,8 +31,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var4 = var5.getClient;
                 var4 = var4.bind(var5)();
                 if (var4) {
-                    _fun9789_ip = 50;
-                    continue _fun9789
+                    _fun9791_ip = 50;
+                    continue _fun9791
                 }
             case 48: // try_end0
                 return var0;
@@ -49,8 +49,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var5 = var5 != var7;
                 var4 = var5;
                 if (!var5) {
-                    _fun9789_ip = 108;
-                    continue _fun9789
+                    _fun9791_ip = 108;
+                    continue _fun9791
                 }
             case 95:
                 var7 = var3;
@@ -58,8 +58,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var4 = var5.bind(var7)();
             case 108:
                 if (!var4) {
-                    _fun9789_ip = 167;
-                    continue _fun9789
+                    _fun9791_ip = 167;
+                    continue _fun9791
                 }
             case 111:
                 var5 = var3;
@@ -94,8 +94,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var7 = {};
                 var10 = var11;
                 if (var11) {
-                    _fun9789_ip = 235;
-                    continue _fun9789
+                    _fun9791_ip = 235;
+                    continue _fun9791
                 }
             case 229:
                 var10 = 'handler_execution';
@@ -106,8 +106,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1.mechanism = var5;
                 var1 = var3.bind(var4)(var2, var1);
             case 261: // try_end1
-                _fun9789_ip = 265;
-                continue _fun9789;
+                _fun9791_ip = 265;
+                continue _fun9791;
             case 263: // catch_target0 // catch_target1
                 CatchBlockStart(arg_register = 1);
             case 265:

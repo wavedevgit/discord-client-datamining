@@ -4,7 +4,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = exports;
     var4 = dependencyMap;
     var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
-        _fun44939: for (var _fun44939_ip = 0;;) switch (_fun44939_ip) {
+        _fun44945: for (var _fun44945_ip = 0;;) switch (_fun44945_ip) {
             case 0:
             case 2: // try_start_0
                 var1 = global;
@@ -25,8 +25,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = !var1;
                 var _closure2_slot0 = var1;
             case 70: // try_end0
-                _fun44939_ip = 74;
-                continue _fun44939;
+                _fun44945_ip = 74;
+                continue _fun44945;
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
@@ -77,32 +77,32 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var5.bind(var0)(var3);
     var _closure1_slot5 = var3;
     var3 = {};
-    var5 = 'function changeEventCalculator_Pnpm_rotationGestureTs1(current,previous){let changePayload;if(previous===undefined){changePayload={rotationChange:current.rotation};}else{changePayload={rotationChange:current.rotation-previous.rotation};}return{...current,...changePayload};}';
+    var5 = 'function changeEventCalculator_Pnpm_pinchGestureTs1(current,previous){let changePayload;if(previous===undefined){changePayload={scaleChange:current.scale};}else{changePayload={scaleChange:current.scale/previous.scale};}return{...current,...changePayload};}';
     var3.code = var5;
     var _closure1_slot6 = var3;
     var3 = function() { // Environment: var1
         var0 = function(arg0, arg1) { // Original name: changeEventCalculator, environment: var0
-            _fun44943: for (var _fun44943_ip = 0;;) switch (_fun44943_ip) {
+            _fun44949: for (var _fun44949_ip = 0;;) switch (_fun44949_ip) {
                 case 0:
                     var4 = arg0;
                     var0 = arg1;
                     var1 = undefined;
                     if (!(var1 !== var0)) {
-                        _fun44943_ip = 37;
-                        continue _fun44943
+                        _fun44949_ip = 37;
+                        continue _fun44949
                     }
                 case 12:
                     var3 = {};
-                    var1 = var4.rotation;
-                    var0 = var0.rotation;
-                    var0 = var1 - var0;
-                    var3.rotationChange = var0;
-                    _fun44943_ip = 53;
-                    continue _fun44943;
+                    var1 = var4.scale;
+                    var0 = var0.scale;
+                    var0 = var1 / var0;
+                    var3.scaleChange = var0;
+                    _fun44949_ip = 53;
+                    continue _fun44949;
                 case 37:
                     var0 = {};
-                    var1 = var4.rotation;
-                    var0.rotationChange = var1;
+                    var1 = var4.scale;
+                    var0.scaleChange = var1;
                     var3 = var0;
                 case 53:
                     var0 = global;
@@ -115,7 +115,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         };
         var1 = {};
         var0.__closure = var1;
-        var1 = 11988645380499.0;
+        var1 = 9876979738005.0;
         var0.__workletHash = var1;
         var1 = _closure1_slot6;
         var0.__initData = var1;
@@ -129,8 +129,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var3.bind(var0)(var4);
     var3 = var3.ContinousBaseGesture;
     var1 = function(arg0) { // Environment: var1
-        var3 = function() { // Original name: RotationGesture, environment: var0
-            _fun44945: for (var _fun44945_ip = 0;;) switch (_fun44945_ip) {
+        var3 = function() { // Original name: PinchGesture, environment: var0
+            _fun44951: for (var _fun44951_ip = 0;;) switch (_fun44951_ip) {
                 case 0:
                     var3 = this;
                     var0 = _closure1_slot0;
@@ -143,14 +143,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var0 = _closure1_slot8;
                     var0 = var0.bind(var2)();
                     if (var0) {
-                        _fun44945_ip = 62;
-                        continue _fun44945
+                        _fun44951_ip = 62;
+                        continue _fun44951
                     }
                 case 49:
                     var0 = var8.apply;
                     var0 = var0.bind(var8)(var3, var2);
-                    _fun44945_ip = 100;
-                    continue _fun44945;
+                    _fun44951_ip = 100;
+                    continue _fun44951;
                 case 62:
                     var5 = global;
                     var7 = var5.Reflect;
@@ -162,7 +162,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var0 = var6.bind(var7)(var8, var4, var5);
                 case 100:
                     var0 = var1.bind(var2)(var3, var0);
-                    var1 = 'RotationGestureHandler';
+                    var1 = 'PinchGestureHandler';
                     var0.handlerName = var1;
                     return var0;
             }
@@ -183,7 +183,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var1.changeEventCalculator = var0;
             var9 = _closure2_slot0;
             var3 = function(arg0, arg1, arg2, arg3) { // Original name: _superPropGet, environment: var0
-                _fun44947: for (var _fun44947_ip = 0;;) switch (_fun44947_ip) {
+                _fun44953: for (var _fun44953_ip = 0;;) switch (_fun44953_ip) {
                     case 0:
                         var4 = arg0;
                         var6 = arg2;
@@ -195,8 +195,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var7 = var0 & var2;
                         var0 = var4;
                         if (!var7) {
-                            _fun44947_ip = 44;
-                            continue _fun44947
+                            _fun44953_ip = 44;
+                            continue _fun44953
                         }
                     case 39:
                         var0 = var4.prototype;
@@ -210,16 +210,16 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var2 = var0 & var2;
                         var0 = var4;
                         if (!var2) {
-                            _fun44947_ip = 98;
-                            continue _fun44947
+                            _fun44953_ip = 98;
+                            continue _fun44953
                         }
                     case 79:
                         var3 = 'function';
                         var2 = typeof var4;
                         var0 = var4;
                         if (!(var3 === var2)) {
-                            _fun44947_ip = 98;
-                            continue _fun44947
+                            _fun44953_ip = 98;
+                            continue _fun44953
                         }
                     case 93:
                         var0 = function(arg0) { // Environment: var1
@@ -253,6 +253,6 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var1 = var1.bind(var0)(var3);
-    var2.RotationGesture = var1;
+    var2.PinchGesture = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 15, 17, 102, 18, 4962]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 15, 17, 102, 18, 4963]);

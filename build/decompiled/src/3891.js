@@ -1,87 +1,68 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var5 = require;
+    var4 = require;
     var2 = exports;
-    var6 = dependencyMap;
-    var _closure1_slot0 = var5;
-    var _closure1_slot1 = var6;
+    var3 = dependencyMap;
+    var _closure1_slot0 = var4;
+    var _closure1_slot1 = var3;
     var0 = global;
     var7 = var0.Object;
-    var4 = var7.defineProperty;
-    var3 = {};
+    var6 = var7.defineProperty;
+    var5 = {};
     var0 = true;
-    var3.value = var0;
+    var5.value = var0;
     var0 = '__esModule';
-    var0 = var4.bind(var7)(var2, var0, var3);
-    var4 = 0;
-    var3 = var6[var4];
+    var0 = var6.bind(var7)(var2, var0, var5);
+    var0 = 0;
+    var3 = var3[var0];
     var0 = undefined;
-    var7 = var5.bind(var0)(var3);
-    var3 = var7.memo;
-    var7 = var7.useEffect;
-    var _closure1_slot2 = var7;
-    var7 = var6[var4];
-    var4 = metroImportDefault;
-    var4 = var4.bind(var0)(var7);
-    var4 = 1;
-    var4 = var6[var4];
-    var4 = var5.bind(var0)(var4);
-    var5 = var4.Fragment;
-    var _closure1_slot3 = var5;
-    var4 = var4.jsx;
-    var _closure1_slot4 = var4;
-    var1 = function(arg0) { // Original name: PortalHostComponent, environment: var1
-        var0 = arg0;
-        var5 = var0.name;
-        var2 = _closure1_slot0;
-        var7 = _closure1_slot1;
-        var1 = 2;
-        var1 = var7[var1];
-        var3 = undefined;
-        var6 = var2.bind(var3)(var1);
-        var1 = var6.usePortalState;
-        var6 = var1.bind(var6)(var5);
-        var1 = 3;
-        var1 = var7[var1];
-        var2 = var2.bind(var3)(var1);
-        var1 = var2.usePortal;
-        var1 = var1.bind(var2)(var5);
-        var2 = var1.registerHost;
-        var _closure2_slot0 = var2;
-        var1 = var1.deregisterHost;
-        var _closure2_slot1 = var1;
-        var5 = _closure1_slot2;
-        var2 = function() { // Environment: var4
-            var1 = _closure2_slot0;
-            var0 = undefined;
-            var0 = var1.bind(var0)();
-            var0 = function() { // Environment: var0
-                var1 = _closure2_slot1;
-                var0 = undefined;
-                var1 = var1.bind(var0)();
+    var3 = var4.bind(var0)(var3);
+    var3 = var3.useContext;
+    var _closure1_slot2 = var3;
+    var1 = function(arg0) { // Original name: usePortalState, environment: var1
+        _fun35271: for (var _fun35271_ip = 0;;) switch (_fun35271_ip) {
+            case 0:
+                var2 = _closure1_slot2;
+                var3 = _closure1_slot0;
+                var1 = _closure1_slot1;
+                var0 = 1;
+                var0 = var1[var0];
+                var1 = undefined;
+                var0 = var3.bind(var1)(var0);
+                var0 = var0.PortalStateContext;
+                var1 = var2.bind(var1)(var0);
+                var0 = null;
+                if (!(var0 !== var1)) {
+                    _fun35271_ip = 62;
+                    continue _fun35271
+                }
+            case 46:
+                var0 = arg0;
+                var0 = var1[var0];
+                if (var0) {
+                    _fun35271_ip = 60;
+                    continue _fun35271
+                }
+            case 56:
+                var0 = new Array(0);
+            case 60:
                 return var0;
-            };
-            return var0;
-        };
-        var1 = new Array(0);
-        var1 = var5.bind(var3)(var2, var1);
-        var2 = _closure1_slot4;
-        var1 = _closure1_slot3;
-        var0 = {};
-        var5 = var6.map;
-        var4 = function(arg0) { // Environment: var4
-            var0 = arg0;
-            var0 = var0.node;
-            return var0;
-        };
-        var4 = var5.bind(var6)(var4);
-        var0.children = var4;
-        var0 = var2.bind(var3)(var1, var0);
-        return var0;
+            case 62:
+                var0 = global;
+                var2 = var0.Error;
+                var0 = var2.prototype;
+                var1 = Object.create(var0, {
+                    constructor: {
+                        value: var2
+                    }
+                });
+                var4 = "'PortalStateContext' cannot be null, please add 'PortalProvider' to the root component.";
+                var5 = var1;
+                var0 = new var5[var2](var4, var3);
+                var0 = var0 instanceof Object ? var0 : var1;
+                throw var0;
+        }
     };
-    var1 = var3.bind(var0)(var1);
-    var3 = 'PortalHost';
-    var1.displayName = var3;
-    var2.PortalHost = var1;
+    var2.usePortalState = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 3892, 3888]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 3888]);

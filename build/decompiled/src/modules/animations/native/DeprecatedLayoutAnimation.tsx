@@ -7,14 +7,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var7;
     var _closure1_slot1 = var8;
     var3 = function(arg0) { // Original name: DeprecatedLayoutAnimation, environment: var1
-        _fun44385: for (var _fun44385_ip = 0;;) switch (_fun44385_ip) {
+        _fun44402: for (var _fun44402_ip = 0;;) switch (_fun44402_ip) {
             case 0:
                 var2 = arg0;
                 var1 = _closure1_slot4;
                 var1 = var1.useReducedMotion;
                 if (var1) {
-                    _fun44385_ip = 51;
-                    continue _fun44385
+                    _fun44402_ip = 51;
+                    continue _fun44402
                 }
             case 19:
                 var5 = _closure1_slot0;
@@ -27,21 +27,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var3.bind(var4)();
             case 51:
                 if (var1) {
-                    _fun44385_ip = 91;
-                    continue _fun44385
+                    _fun44402_ip = 91;
+                    continue _fun44402
                 }
             case 54:
                 var1 = null;
                 if (!(var1 == var2)) {
-                    _fun44385_ip = 76;
-                    continue _fun44385
+                    _fun44402_ip = 76;
+                    continue _fun44402
                 }
             case 60:
                 var3 = _closure1_slot3;
                 var1 = var3.easeInEaseOut;
                 var1 = var1.bind(var3)();
-                _fun44385_ip = 91;
-                continue _fun44385;
+                _fun44402_ip = 91;
+                continue _fun44402;
             case 76:
                 var1 = _closure1_slot3;
                 var0 = var1.configureNext;
@@ -91,21 +91,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.CONFIG_GUILD_FOLDER_SCALEXY = var4;
     var2.DeprecatedLayoutAnimation = var3;
     var1 = function(arg0) { // Original name: DeprecatedLayoutAnimationKeyboard, environment: var1
-        _fun44386: for (var _fun44386_ip = 0;;) switch (_fun44386_ip) {
+        _fun44403: for (var _fun44403_ip = 0;;) switch (_fun44403_ip) {
             case 0:
                 var5 = arg0;
                 var1 = arguments[1];
                 var0 = undefined;
                 if (!(var1 === var0)) {
-                    _fun44386_ip = 14;
-                    continue _fun44386
+                    _fun44403_ip = 14;
+                    continue _fun44403
                 }
             case 12:
                 var1 = false;
             case 14:
                 if (!var1) {
-                    _fun44386_ip = 76;
-                    continue _fun44386
+                    _fun44403_ip = 76;
+                    continue _fun44403
                 }
             case 17:
                 var3 = _closure1_slot0;
@@ -116,8 +116,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var3.isAndroid;
                 var2 = var2.bind(var3)();
                 if (var2) {
-                    _fun44386_ip = 76;
-                    continue _fun44386
+                    _fun44403_ip = 76;
+                    continue _fun44403
                 }
             case 53:
                 var3 = _closure1_slot2;

@@ -45,7 +45,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/user_settings/shouldWarnConnectedAccountTwoWay.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: shouldWarnConnectedAccountTwoWay, environment: var1
-        _fun82270: for (var _fun82270_ip = 0;;) switch (_fun82270_ip) {
+        _fun82300: for (var _fun82300_ip = 0;;) switch (_fun82300_ip) {
             case 0:
                 var1 = arg0;
                 var3 = _closure1_slot0;
@@ -53,8 +53,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var1.type;
                 var0 = var2.bind(var3)(var0);
                 if (!var0) {
-                    _fun82270_ip = 34;
-                    continue _fun82270
+                    _fun82300_ip = 34;
+                    continue _fun82300
                 }
             case 28:
                 var0 = var1.twoWayLink;

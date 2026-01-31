@@ -11,21 +11,21 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0.value = var5;
     var0 = var3.bind(var4)(var1, var2, var0);
     var0 = function(arg0) { // Original name: parseSampleRate, environment: var0
-        _fun8856: for (var _fun8856_ip = 0;;) switch (_fun8856_ip) {
+        _fun8858: for (var _fun8858_ip = 0;;) switch (_fun8858_ip) {
             case 0:
                 var2 = arg0;
                 var3 = typeof var2;
                 var0 = 'boolean';
                 if (!(var0 !== var3)) {
-                    _fun8856_ip = 101;
-                    continue _fun8856
+                    _fun8858_ip = 101;
+                    continue _fun8858
                 }
             case 14:
                 var0 = 'string';
                 var1 = var2;
                 if (!(var0 === var3)) {
-                    _fun8856_ip = 40;
-                    continue _fun8856
+                    _fun8858_ip = 40;
+                    continue _fun8858
                 }
             case 25:
                 var0 = global;
@@ -38,8 +38,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var3 = typeof var1;
                 var0 = undefined;
                 if (!(var5 === var3)) {
-                    _fun8856_ip = 99;
-                    continue _fun8856
+                    _fun8858_ip = 99;
+                    continue _fun8858
                 }
             case 55:
                 var3 = global;
@@ -47,24 +47,24 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var3 = var3.bind(var4)(var1);
                 var0 = undefined;
                 if (var3) {
-                    _fun8856_ip = 99;
-                    continue _fun8856
+                    _fun8858_ip = 99;
+                    continue _fun8858
                 }
             case 73:
                 var3 = 0;
                 var3 = var1 < var3;
                 var0 = undefined;
                 if (var3) {
-                    _fun8856_ip = 99;
-                    continue _fun8856
+                    _fun8858_ip = 99;
+                    continue _fun8858
                 }
             case 84:
                 var3 = 1;
                 var3 = var1 > var3;
                 var0 = undefined;
                 if (var3) {
-                    _fun8856_ip = 99;
-                    continue _fun8856
+                    _fun8858_ip = 99;
+                    continue _fun8858
                 }
             case 96:
                 var0 = var1;

@@ -61,43 +61,43 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var3 = var4[var3];
         var0.setFocusedInput = var3;
         var3 = function() { // Original name: focusLastInput, environment: var2
-            _fun73709: for (var _fun73709_ip = 0;;) switch (_fun73709_ip) {
+            _fun73739: for (var _fun73739_ip = 0;;) switch (_fun73739_ip) {
                 case 0:
                     var3 = _closure2_slot2;
                     var2 = _closure1_slot2;
                     var2 = var2.TITLE;
                     if (!(var3 !== var2)) {
-                        _fun73709_ip = 69;
-                        continue _fun73709
+                        _fun73739_ip = 69;
+                        continue _fun73739
                     }
                 case 24:
                     var2 = _closure2_slot2;
                     var1 = _closure1_slot2;
                     var1 = var1.CONTENT;
                     if (!(var2 === var1)) {
-                        _fun73709_ip = 94;
-                        continue _fun73709
+                        _fun73739_ip = 94;
+                        continue _fun73739
                     }
                 case 42:
                     var1 = _closure2_slot1;
                     var2 = var1.current;
                     var1 = null;
                     if (!(var1 != var2)) {
-                        _fun73709_ip = 94;
-                        continue _fun73709
+                        _fun73739_ip = 94;
+                        continue _fun73739
                     }
                 case 57:
                     var1 = var2.focus;
                     var1 = var1.bind(var2)();
-                    _fun73709_ip = 94;
-                    continue _fun73709;
+                    _fun73739_ip = 94;
+                    continue _fun73739;
                 case 69:
                     var0 = _closure2_slot0;
                     var1 = var0.current;
                     var0 = null;
                     if (!(var0 != var1)) {
-                        _fun73709_ip = 94;
-                        continue _fun73709
+                        _fun73739_ip = 94;
+                        continue _fun73739
                     }
                 case 84:
                     var0 = var1.focus;
@@ -109,43 +109,43 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         };
         var0.focusLastInput = var3;
         var2 = function() { // Original name: blurLastInput, environment: var2
-            _fun73710: for (var _fun73710_ip = 0;;) switch (_fun73710_ip) {
+            _fun73740: for (var _fun73740_ip = 0;;) switch (_fun73740_ip) {
                 case 0:
                     var3 = _closure2_slot2;
                     var2 = _closure1_slot2;
                     var2 = var2.TITLE;
                     if (!(var3 !== var2)) {
-                        _fun73710_ip = 69;
-                        continue _fun73710
+                        _fun73740_ip = 69;
+                        continue _fun73740
                     }
                 case 24:
                     var2 = _closure2_slot2;
                     var1 = _closure1_slot2;
                     var1 = var1.CONTENT;
                     if (!(var2 === var1)) {
-                        _fun73710_ip = 94;
-                        continue _fun73710
+                        _fun73740_ip = 94;
+                        continue _fun73740
                     }
                 case 42:
                     var1 = _closure2_slot1;
                     var2 = var1.current;
                     var1 = null;
                     if (!(var1 != var2)) {
-                        _fun73710_ip = 94;
-                        continue _fun73710
+                        _fun73740_ip = 94;
+                        continue _fun73740
                     }
                 case 57:
                     var1 = var2.blur;
                     var1 = var1.bind(var2)();
-                    _fun73710_ip = 94;
-                    continue _fun73710;
+                    _fun73740_ip = 94;
+                    continue _fun73740;
                 case 69:
                     var0 = _closure2_slot0;
                     var1 = var0.current;
                     var0 = null;
                     if (!(var0 != var1)) {
-                        _fun73710_ip = 94;
-                        continue _fun73710
+                        _fun73740_ip = 94;
+                        continue _fun73740
                     }
                 case 84:
                     var0 = var1.blur;

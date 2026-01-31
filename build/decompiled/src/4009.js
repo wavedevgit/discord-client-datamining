@@ -37,14 +37,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var3.jsx;
     var _closure1_slot6 = var3;
     var1 = function(arg0) { // Original name: ScreenContainer, environment: var1
-        _fun37251: for (var _fun37251_ip = 0;;) switch (_fun37251_ip) {
+        _fun37268: for (var _fun37268_ip = 0;;) switch (_fun37268_ip) {
             case 0:
                 var6 = arg0;
                 var2 = var6.enabled;
                 var3 = undefined;
                 if (!(var3 === var2)) {
-                    _fun37251_ip = 47;
-                    continue _fun37251
+                    _fun37268_ip = 47;
+                    continue _fun37268
                 }
             case 14:
                 var1 = _closure1_slot0;
@@ -60,8 +60,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var4 = _closure1_slot3;
                 var6 = var5.bind(var3)(var6, var4);
                 if (!var2) {
-                    _fun37251_ip = 102;
-                    continue _fun37251
+                    _fun37268_ip = 102;
+                    continue _fun37268
                 }
             case 73:
                 var4 = _closure1_slot0;
@@ -71,8 +71,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = var4.bind(var3)(var2);
                 var2 = var2.isNativePlatformSupported;
                 if (var2) {
-                    _fun37251_ip = 139;
-                    continue _fun37251
+                    _fun37268_ip = 139;
+                    continue _fun37268
                 }
             case 102:
                 var5 = _closure1_slot6;
@@ -86,8 +86,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var2;
             case 139:
                 if (var1) {
-                    _fun37251_ip = 195;
-                    continue _fun37251
+                    _fun37268_ip = 195;
+                    continue _fun37268
                 }
             case 142:
                 var4 = _closure1_slot6;

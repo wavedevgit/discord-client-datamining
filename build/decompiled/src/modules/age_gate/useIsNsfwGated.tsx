@@ -31,7 +31,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/age_gate/useIsNsfwGated.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: useIsNsfwGated, environment: var1
-        _fun70980: for (var _fun70980_ip = 0;;) switch (_fun70980_ip) {
+        _fun71004: for (var _fun71004_ip = 0;;) switch (_fun71004_ip) {
             case 0:
                 var0 = arg0;
                 var _closure2_slot0 = var0;
@@ -47,7 +47,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = new Array(1);
                 var8[0] = var2;
                 var2 = function() { // Environment: var1
-                    _fun70981: for (var _fun70981_ip = 0;;) switch (_fun70981_ip) {
+                    _fun71005: for (var _fun71005_ip = 0;;) switch (_fun71005_ip) {
                         case 0:
                             var1 = _closure1_slot3;
                             var0 = var1.getCurrentUser;
@@ -56,8 +56,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var2 = var0 == var1;
                             var0 = undefined;
                             if (var2) {
-                                _fun70981_ip = 33;
-                                continue _fun70981
+                                _fun71005_ip = 33;
+                                continue _fun71005
                             }
                         case 27:
                             var0 = var1.nsfwAllowed;
@@ -85,13 +85,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var4.bind(var5)(var3, var1);
                 var1 = !var1;
                 if (!var0) {
-                    _fun70980_ip = 130;
-                    continue _fun70980
+                    _fun71004_ip = 130;
+                    continue _fun71004
                 }
             case 121:
                 if (var1) {
-                    _fun70980_ip = 127;
-                    continue _fun70980
+                    _fun71004_ip = 127;
+                    continue _fun71004
                 }
             case 124:
                 var1 = var2;
@@ -103,4 +103,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [4515, 1613, 566, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [4516, 1613, 566, 2]);

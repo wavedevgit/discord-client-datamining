@@ -9,7 +9,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var5;
     var0 = function(arg0) { // Original name: LinkedLobbyFormSection, environment: var1
-        _fun109817: for (var _fun109817_ip = 0;;) switch (_fun109817_ip) {
+        _fun109173: for (var _fun109173_ip = 0;;) switch (_fun109173_ip) {
             case 0:
                 var0 = arg0;
                 var0 = var0.channel;
@@ -32,8 +32,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var0 == var5;
                 var1 = undefined;
                 if (var6) {
-                    _fun109817_ip = 94;
-                    continue _fun109817
+                    _fun109173_ip = 94;
+                    continue _fun109173
                 }
             case 88:
                 var1 = var5.application_id;
@@ -42,8 +42,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var0 == var20;
                 var0 = null;
                 if (var1) {
-                    _fun109817_ip = 396;
-                    continue _fun109817
+                    _fun109173_ip = 396;
+                    continue _fun109173
                 }
             case 111:
                 var3 = _closure1_slot5;
@@ -179,7 +179,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'components_native/channel_settings/ChannelSettingsIntegrationsOverview.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: ConnectedChannelSettingsIntegrationsOverview, environment: var1
-        _fun109819: for (var _fun109819_ip = 0;;) switch (_fun109819_ip) {
+        _fun109175: for (var _fun109175_ip = 0;;) switch (_fun109175_ip) {
             case 0:
                 var0 = arg0;
                 var1 = var0.channelId;
@@ -216,8 +216,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var12 == var13;
                 var0 = null;
                 if (var1) {
-                    _fun109819_ip = 715;
-                    continue _fun109819
+                    _fun109175_ip = 715;
+                    continue _fun109175
                 }
             case 129:
                 var3 = _closure1_slot5;
@@ -237,8 +237,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var8.screenContainer;
                 var5.style = var8;
                 if (!var11) {
-                    _fun109819_ip = 647;
-                    continue _fun109819
+                    _fun109175_ip = 647;
+                    continue _fun109175
                 }
             case 201:
                 var15 = _closure1_slot6;
@@ -354,16 +354,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = new Array(2);
                 var8[0] = var11;
                 if (!var9) {
-                    _fun109819_ip = 668;
-                    continue _fun109819
+                    _fun109175_ip = 668;
+                    continue _fun109175
                 }
             case 658:
                 var11 = var13.linkedLobby;
                 var9 = var12 != var11;
             case 668:
                 if (!var9) {
-                    _fun109819_ip = 691;
-                    continue _fun109819
+                    _fun109175_ip = 691;
+                    continue _fun109175
                 }
             case 671:
                 var12 = _closure1_slot5;
@@ -383,4 +383,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 1372, 660, 33, 1469, 6842, 5339, 1234, 5413, 1417, 1297, 671, 566, 4859, 13854, 14079, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 1372, 660, 33, 1469, 6841, 5340, 1234, 5414, 1417, 1297, 671, 566, 4860, 13785, 14010, 2]);

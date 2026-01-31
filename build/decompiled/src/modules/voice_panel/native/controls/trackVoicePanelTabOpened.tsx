@@ -43,15 +43,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/voice_panel/native/controls/trackVoicePanelTabOpened.tsx';
     var4 = var5.bind(var6)(var4);
     var3 = function(arg0, arg1, arg2) { // Original name: trackVoicePanelTabOpened, environment: var3
-        _fun112122: for (var _fun112122_ip = 0;;) switch (_fun112122_ip) {
+        _fun111472: for (var _fun111472_ip = 0;;) switch (_fun111472_ip) {
             case 0:
                 var3 = arg0;
                 var2 = _closure1_slot2;
                 var0 = var2.hasUnread;
                 var5 = var0.bind(var2)(var3);
                 if (var5) {
-                    _fun112122_ip = 45;
-                    continue _fun112122
+                    _fun111472_ip = 45;
+                    continue _fun111472
                 }
             case 24:
                 var2 = _closure1_slot2;
@@ -82,4 +82,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.default = var3;
     var2.VoicePanelTabAnalyticsSources = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3907, 660, 795, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3906, 660, 795, 2]);

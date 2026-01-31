@@ -14,7 +14,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = '__esModule';
     var2 = var4.bind(var5)(var1, var2, var3);
     var2 = function() { // Original name: lazyLoadFeedbackIntegration, environment: var0
-        _fun13038: for (var _fun13038_ip = 0;;) switch (_fun13038_ip) {
+        _fun13040: for (var _fun13040_ip = 0;;) switch (_fun13040_ip) {
             case 0:
                 var3 = _closure1_slot0;
                 var0 = _closure1_slot1;
@@ -27,14 +27,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var5 = null;
                 var2 = undefined;
                 if (!(var5 !== var6)) {
-                    _fun13038_ip = 85;
-                    continue _fun13038
+                    _fun13040_ip = 85;
+                    continue _fun13040
                 }
             case 42:
                 var2 = undefined;
                 if (!(var0 !== var6)) {
-                    _fun13038_ip = 85;
-                    continue _fun13038
+                    _fun13040_ip = 85;
+                    continue _fun13040
                 }
             case 48:
                 var4 = var6.getIntegrationByName;
@@ -48,8 +48,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             case 85:
                 var3 = undefined;
                 if (var2) {
-                    _fun13038_ip = 124;
-                    continue _fun13038
+                    _fun13040_ip = 124;
+                    continue _fun13040
                 }
             case 90:
                 var6 = _closure1_slot0;
@@ -62,15 +62,15 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var3 = var4;
             case 124:
                 if (var2) {
-                    _fun13038_ip = 131;
-                    continue _fun13038
+                    _fun13040_ip = 131;
+                    continue _fun13040
                 }
             case 127:
                 var2 = var0 === var3;
             case 131:
                 if (var2) {
-                    _fun13038_ip = 175;
-                    continue _fun13038
+                    _fun13040_ip = 175;
+                    continue _fun13040
                 }
             case 134:
                 var2 = var3.addIntegration;
@@ -90,140 +90,6 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = 'AutoInjectMobileFeedback';
     var1.AUTO_INJECT_FEEDBACK_INTEGRATION_NAME = var2;
     var2 = function() { // Original name: lazyLoadAutoInjectFeedbackIntegration, environment: var0
-        _fun13039: for (var _fun13039_ip = 0;;) switch (_fun13039_ip) {
-            case 0:
-                var3 = _closure1_slot0;
-                var0 = _closure1_slot1;
-                var6 = 0;
-                var1 = var0[var6];
-                var0 = undefined;
-                var3 = var3.bind(var0)(var1);
-                var1 = var3.getClient;
-                var7 = var1.bind(var3)();
-                var4 = null;
-                var1 = undefined;
-                if (!(var4 !== var7)) {
-                    _fun13039_ip = 65;
-                    continue _fun13039
-                }
-            case 42:
-                var1 = undefined;
-                if (!(var0 !== var7)) {
-                    _fun13039_ip = 65;
-                    continue _fun13039
-                }
-            case 48:
-                var5 = var7.getIntegrationByName;
-                var3 = 'AutoInjectMobileFeedback';
-                var1 = var5.bind(var7)(var3);
-            case 65:
-                var3 = undefined;
-                if (var1) {
-                    _fun13039_ip = 104;
-                    continue _fun13039
-                }
-            case 70:
-                var5 = _closure1_slot0;
-                var2 = _closure1_slot1;
-                var2 = var2[var6];
-                var5 = var5.bind(var0)(var2);
-                var2 = var5.getClient;
-                var2 = var2.bind(var5)();
-                var1 = var4 === var2;
-                var3 = var2;
-            case 104:
-                if (var1) {
-                    _fun13039_ip = 111;
-                    continue _fun13039
-                }
-            case 107:
-                var1 = var0 === var3;
-            case 111:
-                if (var1) {
-                    _fun13039_ip = 137;
-                    continue _fun13039
-                }
-            case 114:
-                var2 = var3.addIntegration;
-                var1 = {};
-                var4 = 'AutoInjectMobileFeedback';
-                var1.name = var4;
-                var1 = var2.bind(var3)(var1);
-            case 137:
-                return var0;
-        }
-    };
-    var1.lazyLoadAutoInjectFeedbackIntegration = var2;
-    var2 = 'AutoInjectMobileFeedbackButton';
-    var1.AUTO_INJECT_FEEDBACK_BUTTON_INTEGRATION_NAME = var2;
-    var2 = function() { // Original name: lazyLoadAutoInjectFeedbackButtonIntegration, environment: var0
-        _fun13040: for (var _fun13040_ip = 0;;) switch (_fun13040_ip) {
-            case 0:
-                var3 = _closure1_slot0;
-                var0 = _closure1_slot1;
-                var6 = 0;
-                var1 = var0[var6];
-                var0 = undefined;
-                var3 = var3.bind(var0)(var1);
-                var1 = var3.getClient;
-                var7 = var1.bind(var3)();
-                var4 = null;
-                var1 = undefined;
-                if (!(var4 !== var7)) {
-                    _fun13040_ip = 65;
-                    continue _fun13040
-                }
-            case 42:
-                var1 = undefined;
-                if (!(var0 !== var7)) {
-                    _fun13040_ip = 65;
-                    continue _fun13040
-                }
-            case 48:
-                var5 = var7.getIntegrationByName;
-                var3 = 'AutoInjectMobileFeedbackButton';
-                var1 = var5.bind(var7)(var3);
-            case 65:
-                var3 = undefined;
-                if (var1) {
-                    _fun13040_ip = 104;
-                    continue _fun13040
-                }
-            case 70:
-                var5 = _closure1_slot0;
-                var2 = _closure1_slot1;
-                var2 = var2[var6];
-                var5 = var5.bind(var0)(var2);
-                var2 = var5.getClient;
-                var2 = var2.bind(var5)();
-                var1 = var4 === var2;
-                var3 = var2;
-            case 104:
-                if (var1) {
-                    _fun13040_ip = 111;
-                    continue _fun13040
-                }
-            case 107:
-                var1 = var0 === var3;
-            case 111:
-                if (var1) {
-                    _fun13040_ip = 137;
-                    continue _fun13040
-                }
-            case 114:
-                var2 = var3.addIntegration;
-                var1 = {};
-                var4 = 'AutoInjectMobileFeedbackButton';
-                var1.name = var4;
-                var1 = var2.bind(var3)(var1);
-            case 137:
-                return var0;
-        }
-    };
-    var1.lazyLoadAutoInjectFeedbackButtonIntegration = var2;
-    var2 = 'AutoInjectMobileScreenshotButton';
-    var1.AUTO_INJECT_SCREENSHOT_BUTTON_INTEGRATION_NAME = var2;
-    var0 = function() { // Original name: lazyLoadAutoInjectScreenshotButtonIntegration, environment: var0
         _fun13041: for (var _fun13041_ip = 0;;) switch (_fun13041_ip) {
             case 0:
                 var3 = _closure1_slot0;
@@ -248,7 +114,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             case 48:
                 var5 = var7.getIntegrationByName;
-                var3 = 'AutoInjectMobileScreenshotButton';
+                var3 = 'AutoInjectMobileFeedback';
                 var1 = var5.bind(var7)(var3);
             case 65:
                 var3 = undefined;
@@ -276,6 +142,140 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 if (var1) {
                     _fun13041_ip = 137;
                     continue _fun13041
+                }
+            case 114:
+                var2 = var3.addIntegration;
+                var1 = {};
+                var4 = 'AutoInjectMobileFeedback';
+                var1.name = var4;
+                var1 = var2.bind(var3)(var1);
+            case 137:
+                return var0;
+        }
+    };
+    var1.lazyLoadAutoInjectFeedbackIntegration = var2;
+    var2 = 'AutoInjectMobileFeedbackButton';
+    var1.AUTO_INJECT_FEEDBACK_BUTTON_INTEGRATION_NAME = var2;
+    var2 = function() { // Original name: lazyLoadAutoInjectFeedbackButtonIntegration, environment: var0
+        _fun13042: for (var _fun13042_ip = 0;;) switch (_fun13042_ip) {
+            case 0:
+                var3 = _closure1_slot0;
+                var0 = _closure1_slot1;
+                var6 = 0;
+                var1 = var0[var6];
+                var0 = undefined;
+                var3 = var3.bind(var0)(var1);
+                var1 = var3.getClient;
+                var7 = var1.bind(var3)();
+                var4 = null;
+                var1 = undefined;
+                if (!(var4 !== var7)) {
+                    _fun13042_ip = 65;
+                    continue _fun13042
+                }
+            case 42:
+                var1 = undefined;
+                if (!(var0 !== var7)) {
+                    _fun13042_ip = 65;
+                    continue _fun13042
+                }
+            case 48:
+                var5 = var7.getIntegrationByName;
+                var3 = 'AutoInjectMobileFeedbackButton';
+                var1 = var5.bind(var7)(var3);
+            case 65:
+                var3 = undefined;
+                if (var1) {
+                    _fun13042_ip = 104;
+                    continue _fun13042
+                }
+            case 70:
+                var5 = _closure1_slot0;
+                var2 = _closure1_slot1;
+                var2 = var2[var6];
+                var5 = var5.bind(var0)(var2);
+                var2 = var5.getClient;
+                var2 = var2.bind(var5)();
+                var1 = var4 === var2;
+                var3 = var2;
+            case 104:
+                if (var1) {
+                    _fun13042_ip = 111;
+                    continue _fun13042
+                }
+            case 107:
+                var1 = var0 === var3;
+            case 111:
+                if (var1) {
+                    _fun13042_ip = 137;
+                    continue _fun13042
+                }
+            case 114:
+                var2 = var3.addIntegration;
+                var1 = {};
+                var4 = 'AutoInjectMobileFeedbackButton';
+                var1.name = var4;
+                var1 = var2.bind(var3)(var1);
+            case 137:
+                return var0;
+        }
+    };
+    var1.lazyLoadAutoInjectFeedbackButtonIntegration = var2;
+    var2 = 'AutoInjectMobileScreenshotButton';
+    var1.AUTO_INJECT_SCREENSHOT_BUTTON_INTEGRATION_NAME = var2;
+    var0 = function() { // Original name: lazyLoadAutoInjectScreenshotButtonIntegration, environment: var0
+        _fun13043: for (var _fun13043_ip = 0;;) switch (_fun13043_ip) {
+            case 0:
+                var3 = _closure1_slot0;
+                var0 = _closure1_slot1;
+                var6 = 0;
+                var1 = var0[var6];
+                var0 = undefined;
+                var3 = var3.bind(var0)(var1);
+                var1 = var3.getClient;
+                var7 = var1.bind(var3)();
+                var4 = null;
+                var1 = undefined;
+                if (!(var4 !== var7)) {
+                    _fun13043_ip = 65;
+                    continue _fun13043
+                }
+            case 42:
+                var1 = undefined;
+                if (!(var0 !== var7)) {
+                    _fun13043_ip = 65;
+                    continue _fun13043
+                }
+            case 48:
+                var5 = var7.getIntegrationByName;
+                var3 = 'AutoInjectMobileScreenshotButton';
+                var1 = var5.bind(var7)(var3);
+            case 65:
+                var3 = undefined;
+                if (var1) {
+                    _fun13043_ip = 104;
+                    continue _fun13043
+                }
+            case 70:
+                var5 = _closure1_slot0;
+                var2 = _closure1_slot1;
+                var2 = var2[var6];
+                var5 = var5.bind(var0)(var2);
+                var2 = var5.getClient;
+                var2 = var2.bind(var5)();
+                var1 = var4 === var2;
+                var3 = var2;
+            case 104:
+                if (var1) {
+                    _fun13043_ip = 111;
+                    continue _fun13043
+                }
+            case 107:
+                var1 = var0 === var3;
+            case 111:
+                if (var1) {
+                    _fun13043_ip = 137;
+                    continue _fun13043
                 }
             case 114:
                 var2 = var3.addIntegration;

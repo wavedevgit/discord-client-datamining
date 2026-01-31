@@ -30,15 +30,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/activities/utils/isOnMetaHorizon.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: isOnMetaHorizon, environment: var1
-        _fun62439: for (var _fun62439_ip = 0;;) switch (_fun62439_ip) {
+        _fun62451: for (var _fun62451_ip = 0;;) switch (_fun62451_ip) {
             case 0:
                 var4 = arg0;
                 var5 = null;
                 var0 = var5 == var4;
                 var1 = undefined;
                 if (var0) {
-                    _fun62439_ip = 20;
-                    continue _fun62439
+                    _fun62451_ip = 20;
+                    continue _fun62451
                 }
             case 14:
                 var1 = var4.application_id;
@@ -46,15 +46,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = _closure1_slot0;
                 var0 = var1 === var0;
                 if (!var0) {
-                    _fun62439_ip = 98;
-                    continue _fun62439
+                    _fun62451_ip = 98;
+                    continue _fun62451
                 }
             case 34:
                 var1 = var5 == var4;
                 var6 = undefined;
                 if (var1) {
-                    _fun62439_ip = 49;
-                    continue _fun62439
+                    _fun62451_ip = 49;
+                    continue _fun62451
                 }
             case 43:
                 var6 = var4.platform;
@@ -63,15 +63,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.ANDROID;
                 var1 = var6 === var1;
                 if (var1) {
-                    _fun62439_ip = 95;
-                    continue _fun62439
+                    _fun62451_ip = 95;
+                    continue _fun62451
                 }
             case 66:
                 var5 = var5 == var4;
                 var3 = undefined;
                 if (var5) {
-                    _fun62439_ip = 81;
-                    continue _fun62439
+                    _fun62451_ip = 81;
+                    continue _fun62451
                 }
             case 75:
                 var3 = var4.platform;

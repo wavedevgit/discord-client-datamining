@@ -33,20 +33,20 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/client_themes/ClientThemesUtils.tsx';
     var3 = var4.bind(var5)(var3);
     var3 = function(arg0) { // Original name: getThemeForColor, environment: var1
-        _fun27923: for (var _fun27923_ip = 0;;) switch (_fun27923_ip) {
+        _fun27924: for (var _fun27924_ip = 0;;) switch (_fun27924_ip) {
             case 0:
                 var0 = arg0;
                 var1 = var0.l;
                 var0 = 0.3;
                 if (!(!(var1 <= var0))) {
-                    _fun27923_ip = 37;
-                    continue _fun27923
+                    _fun27924_ip = 37;
+                    continue _fun27924
                 }
             case 22:
                 var0 = _closure1_slot3;
                 var0 = var0.LIGHT;
-                _fun27923_ip = 50;
-                continue _fun27923;
+                _fun27924_ip = 50;
+                continue _fun27924;
             case 37:
                 var1 = _closure1_slot3;
                 var0 = var1.DARK;
@@ -100,22 +100,22 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getLinearGradientForBackgroundGradient = var3;
     var3 = function(arg0, arg1) { // Original name: areThemesEqualForGradientThemes, environment: var1
-        _fun27926: for (var _fun27926_ip = 0;;) switch (_fun27926_ip) {
+        _fun27927: for (var _fun27927_ip = 0;;) switch (_fun27927_ip) {
             case 0:
                 var5 = arg0;
                 var4 = arg1;
                 var0 = var5 === var4;
                 if (var0) {
-                    _fun27926_ip = 87;
-                    continue _fun27926
+                    _fun27927_ip = 87;
+                    continue _fun27927
                 }
             case 13:
                 var1 = _closure1_slot3;
                 var1 = var1.DARK;
                 var1 = var5 === var1;
                 if (!var1) {
-                    _fun27926_ip = 47;
-                    continue _fun27926
+                    _fun27927_ip = 47;
+                    continue _fun27927
                 }
             case 33:
                 var2 = _closure1_slot3;
@@ -123,16 +123,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var4 === var2;
             case 47:
                 if (var1) {
-                    _fun27926_ip = 84;
-                    continue _fun27926
+                    _fun27927_ip = 84;
+                    continue _fun27927
                 }
             case 50:
                 var2 = _closure1_slot3;
                 var2 = var2.DARKER;
                 var2 = var5 === var2;
                 if (!var2) {
-                    _fun27926_ip = 81;
-                    continue _fun27926
+                    _fun27927_ip = 81;
+                    continue _fun27927
                 }
             case 67:
                 var3 = _closure1_slot3;

@@ -82,20 +82,20 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = 'modules/channel/native/ScreenIndexFrozen.tsx';
     var6 = var7.bind(var8)(var6);
     var6 = function(arg0, arg1) { // Original name: freezeScreenIndex, environment: var1
-        _fun32960: for (var _fun32960_ip = 0;;) switch (_fun32960_ip) {
+        _fun32976: for (var _fun32976_ip = 0;;) switch (_fun32976_ip) {
             case 0:
                 var3 = arg1;
                 var2 = _closure1_slot3;
                 var1 = arg0;
                 if (var1) {
-                    _fun32960_ip = 28;
-                    continue _fun32960
+                    _fun32976_ip = 28;
+                    continue _fun32976
                 }
             case 16:
                 var1 = var2.delete;
                 var1 = var1.bind(var2)(var3);
-                _fun32960_ip = 38;
-                continue _fun32960;
+                _fun32976_ip = 38;
+                continue _fun32976;
             case 28:
                 var1 = var2.add;
                 var1 = var1.bind(var2)(var3);

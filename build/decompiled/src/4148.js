@@ -8,7 +8,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = dependencyMap;
     var _closure1_slot2 = var0;
     var0 = function(arg0, arg1, arg2, arg3, arg4) { // Original name: readExifIfd, environment: var2
-        _fun38000: for (var _fun38000_ip = 0;;) switch (_fun38000_ip) {
+        _fun38017: for (var _fun38017_ip = 0;;) switch (_fun38017_ip) {
             case 0:
                 var4 = arg0;
                 var11 = arg2;
@@ -17,8 +17,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var7 = undefined;
                 var0 = var4;
                 if (!(var7 !== var2)) {
-                    _fun38000_ip = 130;
-                    continue _fun38000
+                    _fun38017_ip = 130;
+                    continue _fun38017
                 }
             case 26:
                 var6 = _closure1_slot0;
@@ -52,7 +52,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var _closure1_slot6 = var0;
     var0 = function(arg0, arg1, arg2, arg3, arg4) { // Original name: readGpsIfd, environment: var2
-        _fun38001: for (var _fun38001_ip = 0;;) switch (_fun38001_ip) {
+        _fun38018: for (var _fun38018_ip = 0;;) switch (_fun38018_ip) {
             case 0:
                 var4 = arg0;
                 var11 = arg2;
@@ -61,8 +61,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var7 = undefined;
                 var0 = var4;
                 if (!(var7 !== var2)) {
-                    _fun38001_ip = 130;
-                    continue _fun38001
+                    _fun38018_ip = 130;
+                    continue _fun38018
                 }
             case 26:
                 var6 = _closure1_slot0;
@@ -96,7 +96,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var _closure1_slot7 = var0;
     var0 = function(arg0, arg1, arg2, arg3, arg4) { // Original name: readInteroperabilityIfd, environment: var2
-        _fun38002: for (var _fun38002_ip = 0;;) switch (_fun38002_ip) {
+        _fun38019: for (var _fun38019_ip = 0;;) switch (_fun38019_ip) {
             case 0:
                 var4 = arg0;
                 var11 = arg2;
@@ -105,8 +105,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var7 = undefined;
                 var0 = var4;
                 if (!(var7 !== var2)) {
-                    _fun38002_ip = 130;
-                    continue _fun38002
+                    _fun38019_ip = 130;
+                    continue _fun38019
                 }
             case 26:
                 var6 = _closure1_slot0;

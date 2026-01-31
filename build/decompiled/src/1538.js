@@ -20,7 +20,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var3.bind(var0)(var4);
     var _closure1_slot2 = var3;
     var1 = function(arg0) { // Original name: useCurrentRender, environment: var1
-        _fun17452: for (var _fun17452_ip = 0;;) switch (_fun17452_ip) {
+        _fun17454: for (var _fun17454_ip = 0;;) switch (_fun17454_ip) {
             case 0:
                 var0 = arg0;
                 var1 = var0.state;
@@ -37,16 +37,16 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = var4.bind(var5)(var2);
                 var4 = var2;
                 if (!var4) {
-                    _fun17452_ip = 76;
-                    continue _fun17452
+                    _fun17454_ip = 76;
+                    continue _fun17454
                 }
             case 66:
                 var5 = var6.isFocused;
                 var4 = var5.bind(var6)();
             case 76:
                 if (!var4) {
-                    _fun17452_ip = 114;
-                    continue _fun17452
+                    _fun17454_ip = 114;
+                    continue _fun17454
                 }
             case 79:
                 var4 = var1.routes;

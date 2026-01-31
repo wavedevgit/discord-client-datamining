@@ -6,7 +6,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = dependencyMap;
     var _closure1_slot1 = var0;
     var0 = function(arg0, arg1) { // Original name: getImageWidth, environment: var2
-        _fun38308: for (var _fun38308_ip = 0;;) switch (_fun38308_ip) {
+        _fun38325: for (var _fun38325_ip = 0;;) switch (_fun38325_ip) {
             case 0:
                 var3 = arg0;
                 var2 = arg1;
@@ -16,8 +16,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = 4;
                 var0 = var5 + var0;
                 if (!(!(var0 > var4))) {
-                    _fun38308_ip = 102;
-                    continue _fun38308
+                    _fun38325_ip = 102;
+                    continue _fun38325
                 }
             case 29:
                 var4 = _closure1_slot0;
@@ -44,7 +44,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var _closure1_slot2 = var0;
     var0 = function(arg0, arg1) { // Original name: getImageHeight, environment: var2
-        _fun38309: for (var _fun38309_ip = 0;;) switch (_fun38309_ip) {
+        _fun38326: for (var _fun38326_ip = 0;;) switch (_fun38326_ip) {
             case 0:
                 var3 = arg0;
                 var4 = arg1;
@@ -53,8 +53,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = var3.byteLength;
                 var1 = var1 + var0;
                 if (!(!(var1 > var2))) {
-                    _fun38309_ip = 106;
-                    continue _fun38309
+                    _fun38326_ip = 106;
+                    continue _fun38326
                 }
             case 27:
                 var5 = _closure1_slot0;
@@ -83,7 +83,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var _closure1_slot3 = var0;
     var0 = function(arg0, arg1) { // Original name: getBitDepth, environment: var2
-        _fun38310: for (var _fun38310_ip = 0;;) switch (_fun38310_ip) {
+        _fun38327: for (var _fun38327_ip = 0;;) switch (_fun38327_ip) {
             case 0:
                 var3 = arg0;
                 var4 = arg1;
@@ -93,8 +93,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = 1;
                 var1 = var5 + var1;
                 if (!(!(var1 > var2))) {
-                    _fun38310_ip = 104;
-                    continue _fun38310
+                    _fun38327_ip = 104;
+                    continue _fun38327
                 }
             case 30:
                 var5 = _closure1_slot0;
@@ -122,7 +122,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var _closure1_slot4 = var0;
     var0 = function(arg0, arg1) { // Original name: getColorType, environment: var2
-        _fun38311: for (var _fun38311_ip = 0;;) switch (_fun38311_ip) {
+        _fun38328: for (var _fun38328_ip = 0;;) switch (_fun38328_ip) {
             case 0:
                 var3 = arg0;
                 var4 = arg1;
@@ -132,8 +132,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = 1;
                 var1 = var5 + var1;
                 if (!(!(var1 > var2))) {
-                    _fun38311_ip = 107;
-                    continue _fun38311
+                    _fun38328_ip = 107;
+                    continue _fun38328
                 }
             case 30:
                 var5 = _closure1_slot0;
@@ -156,8 +156,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 };
                 var1 = var1[var2];
                 if (var1) {
-                    _fun38311_ip = 101;
-                    continue _fun38311
+                    _fun38328_ip = 101;
+                    continue _fun38328
                 }
             case 97:
                 var1 = 'Unknown';
@@ -171,7 +171,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var _closure1_slot5 = var0;
     var0 = function(arg0, arg1) { // Original name: getCompression, environment: var2
-        _fun38312: for (var _fun38312_ip = 0;;) switch (_fun38312_ip) {
+        _fun38329: for (var _fun38329_ip = 0;;) switch (_fun38329_ip) {
             case 0:
                 var4 = arg0;
                 var5 = arg1;
@@ -181,8 +181,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = 1;
                 var1 = var3 + var1;
                 if (!(!(var1 > var2))) {
-                    _fun38312_ip = 96;
-                    continue _fun38312
+                    _fun38329_ip = 96;
+                    continue _fun38329
                 }
             case 30:
                 var6 = _closure1_slot0;
@@ -198,8 +198,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0.value = var2;
                 var1 = 'Unknown';
                 if (!(var3 === var2)) {
-                    _fun38312_ip = 90;
-                    continue _fun38312
+                    _fun38329_ip = 90;
+                    continue _fun38329
                 }
             case 84:
                 var1 = 'Deflate/Inflate';
@@ -213,7 +213,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var _closure1_slot6 = var0;
     var0 = function(arg0, arg1) { // Original name: getFilter, environment: var2
-        _fun38313: for (var _fun38313_ip = 0;;) switch (_fun38313_ip) {
+        _fun38330: for (var _fun38330_ip = 0;;) switch (_fun38330_ip) {
             case 0:
                 var4 = arg0;
                 var5 = arg1;
@@ -223,8 +223,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = 1;
                 var1 = var3 + var1;
                 if (!(!(var1 > var2))) {
-                    _fun38313_ip = 96;
-                    continue _fun38313
+                    _fun38330_ip = 96;
+                    continue _fun38330
                 }
             case 30:
                 var6 = _closure1_slot0;
@@ -240,8 +240,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0.value = var2;
                 var1 = 'Unknown';
                 if (!(var3 === var2)) {
-                    _fun38313_ip = 90;
-                    continue _fun38313
+                    _fun38330_ip = 90;
+                    continue _fun38330
                 }
             case 84:
                 var1 = 'Adaptive';
@@ -255,7 +255,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var _closure1_slot7 = var0;
     var0 = function(arg0, arg1) { // Original name: getInterlace, environment: var2
-        _fun38314: for (var _fun38314_ip = 0;;) switch (_fun38314_ip) {
+        _fun38331: for (var _fun38331_ip = 0;;) switch (_fun38331_ip) {
             case 0:
                 var3 = arg0;
                 var4 = arg1;
@@ -265,8 +265,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = 1;
                 var1 = var5 + var1;
                 if (!(!(var1 > var2))) {
-                    _fun38314_ip = 107;
-                    continue _fun38314
+                    _fun38331_ip = 107;
+                    continue _fun38331
                 }
             case 30:
                 var5 = _closure1_slot0;
@@ -286,8 +286,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 };
                 var1 = var1[var2];
                 if (var1) {
-                    _fun38314_ip = 101;
-                    continue _fun38314
+                    _fun38331_ip = 101;
+                    continue _fun38331
                 }
             case 97:
                 var1 = 'Unknown';

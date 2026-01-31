@@ -4,17 +4,17 @@ public final class R {
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class drawable {
-        public static int ic_call_24dp = 0x7f080286;
-        public static int ic_call_disconnect_24dp = 0x7f08028d;
-        public static int ic_check_grey_24dp = 0x7f08028f;
-        public static int ic_notification_24dp = 0x7f0802a1;
-        public static int ic_notification_call_24dp = 0x7f0802a2;
-        public static int ic_notification_friends_24dp = 0x7f0802a3;
-        public static int ic_notification_message_24dp = 0x7f0802a4;
-        public static int ic_notifications_off_24dp = 0x7f0802a5;
-        public static int ic_send_white_24dp = 0x7f0802ad;
-        public static int incoming_call_gradient = 0x7f080573;
-        public static int round_button = 0x7f080741;
+        public static int ic_call_24dp = 0x7f080285;
+        public static int ic_call_disconnect_24dp = 0x7f08028c;
+        public static int ic_check_grey_24dp = 0x7f08028e;
+        public static int ic_notification_24dp = 0x7f0802a0;
+        public static int ic_notification_call_24dp = 0x7f0802a1;
+        public static int ic_notification_friends_24dp = 0x7f0802a2;
+        public static int ic_notification_message_24dp = 0x7f0802a3;
+        public static int ic_notifications_off_24dp = 0x7f0802a4;
+        public static int ic_send_white_24dp = 0x7f0802ac;
+        public static int incoming_call_gradient = 0x7f080572;
+        public static int round_button = 0x7f08073f;
 
         private drawable() {
         }

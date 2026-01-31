@@ -48,7 +48,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var11 = var7;
         var7 = copyDataProperties(var12, var11);
         var7 = function() { // Original name: onDismissed, environment: var1
-            _fun50532: for (var _fun50532_ip = 0;;) switch (_fun50532_ip) {
+            _fun50549: for (var _fun50549_ip = 0;;) switch (_fun50549_ip) {
                 case 0:
                     var2 = _closure1_slot1;
                     var1 = _closure1_slot2;
@@ -63,8 +63,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var3 = var2.onDismissed;
                     var2 = null;
                     if (!(var2 != var3)) {
-                        _fun50532_ip = 72;
-                        continue _fun50532
+                        _fun50549_ip = 72;
+                        continue _fun50549
                     }
                 case 58:
                     var2 = _closure2_slot1;
@@ -89,4 +89,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.showSimpleLoadingModal = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [4524, 5644, 1307, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [4525, 5645, 1307, 2]);

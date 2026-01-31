@@ -64,7 +64,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/parent_tools/native/FamilyCenterActivityPage.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function() { // Original name: FamilyCenterActivityPage, environment: var1
-        _fun81691: for (var _fun81691_ip = 0;;) switch (_fun81691_ip) {
+        _fun81721: for (var _fun81721_ip = 0;;) switch (_fun81721_ip) {
             case 0:
                 var0 = _closure1_slot7;
                 var3 = undefined;
@@ -84,8 +84,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var4.length;
                 var4 = 0;
                 if (!(var4 !== var5)) {
-                    _fun81691_ip = 110;
-                    continue _fun81691
+                    _fun81721_ip = 110;
+                    continue _fun81721
                 }
             case 73:
                 var6 = _closure1_slot4;
@@ -96,8 +96,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var5.bind(var3)(var4);
                 var4 = {};
                 var4 = var6.bind(var3)(var5, var4);
-                _fun81691_ip = 254;
-                continue _fun81691;
+                _fun81721_ip = 254;
+                continue _fun81721;
             case 110:
                 var7 = _closure1_slot6;
                 var6 = _closure1_slot5;
@@ -142,4 +142,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 6470, 10389, 10417, 10398, 10422, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 6471, 10391, 10419, 10400, 10424, 2]);

@@ -14,7 +14,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         'LITTLE_ENDIAN': 18761
     };
     var2 = function(arg0, arg1) { // Original name: getByteOrder, environment: var2
-        _fun37897: for (var _fun37897_ip = 0;;) switch (_fun37897_ip) {
+        _fun37914: for (var _fun37914_ip = 0;;) switch (_fun37914_ip) {
             case 0:
                 var3 = arg0;
                 var2 = arg1;
@@ -22,16 +22,16 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = var0.bind(var3)(var2);
                 var0 = 18761;
                 if (!(var1 !== var0)) {
-                    _fun37897_ip = 86;
-                    continue _fun37897
+                    _fun37914_ip = 86;
+                    continue _fun37914
                 }
             case 27:
                 var1 = var3.getUint16;
                 var2 = var1.bind(var3)(var2);
                 var1 = 19789;
                 if (!(var2 !== var1)) {
-                    _fun37897_ip = 84;
-                    continue _fun37897
+                    _fun37914_ip = 84;
+                    continue _fun37914
                 }
             case 48:
                 var2 = global;

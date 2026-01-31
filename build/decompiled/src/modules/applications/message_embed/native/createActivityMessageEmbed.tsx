@@ -27,7 +27,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/applications/message_embed/native/createActivityMessageEmbed.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: createActivityMessageEmbed, environment: var1
-        _fun92996: for (var _fun92996_ip = 0;;) switch (_fun92996_ip) {
+        _fun92355: for (var _fun92355_ip = 0;;) switch (_fun92355_ip) {
             case 0:
                 var0 = arg0;
                 var8 = var0.theme;
@@ -49,8 +49,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.bind(var4)(var0);
                 var0 = null;
                 if (!(var0 != var1)) {
-                    _fun92996_ip = 324;
-                    continue _fun92996
+                    _fun92355_ip = 324;
+                    continue _fun92355
                 }
             case 92:
                 var5 = _closure1_slot0;
@@ -62,8 +62,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var4.bind(var5)(var7);
                 var7 = var4.linkId;
                 if (!(var0 != var7)) {
-                    _fun92996_ip = 322;
-                    continue _fun92996
+                    _fun92355_ip = 322;
+                    continue _fun92355
                 }
             case 136:
                 var5 = _closure1_slot0;
@@ -74,8 +74,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var5.getOrFetchCustomActivityLink;
                 var4 = var4.bind(var5)(var6, var7);
                 if (!(var0 != var4)) {
-                    _fun92996_ip = 320;
-                    continue _fun92996
+                    _fun92355_ip = 320;
+                    continue _fun92355
                 }
             case 175:
                 var5 = _closure1_slot2;
@@ -88,8 +88,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var0 == var5;
                 var3 = undefined;
                 if (var6) {
-                    _fun92996_ip = 216;
-                    continue _fun92996
+                    _fun92355_ip = 216;
+                    continue _fun92355
                 }
             case 211:
                 var3 = var5.name;
@@ -97,8 +97,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var0 != var3;
                 var5 = null;
                 if (!var6) {
-                    _fun92996_ip = 228;
-                    continue _fun92996
+                    _fun92355_ip = 228;
+                    continue _fun92355
                 }
             case 225:
                 var5 = var3;
@@ -119,8 +119,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var0 != var3;
                 var4 = null;
                 if (!var5) {
-                    _fun92996_ip = 300;
-                    continue _fun92996
+                    _fun92355_ip = 300;
+                    continue _fun92355
                 }
             case 297:
                 var4 = var3;
@@ -140,4 +140,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.createActivityMessageEmbed = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3413, 11565, 6502, 12076, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3413, 11500, 6503, 12011, 2]);

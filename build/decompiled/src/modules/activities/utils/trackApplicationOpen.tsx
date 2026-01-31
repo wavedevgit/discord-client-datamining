@@ -28,7 +28,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/activities/utils/trackApplicationOpen.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: trackApplicationOpen, environment: var1
-        _fun64070: for (var _fun64070_ip = 0;;) switch (_fun64070_ip) {
+        _fun64082: for (var _fun64082_ip = 0;;) switch (_fun64082_ip) {
             case 0:
                 var0 = arg0;
                 var18 = var0.type;
@@ -65,8 +65,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var14 = var12 != var13;
                 var12 = undefined;
                 if (!var14) {
-                    _fun64070_ip = 162;
-                    continue _fun64070
+                    _fun64082_ip = 162;
+                    continue _fun64082
                 }
             case 159:
                 var12 = var13;

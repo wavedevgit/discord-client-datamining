@@ -22,15 +22,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/markup/MarkupReactLinkUtils.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: isLinkTrusted, environment: var1
-        _fun76120: for (var _fun76120_ip = 0;;) switch (_fun76120_ip) {
+        _fun76150: for (var _fun76150_ip = 0;;) switch (_fun76150_ip) {
             case 0:
                 var5 = arg0;
                 var0 = var5.target;
                 var8 = null;
                 var0 = var8 != var0;
                 if (!var0) {
-                    _fun76120_ip = 125;
-                    continue _fun76120
+                    _fun76150_ip = 125;
+                    continue _fun76150
                 }
             case 18:
                 var3 = _closure1_slot0;
@@ -43,15 +43,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var5.target;
                 var6 = var5.title;
                 if (!(var8 != var6)) {
-                    _fun76120_ip = 76;
-                    continue _fun76120
+                    _fun76150_ip = 76;
+                    continue _fun76150
                 }
             case 63:
                 var8 = var5.title;
                 var6 = '';
                 if (!(var6 === var8)) {
-                    _fun76120_ip = 114;
-                    continue _fun76120
+                    _fun76150_ip = 114;
+                    continue _fun76150
                 }
             case 76:
                 var6 = _closure1_slot0;
@@ -62,8 +62,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var7.astToString;
                 var1 = var5.content;
                 var1 = var6.bind(var7)(var1);
-                _fun76120_ip = 119;
-                continue _fun76120;
+                _fun76150_ip = 119;
+                continue _fun76150;
             case 114:
                 var1 = var5.title;
             case 119:
@@ -74,4 +74,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.isLinkTrusted = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5851, 4827, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5852, 4828, 2]);

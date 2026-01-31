@@ -119,7 +119,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/polls/native/EditPollCreationImageAltTextModal.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: EditPollCreationImageAltTextModal, environment: var1
-        _fun109093: for (var _fun109093_ip = 0;;) switch (_fun109093_ip) {
+        _fun108449: for (var _fun108449_ip = 0;;) switch (_fun108449_ip) {
             case 0:
                 var2 = arg0;
                 var7 = var2.channelId;
@@ -151,8 +151,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var1 == var7;
                 var6 = undefined;
                 if (var9) {
-                    _fun109093_ip = 133;
-                    continue _fun109093
+                    _fun108449_ip = 133;
+                    continue _fun108449
                 }
             case 128:
                 var6 = var7.description;
@@ -160,8 +160,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var1 != var6;
                 var1 = '';
                 if (!var7) {
-                    _fun109093_ip = 147;
-                    continue _fun109093
+                    _fun108449_ip = 147;
+                    continue _fun108449
                 }
             case 144:
                 var1 = var6;
@@ -181,13 +181,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1[0] = var5;
                 var1[1] = var24;
                 var0 = function() { // Environment: var0
-                    _fun109094: for (var _fun109094_ip = 0;;) switch (_fun109094_ip) {
+                    _fun108450: for (var _fun108450_ip = 0;;) switch (_fun108450_ip) {
                         case 0:
                             var2 = _closure2_slot1;
                             var1 = null;
                             if (!(var1 != var2)) {
-                                _fun109094_ip = 28;
-                                continue _fun109094
+                                _fun108450_ip = 28;
+                                continue _fun108450
                             }
                         case 13:
                             var2 = _closure2_slot0;
@@ -411,4 +411,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 6569, 33, 1297, 671, 14022, 14024, 4696, 1234, 4045, 5284, 3901, 5733, 9224, 5891, 5339, 5368, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 6570, 33, 1297, 671, 13953, 13955, 4697, 1234, 4045, 5285, 3900, 5734, 9226, 5892, 5340, 5369, 2]);

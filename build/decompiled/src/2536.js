@@ -10,25 +10,25 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = '__esModule';
     var1 = var3.bind(var4)(var0, var1, var2);
     var1 = function(arg0) { // Original name: toInteger, environment: var1
-        _fun21789: for (var _fun21789_ip = 0;;) switch (_fun21789_ip) {
+        _fun21791: for (var _fun21791_ip = 0;;) switch (_fun21791_ip) {
             case 0:
                 var1 = arg0;
                 var0 = null;
                 if (!(var0 !== var1)) {
-                    _fun21789_ip = 96;
-                    continue _fun21789
+                    _fun21791_ip = 96;
+                    continue _fun21791
                 }
             case 9:
                 var0 = true;
                 if (!(var0 !== var1)) {
-                    _fun21789_ip = 96;
-                    continue _fun21789
+                    _fun21791_ip = 96;
+                    continue _fun21791
                 }
             case 15:
                 var0 = false;
                 if (!(var0 !== var1)) {
-                    _fun21789_ip = 96;
-                    continue _fun21789
+                    _fun21791_ip = 96;
+                    continue _fun21791
                 }
             case 21:
                 var2 = global;
@@ -38,21 +38,21 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = var2.isNaN;
                 var1 = var1.bind(var3)(var0);
                 if (var1) {
-                    _fun21789_ip = 94;
-                    continue _fun21789
+                    _fun21791_ip = 94;
+                    continue _fun21791
                 }
             case 50:
                 var1 = 0;
                 if (!(!(var0 < var1))) {
-                    _fun21789_ip = 75;
-                    continue _fun21789
+                    _fun21791_ip = 75;
+                    continue _fun21791
                 }
             case 56:
                 var3 = var2.Math;
                 var1 = var3.floor;
                 var1 = var1.bind(var3)(var0);
-                _fun21789_ip = 92;
-                continue _fun21789;
+                _fun21791_ip = 92;
+                continue _fun21791;
             case 75:
                 var3 = var2.Math;
                 var2 = var3.ceil;

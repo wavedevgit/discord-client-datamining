@@ -41,7 +41,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/activities/trackActivityThermalStateNoticeShown.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function() { // Original name: trackActivityThermalStateNoticeShown, environment: var1
-        _fun111292: for (var _fun111292_ip = 0;;) switch (_fun111292_ip) {
+        _fun110642: for (var _fun110642_ip = 0;;) switch (_fun110642_ip) {
             case 0:
                 var1 = _closure1_slot5;
                 var0 = var1.getCurrentEmbeddedActivity;
@@ -57,8 +57,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var6 == var1;
                 var2 = undefined;
                 if (var7) {
-                    _fun111292_ip = 61;
-                    continue _fun111292
+                    _fun110642_ip = 61;
+                    continue _fun110642
                 }
             case 56:
                 var2 = var1.location;
@@ -70,8 +70,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var6 == var1;
                 var8 = undefined;
                 if (var2) {
-                    _fun111292_ip = 96;
-                    continue _fun111292
+                    _fun110642_ip = 96;
+                    continue _fun110642
                 }
             case 90:
                 var8 = var1.compositeInstanceId;
@@ -79,8 +79,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var6 == var1;
                 var9 = undefined;
                 if (var2) {
-                    _fun111292_ip = 110;
-                    continue _fun111292
+                    _fun110642_ip = 110;
+                    continue _fun110642
                 }
             case 105:
                 var9 = var1.applicationId;
@@ -100,8 +100,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var6 == var7;
                 var6 = undefined;
                 if (var8) {
-                    _fun111292_ip = 175;
-                    continue _fun111292
+                    _fun110642_ip = 175;
+                    continue _fun110642
                 }
             case 170:
                 var6 = var7.guild_id;

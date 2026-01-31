@@ -6,14 +6,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = dependencyMap;
     var _closure1_slot1 = var0;
     var0 = function(arg0) { // Original name: getGifVersion, environment: var2
-        _fun38344: for (var _fun38344_ip = 0;;) switch (_fun38344_ip) {
+        _fun38361: for (var _fun38361_ip = 0;;) switch (_fun38361_ip) {
             case 0:
                 var3 = arg0;
                 var1 = var3.byteLength;
                 var0 = 6;
                 if (!(!(var0 > var1))) {
-                    _fun38344_ip = 68;
-                    continue _fun38344
+                    _fun38361_ip = 68;
+                    continue _fun38361
                 }
             case 16:
                 var2 = _closure1_slot0;
@@ -36,14 +36,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var _closure1_slot2 = var0;
     var0 = function(arg0) { // Original name: getImageWidth, environment: var2
-        _fun38345: for (var _fun38345_ip = 0;;) switch (_fun38345_ip) {
+        _fun38362: for (var _fun38362_ip = 0;;) switch (_fun38362_ip) {
             case 0:
                 var3 = arg0;
                 var1 = var3.byteLength;
                 var0 = 8;
                 if (!(!(var0 > var1))) {
-                    _fun38345_ip = 72;
-                    continue _fun38345
+                    _fun38362_ip = 72;
+                    continue _fun38362
                 }
             case 16:
                 var2 = var3.getUint16;
@@ -67,14 +67,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var _closure1_slot3 = var0;
     var0 = function(arg0) { // Original name: getImageHeight, environment: var2
-        _fun38346: for (var _fun38346_ip = 0;;) switch (_fun38346_ip) {
+        _fun38363: for (var _fun38363_ip = 0;;) switch (_fun38363_ip) {
             case 0:
                 var3 = arg0;
                 var1 = var3.byteLength;
                 var0 = 10;
                 if (!(!(var0 > var1))) {
-                    _fun38346_ip = 72;
-                    continue _fun38346
+                    _fun38363_ip = 72;
+                    continue _fun38363
                 }
             case 16:
                 var2 = var3.getUint16;
@@ -98,14 +98,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var _closure1_slot4 = var0;
     var0 = function(arg0) { // Original name: getGlobalColorMap, environment: var2
-        _fun38347: for (var _fun38347_ip = 0;;) switch (_fun38347_ip) {
+        _fun38364: for (var _fun38364_ip = 0;;) switch (_fun38364_ip) {
             case 0:
                 var2 = arg0;
                 var1 = var2.byteLength;
                 var0 = 11;
                 if (!(!(var0 > var1))) {
-                    _fun38347_ip = 75;
-                    continue _fun38347
+                    _fun38364_ip = 75;
+                    continue _fun38364
                 }
             case 16:
                 var1 = var2.getUint8;
@@ -120,8 +120,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = 'No';
                 var2 = 1;
                 if (!(var2 === var3)) {
-                    _fun38347_ip = 69;
-                    continue _fun38347
+                    _fun38364_ip = 69;
+                    continue _fun38364
                 }
             case 63:
                 var1 = 'Yes';
@@ -135,14 +135,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var _closure1_slot5 = var0;
     var0 = function(arg0) { // Original name: getColorResolution, environment: var2
-        _fun38348: for (var _fun38348_ip = 0;;) switch (_fun38348_ip) {
+        _fun38365: for (var _fun38365_ip = 0;;) switch (_fun38365_ip) {
             case 0:
                 var2 = arg0;
                 var1 = var2.byteLength;
                 var0 = 11;
                 if (!(!(var0 > var1))) {
-                    _fun38348_ip = 107;
-                    continue _fun38348
+                    _fun38365_ip = 107;
+                    continue _fun38365
                 }
             case 16:
                 var1 = var2.getUint8;
@@ -158,8 +158,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0.value = var5;
                 var4 = 'bits';
                 if (!(var1 === var5)) {
-                    _fun38348_ip = 71;
-                    continue _fun38348
+                    _fun38365_ip = 71;
+                    continue _fun38365
                 }
             case 65:
                 var4 = 'bit';
@@ -179,14 +179,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var _closure1_slot6 = var0;
     var0 = function(arg0) { // Original name: getBitDepth, environment: var2
-        _fun38349: for (var _fun38349_ip = 0;;) switch (_fun38349_ip) {
+        _fun38366: for (var _fun38366_ip = 0;;) switch (_fun38366_ip) {
             case 0:
                 var2 = arg0;
                 var1 = var2.byteLength;
                 var0 = 11;
                 if (!(!(var0 > var1))) {
-                    _fun38349_ip = 100;
-                    continue _fun38349
+                    _fun38366_ip = 100;
+                    continue _fun38366
                 }
             case 16:
                 var1 = var2.getUint8;
@@ -200,8 +200,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0.value = var5;
                 var4 = 'bits';
                 if (!(var1 === var5)) {
-                    _fun38349_ip = 64;
-                    continue _fun38349
+                    _fun38366_ip = 64;
+                    continue _fun38366
                 }
             case 58:
                 var4 = 'bit';

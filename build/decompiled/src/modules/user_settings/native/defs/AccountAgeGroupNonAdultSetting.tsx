@@ -46,7 +46,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var9 = var9.ACCOUNT;
     var1.parent = var9;
     var9 = function() { // Original name: useAccountAgeGroupNonAdultSettingTrailing, environment: var7
-        _fun80980: for (var _fun80980_ip = 0;;) switch (_fun80980_ip) {
+        _fun81010: for (var _fun81010_ip = 0;;) switch (_fun81010_ip) {
             case 0:
                 var10 = _closure1_slot0;
                 var0 = _closure1_slot2;
@@ -81,8 +81,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var8.bind(var9)(var0);
                 var0 = var4.bind(var7)(var3, var0);
                 if (!var2) {
-                    _fun80980_ip = 211;
-                    continue _fun80980
+                    _fun81010_ip = 211;
+                    continue _fun81010
                 }
             case 157:
                 var4 = _closure1_slot0;
@@ -123,7 +123,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.onPress = var9;
     var1.withArrow = var8;
     var7 = function() { // Original name: AccountAgeGroupNonAdultSettingPredicate, environment: var7
-        _fun80982: for (var _fun80982_ip = 0;;) switch (_fun80982_ip) {
+        _fun81012: for (var _fun81012_ip = 0;;) switch (_fun81012_ip) {
             case 0:
                 var5 = _closure1_slot0;
                 var6 = _closure1_slot2;
@@ -149,21 +149,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = 'explicit_media_redaction_utils';
                 var3 = var4.bind(var5)(var3);
                 if (var0) {
-                    _fun80982_ip = 111;
-                    continue _fun80982
+                    _fun81012_ip = 111;
+                    continue _fun81012
                 }
             case 108:
                 var0 = var3;
             case 111:
                 if (!var0) {
-                    _fun80982_ip = 126;
-                    continue _fun80982
+                    _fun81012_ip = 126;
+                    continue _fun81012
                 }
             case 114:
                 var1 = !var1;
                 if (var1) {
-                    _fun80982_ip = 123;
-                    continue _fun80982
+                    _fun81012_ip = 123;
+                    continue _fun81012
                 }
             case 120:
                 var1 = var2;
@@ -183,4 +183,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [6968, 5893, 4518, 4212, 4516, 1234, 4239, 4238, 8943, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [6967, 5894, 4519, 4212, 4517, 1234, 4240, 4239, 8943, 2]);

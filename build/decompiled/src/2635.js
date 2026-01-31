@@ -1,10 +1,10 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun22042: for (var _fun22042_ip = 0;;) switch (_fun22042_ip) {
+    _fun22044: for (var _fun22044_ip = 0;;) switch (_fun22044_ip) {
         case 0:
             var1 = exports;
             var4 = function(arg0, arg1, arg2, arg3) { // Original name: dayAndTimeWithAdjective, environment: var2
-                _fun22043: for (var _fun22043_ip = 0;;) switch (_fun22043_ip) {
+                _fun22045: for (var _fun22045_ip = 0;;) switch (_fun22045_ip) {
                     case 0:
                         var6 = arg0;
                         var3 = arg1;
@@ -15,25 +15,25 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var1 = arg3;
                         var1 = var5.bind(var4)(var3, var2, var1);
                         if (var1) {
-                            _fun22043_ip = 110;
-                            continue _fun22043
+                            _fun22045_ip = 110;
+                            continue _fun22045
                         }
                     case 36:
                         var1 = 'lastWeek';
                         if (!(var1 !== var6)) {
-                            _fun22043_ip = 104;
-                            continue _fun22043
+                            _fun22045_ip = 104;
+                            continue _fun22045
                         }
                     case 44:
                         var1 = 'nextWeek';
                         if (!(var1 === var6)) {
-                            _fun22043_ip = 58;
-                            continue _fun22043
+                            _fun22045_ip = 58;
+                            continue _fun22045
                         }
                     case 52:
                         var1 = _closure1_slot3;
-                        _fun22043_ip = 114;
-                        continue _fun22043;
+                        _fun22045_ip = 114;
+                        continue _fun22045;
                     case 58:
                         var2 = global;
                         var5 = var2.Error;
@@ -52,8 +52,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         throw var2;
                     case 104:
                         var1 = _closure1_slot1;
-                        _fun22043_ip = 114;
-                        continue _fun22043;
+                        _fun22045_ip = 114;
+                        continue _fun22045;
                     case 110:
                         var1 = _closure1_slot2;
                     case 114:
@@ -85,15 +85,15 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var3 = arg1;
             var6 = var3.bind(var0)(var5);
             if (!var6) {
-                _fun22042_ip = 82;
-                continue _fun22042
+                _fun22044_ip = 82;
+                continue _fun22044
             }
         case 70:
             var5 = var6.__esModule;
             var3 = var6;
             if (var5) {
-                _fun22042_ip = 91;
-                continue _fun22042
+                _fun22044_ip = 91;
+                continue _fun22044
             }
         case 82:
             var5 = {};
@@ -138,7 +138,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var3.nextWeek = var4;
             var _closure1_slot5 = var3;
             var2 = function(arg0, arg1, arg2, arg3) { // Original name: formatRelative, environment: var2
-                _fun22044: for (var _fun22044_ip = 0;;) switch (_fun22044_ip) {
+                _fun22046: for (var _fun22046_ip = 0;;) switch (_fun22046_ip) {
                     case 0:
                         var6 = arg0;
                         var0 = _closure1_slot5;
@@ -147,8 +147,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var1 = typeof var5;
                         var0 = var5;
                         if (!(var2 === var1)) {
-                            _fun22044_ip = 46;
-                            continue _fun22044
+                            _fun22046_ip = 46;
+                            continue _fun22046
                         }
                     case 28:
                         var11 = undefined;

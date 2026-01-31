@@ -75,7 +75,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var2 = new Array(1);
         var2[0] = var9;
         var0 = function() { // Environment: var0
-            _fun68384: for (var _fun68384_ip = 0;;) switch (_fun68384_ip) {
+            _fun68408: for (var _fun68408_ip = 0;;) switch (_fun68408_ip) {
                 case 0:
                     var0 = _closure1_slot5;
                     var2 = var0.absolute;
@@ -89,8 +89,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var2 = var3.bind(var1)(var2);
                     var2 = var2.IS_FABRIC;
                     if (!var2) {
-                        _fun68384_ip = 59;
-                        continue _fun68384
+                        _fun68408_ip = 59;
+                        continue _fun68408
                     }
                 case 52:
                     var1 = _closure2_slot2;

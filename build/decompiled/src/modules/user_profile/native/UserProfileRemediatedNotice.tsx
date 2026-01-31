@@ -75,7 +75,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/user_profile/native/UserProfileRemediatedNotice.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: RemediatedUserNotice, environment: var1
-        _fun92594: for (var _fun92594_ip = 0;;) switch (_fun92594_ip) {
+        _fun91988: for (var _fun91988_ip = 0;;) switch (_fun91988_ip) {
             case 0:
                 var0 = arg0;
                 var1 = var0.user;
@@ -124,20 +124,20 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var0.isBlocked;
                 var6 = var0.isIgnored;
                 if (var7) {
-                    _fun92594_ip = 140;
-                    continue _fun92594
+                    _fun91988_ip = 140;
+                    continue _fun91988
                 }
             case 124:
                 var0 = null;
                 if (!var6) {
-                    _fun92594_ip = 549;
-                    continue _fun92594
+                    _fun91988_ip = 549;
+                    continue _fun91988
                 }
             case 132:
                 var0 = null;
                 if (var1) {
-                    _fun92594_ip = 549;
-                    continue _fun92594
+                    _fun91988_ip = 549;
+                    continue _fun91988
                 }
             case 140:
                 var3 = _closure1_slot8;
@@ -151,8 +151,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5[2] = var8;
                 var1.style = var5;
                 if (!var7) {
-                    _fun92594_ip = 286;
-                    continue _fun92594
+                    _fun91988_ip = 286;
+                    continue _fun91988
                 }
             case 184:
                 var9 = _closure1_slot6;
@@ -183,8 +183,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = new Array(2);
                 var5[0] = var7;
                 if (!var6) {
-                    _fun92594_ip = 535;
-                    continue _fun92594
+                    _fun91988_ip = 535;
+                    continue _fun91988
                 }
             case 300:
                 var9 = _closure1_slot8;
@@ -286,4 +286,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 3059, 660, 33, 1297, 671, 6924, 632, 3901, 1234, 7982, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 3059, 660, 33, 1297, 671, 6923, 632, 3900, 1234, 7981, 2]);

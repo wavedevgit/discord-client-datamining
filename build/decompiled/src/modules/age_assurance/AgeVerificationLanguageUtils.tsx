@@ -22,7 +22,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/age_assurance/AgeVerificationLanguageUtils.tsx';
     var3 = var4.bind(var5)(var3);
     var3 = function(arg0, arg1) { // Original name: getUpdatedAgeVerificationString, environment: var1
-        _fun40997: for (var _fun40997_ip = 0;;) switch (_fun40997_ip) {
+        _fun41014: for (var _fun41014_ip = 0;;) switch (_fun41014_ip) {
             case 0:
                 var0 = arg0;
                 var1 = arg1;
@@ -40,8 +40,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var3.bind(var4)(var2);
                 var2 = var2.enabled;
                 if (!var2) {
-                    _fun40997_ip = 68;
-                    continue _fun40997
+                    _fun41014_ip = 68;
+                    continue _fun41014
                 }
             case 65:
                 var0 = var1;
@@ -51,7 +51,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getUpdatedAgeVerificationString = var3;
     var1 = function(arg0, arg1) { // Original name: useUpdatedAgeVerificationString, environment: var1
-        _fun40998: for (var _fun40998_ip = 0;;) switch (_fun40998_ip) {
+        _fun41015: for (var _fun41015_ip = 0;;) switch (_fun41015_ip) {
             case 0:
                 var0 = arg0;
                 var1 = arg1;
@@ -69,8 +69,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var3.bind(var4)(var2);
                 var2 = var2.enabled;
                 if (!var2) {
-                    _fun40998_ip = 68;
-                    continue _fun40998
+                    _fun41015_ip = 68;
+                    continue _fun41015
                 }
             case 65:
                 var0 = var1;
@@ -80,4 +80,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useUpdatedAgeVerificationString = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [4517, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [4518, 2]);

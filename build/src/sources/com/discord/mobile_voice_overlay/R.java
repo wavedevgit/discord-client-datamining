@@ -32,8 +32,8 @@ public final class R {
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class drawable {
         public static int bubble_state_selector = 0x7f0800a8;
-        public static int ic_trash_outline = 0x7f0802b0;
-        public static int trash_bg = 0x7f08074a;
+        public static int ic_trash_outline = 0x7f0802af;
+        public static int trash_bg = 0x7f080748;
 
         private drawable() {
         }

@@ -33,7 +33,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/notification_center/useRelativeTimestamp.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: useRelativeTimestamp, environment: var1
-        _fun101980: for (var _fun101980_ip = 0;;) switch (_fun101980_ip) {
+        _fun101351: for (var _fun101351_ip = 0;;) switch (_fun101351_ip) {
             case 0:
                 var0 = arg0;
                 var6 = var0.timestamp;
@@ -41,8 +41,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var0.abbreviated;
                 var7 = undefined;
                 if (!(var5 === var7)) {
-                    _fun101980_ip = 29;
-                    continue _fun101980
+                    _fun101351_ip = 29;
+                    continue _fun101351
                 }
             case 27:
                 var5 = true;
@@ -78,7 +78,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2[0] = var6;
                 var2[1] = var5;
                 var1 = function() { // Environment: var1
-                    _fun101982: for (var _fun101982_ip = 0;;) switch (_fun101982_ip) {
+                    _fun101353: for (var _fun101353_ip = 0;;) switch (_fun101353_ip) {
                         case 0:
                             var3 = _closure2_slot2;
                             var7 = _closure1_slot0;
@@ -104,8 +104,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var5 = var5.Millis;
                             var5 = var5.DAY;
                             if (!(!(var2 > var5))) {
-                                _fun101982_ip = 249;
-                                continue _fun101982
+                                _fun101353_ip = 249;
+                                continue _fun101353
                             }
                         case 115:
                             var6 = _closure1_slot1;
@@ -115,8 +115,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var5 = var5.Millis;
                             var5 = var5.HOUR;
                             if (!(!(var2 >= var5))) {
-                                _fun101982_ip = 179;
-                                continue _fun101982
+                                _fun101353_ip = 179;
+                                continue _fun101353
                             }
                         case 148:
                             var6 = _closure1_slot1;
@@ -125,8 +125,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var5 = var6.bind(var0)(var5);
                             var5 = var5.Millis;
                             var5 = var5.MINUTE;
-                            _fun101982_ip = 208;
-                            continue _fun101982;
+                            _fun101353_ip = 208;
+                            continue _fun101353;
                         case 179:
                             var6 = _closure1_slot1;
                             var4 = _closure1_slot2;

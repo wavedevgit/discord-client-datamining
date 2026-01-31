@@ -9,7 +9,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var4;
     var _closure1_slot2 = var6;
     var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
-        _fun113533: for (var _fun113533_ip = 0;;) switch (_fun113533_ip) {
+        _fun112883: for (var _fun112883_ip = 0;;) switch (_fun112883_ip) {
             case 0:
             case 2: // try_start_0
                 var1 = global;
@@ -30,8 +30,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = !var1;
                 var _closure2_slot0 = var1;
             case 72: // try_end0
-                _fun113533_ip = 76;
-                continue _fun113533;
+                _fun112883_ip = 76;
+                continue _fun112883;
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
@@ -87,7 +87,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var4.bind(var0)(var3);
     var3 = function(arg0) { // Environment: var1
         var3 = function(arg0) { // Original name: DmSettingsUpsellManager, environment: var0
-            _fun113537: for (var _fun113537_ip = 0;;) switch (_fun113537_ip) {
+            _fun112887: for (var _fun112887_ip = 0;;) switch (_fun112887_ip) {
                 case 0:
                     var3 = this;
                     var11 = 0;
@@ -107,14 +107,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = _closure1_slot9;
                     var0 = var0.bind(var2)();
                     if (var0) {
-                        _fun113537_ip = 84;
-                        continue _fun113537
+                        _fun112887_ip = 84;
+                        continue _fun112887
                     }
                 case 71:
                     var0 = var7.apply;
                     var0 = var0.bind(var7)(var3, var8);
-                    _fun113537_ip = 118;
-                    continue _fun113537;
+                    _fun112887_ip = 118;
+                    continue _fun112887;
                 case 84:
                     var5 = global;
                     var6 = var5.Reflect;
@@ -199,4 +199,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.acknowledgeDmSettingsUpsell = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 15, 17, 18, 660, 14519, 4262, 507, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 15, 17, 18, 660, 14449, 4263, 507, 2]);

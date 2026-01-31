@@ -185,7 +185,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var11 = function() { // Original name: onPress, environment: var11
                 var2 = _closure3_slot0;
                 var1 = function(arg0) { // Environment: var0
-                    _fun79516: for (var _fun79516_ip = 0;;) switch (_fun79516_ip) {
+                    _fun79546: for (var _fun79546_ip = 0;;) switch (_fun79546_ip) {
                         case 0:
                             var5 = arg0;
                             var4 = _closure1_slot1;
@@ -202,8 +202,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var2 = var4.bind(var6)(var2);
                             var2 = _closure2_slot0;
                             if (!var2) {
-                                _fun79516_ip = 81;
-                                continue _fun79516
+                                _fun79546_ip = 81;
+                                continue _fun79546
                             }
                         case 67:
                             var4 = _closure1_slot4;
@@ -211,8 +211,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var2 = var5 === var4;
                         case 81:
                             if (!var2) {
-                                _fun79516_ip = 183;
-                                continue _fun79516
+                                _fun79546_ip = 183;
+                                continue _fun79546
                             }
                         case 84:
                             var5 = _closure1_slot1;
@@ -351,4 +351,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 5902, 33, 1297, 671, 10058, 806, 3237, 10075, 1307, 1234, 10068, 5339, 5901, 5293, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 5903, 33, 1297, 671, 10060, 806, 3237, 10077, 1307, 1234, 10070, 5340, 5902, 5294, 2]);

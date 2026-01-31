@@ -100,7 +100,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var0.onPressOptionItem = var12;
         var12 = function(arg0) { // Original name: renderIcon, environment: var5
-            _fun78841: for (var _fun78841_ip = 0;;) switch (_fun78841_ip) {
+            _fun78871: for (var _fun78871_ip = 0;;) switch (_fun78871_ip) {
                 case 0:
                     var3 = _closure1_slot4;
                     var1 = var3.getChannel;
@@ -109,8 +109,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var6 = var1.bind(var3)(var0);
                     var0 = null;
                     if (!(var0 != var6)) {
-                        _fun78841_ip = 131;
-                        continue _fun78841
+                        _fun78871_ip = 131;
+                        continue _fun78871
                     }
                 case 31:
                     var4 = _closure1_slot5;
@@ -127,8 +127,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var6 = var1.bind(var3)(var6, var4);
                     var1 = var0 != var6;
                     if (!var1) {
-                        _fun78841_ip = 129;
-                        continue _fun78841
+                        _fun78871_ip = 129;
+                        continue _fun78871
                     }
                 case 93:
                     var4 = _closure1_slot6;
@@ -163,7 +163,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0.submitSelection = var7;
         var0.onQueryChange = var6;
         var5 = function(arg0) { // Original name: itemAccessibilityLabel, environment: var5
-            _fun78843: for (var _fun78843_ip = 0;;) switch (_fun78843_ip) {
+            _fun78873: for (var _fun78873_ip = 0;;) switch (_fun78873_ip) {
                 case 0:
                     var3 = _closure1_slot4;
                     var2 = var3.getChannel;
@@ -172,8 +172,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var3 = var2.bind(var3)(var1);
                     var1 = null;
                     if (!(var1 == var3)) {
-                        _fun78843_ip = 35;
-                        continue _fun78843
+                        _fun78873_ip = 35;
+                        continue _fun78873
                     }
                 case 31:
                     var1 = undefined;
@@ -198,4 +198,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 1372, 1410, 33, 6789, 9993, 9991, 6791, 4045, 7838, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 1372, 1410, 33, 6790, 9995, 9993, 6792, 4045, 7837, 2]);

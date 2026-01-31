@@ -9,7 +9,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var5;
     var0 = function(arg0) { // Original name: NotificationSettingsMessageUnread, environment: var1
-        _fun69878: for (var _fun69878_ip = 0;;) switch (_fun69878_ip) {
+        _fun69902: for (var _fun69902_ip = 0;;) switch (_fun69902_ip) {
             case 0:
                 var17 = arg0;
                 var _closure2_slot0 = var17;
@@ -131,8 +131,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var24 = var20 == var23;
                 var21 = undefined;
                 if (var24) {
-                    _fun69878_ip = 494;
-                    continue _fun69878
+                    _fun69902_ip = 494;
+                    continue _fun69902
                 }
             case 489:
                 var21 = var23.label;
@@ -140,8 +140,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var23 = var20 != var21;
                 var20 = 'unset';
                 if (!var23) {
-                    _fun69878_ip = 508;
-                    continue _fun69878
+                    _fun69902_ip = 508;
+                    continue _fun69902
                 }
             case 505:
                 var20 = var21;
@@ -375,4 +375,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.NotificationSettingsChannelMessageUnread = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 8719, 3901, 1234, 4864, 8726, 8717, 3237, 8728, 1307, 8709, 8730, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 8719, 3900, 1234, 4865, 8726, 8717, 3237, 8728, 1307, 8709, 8730, 2]);

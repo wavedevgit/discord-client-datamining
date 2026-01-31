@@ -29,14 +29,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var5.bind(var6)(var1, var3, var4);
     var1.getStringValue = var2;
     var2 = function(arg0) { // Original name: getEncodedString, environment: var0
-        _fun38100: for (var _fun38100_ip = 0;;) switch (_fun38100_ip) {
+        _fun38117: for (var _fun38117_ip = 0;;) switch (_fun38117_ip) {
             case 0:
                 var4 = arg0;
                 var0 = var4.length;
                 var3 = 8;
                 if (!(var0 >= var3)) {
-                    _fun38100_ip = 82;
-                    continue _fun38100
+                    _fun38117_ip = 82;
+                    continue _fun38117
                 }
             case 15:
                 var5 = _closure1_slot0;
@@ -47,26 +47,26 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var5 = var5.bind(var2)(var1);
                 var1 = 'ASCII\x00\x00\x00';
                 if (!(var1 !== var5)) {
-                    _fun38100_ip = 114;
-                    continue _fun38100
+                    _fun38117_ip = 114;
+                    continue _fun38117
                 }
             case 52:
                 var1 = 'JIS\x00\x00\x00\x00\x00';
                 if (!(var1 !== var5)) {
-                    _fun38100_ip = 106;
-                    continue _fun38100
+                    _fun38117_ip = 106;
+                    continue _fun38117
                 }
             case 62:
                 var1 = 'UNICODE\x00';
                 if (!(var1 !== var5)) {
-                    _fun38100_ip = 98;
-                    continue _fun38100
+                    _fun38117_ip = 98;
+                    continue _fun38117
                 }
             case 72:
                 var1 = '\x00\x00\x00\x00\x00\x00\x00\x00';
                 if (!(var1 !== var5)) {
-                    _fun38100_ip = 90;
-                    continue _fun38100
+                    _fun38117_ip = 90;
+                    continue _fun38117
                 }
             case 82:
                 var1 = 'Undefined';

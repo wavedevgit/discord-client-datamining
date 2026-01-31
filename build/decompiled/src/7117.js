@@ -1,253 +1,344 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var4 = require;
-    var2 = exports;
-    var3 = dependencyMap;
-    var _closure1_slot0 = var4;
-    var _closure1_slot1 = var3;
-    var0 = global;
-    var7 = var0.Object;
-    var6 = var7.defineProperty;
-    var5 = {};
-    var0 = true;
-    var5.value = var0;
-    var0 = '__esModule';
-    var0 = var6.bind(var7)(var2, var0, var5);
-    var0 = 0;
-    var3 = var3[var0];
-    var0 = undefined;
-    var3 = var4.bind(var0)(var3);
-    var3 = var3.NativeEventEmitter;
-    var _closure1_slot2 = var3;
-    var3 = function(arg0, arg1) { // Original name: purchaseUpdatedListener, environment: var1
-        _fun58380: for (var _fun58380_ip = 0;;) switch (_fun58380_ip) {
-            case 0:
-                var7 = arg0;
-                var _closure2_slot0 = var7;
-                var0 = arg1;
-                var _closure2_slot1 = var0;
-                var9 = _closure1_slot2;
-                var3 = _closure1_slot0;
-                var8 = _closure1_slot1;
-                var5 = 1;
-                var0 = var8[var5];
-                var4 = undefined;
-                var6 = var3.bind(var4)(var0);
-                var0 = var6.getNativeModule;
-                var11 = var0.bind(var6)();
-                var6 = var9.prototype;
-                var6 = Object.create(var6, {
-                    constructor: {
-                        value: var9
-                    }
-                });
-                var12 = var6;
-                var0 = new var12[var9](var11, var10);
-                var6 = var0 instanceof Object ? var0 : var6;
-                var0 = 2;
-                var0 = var8[var0];
-                var3 = var3.bind(var4)(var0);
-                var0 = var3.isIosStorekit2;
-                var0 = var0.bind(var3)();
-                if (!var0) {
-                    _fun58380_ip = 105;
-                    continue _fun58380
-                }
-            case 100:
-                var7 = function(arg0) { // Environment: var1
-                    var2 = _closure2_slot0;
-                    var3 = _closure1_slot0;
-                    var1 = _closure1_slot1;
-                    var0 = 3;
-                    var1 = var1[var0];
-                    var0 = undefined;
-                    var4 = var3.bind(var0)(var1);
-                    var3 = var4.transactionSk2ToPurchaseMap;
-                    var1 = arg0;
-                    var1 = var3.bind(var4)(var1);
-                    var1 = var2.bind(var0)(var1);
-                    return var0;
-                };
-            case 105:
-                var3 = var6.addListener;
-                var0 = 'purchase-updated';
-                var0 = var3.bind(var6)(var0, var7);
-                var6 = _closure1_slot0;
-                var3 = _closure1_slot1;
-                var3 = var3[var5];
-                var3 = var6.bind(var4)(var3);
-                var3 = var3.isAndroid;
-                if (!var3) {
-                    _fun58380_ip = 202;
-                    continue _fun58380
-                }
-            case 149:
-                var3 = _closure1_slot0;
-                var2 = _closure1_slot1;
-                var2 = var2[var5];
-                var3 = var3.bind(var4)(var2);
-                var2 = var3.getAndroidModule;
-                var3 = var2.bind(var3)();
-                var2 = var3.startListening;
-                var3 = var2.bind(var3)();
-                var2 = var3.catch;
-                var1 = function(arg0) { // Environment: var1
-                    _fun58382: for (var _fun58382_ip = 0;;) switch (_fun58382_ip) {
-                        case 0:
-                            var2 = arg0;
-                            var1 = _closure2_slot1;
-                            if (var1) {
-                                _fun58382_ip = 15;
-                                continue _fun58382
-                            }
-                        case 13:
-                            throw var2;
-                        case 15:
-                            var1 = _closure2_slot1;
-                            var0 = undefined;
-                            var1 = var1.bind(var0)(var2);
-                            return var0;
-                    }
-                };
-                var1 = var2.bind(var3)(var1);
-            case 202:
-                return var0;
-        }
-    };
-    var2.purchaseUpdatedListener = var3;
-    var3 = function(arg0) { // Original name: purchaseErrorListener, environment: var1
-        var2 = _closure1_slot2;
-        var3 = _closure1_slot0;
-        var1 = _closure1_slot1;
-        var0 = 1;
-        var1 = var1[var0];
-        var0 = undefined;
-        var1 = var3.bind(var0)(var1);
-        var0 = var1.getNativeModule;
-        var5 = var0.bind(var1)();
-        var1 = var2.prototype;
-        var1 = Object.create(var1, {
-            constructor: {
-                value: var2
-            }
-        });
-        var6 = var1;
-        var0 = new var6[var2](var5, var4);
-        var3 = var0 instanceof Object ? var0 : var1;
-        var2 = var3.addListener;
-        var1 = 'purchase-error';
+    var1 = exports;
+    var2 = require;
+    var _closure1_slot0 = var2;
+    var2 = dependencyMap;
+    var _closure1_slot1 = var2;
+    var2 = global;
+    var5 = var2.Object;
+    var4 = var5.defineProperty;
+    var3 = {};
+    var2 = true;
+    var3.value = var2;
+    var2 = '__esModule';
+    var2 = var4.bind(var5)(var1, var2, var3);
+    var2 = function(arg0) { // Original name: productSk2Map, environment: var0
         var0 = arg0;
-        var0 = var2.bind(var3)(var1, var0);
+        var8 = var0.id;
+        var6 = var0.description;
+        var3 = var0.displayName;
+        var5 = var0.price;
+        var1 = var0.currency;
+        var2 = var0.displayPrice;
+        var0 = {};
+        var0.title = var3;
+        var3 = global;
+        var7 = var3.String;
+        var4 = undefined;
+        var7 = var7.bind(var4)(var8);
+        var0.productId = var7;
+        var0.description = var6;
+        var6 = 'iap';
+        var0.type = var6;
+        var3 = var3.String;
+        var3 = var3.bind(var4)(var5);
+        var0.price = var3;
+        var0.localizedPrice = var2;
+        var0.currency = var1;
         return var0;
     };
-    var2.purchaseErrorListener = var3;
-    var3 = function(arg0) { // Original name: promotedProductListener, environment: var1
-        _fun58384: for (var _fun58384_ip = 0;;) switch (_fun58384_ip) {
+    var1.productSk2Map = var2;
+    var2 = function(arg0) { // Original name: subscriptionSk2Map, environment: var0
+        _fun58400: for (var _fun58400_ip = 0;;) switch (_fun58400_ip) {
             case 0:
-                var2 = _closure1_slot0;
-                var0 = _closure1_slot1;
-                var5 = 1;
-                var0 = var0[var5];
+                var0 = arg0;
+                var9 = var0.id;
+                var6 = var0.description;
+                var1 = var0.displayName;
+                var7 = var0.price;
+                var3 = var0.currency;
+                var5 = var0.displayPrice;
+                var2 = var0.subscription;
+                var0 = {};
+                var10 = _closure1_slot0;
+                var8 = _closure1_slot1;
+                var4 = 0;
+                var8 = var8[var4];
                 var4 = undefined;
-                var0 = var2.bind(var4)(var0);
-                var2 = var0.isIos;
-                var0 = null;
-                if (!var2) {
-                    _fun58384_ip = 143;
-                    continue _fun58384
+                var8 = var10.bind(var4)(var8);
+                var8 = var8.SubscriptionPlatform;
+                var8 = var8.ios;
+                var0.platform = var8;
+                var0.title = var1;
+                var1 = global;
+                var8 = var1.String;
+                var8 = var8.bind(var4)(var9);
+                var0.productId = var8;
+                var0.description = var6;
+                var6 = 'subs';
+                var0.type = var6;
+                var6 = var1.String;
+                var6 = var6.bind(var4)(var7);
+                var0.price = var6;
+                var0.localizedPrice = var5;
+                var0.currency = var3;
+                var3 = null;
+                var5 = var3 == var2;
+                var6 = undefined;
+                if (var5) {
+                    _fun58400_ip = 176;
+                    continue _fun58400
                 }
-            case 36:
-                var6 = _closure1_slot0;
-                var7 = _closure1_slot1;
-                var2 = 2;
-                var2 = var7[var2];
-                var6 = var6.bind(var4)(var2);
-                var2 = var6.isIosStorekit2;
-                var2 = var2.bind(var6)();
-                var0 = null;
-                if (var2) {
-                    _fun58384_ip = 143;
-                    continue _fun58384
+            case 156:
+                var5 = var2.subscriptionPeriod;
+                var7 = var3 == var5;
+                var6 = undefined;
+                if (var7) {
+                    _fun58400_ip = 176;
+                    continue _fun58400
                 }
-            case 71:
-                var3 = _closure1_slot2;
-                var2 = _closure1_slot0;
-                var1 = _closure1_slot1;
-                var1 = var1[var5];
-                var2 = var2.bind(var4)(var1);
-                var1 = var2.getIosModule;
-                var9 = var1.bind(var2)();
-                var2 = var3.prototype;
-                var2 = Object.create(var2, {
-                    constructor: {
-                        value: var3
-                    }
-                });
-                var10 = var2;
-                var1 = new var10[var3](var9, var8);
-                var4 = var1 instanceof Object ? var1 : var2;
-                var3 = var4.addListener;
-                var2 = 'iap-promoted-product';
-                var1 = arg0;
-                var0 = var3.bind(var4)(var2, var1);
-            case 143:
+            case 171:
+                var6 = var5.value;
+            case 176:
+                var1 = var1.HermesInternal;
+                var5 = var1.concat;
+                var1 = '';
+                var1 = var5.bind(var1)(var6);
+                var0.subscriptionPeriodNumberIOS = var1;
+                var5 = var3 == var2;
+                var1 = undefined;
+                if (var5) {
+                    _fun58400_ip = 243;
+                    continue _fun58400
+                }
+            case 212:
+                var5 = var2.subscriptionPeriod;
+                var6 = var3 == var5;
+                var1 = undefined;
+                if (var6) {
+                    _fun58400_ip = 243;
+                    continue _fun58400
+                }
+            case 227:
+                var6 = var5.unit;
+                var5 = var6.toUpperCase;
+                var1 = var5.bind(var6)();
+            case 243:
+                var0.subscriptionPeriodUnitIOS = var1;
+                var5 = var3 == var2;
+                var1 = undefined;
+                if (var5) {
+                    _fun58400_ip = 280;
+                    continue _fun58400
+                }
+            case 259:
+                var5 = var2.introductoryOffer;
+                var6 = var3 == var5;
+                var1 = undefined;
+                if (var6) {
+                    _fun58400_ip = 280;
+                    continue _fun58400
+                }
+            case 274:
+                var1 = var5.displayPrice;
+            case 280:
+                var0.introductoryPriceAsAmountIOS = var1;
+                var5 = var3 == var2;
+                var1 = undefined;
+                if (var5) {
+                    _fun58400_ip = 327;
+                    continue _fun58400
+                }
+            case 296:
+                var5 = var2.introductoryOffer;
+                var6 = var3 == var5;
+                var1 = undefined;
+                if (var6) {
+                    _fun58400_ip = 327;
+                    continue _fun58400
+                }
+            case 311:
+                var6 = var5.paymentMode;
+                var5 = var6.toUpperCase;
+                var1 = var5.bind(var6)();
+            case 327:
+                var0.introductoryPricePaymentModeIOS = var1;
+                var5 = var3 == var2;
+                var1 = undefined;
+                if (var5) {
+                    _fun58400_ip = 396;
+                    continue _fun58400
+                }
+            case 343:
+                var5 = var2.introductoryOffer;
+                var6 = var3 == var5;
+                var1 = undefined;
+                if (var6) {
+                    _fun58400_ip = 396;
+                    continue _fun58400
+                }
+            case 358:
+                var5 = var5.period;
+                var6 = var3 == var5;
+                var1 = undefined;
+                if (var6) {
+                    _fun58400_ip = 396;
+                    continue _fun58400
+                }
+            case 373:
+                var6 = var5.value;
+                var5 = var3 == var6;
+                var1 = undefined;
+                if (var5) {
+                    _fun58400_ip = 396;
+                    continue _fun58400
+                }
+            case 387:
+                var5 = var6.toString;
+                var1 = var5.bind(var6)();
+            case 396:
+                var0.introductoryPriceNumberOfPeriodsIOS = var1;
+                var5 = var3 == var2;
+                var1 = undefined;
+                if (var5) {
+                    _fun58400_ip = 448;
+                    continue _fun58400
+                }
+            case 412:
+                var2 = var2.introductoryOffer;
+                var5 = var3 == var2;
+                var1 = undefined;
+                if (var5) {
+                    _fun58400_ip = 448;
+                    continue _fun58400
+                }
+            case 427:
+                var2 = var2.period;
+                var3 = var3 == var2;
+                var1 = undefined;
+                if (var3) {
+                    _fun58400_ip = 448;
+                    continue _fun58400
+                }
+            case 442:
+                var1 = var2.unit;
+            case 448:
+                var0.introductoryPriceSubscriptionPeriodIOS = var1;
                 return var0;
         }
     };
-    var2.promotedProductListener = var3;
-    var1 = function(arg0) { // Original name: transactionListener, environment: var1
-        _fun58385: for (var _fun58385_ip = 0;;) switch (_fun58385_ip) {
+    var1.subscriptionSk2Map = var2;
+    var2 = function(arg0) { // Original name: transactionSk2ToPurchaseMap, environment: var0
+        _fun58401: for (var _fun58401_ip = 0;;) switch (_fun58401_ip) {
             case 0:
-                var2 = _closure1_slot0;
-                var0 = _closure1_slot1;
-                var5 = 1;
-                var0 = var0[var5];
+                var11 = arg0;
+                var10 = undefined;
+                var2 = undefined;
+                var8 = undefined;
                 var4 = undefined;
-                var0 = var2.bind(var4)(var0);
-                var2 = var0.isIos;
-                var0 = null;
-                if (!var2) {
-                    _fun58385_ip = 143;
-                    continue _fun58385
+                var9 = undefined;
+                var1 = undefined;
+                var7 = undefined;
+                var3 = undefined;
+                var6 = undefined;
+                var5 = undefined;
+                var0 = undefined;
+                var8 = var11.id;
+                var4 = var11.originalPurchaseDate;
+                var9 = var11.productID;
+                var1 = var11.purchaseDate;
+                var7 = var11.purchasedQuantity;
+                var3 = var11.originalID;
+                var6 = var11.verificationResult;
+                var5 = var11.appAccountToken;
+                var0 = var11.jsonRepresentation;
+            case 92: // try_start_0
+                var11 = global;
+                var12 = var11.JSON;
+                var11 = var12.parse;
+                var0 = var11.bind(var12)(var0);
+                var2 = var0.transactionReason;
+            case 119: // try_end0
+                _fun58401_ip = 148;
+                continue _fun58401;
+            case 121: // catch_target0
+                CatchBlockStart(arg_register = 13);
+                var0 = global;
+                var12 = var0.console;
+                var11 = var12.log;
+                var0 = 'AppleSK2.ts react-native-iap: Error parsing jsonRepresentation';
+                var0 = var11.bind(var12)(var0, var13);
+            case 148:
+                var0 = {};
+                var0.productId = var9;
+                var9 = global;
+                var9 = var9.String;
+                var8 = var9.bind(var10)(var8);
+                var0.transactionId = var8;
+                var0.transactionDate = var1;
+                var1 = '';
+                var0.transactionReceipt = var1;
+                var0.purchaseToken = var1;
+                var0.quantityIOS = var7;
+                var0.originalTransactionDateIOS = var4;
+                var0.originalTransactionIdentifierIOS = var3;
+                var3 = var6;
+                var4 = null;
+                var7 = var4 != var3;
+                var3 = var1;
+                if (!var7) {
+                    _fun58401_ip = 227;
+                    continue _fun58401
                 }
-            case 36:
-                var6 = _closure1_slot0;
-                var7 = _closure1_slot1;
-                var2 = 2;
-                var2 = var7[var2];
-                var6 = var6.bind(var4)(var2);
-                var2 = var6.isIosStorekit2;
-                var2 = var2.bind(var6)();
-                var0 = null;
-                if (!var2) {
-                    _fun58385_ip = 143;
-                    continue _fun58385
+            case 224:
+                var3 = var6;
+            case 227:
+                var0.verificationResultIOS = var3;
+                var3 = var5;
+                var6 = var4 != var3;
+                var3 = var1;
+                if (!var6) {
+                    _fun58401_ip = 248;
+                    continue _fun58401
                 }
-            case 71:
-                var3 = _closure1_slot2;
-                var2 = _closure1_slot0;
-                var1 = _closure1_slot1;
-                var1 = var1[var5];
-                var2 = var2.bind(var4)(var1);
-                var1 = var2.getIosModule;
-                var9 = var1.bind(var2)();
-                var2 = var3.prototype;
-                var2 = Object.create(var2, {
-                    constructor: {
-                        value: var3
-                    }
-                });
-                var10 = var2;
-                var1 = new var10[var3](var9, var8);
-                var4 = var1 instanceof Object ? var1 : var2;
-                var3 = var4.addListener;
-                var2 = 'iap-transaction-updated';
-                var1 = arg0;
-                var0 = var3.bind(var4)(var2, var1);
-            case 143:
+            case 245:
+                var3 = var5;
+            case 248:
+                var0.appAccountToken = var3;
+                var3 = var2;
+                var3 = var4 != var3;
+                if (!var3) {
+                    _fun58401_ip = 266;
+                    continue _fun58401
+                }
+            case 263:
+                var1 = var2;
+            case 266:
+                var0.transactionReasonIOS = var1;
                 return var0;
         }
     };
-    var2.transactionListener = var1;
+    var1.transactionSk2ToPurchaseMap = var2;
+    var0 = function(arg0) { // Original name: offerSk2Map, environment: var0
+        _fun58402: for (var _fun58402_ip = 0;;) switch (_fun58402_ip) {
+            case 0:
+                var1 = arg0;
+                if (var1) {
+                    _fun58402_ip = 10;
+                    continue _fun58402
+                }
+            case 6:
+                var0 = undefined;
+                return var0;
+            case 10:
+                var0 = {};
+                var2 = var1.identifier;
+                var0.offerID = var2;
+                var2 = var1.keyIdentifier;
+                var0.keyID = var2;
+                var2 = var1.nonce;
+                var0.nonce = var2;
+                var2 = var1.signature;
+                var0.signature = var2;
+                var2 = var1.timestamp;
+                var1 = var2.toString;
+                var1 = var1.bind(var2)();
+                var0.timestamp = var1;
+                return var0;
+        }
+    };
+    var1.offerSk2Map = var0;
+    var0 = undefined;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 7107, 7105, 7118]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [7105]);

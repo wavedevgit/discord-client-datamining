@@ -33,15 +33,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'design/components/Icon/native/redesign/generated/PlaystationNeutralIcon.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Environment: var1
-        _fun83652: for (var _fun83652_ip = 0;;) switch (_fun83652_ip) {
+        _fun83682: for (var _fun83682_ip = 0;;) switch (_fun83682_ip) {
             case 0:
                 var2 = arg0;
                 var5 = var2.style;
                 var6 = var2.color;
                 var3 = undefined;
                 if (!(var6 === var3)) {
-                    _fun83652_ip = 53;
-                    continue _fun83652
+                    _fun83682_ip = 53;
+                    continue _fun83682
                 }
             case 19:
                 var1 = _closure1_slot1;
@@ -83,4 +83,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.PlaystationNeutralIcon = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 671, 3109, 9637, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 671, 3109, 9639, 2]);

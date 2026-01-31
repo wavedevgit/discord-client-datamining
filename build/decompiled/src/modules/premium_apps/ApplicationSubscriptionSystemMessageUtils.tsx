@@ -22,7 +22,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/premium_apps/ApplicationSubscriptionSystemMessageUtils.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: getApplicationSubscriptionSystemMessageASTContent, environment: var1
-        _fun55417: for (var _fun55417_ip = 0;;) switch (_fun55417_ip) {
+        _fun55434: for (var _fun55434_ip = 0;;) switch (_fun55434_ip) {
             case 0:
                 var0 = arg0;
                 var6 = var0.application;
@@ -30,8 +30,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var0.usernameOnClick;
                 var0 = null;
                 if (!(var0 == var6)) {
-                    _fun55417_ip = 101;
-                    continue _fun55417
+                    _fun55434_ip = 101;
+                    continue _fun55434
                 }
             case 25:
                 var4 = _closure1_slot0;
@@ -50,8 +50,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0.username = var7;
                 var0.usernameOnClick = var5;
                 var0 = var2.bind(var3)(var1, var0);
-                _fun55417_ip = 185;
-                continue _fun55417;
+                _fun55434_ip = 185;
+                continue _fun55434;
             case 101:
                 var8 = _closure1_slot0;
                 var9 = _closure1_slot1;

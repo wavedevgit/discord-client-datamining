@@ -1,6 +1,6 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun16394: for (var _fun16394_ip = 0;;) switch (_fun16394_ip) {
+    _fun16396: for (var _fun16396_ip = 0;;) switch (_fun16396_ip) {
         case 0:
             var4 = require;
             var5 = dependencyMap;
@@ -15,29 +15,29 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var3 = var5[var3];
             var4 = var4.bind(var0)(var3);
             if (var2) {
-                _fun16394_ip = 70;
-                continue _fun16394
+                _fun16396_ip = 70;
+                continue _fun16396
             }
         case 48:
             var2 = 'Object.prototype.toString';
             var2 = var4.bind(var0)(var2);
             var _closure1_slot5 = var2;
             var2 = function(arg0) { // Original name: isRegex, environment: var1
-                _fun16397: for (var _fun16397_ip = 0;;) switch (_fun16397_ip) {
+                _fun16399: for (var _fun16399_ip = 0;;) switch (_fun16399_ip) {
                     case 0:
                         var3 = arg0;
                         var1 = !var3;
                         if (var1) {
-                            _fun16397_ip = 34;
-                            continue _fun16397
+                            _fun16399_ip = 34;
+                            continue _fun16399
                         }
                     case 9:
                         var4 = typeof var3;
                         var0 = 'object';
                         var0 = var0 !== var4;
                         if (!var0) {
-                            _fun16397_ip = 31;
-                            continue _fun16397
+                            _fun16399_ip = 31;
+                            continue _fun16399
                         }
                     case 23:
                         var2 = 'function';
@@ -47,8 +47,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     case 34:
                         var0 = !var1;
                         if (var1) {
-                            _fun16397_ip = 62;
-                            continue _fun16397
+                            _fun16399_ip = 62;
+                            continue _fun16399
                         }
                     case 40:
                         var2 = _closure1_slot5;
@@ -60,8 +60,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         return var0;
                 }
             };
-            _fun16394_ip = 156;
-            continue _fun16394;
+            _fun16396_ip = 156;
+            continue _fun16396;
         case 70:
             var3 = 'RegExp.prototype.exec';
             var3 = var4.bind(var0)(var3);
@@ -82,8 +82,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var7 = 'symbol';
             var6 = typeof var6;
             if (!(var7 === var6)) {
-                _fun16394_ip = 151;
-                continue _fun16394
+                _fun16396_ip = 151;
+                continue _fun16396
             }
         case 135:
             var3 = var3.Symbol;
@@ -91,21 +91,21 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var4[var3] = var5;
         case 151:
             var2 = function(arg0) { // Original name: isRegex, environment: var1
-                _fun16396: for (var _fun16396_ip = 0;;) switch (_fun16396_ip) {
+                _fun16398: for (var _fun16398_ip = 0;;) switch (_fun16398_ip) {
                     case 0:
                         var0 = arg0;
                         var2 = var0;
                         if (!var0) {
-                            _fun16396_ip = 135;
-                            continue _fun16396
+                            _fun16398_ip = 135;
+                            continue _fun16398
                         }
                     case 12:
                         var0 = var2;
                         var1 = 'object';
                         var0 = typeof var0;
                         if (!(var1 === var0)) {
-                            _fun16396_ip = 135;
-                            continue _fun16396
+                            _fun16398_ip = 135;
+                            continue _fun16398
                         }
                     case 26:
                         var4 = _closure1_slot0;
@@ -118,8 +118,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var3 = 'lastIndex';
                         var5 = var5.bind(var1)(var4, var3);
                         if (!var5) {
-                            _fun16396_ip = 100;
-                            continue _fun16396
+                            _fun16398_ip = 100;
+                            continue _fun16398
                         }
                     case 67:
                         var4 = _closure1_slot0;
@@ -130,8 +130,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var3 = 'value';
                         var3 = var4.bind(var1)(var5, var3);
                         if (var3) {
-                            _fun16396_ip = 104;
-                            continue _fun16396
+                            _fun16398_ip = 104;
+                            continue _fun16398
                         }
                     case 100:
                         var3 = false;

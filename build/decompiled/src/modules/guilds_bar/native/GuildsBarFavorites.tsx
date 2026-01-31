@@ -55,7 +55,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot7 = var3;
     var3 = var6.memo;
     var1 = function() { // Original name: GuildsBarFavorites, environment: var1
-        _fun101608: for (var _fun101608_ip = 0;;) switch (_fun101608_ip) {
+        _fun100979: for (var _fun100979_ip = 0;;) switch (_fun100979_ip) {
             case 0:
                 var5 = _closure1_slot0;
                 var8 = _closure1_slot2;
@@ -154,13 +154,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var8.bind(var3)(var7);
                 var7 = var7.colors;
                 if (var6) {
-                    _fun101608_ip = 391;
-                    continue _fun101608
+                    _fun100979_ip = 391;
+                    continue _fun100979
                 }
             case 383:
                 var6 = var7.INTERACTIVE_TEXT_DEFAULT;
-                _fun101608_ip = 397;
-                continue _fun101608;
+                _fun100979_ip = 397;
+                continue _fun100979;
             case 391:
                 var6 = var7.WHITE;
             case 397:
@@ -180,4 +180,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 1375, 3172, 660, 33, 13175, 13161, 566, 13180, 13163, 1234, 13181, 8522, 671, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 1375, 3172, 660, 33, 13112, 13098, 566, 13117, 13100, 1234, 13118, 8522, 671, 2]);

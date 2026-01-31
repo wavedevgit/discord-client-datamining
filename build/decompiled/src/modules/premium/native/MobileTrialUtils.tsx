@@ -27,7 +27,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/premium/native/MobileTrialUtils.tsx';
     var3 = var4.bind(var5)(var3);
     var3 = function() { // Original name: useShouldShowPremiumTrialUserSettingsAvatarBadge, environment: var1
-        _fun57629: for (var _fun57629_ip = 0;;) switch (_fun57629_ip) {
+        _fun57641: for (var _fun57641_ip = 0;;) switch (_fun57641_ip) {
             case 0:
                 var5 = _closure1_slot0;
                 var6 = _closure1_slot1;
@@ -50,8 +50,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = null;
                 var4 = var0 == var3;
                 if (var4) {
-                    _fun57629_ip = 97;
-                    continue _fun57629
+                    _fun57641_ip = 97;
+                    continue _fun57641
                 }
             case 91:
                 var2 = var3.expires_at;
@@ -59,15 +59,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var0 != var2;
                 var0 = var0 != var3;
                 if (!var0) {
-                    _fun57629_ip = 111;
-                    continue _fun57629
+                    _fun57641_ip = 111;
+                    continue _fun57641
                 }
             case 108:
                 var0 = !var2;
             case 111:
                 if (!var0) {
-                    _fun57629_ip = 117;
-                    continue _fun57629
+                    _fun57641_ip = 117;
+                    continue _fun57641
                 }
             case 114:
                 var0 = !var1;
@@ -77,7 +77,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useShouldShowPremiumTrialUserSettingsAvatarBadge = var3;
     var1 = function() { // Original name: usePremiumTrialOfferPremiumType, environment: var1
-        _fun57630: for (var _fun57630_ip = 0;;) switch (_fun57630_ip) {
+        _fun57642: for (var _fun57642_ip = 0;;) switch (_fun57642_ip) {
             case 0:
                 var2 = _closure1_slot0;
                 var3 = _closure1_slot1;
@@ -91,16 +91,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var3 == var2;
                 var1 = undefined;
                 if (var5) {
-                    _fun57630_ip = 67;
-                    continue _fun57630
+                    _fun57642_ip = 67;
+                    continue _fun57642
                 }
             case 46:
                 var2 = var2.subscription_trial;
                 var3 = var3 == var2;
                 var1 = undefined;
                 if (var3) {
-                    _fun57630_ip = 67;
-                    continue _fun57630
+                    _fun57642_ip = 67;
+                    continue _fun57642
                 }
             case 61:
                 var1 = var2.sku_id;
@@ -112,4 +112,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.usePremiumTrialOfferPremiumType = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1615, 6614, 3171, 1358, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1615, 6615, 3171, 1358, 2]);

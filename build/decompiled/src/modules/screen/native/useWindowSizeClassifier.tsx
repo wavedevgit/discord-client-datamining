@@ -9,43 +9,43 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var4;
     var0 = function(arg0) { // Original name: calculateFromWidth, environment: var1
-        _fun35220: for (var _fun35220_ip = 0;;) switch (_fun35220_ip) {
+        _fun35236: for (var _fun35236_ip = 0;;) switch (_fun35236_ip) {
             case 0:
                 var1 = arg0;
                 var0 = 360;
                 if (!(!(var1 <= var0))) {
-                    _fun35220_ip = 78;
-                    continue _fun35220
+                    _fun35236_ip = 78;
+                    continue _fun35236
                 }
             case 13:
                 var0 = 600;
                 if (!(!(var1 <= var0))) {
-                    _fun35220_ip = 63;
-                    continue _fun35220
+                    _fun35236_ip = 63;
+                    continue _fun35236
                 }
             case 23:
                 var0 = 840;
                 if (!(!(var1 <= var0))) {
-                    _fun35220_ip = 48;
-                    continue _fun35220
+                    _fun35236_ip = 48;
+                    continue _fun35236
                 }
             case 33:
                 var0 = _closure1_slot3;
                 var0 = var0.XLARGE;
-                _fun35220_ip = 61;
-                continue _fun35220;
+                _fun35236_ip = 61;
+                continue _fun35236;
             case 48:
                 var1 = _closure1_slot3;
                 var0 = var1.LARGE;
             case 61:
-                _fun35220_ip = 76;
-                continue _fun35220;
+                _fun35236_ip = 76;
+                continue _fun35236;
             case 63:
                 var1 = _closure1_slot3;
                 var0 = var1.NORMAL;
             case 76:
-                _fun35220_ip = 91;
-                continue _fun35220;
+                _fun35236_ip = 91;
+                continue _fun35236;
             case 78:
                 var1 = _closure1_slot3;
                 var0 = var1.SMALL;

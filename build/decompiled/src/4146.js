@@ -177,15 +177,15 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0.typeSizes = var4;
     var0.tagTypes = var3;
     var2 = function(arg0) { // Original name: getTypeSize, environment: var2
-        _fun37991: for (var _fun37991_ip = 0;;) switch (_fun37991_ip) {
+        _fun38008: for (var _fun38008_ip = 0;;) switch (_fun38008_ip) {
             case 0:
                 var2 = arg0;
                 var1 = _closure1_slot3;
                 var3 = var1[var2];
                 var1 = undefined;
                 if (!(var1 !== var3)) {
-                    _fun37991_ip = 38;
-                    continue _fun37991
+                    _fun38008_ip = 38;
+                    continue _fun38008
                 }
             case 20:
                 var1 = _closure1_slot2;

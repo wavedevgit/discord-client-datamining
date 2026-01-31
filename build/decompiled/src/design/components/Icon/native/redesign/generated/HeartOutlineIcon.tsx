@@ -33,15 +33,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'design/components/Icon/native/redesign/generated/HeartOutlineIcon.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Environment: var1
-        _fun87728: for (var _fun87728_ip = 0;;) switch (_fun87728_ip) {
+        _fun87032: for (var _fun87032_ip = 0;;) switch (_fun87032_ip) {
             case 0:
                 var2 = arg0;
                 var5 = var2.style;
                 var6 = var2.color;
                 var3 = undefined;
                 if (!(var6 === var3)) {
-                    _fun87728_ip = 53;
-                    continue _fun87728
+                    _fun87032_ip = 53;
+                    continue _fun87032
                 }
             case 19:
                 var1 = _closure1_slot1;
@@ -83,4 +83,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.HeartOutlineIcon = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 671, 3109, 11276, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 671, 3109, 11209, 2]);

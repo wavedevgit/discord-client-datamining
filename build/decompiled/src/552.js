@@ -1061,7 +1061,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var5 = typeof var0;
             var0 = null;
             if (!(var4 === var5)) {
-                _fun6650_ip = 976;
+                _fun6650_ip = 977;
                 continue _fun6650
             }
         case 936:
@@ -1071,51 +1071,51 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var5 = typeof var5;
             var0 = null;
             if (!(var9 === var5)) {
-                _fun6650_ip = 976;
+                _fun6650_ip = 977;
                 continue _fun6650
             }
-        case 960:
+        case 961:
             var5 = var1.Symbol;
             var5 = var5.prototype;
             var0 = var5.toString;
-        case 976:
+        case 977:
             var _closure1_slot25 = var0;
             var0 = var1.Symbol;
             var0 = typeof var0;
             var0 = var4 === var0;
             if (!var0) {
-                _fun6650_ip = 1017;
+                _fun6650_ip = 1019;
                 continue _fun6650
             }
-        case 995:
+        case 996:
             var5 = var1.Symbol;
             var5 = var5.iterator;
             var9 = 'object';
             var5 = typeof var5;
             var0 = var9 === var5;
-        case 1017:
+        case 1019:
             var _closure1_slot26 = var0;
             var0 = var1.Symbol;
             var5 = typeof var0;
             var0 = null;
             if (!(var4 === var5)) {
-                _fun6650_ip = 1076;
+                _fun6650_ip = 1078;
                 continue _fun6650
             }
-        case 1035:
+        case 1037:
             var5 = var1.Symbol;
             var5 = var5.toStringTag;
             var0 = null;
             if (!var5) {
-                _fun6650_ip = 1076;
+                _fun6650_ip = 1078;
                 continue _fun6650
             }
-        case 1052:
+        case 1054:
             var5 = var1.Symbol;
             var5 = var5.toStringTag;
             var5 = var1.Symbol;
             var0 = var5.toStringTag;
-        case 1076:
+        case 1078:
             var _closure1_slot27 = var0;
             var0 = var1.Object;
             var0 = var0.prototype;
@@ -1124,41 +1124,41 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var0 = var1.Reflect;
             var0 = typeof var0;
             if (!(var4 !== var0)) {
-                _fun6650_ip = 1127;
+                _fun6650_ip = 1129;
                 continue _fun6650
             }
-        case 1113:
+        case 1115:
             var0 = var1.Object;
             var0 = var0.getPrototypeOf;
-            _fun6650_ip = 1139;
+            _fun6650_ip = 1141;
             continue _fun6650;
-        case 1127:
+        case 1129:
             var4 = var1.Reflect;
             var0 = var4.getPrototypeOf;
-        case 1139:
+        case 1141:
             if (var0) {
-                _fun6650_ip = 1177;
+                _fun6650_ip = 1179;
                 continue _fun6650
             }
-        case 1142:
+        case 1144:
             var4 = new Array(0);
             var9 = var4.__proto__;
             var4 = var1.Array;
             var5 = var4.prototype;
             var4 = null;
             if (!(var9 === var5)) {
-                _fun6650_ip = 1174;
+                _fun6650_ip = 1176;
                 continue _fun6650
             }
-        case 1169:
+        case 1171:
             var4 = function(arg0) { // Environment: var2
                 var0 = arg0;
                 var0 = var0.__proto__;
                 return var0;
             };
-        case 1174:
+        case 1176:
             var0 = var4;
-        case 1177:
+        case 1179:
             var _closure1_slot29 = var0;
             var5 = 0;
             var4 = var7[var5];
@@ -1168,14 +1168,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var8 = var8.bind(var0)(var4);
             var4 = null;
             if (!var8) {
-                _fun6650_ip = 1225;
+                _fun6650_ip = 1227;
                 continue _fun6650
             }
-        case 1210:
+        case 1212:
             var5 = var7[var5];
             var5 = var6.bind(var0)(var5);
             var4 = var5.custom;
-        case 1225:
+        case 1227:
             var _closure1_slot30 = var4;
             var4 = Object.create(var3);
             var5 = '"';
@@ -2941,17 +2941,17 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var1 = var1.prototype;
             var1 = var1.hasOwnProperty;
             if (var1) {
-                _fun6650_ip = 1342;
+                _fun6650_ip = 1344;
                 continue _fun6650
             }
-        case 1337:
+        case 1339:
             var1 = function(arg0) { // Environment: var2
                 var1 = arg0;
                 var0 = this;
                 var0 = var1 in var0;
                 return var0;
             };
-        case 1342:
+        case 1344:
             var _closure1_slot33 = var1;
             return var0;
     }

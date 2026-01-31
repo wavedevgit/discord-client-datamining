@@ -34,7 +34,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var3 instanceof Object ? var3 : var4;
     var _closure1_slot2 = var3;
     var1 = function(arg0) { // Original name: useFrameCallback, environment: var1
-        _fun34799: for (var _fun34799_ip = 0;;) switch (_fun34799_ip) {
+        _fun34815: for (var _fun34815_ip = 0;;) switch (_fun34815_ip) {
             case 0:
                 var6 = arg0;
                 var4 = undefined;
@@ -44,8 +44,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = 1;
                 var3 = var3 > var0;
                 if (!var3) {
-                    _fun34799_ip = 34;
-                    continue _fun34799
+                    _fun34815_ip = 34;
+                    continue _fun34815
                 }
             case 26:
                 var5 = arguments[var0];
@@ -53,8 +53,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             case 34:
                 var5 = !var3;
                 if (!var3) {
-                    _fun34799_ip = 44;
-                    continue _fun34799
+                    _fun34815_ip = 44;
+                    continue _fun34815
                 }
             case 40:
                 var5 = arguments[var0];

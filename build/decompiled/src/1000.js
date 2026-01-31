@@ -14,122 +14,6 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = '__esModule';
     var2 = var4.bind(var5)(var1, var2, var3);
     var2 = function() { // Original name: getExpoConstants, environment: var0
-        _fun10320: for (var _fun10320_ip = 0;;) switch (_fun10320_ip) {
-            case 0:
-                var1 = _closure1_slot0;
-                var2 = _closure1_slot1;
-                var0 = 0;
-                var0 = var2[var0];
-                var2 = undefined;
-                var0 = var1.bind(var2)(var0);
-                var0 = var0.RN_GLOBAL_OBJ;
-                var1 = var0.expo;
-                var3 = null;
-                var0 = undefined;
-                if (!(var3 !== var1)) {
-                    _fun10320_ip = 56;
-                    continue _fun10320
-                }
-            case 44:
-                var0 = undefined;
-                if (!(var2 !== var1)) {
-                    _fun10320_ip = 56;
-                    continue _fun10320
-                }
-            case 50:
-                var0 = var1.modules;
-            case 56:
-                var1 = undefined;
-                if (!(var3 !== var0)) {
-                    _fun10320_ip = 74;
-                    continue _fun10320
-                }
-            case 62:
-                var1 = undefined;
-                if (!(var2 !== var0)) {
-                    _fun10320_ip = 74;
-                    continue _fun10320
-                }
-            case 68:
-                var1 = var0.ExponentConstants;
-            case 74:
-                var0 = undefined;
-                if (!(var3 !== var1)) {
-                    _fun10320_ip = 89;
-                    continue _fun10320
-                }
-            case 80:
-                var0 = undefined;
-                if (!(var0 !== var1)) {
-                    _fun10320_ip = 89;
-                    continue _fun10320
-                }
-            case 86:
-                var0 = var1;
-            case 89:
-                return var0;
-        }
-    };
-    var1.getExpoConstants = var2;
-    var2 = function() { // Original name: getExpoDevice, environment: var0
-        _fun10321: for (var _fun10321_ip = 0;;) switch (_fun10321_ip) {
-            case 0:
-                var1 = _closure1_slot0;
-                var2 = _closure1_slot1;
-                var0 = 0;
-                var0 = var2[var0];
-                var2 = undefined;
-                var0 = var1.bind(var2)(var0);
-                var0 = var0.RN_GLOBAL_OBJ;
-                var1 = var0.expo;
-                var3 = null;
-                var0 = undefined;
-                if (!(var3 !== var1)) {
-                    _fun10321_ip = 56;
-                    continue _fun10321
-                }
-            case 44:
-                var0 = undefined;
-                if (!(var2 !== var1)) {
-                    _fun10321_ip = 56;
-                    continue _fun10321
-                }
-            case 50:
-                var0 = var1.modules;
-            case 56:
-                var1 = undefined;
-                if (!(var3 !== var0)) {
-                    _fun10321_ip = 74;
-                    continue _fun10321
-                }
-            case 62:
-                var1 = undefined;
-                if (!(var2 !== var0)) {
-                    _fun10321_ip = 74;
-                    continue _fun10321
-                }
-            case 68:
-                var1 = var0.ExpoDevice;
-            case 74:
-                var0 = undefined;
-                if (!(var3 !== var1)) {
-                    _fun10321_ip = 89;
-                    continue _fun10321
-                }
-            case 80:
-                var0 = undefined;
-                if (!(var0 !== var1)) {
-                    _fun10321_ip = 89;
-                    continue _fun10321
-                }
-            case 86:
-                var0 = var1;
-            case 89:
-                return var0;
-        }
-    };
-    var1.getExpoDevice = var2;
-    var2 = function() { // Original name: getExpoUpdates, environment: var0
         _fun10322: for (var _fun10322_ip = 0;;) switch (_fun10322_ip) {
             case 0:
                 var1 = _closure1_slot0;
@@ -167,7 +51,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     continue _fun10322
                 }
             case 68:
-                var1 = var0.ExpoUpdates;
+                var1 = var0.ExponentConstants;
             case 74:
                 var0 = undefined;
                 if (!(var3 !== var1)) {
@@ -186,8 +70,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var0;
         }
     };
-    var1.getExpoUpdates = var2;
-    var0 = function() { // Original name: getExpoGo, environment: var0
+    var1.getExpoConstants = var2;
+    var2 = function() { // Original name: getExpoDevice, environment: var0
         _fun10323: for (var _fun10323_ip = 0;;) switch (_fun10323_ip) {
             case 0:
                 var1 = _closure1_slot0;
@@ -225,7 +109,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     continue _fun10323
                 }
             case 68:
-                var1 = var0.ExpoGo;
+                var1 = var0.ExpoDevice;
             case 74:
                 var0 = undefined;
                 if (!(var3 !== var1)) {
@@ -237,6 +121,122 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 if (!(var0 !== var1)) {
                     _fun10323_ip = 89;
                     continue _fun10323
+                }
+            case 86:
+                var0 = var1;
+            case 89:
+                return var0;
+        }
+    };
+    var1.getExpoDevice = var2;
+    var2 = function() { // Original name: getExpoUpdates, environment: var0
+        _fun10324: for (var _fun10324_ip = 0;;) switch (_fun10324_ip) {
+            case 0:
+                var1 = _closure1_slot0;
+                var2 = _closure1_slot1;
+                var0 = 0;
+                var0 = var2[var0];
+                var2 = undefined;
+                var0 = var1.bind(var2)(var0);
+                var0 = var0.RN_GLOBAL_OBJ;
+                var1 = var0.expo;
+                var3 = null;
+                var0 = undefined;
+                if (!(var3 !== var1)) {
+                    _fun10324_ip = 56;
+                    continue _fun10324
+                }
+            case 44:
+                var0 = undefined;
+                if (!(var2 !== var1)) {
+                    _fun10324_ip = 56;
+                    continue _fun10324
+                }
+            case 50:
+                var0 = var1.modules;
+            case 56:
+                var1 = undefined;
+                if (!(var3 !== var0)) {
+                    _fun10324_ip = 74;
+                    continue _fun10324
+                }
+            case 62:
+                var1 = undefined;
+                if (!(var2 !== var0)) {
+                    _fun10324_ip = 74;
+                    continue _fun10324
+                }
+            case 68:
+                var1 = var0.ExpoUpdates;
+            case 74:
+                var0 = undefined;
+                if (!(var3 !== var1)) {
+                    _fun10324_ip = 89;
+                    continue _fun10324
+                }
+            case 80:
+                var0 = undefined;
+                if (!(var0 !== var1)) {
+                    _fun10324_ip = 89;
+                    continue _fun10324
+                }
+            case 86:
+                var0 = var1;
+            case 89:
+                return var0;
+        }
+    };
+    var1.getExpoUpdates = var2;
+    var0 = function() { // Original name: getExpoGo, environment: var0
+        _fun10325: for (var _fun10325_ip = 0;;) switch (_fun10325_ip) {
+            case 0:
+                var1 = _closure1_slot0;
+                var2 = _closure1_slot1;
+                var0 = 0;
+                var0 = var2[var0];
+                var2 = undefined;
+                var0 = var1.bind(var2)(var0);
+                var0 = var0.RN_GLOBAL_OBJ;
+                var1 = var0.expo;
+                var3 = null;
+                var0 = undefined;
+                if (!(var3 !== var1)) {
+                    _fun10325_ip = 56;
+                    continue _fun10325
+                }
+            case 44:
+                var0 = undefined;
+                if (!(var2 !== var1)) {
+                    _fun10325_ip = 56;
+                    continue _fun10325
+                }
+            case 50:
+                var0 = var1.modules;
+            case 56:
+                var1 = undefined;
+                if (!(var3 !== var0)) {
+                    _fun10325_ip = 74;
+                    continue _fun10325
+                }
+            case 62:
+                var1 = undefined;
+                if (!(var2 !== var0)) {
+                    _fun10325_ip = 74;
+                    continue _fun10325
+                }
+            case 68:
+                var1 = var0.ExpoGo;
+            case 74:
+                var0 = undefined;
+                if (!(var3 !== var1)) {
+                    _fun10325_ip = 89;
+                    continue _fun10325
+                }
+            case 80:
+                var0 = undefined;
+                if (!(var0 !== var1)) {
+                    _fun10325_ip = 89;
+                    continue _fun10325
                 }
             case 86:
                 var0 = var1;

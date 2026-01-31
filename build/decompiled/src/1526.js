@@ -10,15 +10,15 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = '__esModule';
     var0 = var3.bind(var4)(var1, var0, var2);
     var0 = function(arg0, arg1) { // Original name: isRecordEqual, environment: var0
-        _fun17369: for (var _fun17369_ip = 0;;) switch (_fun17369_ip) {
+        _fun17371: for (var _fun17371_ip = 0;;) switch (_fun17371_ip) {
             case 0:
                 var5 = arg0;
                 var4 = arg1;
                 var _closure2_slot0 = var5;
                 var _closure2_slot1 = var4;
                 if (!(var5 !== var4)) {
-                    _fun17369_ip = 89;
-                    continue _fun17369
+                    _fun17371_ip = 89;
+                    continue _fun17371
                 }
             case 20:
                 var0 = global;
@@ -32,8 +32,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = var0.length;
                 var0 = var2 === var0;
                 if (!var0) {
-                    _fun17369_ip = 87;
-                    continue _fun17369
+                    _fun17371_ip = 87;
+                    continue _fun17371
                 }
             case 71:
                 var2 = var3.every;

@@ -109,7 +109,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                     var _closure3_slot1 = var0;
                                     var2 = _closure2_slot3;
                                     if (!var2) {
-                                        _fun2961_ip = 56;
+                                        _fun2961_ip = 57;
                                         continue _fun2961
                                     }
                                 case 34:
@@ -121,7 +121,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                         return var0;
                                     };
                                     var0[var2] = var1;
-                                case 56:
+                                case 57:
                                     return var0;
                             }
                         };
@@ -2541,7 +2541,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         };
                         var12.entries = var11;
                         if (!var1) {
-                            _fun2958_ip = 581;
+                            _fun2958_ip = 582;
                             continue _fun2958
                         }
                     case 547:
@@ -2552,7 +2552,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var1 = var1.prototype;
                         var1 = var1.entries;
                         var12[var11] = var1;
-                    case 581:
+                    case 582:
                         var1 = ['CONNECT', 'DELETE', 'GET', 'HEAD', 'OPTIONS', 'PATCH', 'POST', 'PUT', 'TRACE'];
                         var _closure2_slot9 = var1;
                         var1 = var6;
@@ -2703,7 +2703,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var1 = var8;
                         var1 = var1.DOMException;
                         var10.DOMException = var1;
-                    case 720: // try_start_1
+                    case 721: // try_start_1
                         var1 = var5;
                         var10 = var1.DOMException;
                         var1 = var10.prototype;
@@ -2713,10 +2713,10 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             }
                         });
                         var1 = new var17[var10](var16);
-                    case 742: // try_end1
-                        _fun2958_ip = 822;
+                    case 743: // try_end1
+                        _fun2958_ip = 823;
                         continue _fun2958;
-                    case 744: // catch_target1
+                    case 745: // catch_target1
                         CatchBlockStart(arg_register = 1);
                         var1 = var5;
                         var9 = function(arg0, arg1) { // Environment: var9
@@ -2745,17 +2745,17 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var9 = var9.prototype;
                         var1 = var1.DOMException;
                         var9.constructor = var1;
-                    case 822:
+                    case 823:
                         var9 = var3;
                         var1 = true;
                         var9.polyfill = var1;
                         var9 = var8;
                         var9 = var9.fetch;
                         if (var9) {
-                            _fun2958_ip = 884;
+                            _fun2958_ip = 885;
                             continue _fun2958
                         }
-                    case 845:
+                    case 846:
                         var9 = var8;
                         var8 = var3;
                         var9.fetch = var8;
@@ -2765,7 +2765,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var9.Request = var8;
                         var8 = var4;
                         var9.Response = var8;
-                    case 884:
+                    case 885:
                         var5.Headers = var7;
                         var5.Request = var6;
                         var5.Response = var4;

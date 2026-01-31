@@ -5,7 +5,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2 = exports;
     var5 = dependencyMap;
     var0 = function() { // Original name: _isNativeReflectConstruct, environment: var3
-        _fun59228: for (var _fun59228_ip = 0;;) switch (_fun59228_ip) {
+        _fun59240: for (var _fun59240_ip = 0;;) switch (_fun59240_ip) {
             case 0:
             case 2: // try_start_0
                 var1 = global;
@@ -26,8 +26,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = !var1;
                 var _closure2_slot0 = var1;
             case 70: // try_end0
-                _fun59228_ip = 74;
-                continue _fun59228;
+                _fun59240_ip = 74;
+                continue _fun59240;
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
@@ -90,7 +90,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot6 = var1;
     var3 = function(arg0) { // Environment: var3
         var4 = function(arg0) { // Original name: SubscriptionGroupMemberRecord, environment: var0
-            _fun59232: for (var _fun59232_ip = 0;;) switch (_fun59232_ip) {
+            _fun59244: for (var _fun59244_ip = 0;;) switch (_fun59244_ip) {
                 case 0:
                     var1 = arg0;
                     var5 = this;
@@ -104,14 +104,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = _closure1_slot7;
                     var0 = var0.bind(var4)();
                     if (var0) {
-                        _fun59232_ip = 65;
-                        continue _fun59232
+                        _fun59244_ip = 65;
+                        continue _fun59244
                     }
                 case 52:
                     var0 = var10.apply;
                     var0 = var0.bind(var10)(var5, var4);
-                    _fun59232_ip = 103;
-                    continue _fun59232;
+                    _fun59244_ip = 103;
+                    continue _fun59244;
                 case 65:
                     var6 = global;
                     var9 = var6.Reflect;
@@ -166,7 +166,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var6 = 'isMember';
         var5.key = var6;
         var6 = function() { // Original name: value, environment: var0
-            _fun59234: for (var _fun59234_ip = 0;;) switch (_fun59234_ip) {
+            _fun59246: for (var _fun59246_ip = 0;;) switch (_fun59246_ip) {
                 case 0:
                     var1 = this;
                     var2 = var1.member_type;
@@ -174,8 +174,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = var0.MEMBER;
                     var0 = var2 === var0;
                     if (!var0) {
-                        _fun59234_ip = 41;
-                        continue _fun59234
+                        _fun59246_ip = 41;
+                        continue _fun59246
                     }
                 case 29:
                     var2 = var1.accepted_at;
@@ -191,7 +191,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var6 = 'isInvited';
         var5.key = var6;
         var6 = function() { // Original name: value, environment: var0
-            _fun59235: for (var _fun59235_ip = 0;;) switch (_fun59235_ip) {
+            _fun59247: for (var _fun59247_ip = 0;;) switch (_fun59247_ip) {
                 case 0:
                     var1 = this;
                     var2 = var1.member_type;
@@ -199,8 +199,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = var0.MEMBER;
                     var0 = var2 === var0;
                     if (!var0) {
-                        _fun59235_ip = 41;
-                        continue _fun59235
+                        _fun59247_ip = 41;
+                        continue _fun59247
                     }
                 case 29:
                     var2 = var1.accepted_at;

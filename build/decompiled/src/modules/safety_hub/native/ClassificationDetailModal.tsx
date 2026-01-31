@@ -59,7 +59,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/safety_hub/native/ClassificationDetailModal.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: ClassificationDetailModal, environment: var1
-        _fun79260: for (var _fun79260_ip = 0;;) switch (_fun79260_ip) {
+        _fun79290: for (var _fun79290_ip = 0;;) switch (_fun79290_ip) {
             case 0:
                 var1 = arg0;
                 var11 = var1.classificationId;
@@ -69,8 +69,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = var1.shouldRedirectToAccountStanding;
                 var3 = undefined;
                 if (!(var10 === var3)) {
-                    _fun79260_ip = 38;
-                    continue _fun79260
+                    _fun79290_ip = 38;
+                    continue _fun79290
                 }
             case 36:
                 var10 = false;
@@ -94,12 +94,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = new Array(1);
                 var2[0] = var1;
                 var1 = function() { // Environment: var0
-                    _fun79261: for (var _fun79261_ip = 0;;) switch (_fun79261_ip) {
+                    _fun79291: for (var _fun79291_ip = 0;;) switch (_fun79291_ip) {
                         case 0:
                             var0 = _closure2_slot4;
                             if (var0) {
-                                _fun79261_ip = 45;
-                                continue _fun79261
+                                _fun79291_ip = 45;
+                                continue _fun79291
                             }
                         case 10:
                             var2 = _closure1_slot2;
@@ -186,15 +186,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var5 = _closure4_slot2;
                             var0.source = var5;
                             var5 = function() { // Original name: onClose, environment: var4
-                                _fun79267: for (var _fun79267_ip = 0;;) switch (_fun79267_ip) {
+                                _fun79297: for (var _fun79297_ip = 0;;) switch (_fun79297_ip) {
                                     case 0:
                                         var2 = _closure4_slot3;
                                         var0 = undefined;
                                         var2 = var2.bind(var0)();
                                         var1 = _closure4_slot1;
                                         if (!var1) {
-                                            _fun79267_ip = 100;
-                                            continue _fun79267
+                                            _fun79297_ip = 100;
+                                            continue _fun79297
                                         }
                                     case 20:
                                         var5 = _closure1_slot0;
@@ -282,4 +282,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 660, 33, 1297, 671, 4524, 4667, 10051, 5883, 10082, 11545, 10059, 1470, 5747, 1234, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 660, 33, 1297, 671, 4525, 4668, 10053, 5884, 10084, 11480, 10061, 1470, 5748, 1234, 2]);

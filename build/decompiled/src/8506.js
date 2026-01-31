@@ -103,7 +103,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var4.bind(var5)(var3);
     var _closure1_slot7 = var3;
     var1 = function(arg0) { // Original name: ArrowComponent, environment: var1
-        _fun68376: for (var _fun68376_ip = 0;;) switch (_fun68376_ip) {
+        _fun68400: for (var _fun68400_ip = 0;;) switch (_fun68400_ip) {
             case 0:
                 var1 = arg0;
                 var5 = var1.type;
@@ -125,7 +125,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var4[1] = var6;
                 var4[2] = var1;
                 var1 = function() { // Environment: var0
-                    _fun68377: for (var _fun68377_ip = 0;;) switch (_fun68377_ip) {
+                    _fun68401: for (var _fun68401_ip = 0;;) switch (_fun68401_ip) {
                         case 0:
                             var0 = {};
                             var1 = _closure2_slot0;
@@ -133,13 +133,13 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var2 = _closure2_slot2;
                             var2 = var3[var2];
                             if (var1) {
-                                _fun68377_ip = 32;
-                                continue _fun68377
+                                _fun68401_ip = 32;
+                                continue _fun68401
                             }
                         case 24:
                             var1 = var2.primary;
-                            _fun68377_ip = 37;
-                            continue _fun68377;
+                            _fun68401_ip = 37;
+                            continue _fun68401;
                         case 32:
                             var1 = var2.disabled;
                         case 37:
@@ -178,14 +178,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = {};
                 var4 = 'next';
                 if (!(var4 !== var5)) {
-                    _fun68376_ip = 171;
-                    continue _fun68376
+                    _fun68400_ip = 171;
+                    continue _fun68400
                 }
             case 159:
                 var4 = _closure1_slot7;
                 var4 = var4.arrowUpContainer;
-                _fun68376_ip = 181;
-                continue _fun68376;
+                _fun68400_ip = 181;
+                continue _fun68400;
             case 171:
                 var5 = _closure1_slot7;
                 var4 = var5.arrowDownContainer;

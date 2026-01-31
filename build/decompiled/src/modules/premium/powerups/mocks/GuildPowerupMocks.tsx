@@ -142,4 +142,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.MOCK_LEVELS = var3;
     var2.MOCK_PERKS = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [6678, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [6679, 2]);

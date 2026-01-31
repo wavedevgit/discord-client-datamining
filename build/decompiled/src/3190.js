@@ -5,15 +5,15 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = dependencyMap;
     var _closure1_slot1 = var1;
     var1 = function(arg0) { // Original name: toString, environment: var0
-        _fun27857: for (var _fun27857_ip = 0;;) switch (_fun27857_ip) {
+        _fun27858: for (var _fun27858_ip = 0;;) switch (_fun27858_ip) {
             case 0:
                 var3 = arg0;
                 var0 = null;
                 var1 = var0 == var3;
                 var0 = '';
                 if (var1) {
-                    _fun27857_ip = 45;
-                    continue _fun27857
+                    _fun27858_ip = 45;
+                    continue _fun27858
                 }
             case 16:
                 var4 = _closure1_slot0;

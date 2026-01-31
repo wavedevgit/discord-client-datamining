@@ -54,7 +54,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/video_calls/native/components/SingleScreenshare.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: _default, environment: var1
-        _fun68588: for (var _fun68588_ip = 0;;) switch (_fun68588_ip) {
+        _fun68612: for (var _fun68612_ip = 0;;) switch (_fun68612_ip) {
             case 0:
                 var0 = arg0;
                 var7 = var0.participant;
@@ -109,8 +109,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var4.bind(var6)();
                 var4 = undefined;
                 if (!var6) {
-                    _fun68588_ip = 133;
-                    continue _fun68588
+                    _fun68612_ip = 133;
+                    continue _fun68612
                 }
             case 127:
                 var4 = var5.stageStreamContainer;
@@ -122,4 +122,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 7845, 33, 1297, 671, 4062, 8560, 7841, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 7844, 33, 1297, 671, 4062, 8560, 7840, 2]);

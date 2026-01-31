@@ -1,6 +1,6 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun21905: for (var _fun21905_ip = 0;;) switch (_fun21905_ip) {
+    _fun21907: for (var _fun21907_ip = 0;;) switch (_fun21907_ip) {
         case 0:
             var1 = exports;
             var0 = global;
@@ -19,15 +19,15 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var2 = require;
             var4 = var2.bind(var0)(var3);
             if (!var4) {
-                _fun21905_ip = 77;
-                continue _fun21905
+                _fun21907_ip = 77;
+                continue _fun21907
             }
         case 65:
             var2 = var4.__esModule;
             var3 = var4;
             if (var2) {
-                _fun21905_ip = 86;
-                continue _fun21905
+                _fun21907_ip = 86;
+                continue _fun21907
             }
         case 77:
             var2 = {};
@@ -36,7 +36,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         case 86:
             var2 = {};
             var4 = function(arg0, arg1) { // Original name: ordinalNumber, environment: var7
-                _fun21906: for (var _fun21906_ip = 0;;) switch (_fun21906_ip) {
+                _fun21908: for (var _fun21908_ip = 0;;) switch (_fun21908_ip) {
                     case 0:
                         var0 = arg1;
                         var1 = global;
@@ -48,30 +48,30 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var2 = var2 == var0;
                         var6 = undefined;
                         if (var2) {
-                            _fun21906_ip = 38;
-                            continue _fun21906
+                            _fun21908_ip = 38;
+                            continue _fun21908
                         }
                     case 32:
                         var6 = var0.unit;
                     case 38:
                         var0 = 0;
                         if (!(var0 !== var1)) {
-                            _fun21906_ip = 110;
-                            continue _fun21906
+                            _fun21908_ip = 108;
+                            continue _fun21908
                         }
                     case 44:
                         var0 = 'ème';
                         var2 = 1;
                         if (!(var2 === var1)) {
-                            _fun21906_ip = 104;
-                            continue _fun21906
+                            _fun21908_ip = 102;
+                            continue _fun21908
                         }
                     case 57:
                         var4 = 'er';
                         var2 = var4;
                         if (!var6) {
-                            _fun21906_ip = 101;
-                            continue _fun21906
+                            _fun21908_ip = 99;
+                            continue _fun21908
                         }
                     case 69:
                         var5 = ['year', 'week', 'hour', 'minute', 'second'];
@@ -79,17 +79,17 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var3 = var3.bind(var5)(var6);
                         var2 = var4;
                         if (!var3) {
-                            _fun21906_ip = 101;
-                            continue _fun21906
+                            _fun21908_ip = 99;
+                            continue _fun21908
                         }
-                    case 95:
+                    case 93:
                         var2 = 'ère';
-                    case 101:
+                    case 99:
                         var0 = var2;
-                    case 104:
+                    case 102:
                         var0 = var1 + var0;
                         return var0;
-                    case 110:
+                    case 108:
                         var0 = '0';
                         return var0;
                 }

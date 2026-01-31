@@ -20,7 +20,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = 'modules/quests/native/VideoQuestModal/captions/VideoQuestCaptionsUtils.tsx';
     var1 = var3.bind(var4)(var1);
     var1 = function(arg0, arg1) { // Environment: var1
-        _fun83521: for (var _fun83521_ip = 0;;) switch (_fun83521_ip) {
+        _fun83551: for (var _fun83551_ip = 0;;) switch (_fun83551_ip) {
             case 0:
                 var7 = arg0;
                 var6 = arg1;
@@ -31,8 +31,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = 2;
                 var3 = 0;
                 if (!(var3 <= var4)) {
-                    _fun83521_ip = 105;
-                    continue _fun83521
+                    _fun83551_ip = 105;
+                    continue _fun83551
                 }
             case 29:
                 var9 = var2.Math;
@@ -43,33 +43,33 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var7[var9];
                 var8 = var0.start;
                 if (!(var6 >= var8)) {
-                    _fun83521_ip = 76;
-                    continue _fun83521
+                    _fun83551_ip = 76;
+                    continue _fun83551
                 }
             case 67:
                 var8 = var0.end;
                 if (!(!(var6 <= var8))) {
-                    _fun83521_ip = 109;
-                    continue _fun83521
+                    _fun83551_ip = 109;
+                    continue _fun83551
                 }
             case 76:
                 var8 = var0.start;
                 if (!(!(var6 < var8))) {
-                    _fun83521_ip = 91;
-                    continue _fun83521
+                    _fun83551_ip = 91;
+                    continue _fun83551
                 }
             case 85:
                 var8 = var9 + var5;
-                _fun83521_ip = 98;
-                continue _fun83521;
+                _fun83551_ip = 98;
+                continue _fun83551;
             case 91:
                 var4 = var9 - var5;
                 var8 = var3;
             case 98:
                 var3 = var8;
                 if (var3 <= var4) {
-                    _fun83521_ip = 29;
-                    continue _fun83521
+                    _fun83551_ip = 29;
+                    continue _fun83551
                 }
             case 105:
                 var1 = null;

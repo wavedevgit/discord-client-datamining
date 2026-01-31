@@ -72,21 +72,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.removeFlags = var3;
     var3 = function(arg0, arg1, arg2) { // Original name: setFlag, environment: var1
-        _fun16187: for (var _fun16187_ip = 0;;) switch (_fun16187_ip) {
+        _fun16189: for (var _fun16189_ip = 0;;) switch (_fun16189_ip) {
             case 0:
                 var4 = arg0;
                 var3 = arg1;
                 var0 = arg2;
                 if (var0) {
-                    _fun16187_ip = 29;
-                    continue _fun16187
+                    _fun16189_ip = 29;
+                    continue _fun16189
                 }
             case 15:
                 var2 = _closure1_slot2;
                 var0 = undefined;
                 var0 = var2.bind(var0)(var4, var3);
-                _fun16187_ip = 41;
-                continue _fun16187;
+                _fun16189_ip = 41;
+                continue _fun16189;
             case 29:
                 var2 = _closure1_slot1;
                 var1 = undefined;
@@ -97,7 +97,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.setFlag = var3;
     var1 = function(arg0, arg1) { // Original name: toggleFlag, environment: var1
-        _fun16188: for (var _fun16188_ip = 0;;) switch (_fun16188_ip) {
+        _fun16190: for (var _fun16190_ip = 0;;) switch (_fun16190_ip) {
             case 0:
                 var4 = arg0;
                 var3 = arg1;
@@ -105,14 +105,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = undefined;
                 var0 = var0.bind(var2)(var4, var3);
                 if (var0) {
-                    _fun16188_ip = 36;
-                    continue _fun16188
+                    _fun16190_ip = 36;
+                    continue _fun16190
                 }
             case 24:
                 var0 = _closure1_slot1;
                 var0 = var0.bind(var2)(var4, var3);
-                _fun16188_ip = 46;
-                continue _fun16188;
+                _fun16190_ip = 46;
+                continue _fun16190;
             case 36:
                 var1 = _closure1_slot2;
                 var0 = var1.bind(var2)(var4, var3);

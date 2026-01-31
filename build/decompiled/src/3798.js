@@ -7,7 +7,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var13;
     var _closure1_slot1 = var14;
     var0 = function(arg0, arg1, arg2) { // Original name: _callSuper, environment: var1
-        _fun34063: for (var _fun34063_ip = 0;;) switch (_fun34063_ip) {
+        _fun34079: for (var _fun34079_ip = 0;;) switch (_fun34079_ip) {
             case 0:
                 var3 = arg0;
                 var5 = arg2;
@@ -19,21 +19,21 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = _closure1_slot18;
                 var0 = var0.bind(var2)();
                 if (var0) {
-                    _fun34063_ip = 51;
-                    continue _fun34063
+                    _fun34079_ip = 51;
+                    continue _fun34079
                 }
             case 38:
                 var0 = var8.apply;
                 var0 = var0.bind(var8)(var3, var5);
-                _fun34063_ip = 92;
-                continue _fun34063;
+                _fun34079_ip = 92;
+                continue _fun34079;
             case 51:
                 var6 = global;
                 var7 = var6.Reflect;
                 var6 = var7.construct;
                 if (var5) {
-                    _fun34063_ip = 71;
-                    continue _fun34063
+                    _fun34079_ip = 71;
+                    continue _fun34079
                 }
             case 67:
                 var5 = new Array(0);
@@ -49,7 +49,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var _closure1_slot17 = var0;
     var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
-        _fun34064: for (var _fun34064_ip = 0;;) switch (_fun34064_ip) {
+        _fun34080: for (var _fun34080_ip = 0;;) switch (_fun34080_ip) {
             case 0:
             case 2: // try_start_0
                 var1 = global;
@@ -70,8 +70,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = !var1;
                 var _closure2_slot0 = var1;
             case 70: // try_end0
-                _fun34064_ip = 74;
-                continue _fun34064;
+                _fun34080_ip = 74;
+                continue _fun34080;
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
@@ -127,7 +127,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = var3.ComplexAnimationBuilder;
     var3 = function(arg0) { // Environment: var1
         var4 = function() { // Original name: BounceIn, environment: var6
-            _fun34068: for (var _fun34068_ip = 0;;) switch (_fun34068_ip) {
+            _fun34084: for (var _fun34084_ip = 0;;) switch (_fun34084_ip) {
                 case 0:
                     var5 = this;
                     var4 = undefined;
@@ -151,16 +151,16 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var3 = 0;
                     var9 = var3 < var6;
                     if (!var9) {
-                        _fun34068_ip = 87;
-                        continue _fun34068
+                        _fun34084_ip = 87;
+                        continue _fun34084
                     }
                 case 72:
                     var9 = arguments[var3];
                     var7[var3] = var9;
                     var3 = var3 + 1;
                     if (var3 < var6) {
-                        _fun34068_ip = 72;
-                        continue _fun34068
+                        _fun34084_ip = 72;
+                        continue _fun34084
                     }
                 case 87:
                     var3 = _closure1_slot17;
@@ -303,7 +303,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var7 = 'getDuration';
         var0.key = var7;
         var1 = function() { // Original name: getDuration, environment: var6
-            _fun34071: for (var _fun34071_ip = 0;;) switch (_fun34071_ip) {
+            _fun34087: for (var _fun34087_ip = 0;;) switch (_fun34087_ip) {
                 case 0:
                     var0 = this;
                     var1 = var0.durationV;
@@ -311,8 +311,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var2 = var0 != var1;
                     var0 = 600;
                     if (!var2) {
-                        _fun34071_ip = 27;
-                        continue _fun34071
+                        _fun34087_ip = 27;
+                        continue _fun34087
                     }
                 case 24:
                     var0 = var1;
@@ -365,7 +365,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = var3.ComplexAnimationBuilder;
     var3 = function(arg0) { // Environment: var1
         var4 = function() { // Original name: BounceInDown, environment: var6
-            _fun34075: for (var _fun34075_ip = 0;;) switch (_fun34075_ip) {
+            _fun34091: for (var _fun34091_ip = 0;;) switch (_fun34091_ip) {
                 case 0:
                     var5 = this;
                     var4 = undefined;
@@ -389,16 +389,16 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var3 = 0;
                     var9 = var3 < var6;
                     if (!var9) {
-                        _fun34075_ip = 87;
-                        continue _fun34075
+                        _fun34091_ip = 87;
+                        continue _fun34091
                     }
                 case 72:
                     var9 = arguments[var3];
                     var7[var3] = var9;
                     var3 = var3 + 1;
                     if (var3 < var6) {
-                        _fun34075_ip = 72;
-                        continue _fun34075
+                        _fun34091_ip = 72;
+                        continue _fun34091
                     }
                 case 87:
                     var3 = _closure1_slot17;
@@ -542,7 +542,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var7 = 'getDuration';
         var0.key = var7;
         var1 = function() { // Original name: getDuration, environment: var6
-            _fun34078: for (var _fun34078_ip = 0;;) switch (_fun34078_ip) {
+            _fun34094: for (var _fun34094_ip = 0;;) switch (_fun34094_ip) {
                 case 0:
                     var0 = this;
                     var1 = var0.durationV;
@@ -550,8 +550,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var2 = var0 != var1;
                     var0 = 600;
                     if (!var2) {
-                        _fun34078_ip = 27;
-                        continue _fun34078
+                        _fun34094_ip = 27;
+                        continue _fun34094
                     }
                 case 24:
                     var0 = var1;
@@ -604,7 +604,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = var3.ComplexAnimationBuilder;
     var3 = function(arg0) { // Environment: var1
         var4 = function() { // Original name: BounceInUp, environment: var6
-            _fun34082: for (var _fun34082_ip = 0;;) switch (_fun34082_ip) {
+            _fun34098: for (var _fun34098_ip = 0;;) switch (_fun34098_ip) {
                 case 0:
                     var5 = this;
                     var4 = undefined;
@@ -628,16 +628,16 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var3 = 0;
                     var9 = var3 < var6;
                     if (!var9) {
-                        _fun34082_ip = 87;
-                        continue _fun34082
+                        _fun34098_ip = 87;
+                        continue _fun34098
                     }
                 case 72:
                     var9 = arguments[var3];
                     var7[var3] = var9;
                     var3 = var3 + 1;
                     if (var3 < var6) {
-                        _fun34082_ip = 72;
-                        continue _fun34082
+                        _fun34098_ip = 72;
+                        continue _fun34098
                     }
                 case 87:
                     var3 = _closure1_slot17;
@@ -782,7 +782,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var7 = 'getDuration';
         var0.key = var7;
         var1 = function() { // Original name: getDuration, environment: var6
-            _fun34085: for (var _fun34085_ip = 0;;) switch (_fun34085_ip) {
+            _fun34101: for (var _fun34101_ip = 0;;) switch (_fun34101_ip) {
                 case 0:
                     var0 = this;
                     var1 = var0.durationV;
@@ -790,8 +790,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var2 = var0 != var1;
                     var0 = 600;
                     if (!var2) {
-                        _fun34085_ip = 27;
-                        continue _fun34085
+                        _fun34101_ip = 27;
+                        continue _fun34101
                     }
                 case 24:
                     var0 = var1;
@@ -844,7 +844,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = var3.ComplexAnimationBuilder;
     var3 = function(arg0) { // Environment: var1
         var4 = function() { // Original name: BounceInLeft, environment: var6
-            _fun34089: for (var _fun34089_ip = 0;;) switch (_fun34089_ip) {
+            _fun34105: for (var _fun34105_ip = 0;;) switch (_fun34105_ip) {
                 case 0:
                     var5 = this;
                     var4 = undefined;
@@ -868,16 +868,16 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var3 = 0;
                     var9 = var3 < var6;
                     if (!var9) {
-                        _fun34089_ip = 87;
-                        continue _fun34089
+                        _fun34105_ip = 87;
+                        continue _fun34105
                     }
                 case 72:
                     var9 = arguments[var3];
                     var7[var3] = var9;
                     var3 = var3 + 1;
                     if (var3 < var6) {
-                        _fun34089_ip = 72;
-                        continue _fun34089
+                        _fun34105_ip = 72;
+                        continue _fun34105
                     }
                 case 87:
                     var3 = _closure1_slot17;
@@ -1022,7 +1022,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var7 = 'getDuration';
         var0.key = var7;
         var1 = function() { // Original name: getDuration, environment: var6
-            _fun34092: for (var _fun34092_ip = 0;;) switch (_fun34092_ip) {
+            _fun34108: for (var _fun34108_ip = 0;;) switch (_fun34108_ip) {
                 case 0:
                     var0 = this;
                     var1 = var0.durationV;
@@ -1030,8 +1030,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var2 = var0 != var1;
                     var0 = 600;
                     if (!var2) {
-                        _fun34092_ip = 27;
-                        continue _fun34092
+                        _fun34108_ip = 27;
+                        continue _fun34108
                     }
                 case 24:
                     var0 = var1;
@@ -1084,7 +1084,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = var3.ComplexAnimationBuilder;
     var3 = function(arg0) { // Environment: var1
         var4 = function() { // Original name: BounceInRight, environment: var6
-            _fun34096: for (var _fun34096_ip = 0;;) switch (_fun34096_ip) {
+            _fun34112: for (var _fun34112_ip = 0;;) switch (_fun34112_ip) {
                 case 0:
                     var5 = this;
                     var4 = undefined;
@@ -1108,16 +1108,16 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var3 = 0;
                     var9 = var3 < var6;
                     if (!var9) {
-                        _fun34096_ip = 87;
-                        continue _fun34096
+                        _fun34112_ip = 87;
+                        continue _fun34112
                     }
                 case 72:
                     var9 = arguments[var3];
                     var7[var3] = var9;
                     var3 = var3 + 1;
                     if (var3 < var6) {
-                        _fun34096_ip = 72;
-                        continue _fun34096
+                        _fun34112_ip = 72;
+                        continue _fun34112
                     }
                 case 87:
                     var3 = _closure1_slot17;
@@ -1261,7 +1261,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var7 = 'getDuration';
         var0.key = var7;
         var1 = function() { // Original name: getDuration, environment: var6
-            _fun34099: for (var _fun34099_ip = 0;;) switch (_fun34099_ip) {
+            _fun34115: for (var _fun34115_ip = 0;;) switch (_fun34115_ip) {
                 case 0:
                     var0 = this;
                     var1 = var0.durationV;
@@ -1269,8 +1269,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var2 = var0 != var1;
                     var0 = 600;
                     if (!var2) {
-                        _fun34099_ip = 27;
-                        continue _fun34099
+                        _fun34115_ip = 27;
+                        continue _fun34115
                     }
                 case 24:
                     var0 = var1;
@@ -1323,7 +1323,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = var3.ComplexAnimationBuilder;
     var3 = function(arg0) { // Environment: var1
         var4 = function() { // Original name: BounceOut, environment: var6
-            _fun34103: for (var _fun34103_ip = 0;;) switch (_fun34103_ip) {
+            _fun34119: for (var _fun34119_ip = 0;;) switch (_fun34119_ip) {
                 case 0:
                     var5 = this;
                     var4 = undefined;
@@ -1347,16 +1347,16 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var3 = 0;
                     var9 = var3 < var6;
                     if (!var9) {
-                        _fun34103_ip = 87;
-                        continue _fun34103
+                        _fun34119_ip = 87;
+                        continue _fun34119
                     }
                 case 72:
                     var9 = arguments[var3];
                     var7[var3] = var9;
                     var3 = var3 + 1;
                     if (var3 < var6) {
-                        _fun34103_ip = 72;
-                        continue _fun34103
+                        _fun34119_ip = 72;
+                        continue _fun34119
                     }
                 case 87:
                     var3 = _closure1_slot17;
@@ -1499,7 +1499,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var7 = 'getDuration';
         var0.key = var7;
         var1 = function() { // Original name: getDuration, environment: var6
-            _fun34106: for (var _fun34106_ip = 0;;) switch (_fun34106_ip) {
+            _fun34122: for (var _fun34122_ip = 0;;) switch (_fun34122_ip) {
                 case 0:
                     var0 = this;
                     var1 = var0.durationV;
@@ -1507,8 +1507,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var2 = var0 != var1;
                     var0 = 600;
                     if (!var2) {
-                        _fun34106_ip = 27;
-                        continue _fun34106
+                        _fun34122_ip = 27;
+                        continue _fun34122
                     }
                 case 24:
                     var0 = var1;
@@ -1561,7 +1561,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = var3.ComplexAnimationBuilder;
     var3 = function(arg0) { // Environment: var1
         var4 = function() { // Original name: BounceOutDown, environment: var6
-            _fun34110: for (var _fun34110_ip = 0;;) switch (_fun34110_ip) {
+            _fun34126: for (var _fun34126_ip = 0;;) switch (_fun34126_ip) {
                 case 0:
                     var5 = this;
                     var4 = undefined;
@@ -1585,16 +1585,16 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var3 = 0;
                     var9 = var3 < var6;
                     if (!var9) {
-                        _fun34110_ip = 87;
-                        continue _fun34110
+                        _fun34126_ip = 87;
+                        continue _fun34126
                     }
                 case 72:
                     var9 = arguments[var3];
                     var7[var3] = var9;
                     var3 = var3 + 1;
                     if (var3 < var6) {
-                        _fun34110_ip = 72;
-                        continue _fun34110
+                        _fun34126_ip = 72;
+                        continue _fun34126
                     }
                 case 87:
                     var3 = _closure1_slot17;
@@ -1738,7 +1738,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var7 = 'getDuration';
         var0.key = var7;
         var1 = function() { // Original name: getDuration, environment: var6
-            _fun34113: for (var _fun34113_ip = 0;;) switch (_fun34113_ip) {
+            _fun34129: for (var _fun34129_ip = 0;;) switch (_fun34129_ip) {
                 case 0:
                     var0 = this;
                     var1 = var0.durationV;
@@ -1746,8 +1746,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var2 = var0 != var1;
                     var0 = 600;
                     if (!var2) {
-                        _fun34113_ip = 27;
-                        continue _fun34113
+                        _fun34129_ip = 27;
+                        continue _fun34129
                     }
                 case 24:
                     var0 = var1;
@@ -1800,7 +1800,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = var3.ComplexAnimationBuilder;
     var3 = function(arg0) { // Environment: var1
         var4 = function() { // Original name: BounceOutUp, environment: var6
-            _fun34117: for (var _fun34117_ip = 0;;) switch (_fun34117_ip) {
+            _fun34133: for (var _fun34133_ip = 0;;) switch (_fun34133_ip) {
                 case 0:
                     var5 = this;
                     var4 = undefined;
@@ -1824,16 +1824,16 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var3 = 0;
                     var9 = var3 < var6;
                     if (!var9) {
-                        _fun34117_ip = 87;
-                        continue _fun34117
+                        _fun34133_ip = 87;
+                        continue _fun34133
                     }
                 case 72:
                     var9 = arguments[var3];
                     var7[var3] = var9;
                     var3 = var3 + 1;
                     if (var3 < var6) {
-                        _fun34117_ip = 72;
-                        continue _fun34117
+                        _fun34133_ip = 72;
+                        continue _fun34133
                     }
                 case 87:
                     var3 = _closure1_slot17;
@@ -1978,7 +1978,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var7 = 'getDuration';
         var0.key = var7;
         var1 = function() { // Original name: getDuration, environment: var6
-            _fun34120: for (var _fun34120_ip = 0;;) switch (_fun34120_ip) {
+            _fun34136: for (var _fun34136_ip = 0;;) switch (_fun34136_ip) {
                 case 0:
                     var0 = this;
                     var1 = var0.durationV;
@@ -1986,8 +1986,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var2 = var0 != var1;
                     var0 = 600;
                     if (!var2) {
-                        _fun34120_ip = 27;
-                        continue _fun34120
+                        _fun34136_ip = 27;
+                        continue _fun34136
                     }
                 case 24:
                     var0 = var1;
@@ -2040,7 +2040,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var15 = var3.ComplexAnimationBuilder;
     var3 = function(arg0) { // Environment: var1
         var4 = function() { // Original name: BounceOutLeft, environment: var6
-            _fun34124: for (var _fun34124_ip = 0;;) switch (_fun34124_ip) {
+            _fun34140: for (var _fun34140_ip = 0;;) switch (_fun34140_ip) {
                 case 0:
                     var5 = this;
                     var4 = undefined;
@@ -2064,16 +2064,16 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var3 = 0;
                     var9 = var3 < var6;
                     if (!var9) {
-                        _fun34124_ip = 87;
-                        continue _fun34124
+                        _fun34140_ip = 87;
+                        continue _fun34140
                     }
                 case 72:
                     var9 = arguments[var3];
                     var7[var3] = var9;
                     var3 = var3 + 1;
                     if (var3 < var6) {
-                        _fun34124_ip = 72;
-                        continue _fun34124
+                        _fun34140_ip = 72;
+                        continue _fun34140
                     }
                 case 87:
                     var3 = _closure1_slot17;
@@ -2218,7 +2218,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var7 = 'getDuration';
         var0.key = var7;
         var1 = function() { // Original name: getDuration, environment: var6
-            _fun34127: for (var _fun34127_ip = 0;;) switch (_fun34127_ip) {
+            _fun34143: for (var _fun34143_ip = 0;;) switch (_fun34143_ip) {
                 case 0:
                     var0 = this;
                     var1 = var0.durationV;
@@ -2226,8 +2226,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var2 = var0 != var1;
                     var0 = 600;
                     if (!var2) {
-                        _fun34127_ip = 27;
-                        continue _fun34127
+                        _fun34143_ip = 27;
+                        continue _fun34143
                     }
                 case 24:
                     var0 = var1;
@@ -2280,7 +2280,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var12 = var12.ComplexAnimationBuilder;
     var1 = function(arg0) { // Environment: var1
         var4 = function() { // Original name: BounceOutRight, environment: var6
-            _fun34131: for (var _fun34131_ip = 0;;) switch (_fun34131_ip) {
+            _fun34147: for (var _fun34147_ip = 0;;) switch (_fun34147_ip) {
                 case 0:
                     var5 = this;
                     var4 = undefined;
@@ -2304,16 +2304,16 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var3 = 0;
                     var9 = var3 < var6;
                     if (!var9) {
-                        _fun34131_ip = 87;
-                        continue _fun34131
+                        _fun34147_ip = 87;
+                        continue _fun34147
                     }
                 case 72:
                     var9 = arguments[var3];
                     var7[var3] = var9;
                     var3 = var3 + 1;
                     if (var3 < var6) {
-                        _fun34131_ip = 72;
-                        continue _fun34131
+                        _fun34147_ip = 72;
+                        continue _fun34147
                     }
                 case 87:
                     var3 = _closure1_slot17;
@@ -2457,7 +2457,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var7 = 'getDuration';
         var0.key = var7;
         var1 = function() { // Original name: getDuration, environment: var6
-            _fun34134: for (var _fun34134_ip = 0;;) switch (_fun34134_ip) {
+            _fun34150: for (var _fun34150_ip = 0;;) switch (_fun34150_ip) {
                 case 0:
                     var0 = this;
                     var1 = var0.durationV;
@@ -2465,8 +2465,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var2 = var0 != var1;
                     var0 = 600;
                     if (!var2) {
-                        _fun34134_ip = 27;
-                        continue _fun34134
+                        _fun34150_ip = 27;
+                        continue _fun34150
                     }
                 case 24:
                     var0 = var1;

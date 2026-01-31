@@ -74,7 +74,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'uikit-native/BetaTag.tsx';
     var4 = var5.bind(var6)(var4);
     var3 = function(arg0) { // Original name: BetaTag, environment: var3
-        _fun47808: for (var _fun47808_ip = 0;;) switch (_fun47808_ip) {
+        _fun47825: for (var _fun47825_ip = 0;;) switch (_fun47825_ip) {
             case 0:
                 var0 = arg0;
                 var10 = var0.style;
@@ -82,8 +82,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var0.size;
                 var4 = undefined;
                 if (!(var2 === var4)) {
-                    _fun47808_ip = 38;
-                    continue _fun47808
+                    _fun47825_ip = 38;
+                    continue _fun47825
                 }
             case 25:
                 var1 = _closure1_slot6;
@@ -91,8 +91,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 38:
                 var0 = var0.gradient;
                 if (!(var0 === var4)) {
-                    _fun47808_ip = 50;
-                    continue _fun47808
+                    _fun47825_ip = 50;
+                    continue _fun47825
                 }
             case 48:
                 var0 = false;
@@ -103,24 +103,24 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.SMALL;
                 var9 = 'text-xs/bold';
                 if (!(var1 !== var2)) {
-                    _fun47808_ip = 103;
-                    continue _fun47808
+                    _fun47825_ip = 103;
+                    continue _fun47825
                 }
             case 81:
                 var1 = _closure1_slot6;
                 var1 = var1.MEDIUM;
                 var9 = undefined;
                 if (!(var1 === var2)) {
-                    _fun47808_ip = 103;
-                    continue _fun47808
+                    _fun47825_ip = 103;
+                    continue _fun47825
                 }
             case 97:
                 var9 = 'text-sm/bold';
             case 103:
                 var3 = _closure1_slot4;
                 if (var0) {
-                    _fun47808_ip = 274;
-                    continue _fun47808
+                    _fun47825_ip = 274;
+                    continue _fun47825
                 }
             case 113:
                 var1 = _closure1_slot3;
@@ -159,8 +159,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var3.bind(var4)(var6, var2);
                 var0.children = var2;
                 var0 = var3.bind(var4)(var1, var0);
-                _fun47808_ip = 520;
-                continue _fun47808;
+                _fun47825_ip = 520;
+                continue _fun47825;
             case 274:
                 var2 = _closure1_slot1;
                 var11 = _closure1_slot2;
@@ -224,4 +224,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.default = var3;
     var2.BetaSizes = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 4057, 670, 3901, 1234, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 4057, 670, 3900, 1234, 2]);

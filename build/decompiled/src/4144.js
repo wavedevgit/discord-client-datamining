@@ -15,14 +15,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = var4.bind(var5)(var1, var0, var2);
     var0 = {};
     var2 = function(arg0) { // Original name: isXMLFile, environment: var3
-        _fun37968: for (var _fun37968_ip = 0;;) switch (_fun37968_ip) {
+        _fun37985: for (var _fun37985_ip = 0;;) switch (_fun37985_ip) {
             case 0:
                 var6 = arg0;
                 var1 = !var6;
                 var0 = !var1;
                 if (var1) {
-                    _fun37968_ip = 70;
-                    continue _fun37968
+                    _fun37985_ip = 70;
+                    continue _fun37985
                 }
             case 12:
                 var4 = _closure1_slot0;

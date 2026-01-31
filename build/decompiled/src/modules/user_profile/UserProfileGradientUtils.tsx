@@ -9,14 +9,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var5;
     var _closure1_slot2 = var10;
     var7 = function(arg0) { // Original name: getProfileTheme, environment: var1
-        _fun56943: for (var _fun56943_ip = 0;;) switch (_fun56943_ip) {
+        _fun56955: for (var _fun56955_ip = 0;;) switch (_fun56955_ip) {
             case 0:
                 var4 = arg0;
                 var0 = null;
                 var1 = var0 == var4;
                 if (var1) {
-                    _fun56943_ip = 87;
-                    continue _fun56943
+                    _fun56955_ip = 87;
+                    continue _fun56955
                 }
             case 12:
                 var5 = _closure1_slot0;
@@ -29,14 +29,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var1.bind(var3)(var4);
                 var1 = 0.5;
                 if (!(!(var3 > var1))) {
-                    _fun56943_ip = 74;
-                    continue _fun56943
+                    _fun56955_ip = 74;
+                    continue _fun56955
                 }
             case 62:
                 var1 = _closure1_slot4;
                 var1 = var1.LIGHT;
-                _fun56943_ip = 84;
-                continue _fun56943;
+                _fun56955_ip = 84;
+                continue _fun56955;
             case 74:
                 var2 = _closure1_slot4;
                 var1 = var2.DARK;
@@ -170,14 +170,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var12 = var9.bind(var0)(var4);
     var11 = var12.memoize;
     var8 = function(arg0, arg1, arg2) { // Environment: var1
-        _fun56948: for (var _fun56948_ip = 0;;) switch (_fun56948_ip) {
+        _fun56960: for (var _fun56960_ip = 0;;) switch (_fun56960_ip) {
             case 0:
                 var8 = arg0;
                 var5 = arg2;
                 var0 = null;
                 if (!(var0 == var5)) {
-                    _fun56948_ip = 26;
-                    continue _fun56948
+                    _fun56960_ip = 26;
+                    continue _fun56960
                 }
             case 12:
                 var1 = _closure1_slot5;
@@ -216,8 +216,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var9.bind(var10)(var7);
                 var10 = var7 / var8;
                 if (!(var5 === var2)) {
-                    _fun56948_ip = 219;
-                    continue _fun56948
+                    _fun56960_ip = 219;
+                    continue _fun56960
                 }
             case 171:
                 var5 = _closure1_slot0;
@@ -229,8 +229,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = 0.8;
                 var2 = 1;
                 var2 = var7.bind(var8)(var10, var5, var2);
-                _fun56948_ip = 264;
-                continue _fun56948;
+                _fun56960_ip = 264;
+                continue _fun56960;
             case 219:
                 var7 = _closure1_slot0;
                 var8 = _closure1_slot2;
@@ -278,7 +278,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.getProfileTheme = var7;
     var2.getValueInColorGradientByPercentage = var6;
     var6 = function(arg0, arg1) { // Original name: calculateOverlayedColor, environment: var1
-        _fun56950: for (var _fun56950_ip = 0;;) switch (_fun56950_ip) {
+        _fun56962: for (var _fun56962_ip = 0;;) switch (_fun56962_ip) {
             case 0:
                 var8 = arg1;
                 var5 = _closure1_slot0;
@@ -292,8 +292,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = var5.bind(var6)(var4);
                 var4 = null;
                 if (!(var4 != var8)) {
-                    _fun56950_ip = 285;
-                    continue _fun56950
+                    _fun56962_ip = 285;
+                    continue _fun56962
                 }
             case 53:
                 var6 = _closure1_slot1;
@@ -304,8 +304,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var6.parseString;
                 var6 = var5.bind(var6)(var8);
                 if (!(var4 != var6)) {
-                    _fun56950_ip = 281;
-                    continue _fun56950
+                    _fun56962_ip = 281;
+                    continue _fun56962
                 }
             case 91:
                 var4 = var6.red;
@@ -382,13 +382,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.calculateModalV2BackgroundColor = var4;
     var2.getGradientPercentageColorInRgb = var3;
     var3 = function(arg0, arg1, arg2, arg3, arg4) { // Original name: calculateGradientSplitColors, environment: var1
-        _fun56952: for (var _fun56952_ip = 0;;) switch (_fun56952_ip) {
+        _fun56964: for (var _fun56964_ip = 0;;) switch (_fun56964_ip) {
             case 0:
                 var6 = arg2;
                 var0 = 0;
                 if (!(var0 !== var6)) {
-                    _fun56952_ip = 128;
-                    continue _fun56952
+                    _fun56964_ip = 128;
+                    continue _fun56964
                 }
             case 9:
                 var2 = _closure1_slot0;
@@ -426,7 +426,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.calculateGradientSplitColors = var3;
     var1 = function(arg0, arg1, arg2) { // Original name: getUserProfileGradientContainerColors, environment: var1
-        _fun56953: for (var _fun56953_ip = 0;;) switch (_fun56953_ip) {
+        _fun56965: for (var _fun56965_ip = 0;;) switch (_fun56965_ip) {
             case 0:
                 var8 = arg0;
                 var6 = arg1;
@@ -434,20 +434,20 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = 'string';
                 var0 = typeof var2;
                 if (!(var1 !== var0)) {
-                    _fun56953_ip = 144;
-                    continue _fun56953
+                    _fun56965_ip = 144;
+                    continue _fun56965
                 }
             case 23:
                 var1 = null;
                 if (!(var1 == var8)) {
-                    _fun56953_ip = 37;
-                    continue _fun56953
+                    _fun56965_ip = 37;
+                    continue _fun56965
                 }
             case 29:
                 var0 = 0;
                 var3 = var2[var0];
-                _fun56953_ip = 77;
-                continue _fun56953;
+                _fun56965_ip = 77;
+                continue _fun56965;
             case 37:
                 var5 = _closure1_slot0;
                 var4 = _closure1_slot2;
@@ -462,14 +462,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = new Array(2);
                 var0[0] = var3;
                 if (!(var1 == var6)) {
-                    _fun56953_ip = 98;
-                    continue _fun56953
+                    _fun56965_ip = 98;
+                    continue _fun56965
                 }
             case 89:
                 var1 = 1;
                 var1 = var2[var1];
-                _fun56953_ip = 138;
-                continue _fun56953;
+                _fun56965_ip = 138;
+                continue _fun56965;
             case 98:
                 var5 = _closure1_slot0;
                 var4 = _closure1_slot2;
@@ -482,14 +482,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var4.bind(var5)(var6, var3);
             case 138:
                 var0[1] = var1;
-                _fun56953_ip = 252;
-                continue _fun56953;
+                _fun56965_ip = 252;
+                continue _fun56965;
             case 144:
                 var3 = null;
                 var4 = var2;
                 if (!(var3 != var8)) {
-                    _fun56953_ip = 193;
-                    continue _fun56953
+                    _fun56965_ip = 193;
+                    continue _fun56965
                 }
             case 153:
                 var7 = _closure1_slot0;
@@ -505,8 +505,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = new Array(2);
                 var1[0] = var4;
                 if (!(var3 != var6)) {
-                    _fun56953_ip = 245;
-                    continue _fun56953
+                    _fun56965_ip = 245;
+                    continue _fun56965
                 }
             case 205:
                 var5 = _closure1_slot0;

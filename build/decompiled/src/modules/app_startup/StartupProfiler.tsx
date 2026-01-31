@@ -62,7 +62,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = {};
     var _closure1_slot4 = var4;
     var8 = function(arg0, arg1) { // Original name: setLevels, environment: var3
-        _fun89617: for (var _fun89617_ip = 0;;) switch (_fun89617_ip) {
+        _fun88965: for (var _fun88965_ip = 0;;) switch (_fun88965_ip) {
             case 0:
                 var9 = arg0;
                 var8 = arg1;
@@ -78,8 +78,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var11 = var9[var10];
                         var10 = var8 + var1;
                         var10 = var12.bind(var0)(var11, var10);
-                        _fun89617_ip = 28;
-                        continue _fun89617;
+                        _fun88965_ip = 28;
+                        continue _fun88965;
                     }
             case 68:
                 return var0;

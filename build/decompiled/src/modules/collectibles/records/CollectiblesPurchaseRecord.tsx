@@ -102,7 +102,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2 = 'fromServer';
         var0.key = var2;
         var1 = function(arg0) { // Original name: value, environment: var1
-            _fun42393: for (var _fun42393_ip = 0;;) switch (_fun42393_ip) {
+            _fun42410: for (var _fun42410_ip = 0;;) switch (_fun42410_ip) {
                 case 0:
                     var10 = arg0;
                     var19 = var10.type;
@@ -154,8 +154,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var19 = _closure1_slot8;
                     var15 = null;
                     if (!(var18 !== var19)) {
-                        _fun42393_ip = 172;
-                        continue _fun42393
+                        _fun42410_ip = 172;
+                        continue _fun42410
                     }
                 case 169:
                     var15 = var18;
@@ -189,28 +189,28 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var15 = var1 == var17;
                     var13 = undefined;
                     if (var15) {
-                        _fun42393_ip = 294;
-                        continue _fun42393
+                        _fun42410_ip = 292;
+                        continue _fun42410
                     }
-                case 274:
+                case 272:
                     var16 = var17.map;
                     var15 = _closure1_slot4;
                     var15 = var15.fromServer;
                     var13 = var16.bind(var17)(var15);
-                case 294:
+                case 292:
                     var0.bundledProducts = var13;
                     var13 = var1 == var14;
                     var11 = undefined;
                     if (var13) {
-                        _fun42393_ip = 328;
-                        continue _fun42393
+                        _fun42410_ip = 326;
+                        continue _fun42410
                     }
-                case 308:
+                case 306:
                     var13 = var14.map;
                     var12 = _closure1_slot6;
                     var12 = var12.fromServer;
                     var11 = var13.bind(var14)(var12);
-                case 328:
+                case 326:
                     var0.variants = var11;
                     var11 = var10.google_sku_ids;
                     var0.googleSkuIds = var11;
@@ -223,10 +223,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0.purchaseType = var3;
                     var3 = var7;
                     if (!(var1 != var3)) {
-                        _fun42393_ip = 418;
-                        continue _fun42393
+                        _fun42410_ip = 416;
+                        continue _fun42410
                     }
-                case 387:
+                case 385:
                     var4 = global;
                     var4 = var4.Date;
                     var6 = var4.prototype;
@@ -239,15 +239,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var22 = var7;
                     var4 = new var23[var4](var22, var21);
                     var3 = var4 instanceof Object ? var4 : var6;
-                case 418:
+                case 416:
                     var0.purchasedAt = var3;
                     var3 = var1 != var5;
                     var1 = null;
                     if (!var3) {
-                        _fun42393_ip = 463;
-                        continue _fun42393
+                        _fun42410_ip = 461;
+                        continue _fun42410
                     }
-                case 432:
+                case 430:
                     var3 = global;
                     var3 = var3.Date;
                     var4 = var3.prototype;
@@ -260,7 +260,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var22 = var5;
                     var3 = new var23[var3](var22, var21);
                     var1 = var3 instanceof Object ? var3 : var4;
-                case 463:
+                case 461:
                     var0.expiresAt = var1;
                     var1 = var2.prototype;
                     var1 = Object.create(var1, {
@@ -292,4 +292,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 4583, 4585, 4582, 3242, 660, 4584, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 4584, 4586, 4583, 3242, 660, 4585, 2]);

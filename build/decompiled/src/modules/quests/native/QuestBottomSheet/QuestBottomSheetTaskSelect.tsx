@@ -77,7 +77,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var11 = var14.bind(var15)(var11);
         var4.label = var11;
         var11 = function() { // Original name: onPress, environment: var8
-            _fun83637: for (var _fun83637_ip = 0;;) switch (_fun83637_ip) {
+            _fun83667: for (var _fun83667_ip = 0;;) switch (_fun83667_ip) {
                 case 0:
                     var2 = _closure2_slot0;
                     var0 = null;
@@ -85,8 +85,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var3 = undefined;
                     var0 = undefined;
                     if (var2) {
-                        _fun83637_ip = 42;
-                        continue _fun83637
+                        _fun83667_ip = 42;
+                        continue _fun83667
                     }
                 case 20:
                     var2 = _closure2_slot0;
@@ -124,7 +124,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var9 = var10.bind(var11)(var9);
         var5.label = var9;
         var8 = function() { // Original name: onPress, environment: var8
-            _fun83638: for (var _fun83638_ip = 0;;) switch (_fun83638_ip) {
+            _fun83668: for (var _fun83668_ip = 0;;) switch (_fun83668_ip) {
                 case 0:
                     var2 = _closure2_slot0;
                     var0 = null;
@@ -132,8 +132,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var3 = undefined;
                     var0 = undefined;
                     if (var2) {
-                        _fun83638_ip = 42;
-                        continue _fun83638
+                        _fun83668_ip = 42;
+                        continue _fun83668
                     }
                 case 20:
                     var2 = _closure2_slot0;
@@ -153,4 +153,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 5190, 33, 5324, 4860, 10480, 1234, 5288, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 5191, 33, 5325, 4861, 10482, 1234, 5289, 2]);

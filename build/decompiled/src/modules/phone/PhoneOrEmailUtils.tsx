@@ -29,23 +29,23 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.bind(var6)(var4);
     var2.PhoneOrEmailSelectorForceMode = var3;
     var3 = function(arg0, arg1) { // Original name: shouldShowCountryCodeSelector, environment: var1
-        _fun60526: for (var _fun60526_ip = 0;;) switch (_fun60526_ip) {
+        _fun60538: for (var _fun60538_ip = 0;;) switch (_fun60538_ip) {
             case 0:
                 var1 = arg0;
                 var3 = arg1;
                 var0 = _closure1_slot0;
                 var0 = var0.PHONE;
                 if (!(var1 !== var0)) {
-                    _fun60526_ip = 77;
-                    continue _fun60526
+                    _fun60538_ip = 77;
+                    continue _fun60538
                 }
             case 23:
                 var0 = _closure1_slot0;
                 var0 = var0.EMAIL;
                 var0 = var1 !== var0;
                 if (!var0) {
-                    _fun60526_ip = 75;
-                    continue _fun60526
+                    _fun60538_ip = 75;
+                    continue _fun60538
                 }
             case 40:
                 var4 = var3.length;
@@ -53,8 +53,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var4 < var1;
                 var1 = !var4;
                 if (var4) {
-                    _fun60526_ip = 72;
-                    continue _fun60526
+                    _fun60538_ip = 72;
+                    continue _fun60538
                 }
             case 58:
                 var4 = _closure1_slot1;
@@ -63,8 +63,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 72:
                 var0 = var1;
             case 75:
-                _fun60526_ip = 95;
-                continue _fun60526;
+                _fun60538_ip = 95;
+                continue _fun60538;
             case 77:
                 var2 = var3.startsWith;
                 var1 = '+';
@@ -76,7 +76,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.shouldShowCountryCodeSelector = var3;
     var1 = function(arg0) { // Original name: getPhoneOrEmail, environment: var1
-        _fun60527: for (var _fun60527_ip = 0;;) switch (_fun60527_ip) {
+        _fun60539: for (var _fun60539_ip = 0;;) switch (_fun60539_ip) {
             case 0:
                 var2 = /^\+\d/;
                 var1 = var2.test;
@@ -84,13 +84,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var1.bind(var2)(var0);
                 var1 = _closure1_slot0;
                 if (var0) {
-                    _fun60527_ip = 45;
-                    continue _fun60527
+                    _fun60539_ip = 45;
+                    continue _fun60539
                 }
             case 37:
                 var0 = var1.EMAIL;
-                _fun60527_ip = 51;
-                continue _fun60527;
+                _fun60539_ip = 51;
+                continue _fun60539;
             case 45:
                 var0 = var1.PHONE;
             case 51:

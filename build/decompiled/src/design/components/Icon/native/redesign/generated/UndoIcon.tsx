@@ -33,15 +33,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'design/components/Icon/native/redesign/generated/UndoIcon.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Environment: var1
-        _fun93446: for (var _fun93446_ip = 0;;) switch (_fun93446_ip) {
+        _fun92805: for (var _fun92805_ip = 0;;) switch (_fun92805_ip) {
             case 0:
                 var2 = arg0;
                 var5 = var2.style;
                 var6 = var2.color;
                 var3 = undefined;
                 if (!(var6 === var3)) {
-                    _fun93446_ip = 53;
-                    continue _fun93446
+                    _fun92805_ip = 53;
+                    continue _fun92805
                 }
             case 19:
                 var1 = _closure1_slot1;
@@ -83,4 +83,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.UndoIcon = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 671, 3109, 12169, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 671, 3109, 12104, 2]);

@@ -54,7 +54,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/guild_member_verification/native/components/MemberVerificationFormRenderer.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: MemberVerificationFormRenderer, environment: var1
-        _fun60336: for (var _fun60336_ip = 0;;) switch (_fun60336_ip) {
+        _fun60348: for (var _fun60348_ip = 0;;) switch (_fun60348_ip) {
             case 0:
                 var0 = arg0;
                 var1 = var0.rulesChannelId;
@@ -76,8 +76,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var4 == var7;
                 var4 = undefined;
                 if (var6) {
-                    _fun60336_ip = 99;
-                    continue _fun60336
+                    _fun60348_ip = 99;
+                    continue _fun60348
                 }
             case 84:
                 var6 = var7.map;
@@ -89,7 +89,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = 'verification-field-';
                     var3 = var1.bind(var0)(var4);
                     var2 = function(arg0, arg1, arg2) { // Environment: var0
-                        _fun60338: for (var _fun60338_ip = 0;;) switch (_fun60338_ip) {
+                        _fun60350: for (var _fun60350_ip = 0;;) switch (_fun60350_ip) {
                             case 0:
                                 var6 = arg0;
                                 var4 = arg2;
@@ -105,8 +105,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var1 = var1.VerificationFormFieldTypes;
                                 var1 = var1.TERMS;
                                 if (!(var1 !== var2)) {
-                                    _fun60338_ip = 409;
-                                    continue _fun60338
+                                    _fun60350_ip = 409;
+                                    continue _fun60350
                                 }
                             case 65:
                                 var7 = _closure1_slot0;
@@ -116,8 +116,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var1 = var1.VerificationFormFieldTypes;
                                 var1 = var1.VERIFICATION;
                                 if (!(var1 !== var2)) {
-                                    _fun60338_ip = 357;
-                                    continue _fun60338
+                                    _fun60350_ip = 357;
+                                    continue _fun60350
                                 }
                             case 101:
                                 var7 = _closure1_slot0;
@@ -127,8 +127,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var1 = var1.VerificationFormFieldTypes;
                                 var1 = var1.TEXT_INPUT;
                                 if (!(var1 !== var2)) {
-                                    _fun60338_ip = 307;
-                                    continue _fun60338
+                                    _fun60350_ip = 307;
+                                    continue _fun60350
                                 }
                             case 137:
                                 var7 = _closure1_slot0;
@@ -138,8 +138,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var1 = var1.VerificationFormFieldTypes;
                                 var1 = var1.PARAGRAPH;
                                 if (!(var1 !== var2)) {
-                                    _fun60338_ip = 257;
-                                    continue _fun60338
+                                    _fun60350_ip = 257;
+                                    continue _fun60350
                                 }
                             case 170:
                                 var7 = _closure1_slot0;
@@ -149,8 +149,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var1 = var1.VerificationFormFieldTypes;
                                 var1 = var1.MULTIPLE_CHOICE;
                                 if (!(var1 !== var2)) {
-                                    _fun60338_ip = 207;
-                                    continue _fun60338
+                                    _fun60350_ip = 207;
+                                    continue _fun60350
                                 }
                             case 203:
                                 var1 = null;
@@ -272,4 +272,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 3175, 7422, 7423, 7549, 7550, 7551, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 3175, 7421, 7422, 7548, 7549, 7550, 2]);

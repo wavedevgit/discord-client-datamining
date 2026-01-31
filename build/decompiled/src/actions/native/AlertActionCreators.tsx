@@ -28,15 +28,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot3 = var1;
     var1 = {};
     var6 = function(arg0) { // Original name: openLazy, environment: var3
-        _fun35273: for (var _fun35273_ip = 0;;) switch (_fun35273_ip) {
+        _fun35287: for (var _fun35287_ip = 0;;) switch (_fun35287_ip) {
             case 0:
                 var3 = arg0;
                 var2 = var3.importer;
                 var4 = var3.hideActionSheet;
                 var1 = undefined;
                 if (!(var4 === var1)) {
-                    _fun35273_ip = 25;
-                    continue _fun35273
+                    _fun35287_ip = 25;
+                    continue _fun35287
                 }
             case 23:
                 var4 = true;
@@ -44,8 +44,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var _closure2_slot0 = var4;
                 var3 = var3.isDismissable;
                 if (!(var3 === var1)) {
-                    _fun35273_ip = 41;
-                    continue _fun35273
+                    _fun35287_ip = 41;
+                    continue _fun35287
                 }
             case 39:
                 var3 = false;
@@ -54,12 +54,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var2.bind(var1)();
                 var1 = var2.then;
                 var0 = function(arg0) { // Environment: var0
-                    _fun35274: for (var _fun35274_ip = 0;;) switch (_fun35274_ip) {
+                    _fun35288: for (var _fun35288_ip = 0;;) switch (_fun35288_ip) {
                         case 0:
                             var0 = _closure2_slot0;
                             if (!var0) {
-                                _fun35274_ip = 45;
-                                continue _fun35274
+                                _fun35288_ip = 45;
+                                continue _fun35288
                             }
                         case 10:
                             var2 = _closure1_slot1;
@@ -110,7 +110,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var1.close = var6;
     var6 = function(arg0) { // Original name: show, environment: var3
-        _fun35276: for (var _fun35276_ip = 0;;) switch (_fun35276_ip) {
+        _fun35290: for (var _fun35290_ip = 0;;) switch (_fun35290_ip) {
             case 0:
                 var7 = arg0;
                 var3 = this;
@@ -119,8 +119,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var7.confirmText;
                 var0 = undefined;
                 if (!(var1 === var0)) {
-                    _fun35276_ip = 90;
-                    continue _fun35276
+                    _fun35290_ip = 90;
+                    continue _fun35290
                 }
             case 32:
                 var10 = _closure1_slot0;
@@ -267,4 +267,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 3237, 806, 1234, 3897, 1307, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 3237, 806, 1234, 3896, 1307, 2]);

@@ -39,7 +39,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/messages/native/renderer/system_messages/PollResultSystemMessage.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: createPollResultSystemMessage, environment: var1
-        _fun55775: for (var _fun55775_ip = 0;;) switch (_fun55775_ip) {
+        _fun55792: for (var _fun55792_ip = 0;;) switch (_fun55792_ip) {
             case 0:
                 var5 = arg0;
                 var1 = _closure1_slot1;
@@ -55,15 +55,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var1.bind(var4)(var0);
                 var0 = null;
                 if (!(var0 != var6)) {
-                    _fun55775_ip = 1116;
-                    continue _fun55775
+                    _fun55792_ip = 1116;
+                    continue _fun55792
                 }
             case 59:
                 var1 = var5.message;
                 var1 = var1.messageReference;
                 if (!(var0 != var1)) {
-                    _fun55775_ip = 1114;
-                    continue _fun55775
+                    _fun55792_ip = 1114;
+                    continue _fun55792
                 }
             case 77:
                 var8 = var5.message;
@@ -98,8 +98,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var14 = 'username';
                 var7 = null;
                 if (!(var14 === var11)) {
-                    _fun55775_ip = 229;
-                    continue _fun55775
+                    _fun55792_ip = 229;
+                    continue _fun55792
                 }
             case 226:
                 var7 = var10;
@@ -108,8 +108,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1.roleColor = var10;
                 var7 = null;
                 if (!var13) {
-                    _fun55775_ip = 247;
-                    continue _fun55775
+                    _fun55792_ip = 247;
+                    continue _fun55792
                 }
             case 244:
                 var7 = var12;
@@ -118,8 +118,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = 'dot';
                 var7 = var7 === var11;
                 if (!var7) {
-                    _fun55775_ip = 267;
-                    continue _fun55775
+                    _fun55792_ip = 267;
+                    continue _fun55792
                 }
             case 263:
                 var7 = var0 != var10;
@@ -145,8 +145,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9.titleOnClick = var1;
                 var1 = var6.totalVotes;
                 if (!(var3 !== var1)) {
-                    _fun55775_ip = 964;
-                    continue _fun55775
+                    _fun55792_ip = 964;
+                    continue _fun55792
                 }
             case 374:
                 var1 = global;
@@ -165,21 +165,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = var7.bind(var3)(var8, var1);
                 var1 = var6.victorAnswerId;
                 if (!(var0 != var1)) {
-                    _fun55775_ip = 882;
-                    continue _fun55775
+                    _fun55792_ip = 882;
+                    continue _fun55792
                 }
             case 453:
                 var12 = new Array(0);
                 var14 = var6.victorEmoji;
                 if (!(var0 != var14)) {
-                    _fun55775_ip = 733;
-                    continue _fun55775
+                    _fun55792_ip = 733;
+                    continue _fun55792
                 }
             case 470:
                 var1 = var14.id;
                 if (!(var0 == var1)) {
-                    _fun55775_ip = 557;
-                    continue _fun55775
+                    _fun55792_ip = 557;
+                    continue _fun55792
                 }
             case 479:
                 var3 = var12.push;
@@ -199,8 +199,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var14.name;
                 var1.surrogate = var7;
                 var1 = var3.bind(var12)(var1);
-                _fun55775_ip = 709;
-                continue _fun55775;
+                _fun55792_ip = 709;
+                continue _fun55792;
             case 557:
                 var3 = var12.push;
                 var1 = {};
@@ -278,8 +278,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = 'percentage';
                 var1[var8] = var11;
                 var3 = var6.bind(var7)(var3, var1);
-                _fun55775_ip = 1069;
-                continue _fun55775;
+                _fun55792_ip = 1069;
+                continue _fun55792;
             case 882:
                 var6 = _closure1_slot0;
                 var10 = _closure1_slot2;
@@ -299,8 +299,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = 'percentage';
                 var1[var10] = var11;
                 var3 = var7.bind(var8)(var6, var1);
-                _fun55775_ip = 1069;
-                continue _fun55775;
+                _fun55792_ip = 1069;
+                continue _fun55792;
             case 964:
                 var6 = _closure1_slot0;
                 var10 = _closure1_slot2;
@@ -348,4 +348,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.createPollResultSystemMessage = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1616, 6637, 6638, 1234, 1417, 3063, 6723, 6639, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1616, 6638, 6639, 1234, 1417, 3063, 6724, 6640, 2]);

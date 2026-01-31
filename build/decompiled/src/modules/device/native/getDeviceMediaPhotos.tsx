@@ -43,7 +43,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/device/native/getDeviceMediaPhotos.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: getDeviceMediaPhotos, environment: var1
-        _fun75560: for (var _fun75560_ip = 0;;) switch (_fun75560_ip) {
+        _fun75590: for (var _fun75590_ip = 0;;) switch (_fun75590_ip) {
             case 0:
                 var0 = arg0;
                 var7 = var0.batchSize;
@@ -54,8 +54,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var0.onError;
                 var0 = undefined;
                 if (!(var3 === var0)) {
-                    _fun75560_ip = 54;
-                    continue _fun75560
+                    _fun75590_ip = 54;
+                    continue _fun75590
                 }
             case 45:
                 var3 = function(arg0) { // Original name: h, environment: var1
@@ -92,8 +92,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var5.isIOS;
                 var2 = var2.bind(var5)();
                 if (var2) {
-                    _fun75560_ip = 162;
-                    continue _fun75560
+                    _fun75590_ip = 162;
+                    continue _fun75590
                 }
             case 90:
                 var2 = _closure1_slot3;
@@ -110,8 +110,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var2.bind(var5)(var4);
                 var2 = var5.catch;
                 var2 = var2.bind(var5)(var3);
-                _fun75560_ip = 262;
-                continue _fun75560;
+                _fun75590_ip = 262;
+                continue _fun75590;
             case 162:
                 var8 = _closure1_slot1;
                 var2 = _closure1_slot2;
@@ -120,8 +120,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var8.bind(var0)(var2);
                 var2 = null;
                 if (!(var2 != var8)) {
-                    _fun75560_ip = 262;
-                    continue _fun75560
+                    _fun75590_ip = 262;
+                    continue _fun75590
                 }
             case 188:
                 var2 = _closure1_slot1;
@@ -147,4 +147,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 3, 1207, 478, 9542, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 3, 1207, 478, 9544, 2]);

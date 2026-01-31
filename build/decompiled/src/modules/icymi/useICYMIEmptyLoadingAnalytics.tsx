@@ -41,26 +41,26 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2[0] = var1;
         var2[1] = var4;
         var1 = function() { // Environment: var0
-            _fun104581: for (var _fun104581_ip = 0;;) switch (_fun104581_ip) {
+            _fun103934: for (var _fun103934_ip = 0;;) switch (_fun103934_ip) {
                 case 0:
                     var1 = _closure2_slot1;
                     if (!var1) {
-                        _fun104581_ip = 189;
-                        continue _fun104581
+                        _fun103934_ip = 189;
+                        continue _fun103934
                     }
                 case 13:
                     var2 = _closure2_slot0;
                     var1 = _closure2_slot2;
                     if (var2) {
-                        _fun104581_ip = 125;
-                        continue _fun104581
+                        _fun103934_ip = 125;
+                        continue _fun103934
                     }
                 case 24:
                     var3 = var1.current;
                     var2 = null;
                     if (!(var2 != var3)) {
-                        _fun104581_ip = 189;
-                        continue _fun104581
+                        _fun103934_ip = 189;
+                        continue _fun103934
                     }
                 case 38:
                     var3 = global;
@@ -82,8 +82,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var3.dwellTimeMs = var6;
                     var3 = var4.bind(var5)(var3);
                     var0.current = var2;
-                    _fun104581_ip = 189;
-                    continue _fun104581;
+                    _fun103934_ip = 189;
+                    continue _fun103934;
                 case 125:
                     var0 = global;
                     var2 = var0.Date;
@@ -109,20 +109,20 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = new Array(1);
         var1[0] = var4;
         var0 = function() { // Environment: var0
-            _fun104582: for (var _fun104582_ip = 0;;) switch (_fun104582_ip) {
+            _fun103935: for (var _fun103935_ip = 0;;) switch (_fun103935_ip) {
                 case 0:
                     var1 = _closure2_slot1;
                     if (var1) {
-                        _fun104582_ip = 110;
-                        continue _fun104582
+                        _fun103935_ip = 110;
+                        continue _fun103935
                     }
                 case 10:
                     var1 = _closure2_slot2;
                     var2 = var1.current;
                     var1 = null;
                     if (!(var1 != var2)) {
-                        _fun104582_ip = 110;
-                        continue _fun104582
+                        _fun103935_ip = 110;
+                        continue _fun103935
                     }
                 case 25:
                     var2 = global;

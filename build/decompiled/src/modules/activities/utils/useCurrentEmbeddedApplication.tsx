@@ -27,21 +27,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/activities/utils/useCurrentEmbeddedApplication.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function() { // Original name: useCurrentEmbeddedApplication, environment: var1
-        _fun64589: for (var _fun64589_ip = 0;;) switch (_fun64589_ip) {
+        _fun64601: for (var _fun64601_ip = 0;;) switch (_fun64601_ip) {
             case 0:
                 var1 = arguments[0];
                 var0 = undefined;
                 if (!(var1 === var0)) {
-                    _fun64589_ip = 11;
-                    continue _fun64589
+                    _fun64601_ip = 11;
+                    continue _fun64601
                 }
             case 9:
                 var1 = {};
             case 11:
                 var6 = var1.fetchesApplication;
                 if (!(var6 === var0)) {
-                    _fun64589_ip = 23;
-                    continue _fun64589
+                    _fun64601_ip = 23;
+                    continue _fun64601
                 }
             case 21:
                 var6 = true;
@@ -57,15 +57,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var5.bind(var0)(var2);
                 var2 = null;
                 if (!(var2 != var3)) {
-                    _fun64589_ip = 83;
-                    continue _fun64589
+                    _fun64601_ip = 83;
+                    continue _fun64601
                 }
             case 68:
                 var7 = var3.applicationId;
                 var3 = new Array(1);
                 var3[0] = var7;
-                _fun64589_ip = 87;
-                continue _fun64589;
+                _fun64601_ip = 87;
+                continue _fun64601;
             case 83:
                 var3 = new Array(0);
             case 87:
@@ -77,8 +77,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var2 != var1;
                 var0 = undefined;
                 if (!var2) {
-                    _fun64589_ip = 121;
-                    continue _fun64589
+                    _fun64601_ip = 121;
+                    continue _fun64601
                 }
             case 118:
                 var0 = var1;
@@ -88,4 +88,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 8016, 6842, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 8015, 6841, 2]);

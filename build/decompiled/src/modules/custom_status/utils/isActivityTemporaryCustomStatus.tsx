@@ -25,7 +25,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/custom_status/utils/isActivityTemporaryCustomStatus.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: isActivityTemporaryCustomStatus, environment: var1
-        _fun102191: for (var _fun102191_ip = 0;;) switch (_fun102191_ip) {
+        _fun101562: for (var _fun101562_ip = 0;;) switch (_fun101562_ip) {
             case 0:
                 var1 = arg0;
                 var2 = var1.type;
@@ -33,8 +33,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0.CUSTOM_STATUS;
                 var0 = var2 === var0;
                 if (!var0) {
-                    _fun102191_ip = 54;
-                    continue _fun102191
+                    _fun101562_ip = 54;
+                    continue _fun101562
                 }
             case 28:
                 var4 = var1.timestamps;
@@ -42,8 +42,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var3 == var4;
                 var2 = undefined;
                 if (var5) {
-                    _fun102191_ip = 50;
-                    continue _fun102191
+                    _fun101562_ip = 50;
+                    continue _fun101562
                 }
             case 45:
                 var2 = var4.end;
@@ -51,8 +51,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var3 != var2;
             case 54:
                 if (!var0) {
-                    _fun102191_ip = 85;
-                    continue _fun102191
+                    _fun101562_ip = 85;
+                    continue _fun101562
                 }
             case 57:
                 var1 = var1.timestamps;
@@ -60,8 +60,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var2 == var1;
                 var2 = undefined;
                 if (var3) {
-                    _fun102191_ip = 79;
-                    continue _fun102191
+                    _fun101562_ip = 79;
+                    continue _fun101562
                 }
             case 74:
                 var2 = var1.end;

@@ -7,15 +7,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var3;
     var0 = function(arg0) { // Original name: getUnderlyingIOSExceptionRecursively, environment: var1
-        _fun58495: for (var _fun58495_ip = 0;;) switch (_fun58495_ip) {
+        _fun58507: for (var _fun58507_ip = 0;;) switch (_fun58507_ip) {
             case 0:
                 var1 = arg0;
                 var0 = var1.userInfo;
                 var0 = var0.NSUnderlyingError;
                 var2 = null;
                 if (!(var2 != var0)) {
-                    _fun58495_ip = 51;
-                    continue _fun58495
+                    _fun58507_ip = 51;
+                    continue _fun58507
                 }
             case 21:
                 var4 = _closure1_slot2;
@@ -24,8 +24,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = undefined;
                 var0 = var4.bind(var0)(var3);
                 if (!(var2 == var0)) {
-                    _fun58495_ip = 67;
-                    continue _fun58495
+                    _fun58507_ip = 67;
+                    continue _fun58507
                 }
             case 51:
                 var1 = var1.userInfo;
@@ -52,7 +52,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'utils/ErrorUtils.tsx';
     var3 = var4.bind(var5)(var3);
     var3 = function(arg0) { // Original name: getUnderlyingIOSError, environment: var1
-        _fun58496: for (var _fun58496_ip = 0;;) switch (_fun58496_ip) {
+        _fun58508: for (var _fun58508_ip = 0;;) switch (_fun58508_ip) {
             case 0:
                 var0 = arg0;
                 var3 = undefined;
@@ -64,8 +64,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = null;
                 var2 = var0 != var2;
                 if (!var2) {
-                    _fun58496_ip = 34;
-                    continue _fun58496
+                    _fun58508_ip = 34;
+                    continue _fun58508
                 }
             case 31:
                 var0 = var1;
@@ -79,7 +79,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getUnderlyingIOSError = var3;
     var1 = function(arg0) { // Original name: serializeError, environment: var1
-        _fun58497: for (var _fun58497_ip = 0;;) switch (_fun58497_ip) {
+        _fun58509: for (var _fun58509_ip = 0;;) switch (_fun58509_ip) {
             case 0:
                 var2 = arg0;
                 var0 = global;
@@ -87,8 +87,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = undefined;
                 var1 = var1.bind(var5)(var2);
                 if (var1) {
-                    _fun58497_ip = 53;
-                    continue _fun58497
+                    _fun58509_ip = 53;
+                    continue _fun58509
                 }
             case 21:
                 var4 = var0.Error;
@@ -107,8 +107,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = typeof var2;
                 var4 = var2;
                 if (!(var3 !== var1)) {
-                    _fun58497_ip = 104;
-                    continue _fun58497
+                    _fun58509_ip = 104;
+                    continue _fun58509
                 }
             case 67:
                 var3 = var0.Error;
@@ -139,4 +139,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.serializeError = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [7127, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [7126, 2]);

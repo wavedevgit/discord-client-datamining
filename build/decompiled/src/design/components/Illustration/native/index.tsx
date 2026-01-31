@@ -22,67 +22,67 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'design/components/Illustration/native/index.tsx';
     var3 = var4.bind(var5)(var3);
     var3 = function(arg0, arg1) { // Original name: getIllustrationSource, environment: var1
-        _fun59084: for (var _fun59084_ip = 0;;) switch (_fun59084_ip) {
+        _fun59096: for (var _fun59096_ip = 0;;) switch (_fun59096_ip) {
             case 0:
                 var3 = arg0;
                 var1 = arg1;
                 var0 = 'light';
                 if (!(var0 !== var3)) {
-                    _fun59084_ip = 78;
-                    continue _fun59084
+                    _fun59096_ip = 78;
+                    continue _fun59096
                 }
             case 14:
                 var0 = 'darker';
                 if (!(var0 !== var3)) {
-                    _fun59084_ip = 55;
-                    continue _fun59084
+                    _fun59096_ip = 55;
+                    continue _fun59096
                 }
             case 22:
                 var0 = 'midnight';
                 var2 = undefined;
                 if (!(var0 === var3)) {
-                    _fun59084_ip = 84;
-                    continue _fun59084
+                    _fun59096_ip = 84;
+                    continue _fun59096
                 }
             case 32:
                 var0 = var1.midnight;
                 var3 = null;
                 if (!(var3 == var0)) {
-                    _fun59084_ip = 50;
-                    continue _fun59084
+                    _fun59096_ip = 50;
+                    continue _fun59096
                 }
             case 44:
                 var0 = var1.darker;
             case 50:
                 var2 = var0;
-                _fun59084_ip = 84;
-                continue _fun59084;
+                _fun59096_ip = 84;
+                continue _fun59096;
             case 55:
                 var0 = var1.darker;
                 var3 = null;
                 if (!(var3 == var0)) {
-                    _fun59084_ip = 73;
-                    continue _fun59084
+                    _fun59096_ip = 73;
+                    continue _fun59096
                 }
             case 67:
                 var0 = var1.midnight;
             case 73:
                 var2 = var0;
-                _fun59084_ip = 84;
-                continue _fun59084;
+                _fun59096_ip = 84;
+                continue _fun59096;
             case 78:
                 var2 = var1.light;
             case 84:
                 var0 = null;
                 if (!(var0 == var2)) {
-                    _fun59084_ip = 102;
-                    continue _fun59084
+                    _fun59096_ip = 102;
+                    continue _fun59096
                 }
             case 90:
                 var0 = var1.dark;
                 var0 = var0.bind(var1)();
-                _fun59084_ip = 108;
-                continue _fun59084;
+                _fun59096_ip = 108;
+                continue _fun59096;
             case 102:
                 var1 = undefined;
                 var0 = var2.bind(var1)();

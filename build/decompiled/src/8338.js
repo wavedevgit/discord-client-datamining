@@ -1,16 +1,16 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun67471: for (var _fun67471_ip = 0;;) switch (_fun67471_ip) {
+    _fun67494: for (var _fun67494_ip = 0;;) switch (_fun67494_ip) {
         case 0:
             var1 = {};
             var2 = function(arg0) { // Original name: glog, environment: var0
-                _fun67472: for (var _fun67472_ip = 0;;) switch (_fun67472_ip) {
+                _fun67495: for (var _fun67495_ip = 0;;) switch (_fun67495_ip) {
                     case 0:
                         var1 = arg0;
                         var0 = 1;
                         if (!(!(var1 < var0))) {
-                            _fun67472_ip = 29;
-                            continue _fun67472
+                            _fun67495_ip = 29;
+                            continue _fun67495
                         }
                     case 10:
                         var0 = _closure1_slot0;
@@ -38,37 +38,37 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             };
             var1.glog = var2;
             var2 = function(arg0) { // Original name: gexp, environment: var0
-                _fun67473: for (var _fun67473_ip = 0;;) switch (_fun67473_ip) {
+                _fun67496: for (var _fun67496_ip = 0;;) switch (_fun67496_ip) {
                     case 0:
                         var0 = arg0;
                         var3 = 255;
                         var2 = 0;
                         var1 = var0;
                         if (!(var1 < var2)) {
-                            _fun67473_ip = 26;
-                            continue _fun67473
+                            _fun67496_ip = 26;
+                            continue _fun67496
                         }
                     case 15:
                         var0 = var0 + var3;
                         var1 = var0;
                         if (var1 < var2) {
-                            _fun67473_ip = 15;
-                            continue _fun67473
+                            _fun67496_ip = 15;
+                            continue _fun67496
                         }
                     case 26:
                         var2 = 256;
                         var0 = var1;
                         var1 = var0;
                         if (!(var1 >= var2)) {
-                            _fun67473_ip = 53;
-                            continue _fun67473
+                            _fun67496_ip = 53;
+                            continue _fun67496
                         }
                     case 42:
                         var0 = var0 - var3;
                         var1 = var0;
                         if (var1 >= var2) {
-                            _fun67473_ip = 42;
-                            continue _fun67473
+                            _fun67496_ip = 42;
+                            continue _fun67496
                         }
                     case 53:
                         var0 = _closure1_slot0;
@@ -118,8 +118,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var0 = var0 + 1;
             var3 = var7;
             if (var0 < var3) {
-                _fun67471_ip = 125;
-                continue _fun67471
+                _fun67494_ip = 125;
+                continue _fun67494
             }
         case 149:
             var10 = var1.EXP_TABLE;
@@ -142,8 +142,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var3 = var3 + 1;
             var0 = 0;
             if (var3 < var9) {
-                _fun67471_ip = 149;
-                continue _fun67471
+                _fun67494_ip = 149;
+                continue _fun67494
             }
         case 236:
             var4 = var1.LOG_TABLE;
@@ -152,8 +152,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var4[var3] = var0;
             var0 = var0 + 1;
             if (var0 < var2) {
-                _fun67471_ip = 236;
-                continue _fun67471
+                _fun67494_ip = 236;
+                continue _fun67494
             }
         case 263:
             var0 = arg4;

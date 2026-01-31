@@ -10,7 +10,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var3 = 'undefined';
                 var1 = typeof var1;
                 if (!(var3 !== var1)) {
-                    _fun1438_ip = 42;
+                    _fun1438_ip = 43;
                     continue _fun1438
                 }
             case 21:
@@ -19,20 +19,20 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var3 = var2[var1];
                 var1 = null;
                 if (!(var1 == var3)) {
-                    _fun1438_ip = 58;
+                    _fun1438_ip = 59;
                     continue _fun1438
                 }
-            case 42:
+            case 43:
                 var3 = var2["@@iterator"];
                 var1 = null;
                 if (!(var1 == var3)) {
-                    _fun1438_ip = 58;
+                    _fun1438_ip = 59;
                     continue _fun1438
                 }
-            case 54:
+            case 55:
                 var1 = undefined;
                 return var1;
-            case 58:
+            case 59:
                 var1 = var0.Array;
                 var0 = var1.from;
                 var0 = var0.bind(var1)(var2);

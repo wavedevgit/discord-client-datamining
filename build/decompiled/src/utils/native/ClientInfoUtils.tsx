@@ -29,7 +29,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'utils/native/ClientInfoUtils.tsx';
     var3 = var4.bind(var5)(var3);
     var3 = function() { // Original name: getConstants, environment: var1
-        _fun17730: for (var _fun17730_ip = 0;;) switch (_fun17730_ip) {
+        _fun17732: for (var _fun17732_ip = 0;;) switch (_fun17732_ip) {
             case 0:
                 var3 = _closure1_slot0;
                 var2 = _closure1_slot2;
@@ -40,8 +40,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var3.isAndroid;
                 var1 = var1.bind(var3)();
                 if (var1) {
-                    _fun17730_ip = 60;
-                    continue _fun17730
+                    _fun17732_ip = 60;
+                    continue _fun17732
                 }
             case 38:
                 var1 = _closure1_slot3;
@@ -57,8 +57,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var4.bind(var2)(var1);
                 var1 = null;
                 if (!(var1 !== var4)) {
-                    _fun17730_ip = 115;
-                    continue _fun17730
+                    _fun17732_ip = 115;
+                    continue _fun17732
                 }
             case 86:
                 var1 = _closure1_slot1;
@@ -86,16 +86,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getConstants = var3;
     var1 = function() { // Original name: getBuildNumberLabel, environment: var1
-        _fun17731: for (var _fun17731_ip = 0;;) switch (_fun17731_ip) {
+        _fun17733: for (var _fun17733_ip = 0;;) switch (_fun17733_ip) {
             case 0:
                 var1 = ['0', '123456', '1234567890'];
                 var0 = var1.includes;
-                var4 = '5099';
+                var4 = '5104';
                 var1 = var0.bind(var1)(var4);
                 var0 = var4;
                 if (!var1) {
-                    _fun17731_ip = 61;
-                    continue _fun17731
+                    _fun17733_ip = 61;
+                    continue _fun17733
                 }
             case 32:
                 var1 = global;

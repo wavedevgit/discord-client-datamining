@@ -26,12 +26,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot4 = var1;
     var1 = {};
     var6 = function(arg0) { // Original name: prepareUpdate, environment: var3
-        _fun118592: for (var _fun118592_ip = 0;;) switch (_fun118592_ip) {
+        _fun117937: for (var _fun117937_ip = 0;;) switch (_fun117937_ip) {
             case 0:
                 var0 = arg0;
                 if (!var0) {
-                    _fun118592_ip = 276;
-                    continue _fun118592
+                    _fun117937_ip = 276;
+                    continue _fun117937
                 }
             case 9:
                 var2 = _closure1_slot1;
@@ -102,12 +102,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var1.prepareUpdate = var6;
     var3 = function() { // Original name: deferUpdate, environment: var3
-        _fun118594: for (var _fun118594_ip = 0;;) switch (_fun118594_ip) {
+        _fun117939: for (var _fun117939_ip = 0;;) switch (_fun117939_ip) {
             case 0:
                 var1 = _closure1_slot4;
                 if (!var1) {
-                    _fun118594_ip = 36;
-                    continue _fun118594
+                    _fun117939_ip = 36;
+                    continue _fun117939
                 }
             case 10:
                 var1 = false;

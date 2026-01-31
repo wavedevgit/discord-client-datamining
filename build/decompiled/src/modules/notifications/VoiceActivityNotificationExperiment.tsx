@@ -85,7 +85,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.VoiceActivityNotificationUserExperiment = var4;
     var2.VoiceActivityNotificationGuildExperiment = var3;
     var3 = function(arg0) { // Original name: useVoiceActivityNotificationSettingsExperiment, environment: var1
-        _fun69797: for (var _fun69797_ip = 0;;) switch (_fun69797_ip) {
+        _fun69821: for (var _fun69821_ip = 0;;) switch (_fun69821_ip) {
             case 0:
                 var4 = arg0;
                 var8 = _closure1_slot3;
@@ -97,16 +97,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var5 == var4;
                 var2 = undefined;
                 if (var9) {
-                    _fun69797_ip = 47;
-                    continue _fun69797
+                    _fun69821_ip = 47;
+                    continue _fun69821
                 }
             case 37:
                 var9 = var4.getGuildId;
                 var2 = var9.bind(var4)();
             case 47:
                 if (!(var5 == var2)) {
-                    _fun69797_ip = 55;
-                    continue _fun69797
+                    _fun69821_ip = 55;
+                    continue _fun69821
                 }
             case 51:
                 var2 = _closure1_slot1;
@@ -116,8 +116,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var5 == var4;
                 var10 = undefined;
                 if (var9) {
-                    _fun69797_ip = 75;
-                    continue _fun69797
+                    _fun69821_ip = 75;
+                    continue _fun69821
                 }
             case 70:
                 var10 = var4.type;
@@ -138,8 +138,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var5 == var4;
                 var10 = undefined;
                 if (var9) {
-                    _fun69797_ip = 145;
-                    continue _fun69797
+                    _fun69821_ip = 145;
+                    continue _fun69821
                 }
             case 140:
                 var10 = var4.type;
@@ -148,8 +148,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var9.GUILD_VOICE;
                 var9 = var10 !== var9;
                 if (var9) {
-                    _fun69797_ip = 165;
-                    continue _fun69797
+                    _fun69821_ip = 165;
+                    continue _fun69821
                 }
             case 162:
                 var9 = !var2;
@@ -162,8 +162,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var5 == var4;
                 var3 = undefined;
                 if (var5) {
-                    _fun69797_ip = 202;
-                    continue _fun69797
+                    _fun69821_ip = 202;
+                    continue _fun69821
                 }
             case 197:
                 var3 = var4.type;
@@ -172,15 +172,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0.GUILD_VOICE;
                 var0 = var3 === var0;
                 if (!var0) {
-                    _fun69797_ip = 222;
-                    continue _fun69797
+                    _fun69821_ip = 222;
+                    continue _fun69821
                 }
             case 219:
                 var0 = var2;
             case 222:
                 if (!var0) {
-                    _fun69797_ip = 228;
-                    continue _fun69797
+                    _fun69821_ip = 228;
+                    continue _fun69821
                 }
             case 225:
                 var0 = var1;
@@ -190,7 +190,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useVoiceActivityNotificationSettingsExperiment = var3;
     var1 = function(arg0) { // Original name: hasVoiceChannelActivityNotifsEnabled, environment: var1
-        _fun69798: for (var _fun69798_ip = 0;;) switch (_fun69798_ip) {
+        _fun69822: for (var _fun69822_ip = 0;;) switch (_fun69822_ip) {
             case 0:
                 var7 = arg0;
                 var2 = _closure1_slot3;
@@ -200,16 +200,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var5 == var7;
                 var3 = undefined;
                 if (var6) {
-                    _fun69798_ip = 39;
-                    continue _fun69798
+                    _fun69822_ip = 39;
+                    continue _fun69822
                 }
             case 29:
                 var6 = var7.getGuildId;
                 var3 = var6.bind(var7)();
             case 39:
                 if (!(var5 == var3)) {
-                    _fun69798_ip = 47;
-                    continue _fun69798
+                    _fun69822_ip = 47;
+                    continue _fun69822
                 }
             case 43:
                 var3 = _closure1_slot1;

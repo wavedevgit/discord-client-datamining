@@ -101,7 +101,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot15 = var3;
     var3 = var6.memo;
     var1 = function(arg0) { // Original name: SearchBarActivityIcon, environment: var1
-        _fun105755: for (var _fun105755_ip = 0;;) switch (_fun105755_ip) {
+        _fun105111: for (var _fun105111_ip = 0;;) switch (_fun105111_ip) {
             case 0:
                 var1 = arg0;
                 var5 = var1.searchContext;
@@ -150,7 +150,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var _closure2_slot2 = var1;
                 var2 = var4.useState;
                 var1 = function(arg0) { // Environment: var0
-                    _fun105758: for (var _fun105758_ip = 0;;) switch (_fun105758_ip) {
+                    _fun105114: for (var _fun105114_ip = 0;;) switch (_fun105114_ip) {
                         case 0:
                             var1 = arg0;
                             var0 = var1.isInitialSearchQuery;
@@ -159,15 +159,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var1 = var0.bind(var1)();
                             var0 = _closure2_slot2;
                             if (!var0) {
-                                _fun105758_ip = 36;
-                                continue _fun105758
+                                _fun105114_ip = 36;
+                                continue _fun105114
                             }
                         case 33:
                             var0 = !var2;
                         case 36:
                             if (!var0) {
-                                _fun105758_ip = 42;
-                                continue _fun105758
+                                _fun105114_ip = 42;
+                                continue _fun105114
                             }
                         case 39:
                             var0 = !var1;
@@ -191,7 +191,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2[0] = var1;
                 var2[1] = var7;
                 var1 = function() { // Environment: var0
-                    _fun105759: for (var _fun105759_ip = 0;;) switch (_fun105759_ip) {
+                    _fun105115: for (var _fun105115_ip = 0;;) switch (_fun105115_ip) {
                         case 0:
                             var6 = _closure2_slot3;
                             var3 = _closure2_slot4;
@@ -205,15 +205,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var4 = var5.withTiming;
                             var1 = _closure1_slot12;
                             if (var6) {
-                                _fun105759_ip = 71;
-                                continue _fun105759
+                                _fun105115_ip = 71;
+                                continue _fun105115
                             }
                         case 53:
                             var6 = var1.START;
                             var6 = var4.bind(var5)(var6);
                             var6 = var2.bind(var3)(var6);
-                            _fun105759_ip = 87;
-                            continue _fun105759;
+                            _fun105115_ip = 87;
+                            continue _fun105115;
                         case 71:
                             var1 = var1.END;
                             var1 = var4.bind(var5)(var1);
@@ -337,8 +337,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = var10.bind(var11)();
                 var10 = 'xs';
                 if (!var11) {
-                    _fun105755_ip = 579;
-                    continue _fun105755
+                    _fun105111_ip = 579;
+                    continue _fun105111
                 }
             case 575:
                 var10 = 'sm';
@@ -364,4 +364,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 4190, 8925, 8861, 33, 1297, 671, 632, 8927, 3679, 4056, 6973, 478, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 4190, 8925, 8861, 33, 1297, 671, 632, 8927, 3679, 4056, 6972, 478, 2]);

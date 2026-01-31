@@ -322,31 +322,31 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.SUPPORTED_ACTIVITY_IN_TEXT_CHANNEL_TYPES = var4;
     var2.SUPPORTED_ACTIVITIES_CHANNEL_TYPES = var3;
     var3 = function(arg0) { // Original name: getAppIntentScheme, environment: var3
-        _fun29515: for (var _fun29515_ip = 0;;) switch (_fun29515_ip) {
+        _fun29516: for (var _fun29516_ip = 0;;) switch (_fun29516_ip) {
             case 0:
                 var1 = arg0;
                 var0 = 'tiktok';
                 if (!(var0 !== var1)) {
-                    _fun29515_ip = 67;
-                    continue _fun29515
+                    _fun29516_ip = 67;
+                    continue _fun29516
                 }
             case 11:
                 var0 = 'photos';
                 if (!(var0 !== var1)) {
-                    _fun29515_ip = 59;
-                    continue _fun29515
+                    _fun29516_ip = 59;
+                    continue _fun29516
                 }
             case 21:
                 var0 = 'snapchat';
                 if (!(var0 !== var1)) {
-                    _fun29515_ip = 51;
-                    continue _fun29515
+                    _fun29516_ip = 51;
+                    continue _fun29516
                 }
             case 31:
                 var0 = 'instagram';
                 if (!(var0 !== var1)) {
-                    _fun29515_ip = 43;
-                    continue _fun29515
+                    _fun29516_ip = 43;
+                    continue _fun29516
                 }
             case 39:
                 var0 = undefined;

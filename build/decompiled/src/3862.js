@@ -14,15 +14,15 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = '__esModule';
     var2 = var4.bind(var5)(var1, var2, var3);
     var0 = function(arg0, arg1) { // Original name: createAnimatedPropAdapter, environment: var0
-        _fun34976: for (var _fun34976_ip = 0;;) switch (_fun34976_ip) {
+        _fun34992: for (var _fun34992_ip = 0;;) switch (_fun34992_ip) {
             case 0:
                 var3 = arg1;
                 var2 = {};
                 var _closure2_slot0 = var2;
                 var1 = null;
                 if (!(var1 != var3)) {
-                    _fun34976_ip = 32;
-                    continue _fun34976
+                    _fun34992_ip = 32;
+                    continue _fun34992
                 }
             case 17:
                 var1 = var3.forEach;

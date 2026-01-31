@@ -16,7 +16,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = undefined;
     var1 = var1.bind(var0)(var3);
     var3 = var1.requireNativeComponent;
-    var1 = 'CellContainer';
+    var1 = 'AutoLayoutView';
     var1 = var3.bind(var0)(var1);
     var2.default = var1;
     return var0;

@@ -9,7 +9,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var8;
     var _closure1_slot2 = var5;
     var0 = function() { // Original name: KrispLogo, environment: var1
-        _fun84290: for (var _fun84290_ip = 0;;) switch (_fun84290_ip) {
+        _fun84320: for (var _fun84320_ip = 0;;) switch (_fun84320_ip) {
             case 0:
                 var0 = _closure1_slot11;
                 var3 = undefined;
@@ -29,15 +29,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = _closure1_slot1;
                 var2 = _closure1_slot2;
                 if (var0) {
-                    _fun84290_ip = 89;
-                    continue _fun84290
+                    _fun84320_ip = 89;
+                    continue _fun84320
                 }
             case 75:
                 var0 = 10;
                 var0 = var2[var0];
                 var7 = var1.bind(var3)(var0);
-                _fun84290_ip = 101;
-                continue _fun84290;
+                _fun84320_ip = 101;
+                continue _fun84320;
             case 89:
                 var0 = 9;
                 var0 = var2[var0];
@@ -393,4 +393,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 6968, 660, 33, 1675, 1297, 3205, 3165, 8440, 8441, 1234, 4923, 8439, 3901, 8943, 10088, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 6967, 660, 33, 1675, 1297, 3205, 3165, 8440, 8441, 1234, 4924, 8439, 3900, 8943, 10090, 2]);

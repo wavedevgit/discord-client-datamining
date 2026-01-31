@@ -5,22 +5,22 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = dependencyMap;
     var _closure1_slot1 = var1;
     var1 = function(arg0) { // Original name: Type, environment: var0
-        _fun28871: for (var _fun28871_ip = 0;;) switch (_fun28871_ip) {
+        _fun28872: for (var _fun28872_ip = 0;;) switch (_fun28872_ip) {
             case 0:
                 var4 = arg0;
                 var3 = typeof var4;
                 var0 = 'Symbol';
                 var1 = 'symbol';
                 if (!(var1 !== var3)) {
-                    _fun28871_ip = 62;
-                    continue _fun28871
+                    _fun28872_ip = 62;
+                    continue _fun28872
                 }
             case 18:
                 var1 = 'BigInt';
                 var2 = 'bigint';
                 if (!(var2 !== var3)) {
-                    _fun28871_ip = 59;
-                    continue _fun28871
+                    _fun28872_ip = 59;
+                    continue _fun28872
                 }
             case 30:
                 var5 = _closure1_slot0;

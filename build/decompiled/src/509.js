@@ -15,49 +15,49 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var2 = typeof var2;
                         var2 = var3 !== var2;
                         if (!var2) {
-                            _fun6527_ip = 45;
+                            _fun6527_ip = 46;
                             continue _fun6527
                         }
                     case 30:
                         var3 = var0.Symbol;
                         var3 = var3.iterator;
                         var2 = var5[var3];
-                    case 45:
+                    case 46:
                         if (var2) {
-                            _fun6527_ip = 54;
+                            _fun6527_ip = 55;
                             continue _fun6527
                         }
-                    case 48:
+                    case 49:
                         var2 = var5["@@iterator"];
-                    case 54:
+                    case 55:
                         var _closure2_slot1 = var2;
                         if (var2) {
-                            _fun6527_ip = 388;
+                            _fun6527_ip = 389;
                             continue _fun6527
                         }
-                    case 64:
+                    case 65:
                         var3 = var0.Array;
                         var2 = var3.isArray;
                         var2 = var2.bind(var3)(var5);
                         if (var2) {
-                            _fun6527_ip = 330;
+                            _fun6527_ip = 331;
                             continue _fun6527
                         }
-                    case 86:
+                    case 87:
                         var4 = undefined;
                         var2 = undefined;
                         if (!var5) {
-                            _fun6527_ip = 289;
+                            _fun6527_ip = 290;
                             continue _fun6527
                         }
-                    case 96:
+                    case 97:
                         var6 = 'string';
                         var3 = typeof var5;
                         if (!(var6 !== var3)) {
-                            _fun6527_ip = 276;
+                            _fun6527_ip = 277;
                             continue _fun6527
                         }
-                    case 110:
+                    case 111:
                         var3 = var0.Object;
                         var3 = var3.prototype;
                         var6 = var3.toString;
@@ -70,68 +70,68 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var3 = 'Object';
                         var3 = var3 === var6;
                         if (!var3) {
-                            _fun6527_ip = 172;
+                            _fun6527_ip = 173;
                             continue _fun6527
                         }
-                    case 167:
+                    case 168:
                         var3 = var5.constructor;
-                    case 172:
+                    case 173:
                         var7 = var6;
                         if (!var3) {
-                            _fun6527_ip = 188;
+                            _fun6527_ip = 189;
                             continue _fun6527
                         }
-                    case 178:
+                    case 179:
                         var3 = var5.constructor;
                         var7 = var3.name;
-                    case 188:
+                    case 189:
                         var3 = 'Map';
                         if (!(var3 !== var7)) {
-                            _fun6527_ip = 258;
+                            _fun6527_ip = 259;
                             continue _fun6527
                         }
-                    case 196:
+                    case 197:
                         var3 = 'Set';
                         if (!(var3 !== var7)) {
-                            _fun6527_ip = 258;
+                            _fun6527_ip = 259;
                             continue _fun6527
                         }
-                    case 204:
+                    case 205:
                         var3 = 'Arguments';
                         if (!(var3 !== var7)) {
-                            _fun6527_ip = 243;
+                            _fun6527_ip = 244;
                             continue _fun6527
                         }
-                    case 214:
+                    case 215:
                         var6 = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
                         var3 = var6.test;
                         var3 = var3.bind(var6)(var7);
                         var2 = undefined;
                         if (!var3) {
-                            _fun6527_ip = 289;
+                            _fun6527_ip = 290;
                             continue _fun6527
                         }
-                    case 243:
+                    case 244:
                         var3 = _closure1_slot2;
                         var2 = var3.bind(var4)(var5, var4);
-                        _fun6527_ip = 289;
+                        _fun6527_ip = 290;
                         continue _fun6527;
-                    case 258:
+                    case 259:
                         var6 = var0.Array;
                         var3 = var6.from;
                         var2 = var3.bind(var6)(var5);
-                        _fun6527_ip = 289;
+                        _fun6527_ip = 290;
                         continue _fun6527;
-                    case 276:
+                    case 277:
                         var3 = _closure1_slot2;
                         var2 = var3.bind(var4)(var5, var4);
-                    case 289:
+                    case 290:
                         _closure2_slot1 = var2;
                         if (var2) {
-                            _fun6527_ip = 330;
+                            _fun6527_ip = 331;
                             continue _fun6527
                         }
-                    case 296:
+                    case 297:
                         var3 = var0.TypeError;
                         var0 = var3.prototype;
                         var2 = Object.create(var0, {
@@ -144,16 +144,16 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var0 = new var11[var3](var10, var9);
                         var0 = var0 instanceof Object ? var0 : var2;
                         throw var0;
-                    case 330:
+                    case 331:
                         var0 = _closure2_slot1;
                         if (!var0) {
-                            _fun6527_ip = 345;
+                            _fun6527_ip = 346;
                             continue _fun6527
                         }
-                    case 337:
+                    case 338:
                         var0 = _closure2_slot1;
                         _closure2_slot0 = var0;
-                    case 345:
+                    case 346:
                         var0 = 0;
                         var _closure2_slot2 = var0;
                         var2 = function() { // Original name: F, environment: var1
@@ -202,7 +202,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var0.e = var3;
                         var0.f = var2;
                         return var0;
-                    case 388:
+                    case 389:
                         var0 = true;
                         var _closure2_slot4 = var0;
                         var0 = false;

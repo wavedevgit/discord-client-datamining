@@ -1,6 +1,6 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun34932: for (var _fun34932_ip = 0;;) switch (_fun34932_ip) {
+    _fun34948: for (var _fun34948_ip = 0;;) switch (_fun34948_ip) {
         case 0:
             var5 = require;
             var2 = exports;
@@ -23,7 +23,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var _closure1_slot3 = var0;
             var1 = function() { // Environment: var4
                 var0 = function(arg0, arg1) { // Original name: dispatchCommandFabric, environment: var0
-                    _fun34934: for (var _fun34934_ip = 0;;) switch (_fun34934_ip) {
+                    _fun34950: for (var _fun34950_ip = 0;;) switch (_fun34950_ip) {
                         case 0:
                             var5 = arg1;
                             var0 = undefined;
@@ -31,34 +31,34 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var3 = arguments.length;
                             var1 = 2;
                             if (!(var3 > var1)) {
-                                _fun34934_ip = 25;
-                                continue _fun34934
+                                _fun34950_ip = 25;
+                                continue _fun34950
                             }
                         case 17:
                             var3 = arguments[var1];
                             if (!(var0 === var3)) {
-                                _fun34934_ip = 31;
-                                continue _fun34934
+                                _fun34950_ip = 31;
+                                continue _fun34950
                             }
                         case 25:
                             var4 = new Array(0);
-                            _fun34934_ip = 35;
-                            continue _fun34934;
+                            _fun34950_ip = 35;
+                            continue _fun34950;
                         case 31:
                             var4 = arguments[var1];
                         case 35:
                             var2 = global;
                             var1 = var2._WORKLET;
                             if (!var1) {
-                                _fun34934_ip = 144;
-                                continue _fun34934
+                                _fun34950_ip = 144;
+                                continue _fun34950
                             }
                         case 46:
                             var1 = arg0;
                             var3 = var1.bind(var0)();
                             if (var3) {
-                                _fun34934_ip = 125;
-                                continue _fun34934
+                                _fun34950_ip = 125;
+                                continue _fun34950
                             }
                         case 59:
                             var7 = _closure1_slot1;
@@ -74,8 +74,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var2 = '" with an uninitialized ref. Make sure to pass the animated ref to the component before using it.';
                             var2 = var9.bind(var8)(var5, var2);
                             var2 = var6.bind(var7)(var2);
-                            _fun34934_ip = 144;
-                            continue _fun34934;
+                            _fun34950_ip = 144;
+                            continue _fun34950;
                         case 125:
                             var2 = _closure1_slot0;
                             var1 = var2._dispatchCommandFabric;
@@ -108,7 +108,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var _closure1_slot4 = var1;
             var1 = function() { // Environment: var4
                 var0 = function(arg0, arg1) { // Original name: dispatchCommandPaper, environment: var0
-                    _fun34936: for (var _fun34936_ip = 0;;) switch (_fun34936_ip) {
+                    _fun34952: for (var _fun34952_ip = 0;;) switch (_fun34952_ip) {
                         case 0:
                             var6 = arg1;
                             var0 = undefined;
@@ -116,42 +116,42 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var3 = arguments.length;
                             var1 = 2;
                             if (!(var3 > var1)) {
-                                _fun34936_ip = 25;
-                                continue _fun34936
+                                _fun34952_ip = 25;
+                                continue _fun34952
                             }
                         case 17:
                             var3 = arguments[var1];
                             if (!(var0 === var3)) {
-                                _fun34936_ip = 31;
-                                continue _fun34936
+                                _fun34952_ip = 31;
+                                continue _fun34952
                             }
                         case 25:
                             var7 = new Array(0);
-                            _fun34936_ip = 35;
-                            continue _fun34936;
+                            _fun34952_ip = 35;
+                            continue _fun34952;
                         case 31:
                             var7 = arguments[var1];
                         case 35:
                             var1 = global;
                             var2 = var1._WORKLET;
                             if (!var2) {
-                                _fun34936_ip = 148;
-                                continue _fun34936
+                                _fun34952_ip = 148;
+                                continue _fun34952
                             }
                         case 46:
                             var2 = arg0;
                             var5 = var2.bind(var0)();
                             var4 = 0;
                             if (!(!(var5 < var4))) {
-                                _fun34936_ip = 83;
-                                continue _fun34936
+                                _fun34952_ip = 83;
+                                continue _fun34952
                             }
                         case 59:
                             var3 = _closure1_slot0;
                             var2 = var3._dispatchCommandPaper;
                             var2 = var2.bind(var3)(var5, var6, var7);
-                            _fun34936_ip = 148;
-                            continue _fun34936;
+                            _fun34952_ip = 148;
+                            continue _fun34952;
                         case 83:
                             var3 = _closure1_slot1;
                             var2 = _closure1_slot2;
@@ -194,27 +194,27 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var8 = var6[var3];
             var8 = var5.bind(var0)(var8);
             if (var9) {
-                _fun34932_ip = 162;
-                continue _fun34932
+                _fun34948_ip = 162;
+                continue _fun34948
             }
         case 144:
             var9 = var8.isFabric;
             var9 = var9.bind(var8)();
             if (!var9) {
-                _fun34932_ip = 160;
-                continue _fun34932
+                _fun34948_ip = 160;
+                continue _fun34948
             }
         case 157:
             var1 = var7;
         case 160:
-            _fun34932_ip = 219;
-            continue _fun34932;
+            _fun34948_ip = 219;
+            continue _fun34948;
         case 162:
             var7 = var8.isJest;
             var7 = var7.bind(var8)();
             if (var7) {
-                _fun34932_ip = 211;
-                continue _fun34932
+                _fun34948_ip = 211;
+                continue _fun34948
             }
         case 175:
             var3 = var6[var3];
@@ -222,8 +222,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var3 = var5.isChromeDebugger;
             var3 = var3.bind(var5)();
             if (var3) {
-                _fun34932_ip = 204;
-                continue _fun34932
+                _fun34948_ip = 204;
+                continue _fun34948
             }
         case 197:
             var3 = function() { // Original name: dispatchCommandDefault, environment: var4
@@ -239,8 +239,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = var2.bind(var3)(var1);
                 return var0;
             };
-            _fun34932_ip = 209;
-            continue _fun34932;
+            _fun34948_ip = 209;
+            continue _fun34948;
         case 204:
             var3 = function() { // Original name: dispatchCommandChromeDebugger, environment: var4
                 var2 = _closure1_slot1;
@@ -256,8 +256,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var0;
             };
         case 209:
-            _fun34932_ip = 216;
-            continue _fun34932;
+            _fun34948_ip = 216;
+            continue _fun34948;
         case 211:
             var3 = function() { // Original name: dispatchCommandJest, environment: var4
                 var2 = _closure1_slot1;

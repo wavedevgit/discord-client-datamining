@@ -99,7 +99,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/media_viewer/native/components/overlay/MediaModalOverlayHeader.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: MediaModalOverlayHeader, environment: var1
-        _fun72986: for (var _fun72986_ip = 0;;) switch (_fun72986_ip) {
+        _fun73016: for (var _fun73016_ip = 0;;) switch (_fun73016_ip) {
             case 0:
                 var0 = arg0;
                 var13 = var0.onClose;
@@ -203,8 +203,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var15 = null;
                 var12 = var15 != var29;
                 if (!var12) {
-                    _fun72986_ip = 698;
-                    continue _fun72986
+                    _fun73016_ip = 698;
+                    continue _fun73016
                 }
             case 434:
                 var18 = _closure1_slot5;
@@ -219,8 +219,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var20.style = var23;
                 var24 = var15 != var31;
                 if (!var24) {
-                    _fun72986_ip = 583;
-                    continue _fun72986
+                    _fun73016_ip = 583;
+                    continue _fun73016
                 }
             case 481:
                 var26 = _closure1_slot5;
@@ -285,8 +285,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9[0] = var11;
                 var10 = !var10;
                 if (!var10) {
-                    _fun72986_ip = 872;
-                    continue _fun72986
+                    _fun73016_ip = 871;
+                    continue _fun73016
                 }
             case 729:
                 var13 = _closure1_slot6;
@@ -308,8 +308,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var14[0] = var18;
                 var15 = null;
                 if (var17) {
-                    _fun72986_ip = 858;
-                    continue _fun72986
+                    _fun73016_ip = 857;
+                    continue _fun73016
                 }
             case 802:
                 var18 = _closure1_slot5;
@@ -322,7 +322,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var16 = {};
                 var16.items = var19;
                 var19 = function(arg0) { // Original name: children, environment: var19
-                    _fun72987: for (var _fun72987_ip = 0;;) switch (_fun72987_ip) {
+                    _fun73017: for (var _fun73017_ip = 0;;) switch (_fun73017_ip) {
                         case 0:
                             var2 = arg0;
                             var5 = var2.ref;
@@ -363,8 +363,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var8 = _closure1_slot0;
                             var10 = _closure1_slot2;
                             if (var6) {
-                                _fun72987_ip = 194;
-                                continue _fun72987
+                                _fun73017_ip = 194;
+                                continue _fun73017
                             }
                         case 154:
                             var6 = 19;
@@ -376,8 +376,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 'color': 'interactive-text-active'
                             };
                             var6 = var9.bind(var2)(var7, var6);
-                            _fun72987_ip = 232;
-                            continue _fun72987;
+                            _fun73017_ip = 232;
+                            continue _fun73017;
                         case 194:
                             var7 = 18;
                             var7 = var10[var7];
@@ -400,11 +400,11 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 };
                 var16.children = var19;
                 var15 = var18.bind(var3)(var17, var16);
-            case 858:
+            case 857:
                 var14[1] = var15;
                 var11.children = var14;
                 var10 = var13.bind(var3)(var12, var11);
-            case 872:
+            case 871:
                 var9[1] = var10;
                 var6.children = var9;
                 var6 = var8.bind(var3)(var7, var6);
@@ -417,4 +417,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.MediaModalOverlayHeader = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 4665, 9144, 8821, 9148, 3679, 4696, 9149, 1234, 4694, 4045, 671, 3901, 9150, 8892, 478, 9160, 8893, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 4666, 9146, 8821, 9150, 3679, 4697, 9151, 1234, 4695, 4045, 671, 3900, 9152, 8892, 478, 9162, 8893, 2]);

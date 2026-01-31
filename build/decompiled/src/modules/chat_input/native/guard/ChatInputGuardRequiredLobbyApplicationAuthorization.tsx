@@ -52,7 +52,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot5 = var3;
     var3 = var6.memo;
     var1 = function(arg0) { // Original name: ChatInputGuardRequiredLobbyApplicationAuthorization, environment: var1
-        _fun91294: for (var _fun91294_ip = 0;;) switch (_fun91294_ip) {
+        _fun90642: for (var _fun90642_ip = 0;;) switch (_fun90642_ip) {
             case 0:
                 var0 = arg0;
                 var1 = var0.showLinkedLobbyApplicationLoadingIndicator;
@@ -62,14 +62,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = _closure1_slot5;
                 var14 = var2.bind(var3)();
                 if (var1) {
-                    _fun91294_ip = 319;
-                    continue _fun91294
+                    _fun90642_ip = 319;
+                    continue _fun90642
                 }
             case 40:
                 var7 = null;
                 if (!(var7 != var12)) {
-                    _fun91294_ip = 319;
-                    continue _fun91294
+                    _fun90642_ip = 319;
+                    continue _fun90642
                 }
             case 49:
                 var2 = var12.getIconSource;
@@ -89,8 +89,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var7 != var13;
                 var8 = undefined;
                 if (!var9) {
-                    _fun91294_ip = 147;
-                    continue _fun91294
+                    _fun90642_ip = 147;
+                    continue _fun90642
                 }
             case 118:
                 var11 = _closure1_slot4;
@@ -121,8 +121,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var7 != var5;
                 var8 = undefined;
                 if (!var9) {
-                    _fun91294_ip = 285;
-                    continue _fun91294
+                    _fun90642_ip = 285;
+                    continue _fun90642
                 }
             case 233:
                 var12 = _closure1_slot0;
@@ -141,8 +141,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var7 != var5;
                 var5 = undefined;
                 if (!var7) {
-                    _fun91294_ip = 306;
-                    continue _fun91294
+                    _fun90642_ip = 306;
+                    continue _fun90642
                 }
             case 299:
                 var5 = function() { // Environment: var6
@@ -185,4 +185,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 11790, 1234, 3103, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 11725, 1234, 3103, 2]);

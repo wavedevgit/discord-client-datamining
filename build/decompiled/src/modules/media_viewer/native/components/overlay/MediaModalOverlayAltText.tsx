@@ -83,49 +83,54 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot4 = var3;
     var3 = var6.memo;
     var1 = function(arg0) { // Original name: MediaModalOverlayAltTextButton, environment: var1
-        _fun73075: for (var _fun73075_ip = 0;;) switch (_fun73075_ip) {
+        _fun73105: for (var _fun73105_ip = 0;;) switch (_fun73105_ip) {
             case 0:
                 var0 = arg0;
-                var2 = var0.description;
+                var0 = var0.description;
                 var4 = undefined;
-                if (!(var2 === var4)) {
-                    _fun73075_ip = 20;
-                    continue _fun73075
-                }
-            case 16:
-                var2 = '';
-            case 20:
-                var _closure2_slot0 = var2;
+                var _closure2_slot0 = var4;
                 var3 = _closure1_slot1;
-                var7 = _closure1_slot2;
-                var0 = 4;
-                var0 = var7[var0];
-                var0 = var3.bind(var4)(var0);
-                var0 = var0.bind(var4)();
+                var6 = _closure1_slot2;
+                var2 = 4;
+                var2 = var6[var2];
+                var2 = var3.bind(var4)(var2);
+                var2 = var2.bind(var4)();
                 var3 = _closure1_slot4;
-                var0 = var0.right;
-                var6 = var3.bind(var4)(var0);
+                var2 = var2.right;
+                var6 = var3.bind(var4)(var2);
+                var7 = null;
+                var3 = var7 != var0;
+                var2 = '';
+                if (!var3) {
+                    _fun73105_ip = 73;
+                    continue _fun73105
+                }
+            case 70:
+                var2 = var0;
+            case 73:
+                _closure2_slot0 = var2;
                 var3 = _closure1_slot0;
+                var8 = _closure1_slot2;
                 var0 = 5;
-                var0 = var7[var0];
+                var0 = var8[var0];
                 var0 = var3.bind(var4)(var0);
                 var3 = var0.ViewImageDescriptions;
                 var0 = var3.useSetting;
                 var3 = var0.bind(var3)();
                 var0 = null;
                 if (!var3) {
-                    _fun73075_ip = 292;
-                    continue _fun73075
+                    _fun73105_ip = 308;
+                    continue _fun73105
                 }
-            case 105:
+            case 121:
                 var3 = var2.length;
                 var2 = 0;
                 var0 = null;
                 if (!(var2 !== var3)) {
-                    _fun73075_ip = 292;
-                    continue _fun73075
+                    _fun73105_ip = 308;
+                    continue _fun73105
                 }
-            case 121:
+            case 137:
                 var3 = _closure1_slot3;
                 var10 = _closure1_slot0;
                 var11 = _closure1_slot2;
@@ -137,7 +142,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var6.container;
                 var1.style = var6;
                 var5 = function() { // Original name: onPress, environment: var5
-                    _fun73076: for (var _fun73076_ip = 0;;) switch (_fun73076_ip) {
+                    _fun73106: for (var _fun73106_ip = 0;;) switch (_fun73106_ip) {
                         case 0:
                             var2 = _closure1_slot1;
                             var1 = _closure1_slot2;
@@ -151,8 +156,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var5 = var3 != var5;
                             var3 = '';
                             if (!var5) {
-                                _fun73076_ip = 51;
-                                continue _fun73076
+                                _fun73106_ip = 51;
+                                continue _fun73106
                             }
                         case 47:
                             var3 = _closure2_slot0;
@@ -192,7 +197,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var3.bind(var4)(var6, var5);
                 var1.children = var5;
                 var0 = var3.bind(var4)(var2, var1);
-            case 292:
+            case 308:
                 return var0;
         }
     };
@@ -205,4 +210,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 1297, 671, 1568, 1348, 4864, 9163, 3901, 1234, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 1297, 671, 1568, 1348, 4865, 9165, 3900, 1234, 2]);

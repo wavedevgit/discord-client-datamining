@@ -21,49 +21,49 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = typeof var1;
                 var1 = var3 !== var1;
                 if (!var1) {
-                    _fun7161_ip = 45;
+                    _fun7161_ip = 46;
                     continue _fun7161
                 }
             case 30:
                 var3 = var4.Symbol;
                 var3 = var3.iterator;
                 var1 = var2[var3];
-            case 45:
+            case 46:
                 if (var1) {
-                    _fun7161_ip = 54;
+                    _fun7161_ip = 55;
                     continue _fun7161
                 }
-            case 48:
+            case 49:
                 var1 = var2["@@iterator"];
-            case 54:
+            case 55:
                 if (var1) {
-                    _fun7161_ip = 342;
+                    _fun7161_ip = 343;
                     continue _fun7161
                 }
-            case 60:
+            case 61:
                 var5 = var4.Array;
                 var3 = var5.isArray;
                 var5 = var3.bind(var5)(var2);
                 var3 = var1;
                 if (var5) {
-                    _fun7161_ip = 322;
+                    _fun7161_ip = 323;
                     continue _fun7161
                 }
-            case 85:
+            case 86:
                 var7 = undefined;
                 var5 = undefined;
                 if (!var2) {
-                    _fun7161_ip = 282;
+                    _fun7161_ip = 283;
                     continue _fun7161
                 }
-            case 95:
+            case 96:
                 var8 = 'string';
                 var6 = typeof var2;
                 if (!(var8 !== var6)) {
-                    _fun7161_ip = 269;
+                    _fun7161_ip = 270;
                     continue _fun7161
                 }
-            case 109:
+            case 110:
                 var6 = {};
                 var8 = var6.toString;
                 var6 = var8.call;
@@ -75,71 +75,71 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = 'Object';
                 var6 = var6 === var8;
                 if (!var6) {
-                    _fun7161_ip = 162;
+                    _fun7161_ip = 163;
                     continue _fun7161
                 }
-            case 157:
+            case 158:
                 var6 = var2.constructor;
-            case 162:
+            case 163:
                 var9 = var8;
                 if (!var6) {
-                    _fun7161_ip = 178;
+                    _fun7161_ip = 179;
                     continue _fun7161
                 }
-            case 168:
+            case 169:
                 var6 = var2.constructor;
                 var9 = var6.name;
-            case 178:
+            case 179:
                 var6 = 'Map';
                 if (!(var6 !== var9)) {
-                    _fun7161_ip = 248;
+                    _fun7161_ip = 249;
                     continue _fun7161
                 }
-            case 186:
+            case 187:
                 var6 = 'Set';
                 if (!(var6 !== var9)) {
-                    _fun7161_ip = 248;
+                    _fun7161_ip = 249;
                     continue _fun7161
                 }
-            case 194:
+            case 195:
                 var6 = 'Arguments';
                 if (!(var6 !== var9)) {
-                    _fun7161_ip = 233;
+                    _fun7161_ip = 234;
                     continue _fun7161
                 }
-            case 204:
+            case 205:
                 var8 = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
                 var6 = var8.test;
                 var8 = var6.bind(var8)(var9);
                 var6 = undefined;
                 if (!var8) {
-                    _fun7161_ip = 246;
+                    _fun7161_ip = 247;
                     continue _fun7161
                 }
-            case 233:
+            case 234:
                 var8 = _closure1_slot10;
                 var6 = var8.bind(var7)(var2, var7);
-            case 246:
-                _fun7161_ip = 264;
+            case 247:
+                _fun7161_ip = 265;
                 continue _fun7161;
-            case 248:
+            case 249:
                 var9 = var4.Array;
                 var8 = var9.from;
                 var6 = var8.bind(var9)(var2);
-            case 264:
+            case 265:
                 var5 = var6;
-                _fun7161_ip = 282;
+                _fun7161_ip = 283;
                 continue _fun7161;
-            case 269:
+            case 270:
                 var6 = _closure1_slot10;
                 var5 = var6.bind(var7)(var2, var7);
-            case 282:
+            case 283:
                 var3 = var5;
                 if (var3) {
-                    _fun7161_ip = 322;
+                    _fun7161_ip = 323;
                     continue _fun7161
                 }
-            case 288:
+            case 289:
                 var6 = var4.TypeError;
                 var4 = var6.prototype;
                 var5 = Object.create(var4, {
@@ -152,14 +152,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = new var13[var6](var12, var11);
                 var4 = var4 instanceof Object ? var4 : var5;
                 throw var4;
-            case 322:
+            case 323:
                 if (!var3) {
-                    _fun7161_ip = 329;
+                    _fun7161_ip = 330;
                     continue _fun7161
                 }
-            case 325:
+            case 326:
                 _closure2_slot0 = var3;
-            case 329:
+            case 330:
                 var3 = 0;
                 var _closure2_slot1 = var3;
                 var0 = function() { // Environment: var0
@@ -195,7 +195,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     }
                 };
                 return var0;
-            case 342:
+            case 343:
                 var0 = var1.call;
                 var2 = var0.bind(var1)(var2);
                 var1 = var2.next;

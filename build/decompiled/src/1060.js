@@ -6,13 +6,13 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var3;
     var0 = function(arg0) { // Original name: getAbsoluteTime, environment: var1
-        _fun10886: for (var _fun10886_ip = 0;;) switch (_fun10886_ip) {
+        _fun10888: for (var _fun10888_ip = 0;;) switch (_fun10888_ip) {
             case 0:
                 var2 = arg0;
                 var0 = var2;
                 if (!var0) {
-                    _fun10886_ip = 75;
-                    continue _fun10886
+                    _fun10888_ip = 75;
+                    continue _fun10888
                 }
             case 9:
                 var4 = _closure1_slot0;
@@ -24,8 +24,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = var3.browserPerformanceTimeOrigin;
                 var1 = var1.bind(var3)();
                 if (var1) {
-                    _fun10886_ip = 61;
-                    continue _fun10886
+                    _fun10888_ip = 61;
+                    continue _fun10888
                 }
             case 47:
                 var3 = global;
@@ -55,15 +55,15 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.value = var7;
     var3 = var5.bind(var6)(var2, var4, var3);
     var1 = function(arg0) { // Original name: resourceTimingToSpanAttributes, environment: var1
-        _fun10887: for (var _fun10887_ip = 0;;) switch (_fun10887_ip) {
+        _fun10889: for (var _fun10889_ip = 0;;) switch (_fun10889_ip) {
             case 0:
                 var7 = arg0;
                 var6 = {};
                 var0 = var7.nextHopProtocol;
                 var8 = null;
                 if (!(var8 != var0)) {
-                    _fun10887_ip = 82;
-                    continue _fun10887
+                    _fun10889_ip = 82;
+                    continue _fun10889
                 }
             case 17:
                 var2 = _closure1_slot0;
@@ -89,8 +89,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = var2.browserPerformanceTimeOrigin;
                 var0 = var0.bind(var2)();
                 if (var0) {
-                    _fun10887_ip = 175;
-                    continue _fun10887
+                    _fun10889_ip = 175;
+                    continue _fun10889
                 }
             case 120:
                 var2 = _closure1_slot0;
@@ -102,15 +102,15 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = var0.bind(var2)();
                 var0 = var6;
                 if (!(var8 != var2)) {
-                    _fun10887_ip = 443;
-                    continue _fun10887
+                    _fun10889_ip = 443;
+                    continue _fun10889
                 }
             case 160:
                 var2 = var2.timeOrigin;
                 var0 = var6;
                 if (!var2) {
-                    _fun10887_ip = 443;
-                    continue _fun10887
+                    _fun10889_ip = 443;
+                    continue _fun10889
                 }
             case 175:
                 var2 = global;
@@ -158,8 +158,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var8 = var8 != var1;
                 var1 = undefined;
                 if (!var8) {
-                    _fun10887_ip = 417;
-                    continue _fun10887
+                    _fun10889_ip = 417;
+                    continue _fun10889
                 }
             case 401:
                 var8 = var7.responseStart;

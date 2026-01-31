@@ -42,7 +42,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var0.get = var3;
     var3 = function(arg0, arg1) { // Original name: put, environment: var2
-        _fun67453: for (var _fun67453_ip = 0;;) switch (_fun67453_ip) {
+        _fun67476: for (var _fun67476_ip = 0;;) switch (_fun67476_ip) {
             case 0:
                 var4 = arg0;
                 var3 = arg1;
@@ -51,8 +51,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var5 = var1 < var3;
                 var0 = 1;
                 if (!var5) {
-                    _fun67453_ip = 58;
-                    continue _fun67453
+                    _fun67476_ip = 58;
+                    continue _fun67476
                 }
             case 20:
                 var6 = var2.putBit;
@@ -64,8 +64,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var5 = var6.bind(var2)(var5);
                 var1 = var1 + 1;
                 if (var1 < var3) {
-                    _fun67453_ip = 20;
-                    continue _fun67453
+                    _fun67476_ip = 20;
+                    continue _fun67476
                 }
             case 58:
                 var0 = undefined;
@@ -80,7 +80,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var0.getLengthInBits = var3;
     var2 = function(arg0) { // Original name: putBit, environment: var2
-        _fun67455: for (var _fun67455_ip = 0;;) switch (_fun67455_ip) {
+        _fun67478: for (var _fun67478_ip = 0;;) switch (_fun67478_ip) {
             case 0:
                 var1 = this;
                 var0 = global;
@@ -93,8 +93,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = var1.buffer;
                 var0 = var0.length;
                 if (!(var0 <= var3)) {
-                    _fun67455_ip = 66;
-                    continue _fun67455
+                    _fun67478_ip = 66;
+                    continue _fun67478
                 }
             case 48:
                 var4 = var1.buffer;
@@ -104,8 +104,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             case 66:
                 var0 = arg0;
                 if (!var0) {
-                    _fun67455_ip = 106;
-                    continue _fun67455
+                    _fun67478_ip = 106;
+                    continue _fun67478
                 }
             case 72:
                 var2 = var1.buffer;

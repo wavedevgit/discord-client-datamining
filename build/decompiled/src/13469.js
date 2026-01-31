@@ -9,15 +9,15 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = var3.registerAsset;
     var1 = {
         '__packager_asset': true,
-        'httpServerLocation': '/assets/modules/main_tabs_v2/native/tabs/guilds/empty_states/images',
-        'width': 193.5,
-        'height': 205.5,
+        'httpServerLocation': '/assets/modules/premium/referral_program/native/images',
+        'width': 200.5,
+        'height': 114,
         'scales': null,
-        'hash': 'c4e35cf59b65ee25c9dfc91c26e34f5e',
-        'name': 'guilds-empty-illustration',
+        'hash': 'fbbee3b1c0716eaa554a8f9a94badc67',
+        'name': 'asset_nitro_ticket',
         'type': 'png'
     };
-    var4 = [2, 3, 4];
+    var4 = [2, 3];
     var1.scales = var4;
     var2 = var2.bind(var3)(var1);
     var1 = module;

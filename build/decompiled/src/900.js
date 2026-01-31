@@ -15,7 +15,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2.value = var6;
     var2 = var4.bind(var5)(var1, var3, var2);
     var0 = function(arg0, arg1) { // Original name: applySdkMetadata, environment: var0
-        _fun9482: for (var _fun9482_ip = 0;;) switch (_fun9482_ip) {
+        _fun9484: for (var _fun9484_ip = 0;;) switch (_fun9484_ip) {
             case 0:
                 var2 = arg0;
                 var8 = arg1;
@@ -24,20 +24,20 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var3 = arguments.length;
                 var1 = 2;
                 if (!(var3 > var1)) {
-                    _fun9482_ip = 30;
-                    continue _fun9482
+                    _fun9484_ip = 30;
+                    continue _fun9484
                 }
             case 22:
                 var3 = arguments[var1];
                 if (!(var0 === var3)) {
-                    _fun9482_ip = 40;
-                    continue _fun9482
+                    _fun9484_ip = 40;
+                    continue _fun9484
                 }
             case 30:
                 var6 = new Array(1);
                 var6[0] = var8;
-                _fun9482_ip = 44;
-                continue _fun9482;
+                _fun9484_ip = 44;
+                continue _fun9484;
             case 40:
                 var6 = arguments[var1];
             case 44:
@@ -47,15 +47,15 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var9 = 'npm';
                 var1 = var9;
                 if (!var7) {
-                    _fun9482_ip = 81;
-                    continue _fun9482
+                    _fun9484_ip = 81;
+                    continue _fun9484
                 }
             case 66:
                 var7 = arguments[var3];
                 var1 = var9;
                 if (!(var0 !== var7)) {
-                    _fun9482_ip = 81;
-                    continue _fun9482
+                    _fun9484_ip = 81;
+                    continue _fun9484
                 }
             case 77:
                 var1 = arguments[var3];
@@ -63,16 +63,16 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var _closure2_slot0 = var1;
                 var1 = var2._metadata;
                 if (var1) {
-                    _fun9482_ip = 96;
-                    continue _fun9482
+                    _fun9484_ip = 96;
+                    continue _fun9484
                 }
             case 94:
                 var1 = {};
             case 96:
                 var3 = var1.sdk;
                 if (var3) {
-                    _fun9482_ip = 194;
-                    continue _fun9482
+                    _fun9484_ip = 194;
+                    continue _fun9484
                 }
             case 105:
                 var3 = {};

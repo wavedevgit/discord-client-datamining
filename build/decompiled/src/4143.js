@@ -15,14 +15,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = var4.bind(var5)(var1, var0, var2);
     var0 = {};
     var2 = function(arg0) { // Original name: isGifFile, environment: var3
-        _fun37965: for (var _fun37965_ip = 0;;) switch (_fun37965_ip) {
+        _fun37982: for (var _fun37982_ip = 0;;) switch (_fun37982_ip) {
             case 0:
                 var7 = arg0;
                 var1 = !var7;
                 var0 = !var1;
                 if (var1) {
-                    _fun37965_ip = 67;
-                    continue _fun37965
+                    _fun37982_ip = 67;
+                    continue _fun37982
                 }
             case 12:
                 var3 = _closure1_slot3;

@@ -9,30 +9,30 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
     var0 = function(arg0, arg1) { // Original name: _activityFromSetting, environment: var1
-        _fun50406: for (var _fun50406_ip = 0;;) switch (_fun50406_ip) {
+        _fun50423: for (var _fun50423_ip = 0;;) switch (_fun50423_ip) {
             case 0:
                 var7 = arg0;
                 var3 = arg1;
                 var2 = null;
                 if (!(var2 == var3)) {
-                    _fun50406_ip = 159;
-                    continue _fun50406
+                    _fun50423_ip = 159;
+                    continue _fun50423
                 }
             case 15:
                 var0 = var7.emojiName;
                 var0 = var2 != var0;
                 var1 = null;
                 if (!var0) {
-                    _fun50406_ip = 193;
-                    continue _fun50406
+                    _fun50423_ip = 193;
+                    continue _fun50423
                 }
             case 33:
                 var4 = var7.emojiName;
                 var0 = '';
                 var1 = null;
                 if (!(var0 !== var4)) {
-                    _fun50406_ip = 193;
-                    continue _fun50406
+                    _fun50423_ip = 193;
+                    continue _fun50423
                 }
             case 52:
                 var8 = _closure1_slot1;
@@ -52,8 +52,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var2 != var5;
                 var0 = null;
                 if (!var4) {
-                    _fun50406_ip = 154;
-                    continue _fun50406
+                    _fun50423_ip = 154;
+                    continue _fun50423
                 }
             case 126:
                 var4 = {
@@ -66,8 +66,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var4;
             case 154:
                 var1 = var0;
-                _fun50406_ip = 193;
-                continue _fun50406;
+                _fun50423_ip = 193;
+                continue _fun50423;
             case 159:
                 var0 = {};
                 var4 = var3.id;
@@ -87,8 +87,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var2 == var0;
                 var2 = undefined;
                 if (var4) {
-                    _fun50406_ip = 233;
-                    continue _fun50406
+                    _fun50423_ip = 233;
+                    continue _fun50423
                 }
             case 228:
                 var2 = var0.value;
@@ -105,8 +105,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var6 > var4;
                 var6 = undefined;
                 if (!var8) {
-                    _fun50406_ip = 288;
-                    continue _fun50406
+                    _fun50423_ip = 288;
+                    continue _fun50423
                 }
             case 283:
                 var6 = var7.text;
@@ -115,8 +115,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var5 > var4;
                 var3 = undefined;
                 if (!var4) {
-                    _fun50406_ip = 310;
-                    continue _fun50406
+                    _fun50423_ip = 310;
+                    continue _fun50423
                 }
             case 301:
                 var4 = {};
@@ -163,7 +163,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/custom_status/utils/userSettingToActivity.tsx';
     var3 = var4.bind(var5)(var3);
     var3 = function(arg0) { // Original name: getActivityFromCustomStatus, environment: var1
-        _fun50407: for (var _fun50407_ip = 0;;) switch (_fun50407_ip) {
+        _fun50424: for (var _fun50424_ip = 0;;) switch (_fun50424_ip) {
             case 0:
                 var3 = arg0;
                 var5 = var3.emojiId;
@@ -172,15 +172,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var6 != var5;
                 var1 = null;
                 if (!var4) {
-                    _fun50407_ip = 54;
-                    continue _fun50407
+                    _fun50424_ip = 54;
+                    continue _fun50424
                 }
             case 27:
                 var4 = '0';
                 var1 = null;
                 if (!(var4 !== var5)) {
-                    _fun50407_ip = 54;
-                    continue _fun50407
+                    _fun50424_ip = 54;
+                    continue _fun50424
                 }
             case 39:
                 var4 = _closure1_slot4;
@@ -194,7 +194,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getActivityFromCustomStatus = var3;
     var1 = function() { // Original name: useCustomStatusActivity, environment: var1
-        _fun50408: for (var _fun50408_ip = 0;;) switch (_fun50408_ip) {
+        _fun50425: for (var _fun50425_ip = 0;;) switch (_fun50425_ip) {
             case 0:
                 var4 = _closure1_slot0;
                 var3 = _closure1_slot2;
@@ -210,8 +210,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var2 == var5;
                 var2 = undefined;
                 if (var4) {
-                    _fun50408_ip = 64;
-                    continue _fun50408
+                    _fun50425_ip = 64;
+                    continue _fun50425
                 }
             case 58:
                 var2 = var5.emojiId;
@@ -229,23 +229,23 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = new Array(1);
                 var4[0] = var2;
                 var2 = function() { // Environment: var0
-                    _fun50409: for (var _fun50409_ip = 0;;) switch (_fun50409_ip) {
+                    _fun50426: for (var _fun50426_ip = 0;;) switch (_fun50426_ip) {
                         case 0:
                             var0 = _closure2_slot1;
                             var4 = null;
                             var2 = var4 != var0;
                             var0 = null;
                             if (!var2) {
-                                _fun50409_ip = 56;
-                                continue _fun50409
+                                _fun50426_ip = 56;
+                                continue _fun50426
                             }
                         case 18:
                             var3 = _closure2_slot1;
                             var2 = '0';
                             var0 = null;
                             if (!(var2 !== var3)) {
-                                _fun50409_ip = 56;
-                                continue _fun50409
+                                _fun50426_ip = 56;
+                                continue _fun50426
                             }
                         case 34:
                             var3 = _closure1_slot4;
@@ -263,14 +263,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1[0] = var5;
                 var1[1] = var4;
                 var0 = function() { // Environment: var0
-                    _fun50410: for (var _fun50410_ip = 0;;) switch (_fun50410_ip) {
+                    _fun50427: for (var _fun50427_ip = 0;;) switch (_fun50427_ip) {
                         case 0:
                             var2 = _closure2_slot0;
                             var0 = null;
                             var2 = var0 != var2;
                             if (!var2) {
-                                _fun50410_ip = 39;
-                                continue _fun50410
+                                _fun50427_ip = 39;
+                                continue _fun50427
                             }
                         case 16:
                             var4 = _closure1_slot6;
@@ -288,4 +288,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useCustomStatusActivity = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 4699, 660, 3063, 1348, 566, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 4700, 660, 3063, 1348, 566, 2]);

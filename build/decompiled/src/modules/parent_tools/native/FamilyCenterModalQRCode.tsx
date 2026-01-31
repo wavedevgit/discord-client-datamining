@@ -9,7 +9,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var5;
     var0 = function() { // Original name: FamilyCenterModalQRCodeScreen, environment: var1
-        _fun81705: for (var _fun81705_ip = 0;;) switch (_fun81705_ip) {
+        _fun81735: for (var _fun81735_ip = 0;;) switch (_fun81735_ip) {
             case 0:
                 var1 = _closure1_slot12;
                 var3 = undefined;
@@ -111,14 +111,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2[0] = var6;
                 var2[1] = var1;
                 var1 = function() { // Environment: var0
-                    _fun81708: for (var _fun81708_ip = 0;;) switch (_fun81708_ip) {
+                    _fun81738: for (var _fun81738_ip = 0;;) switch (_fun81738_ip) {
                         case 0:
                             var1 = _closure2_slot2;
                             var0 = _closure2_slot3;
                             var0 = var0.current;
                             if (!(var1 > var0)) {
-                                _fun81708_ip = 55;
-                                continue _fun81708
+                                _fun81738_ip = 55;
+                                continue _fun81738
                             }
                         case 20:
                             var2 = _closure1_slot1;
@@ -140,12 +140,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = new Array(1);
                 var1[0] = var18;
                 var0 = function() { // Environment: var0
-                    _fun81709: for (var _fun81709_ip = 0;;) switch (_fun81709_ip) {
+                    _fun81739: for (var _fun81739_ip = 0;;) switch (_fun81739_ip) {
                         case 0:
                             var4 = _closure2_slot1;
                             var0 = undefined;
                             var3 = function(arg0) { // Environment: var1
-                                _fun81710: for (var _fun81710_ip = 0;;) switch (_fun81710_ip) {
+                                _fun81740: for (var _fun81740_ip = 0;;) switch (_fun81740_ip) {
                                     case 0:
                                         var2 = _closure1_slot1;
                                         var1 = _closure1_slot2;
@@ -160,13 +160,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                         var4 = _closure2_slot0;
                                         var5 = _closure1_slot6;
                                         if (var4) {
-                                            _fun81710_ip = 64;
-                                            continue _fun81710
+                                            _fun81740_ip = 64;
+                                            continue _fun81740
                                         }
                                     case 56:
                                         var4 = var5.RevealQRCode;
-                                        _fun81710_ip = 70;
-                                        continue _fun81710;
+                                        _fun81740_ip = 70;
+                                        continue _fun81740;
                                     case 64:
                                         var4 = var5.HideQRCode;
                                     case 70:
@@ -180,8 +180,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var3 = var4.bind(var0)(var3);
                             var2 = _closure2_slot0;
                             if (var2) {
-                                _fun81709_ip = 58;
-                                continue _fun81709
+                                _fun81739_ip = 58;
+                                continue _fun81739
                             }
                         case 30:
                             var2 = global;
@@ -346,19 +346,19 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var13 = 237;
                 var20.size = var13;
                 if (!var18) {
-                    _fun81705_ip = 969;
-                    continue _fun81705
+                    _fun81735_ip = 969;
+                    continue _fun81735
                 }
             case 960:
                 if (var19) {
-                    _fun81705_ip = 969;
-                    continue _fun81705
+                    _fun81735_ip = 969;
+                    continue _fun81735
                 }
             case 963:
                 var13 = null;
                 if (!(var13 == var11)) {
-                    _fun81705_ip = 973;
-                    continue _fun81705
+                    _fun81735_ip = 973;
+                    continue _fun81735
                 }
             case 969:
                 var11 = _closure1_slot7;
@@ -436,14 +436,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var19 = var19[var23];
                 var19 = var22.bind(var3)(var19);
                 if (var18) {
-                    _fun81705_ip = 1307;
-                    continue _fun81705
+                    _fun81735_ip = 1307;
+                    continue _fun81735
                 }
             case 1292:
                 var18 = var19["10dX6U"];
                 var18 = var20.bind(var21)(var18);
-                _fun81705_ip = 1320;
-                continue _fun81705;
+                _fun81735_ip = 1320;
+                continue _fun81735;
             case 1307:
                 var19 = var19.wg2xwQ;
                 var18 = var20.bind(var21)(var19);
@@ -710,4 +710,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 4557, 660, 33, 1297, 671, 6471, 6470, 3106, 1234, 4524, 10392, 44, 4062, 795, 6400, 6401, 4045, 10393, 3901, 1849, 5293, 4864, 8328, 10394, 6404, 4043, 4667, 7465, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 4558, 660, 33, 1297, 671, 6472, 6471, 3106, 1234, 4525, 10394, 44, 4062, 795, 6401, 6402, 4045, 10395, 3900, 1849, 5294, 4865, 8328, 10396, 6405, 4043, 4668, 7464, 2]);

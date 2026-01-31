@@ -60,7 +60,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/voice_chat/VoiceChatHooks.tsx';
     var4 = var5.bind(var6)(var4);
     var3 = function(arg0) { // Original name: useIsConnectedToVoiceChannel, environment: var3
-        _fun62662: for (var _fun62662_ip = 0;;) switch (_fun62662_ip) {
+        _fun62674: for (var _fun62674_ip = 0;;) switch (_fun62674_ip) {
             case 0:
                 var3 = arg0;
                 var2 = _closure1_slot4;
@@ -69,8 +69,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = undefined;
                 var0 = undefined;
                 if (var4) {
-                    _fun62662_ip = 28;
-                    continue _fun62662
+                    _fun62674_ip = 28;
+                    continue _fun62674
                 }
             case 23:
                 var0 = var3.id;

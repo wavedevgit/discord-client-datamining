@@ -59,4 +59,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.openGuildProductLink = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3896, 1234, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3895, 1234, 2]);

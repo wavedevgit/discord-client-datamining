@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = dependencyMap;
     var _closure1_slot1 = var1;
     var1 = function(arg0) { // Original name: ToUint32, environment: var0
-        _fun28899: for (var _fun28899_ip = 0;;) switch (_fun28899_ip) {
+        _fun28900: for (var _fun28900_ip = 0;;) switch (_fun28900_ip) {
             case 0:
                 var5 = _closure1_slot0;
                 var6 = _closure1_slot1;
@@ -20,13 +20,13 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = var5.bind(var4)(var2);
                 var2 = var2.bind(var4)(var3);
                 if (!var2) {
-                    _fun28899_ip = 120;
-                    continue _fun28899
+                    _fun28900_ip = 120;
+                    continue _fun28900
                 }
             case 52:
                 if (!(var0 !== var3)) {
-                    _fun28899_ip = 120;
-                    continue _fun28899
+                    _fun28900_ip = 120;
+                    continue _fun28900
                 }
             case 56:
                 var2 = _closure1_slot0;
@@ -42,8 +42,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = var2.bind(var4)(var3, var1);
                 var1 = 0;
                 if (!(var1 !== var2)) {
-                    _fun28899_ip = 118;
-                    continue _fun28899
+                    _fun28900_ip = 118;
+                    continue _fun28900
                 }
             case 115:
                 var1 = var2;

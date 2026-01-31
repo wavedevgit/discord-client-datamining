@@ -12,14 +12,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = var3.bind(var0)(var2);
     var _closure1_slot2 = var2;
     var2 = function(arg0) { // Original name: ToString, environment: var1
-        _fun28924: for (var _fun28924_ip = 0;;) switch (_fun28924_ip) {
+        _fun28925: for (var _fun28925_ip = 0;;) switch (_fun28925_ip) {
             case 0:
                 var2 = arg0;
                 var1 = 'symbol';
                 var0 = typeof var2;
                 if (!(var1 !== var0)) {
-                    _fun28924_ip = 30;
-                    continue _fun28924
+                    _fun28925_ip = 30;
+                    continue _fun28925
                 }
             case 14:
                 var1 = _closure1_slot2;

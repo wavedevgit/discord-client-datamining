@@ -210,4 +210,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.PlayStationLinkLanding = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 5819, 660, 33, 1297, 1234, 4825, 5288, 1469, 1675, 5821, 5291, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 5820, 660, 33, 1297, 1234, 4826, 5289, 1469, 1675, 5822, 5292, 2]);

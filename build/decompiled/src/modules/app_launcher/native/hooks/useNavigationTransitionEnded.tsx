@@ -71,7 +71,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var2 = var3.addListener;
             var1 = 'transitionEnd';
             var0 = function() { // Environment: var0
-                _fun108518: for (var _fun108518_ip = 0;;) switch (_fun108518_ip) {
+                _fun107874: for (var _fun107874_ip = 0;;) switch (_fun107874_ip) {
                     case 0:
                         var2 = _closure2_slot1;
                         var1 = var2.getState;
@@ -83,8 +83,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var1 = _closure2_slot2;
                         var1 = var1.key;
                         if (!(var2 === var1)) {
-                            _fun108518_ip = 63;
-                            continue _fun108518
+                            _fun107874_ip = 63;
+                            continue _fun107874
                         }
                     case 50:
                         var2 = _closure2_slot0;

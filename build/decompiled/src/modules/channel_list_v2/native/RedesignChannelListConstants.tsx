@@ -147,4 +147,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.getScaledSearchBarHeight = var3;
     var2.VIEWABILITY_CONFIG = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 6940, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 6939, 2]);

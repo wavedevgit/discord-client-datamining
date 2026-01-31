@@ -75,7 +75,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'uikit-native/NewTag.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: NewTag, environment: var1
-        _fun66030: for (var _fun66030_ip = 0;;) switch (_fun66030_ip) {
+        _fun66042: for (var _fun66042_ip = 0;;) switch (_fun66042_ip) {
             case 0:
                 var3 = arg0;
                 var12 = var3.containerStyle;
@@ -83,32 +83,32 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var15 = var3.variant;
                 var4 = undefined;
                 if (!(var15 === var4)) {
-                    _fun66030_ip = 32;
-                    continue _fun66030
+                    _fun66042_ip = 32;
+                    continue _fun66042
                 }
             case 26:
                 var15 = 'heading-sm/semibold';
             case 32:
                 var14 = var3.color;
                 if (!(var14 === var4)) {
-                    _fun66030_ip = 47;
-                    continue _fun66030
+                    _fun66042_ip = 47;
+                    continue _fun66042
                 }
             case 41:
                 var14 = 'always-white';
             case 47:
                 var0 = var3.gradient;
                 if (!(var0 === var4)) {
-                    _fun66030_ip = 59;
-                    continue _fun66030
+                    _fun66042_ip = 59;
+                    continue _fun66042
                 }
             case 57:
                 var0 = false;
             case 59:
                 var8 = var3.borderRadius;
                 if (!(var8 === var4)) {
-                    _fun66030_ip = 102;
-                    continue _fun66030
+                    _fun66042_ip = 102;
+                    continue _fun66042
                 }
             case 68:
                 var2 = _closure1_slot1;
@@ -121,8 +121,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 102:
                 var5 = var3.colors;
                 if (!(var5 === var4)) {
-                    _fun66030_ip = 180;
-                    continue _fun66030
+                    _fun66042_ip = 180;
+                    continue _fun66042
                 }
             case 111:
                 var6 = _closure1_slot1;
@@ -161,8 +161,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = var1.bind(var4)();
                 var3 = _closure1_slot5;
                 if (var0) {
-                    _fun66030_ip = 413;
-                    continue _fun66030
+                    _fun66042_ip = 413;
+                    continue _fun66042
                 }
             case 236:
                 var1 = _closure1_slot3;
@@ -205,8 +205,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var3.bind(var4)(var6, var2);
                 var0.children = var2;
                 var0 = var3.bind(var4)(var1, var0);
-                _fun66030_ip = 679;
-                continue _fun66030;
+                _fun66042_ip = 679;
+                continue _fun66042;
             case 413:
                 var16 = _closure1_slot1;
                 var13 = _closure1_slot2;
@@ -276,4 +276,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 660, 33, 1297, 671, 4057, 3901, 1234, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 660, 33, 1297, 671, 4057, 3900, 1234, 2]);

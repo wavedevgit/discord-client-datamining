@@ -72,7 +72,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot3 = var4;
     var4 = function() { // Environment: var1
         var0 = function(arg0) { // Original name: getLockAxis, environment: var0
-            _fun34984: for (var _fun34984_ip = 0;;) switch (_fun34984_ip) {
+            _fun35000: for (var _fun35000_ip = 0;;) switch (_fun35000_ip) {
                 case 0:
                     var3 = arg0;
                     var1 = ['swipeRight', 'swipeLeft', 'horizontalSwipe'];
@@ -80,8 +80,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var1 = var0.bind(var1)(var3);
                     var0 = 'x';
                     if (var1) {
-                        _fun34984_ip = 62;
-                        continue _fun34984
+                        _fun35000_ip = 62;
+                        continue _fun35000
                     }
                 case 30:
                     var2 = ['swipeUp', 'swipeDown', 'verticalSwipe'];
@@ -89,8 +89,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var2 = var1.bind(var2)(var3);
                     var1 = undefined;
                     if (!var2) {
-                        _fun34984_ip = 59;
-                        continue _fun34984
+                        _fun35000_ip = 59;
+                        continue _fun35000
                     }
                 case 55:
                     var1 = 'y';

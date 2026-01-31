@@ -77,17 +77,17 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = var7.bind(var8)(var2);
         var4 = var5.useDerivedValue;
         var2 = function() { // Original name: A, environment: var0
-            _fun69139: for (var _fun69139_ip = 0;;) switch (_fun69139_ip) {
+            _fun69163: for (var _fun69163_ip = 0;;) switch (_fun69163_ip) {
                 case 0:
                     var0 = _closure2_slot1;
                     if (var0) {
-                        _fun69139_ip = 16;
-                        continue _fun69139
+                        _fun69163_ip = 16;
+                        continue _fun69163
                     }
                 case 10:
                     var0 = _closure2_slot0;
-                    _fun69139_ip = 35;
-                    continue _fun69139;
+                    _fun69163_ip = 35;
+                    continue _fun69163;
                 case 16:
                     var3 = _closure2_slot2;
                     var2 = 10;

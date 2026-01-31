@@ -53,7 +53,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = 'hasTeenDefaults';
         var0.key = var5;
         var4 = function() { // Original name: value, environment: var4
-            _fun39300: for (var _fun39300_ip = 0;;) switch (_fun39300_ip) {
+            _fun39319: for (var _fun39319_ip = 0;;) switch (_fun39319_ip) {
                 case 0:
                     var0 = this;
                     var2 = var0.teenByDefault;
@@ -62,8 +62,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1 = 0;
                     var0 = 0;
                     if (!var3) {
-                        _fun39300_ip = 25;
-                        continue _fun39300
+                        _fun39319_ip = 25;
+                        continue _fun39319
                     }
                 case 22:
                     var0 = var2;
@@ -112,7 +112,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = 'hasAgeGatedFeatures';
         var0.key = var5;
         var4 = function() { // Original name: value, environment: var4
-            _fun39304: for (var _fun39304_ip = 0;;) switch (_fun39304_ip) {
+            _fun39323: for (var _fun39323_ip = 0;;) switch (_fun39323_ip) {
                 case 0:
                     var0 = this;
                     var2 = var0.gatedFeatures;
@@ -121,8 +121,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1 = 0;
                     var0 = 0;
                     if (!var3) {
-                        _fun39304_ip = 25;
-                        continue _fun39304
+                        _fun39323_ip = 25;
+                        continue _fun39323
                     }
                 case 22:
                     var0 = var2;

@@ -20,14 +20,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = 'modules/replies/didReplyMention.tsx';
     var1 = var3.bind(var4)(var1);
     var1 = function(arg0, arg1) { // Original name: didReplyMention, environment: var1
-        _fun55961: for (var _fun55961_ip = 0;;) switch (_fun55961_ip) {
+        _fun55978: for (var _fun55978_ip = 0;;) switch (_fun55978_ip) {
             case 0:
                 var1 = arg1;
                 var0 = null;
                 var0 = var0 != var1;
                 if (!var0) {
-                    _fun55961_ip = 48;
-                    continue _fun55961
+                    _fun55978_ip = 48;
+                    continue _fun55978
                 }
             case 12:
                 var2 = arg0;

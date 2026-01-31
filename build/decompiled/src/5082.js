@@ -5,29 +5,53 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var2;
     var2 = dependencyMap;
     var _closure1_slot1 = var2;
-    var1 = function(arg0) { // Original name: _arrayWithoutHoles, environment: var1
-        _fun45559: for (var _fun45559_ip = 0;;) switch (_fun45559_ip) {
+    var1 = function(arg0) { // Original name: _toConsumableArray, environment: var1
+        _fun45574: for (var _fun45574_ip = 0;;) switch (_fun45574_ip) {
             case 0:
-                var2 = arg0;
-                var0 = global;
-                var1 = var0.Array;
-                var0 = var1.isArray;
-                var0 = var0.bind(var1)(var2);
-                if (var0) {
-                    _fun45559_ip = 28;
-                    continue _fun45559
-                }
-            case 24:
-                var0 = undefined;
-                return var0;
-            case 28:
+                var4 = arg0;
                 var3 = _closure1_slot0;
-                var1 = _closure1_slot1;
+                var2 = _closure1_slot1;
                 var0 = 0;
-                var0 = var1[var0];
-                var1 = undefined;
-                var0 = var3.bind(var1)(var0);
-                var0 = var0.bind(var1)(var2);
+                var0 = var2[var0];
+                var2 = undefined;
+                var0 = var3.bind(var2)(var0);
+                var0 = var0.bind(var2)(var4);
+                if (var0) {
+                    _fun45574_ip = 60;
+                    continue _fun45574
+                }
+            case 35:
+                var5 = _closure1_slot0;
+                var6 = _closure1_slot1;
+                var3 = 1;
+                var3 = var6[var3];
+                var3 = var5.bind(var2)(var3);
+                var0 = var3.bind(var2)(var4);
+            case 60:
+                if (var0) {
+                    _fun45574_ip = 88;
+                    continue _fun45574
+                }
+            case 63:
+                var5 = _closure1_slot0;
+                var6 = _closure1_slot1;
+                var3 = 2;
+                var3 = var6[var3];
+                var3 = var5.bind(var2)(var3);
+                var0 = var3.bind(var2)(var4);
+            case 88:
+                if (var0) {
+                    _fun45574_ip = 115;
+                    continue _fun45574
+                }
+            case 91:
+                var3 = _closure1_slot0;
+                var4 = _closure1_slot1;
+                var1 = 3;
+                var1 = var4[var1];
+                var1 = var3.bind(var2)(var1);
+                var0 = var1.bind(var2)();
+            case 115:
                 return var0;
         }
     };
@@ -40,4 +64,4 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1.default = var0;
     var0 = undefined;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5083]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5083, 5085, 5086, 5087]);

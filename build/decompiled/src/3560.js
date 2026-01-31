@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = dependencyMap;
     var _closure1_slot1 = var1;
     var1 = function(arg0) { // Original name: getMatchData, environment: var0
-        _fun31613: for (var _fun31613_ip = 0;;) switch (_fun31613_ip) {
+        _fun31621: for (var _fun31621_ip = 0;;) switch (_fun31621_ip) {
             case 0:
                 var6 = arg0;
                 var1 = _closure1_slot0;
@@ -20,8 +20,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var3 = var1 - 1;
                 var2 = 1;
                 if (!var1) {
-                    _fun31613_ip = 108;
-                    continue _fun31613
+                    _fun31621_ip = 108;
+                    continue _fun31621
                 }
             case 49:
                 var7 = var0[var3];
@@ -39,8 +39,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = parseFloat(var3);
                 var3 = var1 - 1;
                 if (var1) {
-                    _fun31613_ip = 49;
-                    continue _fun31613
+                    _fun31621_ip = 49;
+                    continue _fun31621
                 }
             case 108:
                 return var0;

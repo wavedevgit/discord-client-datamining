@@ -20,15 +20,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = 'modules/activities/isActivityParticipantValidGuildMember.tsx';
     var1 = var3.bind(var4)(var1);
     var1 = function(arg0) { // Original name: isActivityParticipantValidGuildMember, environment: var1
-        _fun18382: for (var _fun18382_ip = 0;;) switch (_fun18382_ip) {
+        _fun18384: for (var _fun18384_ip = 0;;) switch (_fun18384_ip) {
             case 0:
                 var1 = arg0;
                 var0 = var1.member;
                 var3 = null;
                 var0 = var3 != var0;
                 if (!var0) {
-                    _fun18382_ip = 34;
-                    continue _fun18382
+                    _fun18384_ip = 34;
+                    continue _fun18384
                 }
             case 18:
                 var2 = var1.member;
@@ -36,8 +36,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var3 != var2;
             case 34:
                 if (!var0) {
-                    _fun18382_ip = 61;
-                    continue _fun18382
+                    _fun18384_ip = 61;
+                    continue _fun18384
                 }
             case 37:
                 var1 = var1.member;

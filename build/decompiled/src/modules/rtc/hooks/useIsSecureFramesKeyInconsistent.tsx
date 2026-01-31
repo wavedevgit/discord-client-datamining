@@ -102,20 +102,20 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2[3] = var6;
         var2[4] = var5;
         var1 = function() { // Environment: var1
-            _fun66786: for (var _fun66786_ip = 0;;) switch (_fun66786_ip) {
+            _fun66798: for (var _fun66798_ip = 0;;) switch (_fun66798_ip) {
                 case 0:
                     var2 = _closure2_slot4;
                     if (!var2) {
-                        _fun66786_ip = 27;
-                        continue _fun66786
+                        _fun66798_ip = 27;
+                        continue _fun66798
                     }
                 case 12:
                     var2 = _closure2_slot5;
                     var3 = var2.current;
                     var2 = null;
                     if (!(var2 != var3)) {
-                        _fun66786_ip = 61;
-                        continue _fun66786
+                        _fun66798_ip = 61;
+                        continue _fun66798
                     }
                 case 27:
                     var2 = global;
@@ -126,8 +126,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = var5.bind(var2)(var4);
                     var2 = null;
                     var3.current = var2;
-                    _fun66786_ip = 100;
-                    continue _fun66786;
+                    _fun66798_ip = 100;
+                    continue _fun66798;
                 case 61:
                     var3 = _closure2_slot5;
                     var2 = global;
@@ -176,4 +176,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useAlertIfSecureFramesKeyInconsistent = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 3477, 3568, 566, 8224, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 3477, 3568, 566, 8223, 2]);

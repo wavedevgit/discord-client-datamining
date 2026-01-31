@@ -24,7 +24,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var1 = 'BrowserSession';
         var0.name = var1;
         var1 = function() { // Original name: setupOnce, environment: var1
-            _fun11014: for (var _fun11014_ip = 0;;) switch (_fun11014_ip) {
+            _fun11016: for (var _fun11016_ip = 0;;) switch (_fun11016_ip) {
                 case 0:
                     var3 = _closure1_slot0;
                     var2 = _closure1_slot1;
@@ -35,8 +35,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var2 = var2.WINDOW;
                     var2 = var2.document;
                     if (!(var0 === var2)) {
-                        _fun11014_ip = 116;
-                        continue _fun11014
+                        _fun11016_ip = 116;
+                        continue _fun11016
                     }
                 case 41:
                     var3 = _closure1_slot0;
@@ -46,8 +46,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var2 = var3.bind(var0)(var2);
                     var2 = var2.DEBUG_BUILD;
                     if (!var2) {
-                        _fun11014_ip = 204;
-                        continue _fun11014
+                        _fun11016_ip = 204;
+                        continue _fun11016
                     }
                 case 73:
                     var3 = _closure1_slot0;
@@ -59,8 +59,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var3 = var4.warn;
                     var2 = 'Using the `browserSessionIntegration` in non-browser environments is not supported.';
                     var2 = var3.bind(var4)(var2);
-                    _fun11014_ip = 204;
-                    continue _fun11014;
+                    _fun11016_ip = 204;
+                    continue _fun11016;
                 case 116:
                     var2 = _closure1_slot0;
                     var3 = _closure1_slot1;
@@ -81,7 +81,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var3 = var2.bind(var0)(var1);
                     var2 = var3.addHistoryInstrumentationHandler;
                     var1 = function(arg0) { // Environment: var1
-                        _fun11015: for (var _fun11015_ip = 0;;) switch (_fun11015_ip) {
+                        _fun11017: for (var _fun11017_ip = 0;;) switch (_fun11017_ip) {
                             case 0:
                                 var0 = arg0;
                                 var3 = var0.from;
@@ -89,15 +89,15 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                 var0 = undefined;
                                 var1 = var0 !== var3;
                                 if (!var1) {
-                                    _fun11015_ip = 26;
-                                    continue _fun11015
+                                    _fun11017_ip = 26;
+                                    continue _fun11017
                                 }
                             case 22:
                                 var1 = var3 !== var2;
                             case 26:
                                 if (!var1) {
-                                    _fun11015_ip = 90;
-                                    continue _fun11015
+                                    _fun11017_ip = 90;
+                                    continue _fun11017
                                 }
                             case 29:
                                 var2 = _closure1_slot0;

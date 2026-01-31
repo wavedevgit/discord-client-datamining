@@ -7,15 +7,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var6;
     var1 = function(arg0) { // Original name: runAfterInteractions, environment: var4
-        _fun51370: for (var _fun51370_ip = 0;;) switch (_fun51370_ip) {
+        _fun51387: for (var _fun51387_ip = 0;;) switch (_fun51387_ip) {
             case 0:
                 var4 = arguments[1];
                 var0 = arg0;
                 var _closure2_slot0 = var0;
                 var3 = undefined;
                 if (!(var4 === var3)) {
-                    _fun51370_ip = 24;
-                    continue _fun51370
+                    _fun51387_ip = 24;
+                    continue _fun51387
                 }
             case 18:
                 var4 = 2000;

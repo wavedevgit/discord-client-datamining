@@ -1,6 +1,6 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun33108: for (var _fun33108_ip = 0;;) switch (_fun33108_ip) {
+    _fun33124: for (var _fun33124_ip = 0;;) switch (_fun33124_ip) {
         case 0:
             var4 = require;
             var2 = exports;
@@ -20,8 +20,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var1 = var3.shouldBeUseWeb;
             var1 = var1.bind(var3)();
             if (var1) {
-                _fun33108_ip = 91;
-                continue _fun33108
+                _fun33124_ip = 91;
+                continue _fun33124
             }
         case 67:
             var1 = 2;
@@ -29,8 +29,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var3 = var4.bind(var0)(var1);
             var1 = var3.createNativeWorkletsModule;
             var1 = var1.bind(var3)();
-            _fun33108_ip = 113;
-            continue _fun33108;
+            _fun33124_ip = 113;
+            continue _fun33124;
         case 91:
             var3 = 1;
             var3 = var5[var3];

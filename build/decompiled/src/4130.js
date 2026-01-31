@@ -23,7 +23,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = function() { // Environment: var1
         var3 = _closure1_slot1;
         var2 = function(arg0) { // Original name: DataView, environment: var4
-            _fun37884: for (var _fun37884_ip = 0;;) switch (_fun37884_ip) {
+            _fun37901: for (var _fun37901_ip = 0;;) switch (_fun37901_ip) {
                 case 0:
                     var1 = arg0;
                     var2 = this;
@@ -35,72 +35,72 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var3 = typeof var1;
                     var3 = var4 !== var3;
                     if (var3) {
-                        _fun37884_ip = 51;
-                        continue _fun37884
+                        _fun37901_ip = 51;
+                        continue _fun37901
                     }
                 case 42:
                     var4 = var1.length;
                     var3 = var0 === var4;
                 case 51:
                     if (var3) {
-                        _fun37884_ip = 64;
-                        continue _fun37884
+                        _fun37901_ip = 64;
+                        continue _fun37901
                     }
                 case 54:
                     var4 = var1.readUInt8;
                     var3 = var0 === var4;
                 case 64:
                     if (var3) {
-                        _fun37884_ip = 77;
-                        continue _fun37884
+                        _fun37901_ip = 77;
+                        continue _fun37901
                     }
                 case 67:
                     var4 = var1.readUInt16LE;
                     var3 = var0 === var4;
                 case 77:
                     if (var3) {
-                        _fun37884_ip = 90;
-                        continue _fun37884
+                        _fun37901_ip = 90;
+                        continue _fun37901
                     }
                 case 80:
                     var4 = var1.readUInt16BE;
                     var3 = var0 === var4;
                 case 90:
                     if (var3) {
-                        _fun37884_ip = 103;
-                        continue _fun37884
+                        _fun37901_ip = 103;
+                        continue _fun37901
                     }
                 case 93:
                     var4 = var1.readUInt32LE;
                     var3 = var0 === var4;
                 case 103:
                     if (var3) {
-                        _fun37884_ip = 116;
-                        continue _fun37884
+                        _fun37901_ip = 116;
+                        continue _fun37901
                     }
                 case 106:
                     var4 = var1.readUInt32BE;
                     var3 = var0 === var4;
                 case 116:
                     if (var3) {
-                        _fun37884_ip = 129;
-                        continue _fun37884
+                        _fun37901_ip = 129;
+                        continue _fun37901
                     }
                 case 119:
                     var4 = var1.readInt32LE;
                     var3 = var0 === var4;
                 case 129:
                     if (var3) {
-                        _fun37884_ip = 142;
-                        continue _fun37884
+                        _fun37901_ip = 142;
+                        continue _fun37901
                     }
                 case 132:
                     var4 = var1.readInt32BE;
                     var3 = var0 === var4;
                 case 142:
                     if (var3) {
-                        _fun37884_ip = 170;
-                        continue _fun37884
+                        _fun37901_ip = 170;
+                        continue _fun37901
                     }
                 case 145:
                     var2.buffer = var1;
@@ -143,21 +143,21 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var5 = 'getUint16';
         var0.key = var5;
         var5 = function(arg0, arg1) { // Original name: getUint16, environment: var4
-            _fun37886: for (var _fun37886_ip = 0;;) switch (_fun37886_ip) {
+            _fun37903: for (var _fun37903_ip = 0;;) switch (_fun37903_ip) {
                 case 0:
                     var3 = arg0;
                     var0 = this;
                     var2 = var0.buffer;
                     var0 = arg1;
                     if (var0) {
-                        _fun37886_ip = 31;
-                        continue _fun37886
+                        _fun37903_ip = 31;
+                        continue _fun37903
                     }
                 case 18:
                     var0 = var2.readUInt16BE;
                     var0 = var0.bind(var2)(var3);
-                    _fun37886_ip = 42;
-                    continue _fun37886;
+                    _fun37903_ip = 42;
+                    continue _fun37903;
                 case 31:
                     var1 = var2.readUInt16LE;
                     var0 = var1.bind(var2)(var3);
@@ -171,21 +171,21 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var5 = 'getUint32';
         var0.key = var5;
         var5 = function(arg0, arg1) { // Original name: getUint32, environment: var4
-            _fun37887: for (var _fun37887_ip = 0;;) switch (_fun37887_ip) {
+            _fun37904: for (var _fun37904_ip = 0;;) switch (_fun37904_ip) {
                 case 0:
                     var3 = arg0;
                     var0 = this;
                     var2 = var0.buffer;
                     var0 = arg1;
                     if (var0) {
-                        _fun37887_ip = 31;
-                        continue _fun37887
+                        _fun37904_ip = 31;
+                        continue _fun37904
                     }
                 case 18:
                     var0 = var2.readUInt32BE;
                     var0 = var0.bind(var2)(var3);
-                    _fun37887_ip = 42;
-                    continue _fun37887;
+                    _fun37904_ip = 42;
+                    continue _fun37904;
                 case 31:
                     var1 = var2.readUInt32LE;
                     var0 = var1.bind(var2)(var3);
@@ -199,21 +199,21 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var5 = 'getInt32';
         var0.key = var5;
         var4 = function(arg0, arg1) { // Original name: getInt32, environment: var4
-            _fun37888: for (var _fun37888_ip = 0;;) switch (_fun37888_ip) {
+            _fun37905: for (var _fun37905_ip = 0;;) switch (_fun37905_ip) {
                 case 0:
                     var3 = arg0;
                     var0 = this;
                     var2 = var0.buffer;
                     var0 = arg1;
                     if (var0) {
-                        _fun37888_ip = 31;
-                        continue _fun37888
+                        _fun37905_ip = 31;
+                        continue _fun37905
                     }
                 case 18:
                     var0 = var2.readInt32BE;
                     var0 = var0.bind(var2)(var3);
-                    _fun37888_ip = 42;
-                    continue _fun37888;
+                    _fun37905_ip = 42;
+                    continue _fun37905;
                 case 31:
                     var1 = var2.readInt32LE;
                     var0 = var1.bind(var2)(var3);

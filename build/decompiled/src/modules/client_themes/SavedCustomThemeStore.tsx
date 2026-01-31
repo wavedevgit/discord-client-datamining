@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var7;
     var _closure1_slot1 = var6;
     var0 = function() { // Original name: _isNativeReflectConstruct, environment: var4
-        _fun28010: for (var _fun28010_ip = 0;;) switch (_fun28010_ip) {
+        _fun28011: for (var _fun28011_ip = 0;;) switch (_fun28011_ip) {
             case 0:
             case 2: // try_start_0
                 var1 = global;
@@ -29,8 +29,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = !var1;
                 var _closure2_slot0 = var1;
             case 70: // try_end0
-                _fun28010_ip = 74;
-                continue _fun28010;
+                _fun28011_ip = 74;
+                continue _fun28011;
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
@@ -48,7 +48,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var _closure1_slot11 = var0;
     var0 = function(arg0) { // Original name: validateSavedTheme, environment: var4
-        _fun28013: for (var _fun28013_ip = 0;;) switch (_fun28013_ip) {
+        _fun28014: for (var _fun28014_ip = 0;;) switch (_fun28014_ip) {
             case 0:
                 var4 = arg0;
                 var3 = undefined;
@@ -64,8 +64,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var7 > var6;
                 var5 = var6;
                 if (!var6) {
-                    _fun28013_ip = 69;
-                    continue _fun28013
+                    _fun28014_ip = 69;
+                    continue _fun28014
                 }
             case 49:
                 var6 = var4;
@@ -76,8 +76,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 69:
                 var2 = var5;
                 if (!var5) {
-                    _fun28013_ip = 92;
-                    continue _fun28013
+                    _fun28014_ip = 92;
+                    continue _fun28014
                 }
             case 75:
                 var4 = var4.base_mix;
@@ -87,8 +87,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 92:
                 var0 = var2;
                 if (!var2) {
-                    _fun28013_ip = 107;
-                    continue _fun28013
+                    _fun28014_ip = 107;
+                    continue _fun28014
                 }
             case 98:
                 var2 = var1;
@@ -176,7 +176,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8 = var3.PersistedStore;
     var3 = function(arg0) { // Environment: var4
         var3 = function() { // Original name: SavedCustomThemeStore, environment: var5
-            _fun28015: for (var _fun28015_ip = 0;;) switch (_fun28015_ip) {
+            _fun28016: for (var _fun28016_ip = 0;;) switch (_fun28016_ip) {
                 case 0:
                     var3 = this;
                     var2 = undefined;
@@ -190,16 +190,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = _closure1_slot11;
                     var0 = var0.bind(var2)();
                     if (var0) {
-                        _fun28015_ip = 69;
-                        continue _fun28015
+                        _fun28016_ip = 69;
+                        continue _fun28016
                     }
                 case 51:
                     var6 = var8.apply;
                     var4 = arguments;
                     var0 = var4;
                     var0 = var6.bind(var8)(var3, var0);
-                    _fun28015_ip = 105;
-                    continue _fun28015;
+                    _fun28016_ip = 105;
+                    continue _fun28016;
                 case 69:
                     var6 = global;
                     var7 = var6.Reflect;
@@ -224,13 +224,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = 'initialize';
         var4.key = var0;
         var0 = function(arg0) { // Original name: value, environment: var5
-            _fun28016: for (var _fun28016_ip = 0;;) switch (_fun28016_ip) {
+            _fun28017: for (var _fun28017_ip = 0;;) switch (_fun28017_ip) {
                 case 0:
                     var0 = arg0;
                     var1 = null;
                     if (!(var1 != var0)) {
-                        _fun28016_ip = 22;
-                        continue _fun28016
+                        _fun28017_ip = 22;
+                        continue _fun28017
                     }
                 case 9:
                     var1 = var0.savedCustomThemes;
@@ -250,19 +250,19 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var6 = 'getState';
         var4.key = var6;
         var6 = function() { // Original name: value, environment: var5
-            _fun28017: for (var _fun28017_ip = 0;;) switch (_fun28017_ip) {
+            _fun28018: for (var _fun28018_ip = 0;;) switch (_fun28018_ip) {
                 case 0:
                     var0 = {};
                     var3 = _closure1_slot9;
                     var1 = null;
                     if (!(var1 == var3)) {
-                        _fun28017_ip = 21;
-                        continue _fun28017
+                        _fun28018_ip = 21;
+                        continue _fun28018
                     }
                 case 15:
                     var1 = new Array(0);
-                    _fun28017_ip = 25;
-                    continue _fun28017;
+                    _fun28018_ip = 25;
+                    continue _fun28018;
                 case 21:
                     var1 = _closure1_slot9;
                 case 25:
@@ -276,15 +276,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var6 = 'getSavedCustomTheme';
         var4.key = var6;
         var6 = function() { // Original name: value, environment: var5
-            _fun28018: for (var _fun28018_ip = 0;;) switch (_fun28018_ip) {
+            _fun28019: for (var _fun28019_ip = 0;;) switch (_fun28019_ip) {
                 case 0:
                     var2 = _closure1_slot9;
                     var4 = null;
                     var3 = var4 == var2;
                     var0 = undefined;
                     if (var3) {
-                        _fun28018_ip = 23;
-                        continue _fun28018
+                        _fun28019_ip = 23;
+                        continue _fun28019
                     }
                 case 18:
                     var0 = var2.length;
@@ -293,8 +293,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var3 = var0 > var2;
                     var0 = null;
                     if (!var3) {
-                        _fun28018_ip = 69;
-                        continue _fun28018
+                        _fun28019_ip = 69;
+                        continue _fun28019
                     }
                 case 34:
                     var3 = _closure1_slot9;
@@ -304,8 +304,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var3 = var3 > var2;
                     var0 = null;
                     if (!var3) {
-                        _fun28018_ip = 69;
-                        continue _fun28018
+                        _fun28019_ip = 69;
+                        continue _fun28019
                     }
                 case 61:
                     var1 = _closure1_slot9;
@@ -329,15 +329,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var6 = 'hasSavedCustomThemes';
         var4.key = var6;
         var6 = function() { // Original name: value, environment: var5
-            _fun28020: for (var _fun28020_ip = 0;;) switch (_fun28020_ip) {
+            _fun28021: for (var _fun28021_ip = 0;;) switch (_fun28021_ip) {
                 case 0:
                     var0 = _closure1_slot9;
                     var1 = null;
                     var2 = var1 == var0;
                     var1 = undefined;
                     if (var2) {
-                        _fun28020_ip = 23;
-                        continue _fun28020
+                        _fun28021_ip = 23;
+                        continue _fun28021
                     }
                 case 18:
                     var1 = var0.length;

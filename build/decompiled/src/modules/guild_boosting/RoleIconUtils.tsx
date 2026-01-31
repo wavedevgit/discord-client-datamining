@@ -53,7 +53,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var3.bind(var6)();
     var _closure1_slot7 = var3;
     var3 = function(arg0, arg1) { // Original name: getRoleIconSource, environment: var1
-        _fun55720: for (var _fun55720_ip = 0;;) switch (_fun55720_ip) {
+        _fun55737: for (var _fun55737_ip = 0;;) switch (_fun55737_ip) {
             case 0:
                 var0 = arg0;
                 var6 = arg1;
@@ -61,8 +61,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0.icon;
                 var4 = null;
                 if (!(var4 == var0)) {
-                    _fun55720_ip = 26;
-                    continue _fun55720
+                    _fun55737_ip = 26;
+                    continue _fun55737
                 }
             case 22:
                 var1 = undefined;
@@ -72,8 +72,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = 'data:';
                 var1 = var2.bind(var0)(var1);
                 if (var1) {
-                    _fun55720_ip = 330;
-                    continue _fun55720
+                    _fun55737_ip = 330;
+                    continue _fun55737
                 }
             case 49:
                 var2 = _closure1_slot0;
@@ -85,8 +85,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.SUPPORTS_WEBP;
                 var10 = 'png';
                 if (!var1) {
-                    _fun55720_ip = 93;
-                    continue _fun55720
+                    _fun55737_ip = 93;
+                    continue _fun55737
                 }
             case 87:
                 var10 = 'webp';
@@ -96,8 +96,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = 'quality=lossless';
                 var7 = var9;
                 if (!var1) {
-                    _fun55720_ip = 199;
-                    continue _fun55720
+                    _fun55737_ip = 199;
+                    continue _fun55737
                 }
             case 113:
                 var12 = _closure1_slot0;
@@ -117,8 +117,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = _closure1_slot7;
                 var1 = var9;
                 if (var5) {
-                    _fun55720_ip = 193;
-                    continue _fun55720
+                    _fun55737_ip = 193;
+                    continue _fun55737
                 }
             case 187:
                 var1 = '&quality=lossless';
@@ -131,8 +131,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.GLOBAL_ENV;
                 var1 = var1.CDN_HOST;
                 if (!(var4 == var1)) {
-                    _fun55720_ip = 273;
-                    continue _fun55720
+                    _fun55737_ip = 273;
+                    continue _fun55737
                 }
             case 223:
                 var6 = _closure1_slot6;
@@ -146,8 +146,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var24 = var6;
                 var21 = var7;
                 var1 = var25[var4](var24, var23, var22, var21, var20);
-                _fun55720_ip = 328;
-                continue _fun55720;
+                _fun55737_ip = 328;
+                continue _fun55737;
             case 273:
                 var24 = _closure1_slot5;
                 var2 = var2.HermesInternal;
@@ -178,13 +178,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/guild_boosting/RoleIconUtils.tsx';
     var3 = var4.bind(var5)(var3);
     var3 = function(arg0, arg1) { // Environment: var1
-        _fun55721: for (var _fun55721_ip = 0;;) switch (_fun55721_ip) {
+        _fun55738: for (var _fun55738_ip = 0;;) switch (_fun55738_ip) {
             case 0:
                 var6 = arg0;
                 var0 = null;
                 if (!(var0 != var6)) {
-                    _fun55721_ip = 134;
-                    continue _fun55721
+                    _fun55738_ip = 134;
+                    continue _fun55738
                 }
             case 12:
                 var1 = var6.unicodeEmoji;
@@ -192,8 +192,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = undefined;
                 var3 = undefined;
                 if (!var1) {
-                    _fun55721_ip = 92;
-                    continue _fun55721
+                    _fun55738_ip = 92;
+                    continue _fun55738
                 }
             case 29:
                 var7 = _closure1_slot1;
@@ -218,8 +218,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var0 != var3;
                 var2 = undefined;
                 if (!var4) {
-                    _fun55721_ip = 127;
-                    continue _fun55721
+                    _fun55738_ip = 127;
+                    continue _fun55738
                 }
             case 124:
                 var2 = var3;
@@ -259,15 +259,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.replaceRoleIconSourceSize = var3;
     var3 = function(arg0) { // Environment: var1
-        _fun55723: for (var _fun55723_ip = 0;;) switch (_fun55723_ip) {
+        _fun55740: for (var _fun55740_ip = 0;;) switch (_fun55740_ip) {
             case 0:
                 var4 = arg0;
                 var2 = var4.startsWith;
                 var0 = _closure1_slot5;
                 var0 = var2.bind(var4)(var0);
                 if (var0) {
-                    _fun55723_ip = 90;
-                    continue _fun55723
+                    _fun55740_ip = 90;
+                    continue _fun55740
                 }
             case 24:
                 var2 = var4.startsWith;
@@ -280,8 +280,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var5.bind(var3)(var6, var1);
                 var1 = var2.bind(var4)(var1);
                 if (!var1) {
-                    _fun55723_ip = 87;
-                    continue _fun55723
+                    _fun55740_ip = 87;
+                    continue _fun55740
                 }
             case 71:
                 var3 = var4.includes;
@@ -295,31 +295,31 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.isRoleIconAssetUrl = var3;
     var1 = function(arg0, arg1) { // Environment: var1
-        _fun55724: for (var _fun55724_ip = 0;;) switch (_fun55724_ip) {
+        _fun55741: for (var _fun55741_ip = 0;;) switch (_fun55741_ip) {
             case 0:
                 var2 = arg1;
                 var1 = null;
                 var3 = var1 == var2;
                 var0 = undefined;
                 if (var3) {
-                    _fun55724_ip = 35;
-                    continue _fun55724
+                    _fun55741_ip = 35;
+                    continue _fun55741
                 }
             case 14:
                 var2 = var2.tags;
                 var3 = var1 == var2;
                 var0 = undefined;
                 if (var3) {
-                    _fun55724_ip = 35;
-                    continue _fun55724
+                    _fun55741_ip = 35;
+                    continue _fun55741
                 }
             case 29:
                 var0 = var2.subscription_listing_id;
             case 35:
                 var0 = var1 != var0;
                 if (var0) {
-                    _fun55724_ip = 74;
-                    continue _fun55724
+                    _fun55741_ip = 74;
+                    continue _fun55741
                 }
             case 42:
                 var1 = arg0;

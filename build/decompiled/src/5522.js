@@ -12,7 +12,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = '__esModule';
     var1 = var6.bind(var8)(var2, var1, var4);
     var1 = {};
-    var6 = 'RNSVGText';
+    var6 = 'RNSVGTSpan';
     var1.uiViewClassName = var6;
     var4 = {};
     var8 = {};
@@ -63,7 +63,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         'baselineShift': true,
         'lengthAdjust': true,
         'alignmentBaseline': true,
-        'verticalAlign': true
+        'verticalAlign': true,
+        'content': true
     };
     var4 = {};
     var0 = 0;

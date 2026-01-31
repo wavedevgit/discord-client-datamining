@@ -14,26 +14,26 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = '__esModule';
     var2 = var4.bind(var5)(var1, var2, var3);
     var0 = function() { // Original name: breadcrumbsIntegration, environment: var0
-        _fun12761: for (var _fun12761_ip = 0;;) switch (_fun12761_ip) {
+        _fun12763: for (var _fun12763_ip = 0;;) switch (_fun12763_ip) {
             case 0:
                 var3 = undefined;
                 var0 = undefined;
                 var1 = arguments.length;
                 var10 = 0;
                 if (!(var1 > var10)) {
-                    _fun12761_ip = 21;
-                    continue _fun12761
+                    _fun12763_ip = 21;
+                    continue _fun12763
                 }
             case 13:
                 var1 = arguments[var10];
                 if (!(var3 === var1)) {
-                    _fun12761_ip = 25;
-                    continue _fun12761
+                    _fun12763_ip = 25;
+                    continue _fun12763
                 }
             case 21:
                 var6 = {};
-                _fun12761_ip = 29;
-                continue _fun12761;
+                _fun12763_ip = 29;
+                continue _fun12763;
             case 25:
                 var6 = arguments[var10];
             case 29:
@@ -53,13 +53,13 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var7 = null;
                 var8 = var6;
                 if (!(var7 !== var0)) {
-                    _fun12761_ip = 90;
-                    continue _fun12761
+                    _fun12763_ip = 90;
+                    continue _fun12763
                 }
             case 86:
                 if (!(var3 === var0)) {
-                    _fun12761_ip = 126;
-                    continue _fun12761
+                    _fun12763_ip = 126;
+                    continue _fun12763
                 }
             case 90:
                 var9 = _closure1_slot0;
@@ -81,22 +81,22 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var9 = !var6;
                 var6 = !var9;
                 if (var9) {
-                    _fun12761_ip = 196;
-                    continue _fun12761
+                    _fun12763_ip = 196;
+                    continue _fun12763
                 }
             case 170:
                 var11 = var8.dom;
                 var9 = var7 === var11;
                 if (var9) {
-                    _fun12761_ip = 187;
-                    continue _fun12761
+                    _fun12763_ip = 187;
+                    continue _fun12763
                 }
             case 183:
                 var9 = var3 === var11;
             case 187:
                 if (var9) {
-                    _fun12761_ip = 193;
-                    continue _fun12761
+                    _fun12763_ip = 193;
+                    continue _fun12763
                 }
             case 190:
                 var9 = var11;
@@ -113,22 +113,22 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var9 = !var6;
                 var6 = !var9;
                 if (var9) {
-                    _fun12761_ip = 263;
-                    continue _fun12761
+                    _fun12763_ip = 263;
+                    continue _fun12763
                 }
             case 237:
                 var8 = var8.history;
                 var7 = var7 === var8;
                 if (var7) {
-                    _fun12761_ip = 254;
-                    continue _fun12761
+                    _fun12763_ip = 254;
+                    continue _fun12763
                 }
             case 250:
                 var7 = var3 === var8;
             case 254:
                 if (var7) {
-                    _fun12761_ip = 260;
-                    continue _fun12761
+                    _fun12763_ip = 260;
+                    continue _fun12763
                 }
             case 257:
                 var7 = var8;

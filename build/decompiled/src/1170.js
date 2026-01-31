@@ -24,14 +24,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var2 = var3.on;
             var1 = 'beforeSendEvent';
             var0 = function(arg0) { // Environment: var0
-                _fun12765: for (var _fun12765_ip = 0;;) switch (_fun12765_ip) {
+                _fun12767: for (var _fun12767_ip = 0;;) switch (_fun12767_ip) {
                     case 0:
                         var1 = arg0;
                         var _closure4_slot0 = var1;
                         var2 = var1.tags;
                         if (!var2) {
-                            _fun12765_ip = 57;
-                            continue _fun12765
+                            _fun12767_ip = 57;
+                            continue _fun12767
                         }
                     case 18:
                         var2 = global;
@@ -69,7 +69,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         };
         var0.setup = var2;
         var1 = function() { // Original name: afterAllSetup, environment: var1
-            _fun12767: for (var _fun12767_ip = 0;;) switch (_fun12767_ip) {
+            _fun12769: for (var _fun12769_ip = 0;;) switch (_fun12769_ip) {
                 case 0:
                     var4 = _closure1_slot0;
                     var0 = _closure1_slot1;
@@ -80,8 +80,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var2 = var2.NATIVE;
                     var2 = var2.enableNative;
                     if (!var2) {
-                        _fun12767_ip = 81;
-                        continue _fun12767
+                        _fun12769_ip = 81;
+                        continue _fun12769
                     }
                 case 40:
                     var2 = _closure1_slot0;

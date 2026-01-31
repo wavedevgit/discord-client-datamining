@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var3;
     var _closure1_slot1 = var1;
     var2 = function(arg0, arg1) { // Original name: memoize, environment: var0
-        _fun8260: for (var _fun8260_ip = 0;;) switch (_fun8260_ip) {
+        _fun8262: for (var _fun8262_ip = 0;;) switch (_fun8262_ip) {
             case 0:
                 var3 = arg0;
                 var0 = arg1;
@@ -14,37 +14,37 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = 'function';
                 var3 = typeof var3;
                 if (!(var2 === var3)) {
-                    _fun8260_ip = 114;
-                    continue _fun8260
+                    _fun8262_ip = 114;
+                    continue _fun8262
                 }
             case 27:
                 var3 = null;
                 if (!(var3 != var0)) {
-                    _fun8260_ip = 40;
-                    continue _fun8260
+                    _fun8262_ip = 40;
+                    continue _fun8262
                 }
             case 33:
                 var0 = typeof var0;
                 if (!(var2 === var0)) {
-                    _fun8260_ip = 114;
-                    continue _fun8260
+                    _fun8262_ip = 114;
+                    continue _fun8262
                 }
             case 40:
                 var0 = function() { // Original name: memoized, environment: var1
-                    _fun8261: for (var _fun8261_ip = 0;;) switch (_fun8261_ip) {
+                    _fun8263: for (var _fun8263_ip = 0;;) switch (_fun8263_ip) {
                         case 0:
                             var6 = this;
                             var0 = undefined;
                             var1 = _closure2_slot1;
                             if (var1) {
-                                _fun8261_ip = 22;
-                                continue _fun8261
+                                _fun8263_ip = 22;
+                                continue _fun8263
                             }
                         case 14:
                             var1 = 0;
                             var1 = arguments[var1];
-                            _fun8261_ip = 42;
-                            continue _fun8261;
+                            _fun8263_ip = 42;
+                            continue _fun8263;
                         case 22:
                             var5 = _closure2_slot1;
                             var4 = var5.apply;
@@ -57,8 +57,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var4 = var2.has;
                             var4 = var4.bind(var2)(var1);
                             if (var4) {
-                                _fun8261_ip = 111;
-                                continue _fun8261
+                                _fun8263_ip = 111;
+                                continue _fun8263
                             }
                         case 65:
                             var5 = _closure2_slot0;
@@ -69,8 +69,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var3 = var2.set;
                             var3 = var3.bind(var2)(var1, var0);
                             if (var3) {
-                                _fun8261_ip = 103;
-                                continue _fun8261
+                                _fun8263_ip = 103;
+                                continue _fun8263
                             }
                         case 100:
                             var3 = var2;
@@ -87,8 +87,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = _closure1_slot2;
                 var1 = var1.Cache;
                 if (var1) {
-                    _fun8260_ip = 86;
-                    continue _fun8260
+                    _fun8262_ip = 86;
+                    continue _fun8262
                 }
             case 65:
                 var4 = _closure1_slot0;

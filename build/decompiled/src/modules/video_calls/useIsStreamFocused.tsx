@@ -32,7 +32,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/video_calls/useIsStreamFocused.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: useIsStreamFocused, environment: var1
-        _fun64713: for (var _fun64713_ip = 0;;) switch (_fun64713_ip) {
+        _fun64725: for (var _fun64725_ip = 0;;) switch (_fun64725_ip) {
             case 0:
                 var1 = arg0;
                 var _closure2_slot0 = var1;
@@ -47,14 +47,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = new Array(1);
                 var2[0] = var6;
                 var0 = function() { // Environment: var0
-                    _fun64714: for (var _fun64714_ip = 0;;) switch (_fun64714_ip) {
+                    _fun64726: for (var _fun64726_ip = 0;;) switch (_fun64726_ip) {
                         case 0:
                             var2 = _closure2_slot0;
                             var0 = null;
                             var2 = var0 != var2;
                             if (!var2) {
-                                _fun64714_ip = 38;
-                                continue _fun64714
+                                _fun64726_ip = 38;
+                                continue _fun64726
                             }
                         case 16:
                             var3 = _closure1_slot2;
@@ -69,8 +69,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = null;
                 var0 = var0 != var2;
                 if (!var0) {
-                    _fun64713_ip = 80;
-                    continue _fun64713
+                    _fun64725_ip = 80;
+                    continue _fun64725
                 }
             case 71:
                 var1 = _closure1_slot3;
@@ -81,4 +81,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useIsStreamFocused = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3908, 3482, 566, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3907, 3482, 566, 2]);

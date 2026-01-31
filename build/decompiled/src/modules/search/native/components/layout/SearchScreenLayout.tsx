@@ -9,7 +9,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var5;
     var0 = function(arg0) { // Original name: SearchFreezeContainer, environment: var1
-        _fun105822: for (var _fun105822_ip = 0;;) switch (_fun105822_ip) {
+        _fun105178: for (var _fun105178_ip = 0;;) switch (_fun105178_ip) {
             case 0:
                 var0 = arg0;
                 var8 = var0.visible;
@@ -34,13 +34,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = new Array(2);
                 var9[0] = var10;
                 if (var8) {
-                    _fun105822_ip = 102;
-                    continue _fun105822
+                    _fun105178_ip = 102;
+                    continue _fun105178
                 }
             case 94:
                 var10 = var11.hidden;
-                _fun105822_ip = 108;
-                continue _fun105822;
+                _fun105178_ip = 108;
+                continue _fun105178;
             case 102:
                 var10 = var11.visible;
             case 108:
@@ -166,4 +166,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 8925, 33, 1297, 4000, 13743, 13852, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 8925, 33, 1297, 4000, 13674, 13783, 2]);

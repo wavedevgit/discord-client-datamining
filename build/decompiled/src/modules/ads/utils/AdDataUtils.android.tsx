@@ -41,7 +41,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/ads/utils/AdDataUtils.android.tsx';
     var3 = var4.bind(var5)(var3);
     var3 = function(arg0) { // Original name: getAdUser, environment: var1
-        _fun46958: for (var _fun46958_ip = 0;;) switch (_fun46958_ip) {
+        _fun46975: for (var _fun46975_ip = 0;;) switch (_fun46975_ip) {
             case 0:
                 var2 = _closure1_slot4;
                 var3 = var2.adUser;
@@ -49,18 +49,18 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var2.hasFetchFailed;
                 var4 = null;
                 if (!(var4 == var3)) {
-                    _fun46958_ip = 110;
-                    continue _fun46958
+                    _fun46975_ip = 110;
+                    continue _fun46975
                 }
             case 31:
                 if (var2) {
-                    _fun46958_ip = 110;
-                    continue _fun46958
+                    _fun46975_ip = 110;
+                    continue _fun46975
                 }
             case 34:
                 if (var1) {
-                    _fun46958_ip = 73;
-                    continue _fun46958
+                    _fun46975_ip = 73;
+                    continue _fun46975
                 }
             case 37:
                 var2 = _closure1_slot0;
@@ -100,23 +100,23 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = var5.bind(var0)(var2, var3);
                     var _closure3_slot2 = var2;
                     var3 = function() { // Original name: handleUpdate, environment: var4
-                        _fun46961: for (var _fun46961_ip = 0;;) switch (_fun46961_ip) {
+                        _fun46978: for (var _fun46978_ip = 0;;) switch (_fun46978_ip) {
                             case 0:
                                 var1 = _closure1_slot4;
                                 var2 = var1.adUser;
                                 var1 = null;
                                 var1 = var1 != var2;
                                 if (var1) {
-                                    _fun46961_ip = 32;
-                                    continue _fun46961
+                                    _fun46978_ip = 32;
+                                    continue _fun46978
                                 }
                             case 22:
                                 var2 = _closure1_slot4;
                                 var1 = var2.hasFetchFailed;
                             case 32:
                                 if (!var1) {
-                                    _fun46961_ip = 59;
-                                    continue _fun46961
+                                    _fun46978_ip = 59;
+                                    continue _fun46978
                                 }
                             case 35:
                                 var2 = _closure3_slot4;
@@ -131,12 +131,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     };
                     var _closure3_slot3 = var3;
                     var2 = function(arg0) { // Original name: safeResolve, environment: var4
-                        _fun46962: for (var _fun46962_ip = 0;;) switch (_fun46962_ip) {
+                        _fun46979: for (var _fun46979_ip = 0;;) switch (_fun46979_ip) {
                             case 0:
                                 var1 = _closure3_slot1;
                                 if (var1) {
-                                    _fun46962_ip = 69;
-                                    continue _fun46962
+                                    _fun46979_ip = 69;
+                                    continue _fun46979
                                 }
                             case 10:
                                 var1 = true;
@@ -167,8 +167,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var1;
                 var0 = new var6[var2](var5, var4);
                 var0 = var0 instanceof Object ? var0 : var1;
-                _fun46958_ip = 129;
-                continue _fun46958;
+                _fun46975_ip = 129;
+                continue _fun46975;
             case 110:
                 var1 = global;
                 var2 = var1.Promise;
@@ -200,26 +200,26 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2 = new Array(1);
         var2[0] = var5;
         var1 = function() { // Environment: var1
-            _fun46964: for (var _fun46964_ip = 0;;) switch (_fun46964_ip) {
+            _fun46981: for (var _fun46981_ip = 0;;) switch (_fun46981_ip) {
                 case 0:
                     var3 = function() { // Original name: handleStoreChange, environment: var0
-                        _fun46965: for (var _fun46965_ip = 0;;) switch (_fun46965_ip) {
+                        _fun46982: for (var _fun46982_ip = 0;;) switch (_fun46982_ip) {
                             case 0:
                                 var1 = _closure1_slot4;
                                 var2 = var1.adUser;
                                 var1 = null;
                                 var1 = var1 != var2;
                                 if (var1) {
-                                    _fun46965_ip = 32;
-                                    continue _fun46965
+                                    _fun46982_ip = 32;
+                                    continue _fun46982
                                 }
                             case 22:
                                 var2 = _closure1_slot4;
                                 var1 = var2.hasFetchFailed;
                             case 32:
                                 if (!var1) {
-                                    _fun46965_ip = 59;
-                                    continue _fun46965
+                                    _fun46982_ip = 59;
+                                    continue _fun46982
                                 }
                             case 35:
                                 var2 = _closure2_slot1;
@@ -240,22 +240,22 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = null;
                     var2 = var2 != var6;
                     if (var2) {
-                        _fun46964_ip = 48;
-                        continue _fun46964
+                        _fun46981_ip = 48;
+                        continue _fun46981
                     }
                 case 45:
                     var2 = var5;
                 case 48:
                     if (var2) {
-                        _fun46964_ip = 54;
-                        continue _fun46964
+                        _fun46981_ip = 54;
+                        continue _fun46981
                     }
                 case 51:
                     var2 = var4;
                 case 54:
                     if (var2) {
-                        _fun46964_ip = 97;
-                        continue _fun46964
+                        _fun46981_ip = 97;
+                        continue _fun46981
                     }
                 case 57:
                     var5 = _closure1_slot0;
@@ -286,4 +286,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useAdUser = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 5234, 5235, 5236, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 5235, 5236, 5237, 2]);

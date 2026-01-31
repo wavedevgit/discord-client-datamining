@@ -26,4 +26,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var1.parseGuildEventDescription;
     var2.guildEventDetailsParser = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [2, 4743]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [2, 4744]);

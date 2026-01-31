@@ -40,4 +40,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var1.serializeKey;
     var2.serializeKey = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [2, 8211, 8212, 8213, 8222]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [2, 8210, 8211, 8212, 8221]);

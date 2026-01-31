@@ -42,13 +42,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/main_tabs_v2/native/friends/components/useSuggestedFriends.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: useSuggestedFriends, environment: var1
-        _fun102036: for (var _fun102036_ip = 0;;) switch (_fun102036_ip) {
+        _fun101407: for (var _fun101407_ip = 0;;) switch (_fun101407_ip) {
             case 0:
                 var1 = arg0;
                 var3 = null;
                 if (!(var3 == var1)) {
-                    _fun102036_ip = 13;
-                    continue _fun102036
+                    _fun101407_ip = 13;
+                    continue _fun101407
                 }
             case 11:
                 var1 = {};
@@ -86,8 +86,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var7[var4];
                 var3 = var3 == var6;
                 if (var3) {
-                    _fun102036_ip = 137;
-                    continue _fun102036
+                    _fun101407_ip = 137;
+                    continue _fun101407
                 }
             case 134:
                 var3 = var6;
@@ -100,12 +100,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2[1] = var1;
                 var2[2] = var3;
                 var0 = function() { // Environment: var0
-                    _fun102038: for (var _fun102038_ip = 0;;) switch (_fun102038_ip) {
+                    _fun101409: for (var _fun101409_ip = 0;;) switch (_fun101409_ip) {
                         case 0:
                             var2 = _closure2_slot2;
                             if (var2) {
-                                _fun102038_ip = 18;
-                                continue _fun102038
+                                _fun101409_ip = 18;
+                                continue _fun101409
                             }
                         case 12:
                             var2 = new Array(0);
@@ -125,7 +125,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var3 = _closure2_slot0;
                             var2 = var3.map;
                             var1 = function(arg0) { // Environment: var0
-                                _fun102040: for (var _fun102040_ip = 0;;) switch (_fun102040_ip) {
+                                _fun101411: for (var _fun101411_ip = 0;;) switch (_fun101411_ip) {
                                     case 0:
                                         var1 = arg0;
                                         var0 = {};
@@ -136,8 +136,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                         var4 = var2 != var3;
                                         var2 = undefined;
                                         if (!var4) {
-                                            _fun102040_ip = 33;
-                                            continue _fun102040
+                                            _fun101411_ip = 33;
+                                            continue _fun101411
                                         }
                                     case 30:
                                         var2 = var3;
@@ -198,13 +198,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0.setAdded = var4;
                 var0.friendSuggestions = var2;
                 if (var3) {
-                    _fun102036_ip = 206;
-                    continue _fun102036
+                    _fun101407_ip = 206;
+                    continue _fun101407
                 }
             case 199:
                 var1 = var1.length;
-                _fun102036_ip = 211;
-                continue _fun102036;
+                _fun101407_ip = 211;
+                continue _fun101407;
             case 206:
                 var1 = var2.length;
             case 211:
@@ -214,4 +214,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 9040, 10366, 632, 22, 3195, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 9040, 10368, 632, 22, 3195, 2]);

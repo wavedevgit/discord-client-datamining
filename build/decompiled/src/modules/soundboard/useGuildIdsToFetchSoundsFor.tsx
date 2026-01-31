@@ -116,4 +116,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getGuildIdsToFetchSoundsFor = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 1410, 3916, 632, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 1410, 3915, 632, 2]);

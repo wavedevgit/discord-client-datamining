@@ -79,15 +79,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var1.useValue = var9;
     var8 = function(arg0) { // Original name: onAllowDirectMessagesFromServerMembersValueChange, environment: var8
-        _fun89106: for (var _fun89106_ip = 0;;) switch (_fun89106_ip) {
+        _fun88454: for (var _fun88454_ip = 0;;) switch (_fun88454_ip) {
             case 0:
                 var2 = _closure1_slot2;
                 var1 = var2.getSelectedTeenId;
                 var3 = var1.bind(var2)();
                 var1 = null;
                 if (!(var1 != var3)) {
-                    _fun89106_ip = 69;
-                    continue _fun89106
+                    _fun88454_ip = 69;
+                    continue _fun88454
                 }
             case 23:
                 var2 = _closure1_slot0;
@@ -118,4 +118,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.default = var1;
     var2.ParentalControlsDirectMessages = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [4556, 6968, 10331, 10332, 8943, 1234, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [4557, 6967, 10333, 10334, 8943, 1234, 2]);

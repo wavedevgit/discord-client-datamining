@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
     var0 = function() { // Original name: _isNativeReflectConstruct, environment: var3
-        _fun73031: for (var _fun73031_ip = 0;;) switch (_fun73031_ip) {
+        _fun73061: for (var _fun73061_ip = 0;;) switch (_fun73061_ip) {
             case 0:
             case 2: // try_start_0
                 var1 = global;
@@ -29,8 +29,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = !var1;
                 var _closure2_slot0 = var1;
             case 72: // try_end0
-                _fun73031_ip = 76;
-                continue _fun73031;
+                _fun73061_ip = 76;
+                continue _fun73061;
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
@@ -48,7 +48,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var _closure1_slot16 = var0;
     var0 = function(arg0) { // Original name: getFormatFromUrl, environment: var3
-        _fun73034: for (var _fun73034_ip = 0;;) switch (_fun73034_ip) {
+        _fun73064: for (var _fun73064_ip = 0;;) switch (_fun73064_ip) {
             case 0:
                 var1 = arg0;
                 var2 = undefined;
@@ -74,8 +74,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = '.mp4';
                 var1 = var3.bind(var4)(var1);
                 if (var1) {
-                    _fun73034_ip = 102;
-                    continue _fun73034
+                    _fun73064_ip = 102;
+                    continue _fun73064
                 }
             case 77:
                 var3 = var0;
@@ -83,12 +83,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = '.webm';
                 var0 = var1.bind(var3)(var0);
                 if (var0) {
-                    _fun73034_ip = 102;
-                    continue _fun73034
+                    _fun73064_ip = 102;
+                    continue _fun73064
                 }
             case 100: // try_end0
-                _fun73034_ip = 141;
-                continue _fun73034;
+                _fun73064_ip = 141;
+                continue _fun73064;
             case 102: // try_start_1
                 var1 = _closure1_slot0;
                 var3 = _closure1_slot1;
@@ -172,7 +172,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = var1.Store;
     var1 = function(arg0) { // Environment: var3
         var3 = function() { // Original name: GIFPickerViewStore, environment: var5
-            _fun73036: for (var _fun73036_ip = 0;;) switch (_fun73036_ip) {
+            _fun73066: for (var _fun73066_ip = 0;;) switch (_fun73066_ip) {
                 case 0:
                     var3 = this;
                     var2 = undefined;
@@ -186,16 +186,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = _closure1_slot16;
                     var0 = var0.bind(var2)();
                     if (var0) {
-                        _fun73036_ip = 69;
-                        continue _fun73036
+                        _fun73066_ip = 69;
+                        continue _fun73066
                     }
                 case 51:
                     var6 = var8.apply;
                     var4 = arguments;
                     var0 = var4;
                     var0 = var6.bind(var8)(var3, var0);
-                    _fun73036_ip = 105;
-                    continue _fun73036;
+                    _fun73066_ip = 105;
+                    continue _fun73066;
                 case 69:
                     var6 = global;
                     var7 = var6.Reflect;
@@ -308,15 +308,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var1.GIF_PICKER_INITIALIZE = var8;
     var8 = function(arg0) { // Original name: handleQuery, environment: var3
-        _fun73046: for (var _fun73046_ip = 0;;) switch (_fun73046_ip) {
+        _fun73076: for (var _fun73076_ip = 0;;) switch (_fun73076_ip) {
             case 0:
                 var0 = arg0;
                 var2 = var0.query;
                 _closure1_slot10 = var2;
                 var0 = '';
                 if (!(var0 === var2)) {
-                    _fun73046_ip = 44;
-                    continue _fun73046
+                    _fun73076_ip = 44;
+                    continue _fun73076
                 }
             case 24:
                 _closure1_slot11 = var0;
@@ -331,27 +331,27 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var1.GIF_PICKER_QUERY = var8;
     var8 = function(arg0) { // Original name: handleQuerySuccess, environment: var3
-        _fun73047: for (var _fun73047_ip = 0;;) switch (_fun73047_ip) {
+        _fun73077: for (var _fun73077_ip = 0;;) switch (_fun73077_ip) {
             case 0:
                 var0 = arg0;
                 var1 = var0.query;
                 var2 = null;
                 if (!(var2 != var1)) {
-                    _fun73047_ip = 30;
-                    continue _fun73047
+                    _fun73077_ip = 30;
+                    continue _fun73077
                 }
             case 15:
                 var3 = _closure1_slot10;
                 var1 = _closure1_slot11;
                 if (!(var3 !== var1)) {
-                    _fun73047_ip = 89;
-                    continue _fun73047
+                    _fun73077_ip = 88;
+                    continue _fun73077
                 }
             case 30:
                 var1 = var0.query;
                 if (!(var2 != var1)) {
-                    _fun73047_ip = 53;
-                    continue _fun73047
+                    _fun73077_ip = 53;
+                    continue _fun73077
                 }
             case 40:
                 var2 = var0.query;
@@ -382,21 +382,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 _closure1_slot12 = var1;
                 var0 = undefined;
                 return var0;
-            case 89:
+            case 88:
                 var0 = false;
                 return var0;
         }
     };
     var1.GIF_PICKER_QUERY_SUCCESS = var8;
     var8 = function(arg0) { // Original name: handleQueryFailure, environment: var3
-        _fun73049: for (var _fun73049_ip = 0;;) switch (_fun73049_ip) {
+        _fun73079: for (var _fun73079_ip = 0;;) switch (_fun73079_ip) {
             case 0:
                 var0 = arg0;
                 var0 = var0.query;
                 var1 = null;
                 if (!(var1 != var0)) {
-                    _fun73049_ip = 34;
-                    continue _fun73049
+                    _fun73079_ip = 34;
+                    continue _fun73079
                 }
             case 15:
                 _closure1_slot11 = var0;
@@ -411,20 +411,20 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var1.GIF_PICKER_QUERY_FAILURE = var8;
     var8 = function(arg0) { // Original name: handleTrendingFetchSuccess, environment: var3
-        _fun73050: for (var _fun73050_ip = 0;;) switch (_fun73050_ip) {
+        _fun73080: for (var _fun73080_ip = 0;;) switch (_fun73080_ip) {
             case 0:
                 var0 = arg0;
                 var4 = var0.trendingCategories;
                 var2 = var0.trendingGIFPreview;
                 var1 = null;
                 if (!(var1 == var2)) {
-                    _fun73050_ip = 30;
-                    continue _fun73050
+                    _fun73080_ip = 30;
+                    continue _fun73080
                 }
             case 21:
                 var2 = new Array(0);
-                _fun73050_ip = 165;
-                continue _fun73050;
+                _fun73080_ip = 165;
+                continue _fun73080;
             case 30:
                 var1 = {};
                 var5 = _closure1_slot7;

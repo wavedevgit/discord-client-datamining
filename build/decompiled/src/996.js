@@ -14,13 +14,13 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = '__esModule';
     var2 = var4.bind(var5)(var1, var2, var3);
     var0 = function() { // Original name: getDevServer, environment: var0
-        _fun10191: for (var _fun10191_ip = 0;;) switch (_fun10191_ip) {
+        _fun10193: for (var _fun10193_ip = 0;;) switch (_fun10193_ip) {
             case 0:
                 var0 = _closure1_slot2;
                 var3 = undefined;
                 if (!(var3 === var0)) {
-                    _fun10191_ip = 98;
-                    continue _fun10191
+                    _fun10193_ip = 98;
+                    continue _fun10193
                 }
             case 13:
                 var2 = _closure1_slot0;
@@ -36,8 +36,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var3 = var3.bind(var2)(var0);
                 var4 = null;
                 if (!var3) {
-                    _fun10191_ip = 82;
-                    continue _fun10191
+                    _fun10193_ip = 82;
+                    continue _fun10193
                 }
             case 78:
                 var4 = var3[var5];
@@ -45,8 +45,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var _closure1_slot2 = var4;
                 var0 = null;
                 if (!var3) {
-                    _fun10191_ip = 94;
-                    continue _fun10191
+                    _fun10193_ip = 94;
+                    continue _fun10193
                 }
             case 91:
                 var0 = var2;
@@ -59,8 +59,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var4 = var2 != var3;
                 var3 = 'http://localhost:8081/';
                 if (!var4) {
-                    _fun10191_ip = 123;
-                    continue _fun10191
+                    _fun10193_ip = 123;
+                    continue _fun10193
                 }
             case 119:
                 var3 = _closure1_slot2;

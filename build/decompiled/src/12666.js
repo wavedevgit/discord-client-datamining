@@ -1,51 +1,121 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun97443: for (var _fun97443_ip = 0;;) switch (_fun97443_ip) {
+    _fun96945: for (var _fun96945_ip = 0;;) switch (_fun96945_ip) {
         case 0:
-            var4 = require;
-            var5 = dependencyMap;
-            var0 = global;
-            var0 = var0.Function;
-            var6 = var0.prototype;
-            var8 = var6.call;
-            var _closure1_slot0 = var8;
-            var3 = 0;
-            var2 = var5[var3];
+            var3 = require;
+            var2 = exports;
+            var4 = dependencyMap;
+            var1 = global;
+            var8 = var1.Object;
+            var7 = var8.defineProperty;
+            var6 = {};
+            var0 = true;
+            var6.value = var0;
+            var0 = '__esModule';
+            var0 = var7.bind(var8)(var2, var0, var6);
+            var0 = 0;
+            var6 = var4[var0];
             var0 = undefined;
-            var2 = var4.bind(var0)(var2);
-            if (!var2) {
-                _fun97443_ip = 62;
-                continue _fun97443
+            var6 = var3.bind(var0)(var6);
+            var6 = var6.NativeModules;
+            var7 = null;
+            var _closure1_slot0 = var7;
+            var7 = var6.BlobModule;
+            var6 = var7;
+            if (!var6) {
+                _fun96945_ip = 97;
+                continue _fun96945
             }
-        case 46:
-            var7 = var6.bind;
-            var6 = var7.bind;
-            var2 = var6.bind(var7)(var8, var8);
-        case 62:
-            var3 = var5[var3];
-            var3 = var4.bind(var0)(var3);
-            if (var3) {
-                _fun97443_ip = 81;
-                continue _fun97443
+        case 80:
+            var8 = var7.BLOB_URI_SCHEME;
+            var9 = 'string';
+            var8 = typeof var8;
+            var6 = var9 === var8;
+        case 97:
+            if (!var6) {
+                _fun96945_ip = 176;
+                continue _fun96945
             }
-        case 74:
-            var2 = function(arg0) { // Environment: var1
-                var1 = arg0;
-                var _closure2_slot0 = var1;
-                var0 = function() { // Environment: var0
-                    var0 = undefined;
-                    var3 = _closure1_slot0;
-                    var2 = var3.apply;
-                    var1 = _closure2_slot0;
-                    var0 = arguments;
-                    var0 = var2.bind(var3)(var1, var0);
-                    return var0;
-                };
+        case 100:
+            var8 = var7.BLOB_URI_SCHEME;
+            var6 = ':';
+            var6 = var8 + var6;
+            _closure1_slot0 = var6;
+            var8 = var7.BLOB_URI_HOST;
+            var9 = 'string';
+            var8 = typeof var8;
+            if (!(var9 === var8)) {
+                _fun96945_ip = 176;
+                continue _fun96945
+            }
+        case 135:
+            var9 = var7.BLOB_URI_HOST;
+            var1 = var1.HermesInternal;
+            var8 = var1.concat;
+            var7 = '//';
+            var1 = '/';
+            var1 = var8.bind(var7)(var9, var1);
+            var1 = var6 + var1;
+            _closure1_slot0 = var1;
+        case 176:
+            var1 = 1;
+            var6 = var4[var1];
+            var6 = var3.bind(var0)(var6);
+            var7 = var6.URL;
+            var6 = function(arg0) { // Original name: createObjectURL, environment: var5
+                _fun96946: for (var _fun96946_ip = 0;;) switch (_fun96946_ip) {
+                    case 0:
+                        var0 = arg0;
+                        var3 = _closure1_slot0;
+                        var2 = null;
+                        if (!(var2 !== var3)) {
+                            _fun96946_ip = 82;
+                            continue _fun96946
+                        }
+                    case 16:
+                        var13 = _closure1_slot0;
+                        var1 = var0.data;
+                        var12 = var1.blobId;
+                        var1 = var0.data;
+                        var10 = var1.offset;
+                        var8 = var0.size;
+                        var0 = global;
+                        var0 = var0.HermesInternal;
+                        var3 = var0.concat;
+                        var14 = '';
+                        var11 = '?offset=';
+                        var9 = '&size=';
+                        var0 = var14[var3](var13, var12, var11, var10, var9, var8, var7);
+                        return var0;
+                    case 82:
+                        var0 = global;
+                        var2 = var0.Error;
+                        var0 = var2.prototype;
+                        var1 = Object.create(var0, {
+                            constructor: {
+                                value: var2
+                            }
+                        });
+                        var13 = 'Cannot create URL for blob!';
+                        var14 = var1;
+                        var0 = new var14[var2](var13, var12);
+                        var0 = var0 instanceof Object ? var0 : var1;
+                        throw var0;
+                }
+            };
+            var7.createObjectURL = var6;
+            var6 = var4[var1];
+            var6 = var3.bind(var0)(var6);
+            var6 = var6.URL;
+            var5 = function(arg0) { // Original name: revokeObjectURL, environment: var5
+                var0 = undefined;
                 return var0;
             };
-        case 81:
-            var1 = arg4;
-            var1.exports = var2;
+            var6.revokeObjectURL = var5;
+            var1 = var4[var1];
+            var1 = var3.bind(var0)(var1);
+            var1 = var1.URL;
+            var2.URL = var1;
             return var0;
     }
-})(undefined, undefined, undefined, undefined, undefined, undefined, [12667]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 12667]);

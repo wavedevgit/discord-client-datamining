@@ -32,13 +32,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = arg0;
         var _closure2_slot0 = var0;
         var4 = function(arg0) { // Original name: useState, environment: var1
-            _fun35069: for (var _fun35069_ip = 0;;) switch (_fun35069_ip) {
+            _fun35085: for (var _fun35085_ip = 0;;) switch (_fun35085_ip) {
                 case 0:
                     var3 = arguments[1];
                     var2 = undefined;
                     if (!(var3 === var2)) {
-                        _fun35069_ip = 16;
-                        continue _fun35069
+                        _fun35085_ip = 16;
+                        continue _fun35085
                     }
                 case 9:
                     var3 = _closure1_slot2;
@@ -51,7 +51,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         };
         var _closure2_slot3 = var4;
         var3 = function(arg0) { // Original name: getState, environment: var1
-            _fun35070: for (var _fun35070_ip = 0;;) switch (_fun35070_ip) {
+            _fun35086: for (var _fun35086_ip = 0;;) switch (_fun35086_ip) {
                 case 0:
                     var3 = arg0;
                     var1 = _closure2_slot1;
@@ -60,8 +60,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1 = null;
                     var0 = var2;
                     if (!(var1 != var3)) {
-                        _fun35070_ip = 36;
-                        continue _fun35070
+                        _fun35086_ip = 36;
+                        continue _fun35086
                     }
                 case 29:
                     var1 = undefined;
@@ -140,15 +140,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0.useState = var4;
         var0.getState = var3;
         var3 = function(arg0) { // Original name: useField, environment: var1
-            _fun35076: for (var _fun35076_ip = 0;;) switch (_fun35076_ip) {
+            _fun35092: for (var _fun35092_ip = 0;;) switch (_fun35092_ip) {
                 case 0:
                     var3 = arguments[1];
                     var1 = arg0;
                     var _closure3_slot0 = var1;
                     var2 = undefined;
                     if (!(var3 === var2)) {
-                        _fun35076_ip = 25;
-                        continue _fun35076
+                        _fun35092_ip = 25;
+                        continue _fun35092
                     }
                 case 18:
                     var3 = _closure1_slot2;

@@ -22,7 +22,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var0)(var3);
     var _closure1_slot3 = var3;
     var3 = function(arg0, arg1) { // Original name: getProductPurchaseState, environment: var1
-        _fun87731: for (var _fun87731_ip = 0;;) switch (_fun87731_ip) {
+        _fun87035: for (var _fun87035_ip = 0;;) switch (_fun87035_ip) {
             case 0:
                 var3 = arg0;
                 var8 = arg1;
@@ -36,8 +36,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = undefined;
                 var2 = undefined;
                 if (var4) {
-                    _fun87731_ip = 52;
-                    continue _fun87731
+                    _fun87035_ip = 52;
+                    continue _fun87035
                 }
             case 46:
                 var2 = var3.expiresAt;
@@ -45,8 +45,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var6 != var2;
                 var4 = null;
                 if (!var3) {
-                    _fun87731_ip = 64;
-                    continue _fun87731
+                    _fun87035_ip = 64;
+                    continue _fun87035
                 }
             case 61:
                 var4 = var2;
@@ -54,12 +54,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var6 != var4;
                 var2 = var8.items;
                 if (!(var6 == var2)) {
-                    _fun87731_ip = 82;
-                    continue _fun87731
+                    _fun87035_ip = 81;
+                    continue _fun87035
                 }
-            case 78:
+            case 77:
                 var2 = new Array(0);
-            case 82:
+            case 81:
                 var10 = _closure1_slot1;
                 var11 = _closure1_slot2;
                 var3 = 1;
@@ -79,12 +79,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = var6 == var8;
                 var10 = undefined;
                 if (var11) {
-                    _fun87731_ip = 141;
-                    continue _fun87731
+                    _fun87035_ip = 140;
+                    continue _fun87035
                 }
-            case 136:
+            case 135:
                 var10 = var8.type;
-            case 141:
+            case 140:
                 var13 = _closure1_slot0;
                 var11 = _closure1_slot2;
                 var12 = 2;
@@ -93,10 +93,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = var11.CollectiblesItemType;
                 var11 = var11.BUNDLE;
                 if (!(var11 !== var10)) {
-                    _fun87731_ip = 368;
-                    continue _fun87731
+                    _fun87035_ip = 367;
+                    continue _fun87035
                 }
-            case 180:
+            case 179:
                 var11 = _closure1_slot0;
                 var9 = _closure1_slot2;
                 var9 = var9[var12];
@@ -104,10 +104,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var9.CollectiblesItemType;
                 var9 = var9.VARIANTS_GROUP;
                 if (!(var9 !== var10)) {
-                    _fun87731_ip = 245;
-                    continue _fun87731
+                    _fun87035_ip = 244;
+                    continue _fun87035
                 }
-            case 213:
+            case 212:
                 var9 = {
                     'isPurchased': null,
                     'isPartiallyOwnedBundle': false,
@@ -117,15 +117,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9.isRented = var5;
                 var9.rentalExpiresAt = var4;
                 return var9;
-            case 245:
+            case 244:
                 var12 = var8.variants;
                 var10 = var6 == var12;
                 var9 = undefined;
                 if (var10) {
-                    _fun87731_ip = 278;
-                    continue _fun87731
+                    _fun87035_ip = 277;
+                    continue _fun87035
                 }
-            case 260:
+            case 259:
                 var11 = var12.every;
                 var10 = function(arg0) { // Environment: var0
                     var2 = _closure2_slot0;
@@ -138,15 +138,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var9 = var11.bind(var12)(var10);
-            case 278:
+            case 277:
                 var10 = var8.variants;
                 var8 = var6 == var10;
                 var7 = undefined;
                 if (var8) {
-                    _fun87731_ip = 311;
-                    continue _fun87731
+                    _fun87035_ip = 310;
+                    continue _fun87035
                 }
-            case 293:
+            case 292:
                 var8 = var10.some;
                 var0 = function(arg0) { // Environment: var0
                     var2 = _closure2_slot0;
@@ -159,39 +159,39 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var7 = var8.bind(var10)(var0);
-            case 311:
+            case 310:
                 if (!var7) {
-                    _fun87731_ip = 317;
-                    continue _fun87731
+                    _fun87035_ip = 316;
+                    continue _fun87035
                 }
-            case 314:
+            case 313:
                 var7 = !var9;
-            case 317:
+            case 316:
                 var0 = {};
                 var8 = var6 != var9;
                 if (!var8) {
-                    _fun87731_ip = 329;
-                    continue _fun87731
+                    _fun87035_ip = 328;
+                    continue _fun87035
                 }
-            case 326:
+            case 325:
                 var8 = var9;
-            case 329:
+            case 328:
                 var0.isPurchased = var8;
                 var8 = false;
                 var0.isPartiallyOwnedBundle = var8;
                 var6 = var6 != var7;
                 if (!var6) {
-                    _fun87731_ip = 351;
-                    continue _fun87731
+                    _fun87035_ip = 350;
+                    continue _fun87035
                 }
-            case 348:
+            case 347:
                 var6 = var7;
-            case 351:
+            case 350:
                 var0.isPartiallyOwnedVariantsGroup = var6;
                 var0.isRented = var5;
                 var0.rentalExpiresAt = var4;
                 return var0;
-            case 368:
+            case 367:
                 var0 = {
                     'isPurchased': null,
                     'isPartiallyOwnedBundle': null,
@@ -200,37 +200,37 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     'rentalExpiresAt': null
                 };
                 if (var1) {
-                    _fun87731_ip = 416;
-                    continue _fun87731
+                    _fun87035_ip = 415;
+                    continue _fun87035
                 }
-            case 385:
+            case 384:
                 var5 = var2.length;
                 var4 = 0;
                 var4 = var5 > var4;
                 if (!var4) {
-                    _fun87731_ip = 413;
-                    continue _fun87731
+                    _fun87035_ip = 412;
+                    continue _fun87035
                 }
-            case 399:
+            case 398:
                 var6 = var3.length;
                 var5 = var2.length;
                 var4 = var6 === var5;
-            case 413:
+            case 412:
                 var1 = var4;
-            case 416:
+            case 415:
                 var0.isPurchased = var1;
                 var4 = var3.length;
                 var1 = 0;
                 var1 = var4 > var1;
                 if (!var1) {
-                    _fun87731_ip = 450;
-                    continue _fun87731
+                    _fun87035_ip = 449;
+                    continue _fun87035
                 }
-            case 436:
+            case 435:
                 var3 = var3.length;
                 var2 = var2.length;
                 var1 = var3 < var2;
-            case 450:
+            case 449:
                 var0.isPartiallyOwnedBundle = var1;
                 return var0;
         }
@@ -269,4 +269,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useProductPurchaseState = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [4579, 11278, 3452, 566, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [4580, 11211, 3452, 566, 2]);

@@ -1,7 +1,7 @@
 // modules/stickers/native/NativeLottieView.tsx
 // @ts-nocheck
 export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun55472: for (var _fun55472_ip = 0;;) switch (_fun55472_ip) {
+    _fun55489: for (var _fun55489_ip = 0;;) switch (_fun55489_ip) {
         case 0:
             var5 = require;
             var4 = metroImportDefault;
@@ -41,14 +41,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var1 = var11.isAndroid;
             var1 = var1.bind(var11)();
             if (var1) {
-                _fun55472_ip = 167;
-                continue _fun55472
+                _fun55489_ip = 167;
+                continue _fun55489
             }
         case 154:
             var1 = 'NativeLottieNode';
             var1 = var10.bind(var0)(var1);
-            _fun55472_ip = 179;
-            continue _fun55472;
+            _fun55489_ip = 179;
+            continue _fun55489;
         case 167:
             var10 = 4;
             var10 = var6[var10];
@@ -81,7 +81,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var4 = 'modules/stickers/native/NativeLottieView.tsx';
             var4 = var5.bind(var6)(var4);
             var3 = function(arg0) { // Original name: _default, environment: var3
-                _fun55473: for (var _fun55473_ip = 0;;) switch (_fun55473_ip) {
+                _fun55490: for (var _fun55490_ip = 0;;) switch (_fun55490_ip) {
                     case 0:
                         var0 = arg0;
                         var12 = var0.asset;
@@ -91,16 +91,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var5 = var0.opacity;
                         var3 = undefined;
                         if (!(var5 === var3)) {
-                            _fun55473_ip = 40;
-                            continue _fun55473
+                            _fun55490_ip = 40;
+                            continue _fun55490
                         }
                     case 37:
                         var5 = 1;
                     case 40:
                         var9 = var0.renderMode;
                         if (!(var9 === var3)) {
-                            _fun55473_ip = 63;
-                            continue _fun55473
+                            _fun55490_ip = 63;
+                            continue _fun55490
                         }
                     case 50:
                         var2 = _closure1_slot6;
@@ -109,8 +109,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var _closure2_slot0 = var9;
                         var10 = var0.animating;
                         if (!(var10 === var3)) {
-                            _fun55473_ip = 79;
-                            continue _fun55473
+                            _fun55490_ip = 79;
+                            continue _fun55490
                         }
                     case 77:
                         var10 = true;
@@ -147,7 +147,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var2 = new Array(1);
                         var2[0] = var9;
                         var1 = function() { // Environment: var1
-                            _fun55475: for (var _fun55475_ip = 0;;) switch (_fun55475_ip) {
+                            _fun55492: for (var _fun55492_ip = 0;;) switch (_fun55492_ip) {
                                 case 0:
                                     var1 = _closure2_slot3;
                                     var1 = var1.current;
@@ -176,24 +176,24 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                     var1 = '';
                                     var1 = var1 !== var8;
                                     if (!var1) {
-                                        _fun55475_ip = 136;
-                                        continue _fun55475
+                                        _fun55492_ip = 136;
+                                        continue _fun55492
                                     }
                                 case 130:
                                     var2 = 0;
                                     var1 = var2 !== var7;
                                 case 136:
                                     if (!var1) {
-                                        _fun55475_ip = 145;
-                                        continue _fun55475
+                                        _fun55492_ip = 145;
+                                        continue _fun55492
                                     }
                                 case 139:
                                     var2 = 0;
                                     var1 = var2 !== var6;
                                 case 145:
                                     if (!var1) {
-                                        _fun55475_ip = 198;
-                                        continue _fun55475
+                                        _fun55492_ip = 198;
+                                        continue _fun55492
                                     }
                                 case 148:
                                     var2 = _closure1_slot5;
@@ -232,4 +232,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var2.NativeLottieRenderMode = var1;
             return var0;
     }
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 478, 6662, 116, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 478, 6663, 116, 2]);

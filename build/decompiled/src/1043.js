@@ -11,7 +11,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0.value = var5;
     var0 = var3.bind(var4)(var1, var2, var0);
     var0 = function(arg0, arg1) { // Original name: observe, environment: var0
-        _fun10773: for (var _fun10773_ip = 0;;) switch (_fun10773_ip) {
+        _fun10775: for (var _fun10775_ip = 0;;) switch (_fun10775_ip) {
             case 0:
                 var0 = undefined;
                 var5 = undefined;
@@ -22,19 +22,19 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var3 = arguments.length;
                 var4 = 2;
                 if (!(var3 > var4)) {
-                    _fun10773_ip = 36;
-                    continue _fun10773
+                    _fun10775_ip = 36;
+                    continue _fun10775
                 }
             case 28:
                 var3 = arguments[var4];
                 if (!(var0 === var3)) {
-                    _fun10773_ip = 40;
-                    continue _fun10773
+                    _fun10775_ip = 40;
+                    continue _fun10775
                 }
             case 36:
                 var3 = {};
-                _fun10773_ip = 44;
-                continue _fun10773;
+                _fun10775_ip = 44;
+                continue _fun10775;
             case 40:
                 var3 = arguments[var4];
             case 44:
@@ -47,12 +47,12 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var3 = var7;
                 var3 = var5.bind(var6)(var3);
                 if (var3) {
-                    _fun10773_ip = 79;
-                    continue _fun10773
+                    _fun10775_ip = 79;
+                    continue _fun10775
                 }
             case 77: // try_end0
-                _fun10773_ip = 155;
-                continue _fun10773;
+                _fun10775_ip = 155;
+                continue _fun10775;
             case 79: // try_start_1
                 var5 = var4.PerformanceObserver;
                 var3 = var5.prototype;

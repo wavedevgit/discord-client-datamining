@@ -50,7 +50,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2 = new Array(1);
         var2[0] = var5;
         var1 = function() { // Environment: var1
-            _fun108596: for (var _fun108596_ip = 0;;) switch (_fun108596_ip) {
+            _fun107952: for (var _fun107952_ip = 0;;) switch (_fun107952_ip) {
                 case 0:
                     var3 = _closure2_slot0;
                     var5 = _closure1_slot0;
@@ -62,8 +62,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = var2.ActivityAction;
                     var2 = var2.LEAVE;
                     if (!(var3 !== var2)) {
-                        _fun108596_ip = 65;
-                        continue _fun108596
+                        _fun107952_ip = 65;
+                        continue _fun107952
                     }
                 case 50:
                     var2 = _closure2_slot1;
@@ -99,4 +99,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useDelayedSwapToActivityActionLeave = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 13891, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 13822, 2]);

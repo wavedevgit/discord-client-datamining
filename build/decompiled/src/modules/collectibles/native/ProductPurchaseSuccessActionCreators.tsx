@@ -33,13 +33,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2 = _closure1_slot3;
         var1 = function*() { // Environment: var1
             var0 = function*() { // Original name: ?anon_0_, environment: var0
-                _fun75259: for (var _fun75259_ip = 0;;) switch (_fun75259_ip) {
+                _fun75289: for (var _fun75289_ip = 0;;) switch (_fun75289_ip) {
                     case 0:
                         StartGenerator();
                         ResumeGenerator(result_out_reg = 0, return_bool_out_reg = 1);
                         if (var1) {
-                            _fun75259_ip = 71;
-                            continue _fun75259
+                            _fun75289_ip = 71;
+                            continue _fun75289
                         }
                     case 7:
                         var3 = _closure1_slot0;
@@ -58,8 +58,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     case 54:
                         ResumeGenerator(result_out_reg = 1, return_bool_out_reg = 2);
                         if (var2) {
-                            _fun75259_ip = 68;
-                            continue _fun75259
+                            _fun75289_ip = 68;
+                            continue _fun75289
                         }
                     case 60:
                         var2 = var1.default;
@@ -102,4 +102,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = 'ShopProductPurchaseSuccessModal';
     var2.MODAL_KEY = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 4524, 9487, 1307, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 4525, 9489, 1307, 2]);

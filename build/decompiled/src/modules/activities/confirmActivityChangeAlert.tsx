@@ -24,7 +24,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/activities/confirmActivityChangeAlert.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0, arg1, arg2, arg3) { // Original name: confirmActivityChangeModal, environment: var1
-        _fun64019: for (var _fun64019_ip = 0;;) switch (_fun64019_ip) {
+        _fun64031: for (var _fun64031_ip = 0;;) switch (_fun64031_ip) {
             case 0:
                 var12 = arg0;
                 var10 = arg1;
@@ -85,15 +85,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var14 = var8 == var12;
                 var11 = undefined;
                 if (var14) {
-                    _fun64019_ip = 268;
-                    continue _fun64019
+                    _fun64031_ip = 268;
+                    continue _fun64031
                 }
             case 263:
                 var11 = var12.name;
             case 268:
                 if (!(var8 == var11)) {
-                    _fun64019_ip = 326;
-                    continue _fun64019
+                    _fun64031_ip = 326;
+                    continue _fun64031
                 }
             case 272:
                 var16 = _closure1_slot0;
@@ -118,29 +118,29 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var15 = var8 == var10;
                 var11 = undefined;
                 if (var15) {
-                    _fun64019_ip = 373;
-                    continue _fun64019
+                    _fun64031_ip = 373;
+                    continue _fun64031
                 }
             case 368:
                 var11 = var10.name;
             case 373:
                 var11 = var12.bind(var14)(var11);
                 if (var11) {
-                    _fun64019_ip = 397;
-                    continue _fun64019
+                    _fun64031_ip = 397;
+                    continue _fun64031
                 }
             case 381:
                 var11 = var8 == var10;
                 var8 = undefined;
                 if (var11) {
-                    _fun64019_ip = 395;
-                    continue _fun64019
+                    _fun64031_ip = 395;
+                    continue _fun64031
                 }
             case 390:
                 var8 = var10.name;
             case 395:
-                _fun64019_ip = 451;
-                continue _fun64019;
+                _fun64031_ip = 451;
+                continue _fun64031;
             case 397:
                 var12 = _closure1_slot0;
                 var9 = _closure1_slot2;

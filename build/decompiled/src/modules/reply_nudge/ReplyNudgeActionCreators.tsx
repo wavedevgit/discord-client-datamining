@@ -22,7 +22,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/reply_nudge/ReplyNudgeActionCreators.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0, arg1) { // Original name: setReplyNudge, environment: var1
+    var3 = function(arg0, arg1) { // Original name: setReplyNudge, environment: var1
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 0;
@@ -40,6 +40,23 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = var1.bind(var2)(var0);
         return var0;
     };
-    var2.setReplyNudge = var1;
+    var2.setReplyNudge = var3;
+    var1 = function(arg0) { // Original name: clearReplyNudge, environment: var1
+        var2 = _closure1_slot0;
+        var1 = _closure1_slot1;
+        var0 = 0;
+        var1 = var1[var0];
+        var0 = undefined;
+        var2 = var2.bind(var0)(var1);
+        var1 = var2.dispatch;
+        var0 = {};
+        var3 = 'REPLY_NUDGE_CLEAR';
+        var0.type = var3;
+        var3 = arg0;
+        var0.channelId = var3;
+        var0 = var1.bind(var2)(var0);
+        return var0;
+    };
+    var2.clearReplyNudge = var1;
     return var0;
 })(undefined, undefined, undefined, undefined, undefined, undefined, [806, 2]);

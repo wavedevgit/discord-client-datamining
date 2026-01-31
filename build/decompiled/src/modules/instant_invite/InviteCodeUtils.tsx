@@ -9,7 +9,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var6;
     var3 = function(arg0) { // Original name: generateInviteKeyFromExtraData, environment: var1
-        _fun28244: for (var _fun28244_ip = 0;;) switch (_fun28244_ip) {
+        _fun28245: for (var _fun28245_ip = 0;;) switch (_fun28245_ip) {
             case 0:
                 var0 = arg0;
                 var7 = var0.baseCode;
@@ -17,8 +17,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = null;
                 var0 = var7;
                 if (!(var1 != var6)) {
-                    _fun28244_ip = 66;
-                    continue _fun28244
+                    _fun28245_ip = 66;
+                    continue _fun28245
                 }
             case 24:
                 var10 = _closure1_slot4;
@@ -58,14 +58,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/instant_invite/InviteCodeUtils.tsx';
     var4 = var5.bind(var6)(var4);
     var4 = function(arg0, arg1) { // Original name: generateInviteKeyFromUrlParams, environment: var1
-        _fun28245: for (var _fun28245_ip = 0;;) switch (_fun28245_ip) {
+        _fun28246: for (var _fun28246_ip = 0;;) switch (_fun28246_ip) {
             case 0:
                 var0 = arg0;
                 var6 = arg1;
                 var1 = null;
                 if (!(var1 != var6)) {
-                    _fun28245_ip = 164;
-                    continue _fun28245
+                    _fun28246_ip = 164;
+                    continue _fun28246
                 }
             case 15:
                 var3 = undefined;
@@ -76,8 +76,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = '?';
                 var1 = var6;
                 if (!(var4 === var5)) {
-                    _fun28245_ip = 57;
-                    continue _fun28245
+                    _fun28246_ip = 57;
+                    continue _fun28246
                 }
             case 43:
                 var5 = var6.substring;
@@ -103,8 +103,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var2.bind(var4)(var1);
             case 129: // try_end0
                 var4 = var1;
-                _fun28245_ip = 138;
-                continue _fun28245;
+                _fun28246_ip = 138;
+                continue _fun28246;
             case 134: // catch_target0
                 CatchBlockStart(arg_register = 1);
                 var4 = undefined;
@@ -122,7 +122,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.generateInviteKeyFromUrlParams = var4;
     var2.generateInviteKeyFromExtraData = var3;
     var3 = function(arg0) { // Original name: parseExtraDataFromInviteKey, environment: var1
-        _fun28246: for (var _fun28246_ip = 0;;) switch (_fun28246_ip) {
+        _fun28247: for (var _fun28247_ip = 0;;) switch (_fun28247_ip) {
             case 0:
                 var2 = arg0;
                 var1 = var2.split;
@@ -138,8 +138,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var3[var0];
                 var3 = null;
                 if (!(var3 != var5)) {
-                    _fun28246_ip = 128;
-                    continue _fun28246
+                    _fun28247_ip = 128;
+                    continue _fun28247
                 }
             case 54:
                 var4 = _closure1_slot1;

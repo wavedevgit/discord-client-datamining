@@ -1,7 +1,7 @@
 // modules/interaction_components/native/display/TextDisplayComponent.tsx
 // @ts-nocheck
 export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun87506: for (var _fun87506_ip = 0;;) switch (_fun87506_ip) {
+    _fun86810: for (var _fun86810_ip = 0;;) switch (_fun86810_ip) {
         case 0:
             var4 = require;
             var7 = metroImportDefault;
@@ -56,14 +56,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var3 = var8.isAndroid;
             var3 = var3.bind(var8)();
             if (var3) {
-                _fun87506_ip = 225;
-                continue _fun87506
+                _fun86810_ip = 225;
+                continue _fun86810
             }
         case 212:
             var3 = 'DCDTextDisplayComponentView';
             var3 = var6.bind(var0)(var3);
-            _fun87506_ip = 237;
-            continue _fun87506;
+            _fun86810_ip = 237;
+            continue _fun86810;
         case 225:
             var6 = 8;
             var6 = var5[var6];
@@ -77,7 +77,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var3 = 'modules/interaction_components/native/display/TextDisplayComponent.tsx';
             var3 = var4.bind(var5)(var3);
             var1 = function(arg0) { // Original name: TextDisplayComponent, environment: var1
-                _fun87507: for (var _fun87507_ip = 0;;) switch (_fun87507_ip) {
+                _fun86811: for (var _fun86811_ip = 0;;) switch (_fun86811_ip) {
                     case 0:
                         var15 = arg0;
                         var2 = _closure1_slot0;
@@ -250,8 +250,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var2 = var0.bind(var2)();
                         var0 = var5;
                         if (!var2) {
-                            _fun87507_ip = 686;
-                            continue _fun87507
+                            _fun86811_ip = 686;
+                            continue _fun86811
                         }
                     case 645:
                         var3 = _closure1_slot8;
@@ -271,4 +271,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var2.default = var1;
             return var0;
     }
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 1298, 1661, 6782, 33, 478, 11256, 6783, 44, 4743, 6744, 566, 1348, 9658, 9825, 8764, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 1298, 1661, 6783, 33, 478, 11189, 6784, 44, 4744, 6745, 566, 1348, 9660, 9827, 8764, 2]);

@@ -22,7 +22,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var3.bind(var0)(var4);
     var _closure1_slot1 = var3;
     var1 = function(arg0) { // Original name: useInvalidPreventRemoveError, environment: var1
-        _fun72681: for (var _fun72681_ip = 0;;) switch (_fun72681_ip) {
+        _fun72707: for (var _fun72707_ip = 0;;) switch (_fun72707_ip) {
             case 0:
                 var3 = _closure1_slot1;
                 var1 = var3.useState;
@@ -39,8 +39,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = var5[var1];
                 var5 = null;
                 if (!var4) {
-                    _fun72681_ip = 101;
-                    continue _fun72681
+                    _fun72707_ip = 101;
+                    continue _fun72707
                 }
             case 58:
                 var4 = arg0;
@@ -57,8 +57,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var6 = var6 == var4;
                 var3 = undefined;
                 if (var6) {
-                    _fun72681_ip = 98;
-                    continue _fun72681
+                    _fun72707_ip = 98;
+                    continue _fun72707
                 }
             case 93:
                 var3 = var4.name;
@@ -71,12 +71,12 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = new Array(1);
                 var2[0] = var5;
                 var0 = function() { // Environment: var0
-                    _fun72683: for (var _fun72683_ip = 0;;) switch (_fun72683_ip) {
+                    _fun72709: for (var _fun72709_ip = 0;;) switch (_fun72709_ip) {
                         case 0:
                             var1 = _closure2_slot1;
                             if (!var1) {
-                                _fun72683_ip = 61;
-                                continue _fun72683
+                                _fun72709_ip = 61;
+                                continue _fun72709
                             }
                         case 10:
                             var4 = _closure2_slot1;

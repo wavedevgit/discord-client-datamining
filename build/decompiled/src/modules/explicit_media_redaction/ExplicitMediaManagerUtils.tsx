@@ -3,15 +3,15 @@
 export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var2 = exports;
     var0 = function(arg0) { // Original name: hasAttachmentsEmbedsOrComponents, environment: var1
-        _fun39335: for (var _fun39335_ip = 0;;) switch (_fun39335_ip) {
+        _fun39354: for (var _fun39354_ip = 0;;) switch (_fun39354_ip) {
             case 0:
                 var2 = arg0;
                 var0 = var2.attachments;
                 var3 = null;
                 var0 = var3 != var0;
                 if (!var0) {
-                    _fun39335_ip = 35;
-                    continue _fun39335
+                    _fun39354_ip = 35;
+                    continue _fun39354
                 }
             case 18:
                 var1 = var2.attachments;
@@ -20,15 +20,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var4 > var1;
             case 35:
                 if (var0) {
-                    _fun39335_ip = 71;
-                    continue _fun39335
+                    _fun39354_ip = 71;
+                    continue _fun39354
                 }
             case 38:
                 var1 = var2.embeds;
                 var1 = var3 != var1;
                 if (!var1) {
-                    _fun39335_ip = 68;
-                    continue _fun39335
+                    _fun39354_ip = 68;
+                    continue _fun39354
                 }
             case 51:
                 var4 = var2.embeds;
@@ -39,15 +39,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var1;
             case 71:
                 if (var0) {
-                    _fun39335_ip = 107;
-                    continue _fun39335
+                    _fun39354_ip = 107;
+                    continue _fun39354
                 }
             case 74:
                 var1 = var2.components;
                 var1 = var3 != var1;
                 if (!var1) {
-                    _fun39335_ip = 104;
-                    continue _fun39335
+                    _fun39354_ip = 104;
+                    continue _fun39354
                 }
             case 87:
                 var2 = var2.components;
@@ -79,25 +79,25 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/explicit_media_redaction/ExplicitMediaManagerUtils.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: hasAttachmentsEmbedsComponentsOrSnapshots, environment: var1
-        _fun39336: for (var _fun39336_ip = 0;;) switch (_fun39336_ip) {
+        _fun39355: for (var _fun39355_ip = 0;;) switch (_fun39355_ip) {
             case 0:
                 var1 = arg0;
                 var3 = null;
                 if (!(var3 != var1)) {
-                    _fun39336_ip = 93;
-                    continue _fun39336
+                    _fun39355_ip = 93;
+                    continue _fun39355
                 }
             case 9:
                 var0 = 'messageSnapshots';
                 var0 = var0 in var1;
                 if (var0) {
-                    _fun39336_ip = 28;
-                    continue _fun39336
+                    _fun39355_ip = 28;
+                    continue _fun39355
                 }
             case 20:
                 var5 = var1.message_snapshots;
-                _fun39336_ip = 34;
-                continue _fun39336;
+                _fun39355_ip = 34;
+                continue _fun39355;
             case 28:
                 var5 = var1.messageSnapshots;
             case 34:
@@ -105,21 +105,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = undefined;
                 var0 = var0.bind(var2)(var1);
                 if (var0) {
-                    _fun39336_ip = 91;
-                    continue _fun39336
+                    _fun39355_ip = 91;
+                    continue _fun39355
                 }
             case 51:
                 var1 = var3 != var5;
                 if (!var1) {
-                    _fun39336_ip = 88;
-                    continue _fun39336
+                    _fun39355_ip = 88;
+                    continue _fun39355
                 }
             case 58:
                 var3 = var3 == var5;
                 var2 = undefined;
                 if (var3) {
-                    _fun39336_ip = 85;
-                    continue _fun39336
+                    _fun39355_ip = 85;
+                    continue _fun39355
                 }
             case 67:
                 var4 = var5.some;

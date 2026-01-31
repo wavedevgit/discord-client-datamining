@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = dependencyMap;
     var _closure1_slot1 = var1;
     var1 = function(arg0, arg1, arg2) { // Original name: reduce, environment: var0
-        _fun32480: for (var _fun32480_ip = 0;;) switch (_fun32480_ip) {
+        _fun32494: for (var _fun32494_ip = 0;;) switch (_fun32494_ip) {
             case 0:
                 var6 = arg0;
                 var5 = undefined;
@@ -19,15 +19,15 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var3 = _closure1_slot0;
                 var7 = _closure1_slot1;
                 if (var1) {
-                    _fun32480_ip = 59;
-                    continue _fun32480
+                    _fun32494_ip = 59;
+                    continue _fun32494
                 }
             case 45:
                 var1 = 2;
                 var1 = var7[var1];
                 var4 = var3.bind(var5)(var1);
-                _fun32480_ip = 71;
-                continue _fun32480;
+                _fun32494_ip = 71;
+                continue _fun32494;
             case 59:
                 var1 = 1;
                 var1 = var7[var1];

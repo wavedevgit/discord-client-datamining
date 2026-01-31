@@ -41,7 +41,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var1 = arg1;
         var _closure2_slot1 = var1;
         var0 = function(arg0) { // Original name: onRegisterHandler, environment: var0
-            _fun68241: for (var _fun68241_ip = 0;;) switch (_fun68241_ip) {
+            _fun68265: for (var _fun68265_ip = 0;;) switch (_fun68265_ip) {
                 case 0:
                     var1 = arg0;
                     var _closure3_slot0 = var1;
@@ -65,7 +65,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var7 = var7.bind(var8)(var6);
                         var6 = var7.map;
                         var1 = function(arg0) { // Environment: var1
-                            _fun68243: for (var _fun68243_ip = 0;;) switch (_fun68243_ip) {
+                            _fun68267: for (var _fun68267_ip = 0;;) switch (_fun68267_ip) {
                                 case 0:
                                     var1 = arg0;
                                     var3 = _closure2_slot0;
@@ -76,15 +76,15 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                     var _closure5_slot0 = var8;
                                     var0 = null;
                                     if (!var5) {
-                                        _fun68243_ip = 144;
-                                        continue _fun68243
+                                        _fun68267_ip = 144;
+                                        continue _fun68267
                                     }
                                 case 42:
                                     var3 = _closure4_slot0;
                                     var0 = null;
                                     if (!var3) {
-                                        _fun68243_ip = 144;
-                                        continue _fun68243
+                                        _fun68267_ip = 144;
+                                        continue _fun68267
                                     }
                                 case 54:
                                     var7 = _closure1_slot0;
@@ -95,13 +95,13 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                     var4 = var7.bind(var3)(var4);
                                     var3 = var4.registerEventHandler;
                                     var2 = function(arg0) { // Original name: pnpm_internalTs1, environment: var2
-                                        _fun68244: for (var _fun68244_ip = 0;;) switch (_fun68244_ip) {
+                                        _fun68268: for (var _fun68268_ip = 0;;) switch (_fun68268_ip) {
                                             case 0:
                                                 var2 = _closure5_slot0;
                                                 var1 = null;
                                                 if (!(var1 != var2)) {
-                                                    _fun68244_ip = 27;
-                                                    continue _fun68244
+                                                    _fun68268_ip = 27;
+                                                    continue _fun68268
                                                 }
                                             case 13:
                                                 var2 = _closure5_slot0;
@@ -135,15 +135,15 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var3 = var1.current;
                     var1 = undefined;
                     if (var3) {
-                        _fun68241_ip = 56;
-                        continue _fun68241
+                        _fun68265_ip = 56;
+                        continue _fun68265
                     }
                 case 41:
                     var3 = global;
                     var3 = var3.queueMicrotask;
                     var3 = var3.bind(var1)(var2);
-                    _fun68241_ip = 60;
-                    continue _fun68241;
+                    _fun68265_ip = 60;
+                    continue _fun68265;
                 case 56:
                     var1 = var2.bind(var1)();
                 case 60:
@@ -151,13 +151,13 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var2 = _closure3_slot1;
                         var1 = var2.forEach;
                         var0 = function(arg0) { // Environment: var0
-                            _fun68246: for (var _fun68246_ip = 0;;) switch (_fun68246_ip) {
+                            _fun68270: for (var _fun68270_ip = 0;;) switch (_fun68270_ip) {
                                 case 0:
                                     var3 = arg0;
                                     var0 = null;
                                     if (!var3) {
-                                        _fun68246_ip = 44;
-                                        continue _fun68246
+                                        _fun68270_ip = 44;
+                                        continue _fun68270
                                     }
                                 case 8:
                                     var4 = _closure1_slot0;
@@ -183,7 +183,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var2.useEventHandlerRegistration = var3;
     var1 = function(arg0, arg1) { // Original name: useAnimatedValue, environment: var1
-        _fun68247: for (var _fun68247_ip = 0;;) switch (_fun68247_ip) {
+        _fun68271: for (var _fun68271_ip = 0;;) switch (_fun68271_ip) {
             case 0:
                 var2 = _closure1_slot3;
                 var0 = undefined;
@@ -191,8 +191,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = var2.bind(var0)(var3);
                 var2 = var0.current;
                 if (!(var3 === var2)) {
-                    _fun68247_ip = 67;
-                    continue _fun68247
+                    _fun68271_ip = 67;
+                    continue _fun68271
                 }
             case 25:
                 var1 = _closure1_slot4;

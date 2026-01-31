@@ -50,7 +50,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/guild_member_verification/hooks/useCanReapplyToRejectedMemberVerificationApplication.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: useCanReapplyToRejectedMemberVerificationApplication, environment: var1
-        _fun59896: for (var _fun59896_ip = 0;;) switch (_fun59896_ip) {
+        _fun59908: for (var _fun59908_ip = 0;;) switch (_fun59908_ip) {
             case 0:
                 var8 = arg0;
                 var _closure2_slot0 = var8;
@@ -77,15 +77,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = new Array(1);
                 var4[0] = var2;
                 var2 = function() { // Environment: var0
-                    _fun59897: for (var _fun59897_ip = 0;;) switch (_fun59897_ip) {
+                    _fun59909: for (var _fun59909_ip = 0;;) switch (_fun59909_ip) {
                         case 0:
                             var2 = _closure2_slot0;
                             var0 = null;
                             var2 = var0 != var2;
                             var0 = undefined;
                             if (!var2) {
-                                _fun59897_ip = 40;
-                                continue _fun59897
+                                _fun59909_ip = 40;
+                                continue _fun59909
                             }
                         case 18:
                             var3 = _closure1_slot7;
@@ -103,13 +103,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = undefined;
                     var1 = function*(arg0) { // Environment: var0
                         var0 = function*(arg0) { // Original name: ?anon_0_, environment: var0
-                            _fun59900: for (var _fun59900_ip = 0;;) switch (_fun59900_ip) {
+                            _fun59912: for (var _fun59912_ip = 0;;) switch (_fun59912_ip) {
                                 case 0:
                                     StartGenerator();
                                     ResumeGenerator(result_out_reg = 0, return_bool_out_reg = 3);
                                     if (var3) {
-                                        _fun59900_ip = 141;
-                                        continue _fun59900
+                                        _fun59912_ip = 141;
+                                        continue _fun59912
                                     }
                                 case 10:
                                     var2 = arg0;
@@ -123,8 +123,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                     var1 = var6;
                                     var5 = null;
                                     if (!(var5 != var6)) {
-                                        _fun59900_ip = 89;
-                                        continue _fun59900
+                                        _fun59912_ip = 89;
+                                        continue _fun59912
                                     }
                                 case 47:
                                     var5 = _closure1_slot1;
@@ -140,8 +140,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 case 83:
                                     ResumeGenerator(result_out_reg = 1, return_bool_out_reg = 2);
                                     if (var2) {
-                                        _fun59900_ip = 106;
-                                        continue _fun59900
+                                        _fun59912_ip = 106;
+                                        continue _fun59912
                                     }
                                 case 89: // try_end0
                                     var3 = _closure2_slot1;
@@ -188,13 +188,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2[0] = var8;
                 var2[1] = var7;
                 var0 = function() { // Environment: var0
-                    _fun59902: for (var _fun59902_ip = 0;;) switch (_fun59902_ip) {
+                    _fun59914: for (var _fun59914_ip = 0;;) switch (_fun59914_ip) {
                         case 0:
                             var2 = _closure2_slot0;
                             var1 = null;
                             if (!(var1 != var2)) {
-                                _fun59902_ip = 41;
-                                continue _fun59902
+                                _fun59914_ip = 41;
+                                continue _fun59914
                             }
                         case 13:
                             var2 = _closure2_slot1;
@@ -204,8 +204,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var2 = _closure2_slot2;
                             var1 = _closure2_slot0;
                             var1 = var2.bind(var3)(var1);
-                            _fun59902_ip = 54;
-                            continue _fun59902;
+                            _fun59914_ip = 54;
+                            continue _fun59914;
                         case 41:
                             var2 = _closure2_slot1;
                             var1 = undefined;
@@ -221,8 +221,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = null;
                 var2 = var2 != var4;
                 if (!var2) {
-                    _fun59896_ip = 201;
-                    continue _fun59896
+                    _fun59908_ip = 201;
+                    continue _fun59908
                 }
             case 175:
                 var5 = var4.features;
@@ -238,4 +238,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useCanReapplyToRejectedMemberVerificationApplication = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 57, 31, 3282, 3173, 660, 566, 7394, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 57, 31, 3282, 3173, 660, 566, 7393, 2]);

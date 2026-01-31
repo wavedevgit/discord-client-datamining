@@ -33,13 +33,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/hang_status/getHangStatusAnalytics.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: getHangStatusAnalytics, environment: var1
-        _fun92318: for (var _fun92318_ip = 0;;) switch (_fun92318_ip) {
+        _fun91663: for (var _fun91663_ip = 0;;) switch (_fun91663_ip) {
             case 0:
                 var3 = arg0;
                 var2 = null;
                 if (!(var2 != var3)) {
-                    _fun92318_ip = 91;
-                    continue _fun92318
+                    _fun91663_ip = 91;
+                    continue _fun91663
                 }
             case 9:
                 var0 = {};
@@ -50,8 +50,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var2 == var4;
                 var2 = undefined;
                 if (var5) {
-                    _fun92318_ip = 46;
-                    continue _fun92318
+                    _fun91663_ip = 46;
+                    continue _fun91663
                 }
             case 41:
                 var2 = var4.guild_id;
@@ -65,8 +65,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var2.countVoiceStatesForChannel;
                 var1 = var1.bind(var2)(var3);
                 var0.call_num_participants = var1;
-                _fun92318_ip = 135;
-                continue _fun92318;
+                _fun91663_ip = 135;
+                continue _fun91663;
             case 91:
                 var1 = {};
                 var2 = undefined;

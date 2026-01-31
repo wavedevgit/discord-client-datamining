@@ -101,7 +101,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/forums/native/composer/ForumComposerHeader.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: ForumComposerHeader, environment: var1
-        _fun73741: for (var _fun73741_ip = 0;;) switch (_fun73741_ip) {
+        _fun73771: for (var _fun73771_ip = 0;;) switch (_fun73771_ip) {
             case 0:
                 var0 = arg0;
                 var1 = var0.height;
@@ -194,8 +194,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 };
                 var21 = '';
                 if (!(var21 === var18)) {
-                    _fun73741_ip = 416;
-                    continue _fun73741
+                    _fun73771_ip = 416;
+                    continue _fun73771
                 }
             case 362:
                 var24 = _closure1_slot0;
@@ -237,8 +237,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var12 = var6 == var9;
                 var10 = undefined;
                 if (var12) {
-                    _fun73741_ip = 538;
-                    continue _fun73741
+                    _fun73771_ip = 538;
+                    continue _fun73771
                 }
             case 527:
                 var9 = var9.topic;
@@ -248,8 +248,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var10 > var9;
                 var6 = null;
                 if (!var9) {
-                    _fun73741_ip = 683;
-                    continue _fun73741
+                    _fun73771_ip = 683;
+                    continue _fun73771
                 }
             case 552:
                 var10 = _closure1_slot5;
@@ -297,4 +297,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 4754, 4864, 1234, 4694, 4814, 3901, 4804, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 4755, 4865, 1234, 4695, 4815, 3900, 4805, 2]);

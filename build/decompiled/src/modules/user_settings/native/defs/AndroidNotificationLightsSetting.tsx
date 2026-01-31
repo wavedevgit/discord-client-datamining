@@ -50,7 +50,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var9 = var9.NOTIFICATIONS;
     var1.parent = var9;
     var9 = function() { // Original name: useAndroidNotificationLightsSettingValue, environment: var7
-        _fun85198: for (var _fun85198_ip = 0;;) switch (_fun85198_ip) {
+        _fun85228: for (var _fun85228_ip = 0;;) switch (_fun85228_ip) {
             case 0:
                 var1 = _closure1_slot2;
                 var0 = undefined;
@@ -58,8 +58,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = null;
                 var0 = var0 != var1;
                 if (!var0) {
-                    _fun85198_ip = 25;
-                    continue _fun85198
+                    _fun85228_ip = 25;
+                    continue _fun85228
                 }
             case 22:
                 var0 = var1;
@@ -70,7 +70,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.useValue = var9;
     var1.onValueChange = var8;
     var7 = function() { // Original name: useHasAndroidNotificationLightsSetting, environment: var7
-        _fun85199: for (var _fun85199_ip = 0;;) switch (_fun85199_ip) {
+        _fun85229: for (var _fun85229_ip = 0;;) switch (_fun85229_ip) {
             case 0:
                 var0 = _closure1_slot2;
                 var4 = undefined;
@@ -84,8 +84,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0.bind(var3)();
                 var0 = !var0;
                 if (!var0) {
-                    _fun85199_ip = 82;
-                    continue _fun85199
+                    _fun85229_ip = 82;
+                    continue _fun85229
                 }
             case 49:
                 var3 = _closure1_slot0;
@@ -98,8 +98,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = !var1;
             case 82:
                 if (!var0) {
-                    _fun85199_ip = 91;
-                    continue _fun85199
+                    _fun85229_ip = 91;
+                    continue _fun85229
                 }
             case 85:
                 var1 = null;
@@ -118,4 +118,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [10916, 6968, 478, 10923, 8943, 1234, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [10918, 6967, 478, 10925, 8943, 1234, 2]);

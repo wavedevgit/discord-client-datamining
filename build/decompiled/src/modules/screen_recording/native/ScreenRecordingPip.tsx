@@ -9,7 +9,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var5;
     var0 = function(arg0) { // Original name: ScreenRecordingPip, environment: var1
-        _fun100641: for (var _fun100641_ip = 0;;) switch (_fun100641_ip) {
+        _fun100012: for (var _fun100012_ip = 0;;) switch (_fun100012_ip) {
             case 0:
                 var0 = arg0;
                 var3 = var0.surveyConfig;
@@ -163,8 +163,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var12 = var3.bind(var5)(var2, var0);
                 var0 = null;
                 if (!var1) {
-                    _fun100641_ip = 910;
-                    continue _fun100641
+                    _fun100012_ip = 910;
+                    continue _fun100012
                 }
             case 360:
                 var3 = _closure1_slot8;
@@ -225,8 +225,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var12.style = var20;
                 var20 = 'Uploading...';
                 if (var15) {
-                    _fun100641_ip = 634;
-                    continue _fun100641
+                    _fun100012_ip = 634;
+                    continue _fun100012
                 }
             case 606:
                 var23 = var22 + var21;
@@ -242,15 +242,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var12[0] = var16;
                 var16 = _closure1_slot7;
                 if (var15) {
-                    _fun100641_ip = 815;
-                    continue _fun100641
+                    _fun100012_ip = 815;
+                    continue _fun100012
                 }
             case 662:
                 var15 = _closure1_slot5;
                 var18 = {};
                 if (var13) {
-                    _fun100641_ip = 740;
-                    continue _fun100641
+                    _fun100012_ip = 740;
+                    continue _fun100012
                 }
             case 671:
                 var13 = var19.stopButton;
@@ -269,8 +269,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var13 = var21.bind(var4)(var20, var13);
                 var18.children = var13;
                 var13 = var18;
-                _fun100641_ip = 807;
-                continue _fun100641;
+                _fun100012_ip = 807;
+                continue _fun100012;
             case 740:
                 var19 = var19.doneButton;
                 var18.style = var19;
@@ -290,8 +290,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var13 = var18;
             case 807:
                 var13 = var16.bind(var4)(var15, var13);
-                _fun100641_ip = 872;
-                continue _fun100641;
+                _fun100012_ip = 872;
+                continue _fun100012;
             case 815:
                 var15 = _closure1_slot0;
                 var18 = _closure1_slot2;
@@ -463,7 +463,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.code = var6;
     var _closure1_slot16 = var3;
     var3 = function(arg0) { // Original name: DraggableContainer, environment: var1
-        _fun100649: for (var _fun100649_ip = 0;;) switch (_fun100649_ip) {
+        _fun100020: for (var _fun100020_ip = 0;;) switch (_fun100020_ip) {
             case 0:
                 var0 = arg0;
                 var15 = var0.x;
@@ -477,8 +477,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var20 = var0.dragBoundsPadding;
                 var3 = undefined;
                 if (!(var20 === var3)) {
-                    _fun100649_ip = 57;
-                    continue _fun100649
+                    _fun100020_ip = 57;
+                    continue _fun100020
                 }
             case 55:
                 var20 = 0;
@@ -794,7 +794,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/screen_recording/native/ScreenRecordingPip.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function() { // Original name: ScreenRecordingPipConnected, environment: var1
-        _fun100655: for (var _fun100655_ip = 0;;) switch (_fun100655_ip) {
+        _fun100026: for (var _fun100026_ip = 0;;) switch (_fun100026_ip) {
             case 0:
                 var2 = _closure1_slot6;
                 var4 = undefined;
@@ -807,8 +807,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = null;
                 var2 = var0 == var5;
                 if (var2) {
-                    _fun100655_ip = 53;
-                    continue _fun100655
+                    _fun100026_ip = 53;
+                    continue _fun100026
                 }
             case 32:
                 var3 = _closure1_slot7;
@@ -822,4 +822,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 13053, 33, 1297, 671, 3679, 5261, 13046, 4923, 4040, 4046, 3237, 13057, 1307, 13047, 4864, 3901, 4043, 3221, 13059, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 12990, 33, 1297, 671, 3679, 5262, 12983, 4924, 4040, 4046, 3237, 12994, 1307, 12984, 4865, 3900, 4043, 3221, 12996, 2]);

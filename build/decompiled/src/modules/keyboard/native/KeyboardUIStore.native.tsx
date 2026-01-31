@@ -1,7 +1,7 @@
 // modules/keyboard/native/KeyboardUIStore.native.tsx
 // @ts-nocheck
 export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun16932: for (var _fun16932_ip = 0;;) switch (_fun16932_ip) {
+    _fun16934: for (var _fun16934_ip = 0;;) switch (_fun16934_ip) {
         case 0:
             var5 = require;
             var7 = metroImportDefault;
@@ -11,7 +11,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var _closure1_slot1 = var7;
             var _closure1_slot2 = var6;
             var0 = function(arg0, arg1, arg2) { // Original name: getCustomKeyboardHeight, environment: var1
-                _fun16933: for (var _fun16933_ip = 0;;) switch (_fun16933_ip) {
+                _fun16935: for (var _fun16935_ip = 0;;) switch (_fun16935_ip) {
                     case 0:
                         var9 = arg0;
                         var3 = arg2;
@@ -29,8 +29,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var5 = null;
                         var5 = var5 != var0;
                         if (!var5) {
-                            _fun16933_ip = 67;
-                            continue _fun16933
+                            _fun16935_ip = 67;
+                            continue _fun16935
                         }
                     case 64:
                         var1 = var0;
@@ -44,14 +44,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var5 = var0.SYSTEM;
                         var0 = arg1;
                         if (!(var0 === var5)) {
-                            _fun16933_ip = 222;
-                            continue _fun16933
+                            _fun16935_ip = 222;
+                            continue _fun16935
                         }
                     case 106:
                         var5 = 0;
                         if (!(var5 !== var9)) {
-                            _fun16933_ip = 222;
-                            continue _fun16933
+                            _fun16935_ip = 222;
+                            continue _fun16935
                         }
                     case 112:
                         var0 = global;
@@ -60,8 +60,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var0 = 200;
                         var0 = var6.bind(var7)(var9, var0);
                         if (!(var0 !== var1)) {
-                            _fun16933_ip = 176;
-                            continue _fun16933
+                            _fun16935_ip = 176;
+                            continue _fun16935
                         }
                     case 138:
                         var7 = _closure1_slot0;
@@ -75,8 +75,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     case 176:
                         var5 = 0;
                         if (!var3) {
-                            _fun16933_ip = 216;
-                            continue _fun16933
+                            _fun16935_ip = 216;
+                            continue _fun16935
                         }
                     case 181:
                         var7 = _closure1_slot0;
@@ -93,8 +93,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     case 222:
                         var0 = 0;
                         if (!var3) {
-                            _fun16933_ip = 262;
-                            continue _fun16933
+                            _fun16935_ip = 262;
+                            continue _fun16935
                         }
                     case 227:
                         var3 = _closure1_slot0;
@@ -112,7 +112,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             };
             var _closure1_slot10 = var0;
             var0 = function(arg0) { // Original name: getSystemKeyboardHeight, environment: var1
-                _fun16934: for (var _fun16934_ip = 0;;) switch (_fun16934_ip) {
+                _fun16936: for (var _fun16936_ip = 0;;) switch (_fun16936_ip) {
                     case 0:
                         var0 = arg0;
                         var5 = var0.keyboardHeight;
@@ -126,20 +126,20 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var0 = var2.isAndroid;
                         var0 = var0.bind(var2)();
                         if (var0) {
-                            _fun16934_ip = 105;
-                            continue _fun16934
+                            _fun16936_ip = 105;
+                            continue _fun16936
                         }
                     case 53:
                         var0 = 0;
                         if (!(var0 !== var5)) {
-                            _fun16934_ip = 103;
-                            continue _fun16934
+                            _fun16936_ip = 103;
+                            continue _fun16936
                         }
                     case 59:
                         var2 = 0;
                         if (!var3) {
-                            _fun16934_ip = 99;
-                            continue _fun16934
+                            _fun16936_ip = 99;
+                            continue _fun16936
                         }
                     case 64:
                         var7 = _closure1_slot0;
@@ -153,8 +153,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     case 99:
                         var0 = var5 - var2;
                     case 103:
-                        _fun16934_ip = 136;
-                        continue _fun16934;
+                        _fun16936_ip = 136;
+                        continue _fun16936;
                     case 105:
                         var2 = _closure1_slot1;
                         var5 = _closure1_slot2;
@@ -182,15 +182,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = _closure1_slot9;
                     var1 = var2.setState;
                     var0 = function(arg0) { // Environment: var0
-                        _fun16937: for (var _fun16937_ip = 0;;) switch (_fun16937_ip) {
+                        _fun16939: for (var _fun16939_ip = 0;;) switch (_fun16939_ip) {
                             case 0:
                                 var0 = arg0;
                                 var1 = _closure2_slot0;
                                 var9 = var1.keyboardDuration;
                                 var11 = null;
                                 if (!(var11 == var9)) {
-                                    _fun16937_ip = 28;
-                                    continue _fun16937
+                                    _fun16939_ip = 28;
+                                    continue _fun16939
                                 }
                             case 22:
                                 var9 = var0.keyboardDuration;
@@ -200,8 +200,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var4 = _closure2_slot0;
                                 var4 = var4.keyboardHeight;
                                 if (!(var11 == var4)) {
-                                    _fun16937_ip = 57;
-                                    continue _fun16937
+                                    _fun16939_ip = 57;
+                                    continue _fun16939
                                 }
                             case 51:
                                 var4 = var0.keyboardHeight;
@@ -216,8 +216,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var4 = _closure2_slot0;
                                 var4 = var4.keyboardHeight;
                                 if (!(var11 == var4)) {
-                                    _fun16937_ip = 102;
-                                    continue _fun16937
+                                    _fun16939_ip = 102;
+                                    continue _fun16939
                                 }
                             case 96:
                                 var4 = var0.keyboardHeight;
@@ -231,28 +231,28 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var3 = var11 == var2;
                                 var5 = undefined;
                                 if (var3) {
-                                    _fun16937_ip = 143;
-                                    continue _fun16937
+                                    _fun16939_ip = 143;
+                                    continue _fun16939
                                 }
                             case 138:
                                 var5 = var2.type;
                             case 143:
                                 if (!(var11 == var5)) {
-                                    _fun16937_ip = 153;
-                                    continue _fun16937
+                                    _fun16939_ip = 153;
+                                    continue _fun16939
                                 }
                             case 147:
                                 var5 = var0.keyboardType;
                             case 153:
                                 var2 = var0.keyboardType;
                                 if (!(var5 === var2)) {
-                                    _fun16937_ip = 171;
-                                    continue _fun16937
+                                    _fun16939_ip = 171;
+                                    continue _fun16939
                                 }
                             case 163:
                                 var4 = var0.keyboardTypePrevious;
-                                _fun16937_ip = 177;
-                                continue _fun16937;
+                                _fun16939_ip = 177;
+                                continue _fun16939;
                             case 171:
                                 var4 = var0.keyboardType;
                             case 177:
@@ -266,16 +266,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var14 = var11 == var13;
                                 var10 = undefined;
                                 if (var14) {
-                                    _fun16937_ip = 229;
-                                    continue _fun16937
+                                    _fun16939_ip = 229;
+                                    continue _fun16939
                                 }
                             case 224:
                                 var10 = var13.context;
                             case 229:
                                 var13 = var15;
                                 if (!(var11 != var10)) {
-                                    _fun16937_ip = 239;
-                                    continue _fun16937
+                                    _fun16939_ip = 239;
+                                    continue _fun16939
                                 }
                             case 236:
                                 var13 = var10;
@@ -283,19 +283,19 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var14 = 'object';
                                 var10 = typeof var15;
                                 if (!(var14 === var10)) {
-                                    _fun16937_ip = 257;
-                                    continue _fun16937
+                                    _fun16939_ip = 257;
+                                    continue _fun16939
                                 }
                             case 250:
                                 var10 = typeof var13;
                                 if (!(var14 !== var10)) {
-                                    _fun16937_ip = 263;
-                                    continue _fun16937
+                                    _fun16939_ip = 263;
+                                    continue _fun16939
                                 }
                             case 257:
                                 var10 = var15 !== var13;
-                                _fun16937_ip = 292;
-                                continue _fun16937;
+                                _fun16939_ip = 292;
+                                continue _fun16939;
                             case 263:
                                 var17 = _closure1_slot1;
                                 var18 = _closure1_slot2;
@@ -308,15 +308,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var6 = _closure2_slot0;
                                 var6 = var6.systemKeyboardOpen;
                                 if (!(var11 == var6)) {
-                                    _fun16937_ip = 312;
-                                    continue _fun16937
+                                    _fun16939_ip = 312;
+                                    continue _fun16939
                                 }
                             case 306:
                                 var6 = var0.systemKeyboardOpen;
                             case 312:
                                 if (!var6) {
-                                    _fun16937_ip = 366;
-                                    continue _fun16937
+                                    _fun16939_ip = 366;
+                                    continue _fun16939
                                 }
                             case 315:
                                 var14 = var0.keyboardContexts;
@@ -330,19 +330,19 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var11 = var14[var11];
                                 var11 = var11.keyboardWillOpen;
                                 if (var11) {
-                                    _fun16937_ip = 402;
-                                    continue _fun16937
+                                    _fun16939_ip = 402;
+                                    continue _fun16939
                                 }
                             case 366:
                                 var14 = var0.keyboardContexts;
                                 if (var10) {
-                                    _fun16937_ip = 380;
-                                    continue _fun16937
+                                    _fun16939_ip = 380;
+                                    continue _fun16939
                                 }
                             case 375:
                                 var10 = var14;
-                                _fun16937_ip = 400;
-                                continue _fun16937;
+                                _fun16939_ip = 400;
+                                continue _fun16939;
                             case 380:
                                 var11 = {};
                                 var22 = var11;
@@ -351,8 +351,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var11[var5] = var13;
                                 var10 = var11;
                             case 400:
-                                _fun16937_ip = 503;
-                                continue _fun16937;
+                                _fun16939_ip = 503;
+                                continue _fun16939;
                             case 402:
                                 var11 = {};
                                 var21 = var0.keyboardContexts;
@@ -388,49 +388,49 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var1 = !var1;
                                 var11 = var0.keyboardDuration;
                                 if (!(var11 === var9)) {
-                                    _fun16937_ip = 611;
-                                    continue _fun16937
+                                    _fun16939_ip = 611;
+                                    continue _fun16939
                                 }
                             case 548:
                                 if (var1) {
-                                    _fun16937_ip = 611;
-                                    continue _fun16937
+                                    _fun16939_ip = 611;
+                                    continue _fun16939
                                 }
                             case 551:
                                 var1 = var0.keyboardHeight;
                                 if (!(var1 === var8)) {
-                                    _fun16937_ip = 611;
-                                    continue _fun16937
+                                    _fun16939_ip = 611;
+                                    continue _fun16939
                                 }
                             case 561:
                                 var1 = var0.keyboardHeightExcludingSafeAreaInsets;
                                 if (!(var1 === var7)) {
-                                    _fun16937_ip = 611;
-                                    continue _fun16937
+                                    _fun16939_ip = 611;
+                                    continue _fun16939
                                 }
                             case 571:
                                 var1 = var0.keyboardType;
                                 if (!(var1 === var5)) {
-                                    _fun16937_ip = 611;
-                                    continue _fun16937
+                                    _fun16939_ip = 611;
+                                    continue _fun16939
                                 }
                             case 581:
                                 var1 = var0.customKeyboardHeight;
                                 if (!(var1 === var3)) {
-                                    _fun16937_ip = 611;
-                                    continue _fun16937
+                                    _fun16939_ip = 611;
+                                    continue _fun16939
                                 }
                             case 591:
                                 var1 = var0.customKeyboardHeightExcludingSafeAreaInsets;
                                 if (!(var1 === var2)) {
-                                    _fun16937_ip = 611;
-                                    continue _fun16937
+                                    _fun16939_ip = 611;
+                                    continue _fun16939
                                 }
                             case 601:
                                 var1 = var0.systemKeyboardOpen;
                                 if (!(var1 !== var6)) {
-                                    _fun16937_ip = 661;
-                                    continue _fun16937
+                                    _fun16939_ip = 661;
+                                    continue _fun16939
                                 }
                             case 611:
                                 var1 = {};
@@ -514,8 +514,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var4 = var4.bind(var8)();
             var11 = 'keyboardWillShow';
             if (!var4) {
-                _fun16932_ip = 275;
-                continue _fun16932
+                _fun16934_ip = 275;
+                continue _fun16934
             }
         case 269:
             var11 = 'keyboardDidShow';
@@ -526,8 +526,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var3 = var3.bind(var4)();
             var9 = 'keyboardWillHide';
             if (!var3) {
-                _fun16932_ip = 309;
-                continue _fun16932
+                _fun16934_ip = 309;
+                continue _fun16934
             }
         case 303:
             var9 = 'keyboardDidHide';
@@ -736,7 +736,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = _closure1_slot8;
                 var3 = var4.forEach;
                 var2 = function(arg0) { // Environment: var2
-                    _fun16946: for (var _fun16946_ip = 0;;) switch (_fun16946_ip) {
+                    _fun16948: for (var _fun16948_ip = 0;;) switch (_fun16948_ip) {
                         case 0:
                             var1 = _closure2_slot0;
                             var3 = var1.type;
@@ -750,8 +750,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var1 = var1.SYSTEM;
                             var1 = var3 === var1;
                             if (!var1) {
-                                _fun16946_ip = 88;
-                                continue _fun16946
+                                _fun16948_ip = 88;
+                                continue _fun16948
                             }
                         case 56:
                             var0 = _closure2_slot0;
@@ -760,8 +760,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var4 = var3 == var0;
                             var3 = undefined;
                             if (var4) {
-                                _fun16946_ip = 82;
-                                continue _fun16946
+                                _fun16948_ip = 82;
+                                continue _fun16948
                             }
                         case 76:
                             var3 = var0.keyboardWillOpen;

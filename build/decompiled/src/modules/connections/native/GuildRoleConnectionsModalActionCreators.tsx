@@ -46,7 +46,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2 = {};
         var2.guildId = var6;
         var1 = function() { // Original name: onClose, environment: var1
-            _fun78786: for (var _fun78786_ip = 0;;) switch (_fun78786_ip) {
+            _fun78816: for (var _fun78816_ip = 0;;) switch (_fun78816_ip) {
                 case 0:
                     var2 = _closure1_slot1;
                     var1 = _closure1_slot2;
@@ -60,8 +60,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var3 = _closure2_slot0;
                     var2 = null;
                     if (!(var2 != var3)) {
-                        _fun78786_ip = 62;
-                        continue _fun78786
+                        _fun78816_ip = 62;
+                        continue _fun78816
                     }
                 case 54:
                     var1 = _closure2_slot0;
@@ -77,4 +77,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.openGuildRoleConnectionsModal = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [4524, 9822, 1307, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [4525, 9824, 1307, 2]);

@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var7;
     var4 = function(arg0, arg1) { // Original name: mergeApexExperiments, environment: var1
-        _fun77055: for (var _fun77055_ip = 0;;) switch (_fun77055_ip) {
+        _fun77085: for (var _fun77085_ip = 0;;) switch (_fun77085_ip) {
             case 0:
                 var0 = {};
                 var11 = global;
@@ -28,8 +28,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = 'guild';
                 var2 = 0;
                 if (!var1) {
-                    _fun77055_ip = 234;
-                    continue _fun77055
+                    _fun77085_ip = 234;
+                    continue _fun77085
                 }
             case 70:
                 var15 = var14[var2];
@@ -52,8 +52,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var18 = var17.User;
                 var17 = var3;
                 if (!(var19 === var18)) {
-                    _fun77055_ip = 165;
-                    continue _fun77055
+                    _fun77085_ip = 165;
+                    continue _fun77085
                 }
             case 162:
                 var17 = var13;
@@ -94,8 +94,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var2 + 1;
                 var1 = var14.length;
                 if (var2 < var1) {
-                    _fun77055_ip = 70;
-                    continue _fun77055
+                    _fun77085_ip = 70;
+                    continue _fun77085
                 }
             case 234:
                 var3 = var11.Object;
@@ -107,8 +107,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = null;
                 var2 = 0;
                 if (!var1) {
-                    _fun77055_ip = 430;
-                    continue _fun77055
+                    _fun77085_ip = 430;
+                    continue _fun77085
                 }
             case 273:
                 var13 = var4[var2];
@@ -118,8 +118,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var14 = var1[var6];
                 var1 = var0[var13];
                 if (!(var3 == var1)) {
-                    _fun77055_ip = 415;
-                    continue _fun77055
+                    _fun77085_ip = 415;
+                    continue _fun77085
                 }
             case 303:
                 var1 = {};
@@ -142,7 +142,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var16 = var15.bind(var16)(var14);
                 var15 = var16.map;
                 var14 = function(arg0) { // Environment: var12
-                    _fun77057: for (var _fun77057_ip = 0;;) switch (_fun77057_ip) {
+                    _fun77087: for (var _fun77087_ip = 0;;) switch (_fun77087_ip) {
                         case 0:
                             var2 = arg0;
                             var0 = var2[Symbol.iterator];
@@ -153,15 +153,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var1 = var1 === var3;
                             var4 = undefined;
                             if (var1) {
-                                _fun77057_ip = 27;
-                                continue _fun77057
+                                _fun77087_ip = 27;
+                                continue _fun77087
                             }
                         case 24:
                             var4 = var5;
                         case 27:
                             if (var1) {
-                                _fun77057_ip = 41;
-                                continue _fun77057
+                                _fun77087_ip = 41;
+                                continue _fun77087
                             }
                         case 30:
                             var2 = var2().value;
@@ -169,8 +169,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var1 = var2 === var3;
                         case 41:
                             if (var1) {
-                                _fun77057_ip = 47;
-                                continue _fun77057
+                                _fun77087_ip = 47;
+                                continue _fun77087
                             }
                         case 44:
                             var0.return();
@@ -207,8 +207,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var2 + 1;
                 var1 = var4.length;
                 if (var2 < var1) {
-                    _fun77055_ip = 273;
-                    continue _fun77055
+                    _fun77085_ip = 273;
+                    continue _fun77085
                 }
             case 430:
                 return var0;
@@ -216,7 +216,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var _closure1_slot6 = var4;
     var3 = function(arg0) { // Original name: getApexExperimentOverridesInfo, environment: var1
-        _fun77058: for (var _fun77058_ip = 0;;) switch (_fun77058_ip) {
+        _fun77088: for (var _fun77088_ip = 0;;) switch (_fun77088_ip) {
             case 0:
                 var0 = {};
                 var1 = global;
@@ -232,8 +232,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = 1;
                 var2 = 0;
                 if (!var1) {
-                    _fun77058_ip = 112;
-                    continue _fun77058
+                    _fun77088_ip = 112;
+                    continue _fun77088
                 }
             case 51:
                 var9 = var8[var2];
@@ -250,8 +250,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var2 + 1;
                 var1 = var8.length;
                 if (var2 < var1) {
-                    _fun77058_ip = 51;
-                    continue _fun77058
+                    _fun77088_ip = 51;
+                    continue _fun77088
                 }
             case 112:
                 return var0;
@@ -403,4 +403,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useApexExperiments = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 1211, 1600, 1305, 3290, 9761, 566, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 1211, 1600, 1305, 3290, 9763, 566, 2]);

@@ -13,14 +13,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2.typeofJsonValue = var0;
     var2.isJsonObject = var0;
     var3 = function(arg0) { // Original name: typeofJsonValue, environment: var1
-        _fun14779: for (var _fun14779_ip = 0;;) switch (_fun14779_ip) {
+        _fun14781: for (var _fun14781_ip = 0;;) switch (_fun14781_ip) {
             case 0:
                 var2 = arg0;
                 var0 = typeof var2;
                 var1 = 'object';
                 if (!(var1 === var0)) {
-                    _fun14779_ip = 41;
-                    continue _fun14779
+                    _fun14781_ip = 41;
+                    continue _fun14781
                 }
             case 14:
                 var1 = global;
@@ -28,14 +28,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = var3.isArray;
                 var1 = var1.bind(var3)(var2);
                 if (var1) {
-                    _fun14779_ip = 49;
-                    continue _fun14779
+                    _fun14781_ip = 49;
+                    continue _fun14781
                 }
             case 35:
                 var1 = null;
                 if (!(var1 !== var2)) {
-                    _fun14779_ip = 43;
-                    continue _fun14779
+                    _fun14781_ip = 43;
+                    continue _fun14781
                 }
             case 41:
                 return var0;
@@ -49,14 +49,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var2.typeofJsonValue = var3;
     var1 = function(arg0) { // Original name: isJsonObject, environment: var1
-        _fun14780: for (var _fun14780_ip = 0;;) switch (_fun14780_ip) {
+        _fun14782: for (var _fun14782_ip = 0;;) switch (_fun14782_ip) {
             case 0:
                 var3 = arg0;
                 var0 = null;
                 var0 = var0 !== var3;
                 if (!var0) {
-                    _fun14780_ip = 23;
-                    continue _fun14780
+                    _fun14782_ip = 23;
+                    continue _fun14782
                 }
             case 12:
                 var2 = 'object';
@@ -64,8 +64,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = var2 === var1;
             case 23:
                 if (!var0) {
-                    _fun14780_ip = 47;
-                    continue _fun14780
+                    _fun14782_ip = 47;
+                    continue _fun14782
                 }
             case 26:
                 var1 = global;

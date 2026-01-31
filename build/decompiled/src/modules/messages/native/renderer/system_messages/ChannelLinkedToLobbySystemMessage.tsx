@@ -33,7 +33,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/messages/native/renderer/system_messages/ChannelLinkedToLobbySystemMessage.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: createChannelLinkedToLobbySystemMessage, environment: var1
-        _fun55782: for (var _fun55782_ip = 0;;) switch (_fun55782_ip) {
+        _fun55799: for (var _fun55799_ip = 0;;) switch (_fun55799_ip) {
             case 0:
                 var4 = arg0;
                 var6 = var4.message;
@@ -54,16 +54,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var12 = var0 != var10;
                 var1 = '';
                 if (!var12) {
-                    _fun55782_ip = 87;
-                    continue _fun55782
+                    _fun55799_ip = 87;
+                    continue _fun55799
                 }
             case 84:
                 var1 = var10;
             case 87:
                 var1 = var5.bind(var9)(var1);
                 if (!(var0 != var1)) {
-                    _fun55782_ip = 501;
-                    continue _fun55782
+                    _fun55799_ip = 501;
+                    continue _fun55799
                 }
             case 99:
                 var13 = _closure1_slot0;
@@ -94,15 +94,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var14 = 'username';
                 var7 = null;
                 if (!(var14 === var11)) {
-                    _fun55782_ip = 228;
-                    continue _fun55782
+                    _fun55799_ip = 228;
+                    continue _fun55799
                 }
             case 225:
                 var7 = var10;
             case 228:
                 if (!(var0 == var7)) {
-                    _fun55782_ip = 238;
-                    continue _fun55782
+                    _fun55799_ip = 238;
+                    continue _fun55799
                 }
             case 232:
                 var7 = var8.defaultUsernameColor;
@@ -111,8 +111,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5.roleColor = var10;
                 var7 = null;
                 if (!var13) {
-                    _fun55782_ip = 256;
-                    continue _fun55782
+                    _fun55799_ip = 256;
+                    continue _fun55799
                 }
             case 253:
                 var7 = var12;
@@ -121,8 +121,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = 'dot';
                 var7 = var7 === var11;
                 if (!var7) {
-                    _fun55782_ip = 276;
-                    continue _fun55782
+                    _fun55799_ip = 276;
+                    continue _fun55799
                 }
             case 272:
                 var7 = var0 != var10;
@@ -183,4 +183,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.createChannelLinkedToLobbySystemMessage = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3413, 660, 6629, 6637, 6638, 1675, 1234, 6639, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3413, 660, 6630, 6638, 6639, 1675, 1234, 6640, 2]);

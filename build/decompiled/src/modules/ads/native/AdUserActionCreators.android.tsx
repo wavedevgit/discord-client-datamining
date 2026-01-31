@@ -13,16 +13,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var3 = _closure1_slot2;
         var2 = function*(arg0) { // Environment: var2
             var0 = function*(arg0) { // Original name: ?anon_0_, environment: var0
-                _fun46988: for (var _fun46988_ip = 0;;) switch (_fun46988_ip) {
+                _fun47005: for (var _fun47005_ip = 0;;) switch (_fun47005_ip) {
                     case 0:
                         StartGenerator();
                         ResumeGenerator(result_out_reg = 0, return_bool_out_reg = 1);
                         if (var1) {
-                            _fun46988_ip = 819;
-                            continue _fun46988
+                            _fun47005_ip = 770;
+                            continue _fun47005
                         }
                     case 10:
-                        var9 = arg0;
+                        var8 = arg0;
                         var1 = undefined;
                         var3 = undefined;
                         var11 = undefined;
@@ -30,84 +30,84 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var4 = var4.adUser;
                         var15 = null;
                         if (!(var15 != var4)) {
-                            _fun46988_ip = 166;
-                            continue _fun46988
+                            _fun47005_ip = 166;
+                            continue _fun47005
                         }
                     case 41:
                         var4 = _closure1_slot3;
                         var4 = var4.adUser;
                         var4 = var4.advertisingId;
                         if (!(var15 != var4)) {
-                            _fun46988_ip = 166;
-                            continue _fun46988
+                            _fun47005_ip = 166;
+                            continue _fun47005
                         }
                     case 61:
                         var4 = _closure1_slot3;
                         var12 = var4.adUser;
-                        var6 = _closure1_slot0;
-                        var7 = _closure1_slot1;
+                        var5 = _closure1_slot0;
+                        var6 = _closure1_slot1;
                         var4 = 3;
-                        var4 = var7[var4];
-                        var8 = var6.bind(var1)(var4);
-                        var7 = var8.track;
+                        var4 = var6[var4];
+                        var7 = var5.bind(var1)(var4);
+                        var6 = var7.track;
                         var4 = _closure1_slot4;
-                        var6 = var4.AD_IDENTIFIER_FETCHED;
+                        var5 = var4.AD_IDENTIFIER_FETCHED;
                         var4 = {};
-                        var10 = true;
-                        var4.has_advertising_id = var10;
+                        var9 = true;
+                        var4.has_advertising_id = var9;
                         var12 = var12.advertisingId;
                         var4.android_advertising_id = var12;
-                        var12 = var9;
+                        var12 = var8;
                         var4.location = var12;
-                        var4.success = var10;
-                        var10 = _closure1_slot3;
-                        var10 = var10.lastFetchedAt;
-                        var4.last_fetched_timestamp = var10;
-                        var4 = var7.bind(var8)(var6, var4);
-                        _fun46988_ip = 816;
-                        continue _fun46988;
+                        var4.success = var9;
+                        var9 = _closure1_slot3;
+                        var9 = var9.lastFetchedAt;
+                        var4.last_fetched_timestamp = var9;
+                        var4 = var6.bind(var7)(var5, var4);
+                        _fun47005_ip = 767;
+                        continue _fun47005;
                     case 166:
-                        var10 = global;
-                        var6 = var10.performance;
-                        var4 = var6.now;
-                        var3 = var4.bind(var6)();
+                        var9 = global;
+                        var5 = var9.performance;
+                        var4 = var5.now;
+                        var3 = var4.bind(var5)();
                     case 183: // try_start_0
-                        var6 = _closure1_slot0;
-                        var7 = _closure1_slot1;
-                        var8 = 4;
-                        var4 = var7[var8];
-                        var13 = var6.bind(var1)(var4);
+                        var5 = _closure1_slot0;
+                        var6 = _closure1_slot1;
+                        var7 = 4;
+                        var4 = var6[var7];
+                        var13 = var5.bind(var1)(var4);
                         var12 = var13.dispatch;
                         var4 = {};
                         var14 = 'FETCH_AD_USER_START';
                         var4.type = var14;
                         var4 = var12.bind(var13)(var4);
                         var4 = 5;
-                        var4 = var7[var4];
-                        var6 = var6.bind(var1)(var4);
-                        var4 = var6.getGoogleAdvertisingId;
-                        var4 = var4.bind(var6)();
+                        var4 = var6[var4];
+                        var5 = var5.bind(var1)(var4);
+                        var4 = var5.getGoogleAdvertisingId;
+                        var4 = var4.bind(var5)();
                         SaveGenerator(address = 253);
                     case 251:
                         return var4;
                     case 253:
-                        ResumeGenerator(result_out_reg = 4, return_bool_out_reg = 6);
-                        if (var6) {
-                            _fun46988_ip = 539;
-                            continue _fun46988
+                        ResumeGenerator(result_out_reg = 4, return_bool_out_reg = 5);
+                        if (var5) {
+                            _fun47005_ip = 539;
+                            continue _fun47005
                         }
                     case 262:
                         var11 = var4;
-                        var7 = var10.performance;
-                        var6 = var7.now;
-                        var7 = var6.bind(var7)();
-                        var6 = var3;
-                        var19 = var7 - var6;
-                        var7 = _closure1_slot0;
+                        var6 = var9.performance;
+                        var5 = var6.now;
+                        var6 = var5.bind(var6)();
+                        var5 = var3;
+                        var19 = var6 - var5;
+                        var6 = _closure1_slot0;
                         var12 = _closure1_slot1;
-                        var6 = 3;
-                        var13 = var12[var6];
-                        var18 = var7.bind(var1)(var13);
+                        var5 = 3;
+                        var13 = var12[var5];
+                        var18 = var6.bind(var1)(var13);
                         var17 = var18.track;
                         var13 = _closure1_slot4;
                         var16 = var13.AD_USER_FETCH_DURATION;
@@ -124,62 +124,62 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var19 = var4.isLimitAdTrackingEnabled;
                         var13.is_limit_ad_tracking_enabled = var19;
                         var13 = var17.bind(var18)(var16, var13);
-                        var6 = var12[var6];
-                        var13 = var7.bind(var1)(var6);
+                        var5 = var12[var5];
+                        var13 = var6.bind(var1)(var5);
                         var12 = var13.track;
-                        var6 = _closure1_slot4;
-                        var7 = var6.AD_IDENTIFIER_FETCHED;
-                        var6 = {};
+                        var5 = _closure1_slot4;
+                        var6 = var5.AD_IDENTIFIER_FETCHED;
+                        var5 = {};
                         var16 = var4.googleAdvertisingId;
                         var16 = var15 != var16;
-                        var6.has_advertising_id = var16;
+                        var5.has_advertising_id = var16;
                         var16 = var4.googleAdvertisingId;
                         var16 = var15 != var16;
                         var15 = null;
                         if (!var16) {
-                            _fun46988_ip = 450;
-                            continue _fun46988
+                            _fun47005_ip = 450;
+                            continue _fun47005
                         }
                     case 441:
                         var16 = var11;
                         var15 = var16.googleAdvertisingId;
                     case 450:
-                        var6.android_advertising_id = var15;
-                        var15 = var9;
-                        var6.location = var15;
-                        var6.success = var14;
-                        var6 = var12.bind(var13)(var7, var6);
-                        var7 = _closure1_slot0;
-                        var6 = _closure1_slot1;
-                        var6 = var6[var8];
-                        var8 = var7.bind(var1)(var6);
-                        var7 = var8.dispatch;
-                        var6 = {};
+                        var5.android_advertising_id = var15;
+                        var15 = var8;
+                        var5.location = var15;
+                        var5.success = var14;
+                        var5 = var12.bind(var13)(var6, var5);
+                        var6 = _closure1_slot0;
+                        var5 = _closure1_slot1;
+                        var5 = var5[var7];
+                        var7 = var6.bind(var1)(var5);
+                        var6 = var7.dispatch;
+                        var5 = {};
                         var12 = 'FETCH_AD_USER_SUCCESS';
-                        var6.type = var12;
+                        var5.type = var12;
                         var12 = var11.googleAdvertisingId;
-                        var6.advertisingId = var12;
+                        var5.advertisingId = var12;
                         var11 = var11.isLimitAdTrackingEnabled;
-                        var6.isLimitAdTrackingEnabled = var11;
-                        var6 = var7.bind(var8)(var6);
+                        var5.isLimitAdTrackingEnabled = var11;
+                        var5 = var6.bind(var7)(var5);
                     case 534: // try_end0
-                        _fun46988_ip = 816;
-                        continue _fun46988;
+                        _fun47005_ip = 767;
+                        continue _fun47005;
                     case 539:
                         return var4;
                     case 542: // catch_target0
                         CatchBlockStart(arg_register = 12);
-                        var2 = var12;
-                        var6 = var10.performance;
-                        var4 = var6.now;
-                        var4 = var4.bind(var6)();
+                        var10 = var12;
+                        var5 = var9.performance;
+                        var4 = var5.now;
+                        var4 = var4.bind(var5)();
                         var11 = var4 - var3;
                         var4 = _closure1_slot0;
                         var3 = _closure1_slot1;
-                        var6 = 3;
-                        var3 = var3[var6];
-                        var8 = var4.bind(var1)(var3);
-                        var7 = var8.track;
+                        var5 = 3;
+                        var3 = var3[var5];
+                        var7 = var4.bind(var1)(var3);
+                        var6 = var7.track;
                         var3 = _closure1_slot4;
                         var4 = var3.AD_USER_FETCH_DURATION;
                         var3 = {};
@@ -189,48 +189,36 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var13 = false;
                         var3.success = var13;
                         var3.duration_ms = var11;
-                        var11 = var10.Error;
+                        var11 = var9.Error;
                         var11 = var12 instanceof var11;
                         if (var11) {
-                            _fun46988_ip = 659;
-                            continue _fun46988
+                            _fun47005_ip = 659;
+                            continue _fun47005
                         }
                     case 643:
-                        var11 = var10.String;
-                        var10 = var2;
-                        var10 = var11.bind(var1)(var10);
-                        _fun46988_ip = 667;
-                        continue _fun46988;
+                        var11 = var9.String;
+                        var9 = var10;
+                        var9 = var11.bind(var1)(var9);
+                        _fun47005_ip = 664;
+                        continue _fun47005;
                     case 659:
-                        var11 = var2;
-                        var10 = var11.message;
-                    case 667:
-                        var3.error_message = var10;
-                        var3 = var7.bind(var8)(var4, var3);
+                        var9 = var10.message;
+                    case 664:
+                        var3.error_message = var9;
+                        var3 = var6.bind(var7)(var4, var3);
                         var3 = _closure1_slot0;
                         var4 = _closure1_slot1;
-                        var6 = var4[var6];
-                        var8 = var3.bind(var1)(var6);
-                        var7 = var8.track;
-                        var5 = _closure1_slot4;
-                        var6 = var5.AD_IDENTIFIER_FETCHED;
-                        var5 = {
+                        var5 = var4[var5];
+                        var7 = var3.bind(var1)(var5);
+                        var6 = var7.track;
+                        var2 = _closure1_slot4;
+                        var5 = var2.AD_IDENTIFIER_FETCHED;
+                        var2 = {
                             'has_advertising_id': false,
                             'location': null,
                             'success': false
                         };
-                        var5.location = var9;
-                        var5 = var7.bind(var8)(var6, var5);
-                        var5 = 6;
-                        var5 = var4[var5];
-                        var7 = var3.bind(var1)(var5);
-                        var6 = var7.captureException;
-                        var5 = var2;
-                        var2 = {};
-                        var8 = {};
-                        var9 = 'FETCH_AD_USER';
-                        var8.source = var9;
-                        var2.tags = var8;
+                        var2.location = var8;
                         var2 = var6.bind(var7)(var5, var2);
                         var2 = 4;
                         var2 = var4[var2];
@@ -240,9 +228,9 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var5 = 'FETCH_AD_USER_FAILURE';
                         var2.type = var5;
                         var2 = var3.bind(var4)(var2);
-                    case 816:
+                    case 767:
                         return var1;
-                    case 819:
+                    case 770:
                         return var0;
                 }
             };
@@ -282,7 +270,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot4 = var6;
     var3 = var3.Platforms;
     var _closure1_slot5 = var3;
-    var3 = 7;
+    var3 = 6;
     var3 = var5[var3];
     var5 = var4.bind(var0)(var3);
     var4 = var5.fileFinishedImporting;
@@ -300,4 +288,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.fetchAdUser = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 5234, 660, 795, 806, 5237, 1207, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 5235, 660, 795, 806, 5238, 2]);

@@ -1,13 +1,13 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var1 = function(arg0) { // Original name: isBuffer, environment: var0
-        _fun16435: for (var _fun16435_ip = 0;;) switch (_fun16435_ip) {
+        _fun16437: for (var _fun16437_ip = 0;;) switch (_fun16437_ip) {
             case 0:
                 var1 = arg0;
                 var0 = var1;
                 if (!var0) {
-                    _fun16435_ip = 20;
-                    continue _fun16435
+                    _fun16437_ip = 20;
+                    continue _fun16437
                 }
             case 9:
                 var3 = 'object';
@@ -15,8 +15,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = var3 === var2;
             case 20:
                 if (!var0) {
-                    _fun16435_ip = 40;
-                    continue _fun16435
+                    _fun16437_ip = 40;
+                    continue _fun16437
                 }
             case 23:
                 var2 = var1.copy;
@@ -25,8 +25,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = var3 === var2;
             case 40:
                 if (!var0) {
-                    _fun16435_ip = 60;
-                    continue _fun16435
+                    _fun16437_ip = 60;
+                    continue _fun16437
                 }
             case 43:
                 var2 = var1.fill;
@@ -35,8 +35,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = var3 === var2;
             case 60:
                 if (!var0) {
-                    _fun16435_ip = 80;
-                    continue _fun16435
+                    _fun16437_ip = 80;
+                    continue _fun16437
                 }
             case 63:
                 var1 = var1.readUInt8;

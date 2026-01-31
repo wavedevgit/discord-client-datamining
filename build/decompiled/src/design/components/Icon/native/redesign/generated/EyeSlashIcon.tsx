@@ -33,15 +33,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'design/components/Icon/native/redesign/generated/EyeSlashIcon.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Environment: var1
-        _fun60807: for (var _fun60807_ip = 0;;) switch (_fun60807_ip) {
+        _fun60819: for (var _fun60819_ip = 0;;) switch (_fun60819_ip) {
             case 0:
                 var2 = arg0;
                 var5 = var2.style;
                 var6 = var2.color;
                 var3 = undefined;
                 if (!(var6 === var3)) {
-                    _fun60807_ip = 53;
-                    continue _fun60807
+                    _fun60819_ip = 53;
+                    continue _fun60819
                 }
             case 19:
                 var1 = _closure1_slot1;
@@ -83,4 +83,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.EyeSlashIcon = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 671, 3109, 7318, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 671, 3109, 7317, 2]);

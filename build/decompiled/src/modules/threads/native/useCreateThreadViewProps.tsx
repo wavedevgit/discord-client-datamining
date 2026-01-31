@@ -28,7 +28,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/threads/native/useCreateThreadViewProps.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: useCreateThreadViewProps, environment: var1
-        _fun89658: for (var _fun89658_ip = 0;;) switch (_fun89658_ip) {
+        _fun89006: for (var _fun89006_ip = 0;;) switch (_fun89006_ip) {
             case 0:
                 var3 = _closure1_slot1;
                 var6 = _closure1_slot2;
@@ -50,7 +50,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = new Array(1);
                 var1[0] = var3;
                 var0 = function() { // Environment: var0
-                    _fun89659: for (var _fun89659_ip = 0;;) switch (_fun89659_ip) {
+                    _fun89007: for (var _fun89007_ip = 0;;) switch (_fun89007_ip) {
                         case 0:
                             var2 = _closure1_slot3;
                             var1 = var2.getChannel;
@@ -59,8 +59,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var4 = var0 == var4;
                             var0 = undefined;
                             if (var4) {
-                                _fun89659_ip = 40;
-                                continue _fun89659
+                                _fun89007_ip = 40;
+                                continue _fun89007
                             }
                         case 30:
                             var3 = _closure2_slot0;
@@ -75,15 +75,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var4 == var3;
                 var0 = null;
                 if (var1) {
-                    _fun89658_ip = 129;
-                    continue _fun89658
+                    _fun89006_ip = 129;
+                    continue _fun89006
                 }
             case 105:
                 var1 = var4 == var2;
                 var0 = null;
                 if (var1) {
-                    _fun89658_ip = 129;
-                    continue _fun89658
+                    _fun89006_ip = 129;
+                    continue _fun89006
                 }
             case 114:
                 var1 = {};

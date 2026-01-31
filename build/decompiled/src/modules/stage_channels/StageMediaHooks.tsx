@@ -121,7 +121,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = 'modules/stage_channels/StageMediaHooks.tsx';
     var5 = var6.bind(var7)(var5);
     var5 = function(arg0) { // Original name: useStageHasMedia, environment: var1
-        _fun38665: for (var _fun38665_ip = 0;;) switch (_fun38665_ip) {
+        _fun38682: for (var _fun38682_ip = 0;;) switch (_fun38682_ip) {
             case 0:
                 var6 = arg0;
                 var _closure2_slot0 = var6;
@@ -148,8 +148,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 };
                 var0 = var4.bind(var5)(var3, var0, var2);
                 if (var0) {
-                    _fun38665_ip = 86;
-                    continue _fun38665
+                    _fun38682_ip = 86;
+                    continue _fun38682
                 }
             case 83:
                 var0 = var1;
@@ -160,15 +160,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.useStageHasMedia = var5;
     var2.useStageHasStream = var4;
     var4 = function(arg0) { // Original name: getStageHasMedia, environment: var1
-        _fun38667: for (var _fun38667_ip = 0;;) switch (_fun38667_ip) {
+        _fun38684: for (var _fun38684_ip = 0;;) switch (_fun38684_ip) {
             case 0:
                 var3 = arg0;
                 var2 = _closure1_slot6;
                 var0 = undefined;
                 var0 = var2.bind(var0)(var3);
                 if (var0) {
-                    _fun38667_ip = 35;
-                    continue _fun38667
+                    _fun38684_ip = 35;
+                    continue _fun38684
                 }
             case 20:
                 var2 = _closure1_slot3;
@@ -181,7 +181,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.getStageHasMedia = var4;
     var2.getStageHasStream = var3;
     var3 = function(arg0) { // Original name: useIsStageVideoEnabled, environment: var1
-        _fun38668: for (var _fun38668_ip = 0;;) switch (_fun38668_ip) {
+        _fun38685: for (var _fun38685_ip = 0;;) switch (_fun38685_ip) {
             case 0:
                 var1 = arg0;
                 var _closure2_slot0 = var1;
@@ -206,15 +206,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = null;
                 var0 = var1 != var2;
                 if (!var0) {
-                    _fun38668_ip = 104;
-                    continue _fun38668
+                    _fun38685_ip = 104;
+                    continue _fun38685
                 }
             case 71:
                 var4 = var1 == var2;
                 var3 = undefined;
                 if (var4) {
-                    _fun38668_ip = 86;
-                    continue _fun38668
+                    _fun38685_ip = 86;
+                    continue _fun38685
                 }
             case 80:
                 var3 = var2.maxStageVideoChannelUsers;
@@ -223,8 +223,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = 0;
                 var1 = 0;
                 if (!var4) {
-                    _fun38668_ip = 100;
-                    continue _fun38668
+                    _fun38685_ip = 100;
+                    continue _fun38685
                 }
             case 97:
                 var1 = var3;
@@ -236,7 +236,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useIsStageVideoEnabled = var3;
     var1 = function(arg0) { // Original name: isStageVideoEnabled, environment: var1
-        _fun38670: for (var _fun38670_ip = 0;;) switch (_fun38670_ip) {
+        _fun38687: for (var _fun38687_ip = 0;;) switch (_fun38687_ip) {
             case 0:
                 var2 = _closure1_slot2;
                 var1 = var2.getGuild;
@@ -245,15 +245,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = null;
                 var0 = var1 != var2;
                 if (!var0) {
-                    _fun38670_ip = 62;
-                    continue _fun38670
+                    _fun38687_ip = 62;
+                    continue _fun38687
                 }
             case 29:
                 var4 = var1 == var2;
                 var3 = undefined;
                 if (var4) {
-                    _fun38670_ip = 44;
-                    continue _fun38670
+                    _fun38687_ip = 44;
+                    continue _fun38687
                 }
             case 38:
                 var3 = var2.maxStageVideoChannelUsers;
@@ -262,8 +262,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = 0;
                 var1 = 0;
                 if (!var4) {
-                    _fun38670_ip = 58;
-                    continue _fun38670
+                    _fun38687_ip = 58;
+                    continue _fun38687
                 }
             case 55:
                 var1 = var3;
@@ -275,4 +275,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.isStageVideoEnabled = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1410, 3480, 4209, 566, 5623, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1410, 3480, 4209, 566, 5624, 2]);

@@ -6,7 +6,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var4;
     var1 = function(arg0) { // Original name: useStore, environment: var3
-        _fun27264: for (var _fun27264_ip = 0;;) switch (_fun27264_ip) {
+        _fun27265: for (var _fun27265_ip = 0;;) switch (_fun27265_ip) {
             case 0:
                 var2 = arg0;
                 var5 = undefined;
@@ -15,19 +15,19 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = arguments.length;
                 var3 = 1;
                 if (!(var1 > var3)) {
-                    _fun27264_ip = 31;
-                    continue _fun27264
+                    _fun27265_ip = 31;
+                    continue _fun27265
                 }
             case 23:
                 var1 = arguments[var3];
                 if (!(var5 === var1)) {
-                    _fun27264_ip = 40;
-                    continue _fun27264
+                    _fun27265_ip = 40;
+                    continue _fun27265
                 }
             case 31:
                 var1 = _closure1_slot3;
-                _fun27264_ip = 44;
-                continue _fun27264;
+                _fun27265_ip = 44;
+                continue _fun27265;
             case 40:
                 var1 = arguments[var3];
             case 44:
@@ -98,18 +98,18 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var _closure1_slot4 = var4;
     var3 = function(arg0) { // Original name: create, environment: var3
-        _fun27270: for (var _fun27270_ip = 0;;) switch (_fun27270_ip) {
+        _fun27271: for (var _fun27271_ip = 0;;) switch (_fun27271_ip) {
             case 0:
                 var3 = arg0;
                 var2 = _closure1_slot4;
                 if (var3) {
-                    _fun27270_ip = 18;
-                    continue _fun27270
+                    _fun27271_ip = 18;
+                    continue _fun27271
                 }
             case 13:
                 var0 = var2;
-                _fun27270_ip = 25;
-                continue _fun27270;
+                _fun27271_ip = 25;
+                continue _fun27271;
             case 18:
                 var1 = undefined;
                 var0 = var2.bind(var1)(var3);

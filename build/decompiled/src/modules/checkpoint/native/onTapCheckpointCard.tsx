@@ -26,68 +26,61 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var0)(var3);
     var3 = var3.AnalyticEvents;
     var _closure1_slot4 = var3;
-    var3 = 5;
+    var3 = 4;
     var3 = var5[var3];
     var5 = var4.bind(var0)(var3);
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/checkpoint/native/onTapCheckpointCard.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: onTapCheckpointCard, environment: var1
-        _fun89396: for (var _fun89396_ip = 0;;) switch (_fun89396_ip) {
+        _fun88744: for (var _fun88744_ip = 0;;) switch (_fun88744_ip) {
             case 0:
                 var1 = arg0;
                 var0 = var1.message;
                 var6 = var1.authorId;
-                var3 = _closure1_slot3;
-                var2 = var3.getChannel;
+                var2 = _closure1_slot3;
+                var1 = var2.getChannel;
                 var0 = var0.channel_id;
-                var9 = var2.bind(var3)(var0);
-                var3 = _closure1_slot1;
-                var8 = _closure1_slot2;
+                var8 = var1.bind(var2)(var0);
+                var2 = _closure1_slot1;
+                var7 = _closure1_slot2;
                 var0 = 2;
-                var2 = var8[var0];
+                var1 = var7[var0];
                 var0 = undefined;
-                var5 = var3.bind(var0)(var2);
-                var4 = var5.track;
-                var2 = _closure1_slot4;
-                var3 = var2.CHECKPOINT_CARD_CLICKED;
-                var2 = {};
-                var2.other_user_id = var6;
-                var7 = _closure1_slot0;
-                var6 = 3;
-                var10 = var8[var6];
-                var11 = var7.bind(var0)(var10);
-                var10 = var11.collectChannelAnalyticsMetadata;
-                var12 = var10.bind(var11)(var9);
-                var13 = var2;
-                var10 = copyDataProperties(var13, var12);
-                var6 = var8[var6];
-                var8 = var7.bind(var0)(var6);
-                var7 = var8.collectGuildAnalyticsMetadata;
-                var6 = null;
-                var10 = var6 == var9;
-                var6 = undefined;
-                if (var10) {
-                    _fun89396_ip = 145;
-                    continue _fun89396
+                var4 = var2.bind(var0)(var1);
+                var3 = var4.track;
+                var1 = _closure1_slot4;
+                var2 = var1.CHECKPOINT_CARD_CLICKED;
+                var1 = {};
+                var1.other_user_id = var6;
+                var6 = _closure1_slot0;
+                var5 = 3;
+                var9 = var7[var5];
+                var10 = var6.bind(var0)(var9);
+                var9 = var10.collectChannelAnalyticsMetadata;
+                var11 = var9.bind(var10)(var8);
+                var12 = var1;
+                var9 = copyDataProperties(var12, var11);
+                var5 = var7[var5];
+                var7 = var6.bind(var0)(var5);
+                var6 = var7.collectGuildAnalyticsMetadata;
+                var5 = null;
+                var9 = var5 == var8;
+                var5 = undefined;
+                if (var9) {
+                    _fun88744_ip = 145;
+                    continue _fun88744
                 }
             case 140:
-                var6 = var9.guild_id;
+                var5 = var8.guild_id;
             case 145:
-                var12 = var7.bind(var8)(var6);
-                var13 = var2;
-                var6 = copyDataProperties(var13, var12);
-                var2 = var4.bind(var5)(var3, var2);
-                var2 = _closure1_slot1;
-                var3 = _closure1_slot2;
-                var1 = 4;
-                var1 = var3[var1];
-                var2 = var2.bind(var0)(var1);
-                var1 = 'message_component';
-                var1 = var2.bind(var0)(var1);
+                var11 = var6.bind(var7)(var5);
+                var12 = var1;
+                var5 = copyDataProperties(var12, var11);
+                var1 = var3.bind(var4)(var2, var1);
                 return var0;
         }
     };
     var2.onTapCheckpointCard = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1372, 660, 795, 4265, 11132, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1372, 660, 795, 4266, 2]);

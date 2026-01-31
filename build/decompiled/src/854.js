@@ -26,7 +26,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = function() { // Environment: var1
         var3 = _closure1_slot3;
         var2 = function() { // Original name: SentryNonRecordingSpan, environment: var4
-            _fun9002: for (var _fun9002_ip = 0;;) switch (_fun9002_ip) {
+            _fun9004: for (var _fun9004_ip = 0;;) switch (_fun9004_ip) {
                 case 0:
                     var2 = this;
                     var0 = undefined;
@@ -34,19 +34,19 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var1 = arguments.length;
                     var3 = 0;
                     if (!(var1 > var3)) {
-                        _fun9002_ip = 24;
-                        continue _fun9002
+                        _fun9004_ip = 24;
+                        continue _fun9004
                     }
                 case 16:
                     var1 = arguments[var3];
                     if (!(var0 === var1)) {
-                        _fun9002_ip = 28;
-                        continue _fun9002
+                        _fun9004_ip = 28;
+                        continue _fun9004
                     }
                 case 24:
                     var1 = {};
-                    _fun9002_ip = 32;
-                    continue _fun9002;
+                    _fun9004_ip = 32;
+                    continue _fun9004;
                 case 28:
                     var1 = arguments[var3];
                 case 32:
@@ -55,8 +55,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var4 = var5.bind(var0)(var2, var4);
                     var4 = var1.traceId;
                     if (var4) {
-                        _fun9002_ip = 91;
-                        continue _fun9002
+                        _fun9004_ip = 91;
+                        continue _fun9004
                     }
                 case 61:
                     var6 = _closure1_slot0;
@@ -70,8 +70,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var2._traceId = var4;
                     var1 = var1.spanId;
                     if (var1) {
-                        _fun9002_ip = 136;
-                        continue _fun9002
+                        _fun9004_ip = 136;
+                        continue _fun9004
                     }
                 case 106:
                     var4 = _closure1_slot0;

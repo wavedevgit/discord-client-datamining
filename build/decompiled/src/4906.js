@@ -1,57 +1,48 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var3 = require;
+    var4 = require;
     var2 = exports;
-    var4 = dependencyMap;
+    var3 = dependencyMap;
+    var _closure1_slot0 = var4;
+    var _closure1_slot1 = var3;
     var0 = global;
-    var6 = var0.Object;
-    var5 = var6.defineProperty;
-    var1 = {};
+    var7 = var0.Object;
+    var6 = var7.defineProperty;
+    var5 = {};
     var0 = true;
-    var1.value = var0;
+    var5.value = var0;
     var0 = '__esModule';
-    var0 = var5.bind(var6)(var2, var0, var1);
-    var1 = 0;
-    var5 = var4[var1];
+    var0 = var6.bind(var7)(var2, var0, var5);
+    var0 = 0;
+    var3 = var3[var0];
     var0 = undefined;
-    var5 = var3.bind(var0)(var5);
-    var5 = var5.BottomSheetContext;
-    var2.BottomSheetContext = var5;
-    var1 = var4[var1];
-    var1 = var3.bind(var0)(var1);
-    var1 = var1.BottomSheetProvider;
-    var2.BottomSheetProvider = var1;
-    var1 = 1;
-    var5 = var4[var1];
-    var5 = var3.bind(var0)(var5);
-    var5 = var5.BottomSheetInternalContext;
-    var2.BottomSheetInternalContext = var5;
-    var1 = var4[var1];
-    var1 = var3.bind(var0)(var1);
-    var1 = var1.BottomSheetInternalProvider;
-    var2.BottomSheetInternalProvider = var1;
-    var1 = 2;
-    var1 = var4[var1];
-    var1 = var3.bind(var0)(var1);
-    var1 = var1.BottomSheetGestureHandlersContext;
-    var2.BottomSheetGestureHandlersContext = var1;
-    var1 = 3;
-    var5 = var4[var1];
-    var5 = var3.bind(var0)(var5);
-    var5 = var5.BottomSheetModalContext;
-    var2.BottomSheetModalContext = var5;
-    var1 = var4[var1];
-    var1 = var3.bind(var0)(var1);
-    var1 = var1.BottomSheetModalProvider;
-    var2.BottomSheetModalProvider = var1;
-    var1 = 4;
-    var5 = var4[var1];
-    var5 = var3.bind(var0)(var5);
-    var5 = var5.BottomSheetModalInternalContext;
-    var2.BottomSheetModalInternalContext = var5;
-    var1 = var4[var1];
-    var1 = var3.bind(var0)(var1);
-    var1 = var1.BottomSheetModalInternalProvider;
-    var2.BottomSheetModalInternalProvider = var1;
+    var3 = var4.bind(var0)(var3);
+    var3 = var3.useContext;
+    var _closure1_slot2 = var3;
+    var1 = function() { // Original name: useBottomSheetModal, environment: var1
+        _fun44596: for (var _fun44596_ip = 0;;) switch (_fun44596_ip) {
+            case 0:
+                var2 = _closure1_slot2;
+                var3 = _closure1_slot0;
+                var1 = _closure1_slot1;
+                var0 = 1;
+                var0 = var1[var0];
+                var1 = undefined;
+                var0 = var3.bind(var1)(var0);
+                var0 = var0.BottomSheetModalContext;
+                var0 = var2.bind(var1)(var0);
+                var1 = null;
+                if (!(var1 !== var0)) {
+                    _fun44596_ip = 48;
+                    continue _fun44596
+                }
+            case 46:
+                return var0;
+            case 48:
+                var0 = "'BottomSheetModalContext' cannot be null!";
+                throw var0;
+        }
+    };
+    var2.useBottomSheetModal = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [4902, 4904, 4907, 4908, 4909]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 4907]);

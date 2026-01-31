@@ -12,7 +12,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = var3.bind(var0)(var2);
     var _closure1_slot2 = var2;
     var2 = function(arg0) { // Original name: ToNumber, environment: var1
-        _fun28901: for (var _fun28901_ip = 0;;) switch (_fun28901_ip) {
+        _fun28902: for (var _fun28902_ip = 0;;) switch (_fun28902_ip) {
             case 0:
                 var5 = arg0;
                 var3 = _closure1_slot0;
@@ -24,8 +24,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = var1.bind(var2)(var5);
                 var4 = var5;
                 if (var1) {
-                    _fun28901_ip = 69;
-                    continue _fun28901
+                    _fun28902_ip = 69;
+                    continue _fun28902
                 }
             case 39:
                 var3 = _closure1_slot0;
@@ -39,25 +39,25 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var3 = typeof var4;
                 var1 = 'symbol';
                 if (!(var1 !== var3)) {
-                    _fun28901_ip = 176;
-                    continue _fun28901
+                    _fun28902_ip = 176;
+                    continue _fun28902
                 }
             case 80:
                 var1 = 'bigint';
                 if (!(var1 !== var3)) {
-                    _fun28901_ip = 128;
-                    continue _fun28901
+                    _fun28902_ip = 128;
+                    continue _fun28902
                 }
             case 88:
                 var1 = 'string';
                 if (!(var1 !== var3)) {
-                    _fun28901_ip = 101;
-                    continue _fun28901
+                    _fun28902_ip = 101;
+                    continue _fun28902
                 }
             case 96:
                 var1 = var4 - 0;
-                _fun28901_ip = 126;
-                continue _fun28901;
+                _fun28902_ip = 126;
+                continue _fun28902;
             case 101:
                 var5 = _closure1_slot0;
                 var6 = _closure1_slot1;

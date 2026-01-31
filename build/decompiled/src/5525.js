@@ -1,268 +1,104 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var6 = require;
-    var4 = metroImportDefault;
+    var5 = require;
     var2 = exports;
-    var5 = dependencyMap;
-    var _closure1_slot0 = var6;
-    var _closure1_slot1 = var4;
-    var _closure1_slot2 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
-        _fun48848: for (var _fun48848_ip = 0;;) switch (_fun48848_ip) {
-            case 0:
-            case 2: // try_start_0
-                var1 = global;
-                var2 = var1.Boolean;
-                var2 = var2.prototype;
-                var3 = var2.valueOf;
-                var2 = var3.call;
-                var7 = var1.Reflect;
-                var6 = var7.construct;
-                var5 = var1.Boolean;
-                var4 = new Array(0);
-                var1 = function() { // Environment: var0
-                    var0 = undefined;
-                    return var0;
-                };
-                var1 = var6.bind(var7)(var5, var4, var1);
-                var1 = var2.bind(var3)(var1);
-                var1 = !var1;
-                var _closure2_slot0 = var1;
-            case 70: // try_end0
-                _fun48848_ip = 74;
-                continue _fun48848;
-            case 72: // catch_target0
-                CatchBlockStart(arg_register = 1);
-            case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
-                    var0 = _closure2_slot0;
-                    var0 = !var0;
-                    var0 = !var0;
-                    return var0;
-                };
-                _closure1_slot9 = var1;
-                var0 = undefined;
-                var0 = var1.bind(var0)();
-                return var0;
-        }
-    };
-    var _closure1_slot9 = var0;
+    var7 = dependencyMap;
     var0 = global;
     var8 = var0.Object;
-    var7 = var8.defineProperty;
-    var3 = {};
-    var0 = true;
-    var3.value = var0;
-    var0 = '__esModule';
-    var0 = var7.bind(var8)(var2, var0, var3);
+    var6 = var8.defineProperty;
+    var4 = {};
+    var13 = true;
+    var4.value = var13;
+    var1 = '__esModule';
+    var1 = var6.bind(var8)(var2, var1, var4);
+    var1 = {};
+    var6 = 'RNSVGTextPath';
+    var1.uiViewClassName = var6;
+    var4 = {};
+    var8 = {};
+    var9 = 'onSvgLayout';
+    var8.registrationName = var9;
+    var4.topSvgLayout = var8;
+    var1.directEventTypes = var4;
+    var10 = var0.Object;
+    var9 = var10.assign;
+    var8 = {
+        'name': true,
+        'opacity': true,
+        'matrix': true,
+        'mask': true,
+        'markerStart': true,
+        'markerMid': true,
+        'markerEnd': true,
+        'clipPath': true,
+        'clipRule': true,
+        'responsible': true,
+        'display': true,
+        'pointerEvents': true,
+        'color': null,
+        'fill': true,
+        'fillOpacity': true,
+        'fillRule': true,
+        'stroke': true,
+        'strokeOpacity': true,
+        'strokeWidth': true,
+        'strokeLinecap': true,
+        'strokeLinejoin': true,
+        'strokeDasharray': true,
+        'strokeDashoffset': true,
+        'strokeMiterlimit': true,
+        'vectorEffect': true,
+        'propList': true,
+        'filter': true,
+        'fontSize': true,
+        'fontWeight': true,
+        'font': true,
+        'dx': true,
+        'dy': true,
+        'x': true,
+        'y': true,
+        'rotate': true,
+        'inlineSize': true,
+        'textLength': true,
+        'baselineShift': true,
+        'lengthAdjust': true,
+        'alignmentBaseline': true,
+        'verticalAlign': true,
+        'href': true,
+        'side': true,
+        'method': true,
+        'midLine': true,
+        'spacing': true,
+        'startOffset': true
+    };
+    var4 = {};
     var0 = 0;
-    var3 = var5[var0];
+    var11 = var7[var0];
     var0 = undefined;
-    var3 = var4.bind(var0)(var3);
-    var _closure1_slot3 = var3;
-    var3 = 1;
-    var3 = var5[var3];
-    var3 = var4.bind(var0)(var3);
-    var _closure1_slot4 = var3;
-    var3 = 2;
-    var3 = var5[var3];
-    var3 = var4.bind(var0)(var3);
-    var _closure1_slot5 = var3;
-    var3 = 3;
-    var3 = var5[var3];
-    var3 = var4.bind(var0)(var3);
-    var _closure1_slot6 = var3;
-    var3 = 4;
-    var3 = var5[var3];
-    var3 = var4.bind(var0)(var3);
-    var _closure1_slot7 = var3;
-    var3 = 5;
-    var7 = var5[var3];
-    var3 = arg3;
-    var3 = var3.bind(var0)(var7);
-    var3 = 6;
-    var3 = var5[var3];
-    var3 = var6.bind(var0)(var3);
-    var3 = var3.jsx;
-    var _closure1_slot8 = var3;
-    var3 = 10;
-    var3 = var5[var3];
-    var3 = var4.bind(var0)(var3);
-    var1 = function(arg0) { // Environment: var1
-        var3 = function() { // Original name: Use, environment: var0
-            _fun48852: for (var _fun48852_ip = 0;;) switch (_fun48852_ip) {
-                case 0:
-                    var3 = this;
-                    var2 = undefined;
-                    var4 = undefined;
-                    var0 = _closure1_slot3;
-                    var1 = _closure2_slot0;
-                    var0 = var0.bind(var2)(var3, var1);
-                    var0 = _closure1_slot6;
-                    var8 = var0.bind(var2)(var1);
-                    var1 = _closure1_slot5;
-                    var0 = _closure1_slot9;
-                    var0 = var0.bind(var2)();
-                    if (var0) {
-                        _fun48852_ip = 69;
-                        continue _fun48852
-                    }
-                case 51:
-                    var6 = var8.apply;
-                    var4 = arguments;
-                    var0 = var4;
-                    var0 = var6.bind(var8)(var3, var0);
-                    _fun48852_ip = 105;
-                    continue _fun48852;
-                case 69:
-                    var6 = global;
-                    var7 = var6.Reflect;
-                    var6 = var7.construct;
-                    var5 = _closure1_slot6;
-                    var5 = var5.bind(var2)(var3);
-                    var5 = var5.constructor;
-                    var4 = arguments;
-                    var0 = var6.bind(var7)(var8, var4, var5);
-                case 105:
-                    var0 = var1.bind(var2)(var3, var0);
-                    return var0;
-            }
-        };
-        var _closure2_slot0 = var3;
-        var5 = _closure1_slot7;
-        var2 = undefined;
-        var4 = arg0;
-        var4 = var5.bind(var2)(var3, var4);
-        var1 = _closure1_slot4;
-        var4 = {};
-        var5 = 'render';
-        var4.key = var5;
-        var0 = function() { // Original name: render, environment: var0
-            _fun48853: for (var _fun48853_ip = 0;;) switch (_fun48853_ip) {
-                case 0:
-                    var11 = this;
-                    var _closure3_slot0 = var11;
-                    var10 = var11.props;
-                    var9 = var10.children;
-                    var5 = var10.x;
-                    var2 = var10.y;
-                    var1 = var10.width;
-                    var0 = var10.height;
-                    var6 = var10.xlinkHref;
-                    var13 = var10.href;
-                    var3 = undefined;
-                    if (!(var3 === var13)) {
-                        _fun48853_ip = 60;
-                        continue _fun48853
-                    }
-                case 57:
-                    var13 = var6;
-                case 60:
-                    var8 = var13;
-                    if (!var8) {
-                        _fun48853_ip = 106;
-                        continue _fun48853
-                    }
-                case 66:
-                    var7 = var13.match;
-                    var12 = _closure1_slot0;
-                    var14 = _closure1_slot2;
-                    var6 = 7;
-                    var6 = var14[var6];
-                    var6 = var12.bind(var3)(var6);
-                    var6 = var6.idPattern;
-                    var8 = var7.bind(var13)(var6);
-                case 106:
-                    var7 = var8;
-                    if (!var7) {
-                        _fun48853_ip = 119;
-                        continue _fun48853
-                    }
-                case 112:
-                    var6 = 1;
-                    var7 = var8[var6];
-                case 119:
-                    if (var7) {
-                        _fun48853_ip = 158;
-                        continue _fun48853
-                    }
-                case 122:
-                    var6 = global;
-                    var12 = var6.console;
-                    var8 = var12.warn;
-                    var6 = 'Invalid `href` prop for `Use` element, expected a href like "#id", but got: "';
-                    var13 = var6 + var13;
-                    var6 = '"';
-                    var6 = var13 + var6;
-                    var6 = var8.bind(var12)(var6);
-                case 158:
-                    var8 = {};
-                    var6 = null;
-                    var12 = var6 != var7;
-                    var6 = undefined;
-                    if (!var12) {
-                        _fun48853_ip = 174;
-                        continue _fun48853
-                    }
-                case 171:
-                    var6 = var7;
-                case 174:
-                    var8.href = var6;
-                    var8.x = var5;
-                    var8.y = var2;
-                    var8.width = var1;
-                    var8.height = var0;
-                    var2 = _closure1_slot8;
-                    var5 = _closure1_slot1;
-                    var12 = _closure1_slot2;
-                    var1 = 8;
-                    var1 = var12[var1];
-                    var1 = var5.bind(var3)(var1);
-                    var5 = global;
-                    var7 = var5.Object;
-                    var6 = var7.assign;
-                    var5 = {};
-                    var4 = function(arg0) { // Original name: ref, environment: var4
-                        var2 = _closure3_slot0;
-                        var1 = var2.refMethod;
-                        var0 = arg0;
-                        var0 = var1.bind(var2)(var0);
-                        return var0;
-                    };
-                    var5.ref = var4;
-                    var4 = _closure1_slot0;
-                    var0 = 9;
-                    var0 = var12[var0];
-                    var4 = var4.bind(var3)(var0);
-                    var0 = var4.withoutXY;
-                    var17 = var0.bind(var4)(var11, var10);
-                    var0 = {};
-                    var0.children = var9;
-                    var19 = var7;
-                    var18 = var5;
-                    var16 = var8;
-                    var15 = var0;
-                    var0 = var19[var6](var18, var17, var16, var15, var14);
-                    var0 = var2.bind(var3)(var1, var0);
-                    return var0;
-            }
-        };
-        var4.value = var0;
-        var0 = new Array(1);
-        var0[0] = var4;
-        var0 = var1.bind(var2)(var3, var0);
+    var11 = var5.bind(var0)(var11);
+    var11 = var11.default;
+    var4.process = var11;
+    var8.color = var4;
+    var4 = 1;
+    var4 = var7[var4];
+    var12 = var5.bind(var0)(var4);
+    var11 = var12.ConditionallyIgnoredEventHandlers;
+    var4 = {};
+    var4.onSvgLayout = var13;
+    var4 = var11.bind(var12)(var4);
+    var4 = var9.bind(var10)(var8, var4);
+    var1.validAttributes = var4;
+    var _closure1_slot0 = var1;
+    var4 = 2;
+    var4 = var7[var4];
+    var5 = var5.bind(var0)(var4);
+    var4 = var5.get;
+    var3 = function() { // Environment: var3
+        var0 = _closure1_slot0;
         return var0;
     };
-    var1 = var1.bind(var0)(var3);
-    var3 = 'Use';
-    var1.displayName = var3;
-    var3 = {
-        'x': 0,
-        'y': 0,
-        'width': 0,
-        'height': 0
-    };
-    var1.defaultProps = var3;
-    var2.default = var1;
+    var3 = var4.bind(var5)(var6, var3);
+    var2.default = var3;
+    var2.__INTERNAL_VIEW_CONFIG = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 15, 17, 18, 31, 33, 5437, 5526, 5436, 5445]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [38, 110, 42]);

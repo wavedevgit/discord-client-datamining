@@ -4,7 +4,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = exports;
     var5 = dependencyMap;
     var0 = function(arg0) { // Original name: Suspender, environment: var1
-        _fun37207: for (var _fun37207_ip = 0;;) switch (_fun37207_ip) {
+        _fun37224: for (var _fun37224_ip = 0;;) switch (_fun37224_ip) {
             case 0:
                 var0 = arg0;
                 var4 = var0.freeze;
@@ -20,15 +20,15 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var7 = var2.current;
                 var7 = var3 === var7;
                 if (!var7) {
-                    _fun37207_ip = 68;
-                    continue _fun37207
+                    _fun37224_ip = 68;
+                    continue _fun37224
                 }
             case 65:
                 var7 = var4;
             case 68:
                 if (!var7) {
-                    _fun37207_ip = 110;
-                    continue _fun37207
+                    _fun37224_ip = 110;
+                    continue _fun37224
                 }
             case 71:
                 var7 = global;
@@ -53,16 +53,16 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             case 110:
                 var6 = var4;
                 if (var6) {
-                    _fun37207_ip = 125;
-                    continue _fun37207
+                    _fun37224_ip = 125;
+                    continue _fun37224
                 }
             case 116:
                 var7 = var5.current;
                 var6 = var3 == var7;
             case 125:
                 if (var6) {
-                    _fun37207_ip = 143;
-                    continue _fun37207
+                    _fun37224_ip = 143;
+                    continue _fun37224
                 }
             case 128:
                 var6 = var5.current;
@@ -71,8 +71,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             case 143:
                 var5 = var2.current;
                 if (!(var3 !== var5)) {
-                    _fun37207_ip = 168;
-                    continue _fun37207
+                    _fun37224_ip = 168;
+                    continue _fun37224
                 }
             case 152:
                 var7 = _closure1_slot2;
@@ -81,8 +81,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var5 = var7.bind(var5)(var6);
             case 168:
                 if (var4) {
-                    _fun37207_ip = 177;
-                    continue _fun37207
+                    _fun37224_ip = 177;
+                    continue _fun37224
                 }
             case 171:
                 var2.current = var3;
@@ -125,7 +125,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var3.jsx;
     var _closure1_slot4 = var3;
     var1 = function(arg0) { // Original name: Freeze, environment: var1
-        _fun37209: for (var _fun37209_ip = 0;;) switch (_fun37209_ip) {
+        _fun37226: for (var _fun37226_ip = 0;;) switch (_fun37226_ip) {
             case 0:
                 var0 = arg0;
                 var8 = var0.freeze;
@@ -137,8 +137,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = undefined;
                 var5 = null;
                 if (!(var0 !== var6)) {
-                    _fun37209_ip = 44;
-                    continue _fun37209
+                    _fun37226_ip = 44;
+                    continue _fun37226
                 }
             case 41:
                 var5 = var6;

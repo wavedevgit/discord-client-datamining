@@ -38,14 +38,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = var4.bind(var1)(var3);
         var4 = var5.getHeaderBackButton;
         var3 = function() { // Environment: var0
-            _fun81544: for (var _fun81544_ip = 0;;) switch (_fun81544_ip) {
+            _fun81574: for (var _fun81574_ip = 0;;) switch (_fun81574_ip) {
                 case 0:
                     var1 = _closure2_slot0;
                     var2 = var1.navigateToLandingPage;
                     var1 = null;
                     if (!(var1 == var2)) {
-                        _fun81544_ip = 61;
-                        continue _fun81544
+                        _fun81574_ip = 61;
+                        continue _fun81574
                     }
                 case 19:
                     var3 = _closure1_slot0;
@@ -57,8 +57,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = var3.goBackToLanding;
                     var1 = _closure2_slot1;
                     var1 = var2.bind(var3)(var1);
-                    _fun81544_ip = 75;
-                    continue _fun81544;
+                    _fun81574_ip = 75;
+                    continue _fun81574;
                 case 61:
                     var1 = _closure2_slot0;
                     var0 = var1.navigateToLandingPage;
@@ -75,4 +75,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1469, 4667, 10352, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1469, 4668, 10354, 2]);

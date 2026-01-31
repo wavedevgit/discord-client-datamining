@@ -1,6 +1,6 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun12918: for (var _fun12918_ip = 0;;) switch (_fun12918_ip) {
+    _fun12920: for (var _fun12920_ip = 0;;) switch (_fun12920_ip) {
         case 0:
             var5 = require;
             var4 = metroImportDefault;
@@ -9,7 +9,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var _closure1_slot0 = var5;
             var _closure1_slot1 = var6;
             var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
-                _fun12919: for (var _fun12919_ip = 0;;) switch (_fun12919_ip) {
+                _fun12921: for (var _fun12921_ip = 0;;) switch (_fun12921_ip) {
                     case 0:
                     case 2: // try_start_0
                         var1 = global;
@@ -30,8 +30,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var1 = !var1;
                         var _closure2_slot0 = var1;
                     case 70: // try_end0
-                        _fun12919_ip = 74;
-                        continue _fun12919;
+                        _fun12921_ip = 74;
+                        continue _fun12921;
                     case 72: // catch_target0
                         CatchBlockStart(arg_register = 1);
                     case 74:
@@ -92,8 +92,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var5 = !var3;
             var3 = !var5;
             if (var5) {
-                _fun12918_ip = 222;
-                continue _fun12918
+                _fun12920_ip = 222;
+                continue _fun12920
             }
         case 205:
             var6 = var7.hasViewManagerConfig;
@@ -104,7 +104,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var5 = var4.Component;
             var4 = function(arg0) { // Environment: var1
                 var3 = function() { // Original name: RNSentryOnDrawReporterNoop, environment: var0
-                    _fun12923: for (var _fun12923_ip = 0;;) switch (_fun12923_ip) {
+                    _fun12925: for (var _fun12925_ip = 0;;) switch (_fun12925_ip) {
                         case 0:
                             var3 = this;
                             var2 = undefined;
@@ -118,16 +118,16 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var0 = _closure1_slot12;
                             var0 = var0.bind(var2)();
                             if (var0) {
-                                _fun12923_ip = 69;
-                                continue _fun12923
+                                _fun12925_ip = 69;
+                                continue _fun12925
                             }
                         case 51:
                             var6 = var8.apply;
                             var4 = arguments;
                             var0 = var4;
                             var0 = var6.bind(var8)(var3, var0);
-                            _fun12923_ip = 105;
-                            continue _fun12923;
+                            _fun12925_ip = 105;
+                            continue _fun12925;
                         case 69:
                             var6 = global;
                             var7 = var6.Reflect;
@@ -175,12 +175,12 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var _closure1_slot11 = var4;
             var2.nativeComponentExists = var3;
             var1 = function() { // Original name: getRNSentryOnDrawReporter, environment: var1
-                _fun12925: for (var _fun12925_ip = 0;;) switch (_fun12925_ip) {
+                _fun12927: for (var _fun12927_ip = 0;;) switch (_fun12927_ip) {
                     case 0:
                         var1 = _closure1_slot9;
                         if (var1) {
-                            _fun12925_ip = 166;
-                            continue _fun12925
+                            _fun12927_ip = 166;
+                            continue _fun12927
                         }
                     case 13:
                         var2 = _closure1_slot0;
@@ -192,14 +192,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var1 = var2.isExpoGo;
                         var1 = var1.bind(var2)();
                         if (var1) {
-                            _fun12925_ip = 158;
-                            continue _fun12925
+                            _fun12927_ip = 158;
+                            continue _fun12927
                         }
                     case 48:
                         var1 = _closure1_slot10;
                         if (!var1) {
-                            _fun12925_ip = 158;
-                            continue _fun12925
+                            _fun12927_ip = 158;
+                            continue _fun12927
                         }
                     case 55:
                         var2 = _closure1_slot0;
@@ -212,21 +212,21 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var5 = null;
                         var1 = undefined;
                         if (!(var5 !== var2)) {
-                            _fun12925_ip = 107;
-                            continue _fun12925
+                            _fun12927_ip = 107;
+                            continue _fun12927
                         }
                     case 95:
                         var1 = undefined;
                         if (!(var1 !== var2)) {
-                            _fun12925_ip = 107;
-                            continue _fun12925
+                            _fun12927_ip = 107;
+                            continue _fun12927
                         }
                     case 101:
                         var1 = var2.requireNativeComponent;
                     case 107:
                         if (!var1) {
-                            _fun12925_ip = 158;
-                            continue _fun12925
+                            _fun12927_ip = 158;
+                            continue _fun12927
                         }
                     case 110:
                         var2 = _closure1_slot0;
@@ -238,8 +238,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var2 = var3.requireNativeComponent;
                         var1 = 'RNSentryOnDrawReporter';
                         var1 = var2.bind(var3)(var1);
-                        _fun12925_ip = 162;
-                        continue _fun12925;
+                        _fun12927_ip = 162;
+                        continue _fun12927;
                     case 158:
                         var1 = _closure1_slot11;
                     case 162:

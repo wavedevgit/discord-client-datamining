@@ -119,14 +119,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4[1] = var13;
         var4[2] = var7;
         var1 = function() { // Environment: var0
-            _fun50882: for (var _fun50882_ip = 0;;) switch (_fun50882_ip) {
+            _fun50899: for (var _fun50899_ip = 0;;) switch (_fun50899_ip) {
                 case 0:
                     var2 = _closure2_slot0;
                     var4 = _closure2_slot1;
                     var1 = var4.set;
                     if (var2) {
-                        _fun50882_ip = 53;
-                        continue _fun50882
+                        _fun50899_ip = 53;
+                        continue _fun50899
                     }
                 case 19:
                     var5 = 0.16;
@@ -134,8 +134,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var3 = _closure2_slot2;
                     var2 = var3.set;
                     var2 = var2.bind(var3)(var5);
-                    _fun50882_ip = 402;
-                    continue _fun50882;
+                    _fun50899_ip = 402;
+                    continue _fun50899;
                 case 53:
                     var13 = 0;
                     var1 = var1.bind(var4)(var13);

@@ -5,14 +5,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = dependencyMap;
     var _closure1_slot1 = var1;
     var1 = function(arg0) { // Original name: toKey, environment: var0
-        _fun8246: for (var _fun8246_ip = 0;;) switch (_fun8246_ip) {
+        _fun8248: for (var _fun8248_ip = 0;;) switch (_fun8248_ip) {
             case 0:
                 var0 = arg0;
                 var2 = 'string';
                 var1 = typeof var0;
                 if (!(var2 !== var1)) {
-                    _fun8246_ip = 91;
-                    continue _fun8246
+                    _fun8248_ip = 91;
+                    continue _fun8248
                 }
             case 14:
                 var3 = _closure1_slot0;
@@ -23,15 +23,15 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = var3.bind(var2)(var1);
                 var1 = var1.bind(var2)(var0);
                 if (var1) {
-                    _fun8246_ip = 91;
-                    continue _fun8246
+                    _fun8248_ip = 91;
+                    continue _fun8248
                 }
             case 46:
                 var2 = '' + var0;
                 var1 = '0';
                 if (!(var1 === var2)) {
-                    _fun8246_ip = 86;
-                    continue _fun8246
+                    _fun8248_ip = 86;
+                    continue _fun8248
                 }
             case 59:
                 var1 = 1;
@@ -39,8 +39,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = '-0';
                 var3 = -inf;
                 if (!(var4 !== var3)) {
-                    _fun8246_ip = 89;
-                    continue _fun8246
+                    _fun8248_ip = 89;
+                    continue _fun8248
                 }
             case 86:
                 var1 = var2;

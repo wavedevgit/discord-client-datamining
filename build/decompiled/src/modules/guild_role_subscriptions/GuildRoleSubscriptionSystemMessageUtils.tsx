@@ -14,7 +14,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var _closure1_slot10 = var0;
     var0 = function(arg0, arg1) { // Original name: getRoleSubscriptionPurchaseContentCommonData, environment: var1
-        _fun55401: for (var _fun55401_ip = 0;;) switch (_fun55401_ip) {
+        _fun55418: for (var _fun55418_ip = 0;;) switch (_fun55418_ip) {
             case 0:
                 var3 = arg1;
                 var2 = _closure1_slot3;
@@ -25,8 +25,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var1 == var3;
                 var0 = undefined;
                 if (var4) {
-                    _fun55401_ip = 40;
-                    continue _fun55401
+                    _fun55418_ip = 40;
+                    continue _fun55418
                 }
             case 34:
                 var0 = var3.total_months_subscribed;
@@ -35,8 +35,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = 0;
                 var4 = 0;
                 if (!var7) {
-                    _fun55401_ip = 54;
-                    continue _fun55401
+                    _fun55418_ip = 54;
+                    continue _fun55418
                 }
             case 51:
                 var4 = var0;
@@ -49,16 +49,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var1 == var3;
                 var2 = undefined;
                 if (var4) {
-                    _fun55401_ip = 91;
-                    continue _fun55401
+                    _fun55418_ip = 91;
+                    continue _fun55418
                 }
             case 83:
                 var2 = var3.is_renewal;
             case 91:
                 var1 = var1 != var2;
                 if (!var1) {
-                    _fun55401_ip = 101;
-                    continue _fun55401
+                    _fun55418_ip = 101;
+                    continue _fun55418
                 }
             case 98:
                 var1 = var2;
@@ -69,23 +69,23 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var _closure1_slot11 = var0;
     var0 = function(arg0) { // Original name: getRoleSubscriptionPurchaseSystemMessageContent, environment: var1
-        _fun55402: for (var _fun55402_ip = 0;;) switch (_fun55402_ip) {
+        _fun55419: for (var _fun55419_ip = 0;;) switch (_fun55419_ip) {
             case 0:
                 var0 = arg0;
                 var7 = var0.username;
                 var5 = var0.usernameOnClickHandler;
                 var3 = undefined;
                 if (!(var5 === var3)) {
-                    _fun55402_ip = 27;
-                    continue _fun55402
+                    _fun55419_ip = 27;
+                    continue _fun55419
                 }
             case 20:
                 var5 = _closure1_slot10;
             case 27:
                 var6 = var0.roleSubscriptionOnClickHandler;
                 if (!(var6 === var3)) {
-                    _fun55402_ip = 44;
-                    continue _fun55402
+                    _fun55419_ip = 44;
+                    continue _fun55419
                 }
             case 37:
                 var6 = _closure1_slot9;
@@ -106,32 +106,32 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = var11.bind(var3)(var10);
                 var10 = var10.t;
                 if (var1) {
-                    _fun55402_ip = 144;
-                    continue _fun55402
+                    _fun55419_ip = 144;
+                    continue _fun55419
                 }
             case 121:
                 if (var9) {
-                    _fun55402_ip = 134;
-                    continue _fun55402
+                    _fun55419_ip = 134;
+                    continue _fun55419
                 }
             case 124:
                 var1 = var10.mYjFFx;
-                _fun55402_ip = 142;
-                continue _fun55402;
+                _fun55419_ip = 142;
+                continue _fun55419;
             case 134:
                 var1 = var10.mPTTdv;
             case 142:
-                _fun55402_ip = 168;
-                continue _fun55402;
+                _fun55419_ip = 168;
+                continue _fun55419;
             case 144:
                 if (var9) {
-                    _fun55402_ip = 157;
-                    continue _fun55402
+                    _fun55419_ip = 157;
+                    continue _fun55419
                 }
             case 147:
                 var9 = var10.eCgb2W;
-                _fun55402_ip = 165;
-                continue _fun55402;
+                _fun55419_ip = 165;
+                continue _fun55419;
             case 157:
                 var9 = var10.Iy66M7;
             case 165:
@@ -145,8 +145,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var5 == var8;
                 var7 = undefined;
                 if (var9) {
-                    _fun55402_ip = 199;
-                    continue _fun55402
+                    _fun55419_ip = 199;
+                    continue _fun55419
                 }
             case 194:
                 var7 = var8.name;
@@ -156,8 +156,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var5 == var4;
                 var3 = undefined;
                 if (var5) {
-                    _fun55402_ip = 226;
-                    continue _fun55402
+                    _fun55419_ip = 226;
+                    continue _fun55419
                 }
             case 220:
                 var3 = var4.tier_name;
@@ -209,7 +209,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/guild_role_subscriptions/GuildRoleSubscriptionSystemMessageUtils.tsx';
     var3 = var4.bind(var5)(var3);
     var3 = function(arg0) { // Original name: pickRoleSubscriptionPurchaseSticker, environment: var1
-        _fun55403: for (var _fun55403_ip = 0;;) switch (_fun55403_ip) {
+        _fun55420: for (var _fun55420_ip = 0;;) switch (_fun55420_ip) {
             case 0:
                 var2 = _closure1_slot4;
                 var1 = var2.getCurrentUser;
@@ -219,8 +219,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = undefined;
                 var5 = undefined;
                 if (var3) {
-                    _fun55403_ip = 34;
-                    continue _fun55403
+                    _fun55420_ip = 34;
+                    continue _fun55420
                 }
             case 29:
                 var5 = var2.id;
@@ -228,8 +228,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1 != var5;
                 var2 = 0;
                 if (!var1) {
-                    _fun55403_ip = 74;
-                    continue _fun55403
+                    _fun55420_ip = 74;
+                    continue _fun55420
                 }
             case 43:
                 var3 = _closure1_slot1;
@@ -258,19 +258,19 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.pickRoleSubscriptionPurchaseSticker = var3;
     var3 = function(arg0, arg1) { // Original name: getRoleSubscriptionPurchaseStickerCTA, environment: var1
-        _fun55404: for (var _fun55404_ip = 0;;) switch (_fun55404_ip) {
+        _fun55421: for (var _fun55421_ip = 0;;) switch (_fun55421_ip) {
             case 0:
                 var1 = arg1;
                 if (var1) {
-                    _fun55404_ip = 21;
-                    continue _fun55404
+                    _fun55421_ip = 21;
+                    continue _fun55421
                 }
             case 9:
                 var2 = _closure1_slot5;
                 var1 = undefined;
                 var1 = var2.bind(var1)();
-                _fun55404_ip = 31;
-                continue _fun55404;
+                _fun55421_ip = 31;
+                continue _fun55421;
             case 21:
                 var3 = _closure1_slot6;
                 var2 = undefined;
@@ -351,23 +351,23 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getRoleSubscriptionPurchaseSystemMessageAstFormattedContent = var3;
     var3 = function(arg0) { // Original name: getRoleSubscriptionPurchaseSystemMessageContentMobile, environment: var1
-        _fun55407: for (var _fun55407_ip = 0;;) switch (_fun55407_ip) {
+        _fun55424: for (var _fun55424_ip = 0;;) switch (_fun55424_ip) {
             case 0:
                 var0 = arg0;
                 var7 = var0.username;
                 var6 = var0.usernameOnClickHandler;
                 var8 = undefined;
                 if (!(var6 === var8)) {
-                    _fun55407_ip = 27;
-                    continue _fun55407
+                    _fun55424_ip = 27;
+                    continue _fun55424
                 }
             case 20:
                 var6 = _closure1_slot10;
             case 27:
                 var5 = var0.roleSubscriptionOnClickHandler;
                 if (!(var5 === var8)) {
-                    _fun55407_ip = 44;
-                    continue _fun55407
+                    _fun55424_ip = 44;
+                    continue _fun55424
                 }
             case 37:
                 var5 = _closure1_slot9;
@@ -387,32 +387,32 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = var11.bind(var8)(var10);
                 var10 = var10.t;
                 if (var3) {
-                    _fun55407_ip = 142;
-                    continue _fun55407
+                    _fun55424_ip = 142;
+                    continue _fun55424
                 }
             case 119:
                 if (var1) {
-                    _fun55407_ip = 132;
-                    continue _fun55407
+                    _fun55424_ip = 132;
+                    continue _fun55424
                 }
             case 122:
                 var3 = var10["6Z1E+7"];
-                _fun55407_ip = 140;
-                continue _fun55407;
+                _fun55424_ip = 140;
+                continue _fun55424;
             case 132:
                 var3 = var10.OxP1NC;
             case 140:
-                _fun55407_ip = 166;
-                continue _fun55407;
+                _fun55424_ip = 166;
+                continue _fun55424;
             case 142:
                 if (var1) {
-                    _fun55407_ip = 155;
-                    continue _fun55407
+                    _fun55424_ip = 155;
+                    continue _fun55424
                 }
             case 145:
                 var1 = var10["+N9bxq"];
-                _fun55407_ip = 163;
-                continue _fun55407;
+                _fun55424_ip = 163;
+                continue _fun55424;
             case 155:
                 var1 = var10.OQ0OUy;
             case 163:
@@ -429,8 +429,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var13 = var10 == var12;
                 var11 = undefined;
                 if (var13) {
-                    _fun55407_ip = 212;
-                    continue _fun55407
+                    _fun55424_ip = 212;
+                    continue _fun55424
                 }
             case 207:
                 var11 = var12.name;
@@ -439,8 +439,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = var10 == var9;
                 var8 = undefined;
                 if (var10) {
-                    _fun55407_ip = 232;
-                    continue _fun55407
+                    _fun55424_ip = 232;
+                    continue _fun55424
                 }
             case 226:
                 var8 = var9.tier_name;
@@ -469,7 +469,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.isEligibleForRoleSubscriptionPurchaseSystemMessageSettings = var3;
     var3 = function(arg0, arg1, arg2, arg3) { // Original name: trackRoleSubscriptionPurchaseMessageTierClick, environment: var1
-        _fun55409: for (var _fun55409_ip = 0;;) switch (_fun55409_ip) {
+        _fun55426: for (var _fun55426_ip = 0;;) switch (_fun55426_ip) {
             case 0:
                 var2 = _closure1_slot1;
                 var1 = _closure1_slot2;
@@ -490,8 +490,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var5 == var6;
                 var5 = undefined;
                 if (var7) {
-                    _fun55409_ip = 79;
-                    continue _fun55409
+                    _fun55426_ip = 79;
+                    continue _fun55426
                 }
             case 74:
                 var5 = var6.id;
@@ -509,7 +509,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.trackRoleSubscriptionPurchaseMessageTierClick = var3;
     var1 = function(arg0, arg1) { // Original name: getRoleSubscriptionPurchaseSystemMessageEventProperties, environment: var1
-        _fun55410: for (var _fun55410_ip = 0;;) switch (_fun55410_ip) {
+        _fun55427: for (var _fun55427_ip = 0;;) switch (_fun55427_ip) {
             case 0:
                 var2 = arg0;
                 var1 = arg1;
@@ -523,8 +523,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var3 == var4;
                 var3 = undefined;
                 if (var5) {
-                    _fun55410_ip = 49;
-                    continue _fun55410
+                    _fun55427_ip = 49;
+                    continue _fun55427
                 }
             case 44:
                 var3 = var4.id;
@@ -542,4 +542,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getRoleSubscriptionPurchaseSystemMessageEventProperties = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1410, 1613, 6653, 660, 21, 1234, 5581, 4265, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1410, 1613, 6654, 660, 21, 1234, 5582, 4266, 2]);

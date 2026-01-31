@@ -27,7 +27,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var0.getLength = var3;
     var2 = function(arg0) { // Original name: write, environment: var2
-        _fun67443: for (var _fun67443_ip = 0;;) switch (_fun67443_ip) {
+        _fun67466: for (var _fun67466_ip = 0;;) switch (_fun67466_ip) {
             case 0:
                 var4 = arg0;
                 var3 = this;
@@ -37,8 +37,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = var2 < var0;
                 var1 = 8;
                 if (!var0) {
-                    _fun67443_ip = 72;
-                    continue _fun67443
+                    _fun67466_ip = 72;
+                    continue _fun67466
                 }
             case 27:
                 var5 = var4.put;
@@ -50,8 +50,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = var3.data;
                 var0 = var0.length;
                 if (var2 < var0) {
-                    _fun67443_ip = 27;
-                    continue _fun67443
+                    _fun67466_ip = 27;
+                    continue _fun67466
                 }
             case 72:
                 var0 = undefined;

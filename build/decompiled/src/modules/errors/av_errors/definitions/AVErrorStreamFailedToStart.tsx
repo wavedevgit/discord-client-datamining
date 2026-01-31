@@ -26,7 +26,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var3 = var1.activeStreams;
         var2 = var3.filter;
         var1 = function(arg0) { // Environment: var0
-            _fun118221: for (var _fun118221_ip = 0;;) switch (_fun118221_ip) {
+            _fun117571: for (var _fun117571_ip = 0;;) switch (_fun117571_ip) {
                 case 0:
                     var1 = arg0;
                     var2 = var1.state;
@@ -34,8 +34,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = var0.FAILED;
                     var0 = var2 === var0;
                     if (!var0) {
-                        _fun118221_ip = 40;
-                        continue _fun118221
+                        _fun117571_ip = 40;
+                        continue _fun117571
                     }
                 case 28:
                     var2 = var1.errorCode;
@@ -98,4 +98,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.AVErrorStreamFailedToStartDefinition = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 7968, 15008, 3464, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 7967, 14938, 3464, 2]);

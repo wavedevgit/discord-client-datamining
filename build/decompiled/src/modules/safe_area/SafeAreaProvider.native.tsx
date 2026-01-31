@@ -9,7 +9,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var5;
     var0 = function(arg0) { // Original name: getSafeAreaInsets, environment: var1
-        _fun46331: for (var _fun46331_ip = 0;;) switch (_fun46331_ip) {
+        _fun46348: for (var _fun46348_ip = 0;;) switch (_fun46348_ip) {
             case 0:
                 var3 = arg0;
                 var2 = _closure1_slot0;
@@ -21,8 +21,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var2.isAndroid;
                 var1 = var1.bind(var2)();
                 if (var1) {
-                    _fun46331_ip = 43;
-                    continue _fun46331
+                    _fun46348_ip = 43;
+                    continue _fun46348
                 }
             case 41:
                 return var3;
@@ -43,36 +43,36 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = null;
                 var0 = var3;
                 if (!(var2 != var4)) {
-                    _fun46331_ip = 210;
-                    continue _fun46331
+                    _fun46348_ip = 210;
+                    continue _fun46348
                 }
             case 110:
                 var5 = var4.bottom;
                 var2 = var1.bottom;
                 if (!(var5 === var2)) {
-                    _fun46331_ip = 166;
-                    continue _fun46331
+                    _fun46348_ip = 166;
+                    continue _fun46348
                 }
             case 124:
                 var5 = var4.top;
                 var2 = var1.top;
                 if (!(var5 === var2)) {
-                    _fun46331_ip = 166;
-                    continue _fun46331
+                    _fun46348_ip = 166;
+                    continue _fun46348
                 }
             case 138:
                 var5 = var4.left;
                 var2 = var1.left;
                 if (!(var5 === var2)) {
-                    _fun46331_ip = 166;
-                    continue _fun46331
+                    _fun46348_ip = 166;
+                    continue _fun46348
                 }
             case 152:
                 var5 = var4.right;
                 var2 = var1.right;
                 if (!(var5 !== var2)) {
-                    _fun46331_ip = 207;
-                    continue _fun46331
+                    _fun46348_ip = 207;
+                    continue _fun46348
                 }
             case 166:
                 var2 = {};
@@ -182,13 +182,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = new Array(1);
         var1[0] = var6;
         var0 = function() { // Environment: var0
-            _fun46336: for (var _fun46336_ip = 0;;) switch (_fun46336_ip) {
+            _fun46353: for (var _fun46353_ip = 0;;) switch (_fun46353_ip) {
                 case 0:
                     var1 = _closure2_slot1;
                     var1 = var1.current;
                     if (var1) {
-                        _fun46336_ip = 70;
-                        continue _fun46336
+                        _fun46353_ip = 70;
+                        continue _fun46353
                     }
                 case 15:
                     var1 = _closure2_slot1;

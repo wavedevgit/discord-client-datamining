@@ -48,15 +48,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4[var5] = var3;
     var _closure1_slot7 = var4;
     var3 = function(arg0, arg1, arg2) { // Original name: getStickerSendability, environment: var1
-        _fun49516: for (var _fun49516_ip = 0;;) switch (_fun49516_ip) {
+        _fun49533: for (var _fun49533_ip = 0;;) switch (_fun49533_ip) {
             case 0:
                 var1 = arg0;
                 var10 = arg1;
                 var9 = arg2;
                 var3 = null;
                 if (!(var3 != var10)) {
-                    _fun49516_ip = 412;
-                    continue _fun49516
+                    _fun49533_ip = 412;
+                    continue _fun49533
                 }
             case 18:
                 var5 = _closure1_slot1;
@@ -74,8 +74,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var4.isStandardSticker;
                 var0 = var0.bind(var4)(var1);
                 if (var0) {
-                    _fun49516_ip = 360;
-                    continue _fun49516
+                    _fun49533_ip = 360;
+                    continue _fun49533
                 }
             case 87:
                 var4 = _closure1_slot0;
@@ -85,64 +85,64 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var4.isGuildSticker;
                 var0 = var0.bind(var4)(var1);
                 if (!var0) {
-                    _fun49516_ip = 122;
-                    continue _fun49516
+                    _fun49533_ip = 122;
+                    continue _fun49533
                 }
             case 118:
                 if (!(var3 == var9)) {
-                    _fun49516_ip = 137;
-                    continue _fun49516
+                    _fun49533_ip = 137;
+                    continue _fun49533
                 }
             case 122:
                 var0 = _closure1_slot7;
                 var0 = var0.NONSENDABLE;
-                _fun49516_ip = 358;
-                continue _fun49516;
+                _fun49533_ip = 358;
+                continue _fun49533;
             case 137:
                 var7 = _closure1_slot4;
                 var5 = var7.getSelfMember;
                 var4 = var1.guild_id;
                 var4 = var5.bind(var7)(var4);
                 if (!(var3 != var4)) {
-                    _fun49516_ip = 345;
-                    continue _fun49516
+                    _fun49533_ip = 345;
+                    continue _fun49533
                 }
             case 164:
                 var4 = var1.available;
                 if (var4) {
-                    _fun49516_ip = 188;
-                    continue _fun49516
+                    _fun49533_ip = 188;
+                    continue _fun49533
                 }
             case 173:
                 var4 = _closure1_slot7;
                 var4 = var4.SENDABLE_WITH_BOOSTED_GUILD;
-                _fun49516_ip = 343;
-                continue _fun49516;
+                _fun49533_ip = 343;
+                continue _fun49533;
             case 188:
                 var5 = var9.guild_id;
                 if (!(var3 != var5)) {
-                    _fun49516_ip = 224;
-                    continue _fun49516
+                    _fun49533_ip = 224;
+                    continue _fun49533
                 }
             case 197:
                 var7 = var9.guild_id;
                 var5 = '';
                 if (!(var5 !== var7)) {
-                    _fun49516_ip = 224;
-                    continue _fun49516
+                    _fun49533_ip = 224;
+                    continue _fun49533
                 }
             case 210:
                 var7 = var9.guild_id;
                 var5 = var1.guild_id;
                 if (!(var7 !== var5)) {
-                    _fun49516_ip = 330;
-                    continue _fun49516
+                    _fun49533_ip = 330;
+                    continue _fun49533
                 }
             case 224:
                 var5 = var9.guild_id;
                 if (!(var3 != var5)) {
-                    _fun49516_ip = 304;
-                    continue _fun49516
+                    _fun49533_ip = 304;
+                    continue _fun49533
                 }
             case 233:
                 var7 = _closure1_slot2;
@@ -159,61 +159,61 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5.context = var9;
                 var5 = var7.bind(var8)(var5);
                 if (var5) {
-                    _fun49516_ip = 304;
-                    continue _fun49516
+                    _fun49533_ip = 304;
+                    continue _fun49533
                 }
             case 292:
                 var5 = _closure1_slot7;
                 var5 = var5.NONSENDABLE;
-                _fun49516_ip = 328;
-                continue _fun49516;
+                _fun49533_ip = 328;
+                continue _fun49533;
             case 304:
                 var7 = _closure1_slot7;
                 if (var6) {
-                    _fun49516_ip = 319;
-                    continue _fun49516
+                    _fun49533_ip = 319;
+                    continue _fun49533
                 }
             case 311:
                 var6 = var7.SENDABLE_WITH_PREMIUM;
-                _fun49516_ip = 325;
-                continue _fun49516;
+                _fun49533_ip = 325;
+                continue _fun49533;
             case 319:
                 var6 = var7.SENDABLE;
             case 325:
                 var5 = var6;
             case 328:
-                _fun49516_ip = 340;
-                continue _fun49516;
+                _fun49533_ip = 340;
+                continue _fun49533;
             case 330:
                 var6 = _closure1_slot7;
                 var5 = var6.SENDABLE;
             case 340:
                 var4 = var5;
             case 343:
-                _fun49516_ip = 355;
-                continue _fun49516;
+                _fun49533_ip = 355;
+                continue _fun49533;
             case 345:
                 var5 = _closure1_slot7;
                 var4 = var5.NONSENDABLE;
             case 355:
                 var0 = var4;
             case 358:
-                _fun49516_ip = 410;
-                continue _fun49516;
+                _fun49533_ip = 410;
+                continue _fun49533;
             case 360:
                 var5 = _closure1_slot5;
                 var4 = var5.getStickerPack;
                 var1 = var1.pack_id;
                 var1 = var4.bind(var5)(var1);
                 if (!(var3 != var1)) {
-                    _fun49516_ip = 397;
-                    continue _fun49516
+                    _fun49533_ip = 397;
+                    continue _fun49533
                 }
             case 385:
                 var1 = _closure1_slot7;
                 var1 = var1.SENDABLE;
-                _fun49516_ip = 407;
-                continue _fun49516;
+                _fun49533_ip = 407;
+                continue _fun49533;
             case 397:
                 var2 = _closure1_slot7;
                 var1 = var2.NONSENDABLE;
@@ -250,4 +250,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.isSendableSticker = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1672, 5557, 660, 3068, 3958, 3055, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1672, 5558, 660, 3068, 3958, 3055, 2]);

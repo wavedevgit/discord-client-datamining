@@ -43,7 +43,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/experiments/ExperimentManager.tsx';
     var4 = var5.bind(var6)(var4);
     var4 = function(arg0, arg1, arg2) { // Original name: trackExposureToExperiment, environment: var1
-        _fun17806: for (var _fun17806_ip = 0;;) switch (_fun17806_ip) {
+        _fun17808: for (var _fun17808_ip = 0;;) switch (_fun17808_ip) {
             case 0:
                 var5 = arg2;
                 var3 = _closure1_slot2;
@@ -58,8 +58,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = undefined;
                 var6 = undefined;
                 if (var7) {
-                    _fun17806_ip = 52;
-                    continue _fun17806
+                    _fun17808_ip = 52;
+                    continue _fun17808
                 }
             case 47:
                 var6 = var5.location;
@@ -68,8 +68,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var4 == var5;
                 var6 = undefined;
                 if (var7) {
-                    _fun17806_ip = 71;
-                    continue _fun17806
+                    _fun17808_ip = 71;
+                    continue _fun17808
                 }
             case 65:
                 var6 = var5.analyticsLocations;
@@ -78,8 +78,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var4 == var5;
                 var6 = undefined;
                 if (var7) {
-                    _fun17806_ip = 91;
-                    continue _fun17806
+                    _fun17808_ip = 91;
+                    continue _fun17808
                 }
             case 85:
                 var6 = var5.fingerprint;
@@ -88,8 +88,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var4 == var5;
                 var6 = undefined;
                 if (var7) {
-                    _fun17806_ip = 111;
-                    continue _fun17806
+                    _fun17808_ip = 111;
+                    continue _fun17808
                 }
             case 105:
                 var6 = var5.excluded;
@@ -98,8 +98,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var4 == var5;
                 var4 = undefined;
                 if (var6) {
-                    _fun17806_ip = 131;
-                    continue _fun17806
+                    _fun17808_ip = 131;
+                    continue _fun17808
                 }
             case 125:
                 var4 = var5.exposureType;
@@ -160,7 +160,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.registerGuildExperiment = var4;
     var2.ExperimentSystem = var3;
     var1 = function(arg0, arg1, arg2) { // Original name: overrideBucket, environment: var1
-        _fun17809: for (var _fun17809_ip = 0;;) switch (_fun17809_ip) {
+        _fun17811: for (var _fun17811_ip = 0;;) switch (_fun17811_ip) {
             case 0:
                 var2 = arg0;
                 var3 = arg1;
@@ -168,21 +168,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = _closure1_slot5;
                 var1 = var1.LEGACY;
                 if (!(var2 !== var1)) {
-                    _fun17809_ip = 155;
-                    continue _fun17809
+                    _fun17811_ip = 155;
+                    continue _fun17811
                 }
             case 29:
                 var1 = _closure1_slot5;
                 var1 = var1.APEX;
                 if (!(var2 === var1)) {
-                    _fun17809_ip = 219;
-                    continue _fun17809
+                    _fun17811_ip = 219;
+                    continue _fun17811
                 }
             case 46:
                 var1 = null;
                 if (!(var1 != var4)) {
-                    _fun17809_ip = 106;
-                    continue _fun17809
+                    _fun17811_ip = 106;
+                    continue _fun17811
                 }
             case 52:
                 var5 = _closure1_slot0;
@@ -198,8 +198,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1.experimentName = var3;
                 var1.variantId = var4;
                 var1 = var2.bind(var5)(var1);
-                _fun17809_ip = 219;
-                continue _fun17809;
+                _fun17811_ip = 219;
+                continue _fun17811;
             case 106:
                 var5 = _closure1_slot0;
                 var2 = _closure1_slot1;
@@ -213,8 +213,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1.type = var6;
                 var1.experimentName = var3;
                 var1 = var2.bind(var5)(var1);
-                _fun17809_ip = 219;
-                continue _fun17809;
+                _fun17811_ip = 219;
+                continue _fun17811;
             case 155:
                 var2 = _closure1_slot0;
                 var1 = _closure1_slot1;
@@ -230,8 +230,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = null;
                 var5 = var3 != var4;
                 if (!var5) {
-                    _fun17809_ip = 209;
-                    continue _fun17809
+                    _fun17811_ip = 209;
+                    continue _fun17811
                 }
             case 206:
                 var3 = var4;

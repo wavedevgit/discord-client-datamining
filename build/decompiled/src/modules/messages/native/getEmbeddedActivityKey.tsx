@@ -37,7 +37,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var3;
     var1 = function(arg0) { // Original name: parseEmbeddedActivityKey, environment: var1
-        _fun77196: for (var _fun77196_ip = 0;;) switch (_fun77196_ip) {
+        _fun77226: for (var _fun77226_ip = 0;;) switch (_fun77226_ip) {
             case 0:
                 var2 = arg0;
                 var1 = var2.split;
@@ -48,8 +48,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1 < var0;
                 var0 = null;
                 if (var1) {
-                    _fun77196_ip = 72;
-                    continue _fun77196
+                    _fun77226_ip = 72;
+                    continue _fun77226
                 }
             case 34:
                 var1 = {};

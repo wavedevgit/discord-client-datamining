@@ -30,33 +30,33 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var2.isProtectedWeekYearToken = var0;
     var0 = function(arg0, arg1, arg2) { // Original name: throwProtectedError, environment: var1
-        _fun22755: for (var _fun22755_ip = 0;;) switch (_fun22755_ip) {
+        _fun22757: for (var _fun22757_ip = 0;;) switch (_fun22757_ip) {
             case 0:
                 var1 = arg0;
                 var5 = arg1;
                 var4 = arg2;
                 var0 = 'YYYY';
                 if (!(var0 !== var1)) {
-                    _fun22755_ip = 267;
-                    continue _fun22755
+                    _fun22757_ip = 267;
+                    continue _fun22757
                 }
             case 22:
                 var0 = 'YY';
                 if (!(var0 !== var1)) {
-                    _fun22755_ip = 197;
-                    continue _fun22755
+                    _fun22757_ip = 197;
+                    continue _fun22757
                 }
             case 35:
                 var0 = 'D';
                 if (!(var0 !== var1)) {
-                    _fun22755_ip = 127;
-                    continue _fun22755
+                    _fun22757_ip = 127;
+                    continue _fun22757
                 }
             case 43:
                 var0 = 'DD';
                 if (!(var0 !== var1)) {
-                    _fun22755_ip = 57;
-                    continue _fun22755
+                    _fun22757_ip = 57;
+                    continue _fun22757
                 }
             case 53:
                 var0 = undefined;

@@ -9,7 +9,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var3 = _closure1_slot0;
         var2 = function*(arg0, arg1, arg2) { // Environment: var2
             var0 = function*(arg0, arg1, arg2) { // Original name: ?anon_0_, environment: var0
-                _fun66523: for (var _fun66523_ip = 0;;) switch (_fun66523_ip) {
+                _fun66535: for (var _fun66535_ip = 0;;) switch (_fun66535_ip) {
                     case 0:
                         StartGenerator();
                         var9 = arg0;
@@ -17,26 +17,26 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var5 = arg2;
                         ResumeGenerator(result_out_reg = 0, return_bool_out_reg = 1);
                         if (var1) {
-                            _fun66523_ip = 368;
-                            continue _fun66523
+                            _fun66535_ip = 368;
+                            continue _fun66535
                         }
                     case 19:
                         var8 = 0;
                         if (!(var8 === var9)) {
-                            _fun66523_ip = 332;
-                            continue _fun66523
+                            _fun66535_ip = 332;
+                            continue _fun66535
                         }
                     case 28:
                         var1 = var3.byteLength;
                         if (!(var8 !== var1)) {
-                            _fun66523_ip = 296;
-                            continue _fun66523
+                            _fun66535_ip = 296;
+                            continue _fun66535
                         }
                     case 41:
                         var1 = var5.length;
                         if (!(var8 !== var1)) {
-                            _fun66523_ip = 260;
-                            continue _fun66523
+                            _fun66535_ip = 260;
+                            continue _fun66535
                         }
                     case 53:
                         var1 = global;
@@ -45,16 +45,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var6 = var4.bind(var2)(var5);
                         var2 = 0n;
                         if (!(!(var6 < var2))) {
-                            _fun66523_ip = 226;
-                            continue _fun66523
+                            _fun66535_ip = 226;
+                            continue _fun66535
                         }
                     case 79:
                         var12 = 2n;
                         var11 = 64n;
                         var2 = exponentiationOperator(var12, var11);
                         if (!(!(var6 >= var2))) {
-                            _fun66523_ip = 226;
-                            continue _fun66523
+                            _fun66535_ip = 226;
+                            continue _fun66535
                         }
                     case 98:
                         var5 = var1.Uint8Array;

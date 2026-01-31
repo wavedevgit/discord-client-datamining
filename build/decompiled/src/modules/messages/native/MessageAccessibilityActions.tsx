@@ -90,21 +90,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getMessageAccessibilityActionFromLabel = var3;
     var1 = function(arg0, arg1) { // Original name: createMessageAccessibilityActions, environment: var1
-        _fun89352: for (var _fun89352_ip = 0;;) switch (_fun89352_ip) {
+        _fun88700: for (var _fun88700_ip = 0;;) switch (_fun88700_ip) {
             case 0:
                 var5 = arg1;
                 var0 = null;
                 if (!(var0 != var5)) {
-                    _fun89352_ip = 387;
-                    continue _fun89352
+                    _fun88700_ip = 387;
+                    continue _fun88700
                 }
             case 12:
                 var1 = var5.getGuildId;
                 var3 = var1.bind(var5)();
                 var1 = var0 != var3;
                 if (!var1) {
-                    _fun89352_ip = 47;
-                    continue _fun89352
+                    _fun88700_ip = 47;
+                    continue _fun88700
                 }
             case 29:
                 var2 = _closure1_slot2;
@@ -112,8 +112,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var0.bind(var2)(var3);
             case 47:
                 if (!var1) {
-                    _fun89352_ip = 79;
-                    continue _fun89352
+                    _fun88700_ip = 79;
+                    continue _fun88700
                 }
             case 50:
                 var3 = _closure1_slot3;
@@ -123,8 +123,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var2.bind(var3)(var0, var5);
             case 79:
                 if (var1) {
-                    _fun89352_ip = 92;
-                    continue _fun89352
+                    _fun88700_ip = 92;
+                    continue _fun88700
                 }
             case 82:
                 var0 = var5.isPrivate;
@@ -151,8 +151,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = new Array(1);
                 var0[0] = var2;
                 if (!var1) {
-                    _fun89352_ip = 265;
-                    continue _fun89352
+                    _fun88700_ip = 265;
+                    continue _fun88700
                 }
             case 183:
                 var2 = var0.push;
@@ -183,8 +183,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = arg0;
                 var1 = var2.bind(var4)(var5, var1);
                 if (!var1) {
-                    _fun89352_ip = 385;
-                    continue _fun89352
+                    _fun88700_ip = 385;
+                    continue _fun88700
                 }
             case 303:
                 var2 = var0.push;
@@ -214,4 +214,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.createMessageAccessibilityActions = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [4198, 3050, 660, 1234, 9777, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [4198, 3050, 660, 1234, 9779, 2]);

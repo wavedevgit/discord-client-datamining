@@ -1,21 +1,21 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var1 = function(arg0) { // Original name: fromPropertyDescriptor, environment: var0
-        _fun28997: for (var _fun28997_ip = 0;;) switch (_fun28997_ip) {
+        _fun28998: for (var _fun28998_ip = 0;;) switch (_fun28998_ip) {
             case 0:
                 var0 = arg0;
                 var1 = undefined;
                 if (!(var1 !== var0)) {
-                    _fun28997_ip = 172;
-                    continue _fun28997
+                    _fun28998_ip = 172;
+                    continue _fun28998
                 }
             case 12:
                 var1 = {};
                 var2 = '[[Value]]';
                 var2 = var2 in var0;
                 if (!var2) {
-                    _fun28997_ip = 37;
-                    continue _fun28997
+                    _fun28998_ip = 37;
+                    continue _fun28998
                 }
             case 25:
                 var2 = var0["[[Value]]"];
@@ -24,8 +24,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = '[[Writable]]';
                 var2 = var2 in var0;
                 if (!var2) {
-                    _fun28997_ip = 66;
-                    continue _fun28997
+                    _fun28998_ip = 66;
+                    continue _fun28998
                 }
             case 48:
                 var2 = var0["[[Writable]]"];
@@ -36,8 +36,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = '[[Get]]';
                 var2 = var2 in var0;
                 if (!var2) {
-                    _fun28997_ip = 89;
-                    continue _fun28997
+                    _fun28998_ip = 89;
+                    continue _fun28998
                 }
             case 77:
                 var2 = var0["[[Get]]"];
@@ -46,8 +46,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = '[[Set]]';
                 var2 = var2 in var0;
                 if (!var2) {
-                    _fun28997_ip = 112;
-                    continue _fun28997
+                    _fun28998_ip = 112;
+                    continue _fun28998
                 }
             case 100:
                 var2 = var0["[[Set]]"];
@@ -56,8 +56,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = '[[Enumerable]]';
                 var2 = var2 in var0;
                 if (!var2) {
-                    _fun28997_ip = 141;
-                    continue _fun28997
+                    _fun28998_ip = 141;
+                    continue _fun28998
                 }
             case 123:
                 var2 = var0["[[Enumerable]]"];
@@ -68,8 +68,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = '[[Configurable]]';
                 var2 = var2 in var0;
                 if (!var2) {
-                    _fun28997_ip = 170;
-                    continue _fun28997
+                    _fun28998_ip = 170;
+                    continue _fun28998
                 }
             case 152:
                 var2 = var0["[[Configurable]]"];

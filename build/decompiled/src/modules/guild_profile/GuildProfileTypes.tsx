@@ -25,4 +25,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var1.GuildProfileVisibility;
     var2.GuildProfileVisibility = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [2, 7345]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [2, 7344]);

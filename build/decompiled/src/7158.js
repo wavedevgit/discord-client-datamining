@@ -1,167 +1,137 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-            var1 = exports;
-            var2 = global;
-            var5 = var2.Object;
-            var4 = var5.defineProperty;
-            var3 = {};
-            var2 = true;
-            var3.value = var2;
-            var2 = '__esModule';
-            var2 = var4.bind(var5)(var1, var2, var3);
-            var2 = function(arg0) { // Original name: getNumberOfUrlSegments, environment: var0
-                var2 = arg0;
-                var1 = var2.split;
-                var0 = /\\?\\/ / ;
-                var2 = var1.bind(var2)(var0);
-                var1 = var2.filter;
-                var0 = function(arg0) { // Environment: var0
-                    _fun58767: for (var _fun58767_ip = 0;;) switch (_fun58767_ip) {
-                        case 0:
-                            var2 = arg0;
-                            var1 = var2.length;
-                            var0 = 0;
-                            var0 = var1 > var0;
-                            if (!var0) {
-                                _fun58767_ip = 25;
-                                continue _fun58767
-                            }
-                        case 17:
-                            var1 = ',';
-                            var0 = var1 !== var2;
-                        case 25:
-                            return var0;
-                    }
-                };
-                var0 = var1.bind(var2)(var0);
-                var0 = var0.length;
-                return var0;
-            };
-            var1.getNumberOfUrlSegments = var2;
-            var2 = function(arg0) { // Original name: getSanitizedUrlString, environment: var0
-                _fun58768: for (var _fun58768_ip = 0;;) switch (_fun58768_ip) {
-                    case 0:
-                        var0 = arg0;
-                        var5 = var0.protocol;
-                        var7 = var0.host;
-                        var4 = var0.path;
-                        var3 = '';
-                        var2 = var3;
-                        if (!var5) {
-                            _fun58768_ip = 56;
-                            continue _fun58768
-                        }
-                    case 31:
-                        var0 = global;
-                        var0 = var0.HermesInternal;
-                        var1 = var0.concat;
-                        var0 = '://';
-                        var2 = var1.bind(var3)(var5, var0);
-                    case 56:
-                        var1 = var7;
-                        if (!var1) {
-                            _fun58768_ip = 143;
-                            continue _fun58768
-                        }
-                    case 62:
-                        var6 = var7.replace;
-                        var5 = /^.*@/;
-                        var0 = '[filtered]:[filtered]@';
-                        var6 = var6.bind(var7)(var5, var0);
-                        var5 = var6.replace;
-                        var0 = /(:80)$/;
-                        var6 = var5.bind(var6)(var0, var3);
-                        var5 = var6.replace;
-                        var0 = /(:443)$/;
-                        var1 = var5.bind(var6)(var0, var3);
-                    case 143:
-                        if (var1) {
-                            _fun58768_ip = 149;
-                            continue _fun58768
-                        }
-                    case 146:
-                        var1 = var3;
-                    case 149:
-                        var0 = global;
-                        var0 = var0.HermesInternal;
-                        var0 = var0.concat;
-                        var0 = var0.bind(var3)(var2, var1, var4);
-                        return var0;
+    var1 = exports;
+    var0 = global;
+    var4 = var0.Object;
+    var3 = var4.defineProperty;
+    var2 = {};
+    var0 = true;
+    var2.value = var0;
+    var0 = '__esModule';
+    var0 = var3.bind(var4)(var1, var0, var2);
+    var0 = function(arg0) { // Original name: parseCookie, environment: var0
+        _fun58784: for (var _fun58784_ip = 0;;) switch (_fun58784_ip) {
+            case 0:
+                var14 = arg0;
+                var11 = undefined;
+                var12 = undefined;
+                var13 = undefined;
+                var0 = {};
+                var1 = var14.length;
+                var10 = 0;
+                var1 = var10 < var1;
+                var9 = 1;
+                var8 = global;
+                var7 = '%';
+                var6 = -1;
+                var5 = 34;
+                var4 = ';';
+                var3 = '=';
+                var2 = 0;
+                if (!var1) {
+                    _fun58784_ip = 303;
+                    continue _fun58784
                 }
-            };
-            var1.getSanitizedUrlString = var2;
-            var2 = function(arg0) { // Original name: parseUrl, environment: var0
-                _fun58769: for (var _fun58769_ip = 0;;) switch (_fun58769_ip) {
-                    case 0:
-                        var2 = arg0;
-                        if (var2) {
-                            _fun58769_ip = 10;
-                            continue _fun58769
-                        }
-                    case 6:
-                        var0 = {};
-                        return var0;
-                    case 10:
-                        var1 = var2.match;
-                        var0 = /^(([^:\/?#]+):)?(\\/\\ / ([ ^ \/?#]*))?([^?#]*)(\?([^#]*))?(#(.*))?$/;
-                                var4 = var1.bind(var2)(var0);
-                                if (var4) {
-                                    _fun58769_ip = 42;
-                                    continue _fun58769
-                                }
-                                case 38:
-                                var0 = {};
-                                return var0;
-                                case 42:
-                                var0 = 6;
-                                var3 = var4[var0];
-                                if (var3) {
-                                    _fun58769_ip = 56;
-                                    continue _fun58769
-                                }
-                                case 52:
-                                var3 = '';
-                                case 56:
-                                var0 = 8;
-                                var2 = var4[var0];
-                                if (var2) {
-                                    _fun58769_ip = 70;
-                                    continue _fun58769
-                                }
-                                case 66:
-                                var2 = '';
-                                case 70:
-                                var0 = {};
-                                var1 = 4;
-                                var1 = var4[var1];
-                                var0.host = var1;
-                                var1 = 5;
-                                var5 = var4[var1];
-                                var0.path = var5;
-                                var5 = 2;
-                                var5 = var4[var5];
-                                var0.protocol = var5;
-                                var0.search = var3;
-                                var0.hash = var2;
-                                var1 = var4[var1];
-                                var1 = var1 + var3;
-                                var1 = var1 + var2;
-                                var0.relative = var1;
-                                return var0;
-                            }
-                        };
-                        var1.parseUrl = var2;
-                        var0 = function(arg0) { // Original name: stripUrlQueryAndFragment, environment: var0
-                            var3 = arg0;
-                            var2 = var3.split;
-                            var1 = /[?#]/;
-                            var0 = 1;
-                            var1 = var2.bind(var3)(var1, var0);
-                            var0 = 0;
-                            var0 = var1[var0];
-                            return var0;
-                        };
-                        var1.stripUrlQueryAndFragment = var0;
-                        var0 = undefined;
-                        return var0;
-                })(undefined, undefined, undefined, undefined, undefined, undefined, []);
+            case 56:
+                var1 = var14.indexOf;
+                var15 = var1.bind(var14)(var3, var2);
+                var17 = var2;
+                if (!(var6 !== var15)) {
+                    _fun58784_ip = 303;
+                    continue _fun58784
+                }
+            case 78:
+                var1 = var14.indexOf;
+                var1 = var1.bind(var14)(var4, var17);
+                if (!(var6 !== var1)) {
+                    _fun58784_ip = 123;
+                    continue _fun58784
+                }
+            case 94:
+                if (!(var1 < var15)) {
+                    _fun58784_ip = 128;
+                    continue _fun58784
+                }
+            case 98:
+                var18 = var14.lastIndexOf;
+                var16 = var15 - var9;
+                var16 = var18.bind(var14)(var4, var16);
+                var2 = var16 + var9;
+                _fun58784_ip = 291;
+                continue _fun58784;
+            case 123:
+                var1 = var14.length;
+            case 128:
+                var16 = var14.slice;
+                var17 = var16.bind(var14)(var17, var15);
+                var16 = var17.trim;
+                var17 = var16.bind(var17)();
+                var12 = var17;
+                var16 = var0;
+                var16 = var16[var17];
+                if (!(var11 === var16)) {
+                    _fun58784_ip = 287;
+                    continue _fun58784
+                }
+            case 166:
+                var16 = var14.slice;
+                var15 = var15 + var9;
+                var16 = var16.bind(var14)(var15, var1);
+                var15 = var16.trim;
+                var16 = var15.bind(var16)();
+                var13 = var16;
+                var15 = var16.charCodeAt;
+                var15 = var15.bind(var16)(var10);
+                if (!(var5 === var15)) {
+                    _fun58784_ip = 223;
+                    continue _fun58784
+                }
+            case 209:
+                var16 = var13;
+                var15 = var16.slice;
+                var13 = var15.bind(var16)(var9, var6);
+            case 223: // try_start_0
+                var17 = var0;
+                var16 = var12;
+                var18 = var13;
+                var15 = var18.indexOf;
+                var15 = var15.bind(var18)(var7);
+                if (!(var6 === var15)) {
+                    _fun58784_ip = 252;
+                    continue _fun58784
+                }
+            case 247:
+                var15 = var13;
+                _fun58784_ip = 266;
+                continue _fun58784;
+            case 252:
+                var19 = var8.decodeURIComponent;
+                var18 = var13;
+                var15 = var19.bind(var11)(var18);
+            case 266:
+                var17[var16] = var15;
+            case 270: // try_end0
+                _fun58784_ip = 287;
+                continue _fun58784;
+            case 272: // catch_target0
+                CatchBlockStart(arg_register = 15);
+                var17 = var0;
+                var16 = var12;
+                var15 = var13;
+                var17[var16] = var15;
+            case 287:
+                var2 = var1 + var9;
+            case 291:
+                var1 = var14.length;
+                if (var2 < var1) {
+                    _fun58784_ip = 56;
+                    continue _fun58784
+                }
+            case 303:
+                return var0;
+        }
+    };
+    var1.parseCookie = var0;
+    var0 = undefined;
+    return var0;
+})(undefined, undefined, undefined, undefined, undefined, undefined, []);

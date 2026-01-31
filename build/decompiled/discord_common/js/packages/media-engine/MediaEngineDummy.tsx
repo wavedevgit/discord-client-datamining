@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
     var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
-        _fun32750: for (var _fun32750_ip = 0;;) switch (_fun32750_ip) {
+        _fun32764: for (var _fun32764_ip = 0;;) switch (_fun32764_ip) {
             case 0:
             case 2: // try_start_0
                 var1 = global;
@@ -29,8 +29,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = !var1;
                 var _closure2_slot0 = var1;
             case 70: // try_end0
-                _fun32750_ip = 74;
-                continue _fun32750;
+                _fun32764_ip = 74;
+                continue _fun32764;
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
@@ -102,7 +102,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var6.bind(var0)(var3);
     var1 = function(arg0) { // Environment: var1
         var3 = function(arg0) { // Original name: MediaEngineDummy, environment: var5
-            _fun32756: for (var _fun32756_ip = 0;;) switch (_fun32756_ip) {
+            _fun32770: for (var _fun32770_ip = 0;;) switch (_fun32770_ip) {
                 case 0:
                     var4 = this;
                     var12 = 0;
@@ -122,14 +122,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = _closure1_slot11;
                     var0 = var0.bind(var3)();
                     if (var0) {
-                        _fun32756_ip = 84;
-                        continue _fun32756
+                        _fun32770_ip = 84;
+                        continue _fun32770
                     }
                 case 71:
                     var0 = var8.apply;
                     var0 = var0.bind(var8)(var4, var9);
-                    _fun32756_ip = 118;
-                    continue _fun32756;
+                    _fun32770_ip = 118;
+                    continue _fun32770;
                 case 84:
                     var5 = global;
                     var7 = var5.Reflect;
@@ -173,7 +173,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             return var0;
         };
         var4.value = var0;
-        var0 = new Array(78);
+        var0 = new Array(80);
         var0[0] = var4;
         var4 = {};
         var6 = 'interact';
@@ -441,13 +441,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var6 = 'setDesktopSource';
         var4.key = var6;
         var6 = function(arg0) { // Original name: value, environment: var5
-            _fun32782: for (var _fun32782_ip = 0;;) switch (_fun32782_ip) {
+            _fun32796: for (var _fun32796_ip = 0;;) switch (_fun32796_ip) {
                 case 0:
                     var1 = arguments[1];
                     var0 = undefined;
                     if (!(var1 === var0)) {
-                        _fun32782_ip = 22;
-                        continue _fun32782
+                        _fun32796_ip = 22;
+                        continue _fun32796
                     }
                 case 9:
                     var1 = _closure1_slot10;
@@ -1115,6 +1115,32 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4.value = var6;
         var0[75] = var4;
         var4 = {};
+        var6 = 'getDeviceOSVolume';
+        var4.key = var6;
+        var6 = function() { // Original name: value, environment: var5
+            var0 = global;
+            var2 = var0.Promise;
+            var1 = var2.resolve;
+            var0 = undefined;
+            var0 = var1.bind(var2)(var0);
+            return var0;
+        };
+        var4.value = var6;
+        var0[76] = var4;
+        var4 = {};
+        var6 = 'getDeviceOSMuted';
+        var4.key = var6;
+        var6 = function() { // Original name: value, environment: var5
+            var0 = global;
+            var2 = var0.Promise;
+            var1 = var2.resolve;
+            var0 = undefined;
+            var0 = var1.bind(var2)(var0);
+            return var0;
+        };
+        var4.value = var6;
+        var0[77] = var4;
+        var4 = {};
         var6 = 'getNoiseCancellationStats';
         var4.key = var6;
         var6 = function() { // Original name: value, environment: var5
@@ -1136,7 +1162,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             return var0;
         };
         var4.value = var6;
-        var0[76] = var4;
+        var0[78] = var4;
         var4 = {};
         var6 = 'setNoiseCancellationEnableStats';
         var4.key = var6;
@@ -1145,7 +1171,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             return var0;
         };
         var4.value = var5;
-        var0[77] = var4;
+        var0[79] = var4;
         var0 = var1.bind(var2)(var3, var0);
         return var0;
     };

@@ -36,7 +36,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var _closure1_slot1 = var1;
     var1 = function(arg0) { // Original name: validatePathConfig, environment: var3
-        _fun17190: for (var _fun17190_ip = 0;;) switch (_fun17190_ip) {
+        _fun17192: for (var _fun17192_ip = 0;;) switch (_fun17192_ip) {
             case 0:
                 var2 = arg0;
                 var4 = undefined;
@@ -47,26 +47,26 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var5 = 1;
                 var7 = var0 > var5;
                 if (!var7) {
-                    _fun17190_ip = 44;
-                    continue _fun17190
+                    _fun17192_ip = 42;
+                    continue _fun17192
                 }
-            case 36:
+            case 34:
                 var0 = arguments[var5];
                 var7 = var4 !== var0;
-            case 44:
+            case 42:
                 var0 = !var7;
                 if (!var7) {
-                    _fun17190_ip = 54;
-                    continue _fun17190
+                    _fun17192_ip = 52;
+                    continue _fun17192
                 }
-            case 50:
+            case 48:
                 var0 = arguments[var5];
-            case 54:
+            case 52:
                 if (var0) {
-                    _fun17190_ip = 85;
-                    continue _fun17190
+                    _fun17192_ip = 83;
+                    continue _fun17192
                 }
-            case 57:
+            case 55:
                 var8 = var3.push;
                 var12 = 'path';
                 var11 = 'exact';
@@ -74,7 +74,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var9 = 'parse';
                 var13 = var3;
                 var0 = var13[var8](var12, var11, var10, var9, var8);
-            case 85:
+            case 83:
                 var0 = global;
                 var6 = var0.Object;
                 var5 = var6.keys;
@@ -91,23 +91,23 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var5 = var6.bind(var7)(var5);
                 var6 = var5.length;
                 if (var6) {
-                    _fun17190_ip = 175;
-                    continue _fun17190
+                    _fun17192_ip = 173;
+                    continue _fun17192
                 }
-            case 126:
+            case 124:
                 var6 = var2.screens;
                 if (!var6) {
-                    _fun17190_ip = 173;
-                    continue _fun17190
+                    _fun17192_ip = 171;
+                    continue _fun17192
                 }
-            case 135:
+            case 133:
                 var7 = var0.Object;
                 var6 = var7.entries;
                 var2 = var2.screens;
                 var6 = var6.bind(var7)(var2);
                 var2 = var6.forEach;
                 var1 = function(arg0) { // Environment: var1
-                    _fun17192: for (var _fun17192_ip = 0;;) switch (_fun17192_ip) {
+                    _fun17194: for (var _fun17194_ip = 0;;) switch (_fun17194_ip) {
                         case 0:
                             var4 = _closure1_slot0;
                             var0 = undefined;
@@ -121,8 +121,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var4 = 'string';
                             var2 = typeof var3;
                             if (!(var4 !== var2)) {
-                                _fun17192_ip = 57;
-                                continue _fun17192
+                                _fun17194_ip = 57;
+                                continue _fun17194
                             }
                         case 45:
                             var2 = _closure1_slot2;
@@ -133,9 +133,9 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     }
                 };
                 var1 = var2.bind(var6)(var1);
-            case 173:
+            case 171:
                 return var4;
-            case 175:
+            case 173:
                 var2 = var0.Error;
                 var1 = _closure1_slot1;
                 var6 = var1.bind(var4)(var5);

@@ -9,7 +9,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var6;
     var1 = function(arg0) { // Original name: isAdSessionExpired, environment: var3
-        _fun46880: for (var _fun46880_ip = 0;;) switch (_fun46880_ip) {
+        _fun46897: for (var _fun46897_ip = 0;;) switch (_fun46897_ip) {
             case 0:
                 var4 = arg0;
                 var3 = global;
@@ -18,8 +18,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var0.bind(var1)();
                 var0 = var4.createdAtTimestamp;
                 if (!(!(var7 < var0))) {
-                    _fun46880_ip = 101;
-                    continue _fun46880
+                    _fun46897_ip = 101;
+                    continue _fun46897
                 }
             case 30:
                 var0 = var4.lastUsedTimestamp;
@@ -37,8 +37,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = _closure1_slot3;
                 var1 = var2 > var1;
                 if (var0) {
-                    _fun46880_ip = 99;
-                    continue _fun46880
+                    _fun46897_ip = 99;
+                    continue _fun46897
                 }
             case 96:
                 var0 = var1;
@@ -94,13 +94,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/analytics_sessions/SessionAdGenerator.tsx';
     var4 = var5.bind(var6)(var4);
     var4 = function() { // Original name: getOrRefreshAdSession, environment: var3
-        _fun46881: for (var _fun46881_ip = 0;;) switch (_fun46881_ip) {
+        _fun46898: for (var _fun46898_ip = 0;;) switch (_fun46898_ip) {
             case 0:
                 var0 = arguments[0];
                 var5 = undefined;
                 if (!(var0 === var5)) {
-                    _fun46881_ip = 11;
-                    continue _fun46881
+                    _fun46898_ip = 11;
+                    continue _fun46898
                 }
             case 9:
                 var0 = false;
@@ -112,29 +112,29 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = _closure1_slot4;
                 var1 = null;
                 if (!(var1 != var4)) {
-                    _fun46881_ip = 76;
-                    continue _fun46881
+                    _fun46898_ip = 76;
+                    continue _fun46898
                 }
             case 41:
                 var4 = _closure1_slot5;
                 var1 = _closure1_slot4;
                 var1 = var4.bind(var5)(var1);
                 if (var1) {
-                    _fun46881_ip = 76;
-                    continue _fun46881
+                    _fun46898_ip = 76;
+                    continue _fun46898
                 }
             case 57:
                 if (!var0) {
-                    _fun46881_ip = 70;
-                    continue _fun46881
+                    _fun46898_ip = 70;
+                    continue _fun46898
                 }
             case 60:
                 var0 = _closure1_slot4;
                 var0.lastUsedTimestamp = var3;
             case 70:
                 var0 = _closure1_slot4;
-                _fun46881_ip = 153;
-                continue _fun46881;
+                _fun46898_ip = 153;
+                continue _fun46898;
             case 76:
                 var1 = {};
                 var4 = _closure1_slot0;
@@ -173,4 +173,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.getCurrentAdSession = var3;
     var2.isAdSessionExpired = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [667, 491, 4325, 1207, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [667, 491, 4326, 1207, 2]);

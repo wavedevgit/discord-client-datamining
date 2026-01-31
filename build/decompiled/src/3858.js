@@ -1,6 +1,6 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun34951: for (var _fun34951_ip = 0;;) switch (_fun34951_ip) {
+    _fun34967: for (var _fun34967_ip = 0;;) switch (_fun34967_ip) {
         case 0:
             var5 = require;
             var2 = exports;
@@ -66,13 +66,13 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var _closure1_slot4 = var1;
             var1 = function() { // Environment: var4
                 var0 = function(arg0, arg1, arg2, arg3) { // Original name: scrollToPaper, environment: var0
-                    _fun34955: for (var _fun34955_ip = 0;;) switch (_fun34955_ip) {
+                    _fun34971: for (var _fun34971_ip = 0;;) switch (_fun34971_ip) {
                         case 0:
                             var0 = global;
                             var0 = var0._WORKLET;
                             if (!var0) {
-                                _fun34955_ip = 51;
-                                continue _fun34955
+                                _fun34971_ip = 51;
+                                continue _fun34971
                             }
                         case 11:
                             var1 = arg0;
@@ -107,27 +107,27 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var8 = var6[var3];
             var8 = var5.bind(var0)(var8);
             if (var9) {
-                _fun34951_ip = 162;
-                continue _fun34951
+                _fun34967_ip = 162;
+                continue _fun34967
             }
         case 144:
             var9 = var8.isFabric;
             var9 = var9.bind(var8)();
             if (!var9) {
-                _fun34951_ip = 160;
-                continue _fun34951
+                _fun34967_ip = 160;
+                continue _fun34967
             }
         case 157:
             var1 = var7;
         case 160:
-            _fun34951_ip = 219;
-            continue _fun34951;
+            _fun34967_ip = 219;
+            continue _fun34967;
         case 162:
             var7 = var8.isJest;
             var7 = var7.bind(var8)();
             if (var7) {
-                _fun34951_ip = 211;
-                continue _fun34951
+                _fun34967_ip = 211;
+                continue _fun34967
             }
         case 175:
             var3 = var6[var3];
@@ -135,8 +135,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var3 = var5.isChromeDebugger;
             var3 = var3.bind(var5)();
             if (var3) {
-                _fun34951_ip = 204;
-                continue _fun34951
+                _fun34967_ip = 204;
+                continue _fun34967
             }
         case 197:
             var3 = function() { // Original name: scrollToDefault, environment: var4
@@ -152,8 +152,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = var2.bind(var3)(var1);
                 return var0;
             };
-            _fun34951_ip = 209;
-            continue _fun34951;
+            _fun34967_ip = 209;
+            continue _fun34967;
         case 204:
             var3 = function() { // Original name: scrollToChromeDebugger, environment: var4
                 var2 = _closure1_slot1;
@@ -169,8 +169,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var0;
             };
         case 209:
-            _fun34951_ip = 216;
-            continue _fun34951;
+            _fun34967_ip = 216;
+            continue _fun34967;
         case 211:
             var3 = function() { // Original name: scrollToJest, environment: var4
                 var2 = _closure1_slot1;

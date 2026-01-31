@@ -1,294 +1,192 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var5 = metroImportDefault;
-    var2 = exports;
-    var6 = dependencyMap;
-    var0 = global;
-    var _closure1_slot0 = var0;
-    var1 = function(arg0, arg1) { // Original name: hasProperty, environment: var3
-        var0 = global;
-        var0 = var0.Object;
-        var0 = var0.prototype;
-        var3 = var0.hasOwnProperty;
-        var2 = var3.call;
-        var1 = arg0;
-        var0 = arg1;
-        var0 = var2.bind(var3)(var1, var0);
-        return var0;
-    };
-    var _closure1_slot3 = var1;
-    var0 = global;
-    var8 = var0.Object;
-    var7 = var8.defineProperty;
-    var4 = {};
-    var0 = true;
-    var4.value = var0;
-    var0 = '__esModule';
-    var0 = var7.bind(var8)(var2, var0, var4);
-    var0 = 0;
-    var4 = var6[var0];
-    var0 = undefined;
-    var4 = var5.bind(var0)(var4);
-    var _closure1_slot1 = var4;
-    var4 = 1;
-    var4 = var6[var4];
-    var4 = var5.bind(var0)(var4);
-    var _closure1_slot2 = var4;
-    var4 = function(arg0) { // Original name: toArray, environment: var3
-        _fun44642: for (var _fun44642_ip = 0;;) switch (_fun44642_ip) {
-            case 0:
-                var2 = arg0;
-                var0 = global;
-                var1 = var0.Array;
-                var0 = var1.isArray;
-                var1 = var0.bind(var1)(var2);
-                var0 = var2;
-                if (var1) {
-                    _fun44642_ip = 38;
-                    continue _fun44642
-                }
-            case 27:
-                var1 = new Array(1);
-                var1[0] = var2;
-                var0 = var1;
-            case 38:
-                return var0;
-        }
-    };
-    var2.toArray = var4;
-    var4 = function(arg0, arg1) { // Original name: withPrevAndCurrent, environment: var3
-        var0 = arg1;
-        var _closure2_slot0 = var0;
-        var0 = [null];
-        var _closure2_slot1 = var0;
-        var3 = _closure1_slot1;
-        var2 = undefined;
+    var1 = exports;
+    var2 = require;
+    var _closure1_slot0 = var2;
+    var2 = dependencyMap;
+    var _closure1_slot1 = var2;
+    var2 = function(arg0) { // Original name: findHandler, environment: var0
+        var2 = _closure1_slot2;
+        var1 = var2.get;
         var0 = arg0;
-        var3 = var3.bind(var2)(var0);
-        var0 = new Array(0);
-        var _closure2_slot2 = var0;
-        var2 = var3.forEach;
-        var1 = function(arg0, arg1) { // Environment: var1
-            var4 = _closure2_slot1;
-            var0 = arg1;
-            var5 = var4[var0];
-            var3 = _closure2_slot0;
-            var0 = undefined;
-            var2 = arg0;
-            var3 = var3.bind(var0)(var5, var2);
-            var2 = var4.push;
-            var2 = var2.bind(var4)(var3);
-            var2 = _closure2_slot2;
-            var1 = var2.push;
-            var1 = var1.bind(var2)(var3);
-            return var0;
-        };
-        var1 = var2.bind(var3)(var1);
-        return var0;
-    };
-    var2.withPrevAndCurrent = var4;
-    var2.hasProperty = var1;
-    var1 = function() { // Original name: isTestEnv, environment: var3
-        _fun44645: for (var _fun44645_ip = 0;;) switch (_fun44645_ip) {
-            case 0:
-                var3 = _closure1_slot3;
-                var2 = _closure1_slot0;
-                var1 = undefined;
-                var0 = 'process';
-                var0 = var3.bind(var1)(var2, var0);
-                if (!var0) {
-                    _fun44645_ip = 28;
-                    continue _fun44645
-                }
-            case 26:
-                var0 = false;
-            case 28:
-                return var0;
-        }
-    };
-    var2.isTestEnv = var1;
-    var1 = function(arg0) { // Original name: tagMessage, environment: var3
-        var0 = global;
-        var0 = var0.HermesInternal;
-        var2 = var0.concat;
-        var1 = '[react-native-gesture-handler] ';
-        var0 = arg0;
-        var0 = var2.bind(var1)(var0);
-        return var0;
-    };
-    var2.tagMessage = var1;
-    var1 = function() { // Original name: isFabric, environment: var3
-        _fun44647: for (var _fun44647_ip = 0;;) switch (_fun44647_ip) {
-            case 0:
-                var1 = _closure1_slot0;
-                var0 = null;
-                var0 = var0 == var1;
-                if (var0) {
-                    _fun44647_ip = 25;
-                    continue _fun44647
-                }
-            case 16:
-                var1 = var1._IS_FABRIC;
-                var0 = !var1;
-            case 25:
-                var0 = !var0;
-                return var0;
-        }
-    };
-    var2.isFabric = var1;
-    var1 = function() { // Original name: isReact19, environment: var3
-        var0 = _closure1_slot2;
-        var2 = var0.version;
-        var1 = var2.startsWith;
-        var0 = '19.';
         var0 = var1.bind(var2)(var0);
         return var0;
     };
-    var2.isReact19 = var1;
-    var1 = function() { // Original name: isRemoteDebuggingEnabled, environment: var3
-        _fun44649: for (var _fun44649_ip = 0;;) switch (_fun44649_ip) {
-            case 0:
-                var1 = _closure1_slot0;
-                var0 = var1.nativeCallSyncHook;
-                if (!var0) {
-                    _fun44649_ip = 25;
-                    continue _fun44649
-                }
-            case 16:
-                var2 = var1.__REMOTEDEV__;
-                var0 = !var2;
-            case 25:
-                if (var0) {
-                    _fun44649_ip = 34;
-                    continue _fun44649
-                }
-            case 28:
-                var0 = var1.RN$Bridgeless;
-            case 34:
-                var0 = !var0;
-                return var0;
+    var _closure1_slot5 = var2;
+    var3 = global;
+    var7 = var3.Object;
+    var6 = var7.defineProperty;
+    var5 = {};
+    var4 = true;
+    var5.value = var4;
+    var4 = '__esModule';
+    var4 = var6.bind(var7)(var1, var4, var5);
+    var4 = var3.Map;
+    var5 = var4.prototype;
+    var5 = Object.create(var5, {
+        constructor: {
+            value: var4
         }
-    };
-    var2.isRemoteDebuggingEnabled = var1;
-    var1 = function(arg0, arg1) { // Original name: deepEqual, environment: var3
-        _fun44650: for (var _fun44650_ip = 0;;) switch (_fun44650_ip) {
+    });
+    var11 = var5;
+    var4 = new var11[var4](var10);
+    var4 = var4 instanceof Object ? var4 : var5;
+    var _closure1_slot2 = var4;
+    var4 = var3.Map;
+    var5 = var4.prototype;
+    var5 = Object.create(var5, {
+        constructor: {
+            value: var4
+        }
+    });
+    var11 = var5;
+    var4 = new var11[var4](var10);
+    var4 = var4 instanceof Object ? var4 : var5;
+    var _closure1_slot3 = var4;
+    var3 = var3.Map;
+    var4 = var3.prototype;
+    var4 = Object.create(var4, {
+        constructor: {
+            value: var3
+        }
+    });
+    var11 = var4;
+    var3 = new var11[var3](var10);
+    var3 = var3 instanceof Object ? var3 : var4;
+    var _closure1_slot4 = var3;
+    var3 = {};
+    var1.handlerIDToTag = var3;
+    var3 = function(arg0, arg1, arg2) { // Original name: registerHandler, environment: var0
+        _fun44651: for (var _fun44651_ip = 0;;) switch (_fun44651_ip) {
             case 0:
-                var1 = arg0;
+                var4 = arg0;
+                var3 = arg2;
+                var5 = _closure1_slot2;
+                var2 = var5.set;
                 var0 = arg1;
-                var4 = var1;
-                var5 = var0;
-                var3 = undefined;
-                var6 = undefined;
-                var7 = undefined;
-                if (!(var1 !== var0)) {
-                    _fun44650_ip = 231;
-                    continue _fun44650
+                var0 = var2.bind(var5)(var4, var0);
+                var5 = _closure1_slot0;
+                var2 = _closure1_slot1;
+                var0 = 0;
+                var2 = var2[var0];
+                var0 = undefined;
+                var5 = var5.bind(var0)(var2);
+                var2 = var5.isTestEnv;
+                var2 = var2.bind(var5)();
+                if (!var2) {
+                    _fun44651_ip = 64;
+                    continue _fun44651
                 }
-            case 25:
-                var0 = var4;
-                var1 = 'object';
-                var0 = typeof var0;
-                if (!(var1 === var0)) {
-                    _fun44650_ip = 227;
-                    continue _fun44650
-                }
-            case 42:
-                var0 = var5;
-                var0 = typeof var0;
-                if (!(var1 === var0)) {
-                    _fun44650_ip = 227;
-                    continue _fun44650
-                }
-            case 55:
-                var0 = var4;
-                var1 = null;
-                if (!(var1 !== var0)) {
-                    _fun44650_ip = 227;
-                    continue _fun44650
+            case 61:
+                var2 = var3;
+            case 64:
+                if (!var2) {
+                    _fun44651_ip = 82;
+                    continue _fun44651
                 }
             case 67:
-                var0 = var5;
-                if (!(var1 !== var0)) {
-                    _fun44650_ip = 227;
-                    continue _fun44650
-                }
-            case 77:
-                var1 = global;
-                var8 = var1.Object;
-                var2 = var8.keys;
-                var0 = var4;
-                var0 = var2.bind(var8)(var0);
-                var8 = var1.Object;
-                var2 = var8.keys;
-                var1 = var5;
-                var1 = var2.bind(var8)(var1);
-                var6 = var1;
-                var2 = var0.length;
-                var1 = var1.length;
-                if (!(var2 === var1)) {
-                    _fun44650_ip = 223;
-                    continue _fun44650
-                }
-            case 134:
-                var2 = var0;
-                var1 = var2[Symbol.iterator];
-                var2 = var1().next;
-            case 143:
-                var10 = var2().value;
-                var8 = var1;
-                if (!(var8 !== var3)) {
-                    _fun44650_ip = 219;
-                    continue _fun44650
-                }
-            case 154: // try_start_0
-                var7 = var10;
-                var9 = var6;
-                var8 = var9.includes;
-                var8 = var8.bind(var9)(var10);
-                if (!var8) {
-                    _fun44650_ip = 203;
-                    continue _fun44650
-                }
-            case 173:
-                var10 = _closure1_slot4;
-                var8 = var4;
-                var11 = var7;
-                var9 = var8[var11];
-                var8 = var5;
-                var8 = var8[var11];
-                var8 = var10.bind(var3)(var9, var8);
-                if (var8) {
-                    _fun44650_ip = 210;
-                    continue _fun44650
-                }
-            case 203: // try_end0
-                var1.return();
-                var8 = false;
-                return var8;
-            case 210:
-                _fun44650_ip = 143;
-                continue _fun44650;
-            case 212: // catch_target0
-                CatchBlockStart(arg_register = 0);
-                var1.return();
-                throw var0;
-            case 219:
-                var0 = true;
-                return var0;
-            case 223:
-                var0 = false;
-                return var0;
-            case 227:
-                var0 = false;
-                return var0;
-            case 231:
-                var0 = true;
+                var2 = _closure1_slot4;
+                var1 = var2.set;
+                var1 = var1.bind(var2)(var3, var4);
+            case 82:
                 return var0;
         }
     };
-    var _closure1_slot4 = var1;
-    var2.deepEqual = var1;
-    var1 = 2147483647;
-    var2.INT32_MAX = var1;
+    var1.registerHandler = var3;
+    var3 = function(arg0, arg1) { // Original name: registerOldGestureHandler, environment: var0
+        var3 = _closure1_slot3;
+        var2 = var3.set;
+        var1 = arg0;
+        var0 = arg1;
+        var0 = var2.bind(var3)(var1, var0);
+        var0 = undefined;
+        return var0;
+    };
+    var1.registerOldGestureHandler = var3;
+    var3 = function(arg0) { // Original name: unregisterOldGestureHandler, environment: var0
+        var2 = _closure1_slot3;
+        var1 = var2.delete;
+        var0 = arg0;
+        var0 = var1.bind(var2)(var0);
+        var0 = undefined;
+        return var0;
+    };
+    var1.unregisterOldGestureHandler = var3;
+    var3 = function(arg0, arg1) { // Original name: unregisterHandler, environment: var0
+        _fun44654: for (var _fun44654_ip = 0;;) switch (_fun44654_ip) {
+            case 0:
+                var3 = arg1;
+                var4 = _closure1_slot2;
+                var2 = var4.delete;
+                var0 = arg0;
+                var0 = var2.bind(var4)(var0);
+                var4 = _closure1_slot0;
+                var2 = _closure1_slot1;
+                var0 = 0;
+                var2 = var2[var0];
+                var0 = undefined;
+                var4 = var4.bind(var0)(var2);
+                var2 = var4.isTestEnv;
+                var2 = var2.bind(var4)();
+                if (!var2) {
+                    _fun44654_ip = 60;
+                    continue _fun44654
+                }
+            case 57:
+                var2 = var3;
+            case 60:
+                if (!var2) {
+                    _fun44654_ip = 77;
+                    continue _fun44654
+                }
+            case 63:
+                var2 = _closure1_slot4;
+                var1 = var2.delete;
+                var1 = var1.bind(var2)(var3);
+            case 77:
+                return var0;
+        }
+    };
+    var1.unregisterHandler = var3;
+    var1.findHandler = var2;
+    var2 = function(arg0) { // Original name: findOldGestureHandler, environment: var0
+        var2 = _closure1_slot3;
+        var1 = var2.get;
+        var0 = arg0;
+        var0 = var1.bind(var2)(var0);
+        return var0;
+    };
+    var1.findOldGestureHandler = var2;
+    var0 = function(arg0) { // Original name: findHandlerByTestID, environment: var0
+        _fun44656: for (var _fun44656_ip = 0;;) switch (_fun44656_ip) {
+            case 0:
+                var3 = _closure1_slot4;
+                var2 = var3.get;
+                var0 = arg0;
+                var4 = var2.bind(var3)(var0);
+                var3 = null;
+                var2 = undefined;
+                var0 = null;
+                if (!(var2 !== var4)) {
+                    _fun44656_ip = 51;
+                    continue _fun44656
+                }
+            case 30:
+                var1 = _closure1_slot5;
+                var1 = var1.bind(var2)(var4);
+                var2 = var3 != var1;
+                var0 = null;
+                if (!var2) {
+                    _fun44656_ip = 51;
+                    continue _fun44656
+                }
+            case 48:
+                var0 = var1;
+            case 51:
+                return var0;
+        }
+    };
+    var1.findHandlerByTestID = var0;
+    var0 = undefined;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [65, 31]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [4928]);

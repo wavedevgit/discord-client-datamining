@@ -7,15 +7,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var5;
     var3 = function(arg0, arg1) { // Original name: toggle, environment: var1
-        _fun87461: for (var _fun87461_ip = 0;;) switch (_fun87461_ip) {
+        _fun86765: for (var _fun86765_ip = 0;;) switch (_fun86765_ip) {
             case 0:
                 var5 = arg0;
                 var4 = arg1;
                 var1 = 'boolean';
                 var0 = typeof var4;
                 if (!(var1 !== var0)) {
-                    _fun87461_ip = 37;
-                    continue _fun87461
+                    _fun86765_ip = 37;
+                    continue _fun86765
                 }
             case 17:
                 var1 = _closure1_slot2;
@@ -62,7 +62,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.bind(var6)(var4);
     var2.toggle = var3;
     var1 = function() { // Original name: clearAll, environment: var1
-        _fun87462: for (var _fun87462_ip = 0;;) switch (_fun87462_ip) {
+        _fun86766: for (var _fun86766_ip = 0;;) switch (_fun86766_ip) {
             case 0:
                 var1 = _closure1_slot2;
                 var0 = var1.all;
@@ -74,8 +74,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         case 38: var9 = var2;
                         var8 = _closure1_slot3;
                         var8 = var8.bind(var0)(var9, var1);
-                        _fun87462_ip = 29;
-                        continue _fun87462;
+                        _fun86766_ip = 29;
+                        continue _fun86766;
                     }
             case 53:
                 return var0;
@@ -83,4 +83,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.clearAll = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [4554, 806, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [4555, 806, 2]);

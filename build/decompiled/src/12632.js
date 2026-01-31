@@ -1,24 +1,26 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = dependencyMap;
-    var0 = 0;
-    var2 = var1[var0];
-    var1 = require;
-    var0 = undefined;
-    var3 = var1.bind(var0)(var2);
-    var2 = var3.registerAsset;
-    var1 = {
-        '__packager_asset': true,
-        'httpServerLocation': '/assets/intl/messages',
-        'scales': null,
-        'hash': '93c7060da595e56734b904d44a2e9449',
-        'name': 'untranslated.compiled.messages',
-        'type': 'jsona'
+    var1 = function(arg0, arg1) { // Environment: var0
+        var2 = arg0;
+        var0 = {};
+        var1 = 1;
+        var1 = var1 & var2;
+        var1 = !var1;
+        var0.enumerable = var1;
+        var1 = 2;
+        var1 = var1 & var2;
+        var1 = !var1;
+        var0.configurable = var1;
+        var1 = 4;
+        var1 = var1 & var2;
+        var1 = !var1;
+        var0.writable = var1;
+        var1 = arg1;
+        var0.value = var1;
+        return var0;
     };
-    var4 = [1];
-    var1.scales = var4;
-    var2 = var2.bind(var3)(var1);
-    var1 = module;
-    var1.exports = var2;
+    var0 = arg4;
+    var0.exports = var1;
+    var0 = undefined;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1239]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, []);

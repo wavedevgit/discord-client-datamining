@@ -53,7 +53,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/contact_sync/native/components/ContactSyncError.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: ContactSyncError, environment: var1
-        _fun80640: for (var _fun80640_ip = 0;;) switch (_fun80640_ip) {
+        _fun80670: for (var _fun80670_ip = 0;;) switch (_fun80670_ip) {
             case 0:
                 var0 = arg0;
                 var10 = var0.style;
@@ -65,8 +65,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = null;
                 var12 = var0 != var6;
                 if (!var12) {
-                    _fun80640_ip = 49;
-                    continue _fun80640
+                    _fun80670_ip = 49;
+                    continue _fun80670
                 }
             case 41:
                 var0 = '';
@@ -80,7 +80,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var5.bind(var3)(var4);
                 var4 = var9.useAnimatedStyle;
                 var2 = function() { // Original name: l, environment: var2
-                    _fun80641: for (var _fun80641_ip = 0;;) switch (_fun80641_ip) {
+                    _fun80671: for (var _fun80671_ip = 0;;) switch (_fun80671_ip) {
                         case 0:
                             var0 = {};
                             var3 = _closure1_slot0;
@@ -93,8 +93,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var4 = _closure2_slot0;
                             var1 = 0;
                             if (!var4) {
-                                _fun80641_ip = 47;
-                                continue _fun80641
+                                _fun80671_ip = 47;
+                                continue _fun80671
                             }
                         case 44:
                             var1 = 44;
@@ -150,4 +150,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 1297, 3679, 4056, 3901, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 1297, 3679, 4056, 3900, 2]);

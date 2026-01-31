@@ -27,15 +27,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot3 = var1;
     var1 = {};
     var6 = function(arg0) { // Original name: updateEstimate, environment: var3
-        _fun105563: for (var _fun105563_ip = 0;;) switch (_fun105563_ip) {
+        _fun104916: for (var _fun104916_ip = 0;;) switch (_fun104916_ip) {
             case 0:
                 var2 = arguments[1];
                 var1 = arg0;
                 var _closure2_slot0 = var1;
                 var1 = undefined;
                 if (!(var2 === var1)) {
-                    _fun105563_ip = 21;
-                    continue _fun105563
+                    _fun104916_ip = 21;
+                    continue _fun104916
                 }
             case 18:
                 var2 = 7;
@@ -46,13 +46,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = _closure1_slot2;
                 var0 = function*() { // Environment: var0
                     var0 = function*() { // Original name: ?anon_0_, environment: var0
-                        _fun105565: for (var _fun105565_ip = 0;;) switch (_fun105565_ip) {
+                        _fun104918: for (var _fun104918_ip = 0;;) switch (_fun104918_ip) {
                             case 0:
                                 StartGenerator();
                                 ResumeGenerator(result_out_reg = 0, return_bool_out_reg = 1);
                                 if (var1) {
-                                    _fun105565_ip = 145;
-                                    continue _fun105565
+                                    _fun104918_ip = 145;
+                                    continue _fun104918
                                 }
                             case 10:
                                 var3 = _closure1_slot0;
@@ -86,8 +86,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             case 120:
                                 ResumeGenerator(result_out_reg = 1, return_bool_out_reg = 2);
                                 if (var2) {
-                                    _fun105565_ip = 142;
-                                    continue _fun105565
+                                    _fun104918_ip = 142;
+                                    continue _fun104918
                                 }
                             case 126:
                                 var2 = var1.body;
@@ -107,6 +107,85 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.updateEstimate = var6;
+    var6 = function(arg0) { // Original name: updateEstimateV2, environment: var3
+        _fun104919: for (var _fun104919_ip = 0;;) switch (_fun104919_ip) {
+            case 0:
+                var2 = arguments[1];
+                var1 = arg0;
+                var _closure2_slot0 = var1;
+                var1 = undefined;
+                if (!(var2 === var1)) {
+                    _fun104919_ip = 21;
+                    continue _fun104919
+                }
+            case 18:
+                var2 = 7;
+            case 21:
+                var _closure2_slot1 = var2;
+                var2 = arguments[2];
+                var _closure2_slot2 = var2;
+                var2 = _closure1_slot2;
+                var0 = function*() { // Environment: var0
+                    var0 = function*() { // Original name: ?anon_0_, environment: var0
+                        _fun104921: for (var _fun104921_ip = 0;;) switch (_fun104921_ip) {
+                            case 0:
+                                StartGenerator();
+                                ResumeGenerator(result_out_reg = 0, return_bool_out_reg = 1);
+                                if (var1) {
+                                    _fun104921_ip = 132;
+                                    continue _fun104921
+                                }
+                            case 10:
+                                var3 = _closure1_slot0;
+                                var2 = _closure1_slot1;
+                                var1 = 2;
+                                var1 = var2[var1];
+                                var2 = undefined;
+                                var1 = var3.bind(var2)(var1);
+                                var4 = var1.HTTP;
+                                var3 = var4.get;
+                                var1 = {};
+                                var8 = _closure1_slot3;
+                                var7 = var8.GUILD_PRUNE_V2;
+                                var5 = _closure2_slot0;
+                                var5 = var7.bind(var8)(var5);
+                                var1.url = var5;
+                                var5 = {};
+                                var7 = _closure2_slot1;
+                                var5.days = var7;
+                                var6 = _closure2_slot2;
+                                var5.include_roles = var6;
+                                var1.query = var5;
+                                var5 = true;
+                                var1.oldFormErrors = var5;
+                                var5 = false;
+                                var1.rejectWithError = var5;
+                                var1 = var3.bind(var4)(var1);
+                                SaveGenerator(address = 120);
+                            case 118:
+                                return var1;
+                            case 120:
+                                ResumeGenerator(result_out_reg = 1, return_bool_out_reg = 3);
+                                if (var3) {
+                                    _fun104921_ip = 129;
+                                    continue _fun104921
+                                }
+                            case 126:
+                                return var2;
+                            case 129:
+                                return var1;
+                            case 132:
+                                return var0;
+                        }
+                    };
+                    return var0;
+                };
+                var0 = var2.bind(var1)(var0);
+                var0 = var0.bind(var1)();
+                return var0;
+        }
+    };
+    var1.updateEstimateV2 = var6;
     var3 = function(arg0, arg1, arg2) { // Original name: prune, environment: var3
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;

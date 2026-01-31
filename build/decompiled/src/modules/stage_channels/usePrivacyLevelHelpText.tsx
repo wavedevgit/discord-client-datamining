@@ -45,7 +45,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/stage_channels/usePrivacyLevelHelpText.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0, arg1, arg2) { // Original name: useStagePrivacyLevelSettings, environment: var1
-        _fun67062: for (var _fun67062_ip = 0;;) switch (_fun67062_ip) {
+        _fun67074: for (var _fun67074_ip = 0;;) switch (_fun67074_ip) {
             case 0:
                 var7 = arg0;
                 var5 = arg1;
@@ -89,8 +89,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var6 == var5;
                 var8 = undefined;
                 if (var7) {
-                    _fun67062_ip = 154;
-                    continue _fun67062
+                    _fun67074_ip = 154;
+                    continue _fun67074
                 }
             case 148:
                 var8 = var5.privacy_level;
@@ -98,13 +98,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = _closure1_slot6;
                 var7 = var7.PUBLIC;
                 if (!(var8 !== var7)) {
-                    _fun67062_ip = 430;
-                    continue _fun67062
+                    _fun67074_ip = 430;
+                    continue _fun67074
                 }
             case 171:
                 if (var1) {
-                    _fun67062_ip = 236;
-                    continue _fun67062
+                    _fun67074_ip = 236;
+                    continue _fun67074
                 }
             case 174:
                 var10 = _closure1_slot0;
@@ -119,12 +119,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var7.t;
                 var7 = var7.BOjr7t;
                 var7 = var8.bind(var9)(var7);
-                _fun67062_ip = 428;
-                continue _fun67062;
+                _fun67074_ip = 428;
+                continue _fun67074;
             case 236:
                 if (var2) {
-                    _fun67062_ip = 301;
-                    continue _fun67062
+                    _fun67074_ip = 301;
+                    continue _fun67074
                 }
             case 239:
                 var11 = _closure1_slot0;
@@ -139,16 +139,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var8.t;
                 var8 = var8.E5T7a3;
                 var8 = var9.bind(var10)(var8);
-                _fun67062_ip = 425;
-                continue _fun67062;
+                _fun67074_ip = 425;
+                continue _fun67074;
             case 301:
                 var9 = _closure1_slot6;
                 var11 = var9.PUBLIC;
                 var10 = arg2;
                 var9 = null;
                 if (!(var10 === var11)) {
-                    _fun67062_ip = 422;
-                    continue _fun67062
+                    _fun67074_ip = 422;
+                    continue _fun67074
                 }
             case 320:
                 var11 = _closure1_slot0;
@@ -178,8 +178,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 425:
                 var7 = var8;
             case 428:
-                _fun67062_ip = 487;
-                continue _fun67062;
+                _fun67074_ip = 487;
+                continue _fun67074;
             case 430:
                 var11 = _closure1_slot0;
                 var12 = _closure1_slot3;
@@ -198,8 +198,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var6 == var5;
                 var4 = undefined;
                 if (var6) {
-                    _fun67062_ip = 507;
-                    continue _fun67062
+                    _fun67074_ip = 507;
+                    continue _fun67074
                 }
             case 501:
                 var4 = var5.privacy_level;
@@ -210,8 +210,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0.guildOnlyDisabled = var3;
                 var1 = !var1;
                 if (var1) {
-                    _fun67062_ip = 537;
-                    continue _fun67062
+                    _fun67074_ip = 537;
+                    continue _fun67074
                 }
             case 534:
                 var1 = !var2;

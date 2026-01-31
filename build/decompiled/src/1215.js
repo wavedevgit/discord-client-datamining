@@ -3,11 +3,11 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = module;
     var _closure1_slot0 = var1;
     var1 = function() { // Environment: var0
-        _fun13295: for (var _fun13295_ip = 0;;) switch (_fun13295_ip) {
+        _fun13297: for (var _fun13297_ip = 0;;) switch (_fun13297_ip) {
             case 0:
                 var3 = this;
                 var2 = function(arg0, arg1) { // Original name: MurmurHashV3, environment: var4
-                    _fun13296: for (var _fun13296_ip = 0;;) switch (_fun13296_ip) {
+                    _fun13298: for (var _fun13298_ip = 0;;) switch (_fun13298_ip) {
                         case 0:
                             var2 = arg0;
                             var7 = arg1;
@@ -15,8 +15,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var0 = typeof var2;
                             var4 = var2;
                             if (!(var1 === var0)) {
-                                _fun13296_ip = 34;
-                                continue _fun13296
+                                _fun13298_ip = 34;
+                                continue _fun13298
                             }
                         case 20:
                             var1 = _closure2_slot1;
@@ -49,8 +49,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var8 = var15;
                             var7 = 0;
                             if (!(var1 < var23)) {
-                                _fun13296_ip = 378;
-                                continue _fun13296
+                                _fun13298_ip = 378;
+                                continue _fun13298
                             }
                         case 145:
                             var24 = var4[var12];
@@ -112,32 +112,32 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var8 = var15;
                             var7 = var12;
                             if (var7 < var23) {
-                                _fun13296_ip = 145;
-                                continue _fun13296
+                                _fun13298_ip = 145;
+                                continue _fun13298
                             }
                         case 378:
                             if (!(var6 !== var18)) {
-                                _fun13296_ip = 408;
-                                continue _fun13296
+                                _fun13298_ip = 408;
+                                continue _fun13298
                             }
                         case 382:
                             var6 = 2;
                             var16 = 0;
                             if (!(var6 !== var18)) {
-                                _fun13296_ip = 431;
-                                continue _fun13296
+                                _fun13298_ip = 431;
+                                continue _fun13298
                             }
                         case 391:
                             var15 = 1;
                             var12 = 0;
                             var6 = var8;
                             if (!(var15 !== var18)) {
-                                _fun13296_ip = 454;
-                                continue _fun13296
+                                _fun13298_ip = 454;
+                                continue _fun13298
                             }
                         case 403:
-                            _fun13296_ip = 546;
-                            continue _fun13296;
+                            _fun13298_ip = 546;
+                            continue _fun13298;
                         case 408:
                             var15 = 2;
                             var15 = var7 + var15;
@@ -228,15 +228,15 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var _closure2_slot1 = var0;
                 var _closure2_slot2 = var2;
                 var0 = function(arg0, arg1) { // Original name: MurmurHashV2, environment: var4
-                    _fun13298: for (var _fun13298_ip = 0;;) switch (_fun13298_ip) {
+                    _fun13300: for (var _fun13300_ip = 0;;) switch (_fun13300_ip) {
                         case 0:
                             var2 = arg0;
                             var1 = 'string';
                             var0 = typeof var2;
                             var8 = var2;
                             if (!(var1 === var0)) {
-                                _fun13298_ip = 31;
-                                continue _fun13298
+                                _fun13300_ip = 31;
+                                continue _fun13300
                             }
                         case 17:
                             var1 = _closure2_slot1;
@@ -261,8 +261,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var12 = var6;
                             var0 = 0;
                             if (!var15) {
-                                _fun13298_ip = 279;
-                                continue _fun13298
+                                _fun13300_ip = 279;
+                                continue _fun13300
                             }
                         case 95:
                             var15 = var8[var2];
@@ -312,33 +312,33 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var0 = var2;
                             var13 = var9;
                             if (var13 >= var14) {
-                                _fun13298_ip = 95;
-                                continue _fun13298
+                                _fun13300_ip = 95;
+                                continue _fun13300
                             }
                         case 279:
                             var2 = 3;
                             if (!(var2 !== var13)) {
-                                _fun13298_ip = 311;
-                                continue _fun13298
+                                _fun13300_ip = 311;
+                                continue _fun13300
                             }
                         case 286:
                             var2 = 2;
                             var10 = var12;
                             if (!(var2 !== var13)) {
-                                _fun13298_ip = 334;
-                                continue _fun13298
+                                _fun13300_ip = 334;
+                                continue _fun13300
                             }
                         case 296:
                             var9 = 1;
                             var6 = var12;
                             var2 = var6;
                             if (!(var9 !== var13)) {
-                                _fun13298_ip = 357;
-                                continue _fun13298
+                                _fun13300_ip = 357;
+                                continue _fun13300
                             }
                         case 309:
-                            _fun13298_ip = 397;
-                            continue _fun13298;
+                            _fun13300_ip = 397;
+                            continue _fun13300;
                         case 311:
                             var9 = 2;
                             var9 = var0 + var9;
@@ -387,8 +387,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var5 = _closure1_slot0;
                 var0 = undefined;
                 if (!(var0 === var5)) {
-                    _fun13295_ip = 85;
-                    continue _fun13295
+                    _fun13297_ip = 85;
+                    continue _fun13297
                 }
             case 56:
                 var5 = var3.murmur;
@@ -402,8 +402,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 };
                 var2.noConflict = var4;
                 var3.murmur = var2;
-                _fun13295_ip = 95;
-                continue _fun13295;
+                _fun13297_ip = 95;
+                continue _fun13297;
             case 85:
                 var1 = _closure1_slot0;
                 var1.exports = var2;

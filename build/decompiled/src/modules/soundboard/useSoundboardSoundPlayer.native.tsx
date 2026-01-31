@@ -38,7 +38,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/soundboard/useSoundboardSoundPlayer.native.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0, arg1) { // Original name: useSoundboardSoundPlayer, environment: var1
-        _fun68445: for (var _fun68445_ip = 0;;) switch (_fun68445_ip) {
+        _fun68469: for (var _fun68469_ip = 0;;) switch (_fun68469_ip) {
             case 0:
                 var8 = arg0;
                 var3 = arg1;
@@ -47,8 +47,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = arguments[2];
                 var5 = undefined;
                 if (!(var0 === var5)) {
-                    _fun68445_ip = 85;
-                    continue _fun68445
+                    _fun68469_ip = 85;
+                    continue _fun68469
                 }
             case 25:
                 var2 = _closure1_slot0;
@@ -63,8 +63,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var2 == var4;
                 var0 = undefined;
                 if (var6) {
-                    _fun68445_ip = 81;
-                    continue _fun68445
+                    _fun68469_ip = 81;
+                    continue _fun68469
                 }
             case 75:
                 var0 = var4.volume;
@@ -73,8 +73,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 85:
                 var0 = arguments[3];
                 if (!(var0 === var5)) {
-                    _fun68445_ip = 105;
-                    continue _fun68445
+                    _fun68469_ip = 105;
+                    continue _fun68469
                 }
             case 92:
                 var0 = _closure1_slot5;
@@ -117,14 +117,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4[1] = var7;
                 var4[2] = var3;
                 var3 = function(arg0) { // Environment: var1
-                    _fun68447: for (var _fun68447_ip = 0;;) switch (_fun68447_ip) {
+                    _fun68471: for (var _fun68471_ip = 0;;) switch (_fun68471_ip) {
                         case 0:
                             var1 = _closure2_slot2;
                             var1 = var1.current;
                             var2 = null;
                             if (!(var2 != var1)) {
-                                _fun68447_ip = 37;
-                                continue _fun68447
+                                _fun68471_ip = 37;
+                                continue _fun68471
                             }
                         case 18:
                             var1 = _closure2_slot2;
@@ -134,8 +134,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         case 37:
                             var1 = _closure2_slot1;
                             if (!(var2 != var1)) {
-                                _fun68447_ip = 94;
-                                continue _fun68447
+                                _fun68471_ip = 94;
+                                continue _fun68471
                             }
                         case 45:
                             var3 = _closure1_slot0;
@@ -172,4 +172,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 3916, 8171, 1348, 8518, 566, 5650, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 3915, 8170, 1348, 8518, 566, 5651, 2]);

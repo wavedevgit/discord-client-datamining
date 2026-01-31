@@ -29,15 +29,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/quests/native/VideoQuestModal/VideoQuestModalCloseButton.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: VideoQuestModalCloseButton, environment: var1
-        _fun83538: for (var _fun83538_ip = 0;;) switch (_fun83538_ip) {
+        _fun83568: for (var _fun83568_ip = 0;;) switch (_fun83568_ip) {
             case 0:
                 var0 = arg0;
                 var8 = var0.onClose;
                 var6 = var0.iconColor;
                 var3 = undefined;
                 if (!(var6 === var3)) {
-                    _fun83538_ip = 55;
-                    continue _fun83538
+                    _fun83568_ip = 55;
+                    continue _fun83568
                 }
             case 21:
                 var2 = _closure1_slot1;
@@ -88,4 +88,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [33, 671, 4864, 1234, 4694, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [33, 671, 4865, 1234, 4695, 2]);

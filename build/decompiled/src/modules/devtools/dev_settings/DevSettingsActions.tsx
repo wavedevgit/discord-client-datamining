@@ -7,15 +7,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var5;
     var3 = function(arg0, arg1) { // Original name: toggle, environment: var1
-        _fun87213: for (var _fun87213_ip = 0;;) switch (_fun87213_ip) {
+        _fun86479: for (var _fun86479_ip = 0;;) switch (_fun86479_ip) {
             case 0:
                 var5 = arg0;
                 var4 = arg1;
                 var1 = 'boolean';
                 var0 = typeof var4;
                 if (!(var1 !== var0)) {
-                    _fun87213_ip = 37;
-                    continue _fun87213
+                    _fun86479_ip = 37;
+                    continue _fun86479
                 }
             case 17:
                 var1 = _closure1_slot2;
@@ -62,7 +62,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.bind(var6)(var4);
     var2.toggle = var3;
     var1 = function() { // Original name: clearAll, environment: var1
-        _fun87214: for (var _fun87214_ip = 0;;) switch (_fun87214_ip) {
+        _fun86480: for (var _fun86480_ip = 0;;) switch (_fun86480_ip) {
             case 0:
                 var1 = _closure1_slot2;
                 var0 = var1.enabled;
@@ -74,8 +74,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         case 37: var9 = var2;
                         var8 = _closure1_slot3;
                         var8 = var8.bind(var0)(var9, var1);
-                        _fun87214_ip = 28;
-                        continue _fun87214;
+                        _fun86480_ip = 28;
+                        continue _fun86480;
                     }
             case 52:
                 return var0;

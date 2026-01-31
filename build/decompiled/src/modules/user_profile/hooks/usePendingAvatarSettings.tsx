@@ -41,7 +41,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/user_profile/hooks/usePendingAvatarSettings.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: usePendingAvatarSettings, environment: var1
-        _fun48968: for (var _fun48968_ip = 0;;) switch (_fun48968_ip) {
+        _fun48985: for (var _fun48985_ip = 0;;) switch (_fun48985_ip) {
             case 0:
                 var1 = arg0;
                 var3 = var1.isTryItOut;
@@ -82,28 +82,28 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = _closure1_slot6;
                 var6[1] = var1;
                 var1 = function() { // Environment: var0
-                    _fun48970: for (var _fun48970_ip = 0;;) switch (_fun48970_ip) {
+                    _fun48987: for (var _fun48987_ip = 0;;) switch (_fun48987_ip) {
                         case 0:
                             var2 = _closure2_slot0;
                             var0 = {};
                             if (var2) {
-                                _fun48970_ip = 190;
-                                continue _fun48970
+                                _fun48987_ip = 190;
+                                continue _fun48987
                             }
                         case 15:
                             var2 = _closure2_slot1;
                             var3 = null;
                             if (!(var3 == var2)) {
-                                _fun48970_ip = 50;
-                                continue _fun48970
+                                _fun48987_ip = 50;
+                                continue _fun48987
                             }
                         case 25:
                             var4 = _closure1_slot6;
                             var2 = var4.getPendingChanges;
                             var2 = var2.bind(var4)();
                             var2 = var2.pendingAvatar;
-                            _fun48970_ip = 67;
-                            continue _fun48970;
+                            _fun48987_ip = 67;
+                            continue _fun48987;
                         case 50:
                             var5 = _closure1_slot4;
                             var4 = var5.getPendingAvatar;
@@ -112,16 +112,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var0.pendingAvatar = var2;
                             var2 = _closure2_slot1;
                             if (!(var3 == var2)) {
-                                _fun48970_ip = 105;
-                                continue _fun48970
+                                _fun48987_ip = 105;
+                                continue _fun48987
                             }
                         case 80:
                             var4 = _closure1_slot6;
                             var2 = var4.getPendingChanges;
                             var2 = var2.bind(var4)();
                             var2 = var2.pendingAvatarDecoration;
-                            _fun48970_ip = 122;
-                            continue _fun48970;
+                            _fun48987_ip = 122;
+                            continue _fun48987;
                         case 105:
                             var5 = _closure1_slot4;
                             var4 = var5.getPendingAvatarDecoration;
@@ -130,16 +130,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var0.pendingAvatarDecoration = var2;
                             var2 = _closure2_slot1;
                             if (!(var3 == var2)) {
-                                _fun48970_ip = 160;
-                                continue _fun48970
+                                _fun48987_ip = 160;
+                                continue _fun48987
                             }
                         case 135:
                             var3 = _closure1_slot6;
                             var2 = var3.getErrors;
                             var2 = var2.bind(var3)();
                             var2 = var2.avatarDecoration;
-                            _fun48970_ip = 183;
-                            continue _fun48970;
+                            _fun48987_ip = 183;
+                            continue _fun48987;
                         case 160:
                             var4 = _closure1_slot4;
                             var3 = var4.getErrors;
@@ -159,16 +159,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var3 = _closure2_slot1;
                             var1 = null;
                             if (!(var1 == var3)) {
-                                _fun48970_ip = 263;
-                                continue _fun48970
+                                _fun48987_ip = 263;
+                                continue _fun48987
                             }
                         case 241:
                             var3 = _closure1_slot6;
                             var1 = var3.getErrors;
                             var1 = var1.bind(var3)();
                             var1 = var1.avatarDecoration;
-                            _fun48970_ip = 283;
-                            continue _fun48970;
+                            _fun48987_ip = 283;
+                            continue _fun48987;
                         case 263:
                             var3 = _closure1_slot4;
                             var2 = var3.getErrors;
@@ -188,8 +188,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var12 = var1 == var5;
                 var1 = undefined;
                 if (var12) {
-                    _fun48968_ip = 197;
-                    continue _fun48968
+                    _fun48985_ip = 197;
+                    continue _fun48985
                 }
             case 191:
                 var1 = var5.avatar;
@@ -197,7 +197,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = new Array(1);
                 var5[0] = var1;
                 var1 = function(arg0) { // Environment: var0
-                    _fun48971: for (var _fun48971_ip = 0;;) switch (_fun48971_ip) {
+                    _fun48988: for (var _fun48988_ip = 0;;) switch (_fun48988_ip) {
                         case 0:
                             var2 = _closure1_slot0;
                             var1 = _closure1_slot2;
@@ -210,8 +210,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var4 = null;
                             var4 = var4 == var5;
                             if (var4) {
-                                _fun48971_ip = 57;
-                                continue _fun48971
+                                _fun48988_ip = 57;
+                                continue _fun48988
                             }
                         case 47:
                             var0 = _closure2_slot2;
@@ -228,7 +228,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1[0] = var11;
                 var1[1] = var10;
                 var0 = function(arg0) { // Environment: var0
-                    _fun48972: for (var _fun48972_ip = 0;;) switch (_fun48972_ip) {
+                    _fun48989: for (var _fun48989_ip = 0;;) switch (_fun48989_ip) {
                         case 0:
                             var2 = arg0;
                             var3 = _closure1_slot0;
@@ -242,8 +242,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var3 = var4.bind(var5)(var2, var3);
                             var3 = null;
                             if (!(var3 != var2)) {
-                                _fun48972_ip = 62;
-                                continue _fun48972
+                                _fun48989_ip = 62;
+                                continue _fun48989
                             }
                         case 53:
                             var1 = _closure2_slot3;
@@ -258,8 +258,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0.pendingAvatarDecoration = var7;
                 var0.pendingErrors = var6;
                 if (!var3) {
-                    _fun48968_ip = 289;
-                    continue _fun48968
+                    _fun48985_ip = 289;
+                    continue _fun48985
                 }
             case 263:
                 var7 = _closure1_slot0;
@@ -271,8 +271,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 289:
                 var0.setPendingAvatar = var5;
                 if (!var3) {
-                    _fun48968_ip = 323;
-                    continue _fun48968
+                    _fun48985_ip = 323;
+                    continue _fun48985
                 }
             case 297:
                 var3 = _closure1_slot0;
@@ -288,4 +288,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 5543, 1613, 5544, 632, 5545, 5546, 5547, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 5544, 1613, 5545, 632, 5546, 5547, 5548, 2]);

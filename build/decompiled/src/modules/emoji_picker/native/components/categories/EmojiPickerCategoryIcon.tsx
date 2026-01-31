@@ -31,92 +31,92 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot3 = var3;
     var3 = var6.memo;
     var1 = function(arg0) { // Original name: EmojiPickerCategoryIcon, environment: var1
-        _fun74041: for (var _fun74041_ip = 0;;) switch (_fun74041_ip) {
+        _fun74071: for (var _fun74071_ip = 0;;) switch (_fun74071_ip) {
             case 0:
                 var0 = arg0;
                 var2 = var0.id;
                 var1 = _closure1_slot2;
                 var1 = var1.TOP_GUILD_EMOJI;
                 if (!(var1 !== var2)) {
-                    _fun74041_ip = 681;
-                    continue _fun74041
+                    _fun74071_ip = 681;
+                    continue _fun74071
                 }
             case 28:
                 var1 = _closure1_slot2;
                 var1 = var1.FAVORITES;
                 if (!(var1 !== var2)) {
-                    _fun74041_ip = 639;
-                    continue _fun74041
+                    _fun74071_ip = 639;
+                    continue _fun74071
                 }
             case 45:
                 var1 = _closure1_slot2;
                 var1 = var1.RECENT;
                 if (!(var1 !== var2)) {
-                    _fun74041_ip = 597;
-                    continue _fun74041
+                    _fun74071_ip = 597;
+                    continue _fun74071
                 }
             case 62:
                 var1 = _closure1_slot2;
                 var1 = var1.PEOPLE;
                 if (!(var1 !== var2)) {
-                    _fun74041_ip = 555;
-                    continue _fun74041
+                    _fun74071_ip = 555;
+                    continue _fun74071
                 }
             case 79:
                 var1 = _closure1_slot2;
                 var1 = var1.NATURE;
                 if (!(var1 !== var2)) {
-                    _fun74041_ip = 513;
-                    continue _fun74041
+                    _fun74071_ip = 513;
+                    continue _fun74071
                 }
             case 96:
                 var1 = _closure1_slot2;
                 var1 = var1.FOOD;
                 if (!(var1 !== var2)) {
-                    _fun74041_ip = 471;
-                    continue _fun74041
+                    _fun74071_ip = 471;
+                    continue _fun74071
                 }
             case 113:
                 var1 = _closure1_slot2;
                 var1 = var1.ACTIVITY;
                 if (!(var1 !== var2)) {
-                    _fun74041_ip = 429;
-                    continue _fun74041
+                    _fun74071_ip = 429;
+                    continue _fun74071
                 }
             case 130:
                 var1 = _closure1_slot2;
                 var1 = var1.TRAVEL;
                 if (!(var1 !== var2)) {
-                    _fun74041_ip = 387;
-                    continue _fun74041
+                    _fun74071_ip = 387;
+                    continue _fun74071
                 }
             case 147:
                 var1 = _closure1_slot2;
                 var1 = var1.OBJECTS;
                 if (!(var1 !== var2)) {
-                    _fun74041_ip = 345;
-                    continue _fun74041
+                    _fun74071_ip = 345;
+                    continue _fun74071
                 }
             case 164:
                 var1 = _closure1_slot2;
                 var1 = var1.SYMBOLS;
                 if (!(var1 !== var2)) {
-                    _fun74041_ip = 303;
-                    continue _fun74041
+                    _fun74071_ip = 303;
+                    continue _fun74071
                 }
             case 181:
                 var1 = _closure1_slot2;
                 var1 = var1.FLAGS;
                 if (!(var1 !== var2)) {
-                    _fun74041_ip = 261;
-                    continue _fun74041
+                    _fun74071_ip = 261;
+                    continue _fun74071
                 }
             case 195:
                 var1 = _closure1_slot2;
                 var1 = var1.CUSTOM;
                 if (!(var1 !== var2)) {
-                    _fun74041_ip = 219;
-                    continue _fun74041
+                    _fun74071_ip = 219;
+                    continue _fun74071
                 }
             case 209:
                 var1 = _closure1_slot2;
@@ -276,4 +276,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 4703, 33, 7824, 8522, 3233, 7639, 9290, 7753, 5288, 9292, 7755, 9012, 8890, 5710, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 4704, 33, 7823, 8522, 3233, 7638, 9292, 7752, 5289, 9294, 7754, 9012, 8890, 5711, 2]);

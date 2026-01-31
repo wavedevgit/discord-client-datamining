@@ -37,14 +37,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/game_detection/DetectableGameSupplementalActionCreators.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: fetchDetectableGamesSupplemental, environment: var1
-        _fun42806: for (var _fun42806_ip = 0;;) switch (_fun42806_ip) {
+        _fun42823: for (var _fun42823_ip = 0;;) switch (_fun42823_ip) {
             case 0:
                 var3 = arg0;
                 var1 = arguments[1];
                 var0 = undefined;
                 if (!(var1 === var0)) {
-                    _fun42806_ip = 24;
-                    continue _fun42806
+                    _fun42823_ip = 24;
+                    continue _fun42823
                 }
             case 12:
                 var2 = {};
@@ -55,8 +55,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.forceFetch;
                 var5 = var3;
                 if (var1) {
-                    _fun42806_ip = 61;
-                    continue _fun42806
+                    _fun42823_ip = 61;
+                    continue _fun42823
                 }
             case 36:
                 var2 = var3.filter;
@@ -67,8 +67,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var5.length;
                 var4 = 0;
                 if (!(var4 !== var1)) {
-                    _fun42806_ip = 171;
-                    continue _fun42806
+                    _fun42823_ip = 171;
+                    continue _fun42823
                 }
             case 72:
                 var2 = _closure1_slot1;
@@ -87,13 +87,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = undefined;
                     var1 = function*(arg0) { // Environment: var0
                         var0 = function*(arg0) { // Original name: ?anon_0_, environment: var0
-                            _fun42809: for (var _fun42809_ip = 0;;) switch (_fun42809_ip) {
+                            _fun42826: for (var _fun42826_ip = 0;;) switch (_fun42826_ip) {
                                 case 0:
                                     StartGenerator();
                                     ResumeGenerator(result_out_reg = 0, return_bool_out_reg = 1);
                                     if (var1) {
-                                        _fun42809_ip = 232;
-                                        continue _fun42809
+                                        _fun42826_ip = 232;
+                                        continue _fun42826
                                     }
                                 case 10:
                                     var4 = arg0;
@@ -123,8 +123,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 case 94:
                                     ResumeGenerator(result_out_reg = 1, return_bool_out_reg = 3);
                                     if (var3) {
-                                        _fun42809_ip = 170;
-                                        continue _fun42809
+                                        _fun42826_ip = 170;
+                                        continue _fun42826
                                     }
                                 case 100:
                                     var3 = _closure1_slot1;
@@ -143,8 +143,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                     var2.supplementalGameData = var6;
                                     var2 = var3.bind(var5)(var2);
                                 case 168: // try_end0
-                                    _fun42809_ip = 227;
-                                    continue _fun42809;
+                                    _fun42826_ip = 227;
+                                    continue _fun42826;
                                 case 170:
                                     return var1;
                                 case 173: // catch_target0
@@ -188,8 +188,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var5.length;
                 var2 = 20;
                 if (!(var1 > var4)) {
-                    _fun42806_ip = 171;
-                    continue _fun42806
+                    _fun42823_ip = 171;
+                    continue _fun42823
                 }
             case 145:
                 var1 = var5.splice;
@@ -197,8 +197,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var3.bind(var0)(var1);
                 var1 = var5.length;
                 if (var1 > var4) {
-                    _fun42806_ip = 145;
-                    continue _fun42806
+                    _fun42823_ip = 145;
+                    continue _fun42823
                 }
             case 171:
                 return var0;
@@ -206,4 +206,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.fetchDetectableGamesSupplemental = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 4633, 660, 806, 507, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 4634, 660, 806, 507, 2]);

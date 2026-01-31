@@ -33,7 +33,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var5 = 'GPSVersionID';
     var3.name = var5;
     var5 = function(arg0) { // Original name: description, environment: var4
-        _fun38103: for (var _fun38103_ip = 0;;) switch (_fun38103_ip) {
+        _fun38120: for (var _fun38120_ip = 0;;) switch (_fun38120_ip) {
             case 0:
                 var4 = arg0;
                 var2 = 0;
@@ -42,31 +42,31 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = 2;
                 var0 = var3;
                 if (!(var1 === var5)) {
-                    _fun38103_ip = 68;
-                    continue _fun38103
+                    _fun38120_ip = 68;
+                    continue _fun38120
                 }
             case 23:
                 var5 = 1;
                 var5 = var4[var5];
                 var0 = var3;
                 if (!(var1 === var5)) {
-                    _fun38103_ip = 68;
-                    continue _fun38103
+                    _fun38120_ip = 68;
+                    continue _fun38120
                 }
             case 37:
                 var1 = var4[var1];
                 var0 = var3;
                 if (!(var2 === var1)) {
-                    _fun38103_ip = 68;
-                    continue _fun38103
+                    _fun38120_ip = 68;
+                    continue _fun38120
                 }
             case 48:
                 var1 = 3;
                 var1 = var4[var1];
                 var0 = var3;
                 if (!(var2 === var1)) {
-                    _fun38103_ip = 68;
-                    continue _fun38103
+                    _fun38120_ip = 68;
+                    continue _fun38120
                 }
             case 62:
                 var0 = 'Version 2.2';
@@ -80,7 +80,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var5 = 'GPSLatitudeRef';
     var3.name = var5;
     var5 = function(arg0) { // Original name: description, environment: var4
-        _fun38104: for (var _fun38104_ip = 0;;) switch (_fun38104_ip) {
+        _fun38121: for (var _fun38121_ip = 0;;) switch (_fun38121_ip) {
             case 0:
                 var2 = arg0;
                 var1 = var2.join;
@@ -89,15 +89,15 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = 'North latitude';
                 var1 = 'N';
                 if (!(var1 !== var3)) {
-                    _fun38104_ip = 52;
-                    continue _fun38104
+                    _fun38121_ip = 52;
+                    continue _fun38121
                 }
             case 31:
                 var1 = 'Unknown';
                 var2 = 'S';
                 if (!(var2 === var3)) {
-                    _fun38104_ip = 49;
-                    continue _fun38104
+                    _fun38121_ip = 49;
+                    continue _fun38121
                 }
             case 43:
                 var1 = 'South latitude';
@@ -122,7 +122,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var8 = 'GPSLongitudeRef';
     var3.name = var8;
     var8 = function(arg0) { // Original name: description, environment: var4
-        _fun38105: for (var _fun38105_ip = 0;;) switch (_fun38105_ip) {
+        _fun38122: for (var _fun38122_ip = 0;;) switch (_fun38122_ip) {
             case 0:
                 var2 = arg0;
                 var1 = var2.join;
@@ -131,15 +131,15 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = 'East longitude';
                 var1 = 'E';
                 if (!(var1 !== var3)) {
-                    _fun38105_ip = 52;
-                    continue _fun38105
+                    _fun38122_ip = 52;
+                    continue _fun38122
                 }
             case 31:
                 var1 = 'Unknown';
                 var2 = 'W';
                 if (!(var2 === var3)) {
-                    _fun38105_ip = 49;
-                    continue _fun38105
+                    _fun38122_ip = 49;
+                    continue _fun38122
                 }
             case 43:
                 var1 = 'West longitude';
@@ -163,21 +163,21 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var8 = 'GPSAltitudeRef';
     var3.name = var8;
     var8 = function(arg0) { // Original name: description, environment: var4
-        _fun38106: for (var _fun38106_ip = 0;;) switch (_fun38106_ip) {
+        _fun38123: for (var _fun38123_ip = 0;;) switch (_fun38123_ip) {
             case 0:
                 var3 = arg0;
                 var0 = 'Sea level';
                 var1 = 0;
                 if (!(var1 !== var3)) {
-                    _fun38106_ip = 35;
-                    continue _fun38106
+                    _fun38123_ip = 35;
+                    continue _fun38123
                 }
             case 15:
                 var1 = 'Unknown';
                 var2 = 1;
                 if (!(var2 === var3)) {
-                    _fun38106_ip = 32;
-                    continue _fun38106
+                    _fun38123_ip = 32;
+                    continue _fun38123
                 }
             case 26:
                 var1 = 'Sea level reference (negative value)';
@@ -212,7 +212,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var2 = arg0;
         var1 = var2.map;
         var0 = function(arg0) { // Environment: var0
-            _fun38109: for (var _fun38109_ip = 0;;) switch (_fun38109_ip) {
+            _fun38126: for (var _fun38126_ip = 0;;) switch (_fun38126_ip) {
                 case 0:
                     var3 = _closure1_slot0;
                     var2 = undefined;
@@ -234,8 +234,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var2 = var2.bind(var4)(var0);
                     var0 = var3;
                     if (!var2) {
-                        _fun38109_ip = 112;
-                        continue _fun38109
+                        _fun38126_ip = 112;
+                        continue _fun38126
                     }
                 case 90:
                     var1 = var1.HermesInternal;
@@ -258,7 +258,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var8 = 'GPSStatus';
     var3.name = var8;
     var8 = function(arg0) { // Original name: description, environment: var4
-        _fun38110: for (var _fun38110_ip = 0;;) switch (_fun38110_ip) {
+        _fun38127: for (var _fun38127_ip = 0;;) switch (_fun38127_ip) {
             case 0:
                 var2 = arg0;
                 var1 = var2.join;
@@ -267,15 +267,15 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = 'Measurement in progress';
                 var1 = 'A';
                 if (!(var1 !== var3)) {
-                    _fun38110_ip = 52;
-                    continue _fun38110
+                    _fun38127_ip = 52;
+                    continue _fun38127
                 }
             case 31:
                 var1 = 'Unknown';
                 var2 = 'V';
                 if (!(var2 === var3)) {
-                    _fun38110_ip = 49;
-                    continue _fun38110
+                    _fun38127_ip = 49;
+                    continue _fun38127
                 }
             case 43:
                 var1 = 'Measurement Interoperability';
@@ -291,7 +291,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var8 = 'GPSMeasureMode';
     var3.name = var8;
     var8 = function(arg0) { // Original name: description, environment: var4
-        _fun38111: for (var _fun38111_ip = 0;;) switch (_fun38111_ip) {
+        _fun38128: for (var _fun38128_ip = 0;;) switch (_fun38128_ip) {
             case 0:
                 var2 = arg0;
                 var1 = var2.join;
@@ -300,15 +300,15 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = '2-dimensional measurement';
                 var1 = '2';
                 if (!(var1 !== var3)) {
-                    _fun38111_ip = 56;
-                    continue _fun38111
+                    _fun38128_ip = 56;
+                    continue _fun38128
                 }
             case 33:
                 var1 = 'Unknown';
                 var2 = '3';
                 if (!(var2 === var3)) {
-                    _fun38111_ip = 53;
-                    continue _fun38111
+                    _fun38128_ip = 53;
+                    continue _fun38128
                 }
             case 47:
                 var1 = '3-dimensional measurement';
@@ -324,7 +324,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var8 = 'GPSSpeedRef';
     var3.name = var8;
     var8 = function(arg0) { // Original name: description, environment: var4
-        _fun38112: for (var _fun38112_ip = 0;;) switch (_fun38112_ip) {
+        _fun38129: for (var _fun38129_ip = 0;;) switch (_fun38129_ip) {
             case 0:
                 var2 = arg0;
                 var1 = var2.join;
@@ -333,22 +333,22 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = 'Kilometers per hour';
                 var1 = 'K';
                 if (!(var1 !== var4)) {
-                    _fun38112_ip = 69;
-                    continue _fun38112
+                    _fun38129_ip = 69;
+                    continue _fun38129
                 }
             case 31:
                 var1 = 'Miles per hour';
                 var2 = 'M';
                 if (!(var2 !== var4)) {
-                    _fun38112_ip = 66;
-                    continue _fun38112
+                    _fun38129_ip = 66;
+                    continue _fun38129
                 }
             case 45:
                 var2 = 'Unknown';
                 var3 = 'N';
                 if (!(var3 === var4)) {
-                    _fun38112_ip = 63;
-                    continue _fun38112
+                    _fun38129_ip = 63;
+                    continue _fun38129
                 }
             case 57:
                 var2 = 'Knots';
@@ -366,7 +366,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var8 = 'GPSTrackRef';
     var3.name = var8;
     var8 = function(arg0) { // Original name: description, environment: var4
-        _fun38113: for (var _fun38113_ip = 0;;) switch (_fun38113_ip) {
+        _fun38130: for (var _fun38130_ip = 0;;) switch (_fun38130_ip) {
             case 0:
                 var2 = arg0;
                 var1 = var2.join;
@@ -375,15 +375,15 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = 'True direction';
                 var1 = 'T';
                 if (!(var1 !== var3)) {
-                    _fun38113_ip = 52;
-                    continue _fun38113
+                    _fun38130_ip = 52;
+                    continue _fun38130
                 }
             case 31:
                 var1 = 'Unknown';
                 var2 = 'M';
                 if (!(var2 === var3)) {
-                    _fun38113_ip = 49;
-                    continue _fun38113
+                    _fun38130_ip = 49;
+                    continue _fun38130
                 }
             case 43:
                 var1 = 'Magnetic direction';
@@ -399,7 +399,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var8 = 'GPSImgDirectionRef';
     var3.name = var8;
     var8 = function(arg0) { // Original name: description, environment: var4
-        _fun38114: for (var _fun38114_ip = 0;;) switch (_fun38114_ip) {
+        _fun38131: for (var _fun38131_ip = 0;;) switch (_fun38131_ip) {
             case 0:
                 var2 = arg0;
                 var1 = var2.join;
@@ -408,15 +408,15 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = 'True direction';
                 var1 = 'T';
                 if (!(var1 !== var3)) {
-                    _fun38114_ip = 52;
-                    continue _fun38114
+                    _fun38131_ip = 52;
+                    continue _fun38131
                 }
             case 31:
                 var1 = 'Unknown';
                 var2 = 'M';
                 if (!(var2 === var3)) {
-                    _fun38114_ip = 49;
-                    continue _fun38114
+                    _fun38131_ip = 49;
+                    continue _fun38131
                 }
             case 43:
                 var1 = 'Magnetic direction';
@@ -432,7 +432,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var8 = 'GPSDestLatitudeRef';
     var3.name = var8;
     var8 = function(arg0) { // Original name: description, environment: var4
-        _fun38115: for (var _fun38115_ip = 0;;) switch (_fun38115_ip) {
+        _fun38132: for (var _fun38132_ip = 0;;) switch (_fun38132_ip) {
             case 0:
                 var2 = arg0;
                 var1 = var2.join;
@@ -441,15 +441,15 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = 'North latitude';
                 var1 = 'N';
                 if (!(var1 !== var3)) {
-                    _fun38115_ip = 52;
-                    continue _fun38115
+                    _fun38132_ip = 52;
+                    continue _fun38132
                 }
             case 31:
                 var1 = 'Unknown';
                 var2 = 'S';
                 if (!(var2 === var3)) {
-                    _fun38115_ip = 49;
-                    continue _fun38115
+                    _fun38132_ip = 49;
+                    continue _fun38132
                 }
             case 43:
                 var1 = 'South latitude';
@@ -498,7 +498,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var8 = 'GPSDestLongitudeRef';
     var3.name = var8;
     var8 = function(arg0) { // Original name: description, environment: var4
-        _fun38117: for (var _fun38117_ip = 0;;) switch (_fun38117_ip) {
+        _fun38134: for (var _fun38134_ip = 0;;) switch (_fun38134_ip) {
             case 0:
                 var2 = arg0;
                 var1 = var2.join;
@@ -507,15 +507,15 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = 'East longitude';
                 var1 = 'E';
                 if (!(var1 !== var3)) {
-                    _fun38117_ip = 52;
-                    continue _fun38117
+                    _fun38134_ip = 52;
+                    continue _fun38134
                 }
             case 31:
                 var1 = 'Unknown';
                 var2 = 'W';
                 if (!(var2 === var3)) {
-                    _fun38117_ip = 49;
-                    continue _fun38117
+                    _fun38134_ip = 49;
+                    continue _fun38134
                 }
             case 43:
                 var1 = 'West longitude';
@@ -564,7 +564,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var8 = 'GPSDestBearingRef';
     var3.name = var8;
     var8 = function(arg0) { // Original name: description, environment: var4
-        _fun38119: for (var _fun38119_ip = 0;;) switch (_fun38119_ip) {
+        _fun38136: for (var _fun38136_ip = 0;;) switch (_fun38136_ip) {
             case 0:
                 var2 = arg0;
                 var1 = var2.join;
@@ -573,15 +573,15 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = 'True direction';
                 var1 = 'T';
                 if (!(var1 !== var3)) {
-                    _fun38119_ip = 52;
-                    continue _fun38119
+                    _fun38136_ip = 52;
+                    continue _fun38136
                 }
             case 31:
                 var1 = 'Unknown';
                 var2 = 'M';
                 if (!(var2 === var3)) {
-                    _fun38119_ip = 49;
-                    continue _fun38119
+                    _fun38136_ip = 49;
+                    continue _fun38136
                 }
             case 43:
                 var1 = 'Magnetic direction';
@@ -597,7 +597,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var8 = 'GPSDestDistanceRef';
     var3.name = var8;
     var8 = function(arg0) { // Original name: description, environment: var4
-        _fun38120: for (var _fun38120_ip = 0;;) switch (_fun38120_ip) {
+        _fun38137: for (var _fun38137_ip = 0;;) switch (_fun38137_ip) {
             case 0:
                 var2 = arg0;
                 var1 = var2.join;
@@ -606,22 +606,22 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = 'Kilometers';
                 var1 = 'K';
                 if (!(var1 !== var4)) {
-                    _fun38120_ip = 69;
-                    continue _fun38120
+                    _fun38137_ip = 69;
+                    continue _fun38137
                 }
             case 31:
                 var1 = 'Miles';
                 var2 = 'M';
                 if (!(var2 !== var4)) {
-                    _fun38120_ip = 66;
-                    continue _fun38120
+                    _fun38137_ip = 66;
+                    continue _fun38137
                 }
             case 45:
                 var2 = 'Unknown';
                 var3 = 'N';
                 if (!(var3 === var4)) {
-                    _fun38120_ip = 63;
-                    continue _fun38120
+                    _fun38137_ip = 63;
+                    continue _fun38137
                 }
             case 57:
                 var2 = 'Knots';
@@ -655,21 +655,21 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var5 = 'GPSDifferential';
     var3.name = var5;
     var4 = function(arg0) { // Original name: description, environment: var4
-        _fun38121: for (var _fun38121_ip = 0;;) switch (_fun38121_ip) {
+        _fun38138: for (var _fun38138_ip = 0;;) switch (_fun38138_ip) {
             case 0:
                 var3 = arg0;
                 var0 = 'Measurement without differential correction';
                 var1 = 0;
                 if (!(var1 !== var3)) {
-                    _fun38121_ip = 35;
-                    continue _fun38121
+                    _fun38138_ip = 35;
+                    continue _fun38138
                 }
             case 15:
                 var1 = 'Unknown';
                 var2 = 1;
                 if (!(var2 === var3)) {
-                    _fun38121_ip = 32;
-                    continue _fun38121
+                    _fun38138_ip = 32;
+                    continue _fun38138
                 }
             case 26:
                 var1 = 'Differential correction applied';

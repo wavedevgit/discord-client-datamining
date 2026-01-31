@@ -31,7 +31,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var1 = function() { // Original name: createDefinedContext, environment: var1
         var2 = function() { // Original name: useContext, environment: var1
-            _fun74659: for (var _fun74659_ip = 0;;) switch (_fun74659_ip) {
+            _fun74689: for (var _fun74689_ip = 0;;) switch (_fun74689_ip) {
                 case 0:
                     var2 = _closure1_slot0;
                     var1 = var2.useContext;
@@ -39,8 +39,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = var1.bind(var2)(var0);
                     var1 = null;
                     if (!(var1 != var0)) {
-                        _fun74659_ip = 33;
-                        continue _fun74659
+                        _fun74689_ip = 33;
+                        continue _fun74689
                     }
                 case 31:
                     return var0;

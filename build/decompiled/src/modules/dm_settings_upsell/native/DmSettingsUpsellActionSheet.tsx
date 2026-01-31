@@ -129,7 +129,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/dm_settings_upsell/native/DmSettingsUpsellActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: DmSettingsUpsellActionSheet, environment: var1
-        _fun113544: for (var _fun113544_ip = 0;;) switch (_fun113544_ip) {
+        _fun112894: for (var _fun112894_ip = 0;;) switch (_fun112894_ip) {
             case 0:
                 var0 = arg0;
                 var0 = var0.guildId;
@@ -184,8 +184,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = null;
                 var1 = var0 == var20;
                 if (var1) {
-                    _fun113544_ip = 1026;
-                    continue _fun113544
+                    _fun112894_ip = 1026;
+                    continue _fun112894
                 }
             case 123:
                 var3 = _closure1_slot7;
@@ -511,4 +511,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1410, 33, 1297, 671, 566, 14518, 14522, 5170, 11595, 3901, 1234, 7356, 4043, 7188, 1348, 3107, 7910, 3237, 5293, 12590, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1410, 33, 1297, 671, 566, 14448, 14452, 5171, 11530, 3900, 1234, 7355, 4043, 7187, 1348, 3107, 7909, 3237, 5294, 12526, 2]);

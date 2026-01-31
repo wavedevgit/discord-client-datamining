@@ -66,7 +66,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot6 = var3;
     var3 = var6.memo;
     var1 = function(arg0) { // Original name: GuildsBarGeoRestrictedGuild, environment: var1
-        _fun101767: for (var _fun101767_ip = 0;;) switch (_fun101767_ip) {
+        _fun101138: for (var _fun101138_ip = 0;;) switch (_fun101138_ip) {
             case 0:
                 var0 = arg0;
                 var10 = var0.restrictedGuild;
@@ -85,8 +85,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var4 != var2;
                 var9 = null;
                 if (!var2) {
-                    _fun101767_ip = 111;
-                    continue _fun101767
+                    _fun101138_ip = 111;
+                    continue _fun101138
                 }
             case 70:
                 var5 = _closure1_slot1;
@@ -241,8 +241,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var2.bind(var3)(var6, var5);
                 var0.expandedChildren = var5;
                 if (!(var4 == var9)) {
-                    _fun101767_ip = 388;
-                    continue _fun101767
+                    _fun101138_ip = 388;
+                    continue _fun101138
                 }
             case 302:
                 var6 = _closure1_slot4;
@@ -265,8 +265,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var7.LARGE;
                 var4.size = var7;
                 var4 = var6.bind(var3)(var5, var4);
-                _fun101767_ip = 445;
-                continue _fun101767;
+                _fun101138_ip = 445;
+                continue _fun101138;
             case 388:
                 var7 = _closure1_slot4;
                 var6 = _closure1_slot1;
@@ -297,4 +297,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 13150, 33, 13164, 13161, 1417, 7356, 3962, 1234, 8115, 13201, 13192, 4666, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 13087, 33, 13101, 13098, 1417, 7355, 3962, 1234, 8114, 13138, 13129, 4667, 2]);

@@ -6,7 +6,7 @@ var7 = require;
         var2 = exports;
         var8 = dependencyMap;
         var3 = function(arg0, arg1) { // Original name: calculateTargetDimensions, environment: var1
-            _fun37518: for(var _fun37518_ip = 0; ; ) switch(_fun37518_ip) {
+            _fun37535: for(var _fun37535_ip = 0; ; ) switch(_fun37535_ip) {
 case 0:
                 var0 = arg0;
                 var7 = arg1;
@@ -15,7 +15,7 @@ case 0:
                 var1 = var2 / var1;
                 var3 = var0.width;
                 var2 = var0.height;
-                if(!(!(var3 > var2))) { _fun37518_ip = 86; continue _fun37518 }
+                if(!(!(var3 > var2))) { _fun37535_ip = 86; continue _fun37535 }
 case 34:
                 var2 = global;
                 var5 = var2.Math;
@@ -28,7 +28,7 @@ case 34:
                 var2 = var4.bind(var5)(var2);
                 var6 = var3;
                 var3 = var2;
-                _fun37518_ip = 133; continue _fun37518;
+                _fun37535_ip = 133; continue _fun37535;
 case 86:
                 var2 = global;
                 var5 = var2.Math;
@@ -46,7 +46,7 @@ case 133:
                 var5 = var6 % var1;
                 var4 = 0;
                 var2 = var6;
-                if(!(var5 !== var4)) { _fun37518_ip = 158; continue _fun37518 }
+                if(!(var5 !== var4)) { _fun37535_ip = 158; continue _fun37535 }
 case 151:
                 var5 = 1;
                 var2 = var6 + var5;
@@ -54,7 +54,7 @@ case 158:
                 var0.width = var2;
                 var2 = var3 % var1;
                 var1 = var3;
-                if(!(var2 !== var4)) { _fun37518_ip = 180; continue _fun37518 }
+                if(!(var2 !== var4)) { _fun37535_ip = 180; continue _fun37535 }
 case 173:
                 var2 = 1;
                 var1 = var3 + var2;
@@ -176,34 +176,34 @@ case 180:
         var4 = var4 instanceof Object ? var4 : var6;
         var5.VERY_HIGH = var4;
         var4 = function(arg0) { // Environment: var1
-            _fun37522: for(var _fun37522_ip = 0; ; ) switch(_fun37522_ip) {
+            _fun37539: for(var _fun37539_ip = 0; ; ) switch(_fun37539_ip) {
 case 0:
                 var4 = arg0;
                 var5 = arguments[1];
                 var0 = undefined;
-                if(!(var5 === var0)) { _fun37522_ip = 15; continue _fun37522 }
+                if(!(var5 === var0)) { _fun37539_ip = 15; continue _fun37539 }
 case 12:
                 var5 = 1;
 case 15:
                 var0 = _closure1_slot3;
                 var0 = var0.VERY_LOW;
-                if(!(var0 !== var4)) { _fun37522_ip = 194; continue _fun37522 }
+                if(!(var0 !== var4)) { _fun37539_ip = 194; continue _fun37539 }
 case 35:
                 var0 = _closure1_slot3;
                 var0 = var0.LOW;
-                if(!(var0 !== var4)) { _fun37522_ip = 182; continue _fun37522 }
+                if(!(var0 !== var4)) { _fun37539_ip = 182; continue _fun37539 }
 case 52:
                 var0 = _closure1_slot3;
                 var0 = var0.MEDIUM;
-                if(!(var0 !== var4)) { _fun37522_ip = 170; continue _fun37522 }
+                if(!(var0 !== var4)) { _fun37539_ip = 170; continue _fun37539 }
 case 66:
                 var0 = _closure1_slot3;
                 var0 = var0.HIGH;
-                if(!(var0 !== var4)) { _fun37522_ip = 158; continue _fun37522 }
+                if(!(var0 !== var4)) { _fun37539_ip = 158; continue _fun37539 }
 case 80:
                 var0 = _closure1_slot3;
                 var0 = var0.VERY_HIGH;
-                if(!(var0 !== var4)) { _fun37522_ip = 146; continue _fun37522 }
+                if(!(var0 !== var4)) { _fun37539_ip = 146; continue _fun37539 }
 case 94:
                 var0 = global;
                 var3 = var0.Error;
@@ -220,25 +220,25 @@ case 94:
 case 146:
                 var0 = _closure1_slot0;
                 var0 = var0.VERY_HIGH;
-                _fun37522_ip = 204; continue _fun37522;
+                _fun37539_ip = 204; continue _fun37539;
 case 158:
                 var2 = _closure1_slot0;
                 var0 = var2.HIGH;
-                _fun37522_ip = 204; continue _fun37522;
+                _fun37539_ip = 204; continue _fun37539;
 case 170:
                 var2 = _closure1_slot0;
                 var0 = var2.MEDIUM;
-                _fun37522_ip = 204; continue _fun37522;
+                _fun37539_ip = 204; continue _fun37539;
 case 182:
                 var2 = _closure1_slot0;
                 var0 = var2.LOW;
-                _fun37522_ip = 204; continue _fun37522;
+                _fun37539_ip = 204; continue _fun37539;
 case 194:
                 var2 = _closure1_slot0;
                 var0 = var2.VERY_LOW;
 case 204:
                 var2 = 1;
-                if(!(var2 === var5)) { _fun37522_ip = 213; continue _fun37522 }
+                if(!(var2 === var5)) { _fun37539_ip = 213; continue _fun37539 }
 case 211:
                 return var0;
 case 213:
@@ -276,18 +276,18 @@ case 213:
         var2.DEFAULT_VIDEO_ENCODING_CONFIG = var4;
         var2.calculateTargetDimensions = var3;
         var3 = function(arg0, arg1, arg2, arg3) { // Original name: canSkipVideoTranscode, environment: var1
-            _fun37523: for(var _fun37523_ip = 0; ; ) switch(_fun37523_ip) {
+            _fun37540: for(var _fun37540_ip = 0; ; ) switch(_fun37540_ip) {
 case 0:
                 var0 = arg0;
                 var1 = arg1;
                 var4 = arg2;
                 var3 = arg3;
                 var2 = null;
-                if(!(var2 != var4)) { _fun37523_ip = 29; continue _fun37523 }
+                if(!(var2 != var4)) { _fun37540_ip = 29; continue _fun37540 }
 case 18:
-                if(!(var2 != var3)) { _fun37523_ip = 29; continue _fun37523 }
+                if(!(var2 != var3)) { _fun37540_ip = 29; continue _fun37540 }
 case 22:
-                if(!(!(var4 > var3))) { _fun37523_ip = 194; continue _fun37523 }
+                if(!(!(var4 > var3))) { _fun37540_ip = 194; continue _fun37540 }
 case 29:
                 var5 = _closure1_slot5;
                 var4 = var0.targetResolution;
@@ -304,7 +304,7 @@ case 29:
                 var5 = var5.bind(var7)(var4);
                 var4 = var3.width;
                 var4 = var6 <= var4;
-                if(!var4) { _fun37523_ip = 115; continue _fun37523 }
+                if(!var4) { _fun37540_ip = 115; continue _fun37540 }
 case 106:
                 var3 = var3.height;
                 var4 = var5 <= var3;
@@ -313,16 +313,16 @@ case 115:
                 var0 = var0.targetBitrate;
                 var3 = var3 <= var0;
                 var0 = !var4;
-                if(!var4) { _fun37523_ip = 140; continue _fun37523 }
+                if(!var4) { _fun37540_ip = 140; continue _fun37540 }
 case 137:
                 var0 = !var3;
 case 140:
-                if(var0) { _fun37523_ip = 152; continue _fun37523 }
+                if(var0) { _fun37540_ip = 152; continue _fun37540 }
 case 143:
                 var3 = var1.format;
                 var0 = var2 == var3;
 case 152:
-                if(var0) { _fun37523_ip = 189; continue _fun37523 }
+                if(var0) { _fun37540_ip = 189; continue _fun37540 }
 case 155:
                 var4 = var1.format;
                 var3 = var4.match;
@@ -339,19 +339,19 @@ case 194:
         };
         var2.canSkipVideoTranscode = var3;
         var3 = function(arg0) { // Original name: logSourceMetadata, environment: var1
-            _fun37524: for(var _fun37524_ip = 0; ; ) switch(_fun37524_ip) {
+            _fun37541: for(var _fun37541_ip = 0; ; ) switch(_fun37541_ip) {
 case 0:
                 var3 = arg0;
                 var0 = var3.format;
                 var1 = null;
                 var0 = var1 != var0;
                 var7 = 'unknown';
-                if(!var0) { _fun37524_ip = 56; continue _fun37524 }
+                if(!var0) { _fun37541_ip = 56; continue _fun37541 }
 case 21:
                 var2 = var3.format;
                 var0 = {'hvc1': 'hvc1 (HEVC)', 'avc1': 'avc1 (H.264)'};
                 var0 = var0[var2];
-                if(!(var1 == var0)) { _fun37524_ip = 53; continue _fun37524 }
+                if(!(var1 == var0)) { _fun37541_ip = 53; continue _fun37541 }
 case 48:
                 var0 = var3.format;
 case 53:
@@ -396,7 +396,7 @@ case 56:
                 var4 = var5.info;
                 var2 = var3.isHDRContent;
                 var6 = 'No';
-                if(!var2) { _fun37524_ip = 283; continue _fun37524 }
+                if(!var2) { _fun37541_ip = 283; continue _fun37541 }
 case 277:
                 var6 = 'Yes';
 case 283:
@@ -439,7 +439,7 @@ case 283:
         };
         var2.logSourceMetadata = var3;
         var3 = function(arg0) { // Original name: logEncoderSettings, environment: var1
-            _fun37525: for(var _fun37525_ip = 0; ; ) switch(_fun37525_ip) {
+            _fun37542: for(var _fun37542_ip = 0; ; ) switch(_fun37542_ip) {
 case 0:
                 var6 = arg0;
                 var5 = _closure1_slot4;
@@ -452,7 +452,7 @@ case 0:
                 var1 = var7 == var2;
                 var0 = undefined;
                 var9 = undefined;
-                if(var1) { _fun37525_ip = 61; continue _fun37525 }
+                if(var1) { _fun37542_ip = 61; continue _fun37542 }
 case 52:
                 var1 = var2.toString;
                 var9 = var1.bind(var2)();
@@ -468,7 +468,7 @@ case 61:
                 var2 = var6.videoQuality;
                 var8 = var7 == var2;
                 var10 = undefined;
-                if(var8) { _fun37525_ip = 121; continue _fun37525 }
+                if(var8) { _fun37542_ip = 121; continue _fun37542 }
 case 115:
                 var10 = var2.targetResolution;
 case 121:
@@ -483,7 +483,7 @@ case 121:
                 var2 = var6.videoQuality;
                 var7 = var7 == var2;
                 var8 = undefined;
-                if(var7) { _fun37525_ip = 184; continue _fun37525 }
+                if(var7) { _fun37542_ip = 184; continue _fun37542 }
 case 178:
                 var8 = var2.targetBitrate;
 case 184:
@@ -500,11 +500,11 @@ case 184:
                 var5 = var6.skipVideoTranscode;
                 var3 = _closure1_slot4;
                 var2 = var3.info;
-                if(var5) { _fun37525_ip = 653; continue _fun37525 }
+                if(var5) { _fun37542_ip = 653; continue _fun37542 }
 case 261:
                 var5 = var6.useHEVC;
                 var7 = 'avc1 (H.264)';
-                if(!var5) { _fun37525_ip = 282; continue _fun37525 }
+                if(!var5) { _fun37542_ip = 282; continue _fun37542 }
 case 276:
                 var7 = 'hvc1 (HEVC)';
 case 282:
@@ -548,7 +548,7 @@ case 282:
                 var5 = var6.createHDR;
                 var9 = 'No';
                 var10 = var9;
-                if(!var5) { _fun37525_ip = 514; continue _fun37525 }
+                if(!var5) { _fun37542_ip = 514; continue _fun37542 }
 case 508:
                 var10 = 'Yes';
 case 514:
@@ -565,7 +565,7 @@ case 514:
                 var5 = var7.bind(var8)(var5);
                 var7 = var8.info;
                 var5 = var6.hevcIsSupported;
-                if(!var5) { _fun37525_ip = 593; continue _fun37525 }
+                if(!var5) { _fun37542_ip = 593; continue _fun37542 }
 case 587:
                 var9 = 'Yes';
 case 593:
@@ -580,7 +580,7 @@ case 593:
                 var1 = '- Progress Update Granularity: ';
                 var1 = var6.bind(var1)(var7);
                 var1 = var4.bind(var5)(var1);
-                _fun37525_ip = 664; continue _fun37525;
+                _fun37542_ip = 664; continue _fun37542;
 case 653:
                 var1 = '- Skip Video Transcode: Yes';
                 var1 = var2.bind(var3)(var1);
@@ -606,27 +606,27 @@ case 664:
         };
         var2.calculateOptimalBitrate = var3;
         var1 = function(arg0, arg1, arg2, arg3, arg4) { // Original name: shouldUseHEVC, environment: var1
-            _fun37527: for(var _fun37527_ip = 0; ; ) switch(_fun37527_ip) {
+            _fun37544: for(var _fun37544_ip = 0; ; ) switch(_fun37544_ip) {
 case 0:
                 var1 = arg3;
                 var0 = arg1;
                 var2 = !var0;
-                if(var2) { _fun37527_ip = 18; continue _fun37527 }
+                if(var2) { _fun37544_ip = 18; continue _fun37544 }
 case 12:
                 var0 = arg2;
                 var2 = !var0;
 case 18:
                 var0 = !var2;
-                if(var2) { _fun37527_ip = 54; continue _fun37527 }
+                if(var2) { _fun37544_ip = 54; continue _fun37544 }
 case 24:
-                if(!var1) { _fun37527_ip = 42; continue _fun37527 }
+                if(!var1) { _fun37544_ip = 42; continue _fun37544 }
 case 27:
                 var2 = arg0;
                 var3 = var2.rotationDegrees;
                 var2 = 0;
                 var1 = var2 !== var3;
 case 42:
-                if(!var1) { _fun37527_ip = 51; continue _fun37527 }
+                if(!var1) { _fun37544_ip = 51; continue _fun37544 }
 case 45:
                 var2 = arg4;
                 var1 = !var2;

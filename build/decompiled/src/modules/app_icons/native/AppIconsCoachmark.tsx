@@ -111,7 +111,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/app_icons/native/AppIconsCoachmark.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: AppIconsCoachmarkActionSheet, environment: var1
-        _fun110421: for (var _fun110421_ip = 0;;) switch (_fun110421_ip) {
+        _fun109776: for (var _fun109776_ip = 0;;) switch (_fun109776_ip) {
             case 0:
                 var0 = arg0;
                 var0 = var0.markAsDismissed;
@@ -146,7 +146,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = new Array(1);
                 var1[0] = var0;
                 var0 = function() { // Environment: var14
-                    _fun110423: for (var _fun110423_ip = 0;;) switch (_fun110423_ip) {
+                    _fun109778: for (var _fun109778_ip = 0;;) switch (_fun109778_ip) {
                         case 0:
                             var3 = _closure1_slot1;
                             var2 = _closure1_slot2;
@@ -159,8 +159,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var4 = _closure2_slot0;
                             var3 = null;
                             if (!(var3 != var4)) {
-                                _fun110423_ip = 67;
-                                continue _fun110423
+                                _fun109778_ip = 67;
+                                continue _fun109778
                             }
                         case 48:
                             var2 = _closure2_slot0;
@@ -271,14 +271,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var15 = var19.bind(var3)(var15);
                 var15 = var15.t;
                 if (var13) {
-                    _fun110421_ip = 550;
-                    continue _fun110421
+                    _fun109776_ip = 550;
+                    continue _fun109776
                 }
             case 535:
                 var13 = var15.D0XzaS;
                 var13 = var16.bind(var18)(var13);
-                _fun110421_ip = 563;
-                continue _fun110421;
+                _fun109776_ip = 563;
+                continue _fun109776;
             case 550:
                 var15 = var15.IgchKK;
                 var13 = var16.bind(var18)(var15);
@@ -314,7 +314,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var15 = var18.bind(var19)(var15);
                 var8.text = var15;
                 var14 = function() { // Original name: onPress, environment: var14
-                    _fun110425: for (var _fun110425_ip = 0;;) switch (_fun110425_ip) {
+                    _fun109780: for (var _fun109780_ip = 0;;) switch (_fun109780_ip) {
                         case 0:
                             var3 = _closure1_slot1;
                             var2 = _closure1_slot2;
@@ -327,8 +327,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var4 = _closure2_slot0;
                             var3 = null;
                             if (!(var3 != var4)) {
-                                _fun110425_ip = 67;
-                                continue _fun110425
+                                _fun109780_ip = 67;
+                                continue _fun109780
                             }
                         case 48:
                             var3 = _closure2_slot0;
@@ -379,4 +379,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1613, 1369, 33, 1297, 671, 566, 3068, 3237, 4893, 14151, 4045, 8534, 3901, 1234, 4043, 10957, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1613, 1369, 33, 1297, 671, 566, 3068, 3237, 4894, 14082, 4045, 8534, 3900, 1234, 4043, 10959, 2]);

@@ -349,4 +349,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.default = var3;
     var2.HEADER_Z_INDEX = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 660, 3242, 33, 1297, 671, 1568, 9492, 8855, 10603, 4838, 1234, 9496, 3237, 9505, 1307, 795, 5540, 4560, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 660, 3242, 33, 1297, 671, 1568, 9494, 8855, 10605, 4839, 1234, 9498, 3237, 9507, 1307, 795, 5541, 4561, 2]);

@@ -5,14 +5,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = dependencyMap;
     var _closure1_slot1 = var1;
     var1 = function(arg0) { // Original name: isArrayLike, environment: var0
-        _fun8407: for (var _fun8407_ip = 0;;) switch (_fun8407_ip) {
+        _fun8409: for (var _fun8409_ip = 0;;) switch (_fun8409_ip) {
             case 0:
                 var3 = arg0;
                 var0 = null;
                 var0 = var0 != var3;
                 if (!var0) {
-                    _fun8407_ip = 46;
-                    continue _fun8407
+                    _fun8409_ip = 46;
+                    continue _fun8409
                 }
             case 12:
                 var2 = _closure1_slot0;
@@ -25,8 +25,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = var2.bind(var4)(var1);
             case 46:
                 if (!var0) {
-                    _fun8407_ip = 82;
-                    continue _fun8407
+                    _fun8409_ip = 82;
+                    continue _fun8409
                 }
             case 49:
                 var4 = _closure1_slot0;

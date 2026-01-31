@@ -17,7 +17,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot1 = var1;
     var1 = function() { // Environment: var0
         var0 = function(arg0, arg1) { // Original name: valueSetter, environment: var0
-            _fun33315: for (var _fun33315_ip = 0;;) switch (_fun33315_ip) {
+            _fun33331: for (var _fun33331_ip = 0;;) switch (_fun33331_ip) {
                 case 0:
                     var4 = arg0;
                     var2 = arg1;
@@ -28,24 +28,24 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var3 = 2;
                     var1 = var1 > var3;
                     if (!var1) {
-                        _fun33315_ip = 37;
-                        continue _fun33315
+                        _fun33331_ip = 37;
+                        continue _fun33331
                     }
                 case 29:
                     var7 = arguments[var3];
                     var1 = var0 !== var7;
                 case 37:
                     if (!var1) {
-                        _fun33315_ip = 44;
-                        continue _fun33315
+                        _fun33331_ip = 44;
+                        continue _fun33331
                     }
                 case 40:
                     var1 = arguments[var3];
                 case 44:
                     var7 = var4._animation;
                     if (!var7) {
-                        _fun33315_ip = 69;
-                        continue _fun33315
+                        _fun33331_ip = 69;
+                        continue _fun33331
                     }
                 case 53:
                     var3 = true;
@@ -57,49 +57,49 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var3 = 'function';
                     var6 = var3 === var8;
                     if (var6) {
-                        _fun33315_ip = 133;
-                        continue _fun33315
+                        _fun33331_ip = 133;
+                        continue _fun33331
                     }
                 case 83:
                     var3 = null;
                     if (!(var3 !== var2)) {
-                        _fun33315_ip = 107;
-                        continue _fun33315
+                        _fun33331_ip = 107;
+                        continue _fun33331
                     }
                 case 89:
                     var3 = 'object';
                     if (!(var3 === var8)) {
-                        _fun33315_ip = 107;
-                        continue _fun33315
+                        _fun33331_ip = 107;
+                        continue _fun33331
                     }
                 case 97:
                     var3 = var2.onFrame;
                     if (!(var0 === var3)) {
-                        _fun33315_ip = 133;
-                        continue _fun33315
+                        _fun33331_ip = 133;
+                        continue _fun33331
                     }
                 case 107:
                     var3 = var4._value;
                     if (!(var3 === var2)) {
-                        _fun33315_ip = 122;
-                        continue _fun33315
+                        _fun33331_ip = 122;
+                        continue _fun33331
                     }
                 case 117:
                     if (var1) {
-                        _fun33315_ip = 122;
-                        continue _fun33315
+                        _fun33331_ip = 122;
+                        continue _fun33331
                     }
                 case 120:
                     return var0;
                 case 122:
                     var4._value = var2;
-                    _fun33315_ip = 277;
-                    continue _fun33315;
+                    _fun33331_ip = 277;
+                    continue _fun33331;
                 case 133:
                     var3 = var2;
                     if (!var6) {
-                        _fun33315_ip = 143;
-                        continue _fun33315
+                        _fun33331_ip = 143;
+                        continue _fun33331
                     }
                 case 139:
                     var3 = var2.bind(var0)();
@@ -108,25 +108,25 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var6 = var4._value;
                     var2 = var3.current;
                     if (!(var6 === var2)) {
-                        _fun33315_ip = 200;
-                        continue _fun33315
+                        _fun33331_ip = 200;
+                        continue _fun33331
                     }
                 case 162:
                     var2 = var3.isHigherOrder;
                     if (var2) {
-                        _fun33315_ip = 200;
-                        continue _fun33315
+                        _fun33331_ip = 200;
+                        continue _fun33331
                     }
                 case 171:
                     if (var1) {
-                        _fun33315_ip = 200;
-                        continue _fun33315
+                        _fun33331_ip = 200;
+                        continue _fun33331
                     }
                 case 174:
                     var1 = var3.callback;
                     if (!var1) {
-                        _fun33315_ip = 196;
-                        continue _fun33315
+                        _fun33331_ip = 196;
+                        continue _fun33331
                     }
                 case 183:
                     var6 = var3.callback;
@@ -139,8 +139,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var2 = _closure1_slot0;
                     var2 = var2.__frameTimestamp;
                     if (var2) {
-                        _fun33315_ip = 230;
-                        continue _fun33315
+                        _fun33331_ip = 230;
+                        continue _fun33331
                     }
                 case 216:
                     var6 = _closure1_slot0;
@@ -155,21 +155,21 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var9 = var7;
                     var1 = var13[var6](var12, var11, var10, var9, var8);
                     var1 = function(arg0) { // Original name: step, environment: var5
-                        _fun33316: for (var _fun33316_ip = 0;;) switch (_fun33316_ip) {
+                        _fun33332: for (var _fun33332_ip = 0;;) switch (_fun33332_ip) {
                             case 0:
                                 var5 = arg0;
                                 var1 = _closure3_slot1;
                                 var1 = var1.timestamp;
                                 if (var1) {
-                                    _fun33316_ip = 21;
-                                    continue _fun33316
+                                    _fun33332_ip = 21;
+                                    continue _fun33332
                                 }
                             case 19:
                                 var1 = 0;
                             case 21:
                                 if (!(var5 < var1)) {
-                                    _fun33316_ip = 35;
-                                    continue _fun33316
+                                    _fun33332_ip = 35;
+                                    continue _fun33332
                                 }
                             case 25:
                                 var1 = _closure3_slot1;
@@ -179,8 +179,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                 var2 = var1.cancelled;
                                 var1 = _closure3_slot1;
                                 if (var2) {
-                                    _fun33316_ip = 163;
-                                    continue _fun33316
+                                    _fun33332_ip = 163;
+                                    continue _fun33332
                                 }
                             case 52:
                                 var3 = var1.onFrame;
@@ -196,8 +196,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                 var3 = var3.current;
                                 var5._value = var3;
                                 if (var2) {
-                                    _fun33316_ip = 133;
-                                    continue _fun33316
+                                    _fun33332_ip = 133;
+                                    continue _fun33332
                                 }
                             case 112:
                                 var2 = global;
@@ -205,26 +205,26 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                 var3 = _closure3_slot2;
                                 var2 = undefined;
                                 var2 = var5.bind(var2)(var3);
-                                _fun33316_ip = 189;
-                                continue _fun33316;
+                                _fun33332_ip = 189;
+                                continue _fun33332;
                             case 133:
                                 var2 = _closure3_slot1;
                                 var2 = var2.callback;
                                 if (!var2) {
-                                    _fun33316_ip = 189;
-                                    continue _fun33316
+                                    _fun33332_ip = 189;
+                                    continue _fun33332
                                 }
                             case 146:
                                 var3 = _closure3_slot1;
                                 var2 = var3.callback;
                                 var2 = var2.bind(var3)(var4);
-                                _fun33316_ip = 189;
-                                continue _fun33316;
+                                _fun33332_ip = 189;
+                                continue _fun33332;
                             case 163:
                                 var1 = var1.callback;
                                 if (!var1) {
-                                    _fun33316_ip = 189;
-                                    continue _fun33316
+                                    _fun33332_ip = 189;
+                                    continue _fun33332
                                 }
                             case 172:
                                 var2 = _closure3_slot1;

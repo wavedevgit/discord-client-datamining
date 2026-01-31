@@ -1,259 +1,89 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var4 = require;
+    var3 = metroImportDefault;
     var2 = exports;
-    var3 = dependencyMap;
-    var _closure1_slot0 = var4;
-    var _closure1_slot1 = var3;
+    var6 = dependencyMap;
     var0 = global;
     var7 = var0.Object;
-    var6 = var7.defineProperty;
-    var5 = {};
-    var8 = true;
-    var5.value = var8;
+    var4 = var7.defineProperty;
+    var1 = {};
+    var0 = true;
+    var1.value = var0;
     var0 = '__esModule';
-    var0 = var6.bind(var7)(var2, var0, var5);
+    var0 = var4.bind(var7)(var2, var0, var1);
     var0 = 0;
-    var3 = var3[var0];
+    var1 = var6[var0];
     var0 = undefined;
-    var3 = var4.bind(var0)(var3);
-    var5 = var3.NativeModules;
-    var3 = var3.Platform;
-    var3 = var5.RNIapIos;
-    var _closure1_slot2 = var3;
-    var4 = var5.RNIapIosSk2;
-    var _closure1_slot3 = var4;
-    var4 = var5.RNIapModule;
-    var _closure1_slot4 = var4;
-    var5 = var5.RNIapAmazonModule;
-    var _closure1_slot5 = var5;
-    var7 = !var5;
-    var6 = !var4;
-    var _closure1_slot6 = var4;
-    var5 = function() { // Original name: checkNativeAndroidAvailable, environment: var1
-        _fun58299: for (var _fun58299_ip = 0;;) switch (_fun58299_ip) {
-            case 0:
-                var1 = _closure1_slot4;
-                if (var1) {
-                    _fun58299_ip = 81;
-                    continue _fun58299
-                }
-            case 10:
-                var1 = _closure1_slot5;
-                if (var1) {
-                    _fun58299_ip = 81;
-                    continue _fun58299
-                }
-            case 17:
-                var1 = global;
-                var2 = var1.Error;
-                var3 = _closure1_slot0;
-                var1 = _closure1_slot1;
-                var0 = 1;
-                var1 = var1[var0];
-                var0 = undefined;
-                var0 = var3.bind(var0)(var1);
-                var0 = var0.ErrorCode;
-                var4 = var0.E_IAP_NOT_AVAILABLE;
-                var1 = var2.prototype;
-                var1 = Object.create(var1, {
-                    constructor: {
-                        value: var2
-                    }
-                });
-                var5 = var1;
-                var0 = new var5[var2](var4, var3);
-                var0 = var0 instanceof Object ? var0 : var1;
-                throw var0;
-            case 81:
-                var0 = undefined;
-                return var0;
-        }
-    };
-    var _closure1_slot7 = var5;
-    var4 = function() { // Original name: getAndroidModule, environment: var1
-        _fun58300: for (var _fun58300_ip = 0;;) switch (_fun58300_ip) {
-            case 0:
-                var1 = _closure1_slot7;
-                var0 = undefined;
-                var0 = var1.bind(var0)();
-                var0 = _closure1_slot6;
-                if (var0) {
-                    _fun58300_ip = 34;
-                    continue _fun58300
-                }
-            case 20:
-                var1 = _closure1_slot4;
-                if (var1) {
-                    _fun58300_ip = 31;
-                    continue _fun58300
-                }
-            case 27:
-                var1 = _closure1_slot5;
-            case 31:
-                var0 = var1;
-            case 34:
-                return var0;
-        }
-    };
-    var _closure1_slot8 = var4;
-    var _closure1_slot9 = var3;
-    var3 = function() { // Original name: isStorekit2Available, environment: var1
-        var0 = false;
-        return var0;
-    };
-    var _closure1_slot10 = var3;
-    var9 = false;
-    var2.isIos = var9;
-    var2.isAndroid = var8;
-    var7 = !var7;
-    var2.isAmazon = var7;
-    var6 = !var6;
-    var2.isPlay = var6;
-    var6 = function(arg0) { // Original name: setAndroidNativeModule, environment: var1
-        var0 = arg0;
-        _closure1_slot6 = var0;
+    var4 = var3.bind(var0)(var1);
+    var1 = 1;
+    var1 = var6[var1];
+    var1 = var3.bind(var0)(var1);
+    var _closure1_slot0 = var1;
+    var3 = {};
+    var1 = 'E_UNKNOWN';
+    var3.E_UNKNOWN = var1;
+    var1 = 'E_USER_CANCELLED';
+    var3.E_USER_CANCELLED = var1;
+    var1 = 'E_USER_ERROR';
+    var3.E_USER_ERROR = var1;
+    var1 = 'E_ITEM_UNAVAILABLE';
+    var3.E_ITEM_UNAVAILABLE = var1;
+    var1 = 'E_REMOTE_ERROR';
+    var3.E_REMOTE_ERROR = var1;
+    var1 = 'E_NETWORK_ERROR';
+    var3.E_NETWORK_ERROR = var1;
+    var1 = 'E_SERVICE_ERROR';
+    var3.E_SERVICE_ERROR = var1;
+    var1 = 'E_RECEIPT_FAILED';
+    var3.E_RECEIPT_FAILED = var1;
+    var1 = 'E_RECEIPT_FINISHED_FAILED';
+    var3.E_RECEIPT_FINISHED_FAILED = var1;
+    var1 = 'E_NOT_PREPARED';
+    var3.E_NOT_PREPARED = var1;
+    var1 = 'E_NOT_ENDED';
+    var3.E_NOT_ENDED = var1;
+    var1 = 'E_ALREADY_OWNED';
+    var3.E_ALREADY_OWNED = var1;
+    var1 = 'E_DEVELOPER_ERROR';
+    var3.E_DEVELOPER_ERROR = var1;
+    var1 = 'E_BILLING_RESPONSE_JSON_PARSE_ERROR';
+    var3.E_BILLING_RESPONSE_JSON_PARSE_ERROR = var1;
+    var1 = 'E_DEFERRED_PAYMENT';
+    var3.E_DEFERRED_PAYMENT = var1;
+    var1 = 'E_INTERRUPTED';
+    var3.E_INTERRUPTED = var1;
+    var1 = 'E_IAP_NOT_AVAILABLE';
+    var3.E_IAP_NOT_AVAILABLE = var1;
+    var1 = function(arg0, arg1, arg2, arg3, arg4, arg5) { // Original name: PurchaseError, environment: var5
+        var6 = arg1;
+        var5 = arg2;
+        var4 = arg3;
+        var3 = arg4;
+        var2 = arg5;
+        var1 = this;
+        var8 = _closure1_slot0;
+        var7 = _closure1_slot1;
         var0 = undefined;
+        var7 = var8.bind(var0)(var1, var7);
+        var7 = arg0;
+        var1.name = var7;
+        var1.message = var6;
+        var1.responseCode = var5;
+        var1.debugMessage = var4;
+        var1.code = var3;
+        var1.productId = var2;
+        var7 = '[react-native-iap]: PurchaseError';
+        var1.name = var7;
+        var1.message = var6;
+        var1.responseCode = var5;
+        var1.debugMessage = var4;
+        var1.code = var3;
+        var1.productId = var2;
         return var0;
     };
-    var2.setAndroidNativeModule = var6;
-    var2.checkNativeAndroidAvailable = var5;
-    var2.getAndroidModule = var4;
-    var4 = function() { // Original name: getAndroidModuleType, environment: var1
-        _fun58303: for (var _fun58303_ip = 0;;) switch (_fun58303_ip) {
-            case 0:
-                var2 = _closure1_slot8;
-                var1 = undefined;
-                var1 = var2.bind(var1)();
-                var2 = _closure1_slot4;
-                if (!(var2 !== var1)) {
-                    _fun58303_ip = 39;
-                    continue _fun58303
-                }
-            case 21:
-                var0 = _closure1_slot5;
-                if (!(var0 !== var1)) {
-                    _fun58303_ip = 33;
-                    continue _fun58303
-                }
-            case 29:
-                var0 = null;
-                return var0;
-            case 33:
-                var0 = 'amazon';
-                return var0;
-            case 39:
-                var0 = 'android';
-                return var0;
-        }
-    };
-    var2.getAndroidModuleType = var4;
-    var4 = function() { // Original name: getNativeModule, environment: var1
-        var1 = _closure1_slot8;
-        var0 = undefined;
-        var0 = var1.bind(var0)();
-        return var0;
-    };
-    var2.getNativeModule = var4;
-    var2.isStorekit2Available = var3;
-    var3 = function() { // Original name: isIosStorekit2, environment: var1
-        var0 = false;
-        return var0;
-    };
-    var2.isIosStorekit2 = var3;
-    var3 = function(arg0) { // Original name: setIosNativeModule, environment: var1
-        var0 = arg0;
-        _closure1_slot9 = var0;
-        var0 = undefined;
-        return var0;
-    };
-    var2.setIosNativeModule = var3;
-    var3 = function() { // Original name: storekit2Mode, environment: var1
-        var1 = _closure1_slot3;
-        _closure1_slot9 = var1;
-        var1 = _closure1_slot10;
-        var0 = undefined;
-        var0 = var1.bind(var0)();
-        var0 = true;
-        return var0;
-    };
-    var2.storekit2Mode = var3;
-    var3 = function() { // Original name: storekit1Mode, environment: var1
-        var1 = _closure1_slot2;
-        _closure1_slot9 = var1;
-        var1 = _closure1_slot10;
-        var0 = undefined;
-        var0 = var1.bind(var0)();
-        var0 = false;
-        return var0;
-    };
-    var2.storekit1Mode = var3;
-    var3 = function() { // Original name: storekitHybridMode, environment: var1
-        var2 = _closure1_slot10;
-        var0 = undefined;
-        var0 = var2.bind(var0)();
-        var0 = _closure1_slot2;
-        _closure1_slot9 = var0;
-        var0 = global;
-        var2 = var0.console;
-        var1 = var2.info;
-        var0 = 'Using Storekit 1';
-        var0 = var1.bind(var2)(var0);
-        var0 = true;
-        return var0;
-    };
-    var2.storekitHybridMode = var3;
-    var1 = function() { // Original name: getIosModule, environment: var1
-        _fun58310: for (var _fun58310_ip = 0;;) switch (_fun58310_ip) {
-            case 0:
-                var0 = _closure1_slot2;
-                if (var0) {
-                    _fun58310_ip = 82;
-                    continue _fun58310
-                }
-            case 10:
-                var0 = _closure1_slot10;
-                var4 = undefined;
-                var0 = var0.bind(var4)();
-                var0 = global;
-                var3 = var0.Error;
-                var1 = _closure1_slot0;
-                var5 = _closure1_slot1;
-                var0 = 1;
-                var0 = var5[var0];
-                var0 = var1.bind(var4)(var0);
-                var0 = var0.ErrorCode;
-                var6 = var0.E_IAP_NOT_AVAILABLE;
-                var1 = var3.prototype;
-                var1 = Object.create(var1, {
-                    constructor: {
-                        value: var3
-                    }
-                });
-                var7 = var1;
-                var0 = new var7[var3](var6, var5);
-                var0 = var0 instanceof Object ? var0 : var1;
-                throw var0;
-            case 82:
-                var0 = _closure1_slot9;
-                if (var0) {
-                    _fun58310_ip = 103;
-                    continue _fun58310
-                }
-            case 89:
-                var1 = _closure1_slot3;
-                if (var1) {
-                    _fun58310_ip = 100;
-                    continue _fun58310
-                }
-            case 96:
-                var1 = _closure1_slot2;
-            case 100:
-                var0 = var1;
-            case 103:
-                return var0;
-        }
-    };
-    var2.getIosModule = var1;
+    var _closure1_slot1 = var1;
+    var1 = var4.bind(var0)(var1);
+    var2.ErrorCode = var3;
+    var2.PurchaseError = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 7111]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [7, 6]);

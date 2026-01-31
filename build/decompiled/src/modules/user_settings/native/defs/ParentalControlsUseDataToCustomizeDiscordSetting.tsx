@@ -70,7 +70,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var1.useValue = var8;
     var7 = function(arg0) { // Original name: handlePersonalizationChange, environment: var7
-        _fun89155: for (var _fun89155_ip = 0;;) switch (_fun89155_ip) {
+        _fun88503: for (var _fun88503_ip = 0;;) switch (_fun88503_ip) {
             case 0:
                 var1 = arg0;
                 var3 = _closure1_slot3;
@@ -78,18 +78,18 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var2.bind(var3)();
                 var2 = null;
                 if (!(var2 != var4)) {
-                    _fun89155_ip = 118;
-                    continue _fun89155
+                    _fun88503_ip = 118;
+                    continue _fun88503
                 }
             case 26:
                 if (var1) {
-                    _fun89155_ip = 35;
-                    continue _fun89155
+                    _fun88503_ip = 35;
+                    continue _fun88503
                 }
             case 29:
                 var3 = new Array(0);
-                _fun89155_ip = 56;
-                continue _fun89155;
+                _fun88503_ip = 56;
+                continue _fun88503;
             case 35:
                 var2 = _closure1_slot4;
                 var5 = var2.PERSONALIZATION;
@@ -98,16 +98,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var2;
             case 56:
                 if (var1) {
-                    _fun89155_ip = 79;
-                    continue _fun89155
+                    _fun88503_ip = 79;
+                    continue _fun88503
                 }
             case 59:
                 var1 = _closure1_slot4;
                 var1 = var1.PERSONALIZATION;
                 var2 = new Array(1);
                 var2[0] = var1;
-                _fun89155_ip = 83;
-                continue _fun89155;
+                _fun88503_ip = 83;
+                continue _fun88503;
             case 79:
                 var2 = new Array(0);
             case 83:
@@ -134,4 +134,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [4556, 6968, 660, 10331, 4558, 8943, 1234, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [4557, 6967, 660, 10333, 4559, 8943, 1234, 2]);

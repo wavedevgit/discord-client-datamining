@@ -5,25 +5,25 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = dependencyMap;
     var _closure1_slot1 = var1;
     var1 = function(arg0) { // Original name: toFinite, environment: var0
-        _fun28168: for (var _fun28168_ip = 0;;) switch (_fun28168_ip) {
+        _fun28169: for (var _fun28169_ip = 0;;) switch (_fun28169_ip) {
             case 0:
                 var4 = arg0;
                 var3 = 0;
                 if (var4) {
-                    _fun28168_ip = 19;
-                    continue _fun28168
+                    _fun28169_ip = 19;
+                    continue _fun28169
                 }
             case 8:
                 var0 = 0;
                 if (!(var3 === var4)) {
-                    _fun28168_ip = 17;
-                    continue _fun28168
+                    _fun28169_ip = 17;
+                    continue _fun28169
                 }
             case 14:
                 var0 = var4;
             case 17:
-                _fun28168_ip = 121;
-                continue _fun28168;
+                _fun28169_ip = 121;
+                continue _fun28169;
             case 19:
                 var5 = _closure1_slot0;
                 var1 = _closure1_slot1;
@@ -33,33 +33,33 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = var1.bind(var2)(var4);
                 var1 = inf;
                 if (!(var2 !== var1)) {
-                    _fun28168_ip = 88;
-                    continue _fun28168
+                    _fun28169_ip = 88;
+                    continue _fun28169
                 }
             case 60:
                 var1 = -inf;
                 if (!(var2 !== var1)) {
-                    _fun28168_ip = 88;
-                    continue _fun28168
+                    _fun28169_ip = 88;
+                    continue _fun28169
                 }
             case 74:
                 var4 = var2 == var2;
                 var1 = 0;
                 if (!var4) {
-                    _fun28168_ip = 86;
-                    continue _fun28168
+                    _fun28169_ip = 86;
+                    continue _fun28169
                 }
             case 83:
                 var1 = var2;
             case 86:
-                _fun28168_ip = 118;
-                continue _fun28168;
+                _fun28169_ip = 118;
+                continue _fun28169;
             case 88:
                 var2 = var2 < var3;
                 var3 = 1;
                 if (!var2) {
-                    _fun28168_ip = 104;
-                    continue _fun28168
+                    _fun28169_ip = 104;
+                    continue _fun28169
                 }
             case 98:
                 var3 = -1;

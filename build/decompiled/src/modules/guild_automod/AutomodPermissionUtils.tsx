@@ -7,14 +7,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var7;
     var _closure1_slot1 = var8;
     var4 = function(arg0) { // Original name: getAutomodQuarantinedProfileFlags, environment: var1
-        _fun24726: for (var _fun24726_ip = 0;;) switch (_fun24726_ip) {
+        _fun24728: for (var _fun24728_ip = 0;;) switch (_fun24728_ip) {
             case 0:
                 var2 = arg0;
                 var _closure2_slot0 = var2;
                 var1 = null;
                 if (!(var1 != var2)) {
-                    _fun24726_ip = 73;
-                    continue _fun24726
+                    _fun24728_ip = 73;
+                    continue _fun24728
                 }
             case 15:
                 var1 = global;
@@ -22,7 +22,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = _closure1_slot4;
                 var3 = var4.reduce;
                 var1 = function(arg0, arg1) { // Environment: var0
-                    _fun24727: for (var _fun24727_ip = 0;;) switch (_fun24727_ip) {
+                    _fun24729: for (var _fun24729_ip = 0;;) switch (_fun24729_ip) {
                         case 0:
                             var0 = arg0;
                             var2 = arg1;
@@ -38,16 +38,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var6 = var1 != var6;
                             var1 = 0;
                             if (!var6) {
-                                _fun24727_ip = 59;
-                                continue _fun24727
+                                _fun24729_ip = 59;
+                                continue _fun24729
                             }
                         case 55:
                             var1 = _closure2_slot0;
                         case 59:
                             var1 = var3.bind(var4)(var1, var2);
                             if (!var1) {
-                                _fun24727_ip = 78;
-                                continue _fun24727
+                                _fun24729_ip = 78;
+                                continue _fun24729
                             }
                         case 68:
                             var1 = var0.push;
@@ -67,8 +67,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var1;
                 var0 = new var7[var2](var6, var5);
                 var0 = var0 instanceof Object ? var0 : var1;
-                _fun24726_ip = 101;
-                continue _fun24726;
+                _fun24728_ip = 101;
+                continue _fun24728;
             case 73:
                 var1 = global;
                 var1 = var1.Set;
@@ -87,28 +87,28 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var _closure1_slot5 = var4;
     var3 = function(arg0) { // Original name: hasAutomodQuarantinedProfile, environment: var1
-        _fun24728: for (var _fun24728_ip = 0;;) switch (_fun24728_ip) {
+        _fun24730: for (var _fun24730_ip = 0;;) switch (_fun24730_ip) {
             case 0:
                 var1 = arg0;
                 var _closure2_slot0 = var1;
                 var3 = null;
                 var0 = var3 != var1;
                 if (!var0) {
-                    _fun24728_ip = 56;
-                    continue _fun24728
+                    _fun24730_ip = 56;
+                    continue _fun24730
                 }
             case 18:
                 var1 = var1.flags;
                 var1 = var3 != var1;
                 if (!var1) {
-                    _fun24728_ip = 53;
-                    continue _fun24728
+                    _fun24730_ip = 53;
+                    continue _fun24730
                 }
             case 30:
                 var4 = _closure1_slot4;
                 var3 = var4.some;
                 var2 = function(arg0) { // Environment: var2
-                    _fun24729: for (var _fun24729_ip = 0;;) switch (_fun24729_ip) {
+                    _fun24731: for (var _fun24731_ip = 0;;) switch (_fun24731_ip) {
                         case 0:
                             var2 = _closure1_slot0;
                             var1 = _closure1_slot1;
@@ -123,8 +123,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var4 = var1 != var0;
                             var1 = 0;
                             if (!var4) {
-                                _fun24729_ip = 57;
-                                continue _fun24729
+                                _fun24731_ip = 57;
+                                continue _fun24731
                             }
                         case 54:
                             var1 = var0;
@@ -178,21 +178,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.AUTOMOD_QUARANTINED_PROFILE_FLAGS = var5;
     var2.getAutomodQuarantinedProfileFlags = var4;
     var4 = function(arg0) { // Original name: getAutomodQuarantinedGuildMemberFlags, environment: var1
-        _fun24730: for (var _fun24730_ip = 0;;) switch (_fun24730_ip) {
+        _fun24732: for (var _fun24732_ip = 0;;) switch (_fun24732_ip) {
             case 0:
                 var0 = arg0;
                 var1 = null;
                 if (!(var1 != var0)) {
-                    _fun24730_ip = 30;
-                    continue _fun24730
+                    _fun24732_ip = 30;
+                    continue _fun24732
                 }
             case 9:
                 var2 = _closure1_slot5;
                 var1 = var0.flags;
                 var0 = undefined;
                 var0 = var2.bind(var0)(var1);
-                _fun24730_ip = 58;
-                continue _fun24730;
+                _fun24732_ip = 58;
+                continue _fun24732;
             case 30:
                 var1 = global;
                 var1 = var1.Set;
@@ -211,7 +211,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getAutomodQuarantinedGuildMemberFlags = var4;
     var4 = function(arg0) { // Original name: getAutomodReason, environment: var1
-        _fun24731: for (var _fun24731_ip = 0;;) switch (_fun24731_ip) {
+        _fun24733: for (var _fun24733_ip = 0;;) switch (_fun24733_ip) {
             case 0:
                 var3 = arg0;
                 var2 = var3.has;
@@ -219,8 +219,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0.AUTOMOD_QUARANTINED_USERNAME_OR_GUILD_NICKNAME;
                 var0 = var2.bind(var3)(var0);
                 if (var0) {
-                    _fun24731_ip = 101;
-                    continue _fun24731
+                    _fun24733_ip = 101;
+                    continue _fun24733
                 }
             case 29:
                 var2 = var3.has;
@@ -228,8 +228,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0.AUTOMOD_QUARANTINED_BIO;
                 var0 = var2.bind(var3)(var0);
                 if (var0) {
-                    _fun24731_ip = 89;
-                    continue _fun24731
+                    _fun24733_ip = 89;
+                    continue _fun24733
                 }
             case 52:
                 var2 = var3.has;
@@ -238,21 +238,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var2.bind(var3)(var0);
                 var0 = null;
                 if (!var2) {
-                    _fun24731_ip = 87;
-                    continue _fun24731
+                    _fun24733_ip = 87;
+                    continue _fun24733
                 }
             case 77:
                 var2 = _closure1_slot3;
                 var0 = var2.AUTOMOD_QUARANTINED_SERVER_TAG;
             case 87:
-                _fun24731_ip = 99;
-                continue _fun24731;
+                _fun24733_ip = 99;
+                continue _fun24733;
             case 89:
                 var2 = _closure1_slot3;
                 var0 = var2.AUTOMOD_QUARANTINED_BIO;
             case 99:
-                _fun24731_ip = 111;
-                continue _fun24731;
+                _fun24733_ip = 111;
+                continue _fun24733;
             case 101:
                 var1 = _closure1_slot3;
                 var0 = var1.AUTOMOD_QUARANTINED_USERNAME_OR_GUILD_NICKNAME;
@@ -278,14 +278,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = new Array(1);
         var1[0] = var5;
         var0 = function() { // Environment: var0
-            _fun24733: for (var _fun24733_ip = 0;;) switch (_fun24733_ip) {
+            _fun24735: for (var _fun24735_ip = 0;;) switch (_fun24735_ip) {
                 case 0:
                     var2 = _closure2_slot0;
                     var0 = null;
                     var0 = var0 != var2;
                     if (!var0) {
-                        _fun24733_ip = 49;
-                        continue _fun24733
+                        _fun24735_ip = 49;
+                        continue _fun24735
                     }
                 case 16:
                     var3 = _closure1_slot6;

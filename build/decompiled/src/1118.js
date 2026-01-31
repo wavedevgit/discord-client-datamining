@@ -49,21 +49,21 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var1.setEndTimeValue = var2;
     var0 = function(arg0) { // Original name: convertSpanToTransaction, environment: var0
-        _fun12258: for (var _fun12258_ip = 0;;) switch (_fun12258_ip) {
+        _fun12260: for (var _fun12260_ip = 0;;) switch (_fun12260_ip) {
             case 0:
                 var3 = arg0;
                 var2 = var3._convertSpanToTransaction;
                 var4 = null;
                 var0 = undefined;
                 if (!(var4 !== var2)) {
-                    _fun12258_ip = 33;
-                    continue _fun12258
+                    _fun12260_ip = 33;
+                    continue _fun12260
                 }
             case 17:
                 var0 = undefined;
                 if (!(var0 !== var2)) {
-                    _fun12258_ip = 33;
-                    continue _fun12258
+                    _fun12260_ip = 33;
+                    continue _fun12260
                 }
             case 23:
                 var1 = var2.call;

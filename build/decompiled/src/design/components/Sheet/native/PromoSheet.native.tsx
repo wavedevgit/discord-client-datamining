@@ -61,7 +61,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'design/components/Sheet/native/PromoSheet.native.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: PromoSheet, environment: var1
-        _fun46285: for (var _fun46285_ip = 0;;) switch (_fun46285_ip) {
+        _fun46302: for (var _fun46302_ip = 0;;) switch (_fun46302_ip) {
             case 0:
                 var2 = arg0;
                 var20 = var2.title;
@@ -112,8 +112,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var13 != var15;
                 var10 = null;
                 if (!var7) {
-                    _fun46285_ip = 205;
-                    continue _fun46285
+                    _fun46302_ip = 205;
+                    continue _fun46302
                 }
             case 175:
                 var12 = _closure1_slot3;
@@ -151,8 +151,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var15 = var13 != var17;
                 var13 = null;
                 if (!var15) {
-                    _fun46285_ip = 368;
-                    continue _fun46285
+                    _fun46302_ip = 368;
+                    continue _fun46302
                 }
             case 313:
                 var16 = _closure1_slot3;
@@ -184,4 +184,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.PromoSheet = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 4893, 4039, 3901, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 4894, 4039, 3900, 2]);

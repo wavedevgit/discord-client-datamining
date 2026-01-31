@@ -25,7 +25,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/messages/shouldRemoveSelfMention.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0, arg1) { // Original name: shouldRemoveSelfMention, environment: var1
-        _fun68993: for (var _fun68993_ip = 0;;) switch (_fun68993_ip) {
+        _fun69017: for (var _fun69017_ip = 0;;) switch (_fun69017_ip) {
             case 0:
                 var1 = arg0;
                 var0 = _closure1_slot0;
@@ -35,8 +35,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var2.bind(var3)(var0);
                 var0 = !var0;
                 if (!var0) {
-                    _fun68993_ip = 66;
-                    continue _fun68993
+                    _fun69017_ip = 66;
+                    continue _fun69017
                 }
             case 37:
                 var1 = var1.author;
@@ -44,8 +44,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var2 == var1;
                 var2 = undefined;
                 if (var3) {
-                    _fun68993_ip = 59;
-                    continue _fun68993
+                    _fun69017_ip = 59;
+                    continue _fun69017
                 }
             case 54:
                 var2 = var1.id;

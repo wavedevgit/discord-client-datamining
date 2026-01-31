@@ -1,7 +1,7 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var1 = function(arg0, arg1, arg2) { // Original name: baseDelay, environment: var0
-        _fun72792: for (var _fun72792_ip = 0;;) switch (_fun72792_ip) {
+        _fun72818: for (var _fun72818_ip = 0;;) switch (_fun72818_ip) {
             case 0:
                 var1 = arg0;
                 var _closure2_slot0 = var1;
@@ -10,8 +10,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = 'function';
                 var1 = typeof var1;
                 if (!(var2 === var1)) {
-                    _fun72792_ip = 55;
-                    continue _fun72792
+                    _fun72818_ip = 55;
+                    continue _fun72818
                 }
             case 27:
                 var1 = global;

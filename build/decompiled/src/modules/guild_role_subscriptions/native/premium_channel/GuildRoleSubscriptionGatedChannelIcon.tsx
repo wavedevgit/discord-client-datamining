@@ -32,7 +32,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/guild_role_subscriptions/native/premium_channel/GuildRoleSubscriptionGatedChannelIcon.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: SubscriptionGatedChannelIcon, environment: var1
-        _fun102688: for (var _fun102688_ip = 0;;) switch (_fun102688_ip) {
+        _fun102057: for (var _fun102057_ip = 0;;) switch (_fun102057_ip) {
             case 0:
                 var0 = arg0;
                 var5 = var0.locked;
@@ -55,13 +55,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var7.bind(var2)(var6);
                 var6 = var6.Sizes;
                 if (var4) {
-                    _fun102688_ip = 96;
-                    continue _fun102688
+                    _fun102057_ip = 96;
+                    continue _fun102057
                 }
             case 88:
                 var4 = var6.SMALL;
-                _fun102688_ip = 102;
-                continue _fun102688;
+                _fun102057_ip = 102;
+                continue _fun102057;
             case 96:
                 var4 = var6.EXTRA_SMALL_10;
             case 102:
@@ -75,4 +75,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 4045, 9248, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 4045, 9250, 2]);

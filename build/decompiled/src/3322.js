@@ -1,15 +1,15 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var1 = function() { // Original name: requirePromise, environment: var0
-        _fun28862: for (var _fun28862_ip = 0;;) switch (_fun28862_ip) {
+        _fun28863: for (var _fun28863_ip = 0;;) switch (_fun28863_ip) {
             case 0:
                 var0 = global;
                 var1 = var0.Promise;
                 var2 = 'function';
                 var1 = typeof var1;
                 if (!(var2 === var1)) {
-                    _fun28862_ip = 22;
-                    continue _fun28862
+                    _fun28863_ip = 22;
+                    continue _fun28863
                 }
             case 18:
                 var1 = undefined;

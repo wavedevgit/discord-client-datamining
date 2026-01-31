@@ -7,13 +7,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var4;
     var1 = function(arg0) { // Original name: questCosponsorMetadataFromServer, environment: var3
-        _fun46633: for (var _fun46633_ip = 0;;) switch (_fun46633_ip) {
+        _fun46650: for (var _fun46650_ip = 0;;) switch (_fun46650_ip) {
             case 0:
                 var1 = arg0;
                 var0 = null;
                 if (!(var0 == var1)) {
-                    _fun46633_ip = 13;
-                    continue _fun46633
+                    _fun46650_ip = 13;
+                    continue _fun46650
                 }
             case 9:
                 var0 = undefined;
@@ -155,4 +155,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.questFromServerV2 = var3;
     var2.questCosponsorMetadataFromServer = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5205, 5209, 5210, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5206, 5210, 5211, 2]);

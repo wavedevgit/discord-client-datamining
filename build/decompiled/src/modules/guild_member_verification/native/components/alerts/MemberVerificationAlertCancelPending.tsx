@@ -38,7 +38,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/guild_member_verification/native/components/alerts/MemberVerificationAlertCancelPending.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: MemberVerificationAlertCancelPending, environment: var1
-        _fun59883: for (var _fun59883_ip = 0;;) switch (_fun59883_ip) {
+        _fun59895: for (var _fun59895_ip = 0;;) switch (_fun59895_ip) {
             case 0:
                 var3 = arg0;
                 var4 = var3.guildId;
@@ -67,13 +67,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1[0] = var4;
                 var1[1] = var11;
                 var0 = function() { // Environment: var0
-                    _fun59884: for (var _fun59884_ip = 0;;) switch (_fun59884_ip) {
+                    _fun59896: for (var _fun59896_ip = 0;;) switch (_fun59896_ip) {
                         case 0:
                             var2 = _closure2_slot1;
                             var0 = null;
                             if (!(var0 != var2)) {
-                                _fun59884_ip = 23;
-                                continue _fun59884
+                                _fun59896_ip = 23;
+                                continue _fun59896
                             }
                         case 13:
                             var2 = _closure2_slot1;
@@ -118,8 +118,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = 'header';
                 var0[var4] = var6;
                 if (!(var15 == var5)) {
-                    _fun59883_ip = 266;
-                    continue _fun59883
+                    _fun59895_ip = 266;
+                    continue _fun59895
                 }
             case 212:
                 var8 = _closure1_slot0;
@@ -150,8 +150,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var17 = 'destructive';
                 var7.variant = var17;
                 if (!(var15 == var14)) {
-                    _fun59883_ip = 385;
-                    continue _fun59883
+                    _fun59895_ip = 385;
+                    continue _fun59895
                 }
             case 331:
                 var19 = _closure1_slot0;
@@ -203,4 +203,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 7382, 7387, 1234, 4043, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 7381, 7386, 1234, 4043, 2]);

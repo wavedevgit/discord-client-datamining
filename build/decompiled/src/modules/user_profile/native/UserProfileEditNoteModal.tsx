@@ -41,7 +41,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = var0.onBack;
         var _closure2_slot2 = var0;
         var9 = function() { // Original name: handleClose, environment: var6
-            _fun92466: for (var _fun92466_ip = 0;;) switch (_fun92466_ip) {
+            _fun91811: for (var _fun91811_ip = 0;;) switch (_fun91811_ip) {
                 case 0:
                     var2 = _closure1_slot1;
                     var1 = _closure1_slot2;
@@ -54,8 +54,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var3 = _closure2_slot2;
                     var2 = null;
                     if (!(var2 != var3)) {
-                        _fun92466_ip = 56;
-                        continue _fun92466
+                        _fun91811_ip = 56;
+                        continue _fun91811
                     }
                 case 48:
                     var1 = _closure2_slot2;
@@ -150,4 +150,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 4524, 5747, 1234, 3901, 4667, 11974, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 4525, 5748, 1234, 3900, 4668, 11907, 2]);

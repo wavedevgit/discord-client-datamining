@@ -36,7 +36,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/main_tabs_v2/native/shared_components/guild_channels/ChannelWrapper.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0, arg1) { // Original name: renderChannelWrapper, environment: var1
-        _fun103939: for (var _fun103939_ip = 0;;) switch (_fun103939_ip) {
+        _fun103308: for (var _fun103308_ip = 0;;) switch (_fun103308_ip) {
             case 0:
                 var0 = arg1;
                 var8 = var0.channel;
@@ -46,8 +46,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var0.panelVariant;
                 var3 = undefined;
                 if (!(var5 === var3)) {
-                    _fun103939_ip = 40;
-                    continue _fun103939
+                    _fun103308_ip = 40;
+                    continue _fun103308
                 }
             case 38:
                 var5 = false;
@@ -62,16 +62,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var12 = var7 == var8;
                 var1 = undefined;
                 if (var12) {
-                    _fun103939_ip = 90;
-                    continue _fun103939
+                    _fun103308_ip = 90;
+                    continue _fun103308
                 }
             case 80:
                 var12 = var8.isThread;
                 var1 = var12.bind(var8)();
             case 90:
                 if (!var1) {
-                    _fun103939_ip = 96;
-                    continue _fun103939
+                    _fun103308_ip = 96;
+                    continue _fun103308
                 }
             case 93:
                 var1 = !var4;
@@ -96,15 +96,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4[0] = var9;
                 var9 = {};
                 if (!(var7 != var8)) {
-                    _fun103939_ip = 183;
-                    continue _fun103939
+                    _fun103308_ip = 183;
+                    continue _fun103308
                 }
             case 170:
                 var10 = var8.isThread;
                 var10 = var10.bind(var8)();
                 if (var10) {
-                    _fun103939_ip = 210;
-                    continue _fun103939
+                    _fun103308_ip = 210;
+                    continue _fun103308
                 }
             case 183:
                 var10 = var6.layout;
@@ -112,8 +112,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var12 = var10.marginVertical;
                 var10 = 2;
                 var10 = var10 * var12;
-                _fun103939_ip = 235;
-                continue _fun103939;
+                _fun103308_ip = 235;
+                continue _fun103308;
             case 210:
                 var12 = var6.layout;
                 var12 = var12.marginThread;
@@ -125,31 +125,31 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9.minHeight = var10;
                 var4[1] = var9;
                 if (!(var7 != var8)) {
-                    _fun103939_ip = 265;
-                    continue _fun103939
+                    _fun103308_ip = 265;
+                    continue _fun103308
                 }
             case 252:
                 var7 = var8.isThread;
                 var7 = var7.bind(var8)();
                 if (var7) {
-                    _fun103939_ip = 288;
-                    continue _fun103939
+                    _fun103308_ip = 288;
+                    continue _fun103308
                 }
             case 265:
                 var7 = var6.container;
                 if (var5) {
-                    _fun103939_ip = 280;
-                    continue _fun103939
+                    _fun103308_ip = 280;
+                    continue _fun103308
                 }
             case 273:
                 var5 = var7.padding;
-                _fun103939_ip = 286;
-                continue _fun103939;
+                _fun103308_ip = 286;
+                continue _fun103308;
             case 280:
                 var5 = var7.paddingPanels;
             case 286:
-                _fun103939_ip = 299;
-                continue _fun103939;
+                _fun103308_ip = 299;
+                continue _fun103308;
             case 288:
                 var6 = var6.container;
                 var5 = var6.paddingThread;

@@ -14,7 +14,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = '__esModule';
     var2 = var4.bind(var5)(var1, var2, var3);
     var0 = function(arg0, arg1) { // Original name: JumpingTransition, environment: var0
-        _fun33860: for (var _fun33860_ip = 0;;) switch (_fun33860_ip) {
+        _fun33876: for (var _fun33876_ip = 0;;) switch (_fun33876_ip) {
             case 0:
                 var0 = arg1;
                 var12 = var0.translateX;
@@ -35,14 +35,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = var0 / var9;
                 var13 = 0;
                 if (!(!(var5 <= var13))) {
-                    _fun33860_ip = 102;
-                    continue _fun33860
+                    _fun33876_ip = 102;
+                    continue _fun33876
                 }
             case 93:
                 var1 = -var5;
                 var11 = var1 + var0;
-                _fun33860_ip = 106;
-                continue _fun33860;
+                _fun33876_ip = 106;
+                continue _fun33876;
             case 102:
                 var11 = var5 - var0;
             case 106:

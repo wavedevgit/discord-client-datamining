@@ -29,7 +29,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/guild_role_subscriptions/feature_gating/useGuildRoleSubscriptionsWaitlistConfig.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: useGuildRoleSubscriptionsWaitlistConfig, environment: var1
-        _fun117163: for (var _fun117163_ip = 0;;) switch (_fun117163_ip) {
+        _fun116513: for (var _fun116513_ip = 0;;) switch (_fun116513_ip) {
             case 0:
                 var3 = arg0;
                 var _closure2_slot0 = var3;
@@ -46,8 +46,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0.GuildRoleSubscriptionSettingsVisibility;
                 var0 = var0.NEEDS_COMMUNITY;
                 if (!(var0 !== var4)) {
-                    _fun117163_ip = 249;
-                    continue _fun117163
+                    _fun116513_ip = 249;
+                    continue _fun116513
                 }
             case 73:
                 var5 = _closure1_slot0;
@@ -57,8 +57,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0.GuildRoleSubscriptionSettingsVisibility;
                 var0 = var0.WAITLIST_ONLY;
                 if (!(var0 !== var4)) {
-                    _fun117163_ip = 108;
-                    continue _fun117163
+                    _fun116513_ip = 108;
+                    continue _fun116513
                 }
             case 106:
                 return var7;
@@ -133,7 +133,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var2 != var3;
                 var0.ctaClickable = var2;
                 var1 = function() { // Original name: onCtaClicked, environment: var1
-                    _fun117164: for (var _fun117164_ip = 0;;) switch (_fun117164_ip) {
+                    _fun116514: for (var _fun116514_ip = 0;;) switch (_fun116514_ip) {
                         case 0:
                             var4 = _closure1_slot1;
                             var7 = _closure1_slot2;
@@ -153,8 +153,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var7 = var2 == var5;
                             var5 = undefined;
                             if (var7) {
-                                _fun117164_ip = 86;
-                                continue _fun117164
+                                _fun116514_ip = 86;
+                                continue _fun116514
                             }
                         case 77:
                             var6 = _closure2_slot0;
@@ -163,8 +163,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var6 = var2 != var5;
                             var2 = '';
                             if (!var6) {
-                                _fun117164_ip = 100;
-                                continue _fun117164
+                                _fun116514_ip = 100;
+                                continue _fun116514
                             }
                         case 97:
                             var2 = var5;
@@ -181,4 +181,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 5593, 1234, 44, 8115, 3097, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 5594, 1234, 44, 8114, 3097, 2]);

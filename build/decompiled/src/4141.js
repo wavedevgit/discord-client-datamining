@@ -15,15 +15,15 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = var4.bind(var5)(var1, var0, var3);
     var0 = {};
     var3 = function(arg0) { // Original name: isAvifFile, environment: var2
-        _fun37959: for (var _fun37959_ip = 0;;) switch (_fun37959_ip) {
+        _fun37976: for (var _fun37976_ip = 0;;) switch (_fun37976_ip) {
             case 0:
                 var2 = arg0;
                 var0 = var2;
                 var5 = undefined;
                 var1 = undefined;
                 if (var2) {
-                    _fun37959_ip = 17;
-                    continue _fun37959
+                    _fun37976_ip = 17;
+                    continue _fun37976
                 }
             case 13:
                 var2 = false;
@@ -39,8 +39,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = var2;
                 var0 = var2;
                 if (!var2) {
-                    _fun37959_ip = 76;
-                    continue _fun37959
+                    _fun37976_ip = 76;
+                    continue _fun37976
                 }
             case 60:
                 var2 = var1.majorBrand;

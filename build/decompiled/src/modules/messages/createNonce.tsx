@@ -38,7 +38,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/messages/createNonce.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function() { // Original name: createNonce, environment: var1
-        _fun54215: for (var _fun54215_ip = 0;;) switch (_fun54215_ip) {
+        _fun54232: for (var _fun54232_ip = 0;;) switch (_fun54232_ip) {
             case 0:
                 var0 = global;
                 var1 = var0.Date;
@@ -46,8 +46,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var0.bind(var1)();
                 var1 = _closure1_slot2;
                 if (!(var1 !== var3)) {
-                    _fun54215_ip = 46;
-                    continue _fun54215
+                    _fun54232_ip = 46;
+                    continue _fun54232
                 }
             case 28:
                 var2 = _closure1_slot3;

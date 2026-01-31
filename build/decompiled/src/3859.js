@@ -1,6 +1,6 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun34959: for (var _fun34959_ip = 0;;) switch (_fun34959_ip) {
+    _fun34975: for (var _fun34975_ip = 0;;) switch (_fun34975_ip) {
         case 0:
             var5 = require;
             var2 = exports;
@@ -23,13 +23,13 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var _closure1_slot3 = var0;
             var1 = function() { // Environment: var4
                 var0 = function(arg0, arg1) { // Original name: setGestureStateNative, environment: var0
-                    _fun34961: for (var _fun34961_ip = 0;;) switch (_fun34961_ip) {
+                    _fun34977: for (var _fun34977_ip = 0;;) switch (_fun34977_ip) {
                         case 0:
                             var0 = global;
                             var1 = var0._WORKLET;
                             if (var1) {
-                                _fun34961_ip = 59;
-                                continue _fun34961
+                                _fun34977_ip = 59;
+                                continue _fun34977
                             }
                         case 14:
                             var3 = _closure1_slot1;
@@ -42,8 +42,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var2 = var3.warn;
                             var1 = 'You can not use setGestureState in non-worklet function.';
                             var1 = var2.bind(var3)(var1);
-                            _fun34961_ip = 83;
-                            continue _fun34961;
+                            _fun34977_ip = 83;
+                            continue _fun34977;
                         case 59:
                             var3 = _closure1_slot0;
                             var2 = var3._setGestureState;
@@ -79,8 +79,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var7 = var8.shouldBeUseWeb;
             var7 = var7.bind(var8)();
             if (!var7) {
-                _fun34959_ip = 176;
-                continue _fun34959
+                _fun34975_ip = 176;
+                continue _fun34975
             }
         case 110:
             var7 = var6[var3];
@@ -88,8 +88,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var7 = var8.isJest;
             var7 = var7.bind(var8)();
             if (var7) {
-                _fun34959_ip = 168;
-                continue _fun34959
+                _fun34975_ip = 168;
+                continue _fun34975
             }
         case 132:
             var3 = var6[var3];
@@ -97,8 +97,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var3 = var5.isChromeDebugger;
             var3 = var3.bind(var5)();
             if (var3) {
-                _fun34959_ip = 161;
-                continue _fun34959
+                _fun34975_ip = 161;
+                continue _fun34975
             }
         case 154:
             var3 = function() { // Original name: setGestureStateDefault, environment: var4
@@ -114,8 +114,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = var2.bind(var3)(var1);
                 return var0;
             };
-            _fun34959_ip = 166;
-            continue _fun34959;
+            _fun34975_ip = 166;
+            continue _fun34975;
         case 161:
             var3 = function() { // Original name: setGestureStateChromeDebugger, environment: var4
                 var2 = _closure1_slot1;
@@ -131,8 +131,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var0;
             };
         case 166:
-            _fun34959_ip = 173;
-            continue _fun34959;
+            _fun34975_ip = 173;
+            continue _fun34975;
         case 168:
             var3 = function() { // Original name: setGestureStateJest, environment: var4
                 var2 = _closure1_slot1;

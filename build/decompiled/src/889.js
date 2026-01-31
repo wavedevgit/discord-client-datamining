@@ -30,15 +30,15 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.value = var7;
     var3 = var5.bind(var6)(var1, var4, var3);
     var2 = function(arg0, arg1) { // Original name: initAndBind, environment: var2
-        _fun9390: for (var _fun9390_ip = 0;;) switch (_fun9390_ip) {
+        _fun9392: for (var _fun9392_ip = 0;;) switch (_fun9392_ip) {
             case 0:
                 var4 = arg0;
                 var0 = arg1;
                 var2 = var0.debug;
                 var1 = true;
                 if (!(var1 === var2)) {
-                    _fun9390_ip = 107;
-                    continue _fun9390
+                    _fun9392_ip = 107;
+                    continue _fun9392
                 }
             case 18:
                 var3 = _closure1_slot0;
@@ -54,8 +54,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = var6[var1];
                 var1 = var3.bind(var5)(var1);
                 if (var2) {
-                    _fun9390_ip = 91;
-                    continue _fun9390
+                    _fun9392_ip = 91;
+                    continue _fun9392
                 }
             case 71:
                 var3 = var1.consoleSandbox;
@@ -69,8 +69,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     return var0;
                 };
                 var2 = var3.bind(var1)(var2);
-                _fun9390_ip = 107;
-                continue _fun9390;
+                _fun9392_ip = 107;
+                continue _fun9392;
             case 91:
                 var2 = var1.debug;
                 var1 = var2.enable;

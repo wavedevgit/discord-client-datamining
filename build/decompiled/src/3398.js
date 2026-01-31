@@ -1,6 +1,6 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun29024: for (var _fun29024_ip = 0;;) switch (_fun29024_ip) {
+    _fun29025: for (var _fun29025_ip = 0;;) switch (_fun29025_ip) {
         case 0:
             var5 = require;
             var6 = dependencyMap;
@@ -15,8 +15,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var4 = var4.bind(var0)(var3, var2);
             var2 = var4;
             if (!var2) {
-                _fun29024_ip = 66;
-                continue _fun29024
+                _fun29025_ip = 66;
+                continue _fun29025
             }
         case 49:
             var3 = 1;
@@ -26,12 +26,12 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         case 66:
             var _closure1_slot2 = var2;
             var2 = function(arg0, arg1) { // Original name: PromiseResolve, environment: var1
-                _fun29025: for (var _fun29025_ip = 0;;) switch (_fun29025_ip) {
+                _fun29026: for (var _fun29026_ip = 0;;) switch (_fun29026_ip) {
                     case 0:
                         var1 = _closure1_slot2;
                         if (var1) {
-                            _fun29025_ip = 60;
-                            continue _fun29025
+                            _fun29026_ip = 60;
+                            continue _fun29026
                         }
                     case 10:
                         var3 = _closure1_slot0;

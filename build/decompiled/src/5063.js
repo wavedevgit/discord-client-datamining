@@ -1,45 +1,79 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var0 = module;
-    var1 = function(arg0, arg1) { // Original name: _objectWithoutPropertiesLoose, environment: var1
-        _fun45483: for (var _fun45483_ip = 0;;) switch (_fun45483_ip) {
+    var2 = require;
+    var _closure1_slot0 = var2;
+    var2 = dependencyMap;
+    var _closure1_slot1 = var2;
+    var1 = function(arg0, arg1) { // Original name: _objectWithoutProperties, environment: var1
+        _fun45498: for (var _fun45498_ip = 0;;) switch (_fun45498_ip) {
             case 0:
-                var8 = arg0;
-                var7 = arg1;
+                var6 = arg0;
+                var5 = arg1;
                 var0 = null;
-                if (!(var0 != var8)) {
-                    _fun45483_ip = 92;
-                    continue _fun45483
+                if (!(var0 != var6)) {
+                    _fun45498_ip = 165;
+                    continue _fun45498
                 }
-            case 12:
-                var0 = {};
-                var5 = var8;
-                var1 = -1;
-                for (var2 in var5)
-                    case 31: {
-                        case 40: var10 = var2;
-                        var9 = {};
-                        var11 = var9.hasOwnProperty;
-                        var9 = var11.call;
-                        var9 = var9.bind(var11)(var8, var10);
-                        if (!var9) {
-                            _fun45483_ip = 31;
-                            continue _fun45483
-                        }
-                        case 65: var9 = var7.indexOf;
-                        var9 = var9.bind(var7)(var10);
-                        if (var1 !== var9) {
-                            _fun45483_ip = 31;
-                            continue _fun45483
-                        }
-                        case 80: var9 = var8[var10];
-                        var0[var10] = var9;
-                        _fun45483_ip = 31;
-                        continue _fun45483;
-                    }
-            case 90:
+            case 15:
+                var2 = _closure1_slot0;
+                var0 = _closure1_slot1;
+                var4 = 0;
+                var0 = var0[var4];
+                var1 = undefined;
+                var0 = var2.bind(var1)(var0);
+                var0 = var0.bind(var1)(var6, var5);
+                var1 = global;
+                var2 = var1.Object;
+                var2 = var2.getOwnPropertySymbols;
+                if (!var2) {
+                    _fun45498_ip = 163;
+                    continue _fun45498
+                }
+            case 62:
+                var2 = var1.Object;
+                var1 = var2.getOwnPropertySymbols;
+                var3 = var1.bind(var2)(var6);
+                var1 = var3.length;
+                var1 = var4 < var1;
+                var2 = -1;
+                var4 = 0;
+                if (!var1) {
+                    _fun45498_ip = 163;
+                    continue _fun45498
+                }
+            case 99:
+                var7 = var3[var4];
+                var1 = var5.indexOf;
+                var1 = var1.bind(var5)(var7);
+                var1 = var2 === var1;
+                if (!var1) {
+                    _fun45498_ip = 140;
+                    continue _fun45498
+                }
+            case 121:
+                var8 = {};
+                var9 = var8.propertyIsEnumerable;
+                var8 = var9.call;
+                var1 = var8.bind(var9)(var6, var7);
+            case 140:
+                if (!var1) {
+                    _fun45498_ip = 151;
+                    continue _fun45498
+                }
+            case 143:
+                var1 = var6[var7];
+                var0[var7] = var1;
+            case 151:
+                var4 = var4 + 1;
+                var1 = var3.length;
+                if (var4 < var1) {
+                    _fun45498_ip = 99;
+                    continue _fun45498
+                }
+            case 163:
                 return var0;
-            case 92:
+            case 165:
                 var0 = {};
                 return var0;
         }
@@ -53,4 +87,4 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1.default = var0;
     var0 = undefined;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, []);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5064]);

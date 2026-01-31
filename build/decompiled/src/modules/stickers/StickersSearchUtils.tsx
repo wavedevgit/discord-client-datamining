@@ -127,4 +127,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.searchUnsendableStickers = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5552, 5572, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5553, 5573, 2]);

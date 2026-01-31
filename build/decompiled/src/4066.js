@@ -1,6 +1,6 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun37487: for (var _fun37487_ip = 0;;) switch (_fun37487_ip) {
+    _fun37504: for (var _fun37504_ip = 0;;) switch (_fun37504_ip) {
         case 0:
             var10 = require;
             var2 = exports;
@@ -43,8 +43,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var11 = var10.bind(var0)(var11);
                     var11 = var11[var12];
                     var2[var12] = var11;
-                    _fun37487_ip = 104;
-                    continue _fun37487;
+                    _fun37504_ip = 104;
+                    continue _fun37504;
                 }
         case 135:
             var3 = function(arg0, arg1) { // Original name: launchCamera, environment: var1
@@ -74,13 +74,13 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var1 = {};
                     var1 = var6.bind(var7)(var1, var5, var4);
                     var0 = function(arg0) { // Environment: var0
-                        _fun37490: for (var _fun37490_ip = 0;;) switch (_fun37490_ip) {
+                        _fun37507: for (var _fun37507_ip = 0;;) switch (_fun37507_ip) {
                             case 0:
                                 var2 = arg0;
                                 var1 = _closure2_slot1;
                                 if (!var1) {
-                                    _fun37490_ip = 24;
-                                    continue _fun37490
+                                    _fun37507_ip = 24;
+                                    continue _fun37507
                                 }
                             case 13:
                                 var1 = _closure2_slot1;
@@ -130,13 +130,13 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var1 = {};
                     var1 = var6.bind(var7)(var1, var5, var4);
                     var0 = function(arg0) { // Environment: var0
-                        _fun37493: for (var _fun37493_ip = 0;;) switch (_fun37493_ip) {
+                        _fun37510: for (var _fun37510_ip = 0;;) switch (_fun37510_ip) {
                             case 0:
                                 var2 = arg0;
                                 var1 = _closure2_slot1;
                                 if (!var1) {
-                                    _fun37493_ip = 24;
-                                    continue _fun37493
+                                    _fun37510_ip = 24;
+                                    continue _fun37510
                                 }
                             case 13:
                                 var1 = _closure2_slot1;

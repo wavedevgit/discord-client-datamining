@@ -32,19 +32,19 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/guild_profile/GuildProfileUtils.tsx';
     var3 = var4.bind(var5)(var3);
     var3 = function(arg0, arg1) { // Original name: getEstablishedDate, environment: var1
-        _fun28657: for (var _fun28657_ip = 0;;) switch (_fun28657_ip) {
+        _fun28658: for (var _fun28658_ip = 0;;) switch (_fun28658_ip) {
             case 0:
                 var4 = arg0;
                 var0 = null;
                 if (!(var0 != var4)) {
-                    _fun28657_ip = 122;
-                    continue _fun28657
+                    _fun28658_ip = 122;
+                    continue _fun28658
                 }
             case 9:
                 var1 = '';
                 if (!(var1 !== var4)) {
-                    _fun28657_ip = 122;
-                    continue _fun28657
+                    _fun28658_ip = 122;
+                    continue _fun28658
                 }
             case 17:
                 var2 = global;
@@ -63,8 +63,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var5 instanceof var1;
                 var1 = null;
                 if (!var3) {
-                    _fun28657_ip = 120;
-                    continue _fun28657
+                    _fun28658_ip = 120;
+                    continue _fun28658
                 }
             case 63:
                 var4 = var2.isNaN;
@@ -74,8 +74,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var4.bind(var2)(var3);
                 var1 = null;
                 if (var2) {
-                    _fun28657_ip = 120;
-                    continue _fun28657
+                    _fun28658_ip = 120;
+                    continue _fun28658
                 }
             case 91:
                 var4 = var5.toLocaleDateString;
@@ -93,14 +93,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getEstablishedDate = var3;
     var1 = function(arg0) { // Original name: guildInviteCanEmbedProfile, environment: var1
-        _fun28658: for (var _fun28658_ip = 0;;) switch (_fun28658_ip) {
+        _fun28659: for (var _fun28659_ip = 0;;) switch (_fun28659_ip) {
             case 0:
                 var1 = arg0;
                 var2 = var1.guild;
                 var0 = null;
                 if (!(var0 != var2)) {
-                    _fun28658_ip = 150;
-                    continue _fun28658
+                    _fun28659_ip = 150;
+                    continue _fun28659
                 }
             case 17:
                 var5 = _closure1_slot0;
@@ -118,15 +118,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var2.HUB;
                 var2 = var5.bind(var6)(var2);
                 if (var2) {
-                    _fun28658_ip = 146;
-                    continue _fun28658
+                    _fun28659_ip = 146;
+                    continue _fun28659
                 }
             case 87:
                 var5 = var0 == var1;
                 var2 = undefined;
                 if (var5) {
-                    _fun28658_ip = 101;
-                    continue _fun28658
+                    _fun28659_ip = 101;
+                    continue _fun28659
                 }
             case 96:
                 var2 = var1.channel;
@@ -134,8 +134,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var0 != var2;
                 var2 = null;
                 if (!var5) {
-                    _fun28658_ip = 124;
-                    continue _fun28658
+                    _fun28659_ip = 124;
+                    continue _fun28659
                 }
             case 110:
                 var3 = _closure1_slot2;
@@ -144,8 +144,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 124:
                 var0 = var0 == var2;
                 if (var0) {
-                    _fun28658_ip = 144;
-                    continue _fun28658
+                    _fun28659_ip = 144;
+                    continue _fun28659
                 }
             case 131:
                 var1 = var2.isGuildVoiceOrThread;

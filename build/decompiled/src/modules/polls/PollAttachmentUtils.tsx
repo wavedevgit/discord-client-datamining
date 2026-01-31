@@ -10,13 +10,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var3 = _closure1_slot0;
         var2 = function*(arg0) { // Environment: var2
             var0 = function*(arg0) { // Original name: ?anon_0_, environment: var0
-                _fun109037: for (var _fun109037_ip = 0;;) switch (_fun109037_ip) {
+                _fun108393: for (var _fun108393_ip = 0;;) switch (_fun108393_ip) {
                     case 0:
                         StartGenerator();
                         ResumeGenerator(result_out_reg = 0, return_bool_out_reg = 1);
                         if (var1) {
-                            _fun109037_ip = 78;
-                            continue _fun109037
+                            _fun108393_ip = 78;
+                            continue _fun108393
                         }
                     case 7:
                         var1 = global;
@@ -30,8 +30,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     case 29:
                         ResumeGenerator(result_out_reg = 1, return_bool_out_reg = 2);
                         if (var2) {
-                            _fun109037_ip = 75;
-                            continue _fun109037
+                            _fun108393_ip = 75;
+                            continue _fun108393
                         }
                     case 35:
                         var2 = var1.blob;
@@ -42,8 +42,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     case 49:
                         ResumeGenerator(result_out_reg = 2, return_bool_out_reg = 3);
                         if (var3) {
-                            _fun109037_ip = 72;
-                            continue _fun109037
+                            _fun108393_ip = 72;
+                            continue _fun108393
                         }
                     case 55:
                         var3 = function(arg0) { // Original name: convertBlobToBase64, environment: var3
@@ -147,7 +147,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/polls/PollAttachmentUtils.tsx';
     var3 = var4.bind(var5)(var3);
     var3 = function(arg0, arg1) { // Original name: getFileNameFromGifUrl, environment: var1
-        _fun109041: for (var _fun109041_ip = 0;;) switch (_fun109041_ip) {
+        _fun108397: for (var _fun108397_ip = 0;;) switch (_fun108397_ip) {
             case 0:
                 var0 = global;
                 var3 = var0.decodeURIComponent;
@@ -163,8 +163,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var2 != var1;
                 var4 = 'temp.gif';
                 if (!var2) {
-                    _fun109041_ip = 60;
-                    continue _fun109041
+                    _fun108397_ip = 60;
+                    continue _fun108397
                 }
             case 57:
                 var4 = var1;
@@ -200,4 +200,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.downloadPollGif = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 6569, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 6570, 2]);

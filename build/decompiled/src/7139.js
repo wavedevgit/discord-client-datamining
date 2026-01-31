@@ -5,151 +5,6 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var2;
     var2 = dependencyMap;
     var _closure1_slot1 = var2;
-    var2 = function() { // Original name: instrumentConsole, environment: var0
-        _fun58578: for (var _fun58578_ip = 0;;) switch (_fun58578_ip) {
-            case 0:
-                var3 = _closure1_slot0;
-                var2 = _closure1_slot1;
-                var0 = 1;
-                var2 = var2[var0];
-                var0 = undefined;
-                var2 = var3.bind(var0)(var2);
-                var3 = var2.GLOBAL_OBJ;
-                var2 = 'console';
-                var2 = var2 in var3;
-                if (!var2) {
-                    _fun58578_ip = 85;
-                    continue _fun58578
-                }
-            case 42:
-                var2 = _closure1_slot0;
-                var3 = _closure1_slot1;
-                var1 = 2;
-                var1 = var3[var1];
-                var1 = var2.bind(var0)(var1);
-                var3 = var1.CONSOLE_LEVELS;
-                var2 = var3.forEach;
-                var1 = function(arg0) { // Environment: var1
-                    _fun58579: for (var _fun58579_ip = 0;;) switch (_fun58579_ip) {
-                        case 0:
-                            var5 = arg0;
-                            var _closure3_slot0 = var5;
-                            var4 = _closure1_slot0;
-                            var0 = _closure1_slot1;
-                            var7 = 1;
-                            var3 = var0[var7];
-                            var0 = undefined;
-                            var3 = var4.bind(var0)(var3);
-                            var3 = var3.GLOBAL_OBJ;
-                            var3 = var3.console;
-                            var3 = var5 in var3;
-                            if (!var3) {
-                                _fun58579_ip = 112;
-                                continue _fun58579
-                            }
-                        case 53:
-                            var6 = _closure1_slot0;
-                            var2 = _closure1_slot1;
-                            var3 = 3;
-                            var3 = var2[var3];
-                            var4 = var6.bind(var0)(var3);
-                            var3 = var4.fill;
-                            var2 = var2[var7];
-                            var2 = var6.bind(var0)(var2);
-                            var2 = var2.GLOBAL_OBJ;
-                            var2 = var2.console;
-                            var1 = function(arg0) { // Environment: var1
-                                var2 = _closure1_slot0;
-                                var1 = _closure1_slot1;
-                                var0 = 2;
-                                var1 = var1[var0];
-                                var0 = undefined;
-                                var0 = var2.bind(var0)(var1);
-                                var2 = var0.originalConsoleMethods;
-                                var1 = _closure3_slot0;
-                                var0 = arg0;
-                                var2[var1] = var0;
-                                var0 = function() { // Environment: var0
-                                    _fun58581: for (var _fun58581_ip = 0;;) switch (_fun58581_ip) {
-                                        case 0:
-                                            var0 = undefined;
-                                            var5 = undefined;
-                                            var3 = arguments.length;
-                                            var1 = global;
-                                            var1 = var1.Array;
-                                            var2 = var1.prototype;
-                                            var2 = Object.create(var2, {
-                                                constructor: {
-                                                    value: var1
-                                                }
-                                            });
-                                            var12 = var2;
-                                            var11 = var3;
-                                            var1 = new var12[var1](var11, var10);
-                                            var4 = var1 instanceof Object ? var1 : var2;
-                                            var2 = 0;
-                                            var6 = var2 < var3;
-                                            var1 = 0;
-                                            if (!var6) {
-                                                _fun58581_ip = 64;
-                                                continue _fun58581
-                                            }
-                                        case 49:
-                                            var6 = arguments[var1];
-                                            var4[var1] = var6;
-                                            var1 = var1 + 1;
-                                            if (var1 < var3) {
-                                                _fun58581_ip = 49;
-                                                continue _fun58581
-                                            }
-                                        case 64:
-                                            var9 = {};
-                                            var9.args = var4;
-                                            var3 = _closure3_slot0;
-                                            var9.level = var3;
-                                            var5 = _closure1_slot0;
-                                            var6 = _closure1_slot1;
-                                            var2 = var6[var2];
-                                            var8 = var5.bind(var0)(var2);
-                                            var7 = var8.triggerHandlers;
-                                            var2 = 'console';
-                                            var2 = var7.bind(var8)(var2, var9);
-                                            var2 = 2;
-                                            var2 = var6[var2];
-                                            var2 = var5.bind(var0)(var2);
-                                            var2 = var2.originalConsoleMethods;
-                                            var3 = var2[var3];
-                                            if (!var3) {
-                                                _fun58581_ip = 187;
-                                                continue _fun58581
-                                            }
-                                        case 144:
-                                            var2 = var3.apply;
-                                            var5 = _closure1_slot0;
-                                            var6 = _closure1_slot1;
-                                            var1 = 1;
-                                            var1 = var6[var1];
-                                            var1 = var5.bind(var0)(var1);
-                                            var1 = var1.GLOBAL_OBJ;
-                                            var1 = var1.console;
-                                            var1 = var2.bind(var3)(var1, var4);
-                                        case 187:
-                                            return var0;
-                                    }
-                                };
-                                return var0;
-                            };
-                            var1 = var3.bind(var4)(var2, var5, var1);
-                        case 112:
-                            return var0;
-                    }
-                };
-                var1 = var2.bind(var3)(var1);
-            case 85:
-                return var0;
-        }
-    };
-    var _closure1_slot2 = var2;
     var2 = global;
     var5 = var2.Object;
     var4 = var5.defineProperty;
@@ -158,25 +13,169 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.value = var2;
     var2 = '__esModule';
     var2 = var4.bind(var5)(var1, var2, var3);
-    var0 = function(arg0) { // Original name: addConsoleInstrumentationHandler, environment: var0
-        var3 = _closure1_slot0;
-        var5 = _closure1_slot1;
-        var2 = 0;
-        var4 = var5[var2];
+    var2 = {};
+    var _closure1_slot2 = var2;
+    var2 = {};
+    var _closure1_slot3 = var2;
+    var2 = function(arg0, arg1) { // Original name: addHandler, environment: var0
+        _fun58596: for (var _fun58596_ip = 0;;) switch (_fun58596_ip) {
+            case 0:
+                var1 = arg0;
+                var3 = _closure1_slot2;
+                var2 = var3[var1];
+                if (var2) {
+                    _fun58596_ip = 21;
+                    continue _fun58596
+                }
+            case 17:
+                var2 = new Array(0);
+            case 21:
+                var3[var1] = var2;
+                var0 = _closure1_slot2;
+                var2 = var0[var1];
+                var1 = var2.push;
+                var0 = arg1;
+                var0 = var1.bind(var2)(var0);
+                var0 = undefined;
+                return var0;
+        }
+    };
+    var1.addHandler = var2;
+    var2 = function(arg0, arg1) { // Original name: maybeInstrument, environment: var0
+        _fun58597: for (var _fun58597_ip = 0;;) switch (_fun58597_ip) {
+            case 0:
+                var2 = arg0;
+                var1 = _closure1_slot3;
+                var1 = var1[var2];
+                if (var1) {
+                    _fun58597_ip = 36;
+                    continue _fun58597
+                }
+            case 17:
+                var3 = arg1;
+                var1 = undefined;
+                var1 = var3.bind(var1)();
+                var1 = _closure1_slot3;
+                var0 = true;
+                var1[var2] = var0;
+            case 36:
+                var0 = undefined;
+                return var0;
+        }
+    };
+    var1.maybeInstrument = var2;
+    var2 = function() { // Original name: resetInstrumentationHandlers, environment: var0
+        var0 = global;
+        var2 = var0.Object;
+        var1 = var2.keys;
+        var0 = _closure1_slot2;
+        var2 = var1.bind(var2)(var0);
+        var1 = var2.forEach;
+        var0 = function(arg0) { // Environment: var0
+            var2 = _closure1_slot2;
+            var0 = undefined;
+            var1 = arg0;
+            var2[var1] = var0;
+            return var0;
+        };
+        var0 = var1.bind(var2)(var0);
         var0 = undefined;
-        var8 = var3.bind(var0)(var4);
-        var7 = var8.addHandler;
-        var4 = 'console';
-        var6 = arg0;
-        var6 = var7.bind(var8)(var4, var6);
-        var2 = var5[var2];
-        var3 = var3.bind(var0)(var2);
-        var2 = var3.maybeInstrument;
-        var1 = _closure1_slot2;
-        var1 = var2.bind(var3)(var4, var1);
         return var0;
     };
-    var1.addConsoleInstrumentationHandler = var0;
+    var1.resetInstrumentationHandlers = var2;
+    var0 = function(arg0, arg1) { // Original name: triggerHandlers, environment: var0
+        _fun58600: for (var _fun58600_ip = 0;;) switch (_fun58600_ip) {
+            case 0:
+                var1 = arg0;
+                var11 = var1;
+                var12 = arg1;
+                var0 = undefined;
+                var13 = undefined;
+                if (!var1) {
+                    _fun58600_ip = 30;
+                    continue _fun58600
+                }
+            case 16:
+                var3 = _closure1_slot2;
+                var2 = var11;
+                var1 = var3[var2];
+            case 30:
+                if (!var1) {
+                    _fun58600_ip = 233;
+                    continue _fun58600
+                }
+            case 36:
+                var10 = var1;
+                var2 = var10[Symbol.iterator];
+                var10 = var2().next;
+                var8 = 1;
+                var7 = 2;
+                var6 = global;
+                var5 = 'Error while triggering instrumentation handler.\nType: ';
+                var4 = '\nName: ';
+                var3 = '\nError:';
+                var1 = 0;
+            case 73:
+                var15 = var10().value;
+                var16 = var2;
+                if (!(var16 !== var0)) {
+                    _fun58600_ip = 233;
+                    continue _fun58600
+                }
+            case 87: // try_start_1
+                var13 = var15;
+            case 90: // try_start_0
+                var16 = var13;
+                var15 = var12;
+                var15 = var16.bind(var0)(var15);
+            case 101: // try_end0
+                _fun58600_ip = 221;
+                continue _fun58600;
+            case 103: // catch_target0
+                CatchBlockStart(arg_register = 14);
+                var16 = _closure1_slot0;
+                var15 = _closure1_slot1;
+                var15 = var15[var1];
+                var15 = var16.bind(var0)(var15);
+                var15 = var15.DEBUG_BUILD;
+                if (!var15) {
+                    _fun58600_ip = 221;
+                    continue _fun58600
+                }
+            case 131:
+                var16 = _closure1_slot0;
+                var15 = _closure1_slot1;
+                var17 = var15[var8];
+                var17 = var16.bind(var0)(var17);
+                var18 = var17.logger;
+                var17 = var18.error;
+                var19 = var11;
+                var15 = var15[var7];
+                var20 = var16.bind(var0)(var15);
+                var16 = var20.getFunctionName;
+                var15 = var13;
+                var22 = var16.bind(var20)(var15);
+                var15 = var6.HermesInternal;
+                var15 = var15.concat;
+                var25 = var5;
+                var24 = var19;
+                var23 = var4;
+                var21 = var3;
+                var16 = var25[var15](var24, var23, var22, var21, var20);
+                var15 = var14;
+                var15 = var17.bind(var18)(var16, var15);
+            case 221: // try_end1
+                _fun58600_ip = 73;
+                continue _fun58600;
+            case 226: // catch_target1
+                CatchBlockStart(arg_register = 1);
+                var2.return();
+                throw var1;
+            case 233:
+                return var0;
+        }
+    };
+    var1.triggerHandlers = var0;
     var0 = undefined;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [7140, 7133, 7136, 7142]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [7136, 7135, 7140]);

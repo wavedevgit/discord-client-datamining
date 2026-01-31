@@ -22,7 +22,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var3.useRef;
     var _closure1_slot3 = var3;
     var1 = function(arg0, arg1) { // Original name: useHandler, environment: var1
-        _fun34670: for (var _fun34670_ip = 0;;) switch (_fun34670_ip) {
+        _fun34686: for (var _fun34686_ip = 0;;) switch (_fun34686_ip) {
             case 0:
                 var11 = arg0;
                 var0 = _closure1_slot3;
@@ -32,8 +32,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var _closure2_slot0 = var0;
                 var3 = var0.current;
                 if (!(var5 === var3)) {
-                    _fun34670_ip = 88;
-                    continue _fun34670
+                    _fun34686_ip = 88;
+                    continue _fun34686
                 }
             case 34:
                 var5 = _closure1_slot0;
@@ -79,8 +79,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var1 = var11[var1];
                         var1 = var13.bind(var14)(var1);
                         if (var1) {
-                            _fun34670_ip = 137;
-                            continue _fun34670
+                            _fun34686_ip = 137;
+                            continue _fun34686
                         }
                         case 184: var3 = _closure1_slot0;
                         var5 = _closure1_slot1;
@@ -125,8 +125,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = var3.isWeb;
                 var1 = var1.bind(var3)();
                 if (var1) {
-                    _fun34670_ip = 371;
-                    continue _fun34670
+                    _fun34686_ip = 371;
+                    continue _fun34686
                 }
             case 344:
                 var3 = _closure1_slot0;

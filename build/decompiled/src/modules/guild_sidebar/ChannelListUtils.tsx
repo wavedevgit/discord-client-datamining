@@ -20,36 +20,36 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = 'modules/guild_sidebar/ChannelListUtils.tsx';
     var1 = var3.bind(var4)(var1);
     var1 = function(arg0) { // Original name: hasStream, environment: var1
-        _fun38629: for (var _fun38629_ip = 0;;) switch (_fun38629_ip) {
+        _fun38646: for (var _fun38646_ip = 0;;) switch (_fun38646_ip) {
             case 0:
                 var2 = arg0;
                 var0 = null;
                 if (!(var0 != var2)) {
-                    _fun38629_ip = 62;
-                    continue _fun38629
+                    _fun38646_ip = 62;
+                    continue _fun38646
                 }
             case 9:
                 var0 = var2.length;
                 var1 = 0;
                 var0 = var1 < var0;
                 if (!var0) {
-                    _fun38629_ip = 54;
-                    continue _fun38629
+                    _fun38646_ip = 54;
+                    continue _fun38646
                 }
             case 23:
                 var0 = var2[var1];
                 var0 = var0.voiceState;
                 var0 = var0.selfStream;
                 if (var0) {
-                    _fun38629_ip = 58;
-                    continue _fun38629
+                    _fun38646_ip = 58;
+                    continue _fun38646
                 }
             case 42:
                 var1 = var1 + 1;
                 var0 = var2.length;
                 if (var1 < var0) {
-                    _fun38629_ip = 23;
-                    continue _fun38629
+                    _fun38646_ip = 23;
+                    continue _fun38646
                 }
             case 54:
                 var0 = false;

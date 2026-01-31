@@ -32,7 +32,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/app_launcher/hooks/useFilterAndSortToOnlyFrecentCommands.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: useFilterAndSortToOnlyFrecentCommands, environment: var1
-        _fun108613: for (var _fun108613_ip = 0;;) switch (_fun108613_ip) {
+        _fun107969: for (var _fun107969_ip = 0;;) switch (_fun107969_ip) {
             case 0:
                 var2 = arg0;
                 var9 = var2.context;
@@ -41,8 +41,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var2.limit;
                 var7 = undefined;
                 if (!(var4 === var7)) {
-                    _fun108613_ip = 36;
-                    continue _fun108613
+                    _fun107969_ip = 36;
+                    continue _fun107969
                 }
             case 31:
                 var4 = var1.length;
@@ -136,4 +136,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 4638, 11665, 12212, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 4639, 11600, 12147, 2]);

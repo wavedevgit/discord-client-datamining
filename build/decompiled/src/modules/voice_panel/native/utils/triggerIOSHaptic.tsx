@@ -27,12 +27,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/voice_panel/native/utils/triggerIOSHaptic.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function() { // Original name: triggerIOSHaptic, environment: var1
-        _fun111516: for (var _fun111516_ip = 0;;) switch (_fun111516_ip) {
+        _fun110866: for (var _fun110866_ip = 0;;) switch (_fun110866_ip) {
             case 0:
                 var1 = _closure1_slot2;
                 if (!var1) {
-                    _fun111516_ip = 64;
-                    continue _fun111516
+                    _fun110866_ip = 64;
+                    continue _fun110866
                 }
             case 10:
                 var4 = _closure1_slot0;
@@ -54,4 +54,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [11838, 3238, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [11771, 3238, 2]);

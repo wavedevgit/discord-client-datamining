@@ -18,10 +18,10 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var4.fileFinishedImporting;
     var1 = '../discord_assets/assets/mana/asset-library/generated/CaterpillarIllocon-2x.png.js';
     var1 = var3.bind(var4)(var1);
-    var1 = 'https://cdn.discordapp.com/assets/content/1a0104afa421ce0e24d631591d6dcb383ec07a55718de75c913bc57509e16062.png';
+    var1 = 'https://cdn.discordapp.com/assets/content/a8cb10e4c901765faf3f604ee2b044cd45a5e22747bd7627a06fd56751961cdb.png';
     var2.default = var1;
     var1 = {};
-    var3 = 684;
+    var3 = 687;
     var1.fileBytes = var3;
     var2.metadata = var1;
     return var0;

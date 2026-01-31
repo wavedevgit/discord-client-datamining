@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = dependencyMap;
     var _closure1_slot1 = var1;
     var1 = function(arg0, arg1, arg2) { // Original name: CreateDataProperty, environment: var0
-        _fun29005: for (var _fun29005_ip = 0;;) switch (_fun29005_ip) {
+        _fun29006: for (var _fun29006_ip = 0;;) switch (_fun29006_ip) {
             case 0:
                 var4 = arg0;
                 var3 = arg1;
@@ -19,8 +19,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var5 = _closure1_slot0;
                 var6 = _closure1_slot1;
                 if (var1) {
-                    _fun29005_ip = 86;
-                    continue _fun29005
+                    _fun29006_ip = 86;
+                    continue _fun29006
                 }
             case 46:
                 var1 = 1;
@@ -43,8 +43,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = var5.bind(var2)(var1);
                 var1 = var1.bind(var2)(var3);
                 if (var1) {
-                    _fun29005_ip = 154;
-                    continue _fun29005
+                    _fun29006_ip = 154;
+                    continue _fun29006
                 }
             case 106:
                 var5 = _closure1_slot0;

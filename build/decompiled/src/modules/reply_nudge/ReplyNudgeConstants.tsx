@@ -1,0 +1,42 @@
+// modules/reply_nudge/ReplyNudgeConstants.tsx
+// @ts-nocheck
+export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
+    var4 = metroImportDefault;
+    var2 = exports;
+    var5 = dependencyMap;
+    var0 = global;
+    var6 = var0.Object;
+    var3 = var6.defineProperty;
+    var1 = {};
+    var0 = true;
+    var1.value = var0;
+    var0 = '__esModule';
+    var0 = var3.bind(var6)(var2, var0, var1);
+    var1 = 0;
+    var3 = var5[var1];
+    var0 = undefined;
+    var3 = var4.bind(var0)(var3);
+    var3 = var3.Millis;
+    var6 = var3.DAY;
+    var3 = 7;
+    var3 = var3 * var6;
+    var1 = var5[var1];
+    var1 = var4.bind(var0)(var1);
+    var1 = var1.Millis;
+    var1 = var1.HOUR;
+    var4 = -var1;
+    var1 = 3;
+    var1 = var1 * var4;
+    var4 = 1;
+    var5 = var5[var4];
+    var4 = require;
+    var6 = var4.bind(var0)(var5);
+    var5 = var6.fileFinishedImporting;
+    var4 = 'modules/reply_nudge/ReplyNudgeConstants.tsx';
+    var4 = var5.bind(var6)(var4);
+    var2.MAX_LATEST_MESSAGE_AGE_MS = var3;
+    var2.NUDGE_TIMESTAMP_OFFSET_MS = var1;
+    var1 = 15;
+    var2.MESSAGE_LOOKBEHIND_COUNT = var1;
+    return var0;
+})(undefined, undefined, undefined, undefined, undefined, undefined, [667, 2]);

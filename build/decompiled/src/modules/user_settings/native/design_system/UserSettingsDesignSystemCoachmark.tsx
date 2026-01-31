@@ -9,7 +9,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
     var0 = function() { // Original name: Content, environment: var1
-        _fun88492: for (var _fun88492_ip = 0;;) switch (_fun88492_ip) {
+        _fun87834: for (var _fun87834_ip = 0;;) switch (_fun87834_ip) {
             case 0:
                 var0 = _closure1_slot10;
                 var3 = undefined;
@@ -74,8 +74,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var19 = var1[var2];
                 var4 = 'Show tooltip';
                 if (!var0) {
-                    _fun88492_ip = 278;
-                    continue _fun88492
+                    _fun87834_ip = 278;
+                    continue _fun87834
                 }
             case 272:
                 var4 = 'Hide tooltip';
@@ -93,7 +93,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1[3] = var16;
                 var1[4] = var21;
                 var0 = function() { // Environment: var18
-                    _fun88493: for (var _fun88493_ip = 0;;) switch (_fun88493_ip) {
+                    _fun87835: for (var _fun87835_ip = 0;;) switch (_fun87835_ip) {
                         case 0:
                             var0 = {
                                 'title': 'Introducing Coachmark!',
@@ -102,8 +102,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var4 = _closure2_slot3;
                             var3 = 'top';
                             if (!var4) {
-                                _fun88493_ip = 34;
-                                continue _fun88493
+                                _fun87835_ip = 34;
+                                continue _fun87835
                             }
                         case 30:
                             var3 = 'bottom';
@@ -130,8 +130,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var0.experimental_withBlurBackground = var4;
                             var4 = _closure2_slot4;
                             if (!var4) {
-                                _fun88493_ip = 111;
-                                continue _fun88493
+                                _fun87835_ip = 111;
+                                continue _fun87835
                             }
                         case 105:
                             var3 = 'Got it!';
@@ -185,8 +185,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = {};
                 var9 = _closure1_slot7;
                 if (var16) {
-                    _fun88492_ip = 505;
-                    continue _fun88492
+                    _fun87834_ip = 505;
+                    continue _fun87834
                 }
             case 454:
                 var5 = _closure1_slot5;
@@ -201,8 +201,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4.style = var6;
                 var4.children = var10;
                 var5 = var9.bind(var3)(var5, var4);
-                _fun88492_ip = 612;
-                continue _fun88492;
+                _fun87834_ip = 612;
+                continue _fun87834;
             case 505:
                 var6 = _closure1_slot1;
                 var14 = _closure1_slot2;
@@ -277,8 +277,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11.title = var23;
                 var22 = var22 != var21;
                 if (!var22) {
-                    _fun88492_ip = 799;
-                    continue _fun88492
+                    _fun87834_ip = 799;
+                    continue _fun87834
                 }
             case 796:
                 var20 = var21;
@@ -441,4 +441,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 33, 1297, 11400, 7474, 6979, 4043, 4057, 5377, 5383, 5382, 4696, 5167, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 33, 1297, 11334, 7473, 6978, 4043, 4057, 5378, 5384, 5383, 4697, 5168, 2]);

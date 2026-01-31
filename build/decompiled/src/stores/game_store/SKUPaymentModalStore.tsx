@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2 = exports;
     var5 = dependencyMap;
     var0 = function() { // Original name: _isNativeReflectConstruct, environment: var3
-        _fun41986: for (var _fun41986_ip = 0;;) switch (_fun41986_ip) {
+        _fun42003: for (var _fun42003_ip = 0;;) switch (_fun42003_ip) {
             case 0:
             case 2: // try_start_0
                 var1 = global;
@@ -27,8 +27,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = !var1;
                 var _closure2_slot0 = var1;
             case 70: // try_end0
-                _fun41986_ip = 74;
-                continue _fun41986;
+                _fun42003_ip = 74;
+                continue _fun42003;
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
@@ -46,33 +46,33 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var _closure1_slot23 = var0;
     var0 = function(arg0) { // Original name: maybeResolveReject, environment: var3
-        _fun41989: for (var _fun41989_ip = 0;;) switch (_fun41989_ip) {
+        _fun42006: for (var _fun42006_ip = 0;;) switch (_fun42006_ip) {
             case 0:
                 var2 = _closure1_slot6;
                 var0 = null;
                 if (!(var0 != var2)) {
-                    _fun41989_ip = 21;
-                    continue _fun41989
+                    _fun42006_ip = 21;
+                    continue _fun42006
                 }
             case 13:
                 var2 = _closure1_slot14;
                 if (!(var0 == var2)) {
-                    _fun41989_ip = 45;
-                    continue _fun41989
+                    _fun42006_ip = 45;
+                    continue _fun42006
                 }
             case 21:
                 var2 = _closure1_slot7;
                 if (!(var0 != var2)) {
-                    _fun41989_ip = 60;
-                    continue _fun41989
+                    _fun42006_ip = 60;
+                    continue _fun42006
                 }
             case 29:
                 var4 = _closure1_slot7;
                 var3 = undefined;
                 var2 = arg0;
                 var2 = var4.bind(var3)(var2);
-                _fun41989_ip = 60;
-                continue _fun41989;
+                _fun42006_ip = 60;
+                continue _fun42006;
             case 45:
                 var4 = _closure1_slot6;
                 var3 = _closure1_slot14;
@@ -154,7 +154,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = var1.Store;
     var1 = function(arg0) { // Environment: var3
         var3 = function() { // Original name: SKUPaymentModalStore, environment: var5
-            _fun41991: for (var _fun41991_ip = 0;;) switch (_fun41991_ip) {
+            _fun42008: for (var _fun42008_ip = 0;;) switch (_fun42008_ip) {
                 case 0:
                     var3 = this;
                     var2 = undefined;
@@ -168,16 +168,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = _closure1_slot23;
                     var0 = var0.bind(var2)();
                     if (var0) {
-                        _fun41991_ip = 69;
-                        continue _fun41991
+                        _fun42008_ip = 69;
+                        continue _fun42008
                     }
                 case 51:
                     var6 = var8.apply;
                     var4 = arguments;
                     var0 = var4;
                     var0 = var6.bind(var8)(var3, var0);
-                    _fun41991_ip = 105;
-                    continue _fun41991;
+                    _fun42008_ip = 105;
+                    continue _fun42008;
                 case 69:
                     var6 = global;
                     var7 = var6.Reflect;
@@ -214,15 +214,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var6 = 'isOpen';
         var4.key = var6;
         var6 = function() { // Original name: value, environment: var5
-            _fun41993: for (var _fun41993_ip = 0;;) switch (_fun41993_ip) {
+            _fun42010: for (var _fun42010_ip = 0;;) switch (_fun42010_ip) {
                 case 0:
                     var0 = _closure1_slot5;
                     var2 = var0.APP;
                     var0 = _closure1_slot21;
                     var0 = var0 === var2;
                     if (!var0) {
-                        _fun41993_ip = 28;
-                        continue _fun41993
+                        _fun42010_ip = 28;
+                        continue _fun42010
                     }
                 case 24:
                     var0 = _closure1_slot19;
@@ -401,7 +401,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var1.SKU_PURCHASE_PREVIEW_FETCH = var8;
     var8 = function(arg0) { // Original name: handleSKUPurchasePreviewFetchSuccess, environment: var3
-        _fun42008: for (var _fun42008_ip = 0;;) switch (_fun42008_ip) {
+        _fun42025: for (var _fun42025_ip = 0;;) switch (_fun42025_ip) {
             case 0:
                 var0 = arg0;
                 var2 = var0.skuId;
@@ -420,8 +420,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var4 != var6;
                 var4 = 'no_payment_source';
                 if (!var7) {
-                    _fun42008_ip = 72;
-                    continue _fun42008
+                    _fun42025_ip = 72;
+                    continue _fun42025
                 }
             case 69:
                 var4 = var6;
@@ -499,20 +499,20 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var1.SKU_PURCHASE_UPDATE_IS_GIFT = var8;
     var8 = function(arg0) { // Original name: handleOverlaySetLocked, environment: var3
-        _fun42016: for (var _fun42016_ip = 0;;) switch (_fun42016_ip) {
+        _fun42033: for (var _fun42033_ip = 0;;) switch (_fun42033_ip) {
             case 0:
                 var0 = arg0;
                 var0 = var0.locked;
                 if (!var0) {
-                    _fun42016_ip = 47;
-                    continue _fun42016
+                    _fun42033_ip = 47;
+                    continue _fun42033
                 }
             case 12:
                 var2 = _closure1_slot21;
                 var1 = null;
                 if (!(var1 != var2)) {
-                    _fun42016_ip = 47;
-                    continue _fun42016
+                    _fun42033_ip = 47;
+                    continue _fun42033
                 }
             case 25:
                 var2 = false;
@@ -529,22 +529,22 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var1.OVERLAY_SET_INPUT_LOCKED = var8;
     var3 = function(arg0) { // Original name: handleGiftCodeCreate, environment: var3
-        _fun42017: for (var _fun42017_ip = 0;;) switch (_fun42017_ip) {
+        _fun42034: for (var _fun42034_ip = 0;;) switch (_fun42034_ip) {
             case 0:
                 var0 = arg0;
                 var0 = var0.giftCode;
                 var2 = var0.uses;
                 var1 = 0;
                 if (!(var1 === var2)) {
-                    _fun42017_ip = 51;
-                    continue _fun42017
+                    _fun42034_ip = 51;
+                    continue _fun42034
                 }
             case 21:
                 var3 = var0.sku_id;
                 var2 = _closure1_slot8;
                 if (!(var3 === var2)) {
-                    _fun42017_ip = 51;
-                    continue _fun42017
+                    _fun42034_ip = 51;
+                    continue _fun42034
                 }
             case 38:
                 var0 = var0.code;

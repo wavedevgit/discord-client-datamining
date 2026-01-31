@@ -27,7 +27,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/guild_products/GuildProductsExperimentUtils.tsx';
     var3 = var4.bind(var5)(var3);
     var3 = function(arg0, arg1) { // Original name: useGuildEligibleForGuildProducts, environment: var1
-        _fun49794: for (var _fun49794_ip = 0;;) switch (_fun49794_ip) {
+        _fun49811: for (var _fun49811_ip = 0;;) switch (_fun49811_ip) {
             case 0:
                 var3 = arg0;
                 var2 = _closure1_slot0;
@@ -41,8 +41,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = {};
                 var5 = null;
                 if (!(var5 == var3)) {
-                    _fun49794_ip = 52;
-                    continue _fun49794
+                    _fun49811_ip = 52;
+                    continue _fun49811
                 }
             case 48:
                 var3 = _closure1_slot2;
@@ -57,7 +57,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useGuildEligibleForGuildProducts = var3;
     var1 = function(arg0, arg1) { // Original name: isGuildEligibleForGuildProducts, environment: var1
-        _fun49795: for (var _fun49795_ip = 0;;) switch (_fun49795_ip) {
+        _fun49812: for (var _fun49812_ip = 0;;) switch (_fun49812_ip) {
             case 0:
                 var3 = arg0;
                 var2 = _closure1_slot0;
@@ -71,8 +71,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = {};
                 var5 = null;
                 if (!(var5 == var3)) {
-                    _fun49795_ip = 52;
-                    continue _fun49795
+                    _fun49812_ip = 52;
+                    continue _fun49812
                 }
             case 48:
                 var3 = _closure1_slot2;
@@ -87,4 +87,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.isGuildEligibleForGuildProducts = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 5591, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 5592, 2]);

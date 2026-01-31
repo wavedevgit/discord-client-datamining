@@ -1,7 +1,7 @@
 // utils/native/DeviceUtils.tsx
 // @ts-nocheck
 export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun14198: for (var _fun14198_ip = 0;;) switch (_fun14198_ip) {
+    _fun14200: for (var _fun14200_ip = 0;;) switch (_fun14200_ip) {
         case 0:
             var5 = require;
             var9 = metroImportDefault;
@@ -35,13 +35,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var7 = var8.isAndroid;
             var7 = var7.bind(var8)();
             if (var7) {
-                _fun14198_ip = 119;
-                continue _fun14198
+                _fun14200_ip = 119;
+                continue _fun14200
             }
         case 111:
             var4 = var4.DCDDeviceManager;
-            _fun14198_ip = 164;
-            continue _fun14198;
+            _fun14200_ip = 164;
+            continue _fun14200;
         case 119:
             var8 = 2;
             var7 = var6[var8];
@@ -50,8 +50,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var10 = var7 == var10;
             var7 = undefined;
             if (var10) {
-                _fun14198_ip = 161;
-                continue _fun14198
+                _fun14200_ip = 161;
+                continue _fun14200
             }
         case 142:
             var8 = var6[var8];
@@ -94,7 +94,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var2.getSystemVersion = var4;
             var2.getDevice = var3;
             var3 = function() { // Original name: getDeviceInfo, environment: var1
-                _fun14203: for (var _fun14203_ip = 0;;) switch (_fun14203_ip) {
+                _fun14205: for (var _fun14205_ip = 0;;) switch (_fun14205_ip) {
                     case 0:
                         var2 = _closure1_slot0;
                         var3 = _closure1_slot2;
@@ -107,13 +107,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var2 = _closure1_slot6;
                         var3 = var2.bind(var3)();
                         if (var0) {
-                            _fun14203_ip = 51;
-                            continue _fun14203
+                            _fun14205_ip = 51;
+                            continue _fun14205
                         }
                     case 46:
                         var0 = var3;
-                        _fun14203_ip = 83;
-                        continue _fun14203;
+                        _fun14205_ip = 83;
+                        continue _fun14205;
                     case 51:
                         var2 = ' (';
                         var2 = var3 + var2;
@@ -128,7 +128,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             };
             var2.getDeviceInfo = var3;
             var3 = function() { // Original name: getDeviceMediaPerformanceClass, environment: var1
-                _fun14204: for (var _fun14204_ip = 0;;) switch (_fun14204_ip) {
+                _fun14206: for (var _fun14206_ip = 0;;) switch (_fun14206_ip) {
                     case 0:
                         var2 = _closure1_slot0;
                         var3 = _closure1_slot2;
@@ -141,15 +141,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var5 = null;
                         var0 = null;
                         if (!var2) {
-                            _fun14204_ip = 186;
-                            continue _fun14204
+                            _fun14206_ip = 186;
+                            continue _fun14206
                         }
                     case 45:
                         var2 = _closure1_slot4;
                         var2 = var5 == var2;
                         if (!var2) {
-                            _fun14204_ip = 104;
-                            continue _fun14204
+                            _fun14206_ip = 104;
+                            continue _fun14206
                         }
                     case 56:
                         var6 = _closure1_slot0;
@@ -165,8 +165,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var2 = var5 == var3;
                     case 104:
                         if (!var2) {
-                            _fun14204_ip = 182;
-                            continue _fun14204
+                            _fun14206_ip = 182;
+                            continue _fun14206
                         }
                     case 107:
                         var3 = _closure1_slot1;
@@ -230,7 +230,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             };
             var2.getSocName = var3;
             var3 = function() { // Original name: getRamSize, environment: var1
-                _fun14211: for (var _fun14211_ip = 0;;) switch (_fun14211_ip) {
+                _fun14213: for (var _fun14213_ip = 0;;) switch (_fun14213_ip) {
                     case 0:
                         var0 = _closure1_slot3;
                         var3 = var0.ramSize;
@@ -238,8 +238,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var1 = '';
                         var0 = undefined;
                         if (!(var1 !== var3)) {
-                            _fun14211_ip = 38;
-                            continue _fun14211
+                            _fun14213_ip = 38;
+                            continue _fun14213
                         }
                     case 25:
                         var1 = global;
@@ -251,7 +251,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             };
             var2.getRamSize = var3;
             var3 = function() { // Original name: getMaxCpuFreq, environment: var1
-                _fun14212: for (var _fun14212_ip = 0;;) switch (_fun14212_ip) {
+                _fun14214: for (var _fun14214_ip = 0;;) switch (_fun14214_ip) {
                     case 0:
                         var0 = _closure1_slot3;
                         var3 = var0.maxCpuFreq;
@@ -259,8 +259,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var1 = '';
                         var0 = undefined;
                         if (!(var1 !== var3)) {
-                            _fun14212_ip = 38;
-                            continue _fun14212
+                            _fun14214_ip = 38;
+                            continue _fun14214
                         }
                     case 25:
                         var1 = global;

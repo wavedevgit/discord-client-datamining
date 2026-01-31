@@ -346,13 +346,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.YOU_BAR_FLOATING_OFFSET_MINIMUM = var7;
     var2.useYouBarBottomMargin = var6;
     var5 = function() { // Original name: useYouBarTotalHeight, environment: var5
-        _fun101352: for (var _fun101352_ip = 0;;) switch (_fun101352_ip) {
+        _fun100723: for (var _fun100723_ip = 0;;) switch (_fun100723_ip) {
             case 0:
                 var2 = arguments[0];
                 var3 = undefined;
                 if (!(var2 === var3)) {
-                    _fun101352_ip = 11;
-                    continue _fun101352
+                    _fun100723_ip = 11;
+                    continue _fun100723
                 }
             case 9:
                 var2 = 0;
@@ -369,8 +369,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var0.bind(var3)();
                 var0 = 0;
                 if (!var4) {
-                    _fun101352_ip = 76;
-                    continue _fun101352
+                    _fun100723_ip = 76;
+                    continue _fun100723
                 }
             case 64:
                 var1 = _closure1_slot3;
@@ -385,4 +385,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.CUSTOM_THEME_COLORS = var3;
     var2.CUSTOM_THEME_BACKGROUND_COLORS = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [671, 1568, 12173, 1311, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [671, 1568, 12108, 1311, 2]);

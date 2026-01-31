@@ -15,14 +15,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = var4.bind(var5)(var1, var0, var3);
     var0 = {};
     var3 = function(arg0) { // Original name: isTiffFile, environment: var2
-        _fun37894: for (var _fun37894_ip = 0;;) switch (_fun37894_ip) {
+        _fun37911: for (var _fun37911_ip = 0;;) switch (_fun37911_ip) {
             case 0:
                 var4 = arg0;
                 var1 = !var4;
                 var0 = !var1;
                 if (var1) {
-                    _fun37894_ip = 25;
-                    continue _fun37894
+                    _fun37911_ip = 25;
+                    continue _fun37911
                 }
             case 12:
                 var2 = var4.byteLength;
@@ -30,8 +30,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = var2 >= var1;
             case 25:
                 if (!var0) {
-                    _fun37894_ip = 95;
-                    continue _fun37894
+                    _fun37911_ip = 95;
+                    continue _fun37911
                 }
             case 28:
                 var1 = var4.getUint16;
@@ -55,7 +55,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var0.isTiffFile = var3;
     var2 = function() { // Original name: findTiffOffsets, environment: var2
-        _fun37895: for (var _fun37895_ip = 0;;) switch (_fun37895_ip) {
+        _fun37912: for (var _fun37912_ip = 0;;) switch (_fun37912_ip) {
             case 0:
                 var2 = _closure1_slot0;
                 var1 = _closure1_slot1;
@@ -65,8 +65,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = var2.bind(var0)(var1);
                 var0 = var0.USE_EXIF;
                 if (var0) {
-                    _fun37895_ip = 38;
-                    continue _fun37895
+                    _fun37912_ip = 38;
+                    continue _fun37912
                 }
             case 34:
                 var0 = {};

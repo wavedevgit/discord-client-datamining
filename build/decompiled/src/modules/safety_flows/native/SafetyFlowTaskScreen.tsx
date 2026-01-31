@@ -49,7 +49,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/safety_flows/native/SafetyFlowTaskScreen.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: SafetyFlowTaskScreen, environment: var1
-        _fun118454: for (var _fun118454_ip = 0;;) switch (_fun118454_ip) {
+        _fun117804: for (var _fun117804_ip = 0;;) switch (_fun117804_ip) {
             case 0:
                 var0 = arg0;
                 var13 = var0.ImageComponent;
@@ -58,8 +58,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var16 = var0.action;
                 var3 = undefined;
                 if (!(var16 === var3)) {
-                    _fun118454_ip = 33;
-                    continue _fun118454
+                    _fun117804_ip = 33;
+                    continue _fun117804
                 }
             case 31:
                 var16 = null;
@@ -70,8 +70,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var14 = var0.submitting;
                 var12 = var0.withLogout;
                 if (!(var12 === var3)) {
-                    _fun118454_ip = 70;
-                    continue _fun118454
+                    _fun117804_ip = 70;
+                    continue _fun117804
                 }
             case 68:
                 var12 = true;
@@ -104,8 +104,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = null;
                 var17 = var10 != var13;
                 if (!var17) {
-                    _fun118454_ip = 180;
-                    continue _fun118454
+                    _fun117804_ip = 180;
+                    continue _fun117804
                 }
             case 177:
                 var17 = var13;
@@ -131,8 +131,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var13[1] = var17;
                 var17 = var10 != var22;
                 if (!var17) {
-                    _fun118454_ip = 320;
-                    continue _fun118454
+                    _fun117804_ip = 320;
+                    continue _fun117804
                 }
             case 261:
                 var21 = _closure1_slot3;
@@ -161,8 +161,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = new Array(2);
                 var4[0] = var6;
                 if (!(var3 === var5)) {
-                    _fun118454_ip = 523;
-                    continue _fun118454
+                    _fun117804_ip = 523;
+                    continue _fun117804
                 }
             case 371:
                 var8 = _closure1_slot4;
@@ -174,8 +174,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var6.ModalFooter;
                 var6 = {};
                 if (!var12) {
-                    _fun118454_ip = 435;
-                    continue _fun118454
+                    _fun117804_ip = 435;
+                    continue _fun117804
                 }
             case 406:
                 var17 = _closure1_slot3;
@@ -190,8 +190,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9[0] = var12;
                 var10 = var10 != var16;
                 if (!var10) {
-                    _fun118454_ip = 509;
-                    continue _fun118454
+                    _fun117804_ip = 509;
+                    continue _fun117804
                 }
             case 450:
                 var13 = _closure1_slot3;
@@ -221,4 +221,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 1297, 6400, 6401, 4039, 3901, 10394, 15044, 9130, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 1297, 6401, 6402, 4039, 3900, 10396, 14974, 9132, 2]);

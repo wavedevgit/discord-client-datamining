@@ -43,14 +43,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var1._INTERNAL_getSpanForToolCallId = var2;
     var2 = function(arg0, arg1) { // Original name: accumulateTokensForParent, environment: var0
-        _fun9844: for (var _fun9844_ip = 0;;) switch (_fun9844_ip) {
+        _fun9846: for (var _fun9846_ip = 0;;) switch (_fun9846_ip) {
             case 0:
                 var1 = arg0;
                 var3 = arg1;
                 var2 = var1.parent_span_id;
                 if (!var2) {
-                    _fun9844_ip = 178;
-                    continue _fun9844
+                    _fun9846_ip = 178;
+                    continue _fun9846
                 }
             case 18:
                 var8 = var1.data;
@@ -71,21 +71,21 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = typeof var6;
                 var0 = var5 === var0;
                 if (var0) {
-                    _fun9844_ip = 102;
-                    continue _fun9844
+                    _fun9846_ip = 102;
+                    continue _fun9846
                 }
             case 95:
                 var1 = typeof var4;
                 if (!(var5 === var1)) {
-                    _fun9844_ip = 178;
-                    continue _fun9844
+                    _fun9846_ip = 178;
+                    continue _fun9846
                 }
             case 102:
                 var1 = var3.get;
                 var1 = var1.bind(var3)(var2);
                 if (var1) {
-                    _fun9844_ip = 125;
-                    continue _fun9844
+                    _fun9846_ip = 125;
+                    continue _fun9846
                 }
             case 115:
                 var1 = {
@@ -94,8 +94,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 };
             case 125:
                 if (!var0) {
-                    _fun9844_ip = 144;
-                    continue _fun9844
+                    _fun9846_ip = 144;
+                    continue _fun9846
                 }
             case 128:
                 var0 = var1.inputTokens;
@@ -104,8 +104,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             case 144:
                 var0 = typeof var4;
                 if (!(var5 === var0)) {
-                    _fun9844_ip = 167;
-                    continue _fun9844
+                    _fun9846_ip = 167;
+                    continue _fun9846
                 }
             case 151:
                 var0 = var1.outputTokens;
@@ -121,7 +121,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var1.accumulateTokensForParent = var2;
     var2 = function(arg0, arg1) { // Original name: applyAccumulatedTokens, environment: var0
-        _fun9845: for (var _fun9845_ip = 0;;) switch (_fun9845_ip) {
+        _fun9847: for (var _fun9847_ip = 0;;) switch (_fun9847_ip) {
             case 0:
                 var1 = arg0;
                 var3 = arg1;
@@ -130,22 +130,22 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = var2.bind(var3)(var0);
                 var2 = var0;
                 if (!var2) {
-                    _fun9845_ip = 33;
-                    continue _fun9845
+                    _fun9847_ip = 33;
+                    continue _fun9847
                 }
             case 28:
                 var2 = var1.data;
             case 33:
                 if (!var2) {
-                    _fun9845_ip = 200;
-                    continue _fun9845
+                    _fun9847_ip = 200;
+                    continue _fun9847
                 }
             case 39:
                 var2 = var0.inputTokens;
                 var4 = 0;
                 if (!(var2 > var4)) {
-                    _fun9845_ip = 94;
-                    continue _fun9845
+                    _fun9847_ip = 94;
+                    continue _fun9847
                 }
             case 51:
                 var5 = var1.data;
@@ -160,8 +160,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             case 94:
                 var2 = var0.outputTokens;
                 if (!(var2 > var4)) {
-                    _fun9845_ip = 147;
-                    continue _fun9845
+                    _fun9847_ip = 147;
+                    continue _fun9847
                 }
             case 104:
                 var5 = var1.data;
@@ -177,16 +177,16 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = var0.inputTokens;
                 var2 = var2 > var4;
                 if (var2) {
-                    _fun9845_ip = 170;
-                    continue _fun9845
+                    _fun9847_ip = 170;
+                    continue _fun9847
                 }
             case 160:
                 var3 = var0.outputTokens;
                 var2 = var3 > var4;
             case 170:
                 if (!var2) {
-                    _fun9845_ip = 200;
-                    continue _fun9845
+                    _fun9847_ip = 200;
+                    continue _fun9847
                 }
             case 173:
                 var1 = var1.data;
@@ -204,15 +204,15 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var2 = arg0;
         var1 = var2.map;
         var0 = function(arg0) { // Environment: var0
-            _fun9847: for (var _fun9847_ip = 0;;) switch (_fun9847_ip) {
+            _fun9849: for (var _fun9849_ip = 0;;) switch (_fun9849_ip) {
                 case 0:
                     var1 = arg0;
                     var0 = var1;
                     var2 = 'string';
                     var1 = typeof var1;
                     if (!(var2 !== var1)) {
-                        _fun9847_ip = 22;
-                        continue _fun9847
+                        _fun9849_ip = 22;
+                        continue _fun9849
                     }
                 case 17:
                     var1 = var0;

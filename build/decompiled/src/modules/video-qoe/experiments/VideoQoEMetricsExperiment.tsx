@@ -44,7 +44,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/video-qoe/experiments/VideoQoEMetricsExperiment.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: getVideoQoEMetricsConfig, environment: var1
-        _fun83497: for (var _fun83497_ip = 0;;) switch (_fun83497_ip) {
+        _fun83527: for (var _fun83527_ip = 0;;) switch (_fun83527_ip) {
             case 0:
                 var0 = arg0;
                 var3 = var0.location;
@@ -65,16 +65,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var1.isInHoldout;
                 var1 = {};
                 if (var2) {
-                    _fun83497_ip = 98;
-                    continue _fun83497
+                    _fun83527_ip = 98;
+                    continue _fun83527
                 }
             case 77:
                 var2 = _closure1_slot2;
                 var0 = var2.getConfig;
                 var1.location = var3;
                 var0 = var0.bind(var2)(var1);
-                _fun83497_ip = 108;
-                continue _fun83497;
+                _fun83527_ip = 108;
+                continue _fun83527;
             case 98:
                 var2 = false;
                 var1.externalAnalyticsEnabled = var2;

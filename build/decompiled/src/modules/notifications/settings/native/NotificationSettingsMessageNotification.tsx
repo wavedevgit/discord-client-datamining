@@ -9,7 +9,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var12;
     var _closure1_slot2 = var6;
     var3 = function(arg0) { // Original name: NotificationSettingsMessageNotification, environment: var1
-        _fun69854: for (var _fun69854_ip = 0;;) switch (_fun69854_ip) {
+        _fun69878: for (var _fun69878_ip = 0;;) switch (_fun69878_ip) {
             case 0:
                 var17 = arg0;
                 var _closure2_slot0 = var17;
@@ -79,8 +79,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var12 = var17.context;
                 var11 = 'guild';
                 if (!(var11 !== var12)) {
-                    _fun69854_ip = 318;
-                    continue _fun69854
+                    _fun69878_ip = 318;
+                    continue _fun69878
                 }
             case 262:
                 var14 = _closure1_slot0;
@@ -94,8 +94,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = var11.t;
                 var11 = var11["R1j5+4"];
                 var11 = var12.bind(var13)(var11);
-                _fun69854_ip = 372;
-                continue _fun69854;
+                _fun69878_ip = 372;
+                continue _fun69878;
             case 318:
                 var18 = _closure1_slot0;
                 var12 = _closure1_slot2;
@@ -157,8 +157,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var24 = var20 == var23;
                 var21 = undefined;
                 if (var24) {
-                    _fun69854_ip = 581;
-                    continue _fun69854
+                    _fun69878_ip = 581;
+                    continue _fun69878
                 }
             case 576:
                 var21 = var23.label;
@@ -166,8 +166,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var23 = var20 != var21;
                 var20 = 'unset';
                 if (!var23) {
-                    _fun69854_ip = 595;
-                    continue _fun69854
+                    _fun69878_ip = 595;
+                    continue _fun69878
                 }
             case 592:
                 var20 = var21;
@@ -402,4 +402,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.NotificationSettingsChannelMessageNotification = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 8719, 3901, 1234, 4864, 8720, 8717, 3237, 8722, 1307, 8709, 8724, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 8719, 3900, 1234, 4865, 8720, 8717, 3237, 8722, 1307, 8709, 8724, 2]);

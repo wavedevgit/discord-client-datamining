@@ -27,68 +27,68 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'function VoiceCallOverlayUtilsTsx1(rectA,rectB,minMarginBetweenOverlays){if(rectA==null||rectA.x==null||rectA.y==null||rectA.width==null||rectA.height==null||rectB==null||rectB.x==null||rectB.y==null||rectB.width==null||rectB.height==null){return false;}const minAx=rectA.x-minMarginBetweenOverlays;const maxAx=rectA.x+rectA.width+minMarginBetweenOverlays;const minAy=rectA.y-minMarginBetweenOverlays;const maxAy=rectA.y+rectA.height+minMarginBetweenOverlays;const minBx=rectB.x;const maxBx=rectB.x+rectB.width;const minBy=rectB.y;const maxBy=rectB.y+rectB.height;const aLeftOfB=maxAx<minBx;const aRightOfB=minAx>maxBx;const aBelowB=minAy>maxBy;const aAboveB=maxAy<minBy;return!(aLeftOfB||aRightOfB||aAboveB||aBelowB);}';
     var3.code = var4;
     var9 = function(arg0, arg1, arg2) { // Original name: t, environment: var1
-        _fun64179: for (var _fun64179_ip = 0;;) switch (_fun64179_ip) {
+        _fun64191: for (var _fun64191_ip = 0;;) switch (_fun64191_ip) {
             case 0:
                 var0 = arg0;
                 var1 = arg1;
                 var3 = arg2;
                 var4 = null;
                 if (!(var4 != var0)) {
-                    _fun64179_ip = 243;
-                    continue _fun64179
+                    _fun64191_ip = 243;
+                    continue _fun64191
                 }
             case 18:
                 var2 = var0.x;
                 if (!(var4 != var2)) {
-                    _fun64179_ip = 243;
-                    continue _fun64179
+                    _fun64191_ip = 243;
+                    continue _fun64191
                 }
             case 30:
                 var2 = var0.y;
                 if (!(var4 != var2)) {
-                    _fun64179_ip = 243;
-                    continue _fun64179
+                    _fun64191_ip = 243;
+                    continue _fun64191
                 }
             case 42:
                 var2 = var0.width;
                 if (!(var4 != var2)) {
-                    _fun64179_ip = 243;
-                    continue _fun64179
+                    _fun64191_ip = 243;
+                    continue _fun64191
                 }
             case 54:
                 var2 = var0.height;
                 if (!(var4 != var2)) {
-                    _fun64179_ip = 243;
-                    continue _fun64179
+                    _fun64191_ip = 243;
+                    continue _fun64191
                 }
             case 66:
                 if (!(var4 != var1)) {
-                    _fun64179_ip = 243;
-                    continue _fun64179
+                    _fun64191_ip = 243;
+                    continue _fun64191
                 }
             case 73:
                 var2 = var1.x;
                 if (!(var4 != var2)) {
-                    _fun64179_ip = 243;
-                    continue _fun64179
+                    _fun64191_ip = 243;
+                    continue _fun64191
                 }
             case 85:
                 var2 = var1.y;
                 if (!(var4 != var2)) {
-                    _fun64179_ip = 243;
-                    continue _fun64179
+                    _fun64191_ip = 243;
+                    continue _fun64191
                 }
             case 97:
                 var2 = var1.width;
                 if (!(var4 != var2)) {
-                    _fun64179_ip = 243;
-                    continue _fun64179
+                    _fun64191_ip = 243;
+                    continue _fun64191
                 }
             case 109:
                 var2 = var1.height;
                 if (!(var4 != var2)) {
-                    _fun64179_ip = 243;
-                    continue _fun64179
+                    _fun64191_ip = 243;
+                    continue _fun64191
                 }
             case 121:
                 var2 = var0.x;
@@ -113,22 +113,22 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var8 + var1;
                 var0 = var7 < var0;
                 if (var0) {
-                    _fun64179_ip = 224;
-                    continue _fun64179
+                    _fun64191_ip = 224;
+                    continue _fun64191
                 }
             case 220:
                 var0 = var6 > var5;
             case 224:
                 if (var0) {
-                    _fun64179_ip = 231;
-                    continue _fun64179
+                    _fun64191_ip = 231;
+                    continue _fun64191
                 }
             case 227:
                 var0 = var4 < var3;
             case 231:
                 if (var0) {
-                    _fun64179_ip = 238;
-                    continue _fun64179
+                    _fun64191_ip = 238;
+                    continue _fun64191
                 }
             case 234:
                 var0 = var2 > var1;
@@ -150,7 +150,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'function VoiceCallOverlayUtilsTsx2(voiceCallOverlayLayoutStates,voiceCallOverlayType,targetRectangle){const{VoiceCallOverlayType,doRectanglesIntersectWorklet,MIN_MARGIN_BETWEEN_OVERLAYS}=this.__closure;switch(voiceCallOverlayType){case VoiceCallOverlayType.VOICE_CONTROLS_TOGGLE_BUTTON:{if(!voiceCallOverlayLayoutStates[VoiceCallOverlayType.CAMERA_PREVIEW_PICTURE_IN_PICTURE].isVisible){return false;}const doRectanglesIntersect=doRectanglesIntersectWorklet(targetRectangle,voiceCallOverlayLayoutStates[VoiceCallOverlayType.CAMERA_PREVIEW_PICTURE_IN_PICTURE],MIN_MARGIN_BETWEEN_OVERLAYS);if(doRectanglesIntersect){return true;}break;}case VoiceCallOverlayType.CAMERA_PREVIEW_PICTURE_IN_PICTURE:{if(!voiceCallOverlayLayoutStates[VoiceCallOverlayType.VOICE_CONTROLS_TOGGLE_BUTTON].isVisible){return false;}const doRectanglesIntersect=doRectanglesIntersectWorklet(targetRectangle,voiceCallOverlayLayoutStates[VoiceCallOverlayType.VOICE_CONTROLS_TOGGLE_BUTTON],MIN_MARGIN_BETWEEN_OVERLAYS);if(doRectanglesIntersect){return true;}break;}}return false;}';
     var4.code = var3;
     var3 = function(arg0, arg1, arg2) { // Original name: l, environment: var1
-        _fun64180: for (var _fun64180_ip = 0;;) switch (_fun64180_ip) {
+        _fun64192: for (var _fun64192_ip = 0;;) switch (_fun64192_ip) {
             case 0:
                 var2 = arg0;
                 var3 = arg1;
@@ -158,15 +158,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = _closure1_slot3;
                 var1 = var1.VOICE_CONTROLS_TOGGLE_BUTTON;
                 if (!(var1 !== var3)) {
-                    _fun64180_ip = 108;
-                    continue _fun64180
+                    _fun64192_ip = 108;
+                    continue _fun64192
                 }
             case 26:
                 var1 = _closure1_slot3;
                 var1 = var1.CAMERA_PREVIEW_PICTURE_IN_PICTURE;
                 if (!(var1 === var3)) {
-                    _fun64180_ip = 169;
-                    continue _fun64180
+                    _fun64192_ip = 169;
+                    continue _fun64192
                 }
             case 43:
                 var1 = _closure1_slot3;
@@ -174,8 +174,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var2[var1];
                 var1 = var1.isVisible;
                 if (var1) {
-                    _fun64180_ip = 70;
-                    continue _fun64180
+                    _fun64192_ip = 70;
+                    continue _fun64192
                 }
             case 66:
                 var1 = false;
@@ -189,8 +189,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = undefined;
                 var1 = var6.bind(var1)(var4, var5, var3);
                 if (!var1) {
-                    _fun64180_ip = 169;
-                    continue _fun64180
+                    _fun64192_ip = 169;
+                    continue _fun64192
                 }
             case 104:
                 var1 = true;
@@ -201,8 +201,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var2[var1];
                 var1 = var1.isVisible;
                 if (var1) {
-                    _fun64180_ip = 135;
-                    continue _fun64180
+                    _fun64192_ip = 135;
+                    continue _fun64192
                 }
             case 131:
                 var1 = false;
@@ -216,8 +216,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = undefined;
                 var0 = var3.bind(var0)(var4, var2, var1);
                 if (var0) {
-                    _fun64180_ip = 173;
-                    continue _fun64180
+                    _fun64192_ip = 173;
+                    continue _fun64192
                 }
             case 169:
                 var0 = false;
@@ -279,4 +279,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.setPipEnabledWhileFocusedOnActivityOrStream = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [7846, 806, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [7845, 806, 2]);

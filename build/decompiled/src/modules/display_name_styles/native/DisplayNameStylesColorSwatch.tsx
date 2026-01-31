@@ -52,7 +52,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/display_name_styles/native/DisplayNameStylesColorSwatch.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: DisplayNameStylesColorSwatch, environment: var1
-        _fun79837: for (var _fun79837_ip = 0;;) switch (_fun79837_ip) {
+        _fun79867: for (var _fun79867_ip = 0;;) switch (_fun79867_ip) {
             case 0:
                 var0 = arg0;
                 var8 = var0.colors;
@@ -62,8 +62,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var8.length;
                 var1 = 2;
                 if (!(!(var2 >= var1))) {
-                    _fun79837_ip = 132;
-                    continue _fun79837
+                    _fun79867_ip = 132;
+                    continue _fun79867
                 }
             case 33:
                 var2 = var8.length;
@@ -71,8 +71,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var2 > var1;
                 var9 = '#000000';
                 if (!var2) {
-                    _fun79837_ip = 86;
-                    continue _fun79837
+                    _fun79867_ip = 86;
+                    continue _fun79867
                 }
             case 51:
                 var5 = _closure1_slot0;

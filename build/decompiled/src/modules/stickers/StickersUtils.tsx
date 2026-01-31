@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var7;
     var _closure1_slot1 = var8;
     var3 = function() { // Original name: getFavoriteStickerIds, environment: var1
-        _fun36588: for (var _fun36588_ip = 0;;) switch (_fun36588_ip) {
+        _fun36605: for (var _fun36605_ip = 0;;) switch (_fun36605_ip) {
             case 0:
                 var0 = _closure1_slot2;
                 var0 = var0.frecencyWithoutFetchingLatest;
@@ -17,15 +17,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var2 == var3;
                 var0 = undefined;
                 if (var4) {
-                    _fun36588_ip = 36;
-                    continue _fun36588
+                    _fun36605_ip = 36;
+                    continue _fun36605
                 }
             case 30:
                 var0 = var3.stickerIds;
             case 36:
                 if (!(var2 == var0)) {
-                    _fun36588_ip = 44;
-                    continue _fun36588
+                    _fun36605_ip = 44;
+                    continue _fun36605
                 }
             case 40:
                 var0 = _closure1_slot19;
@@ -155,15 +155,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var4 instanceof Object ? var4 : var5;
     var _closure1_slot16 = var4;
     var5 = function(arg0) { // Original name: getStickerPackPreviewSticker, environment: var1
-        _fun36589: for (var _fun36589_ip = 0;;) switch (_fun36589_ip) {
+        _fun36606: for (var _fun36606_ip = 0;;) switch (_fun36606_ip) {
             case 0:
                 var1 = arg0;
                 var _closure2_slot0 = var1;
                 var3 = var1.cover_sticker_id;
                 var2 = null;
                 if (!(var2 != var3)) {
-                    _fun36589_ip = 46;
-                    continue _fun36589
+                    _fun36606_ip = 46;
+                    continue _fun36606
                 }
             case 21:
                 var4 = var1.stickers;
@@ -178,8 +178,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 };
                 var0 = var3.bind(var4)(var0);
                 if (!(var2 == var0)) {
-                    _fun36589_ip = 60;
-                    continue _fun36589
+                    _fun36606_ip = 60;
+                    continue _fun36606
                 }
             case 46:
                 var2 = var1.stickers;
@@ -192,7 +192,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var _closure1_slot17 = var5;
     var4 = function(arg0) { // Original name: getStickerExtensionFromFormatType, environment: var1
-        _fun36591: for (var _fun36591_ip = 0;;) switch (_fun36591_ip) {
+        _fun36608: for (var _fun36608_ip = 0;;) switch (_fun36608_ip) {
             case 0:
                 var6 = arg0;
                 var2 = _closure1_slot0;
@@ -204,8 +204,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0.StickerFormat;
                 var0 = var0.PNG;
                 if (!(var0 !== var6)) {
-                    _fun36591_ip = 294;
-                    continue _fun36591
+                    _fun36608_ip = 294;
+                    continue _fun36608
                 }
             case 47:
                 var2 = _closure1_slot0;
@@ -215,8 +215,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0.StickerFormat;
                 var0 = var0.APNG;
                 if (!(var0 !== var6)) {
-                    _fun36591_ip = 263;
-                    continue _fun36591
+                    _fun36608_ip = 263;
+                    continue _fun36608
                 }
             case 83:
                 var2 = _closure1_slot0;
@@ -226,8 +226,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0.StickerFormat;
                 var0 = var0.LOTTIE;
                 if (!(var0 !== var6)) {
-                    _fun36591_ip = 232;
-                    continue _fun36591
+                    _fun36608_ip = 232;
+                    continue _fun36608
                 }
             case 116:
                 var2 = _closure1_slot0;
@@ -237,8 +237,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0.StickerFormat;
                 var0 = var0.GIF;
                 if (!(var0 !== var6)) {
-                    _fun36591_ip = 201;
-                    continue _fun36591
+                    _fun36608_ip = 201;
+                    continue _fun36608
                 }
             case 149:
                 var0 = global;
@@ -294,13 +294,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var2.bind(var3)(var1);
                 var1 = var1.StickerExtensions;
                 if (var0) {
-                    _fun36591_ip = 354;
-                    continue _fun36591
+                    _fun36608_ip = 354;
+                    continue _fun36608
                 }
             case 346:
                 var0 = var1.PNG;
-                _fun36591_ip = 360;
-                continue _fun36591;
+                _fun36608_ip = 360;
+                continue _fun36608;
             case 354:
                 var0 = var1.WEBP;
             case 360:
@@ -319,37 +319,37 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.getStickerPackPreviewSticker = var5;
     var2.getStickerExtensionFromFormatType = var4;
     var4 = function(arg0) { // Environment: var1
-        _fun36592: for (var _fun36592_ip = 0;;) switch (_fun36592_ip) {
+        _fun36609: for (var _fun36609_ip = 0;;) switch (_fun36609_ip) {
             case 0:
                 var3 = arg0;
                 var0 = 'application/json';
                 if (!(var0 !== var3)) {
-                    _fun36592_ip = 226;
-                    continue _fun36592
+                    _fun36609_ip = 226;
+                    continue _fun36609
                 }
             case 14:
                 var0 = 'image/apng';
                 if (!(var0 !== var3)) {
-                    _fun36592_ip = 187;
-                    continue _fun36592
+                    _fun36609_ip = 187;
+                    continue _fun36609
                 }
             case 27:
                 var0 = 'image/png';
                 if (!(var0 !== var3)) {
-                    _fun36592_ip = 148;
-                    continue _fun36592
+                    _fun36609_ip = 148;
+                    continue _fun36609
                 }
             case 37:
                 var0 = 'image/webp';
                 if (!(var0 !== var3)) {
-                    _fun36592_ip = 148;
-                    continue _fun36592
+                    _fun36609_ip = 148;
+                    continue _fun36609
                 }
             case 47:
                 var0 = 'image/gif';
                 if (!(var0 !== var3)) {
-                    _fun36592_ip = 109;
-                    continue _fun36592
+                    _fun36609_ip = 109;
+                    continue _fun36609
                 }
             case 57:
                 var0 = global;
@@ -412,14 +412,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getStickerFormatTypeFromFileType = var4;
     var4 = function(arg0) { // Environment: var1
-        _fun36593: for (var _fun36593_ip = 0;;) switch (_fun36593_ip) {
+        _fun36610: for (var _fun36610_ip = 0;;) switch (_fun36610_ip) {
             case 0:
                 var1 = arg0;
                 var0 = null;
                 var2 = var0 == var1;
                 if (var2) {
-                    _fun36593_ip = 65;
-                    continue _fun36593
+                    _fun36610_ip = 65;
+                    continue _fun36610
                 }
             case 12:
                 var5 = var1.name;
@@ -439,22 +439,22 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getFilenameForSticker = var4;
     var4 = function(arg0) { // Environment: var1
-        _fun36594: for (var _fun36594_ip = 0;;) switch (_fun36594_ip) {
+        _fun36611: for (var _fun36611_ip = 0;;) switch (_fun36611_ip) {
             case 0:
                 var0 = arguments[1];
                 var8 = arg0;
                 var15 = undefined;
                 if (!(var0 === var15)) {
-                    _fun36594_ip = 14;
-                    continue _fun36594
+                    _fun36611_ip = 14;
+                    continue _fun36611
                 }
             case 12:
                 var0 = {};
             case 14:
                 var3 = var0.isPreview;
                 if (!(var3 === var15)) {
-                    _fun36594_ip = 26;
-                    continue _fun36594
+                    _fun36611_ip = 26;
+                    continue _fun36611
                 }
             case 24:
                 var3 = false;
@@ -462,8 +462,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var3;
                 var0 = var0.size;
                 if (!(var0 === var15)) {
-                    _fun36594_ip = 45;
-                    continue _fun36594
+                    _fun36611_ip = 45;
+                    continue _fun36611
                 }
             case 38:
                 var0 = _closure1_slot6;
@@ -480,8 +480,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var0.format_type;
                 var0 = null;
                 if (!(var0 != var3)) {
-                    _fun36594_ip = 725;
-                    continue _fun36594
+                    _fun36611_ip = 725;
+                    continue _fun36611
                 }
             case 80:
                 var3 = var8;
@@ -496,15 +496,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var13 = var13.GIF;
                 var13 = var14 === var13;
                 if (!var13) {
-                    _fun36594_ip = 140;
-                    continue _fun36594
+                    _fun36611_ip = 140;
+                    continue _fun36611
                 }
             case 137:
                 var13 = var1;
             case 140:
                 if (!var13) {
-                    _fun36594_ip = 172;
-                    continue _fun36594
+                    _fun36611_ip = 172;
+                    continue _fun36611
                 }
             case 143:
                 var14 = _closure1_slot0;
@@ -536,8 +536,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var13.bind(var15)(var5);
                 var9 = var5.enabled;
             case 258: // try_end0
-                _fun36594_ip = 262;
-                continue _fun36594;
+                _fun36611_ip = 262;
+                continue _fun36611;
             case 260: // catch_target0
                 CatchBlockStart(arg_register = 5);
             case 262:
@@ -545,8 +545,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = '';
                 var13 = var5;
                 if (!var14) {
-                    _fun36594_ip = 281;
-                    continue _fun36594
+                    _fun36611_ip = 281;
+                    continue _fun36611
                 }
             case 275:
                 var13 = '&force_sdr=true';
@@ -561,8 +561,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var13 = var10.WEBP;
                 var10 = var5;
                 if (!(var14 === var13)) {
-                    _fun36594_ip = 329;
-                    continue _fun36594
+                    _fun36611_ip = 329;
+                    continue _fun36611
                 }
             case 323:
                 var10 = '&quality=lossless';
@@ -571,8 +571,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var13 = _closure1_slot12;
                 var10 = 'development';
                 if (!(var10 === var13)) {
-                    _fun36594_ip = 419;
-                    continue _fun36594
+                    _fun36611_ip = 419;
+                    continue _fun36611
                 }
             case 344:
                 var10 = global;
@@ -585,13 +585,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var12 = var13.bind(var5)(var17, var16, var14);
                 var13 = var12;
                 if (var9) {
-                    _fun36594_ip = 394;
-                    continue _fun36594
+                    _fun36611_ip = 394;
+                    continue _fun36611
                 }
             case 389:
                 var9 = var13;
-                _fun36594_ip = 417;
-                continue _fun36594;
+                _fun36611_ip = 417;
+                continue _fun36611;
             case 394:
                 var10 = var10.HermesInternal;
                 var12 = var10.concat;
@@ -609,8 +609,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var9.StickerFormat;
                 var9 = var9.LOTTIE;
                 if (!(var10 !== var9)) {
-                    _fun36594_ip = 687;
-                    continue _fun36594
+                    _fun36611_ip = 687;
+                    continue _fun36611
                 }
             case 464:
                 var9 = var8.format_type;
@@ -622,14 +622,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var8.APNG;
                 var12 = var5;
                 if (!(var9 === var8)) {
-                    _fun36594_ip = 554;
-                    continue _fun36594
+                    _fun36611_ip = 554;
+                    continue _fun36611
                 }
             case 506:
                 var12 = var5;
                 if (!var1) {
-                    _fun36594_ip = 554;
-                    continue _fun36594
+                    _fun36611_ip = 554;
+                    continue _fun36611
                 }
             case 512:
                 var8 = _closure1_slot0;
@@ -641,8 +641,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.bind(var8)();
                 var12 = var5;
                 if (var1) {
-                    _fun36594_ip = 554;
-                    continue _fun36594
+                    _fun36611_ip = 554;
+                    continue _fun36611
                 }
             case 548:
                 var12 = '&passthrough=false';
@@ -693,15 +693,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getStickerAssetUrl = var4;
     var4 = function(arg0, arg1) { // Environment: var1
-        _fun36595: for (var _fun36595_ip = 0;;) switch (_fun36595_ip) {
+        _fun36612: for (var _fun36612_ip = 0;;) switch (_fun36612_ip) {
             case 0:
                 var5 = arg1;
                 var0 = arg0;
                 var13 = var0.banner_asset_id;
                 var0 = null;
                 if (!(var0 != var13)) {
-                    _fun36595_ip = 259;
-                    continue _fun36595
+                    _fun36612_ip = 259;
+                    continue _fun36612
                 }
             case 23:
                 var3 = _closure1_slot0;
@@ -713,16 +713,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.SUPPORTS_WEBP;
                 var12 = 'png';
                 if (!var1) {
-                    _fun36595_ip = 67;
-                    continue _fun36595
+                    _fun36612_ip = 67;
+                    continue _fun36612
                 }
             case 61:
                 var12 = 'webp';
             case 67:
                 var1 = _closure1_slot14;
                 if (!(var0 == var1)) {
-                    _fun36595_ip = 138;
-                    continue _fun36595
+                    _fun36612_ip = 138;
+                    continue _fun36612
                 }
             case 75:
                 var1 = global;
@@ -737,8 +737,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var1.concat;
                 var1 = '';
                 var3 = var3.bind(var1)(var8, var7, var4);
-                _fun36595_ip = 191;
-                continue _fun36595;
+                _fun36612_ip = 191;
+                continue _fun36612;
             case 138:
                 var20 = _closure1_slot14;
                 var18 = _closure1_slot7;
@@ -755,8 +755,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 191:
                 var1 = var3;
                 if (!(var0 != var5)) {
-                    _fun36595_ip = 257;
-                    continue _fun36595
+                    _fun36612_ip = 257;
+                    continue _fun36612
                 }
             case 198:
                 var4 = _closure1_slot0;
@@ -780,20 +780,20 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getStickerPackBannerAssetUrl = var4;
     var4 = function(arg0) { // Environment: var1
-        _fun36596: for (var _fun36596_ip = 0;;) switch (_fun36596_ip) {
+        _fun36613: for (var _fun36613_ip = 0;;) switch (_fun36613_ip) {
             case 0:
                 var2 = arg0;
                 var1 = var2.match;
                 var4 = _closure1_slot12;
                 var0 = 'development';
                 if (!(var0 === var4)) {
-                    _fun36596_ip = 30;
-                    continue _fun36596
+                    _fun36613_ip = 30;
+                    continue _fun36613
                 }
             case 24:
                 var0 = _closure1_slot16;
-                _fun36596_ip = 34;
-                continue _fun36596;
+                _fun36613_ip = 34;
+                continue _fun36613;
             case 30:
                 var0 = _closure1_slot15;
             case 34:
@@ -809,7 +809,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2 = var0.stickers;
         var1 = var2.some;
         var0 = function(arg0) { // Environment: var0
-            _fun36598: for (var _fun36598_ip = 0;;) switch (_fun36598_ip) {
+            _fun36615: for (var _fun36615_ip = 0;;) switch (_fun36615_ip) {
                 case 0:
                     var0 = arg0;
                     var2 = var0.format_type;
@@ -823,8 +823,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = var0.APNG;
                     var0 = var2 === var0;
                     if (var0) {
-                        _fun36598_ip = 86;
-                        continue _fun36598
+                        _fun36615_ip = 86;
+                        continue _fun36615
                     }
                 case 53:
                     var6 = _closure1_slot0;
@@ -836,8 +836,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = var2 === var3;
                 case 86:
                     if (var0) {
-                        _fun36598_ip = 122;
-                        continue _fun36598
+                        _fun36615_ip = 122;
+                        continue _fun36615
                     }
                 case 89:
                     var3 = _closure1_slot0;
@@ -880,15 +880,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.createStickerPackCategory = var4;
     var4 = function(arg0, arg1) { // Environment: var1
-        _fun36600: for (var _fun36600_ip = 0;;) switch (_fun36600_ip) {
+        _fun36617: for (var _fun36617_ip = 0;;) switch (_fun36617_ip) {
             case 0:
                 var2 = arg0;
                 var0 = arg1;
                 var3 = _closure1_slot8;
                 var3 = var3.ANIMATE_ON_INTERACTION;
                 if (!(var2 !== var3)) {
-                    _fun36600_ip = 37;
-                    continue _fun36600
+                    _fun36617_ip = 37;
+                    continue _fun36617
                 }
             case 23:
                 var1 = _closure1_slot8;
@@ -900,7 +900,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.shouldAnimateSticker = var4;
     var4 = function(arg0, arg1, arg2, arg3) { // Environment: var1
-        _fun36601: for (var _fun36601_ip = 0;;) switch (_fun36601_ip) {
+        _fun36618: for (var _fun36618_ip = 0;;) switch (_fun36618_ip) {
             case 0:
                 var4 = arg0;
                 var1 = arg1;
@@ -911,8 +911,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var2.bind(var3)(var7, var6);
                 var3 = 0;
                 if (!(!(var2 > var3))) {
-                    _fun36601_ip = 249;
-                    continue _fun36601
+                    _fun36618_ip = 249;
+                    continue _fun36618
                 }
             case 40:
                 var5 = _closure1_slot5;
@@ -920,14 +920,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var2.bind(var5)(var7, var6);
                 var5 = null;
                 if (!(var5 != var2)) {
-                    _fun36601_ip = 76;
-                    continue _fun36601
+                    _fun36618_ip = 76;
+                    continue _fun36618
                 }
             case 64:
                 var2 = var2.length;
                 if (!(!(var2 > var3))) {
-                    _fun36601_ip = 245;
-                    continue _fun36601
+                    _fun36618_ip = 245;
+                    continue _fun36618
                 }
             case 76:
                 var6 = _closure1_slot0;
@@ -939,8 +939,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var2.StickerSelectLocation;
                 var2 = var2.STICKER_PICKER;
                 if (!(var2 !== var4)) {
-                    _fun36601_ip = 225;
-                    continue _fun36601
+                    _fun36618_ip = 225;
+                    continue _fun36618
                 }
             case 114:
                 var6 = _closure1_slot0;
@@ -950,8 +950,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var2.StickerSelectLocation;
                 var2 = var2.AUTOCOMPLETE;
                 if (!(var2 !== var4)) {
-                    _fun36601_ip = 180;
-                    continue _fun36601
+                    _fun36618_ip = 180;
+                    continue _fun36618
                 }
             case 147:
                 var4 = _closure1_slot0;
@@ -1020,32 +1020,32 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.isStandardSticker = var4;
     var4 = function(arg0) { // Environment: var1
-        _fun36604: for (var _fun36604_ip = 0;;) switch (_fun36604_ip) {
+        _fun36621: for (var _fun36621_ip = 0;;) switch (_fun36621_ip) {
             case 0:
                 var1 = arg0;
                 var0 = var1.stickerItems;
                 var0 = var0.length;
                 var2 = 0;
                 if (!(!(var0 > var2))) {
-                    _fun36604_ip = 49;
-                    continue _fun36604
+                    _fun36621_ip = 49;
+                    continue _fun36621
                 }
             case 20:
                 var0 = var1.stickers;
                 var0 = var0.length;
                 if (!(!(var0 > var2))) {
-                    _fun36604_ip = 41;
-                    continue _fun36604
+                    _fun36621_ip = 41;
+                    continue _fun36621
                 }
             case 35:
                 var0 = new Array(0);
-                _fun36604_ip = 47;
-                continue _fun36604;
+                _fun36621_ip = 47;
+                continue _fun36621;
             case 41:
                 var0 = var1.stickers;
             case 47:
-                _fun36604_ip = 55;
-                continue _fun36604;
+                _fun36621_ip = 55;
+                continue _fun36621;
             case 49:
                 var0 = var1.stickerItems;
             case 55:
@@ -1054,13 +1054,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getMessageStickers = var4;
     var4 = function(arg0) { // Environment: var1
-        _fun36605: for (var _fun36605_ip = 0;;) switch (_fun36605_ip) {
+        _fun36622: for (var _fun36622_ip = 0;;) switch (_fun36622_ip) {
             case 0:
                 var0 = arg0;
                 var1 = null;
                 if (!(var1 !== var0)) {
-                    _fun36605_ip = 39;
-                    continue _fun36605
+                    _fun36622_ip = 39;
+                    continue _fun36622
                 }
             case 9:
                 var2 = var0.guild_id;

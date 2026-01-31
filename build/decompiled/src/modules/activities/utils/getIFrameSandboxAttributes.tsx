@@ -22,14 +22,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/activities/utils/getIFrameSandboxAttributes.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: getIFrameSandboxAttributes, environment: var1
-        _fun64678: for (var _fun64678_ip = 0;;) switch (_fun64678_ip) {
+        _fun64690: for (var _fun64690_ip = 0;;) switch (_fun64690_ip) {
             case 0:
                 var0 = arg0;
                 var1 = var0.allowPopups;
                 var2 = _closure1_slot0;
                 if (!var1) {
-                    _fun64678_ip = 68;
-                    continue _fun64678
+                    _fun64690_ip = 68;
+                    continue _fun64690
                 }
             case 19:
                 var5 = _closure1_slot0;

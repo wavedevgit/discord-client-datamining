@@ -46,7 +46,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/main_tabs_v2/native/UserSettingsNativeScrollFixExperiment.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: useIsUserSettingsScrollFixEnabled, environment: var1
-        _fun105100: for (var _fun105100_ip = 0;;) switch (_fun105100_ip) {
+        _fun104453: for (var _fun104453_ip = 0;;) switch (_fun104453_ip) {
             case 0:
                 var0 = arg0;
                 var4 = var0.location;
@@ -57,8 +57,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var1.bind(var3)(var0);
                 var0 = var0.enabled;
                 if (!var0) {
-                    _fun105100_ip = 72;
-                    continue _fun105100
+                    _fun104453_ip = 72;
+                    continue _fun104453
                 }
             case 40:
                 var4 = _closure1_slot0;
@@ -71,8 +71,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var1.bind(var3)();
             case 72:
                 if (!var0) {
-                    _fun105100_ip = 131;
-                    continue _fun105100
+                    _fun104453_ip = 131;
+                    continue _fun104453
                 }
             case 75:
                 var1 = global;

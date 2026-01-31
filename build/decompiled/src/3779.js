@@ -56,7 +56,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var3 = _closure2_slot0;
             var2 = var3.modify;
             var1 = function(arg0) { // Original name: pnpm_ViewDescriptorsSetTs1, environment: var0
-                _fun33917: for (var _fun33917_ip = 0;;) switch (_fun33917_ip) {
+                _fun33933: for (var _fun33933_ip = 0;;) switch (_fun33933_ip) {
                     case 0:
                         var0 = arg0;
                         var2 = var0.findIndex;
@@ -71,15 +71,15 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var2 = var2.bind(var0)(var1);
                         var1 = -1;
                         if (!(var1 === var2)) {
-                            _fun33917_ip = 50;
-                            continue _fun33917
+                            _fun33933_ip = 50;
+                            continue _fun33933
                         }
                     case 31:
                         var3 = var0.push;
                         var1 = _closure3_slot0;
                         var1 = var3.bind(var0)(var1);
-                        _fun33917_ip = 61;
-                        continue _fun33917;
+                        _fun33933_ip = 61;
+                        continue _fun33933;
                     case 50:
                         var1 = _closure3_slot0;
                         var0[var2] = var1;
@@ -109,7 +109,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var3 = _closure2_slot0;
             var2 = var3.modify;
             var1 = function(arg0) { // Original name: pnpm_ViewDescriptorsSetTs2, environment: var0
-                _fun33920: for (var _fun33920_ip = 0;;) switch (_fun33920_ip) {
+                _fun33936: for (var _fun33936_ip = 0;;) switch (_fun33936_ip) {
                     case 0:
                         var0 = arg0;
                         var2 = var0.findIndex;
@@ -123,8 +123,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var3 = var2.bind(var0)(var1);
                         var1 = -1;
                         if (!(var1 !== var3)) {
-                            _fun33920_ip = 46;
-                            continue _fun33920
+                            _fun33936_ip = 46;
+                            continue _fun33936
                         }
                     case 31:
                         var2 = var0.splice;

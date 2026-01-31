@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var7;
     var3 = function() { // Original name: useAndroidMessageNotificationsSettingValue, environment: var11
-        _fun85193: for (var _fun85193_ip = 0;;) switch (_fun85193_ip) {
+        _fun85223: for (var _fun85223_ip = 0;;) switch (_fun85223_ip) {
             case 0:
                 var1 = _closure1_slot2;
                 var0 = undefined;
@@ -15,8 +15,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = null;
                 var0 = var0 != var1;
                 if (!var0) {
-                    _fun85193_ip = 25;
-                    continue _fun85193
+                    _fun85223_ip = 25;
+                    continue _fun85223
                 }
             case 22:
                 var0 = var1;
@@ -25,7 +25,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1 = function() { // Original name: useHasAndroidMessageNotificationsSetting, environment: var11
-        _fun85194: for (var _fun85194_ip = 0;;) switch (_fun85194_ip) {
+        _fun85224: for (var _fun85224_ip = 0;;) switch (_fun85224_ip) {
             case 0:
                 var1 = _closure1_slot2;
                 var3 = undefined;
@@ -38,8 +38,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var1.isAndroid;
                 var0 = var0.bind(var1)();
                 if (!var0) {
-                    _fun85194_ip = 52;
-                    continue _fun85194
+                    _fun85224_ip = 52;
+                    continue _fun85224
                 }
             case 46:
                 var1 = null;
@@ -105,4 +105,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.useAndroidMessageNotificationsSettingValue = var3;
     var2.useHasAndroidMessageNotificationsSetting = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [10916, 6968, 478, 8943, 1234, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [10918, 6967, 478, 8943, 1234, 2]);

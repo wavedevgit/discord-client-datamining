@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = dependencyMap;
     var _closure1_slot1 = var1;
     var1 = function() { // Original name: hashClear, environment: var0
-        _fun31509: for (var _fun31509_ip = 0;;) switch (_fun31509_ip) {
+        _fun31517: for (var _fun31517_ip = 0;;) switch (_fun31517_ip) {
             case 0:
                 var2 = this;
                 var5 = _closure1_slot0;
@@ -15,13 +15,13 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = undefined;
                 var3 = var5.bind(var0)(var3);
                 if (var3) {
-                    _fun31509_ip = 33;
-                    continue _fun31509
+                    _fun31517_ip = 33;
+                    continue _fun31517
                 }
             case 29:
                 var3 = {};
-                _fun31509_ip = 57;
-                continue _fun31509;
+                _fun31517_ip = 57;
+                continue _fun31517;
             case 33:
                 var5 = _closure1_slot0;
                 var4 = _closure1_slot1;

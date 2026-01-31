@@ -6,19 +6,19 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var6;
     var4 = function(arg0) { // Original name: _interopRequireDefault, environment: var3
-        _fun22582: for (var _fun22582_ip = 0;;) switch (_fun22582_ip) {
+        _fun22584: for (var _fun22584_ip = 0;;) switch (_fun22584_ip) {
             case 0:
                 var2 = arg0;
                 if (!var2) {
-                    _fun22582_ip = 18;
-                    continue _fun22582
+                    _fun22584_ip = 18;
+                    continue _fun22584
                 }
             case 6:
                 var1 = var2.__esModule;
                 var0 = var2;
                 if (var1) {
-                    _fun22582_ip = 27;
-                    continue _fun22582
+                    _fun22584_ip = 27;
+                    continue _fun22584
                 }
             case 18:
                 var1 = {};
@@ -37,7 +37,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = '__esModule';
     var0 = var7.bind(var8)(var1, var0, var2);
     var0 = function(arg0, arg1, arg2) { // Original name: differenceInSeconds, environment: var3
-        _fun22583: for (var _fun22583_ip = 0;;) switch (_fun22583_ip) {
+        _fun22585: for (var _fun22585_ip = 0;;) switch (_fun22585_ip) {
             case 0:
                 var4 = arg2;
                 var2 = undefined;
@@ -63,8 +63,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var5 = var0 == var4;
                 var0 = undefined;
                 if (var5) {
-                    _fun22583_ip = 101;
-                    continue _fun22583
+                    _fun22585_ip = 101;
+                    continue _fun22585
                 }
             case 95:
                 var0 = var4.roundingMethod;

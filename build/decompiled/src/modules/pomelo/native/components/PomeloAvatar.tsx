@@ -42,7 +42,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/pomelo/native/components/PomeloAvatar.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: PomeloAvatar, environment: var1
-        _fun80874: for (var _fun80874_ip = 0;;) switch (_fun80874_ip) {
+        _fun80904: for (var _fun80904_ip = 0;;) switch (_fun80904_ip) {
             case 0:
                 var0 = arg0;
                 var9 = var0.user;
@@ -82,8 +82,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var5.bind(var3)(var4);
                 var4 = null;
                 if (!(var4 != var6)) {
-                    _fun80874_ip = 199;
-                    continue _fun80874
+                    _fun80904_ip = 199;
+                    continue _fun80904
                 }
             case 147:
                 var4 = {};
@@ -98,8 +98,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4.size = var6;
                 var6 = !var7;
                 var4.animate = var6;
-                _fun80874_ip = 256;
-                continue _fun80874;
+                _fun80904_ip = 256;
+                continue _fun80904;
             case 199:
                 var6 = {};
                 var6.user = var9;
@@ -124,4 +124,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1298, 33, 566, 5699, 10255, 5415, 5413, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1298, 33, 566, 5700, 10257, 5416, 5414, 2]);

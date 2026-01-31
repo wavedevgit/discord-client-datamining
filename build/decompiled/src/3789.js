@@ -16,7 +16,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var1 = var3.unprocessColorsInProps;
         var1 = var1.bind(var3)(var2);
         var1 = function(arg0) { // Original name: unprocessBoxShadow, environment: var1
-            _fun34008: for (var _fun34008_ip = 0;;) switch (_fun34008_ip) {
+            _fun34024: for (var _fun34024_ip = 0;;) switch (_fun34024_ip) {
                 case 0:
                     var1 = arg0;
                     var0 = global;
@@ -25,8 +25,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var0 = var1.boxShadow;
                     var0 = var2.bind(var3)(var0);
                     if (!var0) {
-                        _fun34008_ip = 59;
-                        continue _fun34008
+                        _fun34024_ip = 59;
+                        continue _fun34024
                     }
                 case 30:
                     var3 = var1.boxShadow;
@@ -87,7 +87,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var3 instanceof Object ? var3 : var4;
     var0.viewsMap = var3;
     var3 = function(arg0, arg1) { // Original name: registerView, environment: var2
-        _fun34010: for (var _fun34010_ip = 0;;) switch (_fun34010_ip) {
+        _fun34026: for (var _fun34026_ip = 0;;) switch (_fun34026_ip) {
             case 0:
                 var4 = arg0;
                 var1 = this;
@@ -95,8 +95,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = var2.has;
                 var0 = var0.bind(var2)(var4);
                 if (var0) {
-                    _fun34010_ip = 83;
-                    continue _fun34010
+                    _fun34026_ip = 83;
+                    continue _fun34026
                 }
             case 25:
                 var3 = var1.viewsMap;
@@ -109,8 +109,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = var1.viewsCount;
                 var0 = 1;
                 if (!(var0 === var2)) {
-                    _fun34010_ip = 83;
-                    continue _fun34010
+                    _fun34026_ip = 83;
+                    continue _fun34026
                 }
             case 73:
                 var0 = var1.registerInterval;
@@ -122,7 +122,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var0.registerView = var3;
     var3 = function(arg0) { // Original name: unregisterView, environment: var2
-        _fun34011: for (var _fun34011_ip = 0;;) switch (_fun34011_ip) {
+        _fun34027: for (var _fun34027_ip = 0;;) switch (_fun34027_ip) {
             case 0:
                 var1 = this;
                 var3 = var1.viewsMap;
@@ -135,8 +135,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = var1.viewsCount;
                 var0 = 0;
                 if (!(var0 === var2)) {
-                    _fun34011_ip = 59;
-                    continue _fun34011
+                    _fun34027_ip = 59;
+                    continue _fun34027
                 }
             case 49:
                 var0 = var1.unregisterInterval;
@@ -148,7 +148,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var0.unregisterView = var3;
     var3 = function() { // Original name: syncPropsBackToReact, environment: var2
-        _fun34012: for (var _fun34012_ip = 0;;) switch (_fun34012_ip) {
+        _fun34028: for (var _fun34028_ip = 0;;) switch (_fun34028_ip) {
             case 0:
                 var7 = this;
                 var0 = undefined;
@@ -170,8 +170,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var8 = var3().value;
                 var9 = var2;
                 if (!(var9 !== var0)) {
-                    _fun34012_ip = 143;
-                    continue _fun34012
+                    _fun34028_ip = 143;
+                    continue _fun34028
                 }
             case 66: // try_start_0
                 var11 = var8.viewTag;
@@ -184,8 +184,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var9 = _closure1_slot2;
                 var9 = var9.bind(var0)(var10);
                 if (!(var1 != var8)) {
-                    _fun34012_ip = 134;
-                    continue _fun34012
+                    _fun34028_ip = 134;
+                    continue _fun34028
                 }
             case 115:
                 var10 = var6;
@@ -193,8 +193,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var8 = var5;
                 var8 = var9.bind(var10)(var8);
             case 134: // try_end0
-                _fun34012_ip = 55;
-                continue _fun34012;
+                _fun34028_ip = 55;
+                continue _fun34028;
             case 136: // catch_target0
                 CatchBlockStart(arg_register = 1);
                 var2.return();
@@ -219,14 +219,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var0.registerInterval = var3;
     var2 = function() { // Original name: unregisterInterval, environment: var2
-        _fun34014: for (var _fun34014_ip = 0;;) switch (_fun34014_ip) {
+        _fun34030: for (var _fun34030_ip = 0;;) switch (_fun34030_ip) {
             case 0:
                 var1 = this;
                 var2 = var1.intervalId;
                 var0 = null;
                 if (!(var0 !== var2)) {
-                    _fun34014_ip = 42;
-                    continue _fun34014
+                    _fun34030_ip = 42;
+                    continue _fun34030
                 }
             case 15:
                 var2 = global;

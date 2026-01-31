@@ -4,14 +4,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2 = exports;
     var4 = dependencyMap;
     var0 = function(arg0) { // Original name: shouldDisplayCancel, environment: var1
-        _fun69384: for (var _fun69384_ip = 0;;) switch (_fun69384_ip) {
+        _fun69408: for (var _fun69408_ip = 0;;) switch (_fun69408_ip) {
             case 0:
                 var1 = arg0;
                 var0 = null;
                 var0 = var0 != var1;
                 if (!var0) {
-                    _fun69384_ip = 49;
-                    continue _fun69384
+                    _fun69408_ip = 49;
+                    continue _fun69408
                 }
             case 12:
                 var2 = global;
@@ -79,7 +79,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2 = new Array(1);
         var2[0] = var5;
         var1 = function() { // Environment: var1
-            _fun69387: for (var _fun69387_ip = 0;;) switch (_fun69387_ip) {
+            _fun69411: for (var _fun69411_ip = 0;;) switch (_fun69411_ip) {
                 case 0:
                     var3 = _closure1_slot2;
                     var5 = _closure2_slot0;
@@ -89,13 +89,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var4 = var4.bind(var0)(var3);
                     var4 = null;
                     if (!(var4 != var5)) {
-                        _fun69387_ip = 114;
-                        continue _fun69387
+                        _fun69411_ip = 114;
+                        continue _fun69411
                     }
                 case 38:
                     if (var3) {
-                        _fun69387_ip = 114;
-                        continue _fun69387
+                        _fun69411_ip = 114;
+                        continue _fun69411
                     }
                 case 41:
                     var3 = global;

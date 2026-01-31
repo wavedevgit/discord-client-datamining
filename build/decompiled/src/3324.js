@@ -28,7 +28,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = var3.bind(var0)(var2);
     var _closure1_slot3 = var2;
     var2 = function(arg0) { // Original name: allSettled, environment: var1
-        _fun28866: for (var _fun28866_ip = 0;;) switch (_fun28866_ip) {
+        _fun28867: for (var _fun28867_ip = 0;;) switch (_fun28867_ip) {
             case 0:
                 var3 = this;
                 var _closure2_slot0 = var3;
@@ -41,8 +41,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var5 = var4.bind(var2)(var3);
                 var4 = 'Object';
                 if (!(var4 === var5)) {
-                    _fun28866_ip = 110;
-                    continue _fun28866
+                    _fun28867_ip = 110;
+                    continue _fun28867
                 }
             case 47:
                 var6 = _closure1_slot0;
@@ -57,7 +57,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var4 = var7[var4];
                 var4 = var6.bind(var2)(var4);
                 var0 = function(arg0) { // Environment: var0
-                    _fun28867: for (var _fun28867_ip = 0;;) switch (_fun28867_ip) {
+                    _fun28868: for (var _fun28868_ip = 0;;) switch (_fun28868_ip) {
                         case 0:
                             var3 = undefined;
                             var4 = undefined;

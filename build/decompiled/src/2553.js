@@ -199,28 +199,28 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.almostXYears = var4;
     var _closure1_slot0 = var3;
     var2 = function(arg0, arg1, arg2) { // Original name: formatDistance, environment: var2
-        _fun21833: for (var _fun21833_ip = 0;;) switch (_fun21833_ip) {
+        _fun21835: for (var _fun21835_ip = 0;;) switch (_fun21835_ip) {
             case 0:
                 var3 = arg0;
                 var8 = arg1;
                 var1 = arg2;
                 var2 = null;
                 if (!(var2 != var1)) {
-                    _fun21833_ip = 24;
-                    continue _fun21833
+                    _fun21835_ip = 24;
+                    continue _fun21835
                 }
             case 15:
                 var0 = var1.addSuffix;
                 if (var0) {
-                    _fun21833_ip = 43;
-                    continue _fun21833
+                    _fun21835_ip = 43;
+                    continue _fun21835
                 }
             case 24:
                 var0 = _closure1_slot0;
                 var0 = var0[var3];
                 var4 = var0.standalone;
-                _fun21833_ip = 60;
-                continue _fun21833;
+                _fun21835_ip = 60;
+                continue _fun21835;
             case 43:
                 var0 = _closure1_slot0;
                 var0 = var0[var3];
@@ -230,14 +230,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = typeof var4;
                 var3 = var4;
                 if (!(var5 !== var0)) {
-                    _fun21833_ip = 130;
-                    continue _fun21833
+                    _fun21835_ip = 130;
+                    continue _fun21835
                 }
             case 74:
                 var0 = 1;
                 if (!(var0 !== var8)) {
-                    _fun21833_ip = 121;
-                    continue _fun21833
+                    _fun21835_ip = 121;
+                    continue _fun21835
                 }
             case 81:
                 var7 = var4.other;
@@ -248,8 +248,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var5 = var5.bind(var0)(var8);
                 var0 = '{{count}}';
                 var0 = var6.bind(var7)(var0, var5);
-                _fun21833_ip = 127;
-                continue _fun21833;
+                _fun21835_ip = 127;
+                continue _fun21835;
             case 121:
                 var0 = var4.one;
             case 127:
@@ -257,34 +257,34 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             case 130:
                 var0 = var3;
                 if (!(var2 != var1)) {
-                    _fun21833_ip = 195;
-                    continue _fun21833
+                    _fun21835_ip = 195;
+                    continue _fun21835
                 }
             case 137:
                 var2 = var1.addSuffix;
                 var0 = var3;
                 if (!var2) {
-                    _fun21833_ip = 195;
-                    continue _fun21833
+                    _fun21835_ip = 195;
+                    continue _fun21835
                 }
             case 149:
                 var2 = var1.comparison;
                 if (!var2) {
-                    _fun21833_ip = 170;
-                    continue _fun21833
+                    _fun21835_ip = 170;
+                    continue _fun21835
                 }
             case 158:
                 var2 = var1.comparison;
                 var1 = 0;
                 if (!(!(var2 > var1))) {
-                    _fun21833_ip = 182;
-                    continue _fun21833
+                    _fun21835_ip = 182;
+                    continue _fun21835
                 }
             case 170:
                 var1 = 'vor ';
                 var1 = var1 + var3;
-                _fun21833_ip = 192;
-                continue _fun21833;
+                _fun21835_ip = 192;
+                continue _fun21835;
             case 182:
                 var2 = 'in ';
                 var1 = var2 + var3;

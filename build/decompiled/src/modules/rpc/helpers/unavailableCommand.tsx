@@ -94,4 +94,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.unsupportedCommand = var3;
     var2.deprecatedCommand = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 7890, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 7889, 2]);

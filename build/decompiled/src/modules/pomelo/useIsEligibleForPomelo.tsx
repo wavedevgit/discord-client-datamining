@@ -7,14 +7,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
     var0 = function(arg0, arg1) { // Original name: eligible, environment: var1
-        _fun80709: for (var _fun80709_ip = 0;;) switch (_fun80709_ip) {
+        _fun80739: for (var _fun80739_ip = 0;;) switch (_fun80739_ip) {
             case 0:
                 var2 = arg0;
                 var0 = null;
                 var0 = var0 != var2;
                 if (!var0) {
-                    _fun80709_ip = 25;
-                    continue _fun80709
+                    _fun80739_ip = 25;
+                    continue _fun80739
                 }
             case 12:
                 var1 = var2.hasUniqueUsername;
@@ -22,8 +22,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = !var1;
             case 25:
                 if (!var0) {
-                    _fun80709_ip = 59;
-                    continue _fun80709
+                    _fun80739_ip = 59;
+                    continue _fun80739
                 }
             case 28:
                 var1 = var2.hasVerifiedEmailOrPhone;
@@ -31,8 +31,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = !var1;
                 var1 = !var2;
                 if (var2) {
-                    _fun80709_ip = 56;
-                    continue _fun80709
+                    _fun80739_ip = 56;
+                    continue _fun80739
                 }
             case 47:
                 var2 = arg1;
@@ -111,4 +111,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useIsEligibleForPomelo = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1613, 10240, 632, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1613, 10242, 632, 2]);

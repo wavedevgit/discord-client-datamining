@@ -27,7 +27,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/premium/gifting/native/hooks/useShouldShowGiftingPromotionDeco.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: useShouldShowGiftingPromotionDeco, environment: var1
-        _fun74765: for (var _fun74765_ip = 0;;) switch (_fun74765_ip) {
+        _fun74795: for (var _fun74795_ip = 0;;) switch (_fun74795_ip) {
             case 0:
                 var4 = arg0;
                 var2 = _closure1_slot0;
@@ -42,15 +42,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var0.premiumType;
                 var0 = null;
                 if (!(var0 == var4)) {
-                    _fun74765_ip = 72;
-                    continue _fun74765
+                    _fun74795_ip = 72;
+                    continue _fun74795
                 }
             case 56:
                 var1 = _closure1_slot2;
                 var1 = var1.TIER_2;
                 var1 = var5 === var1;
-                _fun74765_ip = 86;
-                continue _fun74765;
+                _fun74795_ip = 86;
+                continue _fun74795;
             case 72:
                 var3 = _closure1_slot2;
                 var3 = var3.TIER_2;
@@ -58,8 +58,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 86:
                 var0 = var0 != var2;
                 if (!var0) {
-                    _fun74765_ip = 104;
-                    continue _fun74765
+                    _fun74795_ip = 104;
+                    continue _fun74795
                 }
             case 93:
                 var3 = var2.length;
@@ -67,8 +67,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var3 > var2;
             case 104:
                 if (!var0) {
-                    _fun74765_ip = 110;
-                    continue _fun74765
+                    _fun74795_ip = 110;
+                    continue _fun74795
                 }
             case 107:
                 var0 = var1;
@@ -78,4 +78,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1615, 9366, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1615, 9368, 2]);

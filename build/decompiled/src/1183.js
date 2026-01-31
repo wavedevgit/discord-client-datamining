@@ -6,7 +6,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = dependencyMap;
     var _closure1_slot1 = var2;
     var2 = function() { // Original name: createReleaseFromGlobalReleaseConstants, environment: var0
-        _fun12890: for (var _fun12890_ip = 0;;) switch (_fun12890_ip) {
+        _fun12892: for (var _fun12892_ip = 0;;) switch (_fun12892_ip) {
             case 0:
                 var2 = _closure1_slot0;
                 var1 = _closure1_slot1;
@@ -17,20 +17,20 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = var1.RN_GLOBAL_OBJ;
                 var1 = var1.SENTRY_RELEASE;
                 if (!var1) {
-                    _fun12890_ip = 56;
-                    continue _fun12890
+                    _fun12892_ip = 56;
+                    continue _fun12892
                 }
             case 39:
                 var4 = var1.name;
                 var3 = var1.version;
                 if (!var4) {
-                    _fun12890_ip = 56;
-                    continue _fun12890
+                    _fun12892_ip = 56;
+                    continue _fun12892
                 }
             case 53:
                 if (var3) {
-                    _fun12890_ip = 58;
-                    continue _fun12890
+                    _fun12892_ip = 58;
+                    continue _fun12892
                 }
             case 56:
                 return var0;
@@ -55,7 +55,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var5.bind(var6)(var1, var3, var4);
     var1.createReleaseFromGlobalReleaseConstants = var2;
     var0 = function() { // Original name: getDefaultRelease, environment: var0
-        _fun12891: for (var _fun12891_ip = 0;;) switch (_fun12891_ip) {
+        _fun12893: for (var _fun12893_ip = 0;;) switch (_fun12893_ip) {
             case 0:
                 var3 = _closure1_slot0;
                 var2 = _closure1_slot1;
@@ -66,8 +66,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = var3.notWeb;
                 var2 = var2.bind(var3)();
                 if (var2) {
-                    _fun12891_ip = 48;
-                    continue _fun12891
+                    _fun12893_ip = 48;
+                    continue _fun12893
                 }
             case 38:
                 var1 = _closure1_slot2;

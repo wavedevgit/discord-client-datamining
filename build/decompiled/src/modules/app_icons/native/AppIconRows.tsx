@@ -9,13 +9,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var5;
     var0 = function(arg0) { // Original name: BackwardsCompatibleAppIconRows, environment: var1
-        _fun85332: for (var _fun85332_ip = 0;;) switch (_fun85332_ip) {
+        _fun85362: for (var _fun85362_ip = 0;;) switch (_fun85362_ip) {
             case 0:
                 var1 = arg0;
                 var0 = null;
                 if (!(var1 != var0)) {
-                    _fun85332_ip = 288;
-                    continue _fun85332
+                    _fun85362_ip = 288;
+                    continue _fun85362
                 }
             case 14:
                 var17 = {};
@@ -45,7 +45,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = var0.icons;
                 var9 = var0.title;
                 var0 = function(arg0) { // Original name: onLongPress, environment: var8
-                    _fun85333: for (var _fun85333_ip = 0;;) switch (_fun85333_ip) {
+                    _fun85363: for (var _fun85363_ip = 0;;) switch (_fun85363_ip) {
                         case 0:
                             var1 = _closure1_slot0;
                             var2 = _closure1_slot2;
@@ -58,8 +58,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var1 = arg0;
                             var0 = null;
                             if (!(var1 === var2)) {
-                                _fun85333_ip = 60;
-                                continue _fun85333
+                                _fun85363_ip = 60;
+                                continue _fun85363
                             }
                         case 46:
                             var2 = _closure2_slot2;
@@ -204,7 +204,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/app_icons/native/AppIconRows.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: AppIconRows, environment: var1
-        _fun85335: for (var _fun85335_ip = 0;;) switch (_fun85335_ip) {
+        _fun85365: for (var _fun85365_ip = 0;;) switch (_fun85365_ip) {
             case 0:
                 var1 = arg0;
                 var11 = var1.onSelect;
@@ -244,8 +244,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = 0;
                 var14 = var2 > var1;
                 if (!var14) {
-                    _fun85335_ip = 177;
-                    continue _fun85335
+                    _fun85365_ip = 177;
+                    continue _fun85365
                 }
             case 151:
                 var2 = var8.filter;
@@ -264,8 +264,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = {};
                 var5 = null;
                 if (!var14) {
-                    _fun85335_ip = 289;
-                    continue _fun85335
+                    _fun85365_ip = 289;
+                    continue _fun85365
                 }
             case 192:
                 var7 = _closure1_slot8;
@@ -297,8 +297,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = {};
                 var8 = !var16;
                 if (!var8) {
-                    _fun85335_ip = 319;
-                    continue _fun85335
+                    _fun85365_ip = 319;
+                    continue _fun85365
                 }
             case 313:
                 var8 = var9.bottomUpsellPadding;
@@ -312,8 +312,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8.currentAppIcon = var12;
                 var12 = undefined;
                 if (!var14) {
-                    _fun85335_ip = 408;
-                    continue _fun85335
+                    _fun85365_ip = 408;
+                    continue _fun85365
                 }
             case 353:
                 var16 = _closure1_slot0;
@@ -342,4 +342,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 1613, 33, 1297, 7597, 5324, 1234, 10962, 10957, 566, 1628, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 1613, 33, 1297, 7596, 5325, 1234, 10964, 10959, 566, 1628, 2]);

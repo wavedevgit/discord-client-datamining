@@ -77,4 +77,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.NonCollapsableGestureDetector = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [29, 31, 27, 33, 4923, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [29, 31, 27, 33, 4924, 2]);

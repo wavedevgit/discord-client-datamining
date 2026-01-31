@@ -1,215 +1,575 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var5 = require;
     var2 = exports;
-    var6 = dependencyMap;
-    var _closure1_slot0 = var5;
-    var0 = metroImportDefault;
-    var _closure1_slot1 = var0;
-    var _closure1_slot2 = var6;
     var0 = global;
-    var7 = var0.Object;
-    var4 = var7.defineProperty;
+    var5 = var0.Object;
+    var4 = var5.defineProperty;
     var3 = {};
     var0 = true;
     var3.value = var0;
     var0 = '__esModule';
-    var0 = var4.bind(var7)(var2, var0, var3);
+    var0 = var4.bind(var5)(var2, var0, var3);
+    var3 = dependencyMap;
     var0 = 0;
-    var4 = var6[var0];
-    var3 = metroImportAll;
+    var4 = var3[var0];
+    var3 = require;
     var0 = undefined;
     var4 = var3.bind(var0)(var4);
-    var _closure1_slot3 = var4;
-    var3 = 1;
-    var3 = var6[var3];
-    var3 = var5.bind(var0)(var3);
-    var3 = var3.jsx;
-    var _closure1_slot4 = var3;
-    var3 = var4.memo;
-    var1 = function(arg0) { // Original name: Header, environment: var1
-        _fun51107: for (var _fun51107_ip = 0;;) switch (_fun51107_ip) {
+    var3 = var4.Animated;
+    var4 = var4.I18nManager;
+    var _closure1_slot0 = var4;
+    var3 = var3.add;
+    var _closure1_slot1 = var3;
+    var3 = function(arg0) { // Original name: forUIKit, environment: var1
+        _fun51117: for (var _fun51117_ip = 0;;) switch (_fun51117_ip) {
             case 0:
-                var0 = arg0;
-                var10 = var0.back;
-                var13 = var0.layout;
-                var14 = var0.progress;
-                var7 = var0.options;
-                var15 = var0.route;
-                var _closure2_slot0 = var15;
-                var12 = var0.navigation;
-                var _closure2_slot1 = var12;
-                var0 = var0.styleInterpolator;
-                var2 = _closure1_slot0;
-                var3 = _closure1_slot2;
-                var1 = 2;
-                var1 = var3[var1];
-                var3 = undefined;
-                var2 = var2.bind(var3)(var1);
-                var1 = var2.useSafeAreaInsets;
-                var1 = var1.bind(var2)();
-                var2 = var7.headerBackTitle;
-                if (!(var3 === var2)) {
-                    _fun51107_ip = 111;
-                    continue _fun51107
+                var2 = arg0;
+                var1 = var2.current;
+                var0 = var2.next;
+                var8 = var2.layouts;
+                var2 = var8.leftLabel;
+                var10 = 100;
+                var13 = var10;
+                if (!var2) {
+                    _fun51117_ip = 74;
+                    continue _fun51117
                 }
-            case 99:
-                var11 = undefined;
-                if (!var10) {
-                    _fun51107_ip = 117;
-                    continue _fun51107
+            case 34:
+                var2 = var8.screen;
+                var3 = var2.width;
+                var2 = var8.leftLabel;
+                var2 = var2.width;
+                var3 = var3 - var2;
+                var2 = 2;
+                var3 = var3 / var2;
+                var2 = 27;
+                var13 = var3 - var2;
+            case 74:
+                var2 = var8.title;
+                if (!var2) {
+                    _fun51117_ip = 121;
+                    continue _fun51117
                 }
-            case 104:
-                var11 = var10.title;
-                _fun51107_ip = 117;
-                continue _fun51107;
-            case 111:
-                var11 = var7.headerBackTitle;
-            case 117:
-                var5 = _closure1_slot3;
-                var9 = var5.useCallback;
-                var8 = _closure1_slot1;
-                var2 = _closure1_slot2;
-                var6 = 3;
-                var6 = var2[var6];
-                var16 = var8.bind(var3)(var6);
-                var6 = function() { // Environment: var4
-                    _fun51108: for (var _fun51108_ip = 0;;) switch (_fun51108_ip) {
-                        case 0:
-                            var2 = _closure2_slot1;
-                            var1 = var2.isFocused;
-                            var1 = var1.bind(var2)();
-                            if (!var1) {
-                                _fun51108_ip = 34;
-                                continue _fun51108
-                            }
-                        case 20:
-                            var3 = _closure2_slot1;
-                            var2 = var3.canGoBack;
-                            var1 = var2.bind(var3)();
-                        case 34:
-                            if (!var1) {
-                                _fun51108_ip = 129;
-                                continue _fun51108
-                            }
-                        case 37:
-                            var2 = _closure2_slot1;
-                            var1 = var2.dispatch;
-                            var3 = global;
-                            var6 = var3.Object;
-                            var5 = var6.assign;
-                            var7 = _closure1_slot0;
-                            var4 = _closure1_slot2;
-                            var3 = 4;
-                            var4 = var4[var3];
-                            var3 = undefined;
-                            var3 = var7.bind(var3)(var4);
-                            var4 = var3.StackActions;
-                            var3 = var4.pop;
-                            var4 = var3.bind(var4)();
-                            var3 = {};
-                            var0 = _closure2_slot0;
-                            var0 = var0.key;
-                            var3.source = var0;
-                            var0 = {};
-                            var0 = var5.bind(var6)(var0, var4, var3);
-                            var0 = var1.bind(var2)(var0);
-                        case 129:
-                            var0 = undefined;
-                            return var0;
-                    }
-                };
-                var4 = 50;
-                var6 = var16.bind(var3)(var6, var4);
-                var4 = new Array(2);
-                var4[0] = var12;
-                var12 = var15.key;
-                var4[1] = var12;
-                var9 = var9.bind(var5)(var6, var4);
-                var6 = var5.useContext;
-                var4 = 5;
-                var4 = var2[var4];
-                var4 = var8.bind(var3)(var4);
-                var12 = var6.bind(var5)(var4);
-                var4 = var5.useContext;
-                var6 = _closure1_slot0;
-                var18 = 6;
-                var2 = var2[var18];
-                var2 = var6.bind(var3)(var2);
-                var2 = var2.HeaderShownContext;
-                var2 = var4.bind(var5)(var2);
-                var4 = var7.headerStatusBarHeight;
-                if (!(var3 === var4)) {
-                    _fun51107_ip = 266;
-                    continue _fun51107
+            case 82:
+                var2 = var8.screen;
+                var3 = var2.width;
+                var2 = var8.title;
+                var2 = var2.width;
+                var3 = var3 - var2;
+                var2 = 2;
+                var3 = var3 / var2;
+                var2 = 27;
+                var10 = var3 - var2;
+            case 121:
+                var2 = var8.screen;
+                var3 = var2.width;
+                var2 = 4;
+                var11 = var3 / var2;
+                var3 = _closure1_slot1;
+                var4 = var1.progress;
+                var2 = var4.interpolate;
+                var1 = {};
+                var5 = [0, 1];
+                var1.inputRange = var5;
+                var5 = [0, 1];
+                var1.outputRange = var5;
+                var7 = 'clamp';
+                var1.extrapolate = var7;
+                var2 = var2.bind(var4)(var1);
+                var9 = 0;
+                var1 = 0;
+                if (!var0) {
+                    _fun51117_ip = 265;
+                    continue _fun51117
                 }
-            case 249:
-                var8 = 0;
-                if (var12) {
-                    _fun51107_ip = 264;
-                    continue _fun51107
-                }
-            case 254:
-                var8 = 0;
-                if (var2) {
-                    _fun51107_ip = 264;
-                    continue _fun51107
-                }
-            case 259:
-                var8 = var1.top;
-            case 264:
-                _fun51107_ip = 272;
-                continue _fun51107;
-            case 266:
-                var8 = var7.headerStatusBarHeight;
-            case 272:
-                var2 = _closure1_slot4;
-                var4 = _closure1_slot1;
-                var16 = _closure1_slot2;
-                var1 = 7;
-                var1 = var16[var1];
-                var1 = var4.bind(var3)(var1);
-                var4 = global;
-                var6 = var4.Object;
-                var5 = var6.assign;
-                var4 = {};
-                var17 = _closure1_slot0;
-                var16 = var16[var18];
-                var17 = var17.bind(var3)(var16);
-                var16 = var17.getHeaderTitle;
-                var15 = var15.name;
-                var15 = var16.bind(var17)(var7, var15);
-                var4.title = var15;
-                var4.progress = var14;
-                var4.layout = var13;
-                var4.modal = var12;
-                var12 = var7.headerBackTitle;
-                if (!(var3 !== var12)) {
-                    _fun51107_ip = 376;
-                    continue _fun51107
-                }
-            case 370:
-                var11 = var7.headerBackTitle;
-            case 376:
-                var4.headerBackTitle = var11;
-                var4.headerStatusBarHeight = var8;
-                var8 = undefined;
-                if (!var10) {
-                    _fun51107_ip = 394;
-                    continue _fun51107
-                }
-            case 391:
-                var8 = var9;
-            case 394:
-                var4.onGoBack = var8;
-                var4.styleInterpolator = var0;
+            case 211:
+                var5 = var0.progress;
+                var4 = var5.interpolate;
                 var0 = {};
-                var0 = var5.bind(var6)(var0, var7, var4);
-                var0 = var2.bind(var3)(var1, var0);
+                var12 = [0, 1];
+                var0.inputRange = var12;
+                var12 = [0, 1];
+                var0.outputRange = var12;
+                var0.extrapolate = var7;
+                var1 = var4.bind(var5)(var0);
+            case 265:
+                var0 = undefined;
+                var5 = var3.bind(var0)(var2, var1);
+                var0 = {};
+                var1 = {};
+                var3 = var5.interpolate;
+                var2 = {};
+                var4 = [0.3, 1, 1.5];
+                var2.inputRange = var4;
+                var4 = [0, 1, 0];
+                var2.outputRange = var4;
+                var2 = var3.bind(var5)(var2);
+                var1.opacity = var2;
+                var0.leftButtonStyle = var1;
+                var1 = {};
+                var3 = {};
+                var4 = var5.interpolate;
+                var2 = {};
+                var7 = [0, 1, 2];
+                var2.inputRange = var7;
+                var12 = _closure1_slot0;
+                var7 = var12.getConstants;
+                var7 = var7.bind(var12)();
+                var7 = var7.isRTL;
+                var14 = -var11;
+                var12 = new Array(3);
+                if (var7) {
+                    _fun51117_ip = 401;
+                    continue _fun51117
+                }
+            case 384:
+                var12[0] = var13;
+                var12[1] = var9;
+                var12[2] = var14;
+                var7 = var12;
+                _fun51117_ip = 416;
+                continue _fun51117;
+            case 401:
+                var12[0] = var14;
+                var12[1] = var9;
+                var12[2] = var13;
+                var7 = var12;
+            case 416:
+                var2.outputRange = var7;
+                var2 = var4.bind(var5)(var2);
+                var3.translateX = var2;
+                var2 = new Array(1);
+                var2[0] = var3;
+                var1.transform = var2;
+                var0.leftLabelStyle = var1;
+                var1 = {};
+                var3 = var5.interpolate;
+                var2 = {};
+                var4 = [0.3, 1, 1.5];
+                var2.inputRange = var4;
+                var4 = [0, 1, 0];
+                var2.outputRange = var4;
+                var2 = var3.bind(var5)(var2);
+                var1.opacity = var2;
+                var0.rightButtonStyle = var1;
+                var1 = {};
+                var3 = var5.interpolate;
+                var2 = {};
+                var4 = [0, 0.4, 1, 1.5];
+                var2.inputRange = var4;
+                var4 = [0, 0.1, 1, 0];
+                var2.outputRange = var4;
+                var2 = var3.bind(var5)(var2);
+                var1.opacity = var2;
+                var3 = {};
+                var4 = var5.interpolate;
+                var2 = {};
+                var7 = [0.5, 1, 2];
+                var2.inputRange = var7;
+                var12 = _closure1_slot0;
+                var7 = var12.getConstants;
+                var7 = var7.bind(var12)();
+                var7 = var7.isRTL;
+                var12 = -var10;
+                var10 = new Array(3);
+                if (var7) {
+                    _fun51117_ip = 623;
+                    continue _fun51117
+                }
+            case 606:
+                var10[0] = var11;
+                var10[1] = var9;
+                var10[2] = var12;
+                var7 = var10;
+                _fun51117_ip = 638;
+                continue _fun51117;
+            case 623:
+                var10[0] = var12;
+                var10[1] = var9;
+                var10[2] = var11;
+                var7 = var10;
+            case 638:
+                var2.outputRange = var7;
+                var2 = var4.bind(var5)(var2);
+                var3.translateX = var2;
+                var2 = new Array(1);
+                var2[0] = var3;
+                var1.transform = var2;
+                var0.titleStyle = var1;
+                var1 = {};
+                var3 = {};
+                var4 = var5.interpolate;
+                var2 = {};
+                var7 = [0, 1, 2];
+                var2.inputRange = var7;
+                var7 = _closure1_slot0;
+                var6 = var7.getConstants;
+                var6 = var6.bind(var7)();
+                var6 = var6.isRTL;
+                var7 = var8.screen;
+                var10 = var7.width;
+                var7 = new Array(3);
+                if (var6) {
+                    _fun51117_ip = 764;
+                    continue _fun51117
+                }
+            case 733:
+                var7[0] = var10;
+                var7[1] = var9;
+                var6 = var8.screen;
+                var6 = var6.width;
+                var6 = -var6;
+                var7[2] = var6;
+                var6 = var7;
+                _fun51117_ip = 793;
+                continue _fun51117;
+            case 764:
+                var10 = -var10;
+                var7[0] = var10;
+                var7[1] = var9;
+                var8 = var8.screen;
+                var8 = var8.width;
+                var7[2] = var8;
+                var6 = var7;
+            case 793:
+                var2.outputRange = var6;
+                var2 = var4.bind(var5)(var2);
+                var3.translateX = var2;
+                var2 = new Array(1);
+                var2[0] = var3;
+                var1.transform = var2;
+                var0.backgroundStyle = var1;
                 return var0;
         }
     };
-    var1 = var3.bind(var4)(var1);
-    var2.default = var1;
+    var2.forUIKit = var3;
+    var3 = function(arg0) { // Original name: forFade, environment: var1
+        _fun51118: for (var _fun51118_ip = 0;;) switch (_fun51118_ip) {
+            case 0:
+                var0 = arg0;
+                var1 = var0.current;
+                var0 = var0.next;
+                var3 = _closure1_slot1;
+                var4 = var1.progress;
+                var2 = var4.interpolate;
+                var1 = {};
+                var5 = [0, 1];
+                var1.inputRange = var5;
+                var5 = [0, 1];
+                var1.outputRange = var5;
+                var6 = 'clamp';
+                var1.extrapolate = var6;
+                var2 = var2.bind(var4)(var1);
+                var1 = 0;
+                if (!var0) {
+                    _fun51118_ip = 137;
+                    continue _fun51118
+                }
+            case 83:
+                var5 = var0.progress;
+                var4 = var5.interpolate;
+                var0 = {};
+                var7 = [0, 1];
+                var0.inputRange = var7;
+                var7 = [0, 1];
+                var0.outputRange = var7;
+                var0.extrapolate = var6;
+                var1 = var4.bind(var5)(var0);
+            case 137:
+                var0 = undefined;
+                var4 = var3.bind(var0)(var2, var1);
+                var1 = var4.interpolate;
+                var0 = {};
+                var2 = [0, 1, 2];
+                var0.inputRange = var2;
+                var2 = [0, 1, 0];
+                var0.outputRange = var2;
+                var2 = var1.bind(var4)(var0);
+                var0 = {};
+                var1 = {};
+                var1.opacity = var2;
+                var0.leftButtonStyle = var1;
+                var1 = {};
+                var1.opacity = var2;
+                var0.rightButtonStyle = var1;
+                var1 = {};
+                var1.opacity = var2;
+                var0.titleStyle = var1;
+                var1 = {};
+                var3 = var4.interpolate;
+                var2 = {};
+                var5 = [0, 1, 1.9, 2];
+                var2.inputRange = var5;
+                var5 = [0, 1, 1, 0];
+                var2.outputRange = var5;
+                var2 = var3.bind(var4)(var2);
+                var1.opacity = var2;
+                var0.backgroundStyle = var1;
+                return var0;
+        }
+    };
+    var2.forFade = var3;
+    var3 = function(arg0) { // Original name: forSlideLeft, environment: var1
+        _fun51119: for (var _fun51119_ip = 0;;) switch (_fun51119_ip) {
+            case 0:
+                var0 = arg0;
+                var2 = var0.current;
+                var1 = var0.next;
+                var0 = var0.layouts;
+                var6 = var0.screen;
+                var0 = {};
+                var5 = _closure1_slot1;
+                var7 = var2.progress;
+                var3 = var7.interpolate;
+                var2 = {};
+                var8 = [0, 1];
+                var2.inputRange = var8;
+                var8 = [0, 1];
+                var2.outputRange = var8;
+                var10 = 'clamp';
+                var2.extrapolate = var10;
+                var3 = var3.bind(var7)(var2);
+                var7 = 0;
+                var2 = 0;
+                if (!var1) {
+                    _fun51119_ip = 153;
+                    continue _fun51119
+                }
+            case 99:
+                var9 = var1.progress;
+                var8 = var9.interpolate;
+                var1 = {};
+                var11 = [0, 1];
+                var1.inputRange = var11;
+                var11 = [0, 1];
+                var1.outputRange = var11;
+                var1.extrapolate = var10;
+                var2 = var8.bind(var9)(var1);
+            case 153:
+                var1 = undefined;
+                var3 = var5.bind(var1)(var3, var2);
+                var2 = var3.interpolate;
+                var1 = {};
+                var5 = [0, 1, 2];
+                var1.inputRange = var5;
+                var5 = _closure1_slot0;
+                var4 = var5.getConstants;
+                var4 = var4.bind(var5)();
+                var4 = var4.isRTL;
+                var8 = var6.width;
+                var5 = new Array(3);
+                if (var4) {
+                    _fun51119_ip = 239;
+                    continue _fun51119
+                }
+            case 214:
+                var5[0] = var8;
+                var5[1] = var7;
+                var4 = var6.width;
+                var4 = -var4;
+                var5[2] = var4;
+                var4 = var5;
+                _fun51119_ip = 262;
+                continue _fun51119;
+            case 239:
+                var8 = -var8;
+                var5[0] = var8;
+                var5[1] = var7;
+                var6 = var6.width;
+                var5[2] = var6;
+                var4 = var5;
+            case 262:
+                var1.outputRange = var4;
+                var1 = var2.bind(var3)(var1);
+                var0.translateX = var1;
+                var2 = new Array(1);
+                var2[0] = var0;
+                var0 = {};
+                var1 = {};
+                var1.transform = var2;
+                var0.leftButtonStyle = var1;
+                var1 = {};
+                var1.transform = var2;
+                var0.rightButtonStyle = var1;
+                var1 = {};
+                var1.transform = var2;
+                var0.titleStyle = var1;
+                var1 = {};
+                var1.transform = var2;
+                var0.backgroundStyle = var1;
+                return var0;
+        }
+    };
+    var2.forSlideLeft = var3;
+    var3 = function(arg0) { // Original name: forSlideRight, environment: var1
+        _fun51120: for (var _fun51120_ip = 0;;) switch (_fun51120_ip) {
+            case 0:
+                var0 = arg0;
+                var2 = var0.current;
+                var1 = var0.next;
+                var0 = var0.layouts;
+                var6 = var0.screen;
+                var0 = {};
+                var5 = _closure1_slot1;
+                var7 = var2.progress;
+                var3 = var7.interpolate;
+                var2 = {};
+                var8 = [0, 1];
+                var2.inputRange = var8;
+                var8 = [0, 1];
+                var2.outputRange = var8;
+                var10 = 'clamp';
+                var2.extrapolate = var10;
+                var3 = var3.bind(var7)(var2);
+                var7 = 0;
+                var2 = 0;
+                if (!var1) {
+                    _fun51120_ip = 153;
+                    continue _fun51120
+                }
+            case 99:
+                var9 = var1.progress;
+                var8 = var9.interpolate;
+                var1 = {};
+                var11 = [0, 1];
+                var1.inputRange = var11;
+                var11 = [0, 1];
+                var1.outputRange = var11;
+                var1.extrapolate = var10;
+                var2 = var8.bind(var9)(var1);
+            case 153:
+                var1 = undefined;
+                var3 = var5.bind(var1)(var3, var2);
+                var2 = var3.interpolate;
+                var1 = {};
+                var5 = [0, 1, 2];
+                var1.inputRange = var5;
+                var5 = _closure1_slot0;
+                var4 = var5.getConstants;
+                var4 = var4.bind(var5)();
+                var4 = var4.isRTL;
+                var8 = var6.width;
+                var5 = new Array(3);
+                if (var4) {
+                    _fun51120_ip = 239;
+                    continue _fun51120
+                }
+            case 214:
+                var4 = -var8;
+                var5[0] = var4;
+                var5[1] = var7;
+                var4 = var6.width;
+                var5[2] = var4;
+                var4 = var5;
+                _fun51120_ip = 262;
+                continue _fun51120;
+            case 239:
+                var5[0] = var8;
+                var5[1] = var7;
+                var6 = var6.width;
+                var6 = -var6;
+                var5[2] = var6;
+                var4 = var5;
+            case 262:
+                var1.outputRange = var4;
+                var1 = var2.bind(var3)(var1);
+                var0.translateX = var1;
+                var2 = new Array(1);
+                var2[0] = var0;
+                var0 = {};
+                var1 = {};
+                var1.transform = var2;
+                var0.leftButtonStyle = var1;
+                var1 = {};
+                var1.transform = var2;
+                var0.rightButtonStyle = var1;
+                var1 = {};
+                var1.transform = var2;
+                var0.titleStyle = var1;
+                var1 = {};
+                var1.transform = var2;
+                var0.backgroundStyle = var1;
+                return var0;
+        }
+    };
+    var2.forSlideRight = var3;
+    var3 = function(arg0) { // Original name: forSlideUp, environment: var1
+        _fun51121: for (var _fun51121_ip = 0;;) switch (_fun51121_ip) {
+            case 0:
+                var0 = arg0;
+                var2 = var0.current;
+                var1 = var0.next;
+                var0 = var0.layouts;
+                var5 = var0.header;
+                var0 = {};
+                var4 = _closure1_slot1;
+                var6 = var2.progress;
+                var3 = var6.interpolate;
+                var2 = {};
+                var7 = [0, 1];
+                var2.inputRange = var7;
+                var7 = [0, 1];
+                var2.outputRange = var7;
+                var9 = 'clamp';
+                var2.extrapolate = var9;
+                var3 = var3.bind(var6)(var2);
+                var6 = 0;
+                var2 = 0;
+                if (!var1) {
+                    _fun51121_ip = 152;
+                    continue _fun51121
+                }
+            case 98:
+                var8 = var1.progress;
+                var7 = var8.interpolate;
+                var1 = {};
+                var10 = [0, 1];
+                var1.inputRange = var10;
+                var10 = [0, 1];
+                var1.outputRange = var10;
+                var1.extrapolate = var9;
+                var2 = var7.bind(var8)(var1);
+            case 152:
+                var1 = undefined;
+                var3 = var4.bind(var1)(var3, var2);
+                var2 = var3.interpolate;
+                var1 = {};
+                var4 = [0, 1, 2];
+                var1.inputRange = var4;
+                var4 = var5.height;
+                var7 = -var4;
+                var4 = new Array(3);
+                var4[0] = var7;
+                var4[1] = var6;
+                var5 = var5.height;
+                var5 = -var5;
+                var4[2] = var5;
+                var1.outputRange = var4;
+                var1 = var2.bind(var3)(var1);
+                var0.translateY = var1;
+                var2 = new Array(1);
+                var2[0] = var0;
+                var0 = {};
+                var1 = {};
+                var1.transform = var2;
+                var0.leftButtonStyle = var1;
+                var1 = {};
+                var1.transform = var2;
+                var0.rightButtonStyle = var1;
+                var1 = {};
+                var1.transform = var2;
+                var0.titleStyle = var1;
+                var1 = {};
+                var1.transform = var2;
+                var0.backgroundStyle = var1;
+                return var0;
+        }
+    };
+    var2.forSlideUp = var3;
+    var1 = function() { // Original name: forNoAnimation, environment: var1
+        var0 = {};
+        return var0;
+    };
+    var2.forNoAnimation = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 1571, 5781, 1470, 5782, 5756, 5783]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [27]);
