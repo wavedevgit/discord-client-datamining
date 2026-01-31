@@ -38,15 +38,13 @@ final class m extends th.l0 {
     @Override // th.l0
     protected final void a() {
         th.k0 k0Var;
-        th.v0 v0Var;
         String str;
         Bundle h10;
         try {
-            v0Var = this.f16913r.f17095d;
             str = this.f16913r.f17092a;
             Bundle l10 = x.l(this.f16908e, this.f16909i, this.f16910o, this.f16911p);
             h10 = x.h();
-            ((th.b0) v0Var.e()).r(str, l10, h10, new q(this.f16913r, this.f16912q));
+            ((th.b0) x.t(this.f16913r).e()).r(str, l10, h10, new q(this.f16913r, this.f16912q));
         } catch (RemoteException e10) {
             String str2 = this.f16909i;
             k0Var = x.f17090g;
