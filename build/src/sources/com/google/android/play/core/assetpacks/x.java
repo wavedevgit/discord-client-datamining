@@ -127,11 +127,6 @@ public final class x implements t4 {
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
-    public static /* bridge */ /* synthetic */ th.v0 t(x xVar) {
-        return xVar.f17095d;
-    }
-
-    /* JADX INFO: Access modifiers changed from: package-private */
     public static /* bridge */ /* synthetic */ ArrayList w(Collection collection) {
         ArrayList arrayList = new ArrayList(collection.size());
         Iterator it = collection.iterator();
