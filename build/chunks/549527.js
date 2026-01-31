@@ -18,11 +18,11 @@ var r = n(627968),
     _ = n(491182),
     h = n(291812),
     b = n(643204),
-    A = n(535421),
-    y = n(112758),
+    y = n(535421),
+    A = n(112758),
     v = n(754459),
-    x = n(538355),
-    O = n(699352),
+    O = n(538355),
+    x = n(699352),
     E = n(378570),
     j = n(138298),
     C = n(253932),
@@ -103,10 +103,10 @@ function F(e) {
         } = (0, v.A)(e.id, U.Fd), {
             usernameProfile: l,
             avatarProfile: a
-        } = n, s = (0, y.m)(e, t, l, r);
+        } = n, s = (0, A.m)(e, t, l, r);
         return {
             onClickUsername: s,
-            onClickAvatar: (0, y.Jo)(a, r),
+            onClickAvatar: (0, A.Jo)(a, r),
             onPopoutRequestClose: i.useCallback(() => r({
                 usernameProfile: !1,
                 avatarProfile: !1,
@@ -136,7 +136,7 @@ function F(e) {
             onPopoutRequestClose: d,
             showUsernamePopout: p,
             showAvatarPopout: m,
-            renderPopout: A.A,
+            renderPopout: y.A,
             compact: !1,
             displayCompactAvatars: !1
         }),
@@ -173,17 +173,17 @@ function H(e) {
         _ = C.hD.useSetting(),
         h = C.rs.useSetting(),
         b = (0, a.bG)([T.A], () => T.A.isDeveloper),
-        A = (0, f.S)((null != (t = g.editedTimestamp) ? t : g.timestamp).valueOf()),
+        y = (0, f.S)((null != (t = g.editedTimestamp) ? t : g.timestamp).valueOf()),
         {
-            content: y,
+            content: A,
             hasSpoilerEmbeds: v,
             hasBailedAst: E
-        } = (0, x.A)(g, {
+        } = (0, O.A)(g, {
             hideSimpleEmbedContent: _ && h,
             isInteracting: !1,
             formatInline: !1,
-            allowList: A,
-            allowHeading: A,
+            allowList: y,
+            allowHeading: y,
             allowLinks: !0,
             allowDevLinks: b,
             previewLinkTarget: !0
@@ -195,11 +195,11 @@ function H(e) {
             className: G.Qs,
             children: [(0, r.jsx)(F, {
                 mergedMessageRecord: g,
-                content: y,
+                content: A,
                 channel: j,
                 reportingUserId: null == o || null == (l = o.moderatorReport) ? void 0 : l.reporting_user_id,
                 reportedTimestamp: s.timestamp
-            }), (0, O.A)({
+            }), (0, x.A)({
                 channelMessageProps: {
                     message: g,
                     channel: j,

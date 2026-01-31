@@ -18,11 +18,11 @@ var r = n(627968),
     _ = n(733391),
     h = n(832163),
     b = n(317560),
-    A = n(533406),
-    y = n(300182),
+    y = n(533406),
+    A = n(300182),
     v = n(183802),
-    x = n(818348),
-    O = n(985018),
+    O = n(818348),
+    x = n(985018),
     E = n(928625);
 
 function j(e) {
@@ -54,7 +54,7 @@ function j(e) {
             })
         }, [w, null == L ? void 0 : L.applicationId, P, k]),
         V = i.useCallback(() => {
-            null != L && (0, A.a)(L, {
+            null != L && (0, y.a)(L, {
                 isGift: !1
             }, {
                 analyticsLocations: [o.A.SLAYER_STOREFRONT_PRODUCT_DETAILS_EMBED_PURCHASE_BUTTON],
@@ -62,7 +62,7 @@ function j(e) {
             })
         }, [L, P]),
         z = i.useCallback(() => {
-            null != L && (0, A.a)(L, {
+            null != L && (0, y.a)(L, {
                 isGift: !0,
                 giftRecipient: null != U ? U : void 0
             }, {
@@ -101,7 +101,7 @@ function j(e) {
                     }), (0, r.jsx)(s.Text, {
                         variant: "text-md/bold",
                         lineClamp: 1,
-                        children: (0, f.$g)(null != (t = null == (I = L.price) ? void 0 : I.amount) ? t : 0, null != (n = null == (S = L.price) ? void 0 : S.currency) ? n : x.Yr.USD)
+                        children: (0, f.$g)(null != (t = null == (I = L.price) ? void 0 : I.amount) ? t : 0, null != (n = null == (S = L.price) ? void 0 : S.currency) ? n : O.Yr.USD)
                     })]
                 })]
             }), (0, r.jsxs)(l.e2v, {
@@ -110,17 +110,17 @@ function j(e) {
                 children: [(0, r.jsx)(l.$nd, {
                     variant: "secondary",
                     onClick: H,
-                    text: O.intl.string(O.t.KLBTgF),
+                    text: x.intl.string(x.t.KLBTgF),
                     fullWidth: !0
                 }), (0, r.jsx)(l.$nd, {
                     variant: "primary",
                     onClick: V,
-                    text: G ? O.intl.format(O.t.Xp5WTn, {
-                        price: (0, f.$g)(null != (j = null == (T = L.price) ? void 0 : T.amount) ? j : 0, null != (C = null == (N = L.price) ? void 0 : N.currency) ? C : x.Yr.USD)
-                    }) : O.intl.string(O.t.cg0M2H),
+                    text: G ? x.intl.format(x.t.Xp5WTn, {
+                        price: (0, f.$g)(null != (j = null == (T = L.price) ? void 0 : T.amount) ? j : 0, null != (C = null == (N = L.price) ? void 0 : N.currency) ? C : O.Yr.USD)
+                    }) : x.intl.string(x.t.cg0M2H),
                     fullWidth: !0,
                     disabled: !G
-                }), (0, r.jsx)(y.A, {
+                }), (0, r.jsx)(A.A, {
                     onGift: z
                 })]
             })]

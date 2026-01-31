@@ -1,6 +1,6 @@
 /** chunk id: 740916, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => O
+    A: () => x
 }), n(65821);
 var r, i, l, a = n(627968),
     s = n(64700),
@@ -58,7 +58,7 @@ let g = e => {
             children: (0, d.A)(t, !1)
         })
     },
-    A = e => {
+    y = e => {
         let {
             sku: t,
             className: n
@@ -68,7 +68,7 @@ let g = e => {
             children: (0, d.A)(t)
         })
     },
-    y = e => {
+    A = e => {
         let {
             sku: t,
             className: n
@@ -79,7 +79,7 @@ let g = e => {
                 sku: t
             }), (0, a.jsx)(b, {
                 sku: t
-            }), (0, a.jsx)(A, {
+            }), (0, a.jsx)(y, {
                 sku: t
             })]
         })
@@ -93,7 +93,7 @@ let g = e => {
             children: p.intl.string(p.t.QQsaCc)
         })
     };
-class x extends(r = s.PureComponent) {
+class O extends(r = s.PureComponent) {
     getState() {
         let {
             inLibrary: e,
@@ -128,12 +128,12 @@ class x extends(r = s.PureComponent) {
                     className: c()(t, n)
                 });
             case 2:
-                return (0, a.jsx)(y, {
+                return (0, a.jsx)(A, {
                     sku: r,
                     className: c()(t, n)
                 });
             default:
-                return (0, a.jsx)(A, {
+                return (0, a.jsx)(y, {
                     className: c()(t, n),
                     sku: r
                 })
@@ -155,12 +155,12 @@ class x extends(r = s.PureComponent) {
                     className: c()(m.OB, t)
                 });
             case 2:
-                return (0, a.jsx)(y, {
+                return (0, a.jsx)(A, {
                     sku: n,
                     className: c()(m.dk, t)
                 });
             default:
-                return (0, a.jsx)(A, {
+                return (0, a.jsx)(y, {
                     className: c()(m.dk, t),
                     sku: n
                 })
@@ -179,7 +179,7 @@ class x extends(r = s.PureComponent) {
                 t = (0, a.jsxs)(s.Fragment, {
                     children: [(0, a.jsxs)("div", {
                         className: m.nM,
-                        children: [(0, a.jsx)(A, {
+                        children: [(0, a.jsx)(y, {
                             sku: r
                         }), (0, a.jsx)(h, {
                             sku: r
@@ -190,7 +190,7 @@ class x extends(r = s.PureComponent) {
                 });
                 break;
             default:
-                t = (0, a.jsx)(A, {
+                t = (0, a.jsx)(y, {
                     sku: r
                 })
         }
@@ -217,10 +217,10 @@ class x extends(r = s.PureComponent) {
                 throw Error("Invalid Price Unit Type")
         }
     }
-}(l = "Types") in x ? Object.defineProperty(x, l, {
+}(l = "Types") in O ? Object.defineProperty(O, l, {
     value: f,
     enumerable: !0,
     configurable: !0,
     writable: !0
-}) : x[l] = f;
-let O = x
+}) : O[l] = f;
+let x = O

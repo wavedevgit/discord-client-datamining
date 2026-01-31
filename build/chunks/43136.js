@@ -19,11 +19,11 @@ var r = n(627968),
     _ = n(287809),
     h = n(792831),
     b = n(427262),
-    A = n(218394),
-    y = n(386952),
+    y = n(218394),
+    A = n(386952),
     v = n(381969),
-    x = n(920814),
-    O = n(235665),
+    O = n(920814),
+    x = n(235665),
     E = n(985018),
     j = n(425666);
 
@@ -52,7 +52,7 @@ function I(e) {
     let {
         coverImageAsset: t,
         isPreview: n = !1
-    } = e, i = f.kt.useSetting(), l = (0, A.j)() && i, [a, s] = (0, m.A)(t, l), o = l ? (0, r.jsx)(d.A, {
+    } = e, i = f.kt.useSetting(), l = (0, y.j)() && i, [a, s] = (0, m.A)(t, l), o = l ? (0, r.jsx)(d.A, {
         autoPlay: !0,
         loop: !0,
         className: j.N4,
@@ -93,12 +93,12 @@ function S(e) {
             nickcolor: null != (t = null == r ? void 0 : r.colorString) ? t : void 0
         }
     }, [m]), {
-        isTruncated: A,
+        isTruncated: y,
         ExpandableTextContainer: S
-    } = (0, y.e)(), T = (null != (t = null == d || null == (n = d.description) ? void 0 : n.trim().length) ? t : 0) > 0, [N, P] = i.useState(1), w = (0, c.A)("(max-width: 1439px)"), {
+    } = (0, A.e)(), T = (null != (t = null == d || null == (n = d.description) ? void 0 : n.trim().length) ? t : 0) > 0, [N, P] = i.useState(1), w = (0, c.A)("(max-width: 1439px)"), {
         selectedTab: R,
         isPhantomPreview: D
-    } = (0, v.k)(), L = R === x.B.GUILD_PRODUCTS_PREVIEW ? E.intl.string(E.t["LvXy/H"]) : E.intl.string(E.t.XyqKh8), M = T ? (0, r.jsxs)(r.Fragment, {
+    } = (0, v.k)(), L = R === O.B.GUILD_PRODUCTS_PREVIEW ? E.intl.string(E.t["LvXy/H"]) : E.intl.string(E.t.XyqKh8), M = T ? (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(S, {
             lineClamp: w || 2 === N ? 2 : 3,
             children: (0, r.jsx)(o.Text, {
@@ -106,11 +106,11 @@ function S(e) {
                 color: "text-default",
                 children: null == d ? void 0 : d.description
             })
-        }), A && (0, r.jsxs)(r.Fragment, {
+        }), y && (0, r.jsxs)(r.Fragment, {
             children: [(0, r.jsx)(o.hKd, {
                 size: 4
             }), (0, r.jsx)(C, {
-                onClick: () => (0, O.A)({
+                onClick: () => (0, x.A)({
                     guildId: m
                 })
             })]

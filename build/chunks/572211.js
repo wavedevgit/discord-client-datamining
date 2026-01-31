@@ -1,7 +1,7 @@
 /** chunk id: 572211, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    h: () => x,
-    u: () => y
+    h: () => O,
+    u: () => A
 }), n(896048), n(693327), n(554719), n(680155), n(323874), n(14289), n(35956);
 var r, i = n(627968),
     l = n(64700),
@@ -18,8 +18,8 @@ var r, i = n(627968),
     _ = n(354287),
     h = n(768349),
     b = n(838541),
-    A = n(112247),
-    y = ((r = {})[r.BOT = 0] = "BOT", r[r.ACTIVITY = 1] = "ACTIVITY", r);
+    y = n(112247),
+    A = ((r = {})[r.BOT = 0] = "BOT", r[r.ACTIVITY = 1] = "ACTIVITY", r);
 
 function v(e) {
     let {
@@ -30,7 +30,7 @@ function v(e) {
     return null != t ? (0, i.jsx)(u.DUT, {
         onClick: t,
         className: s()({
-            [A.or]: null != t
+            [y.or]: null != t
         }, r),
         children: n
     }) : (0, i.jsx)("div", {
@@ -39,11 +39,11 @@ function v(e) {
     })
 }
 
-function x(e) {
-    var t, n, r, a, y;
+function O(e) {
+    var t, n, r, a, A;
     let {
-        title: x,
-        header: O,
+        title: O,
+        header: x,
         footer: E,
         info: j,
         staticBannerSrc: C,
@@ -66,7 +66,7 @@ function x(e) {
         guildId: null == t ? void 0 : t.guildId,
         channelId: null == t ? void 0 : t.channelId,
         messageId: null == t ? void 0 : t.messageId,
-        isDeadEnd: null != (y = null == t ? void 0 : t.isDeadEnd) && y
+        isDeadEnd: null != (A = null == t ? void 0 : t.isDeadEnd) && A
     };
     let {
         primaryColor: L,
@@ -84,7 +84,7 @@ function x(e) {
                 messageId: w.messageId
             }), G.current = !0
         }
-    }, void 0), F = null != C, H = null != I && !1 === U, V = F || H, z = 0 === S ? A.pv : A.$g, W = l.useRef(null), K = l.useCallback(() => {
+    }, void 0), F = null != C, H = null != I && !1 === U, V = F || H, z = 0 === S ? y.pv : y.$g, W = l.useRef(null), K = l.useCallback(() => {
         let e = W.current;
         null == e || ("hidden" === getComputedStyle(e).visibility ? e.pause() : e.play())
     }, []), Y = l.useMemo(() => !!H && new URL(I).pathname.endsWith(".gif"), [H, I]), q = l.useMemo(() => {
@@ -112,14 +112,14 @@ function x(e) {
     }, [D, w]);
     return (0, i.jsxs)("div", {
         ref: B,
-        className: A.E6,
+        className: y.E6,
         children: [V && (0, i.jsxs)(v, {
             onClick: J,
-            className: s()(A.cy, z, {
-                [A.wk]: H
+            className: s()(y.cy, z, {
+                [y.wk]: H
             }),
             children: [H && (Y ? (0, i.jsx)("div", {
-                className: A.O9,
+                className: y.O9,
                 style: {
                     backgroundImage: "url(".concat(I, ")")
                 }
@@ -129,9 +129,9 @@ function x(e) {
                 mediaLayoutType: b.dG.MOSAIC,
                 loop: !0,
                 muted: !0,
-                className: A.O9
+                className: y.O9
             })), F && (0, i.jsx)("div", {
-                className: A.LR,
+                className: y.LR,
                 style: {
                     backgroundImage: "url(".concat(C, ")")
                 },
@@ -142,37 +142,37 @@ function x(e) {
                 background: k
             },
             children: [(0, i.jsxs)("div", {
-                className: A.hQ,
-                children: [null != O && (0, i.jsx)(u.EYj, {
+                className: y.hQ,
+                children: [null != x && (0, i.jsx)(u.EYj, {
                     variant: "text-sm/semibold",
                     color: "none",
-                    className: A.wx,
-                    children: O
+                    className: y.wx,
+                    children: x
                 }), (0, i.jsxs)(v, {
                     onClick: q,
-                    className: s()(A.FG, {
-                        [A.ry]: null != q
+                    className: s()(y.FG, {
+                        [y.ry]: null != q
                     }),
                     children: [null != T && (0, i.jsx)("div", {
-                        className: A._8,
+                        className: y._8,
                         style: {
                             backgroundImage: "url(".concat(T, ")")
                         }
                     }), (0, i.jsxs)("div", {
-                        className: A.Qs,
+                        className: y.Qs,
                         children: [(0, i.jsx)(u.EYj, {
                             variant: "text-md/semibold",
                             color: "none",
                             lineClamp: 1,
-                            className: A.eu,
-                            children: x
+                            className: y.eu,
+                            children: O
                         }), (0, i.jsx)("div", {
-                            className: A.rj,
+                            className: y.rj,
                             children: j
                         })]
                     })]
                 }), N.length > 0 && (0, i.jsx)("div", {
-                    className: s()(A.AC, P ? A.ad : null),
+                    className: s()(y.AC, P ? y.ad : null),
                     children: N.map((e, t) => {
                         let {
                             label: n,
@@ -208,7 +208,7 @@ function x(e) {
                                 }
                             })
                         }, n) : (0, i.jsxs)("div", {
-                            className: A.uc,
+                            className: y.uc,
                             children: [(0, i.jsx)(u.$nd, {
                                 variant: g ? "overlay-primary" : "overlay-secondary",
                                 disabled: a || null != s,
@@ -230,7 +230,7 @@ function x(e) {
                             }), null != s && (0, i.jsx)(u.EYj, {
                                 variant: "text-xs/medium",
                                 color: "none",
-                                className: A.H$,
+                                className: y.H$,
                                 children: s
                             })]
                         }, n)

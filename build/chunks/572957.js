@@ -1,6 +1,6 @@
 /** chunk id: 572957, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => A
+    A: () => y
 }), n(896048), n(938796);
 var r, i, l = n(665260),
     a = n(311907),
@@ -28,7 +28,7 @@ class b extends(r = a.Ay.Store) {
     configurable: !0,
     writable: !0
 }) : b[i] = "ChannelFollowingPublishBumpStore";
-let A = new b(o.h, {
+let y = new b(o.h, {
     MESSAGE_CREATE: function(e) {
         var t;
         let {

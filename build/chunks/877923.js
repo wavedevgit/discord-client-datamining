@@ -22,7 +22,7 @@ function g(e) {
         channel: g
     } = e, _ = (0, l.bG)([o.A], () => o.A.useReducedMotion), h = i.useRef(null), {
         createMultipleConfettiAt: b
-    } = i.useContext(c.x), A = i.useCallback(e => ({
+    } = i.useContext(c.x), y = i.useCallback(e => ({
         size: {
             type: "static-random",
             minValue: e.confettiSize - 6,
@@ -45,7 +45,7 @@ function g(e) {
         if (_) return;
         let t = null == (e = h.current) ? void 0 : e.getBoundingClientRect();
         if (null == t) return;
-        let n = A({
+        let n = y({
                 confettiSize: 8
             }),
             r = new a.J_(1e3, () => {
@@ -54,7 +54,7 @@ function g(e) {
         return r.delay(), () => {
             r.cancel()
         }
-    }, [b, h, _, A]), (0, r.jsx)(p.A, {
+    }, [b, h, _, y]), (0, r.jsx)(p.A, {
         contentClassName: f.o9,
         iconContainerClassName: f.zc,
         iconNode: (0, r.jsx)(s.XFE, {

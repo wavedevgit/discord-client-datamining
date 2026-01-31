@@ -1,6 +1,6 @@
 /** chunk id: 57718, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    Ay: () => A,
+    Ay: () => y,
     C8: () => b,
     LU: () => h
 });
@@ -8,7 +8,7 @@ var r, i, l = n(627968);
 n(64700);
 var a = n(503698),
     s = n.n(a),
-    o = n(970984),
+    o = n(353709),
     c = n(827734),
     u = n(582754),
     d = n(397927),
@@ -19,7 +19,7 @@ var a = n(503698),
     _ = n(995360),
     h = ((r = {})[r.SMALL = 24] = "SMALL", r[r.MEDIUM = 32] = "MEDIUM", r),
     b = ((i = {})[i.SMALL = 2] = "SMALL", i[i.MEDIUM = 8] = "MEDIUM", i);
-let A = function(e) {
+let y = function(e) {
     let {
         className: t,
         logotypeClassName: n,
@@ -28,19 +28,19 @@ let A = function(e) {
         separatorSpacing: a = 2,
         theme: h = g.NJ8.DARK,
         withCosponsor: b = !0,
-        withGameTile: A = !0,
-        logotypeStyle: y,
+        withGameTile: y = !0,
+        logotypeStyle: A,
         onLoadComplete: v
-    } = e, x = (0, u.Mw)(h) ? g.NJ8.DARK : g.NJ8.LIGHT, O = (0, p.a5)(i.id, x), E = b && null != i.config.cosponsorMetadata && null != O;
+    } = e, O = (0, u.Mw)(h) ? g.NJ8.DARK : g.NJ8.LIGHT, x = (0, p.a5)(i.id, O), E = b && null != i.config.cosponsorMetadata && null != x;
     return (0, l.jsxs)("div", {
         className: s()(_.Iu, t),
-        children: [A && (0, l.jsx)(f.Sn, {
+        children: [y && (0, l.jsx)(f.Sn, {
             id: "QuestPartnerBranding_gameTile",
             children: e => (0, l.jsx)("img", {
                 ref: e,
                 className: _._Y,
                 alt: "",
-                src: (0, m.tW)(i, m.fY.GAME_TILE, x).url,
+                src: (0, m.tW)(i, m.fY.GAME_TILE, O).url,
                 style: {
                     borderRadius: function(e) {
                         switch (e) {
@@ -62,9 +62,9 @@ let A = function(e) {
                 className: s()(_.lW, n, {
                     [_.TO]: E
                 }),
-                style: y,
+                style: A,
                 alt: i.config.messages.gameTitle,
-                src: (0, m.tW)(i, m.fY.LOGO_TYPE, x).url,
+                src: (0, m.tW)(i, m.fY.LOGO_TYPE, O).url,
                 onLoad: v
             })
         }), E && (0, l.jsxs)(l.Fragment, {
@@ -84,9 +84,9 @@ let A = function(e) {
                     return (0, l.jsx)(o.animated.img, {
                         ref: e,
                         className: s()(_.lW, _.TO, n),
-                        style: y,
+                        style: A,
                         alt: null != (t = null == (r = i.config.cosponsorMetadata) ? void 0 : r.name) ? t : "",
-                        src: O.url,
+                        src: x.url,
                         onLoad: v
                     })
                 }

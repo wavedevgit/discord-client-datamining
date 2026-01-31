@@ -115,8 +115,8 @@ var r = n(627968),
     e5 = n(856588),
     e8 = n(612181),
     e2 = n(723702),
-    e4 = n(837921),
-    e3 = n(715671),
+    e3 = n(837921),
+    e4 = n(715671),
     te = n(652215),
     tt = n(746080),
     tn = n(771016),
@@ -145,11 +145,11 @@ function tl(e) {
 }
 n(115036), n(943577), n(131319), n(794383), n(845618), n(712687), n(328968), n(67480), n(874486), n(162605), n(2866), n(628965), n(836602), n(833336), n(555337), n(863036), n(291731), n(176360), n(972937), n(279061), n(750128), n(921955);
 let ta = !1;
-(0, C.as)(), s.Ay.initialize(), eT.A.loadServer(), e2.isPlatformEmbedded && (e4.Ay.on("USER_SETTINGS_OPEN", (e, t) => {
+(0, C.as)(), s.Ay.initialize(), eT.A.loadServer(), e2.isPlatformEmbedded && (e3.Ay.on("USER_SETTINGS_OPEN", (e, t) => {
     e$.A.getLayers().includes(te.zgK.USER_SETTINGS) || (0, eY.openUserSettings)()
-}), e4.Ay.on("LAUNCH_APPLICATION", (e, t) => {
+}), e3.Ay.on("LAUNCH_APPLICATION", (e, t) => {
     let n = eJ.A.getActiveLibraryApplication(t);
-    e3.playApplication(t, n, {
+    e4.playApplication(t, n, {
         analyticsParams: {
             location: {
                 page: te.liQ.DIRECT,
@@ -345,7 +345,7 @@ let tg = [{
                     case "launch": {
                         let e = eJ.A.getActiveLibraryApplication(n);
                         if (null == e) return;
-                        e3.playApplication(e.id, e, {
+                        e4.playApplication(e.id, e, {
                             analyticsParams: {
                                 location: {
                                     page: te.liQ.DIRECT,
@@ -552,7 +552,7 @@ function tm(e) {
 }
 class tA extends i.PureComponent {
     componentDidMount() {
-        e4.Ay.setZoomFactor(A.A.zoom), eT.A.init(), j.A.initialize(), e_.A.initialize(), K.A.initialize(), eW.A.initialize(), W.A.initialize(), eO.A.initialize(), U.A.initialize(), es.A.initialize(), _.A.init(), z.A.init(), q.A.init(), ep.A.initialize(), v.A.initialize(), B.A.initialize(), ey.A.initialize(), y.Ay.initialize(), H.Ay.initialize(), eK.A.initialize(), er.Ay.initialize(), eA.A.initialize(), O.A.initialize(), ei.A.init(), w.A.init(), e5.A.init(), E.A.initialize(), ek.A.init(), e9.A.init(), eV.A.init(), eL.A.initialize(), eR.A.initialize(), eG.A.initialize(), eH.A.init(), V.A.initialize(), b.A.initialize(), ej.A.initialize(), ew.A.initialize(), ef.A.initialize(), eg.A.initialize(), em.A.initialize(), L.A.initialize(), R.A.initialize(), Y.A.initialize(), ea.A.initialize(), el.A.init({
+        e3.Ay.setZoomFactor(A.A.zoom), eT.A.init(), j.A.initialize(), e_.A.initialize(), K.A.initialize(), eW.A.initialize(), W.A.initialize(), eO.A.initialize(), U.A.initialize(), es.A.initialize(), _.A.init(), z.A.init(), q.A.init(), ep.A.initialize(), v.A.initialize(), B.A.initialize(), ey.A.initialize(), y.Ay.initialize(), H.Ay.initialize(), eK.A.initialize(), er.Ay.initialize(), eA.A.initialize(), O.A.initialize(), ei.A.init(), w.A.init(), e5.A.init(), E.A.initialize(), ek.A.init(), e9.A.init(), eV.A.init(), eL.A.initialize(), eR.A.initialize(), eG.A.initialize(), eH.A.init(), V.A.initialize(), b.A.initialize(), ej.A.initialize(), ew.A.initialize(), ef.A.initialize(), eg.A.initialize(), em.A.initialize(), L.A.initialize(), R.A.initialize(), Y.A.initialize(), ea.A.initialize(), el.A.init({
             hasModalOpen: o.ueM,
             openModal: () => (0, o.mMO)(async () => {
                 let {

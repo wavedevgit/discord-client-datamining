@@ -19,7 +19,7 @@ var r = n(627968),
     h = n(652215),
     b = n(48447);
 
-function A(e) {
+function y(e) {
     let {
         assets: t,
         currentUser: n,
@@ -28,7 +28,7 @@ function A(e) {
     return t[i]
 }
 
-function y(e) {
+function A(e) {
     let {
         currentUser: t,
         channel: n,
@@ -37,11 +37,11 @@ function y(e) {
         stickers: d,
         event: p,
         eventProperties: m
-    } = e, g = i.useMemo(() => A({
+    } = e, g = i.useMemo(() => y({
         assets: d,
         currentUser: t,
         message: l
-    }), [d, t, l]), h = i.useMemo(() => A({
+    }), [d, t, l]), h = i.useMemo(() => y({
         assets: u,
         currentUser: t,
         message: l
@@ -154,7 +154,7 @@ function v(e) {
     });
     return null != c && f ? (0, r.jsx)("div", {
         className: b.S,
-        children: (0, r.jsx)(y, {
+        children: (0, r.jsx)(A, {
             currentUser: c,
             channel: t,
             message: n,

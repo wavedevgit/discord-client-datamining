@@ -1,6 +1,6 @@
 /** chunk id: 336589, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    I: () => y
+    I: () => A
 });
 var r = n(627968),
     i = n(64700),
@@ -18,7 +18,7 @@ var r = n(627968),
     _ = n(652215),
     h = n(985018),
     b = n(182777);
-let A = e => {
+let y = e => {
         let {
             channel: t,
             message: n
@@ -48,7 +48,7 @@ let A = e => {
             })
         })
     },
-    y = e => {
+    A = e => {
         let {
             message: t,
             channel: n
@@ -63,7 +63,7 @@ let A = e => {
                 g = null != f && (f.systemChannelFlags & _.ogj.SUPPRESS_JOIN_NOTIFICATION_REPLIES) == 0;
             return a && !l && !s && !o && g
         });
-        return null != i && a ? (0, r.jsx)(A, {
+        return null != i && a ? (0, r.jsx)(y, {
             message: t,
             channel: n
         }) : null

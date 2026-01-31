@@ -2,11 +2,11 @@
 n.d(t, {
     A: () => o
 });
-var r = n(627968);
+var l = n(627968);
 n(64700);
-var l = n(503698),
-    i = n.n(l),
-    s = n(397927),
+var r = n(503698),
+    s = n.n(r),
+    i = n(397927),
     a = n(704691);
 
 function o(e) {
@@ -14,9 +14,9 @@ function o(e) {
         children: t,
         className: n
     } = e;
-    return (0, r.jsx)(s.Text, {
+    return (0, l.jsx)(i.Text, {
         color: "none",
-        className: i()(a.D, n),
+        className: s()(a.D, n),
         variant: "text-md/medium",
         children: t
     })

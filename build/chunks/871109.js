@@ -28,8 +28,8 @@ let b = new s.J(e => {
         let t;
         return t = u.default.extractTimestamp(e.id), e.published ? -t : -t + 1e12
     }),
-    A = [];
-class y extends(r = a.Ay.Store) {
+    y = [];
+class A extends(r = a.Ay.Store) {
     getGuildProductsForGuildFetchState(e) {
         var t;
         return null != (t = p[e]) ? t : 0
@@ -41,7 +41,7 @@ class y extends(r = a.Ay.Store) {
         let {
             publishedOnly: n
         } = t;
-        return null == e ? A : b.values(n ? h(e) : _(e))
+        return null == e ? y : b.values(n ? h(e) : _(e))
     }
     getGuildProductFetchState(e) {
         var t;
@@ -51,13 +51,13 @@ class y extends(r = a.Ay.Store) {
         var t;
         return Date.now() - (null != (t = f[e]) ? t : 0) > g
     }
-}(l = "displayName") in y ? Object.defineProperty(y, l, {
+}(l = "displayName") in A ? Object.defineProperty(A, l, {
     value: "GuildProductsStore",
     enumerable: !0,
     configurable: !0,
     writable: !0
-}) : y[l] = "GuildProductsStore";
-let v = new y(o.h, {
+}) : A[l] = "GuildProductsStore";
+let v = new A(o.h, {
     CONNECTION_OPEN: function() {
         b.clear(), p = {}, m = {}, f = {}
     },

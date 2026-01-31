@@ -1,6 +1,6 @@
 /** chunk id: 602902, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    K: () => A
+    K: () => y
 }), n(321073), n(896048);
 var r = n(627968);
 n(64700);
@@ -19,18 +19,18 @@ var i = n(192308),
     _ = n(399925),
     h = n(696016),
     b = n(652215);
-async function A(e, t) {
+async function y(e, t) {
     let {
-        channelId: A,
-        analyticsLocations: y,
+        channelId: y,
+        analyticsLocations: A,
         messageReference: v
-    } = t, x = o.A.getChannel(A);
-    if (null != x) {
+    } = t, O = o.A.getChannel(y);
+    if (null != O) {
         if (null != v) {
             let e = u.A.getMessage(v.channel_id, v.message_id);
             null != e && (0, s.Yf)({
                 message: e,
-                channel: x,
+                channel: O,
                 shouldMention: !1,
                 showMentionToggle: !1
             })
@@ -39,9 +39,9 @@ async function A(e, t) {
             let t = [],
                 n = [];
             for (let r of e) {
-                var O;
+                var x;
                 let e = await (0, _.VO)(r),
-                    i = null != (O = r.name) ? O : (0, h.cM)(p.default.extractTimestamp(r.id)),
+                    i = null != (x = r.name) ? x : (0, h.cM)(p.default.extractTimestamp(r.id)),
                     l = (0, g.A)(i);
                 if (r.type === f.nQ.CLIP || r.type === f.nQ.VOICE_CLIP) {
                     let i = "".concat("" !== l ? l : "clip", ".mp4");
@@ -57,14 +57,14 @@ async function A(e, t) {
                     })), n.push({})
                 }
                 d.default.track(b.HAw.CLIP_SHARED, {
-                    location_stack: y,
-                    guild_id: x.guild_id,
-                    channel_id: x.id,
-                    channel_type: x.type,
+                    location_stack: A,
+                    guild_id: O.guild_id,
+                    channel_id: O.id,
+                    channel_type: O.type,
                     application_id: r.applicationId,
                     clip_id: r.id
                 })
-            }(0, m.R)(t, x, c.C.ChannelMessage, {
+            }(0, m.R)(t, O, c.C.ChannelMessage, {
                 filesMetadata: n,
                 origin: "unknown:clip_share"
             }), i.closeAllModals()
@@ -96,7 +96,7 @@ async function A(e, t) {
                 return e
             }({}, n), l = l = {
                 clips: e,
-                analyticsLocations: y
+                analyticsLocations: A
             }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
                 var n = Object.keys(e);
                 if (Object.getOwnPropertySymbols) {

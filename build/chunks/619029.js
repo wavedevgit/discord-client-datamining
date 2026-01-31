@@ -6,8 +6,8 @@ var r = n(627968);
 n(64700);
 var i = n(311907),
     l = n(397927),
-    a = n(793574),
-    o = n(688810),
+    o = n(793574),
+    a = n(688810),
     s = n(206835),
     c = n(961350),
     u = n(696451),
@@ -53,13 +53,13 @@ function N(e) {
     let {
         guildId: t,
         analyticsLocations: n
-    } = e, [i, a] = (0, d.j8)({
+    } = e, [i, o] = (0, d.j8)({
         guildId: t,
         analyticsLocations: n
-    }), o = a ? T.intl.string(T.t["6ndMcq"]) : T.intl.string(T.t["0eiu6J"]), s = a ? T.intl.string(T.t.S09nw4) : T.intl.string(T.t.tEttXd);
+    }), a = o ? T.intl.string(T.t["6ndMcq"]) : T.intl.string(T.t["0eiu6J"]), s = o ? T.intl.string(T.t.S09nw4) : T.intl.string(T.t.tEttXd);
     return (0, r.jsxs)(l.$Td, {
         color: l.Hv$.DANGER,
-        children: [o, (0, r.jsx)(l.zr9, {
+        children: [a, (0, r.jsx)(l.zr9, {
             onClick: i,
             children: s
         })]
@@ -100,7 +100,7 @@ function R(e) {
         return l
     }(e, ["analyticsLocations"]), {
         analyticsLocations: l
-    } = (0, o.Ay)(t, a.A.AUTOMOD_NAGBAR_NOTICE), s = (0, i.bG)([c.default, u.Ay], () => {
+    } = (0, a.Ay)(t, o.A.AUTOMOD_NAGBAR_NOTICE), s = (0, i.bG)([c.default, u.Ay], () => {
         if (null == n.guildId) return new Set;
         let e = c.default.getId();
         return (0, E.wj)(u.Ay.getMember(n.guildId, e))

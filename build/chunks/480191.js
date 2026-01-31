@@ -18,11 +18,11 @@ var r = n(627968),
     _ = n(22007),
     h = n(77350),
     b = n(112758),
-    A = n(754459),
-    y = n(967144),
+    y = n(754459),
+    A = n(967144),
     v = n(342296),
-    x = n(253932),
-    O = n(696451),
+    O = n(253932),
+    x = n(696451),
     E = n(287809),
     j = n(486020),
     C = n(449054),
@@ -75,13 +75,13 @@ function k(e) {
         channel: B
     } = e, F = i.useRef(null), H = i.useRef(null), V = (0, T.D)(U, G), {
         setPopout: z
-    } = (0, A.A)(G.id, P.Fd), W = (0, b.VL)(G, B, z, !0), K = x.kt.useSetting(), Y = (0, I.j)(), [q, J] = i.useState(!1), [Q, X] = i.useState((null == V ? void 0 : V.coverImage) == null), Z = (0, o.bG)([O.Ay, E.default], () => {
+    } = (0, y.A)(G.id, P.Fd), W = (0, b.VL)(G, B, z, !0), K = O.kt.useSetting(), Y = (0, I.j)(), [q, J] = i.useState(!1), [Q, X] = i.useState((null == V ? void 0 : V.coverImage) == null), Z = (0, o.bG)([x.Ay, E.default], () => {
         var e;
-        return O.Ay.isMember(null == V ? void 0 : V.guildId, null == (e = E.default.getCurrentUser()) ? void 0 : e.id)
-    }, [V]), $ = (0, o.bG)([O.Ay], () => (null == V ? void 0 : V.authorId) != null ? O.Ay.getMember(V.guildId, V.authorId) : null), ee = (0, m.A)((null == $ ? void 0 : $.avatarDecoration) != null ? null == $ ? void 0 : $.avatarDecoration : null == V || null == (l = V.user) ? void 0 : l.avatarDecoration), [et, en, er] = i.useMemo(() => {
+        return x.Ay.isMember(null == V ? void 0 : V.guildId, null == (e = E.default.getCurrentUser()) ? void 0 : e.id)
+    }, [V]), $ = (0, o.bG)([x.Ay], () => (null == V ? void 0 : V.authorId) != null ? x.Ay.getMember(V.guildId, V.authorId) : null), ee = (0, m.A)((null == $ ? void 0 : $.avatarDecoration) != null ? null == $ ? void 0 : $.avatarDecoration : null == V || null == (l = V.user) ? void 0 : l.avatarDecoration), [et, en, er] = i.useMemo(() => {
         var e, t;
         return [null != (e = null == $ ? void 0 : $.colorString) ? e : "inherit", null != (t = null == $ ? void 0 : $.colorStrings) ? t : null, null == $ ? void 0 : $.colorRoleId]
-    }, [$]), ei = (0, y.gn)(null == $ ? void 0 : $.guildId, null != (t = null == V ? void 0 : V.authorId) ? t : void 0, en), {
+    }, [$]), ei = (0, A.gn)(null == $ ? void 0 : $.guildId, null != (t = null == V ? void 0 : V.authorId) ? t : void 0, en), {
         reducedMotion: el
     } = i.useContext(u.CZY), [ea, es] = i.useState(!1), eo = i.useCallback(() => {
         J(!0)

@@ -6,16 +6,16 @@ n.d(t, {
 var r = n(989349),
     i = n.n(r),
     l = n(335871),
-    a = n(594061),
-    o = n(617617),
+    o = n(594061),
+    a = n(617617),
     s = n(431162);
 let c = e => {
         var t;
         if (!u(e)) return !1;
-        let n = null == (t = o.A.settings.userContent) ? void 0 : t.safetyUserSentimentNoticeDismissedAt,
+        let n = null == (t = a.A.settings.userContent) ? void 0 : t.safetyUserSentimentNoticeDismissedAt,
             r = null != n ? l.D.toDate(n) : void 0,
-            a = null != r ? i()().diff(r, "days") : null;
-        if (null != n && !(null != a && a > 30)) return !1;
+            o = null != r ? i()().diff(r, "days") : null;
+        if (null != n && !(null != o && o > 30)) return !1;
         let {
             isEligible: c
         } = s.O.getCurrentConfig({
@@ -28,7 +28,7 @@ let c = e => {
     u = e => null != e && Date.now() - e.createdAt.getTime() > 2592e6,
     E = () => {
         let e = l.D.now();
-        a.wc.updateAsync("userContent", t => {
+        o.wc.updateAsync("userContent", t => {
             t.safetyUserSentimentNoticeDismissedAt = e
-        }, a.Sb.INFREQUENT_USER_ACTION)
+        }, o.Sb.INFREQUENT_USER_ACTION)
     }

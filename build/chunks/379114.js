@@ -19,7 +19,7 @@ var r = n(627968),
     h = n(985018),
     b = n(424288);
 
-function A(e) {
+function y(e) {
     let {
         username: t
     } = e;
@@ -44,7 +44,7 @@ function A(e) {
     })
 }
 
-function y(e) {
+function A(e) {
     let {
         guildId: t,
         user: n,
@@ -60,7 +60,7 @@ function y(e) {
             guildId: t,
             user: n,
             className: b.sz
-        }), (0, r.jsx)(A, {
+        }), (0, r.jsx)(y, {
             username: i
         })]
     })
@@ -72,7 +72,7 @@ function v(e) {
         channel: f,
         message: h,
         compact: b
-    } = e, A = (0, o.Ay)(h), v = function(e) {
+    } = e, y = (0, o.Ay)(h), v = function(e) {
         let {
             author: t,
             channel: n,
@@ -99,18 +99,18 @@ function v(e) {
     }({
         channel: f,
         message: h,
-        author: A
-    }), x = (null == (t = h.roleSubscriptionData) ? void 0 : t.total_months_subscribed) != null && (null == (l = h.roleSubscriptionData) ? void 0 : l.total_months_subscribed) <= 1;
+        author: y
+    }), O = (null == (t = h.roleSubscriptionData) ? void 0 : t.total_months_subscribed) != null && (null == (l = h.roleSubscriptionData) ? void 0 : l.total_months_subscribed) <= 1;
     return null == v ? null : (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(u.A, {
             icon: n(394803),
             timestamp: h.timestamp,
             compact: b,
             children: v
-        }), x && (0, r.jsx)(y, {
+        }), O && (0, r.jsx)(A, {
             guildId: f.guild_id,
             user: h.author,
-            username: A.nick
+            username: y.nick
         }), (0, r.jsx)(m.A, {
             channel: f,
             message: h

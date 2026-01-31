@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(562465),
     i = n(73153),
     l = n(157559),
-    a = n(956793),
-    o = n(95701),
+    o = n(956793),
+    a = n(95701),
     s = n(51271),
     c = n(844944),
     u = n(513461),
@@ -30,8 +30,8 @@ let A = {
             guildId: t,
             status: n = u.B5.SUBMITTED,
             before: l,
-            after: a,
-            limit: o = 25,
+            after: o,
+            limit: a = 25,
             force: s = !1
         } = e, _ = s || !c.A.hasFetched(t);
         if (!c.A.isFetching() && _) {
@@ -44,9 +44,9 @@ let A = {
                         url: d.Rsh.GUILD_JOIN_REQUESTS(t),
                         query: {
                             status: n,
-                            limit: o,
+                            limit: a,
                             before: l,
-                            after: a
+                            after: o
                         },
                         rejectWithError: !1
                     }),
@@ -57,7 +57,7 @@ let A = {
                     status: n,
                     requests: c,
                     total: s,
-                    limit: o,
+                    limit: a,
                     guildId: t
                 }), e
             } catch (e) {
@@ -97,18 +97,18 @@ let A = {
         }
     },
     updateGuildJoinRequest: async function(e, t, n) {
-        let a = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : u.B5.APPROVED,
-            o = arguments.length > 4 ? arguments[4] : void 0;
+        let o = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : u.B5.APPROVED,
+            a = arguments.length > 4 ? arguments[4] : void 0;
         (0, s.iN)({
             guildId: e,
-            actionType: a,
+            actionType: o,
             applicationUserId: t
         });
         let c = await r.Bo.patch({
             url: d.Rsh.GUILD_JOIN_REQUEST_ID(e, n),
             body: {
-                action: a,
-                rejection_reason: o
+                action: o,
+                rejection_reason: a
             },
             rejectWithError: !1
         }).catch(e => (e && e.body && e.body.code === d.t02.REQUEST_TO_JOIN_USER_INELIGIBLE && l.A.show({
@@ -194,11 +194,11 @@ let A = {
                 url: d.Rsh.GUILD_JOIN_REQUEST_INTERVIEW(e),
                 rejectWithError: !1
             }),
-            l = (0, o.UE)(n.body);
+            l = (0, a.UE)(n.body);
         return i.h.dispatch({
             type: "CHANNEL_CREATE",
             channel: l
-        }), t && a.default.selectPrivateChannel(l.id), l.id
+        }), t && o.default.selectPrivateChannel(l.id), l.id
     },
     fetchJoinRequestCooldown: async e => {
         try {

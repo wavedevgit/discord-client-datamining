@@ -1,6 +1,6 @@
 /** chunk id: 918085, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => x
+    A: () => O
 }), n(896048);
 var r, i = n(627968),
     l = n(64700),
@@ -17,9 +17,9 @@ var r, i = n(627968),
     _ = n(863574),
     h = n(622413),
     b = n(652215),
-    A = n(430317);
+    y = n(430317);
 
-function y(e, t, n) {
+function A(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -49,7 +49,7 @@ class v extends(r = l.PureComponent) {
         })
     }
     constructor(...e) {
-        super(...e), y(this, "renderActions", () => {
+        super(...e), A(this, "renderActions", () => {
             let {
                 inLibrary: e,
                 sku: t,
@@ -58,20 +58,20 @@ class v extends(r = l.PureComponent) {
                 showBuyInline: l
             } = this.props, a = (l || !t.requiresPayment) && !e;
             return null != n ? n() : (0, i.jsxs)("div", {
-                className: A.ED,
+                className: y.ED,
                 children: [(0, i.jsx)(o.A, {
                     type: o.A.Types.DIRECTORY_TILE,
                     sku: t,
                     inLibrary: e,
-                    className: a && r ? A.ae : A.Ek
+                    className: a && r ? y.ae : y.Ek
                 }), (0, i.jsx)(c.E, {
                     systems: [b.uje.WINDOWS],
-                    className: A.iD
+                    className: y.iD
                 }), a ? (0, i.jsx)("div", {
                     children: "deprecated!"
                 }) : null]
             })
-        }), y(this, "renderMedia", () => {
+        }), A(this, "renderMedia", () => {
             let {
                 playing: e,
                 muted: t,
@@ -84,13 +84,13 @@ class v extends(r = l.PureComponent) {
             return (0, m.bF)(a) ? (0, i.jsx)(f.e, {
                 sku: a,
                 shape: "custom",
-                containerClassName: A.A$,
-                backgroundImageClassName: A.iZ,
-                foregroundImageClassName: A.O7
+                containerClassName: y.A$,
+                backgroundImageClassName: y.iZ,
+                foregroundImageClassName: y.O7
             }) : (0, i.jsxs)(l.Fragment, {
                 children: [(0, i.jsx)(p.A, {
-                    className: s()(A.H1, {
-                        [A.ZC]: o
+                    className: s()(y.H1, {
+                        [y.ZC]: o
                     }),
                     video: null != c.previewVideo ? (0, g.YE)(a.applicationId, c.previewVideo) : void 0,
                     image: null != c.thumbnail ? (0, g.YE)(a.applicationId, c.thumbnail, 600) : void 0,
@@ -99,26 +99,26 @@ class v extends(r = l.PureComponent) {
                     muted: t,
                     placeholder: n,
                     onToggleMute: r,
-                    splashClassName: A.ZI,
-                    splashPlaceholderClassName: A.NB
+                    splashClassName: y.ZI,
+                    splashPlaceholderClassName: y.NB
                 }), a.exclusive ? (0, i.jsx)(d.A, {
-                    className: s()(A.LJ, {
-                        [A.V9]: e
+                    className: s()(y.LJ, {
+                        [y.V9]: e
                     })
                 }) : a.isTheGameAwardsWinner ? (0, i.jsx)(u.A, {
-                    className: s()(A.LJ, {
-                        [A.V9]: e
+                    className: s()(y.LJ, {
+                        [y.V9]: e
                     })
                 }) : null]
             })
         })
     }
 }
-y(v, "defaultProps", {
+A(v, "defaultProps", {
     showMediaPlaceholder: !1,
     isMouseOver: !1,
     showBuyInline: !1,
     isHorizontal: !1,
     isEmbed: !1
 });
-let x = v
+let O = v

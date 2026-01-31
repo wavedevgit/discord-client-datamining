@@ -5,14 +5,14 @@ n.d(t, {
 var r = n(562465),
     i = n(73153),
     l = n(652215);
-let a = "".concat(l.Joy, "/api/v2/scheduled-maintenances"),
-    o = "".concat(l.Joy, "/api/v2/incidents/unresolved.json"),
+let o = "".concat(l.Joy, "/api/v2/scheduled-maintenances"),
+    a = "".concat(l.Joy, "/api/v2/incidents/unresolved.json"),
     s = {
         checkIncidents() {
             Promise.all([r.Bo.get({
-                url: "".concat(a, "/active.json"),
+                url: "".concat(o, "/active.json"),
                 rejectWithError: !0
-            }), r.Bo.get(o)]).then(e => {
+            }), r.Bo.get(a)]).then(e => {
                 let [t, n] = e, [r] = t.body.scheduled_maintenances, [l] = n.body.incidents;
                 i.h.dispatch({
                     type: "STATUS_PAGE_INCIDENT",
@@ -22,7 +22,7 @@ let a = "".concat(l.Joy, "/api/v2/scheduled-maintenances"),
         },
         checkScheduledMaintenances() {
             r.Bo.get({
-                url: "".concat(a, "/upcoming.json"),
+                url: "".concat(o, "/upcoming.json"),
                 rejectWithError: !0
             }).then(e => {
                 let [t] = e.body.scheduled_maintenances;

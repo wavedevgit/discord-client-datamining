@@ -1,6 +1,6 @@
 /** chunk id: 448894, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => O
+    A: () => x
 });
 var r = n(627968),
     i = n(64700),
@@ -18,15 +18,15 @@ var r = n(627968),
     _ = n(860689),
     h = n(427262),
     b = n(168428),
-    A = n(652215),
-    y = n(172799),
+    y = n(652215),
+    A = n(172799),
     v = n(985018),
-    x = n(563111);
+    O = n(563111);
 
-function O(e) {
+function x(e) {
     let t, n, {
             invite: l,
-            currentUserId: O,
+            currentUserId: x,
             guild: E,
             message: j,
             onTransitionToInviteChannel: C,
@@ -39,16 +39,16 @@ function O(e) {
         {
             analyticsLocations: w
         } = (0, d.Ay)(u.A.INVITE_EMBED),
-        R = null != l && l.target_type === y.yV.STREAM && null != l.target_user && null != N,
+        R = null != l && l.target_type === A.yV.STREAM && null != l.target_user && null != N,
         D = null != l && null != P && null != l.channel && null != l.guild && P.channelId === l.channel.id && P.guildId === l.guild.id;
     a()(null != l, "Invite cannot be null");
     let {
         target_type: L,
         target_user: M
     } = l;
-    a()(L === y.yV.STREAM && null != M, "invalid streaming invite");
-    let k = O === M.id,
-        U = l.state === A.elq.ACCEPTING,
+    a()(L === A.yV.STREAM && null != M, "invalid streaming invite");
+    let k = x === M.id,
+        U = l.state === y.elq.ACCEPTING,
         G = i.useCallback(() => {
             let e = "noop";
             R ? (C(), e = "transition") : (I(), e = "accept"), (0, c.he)({
@@ -81,7 +81,7 @@ function O(e) {
             text: v.intl.string(v.t["wS+5Wb"])
         }), (0, r.jsxs)(p.A.Body, {
             children: [(0, r.jsxs)("div", {
-                className: x.iH,
+                className: O.iH,
                 children: [(0, r.jsx)(p.A.Icon, {
                     guild: E,
                     onClick: B && D ? G : void 0

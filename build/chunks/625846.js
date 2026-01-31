@@ -427,7 +427,7 @@ function ew(e) {
         let {
             editorHeight: n,
             isGridLayout: r
-        } = eY.current, l = r ? e1 : eo, i = null == (e = l.current) ? void 0 : e.getScrollerState();
+        } = eY.current, l = r ? e9 : eo, i = null == (e = l.current) ? void 0 : e.getScrollerState();
         null != i && !eX && i.scrollTop > n && (null == (t = l.current) || t.scrollTo({
             to: 0
         }))
@@ -437,7 +437,7 @@ function ew(e) {
         renderListSection: e$,
         renderListItem: e0,
         getListSectionHeight: e3,
-        getListItemHeight: e9
+        getListItemHeight: e1
     } = function(e) {
         let {
             listRef: t,
@@ -499,13 +499,13 @@ function ew(e) {
         goToThread: eK,
         observePostVisibilityAnalytics: ec,
         isShowingSearchResult: eO
-    }), e1 = l.useRef(null), {
+    }), e9 = l.useRef(null), {
         updateMasonryListScrollerRef: e4,
         getItemKey: e8,
         renderGridSection: e6,
         renderGridItem: e7,
-        getGridSectionHeight: e2,
-        getSectionProps: e5,
+        getGridSectionHeight: e5,
+        getSectionProps: e2,
         handleGridFocus: te
     } = function(e) {
         let {
@@ -595,7 +595,7 @@ function ew(e) {
             getGridSectionHeight: l.useCallback(e => 0 === e ? g - 8 - 24 : 2 === e ? o || !u ? 40 : 0 : 1 === e && c && !d ? 40 : 0, [g, c, d, o, u])
         }
     }({
-        masonryListScrollerRef: e1,
+        masonryListScrollerRef: e9,
         threadIdsBySection: eV,
         goToThread: eK,
         renderSectionOrItem: eJ,
@@ -636,7 +636,7 @@ function ew(e) {
             }
         }, [s, n, r, i, a, t])
     }({
-        masonryListScrollerRef: e1,
+        masonryListScrollerRef: e9,
         containerWidth: eM,
         isGridLayout: eu,
         threadIdsBySection: eV,
@@ -646,7 +646,7 @@ function ew(e) {
     let tt = l.useCallback(() => {
             var e, n;
             if (eO) return;
-            let r = eu ? null == (e = e1.current) ? void 0 : e.getScrollerState() : null == (n = eo.current) ? void 0 : n.getScrollerState();
+            let r = eu ? null == (e = e9.current) ? void 0 : e.getScrollerState() : null == (n = eo.current) ? void 0 : n.getScrollerState();
             if (null == r) return;
             (0, ee.pO)({
                 guildId: t.guild_id,
@@ -714,11 +714,11 @@ function ew(e) {
                         columns: eD,
                         sections: eB,
                         getItemKey: e8,
-                        getSectionHeight: e2,
+                        getSectionHeight: e5,
                         getItemHeight: ta,
                         renderSection: e6,
                         renderItem: e7,
-                        getSectionProps: e5,
+                        getSectionProps: e2,
                         onScroll: y ? tt : void 0,
                         chunkSize: 350
                     }, tc, e), H)
@@ -734,7 +734,7 @@ function ew(e) {
                                 className: eb.list,
                                 sections: eB,
                                 sectionHeight: e3,
-                                rowHeight: e9,
+                                rowHeight: e1,
                                 renderRow: e0,
                                 renderSection: e$,
                                 chunkSize: 150,

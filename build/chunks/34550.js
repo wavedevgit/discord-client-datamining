@@ -2,10 +2,10 @@
 n.d(t, {
     $b: () => h,
     Cm: () => _,
-    JO: () => y,
+    JO: () => A,
     dN: () => v,
     h6: () => b,
-    mf: () => A
+    mf: () => y
 });
 var r = n(554146),
     i = n(367727),
@@ -55,7 +55,7 @@ let m = 3 * s.A.Millis.DAY,
             return l.A.isIgnored(e) && t > a && t < g
         })
     },
-    A = (e, t, n, r) => {
+    y = (e, t, n, r) => {
         a.default.track(p.HAw.IGNORE_USER_FEEDBACK_SUBMITTED, {
             rating: e,
             feedback: t,
@@ -63,7 +63,7 @@ let m = 3 * s.A.Millis.DAY,
             skipped: r
         })
     },
-    y = e => e === r.M.AGE_VERIFICATION_SURVEY_MODAL_CLOSE ? d.mg.KID_STARTED : d.mg.GET_STARTED,
+    A = e => e === r.M.AGE_VERIFICATION_SURVEY_MODAL_CLOSE ? d.mg.KID_STARTED : d.mg.GET_STARTED,
     v = (e, t, n, r, i) => {
         a.default.track(p.HAw.AGE_VERIFICATION_FEEDBACK_SUBMITTED, {
             rating: e,

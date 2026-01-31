@@ -18,11 +18,11 @@ var r = n(627968),
     _ = n(427262),
     h = n(326084),
     b = n(851746),
-    A = n(652215),
-    y = n(985018),
+    y = n(652215),
+    A = n(985018),
     v = n(185914),
-    x = n(299148);
-let O = e => {
+    O = n(299148);
+let x = e => {
         let {
             recipient: t,
             status: n,
@@ -70,7 +70,7 @@ let O = e => {
                     variant: "text-md/medium",
                     className: v.nT,
                     color: "text-strong",
-                    children: y.intl.format(y.t.RO3T4B, {
+                    children: A.intl.format(A.t.RO3T4B, {
                         userName: o
                     })
                 })]
@@ -82,7 +82,7 @@ let O = e => {
             }), (0, r.jsx)(u.Button, {
                 variant: "secondary",
                 size: "sm",
-                text: y.intl.string(y.t["g33r/P"]),
+                text: A.intl.string(A.t["g33r/P"]),
                 icon: u.oyn,
                 onClick: () => {
                     var e;
@@ -99,30 +99,30 @@ let O = e => {
             onClose: n,
             isReminderConfirmation: l
         } = e, a = (0, o.bG)([b.A], () => b.A.getReferralsRemaining());
-        f.default.track(A.HAw.REFERRAL_PROGRAM_SHARE_CTA_CLICKED);
+        f.default.track(y.HAw.REFERRAL_PROGRAM_SHARE_CTA_CLICKED);
         let {
             reducedMotion: d
         } = i.useContext(c.CZ);
         return null === a ? (0, r.jsx)(u.y$y, {}) : (0, r.jsx)(s.ExpressiveModal, {
             graphic: d.enabled ? {
-                src: x.A,
+                src: O.A,
                 type: "image"
             } : {
                 rive: u.lBW,
                 type: "rive"
             },
             gradientColor: "nitro-pink",
-            title: 0 === t.filter(e => e.status === h.o.SUCCESS).length ? y.intl.string(y.t["7VBEue"]) : !0 === l ? y.intl.string(y.t.GP5lbq) : y.intl.string(y.t.tKCltd),
-            subtitle: !0 === l ? y.intl.format(y.t["4gJJfD"], {
-                helpdeskArticle: g.A.getArticleURL(A.MVz.REFERRAL_PROGRAM)
-            }) : y.intl.format(y.t.AwGSWl, {
-                helpdeskArticle: g.A.getArticleURL(A.MVz.REFERRAL_PROGRAM)
+            title: 0 === t.filter(e => e.status === h.o.SUCCESS).length ? A.intl.string(A.t["7VBEue"]) : !0 === l ? A.intl.string(A.t.GP5lbq) : A.intl.string(A.t.tKCltd),
+            subtitle: !0 === l ? A.intl.format(A.t["4gJJfD"], {
+                helpdeskArticle: g.A.getArticleURL(y.MVz.REFERRAL_PROGRAM)
+            }) : A.intl.format(A.t.AwGSWl, {
+                helpdeskArticle: g.A.getArticleURL(y.MVz.REFERRAL_PROGRAM)
             }),
             onClose: n,
             transitionState: s.ip4.ENTERED,
             children: (0, r.jsx)("div", {
                 className: v.Hz,
-                children: t.map(e => (0, r.jsx)(O, {
+                children: t.map(e => (0, r.jsx)(x, {
                     recipient: e.recipient,
                     status: e.status,
                     onClose: n

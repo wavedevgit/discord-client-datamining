@@ -5,8 +5,8 @@ n.d(t, {
 var r, i = n(627968);
 n(64700);
 var l = n(503698),
-    a = n.n(l),
-    o = n(953727),
+    o = n.n(l),
+    a = n(953727),
     s = n(106199),
     c = ((r = {}).LEFT = "LEFT", r.RIGHT = "RIGHT", r.UP = "UP", r.DOWN = "DOWN", r.UP_LEFT = "UP_LEFT", r.DOWN_RIGHT = "DOWN_RIGHT", r);
 let u = e => {
@@ -53,10 +53,10 @@ let u = e => {
             })
         }
         return e
-    }({}, (0, o.A)(A)), n = n = {
+    }({}, (0, a.A)(A)), n = n = {
         width: r,
         height: l,
-        className: a()(d, function(e) {
+        className: o()(d, function(e) {
             switch (e) {
                 case "LEFT":
                     return s.kb;

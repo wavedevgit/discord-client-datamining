@@ -18,11 +18,11 @@ var r, i = n(627968),
     _ = n(456412),
     h = n(587895),
     b = n(189081),
-    A = n(286805),
-    y = n(67480),
+    y = n(286805),
+    A = n(67480),
     v = n(328968),
-    x = n(371794),
-    O = n(652215),
+    O = n(371794),
+    x = n(652215),
     E = n(985018),
     j = n(187663);
 
@@ -55,8 +55,8 @@ class I extends(r = l.Component) {
             }
             return e
         }({}, n), t = t = {
-            section: null != r ? r : O.JJy.APPLICATION_EMBED,
-            object: O.ZSU.CARD
+            section: null != r ? r : x.JJy.APPLICATION_EMBED,
+            object: x.ZSU.CARD
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
             var n = Object.keys(e);
             if (Object.getOwnPropertySymbols) {
@@ -95,11 +95,11 @@ class I extends(r = l.Component) {
         } = this.props, s = n > f.Tm;
         return null == e || null == t ? r ? l() : (0, i.jsx)(f.Wb, {
             isHorizontal: s
-        }) : e.productLine === O.EZt.COLLECTIBLES ? (0, i.jsx)(u.A, {
-            section: O.JJy.APPLICATION_EMBED,
+        }) : e.productLine === x.EZt.COLLECTIBLES ? (0, i.jsx)(u.A, {
+            section: x.JJy.APPLICATION_EMBED,
             children: this.renderApplicationTile(e, t)
         }) : (0, i.jsx)(u.A, {
-            section: O.JJy.APPLICATION_EMBED,
+            section: x.JJy.APPLICATION_EMBED,
             children: (0, i.jsx)(a.N_, {
                 onClick: this.handleLinkClick,
                 to: this.getStoreListingLocation(),
@@ -130,7 +130,7 @@ class I extends(r = l.Component) {
                 sku: e
             } = this.props;
             if (null == e) throw Error("Should not be link to ApplicationStoreListing without SKU");
-            return (0, x.vy)(e.id, {
+            return (0, O.vy)(e.id, {
                 slug: e.slug,
                 analyticsSource: this.analyticsLocation
             })
@@ -178,7 +178,7 @@ class I extends(r = l.Component) {
             });
             if (null == n) return null;
             let s = null != n && n.primarySkuId === r,
-                o = null != l && l.hasFlag(O.hM6.HIDDEN);
+                o = null != l && l.hasFlag(x.hM6.HIDDEN);
             return (0, i.jsxs)("div", {
                 className: j.i,
                 children: [!s || o ? this.renderViewInStoreButton() : (0, i.jsx)(d.A, {
@@ -186,7 +186,7 @@ class I extends(r = l.Component) {
                     disabledVariant: "primary",
                     size: "sm",
                     className: j.h,
-                    source: O.ThZ.MESSAGE_EMBED,
+                    source: x.ThZ.MESSAGE_EMBED,
                     onClick: this.handleActionButtonClick
                 }), t && !o || e.premium ? null : (0, i.jsx)(p.A, {
                     type: p.A.Types.EMBED,
@@ -198,18 +198,18 @@ class I extends(r = l.Component) {
     }
 }
 C(I, "defaultProps", {
-    renderFallback: O.tEg
+    renderFallback: x.tEg
 });
-let S = [y.A, A.A, b.A, v.A];
+let S = [A.A, y.A, b.A, v.A];
 
 function T(e) {
     let {
         skuId: t
-    } = e, n = y.A.get(t), r = null != n ? h.A.getApplication(n.applicationId) : null;
+    } = e, n = A.A.get(t), r = null != n ? h.A.getApplication(n.applicationId) : null;
     return {
         sku: n,
         application: r,
-        fetchFailed: y.A.didFetchingSkuFail(t),
+        fetchFailed: A.A.didFetchingSkuFail(t),
         inLibrary: null != n && b.A.hasApplication(n.applicationId, n.applicationId, !0),
         storeListing: null != n ? v.A.getForSKU(n.id) : null,
         libraryApplication: null != n ? b.A.getLibraryApplication(n.applicationId, n.applicationId, !0) : null

@@ -30,8 +30,8 @@ function m(e) {
         canJoin: !1,
         remoteJoinPlatform: null
     };
-    let A = (0, a._)(n);
-    if (!(0, c.A)(A) || (0, d.U)(A) || (0, l.w)(o, n) || (0, i.v)(f)) return {
+    let y = (0, a._)(n);
+    if (!(0, c.A)(y) || (0, d.U)(y) || (0, l.w)(o, n) || (0, i.v)(f)) return {
         canJoin: !1,
         remoteJoinPlatform: null
     };

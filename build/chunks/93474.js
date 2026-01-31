@@ -1,6 +1,6 @@
 /** chunk id: 93474, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => O
+    A: () => x
 });
 var r, i = n(311907),
     l = n(73153),
@@ -25,11 +25,11 @@ let g = {},
     _ = 0,
     h = {},
     b = {},
-    A = e => {
+    y = e => {
         null != g[e] && delete g[e], _++
     };
 
-function y(e) {
+function A(e) {
     let t, n, {
         messageData: r,
         errorResponseBody: i
@@ -61,7 +61,7 @@ function v(e) {
         }, l);
     return null != a && b[i] !== a && (b[i] = a, !0)
 }
-class x extends(r = i.Ay.PersistedStore) {
+class O extends(r = i.Ay.PersistedStore) {
     initialize(e) {
         this.waitFor(o.A, c.A), null != e && (g = e.automodFailedMessages, h = e.mentionRaidDetectionByGuild)
     }
@@ -88,8 +88,8 @@ class x extends(r = i.Ay.PersistedStore) {
         return null != (t = b[e]) ? t : null
     }
 }
-f(x, "displayName", "GuildAutomodMessageStore"), f(x, "persistKey", "GuildAutomodMessages");
-let O = new x(l.h, {
+f(O, "displayName", "GuildAutomodMessageStore"), f(O, "persistKey", "GuildAutomodMessages");
+let x = new O(l.h, {
     CONNECTION_OPEN: function(e) {
         return 0 !== Object.keys(g).length && (g = {}, _++, !0)
     },
@@ -104,13 +104,13 @@ let O = new x(l.h, {
         let r = (0, s.rh)(n);
         return !!(0, p.ER)(r) && !!(0, p.de)(r) && (b[t] = r.id, !0)
     },
-    MESSAGE_SEND_FAILED_AUTOMOD: y,
-    MESSAGE_EDIT_FAILED_AUTOMOD: y,
+    MESSAGE_SEND_FAILED_AUTOMOD: A,
+    MESSAGE_EDIT_FAILED_AUTOMOD: A,
     REMOVE_AUTOMOD_MESSAGE_NOTICE: function(e) {
         let {
             messageId: t
         } = e;
-        return A(t), !0
+        return y(t), !0
     },
     MESSAGE_END_EDIT: function(e) {
         let {
@@ -119,7 +119,7 @@ let O = new x(l.h, {
         if ((null == t ? void 0 : t.body) == null || t.body.code === m.t02.AUTOMOD_MESSAGE_BLOCKED) return !1;
         let n = t.body.id;
         if (null == n) return !1;
-        A(n)
+        y(n)
     },
     AUTO_MODERATION_MENTION_RAID_DETECTION: function(e) {
         let {

@@ -18,11 +18,11 @@ var r = n(627968),
     _ = n(734057),
     h = n(309010),
     b = n(486020),
-    A = n(795816),
-    y = n(933958),
+    y = n(795816),
+    A = n(933958),
     v = n(574152),
-    x = n(782091),
-    O = n(985018);
+    O = n(782091),
+    x = n(985018);
 
 function E(e) {
     var t, n, E;
@@ -40,13 +40,13 @@ function E(e) {
         botUserId: null == j || null == (n = j.bot) ? void 0 : n.id
     }), w = null != j && (0, o.Ag)(j), R = null != N && w && P, {
         analyticsLocations: D
-    } = (0, a.Ay)(l.A.ACTIVITY_CUSTOM_LINK), L = (0, i.bG)([h.A], () => h.A.getChannelId()), M = (0, x.et)(L), k = (0, i.bG)([y.Ay], () => {
+    } = (0, a.Ay)(l.A.ACTIVITY_CUSTOM_LINK), L = (0, i.bG)([h.A], () => h.A.getChannelId()), M = (0, O.et)(L), k = (0, i.bG)([A.Ay], () => {
         if (null == L) return;
-        let e = y.Ay.getEmbeddedActivitiesForChannel(L).filter(e => e.applicationId === j.id);
+        let e = A.Ay.getEmbeddedActivitiesForChannel(L).filter(e => e.applicationId === j.id);
         return e.length > 0 ? e[0].compositeInstanceId : void 0
-    }), U = (0, i.bG)([y.Ay], () => y.Ay.getCurrentEmbeddedActivity()), G = (0, v.A)(), B = M === x.xy.CAN_LAUNCH, F = null != k && (null == U ? void 0 : U.compositeInstanceId) === k, H = null != C ? C : I.customId, V = (0, g.e)(j), z = [];
+    }), U = (0, i.bG)([A.Ay], () => A.Ay.getCurrentEmbeddedActivity()), G = (0, v.A)(), B = M === O.xy.CAN_LAUNCH, F = null != k && (null == U ? void 0 : U.compositeInstanceId) === k, H = null != C ? C : I.customId, V = (0, g.e)(j), z = [];
     V ? z.push({
-        label: O.intl.string(O.t.RscU7I),
+        label: x.intl.string(x.t.RscU7I),
         trackingArea: p.kY.PLAY,
         onClick() {
             f.A.launchFrame({
@@ -54,10 +54,10 @@ function E(e) {
             })
         }
     }) : (B && z.push({
-        label: null == k ? O.intl.string(O.t.RscU7I) : F ? O.intl.string(O.t.DPfdsq) : O.intl.string(O.t.sqe0hj),
+        label: null == k ? x.intl.string(x.t.RscU7I) : F ? x.intl.string(x.t.DPfdsq) : x.intl.string(x.t.sqe0hj),
         trackingArea: p.kY.PLAY,
         onClick() {
-            (0, A.su)({
+            (0, y.su)({
                 channelId: null != L ? L : void 0,
                 applicationId: j.id,
                 isStart: null == k,
@@ -69,7 +69,7 @@ function E(e) {
         },
         disabled: F
     }), R && !B && z.push({
-        label: O.intl.string(O.t.JeK1Wg),
+        label: x.intl.string(x.t.JeK1Wg),
         trackingArea: p.kY.PLAY,
         onClick() {
             (0, s.Q)({

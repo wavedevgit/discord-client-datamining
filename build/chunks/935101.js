@@ -6,20 +6,20 @@ var a = t(64700),
     o = t(311907),
     n = t(205693),
     r = t(451988),
-    i = t(430452),
-    c = t(383501),
+    c = t(430452),
+    i = t(383501),
     l = t(485296),
     s = t(927813),
     p = t(340913),
-    d = t(731854);
-let b = 3 * s.A.Millis.SECOND;
+    b = t(731854);
+let d = 3 * s.A.Millis.SECOND;
 
 function u() {
     let {
         showPTTSpeakingIndicator: e
     } = p.A.useConfig({
         location: "useSpeakingWhilePTT"
-    }), [_, t] = a.useState(!1), s = (0, o.bG)([i.A], () => i.A.getMode() === d.TB.PUSH_TO_TALK), u = (0, o.bG)([c.A], () => c.A.getRTCConnectionId()), f = a.useRef(new r.Ep);
+    }), [_, t] = a.useState(!1), s = (0, o.bG)([c.A], () => c.A.getMode() === b.TB.PUSH_TO_TALK), u = (0, o.bG)([i.A], () => i.A.getRTCConnectionId()), f = a.useRef(new r.Ep);
     return a.useEffect(() => {
         t(!1)
     }, [u]), a.useEffect(() => {
@@ -27,14 +27,14 @@ function u() {
             a = f.current;
 
         function o(e, o) {
-            let n = (o & d.ME.VOICE) === d.ME.VOICE,
+            let n = (o & b.ME.VOICE) === b.ME.VOICE,
                 r = l.A.isCurrentUserPTTActive();
-            n && !r ? ++_ >= 5 && (t(!0), a.start(b, () => {
+            n && !r ? ++_ >= 5 && (t(!0), a.start(d, () => {
                 t(!1)
             })) : _ = 0
         }
-        return e && s && null != u && i.A.getMediaEngine().on(n.bg.VoiceActivity, o), () => {
-            i.A.getMediaEngine().removeListener(n.bg.VoiceActivity, o), a.stop()
+        return e && s && null != u && c.A.getMediaEngine().on(n.bg.VoiceActivity, o), () => {
+            c.A.getMediaEngine().removeListener(n.bg.VoiceActivity, o), a.stop()
         }
     }, [e, s, u]), _
 }

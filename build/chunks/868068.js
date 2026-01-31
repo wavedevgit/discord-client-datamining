@@ -1,12 +1,12 @@
 /** chunk id: 868068, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     K: () => a,
-    O: () => s
+    O: () => i
 });
-var r = n(56562),
-    l = n(927813),
-    i = n(652215);
-let s = {
+var l = n(56562),
+    r = n(927813),
+    s = n(652215);
+let i = {
         None: void 0,
         Terraria: {
             id: "1402418344912752671",
@@ -23,10 +23,10 @@ let s = {
             pid: 1234,
             pidPath: [],
             windowHandle: "13229",
-            fullscreenType: r.aI.BORDERLESS_FULLSCREEN,
+            fullscreenType: l.aI.BORDERLESS_FULLSCREEN,
             isLauncher: !1,
-            start: Date.now() - l.A.Millis.HOUR,
-            distributor: i.d3x.STEAM
+            start: Date.now() - r.A.Millis.HOUR,
+            distributor: s.d3x.STEAM
         }
     },
-    a = Object.keys(s)
+    a = Object.keys(i)

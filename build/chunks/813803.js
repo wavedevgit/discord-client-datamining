@@ -6,8 +6,8 @@ var r = n(627968);
 n(64700);
 var i = n(877624),
     l = n(311907),
-    a = n(554146),
-    o = n(397927),
+    o = n(554146),
+    a = n(397927),
     s = n(688810),
     c = n(532794),
     u = n(412260),
@@ -37,18 +37,18 @@ let O = e => {
                 visibleContent: t,
                 markAsDismissed: i
             } = e;
-            if (t === a.M.GIFTING_PROMOTION_REMINDER) return null == N ? null : (0, r.jsxs)(o.$Td, {
-                color: o.Hv$.PREMIUM_TIER_2,
-                children: [(0, r.jsx)(o.PMB, {
+            if (t === o.M.GIFTING_PROMOTION_REMINDER) return null == N ? null : (0, r.jsxs)(a.$Td, {
+                color: a.Hv$.PREMIUM_TIER_2,
+                children: [(0, r.jsx)(a.PMB, {
                     onClick: () => i(_.i.USER_DISMISS),
                     noticeType: n
-                }), (0, r.jsx)(o.okO, {
+                }), (0, r.jsx)(a.okO, {
                     size: "custom",
                     width: 20,
                     height: 20,
                     color: "currentColor",
                     className: I.ez
-                }), N.body, (0, r.jsx)(o.Z_L, {
+                }), N.body, (0, r.jsx)(a.Z_L, {
                     onClick: () => {
                         (0, c.A)({
                             isGift: !0,

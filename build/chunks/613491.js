@@ -6,8 +6,8 @@ var r = n(627968);
 n(64700);
 var i = n(503698),
     l = n.n(i),
-    a = n(397927),
-    o = n(935649),
+    o = n(397927),
+    a = n(935649),
     s = n(847599),
     c = n(734057),
     u = n(309010),
@@ -19,7 +19,7 @@ var i = n(503698),
     I = n(496447);
 
 function O(e) {
-    if (!e && (0, A.Cf)()) return void o.A.showAgeVerificationGetStartedModal({
+    if (!e && (0, A.Cf)()) return void a.A.showAgeVerificationGetStartedModal({
         entryPoint: s.q1.STAGE_CHANNEL_RAISE_HAND
     });
     let t = u.A.getVoiceChannelId();
@@ -32,20 +32,20 @@ function N(e) {
     var t, n;
     let {
         channelId: i
-    } = e, a = null != (t = (0, _.D3)(i)) ? t : 0, o = null != (n = (0, _.Xk)(i)) ? n : 0;
-    return a > 0 && o > 0 ? (0, r.jsx)("div", {
+    } = e, o = null != (t = (0, _.D3)(i)) ? t : 0, a = null != (n = (0, _.Xk)(i)) ? n : 0;
+    return o > 0 && a > 0 ? (0, r.jsx)("div", {
         className: I.Z5,
         children: (0, r.jsx)("div", {
             className: l()(I.qQ, I.lN),
             children: T.intl.string(T.t.xlJRfv)
         })
-    }) : a > 0 ? (0, r.jsx)("div", {
+    }) : o > 0 ? (0, r.jsx)("div", {
         className: I.Z5,
         children: (0, r.jsx)("div", {
             className: l()(I.qQ, I.lN),
             children: T.intl.string(T.t.WYad9Z)
         })
-    }) : o > 0 ? (0, r.jsx)("div", {
+    }) : a > 0 ? (0, r.jsx)("div", {
         className: I.Z5,
         children: (0, r.jsx)("div", {
             className: l()(I.qQ, I.lN),
@@ -56,19 +56,19 @@ function N(e) {
 
 function p() {
     let e = (0, d.A)();
-    return null == e ? null : (0, r.jsxs)(a.$Td, {
+    return null == e ? null : (0, r.jsxs)(o.$Td, {
         className: I.kL,
-        color: a.Hv$.DEFAULT,
+        color: o.Hv$.DEFAULT,
         children: [T.intl.string(T.t.Ul1RJQ), (0, r.jsx)(N, {
             channelId: e.id
-        }), (0, r.jsxs)(a.ButtonGroup, {
+        }), (0, r.jsxs)(o.ButtonGroup, {
             size: "sm",
             className: I.GC,
-            children: [(0, r.jsx)(a.Button, {
+            children: [(0, r.jsx)(o.Button, {
                 variant: "overlay-primary",
                 text: T.intl.string(T.t.MpO0px),
                 onClick: () => O(!1)
-            }), (0, r.jsx)(a.Button, {
+            }), (0, r.jsx)(o.Button, {
                 variant: "secondary",
                 onClick: () => O(!0),
                 text: T.intl.string(T.t["1YDv7a"])

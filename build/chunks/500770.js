@@ -80,11 +80,11 @@ function g(e) {
         ctaComponent: _,
         shouldShowFullDescriptionButton: h = !0,
         onShowFullDescription: b,
-        productType: A,
-        onTapCard: y,
+        productType: y,
+        onTapCard: A,
         actionMenu: v,
-        showOpaqueBackground: x = !1,
-        hideRoleTag: O = !1,
+        showOpaqueBackground: O = !1,
+        hideRoleTag: x = !1,
         lineClamp: E = 1,
         cardWidth: j = 332,
         cardHeight: C,
@@ -123,7 +123,7 @@ function g(e) {
                 }), h && (0, r.jsx)(f, {
                     onShowFullDescription: b,
                     variant: S
-                }), O || null == g || "" === g.name ? null : (0, r.jsxs)(r.Fragment, {
+                }), x || null == g || "" === g.name ? null : (0, r.jsxs)(r.Fragment, {
                     children: [(0, r.jsx)(a.hKd, {
                         size: 16
                     }), (0, r.jsx)(u.A, {
@@ -142,7 +142,7 @@ function g(e) {
                 variant: "text-xxs/normal",
                 color: "text-default",
                 className: p.__invalid_productType,
-                children: A
+                children: y
             }), (0, r.jsx)("div", {
                 className: p.QW,
                 onClick: e => {
@@ -152,8 +152,8 @@ function g(e) {
             })]
         })]
     });
-    return null == y ? (0, r.jsx)("article", {
-        className: l()(p.Um, x ? p.sG : p.Wi),
+    return null == A ? (0, r.jsx)("article", {
+        className: l()(p.Um, O ? p.sG : p.Wi),
         "aria-labelledby": N,
         children: P
     }) : (0, r.jsx)("div", {
@@ -166,8 +166,8 @@ function g(e) {
             "aria-label": d.intl.formatToPlainString(d.t["e+TmJa"], {
                 productName: n
             }),
-            className: l()(p.Um, x ? p.sG : p.Wi, p.GA),
-            onClick: y,
+            className: l()(p.Um, O ? p.sG : p.Wi, p.GA),
+            onClick: A,
             children: P
         })
     })

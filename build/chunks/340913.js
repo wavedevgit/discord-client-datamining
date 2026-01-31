@@ -1,6 +1,6 @@
 /** chunk id: 340913, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => o
+    A: () => a
 });
 var r = n(945810);
 
@@ -35,23 +35,23 @@ function l(e, t) {
         Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
     }), e
 }
-let a = {
+let o = {
         showPTTJoinTooltip: !1,
         showPTTIconIndicator: !1,
         showPTTNoKeybindWarning: !1,
         showPTTSpeakingIndicator: !1
     },
-    o = (0, r.mj)({
+    a = (0, r.mj)({
         name: "2025-12-09-ptt-education",
         kind: "user",
-        defaultConfig: a,
+        defaultConfig: o,
         variations: {
-            1: l(i({}, a), {
+            1: l(i({}, o), {
                 showPTTJoinTooltip: !0,
                 showPTTNoKeybindWarning: !0,
                 showPTTSpeakingIndicator: !0
             }),
-            2: l(i({}, a), {
+            2: l(i({}, o), {
                 showPTTIconIndicator: !0
             })
         }

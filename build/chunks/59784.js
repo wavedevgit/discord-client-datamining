@@ -56,10 +56,10 @@ function b(e) {
     let {
         messages: t
     } = e;
-    return t.map(e => A(e)).some(Boolean)
+    return t.map(e => y(e)).some(Boolean)
 }
 
-function A(e) {
+function y(e) {
     if (e.type !== i.l.PREMIUM_GROUP_INVITE) return !1;
     let t = e.content;
     if (null == t || "" === t || !s.default.isProbablyAValidSnowflake(t)) return !1;
@@ -70,7 +70,7 @@ function A(e) {
         errorStatus: null
     }), a.h.wait(() => (0, o.el)(t).catch(u.FXj)), !0)
 }
-class y extends(r = l.Ay.Store) {
+class A extends(r = l.Ay.Store) {
     getInvite(e) {
         var t;
         return null != (t = f.get(e)) ? t : null
@@ -101,8 +101,8 @@ class y extends(r = l.Ay.Store) {
         return _
     }
 }
-d(y, "displayName", "PremiumGroupInviteStore");
-let v = new y(a.h, {
+d(A, "displayName", "PremiumGroupInviteStore");
+let v = new A(a.h, {
     PREMIUM_GROUP_INVITES_FETCH_START: function() {
         _ = !0
     },
@@ -252,7 +252,7 @@ let v = new y(a.h, {
         let {
             message: t
         } = e;
-        return A(t)
+        return y(t)
     },
     LOCAL_MESSAGES_LOADED: b,
     LOAD_MESSAGES_SUCCESS: b,

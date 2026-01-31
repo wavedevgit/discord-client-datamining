@@ -1,13 +1,13 @@
 /** chunk id: 475723, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     A: () => j,
-    w: () => v
+    w: () => k
 });
 var r = n(627968),
     i = n(64700),
     l = n(503698),
-    a = n.n(l),
-    o = n(311907),
+    o = n.n(l),
+    a = n(311907),
     s = n(827734),
     c = n(990078),
     u = n(421380),
@@ -24,16 +24,16 @@ var r = n(627968),
     S = n(147925),
     P = n(723702),
     y = n(529942),
-    m = n(164956),
+    C = n(164956),
     f = n(311127),
-    C = n(652215),
+    D = n(652215),
     g = n(746080);
 n(500208);
-var D = n(2242),
+var m = n(2242),
     h = n(985018),
-    b = n(840199);
+    U = n(840199);
 
-function U(e) {
+function M(e) {
     let {
         className: t,
         onClick: n,
@@ -42,8 +42,8 @@ function U(e) {
     } = e;
     return (0, r.jsx)(u.$n, {
         buttonRef: l,
-        className: a()(b.x6, t),
-        innerClassName: b.hZ,
+        className: o()(U.x6, t),
+        innerClassName: U.hZ,
         look: u.$n.Looks.OUTLINED,
         color: u.$n.Colors.WHITE,
         size: u.$n.Sizes.NONE,
@@ -52,11 +52,11 @@ function U(e) {
     })
 }
 
-function M(e) {
+function b(e) {
     let {
         onClick: t
     } = e;
-    return (0, r.jsx)(U, {
+    return (0, r.jsx)(M, {
         onClick: t,
         children: h.intl.string(h.t.R9GHya)
     })
@@ -64,64 +64,64 @@ function M(e) {
 
 function j() {
     let e = i.useRef(null),
-        t = (0, o.bG)([p.A], () => p.A.getGuildId()),
-        n = (0, o.bG)([N.A], () => N.A.getChannelId(t)),
+        t = (0, a.bG)([p.A], () => p.A.getGuildId()),
+        n = (0, a.bG)([N.A], () => N.A.getChannelId(t)),
         {
             viewingRoles: l,
-            backNavigationSection: a,
+            backNavigationSection: o,
             isFullServerPreview: u,
             isServerShopPreview: P
-        } = (0, o.cf)([m.A], () => ({
-            viewingRoles: null != t ? m.A.getViewingRoles(t) : null,
-            backNavigationSection: m.A.getBackNavigationSection(t),
-            isFullServerPreview: null != t && m.A.isFullServerPreview(t),
-            isServerShopPreview: null != t && m.A.isViewingServerShop(t)
+        } = (0, a.cf)([C.A], () => ({
+            viewingRoles: null != t ? C.A.getViewingRoles(t) : null,
+            backNavigationSection: C.A.getBackNavigationSection(t),
+            isFullServerPreview: null != t && C.A.isFullServerPreview(t),
+            isServerShopPreview: null != t && C.A.isViewingServerShop(t)
         }));
     if (null == l || null == t) return null;
     let j = function(e) {
             switch (e) {
-                case C.BEX.INTEGRATIONS:
+                case D.BEX.INTEGRATIONS:
                     return h.intl.string(h.t.k7LGdh);
-                case C.BEX.ROLE_SUBSCRIPTIONS:
+                case D.BEX.ROLE_SUBSCRIPTIONS:
                     return h.intl.string(h.t.bRqiqa);
-                case C.BEX.ONBOARDING:
+                case D.BEX.ONBOARDING:
                     return h.intl.string(h.t.qZpU3S);
                 default:
                     return h.intl.string(h.t.MTIXhi)
             }
-        }(a),
-        v = a === C.BEX.ROLE_SUBSCRIPTIONS ? h.intl.string(h.t.hZUCzd) : h.intl.string(h.t["/djIh7"]),
-        k = n === g.VV.GUILD_ONBOARDING,
-        L = e => {
+        }(o),
+        k = o === D.BEX.ROLE_SUBSCRIPTIONS ? h.intl.string(h.t.hZUCzd) : h.intl.string(h.t["/djIh7"]),
+        L = n === g.VV.GUILD_ONBOARDING,
+        v = e => {
             let {
                 backToSettings: n
             } = e;
-            null != t && (m.A.isFullServerPreview(t) && (0, O.pX)(C.BVt.CHANNEL(t)), _.Ay.shouldShowOnboarding(t) && (d.A.finishOnboarding(t), (0, A.Jg)(t)), (0, y.rf)(t), n && I.A.open(t, a), a === C.BEX.ROLE_SUBSCRIPTIONS && (0, T.Fx)(t))
+            null != t && (C.A.isFullServerPreview(t) && (0, O.pX)(D.BVt.CHANNEL(t)), _.Ay.shouldShowOnboarding(t) && (d.A.finishOnboarding(t), (0, A.Jg)(t)), (0, y.rf)(t), n && I.A.open(t, o), o === D.BEX.ROLE_SUBSCRIPTIONS && (0, T.Fx)(t))
         };
     return (0, r.jsxs)(E.$Td, {
         color: E.Hv$.BRAND,
-        className: b.lm,
-        children: [(0, r.jsxs)(U, {
-            onClick: () => L({
+        className: U.lm,
+        children: [(0, r.jsxs)(M, {
+            onClick: () => v({
                 backToSettings: !0
             }),
-            className: b.Gv,
+            className: U.Gv,
             children: [(0, r.jsx)(R.A, {
                 width: 16,
                 height: 16,
                 direction: R.A.Directions.LEFT,
-                className: b.lJ
+                className: U.lJ
             }), j]
-        }), k && u ? (0, r.jsx)("div", {
-            className: b.XI,
+        }), L && u ? (0, r.jsx)("div", {
+            className: U.XI,
             children: (0, r.jsx)("div", {
-                className: b.ut,
+                className: U.ut,
                 children: h.intl.string(h.t.PxbiAf)
             })
         }) : (0, r.jsxs)("div", {
-            className: b.XI,
+            className: U.XI,
             children: [(0, r.jsx)("div", {
-                className: b.ut,
+                className: U.ut,
                 children: u ? h.intl.formatToPlainString(h.t["0PHahI"], {
                     numRoles: Object.keys(l).length
                 }) : h.intl.formatToPlainString(h.t.vMlK8t, {
@@ -137,14 +137,14 @@ function j() {
                     let {
                         onClick: n
                     } = t;
-                    return (0, r.jsxs)(U, {
+                    return (0, r.jsxs)(M, {
                         onClick: n,
                         buttonRef: e,
-                        children: [v, (0, r.jsx)(S.A, {
+                        children: [k, (0, r.jsx)(S.A, {
                             width: 16,
                             height: 16,
                             direction: S.A.Directions.DOWN,
-                            className: b.k5
+                            className: U.k5
                         })]
                     })
                 }
@@ -158,7 +158,7 @@ function j() {
             }), P && (0, r.jsx)(c.m, {
                 asContainer: !0,
                 text: h.intl.formatToPlainString(h.t.eummvd, {
-                    maxTiers: D.f7,
+                    maxTiers: m.f7,
                     maxProducts: 50
                 }),
                 children: (0, r.jsx)(E.EpV, {
@@ -166,22 +166,22 @@ function j() {
                     color: s.A.unsafe_rawColors.YELLOW_300.css
                 })
             })]
-        }), u || a === C.BEX.ROLE_SUBSCRIPTIONS ? null : (0, r.jsx)(M, {
-            onClick: () => L({
+        }), u || o === D.BEX.ROLE_SUBSCRIPTIONS ? null : (0, r.jsx)(b, {
+            onClick: () => v({
                 backToSettings: !1
             })
         })]
     })
 }
 
-function v(e) {
+function k(e) {
     let {
         guildId: t
     } = e;
-    return (0, o.bG)([m.A], () => m.A.isViewingRoles(t)) ? (0, r.jsx)("div", {
-        className: a()(b.xd, {
-            [b.KF]: (0, P.isWindows)(),
-            [b.Xz]: (0, P.isMac)()
+    return (0, a.bG)([C.A], () => C.A.isViewingRoles(t)) ? (0, r.jsx)("div", {
+        className: o()(U.xd, {
+            [U.KF]: (0, P.isWindows)(),
+            [U.Xz]: (0, P.isMac)()
         }),
         children: (0, r.jsx)(j, {})
     }) : null

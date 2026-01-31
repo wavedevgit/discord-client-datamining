@@ -7,7 +7,7 @@ var r = n(627968),
     l = n(503698),
     a = n.n(l),
     s = n(126031),
-    o = n(970984),
+    o = n(353709),
     c = n(889137),
     u = n(615300),
     d = n(990078),
@@ -18,11 +18,11 @@ var r = n(627968),
     _ = n(969632),
     h = n(438437),
     b = n(306417),
-    A = n(290794),
-    y = n(985018),
+    y = n(290794),
+    A = n(985018),
     v = n(121272);
 
-function x(e) {
+function O(e) {
     let {
         percentage: t,
         label: n,
@@ -31,12 +31,12 @@ function x(e) {
     } = e, o = (0, m.GV)(), {
         channelId: c,
         messageId: u
-    } = (0, A.Tu)(), [h, b] = i.useState(""), [y, x] = i.useState(!1), O = "" !== h && y, E = i.useCallback(() => {
+    } = (0, y.Tu)(), [h, b] = i.useState(""), [A, O] = i.useState(!1), x = "" !== h && A, E = i.useCallback(() => {
         b((0, _.$m)(u, c, a))
     }, [u, c, a]), j = i.useCallback(() => {
-        E(), x(!0)
+        E(), O(!0)
     }, [E]), C = i.useCallback(() => {
-        x(!1)
+        O(!1)
     }, []), I = i.useCallback(() => {
         (0, g.e)({
             channelId: c,
@@ -45,10 +45,10 @@ function x(e) {
         })
     }, [c, u, a]);
     return i.useEffect(() => {
-        if (y) return f.A.addReactChangeListener(E), () => {
+        if (A) return f.A.addReactChangeListener(E), () => {
             f.A.removeReactChangeListener(E)
         }
-    }, [y, E]), (0, r.jsxs)("div", {
+    }, [A, E]), (0, r.jsxs)("div", {
         className: v.AA,
         children: [l ? (0, r.jsxs)(r.Fragment, {
             children: ["" !== h ? (0, r.jsx)(d.m, {
@@ -58,7 +58,7 @@ function x(e) {
                     scaleFontToUserSetting: !0,
                     children: h
                 }),
-                forceOpen: O,
+                forceOpen: x,
                 "aria-label": !1,
                 children: (0, r.jsx)(p.QWc, {
                     onMouseEnter: j,
@@ -66,7 +66,7 @@ function x(e) {
                     onFocus: j,
                     onBlur: C,
                     onClick: I,
-                    "aria-describedby": O ? o : void 0,
+                    "aria-describedby": x ? o : void 0,
                     text: n,
                     variant: "secondary",
                     textVariant: "text-xs/semibold"
@@ -80,7 +80,7 @@ function x(e) {
                 text: n,
                 variant: "secondary",
                 textVariant: "text-xs/semibold"
-            }), O && (0, r.jsx)(s.s, {
+            }), x && (0, r.jsx)(s.s, {
                 id: o,
                 children: h
             })]
@@ -98,7 +98,7 @@ function x(e) {
     })
 }
 
-function O(e) {
+function x(e) {
     let {
         percentage: t,
         shouldAnimate: n
@@ -169,7 +169,7 @@ function j(e) {
             [v.EK]: i !== h.CQ.LIST,
             [v.wH]: c
         }),
-        children: [l ? (0, r.jsx)(O, {
+        children: [l ? (0, r.jsx)(x, {
             percentage: t.votesPercentage,
             shouldAnimate: m
         }) : null, null != t.pollMedia.emoji && (0, r.jsx)(b.Fb, {
@@ -182,8 +182,8 @@ function j(e) {
             scaleFontToUserSetting: !0,
             children: t.pollMedia.text
         }), t.didSelfVote && (0, r.jsx)(s.s, {
-            children: y.intl.string(y.t["8DAM+5"])
-        }), l && (0, r.jsx)(x, {
+            children: A.intl.string(A.t["8DAM+5"])
+        }), l && (0, r.jsx)(O, {
             percentage: t.votesPercentage,
             label: t.votes,
             canShowVoterDetails: o,

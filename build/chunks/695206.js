@@ -76,7 +76,7 @@ function b(e) {
     })
 }
 
-function A(e) {
+function y(e) {
     let {
         action: t,
         channelId: n,
@@ -115,7 +115,7 @@ function A(e) {
     })
 }
 
-function y(e) {
+function A(e) {
     let t, {
             message: n,
             poll: i,
@@ -148,18 +148,18 @@ function y(e) {
                 })]
             }), m, (0, r.jsxs)("div", {
                 className: g.pR,
-                children: [(0, r.jsx)(A, {
+                children: [(0, r.jsx)(y, {
                     channelId: n.getChannelId(),
                     messageId: n.id,
                     action: i.secondaryAction,
                     className: g.Dc,
                     isInteractive: i.isInteractive
-                }), (0, r.jsx)(A, {
+                }), (0, r.jsx)(y, {
                     channelId: n.getChannelId(),
                     messageId: n.id,
                     action: i.tertiaryAction,
                     className: g.vD
-                }), (0, r.jsx)(A, {
+                }), (0, r.jsx)(y, {
                     channelId: n.getChannelId(),
                     messageId: n.id,
                     action: i.primaryAction
@@ -179,7 +179,7 @@ function v(e) {
         message: t,
         poll: n,
         children: (0, r.jsx)(m.RZ, {
-            children: (0, r.jsx)(y, {
+            children: (0, r.jsx)(A, {
                 message: t,
                 poll: n,
                 className: i

@@ -30,7 +30,7 @@ function f(e) {
         messageId: void 0
     })(), b = (0, l.h)(t.applicationId);
     if (null == b) return null;
-    let A = p.intl.format(p.t.m7Lwas, {
+    let y = p.intl.format(p.t.m7Lwas, {
         username: _,
         usernameHook: h,
         gameName: b.name,
@@ -51,7 +51,7 @@ function f(e) {
         compact: g,
         contentClassName: m.Qs,
         children: (0, r.jsx)("div", {
-            children: A
+            children: y
         })
     })
 }

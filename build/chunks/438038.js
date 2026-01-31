@@ -4,7 +4,7 @@ n.d(t, {
 }), n(896048);
 var r = n(627968),
     i = n(64700),
-    l = n(970984);
+    l = n(353709);
 n(311907), n(859703);
 var a = n(341915),
     s = n(890687),
@@ -24,19 +24,19 @@ function f(e) {
         sourceQuestContent: _
     } = e, h = (0, s.LS)(t), {
         containerRef: b,
-        size: A,
-        height: y
+        size: y,
+        height: A
     } = (0, d.L)(), {
         expansionSpring: v,
-        isAnimating: x,
-        isExpanded: O,
+        isAnimating: O,
+        isExpanded: x,
         toggleExpanded: E
     } = (0, d.s)({
         initiallyExpanded: f || (0, p.RA)({
             location: n,
             quest: t
         })
-    }), [j, C] = i.useState(!1), I = () => C(!0), S = () => C(!1), T = null != y ? y : p._B;
+    }), [j, C] = i.useState(!1), I = () => C(!0), S = () => C(!1), T = null != A ? A : p._B;
     return (0, r.jsx)(o.R, {
         questOrQuests: t,
         questContent: n,
@@ -63,11 +63,11 @@ function f(e) {
                     isQuestExpired: h,
                     location: n,
                     quest: t,
-                    size: A,
+                    size: y,
                     expansionSpring: v,
                     isInteracting: j,
-                    isAnimating: x,
-                    isExpanded: O,
+                    isAnimating: O,
+                    isExpanded: x,
                     contentPosition: g,
                     toggleExpanded: E,
                     sourceQuestContent: _
@@ -75,10 +75,10 @@ function f(e) {
                     quest: t,
                     isQuestExpired: h,
                     location: n,
-                    size: A,
+                    size: y,
                     isFocused: j,
-                    isExpanded: O,
-                    isAnimating: x,
+                    isExpanded: x,
+                    isAnimating: O,
                     contentPosition: g,
                     sourceQuestContent: _
                 })]

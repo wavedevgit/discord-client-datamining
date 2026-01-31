@@ -18,11 +18,11 @@ var r = n(627968),
     _ = n(299091),
     h = n(860689),
     b = n(62350),
-    A = n(882072),
-    y = n(58262),
+    y = n(882072),
+    A = n(58262),
     v = n(309818),
-    x = n(112007),
-    O = n(877695),
+    O = n(112007),
+    x = n(877695),
     E = n(242907),
     j = n(168428),
     C = n(448894),
@@ -70,7 +70,7 @@ function S(e) {
                 context: S("Invite Button Embed")
             })
         },
-        G = (0, r.jsx)(x.A, {
+        G = (0, r.jsx)(O.A, {
             onTransitionToInviteChannel: k,
             onAcceptInstantInvite: U,
             currentUserId: L,
@@ -91,7 +91,7 @@ function S(e) {
             });
             break;
         case I.elq.ERROR:
-            G = (0, r.jsx)(A.A, {
+            G = (0, r.jsx)(y.A, {
                 author: n.author,
                 inviteError: N
             });
@@ -108,7 +108,7 @@ function S(e) {
                     });
                     break;
                 case p.Xd.FRIEND:
-                    G = (0, r.jsx)(y.A, {
+                    G = (0, r.jsx)(A.A, {
                         invite: w,
                         message: n,
                         getAcceptInviteContext: S
@@ -144,7 +144,7 @@ function S(e) {
                             message: n
                         });
                         break
-                    }(0, c.v)(w) && (G = (0, r.jsx)(O.A, {
+                    }(0, c.v)(w) && (G = (0, r.jsx)(x.A, {
                         onTransitionToInviteChannel: k,
                         onAcceptInstantInvite: U,
                         isMemberOfGuild: null != D,

@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     l = n(158954),
-    a = n(311907),
-    o = n(397927),
+    o = n(311907),
+    a = n(397927),
     s = n(236698),
     c = n(668131),
     u = n(797632),
@@ -52,15 +52,15 @@ function O(e) {
     let {
         surveyId: t,
         survey: n,
-        onClose: a,
+        onClose: o,
         transitionState: u
     } = e, {
         getSurveyResponses: O,
         setResponse: N,
         trackDisplayedQuestions: p
-    } = (0, c.i)(), R = O(t), S = (0, E.i)(n), [P, y] = i.useState(S.blockId), [m, f] = i.useState(S.pageIndex), [C, g] = i.useState(!1), D = (e, n) => {
+    } = (0, c.i)(), R = O(t), S = (0, E.i)(n), [P, y] = i.useState(S.blockId), [C, f] = i.useState(S.pageIndex), [D, g] = i.useState(!1), m = (e, n) => {
         N(t, e, n)
-    }, h = i.useCallback(() => (C ? a() : (0, o.qfG)(e => (0, r.jsx)(l.Modal, I(T({
+    }, h = i.useCallback(() => (D ? o() : (0, a.qfG)(e => (0, r.jsx)(l.Modal, I(T({
         title: _.intl.string(_.t.T9Sx3z),
         actions: [{
             variant: "secondary",
@@ -70,33 +70,33 @@ function O(e) {
             variant: "critical-primary",
             text: _.intl.string(_.t.p89ACt),
             onClick: () => {
-                e.onClose(), a()
+                e.onClose(), o()
             }
         }]
     }, e), {
-        children: (0, r.jsx)(o.Text, {
+        children: (0, r.jsx)(a.Text, {
             variant: "text-md/normal",
             children: _.intl.string(_.t.iCK6G0)
         })
-    }))), Promise.resolve()), [a, C]), b = i.useMemo(() => null == P ? [] : (0, E.uy)(n, {
+    }))), Promise.resolve()), [o, D]), U = i.useMemo(() => null == P ? [] : (0, E.uy)(n, {
         blockId: P,
-        pageIndex: m,
+        pageIndex: C,
         responses: R
-    }), [n, P, m, R]), U = i.useCallback(() => {
+    }), [n, P, C, R]), M = i.useCallback(() => {
         if (null == n || null == P) return;
         let e = (0, E.vt)(n, {
             blockId: P,
-            pageIndex: m,
+            pageIndex: C,
             responses: R
         });
-        p(t, b), e.isComplete && s.Ay.submitSurveyResponse(t, R), y(e.blockId), f(e.pageIndex), g(e.isComplete)
-    }, [n, P, m, R, t, b, p]);
+        p(t, U), e.isComplete && s.Ay.submitSurveyResponse(t, R), y(e.blockId), f(e.pageIndex), g(e.isComplete)
+    }, [n, P, C, R, t, U, p]);
     i.useEffect(() => {
-        0 === b.length && U()
-    }, [b, U]);
-    let M = i.useMemo(() => {
-        if (C) return !1;
-        for (let r of b) {
+        0 === U.length && M()
+    }, [U, M]);
+    let b = i.useMemo(() => {
+        if (D) return !1;
+        for (let r of U) {
             var e, t;
             let i = n.Questions[r];
             if ((null == i || null == (t = i.Validation) || null == (e = t.Settings) ? void 0 : e.ForceResponse) === "ON") {
@@ -105,21 +105,21 @@ function O(e) {
             }
         }
         return !0
-    }, [C, b, n, R]);
-    return C ? (0, r.jsxs)(l.Modal, {
+    }, [D, U, n, R]);
+    return D ? (0, r.jsxs)(l.Modal, {
         transitionState: u,
-        onClose: a,
+        onClose: o,
         size: "md",
         title: _.intl.string(_.t.OSqLUF),
         actions: [{
             variant: "primary",
             text: _.intl.string(_.t.i4jeWR),
-            onClick: a
+            onClick: o
         }],
-        children: [(0, r.jsx)(o.Text, {
+        children: [(0, r.jsx)(a.Text, {
             variant: "text-md/normal",
             children: _.intl.string(_.t["2scvdw"])
-        }), (0, r.jsx)(o.Text, {
+        }), (0, r.jsx)(a.Text, {
             variant: "text-md/normal",
             children: _.intl.string(_.t.chZxOD)
         })]
@@ -131,22 +131,22 @@ function O(e) {
         actions: [{
             variant: "primary",
             text: _.intl.string(_.t.PDTjLN),
-            onClick: U,
-            disabled: !M
+            onClick: M,
+            disabled: !b
         }],
         children: (0, r.jsx)("div", {
             style: {
                 width: "100%"
             },
-            children: 0 === b.length ? null : (0, r.jsx)("div", {
+            children: 0 === U.length ? null : (0, r.jsx)("div", {
                 className: A.Qs,
-                children: b.map(e => {
+                children: U.map(e => {
                     let t = n.Questions[e];
                     return null == t ? null : (0, r.jsx)(d.A, {
                         question: t,
                         questionId: e,
                         responses: R,
-                        onResponseChange: D
+                        onResponseChange: m
                     }, e)
                 })
             })
@@ -154,7 +154,7 @@ function O(e) {
     })
 }
 async function N(e) {
-    null != await s.Ay.fetchSurveyDetails(e) && (c.i.getState().clearSurveyResponses(e), (0, o.mMO)(async () => {
+    null != await s.Ay.fetchSurveyDetails(e) && (c.i.getState().clearSurveyResponses(e), (0, a.mMO)(async () => {
         let {
             default: t
         } = await Promise.resolve().then(n.bind(n, 814249));
@@ -171,8 +171,8 @@ function p(e) {
         surveyId: t,
         onClose: n,
         transitionState: i
-    } = e, l = (0, a.bG)([u.A], () => u.A.getSurvey(t));
-    return null == l ? (0, r.jsx)(o.Text, {
+    } = e, l = (0, o.bG)([u.A], () => u.A.getSurvey(t));
+    return null == l ? (0, r.jsx)(a.Text, {
         variant: "text-md/medium",
         className: A.Lq,
         children: _.intl.string(_.t.MKDeyL)

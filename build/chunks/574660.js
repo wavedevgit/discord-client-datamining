@@ -1,6 +1,6 @@
 /** chunk id: 574660, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    F: () => y,
+    F: () => A,
     t: () => v
 });
 var r = n(64700),
@@ -20,7 +20,7 @@ var r = n(64700),
     h = n(488995),
     b = n(985018);
 
-function A(e) {
+function y(e) {
     let {
         isDiscoverable: t,
         customInstallUrl: n,
@@ -49,7 +49,7 @@ function A(e) {
     }
 }
 
-function y(e, t) {
+function A(e, t) {
     let {
         canViewApp: n,
         canOpenAppLauncher: i,
@@ -58,7 +58,7 @@ function y(e, t) {
         installParams: u,
         integrationTypesConfig: d,
         selectedGuildId: p
-    } = A(e);
+    } = y(e);
     return r.useMemo(() => n ? () => {
         (null == t || t(), i) ? (0, a.hg)(e.id) : (0, s.transitionToGlobalDiscovery)({
             tab: h.GlobalDiscoveryTab.APPS,
@@ -85,7 +85,7 @@ function v(e) {
     let {
         canViewApp: t,
         isInstallable: n
-    } = A(e), i = y(e);
+    } = y(e), i = A(e);
     return r.useMemo(() => t && null != i ? {
         label: b.intl.string(b.t.hvVgAZ),
         trackingArea: g.kY.VIEW,

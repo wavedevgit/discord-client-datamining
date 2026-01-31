@@ -18,11 +18,11 @@ var r = n(627968),
     _ = n(583846),
     h = n(207371),
     b = n(205184),
-    A = n(689168),
-    y = n(403362),
+    y = n(689168),
+    A = n(403362),
     v = n(456060),
-    x = n(131724),
-    O = n(987709),
+    O = n(131724),
+    x = n(987709),
     E = n(850670),
     j = n(206589),
     C = n(154297),
@@ -79,7 +79,7 @@ function M(e) {
             default:
                 return null
         }
-    }).filter(y.Vq), [l]);
+    }).filter(A.Vq), [l]);
     if (!(null != n || o.length > 0)) return null;
     let u = null != n ? (0, C.C)(n) : D.intl.string(D.t["4dGUP0"]);
     return (0, r.jsxs)("div", {
@@ -103,7 +103,7 @@ function k(e) {
     var t, n, a;
     let {
         message: s,
-        application: y,
+        application: A,
         applicationName: C,
         channel: T,
         header: N,
@@ -141,7 +141,7 @@ function k(e) {
                 textFontCode: !1
             })]
         }) : null
-    }, [ee, null == W || null == (a = W.timestamps) ? void 0 : a.end]), en = (0, E.v)(s), er = (0, b.s)(y.id), ei = i.useMemo(() => er.some(e => (0, _.CZ)(e) === l.m.GLOBAL) ? (0, r.jsxs)(r.Fragment, {
+    }, [ee, null == W || null == (a = W.timestamps) ? void 0 : a.end]), en = (0, E.v)(s), er = (0, b.s)(A.id), ei = i.useMemo(() => er.some(e => (0, _.CZ)(e) === l.m.GLOBAL) ? (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(c.Y3C, {
             size: "xxs",
             color: "currentColor"
@@ -155,19 +155,19 @@ function k(e) {
     }), [en, s, C, T, k, et, ei]), ea = i.useMemo(() => (0, r.jsxs)("div", {
         className: L.pq,
         children: [el, Y || en ? null : q]
-    }), [el, Y, en, q]), es = (0, h.e)(y), {
+    }), [el, Y, en, q]), es = (0, h.e)(A), {
         canJoin: eo,
         remoteJoinPlatform: ec
-    } = (0, x.D)({
+    } = (0, O.D)({
         presenceActivity: W,
         currentUserPresenceActivity: K,
         currentUserId: k,
         message: s,
-        application: y,
+        application: A,
         isEmbeddedApplication: G,
         isFrameApplication: es,
         isGameLaunchable: !!U
-    }), eu = (0, x.M)(W, K, s, y), ed = (0, O.E)(W, s, y, k), ep = (0, j.w)(K, W), em = (0, o.bG)([A.A], () => null != W && null != W.application_id && A.A.getState(W.application_id, w.xL.JOIN) === w.eAD.LOADING), {
+    }), eu = (0, O.M)(W, K, s, A), ed = (0, x.E)(W, s, A, k), ep = (0, j.w)(K, W), em = (0, o.bG)([y.A], () => null != W && null != W.application_id && y.A.getState(W.application_id, w.xL.JOIN) === w.eAD.LOADING), {
         actions: ef,
         hasAccountLinkButton: eg
     } = i.useMemo(() => {
@@ -263,7 +263,7 @@ function k(e) {
             primaryActionFirst: !0,
             onClickContent: H,
             trackingConfig: {
-                id: y.id,
+                id: A.id,
                 linkType: R.J.RICH_PRESENCE_INVITE,
                 onView: z,
                 referrerId: s.author.id,

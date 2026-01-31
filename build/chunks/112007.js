@@ -1,6 +1,6 @@
 /** chunk id: 112007, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => x
+    A: () => O
 }), n(938796), n(896048);
 var r = n(627968),
     i = n(64700),
@@ -18,12 +18,12 @@ var r = n(627968),
     _ = n(860689),
     h = n(505417),
     b = n(168428),
-    A = n(652215),
-    y = n(985018),
+    y = n(652215),
+    A = n(985018),
     v = n(563111);
 
-function x(e) {
-    var t, x, O, E;
+function O(e) {
+    var t, O, x, E;
     let j, C, I, {
             onTransitionToInviteChannel: S,
             onAcceptInstantInvite: T,
@@ -38,14 +38,14 @@ function x(e) {
             approximate_member_count: M,
             approximate_presence_count: k
         } = P,
-        U = P.state === A.elq.ACCEPTING,
+        U = P.state === y.elq.ACCEPTING,
         G = null != L ? (0, g.OY)(L) : null,
         B = null != N,
         F = null != G,
         H = null != G && G.isGuildStageVoice(),
         V = (0, a.Lt)(null != (t = P.flags) ? t : 0, l.Q.IS_GUEST_INVITE),
-        z = null != (x = null == G ? void 0 : G.isGuildVoiceOrThread()) && x,
-        W = null != (O = null == N ? void 0 : N.features.has(A.GuildFeatures.HUB)) && O,
+        z = null != (O = null == G ? void 0 : G.isGuildVoiceOrThread()) && O,
+        W = null != (x = null == N ? void 0 : N.features.has(y.GuildFeatures.HUB)) && x,
         K = null == N ? void 0 : N.id,
         {
             analyticsLocations: Y
@@ -67,7 +67,7 @@ function x(e) {
         }, [P, w, Y, B, S, T]);
     if (null == N) {
         if (null == P.guild) return (0, r.jsx)(b.A, {});
-        (N = _.DY(P.guild)).premiumTier = null != (E = P.guild.premium_tier) ? E : A.TVA.NONE
+        (N = _.DY(P.guild)).premiumTier = null != (E = P.guild.premium_tier) ? E : y.TVA.NONE
     }
     let ee = (0, h.l)({
         isVoiceChannel: z,
@@ -99,7 +99,7 @@ function x(e) {
         })]
     }), V && (I = (0, r.jsx)(s.m, {
         asContainer: !0,
-        text: y.intl.string(y.t["/FeTK6"]),
+        text: A.intl.string(A.t["/FeTK6"]),
         children: (0, r.jsx)(o.mir, {
             size: "md",
             color: "currentColor",
@@ -109,7 +109,7 @@ function x(e) {
         channel: G
     }), j = (0, r.jsxs)("span", {
         className: v.FA,
-        children: [y.intl.format(y.t["2wimj5"], {
+        children: [A.intl.format(A.t["2wimj5"], {
             guildName: N.name
         }), (0, r.jsx)("span", {
             className: v.E3,
@@ -147,16 +147,16 @@ function x(e) {
                     loading: U,
                     variant: "active",
                     fullWidth: z,
-                    text: z ? H ? y.intl.string(y.t["7vb2cc"]) : y.intl.string(y.t.gpqgah) : B ? y.intl.string(y.t.cEnaWx) : y.intl.string(y.t.XpeFYr)
+                    text: z ? H ? A.intl.string(A.t["7vb2cc"]) : A.intl.string(A.t.gpqgah) : B ? A.intl.string(A.t.cEnaWx) : A.intl.string(A.t.XpeFYr)
                 })
             })]
-        }), N.features.has(A.GuildFeatures.HUB) && (0, r.jsxs)(r.Fragment, {
+        }), N.features.has(y.GuildFeatures.HUB) && (0, r.jsxs)(r.Fragment, {
             children: [(0, r.jsx)("div", {
                 className: v.me
             }), (0, r.jsx)(o.Text, {
                 variant: "text-sm/normal",
                 color: "text-default",
-                children: y.intl.format(y.t["/o1IfA"], {
+                children: A.intl.format(A.t["/o1IfA"], {
                     onClick: () => (0, o.mMO)(async () => {
                         let {
                             default: e

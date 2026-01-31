@@ -18,11 +18,11 @@ var r = n(627968),
     _ = n(624793),
     h = n(477712),
     b = n(767143),
-    A = n(652176),
-    y = n(87719),
+    y = n(652176),
+    A = n(87719),
     v = n(465794),
-    x = n(71393),
-    O = n(287809),
+    O = n(71393),
+    x = n(287809),
     E = n(954571),
     j = n(927578),
     C = n(256449),
@@ -59,7 +59,7 @@ function k(e) {
     E.default.track(P.HAw.PREMIUM_PROMOTION_OPENED, {
         location_page: null != e.guild_id ? P.liQ.GUILD_CHANNEL : P.liQ.DM_CHANNEL,
         location_section: P.JJy.STICKER_POPOUT
-    }), (0, y.e)()
+    }), (0, A.e)()
 }
 
 function U(e) {
@@ -127,9 +127,9 @@ let G = e => {
                 guild_id: e.getGuildId(),
                 sticker_pack_id: n.pack_id
             }, (0, f.dI)(e)))
-        }, [n.pack_id]), c || null == o) ? (0, r.jsx)(A.Y0, {
+        }, [n.pack_id]), c || null == o) ? (0, r.jsx)(y.Y0, {
             className: D.v0
-        }) : (0, r.jsxs)(A.Uq, {
+        }) : (0, r.jsxs)(y.Uq, {
             className: D.Bm,
             children: [(0, r.jsx)(d.Heading, {
                 variant: "heading-md/semibold",
@@ -169,13 +169,13 @@ let G = e => {
                 sticker: n,
                 channel: l,
                 closePopout: o,
-                refreshPositionKey: y
+                refreshPositionKey: A
             } = e,
             [C, I] = i.useState(null),
             [S, N] = i.useState(!1),
-            G = O.default.getCurrentUser(),
+            G = x.default.getCurrentUser(),
             B = j.Ay.canUseCustomStickersEverywhere(G),
-            F = (0, s.bG)([x.A], () => x.A.getGuild(n.guild_id)),
+            F = (0, s.bG)([O.A], () => O.A.getGuild(n.guild_id)),
             H = null != F,
             [V, z] = i.useState(!1),
             [W, K] = i.useState(null),
@@ -190,7 +190,7 @@ let G = e => {
             }, (0, f.dI)(l))),
             J = {
                 stickerSourceGuild: F,
-                refreshPositionKey: y
+                refreshPositionKey: A
             },
             Q = i.useRef(J);
         i.useEffect(() => {
@@ -222,12 +222,12 @@ let G = e => {
                 E.default.track(P.HAw.OPEN_POPOUT, M({
                     type: ee
                 }, q))
-            }), !S) return (0, r.jsx)(A.Y0, {
+            }), !S) return (0, r.jsx)(y.Y0, {
             className: D.v0
         });
         {
             let e;
-            return (0, r.jsxs)(A.Uq, {
+            return (0, r.jsxs)(y.Uq, {
                 className: L.Bm,
                 children: [(e = async () => {
                     if (null == C || H) return;
@@ -282,7 +282,7 @@ let G = e => {
                         }), !H && (0, r.jsxs)(r.Fragment, {
                             children: [(0, r.jsx)(d.DUT, {
                                 onClick: () => {
-                                    y(), z(!V)
+                                    A(), z(!V)
                                 },
                                 className: L.wK,
                                 children: (0, r.jsxs)(g.A, {
@@ -308,7 +308,7 @@ let G = e => {
                                     var t, n;
                                     return (0, r.jsx)(c.m, (t = M({
                                         text: e.name
-                                    }, A.Uk), n = n = {
+                                    }, y.Uk), n = n = {
                                         children: (0, r.jsx)("div", {
                                             className: a()(L.Th, {
                                                 [D.vT]: null != W && W !== e.id
@@ -353,7 +353,7 @@ function F(e) {
         closePopout: n,
         sticker: i
     } = e;
-    return (0, r.jsx)(A.Uq, {
+    return (0, r.jsx)(y.Uq, {
         className: D.Bm,
         children: (0, r.jsx)(U, {
             sticker: i,
@@ -386,5 +386,5 @@ let H = e => {
         channel: n,
         closePopout: i,
         sticker: t
-    }) : (i(), null) : (0, r.jsx)(A.Y0, {})
+    }) : (i(), null) : (0, r.jsx)(y.Y0, {})
 }

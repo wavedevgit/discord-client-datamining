@@ -18,11 +18,11 @@ var r = n(627968),
     _ = n(429913),
     h = n(993408),
     b = n(235986),
-    A = n(242874),
-    y = n(499454),
+    y = n(242874),
+    A = n(499454),
     v = n(75825),
-    x = n(976860),
-    O = n(871123),
+    O = n(976860),
+    x = n(871123),
     E = n(317560),
     j = n(780964),
     C = n(840065),
@@ -223,7 +223,7 @@ class q extends i.Component {
         let s = r.isPreorder() ? F.intl.formatToPlainString(F.t.evinTd, {
             name: r.name
         }) : r.name;
-        if (e.redeemed) return e.isSubscription || (0, h.hU)(e) || (0, O.bF)(r) ? F.intl.string(F.t.mVC3Cv) : F.intl.format(F.t["ss/L+/"], {
+        if (e.redeemed) return e.isSubscription || (0, h.hU)(e) || (0, x.bF)(r) ? F.intl.string(F.t.mVC3Cv) : F.intl.format(F.t["ss/L+/"], {
             skuName: s,
             onViewInLibrary: this.handleViewLibrary
         });
@@ -289,7 +289,7 @@ class q extends i.Component {
             sku: n
         } = this.props;
         if (null == e) return null;
-        let i = null != e.giftStyle && !(0, O.bF)(n);
+        let i = null != e.giftStyle && !(0, x.bF)(n);
         return (0, r.jsx)(U.k, {
             skuId: e.skuId,
             onEmbedClick: this.handleEmbedClick,
@@ -335,7 +335,7 @@ class q extends i.Component {
             let {
                 libraryApplication: t
             } = this.props;
-            e.preventDefault(), null != t && t.isHidden() ? (0, x.pX)(G.BVt.APPLICATION_LIBRARY_SETTINGS) : (0, x.pX)(G.BVt.APPLICATION_LIBRARY, {
+            e.preventDefault(), null != t && t.isHidden() ? (0, O.pX)(G.BVt.APPLICATION_LIBRARY_SETTINGS) : (0, O.pX)(G.BVt.APPLICATION_LIBRARY, {
                 state: {
                     applicationId: null != t ? t.id : void 0
                 }
@@ -359,7 +359,7 @@ class q extends i.Component {
                 })
             });
             let a = i !== G.lAJ.CUSTOM_GIFT ? void 0 : r;
-            (0, y.h)({
+            (0, A.h)({
                 processedCode: n,
                 channelContext: t,
                 customGiftMessage: a,
@@ -371,7 +371,7 @@ class q extends i.Component {
                 sku: n,
                 skuApplication: r
             } = this.props;
-            null != n && (0, O.bF)(n) && null != r && null != r.guildId ? (e.preventDefault(), (0, E.R)({
+            null != n && (0, x.bF)(n) && null != r && null != r.guildId ? (e.preventDefault(), (0, E.R)({
                 skuId: n.id,
                 applicationId: r.id,
                 guildId: r.guildId,
@@ -406,7 +406,7 @@ class q extends i.Component {
                 children: [n && (0, r.jsx)(w.A, {
                     className: H.nr
                 }), null != e.giftStyle && (0, r.jsx)(v.A, {
-                    defaultAnimationState: e.redeemed ? A.oA.LOOP : A.oA.IDLE,
+                    defaultAnimationState: e.redeemed ? y.oA.LOOP : y.oA.IDLE,
                     giftStyle: e.giftStyle,
                     className: l
                 })]

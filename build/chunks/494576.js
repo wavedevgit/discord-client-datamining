@@ -1,19 +1,19 @@
-/** chunk id: 494576, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    z: () => l
+/** chunk id: 494576, original params: t,e,n (module,exports,require) **/
+n.d(e, {
+    z: () => a
 });
 var r = n(652215),
-    i = n(985018);
+    l = n(985018);
 
-function l(e) {
+function a(t) {
     let {
-        username: t,
+        username: e,
         usernameOnClickHandler: n = r.tEg,
-        productName: l
-    } = e;
-    return i.intl.formatToParts(i.t["w4iXs+"], {
-        username: t,
+        productName: a
+    } = t;
+    return l.intl.formatToParts(l.t["w4iXs+"], {
+        username: e,
         usernameHook: n,
-        productName: l
+        productName: a
     })
 }

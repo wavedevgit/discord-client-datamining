@@ -18,11 +18,11 @@ var r = n(627968),
     _ = n(427262),
     h = n(573359),
     b = n(59784),
-    A = n(612669),
-    y = n(88001),
+    y = n(612669),
+    A = n(88001),
     v = n(652215),
-    x = n(519412),
-    O = n(985018),
+    O = n(519412),
+    x = n(985018),
     E = n(260171),
     j = n(421438);
 
@@ -66,7 +66,7 @@ let S = e => {
         return (0, r.jsx)(s.Button, {
             variant: "expressive",
             size: "md",
-            text: O.intl.string(x.default.rjuKse),
+            text: x.intl.string(O.default.rjuKse),
             icon: l.tvc,
             onClick: () => {
                 if (null == a) return;
@@ -117,7 +117,7 @@ let S = e => {
         return (0, r.jsx)(s.Button, {
             variant: "secondary",
             size: "md",
-            text: O.intl.string(x.default["eYHh+z"]),
+            text: x.intl.string(O.default["eYHh+z"]),
             onClick: () => {
                 if (null == i || !l.isDM()) return void g.A.captureMessage("CancelInviteButton onClick: unexpected state", {
                     extra: {
@@ -209,7 +209,7 @@ let S = e => {
         } = (0, a.cf)([b.A, d.default, p.A], () => {
             var e;
             return {
-                inviteState: null != l ? b.A.getInviteState(l) : y.xI.NOT_FOUND,
+                inviteState: null != l ? b.A.getInviteState(l) : A.xI.NOT_FOUND,
                 isFetching: null != l && b.A.isFetching(l),
                 invite: null != l ? null == (e = b.A.getInvite(l)) ? void 0 : e.invite : null,
                 currentUser: d.default.getCurrentUser(),
@@ -219,18 +219,18 @@ let S = e => {
         if (null == m) return null;
         let g = t.author,
             _ = m.id === g.id;
-        if (c || s === y.xI.FETCHING || s === y.xI.UNKNOWN) return (0, r.jsx)(o.Wb, {
+        if (c || s === A.xI.FETCHING || s === A.xI.UNKNOWN) return (0, r.jsx)(o.Wb, {
             isHorizontal: !0
         });
-        let h = (0, A.o1)({
+        let h = (0, y.o1)({
             sender: g,
             channel: n,
             isSender: _,
             inviteState: s
         });
         if (null == h) return null;
-        let v = s === y.xI.PENDING,
-            x = _ ? (0, r.jsx)(T, {
+        let v = s === A.xI.PENDING,
+            O = _ ? (0, r.jsx)(T, {
                 disabled: !v,
                 invite: u,
                 channel: n
@@ -244,6 +244,6 @@ let S = e => {
             header: h.header,
             body: h.body,
             compact: i,
-            actionButton: x
+            actionButton: O
         })
     }
