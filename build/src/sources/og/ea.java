@@ -20,11 +20,6 @@ public final class ea {
     /* renamed from: f  reason: collision with root package name */
     private s2 f43017f;
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public static /* bridge */ /* synthetic */ s2 a(ea eaVar) {
-        return eaVar.f43017f;
-    }
-
     public final ea d(s2 s2Var) {
         this.f43017f = s2Var;
         return this;
