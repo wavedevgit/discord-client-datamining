@@ -10,8 +10,8 @@ var l = n(627968),
     a = n(311907),
     o = n(827734),
     c = n(397927),
-    d = n(435183),
-    u = n(599119),
+    u = n(435183),
+    d = n(599119),
     h = n(219504),
     g = n(576705),
     m = n(376310);
@@ -55,7 +55,7 @@ function j(e, t) {
 function A(e) {
     let {
         channel: t
-    } = e, r = (0, a.bG)([g.A], () => g.A.can(p.xBc.MANAGE_CHANNELS, t), [t]), u = t.availableTags.length >= 20, m = t.availableTags.length > 0, A = i.useCallback(() => {
+    } = e, r = (0, a.bG)([g.A], () => g.A.can(p.xBc.MANAGE_CHANNELS, t), [t]), d = t.availableTags.length >= 20, m = t.availableTags.length > 0, A = i.useCallback(() => {
         let e = t.availableTags.length >= 20;
         r && !e && (0, c.mMO)(async () => {
             let {
@@ -82,7 +82,7 @@ function A(e) {
         handleDragReset: C,
         handleDragComplete: N
     } = (0, h.A)(t.availableTags, e => {
-        (0, d.fy)({
+        (0, u.fy)({
             availableTags: e
         })
     });
@@ -99,7 +99,7 @@ function A(e) {
         }, e.id)) : null, m ? (0, l.jsx)(c.DUT, {
             onClick: A,
             className: s()(b.JE, {
-                [b.r9]: !r || u
+                [b.r9]: !r || d
             }),
             children: (0, l.jsx)(c.j96, {
                 size: "custom",
@@ -126,14 +126,14 @@ function y(e) {
         onDragComplete: a,
         onDragStart: o,
         onDragReset: c
-    } = e, d = n.findIndex(e => e.id === t.id), {
+    } = e, u = n.findIndex(e => e.id === t.id), {
         drag: h,
         dragSourcePosition: g,
         drop: p,
         setIsDraggable: x
-    } = (0, u.A)({
+    } = (0, d.A)({
         type: "CHANNEL_SETTINGS_FORUM_TAGS",
-        index: d,
+        index: u,
         optionId: t.id,
         onDragStart: o,
         onDragComplete: a,
@@ -141,8 +141,8 @@ function y(e) {
     });
     return (0, l.jsx)("div", {
         className: s()(b.kL, {
-            [b.A]: null != g && d < g,
-            [b.Ze]: null != g && d > g
+            [b.A]: null != g && u < g,
+            [b.Ze]: null != g && u > g
         }),
         ref: e => {
             h(p(e))

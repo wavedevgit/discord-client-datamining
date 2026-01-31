@@ -9,10 +9,10 @@ var r, i = n(627968),
     l = n(503698),
     a = n.n(l),
     o = n(492462),
-    c = n(607399),
-    u = n(511815),
-    d = n(158954),
-    h = n(311907),
+    c = n(511815),
+    u = n(158954),
+    d = n(311907),
+    h = n(139033),
     p = n(397927),
     g = n(73153),
     f = n(830215),
@@ -670,14 +670,14 @@ class et extends(r = s.PureComponent) {
                 M._.dispatch(z.jej.WAVE_EMPHASIZE);
                 let e = await f.A.forgotPassword(t);
                 if (!1 === e) return;
-                e === u.D.ONE_TIME_LOGIN ? (0, p.qfG)(e => {
+                e === c.D.ONE_TIME_LOGIN ? (0, p.qfG)(e => {
                     let t = [{
                         variant: "primary",
                         text: q.intl.string(q.t.BddRzS),
                         onClick: e.onClose,
                         fullWidth: !0
                     }];
-                    return (0, i.jsx)(d.Modal, $(Z({
+                    return (0, i.jsx)(u.Modal, $(Z({
                         title: q.intl.string(q.t["6Ecyts"]),
                         actions: t
                     }, e), {
@@ -686,18 +686,12 @@ class et extends(r = s.PureComponent) {
                             children: q.intl.string(q.t.iAcrqV)
                         })
                     }))
-                }) : (0, p.qfG)(e => (0, i.jsx)(p.VoidConfirmModal, $(Z({
-                    header: q.intl.string(q.t.f5Pi7A),
-                    confirmText: q.intl.string(q.t.BddRzS),
-                    className: c.Fr ? Y.Hw : ""
-                }, e), {
-                    children: (0, i.jsx)(p.Text, {
-                        variant: "text-md/normal",
-                        children: q.intl.format(q.t["6u5hQ9"], {
-                            email: t
-                        })
+                }) : (0, h.A)({
+                    title: q.intl.string(q.t.f5Pi7A),
+                    subtitle: q.intl.format(q.t["6u5hQ9"], {
+                        email: t
                     })
-                })))
+                })
             } catch (t) {
                 let e = (0, A.p)(t);
                 this.setState({
@@ -761,7 +755,7 @@ X(et, "defaultProps", {
 });
 let en = function(e) {
     (0, P.K)();
-    let t = (0, h.cf)([B.A, U.A, D.default, S.A, T.A], () => ({
+    let t = (0, d.cf)([B.A, U.A, D.default, S.A, T.A], () => ({
         authenticated: D.default.isAuthenticated(),
         handoffAvailable: B.A.isHandoffAvailable(),
         user: B.A.user,

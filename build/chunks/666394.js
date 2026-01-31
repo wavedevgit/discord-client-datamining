@@ -4,7 +4,7 @@ n.d(t, {
 }), n(896048);
 var l = n(627968),
     r = n(64700),
-    i = n(421380),
+    i = n(158954),
     s = n(397927),
     a = n(496092),
     c = n(929267),
@@ -67,14 +67,14 @@ function p(e) {
             for (r = 0, n = Object.getOwnPropertySymbols(e); r < n.length; r++) l = n[r], !(t.indexOf(l) >= 0) && Object.prototype.propertyIsEnumerable.call(e, l) && (i[l] = e[l]);
         return i
     }(e, ["event", "recurrenceId", "guildId", "onRsvp"]), [j, h] = r.useState(c.yS.SERIES), N = (0, c.TS)(t.id, null), f = (null == N ? void 0 : N.response) === o.Qi.INTERESTED ? o.Qi.UNINTERESTED : o.Qi.INTERESTED, y = f === o.Qi.INTERESTED ? u.intl.string(u.t.WtORed) : u.intl.string(u.t["8MPCVr"]);
-    return (0, l.jsx)(s.VoidConfirmModal, v(m({}, g), {
-        header: y,
+    return (0, l.jsx)(i.ConfirmModal, v(m({}, g), {
+        title: y,
         confirmText: u.intl.string(u.t.TyCVIq),
         cancelText: u.intl.string(u.t["ETE/oC"]),
         onConfirm: () => {
             j === c.yS.SERIES ? a.A.updateRsvp(t.id, null, p, f) : a.A.updateRsvp(t.id, n, p, f), null == x || x(), g.onClose()
         },
-        confirmButtonColor: i.$n.Colors.BRAND,
+        variant: "primary",
         children: (0, l.jsx)("div", {
             className: d.E,
             children: (0, l.jsx)(s.z6M, {

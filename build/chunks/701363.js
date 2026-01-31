@@ -338,7 +338,7 @@ function eb(e) {
                 default: e
             } = await n.e("37803").then(n.bind(n, 148166));
             return t => (0, r.jsx)(e, es({
-                header: l,
+                title: l,
                 body: i,
                 onSubmit: eZ
             }, t))

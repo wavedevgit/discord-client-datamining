@@ -28,10 +28,10 @@ function j(e) {
             selectableWebhookChannels: v,
             refToScroller: _,
             errors: N,
-            canNavigate: w
+            canNavigate: E
         } = e,
-        E = (0, d.Ay)(),
-        [T, C] = r.useState(null),
+        T = (0, d.Ay)(),
+        [C, w] = r.useState(null),
         [S, I] = r.useState(null);
     if (null != O) n = O;
     else {
@@ -39,7 +39,7 @@ function j(e) {
         n = e.length > 0 ? e[0] : null
     }
     let P = r.useCallback(async () => {
-        if (w() && null !== n) {
+        if (E() && null !== n) {
             let e = await o.A.create(j.id, n.id).catch(e => {
                 let {
                     body: t,
@@ -56,9 +56,9 @@ function j(e) {
                     body: b.intl.string(b.t["/4TwKf"])
                 }), null
             });
-            null != e && (I(e.id), C(e))
+            null != e && (I(e.id), w(e))
         }
-    }, [w, n, j]);
+    }, [E, n, j]);
     (0, c.Ay)(() => {
         0 === y.length && P()
     });
@@ -87,11 +87,11 @@ function j(e) {
                 webhooks: y,
                 editedWebhook: A,
                 selectableWebhookChannels: v,
-                lastCreatedWebhookId: null == T ? void 0 : T.id,
+                lastCreatedWebhookId: null == C ? void 0 : C.id,
                 errors: N,
-                canNavigate: w
+                canNavigate: E
             })]
-        }) : (t = (0, l.Mw)(E) ? h : x, (0, i.jsxs)(u.A, {
+        }) : (t = (0, l.Mw)(T) ? h : x, (0, i.jsxs)(u.A, {
             direction: u.A.Direction.VERTICAL,
             align: u.A.Align.CENTER,
             children: [(0, i.jsx)("img", {

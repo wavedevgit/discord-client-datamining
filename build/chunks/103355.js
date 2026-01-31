@@ -154,14 +154,14 @@ function f(e) {
             endDateTimeString: w,
             startDateTimeString: P
         }), [B, C, O, T, w, P]),
-        V = null;
+        Y = null;
     if (null != b) {
         let e = (0, v.X7)(b);
-        V = g.intl.formatToPlainString(g.t.HmKEqW, {
+        Y = g.intl.formatToPlainString(g.t.HmKEqW, {
             recurrenceRule: e.toText()
         });
         let n = c()(t);
-        V = function(e, t) {
+        Y = function(e, t) {
             let n = t.toDate(),
                 l = n.toLocaleString(g.intl.currentLocale, {
                     weekday: "long"
@@ -199,7 +199,7 @@ function f(e) {
     }
     return (0, l.jsxs)(N, {
         className: s()(a, {
-            [j.AD]: null != V
+            [j.AD]: null != Y
         }),
         tooltipText: M,
         children: [E && n === x.XG.SCHEDULED ? (0, l.jsx)(h, {}) : (0, l.jsx)(z, {
@@ -213,10 +213,10 @@ function f(e) {
                 color: X,
                 variant: y,
                 children: G
-            }), null != V && (0, l.jsx)(d.Text, {
+            }), null != Y && (0, l.jsx)(d.Text, {
                 color: "text-default",
                 variant: "text-xs/normal",
-                children: V
+                children: Y
             })]
         })]
     })

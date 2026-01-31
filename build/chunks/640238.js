@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
     M: () => _,
-    VoidConfirmModal: () => p
+    a: () => p
 });
 var r = n(627968),
     i = n(64700),

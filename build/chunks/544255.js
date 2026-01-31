@@ -1,97 +1,96 @@
-/** chunk id: 544255, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    A: () => g
+/** chunk id: 544255, original params: t,e,n (module,exports,require) **/
+n.d(e, {
+    A: () => E
 }), n(896048);
 var l = n(627968);
 n(64700);
-var r = n(311907),
-    i = n(397927),
+var r = n(158954),
+    i = n(311907),
+    u = n(397927),
     o = n(931991),
-    u = n(698441),
-    a = n(496092),
-    c = n(722260),
-    s = n(563312),
-    d = n(985018);
+    a = n(698441),
+    c = n(496092),
+    s = n(722260),
+    d = n(563312),
+    g = n(985018);
 
-function g(e) {
+function E(t) {
     let {
-        guildEventId: t,
+        guildEventId: e,
         recurrenceId: n,
-        guild: g,
-        channel: E
-    } = e, f = null != n, {
-        canManageGuildEvent: A
-    } = (0, o.nr)(null != E ? E : g), [y, p] = (0, r.yK)([u.Ay], () => [u.Ay.isActive(t), u.Ay.getGuildScheduledEvent(t)]), b = (0, c.A)(n, null == p ? void 0 : p.id), v = null != p && A(p), O = (null == p ? void 0 : p.recurrence_rule) != null && !f, h = (0, s.nh)(t, n);
-    if (!v || y && !O && !f || f && !f || null == p || null == h) return null;
+        guild: E,
+        channel: f
+    } = t, A = null != n, {
+        canManageGuildEvent: y
+    } = (0, o.nr)(null != f ? f : E), [p, b] = (0, i.yK)([a.Ay], () => [a.Ay.isActive(e), a.Ay.getGuildScheduledEvent(e)]), v = (0, s.A)(n, null == b ? void 0 : b.id), O = null != b && y(b), h = (null == b ? void 0 : b.recurrence_rule) != null && !A, _ = (0, d.nh)(e, n);
+    if (!O || p && !h && !A || A && !A || null == b || null == _) return null;
     let {
-        startTime: _
-    } = h;
-    if (y && f) {
-        var m;
-        if (null == _) return null;
-        let e = new Date(null != (m = null == b ? void 0 : b.scheduled_start_time) ? m : _);
-        if (new Date > e) return null
+        startTime: m
+    } = _;
+    if (p && A) {
+        var T;
+        if (null == m) return null;
+        let t = new Date(null != (T = null == v ? void 0 : v.scheduled_start_time) ? T : m);
+        if (new Date > t) return null
     }
-    let T = e => {
-        (0, i.qfG)(r => {
-            var o, u;
-            return (0, l.jsxs)(i.VoidConfirmModal, (o = function(e) {
-                for (var t = 1; t < arguments.length; t++) {
-                    var n = null != arguments[t] ? arguments[t] : {},
+    let j = t => {
+        (0, u.qfG)(i => {
+            var o, a;
+            return (0, l.jsx)(r.ConfirmModal, (o = function(t) {
+                for (var e = 1; e < arguments.length; e++) {
+                    var n = null != arguments[e] ? arguments[e] : {},
                         l = Object.keys(n);
-                    "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-                        return Object.getOwnPropertyDescriptor(n, e).enumerable
-                    }))), l.forEach(function(t) {
+                    "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(n).filter(function(t) {
+                        return Object.getOwnPropertyDescriptor(n, t).enumerable
+                    }))), l.forEach(function(e) {
                         var l;
-                        l = n[t], t in e ? Object.defineProperty(e, t, {
+                        l = n[e], e in t ? Object.defineProperty(t, e, {
                             value: l,
                             enumerable: !0,
                             configurable: !0,
                             writable: !0
-                        }) : e[t] = l
+                        }) : t[e] = l
                     })
                 }
-                return e
-            }({}, r), u = u = {
-                header: d.intl.string(d.t.R5bpin),
-                confirmText: O || e ? d.intl.string(d.t["8ZsNv5"]) : d.intl.string(d.t.B9sJLX),
-                cancelText: d.intl.string(d.t.oEAioF),
-                onConfirm: () => f && !e ? a.A.deleteRecurrence(g.id, t, n, b) : a.A.deleteGuildEvent(t, g.id),
-                children: [(0, l.jsx)(i.Text, {
+                return t
+            }({}, i), a = a = {
+                title: g.intl.string(g.t.R5bpin),
+                subtitle: g.intl.string(g.t.v2GWNQ),
+                confirmText: h || t ? g.intl.string(g.t["8ZsNv5"]) : g.intl.string(g.t.B9sJLX),
+                cancelText: g.intl.string(g.t.oEAioF),
+                onConfirm: () => A && !t ? c.A.deleteRecurrence(E.id, e, n, v) : c.A.deleteGuildEvent(e, E.id),
+                children: (h || t) && (0, l.jsx)(u.Text, {
                     variant: "text-md/normal",
-                    children: d.intl.string(d.t.v2GWNQ)
-                }), (0, l.jsx)("br", {}), (O || e) && (0, l.jsx)(i.Text, {
-                    variant: "text-md/normal",
-                    children: d.intl.format(d.t.ZcpcyO, {})
-                })]
-            }, Object.getOwnPropertyDescriptors ? Object.defineProperties(o, Object.getOwnPropertyDescriptors(u)) : (function(e, t) {
-                var n = Object.keys(e);
+                    children: g.intl.format(g.t.ZcpcyO, {})
+                })
+            }, Object.getOwnPropertyDescriptors ? Object.defineProperties(o, Object.getOwnPropertyDescriptors(a)) : (function(t, e) {
+                var n = Object.keys(t);
                 if (Object.getOwnPropertySymbols) {
-                    var l = Object.getOwnPropertySymbols(e);
+                    var l = Object.getOwnPropertySymbols(t);
                     n.push.apply(n, l)
                 }
                 return n
-            })(Object(u)).forEach(function(e) {
-                Object.defineProperty(o, e, Object.getOwnPropertyDescriptor(u, e))
+            })(Object(a)).forEach(function(t) {
+                Object.defineProperty(o, t, Object.getOwnPropertyDescriptor(a, t))
             }), o))
         })
     };
-    return (0, l.jsx)(i.Drp, {
-        id: d.intl.string(d.t.B9sJLX),
-        label: d.intl.string(d.t.B9sJLX),
-        action: f ? void 0 : () => T(),
+    return (0, l.jsx)(u.Drp, {
+        id: g.intl.string(g.t.B9sJLX),
+        label: g.intl.string(g.t.B9sJLX),
+        action: A ? void 0 : () => j(),
         color: "danger",
-        children: f && (0, l.jsxs)(l.Fragment, {
-            children: [(0, l.jsx)(i.Drp, {
-                id: d.intl.string(d.t.tqClly),
-                label: d.intl.string(d.t.tqClly),
-                action: () => T(),
-                disabled: null == b ? void 0 : b.is_canceled,
+        children: A && (0, l.jsxs)(l.Fragment, {
+            children: [(0, l.jsx)(u.Drp, {
+                id: g.intl.string(g.t.tqClly),
+                label: g.intl.string(g.t.tqClly),
+                action: () => j(),
+                disabled: null == v ? void 0 : v.is_canceled,
                 color: "danger"
-            }), (0, l.jsx)(i.Drp, {
-                id: d.intl.string(d.t.wr33rW),
-                label: d.intl.string(d.t.wr33rW),
-                action: () => T(!0),
+            }), (0, l.jsx)(u.Drp, {
+                id: g.intl.string(g.t.wr33rW),
+                label: g.intl.string(g.t.wr33rW),
+                action: () => j(!0),
                 color: "danger"
             })]
         })

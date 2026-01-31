@@ -1,7 +1,7 @@
 /** chunk id: 908494, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => u
+    A: () => d
 });
 var l = n(627968);
 n(64700);
@@ -11,18 +11,18 @@ var i = n(503698),
     a = n(421380),
     o = n(397927),
     c = n(235986),
-    d = n(302284);
-let u = e => {
+    u = n(302284);
+let d = e => {
     let {
         className: t,
         icon: n,
         noticeText: i,
-        buttonText: u,
+        buttonText: d,
         onClick: h,
         canSync: g
     } = e;
     return (0, l.jsx)(o.ZpM, {
-        className: r()(t, d.N),
+        className: r()(t, u.N),
         children: (0, l.jsxs)(c.A, {
             justify: c.A.Justify.BETWEEN,
             align: c.A.Align.CENTER,
@@ -32,7 +32,7 @@ let u = e => {
                 size: "custom",
                 color: s.A.unsafe_rawColors.YELLOW_300.css
             }), (0, l.jsx)("div", {
-                className: d.P,
+                className: u.P,
                 children: (0, l.jsx)(o.Text, {
                     variant: "text-md/normal",
                     children: i
@@ -41,7 +41,7 @@ let u = e => {
                 size: a.$n.Sizes.SMALL,
                 color: a.$n.Colors.PRIMARY,
                 onClick: h,
-                children: u
+                children: d
             })]
         })
     })

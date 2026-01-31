@@ -1,7 +1,7 @@
 /** chunk id: 955941, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => u
+    A: () => d
 });
 var l = n(627968);
 n(64700);
@@ -11,9 +11,9 @@ var i = n(311907),
     a = n(71393),
     o = n(576705),
     c = n(351906),
-    d = n(652215);
+    u = n(652215);
 
-function u() {
+function d() {
     let e = (0, i.bG)([c.A], () => c.A.hideInstantInvites),
         {
             channel: t,
@@ -27,7 +27,7 @@ function u() {
                 guild: t
             }
         }, []),
-        u = (0, i.bG)([o.A], () => null != t && o.A.can(d.xBc.CREATE_INSTANT_INVITE, t), [t]),
+        d = (0, i.bG)([o.A], () => null != t && o.A.can(u.xBc.CREATE_INSTANT_INVITE, t), [t]),
         {
             invites: h,
             loading: g
@@ -37,7 +37,7 @@ function u() {
         loading: g,
         guild: n,
         channel: t,
-        canCreateInvites: u,
+        canCreateInvites: d,
         hide: e
     })
 }

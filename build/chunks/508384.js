@@ -10,8 +10,8 @@ var l = n(627968),
     a = n(990078),
     o = n(582754),
     c = n(397927),
-    d = n(442433),
-    u = n(665013),
+    u = n(442433),
+    d = n(665013),
     h = n(246199),
     g = n(967144),
     m = n(881762);
@@ -21,9 +21,9 @@ function p(e) {
         role: t,
         guild: r
     } = e, [a, o] = i.useState(!1);
-    return (0, u.x)(r, t) ? (0, l.jsx)(c.DUT, {
+    return (0, d.x)(r, t) ? (0, l.jsx)(c.DUT, {
         onClick: e => {
-            o(!0), (0, d.L3)(e, async () => {
+            o(!0), (0, u.L3)(e, async () => {
                 let {
                     default: e
                 } = await Promise.resolve().then(n.bind(n, 665013));
@@ -82,8 +82,8 @@ function f(e) {
         id: i,
         role: r,
         guild: s,
-        children: d,
-        isDragging: u,
+        children: u,
+        isDragging: d,
         selectedItem: f,
         onItemSelect: b,
         itemType: x,
@@ -95,7 +95,7 @@ function f(e) {
         onContextMenu: C,
         "aria-label": N
     } = e, S = (0, g.X_)(s.id, r, null == r ? void 0 : r.colorStrings);
-    return u ? (0, l.jsx)("div", {
+    return d ? (0, l.jsx)("div", {
         className: m.rz
     }) : (0, l.jsx)(c.VQ0.Item, {
         className: m.JC,
@@ -129,7 +129,7 @@ function f(e) {
                 })
             }(), (0, l.jsx)("div", {
                 className: m.dD,
-                children: d
+                children: u
             }), y && null != r ? (0, l.jsx)(p, {
                 guild: s,
                 role: r

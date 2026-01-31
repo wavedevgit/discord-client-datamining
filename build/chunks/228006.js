@@ -13,8 +13,8 @@ var r = n(311907),
     c = n(468389),
     u = n(793574),
     A = n(810845),
-    b = n(854182),
-    g = n(734337),
+    g = n(854182),
+    b = n(734337),
     p = n(855187),
     f = n(479335),
     m = n(50268),
@@ -24,8 +24,8 @@ var r = n(311907),
     x = n(309010),
     O = n(803664),
     y = n(29293),
-    C = n(509302),
-    D = n(497600),
+    D = n(509302),
+    C = n(497600),
     I = n(773699),
     P = n(239211),
     w = n(707378),
@@ -37,8 +37,8 @@ var r = n(311907),
     S = n(301541),
     T = n(460597),
     N = n(635443),
-    V = n(313998),
-    k = n(198229),
+    k = n(313998),
+    V = n(198229),
     G = n(243949),
     B = n(972432),
     R = n(77544),
@@ -68,16 +68,16 @@ let J = (0, a.A)((0, s.A)(function(e) {
     } = j.A.useExperiment({
         guildId: null == q ? void 0 : q.guild_id,
         location: "GroupDMUserContextMenu"
-    }), $ = Q ? null == q ? void 0 : q.id : s.id, ee = (0, V.A)(n, $), et = (0, S.A)(n.id, a), en = (0, w.A)({
+    }), $ = Q ? null == q ? void 0 : q.id : s.id, ee = (0, k.A)(n, $), et = (0, S.A)(n.id, a), en = (0, w.A)({
         user: n,
         context: a
-    }), ei = (0, D.A)({
+    }), ei = (0, C.A)({
         user: n,
         channelId: s.id,
         context: a
     }), er = (0, y.A)({
         user: n
-    }), el = (0, B.A)(n.id), eo = (0, N.A)(n.id, s.id), es = (0, k.A)(n.id), ea = (0, f.u)({
+    }), el = (0, B.A)(n.id), eo = (0, N.A)(n.id, s.id), es = (0, V.A)(n.id), ea = (0, f.u)({
         userId: n.id,
         channelId: s.id,
         guildId: s.getGuildId()
@@ -85,9 +85,9 @@ let J = (0, a.A)((0, s.A)(function(e) {
         user: n
     }), eu = (0, c.A)(null, n), eA = (0, O.A)({
         user: n
-    }), eb = (0, C.A)({
+    }), eg = (0, D.A)({
         user: n
-    }), eg = (0, T.A)({
+    }), eb = (0, T.A)({
         user: n
     }), ep = (0, P.A)({
         user: n,
@@ -98,13 +98,13 @@ let J = (0, a.A)((0, s.A)(function(e) {
     }), em = (0, m.A)({
         id: n.id,
         label: F.intl.string(F.t["/AXYnE"])
-    }), eh = (0, R.A)(n.id), ej = (0, g.A)(n.id), ev = (0, b.A)(s.id), ex = (0, h.A)(n), eO = (0, p.A)(n.id), ey = (0, A.A)(s.id, n.id), eC = (0, I.A)({
+    }), eh = (0, R.A)(n.id), ej = (0, b.A)(n.id), ev = (0, g.A)(s.id), ex = (0, h.A)(n), eO = (0, p.A)(n.id), ey = (0, A.A)(s.id, n.id), eD = (0, I.A)({
         commandType: d.kc.USER,
         commandTargetId: n.id,
         channel: s,
         guildId: void 0,
         onHeightUpdate: W
-    }), eD = (0, E.A)(n, s), eI = n.isNonUserBot(), eP = s.isManaged(), ew = null == (t = s.recipients) ? void 0 : t.includes(n.id);
+    }), eC = (0, E.A)(n, s), eI = n.isNonUserBot(), eP = s.isManaged(), ew = null == (t = s.recipients) ? void 0 : t.includes(n.id);
     return (0, i.jsxs)(l.W1t, {
         "data-menu-migrated": !0,
         navId: "user-context",
@@ -120,13 +120,13 @@ let J = (0, a.A)((0, s.A)(function(e) {
             }), X && (0, i.jsx)(l.rXV, {
                 children: el
             }), ew && (0, i.jsxs)(l.rXV, {
-                children: [!eP && eo, eD]
+                children: [!eP && eo, eC]
             }), (0, i.jsx)(l.rXV, {
                 children: z && eu
             }), J && (0, i.jsxs)(l.rXV, {
                 children: [ey, ev, ej]
             }), (0, i.jsxs)(l.rXV, {
-                children: [X && es, X && ea, X && ed, X && eO, eC, z && ec, eA, eb, eg, z && ef, z && ep]
+                children: [X && es, X && ea, X && ed, X && eO, eD, z && ec, eA, eg, eb, z && ef, z && ep]
             })]
         }), (0, i.jsx)(l.rXV, {
             children: em

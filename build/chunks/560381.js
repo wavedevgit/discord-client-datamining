@@ -1,5 +1,5 @@
-/** chunk id: 560381, original params: e,t,n (module,exports,require) **/
-e.exports = {
+/** chunk id: 560381, original params: t,e,n (module,exports,require) **/
+t.exports = {
     Tp: "purchaseSummaryContainer_fe72c8",
     Vr: "purchaseSummarInfo_fe72c8",
     $E: "purchaseSummaryImage_fe72c8",

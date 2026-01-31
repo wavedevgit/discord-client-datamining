@@ -1,7 +1,7 @@
 /** chunk id: 532277, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => u
+    A: () => d
 }), n(896048), n(667532), n(321073);
 var l = n(627968),
     i = n(64700),
@@ -10,13 +10,13 @@ var l = n(627968),
     a = n(879631),
     o = n(652215),
     c = n(985018),
-    d = n(473169);
+    u = n(473169);
 
-function u(e) {
+function d(e) {
     let {
         label: t,
         helperText: n,
-        hideLabel: u,
+        hideLabel: d,
         channel: h,
         onChange: g
     } = e, [m, p] = i.useState(null), f = h.rateLimitPerUser, b = i.useMemo(() => {
@@ -42,11 +42,11 @@ function u(e) {
         p(null)
     }, []);
     return (0, l.jsx)("div", {
-        className: d.QB,
+        className: u.QB,
         children: (0, l.jsx)(r.ZiE, {
             selectionMode: "single",
             label: t,
-            hideLabel: u,
+            hideLabel: d,
             helperText: n,
             value: f,
             onSelectionChange: x,

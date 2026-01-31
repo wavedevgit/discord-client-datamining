@@ -1,7 +1,7 @@
 /** chunk id: 732159, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    ConfirmModal: () => f
+    ConfirmModal: () => _
 }), n(896048);
 var r = n(627968),
     i = n(64700),
@@ -32,18 +32,35 @@ function c(e) {
 }
 
 function u(e, t) {
+    var n = Object.keys(e);
+    if (Object.getOwnPropertySymbols) {
+        var r = Object.getOwnPropertySymbols(e);
+        t && (r = r.filter(function(t) {
+            return Object.getOwnPropertyDescriptor(e, t).enumerable
+        })), n.push.apply(n, r)
+    }
+    return n
+}
+
+function d(e, t) {
+    return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : u(Object(t)).forEach(function(n) {
+        Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
+    }), e
+}
+
+function f(e, t) {
     if (null == e) return {};
     var n, r, i, a = {};
     if ("u" > typeof Reflect && Reflect.ownKeys) {
         for (i = 0, n = Reflect.ownKeys(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
         return a
     }
-    if (a = d(e, t), Object.getOwnPropertySymbols)
+    if (a = p(e, t), Object.getOwnPropertySymbols)
         for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
     return a
 }
 
-function d(e, t) {
+function p(e, t) {
     if (null == e) return {};
     var n, r, i = {},
         a = Object.getOwnPropertyNames(e);
@@ -51,53 +68,56 @@ function d(e, t) {
     return i
 }
 
-function f(e) {
+function _(e) {
     let {
         confirmText: t,
         cancelText: n,
         checkboxProps: l,
-        onConfirm: d,
-        onCancel: f,
-        onCloseCallback: p,
-        variant: _ = "critical"
-    } = e, h = u(e, ["confirmText", "cancelText", "checkboxProps", "onConfirm", "onCancel", "onCloseCallback", "variant"]), {
-        i18n: m
-    } = (0, a.G9)(), g = m.CANCEL, E = m.INLINE_NOTICE_GENERIC_ERROR, [y, b] = i.useState(!1), O = i.useRef(p);
+        onConfirm: u,
+        onCancel: p,
+        onCloseCallback: _,
+        variant: h = "critical",
+        children: m
+    } = e, g = f(e, ["confirmText", "cancelText", "checkboxProps", "onConfirm", "onCancel", "onCloseCallback", "variant", "children"]), {
+        i18n: E
+    } = (0, a.G9)(), y = E.CANCEL, b = E.INLINE_NOTICE_GENERIC_ERROR, [O, v] = i.useState(!1), A = i.useRef(_);
     i.useLayoutEffect(() => {
-        O.current = p
+        A.current = _
     }), i.useLayoutEffect(() => () => {
         var e;
-        null == (e = O.current) || e.call(O)
+        null == (e = A.current) || e.call(A)
     }, []);
-    let [v, A] = i.useState(void 0), I = e => {
-        A(e)
+    let [I, S] = i.useState(void 0), T = e => {
+        S(e)
     };
-    return (0, r.jsx)(o.Modal, c({
+    return (0, r.jsx)(o.Modal, d(c({
         actions: [{
-            text: null != n ? n : g,
+            text: null != n ? n : y,
             variant: "secondary",
             onClick: () => {
-                null == f || f(), h.onClose()
+                null == p || p(), g.onClose()
             }
         }, {
             text: t,
-            variant: "critical" === _ ? "critical-primary" : _,
+            variant: "critical" === h ? "critical-primary" : h,
             onClick: async () => {
-                A(void 0), b(!0);
+                S(void 0), v(!0);
                 try {
-                    await (null == d ? void 0 : d(I)), h.onClose()
+                    await (null == u ? void 0 : u(T)), g.onClose()
                 } catch (e) {
-                    throw b(!1), A(e => null != e ? e : E), e
+                    throw v(!1), S(e => null != e ? e : b), e
                 }
             },
-            disabled: y,
-            loading: y
+            disabled: O,
+            loading: O
         }],
         actionBarInput: null != l ? (0, r.jsx)(s.e, c({}, l)) : void 0,
         role: "alertdialog",
-        notice: null != v ? {
-            message: v,
+        notice: null != I ? {
+            message: I,
             type: "critical"
         } : void 0
-    }, h))
+    }, g), {
+        children: m
+    }))
 }

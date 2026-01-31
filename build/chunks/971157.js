@@ -1,6 +1,6 @@
 /** chunk id: 971157, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => E
+    A: () => T
 }), n(896048), n(321073), n(228524);
 var i = n(627968),
     r = n(64700),
@@ -44,7 +44,7 @@ function N(e) {
     return e
 }
 
-function w(e) {
+function E(e) {
     var t, n;
     let {
         application: r,
@@ -95,40 +95,40 @@ function w(e) {
     }), t))
 }
 
-function E(e) {
+function T(e) {
     let {
         guild: t,
         applicationIntegration: n,
         selectableWebhookChannels: a,
         editedWebhook: c,
         errors: u,
-        canNavigate: E
+        canNavigate: T
     } = e, {
-        application: T,
-        integration: C,
+        application: C,
+        integration: w,
         webhooks: S
-    } = n, [I, P] = (0, s.yK)([g.A], () => [g.A.can(A.xBc.MANAGE_ROLES, t), null == T.bot || g.A.canManageUser(A.xBc.MANAGE_GUILD, T.bot.id, t)], [T.bot, t]), k = (0, s.bG)([g.A], () => g.A.can(A.xBc.MANAGE_WEBHOOKS, t), [t]), R = r.useCallback(() => {
-        E() && (0, o.qfG)(e => (0, i.jsx)(w, N({
+    } = n, [I, P] = (0, s.yK)([g.A], () => [g.A.can(A.xBc.MANAGE_ROLES, t), null == C.bot || g.A.canManageUser(A.xBc.MANAGE_GUILD, C.bot.id, t)], [C.bot, t]), k = (0, s.bG)([g.A], () => g.A.can(A.xBc.MANAGE_WEBHOOKS, t), [t]), R = r.useCallback(() => {
+        T() && (0, o.qfG)(e => (0, i.jsx)(E, N({
             guild: t,
-            application: T,
-            integration: C
+            application: C,
+            integration: w
         }, e)))
-    }, [T, E, t, C]), L = r.useMemo(() => {
+    }, [C, T, t, w]), L = r.useMemo(() => {
         let e = [{
             icon: o.O4,
             text: v.intl.formatToPlainString(v.t.gcdJ8J, {
-                timestamp: f.default.extractTimestamp(C.id)
+                timestamp: f.default.extractTimestamp(w.id)
             })
         }];
-        return null != C.user && e.push({
+        return null != w.user && e.push({
             icon: o.nys,
             text: v.intl.formatToPlainString(v.t.qE7oqs, {
-                user: h.Ay.getUserTag(C.user)
+                user: h.Ay.getUserTag(w.user)
             })
         }), e
-    }, [C.id, C.user]), D = r.useMemo(() => {
+    }, [w.id, w.user]), D = r.useMemo(() => {
         var e;
-        return null != T.bot && (null == (e = C.scopes) ? void 0 : e.includes(l.F.BOT)) ? (0, i.jsx)(O.A, {
+        return null != C.bot && (null == (e = w.scopes) ? void 0 : e.includes(l.F.BOT)) ? (0, i.jsx)(O.A, {
             guild: t,
             applicationIntegration: n
         }) : (0, i.jsx)(o.ZpM, {
@@ -140,27 +140,27 @@ function E(e) {
                 children: v.intl.string(v.t.pfLnza)
             })
         })
-    }, [T.bot, n, t, C.scopes]);
+    }, [C.bot, n, t, w.scopes]);
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(x.A, {
-            name: T.name,
+            name: C.name,
             imageSrc: b.Ay.getApplicationIconURL({
-                id: T.id,
-                icon: T.icon,
+                id: C.id,
+                icon: C.icon,
                 size: 32
             }),
             details: L,
             isHeader: !0
-        }), (null == T ? void 0 : T.description) != null ? (0, i.jsx)(m.A, {
-            userBio: T.description,
+        }), (null == C ? void 0 : C.description) != null ? (0, i.jsx)(m.A, {
+            userBio: C.description,
             className: _.ux
         }) : null, I ? (0, i.jsx)(p.A, {
-            application: T,
-            canNavigate: E,
+            application: C,
+            canNavigate: T,
             guildId: t.id
         }) : null, (0, i.jsx)(o.cGx, {
             className: _.zN
-        }), null != T.bot ? (0, i.jsxs)("div", {
+        }), null != C.bot ? (0, i.jsxs)("div", {
             className: _.uW,
             children: [(0, i.jsx)(j.A, {
                 icon: (0, i.jsx)(o.CnV, {
@@ -182,7 +182,7 @@ function E(e) {
                 editedWebhook: c,
                 selectableWebhookChannels: a,
                 errors: u,
-                canNavigate: E
+                canNavigate: T
             }) : (0, i.jsx)(o.ZpM, {
                 className: _.aM,
                 editable: !0,

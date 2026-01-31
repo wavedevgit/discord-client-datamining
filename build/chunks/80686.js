@@ -16,7 +16,7 @@ function a(e) {
         id: a,
         label: o,
         onChange: c,
-        value: d
+        value: u
     } = e;
     return (0, l.jsxs)("div", {
         className: s.U,
@@ -29,9 +29,9 @@ function a(e) {
                     variant: "text-md/semibold",
                     children: o
                 })
-            }), null != c && null != d && (0, l.jsx)(i.dOG, {
+            }), null != c && null != u && (0, l.jsx)(i.dOG, {
                 id: a,
-                checked: d,
+                checked: u,
                 onChange: c
             })]
         }), (0, l.jsx)(i.Text, {

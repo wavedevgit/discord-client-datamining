@@ -1,30 +1,31 @@
 /** chunk id: 867276, original params: e,t,r (module,exports,require) **/
 r.d(t, {
-    default: () => l
+    default: () => u
 }), r(896048);
 var n = r(627968),
-    o = r(64700),
-    c = r(397927),
-    i = r(624458),
-    a = r(513461),
-    s = r(985018);
-let l = e => {
+    c = r(64700),
+    o = r(158954),
+    i = r(397927),
+    a = r(624458),
+    s = r(513461),
+    l = r(985018);
+let u = e => {
     var t, r;
     let {
-        guildId: l,
-        userId: u,
-        guildJoinRequestId: p,
-        onConfirm: b,
-        onError: O,
-        modalProps: f
-    } = e, [y, j] = o.useState(), d = async () => {
+        guildId: u,
+        userId: p,
+        guildJoinRequestId: b,
+        onConfirm: O,
+        onError: f,
+        modalProps: y
+    } = e, [j, g] = c.useState(), h = async () => {
         try {
-            await i.A.updateGuildJoinRequest(l, u, p, a.B5.REJECTED, y), null == b || b()
+            await a.A.updateGuildJoinRequest(u, p, b, s.B5.REJECTED, j), null == O || O()
         } catch (e) {
-            null == O || O()
+            null == f || f()
         }
     };
-    return (0, n.jsx)(c.VoidConfirmModal, (t = function(e) {
+    return (0, n.jsx)(o.ConfirmModal, (t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
             var r = null != arguments[t] ? arguments[t] : {},
                 n = Object.keys(r);
@@ -42,14 +43,14 @@ let l = e => {
         }
         return e
     }({
-        header: s.intl.string(s.t["mFP/qw"]),
-        cancelText: s.intl.string(s.t["ETE/oC"]),
-        confirmText: s.intl.string(s.t.hDtbsz),
-        onConfirm: d
-    }, f), r = r = {
-        children: (0, n.jsx)(c.fs1, {
-            value: y,
-            onChange: j,
+        title: l.intl.string(l.t["mFP/qw"]),
+        cancelText: l.intl.string(l.t["ETE/oC"]),
+        confirmText: l.intl.string(l.t.hDtbsz),
+        onConfirm: h
+    }, y), r = r = {
+        children: (0, n.jsx)(i.fs1, {
+            value: j,
+            onChange: g,
             maxLength: 160
         })
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {

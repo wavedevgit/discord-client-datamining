@@ -81,10 +81,10 @@ class O extends(i = l.PureComponent) {
             showIconDisabled: v,
             className: _,
             imageClassName: N,
-            iconClassName: w,
-            iconWrapperClassName: E,
-            icon: T,
-            hideSize: C,
+            iconClassName: E,
+            iconWrapperClassName: T,
+            icon: C,
+            hideSize: w,
             imageStyle: S,
             showRemoveButton: I,
             maxFileSizeBytes: P,
@@ -105,8 +105,8 @@ class O extends(i = l.PureComponent) {
                     backgroundImage: n
                 }),
                 children: [i, v && (0, r.jsx)("div", {
-                    className: s()(b.XD, b.$N, w),
-                    children: T
+                    className: s()(b.XD, b.$N, E),
+                    children: C
                 })]
             })
         });
@@ -114,7 +114,7 @@ class O extends(i = l.PureComponent) {
             className: b.DT,
             onClick: this.handleRemove,
             children: g.intl.string(g.t.N86XcP)
-        }) : C || (l = (0, r.jsx)("small", {
+        }) : w || (l = (0, r.jsx)("small", {
             className: b.UZ,
             children: g.intl.format(g.t.AH4c7Y, {
                 size: m.eQT
@@ -126,7 +126,7 @@ class O extends(i = l.PureComponent) {
             children: [(0, r.jsx)(d.vN3, {
                 within: !0,
                 children: (0, r.jsxs)("div", {
-                    className: A ? s()(b.U1, E) : void 0,
+                    className: A ? s()(b.U1, T) : void 0,
                     children: [(0, r.jsxs)("div", {
                         className: s()(b.Yp, N),
                         style: x(h({}, S), {
@@ -153,8 +153,8 @@ class O extends(i = l.PureComponent) {
                         "aria-hidden": "true",
                         children: o
                     }), A && (0, r.jsx)(j, {
-                        className: w,
-                        icon: T
+                        className: E,
+                        icon: C
                     })]
                 })
             }), I ? l : null]

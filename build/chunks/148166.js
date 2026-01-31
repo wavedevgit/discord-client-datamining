@@ -1,20 +1,21 @@
 /** chunk id: 148166, original params: e,t,r (module,exports,require) **/
 r.d(t, {
-    default: () => a
+    default: () => s
 }), r(896048);
 var n = r(627968),
     o = r(64700),
-    c = r(397927),
-    l = r(985018),
-    i = r(290468);
+    c = r(158954),
+    l = r(397927),
+    i = r(985018),
+    p = r(290468);
 
-function a(e) {
+function s(e) {
     var t, r;
     let {
-        header: a,
-        body: p,
-        onSubmit: s
-    } = e, b = function(e, t) {
+        title: s,
+        body: a,
+        onSubmit: b
+    } = e, u = function(e, t) {
         if (null == e) return {};
         var r, n, o, c = {};
         if ("u" > typeof Reflect && Reflect.ownKeys) {
@@ -30,8 +31,8 @@ function a(e) {
             }(e, t), Object.getOwnPropertySymbols)
             for (o = 0, r = Object.getOwnPropertySymbols(e); o < r.length; o++) n = r[o], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (c[n] = e[n]);
         return c
-    }(e, ["header", "body", "onSubmit"]), [u, f] = o.useState(!1);
-    return (0, n.jsxs)(c.VoidConfirmModal, (t = function(e) {
+    }(e, ["title", "body", "onSubmit"]), [f, y] = o.useState(!1);
+    return (0, n.jsxs)(c.ConfirmModal, (t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
             var r = null != arguments[t] ? arguments[t] : {},
                 n = Object.keys(r);
@@ -49,22 +50,22 @@ function a(e) {
         }
         return e
     }({
-        header: a,
-        confirmText: l.intl.string(l.t["26C4oi"]),
-        cancelText: l.intl.string(l.t["ETE/oC"]),
+        title: s,
+        confirmText: i.intl.string(i.t["26C4oi"]),
+        cancelText: i.intl.string(i.t["ETE/oC"]),
         onConfirm: () => {
-            s(null, u)
+            b(null, f)
         }
-    }, b), r = r = {
-        children: [(0, n.jsx)(c.Text, {
+    }, u), r = r = {
+        children: [(0, n.jsx)(l.Text, {
             variant: "text-md/normal",
-            children: p
+            children: a
         }), (0, n.jsx)("div", {
-            className: i.k,
-            children: (0, n.jsx)(c.Checkbox, {
-                checked: u,
-                onChange: () => f(e => !e),
-                label: l.intl.string(l.t.bq3JXs),
+            className: p.k,
+            children: (0, n.jsx)(l.Checkbox, {
+                checked: f,
+                onChange: () => y(e => !e),
+                label: i.intl.string(i.t.bq3JXs),
                 labelType: "secondary"
             })
         })]

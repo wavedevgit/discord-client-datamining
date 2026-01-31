@@ -1,30 +1,30 @@
 /** chunk id: 560010, original params: e,l,t (module,exports,require) **/
 t.d(l, {
-    A: () => c
+    A: () => u
 });
-var n, s, o = t(311907),
-    i = t(73153);
-let r = {};
-class a extends(s = o.Ay.Store) {
+var s, n, i = t(311907),
+    o = t(73153);
+let a = {};
+class r extends(n = i.Ay.Store) {
     getFollowerStatsForChannel(e) {
-        return r[e]
+        return a[e]
     }
-}(n = "displayName") in a ? Object.defineProperty(a, n, {
+}(s = "displayName") in r ? Object.defineProperty(r, s, {
     value: "ChannelFollowerStatsStore",
     enumerable: !0,
     configurable: !0,
     writable: !0
-}) : a[n] = "ChannelFollowerStatsStore";
-let c = new a(i.h, {
+}) : r[s] = "ChannelFollowerStatsStore";
+let u = new r(o.h, {
     CONNECTION_OPEN: function() {
-        r = {}
+        a = {}
     },
     CHANNEL_FOLLOWER_STATS_FETCH_SUCCESS: function(e) {
         let {
             channelId: l,
             stats: t
         } = e;
-        t = null != t ? t : {}, r[l] = {
+        t = null != t ? t : {}, a[l] = {
             loadingStatus: "succeeded",
             lastFetched: Date.now(),
             channelsFollowing: t.channels_following,
@@ -39,7 +39,7 @@ let c = new a(i.h, {
         let {
             channelId: l
         } = e;
-        r[l] = {
+        a[l] = {
             loadingStatus: "failed",
             lastFetched: Date.now(),
             channelsFollowing: 0,

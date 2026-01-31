@@ -1,16 +1,16 @@
 /** chunk id: 258671, original params: e,l,t (module,exports,require) **/
 t.d(l, {
-    A: () => a
+    A: () => r
 }), t(896048);
-var n = t(64700),
-    s = t(311907),
-    o = t(857182),
-    i = t(560010);
-let r = +t(927813).A.Millis.HOUR;
+var s = t(64700),
+    n = t(311907),
+    i = t(857182),
+    o = t(560010);
+let a = +t(927813).A.Millis.HOUR;
 
-function a(e) {
-    let [l, t] = n.useState(!1), a = (0, s.bG)([i.A], () => i.A.getFollowerStatsForChannel(e), [e]);
-    return n.useEffect(() => {
-        (null == a || Date.now() - a.lastFetched > r) && !l ? (t(!0), o.A.fetchChannelFollowerStats(e)) : null != a && l && t(!1)
-    }, [e, a, l]), [a, l]
+function r(e) {
+    let [l, t] = s.useState(!1), r = (0, n.bG)([o.A], () => o.A.getFollowerStatsForChannel(e), [e]);
+    return s.useEffect(() => {
+        (null == r || Date.now() - r.lastFetched > a) && !l ? (t(!0), i.A.fetchChannelFollowerStats(e)) : null != r && l && t(!1)
+    }, [e, r, l]), [r, l]
 }

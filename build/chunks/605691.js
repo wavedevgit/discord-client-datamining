@@ -51,7 +51,7 @@ function d(e, t) {
                 }
                 return e
             }({
-                header: d,
+                title: d,
                 body: b,
                 onSubmit: f
             }, t))
