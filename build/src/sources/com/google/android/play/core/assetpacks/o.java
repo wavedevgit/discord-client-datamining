@@ -50,9 +50,7 @@ abstract class o extends th.c0 {
 
     @Override // th.d0
     public void b0(Bundle bundle, Bundle bundle2) {
-        th.v0 v0Var;
-        v0Var = this.f16946d.f17096e;
-        v0Var.u(this.f16945c);
+        this.f16946d.f17096e.u(this.f16945c);
         x.f17090g.d("onKeepAlive(%b)", Boolean.valueOf(bundle.getBoolean("keep_alive")));
     }
 

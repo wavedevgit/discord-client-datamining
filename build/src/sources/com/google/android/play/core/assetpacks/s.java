@@ -30,9 +30,7 @@ final class s extends o {
 
     @Override // com.google.android.play.core.assetpacks.o, th.d0
     public final void g(Bundle bundle) {
-        th.v0 v0Var;
-        v0Var = this.f17000e.f17096e;
-        v0Var.u(this.f16945c);
+        this.f17000e.f17096e.u(this.f16945c);
         int i10 = bundle.getInt("error_code");
         x.f17090g.b("onError(%d)", Integer.valueOf(i10));
         this.f16945c.d(new a(i10));
