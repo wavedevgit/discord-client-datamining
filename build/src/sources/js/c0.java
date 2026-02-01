@@ -6,7 +6,7 @@ import kotlinx.coroutines.flow.MutableSharedFlow;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public abstract class c0 {
 
-    /* renamed from: a */
+    /* renamed from: a  reason: collision with root package name */
     public static final ls.e0 f32500a = new ls.e0("NO_VALUE");
 
     public static final MutableSharedFlow a(int i10, int i11, is.a aVar) {
@@ -46,10 +46,12 @@ public abstract class c0 {
         return new ks.h(a0Var, coroutineContext, i10, aVar);
     }
 
+    /* JADX INFO: Access modifiers changed from: private */
     public static final Object f(Object[] objArr, long j10) {
         return objArr[((int) j10) & (objArr.length - 1)];
     }
 
+    /* JADX INFO: Access modifiers changed from: private */
     public static final void g(Object[] objArr, long j10, Object obj) {
         objArr[((int) j10) & (objArr.length - 1)] = obj;
     }

@@ -22,12 +22,14 @@ public final class ga {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public /* synthetic */ ga(ea eaVar, fa faVar) {
+        s2 s2Var;
         this.f43086a = eaVar.f43012a;
         this.f43087b = eaVar.f43013b;
         this.f43088c = eaVar.f43014c;
         this.f43089d = eaVar.f43015d;
         this.f43090e = eaVar.f43016e;
-        this.f43091f = eaVar.f43017f;
+        s2Var = eaVar.f43017f;
+        this.f43091f = s2Var;
     }
 
     public final s2 a() {
