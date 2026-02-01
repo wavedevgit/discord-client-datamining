@@ -33,20 +33,18 @@ final class g extends th.l0 {
     @Override // th.l0
     protected final void a() {
         th.k0 k0Var;
-        th.v0 v0Var;
         String str;
         b2 b2Var;
         o3 o3Var;
         ArrayList w10 = x.w(this.f16781e);
         try {
-            v0Var = this.f16784p.f17095d;
             str = this.f16784p.f17092a;
             Bundle o10 = x.o(this.f16782i);
             x xVar = this.f16784p;
             wg.k kVar = this.f16783o;
             b2Var = xVar.f17093b;
             o3Var = xVar.f17094c;
-            ((th.b0) v0Var.e()).m0(str, w10, o10, new w(xVar, kVar, b2Var, o3Var));
+            ((th.b0) this.f16784p.f17095d.e()).m0(str, w10, o10, new w(xVar, kVar, b2Var, o3Var));
         } catch (RemoteException e10) {
             List list = this.f16781e;
             k0Var = x.f17090g;
