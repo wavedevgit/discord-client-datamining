@@ -1,7 +1,7 @@
 /** chunk id: 166403, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => V
+    A: () => F
 }), n(321073), n(896048);
 var r, i = n(311907),
     a = n(73153),
@@ -174,7 +174,7 @@ function G(e, t) {
     }
     return null
 }
-class F extends(r = i.Ay.Store) {
+class V extends(r = i.Ay.Store) {
     initialize() {
         this.waitFor(l.default)
     }
@@ -242,8 +242,8 @@ class F extends(r = i.Ay.Store) {
         return G(c.rzx.PREMIUM, e => e.hasAnyPremiumGroup, !0)
     }
 }
-d(F, "displayName", "SubscriptionStore");
-let V = new F(a.h, {
+d(V, "displayName", "SubscriptionStore");
+let F = new V(a.h, {
     BILLING_SUBSCRIPTION_FETCH_SUCCESS: C,
     BILLING_SUBSCRIPTION_UPDATE_SUCCESS: w,
     BILLING_MOST_RECENT_SUBSCRIPTION_FETCH_START: x,

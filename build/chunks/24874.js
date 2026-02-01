@@ -1,13 +1,13 @@
-/** chunk id: 24874, original params: e,t,i (module,exports,require) **/
-i.d(t, {
-    F: () => u
+/** chunk id: 24874, original params: t,e,i (module,exports,require) **/
+i.d(e, {
+    F: () => a
 });
 var n = i(419954),
     l = i(780964),
     s = i(513664),
     r = i(985018),
-    a = i(536482);
-let u = (0, n.E2)(l.X.ACTIVITY_PRIVACY_PER_GUILD_SETTING, {
-    useSearchTerms: () => [r.intl.string(a.default["/LHVbt"])],
+    u = i(536482);
+let a = (0, n.E2)(l.X.ACTIVITY_PRIVACY_PER_GUILD_SETTING, {
+    useSearchTerms: () => [r.intl.string(u.default["/LHVbt"])],
     Component: s.dd
 })

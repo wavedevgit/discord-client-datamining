@@ -1,6 +1,6 @@
 /** chunk id: 667992, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => _
+    A: () => j
 });
 var r = n(627968),
     l = n(64700),
@@ -11,8 +11,8 @@ var r = n(627968),
     c = n(442433),
     u = n(717558),
     d = n(688810),
-    h = n(480890),
-    p = n(267102),
+    p = n(480890),
+    h = n(267102),
     g = n(342296),
     f = n(636585),
     m = n(486020),
@@ -56,9 +56,9 @@ function O(e) {
         speaker: i,
         className: f
     } = e, O = l.useRef(null), {
-        newestAnalyticsLocation: _
-    } = (0, d.Ay)(), j = (0, p.Us)(), {
-        reducedMotion: x
+        newestAnalyticsLocation: j
+    } = (0, d.Ay)(), x = (0, h.Us)(), {
+        reducedMotion: _
     } = l.useContext(o.CZY), v = (0, u.A)({
         userId: i.id
     }), E = null != i.member ? (0, m.xT)(i.member) : null, C = e => {
@@ -73,10 +73,10 @@ function O(e) {
                 showMediaItems: !0,
                 showStageChannelItems: !0,
                 showChatItems: !1,
-                onInteraction: (0, h.s)("GuildChannelUserContextMenu", _)
+                onInteraction: (0, p.s)("GuildChannelUserContextMenu", j)
             }))
         }, {
-            context: j
+            context: x
         })
     };
     return (0, r.jsx)(g.A, {
@@ -100,14 +100,14 @@ function O(e) {
                     size: o._3J.SIZE_24,
                     className: s()(b.my, f),
                     "aria-label": i.userNick,
-                    isSpeaking: v && !x.enabled
+                    isSpeaking: v && !_.enabled
                 })
             }))
         })
     })
 }
 
-function _(e) {
+function j(e) {
     let {
         speakers: t,
         channel: n

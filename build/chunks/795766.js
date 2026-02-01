@@ -1,6 +1,6 @@
 /** chunk id: 795766, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => p
+    A: () => h
 });
 var r = n(627968);
 n(64700);
@@ -12,19 +12,19 @@ var l = n(311907),
     c = n(93055),
     u = n(616075),
     d = n(515610),
-    h = n(985018);
+    p = n(985018);
 
-function p(e) {
+function h(e) {
     let {
         channel: t
     } = e, {
         isFavoritesPerk: n
-    } = (0, u.l)("ChannelFavoritesHeaderButton"), p = (0, d.A)(), {
+    } = (0, u.l)("ChannelFavoritesHeaderButton"), h = (0, d.A)(), {
         notifyFavoriteAdded: g
     } = (0, c.CJ)(), f = (0, l.bG)([a.A], () => a.A.isFavorite(t.id));
-    if (!n || p) return null;
+    if (!n || h) return null;
     let m = f ? i.Gg5 : i.yA2,
-        b = f ? h.intl.string(h.t.Bou7lT) : h.intl.string(h.t["4wcdE/"]);
+        b = f ? p.intl.string(p.t.Bou7lT) : p.intl.string(p.t["4wcdE/"]);
     return (0, r.jsx)(s.Ay.Icon, {
         icon: m,
         tooltip: b,

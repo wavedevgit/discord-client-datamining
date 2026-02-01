@@ -40,8 +40,8 @@ var r, i = n(284009),
     k = n(770335),
     U = n(608960),
     G = n(7584),
-    F = n(354430),
-    V = n(635222),
+    V = n(354430),
+    F = n(635222),
     B = n(307731),
     H = n(652215),
     Y = n(732139),
@@ -233,7 +233,7 @@ class em {
     getFrequentlyUsedEmojisWithoutFetchingLatest() {
         if (null != this.frequentlyUsed) return this.frequentlyUsed;
         let e = eg.frequently.map(e => null != e.id ? this.getById(e.id) : G.Ay.getByName(e.name)).filter(L.Vq),
-            t = (0, V.A)(e);
+            t = (0, F.A)(e);
         return this.frequentlyUsed = [...t.values()], this.frequentlyUsed
     }
     rebuildFrequentlyUsedReactionsEmojisWithoutFetchingLatest() {
@@ -242,7 +242,7 @@ class em {
             frequentlyUsedReactionNamesAndIds: this.frequentlyUsedReactionNamesAndIds
         };
         let e = eE.frequently.map(e => null != e.id ? this.getById(e.id) : G.Ay.getByName(e.name)).filter(L.Vq),
-            t = (0, V.A)(e);
+            t = (0, F.A)(e);
         return this.frequentlyUsedReactionEmojis = [...t.values()], this.frequentlyUsedReactionNamesAndIds = new Set(t.keys()), {
             frequentlyUsedReactionEmojis: this.frequentlyUsedReactionEmojis,
             frequentlyUsedReactionNamesAndIds: this.frequentlyUsedReactionNamesAndIds
@@ -270,7 +270,7 @@ class em {
                 var t;
                 return null != (t = this.getById(e)) ? t : G.Ay.getByName(e)
             }).filter(L.Vq),
-            r = (0, V.A)(n);
+            r = (0, F.A)(n);
         return this.favorites = [...r.values()], this.favoriteNamesAndIds = new Set(r.keys()), {
             favorites: this.favorites,
             favoriteNamesAndIds: this.favoriteNamesAndIds
@@ -288,7 +288,7 @@ class em {
         if (null == this.topEmojis) {
             var t;
             let n = es.get(e),
-                r = F.A.getTopEmojiIdsByGuildId(e);
+                r = V.A.getTopEmojiIdsByGuildId(e);
             if (null == n && null == r) return et;
             let i = (null != (t = null == n ? void 0 : n.emojiIds) ? t : r).map(e => {
                     var t;
@@ -530,7 +530,7 @@ function eG(e) {
     ev(t), eO()
 }
 
-function eF(e) {
+function eV(e) {
     let {
         guildId: t
     } = e, n = new Set(X.expandedSectionsByGuildIds);
@@ -539,7 +539,7 @@ function eF(e) {
     })
 }
 
-function eV(e) {
+function eF(e) {
     let {
         guildId: t,
         topEmojisMetadata: n
@@ -551,7 +551,7 @@ function eV(e) {
 }
 class eB extends(r = d.Ay.PersistedStore) {
     initialize(e) {
-        this.waitFor(E.A, S.Ay, T.A, C.A, N.A, A.default, U.A, w.Ay, O.A, F.A, I.A, R.default), null != e && (null != e.pendingUsages && (X.pendingUsages = e.pendingUsages), null != e.emojiReactionPendingUsages && (X.emojiReactionPendingUsages = e.emojiReactionPendingUsages), null != e.expandedSectionsByGuildIds && (X.expandedSectionsByGuildIds = new Set(e.expandedSectionsByGuildIds))), this.syncWith([I.A], ex)
+        this.waitFor(E.A, S.Ay, T.A, C.A, N.A, A.default, U.A, w.Ay, O.A, V.A, I.A, R.default), null != e && (null != e.pendingUsages && (X.pendingUsages = e.pendingUsages), null != e.emojiReactionPendingUsages && (X.emojiReactionPendingUsages = e.emojiReactionPendingUsages), null != e.expandedSectionsByGuildIds && (X.expandedSectionsByGuildIds = new Set(e.expandedSectionsByGuildIds))), this.syncWith([I.A], ex)
     }
     getState() {
         return X
@@ -699,6 +699,6 @@ let eH = new eB(f.h, {
     USER_SETTINGS_PROTO_UPDATE: eM,
     GUILD_ROLE_CREATE: eG,
     GUILD_ROLE_UPDATE: eG,
-    TOP_EMOJIS_FETCH_SUCCESS: eV,
-    TOGGLE_GUILD_EXPANDED_STATE: eF
+    TOP_EMOJIS_FETCH_SUCCESS: eF,
+    TOGGLE_GUILD_EXPANDED_STATE: eV
 })

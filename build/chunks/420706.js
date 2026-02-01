@@ -5,7 +5,7 @@ n.d(t, {
     Jd: () => K,
     Oo: () => W,
     bG: () => U,
-    h9: () => V
+    h9: () => F
 }), n(896048);
 var r = n(627968),
     i = n(64700),
@@ -97,9 +97,9 @@ function k(e, t) {
 }
 let U = 72,
     G = 32,
-    F = 2e3;
+    V = 2e3;
 
-function V(e) {
+function F(e) {
     return (null == e ? void 0 : e.type) === _.S9.CONTENT_INVENTORY ? e.entry.content_type === l.ContentInventoryEntryType.PLAYED_GAME && null != e.entry.applicationWidgetPreview ? U + G : U : 0
 }
 let B = e => {
@@ -241,13 +241,13 @@ let B = e => {
             G = i.useCallback(() => {
                 y(String(Date.now()))
             }, []),
-            V = i.useCallback(function(e) {
+            F = i.useCallback(function(e) {
                 let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
                 (0, m.I)(e, L({}, T, t))
             }, [T]),
             W = i.useMemo(() => o().throttle(e => {
                 (0, m.I)(P.PA.CARD_POPOUT_OPEN, e)
-            }, F, {
+            }, V, {
                 leading: !0,
                 trailing: !1
             }), []),
@@ -278,7 +278,7 @@ let B = e => {
                             children: (0, r.jsx)(Y, L({
                                 closePopout: t,
                                 updatePopoutPosition: G,
-                                trackRankingItemInteraction: V
+                                trackRankingItemInteraction: F
                             }, _))
                         })
                     },
@@ -311,7 +311,7 @@ let B = e => {
                             children: (0, r.jsx)(B, M(L({}, _), {
                                 selected: n,
                                 hovered: C.current,
-                                trackRankingItemInteraction: V
+                                trackRankingItemInteraction: F
                             }))
                         }))
                     }

@@ -1,38 +1,38 @@
-/** chunk id: 375500, original params: t,n,i (module,exports,require) **/
-i.d(n, {
+/** chunk id: 375500, original params: t,e,n (module,exports,require) **/
+n.d(e, {
     A: () => c
 });
-var e = i(627968);
-i(64700);
-var r = i(311907),
-    l = i(397927),
-    a = i(152007),
-    d = i(867455),
-    o = i(607508),
-    s = i(37411),
-    u = i(985018);
+var i = n(627968);
+n(64700);
+var r = n(311907),
+    l = n(397927),
+    a = n(152007),
+    o = n(867455),
+    s = n(607508),
+    d = n(37411),
+    u = n(985018);
 
 function c(t) {
-    let n = (0, o.X)(t);
-    return (0, r.bG)([a.A], () => a.A.hasJoined(t.id)) ? (0, e.jsx)(l.Drp, {
+    let e = (0, s.X)(t);
+    return (0, r.bG)([a.A], () => a.A.hasJoined(t.id)) ? (0, i.jsx)(l.Drp, {
         id: "thread-notifications",
         label: u.intl.string(u.t.h850Ss),
-        children: (0, s.EU)().map(i => {
+        children: (0, d.EU)().map(n => {
             let {
                 setting: r,
                 label: a
-            } = i;
-            return (0, e.jsx)(l.iDA, {
+            } = n;
+            return (0, i.jsx)(l.iDA, {
                 group: "thread-notifications",
                 id: "".concat(r),
                 label: a,
-                action: () => d.A.setNotificationSettings(t, {
+                action: () => o.A.setNotificationSettings(t, {
                     flags: r
                 }),
-                checked: r === n
+                checked: r === e
             }, r)
         })
-    }) : (0, e.jsx)(l.Drp, {
+    }) : (0, i.jsx)(l.Drp, {
         id: "notifications-disabled",
         label: u.intl.string(u.t.h850Ss),
         disabled: !0

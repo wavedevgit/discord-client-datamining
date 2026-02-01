@@ -19,8 +19,8 @@ var l = n(503698),
     y = n(287809),
     b = n(486020),
     _ = n(427262),
-    A = n(43950),
-    h = n(185186);
+    h = n(43950),
+    A = n(185186);
 
 function v(e) {
     var t;
@@ -35,7 +35,7 @@ function v(e) {
         children: (0, r.jsx)(o.euF, {
             src: null != c ? c : l.user.getAvatarURL(n, 16),
             size: o._3J.SIZE_16,
-            className: i()(a, h.wE),
+            className: i()(a, A.wE),
             "aria-label": null != (t = l.nick) ? t : _.Ay.getName(l.user)
         })
     })
@@ -47,7 +47,7 @@ function O(e) {
         guildId: n
     } = e;
     return (0, r.jsx)(f.A, {
-        className: h.S3,
+        className: A.S3,
         guildId: n,
         users: t,
         max: 6,
@@ -57,7 +57,7 @@ function O(e) {
             className: t
         }, l),
         renderMoreUsers: (e, t, n) => (0, r.jsx)("div", {
-            className: i()(h.TO, t),
+            className: i()(A.TO, t),
             children: e
         }, n)
     })
@@ -80,10 +80,10 @@ let S = e => {
     let _ = o || (0, u.A)(n),
         v = (0, m.gV)(t.type);
     return (0, r.jsxs)("div", {
-        className: h.Eb,
+        className: A.Eb,
         children: [(0, r.jsx)("div", {
-            className: h.Il,
-            children: _ ? (0, r.jsx)(A.A, {
+            className: A.Il,
+            children: _ ? (0, r.jsx)(h.A, {
                 activity: n,
                 embeddedApp: i,
                 user: b,
@@ -104,7 +104,7 @@ let S = e => {
                 }) : void 0
             })
         }), (0, r.jsx)("div", {
-            className: h.M4,
+            className: A.M4,
             children: (0, r.jsx)(d.A, {
                 type: c.M.VOICE_CHANNEL,
                 activity: n,

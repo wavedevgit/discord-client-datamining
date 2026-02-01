@@ -26,11 +26,11 @@ function a(e) {
         onMarkerRender: b,
         stickToMarkers: h,
         fieldLayout: E
-    } = t, [O] = i.useState(() => a()), C = u(), x = null == _ ? void 0 : _(), S = null == p ? void 0 : p(), T = null == m ? void 0 : m(), I = null == d ? void 0 : d();
+    } = t, [O] = i.useState(() => a()), x = u(), C = null == _ ? void 0 : _(), S = null == p ? void 0 : p(), T = null == m ? void 0 : m(), I = null == d ? void 0 : d();
     return (0, r.jsxs)(s.L, {
         children: [(0, r.jsx)(l.Apm, {
-            label: C,
-            description: x,
+            label: x,
+            description: C,
             disabled: T,
             initialValue: O,
             minValue: o,

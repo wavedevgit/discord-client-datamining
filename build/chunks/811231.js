@@ -1,85 +1,85 @@
-/** chunk id: 811231, original params: e,t,i (module,exports,require) **/
-i.d(t, {
+/** chunk id: 811231, original params: t,e,i (module,exports,require) **/
+i.d(e, {
     Y: () => o
 });
 var n = i(419117),
     l = i(419954),
     s = i(780964),
     r = i(932055),
-    a = i(985018);
-let u = [{
-        useTitle: () => a.intl.string(a.t.hK51Yg),
+    u = i(985018);
+let a = [{
+        useTitle: () => u.intl.string(u.t.hK51Yg),
         sound: "deafen"
     }, {
-        useTitle: () => a.intl.string(a.t.XiejaJ),
+        useTitle: () => u.intl.string(u.t.XiejaJ),
         sound: "undeafen"
     }, {
-        useTitle: () => a.intl.string(a.t.w4m945),
+        useTitle: () => u.intl.string(u.t.w4m945),
         sound: "mute"
     }, {
-        useTitle: () => a.intl.string(a.t.YqAjXy),
+        useTitle: () => u.intl.string(u.t.YqAjXy),
         sound: "unmute"
     }, {
-        useTitle: () => a.intl.string(a.t.JoTq8n),
+        useTitle: () => u.intl.string(u.t.JoTq8n),
         sound: "camera_on"
     }, {
-        useTitle: () => a.intl.string(a.t["8P6tQ6"]),
+        useTitle: () => u.intl.string(u.t["8P6tQ6"]),
         sound: "camera_off"
     }, {
-        useTitle: () => a.intl.string(a.t["juL9/L"]),
+        useTitle: () => u.intl.string(u.t["juL9/L"]),
         sound: "disconnect"
     }, {
-        useTitle: () => a.intl.string(a.t.x98vQq),
+        useTitle: () => u.intl.string(u.t.x98vQq),
         sound: "ptt_start"
     }, {
-        useTitle: () => a.intl.string(a.t["1HjRqC"]),
+        useTitle: () => u.intl.string(u.t["1HjRqC"]),
         sound: "ptt_stop"
     }, {
-        useTitle: () => a.intl.string(a.t["9JB1Ck"]),
+        useTitle: () => u.intl.string(u.t["9JB1Ck"]),
         sound: "user_join"
     }, {
-        useTitle: () => a.intl.string(a.t.KUBBNt),
+        useTitle: () => u.intl.string(u.t.KUBBNt),
         sound: "user_leave"
     }, {
-        useTitle: () => a.intl.string(a.t.EZjqUT),
+        useTitle: () => u.intl.string(u.t.EZjqUT),
         sound: "user_moved"
     }, {
-        useTitle: () => a.intl.string(a.t.LnNlQh),
+        useTitle: () => u.intl.string(u.t.LnNlQh),
         sound: "call_calling"
     }, {
-        useTitle: () => a.intl.string(a.t.Nd8P5y),
+        useTitle: () => u.intl.string(u.t.Nd8P5y),
         sound: "stream_started"
     }, {
-        useTitle: () => a.intl.string(a.t["9bYj+G"]),
+        useTitle: () => u.intl.string(u.t["9bYj+G"]),
         sound: "stream_ended"
     }, {
-        useTitle: () => a.intl.string(a.t.KccUI1),
+        useTitle: () => u.intl.string(u.t.KccUI1),
         sound: "stream_user_joined"
     }, {
-        useTitle: () => a.intl.string(a.t.dsjkiN),
+        useTitle: () => u.intl.string(u.t.dsjkiN),
         sound: "stream_user_left"
     }, {
-        useTitle: () => a.intl.string(a.t.nFOcf9),
+        useTitle: () => u.intl.string(u.t.nFOcf9),
         sound: "activity_launch"
     }, {
-        useTitle: () => a.intl.string(a.t["a6lw/u"]),
+        useTitle: () => u.intl.string(u.t["a6lw/u"]),
         sound: "activity_end"
     }, {
-        useTitle: () => a.intl.string(a.t.KaFxrY),
+        useTitle: () => u.intl.string(u.t.KaFxrY),
         sound: "activity_user_join"
     }, {
-        useTitle: () => a.intl.string(a.t.S14z9n),
+        useTitle: () => u.intl.string(u.t.S14z9n),
         sound: "activity_user_left"
     }, {
-        useTitle: () => a.intl.string(a.t.CP3DC3),
+        useTitle: () => u.intl.string(u.t.CP3DC3),
         sound: "reconnect"
     }],
     o = (0, l.D1)(s.X.VOICE_AND_VIDEO_SOUNDS_LIST, {
         collapseAfter: 4,
-        useCollapsibleTitle: (e, t) => e ? a.intl.formatToPlainString(a.t["0JYT98"], {
-            count: t
-        }) : a.intl.formatToPlainString(a.t.ji1uNt, {
-            count: t
+        useCollapsibleTitle: (t, e) => t ? u.intl.formatToPlainString(u.t["0JYT98"], {
+            count: e
+        }) : u.intl.formatToPlainString(u.t.ji1uNt, {
+            count: e
         }),
         useCollapsedSubtitle: () => (0, n.A)(s.X.VOICE_AND_VIDEO_SOUNDS_LIST, {
             limit: 3
@@ -89,5 +89,5 @@ let u = [{
                 (0, r.vd)()
             }
         },
-        buildLayout: () => u.map(e => (0, r.i)(e))
+        buildLayout: () => a.map(t => (0, r.i)(t))
     })

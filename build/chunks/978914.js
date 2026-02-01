@@ -1,12 +1,12 @@
 /** chunk id: 978914, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    I: () => g
+    I: () => f
 }), n(896048);
-var r = n(735438),
-    l = n.n(r),
+var l = n(735438),
+    r = n.n(l),
     i = n(311907),
-    s = n(562465),
-    a = n(73153),
+    a = n(562465),
+    s = n(73153),
     o = n(320501),
     c = n(222823),
     u = n(401565),
@@ -14,14 +14,14 @@ var r = n(735438),
 let h = new Set,
     p = null;
 
-function g(e) {
+function f(e) {
     var t;
     let {
         id: n
     } = e, {
-        loaded: r,
-        message: l,
-        error: s
+        loaded: l,
+        message: r,
+        error: a
     } = (0, i.cf)([u.A, o.A, c.Ay], () => {
         let e = c.Ay.lastMessageId(n),
             t = u.A.getMessageRequestPreview(n);
@@ -34,37 +34,37 @@ function g(e) {
             }
         }
         return t
-    }, [n]), a = (0, i.bG)([u.A], () => u.A.shouldLoadMessageRequestPreview(n), [n]);
-    return !r && null == l && a && (t = n, h.add(t), null == p && (p = setTimeout(f, 0))), {
-        loaded: r,
-        error: s,
-        message: l
+    }, [n]), s = (0, i.bG)([u.A], () => u.A.shouldLoadMessageRequestPreview(n), [n]);
+    return !l && null == r && s && (t = n, h.add(t), null == p && (p = setTimeout(m, 0))), {
+        loaded: l,
+        error: a,
+        message: r
     }
 }
-async function f() {
+async function m() {
     try {
-        for (; !l().isEmpty(h);) await m()
+        for (; !r().isEmpty(h);) await g()
     } finally {
         p = null
     }
 }
-async function m() {
+async function g() {
     let e = Array.from(h).slice(0, 25);
     try {
-        let t = await s.Bo.get({
+        let t = await a.Bo.get({
             url: d.Rsh.MESSAGE_REQUESTS_SUPPLEMENTAL_DATA,
             query: {
                 channel_ids: e
             },
             rejectWithError: !0
         });
-        a.h.dispatch({
+        s.h.dispatch({
             type: "LOAD_MESSAGE_REQUESTS_SUPPLEMENTAL_DATA_SUCCESS",
             requestedChannelIds: e,
             supplementalData: t.body
         })
     } catch (t) {
-        a.h.dispatch({
+        s.h.dispatch({
             type: "LOAD_MESSAGE_REQUESTS_SUPPLEMENTAL_DATA_ERROR",
             requestedChannelIds: e
         })

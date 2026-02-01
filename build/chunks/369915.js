@@ -11,8 +11,8 @@ var r = n(627968),
     c = n(383394),
     u = n(458294),
     d = n(71393),
-    h = n(403362),
-    p = n(842452),
+    p = n(403362),
+    h = n(842452),
     g = n(305928),
     f = n(652215);
 
@@ -69,14 +69,14 @@ let A = l.memo(function(e) {
     }(e, ["folderNode"]), {
         id: y,
         name: O,
-        color: _,
-        children: j
-    } = t, x = j.map(e => e.id), v = (0, o.A)(e => e.guildId), E = (0, i.bG)([c.A], () => c.A.isFolderExpanded(y)), C = function(e) {
+        color: j,
+        children: x
+    } = t, _ = x.map(e => e.id), v = (0, o.A)(e => e.guildId), E = (0, i.bG)([c.A], () => c.A.isFolderExpanded(y)), C = function(e) {
         let t = e.children.map(e => {
                 let t = e.id,
                     n = d.A.getGuild(t);
                 return null != n ? n.name : null
-            }).filter(h.Vq),
+            }).filter(p.Vq),
             n = 2 * f.F05,
             r = [];
         for (let e of t)(e.length < n || 0 === r.length) && (r.push(e), n -= e.length);
@@ -86,9 +86,9 @@ let A = l.memo(function(e) {
         isMentionLowImportance: N,
         unread: T
     } = (0, i.cf)([u.default], () => ({
-        mentionCount: x.map(e => u.default.getMentionCount(e)).reduce((e, t) => e + t, 0),
-        isMentionLowImportance: x.every(e => u.default.getIsMentionLowImportance(e)),
-        unread: x.some(e => u.default.hasUnread(e))
+        mentionCount: _.map(e => u.default.getMentionCount(e)).reduce((e, t) => e + t, 0),
+        isMentionLowImportance: _.every(e => u.default.getIsMentionLowImportance(e)),
+        unread: _.some(e => u.default.hasUnread(e))
     })), P = l.useCallback(() => {
         a.A.toggleGuildFolderExpand(y)
     }, [y]), w = l.useCallback(e => {
@@ -99,15 +99,15 @@ let A = l.memo(function(e) {
             return t => (0, r.jsx)(e, b(m({}, t), {
                 folderId: y,
                 folderName: O,
-                folderColor: _,
+                folderColor: j,
                 unread: T || I > 0
             }))
         })
-    }, [y, O, _, T, I]);
-    return (0, r.jsx)(p.A, b(m({}, A), {
+    }, [y, O, j, T, I]);
+    return (0, r.jsx)(h.A, b(m({}, A), {
         folderNode: t,
         expanded: E,
-        selected: null != v && x.includes(v),
+        selected: null != v && _.includes(v),
         mentionCount: I,
         isMentionLowImportance: N,
         unread: T,

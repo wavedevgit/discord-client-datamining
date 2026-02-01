@@ -1,65 +1,65 @@
 /** chunk id: 570209, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    wG: () => b
+    wG: () => E
 }), n(896048), n(747238), n(812715), n(321073);
-var a = n(735438),
-    o = n.n(a);
+var l = n(735438),
+    r = n.n(l);
 n(309613);
-var i = n(289732);
-let r = new Set(["a", "an", "and", "are", "as", "at", "be", "but", "by", "for", "if", "in", "into", "is", "it", "no", "not", "of", "on", "or", "such", "that", "the", "their", "then", "there", "these", "they", "this", "to", "was", "will", "with"]);
+var a = n(289732);
+let i = new Set(["a", "an", "and", "are", "as", "at", "be", "but", "by", "for", "if", "in", "into", "is", "it", "no", "not", "of", "on", "or", "such", "that", "the", "their", "then", "there", "these", "they", "this", "to", "was", "will", "with"]);
 
-function c(e) {
+function s(e) {
     return e.replace(/('|\u2019|\uFF07)(s|S)$/, "")
 }
 
-function l(e) {
+function o(e) {
     return e.toLowerCase()
 }
 
-function s(e) {
-    return r.has(e)
+function u(e) {
+    return i.has(e)
 }
 
-function _(e) {
+function c(e) {
     return 0 === e.length
 }
 
-function b(e) {
+function E(e) {
     let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
         n = e.length >= 3 && e.length <= 12 && t,
-        a = new Set(o()(e.split(/\W+/)).map(c).reject(_).map(l).reject(s).map(i.U).value());
-    return e => (function e(t, n, a) {
-        if (Array.isArray(t)) t.forEach(t => e(t, n, a));
-        else if ("list" === t.type) t.items.forEach(t => e(t, n, a));
+        l = new Set(r()(e.split(/\W+/)).map(s).reject(c).map(o).reject(u).map(a.U).value());
+    return e => (function e(t, n, l) {
+        if (Array.isArray(t)) t.forEach(t => e(t, n, l));
+        else if ("list" === t.type) t.items.forEach(t => e(t, n, l));
         else if ("string" == typeof t.content && "codeBlock" !== t.type) {
             let e = [],
-                o = "";
+                r = "";
             t.content.split(/(\W+)/g).forEach(t => {
                 ! function(e, t) {
                     let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
-                    if (_(e = l(c(e))) || s(e)) return !1;
-                    let a = (0, i.U)(e);
+                    if (c(e = o(s(e))) || u(e)) return !1;
+                    let l = (0, a.U)(e);
                     if (n) {
                         for (let e of t.values())
-                            if (a.includes(e)) return !0;
+                            if (l.includes(e)) return !0;
                         return !1
                     }
-                    return t.has(a)
-                }(t, n, a) ? o += t: (o.length > 0 && e.push({
+                    return t.has(l)
+                }(t, n, l) ? r += t: (r.length > 0 && e.push({
                     type: "text",
-                    content: o
+                    content: r
                 }), e.push({
                     type: "highlight",
                     content: t
-                }), o = "")
-            }), e.length > 0 && (o.length > 0 && e.push({
+                }), r = "")
+            }), e.length > 0 && (r.length > 0 && e.push({
                 type: "text",
-                content: o
+                content: r
             }), "text" === t.type ? t.content = e : t.content = [{
                 type: "text",
                 content: e
             }])
-        } else null != t.content && e(t.content, n, a);
+        } else null != t.content && e(t.content, n, l);
         return t
-    })(e, a, n)
+    })(e, l, n)
 }

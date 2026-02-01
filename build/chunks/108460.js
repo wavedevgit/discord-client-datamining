@@ -1,6 +1,6 @@
 /** chunk id: 108460, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => h
+    A: () => p
 }), n(896048);
 var r = n(627968),
     l = n(64700),
@@ -56,7 +56,7 @@ function d(e) {
     })
 }
 
-function h(e) {
+function p(e) {
     var t;
     let {
         className: n,
@@ -64,15 +64,15 @@ function h(e) {
         mentionCount: i,
         isTyping: a,
         canBadge: o
-    } = e, h = null != i && i > 0, p = null != (t = h ? i : l) ? t : 0, g = o && null != l && l > 0;
+    } = e, p = null != i && i > 0, h = null != (t = p ? i : l) ? t : 0, g = o && null != l && l > 0;
     return (0, r.jsxs)("div", {
         className: s()(u.Or, n),
         children: [(0, r.jsx)(d, {
             isBadged: g,
             isTyping: a
         }), g && (0, r.jsx)(c.A, {
-            hasMentions: h,
-            truncatedCount: p > 99 ? "99+" : p,
+            hasMentions: p,
+            truncatedCount: h > 99 ? "99+" : h,
             className: u.qS
         })]
     })

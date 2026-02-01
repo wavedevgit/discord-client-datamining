@@ -1,6 +1,6 @@
 /** chunk id: 41261, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => m
+    A: () => f
 });
 var r = n(627968);
 n(64700);
@@ -16,7 +16,7 @@ var i = n(503698),
     h = n(985018),
     g = n(839549);
 
-function f(e) {
+function m(e) {
     let {
         platform: t
     } = e;
@@ -27,7 +27,7 @@ function f(e) {
     }) : null
 }
 
-function m(e) {
+function f(e) {
     let {
         voiceState: t,
         awaitingRemoteSessionInfo: n
@@ -36,14 +36,14 @@ function m(e) {
         return null == (n = o.A.getSessionById(null != (e = null == t ? void 0 : t.sessionId) ? e : "")) ? void 0 : n.clientInfo.os
     }), u = null != i ? i : c;
     if (null == u || !p.hv.has(u)) return null;
-    let m = null != n,
-        A = m ? u === p.f$.XBOX ? h.intl.string(h.t.UjA4HX) : h.intl.string(h.t.QCw1oW) : u === p.f$.XBOX ? h.intl.format(h.t["ynEs/Y"], {}) : h.intl.format(h.t.TZ17Bg, {});
+    let f = null != n,
+        A = f ? u === p.f$.XBOX ? h.intl.string(h.t.UjA4HX) : h.intl.string(h.t.QCw1oW) : u === p.f$.XBOX ? h.intl.format(h.t["ynEs/Y"], {}) : h.intl.format(h.t.TZ17Bg, {});
     return (0, r.jsxs)("div", {
-        className: l()(g.zr, m ? g.jI : g.aW),
-        children: [(0, r.jsx)(f, {
+        className: l()(g.zr, f ? g.jI : g.aW),
+        children: [(0, r.jsx)(m, {
             platform: u
         }), (0, r.jsx)(s.Text, {
-            color: m ? "text-strong" : "always-white",
+            color: f ? "text-strong" : "always-white",
             variant: "text-xs/medium",
             children: A
         })]

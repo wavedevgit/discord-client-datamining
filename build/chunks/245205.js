@@ -1,8 +1,8 @@
 /** chunk id: 245205, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    BZ: () => h,
+    BZ: () => p,
     R7: () => f,
-    S3: () => p,
+    S3: () => h,
     VP: () => b,
     ni: () => g
 });
@@ -16,14 +16,14 @@ var r = n(110259),
     u = n(995273),
     d = n(652215);
 
-function h(e) {
+function p(e) {
     s.h.dispatch({
         type: "NOTIFICATION_CENTER_SET_ACTIVE",
         active: e
     })
 }
 
-function p() {
+function h() {
     s.h.dispatch({
         type: "RESET_NOTIFICATION_CENTER"
     })

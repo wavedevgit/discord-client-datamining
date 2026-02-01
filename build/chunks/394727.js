@@ -1,6 +1,6 @@
 /** chunk id: 394727, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => f
+    A: () => m
 }), n(747238), n(896048), n(693327), n(554719), n(680155), n(323874), n(14289), n(35956);
 var r = n(64700),
     i = n(311907),
@@ -15,15 +15,15 @@ var r = n(64700),
     h = n(257269),
     g = n(985018);
 
-function f(e) {
+function m(e) {
     var t, n;
     let {
-        match: f
-    } = e, m = null != (t = (0, u.UC)()) ? t : [], {
+        match: m
+    } = e, f = null != (t = (0, u.UC)()) ? t : [], {
         analyticsLocations: A
-    } = (0, o.Ay)([...m, s.A.ACTIVITY_DETAIL_PAGE]), {
+    } = (0, o.Ay)([...f, s.A.ACTIVITY_DETAIL_PAGE]), {
         applicationId: _
-    } = f.params, [b] = (0, c.A)([_]), E = null == b || null == (n = b.bot) ? void 0 : n.id, O = (0, i.bG)([d.default], () => d.default.getCurrentUser());
+    } = m.params, [b] = (0, c.A)([_]), E = null == b || null == (n = b.bot) ? void 0 : n.id, O = (0, i.bG)([d.default], () => d.default.getCurrentUser());
     return r.useEffect(() => {
         null != E && null != O && (async () => {
             try {

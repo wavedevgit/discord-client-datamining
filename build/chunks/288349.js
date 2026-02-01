@@ -1,6 +1,6 @@
 /** chunk id: 288349, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => m
+    A: () => f
 }), n(896048);
 var r = n(627968);
 n(64700);
@@ -34,7 +34,7 @@ function p(e) {
 let h = "premium_tier_gradient",
     g = "smaller_sparkle_gradient";
 
-function f(e) {
+function m(e) {
     var t, n;
     let {
         width: i = 14,
@@ -115,25 +115,25 @@ function f(e) {
     }), t))
 }
 
-function m(e) {
+function f(e) {
     let {
         className: t,
         startsAt: n,
         endsAt: i,
         messageStyle: c,
         upperCase: p,
-        showSparkles: m
+        showSparkles: f
     } = e, [A] = (0, o.Bo)(a.M.FRACTIONAL_NITRO_DURATION_LEFT_PILL, {
         showAfterTimestamp: n.valueOf(),
         cooldownDurationMs: 0
     }), _ = (0, s.Ay)(i, c);
     return "" === _ ? null : (p && (_ = _.toUpperCase()), (0, r.jsxs)("div", {
         className: l()(t, d.Iv),
-        children: [m ? (0, r.jsxs)(r.Fragment, {
-            children: [(0, r.jsx)(f, {
+        children: [f ? (0, r.jsxs)(r.Fragment, {
+            children: [(0, r.jsx)(m, {
                 foreground: d.QX,
                 color: "url(#".concat(g, ")")
-            }), (0, r.jsx)(f, {
+            }), (0, r.jsx)(m, {
                 foreground: d.J0,
                 color: "url(#".concat(h, ")")
             })]

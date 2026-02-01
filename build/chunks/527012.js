@@ -6,8 +6,8 @@ var r = n(627968);
 n(64700);
 var i = n(732955),
     l = n(397927),
-    o = n(652215),
-    a = n(321018);
+    a = n(652215),
+    o = n(321018);
 
 function s(e) {
     let {
@@ -17,11 +17,11 @@ function s(e) {
         showCloseButton: c
     } = e;
     return (0, r.jsxs)(l.$Td, {
-        className: a.eR,
+        className: o.eR,
         children: [c && (0, r.jsx)(l.PMB, {
             onClick: s,
-            className: a.b,
-            noticeType: o.kqX.BACK_TO_PREVIOUS_SCREEN
+            className: o.b,
+            noticeType: a.kqX.BACK_TO_PREVIOUS_SCREEN
         }), (0, r.jsx)(i.$nd, {
             text: t,
             variant: "overlay-secondary",

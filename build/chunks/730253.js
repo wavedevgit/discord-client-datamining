@@ -11,8 +11,8 @@ var r = n(627968),
     c = n(397927),
     u = n(308528),
     d = n(442433),
-    h = n(933958),
-    p = n(969151),
+    p = n(933958),
+    h = n(969151),
     g = n(941971),
     f = n(900848),
     m = n(65611),
@@ -20,9 +20,9 @@ var r = n(627968),
     A = n(366811),
     y = n(616356),
     O = n(734057),
-    _ = n(309010),
-    j = n(977997),
-    x = n(661191),
+    j = n(309010),
+    x = n(977997),
+    _ = n(661191),
     v = n(181079),
     E = n(93055),
     C = n(210082),
@@ -60,12 +60,12 @@ let R = {
 
 function D() {
     var e, t;
-    let i, D, L, M, G, k, U, V, B, H, F, K, Y = (0, a.Vd)("favorites"),
+    let i, D, L, M, G, k, U, V, B, H, F, Y, K = (0, a.Vd)("favorites"),
         {
             favoriteAdded: W,
             clearFavoriteAdded: z
         } = (0, E.CJ)(),
-        [q, X] = l.useState(!1),
+        [X, q] = l.useState(!1),
         {
             favoriteServerMuted: J,
             favoriteChannels: Q
@@ -73,29 +73,29 @@ function D() {
             favoriteChannels: v.A.getFavoriteChannels(),
             favoriteServerMuted: v.A.favoriteServerMuted
         })),
-        Z = (0, o.bG)([_.A], () => _.A.getChannelId(N.YYv)),
+        Z = (0, o.bG)([j.A], () => j.A.getChannelId(N.YYv)),
         $ = (0, o.bG)([O.A], () => O.A.getChannel(Z)),
         ee = (0, A.A)(e => e.guildId) === N.YYv,
         {
             badge: et,
             unread: en
         } = (0, C.A)(Q),
-        er = (D = null != (i = (0, o.bG)([_.A], () => _.A.getVoiceChannelId())) && null != Q[i], L = (0, o.bG)([y.A], () => {
+        er = (D = null != (i = (0, o.bG)([j.A], () => j.A.getVoiceChannelId())) && null != Q[i], L = (0, o.bG)([y.A], () => {
             if (!D) return !1;
             let e = y.A.getCurrentUserActiveStream();
             return null != e && null != Q[e.channelId]
-        }), M = (0, o.bG)([y.A], () => y.A.getAllApplicationStreams().some(e => null != Q[e.channelId])), G = (0, o.bG)([j.A], () => D && null != i && j.A.hasVideo(i), [D, i]), k = (0, o.yK)([h.Ay], () => x.default.keys(Q).reduce((e, t) => (e.push(...h.Ay.getEmbeddedActivitiesForChannel(t)), e), [])), U = (0, o.bG)([h.Ay], () => Array.from(h.Ay.getSelfEmbeddedActivities().values()).some(e => {
+        }), M = (0, o.bG)([y.A], () => y.A.getAllApplicationStreams().some(e => null != Q[e.channelId])), G = (0, o.bG)([x.A], () => D && null != i && x.A.hasVideo(i), [D, i]), k = (0, o.yK)([p.Ay], () => _.default.keys(Q).reduce((e, t) => (e.push(...p.Ay.getEmbeddedActivitiesForChannel(t)), e), [])), U = (0, o.bG)([p.Ay], () => Array.from(p.Ay.getSelfEmbeddedActivities().values()).some(e => {
             let {
                 location: t
-            } = e, n = (0, p.H)(t);
+            } = e, n = (0, h.H)(t);
             return null != n && null != Q[n]
-        })), V = k.length > 0, B = !1, H = !1, F = !1, K = !1, D ? (B = !G, H = G, F = L, K = U) : (F = M, K = V), (0, m.oi)({
+        })), V = k.length > 0, B = !1, H = !1, F = !1, Y = !1, D ? (B = !G, H = G, F = L, Y = U) : (F = M, Y = V), (0, m.oi)({
             audio: B,
             video: H,
             screenshare: F,
             liveStage: !1,
             isCurrentUserConnected: D,
-            activity: K
+            activity: Y
         })),
         el = et > 0 ? (0, b.w)(et) : null,
         ei = l.useCallback(() => {
@@ -104,7 +104,7 @@ function D() {
     return (0, r.jsxs)(f.c, {
         children: [(0, r.jsx)(g.A, {
             selected: ee,
-            hovered: q,
+            hovered: X,
             unread: en && !J,
             className: P.Io
         }), (0, r.jsx)(I.A, {
@@ -114,7 +114,7 @@ function D() {
                     selected: !0,
                     upperBadge: er,
                     lowerBadge: el,
-                    children: (0, r.jsx)(c.jlP, (e = w({}, Y), t = t = {
+                    children: (0, r.jsx)(c.jlP, (e = w({}, K), t = t = {
                         ariaLabel: T.intl.formatToPlainString(T.t["/uzRss"], {
                             guildName: T.intl.string(T.t.wMWyci),
                             mentions: et
@@ -124,9 +124,9 @@ function D() {
                             pathname: N.BVt.CHANNEL(N.YYv, Z),
                             state: R
                         },
-                        selected: ee || q,
-                        onMouseEnter: () => X(!0),
-                        onMouseLeave: () => X(!1),
+                        selected: ee || X,
+                        onMouseEnter: () => q(!0),
+                        onMouseLeave: () => q(!1),
                         onMouseDown: function() {
                             null != $ && u.A.preload($.guild_id, $.id)
                         },

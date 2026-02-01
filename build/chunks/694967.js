@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(311907),
     l = n(962173),
     i = n(403362),
-    u = n(652215);
+    s = n(652215);
 
 function a() {
-    return (0, r.yK)([l.A], () => [l.A.getAccount(null, u.fg2.XBOX), l.A.getAccount(null, u.fg2.PLAYSTATION), l.A.getAccount(null, u.fg2.PLAYSTATION_STAGING)].filter(i.Vq))
+    return (0, r.yK)([l.A], () => [l.A.getAccount(null, s.fg2.XBOX), l.A.getAccount(null, s.fg2.PLAYSTATION), l.A.getAccount(null, s.fg2.PLAYSTATION_STAGING)].filter(i.Vq))
 }

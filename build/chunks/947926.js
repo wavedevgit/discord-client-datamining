@@ -32,8 +32,8 @@ var a = n(627968),
     N = n(717695),
     w = n(899592),
     I = n(546350),
-    P = n(922532),
-    k = n(20732),
+    k = n(922532),
+    P = n(20732),
     R = n(654487),
     D = n(419548);
 
@@ -77,8 +77,8 @@ function U(e) {
     } = (0, v.Gk)(), Y = l.useContext(N.Z) || h && B && !Q && !U, {
         isExpanded: J,
         setIsExpanded: X,
-        expandQuestBar: Z,
-        isExpansionAnimationComplete: $,
+        expandQuestBar: $,
+        isExpansionAnimationComplete: Z,
         isVisibilityAnimationAtRest: ee,
         expansionSpring: et,
         visibilitySpring: en,
@@ -97,17 +97,17 @@ function U(e) {
         handleBlur: ed,
         handleMouseEnter: eu,
         handleMouseLeave: em
-    } = (0, P.m)({
+    } = (0, k.m)({
         quest: r,
         isExpanded: J,
         setIsExpanded: X,
-        expandQuestBar: Z,
+        expandQuestBar: $,
         isQuestCompleted: z,
         isQuestAccepted: H,
         prevIsQuestAccepted: K,
         impressionRef: V
     });
-    (0, k.S)({
+    (0, P.S)({
         quest: r,
         hasAssetsError: q,
         isEligibleForQuests: h,
@@ -171,7 +171,7 @@ function U(e) {
                                 quest: r,
                                 taskDetails: eg,
                                 isExpanded: J,
-                                isExpansionAnimationComplete: $,
+                                isExpansionAnimationComplete: Z,
                                 onCtxMenuClose: er,
                                 onCtxMenuOpen: el,
                                 onCtxMenuSelect: ei,

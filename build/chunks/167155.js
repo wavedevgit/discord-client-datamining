@@ -2,33 +2,33 @@
 n.d(t, {
     A: () => u
 });
-var r = n(627968);
+var l = n(627968);
 n(64700);
-var l = n(503698),
-    i = n.n(l),
+var r = n(503698),
+    i = n.n(r),
     a = n(397927),
-    o = n(29160),
-    s = n(985018),
+    s = n(29160),
+    o = n(985018),
     c = n(384687);
 let u = function(e) {
     let {
         className: t,
         hasVideo: n,
-        text: l,
+        text: r,
         hasConnectedChannel: u,
         textVariant: d = "text-md/medium"
-    } = e, f = n ? s.intl.string(s.t.IlHdW8) : s.intl.string(s.t.WsOisp);
-    return (0, r.jsx)(o.A, {
+    } = e, h = n ? o.intl.string(o.t.IlHdW8) : o.intl.string(o.t.WsOisp);
+    return (0, l.jsx)(s.A, {
         className: i()(t, c.H),
-        hoverText: u ? (0, r.jsx)(a.Text, {
+        hoverText: u ? (0, l.jsx)(a.Text, {
             variant: d,
             color: "currentColor",
-            children: f
+            children: h
         }) : null,
-        children: (0, r.jsx)(a.Text, {
+        children: (0, l.jsx)(a.Text, {
             variant: d,
             color: "currentColor",
-            children: l
+            children: r
         })
     })
 }

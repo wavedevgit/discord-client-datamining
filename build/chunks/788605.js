@@ -1,28 +1,28 @@
-/** chunk id: 788605, original params: e,t,i (module,exports,require) **/
-i.d(t, {
+/** chunk id: 788605, original params: t,e,i (module,exports,require) **/
+i.d(e, {
     p: () => d
 });
 var n = i(311907),
     l = i(684013),
     s = i(419954),
     r = i(256415),
-    a = i(780964),
-    u = i(652215),
+    u = i(780964),
+    a = i(652215),
     o = i(985018);
-let d = (0, s.Hn)(a.X.OVERLAY_VOICE_WIDGET_DISPLAY_USERS, {
+let d = (0, s.Hn)(u.X.OVERLAY_VOICE_WIDGET_DISPLAY_USERS, {
     fieldLayout: "horizontal",
     useTitle: () => o.intl.string(o.t.swsWWC),
     useValue: () => (0, n.bG)([r.default], () => r.default.getDisplayUserMode()),
-    setValue: e => {
-        l.A.setDisplayUserMode(e)
+    setValue: t => {
+        l.A.setDisplayUserMode(t)
     },
     useOptions: () => [{
         id: "always",
         label: o.intl.string(o.t.nBmDrT),
-        value: u.f5z.ALWAYS
+        value: a.f5z.ALWAYS
     }, {
         id: "speaking",
         label: o.intl.string(o.t["2OvIZY"]),
-        value: u.f5z.ONLY_WHILE_SPEAKING
+        value: a.f5z.ONLY_WHILE_SPEAKING
     }]
 })

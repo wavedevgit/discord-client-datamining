@@ -1,6 +1,6 @@
 /** chunk id: 972982, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => x
+    A: () => C
 });
 var r = n(627968),
     i = n(64700),
@@ -21,7 +21,7 @@ var r = n(627968),
     h = n(978551),
     E = n(100817),
     O = n(531525);
-class C extends i.PureComponent {
+class x extends i.PureComponent {
     renderEnabled() {
         let {
             backupCodes: e,
@@ -64,14 +64,14 @@ class C extends i.PureComponent {
     }
 }
 
-function x(e) {
+function C(e) {
     let t = (0, a.bG)([p.default], () => p.default.getCurrentUser());
     s()(null != t, "TwoFactorAuth: currentUser cannot be undefined");
     let n = (0, a.cf)([_.A, u.default], () => ({
         togglingSMS: _.A.togglingSMS,
         hasTOTPEnabled: u.default.hasTOTPEnabled()
     }));
-    return (0, r.jsx)(C, function(e) {
+    return (0, r.jsx)(x, function(e) {
         for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
                 r = Object.keys(n);

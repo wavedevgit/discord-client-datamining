@@ -1,6 +1,6 @@
 /** chunk id: 212371, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => f
+    A: () => m
 }), n(896048);
 var r = n(73153),
     i = n(827343),
@@ -45,4 +45,4 @@ class g extends a.A {
         })
     }
 }
-let f = new g
+let m = new g

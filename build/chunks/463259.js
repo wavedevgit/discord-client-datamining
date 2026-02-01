@@ -1,6 +1,6 @@
 /** chunk id: 463259, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => B,
+    A: () => W,
     u: () => G
 }), n(896048);
 var r = n(627968),
@@ -31,10 +31,10 @@ var r = n(627968),
     E = n(795755),
     S = n(53977),
     T = n(982599),
-    N = n(515054),
-    C = n(266713),
-    k = n(985018),
-    R = n(368379);
+    C = n(515054),
+    N = n(266713),
+    R = n(985018),
+    k = n(368379);
 
 function D(e) {
     for (var t = 1; t < arguments.length; t++) {
@@ -84,21 +84,21 @@ function G(e) {
     }, n)) : null
 }
 
-function U() {
+function M() {
     return (0, r.jsxs)("div", {
-        className: R.mJ,
+        className: k.mJ,
         children: [(0, r.jsx)(s.mir, {
             size: "xs"
         }), (0, r.jsx)(s.Text, {
-            "aria-label": k.intl.string(k.t["7blcz6"]),
+            "aria-label": R.intl.string(R.t["7blcz6"]),
             variant: "text-xs/normal",
             color: "text-muted",
-            children: k.intl.string(k.t["7blcz6"])
+            children: R.intl.string(R.t["7blcz6"])
         })]
     })
 }
 
-function M() {
+function U() {
     let {
         isLoading: e,
         suggestions: t,
@@ -150,8 +150,8 @@ function F(e) {
     let P = () => (0, r.jsxs)(r.Fragment, {
         children: [s && (0, r.jsxs)(r.Fragment, {
             children: [(0, r.jsx)(A.A, {
-                className: R.cG
-            }), d && (0, r.jsx)(U, {}), p && (0, r.jsx)(M, {})]
+                className: k.cG
+            }), d && (0, r.jsx)(M, {}), p && (0, r.jsx)(U, {})]
         }), a.map((e, l) => (0, r.jsx)(G, {
             widget: e,
             user: t,
@@ -162,13 +162,13 @@ function F(e) {
     });
     if (x)
         if (p) return (0, r.jsx)(S.A, {});
-        else return (0, r.jsx)(C.A, {});
+        else return (0, r.jsx)(N.A, {});
     return s ? (0, r.jsx)(w.D, {
         children: P()
     }) : P()
 }
 
-function B(e) {
+function W(e) {
     let {
         user: t
     } = e, n = L(e, ["user"]), i = l.useRef(null);
@@ -176,11 +176,11 @@ function B(e) {
         containerRef: i
     });
     let o = (0, T.k)(t.id);
-    return (0, r.jsxs)(N.K, {
+    return (0, r.jsxs)(C.K, {
         "data-scroller": !0,
         scrollerRef: i,
-        className: a()(R.XG, {
-            [R.az]: o
+        className: a()(k.XG, {
+            [k.az]: o
         }),
         fade: !0,
         children: [(0, r.jsx)(P.A, {

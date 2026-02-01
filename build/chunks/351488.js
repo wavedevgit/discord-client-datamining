@@ -1,15 +1,15 @@
 /** chunk id: 351488, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    _: () => s
+    _: () => a
 });
-var r = n(397927),
-    l = n(734057),
+var l = n(397927),
+    r = n(734057),
     i = n(985018);
 
-function s(e) {
-    let t = l.A.getChannel(e),
+function a(e) {
+    let t = r.A.getChannel(e),
         n = (null == t ? void 0 : t.name) == null ? i.intl.string(i.t.gi2swM) : i.intl.formatToPlainString(i.t.IFPJ6J, {
             channelName: t.name
         });
-    (0, r.showToast)((0, r.createToast)(n, r.ToastType.SUCCESS))
+    (0, l.showToast)((0, l.createToast)(n, l.ToastType.SUCCESS))
 }

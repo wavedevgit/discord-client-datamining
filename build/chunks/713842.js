@@ -1,6 +1,6 @@
 /** chunk id: 713842, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => _
+    A: () => j
 });
 var r = n(627968),
     l = n(64700),
@@ -11,8 +11,8 @@ var r = n(627968),
     c = n(698718),
     u = n(355622),
     d = n(58736),
-    h = n(353428),
-    p = n(976860),
+    p = n(353428),
+    h = n(976860),
     g = n(823471),
     f = n(734057),
     m = n(31717),
@@ -21,28 +21,28 @@ var r = n(627968),
     y = n(985018),
     O = n(388552);
 
-function _(e) {
+function j(e) {
     let {
         channelId: t
-    } = e, _ = (0, i.bG)([f.A], () => f.A.getChannel(t)), j = (0, i.bG)([f.A], () => f.A.getChannel(null == _ ? void 0 : _.parent_id)), x = (0, i.bG)([b.A], () => b.A.getGuild(null == _ ? void 0 : _.getGuildId())), v = (0, o.Ay)(_), E = l.useRef(!1);
+    } = e, j = (0, i.bG)([f.A], () => f.A.getChannel(t)), x = (0, i.bG)([f.A], () => f.A.getChannel(null == j ? void 0 : j.parent_id)), _ = (0, i.bG)([b.A], () => b.A.getGuild(null == j ? void 0 : j.getGuildId())), v = (0, o.Ay)(j), E = l.useRef(!1);
     if (l.useEffect(() => {
-            null == _ || E.current || (E.current = !0, (0, A.rH)(_))
-        }, [_]), null == _ || null == x) return null;
+            null == j || E.current || (E.current = !0, (0, A.rH)(j))
+        }, [j]), null == j || null == _) return null;
     let C = (0, r.jsx)(g.A, {
-        channel: _
+        channel: j
     });
     return (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(a.A, {
-            channel: _,
+            channel: j,
             draftType: m.C.ChannelMessage
         }), (0, r.jsx)(d.Ay, {
             toolbar: C,
             "aria-label": y.intl.string(y.t.Pwe8tN),
-            children: (0, h.zF)({
-                channel: _,
-                parentChannel: j,
+            children: (0, p.zF)({
+                channel: j,
+                parentChannel: x,
                 channelName: v,
-                guild: x,
+                guild: _,
                 inSidebar: !0,
                 handleContextMenu: function(e) {
                     (0, s.L3)(e, async () => {
@@ -69,7 +69,7 @@ function _(e) {
                                 }
                                 return e
                             }({}, t), l = l = {
-                                channel: _
+                                channel: j
                             }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
                                 var n = Object.keys(e);
                                 if (Object.getOwnPropertySymbols) {
@@ -84,14 +84,14 @@ function _(e) {
                     })
                 },
                 handleClick: function() {
-                    null != _ && (0, p.uh)(_.guild_id, _.id)
+                    null != j && (0, h.uh)(j.guild_id, j.id)
                 }
             })
         }), (0, r.jsx)("div", {
             className: O.T,
             children: (0, r.jsx)(c.A, {
-                channel: _,
-                guild: x,
+                channel: j,
+                guild: _,
                 chatInputType: u.oU.SIDEBAR
             }, t)
         })]

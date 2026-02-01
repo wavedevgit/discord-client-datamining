@@ -1,8 +1,8 @@
 /** chunk id: 747189, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    V: () => h,
-    t: () => p
+    V: () => p,
+    t: () => h
 });
 var i = n(627968);
 n(64700);
@@ -15,24 +15,24 @@ var r = n(397927),
     d = n(672396),
     u = n(985018);
 
-function p() {
+function h() {
     let {
         trackView: e,
         trackClick: t
     } = (0, s.Y)(d.KS.ClipsReminderNotification, {
         notif_type: d.KS.ClipsReminderNotification
-    }), n = l.Ay.getKeybindForAction(c.hCu.SAVE_CLIP), p = (0, a.TD)();
-    if (null == n || !p) return null;
-    let h = o.dI(n.shortcut, !0);
+    }), n = l.Ay.getKeybindForAction(c.hCu.SAVE_CLIP), h = (0, a.TD)();
+    if (null == n || !h) return null;
+    let p = o.dI(n.shortcut, !0);
     return {
         title: u.intl.format(u.t.S5uhCN, {
-            keybind: h,
+            keybind: p,
             keybindHook: () => (0, i.jsx)("span", {
                 style: {
                     display: "inline-block"
                 },
                 children: (0, i.jsx)(r.e7I, {
-                    shortcut: h
+                    shortcut: p
                 })
             })
         }),
@@ -49,7 +49,7 @@ function p() {
     }
 }
 
-function h(e) {
+function p(e) {
     let {
         trackView: t,
         trackClick: n

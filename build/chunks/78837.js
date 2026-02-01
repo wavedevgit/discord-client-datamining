@@ -25,22 +25,22 @@ function A(e) {
         onExpandedChangeComplete: f,
         children: b,
         animate: h = !0
-    } = e, E = i.useRef(null), [O, C] = i.useState(null), x = i.useRef(l), S = i.useRef(!1);
+    } = e, E = i.useRef(null), [O, x] = i.useState(null), C = i.useRef(l), S = i.useRef(!1);
     i.useEffect(() => {
-        x.current !== l && (S.current = !0, x.current = l)
+        C.current !== l && (S.current = !0, C.current = l)
     }, [l]);
     let T = i.useCallback(e => {
             null != e.target && S.current && (S.current = !1, null == f || f(l))
         }, [l, f]),
         I = i.useMemo(() => (0, a.debounce)(T, 50), [T]),
-        y = (0, p.w)(I, [], {
+        N = (0, p.w)(I, [], {
             enabled: null != f
         }),
-        N = l && null != O;
+        y = l && null != O;
     return i.useLayoutEffect(() => {
-        null != E.current && null == O && C(E.current.clientHeight)
+        null != E.current && null == O && x(E.current.clientHeight)
     }, [O]), (0, r.jsxs)(o.EN, {
-        ref: y,
+        ref: N,
         isExpanded: l,
         onExpandedChange: A,
         children: [(0, r.jsx)(m.U, {
@@ -49,7 +49,7 @@ function A(e) {
                 minHeight: O
             } : void 0,
             title: t,
-            description: N ? void 0 : n,
+            description: y ? void 0 : n,
             secondaryTrailingElement: (0, r.jsx)(_.vN3, {
                 children: (0, r.jsx)(c.$, {
                     slot: "trigger",

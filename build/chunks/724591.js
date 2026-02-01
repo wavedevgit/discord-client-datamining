@@ -11,8 +11,8 @@ var r = n(627968),
     c = n(827734),
     u = n(192308),
     d = n(397927),
-    h = n(442433),
-    p = n(379848),
+    p = n(442433),
+    h = n(379848),
     g = n(976860),
     f = n(871123),
     m = n(733391),
@@ -20,9 +20,9 @@ var r = n(627968),
     A = n(44724),
     y = n(849134),
     O = n(203548),
-    _ = n(186111),
-    j = n(371794),
-    x = n(998218),
+    j = n(186111),
+    x = n(371794),
+    _ = n(998218),
     v = n(652793),
     E = n(652215),
     C = n(49999),
@@ -33,12 +33,12 @@ let N = l.memo(function(e) {
     let {
         guild: i,
         selected: N
-    } = e, T = l.useRef(null), P = l.useRef(null), w = (0, u.useHasAnyModalOpen)(), R = (0, a.bG)([_.A], () => _.A.hasLayers());
+    } = e, T = l.useRef(null), P = l.useRef(null), w = (0, u.useHasAnyModalOpen)(), R = (0, a.bG)([j.A], () => j.A.hasLayers());
     l.useEffect(() => {
         (0, m.Kh)(i.id)
     }, [i.id]);
     let D = (0, a.bG)([b.A], () => b.A.getAnnouncement(i.id)),
-        [L, M] = (0, p.x_)(o.M.GAME_SHOP_NEW_BADGE, i.id, null != (t = null == D ? void 0 : D.id) ? t : ""),
+        [L, M] = (0, h.x_)(o.M.GAME_SHOP_NEW_BADGE, i.id, null != (t = null == D ? void 0 : D.id) ? t : ""),
         G = L === o.M.GAME_SHOP_NEW_BADGE;
     l.useEffect(() => {
         N && G && M(C.i.INDIRECT_ACTION)
@@ -59,7 +59,7 @@ let N = l.memo(function(e) {
             M(C.i.USER_DISMISS)
         }, [M]),
         B = l.useCallback(e => {
-            null != i && (0, h.L3)(e, async () => {
+            null != i && (0, p.L3)(e, async () => {
                 let {
                     default: e
                 } = await n.e("99523").then(n.bind(n, 41614));
@@ -128,9 +128,9 @@ let N = l.memo(function(e) {
                 }), l]
             })
         }), [i.id, N, U, k, B, G]),
-        K = l.useMemo(() => {
-            let e = null != D && null != D.assetId ? x.A.toURLSafe((0, j.YE)(D.applicationId, D.assetId, 128, "webp")) : void 0,
-                t = null != D && null != D.backgroundImageAssetId ? x.A.toURLSafe((0, j.YE)(D.applicationId, D.backgroundImageAssetId, 128, "webp")) : void 0;
+        Y = l.useMemo(() => {
+            let e = null != D && null != D.assetId ? _.A.toURLSafe((0, x.YE)(D.applicationId, D.assetId, 128, "webp")) : void 0,
+                t = null != D && null != D.backgroundImageAssetId ? _.A.toURLSafe((0, x.YE)(D.applicationId, D.backgroundImageAssetId, 128, "webp")) : void 0;
             if (null != e) return {
                 imageUrl: e,
                 backgroundImageUrl: t
@@ -146,7 +146,7 @@ let N = l.memo(function(e) {
             onRender: H,
             onRequestClose: V,
             targetElementRef: P,
-            skuImageDetails: K,
+            skuImageDetails: Y,
             title: S.intl.string(S.t["7PvvS9"]),
             body: S.intl.formatToPlainString(S.t["9J4h1a"], {
                 applicationName: D.applicationName

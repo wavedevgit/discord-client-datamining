@@ -1,6 +1,6 @@
 /** chunk id: 636781, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => f
+    A: () => m
 });
 var r = n(627968);
 n(64700);
@@ -35,7 +35,7 @@ function g(e) {
         })
     })
 }
-let f = function(e) {
+let m = function(e) {
     let {
         guild: t
     } = e, n = (0, l.bG)([o.Ay], () => o.Ay.getChannels(t.id)[o.vM][0]), i = (0, l.bG)([c.A], () => null != n && c.A.can(h.xBc.CONNECT, n.channel));

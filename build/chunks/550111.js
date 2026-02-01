@@ -52,8 +52,8 @@ let w = {
             pendingNickname: k,
             pendingAvatarDecoration: U,
             pendingDisplayNameStyles: G,
-            pendingPrimaryGuildId: F,
-            nameplatePreviewSize: V = "default",
+            pendingPrimaryGuildId: V,
+            nameplatePreviewSize: F = "default",
             skipEffectDisplayName: B = !1,
             width: H
         } = e, Y = (0, u.Ay)(), W = (0, l.Mw)(Y), K = null != a ? (0, p.D)(a) : R, z = (0, s.bG)([v.A], () => null != t ? v.A.getStatus(t.id) : c.clD.ONLINE), q = W ? "#706F74" : "#aaaab2", Z = i.useRef(null), Q = (0, s.bG)([O.Ay], () => null != n && null != t ? O.Ay.getMember(n, t.id) : null), X = null != t ? (0, b.eh)({
@@ -66,11 +66,11 @@ let w = {
             userValue: null == t ? void 0 : t.avatarDecoration,
             guildValue: null == Q ? void 0 : Q.avatarDecoration,
             guildId: n
-        }), $ = i.useMemo(() => w[V], [V]), ee = (0, _.A)({
+        }), $ = i.useMemo(() => w[F], [F]), ee = (0, _.A)({
             userId: null == t ? void 0 : t.id,
             guildId: n,
             pendingDisplayNameStyles: G
-        }), et = (0, g.gS)(F), en = i.useMemo(() => null != a ? S.intl.formatToPlainString(S.t.YJig7C, {
+        }), et = (0, g.gS)(V), en = i.useMemo(() => null != a ? S.intl.formatToPlainString(S.t.YJig7C, {
             a11y_text: a.label
         }) : S.intl.string(S.t.SZeUdR), [a]);
         return (0, r.jsx)("div", {
@@ -82,10 +82,10 @@ let w = {
             },
             children: (0, r.jsxs)(c.M1G, {
                 className: o()(P, T.M4, {
-                    [T.s]: "xsmall" === V,
-                    [T.EX]: "small" === V,
-                    [T.as]: "large" === V,
-                    [T.AQ]: "xlarge" === V,
+                    [T.s]: "xsmall" === F,
+                    [T.EX]: "small" === F,
+                    [T.as]: "large" === F,
+                    [T.AQ]: "xlarge" === F,
                     [T.gf]: null != H
                 }),
                 children: [null != K && (0, r.jsx)(I.A, {

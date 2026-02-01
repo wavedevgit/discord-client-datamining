@@ -13,8 +13,8 @@ var l = n(503698),
     c = n(397927),
     u = n(698441),
     d = n(520006),
-    h = n(71393),
-    p = n(576705),
+    p = n(71393),
+    h = n(576705),
     g = n(652215),
     f = n(985018),
     m = n(669486);
@@ -87,15 +87,15 @@ function A(e) {
         appContext: A,
         analyticsLocation: y,
         className: O,
-        size: _ = "sm"
-    } = e, j = null == l ? void 0 : l.getGuildId(), x = null == l ? void 0 : l.id, v = (0, o.bG)([h.A], () => null != j ? h.A.getGuild(j) : null, [j]), E = (0, o.bG)([u.Ay], () => u.Ay.getActiveEventByChannel(x), [x]);
-    if (!(null != v && null != l && p.A.can(g.xBc.CREATE_INSTANT_INVITE, l))) return null;
+        size: j = "sm"
+    } = e, x = null == l ? void 0 : l.getGuildId(), _ = null == l ? void 0 : l.id, v = (0, o.bG)([p.A], () => null != x ? p.A.getGuild(x) : null, [x]), E = (0, o.bG)([u.Ay], () => u.Ay.getActiveEventByChannel(_), [_]);
+    if (!(null != v && null != l && h.A.can(g.xBc.CREATE_INSTANT_INVITE, l))) return null;
     let C = f.intl.string(f.t.VINpSK);
     return null != t ? C = f.intl.string(f.t["6VQaqd"]) : null != n && (C = f.intl.string(f.t["OzOM/q"])), (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)("div", {
             className: i()(O, m.uX),
             children: (0, r.jsx)(c.Button, {
-                size: _,
+                size: j,
                 variant: "secondary",
                 text: C,
                 onClick: () => {

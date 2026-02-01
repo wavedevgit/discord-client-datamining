@@ -33,7 +33,7 @@ function g() {
     return r.h.wait(() => i.ho(t, d.o1q.FRAME, {})), void(p = t)
 }
 
-function f() {
+function m() {
     let e;
     if ((0, a.A)({
             LayerStore: o.A,
@@ -44,12 +44,12 @@ function f() {
     }
     null != (e = p) && c.A.isOpen(e) && r.h.wait(() => i.WU(e))
 }
-class m extends l.A {
+class f extends l.A {
     _initialize() {
-        u.A.addChangeListener(g), o.A.addChangeListener(f)
+        u.A.addChangeListener(g), o.A.addChangeListener(m)
     }
     _terminate() {
-        u.A.removeChangeListener(g), o.A.removeChangeListener(f)
+        u.A.removeChangeListener(g), o.A.removeChangeListener(m)
     }
 }
-let A = new m
+let A = new f

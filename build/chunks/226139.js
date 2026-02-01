@@ -1,13 +1,14 @@
 /** chunk id: 226139, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
     D3: () => s,
-    J9: () => a,
-    oL: () => l
+    J9: () => o,
+    oL: () => a
 });
 var r = n(842086),
     i = n(985018);
-let l = () => [i.intl.string(i.t.b6wEe6), i.intl.string(i.t.i8o9hX)],
-    a = () => [i.intl.string(i.t.vqnToc), i.intl.string(i.t["9yh+dM"])],
+let a = () => [i.intl.string(i.t.b6wEe6), i.intl.string(i.t.i8o9hX)],
+    o = () => [i.intl.string(i.t.vqnToc), i.intl.string(i.t["9yh+dM"])],
     s = [{
         id: "781323471249604648",
         format_type: r.TG.APNG,

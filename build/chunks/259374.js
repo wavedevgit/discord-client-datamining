@@ -1,23 +1,23 @@
-/** chunk id: 259374, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    k: () => o
-}), n(896048);
-var r = n(311907),
-    l = n(734057),
-    i = n(383501);
+/** chunk id: 259374, original params: e,n,t (module,exports,require) **/
+t.d(n, {
+    k: () => s
+}), t(896048);
+var l = t(311907),
+    r = t(734057),
+    i = t(383501);
 
-function o(e) {
+function s(e) {
     let {
-        channelId: t
+        channelId: n
     } = e;
-    return (0, r.bG)([i.A, l.A], () => (function(e) {
-        var t;
-        let [n, r] = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : [i.A, l.A];
-        if (null == e || n.getChannelId() !== e) return !1;
-        let o = r.getChannel(e);
-        if (null == o || o.isGuildStageVoice()) return !1;
-        let a = null == (t = n.getSecureFramesState()) ? void 0 : t.version;
+    return (0, l.bG)([i.A, r.A], () => (function(e) {
+        var n;
+        let [t, l] = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : [i.A, r.A];
+        if (null == e || t.getChannelId() !== e) return !1;
+        let s = l.getChannel(e);
+        if (null == s || s.isGuildStageVoice()) return !1;
+        let a = null == (n = t.getSecureFramesState()) ? void 0 : n.version;
         return null != a && 0 !== a
-    })(t, [i.A, l.A]), [t])
+    })(n, [i.A, r.A]), [n])
 }
-n(603266)
+t(603266)

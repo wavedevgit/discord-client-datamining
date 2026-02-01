@@ -1,6 +1,6 @@
 /** chunk id: 310420, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => h
+    A: () => p
 });
 var r = n(627968),
     l = n(64700),
@@ -28,7 +28,7 @@ function d(e) {
         })
     })
 }
-let h = function(e) {
+let p = function(e) {
     let {
         searchContext: t,
         dismissFeedbackEntrypoint: i
@@ -38,7 +38,7 @@ let h = function(e) {
             searchContext: t
         })
     }, [t]);
-    let h = l.useCallback(e => {
+    let p = l.useCallback(e => {
         i(), (0, s.mMO)(async () => {
             let {
                 default: l
@@ -88,10 +88,10 @@ let h = function(e) {
             className: u.Pt,
             children: [(0, r.jsx)(d, {
                 rating: o.P0.GOOD,
-                onClick: h
+                onClick: p
             }), (0, r.jsx)(d, {
                 rating: o.P0.BAD,
-                onClick: h
+                onClick: p
             })]
         })]
     })

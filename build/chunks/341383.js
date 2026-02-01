@@ -14,8 +14,8 @@ var r = n(73153),
     p = n(734066),
     h = n(572164),
     g = n(399925),
-    f = n(963169),
-    m = n(652896),
+    m = n(963169),
+    f = n(652896),
     A = n(349963),
     _ = n(140175),
     b = n(528772),
@@ -190,7 +190,7 @@ let U = {
     [L.hCu.TOGGLE_GO_LIVE_STREAMING]: {
         onTrigger() {
             let e = I.A.getCurrentUserActiveStream();
-            if (null != e) return (0, s.vN)((0, m._z)(e));
+            if (null != e) return (0, s.vN)((0, f._z)(e));
             (0, A.A)(!0, [d.A.GO_LIVE_KEYBIND])
         },
         keyEvents: {
@@ -208,7 +208,7 @@ let U = {
         }
     },
     [L.hCu.NAVIGATE_BACK]: {
-        onTrigger: () => (0, f.OE)("global_keybind"),
+        onTrigger: () => (0, m.OE)("global_keybind"),
         keyEvents: {
             keyup: !0,
             keydown: !1,
@@ -217,7 +217,7 @@ let U = {
         }
     },
     [L.hCu.NAVIGATE_FORWARD]: {
-        onTrigger: () => (0, f.Qb)("global_keybind"),
+        onTrigger: () => (0, m.Qb)("global_keybind"),
         keyEvents: {
             keyup: !0,
             keydown: !1,

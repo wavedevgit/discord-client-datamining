@@ -21,13 +21,13 @@ var r = n(627968),
     h = n(194509),
     E = n(224850),
     O = n(797255),
-    C = n(753894),
-    x = n(288351),
+    x = n(753894),
+    C = n(288351),
     S = n(693591),
     T = n(985018),
     I = n(413515),
-    y = n(182514),
-    N = n(619947),
+    N = n(182514),
+    y = n(619947),
     j = n(733907);
 let v = i.forwardRef((e, t) => {
     let {
@@ -50,7 +50,7 @@ let v = i.forwardRef((e, t) => {
                 className: I.kL,
                 children: (0, r.jsxs)("div", {
                     className: I.s8,
-                    children: [w && (0, r.jsx)(x.A, {}), (0, r.jsx)(c.Heading, {
+                    children: [w && (0, r.jsx)(C.A, {}), (0, r.jsx)(c.Heading, {
                         className: I.WT,
                         variant: "display-sm",
                         color: "text-strong",
@@ -72,7 +72,7 @@ let v = i.forwardRef((e, t) => {
                             className: s()(I.x6, i),
                             color: k
                         })
-                    }) : (0, r.jsx)(C.KN, {
+                    }) : (0, r.jsx)(x.KN, {
                         subscriptionTier: l,
                         inOfferExperience: w,
                         containerClassName: s()(I.$F, {
@@ -82,7 +82,7 @@ let v = i.forwardRef((e, t) => {
                         isApplicationHome: !0,
                         isDarkMode: v,
                         isEligibleForBogoPromotion: P
-                    }), (0, r.jsx)(C.U9, {
+                    }), (0, r.jsx)(x.U9, {
                         variant: "text-sm/normal",
                         withBottomMargin: !1,
                         isApplicationHome: !0
@@ -94,12 +94,12 @@ let v = i.forwardRef((e, t) => {
                     autoPlay: !F,
                     playsInline: !0,
                     preload: F ? "none" : "auto",
-                    poster: N.A,
+                    poster: y.A,
                     loop: !0,
                     className: I.gm,
                     ref: R,
                     children: (0, r.jsx)("source", {
-                        src: V ? y.A : j.A,
+                        src: V ? N.A : j.A,
                         type: V ? S.a.MP4 : S.a.WEBM
                     })
                 })

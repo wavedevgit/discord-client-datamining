@@ -12,8 +12,8 @@ var r = n(627968),
     c = n(322387),
     u = n(995273),
     d = n(325326),
-    h = n(208667),
-    p = n(253932),
+    p = n(208667),
+    h = n(253932),
     g = n(954571),
     f = n(661191),
     m = n(652215),
@@ -26,7 +26,7 @@ function A() {
         loading: n,
         loadMore: l
     } = (0, d.LF)(), s = y(t, (0, i.bG)([o.A], () => o.A.localItems));
-    return (0, r.jsx)(h.A, {
+    return (0, r.jsx)(p.A, {
         initialized: e,
         items: s,
         loading: n,
@@ -41,15 +41,15 @@ function y(e, t) {
 function O() {
     let {
         items: e
-    } = (0, d.LF)(), t = e.length > 0 ? e[0] : null, n = y(e, (0, i.bG)([o.A], () => o.A.localItems)), h = p.ns.useSetting();
+    } = (0, d.LF)(), t = e.length > 0 ? e[0] : null, n = y(e, (0, i.bG)([o.A], () => o.A.localItems)), p = h.ns.useSetting();
     return l.useMemo(() => {
-        if (null != t && 0 >= f.default.compare(t.id, h)) return !1;
+        if (null != t && 0 >= f.default.compare(t.id, p)) return !1;
         for (let e of n) {
-            if (0 >= f.default.compare(e.id, h)) break;
-            if (!(0, u.NW)(e, h)) return !0
+            if (0 >= f.default.compare(e.id, p)) break;
+            if (!(0, u.NW)(e, p)) return !0
         }
         return !1
-    }, [t, h, n]) ? (0, r.jsx)(s.m_, {
+    }, [t, p, n]) ? (0, r.jsx)(s.m_, {
         text: b.intl.string(b.t["8k+6QY"]),
         children: (0, r.jsx)(a.K0, {
             "aria-label": b.intl.string(b.t["8k+6QY"]),
@@ -57,7 +57,7 @@ function O() {
             variant: "secondary",
             size: "sm",
             onClick: () => {
-                null != t && (p.ns.updateSetting(t.id), g.default.track(m.HAw.NOTIFICATION_CENTER_ACTION, {
+                null != t && (h.ns.updateSetting(t.id), g.default.track(m.HAw.NOTIFICATION_CENTER_ACTION, {
                     action_type: c.e1.MARK_ALL_READ
                 }))
             }

@@ -14,8 +14,8 @@ var r = n(627968),
     p = n(636585),
     h = n(975571),
     g = n(42473),
-    f = n(994314),
-    m = n(485599),
+    m = n(994314),
+    f = n(485599),
     A = n(652215),
     _ = n(985018),
     b = n(308685);
@@ -64,11 +64,11 @@ class I extends i.PureComponent {
     }
     renderTitle() {
         return (0, r.jsxs)("div", {
-            children: [(0, r.jsx)(m.A, {
+            children: [(0, r.jsx)(f.A, {
                 children: this.isHost() ? _.intl.formatToPlainString(_.t["6UJ7mh"], {
                     count: this.props.party.length
                 }) : _.intl.string(_.t.RZufbH)
-            }), (0, r.jsx)(f.A, {
+            }), (0, r.jsx)(m.A, {
                 children: _.intl.string(_.t["0ZHLIi"])
             })]
         })

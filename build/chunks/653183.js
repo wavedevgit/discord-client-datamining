@@ -21,19 +21,19 @@ var r = n(627968),
     h = n(564152),
     E = n(76740),
     O = n(21316),
-    C = n(237267),
-    x = n(240626),
+    x = n(237267),
+    C = n(240626),
     S = n(788868),
     T = n(637676);
 
 function I(e) {
     let {
         premiumSubscription: t
-    } = e, n = (0, l.bG)([A.A], () => A.A.boostSlots), I = i.useMemo(() => Object.values(n), [n]), y = (0, l.bG)([g.default], () => g.default.getCurrentUser()), N = f.Ay.isPremium(y, S.PremiumTypes.TIER_2), j = (0, l.bG)([p.A], () => p.A.affinities), v = (0, l.bG)([m.Ay], () => m.Ay.getFlattenedGuildIds()), P = j.length > 0 || v.length > 0, R = I.length > 0, D = i.useMemo(() => I.filter(e => null != e.premiumGuildSubscription), [I]), L = D.length > 0, w = I.length > D.length, M = (0, l.bG)([_.A], () => _.A.getCurrentUserAppliedBoosts()), {
+    } = e, n = (0, l.bG)([A.A], () => A.A.boostSlots), I = i.useMemo(() => Object.values(n), [n]), N = (0, l.bG)([g.default], () => g.default.getCurrentUser()), y = f.Ay.isPremium(N, S.PremiumTypes.TIER_2), j = (0, l.bG)([p.A], () => p.A.affinities), v = (0, l.bG)([m.Ay], () => m.Ay.getFlattenedGuildIds()), P = j.length > 0 || v.length > 0, R = I.length > 0, D = i.useMemo(() => I.filter(e => null != e.premiumGuildSubscription), [I]), L = D.length > 0, w = I.length > D.length, M = (0, l.bG)([_.A], () => _.A.getCurrentUserAppliedBoosts()), {
         fractionalState: G
     } = (0, s.A)({
         forceFetch: !0
-    }), U = null == y ? void 0 : y.isPremiumGroupMember(), k = (null == t ? void 0 : t.isPausedOrPausePending) === !0 && G === S.xc.NONE, B = (null == t ? void 0 : t.isPausedOrPausePending) !== !0 && G === S.xc.NONE && !U, H = N && G === S.xc.FP_SUB_PAUSED, V = G === S.xc.NONE && !U;
+    }), U = null == N ? void 0 : N.isPremiumGroupMember(), k = (null == t ? void 0 : t.isPausedOrPausePending) === !0 && G === S.xc.NONE, B = (null == t ? void 0 : t.isPausedOrPausePending) !== !0 && G === S.xc.NONE && !U, H = y && G === S.xc.FP_SUB_PAUSED, V = G === S.xc.NONE && !U;
     return (0, r.jsxs)("div", {
         className: T.GO,
         children: [(0, r.jsx)(a.kb, {
@@ -43,7 +43,7 @@ function I(e) {
             hasAppliedGuildBoosts: L,
             hasBoostPerk: H,
             canAddBoosts: B
-        }), V && (0, r.jsx)(C.A, {
+        }), V && (0, r.jsx)(x.A, {
             hasAppliedGuildBoosts: L,
             hasBoostPerk: H,
             hasGuildAffinitiesOrInGuild: P,
@@ -54,7 +54,7 @@ function I(e) {
         }) : (0, r.jsx)(b.A, {
             guildBoostSlots: n,
             premiumSubscription: t
-        }), (0, r.jsx)(x.A, {
+        }), (0, r.jsx)(C.A, {
             guildBoostSlots: I,
             fractionalPremiumState: G
         }), (0, r.jsx)(O.A, {

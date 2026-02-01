@@ -60,12 +60,12 @@ var M = n(234629),
         single: /(['\\])/g
     };
 
-function F(e, t, n) {
+function V(e, t, n) {
     var r = U[n.quoteStyle || t];
     return r + e + r
 }
 
-function V(e) {
+function F(e) {
     return y.call(String(e), /"/g, "&quot;")
 }
 
@@ -165,7 +165,7 @@ e.exports = function e(t, r, i, s) {
         return "object" != typeof t || R ? N : ed(N)
     }
     if (el(t)) {
-        for (var j = "<" + O.call(String(t.nodeName)), G = t.attributes || [], B = 0; B < G.length; B++) j += " " + G[B].name + "=" + F(V(G[B].value), "double", l);
+        for (var j = "<" + O.call(String(t.nodeName)), G = t.attributes || [], B = 0; B < G.length; B++) j += " " + G[B].name + "=" + V(F(G[B].value), "double", l);
         return j += ">", t.childNodes && t.childNodes.length && (j += "..."), j += "</" + O.call(String(t.nodeName)) + ">"
     }
     if (H(t)) {
@@ -314,7 +314,7 @@ function ec(e, t) {
         return ec(E.call(e, 0, t.maxStringLength), t) + r
     }
     var i = G[t.quoteStyle || "single"];
-    return i.lastIndex = 0, F(y.call(y.call(e, i, "\\$1"), /[\x00-\x1f]/g, eu), "single", t)
+    return i.lastIndex = 0, V(y.call(y.call(e, i, "\\$1"), /[\x00-\x1f]/g, eu), "single", t)
 }
 
 function eu(e) {

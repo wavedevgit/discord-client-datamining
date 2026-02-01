@@ -11,8 +11,8 @@ var r = n(627968),
     c = n(941971),
     u = n(900848),
     d = n(371911),
-    h = n(222823),
-    p = n(309010),
+    p = n(222823),
+    h = n(309010),
     g = n(287809),
     f = n(851109),
     m = n(394953),
@@ -21,22 +21,22 @@ var r = n(627968),
     y = n(879221);
 n(445368);
 var O = n(652215),
-    _ = n(790782),
-    j = n(626600);
+    j = n(790782),
+    x = n(626600);
 
-function x() {
+function _() {
     let e = (0, s.bG)([g.default], () => g.default.getCurrentUser());
-    return (0, s.bG)([h.Ay], () => (null == e ? void 0 : e.id) != null && h.Ay.getMentionCount(e.id, _.P.NOTIFICATION_CENTER) > 0)
+    return (0, s.bG)([p.Ay], () => (null == e ? void 0 : e.id) != null && p.Ay.getMentionCount(e.id, j.P.NOTIFICATION_CENTER) > 0)
 }
 
 function v(e) {
     var t, n;
     let {
         onClick: d,
-        selectedOverride: h = !1,
+        selectedOverride: p = !1,
         popoutProps: g,
         ref: A
-    } = e, _ = (0, i.Vd)("notifications-inbox"), [v, E] = l.useState(!1), C = (0, m.lI)(), S = h || C, {
+    } = e, j = (0, i.Vd)("notifications-inbox"), [v, E] = l.useState(!1), C = (0, m.lI)(), S = p || C, {
         notificationCenterVariant: I
     } = (0, f.X8)({
         location: "NotificationsInboxButtonInner"
@@ -51,7 +51,7 @@ function v(e) {
             location: "NotificationsInboxButtonInner"
         }), {
             unreadChannelIds: n
-        } = (0, m.U4)(), l = x(), {
+        } = (0, m.U4)(), l = _(), {
             badge: i,
             dimensions: s
         } = (0, b.ux)({
@@ -76,7 +76,7 @@ function v(e) {
             unreadChannelsCount: n.length,
             badgeDimensions: s
         }
-    }(S), w = I === f.U5.LEGACY ? o.K$s : o.XFE, R = (0, s.bG)([p.A], () => p.A.getChannelId()), D = l.useMemo(() => {
+    }(S), w = I === f.U5.LEGACY ? o.K$s : o.XFE, R = (0, s.bG)([h.A], () => h.A.getChannelId()), D = l.useMemo(() => {
         if (I === f.U5.SIDEBAR) return O.BVt.CHANNEL(O.gNP, R)
     }, [I, R]);
     return (0, r.jsxs)(u.c, {
@@ -85,7 +85,7 @@ function v(e) {
             selected: S && I === f.U5.SIDEBAR,
             hovered: v && I === f.U5.SIDEBAR,
             unread: P > 0,
-            className: j.Io,
+            className: x.Io,
             disabled: I === f.U5.LEGACY
         }), (0, r.jsx)(y.A, {
             children: (0, r.jsx)(o.Qk9, {
@@ -109,7 +109,7 @@ function v(e) {
                         })
                     }
                     return e
-                }({}, _, g), n = n = {
+                }({}, j, g), n = n = {
                     onClick: d,
                     to: D,
                     selected: S || v,
@@ -118,7 +118,7 @@ function v(e) {
                     children: (0, r.jsx)(w, {
                         size: "custom",
                         color: "currentColor",
-                        className: j.iZ,
+                        className: x.iZ,
                         width: 20,
                         height: 20
                     })
@@ -144,7 +144,7 @@ function E() {
         } = (0, f.X8)({
             location: "NotificationsInboxButton"
         }),
-        n = x(),
+        n = _(),
         i = (0, b.HN)();
     return t === f.U5.SIDEBAR ? (0, r.jsx)(v, {
         onClick: i

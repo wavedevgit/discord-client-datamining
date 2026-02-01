@@ -1,6 +1,6 @@
 /** chunk id: 632130, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => m
+    A: () => f
 }), n(896048), n(321073);
 var r = n(339048),
     i = n(830382),
@@ -62,7 +62,7 @@ async function g(e) {
     return [...r.filter(e => e.sku.type !== p.Puh.SUBSCRIPTION_GROUP).map(e => e.sku).filter(e => null != e.price), ...await h(n, r.map(e => e.sku))]
 }
 
-function f(e) {
+function m(e) {
     let {
         socket: t
     } = e;
@@ -73,14 +73,14 @@ function f(e) {
     }, "No application.");
     return r.LM(n)
 }
-let m = {
+let f = {
     [p.e$_.GET_SKUS]: {
         [d.sm.ANY]: [d.VH, d.hj],
         handler: g
     },
     [p.e$_.GET_ENTITLEMENTS]: {
         [d.sm.ANY]: [d.VH, d.hj],
-        handler: f
+        handler: m
     },
     [p.e$_.GET_SKUS_EMBEDDED]: {
         [d.sm.ANY]: [d.VH, d.hj],
@@ -91,7 +91,7 @@ let m = {
     [p.e$_.GET_ENTITLEMENTS_EMBEDDED]: {
         [d.sm.ANY]: [d.VH, d.hj],
         handler: async e => ({
-            entitlements: await f(e)
+            entitlements: await m(e)
         })
     }
 }

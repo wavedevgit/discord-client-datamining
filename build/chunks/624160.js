@@ -14,8 +14,8 @@ var r = n(627968),
     p = n(735321),
     h = n(384377),
     g = n(492280),
-    f = n(939899),
-    m = n(518477),
+    m = n(939899),
+    f = n(518477),
     A = n(985018),
     _ = n(369134);
 let b = {
@@ -99,7 +99,7 @@ function E(e) {
                 return e
             }({
                 action: "WIDGET_ADDED"
-            }, n.getProfileEditAnalyticsOptions())), (0, h.XA)(m.jM.WIDGET_ADDED), null == l || l())
+            }, n.getProfileEditAnalyticsOptions())), (0, h.XA)(f.jM.WIDGET_ADDED), null == l || l())
         }, [c, n, d, l]),
         v = null == O ? void 0 : O(n);
     return (0, r.jsxs)("div", {
@@ -125,7 +125,7 @@ function E(e) {
                             size: s
                         });
                     case "application-widget":
-                        return (0, r.jsx)(f.A, {
+                        return (0, r.jsx)(m.A, {
                             applicationId: e.applicationId,
                             size: s
                         });
@@ -153,7 +153,7 @@ function E(e) {
                     }) : null]
                 })]
             })]
-        }), "application-widget" === (t = A(n)).variant ? (0, r.jsx)(f.R, {
+        }), "application-widget" === (t = A(n)).variant ? (0, r.jsx)(m.R, {
             applicationId: t.applicationId,
             size: s
         }) : null]

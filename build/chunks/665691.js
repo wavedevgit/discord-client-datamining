@@ -2,7 +2,7 @@
 n.d(t, {
     DY: () => d,
     UF: () => u,
-    bG: () => h
+    bG: () => p
 });
 var r = n(311907),
     l = n(652896),
@@ -39,7 +39,7 @@ function d(e) {
     }, [u, s, t])
 }
 
-function h(e) {
+function p(e) {
     let {
         channelId: t
     } = e, n = (0, c.k)({

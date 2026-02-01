@@ -177,7 +177,7 @@ let O = "migrated",
                     height: 24
                 }
             },
-            version: 3
+            version: 4
         },
         [m.uss.VIDEO]: {
             resizeX: !0,
@@ -202,7 +202,7 @@ let O = "migrated",
                     height: 128
                 }
             },
-            version: 3
+            version: 4
         },
         [m.uss.GO_LIVE]: {
             resizeX: !0,
@@ -227,7 +227,7 @@ let O = "migrated",
                     height: 164
                 }
             },
-            version: 3
+            version: 4
         },
         [m.uss.QUICK_ACTIONS]: {
             resizeX: !1,
@@ -251,7 +251,7 @@ let O = "migrated",
                     height: 56
                 }
             },
-            version: 3
+            version: 4
         },
         [m.uss.NOTIFICATIONS]: {
             resizeX: !1,
@@ -275,7 +275,7 @@ let O = "migrated",
                     height: 100
                 }
             },
-            version: 3
+            version: 4
         },
         [m.uss.ACTIVITY]: {
             resizeX: !1,
@@ -299,23 +299,49 @@ let O = "migrated",
                     height: 100
                 }
             },
-            version: 3
+            version: 4
+        },
+        [m.uss.TEXT_CHAT_V3]: {
+            resizeX: !0,
+            resizeY: !0,
+            dragAnywhere: !1,
+            layoutPolicy: h.X.REQUIRED,
+            defaultSettings: {
+                anchor: {
+                    left: void 0,
+                    top: 7 * v,
+                    bottom: void 0,
+                    right: 26 * A
+                },
+                size: {
+                    fixed: !0,
+                    height: 372,
+                    width: 500
+                },
+                minSize: {
+                    width: 350,
+                    height: 100
+                },
+                pinned: !1
+            },
+            version: 4
         },
         [m.uss.FRIENDS]: {
             resizeX: !1,
             resizeY: !0,
             dragAnywhere: !0,
-            layoutPolicy: h.X.OPTIONAL_DEFAULT,
+            constrainAutoSizeToExplicitResizeEvents: !0,
+            layoutPolicy: h.X.REQUIRED,
             defaultSettings: {
                 anchor: {
                     left: void 0,
-                    top: 6 * v,
-                    bottom: void 0,
+                    top: 7 * v,
+                    bottom: 15 * v,
                     right: A
                 },
                 size: {
                     fixed: !0,
-                    height: 500,
+                    height: "auto",
                     width: 350
                 },
                 minSize: {
@@ -324,7 +350,7 @@ let O = "migrated",
                 },
                 pinned: !1
             },
-            version: 3
+            version: 4
         },
         [m.uss.CLICK_ZONE_DEBUG]: {
             resizeX: !0,
@@ -348,7 +374,7 @@ let O = "migrated",
                     height: 50
                 }
             },
-            version: 3
+            version: 4
         },
         [m.uss.PERFORMANCE_DEBUG]: {
             resizeX: !1,
@@ -372,7 +398,7 @@ let O = "migrated",
                     height: 300
                 }
             },
-            version: 3
+            version: 4
         }
     };
 
@@ -451,7 +477,7 @@ function R(e, t) {
     let r = n.findIndex(e => e.id === t);
     if (r === n.length - 1) return !1;
     n.push(n.splice(r, 1)[0]);
-    for (let e = 0; e < n.length; e++) V(n[e], e);
+    for (let e = 0; e < n.length; e++) F(n[e], e);
     return !0
 }
 
@@ -571,7 +597,7 @@ function G(e) {
     })
 }
 
-function F(e) {
+function V(e) {
     let {
         widgetType: t,
         defaultConfig: n
@@ -579,7 +605,7 @@ function F(e) {
     I[t] = E({}, I[t], n)
 }
 
-function V(e, t) {
+function F(e, t) {
     i = b(E({}, i), {
         [e.id]: e.set("zIndex", t)
     })
@@ -854,5 +880,5 @@ let q = new z(d.h, {
     LAYOUT_CREATE_WIDGETS: G,
     LAYOUT_SET_WIDGET_META: P,
     LAYOUT_SHOW_OVERLAY_EXTRAS_HINT: j,
-    LAYOUT_SET_DEFAULT_CONFIG: F
+    LAYOUT_SET_DEFAULT_CONFIG: V
 })

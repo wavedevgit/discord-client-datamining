@@ -27,20 +27,20 @@ let f = e => {
         description: h,
         descriptionCta: E,
         isPremiumGetCta: O,
-        onCtaClick: C,
-        cardVariant: x
-    } = e, S = (0, d.V)(), T = null == S ? void 0 : S.subscription_trial, I = (0, c.O)(), y = (0, a.FY)({
+        onCtaClick: x,
+        cardVariant: C
+    } = e, S = (0, d.V)(), T = null == S ? void 0 : S.subscription_trial, I = (0, c.O)(), N = (0, a.FY)({
         intervalType: null == T ? void 0 : T.interval,
         intervalCount: null == T ? void 0 : T.interval_count
-    }), N = (0, o.G)({
+    }), y = (0, o.G)({
         defaultResponse: g.intl.string(g.t["8x0jKT"]),
         onNonTier2Subscriber: g.intl.string(g.t.IJI7yk),
-        onTier2TrialOffer: y,
-        onTier0TrialOffer: y,
+        onTier2TrialOffer: N,
+        onTier0TrialOffer: N,
         onDiscountOffer: g.intl.formatToPlainString(g.t.bkQ4bH, {
             percent: null == I ? void 0 : I.discount.amount
         })
-    }), j = (0, _.Q)(x);
+    }), j = (0, _.Q)(C);
     return (0, r.jsxs)("div", {
         className: l()(A.L_, null == j || null == (t = j.overlayContainer) ? void 0 : t.className),
         children: [(0, r.jsx)(p.A, {
@@ -56,13 +56,13 @@ let f = e => {
             color: s.$n.Colors.CUSTOM,
             subscriptionTier: m.pe.TIER_2,
             textOptions: {
-                textOverride: N
+                textOverride: y
             },
             showGradient: !0
-        }), null != E && null != C && (0, r.jsx)(s.$n, {
+        }), null != E && null != x && (0, r.jsx)(s.$n, {
             "data-migration-pending": !0,
             className: f,
-            onClick: C,
+            onClick: x,
             children: E
         })]
     })

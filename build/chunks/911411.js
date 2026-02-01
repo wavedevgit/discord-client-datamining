@@ -1,10 +1,10 @@
 /** chunk id: 911411, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => A
+    A: () => b
 }), n(896048), n(321073);
-var r, l, i = n(311907),
-    s = n(451988),
-    a = n(73153),
+var l, r, i = n(311907),
+    a = n(451988),
+    s = n(73153),
     o = n(308368),
     c = n(290863),
     u = n(360469);
@@ -14,65 +14,65 @@ function d(e, t) {
 }
 let h = {},
     p = {},
-    g = new s.J_(3e3, function() {
+    f = new a.J_(3e3, function() {
         let e = [];
         for (let [t, n] of Object.entries(p)) e.push(n), h[t] = n, delete p[t];
         0 !== e.length && o.A.subscribeActivities(e)
     });
 
-function f(e) {
+function m(e) {
     let t = d(e.applicationId, e.partyId);
     return t in h || t in p
 }
 
-function m() {
+function g() {
     h = {}, p = {}
 }
-class b extends(r = i.Ay.Store) {
+class A extends(l = i.Ay.Store) {
     initialize() {
         this.waitFor(c.A)
     }
     isSubscribed(e) {
-        return f(e)
+        return m(e)
     }
-}(l = "displayName") in b ? Object.defineProperty(b, l, {
+}(r = "displayName") in A ? Object.defineProperty(A, r, {
     value: "PresenceSubscriptionsStore",
     enumerable: !0,
     configurable: !0,
     writable: !0
-}) : b[l] = "PresenceSubscriptionsStore";
-let A = new b(a.h, {
+}) : A[r] = "PresenceSubscriptionsStore";
+let b = new A(s.h, {
     PRESENCE_SUBSCRIPTIONS_ADD: function(e) {
         let {
             subscription: t
         } = e, n = function() {
             let e = !1,
                 t = Date.now();
-            for (let [n, r] of Object.entries(h)) r.expiresAt < t && (delete h[n], e = !0);
-            for (let [n, r] of Object.entries(p)) r.expiresAt < t && (delete p[n], e = !0);
+            for (let [n, l] of Object.entries(h)) l.expiresAt < t && (delete h[n], e = !0);
+            for (let [n, l] of Object.entries(p)) l.expiresAt < t && (delete p[n], e = !0);
             return e
         }(), {
-            userId: r,
-            applicationId: l,
+            userId: l,
+            applicationId: r,
             partyId: i,
-            messageId: s,
-            channelId: a,
+            messageId: a,
+            channelId: s,
             inviteTime: o
         } = t;
-        if (f(t) || o + u.dm < Date.now()) return n;
-        let c = d(l, i),
-            m = u.dm + Date.now();
+        if (m(t) || o + u.dm < Date.now()) return n;
+        let c = d(r, i),
+            g = u.dm + Date.now();
         return p[c] = {
-            userId: r,
-            applicationId: l,
+            userId: l,
+            applicationId: r,
             partyId: i,
-            messageId: s,
-            channelId: a,
-            expiresAt: m
-        }, g.delay(), !0
+            messageId: a,
+            channelId: s,
+            expiresAt: g
+        }, f.delay(), !0
     },
-    CONNECTION_OPEN: m,
-    CONNECTION_RESUMED: m,
+    CONNECTION_OPEN: g,
+    CONNECTION_RESUMED: g,
     LOGOUT: function() {
         h = {}, p = {}
     }

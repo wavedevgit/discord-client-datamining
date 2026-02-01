@@ -1,48 +1,48 @@
-/** chunk id: 41580, original params: e,_,t (module,exports,require) **/
-t.d(_, {
-    A: () => u
-}), t(896048);
-var a = t(64700),
-    o = t(311907),
-    n = t(451988),
-    r = t(964486),
-    c = t(430452),
-    i = t(383501),
-    l = t(927813),
-    s = t(340913),
-    p = t(731854);
-let b = 2.5 * l.A.Millis.SECOND,
-    d = +l.A.Millis.HOUR;
+/** chunk id: 41580, original params: e,t,_ (module,exports,require) **/
+_.d(t, {
+    A: () => f
+}), _(896048);
+var o = _(64700),
+    a = _(311907),
+    n = _(451988),
+    c = _(964486),
+    r = _(430452),
+    i = _(383501),
+    s = _(927813),
+    d = _(340913),
+    l = _(731854);
+let u = 2.5 * s.A.Millis.SECOND,
+    p = +s.A.Millis.HOUR;
 
-function u() {
-    let [e, _] = a.useState(!1), t = (0, o.bG)([c.A], () => c.A.getMode() === p.TB.PUSH_TO_TALK), l = (0, o.bG)([i.A], () => {
+function f() {
+    let [e, t] = o.useState(!1), _ = (0, a.bG)([r.A], () => r.A.getMode() === l.TB.PUSH_TO_TALK), s = (0, a.bG)([i.A], () => {
         var e;
-        return null != i.A.getChannelId() && (null != (e = i.A.getDuration()) ? e : Number.MAX_VALUE) < b
-    }), [u, f] = a.useState(!1), {
-        showPTTJoinTooltip: g
-    } = s.A.useConfig({
+        return null != i.A.getChannelId() && (null != (e = i.A.getDuration()) ? e : Number.MAX_VALUE) < u
+    }), [f, b] = o.useState(!1), {
+        showPTTJoinTooltip: m
+    } = d.A.useConfig({
         location: "usePTTJoinTooltip"
-    }), C = a.useRef(new n.Ep), m = a.useRef(new n.Ep);
-    a.useEffect(() => {
-        if (l && t && !e) {
-            if (s.A.getConfig({
+    }), A = o.useRef(new n.Ep), C = o.useRef(new n.Ep);
+    o.useEffect(() => {
+        if (s && _ && !e) {
+            if (d.A.getConfig({
                     location: "usePTTJoinTooltip:couldDisplayTooltip"
-                }), !g) return;
-            f(!0), _(!0), m.current.start(d, () => {
-                _(!1)
-            }), C.current.start(b, () => {
-                f(!1)
+                }), !m) return;
+            b(!0), t(!0), C.current.start(p, () => {
+                t(!1)
+            }), A.current.start(u, () => {
+                b(!1)
             })
         }
-        l || f(!1)
-    }, [l, t, g, e]);
-    let x = a.useCallback(() => {
-        f(!1), C.current.stop()
+        s || b(!1)
+    }, [s, _, m, e]);
+    let g = o.useCallback(() => {
+        b(!1), A.current.stop()
     }, []);
-    return (0, r.l0)(() => {
-        C.current.stop(), m.current.stop()
+    return (0, c.l0)(() => {
+        A.current.stop(), C.current.stop()
     }), {
-        shouldShowTooltip: u,
-        dismissTooltip: x
+        shouldShowTooltip: f,
+        dismissTooltip: g
     }
 }

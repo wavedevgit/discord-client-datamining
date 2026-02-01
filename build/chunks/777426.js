@@ -14,8 +14,8 @@ var r = n(627968),
     p = n(688810),
     h = n(139286),
     g = n(532794),
-    f = n(414711),
-    m = n(187696),
+    m = n(414711),
+    f = n(187696),
     A = n(723690),
     _ = n(21119),
     b = n(594832),
@@ -94,7 +94,7 @@ function T(e) {
             }
         })
     };
-    return (0, r.jsx)(f.A, {
+    return (0, r.jsx)(m.A, {
         ref: t,
         isFocused: l,
         isActive: T,
@@ -110,7 +110,7 @@ function T(e) {
                 status: j,
                 isMobile: L,
                 subText: (0, r.jsxs)(r.Fragment, {
-                    children: [(0, r.jsx)(m.A, {
+                    children: [(0, r.jsx)(f.A, {
                         hovered: e,
                         activities: x,
                         applicationStream: P,

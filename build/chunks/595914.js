@@ -1,8 +1,8 @@
 /** chunk id: 595914, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => l
+    A: () => r
 });
-let r = (0, n(600975).C)({
+let l = (0, n(600975).C)({
     kind: "user",
     id: "2025-07_announcement_composer",
     label: "announcement composer",
@@ -18,8 +18,8 @@ let r = (0, n(600975).C)({
     }]
 });
 
-function l(e) {
-    return r.useExperiment({
+function r(e) {
+    return l.useExperiment({
         location: e
     }, {
         autoTrackExposure: !0

@@ -51,8 +51,8 @@ function _(e) {
         messageWithoutKeybind: y,
         highlightAdminWarningIfElevated: b = !1,
         useFlexboxLayout: _ = !1,
-        keybindClassName: A
-    } = e, h = (0, d.F)(), v = (0, l.bG)([a.Ay], () => {
+        keybindClassName: h
+    } = e, A = (0, d.F)(), v = (0, l.bG)([a.Ay], () => {
         let e = a.Ay.getVisibleGame();
         return null != e && e.elevated && a.Ay.canShowAdminWarning
     }), O = (0, o.NP)();
@@ -66,13 +66,13 @@ function _(e) {
                 })
             }
         }) : m.intl.string(m.t.PIeSHF)
-    }) : h ? _ ? (0, r.jsx)("div", {
+    }) : A ? _ ? (0, r.jsx)("div", {
         className: g.FH,
         children: m.intl.format(n, {
             keybind: t,
             keybindHook: e => (0, r.jsx)(p.G, {
                 keybind: t,
-                className: A
+                className: h
             }, t.join("+"))
         })
     }) : (0, r.jsx)(r.Fragment, {

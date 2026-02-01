@@ -25,13 +25,13 @@ var r = n(64700),
     h = n(961350),
     E = n(540999),
     O = n(189081),
-    C = n(994500),
-    x = n(628965),
+    x = n(994500),
+    C = n(628965),
     S = n(287809),
     T = n(80422),
     I = n(64313),
-    y = n(897358),
-    N = n(253932),
+    N = n(897358),
+    y = n(253932),
     j = n(368631),
     v = n(682262),
     P = n(987281),
@@ -78,8 +78,8 @@ function w(e) {
 function M() {
     var e, t, n, l;
     let E = (0, p.IO)().length,
-        y = (0, _.l)(),
-        P = (0, i.bG)([x.A], () => x.A.getSearchParams()),
+        N = (0, _.l)(),
+        P = (0, i.bG)([C.A], () => C.A.getSearchParams()),
         R = (0, u.VT)(),
         L = (0, v.b_)(),
         {
@@ -100,16 +100,16 @@ function M() {
         }),
         H = (0, i.bG)([O.A], () => O.A.hasLibraryApplication()),
         V = (0, i.bG)([h.default], () => h.default.hasTOTPEnabled()),
-        F = N.Q_.useSetting(),
+        F = y.Q_.useSetting(),
         Y = (0, c.A)(),
         W = null == (t = (0, d.A)()) || t,
         K = (null == (l = (0, A.G)()) ? void 0 : l.length) > 0,
         {
             hasBlockedUsers: z,
             hasIgnoredUsers: Z
-        } = (0, i.cf)([C.A], () => ({
-            hasBlockedUsers: C.A.getBlockedIDs().length > 0,
-            hasIgnoredUsers: C.A.getIgnoredIDs().length > 0
+        } = (0, i.cf)([x.A], () => ({
+            hasBlockedUsers: x.A.getBlockedIDs().length > 0,
+            hasIgnoredUsers: x.A.getIgnoredIDs().length > 0
         })),
         X = (0, g.fk)(),
         q = (0, I.j)("SettingRendererUtils"),
@@ -122,7 +122,7 @@ function M() {
         $ = (0, s.i)("useGenerateUserSettingsSections");
     return r.useMemo(() => (0, j.zj)({
         unseenGiftCount: E,
-        showPrepaidPaymentPastDueWarning: y,
+        showPrepaidPaymentPastDueWarning: N,
         searchParams: P,
         numOfPendingFamilyRequests: R,
         isOverlaySupported: L,
@@ -143,7 +143,7 @@ function M() {
         hasAgeGatedFeature: J,
         isChatMentionSuggestionsSettingEnabled: Q,
         isHDRAccessibilitySettingExperimentEnabled: $
-    }), [F, z, Z, H, K, V, P, W, B, U, G, L, M, Y, R, k, w, y, E, J, Q, $])
+    }), [F, z, Z, H, K, V, P, W, B, U, G, L, M, Y, R, k, w, N, E, J, Q, $])
 }
 
 function G(e) {
@@ -256,7 +256,7 @@ function k() {
         }),
         {
             showRedesign: n
-        } = y.X.useExperiment({
+        } = N.X.useExperiment({
             location: "settings"
         }),
         i = r.useMemo(() => w({
@@ -275,7 +275,7 @@ function B(e) {
                 location: "settings"
             }), {
                 showRedesign: t
-            } = y.X.useExperiment({
+            } = N.X.useExperiment({
                 location: "settings"
             }), n = w({
                 shouldMergeGameSettings: e,

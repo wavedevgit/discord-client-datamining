@@ -1,11 +1,11 @@
 /** chunk id: 401565, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => m
+    A: () => g
 }), n(896048);
-var r, l = n(311907),
+var l, r = n(311907),
     i = n(73153),
-    s = n(141468),
-    a = n(287809),
+    a = n(141468),
+    s = n(287809),
     o = n(380335),
     c = n(157550);
 
@@ -24,19 +24,19 @@ function p(e) {
     return o.A.isMessageRequest(e) || c.A.isSpam(e)
 }
 
-function g(e, t) {
+function f(e, t) {
     let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
     if (!p(e) || null != t && e !== (null == t ? void 0 : t.channel_id)) return;
-    let r = null == t ? null : (0, s.rh)(t);
+    let l = null == t ? null : (0, a.rh)(t);
     d[e] = {
         loaded: !0,
         error: n,
-        message: r
+        message: l
     }
 }
-class f extends(r = l.Ay.Store) {
+class m extends(l = r.Ay.Store) {
     initialize() {
-        this.waitFor(o.A, c.A, a.default)
+        this.waitFor(o.A, c.A, s.default)
     }
     shouldLoadMessageRequestPreview(e) {
         return !h.has(e)
@@ -49,8 +49,8 @@ class f extends(r = l.Ay.Store) {
         }), d[e]
     }
 }
-u(f, "displayName", "MessageRequestPreviewStore");
-let m = new f(i.h, {
+u(m, "displayName", "MessageRequestPreviewStore");
+let g = new m(i.h, {
     CONNECTION_OPEN: function() {
         d = {}, h.clear()
     },
@@ -74,32 +74,32 @@ let m = new f(i.h, {
     },
     MESSAGE_CREATE: function(e) {
         if (e.isPushNotification) return !1;
-        g(e.message.channel_id, e.message)
+        f(e.message.channel_id, e.message)
     },
     MESSAGE_UPDATE: function(e) {
         var t, n;
-        let r = e.message.channel_id;
-        if (null == r) return !1;
-        let l = d[r];
-        if (null == l || null == l.message) return !1;
-        d[r] = (t = function(e) {
+        let l = e.message.channel_id;
+        if (null == l) return !1;
+        let r = d[l];
+        if (null == r || null == r.message) return !1;
+        d[l] = (t = function(e) {
             for (var t = 1; t < arguments.length; t++) {
                 var n = null != arguments[t] ? arguments[t] : {},
-                    r = Object.keys(n);
-                "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+                    l = Object.keys(n);
+                "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
                     return Object.getOwnPropertyDescriptor(n, e).enumerable
-                }))), r.forEach(function(t) {
+                }))), l.forEach(function(t) {
                     u(e, t, n[t])
                 })
             }
             return e
-        }({}, l), n = n = {
-            message: (0, s.IU)(l.message, e.message)
+        }({}, r), n = n = {
+            message: (0, a.IU)(r.message, e.message)
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
             var n = Object.keys(e);
             if (Object.getOwnPropertySymbols) {
-                var r = Object.getOwnPropertySymbols(e);
-                n.push.apply(n, r)
+                var l = Object.getOwnPropertySymbols(e);
+                n.push.apply(n, l)
             }
             return n
         })(Object(n)).forEach(function(e) {
@@ -118,17 +118,17 @@ let m = new f(i.h, {
         let {
             requestedChannelIds: t,
             supplementalData: n
-        } = e, r = new Set([...t]);
+        } = e, l = new Set([...t]);
         for (let e of (n.forEach(e => {
-                g(e.channel_id, e.message_preview), r.delete(e.channel_id)
-            }), Array.from(r))) g(e, null)
+                f(e.channel_id, e.message_preview), l.delete(e.channel_id)
+            }), Array.from(l))) f(e, null)
     },
     LOAD_MESSAGE_REQUESTS_SUPPLEMENTAL_DATA_ERROR: function(e) {
         let {
             requestedChannelIds: t
         } = e;
         t.forEach(e => {
-            g(e, null, !0)
+            f(e, null, !0)
         })
     }
 })

@@ -2,14 +2,14 @@
 n.d(t, {
     x: () => d
 });
-var r = n(945810),
-    l = n(71393),
+var l = n(945810),
+    r = n(71393),
     i = n(222823),
-    s = n(287809),
-    a = n(954571),
+    a = n(287809),
+    s = n(954571),
     o = n(661191),
     c = n(652215);
-let u = (0, r.mj)({
+let u = (0, l.mj)({
     name: "2026-01-red-dot-navigate-to-mentions",
     kind: "user",
     defaultConfig: {
@@ -24,10 +24,10 @@ let u = (0, r.mj)({
 
 function d(e, t) {
     if (!c.kvI.GUILD_TEXTUAL.has(e.type) || !t.ready) return;
-    let n = s.default.getCurrentUser();
+    let n = a.default.getCurrentUser();
     if (null == n) return;
-    let r = i.Ay.getMentionCount(e.id);
-    if (r <= 0) return;
+    let l = i.Ay.getMentionCount(e.id);
+    if (l <= 0) return;
     let {
         enableTracking: d
     } = u.getConfig({
@@ -37,17 +37,17 @@ function d(e, t) {
     let h = i.Ay.ackMessageId(e.id),
         p = null != h;
     if (null == h) {
-        let t = l.A.getGuild(e.guild_id);
+        let t = r.A.getGuild(e.guild_id);
         null != t && null != t.joinedAt && (h = o.default.fromTimestamp(t.joinedAt.getTime()))
     }
-    let g = 0;
+    let f = 0;
     t.forAll(e => {
-        o.default.compare(e.id, h) > 0 && (0, i.Wm)(e, n) && g++
-    }), a.default.track(c.HAw.CHANNEL_WITH_UNREAD_MENTIONS_LOADED, {
+        o.default.compare(e.id, h) > 0 && (0, i.Wm)(e, n) && f++
+    }), s.default.track(c.HAw.CHANNEL_WITH_UNREAD_MENTIONS_LOADED, {
         channel_id: e.id,
         channel_type: e.type,
-        total_badge_count: r,
-        loaded_mention_count: g,
+        total_badge_count: l,
+        loaded_mention_count: f,
         has_previous_ack: p
     })
 }

@@ -9,19 +9,19 @@ var r, l, i = n(478437),
     c = n(142120),
     u = n(927813),
     d = n(661470);
-let h = new Set,
-    p = {};
+let p = new Set,
+    h = {};
 
 function g(e) {
     return new Date(e * u.A.Millis.SECOND).getTime()
 }
 
 function f() {
-    h.clear()
+    p.clear()
 }
 
 function m(e) {
-    h.delete(e.guild.id)
+    p.delete(e.guild.id)
 }
 class b extends(r = a.Ay.Store) {
     initialize() {
@@ -29,10 +29,10 @@ class b extends(r = a.Ay.Store) {
     }
     getStartTime(e) {
         var t;
-        if (null != e && null != e.guild_id && e.type === i.r.GUILD_VOICE) return null == (t = p[e.guild_id]) ? void 0 : t[e.id]
+        if (null != e && null != e.guild_id && e.type === i.r.GUILD_VOICE) return null == (t = h[e.guild_id]) ? void 0 : t[e.id]
     }
     hasRequestedStartTimes(e) {
-        return h.has(e)
+        return p.has(e)
     }
 }(l = "displayName") in b ? Object.defineProperty(b, l, {
     value: "VoiceChannelStartTimeStore",
@@ -55,7 +55,7 @@ let A = new b(o.h, {
             location: "VoiceChannelStartTimeStore"
         }).enabled;
         if (((0, s.un)() || (0, s.m0)()) && !l) return !1;
-        null == p[t] && (p[t] = {}), p[t][n] = null != r ? g(r) : void 0
+        null == h[t] && (h[t] = {}), h[t][n] = null != r ? g(r) : void 0
     },
     CHANNEL_INFO: function(e) {
         let {
@@ -66,12 +66,12 @@ let A = new b(o.h, {
                 id: e,
                 voiceStartTime: r
             }
-            of(p[t] = {}, n)) p[t][e] = null != r ? g(r) : void 0
+            of(h[t] = {}, n)) h[t][e] = null != r ? g(r) : void 0
     },
     FETCH_CHANNEL_INFO: function(e) {
         let {
             guildId: t
         } = e;
-        h.add(t), c.A.getSocket().requestChannelInfo(t, ["status", "voice_start_time"])
+        p.add(t), c.A.getSocket().requestChannelInfo(t, ["status", "voice_start_time"])
     }
 })

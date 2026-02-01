@@ -26,7 +26,7 @@ function s(e) {
         u(e, h)
     }
 
-    function f() {
+    function m() {
         h = !0
     }(0, i.mMO)(async () => {
         let {
@@ -54,7 +54,7 @@ function s(e) {
             customId: s,
             linkId: o,
             message: c,
-            onCopyLink: f,
+            onCopyLink: m,
             onShare: g
         }, n))
     }, {

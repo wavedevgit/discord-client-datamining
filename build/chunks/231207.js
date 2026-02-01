@@ -31,9 +31,9 @@ var a = n(627968),
     N = n(166403),
     w = n(652215),
     I = n(788868),
-    P = n(734399);
+    k = n(734399);
 
-function k(e) {
+function P(e) {
     for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
             a = Object.keys(n);
@@ -88,8 +88,8 @@ let M = function() {
     }), H = "true" !== V.gift && null != M, [K, z] = l.useState(L.length > 0 ? L[0].value : null), {
         analyticsLocations: q
     } = (0, g.Ay)(x.A.PAYMENT_FLOW_TEST_PAGE), [Q, Y] = l.useState(""), [J, X] = l.useState(w.dJq), {
-        balance: Z,
-        isFetching: $,
+        balance: $,
+        isFetching: Z,
         error: ee
     } = (0, O.W)(), {
         isSubmitting: et,
@@ -99,7 +99,7 @@ let M = function() {
     return (0, a.jsx)(g.f5, {
         value: q,
         children: (0, a.jsx)(u.IpV, {
-            className: P.XG,
+            className: k.XG,
             children: (0, a.jsxs)(u.BJc, {
                 direction: "vertical",
                 gap: 24,
@@ -234,7 +234,7 @@ let M = function() {
                             label: "Nitro Basic"
                         }],
                         onSelectionChange: e => {
-                            W(t => R(k({}, t), {
+                            W(t => R(P({}, t), {
                                 plan_id: e
                             }))
                         },
@@ -253,7 +253,7 @@ let M = function() {
                             label: "Not Gift"
                         }],
                         onSelectionChange: e => {
-                            W(t => R(k({}, t), {
+                            W(t => R(P({}, t), {
                                 gift: e
                             }))
                         },
@@ -268,7 +268,7 @@ let M = function() {
                         text: "Open Link",
                         disabled: H,
                         onClick: () => {
-                            window.open(w.BVt.BILLING_PREMIUM_SUBSCRIBE + "?" + r.stringify(k({}, V)))
+                            window.open(w.BVt.BILLING_PREMIUM_SUBSCRIBE + "?" + r.stringify(P({}, V)))
                         }
                     })
                 }), (0, a.jsx)(u.cGx, {}), (0, a.jsxs)(u.nVY, {
@@ -280,18 +280,18 @@ let M = function() {
                         children: [(0, a.jsx)(u.Text, {
                             variant: "text-sm/normal",
                             children: "Virtual Currency Balance:"
-                        }), $ ? (0, a.jsx)("div", {
-                            className: P.wG,
+                        }), Z ? (0, a.jsx)("div", {
+                            className: k.wG,
                             children: (0, a.jsx)(u.y$y, {
                                 type: u.tVU.SPINNING_CIRCLE
                             })
                         }) : (0, a.jsxs)("div", {
-                            className: P.dB,
+                            className: k.dB,
                             children: [null !== ee && (0, a.jsxs)(u.Text, {
                                 variant: "text-sm/normal",
                                 children: ["Error fetching Virtual Currency Balance: ", ee.message]
                             }), (0, a.jsx)(T.Gy, {
-                                balance: null != Z ? Z : 0,
+                                balance: null != $ ? $ : 0,
                                 balanceWidgetMode: T.k7.SELECTED
                             })]
                         })]

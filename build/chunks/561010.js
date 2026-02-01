@@ -1,6 +1,6 @@
 /** chunk id: 561010, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    q: () => p
+    q: () => h
 }), n(321073);
 var r = n(64700),
     l = n(311907),
@@ -11,15 +11,15 @@ var r = n(64700),
     c = n(441446),
     u = n(818348),
     d = n(985018);
-let h = [];
+let p = [];
 
-function p(e, t) {
+function h(e, t) {
     (0, s.Ay)(() => {
         (null == t ? void 0 : t.id) != null && (0, i.Ey)(t.id, e, a.LD)
     });
     let n = (0, l.bG)([o.A], () => null != t ? o.A.getSortedRoles(t.id) : []),
         {
-            version: p,
+            version: h,
             members: g
         } = (0, l.cf)([c.A], () => ({
             version: c.A.getMemberListVersion(e),
@@ -27,7 +27,7 @@ function p(e, t) {
         })),
         f = null == t,
         m = r.useMemo(() => {
-            if (f) return h;
+            if (f) return p;
             let e = n.filter(e => e.hoist).map(e => ({
                 id: e.id,
                 label: e.name
@@ -51,6 +51,6 @@ function p(e, t) {
                     roleId: r
                 }
             })
-        }, [n, g, p, f]);
-    return null != g ? m : h
+        }, [n, g, h, f]);
+    return null != g ? m : p
 }

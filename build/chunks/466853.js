@@ -97,10 +97,10 @@ function _(e) {
     } = (0, d.NJ)(), T = (0, g.A)({
         widget: n,
         onAction: S
-    }), N = E === n.type;
-    (0, p.A)(T, N);
-    let C = P && null != m && !i,
-        k = () => (0, r.jsxs)("div", {
+    }), C = E === n.type;
+    (0, p.A)(T, C);
+    let N = P && null != m && !i,
+        R = () => (0, r.jsxs)("div", {
             className: a()(x.kL, f),
             children: [(0, r.jsx)(O.A, {
                 userId: t,
@@ -118,11 +118,11 @@ function _(e) {
     return (0, r.jsx)("section", {
         ref: T,
         "aria-labelledby": w,
-        children: C ? (0, r.jsx)(v, {
+        children: N ? (0, r.jsx)(v, {
             index: null != m ? m : 0,
             widget: n,
             additionalManageWidgetMenuItems: A,
-            children: k()
-        }) : k()
+            children: R()
+        }) : R()
     })
 }

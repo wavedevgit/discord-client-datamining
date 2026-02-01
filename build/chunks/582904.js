@@ -13,8 +13,8 @@ var r = n(64700),
     c = n(287809),
     u = n(607567),
     d = n(403362),
-    h = n(605431),
-    p = n(366251);
+    p = n(605431),
+    h = n(366251);
 
 function g(e) {
     let {
@@ -23,7 +23,7 @@ function g(e) {
         totalSuggestions: n
     } = s.A.useConfig({
         location: "useVoiceInviteSuggestions"
-    }), i = (0, l.bG)([a.A], () => a.A.getUserAffinitiesMap(), []), h = null == t ? void 0 : t.guild_id, p = new Set((0, l.bG)([u.Ay], () => null == t ? [] : u.Ay.getVoiceStatesForChannel(t).map(e => e.user.id), [t])), g = (0, l.yK)([o.Ay, c.default], () => o.Ay.getMembers(h).map(e => c.default.getUser(e.userId)).filter(d.Vq).filter(e => !p.has(e.id)), [h, p]);
+    }), i = (0, l.bG)([a.A], () => a.A.getUserAffinitiesMap(), []), p = null == t ? void 0 : t.guild_id, h = new Set((0, l.bG)([u.Ay], () => null == t ? [] : u.Ay.getVoiceStatesForChannel(t).map(e => e.user.id), [t])), g = (0, l.yK)([o.Ay, c.default], () => o.Ay.getMembers(p).map(e => c.default.getUser(e.userId)).filter(d.Vq).filter(e => !h.has(e.id)), [p, h]);
     return r.useMemo(() => g.toSorted((e, t) => {
         var n, r, l, s;
         let {
@@ -40,11 +40,11 @@ function f(e) {
         {
             collapsed: n = !1
         } = t,
-        i = (0, l.bG)([p.A], () => p.A.getShouldShowPopover(e.id), [e.id]);
+        i = (0, l.bG)([h.A], () => h.A.getShouldShowPopover(e.id), [e.id]);
     return {
         shouldShow: i && !n,
         dismiss: r.useCallback(() => {
-            (0, h.w)(e.id)
+            (0, p.w)(e.id)
         }, [e])
     }
 }

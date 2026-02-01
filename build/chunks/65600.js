@@ -1,6 +1,6 @@
 /** chunk id: 65600, original params: e,t,r (module,exports,require) **/
 r.d(t, {
-    A: () => p
+    A: () => f
 }), r(896048);
 var n, l, s = r(311907),
     a = r(73153),
@@ -62,7 +62,7 @@ class h extends(n = s.Ay.Store) {
     configurable: !0,
     writable: !0
 }) : h[l] = "SearchQueryStore";
-let p = new h(a.h, {
+let f = new h(a.h, {
     SEARCH_RESULTS_QUERY_UPDATE: function(e) {
         let {
             id: t,

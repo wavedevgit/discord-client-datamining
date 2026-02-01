@@ -11,8 +11,8 @@ var r = n(627968),
     c = n(80682),
     u = n(685399),
     d = n(833349),
-    h = n(765379),
-    p = n(713654),
+    p = n(765379),
+    h = n(713654),
     g = n(565688),
     f = n(93879),
     m = n(961350),
@@ -20,9 +20,9 @@ var r = n(627968),
     A = n(576705),
     y = n(290863),
     O = n(461213),
-    _ = n(977997),
-    j = n(403362),
-    x = n(246084),
+    j = n(977997),
+    x = n(403362),
+    _ = n(246084),
     v = n(667936),
     E = n(879349),
     C = n(884415),
@@ -36,33 +36,33 @@ var r = n(627968),
 function R(e) {
     var t, i;
     let s, {
-        channel: p,
+        channel: h,
         guild: b,
         onAction: A,
-        voiceStates: _,
-        isChannelSelected: x,
+        voiceStates: j,
+        isChannelSelected: _,
         shouldShowSettingNudge: E
     } = e;
     s = l.useMemo(() => {
         var e;
-        return null == _ || _.length > 50 ? {} : {
-            [p.getGuildId()]: null != (e = _.map(e => {
+        return null == j || j.length > 50 ? {} : {
+            [h.getGuildId()]: null != (e = j.map(e => {
                 let {
                     user: t
                 } = e;
                 return t.id
             })) ? e : []
         }
-    }, [p, _]), (0, c.E)(s, "VoiceChannelActivities");
-    let C = (0, u.Ay)(p),
+    }, [h, j]), (0, c.E)(s, "VoiceChannelActivities");
+    let C = (0, u.Ay)(h),
         S = Array.from((0, u.Rz)(C).values()),
-        w = null != (t = null == _ ? void 0 : _.filter(j.Vq)) ? t : [],
+        w = null != (t = null == j ? void 0 : j.filter(x.Vq)) ? t : [],
         R = () => e => [I.$pd.PLAYING, I.$pd.WATCHING].includes(e.type) && (null != e.assets || null != e.state || null != e.details || null != e.party) || e.type === I.$pd.LISTENING,
         L = (0, a.bG)([O.A, y.A, m.default], () => {
             let e = {};
             return w.forEach(t => {
                 let n = t.user.id === m.default.getId() ? O.A.findActivity(R(), !0) : y.A.findActivity(t.user.id, R());
-                if (null != n && !(0, h.A)(n)) {
+                if (null != n && !(0, p.A)(n)) {
                     var r, l, i, s;
                     let a = "".concat(null != (r = n.application_id) ? r : "", ":").concat(null != (l = null == (s = n.party) ? void 0 : s.id) ? l : t.user.id),
                         o = null != (i = e[a]) ? i : {
@@ -79,9 +79,9 @@ function R(e) {
     return L.length + S.length === 0 ? null : (0, r.jsxs)(o.HOs, {
         className: P.kL,
         children: [(0, r.jsx)(D, {
-            channel: p,
-            isChannelSelected: x,
-            voiceStatesCount: null != (i = null == _ ? void 0 : _.length) ? i : 0
+            channel: h,
+            isChannelSelected: _,
+            voiceStatesCount: null != (i = null == j ? void 0 : j.length) ? i : 0
         }), (0, r.jsx)("div", {
             className: P.zN
         }), S.map((e, t) => {
@@ -89,7 +89,7 @@ function R(e) {
             return (0, r.jsx)(v.A, {
                 embeddedApp: e,
                 presenceActivity: null != (n = e.presenceActivity) ? n : void 0,
-                channel: p,
+                channel: h,
                 onAction: A
             }, t)
         }), L.map((e, t) => {
@@ -100,7 +100,7 @@ function R(e) {
             return M && null != i.application_id && N.sQ.has(i.application_id) ? (0, r.jsxs)(l.Fragment, {
                 children: [(0, r.jsx)(v.A, {
                     presenceActivity: i,
-                    channel: p,
+                    channel: h,
                     members: n,
                     onAction: A
                 }), (0, r.jsx)(f.A, {
@@ -108,12 +108,12 @@ function R(e) {
                     applicationId: i.application_id,
                     userIds: n.map(e => e.user.id),
                     location: "voice_channel",
-                    guildId: p.guild_id,
-                    channelId: p.id
+                    guildId: h.guild_id,
+                    channelId: h.id
                 })]
             }, "".concat(t, "-with-gifting-breadcrumb")) : (0, r.jsx)(v.A, {
                 presenceActivity: i,
-                channel: p,
+                channel: h,
                 members: n,
                 onAction: A
             }, t)
@@ -177,13 +177,13 @@ function D(e) {
         channel: t,
         isChannelSelected: n,
         voiceStatesCount: l
-    } = e, i = (0, a.bG)([A.A], () => !A.A.can(I.xBc.CONNECT, t)), o = (0, a.bG)([_.A], () => _.A.hasVideo(t.id)), c = (0, x.Ay)({
+    } = e, i = (0, a.bG)([A.A], () => !A.A.can(I.xBc.CONNECT, t)), o = (0, a.bG)([j.A], () => j.A.hasVideo(t.id)), c = (0, _.Ay)({
         channel: t,
         locked: i,
         video: o,
         selected: n
     }), u = (0, a.bG)([b.A], () => b.A.getGuild(t.guild_id));
-    return null == (0, p.gU)(t, u) ? null : (0, r.jsxs)("div", {
+    return null == (0, h.gU)(t, u) ? null : (0, r.jsxs)("div", {
         className: s()(P.oT, w.oT),
         children: [(0, r.jsx)(E.A, {
             channel: t

@@ -15,8 +15,8 @@ var i = n(835245),
     p = n(869038),
     h = n(933958),
     g = n(956549),
-    f = n(257269),
-    m = n(793574),
+    m = n(257269),
+    f = n(793574),
     A = n(627363),
     _ = n(121623),
     b = n(200330),
@@ -274,11 +274,11 @@ let k = {
                                     d = null != (r = c.searchParams.get("referrer_id")) ? r : void 0,
                                     {
                                         customId: p
-                                    } = await (0, f.d9)(e, c.searchParams.get("link_id"), c.searchParams.get("custom_id"));
+                                    } = await (0, m.d9)(e, c.searchParams.get("link_id"), c.searchParams.get("custom_id"));
                                 await (0, g.A)({
                                     targetApplicationId: e,
                                     channelId: o,
-                                    analyticsLocations: [m.A.DEEPLINK],
+                                    analyticsLocations: [f.A.DEEPLINK],
                                     customId: p,
                                     referrerId: d
                                 }), C.default.track(L.HAw.ACTIVITY_DEEP_LINK_RECEIVED, {

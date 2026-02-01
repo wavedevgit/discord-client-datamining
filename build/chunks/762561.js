@@ -11,8 +11,8 @@ var r = n(627968),
     c = n(736653),
     u = n(793574),
     d = n(688810),
-    h = n(713517),
-    p = n(182592),
+    p = n(713517),
+    h = n(182592),
     g = n(594832),
     f = n(183555),
     m = n(672385),
@@ -20,9 +20,9 @@ var r = n(627968),
     A = n(950191),
     y = n(679492),
     O = n(657331),
-    _ = n(718019),
-    j = n(915614),
-    x = n(439053),
+    j = n(718019),
+    x = n(915614),
+    _ = n(439053),
     v = n(379654),
     E = n(946356),
     C = n(490752),
@@ -63,23 +63,23 @@ function U(e) {
         user: n,
         currentUser: m,
         channel: U
-    } = e, B = __OVERLAY__, H = (0, A.Ay)(n.id), F = (0, c.Ay)(), K = l.useRef(Date.now()), {
-        analyticsLocations: Y
+    } = e, B = __OVERLAY__, H = (0, A.Ay)(n.id), F = (0, c.Ay)(), Y = l.useRef(Date.now()), {
+        analyticsLocations: K
     } = (0, d.Ay)(u.A.USER_PROFILE_SIDEBAR), W = (0, f.pb)({
         layout: "SIDEBAR",
         userId: n.id,
         channelId: U.id
     }), z = l.useRef(null), {
-        isHoveringOrFocusing: q,
-        isHovering: X
-    } = (0, h.A)(z), J = (0, y.fC)(), Q = (0, o.zhh)({
+        isHoveringOrFocusing: X,
+        isHovering: q
+    } = (0, p.A)(z), J = (0, y.fC)(), Q = (0, o.zhh)({
         opacity: +(null != J.interactionType),
         config: {
             duration: 150
         }
     }), Z = e => {
         (0, O.openUserProfileModal)(k({
-            sourceAnalyticsLocations: Y,
+            sourceAnalyticsLocations: K,
             hideRestrictedProfile: !0
         }, W, e))
     }, $ = (null == H ? void 0 : H.widgets) != null && H.widgets.length > 0, {
@@ -93,10 +93,10 @@ function U(e) {
         userId: n.id
     }), en = l.useMemo(() => null == et ? null : et.items.filter(e => !e.isOwned), [et]);
     return (0, r.jsx)(d.f5, {
-        value: Y,
+        value: K,
         children: (0, r.jsx)(f.of, {
             value: W,
-            openedAt: K.current,
+            openedAt: Y.current,
             fetchStartedAt: null == H ? void 0 : H.fetchStartedAt,
             fetchEndedAt: null == H ? void 0 : H.fetchEndedAt,
             isLoaded: null == H ? void 0 : H.isLoaded,
@@ -123,16 +123,16 @@ function U(e) {
                             })]
                         }), (0, r.jsxs)("div", {
                             className: G.wx,
-                            children: [(0, r.jsx)(j.A, {
+                            children: [(0, r.jsx)(x.A, {
                                 user: n,
                                 displayProfile: H,
                                 themeType: L.d.SIDEBAR,
-                                animateOnHoverOrFocusOnly: !q,
+                                animateOnHoverOrFocusOnly: !X,
                                 className: G.vK
-                            }), (0, r.jsx)(x.A, {
+                            }), (0, r.jsx)(_.A, {
                                 userId: n.id,
                                 className: G.oR
-                            }), (0, r.jsx)(_.A, {
+                            }), (0, r.jsx)(j.A, {
                                 user: n,
                                 displayProfile: H,
                                 channelId: U.id,
@@ -149,7 +149,7 @@ function U(e) {
                             currentUser: m,
                             displayProfile: H,
                             channel: U,
-                            isHoveringOrFocusing: null == J.interactionType && q,
+                            isHoveringOrFocusing: null == J.interactionType && X,
                             onOpenProfile: B ? void 0 : Z
                         }), $ && (0, r.jsx)("div", {
                             className: G.sJ,
@@ -177,11 +177,11 @@ function U(e) {
                         })]
                     }), !B && (0, r.jsx)(V, {
                         handleOpenProfile: Z,
-                        analyticsLocations: Y,
+                        analyticsLocations: K,
                         context: W
-                    }), (null == H ? void 0 : H.profileEffect) != null && (0, r.jsx)(p.A, {
+                    }), (null == H ? void 0 : H.profileEffect) != null && (0, r.jsx)(h.A, {
                         skuId: null == H || null == (t = H.profileEffect) ? void 0 : t.skuId,
-                        isHovering: X
+                        isHovering: q
                     })]
                 })
             })

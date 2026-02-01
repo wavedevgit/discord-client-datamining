@@ -21,13 +21,13 @@ var r = n(627968),
     h = n(871123),
     E = n(366523),
     O = n(961350),
-    C = n(30793),
-    x = n(351906),
+    x = n(30793),
+    C = n(351906),
     S = n(97352),
     T = n(67480),
     I = n(147925),
-    y = n(957565),
-    N = n(45938),
+    N = n(957565),
+    y = n(45938),
     j = n(615396),
     v = n(788868),
     P = n(985018),
@@ -70,10 +70,10 @@ class L extends i.PureComponent {
             className: R.Gj,
             children: [(0, r.jsx)(_.e2O, {
                 className: R.ph,
-                value: (0, N.Zq)(t.code),
+                value: (0, y.Zq)(t.code),
                 text: this.copyButtonText,
                 mode: n,
-                supportsCopy: y.p5,
+                supportsCopy: N.p5,
                 hideMessage: e ? P.intl.string(P.t["0RLn47"]) : null,
                 onCopy: this.handleCopy,
                 buttonColor: u.XD.BRAND,
@@ -100,7 +100,7 @@ class L extends i.PureComponent {
                 giftCode: t,
                 sku: n
             } = this.props;
-            (0, N.AK)(t, n), (0, y.C)(e, () => this.setState({
+            (0, y.AK)(t, n), (0, N.C)(e, () => this.setState({
                 copyMode: _.qCr.SUCCESS
             }), () => this.setState({
                 copyMode: _.qCr.ERROR
@@ -277,19 +277,19 @@ class w extends i.PureComponent {
         })
     }
 }
-let M = c.Ay.connectStores([T.A, x.A, C.A, g.A, S.A, O.default], e => {
+let M = c.Ay.connectStores([T.A, C.A, x.A, g.A, S.A, O.default], e => {
     let {
         skuId: t,
         subscriptionPlanId: n,
         giftStyle: r
     } = e, i = T.A.get(t);
     if (null == i) throw Error("SKU was unavailable while rendering gift.");
-    let l = C.A.getForGifterSKUAndPlan(O.default.getId(), t, n).filter(e => !e.isClaimed).filter(e => e.giftStyle === r);
+    let l = x.A.getForGifterSKUAndPlan(O.default.getId(), t, n).filter(e => !e.isClaimed).filter(e => e.giftStyle === r);
     return {
         sku: i,
-        hideCodes: x.A.enabled,
-        isFetching: C.A.getUserGiftCodesFetchingForSKUAndPlan(t, n),
-        loadedAt: C.A.getUserGiftCodesLoadedAtForSKUAndPlan(t, n),
+        hideCodes: C.A.enabled,
+        isFetching: x.A.getUserGiftCodesFetchingForSKUAndPlan(t, n),
+        loadedAt: x.A.getUserGiftCodesLoadedAtForSKUAndPlan(t, n),
         application: g.A.getApplication(i.applicationId),
         subscriptionPlan: null != n ? (0, j.c9)(n) : null,
         giftCodes: l

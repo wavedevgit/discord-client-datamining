@@ -159,7 +159,7 @@ function G(e) {
     (null == n ? void 0 : n.refresh_stale_inbox_after_ms) == null || (C = new Date(Date.now() + (null != t ? t : n.refresh_stale_inbox_after_ms)).toUTCString(), L())
 }
 
-function F(e) {
+function V(e) {
     var t;
     let {
         connectionId: n,
@@ -168,7 +168,7 @@ function F(e) {
     null == n || (null == (t = c.A.getAccount(n, E.fg2.SPOTIFY)) ? void 0 : t.showActivity) && N(n, r)
 }
 
-function V() {
+function F() {
     x({
         feedId: g.X1.GLOBAL_FEED,
         feature: i.M.GAME_PROFILE
@@ -184,8 +184,8 @@ class B extends o.A {
             CONTENT_INVENTORY_TOGGLE_FEED_HIDDEN: M,
             CONTENT_INVENTORY_MANUAL_REFRESH: U,
             CONTENT_INVENTORY_INBOX_STALE: G,
-            SPOTIFY_NEW_TRACK: F,
-            GAME_PROFILE_OPEN: V
+            SPOTIFY_NEW_TRACK: V,
+            GAME_PROFILE_OPEN: F
         })
     }
 }

@@ -1,41 +1,41 @@
 /** chunk id: 545059, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => s
+    A: () => a
 });
-var r = n(835245),
-    i = n(73153),
+var i = n(835245),
+    r = n(73153),
     l = n(870391);
-let s = {
+let a = {
     createGroup(e) {
-        let t = (0, r.A)();
-        return i.h.dispatch({
+        let t = (0, i.A)();
+        return r.h.dispatch({
             type: "CREATE_FRIEND_GROUP",
             groupId: t,
             name: e
         }), t
     },
     updateGroup(e, t) {
-        i.h.dispatch({
+        r.h.dispatch({
             type: "UPDATE_FRIEND_GROUP",
             groupId: e,
             name: t
         })
     },
     deleteGroup(e) {
-        i.h.dispatch({
+        r.h.dispatch({
             type: "DELETE_FRIEND_GROUP",
             groupId: e
         })
     },
     reorderGroups(e) {
-        i.h.dispatch({
+        r.h.dispatch({
             type: "REORDER_FRIEND_GROUPS",
             groupIds: e
         })
     },
     addUsersToGroup(e, t) {
         let n = Array.isArray(t) ? t : [t];
-        i.h.dispatch({
+        r.h.dispatch({
             type: "ADD_USERS_TO_GROUP",
             groupId: e,
             userIds: n
@@ -43,7 +43,7 @@ let s = {
     },
     removeUsersFromGroup(e, t) {
         let n = Array.isArray(t) ? t : [t];
-        i.h.dispatch({
+        r.h.dispatch({
             type: "REMOVE_USERS_FROM_GROUP",
             groupId: e,
             userIds: n

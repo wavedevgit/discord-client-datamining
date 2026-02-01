@@ -14,8 +14,8 @@ var r = n(627968),
     p = n(652215),
     h = n(985018);
 let g = (0, o.kHD)(u.A),
-    f = (0, o.kHD)(d.A),
-    m = new Set([p.VX0.PUSHING, p.VX0.PULLING]),
+    m = (0, o.kHD)(d.A),
+    f = new Set([p.VX0.PUSHING, p.VX0.PULLING]),
     A = Object.freeze({
         [p.VX0.DONE]: g,
         [p.VX0.PLANNING]: g,
@@ -87,8 +87,8 @@ class _ extends i.PureComponent {
         } = this.props, i = null == e ? {
             type: p.VX0.DONE
         } : e, l = this.getIsRecentlySynced();
-        (m.has(i.type) || l) && (t.id, this.getStop(i, l));
-        let a = l ? f : A[i.type];
+        (f.has(i.type) || l) && (t.id, this.getStop(i, l));
+        let a = l ? m : A[i.type];
         return (0, r.jsx)(s.m, {
             text: this.getTooltip(i, l),
             children: (0, r.jsx)(a, {

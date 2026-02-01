@@ -1,17 +1,17 @@
 /** chunk id: 572487, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => f
+    A: () => h
 });
-var r, l, i = n(311907),
+var l, r, i = n(311907),
     a = n(73153),
-    o = n(652215);
-let s = {};
+    s = n(652215);
+let o = {};
 
 function c(e) {
-    let t = s[e = null != e ? e : "null"];
-    return null == t && (t = s[e] = {
-        state: o.S7L.DISCONNECTED,
-        quality: o.bFR.UNKNOWN,
+    let t = o[e = null != e ? e : "null"];
+    return null == t && (t = o[e] = {
+        state: s.S7L.DISCONNECTED,
+        quality: s.bFR.UNKNOWN,
         pings: [],
         hostname: null,
         lossRate: null
@@ -19,17 +19,17 @@ function c(e) {
 }
 
 function u(e, t, n) {
-    let r = s[e = null != e ? e : "null"];
-    return null != r ? t(r) : n
+    let l = o[e = null != e ? e : "null"];
+    return null != l ? t(l) : n
 }
-class d extends(l = i.Ay.Store) {
+class d extends(r = i.Ay.Store) {
     getConnectionState(e) {
         return u(e, e => {
             let {
                 state: t
             } = e;
             return t
-        }, o.S7L.DISCONNECTED)
+        }, s.S7L.DISCONNECTED)
     }
     getQuality(e) {
         return u(e, e => {
@@ -37,7 +37,7 @@ class d extends(l = i.Ay.Store) {
                 quality: t
             } = e;
             return t
-        }, o.bFR.UNKNOWN)
+        }, s.bFR.UNKNOWN)
     }
     getHostname(e) {
         return u(e, e => {
@@ -72,15 +72,15 @@ class d extends(l = i.Ay.Store) {
             return t
         }, null)
     }
-}(r = "displayName") in d ? Object.defineProperty(d, r, {
+}(l = "displayName") in d ? Object.defineProperty(d, l, {
     value: "OverlayRTCConnectionStore",
     enumerable: !0,
     configurable: !0,
     writable: !0
-}) : d[r] = "OverlayRTCConnectionStore";
-let f = new d(a.h, {
+}) : d[l] = "OverlayRTCConnectionStore";
+let h = new d(a.h, {
     OVERLAY_INITIALIZE: function(e) {
-        s = e.rtcConnectionStates
+        o = e.rtcConnectionStates
     },
     RTC_CONNECTION_STATE: function(e) {
         if (null != e.streamKey) return !1;

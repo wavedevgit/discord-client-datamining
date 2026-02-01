@@ -1,20 +1,20 @@
 /** chunk id: 56462, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     CW: () => i,
-    u6: () => l
+    u6: () => r
 });
-var r = n(985018);
-let l = "https://discord.com/safety/understanding-and-avoiding-common-scams";
+var l = n(985018);
+let r = "https://discord.com/safety/understanding-and-avoiding-common-scams";
 
 function i() {
     return [{
-        title: r.intl.string(r.t.wSZfJR),
-        description: r.intl.string(r.t.CRwzW5)
+        title: l.intl.string(l.t.wSZfJR),
+        description: l.intl.string(l.t.CRwzW5)
     }, {
-        title: r.intl.string(r.t.cmMUaB),
-        description: r.intl.string(r.t.n6G1ue)
+        title: l.intl.string(l.t.cmMUaB),
+        description: l.intl.string(l.t.n6G1ue)
     }, {
-        title: r.intl.string(r.t["5SPKSy"]),
-        description: r.intl.string(r.t.eyjeJQ)
+        title: l.intl.string(l.t["5SPKSy"]),
+        description: l.intl.string(l.t.eyjeJQ)
     }]
 }

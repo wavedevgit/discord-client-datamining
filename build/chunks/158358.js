@@ -1,6 +1,6 @@
 /** chunk id: 158358, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => x
+    A: () => C
 }), n(896048), n(492834);
 var r = n(627968),
     i = n(64700),
@@ -34,30 +34,30 @@ function O(e) {
         } finally {
             d(!1)
         }
-    }, [n, o]), C = null;
+    }, [n, o]), x = null;
     switch (n.type) {
         case f.fg2.REDDIT:
-            C = (0, p.xE)(_, E.Nz);
+            x = (0, p.xE)(_, E.Nz);
             break;
         case f.fg2.STEAM:
-            C = (0, p.dy)(_, E.Nz);
+            x = (0, p.dy)(_, E.Nz);
             break;
         case f.fg2.TWITTER:
-            C = (0, p.ED)(_, E.Nz);
+            x = (0, p.ED)(_, E.Nz);
             break;
         case f.fg2.EBAY:
-            C = (0, p.ub)(_, E.Nz);
+            x = (0, p.ub)(_, E.Nz);
             break;
         case f.fg2.PAYPAL:
-            C = (0, p.gZ)(_, E.Nz);
+            x = (0, p.gZ)(_, E.Nz);
             break;
         case f.fg2.TIKTOK:
-            C = (0, p.HU)(_, E.Nz)
+            x = (0, p.HU)(_, E.Nz)
     }
-    let x = (0, u.An)(_[b.pK.CREATED_AT], g),
+    let C = (0, u.An)(_[b.pK.CREATED_AT], g),
         S = null,
         T = h.intl.string(h.t.wzzjk9);
-    return (null == C || 0 === C.length) && null == x && (S = (0, r.jsx)(a.Text, {
+    return (null == x || 0 === x.length) && null == C && (S = (0, r.jsx)(a.Text, {
         variant: "text-xs/normal",
         color: "text-default",
         children: h.intl.format(h.t.Up2ni7, {
@@ -65,17 +65,17 @@ function O(e) {
         })
     }, "label"), T = h.intl.string(h.t["LVh3/5"])), s && (T = h.intl.string(h.t.i4jeWR)), (0, r.jsxs)("div", {
         className: E.tJ,
-        children: [S, null == C ? void 0 : C.map((e, t) => (0, r.jsxs)(r.Fragment, {
-            children: [e, t < C.length - 1 ? (0, r.jsx)("span", {
+        children: [S, null == x ? void 0 : x.map((e, t) => (0, r.jsxs)(r.Fragment, {
+            children: [e, t < x.length - 1 ? (0, r.jsx)("span", {
                 className: E.Om
             }) : null]
-        })), null != C && C.length > 0 && null != x ? (0, r.jsx)("div", {
+        })), null != x && x.length > 0 && null != C ? (0, r.jsx)("div", {
             className: E.Om
-        }) : null, null != x ? (0, r.jsx)(a.Text, {
+        }) : null, null != C ? (0, r.jsx)(a.Text, {
             variant: "text-xs/normal",
             color: "text-default",
             children: h.intl.format(h.t["9rfonh"], {
-                date: x
+                date: C
             })
         }, "member-since") : null, (0, r.jsx)("div", {
             className: E.jy,
@@ -92,7 +92,7 @@ function O(e) {
     })
 }
 
-function C(e) {
+function x(e) {
     let {
         account: t,
         handleRefresh: n,
@@ -157,7 +157,7 @@ function C(e) {
     })
 }
 
-function x() {
+function C() {
     let e = (0, l.bG)([g.A], () => g.A.getAccounts()),
         t = i.useMemo(() => e.filter(e => d.A.isSupported(e.type)), [e]),
         [n, s] = i.useState([]),
@@ -167,7 +167,7 @@ function x() {
     return 0 === t.length ? null : (0, r.jsx)(a.nVY, {
         className: E.kL,
         label: h.intl.string(h.t.aw0GVS),
-        children: t.map(e => (0, r.jsx)(C, {
+        children: t.map(e => (0, r.jsx)(x, {
             account: e,
             handleRefresh: c,
             refreshedAccountIds: n

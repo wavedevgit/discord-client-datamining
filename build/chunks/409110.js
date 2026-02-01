@@ -12,17 +12,17 @@ var i = n(627968),
     c = n(685603),
     d = n(555528),
     u = n(256415),
-    p = n(531685),
-    h = n(5463),
+    h = n(531685),
+    p = n(5463),
     f = n(9302),
     g = n(328913),
     y = n(131575),
-    m = n(799808),
-    _ = n(407195),
+    A = n(799808),
+    m = n(407195),
     b = n(61714),
-    A = n(652215);
+    O = n(652215);
 
-function O(e, t, n) {
+function _(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -31,7 +31,7 @@ function O(e, t, n) {
     }) : e[t] = n, e
 }
 let v = {
-    [A.uss.TEXT](e) {
+    [O.uss.TEXT](e) {
         let {
             dragging: t,
             locked: n,
@@ -39,7 +39,7 @@ let v = {
             dragStart: s,
             className: l
         } = e;
-        return (0, i.jsx)(_.A, {
+        return (0, i.jsx)(m.A, {
             dragStart: s,
             locked: n,
             pinned: r,
@@ -47,7 +47,7 @@ let v = {
             className: l
         })
     },
-    [A.uss.GUILDS](e) {
+    [O.uss.GUILDS](e) {
         let {
             locked: t,
             dragStart: n,
@@ -59,7 +59,7 @@ let v = {
             className: r
         })
     },
-    [A.uss.VOICE](e) {
+    [O.uss.VOICE](e) {
         let {
             id: t,
             anchor: n,
@@ -72,11 +72,11 @@ let v = {
             id: t,
             locked: s,
             pinned: l,
-            widget: A.uss.VOICE,
+            widget: O.uss.VOICE,
             isPreviewingInGame: r
         })
     },
-    [A.uss.GUILDS_TEXT](e) {
+    [O.uss.GUILDS_TEXT](e) {
         let {
             dragging: t,
             locked: n,
@@ -94,7 +94,7 @@ let v = {
 };
 class E extends r.PureComponent {
     componentDidUpdate(e) {
-        this.props.locked && !e.locked && null != this.state.lastLayoutUpdate && (o.A.track(A.HAw.OVERLAY_LAYOUT_UPDATED, this.state.lastLayoutUpdate), this.setState({
+        this.props.locked && !e.locked && null != this.state.lastLayoutUpdate && (o.A.track(O.HAw.OVERLAY_LAYOUT_UPDATED, this.state.lastLayoutUpdate), this.setState({
             lastLayoutUpdate: null
         }))
     }
@@ -134,13 +134,13 @@ class E extends r.PureComponent {
             pinned: a,
             zIndex: d,
             size: u,
-            anchor: p,
+            anchor: h,
             minSize: f
-        } = e, g = (0, h.fd)(u, n), y = (0, h.Nv)(p, n), {
-            resizeX: _,
+        } = e, g = (0, p.fd)(u, n), y = (0, p.Nv)(h, n), {
+            resizeX: m,
             resizeY: b,
-            dragAnywhere: A
-        } = t, O = (0, m.AE)({
+            dragAnywhere: O
+        } = t, _ = (0, A.AE)({
             locked: r,
             isPreviewingInGame: s,
             pinned: a
@@ -156,13 +156,13 @@ class E extends r.PureComponent {
             anchor: y,
             container: v,
             minSize: f,
-            hidden: !O,
-            resizeX: _,
+            hidden: !_,
+            resizeX: m,
             resizeY: b,
             style: {
                 zIndex: d
             },
-            dragAnywhere: A,
+            dragAnywhere: O,
             active: !r || l,
             onUpdate: this.handleUpdate,
             onClick: this.handleFocus,
@@ -172,10 +172,10 @@ class E extends r.PureComponent {
         })
     }
     constructor(...e) {
-        super(...e), O(this, "state", {
+        super(...e), _(this, "state", {
             lastLayoutUpdate: null,
             dragging: !1
-        }), O(this, "handleUpdate", (e, t, n, i, r) => {
+        }), _(this, "handleUpdate", (e, t, n, i, r) => {
             let {
                 props: {
                     layoutSize: s
@@ -185,19 +185,19 @@ class E extends r.PureComponent {
                 }
             } = this;
             if (!(0, f.validResolution)(s)) return;
-            let a = (0, h.NO)(n, s),
-                u = (0, h.R9)(i, s);
+            let a = (0, p.NO)(n, s),
+                u = (0, p.R9)(i, s);
             (0, l.uD)(t), (0, l.Ju)({
                 widgetId: t,
                 anchor: a,
                 size: u
             });
-            let p = e === c.P.MOVE,
-                g = (0, h.Ly)(n, s.width, s.height, r.width, r.height);
+            let h = e === c.P.MOVE,
+                g = (0, p.Ly)(n, s.width, s.height, r.width, r.height);
             this.setState({
                 lastLayoutUpdate: {
-                    was_resized: null != o && o.was_resized || !p,
-                    was_dragged: null != o && o.was_dragged || p,
+                    was_resized: null != o && o.was_resized || !h,
+                    was_dragged: null != o && o.was_dragged || h,
                     widget_type: d.A.getWidgetType(t),
                     window_width: s.width,
                     window_height: s.height,
@@ -207,19 +207,19 @@ class E extends r.PureComponent {
                     widget_top: g.top
                 }
             })
-        }), O(this, "handleFocus", e => {
+        }), _(this, "handleFocus", e => {
             let {
                 layoutSize: t
             } = this.props;
             (0, f.validResolution)(t) && (0, l.uD)(e)
-        }), O(this, "handleDragStart", () => {
+        }), _(this, "handleDragStart", () => {
             let {
                 widget: e
             } = this.props;
             null != e && (e.pinned && o.A.setPreviewInGameMode(!0), this.setState({
                 dragging: !0
             }))
-        }), O(this, "handleDragEnd", () => {
+        }), _(this, "handleDragEnd", () => {
             let {
                 widget: e
             } = this.props;
@@ -238,7 +238,7 @@ let x = s.Ay.connectStores([d.A, u.default], e => {
         widgetConfig: null != n ? d.A.getWidgetConfig(n.type) : null,
         locked: u.default.isInstanceLocked(),
         isPreviewingInGame: u.default.isPreviewingInGame(),
-        isActiveRegion: null != n && n.type === A.uss.TEXT && i.has(A.ajI.TEXT_WIDGET)
+        isActiveRegion: null != n && n.type === O.uss.TEXT && i.has(O.ajI.TEXT_WIDGET)
     }
 })(E);
 
@@ -248,11 +248,11 @@ function S(e, t) {
         layoutSize: t
     }, e)
 }
-let j = s.Ay.connectStores([d.A, p.A], () => {
+let j = s.Ay.connectStores([d.A, h.A], () => {
     var e;
     return {
         layout: null != (e = d.A.getLayout(f.OVERLAY_LAYOUT_ID)) ? e : void 0,
-        layoutSize: p.A.windowSize(),
+        layoutSize: h.A.windowSize(),
         renderWidget: S
     }
 })(a.A)

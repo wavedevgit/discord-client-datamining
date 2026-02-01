@@ -11,8 +11,8 @@ var r = n(627968),
     c = n(267102),
     u = n(474397),
     d = n(378570),
-    h = n(954571),
-    p = n(652215),
+    p = n(954571),
+    h = n(652215),
     g = n(486974),
     f = n(985018),
     m = n(641131);
@@ -21,15 +21,15 @@ function b(e) {
     var t, n;
     let {
         channel: b
-    } = e, A = l.useContext(h.AnalyticsContext), y = (0, c.aL)(), O = f.intl.string(m.default["Beo/7v"]), {
-        firstMessage: _
-    } = (0, s.OA)(b), j = null == _ || null == (t = _.messageSnapshots) ? void 0 : t[0], x = null == j || null == (n = j.moderatorReport) ? void 0 : n.reported_user_id;
-    return b.isModeratorReportChannel() && null != x ? (0, r.jsx)(o.Ay.Icon, {
+    } = e, A = l.useContext(p.AnalyticsContext), y = (0, c.aL)(), O = f.intl.string(m.default["Beo/7v"]), {
+        firstMessage: j
+    } = (0, s.OA)(b), x = null == j || null == (t = j.messageSnapshots) ? void 0 : t[0], _ = null == x || null == (n = x.moderatorReport) ? void 0 : n.reported_user_id;
+    return b.isModeratorReportChannel() && null != _ ? (0, r.jsx)(o.Ay.Icon, {
         onClick: () => {
-            (0, d.iN)(b.id), (0, u.A)(), (0, a.z)(b.guild_id, x, b.id, {
+            (0, d.iN)(b.id), (0, u.A)(), (0, a.z)(b.guild_id, _, b.id, {
                 modViewPanel: g.g.INFO,
                 sourceLocation: null != location ? location : A.location
-            }), y.dispatch(p.jej.POPOUT_CLOSE)
+            }), y.dispatch(h.jej.POPOUT_CLOSE)
         },
         tooltip: O,
         icon: i.quN,

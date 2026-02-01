@@ -16,8 +16,8 @@ function u(e) {
         onRender: n,
         onRequestClose: u,
         onActionClick: d,
-        onActionMouseDown: h,
-        position: p = "right",
+        onActionMouseDown: p,
+        position: h = "right",
         align: g = "top",
         caretConfig: f = {
             align: "start"
@@ -45,7 +45,7 @@ function u(e) {
     return (0, r.jsx)(i.AM, {
         size: "lg",
         shouldShow: !0,
-        position: p,
+        position: h,
         caretConfig: f,
         gradientColor: "purple",
         alignmentStrategy: "edge",
@@ -59,7 +59,7 @@ function u(e) {
             text: a.intl.string(a.t.RzWDqY),
             variant: "primary",
             onClick: d,
-            onMouseDown: h
+            onMouseDown: p
         }],
         targetElementRef: t,
         title: null != b ? b : a.intl.string(a.t.Ylu2JM),

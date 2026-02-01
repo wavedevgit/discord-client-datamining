@@ -1,6 +1,6 @@
 /** chunk id: 383470, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => f
+    A: () => m
 }), n(321073);
 var r = n(627968),
     i = n(64700),
@@ -19,13 +19,13 @@ let g = {
     section: p.JJy.DISCOVER_POPULAR
 };
 
-function f(e) {
+function m(e) {
     let {
         tab: t,
         guildIds: n,
         loading: p,
-        onScroll: f,
-        onGuildCardClick: m,
+        onScroll: m,
+        onGuildCardClick: f,
         onGuildCardSeen: A
     } = e, _ = (0, u.kc)(t), b = (0, u.Ot)(t), E = (0, u.UW)(t), O = (0, u.Ub)(t), y = i.useMemo(() => {
         let e = p ? 30 : n.length,
@@ -35,14 +35,14 @@ function f(e) {
             t.push((0, r.jsx)(d.jO, {
                 guildId: null != (i = n[a]) ? i : null,
                 index: a,
-                onClick: e => m(e, a, O, g),
+                onClick: e => f(e, a, O, g),
                 onView: e => A(e, O)
             }, null != (l = n[a]) ? l : a))
         }
         return t
-    }, [O, n, p, m, A]);
+    }, [O, n, p, f, A]);
     return (0, r.jsxs)(c.A, {
-        onScroll: f,
+        onScroll: m,
         children: [(0, r.jsx)(s.A, {
             title: _,
             description: b,

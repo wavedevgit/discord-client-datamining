@@ -11,8 +11,8 @@ var r = n(627968),
     c = n(624458),
     u = n(844944),
     d = n(513461),
-    h = n(663997),
-    p = n(652793),
+    p = n(663997),
+    h = n(652793),
     g = n(576705),
     f = n(221950),
     m = n(652215),
@@ -27,16 +27,16 @@ function A(e) {
         A && t.features.has(m.GuildFeatures.MEMBER_VERIFICATION_GATE_ENABLED) && t.features.has(m.GuildFeatures.MEMBER_VERIFICATION_MANUAL_APPROVAL) && c.A.fetchGuildJoinRequests({
             guildId: t.id,
             status: d.B5.SUBMITTED,
-            limit: h.L
+            limit: p.L
         })
     }, [A, t]);
-    let _ = l.useCallback(() => {
+    let j = l.useCallback(() => {
             (0, f.aZ)(t.id)
         }, [t.id]),
-        j = (0, o.q8)(t.id, s.M.MEMBERS_LAUNCH_UPSELL);
+        x = (0, o.q8)(t.id, s.M.MEMBERS_LAUNCH_UPSELL);
     return (0, r.jsx)("div", {
-        ref: j,
-        children: (0, r.jsx)(p.G, {
+        ref: x,
+        children: (0, r.jsx)(h.G, {
             id: "members-".concat(t.id),
             renderIcon: e => (0, r.jsx)(a.nFg, {
                 size: "md",
@@ -45,7 +45,7 @@ function A(e) {
             }),
             text: b.intl.string(b.t.oclz3Z),
             selected: n,
-            onClick: _,
+            onClick: j,
             trailing: O > 0 ? (0, r.jsx)(a.hVq, {
                 count: O
             }) : null

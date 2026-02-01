@@ -211,7 +211,7 @@ let L = e => {
             fullWidth: !0
         })
     },
-    F = e => {
+    V = e => {
         let {
             product: t,
             checkoutEligiblePrices: n,
@@ -259,7 +259,7 @@ let L = e => {
             fullWidth: !0
         })
     },
-    V = e => {
+    F = e => {
         let {
             handlePreviewButtonClick: t,
             text: n
@@ -339,7 +339,7 @@ let L = e => {
             product: t,
             analyticsLocations: W,
             onClickAnalytics: d
-        }) : (0, r.jsx)(F, {
+        }) : (0, r.jsx)(V, {
             product: t,
             checkoutEligiblePrices: Y,
             analyticsLocations: W,
@@ -348,7 +348,7 @@ let L = e => {
             onClickAnalytics: d
         });
         if (B && !H)
-            if (Y.length > 1) return (0, r.jsx)(V, {
+            if (Y.length > 1) return (0, r.jsx)(F, {
                 handlePreviewButtonClick: K,
                 text: c
             });

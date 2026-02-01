@@ -1,42 +1,42 @@
-/** chunk id: 313880, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    A: () => u
+/** chunk id: 313880, original params: e,t,s (module,exports,require) **/
+s.d(t, {
+    A: () => c
 });
-var i = n(627968);
-n(64700);
-var s = n(503698),
-    r = n.n(s),
-    l = n(397927),
-    a = n(447215),
-    o = n(435470),
-    c = n(985018),
-    d = n(834502);
-let u = e => {
-    var t, n;
+var i = s(627968);
+s(64700);
+var n = s(503698),
+    r = s.n(n),
+    l = s(397927),
+    a = s(447215),
+    o = s(435470),
+    d = s(985018),
+    h = s(834502);
+let c = e => {
+    var t, s;
     let {
-        message: s,
-        channel: u,
-        renderColon: h,
+        message: n,
+        channel: c,
+        renderColon: u,
         hasUnreads: g
     } = e, {
         user: m,
-        author: p
-    } = (0, o.kn)(u), f = null != (t = null != (n = null == p ? void 0 : p.nick) ? n : null == m ? void 0 : m.username) ? t : "", v = (0, a.P)({
-        user: null == s ? void 0 : s.author,
-        channelId: u.id,
-        guildId: u.guild_id,
-        messageId: null == s ? void 0 : s.id,
+        author: v
+    } = (0, o.kn)(c), p = null != (t = null != (s = null == v ? void 0 : v.nick) ? s : null == m ? void 0 : m.username) ? t : "", f = (0, a.P)({
+        user: null == n ? void 0 : n.author,
+        channelId: c.id,
+        guildId: c.guild_id,
+        messageId: null == n ? void 0 : n.id,
         stopPropagation: !0,
-        ariaLabel: c.intl.formatToPlainString(c.t.CSIeU1, {
-            name: f
+        ariaLabel: d.intl.formatToPlainString(d.t.CSIeU1, {
+            name: p
         })
-    })(null != p ? p : void 0)(f, u.id);
+    })(null != v ? v : void 0)(p, c.id);
     return (0, i.jsxs)(l.Text, {
         tag: "span",
-        className: r()(d.c, {
-            [d.p]: g
+        className: r()(h.c, {
+            [h.p]: g
         }),
         variant: "text-sm/semibold",
-        children: [v, !0 === h ? ": " : null]
+        children: [f, !0 === u ? ": " : null]
     })
 }

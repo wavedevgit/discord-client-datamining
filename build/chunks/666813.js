@@ -1,6 +1,6 @@
 /** chunk id: 666813, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => I
+    A: () => O
 });
 var l = n(627968),
     r = n(64700),
@@ -11,17 +11,17 @@ var l = n(627968),
     u = n(836731),
     c = n(589935),
     E = n(71393),
-    d = n(309010),
-    _ = n(706752),
+    _ = n(309010),
+    d = n(706752),
     g = n(829887),
     A = n(652215),
     T = n(985018),
-    h = n(438536);
+    I = n(438536);
 
-function I(e) {
+function O(e) {
     let {
         member: t
-    } = e, n = (0, a.bG)([E.A], () => E.A.getGuild(t.guildId), [t.guildId]), I = (0, u.GT)(t.userId, t.guildId), O = (0, u.Wi)(t.userId, t.guildId), m = (0, u.t)(t.userId), N = (0, u.ff)(t.userId, t.guildId);
+    } = e, n = (0, a.bG)([E.A], () => E.A.getGuild(t.guildId), [t.guildId]), O = (0, u.GT)(t.userId, t.guildId), h = (0, u.Wi)(t.userId, t.guildId), N = (0, u.t)(t.userId), m = (0, u.ff)(t.userId, t.guildId);
     return (r.useEffect(() => {
         (0, o.uO)(t.guildId)
     }, [t.guildId]), null == n) ? null : (0, l.jsx)(i.D0$, {
@@ -38,7 +38,7 @@ function I(e) {
                     color: "text-default",
                     children: T.intl.string(T.t.nzGai4)
                 }),
-                description: I ? (0, l.jsx)(i.rOg, {
+                description: O ? (0, l.jsx)(i.rOg, {
                     size: "custom",
                     width: g.mb,
                     height: g.mb,
@@ -49,7 +49,7 @@ function I(e) {
                     height: g.mb,
                     color: i.LU0.colors.ICON_FEEDBACK_CRITICAL
                 })
-            }), O !== u.bM.NO_GATE && (0, l.jsx)(g.RU, {
+            }), h !== u.bM.NO_GATE && (0, l.jsx)(g.RU, {
                 icon: (0, l.jsx)(i.B8Q, {
                     size: "custom",
                     width: g.mb,
@@ -60,7 +60,7 @@ function I(e) {
                     color: "text-default",
                     children: T.intl.string(T.t["93hqln"])
                 }),
-                description: O === u.bM.AGREED ? (0, l.jsx)(i.rOg, {
+                description: h === u.bM.AGREED ? (0, l.jsx)(i.rOg, {
                     size: "custom",
                     width: g.mb,
                     height: g.mb,
@@ -86,14 +86,14 @@ function I(e) {
                 description: (0, l.jsx)(i.Text, {
                     variant: "text-sm/medium",
                     color: "text-default",
-                    children: m
+                    children: N
                 })
             }), (0, l.jsx)(g.RU, {
                 icon: (0, l.jsx)(s.$v, {
                     guild: n,
                     size: s.$v.Sizes.SMOL,
                     animate: !1,
-                    className: h.$f
+                    className: I.$f
                 }),
                 name: (0, l.jsx)(i.Text, {
                     variant: "text-sm/medium",
@@ -103,7 +103,7 @@ function I(e) {
                 description: (0, l.jsx)(i.Text, {
                     variant: "text-sm/medium",
                     color: "text-default",
-                    children: N
+                    children: m
                 })
             }), (0, l.jsx)(g.RU, {
                 icon: (0, l.jsx)(i.DpX, {
@@ -124,8 +124,8 @@ function I(e) {
                         guildId: t.guildId,
                         showJoinMethodContextAsFooter: !0,
                         onClickInviter: e => {
-                            let n = d.A.getChannelId();
-                            (0, _.z)(t.guildId, e.id, null != n ? n : A.dJq)
+                            let n = _.A.getChannelId();
+                            (0, d.z)(t.guildId, e.id, null != n ? n : A.dJq)
                         }
                     })
                 })

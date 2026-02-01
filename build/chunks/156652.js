@@ -1,7 +1,7 @@
 /** chunk id: 156652, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     A: () => f,
-    x: () => p
+    x: () => h
 });
 var r, l = n(627968),
     i = n(64700),
@@ -12,7 +12,7 @@ var r, l = n(627968),
     u = n(919706),
     d = n(985010);
 
-function h(e) {
+function p(e) {
     for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -30,7 +30,7 @@ function h(e) {
     }
     return e
 }
-var p = ((r = {})[r.TOP = 0] = "TOP", r[r.BOTTOM = 1] = "BOTTOM", r);
+var h = ((r = {})[r.TOP = 0] = "TOP", r[r.BOTTOM = 1] = "BOTTOM", r);
 
 function g(e) {
     let {
@@ -40,12 +40,12 @@ function g(e) {
         renderBottomCenter: s,
         renderBottomRight: a,
         renderCenter: u
-    } = e, h = i.useRef(null);
+    } = e, p = i.useRef(null);
     return (0, l.jsx)(o.xpW, {
-        containerRef: h,
+        containerRef: p,
         children: (0, l.jsxs)("div", {
             className: d._v,
-            ref: h,
+            ref: p,
             children: [0 !== t && !0 !== t && (0, l.jsx)("div", {
                 className: d.aw
             }), 1 !== t && !0 !== t && (0, l.jsx)("div", {
@@ -86,7 +86,7 @@ function f(e) {
         idle: s,
         children: o,
         renderChatToasts: c,
-        renderVoiceChannelEffects: p,
+        renderVoiceChannelEffects: h,
         style: f
     } = e, m = function(e, t) {
         if (null == e) return {};
@@ -114,8 +114,8 @@ function f(e) {
         onMouseDown: r,
         onMouseLeave: i,
         onDoubleClick: n,
-        children: [o, null != t ? (0, l.jsx)(u.A, h({
+        children: [o, null != t ? (0, l.jsx)(u.A, p({
             size: "large"
-        }, t)) : null, (0, l.jsx)(g, h({}, m)), null == c ? void 0 : c(), null == p ? void 0 : p()]
+        }, t)) : null, (0, l.jsx)(g, p({}, m)), null == c ? void 0 : c(), null == h ? void 0 : h()]
     })
 }

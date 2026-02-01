@@ -1,15 +1,15 @@
-/** chunk id: 240194, original params: e,t,i (module,exports,require) **/
-i.d(t, {
-    b: () => u
+/** chunk id: 240194, original params: t,e,i (module,exports,require) **/
+i.d(e, {
+    b: () => a
 });
 var n = i(652961),
     l = i(419954),
     s = i(253932),
     r = i(780964),
-    a = i(985018);
-let u = (0, l.zD)(r.X.ANIMATE_EMOJIS, {
-    useTitle: () => a.intl.string(a.t.iIaOlc),
+    u = i(985018);
+let a = (0, l.zD)(r.X.ANIMATE_EMOJIS, {
+    useTitle: () => u.intl.string(u.t.iIaOlc),
     useSubtitle: () => (0, n.F)("animateEmoji"),
     useValue: () => s.Sf.useSetting(),
-    setValue: e => s.Sf.updateSetting(e)
+    setValue: t => s.Sf.updateSetting(t)
 })

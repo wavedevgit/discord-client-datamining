@@ -11,8 +11,8 @@ var r = n(627968),
     c = n(660273),
     u = n(707792),
     d = n(41402),
-    h = n(271456),
-    p = n(200273),
+    p = n(271456),
+    h = n(200273),
     g = n(565846),
     f = n(57907),
     m = n(375500),
@@ -20,9 +20,9 @@ var r = n(627968),
     A = n(50268),
     y = n(584682),
     O = n(58736),
-    _ = n(378570),
-    j = n(203982),
-    x = n(170428),
+    j = n(378570),
+    x = n(203982),
+    _ = n(170428),
     v = n(933057),
     E = n(747926),
     C = n(652215),
@@ -103,13 +103,13 @@ function P(e) {
         channel: t,
         closePopout: n,
         onSelect: l
-    } = e, y = (0, c.A)(t, "Sidebar Overflow"), O = (0, d.A)(t), x = (0, f.A)(t), v = (0, m.A)(t), E = (0, s.A)(t), I = (0, u.A)(t), N = (0, g.A)(t.id), T = (0, p.A)(t), P = (0, o.A)(t), w = (0, a.A)(t), R = (0, A.A)({
+    } = e, y = (0, c.A)(t, "Sidebar Overflow"), O = (0, d.A)(t), _ = (0, f.A)(t), v = (0, m.A)(t), E = (0, s.A)(t), I = (0, u.A)(t), N = (0, g.A)(t.id), T = (0, h.A)(t), P = (0, o.A)(t), w = (0, a.A)(t), R = (0, A.A)({
         id: t.id,
         label: S.intl.string(S.t.DQ797g)
-    }), D = (0, b.A)(t), L = (0, h.A)(t);
+    }), D = (0, b.A)(t), L = (0, p.A)(t);
 
     function M() {
-        (0, _.iN)(t.id)
+        (0, j.iN)(t.id)
     }
     return (0, r.jsxs)(i.W1t, {
         "data-menu-migrated": !0,
@@ -124,7 +124,7 @@ function P(e) {
                 action: M
             })]
         }), (0, r.jsxs)(i.rXV, {
-            children: [x, v]
+            children: [_, v]
         }), (0, r.jsxs)(i.rXV, {
             children: [T, O, N, L]
         }), (0, r.jsxs)(i.rXV, {
@@ -138,7 +138,7 @@ function P(e) {
                 },
                 action: function() {
                     M(), setTimeout(() => {
-                        j._.dispatch(C.jej.FOCUS_SEARCH, {
+                        x._.dispatch(C.jej.FOCUS_SEARCH, {
                             prefillCurrentChannel: !1
                         })
                     }, 2e3)
@@ -152,7 +152,7 @@ function P(e) {
                     icon: i.tfB
                 },
                 action: function() {
-                    M(), j._.dispatch(C.jej.TOGGLE_CHANNEL_PINS)
+                    M(), x._.dispatch(C.jej.TOGGLE_CHANNEL_PINS)
                 }
             })]
         }), (0, r.jsxs)(i.rXV, {
@@ -171,7 +171,7 @@ function w(e) {
     return (0, r.jsxs)(r.Fragment, {
         children: [t.isForumPost() ? null : (0, r.jsx)(v.A, {
             channel: t
-        }), t.isModeratorReportChannel() ? (0, r.jsx)(x.A, {
+        }), t.isModeratorReportChannel() ? (0, r.jsx)(_.A, {
             channel: t
         }) : null, (0, r.jsx)(T, {
             channel: t

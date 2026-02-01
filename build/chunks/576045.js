@@ -2,11 +2,11 @@
 n.d(t, {
     N: () => c
 }), n(228524);
-var r = n(627968),
-    l = n(64700),
+var l = n(627968),
+    r = n(64700),
     i = n(731738),
-    s = n(831062),
-    a = n(476592),
+    a = n(831062),
+    s = n(476592),
     o = n(665909);
 
 function c(e) {
@@ -18,14 +18,14 @@ function c(e) {
         header: d,
         description: h,
         onDismiss: p,
-        buttons: g
+        buttons: f
     } = e;
-    l.useEffect(() => {
-        s.A.increment({
+    r.useEffect(() => {
+        a.A.increment({
             name: i.K.SAFETY_WARNING_VIEW
         })
     }, []);
-    let f = l.useCallback(() => {
+    let m = r.useCallback(() => {
         null == p || p(), (0, o._$)({
             channelId: t,
             warningId: n,
@@ -34,10 +34,10 @@ function c(e) {
             cta: o.Wm.USER_BANNER_DISMISS
         })
     }, [p, t, n, c, u]);
-    return (0, r.jsx)(a.Z, {
-        buttons: g,
+    return (0, l.jsx)(s.Z, {
+        buttons: f,
         description: h,
         header: d,
-        onDismiss: f
+        onDismiss: m
     })
 }

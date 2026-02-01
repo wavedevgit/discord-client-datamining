@@ -14,8 +14,8 @@ var r = n(827343),
     p = n(430452),
     h = n(383501),
     g = n(287809),
-    f = n(652215),
-    m = n(731854);
+    m = n(652215),
+    f = n(731854);
 
 function A() {
     var e, t;
@@ -23,7 +23,7 @@ function A() {
     let n = p.A.isVideoEnabled(),
         A = Object.values(p.A.getVideoDevices())[0],
         _ = !1 === (null == (e = null == A ? void 0 : A.disabled) || e),
-        b = p.A.supportsInApp(m.O5.VIDEO) && p.A.supportsInApp(m.O5.DESKTOP_CAPTURE),
+        b = p.A.supportsInApp(f.O5.VIDEO) && p.A.supportsInApp(f.O5.DESKTOP_CAPTURE),
         E = d.A.getChannel(h.A.getChannelId()),
         O = null == (t = g.default.getCurrentUser()) ? void 0 : t.id;
     if (null == E || null == O) return;
@@ -43,6 +43,6 @@ function A() {
         }
         return n ? r.A.setVideoEnabled(!1) : !n && _ ? (0, u.A)(() => {
             r.A.setVideoEnabled(!0)
-        }, f.BRT.APP, !0) : _ || (0, c.A)(), !1
+        }, m.BRT.APP, !0) : _ || (0, c.A)(), !1
     }
 }

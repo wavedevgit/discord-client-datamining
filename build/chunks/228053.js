@@ -14,8 +14,8 @@ var r = n(627968),
     p = n(429913),
     h = n(576030),
     g = n(713517),
-    f = n(492518),
-    m = n(242640),
+    m = n(492518),
+    f = n(242640),
     A = n(808247),
     _ = n(594832),
     b = n(287809),
@@ -37,7 +37,7 @@ function T(e) {
     } = e, o = i.useRef(null), {
         analyticsLocations: p
     } = (0, d.Ay)(null != a ? a : []), {
-        isHoveringOrFocusing: m
+        isHoveringOrFocusing: f
     } = (0, g.A)(o), [b, E] = i.useState(!1), O = i.useCallback(async e => {
         if (e.stopPropagation(), !b) {
             E(!0);
@@ -70,12 +70,12 @@ function T(e) {
                 foregroundImageClassName: N.wP,
                 backgroundImageClassName: N.GC,
                 sku: n
-            }, n.id), (m || b) && (0, r.jsxs)(r.Fragment, {
+            }, n.id), (f || b) && (0, r.jsxs)(r.Fragment, {
                 children: [(0, r.jsx)("div", {
                     className: N.p0
                 }), (0, r.jsx)("div", {
                     className: N.R$,
-                    children: b ? (0, r.jsx)(f.k, {}) : (0, r.jsx)(s.pa$, {
+                    children: b ? (0, r.jsx)(m.k, {}) : (0, r.jsx)(s.pa$, {
                         size: "lg",
                         color: u.LU0.unsafe_rawColors.WHITE_500
                     })
@@ -106,7 +106,7 @@ function j(e) {
     }, [t]), C = y.recommendations.filter(e => !S.has(e.skuId)).slice(0, c);
     return "success" !== y.state ? (0, r.jsx)("div", {
         className: N.g4,
-        children: (0, r.jsx)(f.k, {})
+        children: (0, r.jsx)(m.k, {})
     }) : 0 === C.length ? null : (0, r.jsx)("ul", {
         className: a()(N.Vg, u),
         children: C.map(e => A ? (0, r.jsx)(T, {
@@ -119,7 +119,7 @@ function j(e) {
             wishlistId: t.id,
             isOwner: !1,
             profileOwner: g,
-            cardSize: m.Y.FLEX,
+            cardSize: f.Y.FLEX,
             showOverlayButton: !0,
             hideButtonIcon: !0,
             isDragging: !1

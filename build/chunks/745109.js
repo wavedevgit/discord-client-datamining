@@ -1,88 +1,88 @@
 /** chunk id: 745109, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => I
+    A: () => T
 });
-var i = n(627968),
+var r = n(627968),
     l = n(64700),
-    s = n(503698),
-    r = n.n(s),
+    i = n(503698),
+    s = n.n(i),
     a = n(311907),
     o = n(397927),
     c = n(83257),
-    d = n(159001),
-    u = n(833336),
-    h = n(766569),
-    g = n(836602),
-    x = n(576622),
-    p = n(358776),
+    u = n(159001),
+    d = n(833336),
+    p = n(766569),
+    h = n(836602),
+    g = n(576622),
+    f = n(358776),
     m = n(740625),
-    A = n(955872),
-    b = n(987281),
-    j = n(287809),
+    b = n(955872),
+    A = n(987281),
+    y = n(287809),
     O = n(203982),
-    E = n(115063),
-    S = n(841643),
-    f = n(894013),
-    C = n(652215),
-    v = n(349828),
-    y = n(355097),
-    T = n(531525),
-    _ = n(985018),
+    j = n(115063),
+    x = n(841643),
+    _ = n(894013),
+    v = n(652215),
+    E = n(349828),
+    C = n(355097),
+    S = n(531525),
+    I = n(985018),
     N = n(298109);
 
-function I() {
-    let e = (0, p.dk)("ProfileCustomizationSettingsPage"),
-        t = (0, a.bG)([u.A], () => u.A.getGuild()),
-        n = (0, S.A)(),
-        s = (0, a.bG)([u.A, g.A], () => u.A.showNotice() || g.A.showNotice()),
-        I = null != t ? t : n,
-        P = (0, a.bG)([j.default], () => j.default.getCurrentUser()),
+function T() {
+    let e = (0, f.dk)("ProfileCustomizationSettingsPage"),
+        t = (0, a.bG)([d.A], () => d.A.getGuild()),
+        n = (0, x.A)(),
+        i = (0, a.bG)([d.A, h.A], () => d.A.showNotice() || h.A.showNotice()),
+        T = null != t ? t : n,
+        P = (0, a.bG)([y.default], () => y.default.getCurrentUser()),
         {
-            subsection: R,
-            setSubsection: L
-        } = (0, f.A)(),
-        G = b.a.useField("hasSearchResults"),
-        D = b.a.useField("searchResults");
+            subsection: w,
+            setSubsection: R
+        } = (0, _.A)(),
+        D = A.a.useField("hasSearchResults"),
+        L = A.a.useField("searchResults");
 
-    function k(e) {
-        if (R !== e) {
-            if (s) {
-                (0, E.fO)({
+    function M(e) {
+        if (w !== e) {
+            if (i) {
+                (0, j.fO)({
                     duration: 300,
                     intensity: c.n3
-                }), O._.dispatch(C.jej.EMPHASIZE_NOTICE);
+                }), O._.dispatch(v.jej.EMPHASIZE_NOTICE);
                 return
             }
-            e === y.Eq.GUILD && null == t && null != I && (0, d.V2)(I), L(e)
+            e === C.Eq.GUILD && null == t && null != T && (0, u.V2)(T), R(e)
         }
     }
     l.useEffect(() => {
-        null != P && (null == I ? void 0 : I.id) !== v.V && (0, x.A)(P.id, P.getAvatarURL(null == I ? void 0 : I.id, 80), {
-            guildId: null == I ? void 0 : I.id
+        null != P && (null == T ? void 0 : T.id) !== E.V && (0, g.A)(P.id, P.getAvatarURL(null == T ? void 0 : T.id, 80), {
+            guildId: null == T ? void 0 : T.id
         })
-    }, [null == I ? void 0 : I.id, P]);
-    let w = !0,
-        V = !0;
-    return G && 1 === D.length && (D.includes(T.H.PROFILE_SERVER_PROFILES) ? (k(y.Eq.GUILD), V = !1) : D.includes(T.H.PROFILE_USER_PROFILE) && (k(y.Eq.USER_PROFILE), w = !1)), (0, i.jsxs)(m.R, {
-        header: _.intl.string(_.t["vi7f+q"]),
-        children: [(0, i.jsxs)(o.VQ0, {
+    }, [null == T ? void 0 : T.id, P]);
+    let G = !0,
+        k = !0;
+    return D && 1 === L.length && (L.includes(S.H.PROFILE_SERVER_PROFILES) ? (M(C.Eq.GUILD), k = !1) : L.includes(S.H.PROFILE_USER_PROFILE) && (M(C.Eq.USER_PROFILE), G = !1)), (0, r.jsxs)(m.R, {
+        header: I.intl.string(I.t["vi7f+q"]),
+        children: [(0, r.jsxs)(o.VQ0, {
             className: N.$H,
             type: "top",
             look: "brand",
-            selectedItem: R,
-            onItemSelect: k,
-            children: [V || e ? (0, i.jsx)(o.VQ0.Item, {
+            selectedItem: w,
+            onItemSelect: M,
+            children: [k || e ? (0, r.jsx)(o.VQ0.Item, {
                 className: N.YU,
-                id: y.Eq.USER_PROFILE,
-                children: _.intl.string(_.t["2p07FR"])
-            }, y.Eq.USER_PROFILE) : null, w || e ? (0, i.jsx)(o.VQ0.Item, {
-                className: r()(N.YU, N.HY),
-                "aria-label": _.intl.string(_.t.kPHroX),
-                id: y.Eq.GUILD,
-                children: _.intl.string(_.t.kPHroX)
-            }, y.Eq.GUILD) : null]
-        }), R === y.Eq.GUILD ? (0, i.jsx)(h.A, {
-            selectedGuild: I
-        }) : (0, i.jsx)(A.A, {})]
+                id: C.Eq.USER_PROFILE,
+                children: I.intl.string(I.t["2p07FR"])
+            }, C.Eq.USER_PROFILE) : null, G || e ? (0, r.jsx)(o.VQ0.Item, {
+                className: s()(N.YU, N.HY),
+                "aria-label": I.intl.string(I.t.kPHroX),
+                id: C.Eq.GUILD,
+                children: I.intl.string(I.t.kPHroX)
+            }, C.Eq.GUILD) : null]
+        }), w === C.Eq.GUILD ? (0, r.jsx)(p.A, {
+            selectedGuild: T
+        }) : (0, r.jsx)(b.A, {})]
     })
 }

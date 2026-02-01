@@ -12,8 +12,8 @@ var l = n(311907),
     c = n(693879),
     u = n(435470),
     d = n(84052),
-    h = n(96566),
-    p = n(863005),
+    p = n(96566),
+    h = n(863005),
     g = n(71393),
     f = n(576705),
     m = n(222823),
@@ -21,9 +21,9 @@ var l = n(311907),
     A = n(669715),
     y = n(893943),
     O = n(892896),
-    _ = n(246084),
-    j = n(436133),
-    x = n(884415),
+    j = n(246084),
+    x = n(436133),
+    _ = n(884415),
     v = n(775946),
     E = n(652215),
     C = n(790782),
@@ -43,12 +43,12 @@ function I(e) {
         isNewChannel: L,
         muted: M,
         resolvedUnreadSetting: G
-    } = e, k = (0, l.bG)([m.Ay], () => m.Ay.getMentionCount(n.id)), U = (0, l.bG)([m.Ay], () => m.Ay.getIsMentionLowImportance(n.id)), V = (0, a.Ay)(n), B = (0, l.bG)([f.A], () => !f.A.can(E.xBc.CONNECT, n)), H = (0, o.H)(n), F = (0, l.bG)([b.A], () => b.A.hasVideo(n.id)), K = (0, h.qT)(n.id) && n.isGuildStageVoice(), Y = (0, _.Ay)({
+    } = e, k = (0, l.bG)([m.Ay], () => m.Ay.getMentionCount(n.id)), U = (0, l.bG)([m.Ay], () => m.Ay.getIsMentionLowImportance(n.id)), V = (0, a.Ay)(n), B = (0, l.bG)([f.A], () => !f.A.can(E.xBc.CONNECT, n)), H = (0, o.H)(n), F = (0, l.bG)([b.A], () => b.A.hasVideo(n.id)), Y = (0, p.qT)(n.id) && n.isGuildStageVoice(), K = (0, j.Ay)({
         channel: n,
         locked: B,
-        video: (F || K) && null == H,
+        video: (F || Y) && null == H,
         selected: I
-    }), W = (0, l.bG)([p.A], () => p.A.getNewThreadCount(n.guild_id, n.id)), z = (0, u.ed)(n.guild_id, n.id), q = (0, l.bG)([g.A], () => {
+    }), W = (0, l.bG)([h.A], () => h.A.getNewThreadCount(n.guild_id, n.id)), z = (0, u.ed)(n.guild_id, n.id), X = (0, l.bG)([g.A], () => {
         var e, t;
         return null != (e = null == (t = g.A.getGuild(n.guild_id)) ? void 0 : t.features.has(E.GuildFeatures.COMMUNITY)) && e
     });
@@ -75,12 +75,12 @@ function I(e) {
         color: "text-muted",
         children: (0, s.Gub)(z)
     });
-    let X = null != (t = null == T ? void 0 : T.length) ? t : 0;
-    return null != P && P && Y ? (0, r.jsx)(x.A, {
-        userCount: X,
-        video: F || K,
+    let q = null != (t = null == T ? void 0 : T.length) ? t : 0;
+    return null != P && P && K ? (0, r.jsx)(_.A, {
+        userCount: q,
+        video: F || Y,
         channel: n
-    }) : N && (0, A.t)(T) && q ? (0, r.jsx)(s.LpS, {
+    }) : N && (0, A.t)(T) && X ? (0, r.jsx)(s.LpS, {
         text: S.intl.string(S.t.dI3q4h),
         color: i.A.unsafe_rawColors.RED_400.css
     }) : null != H ? (0, r.jsx)(c.z, {
@@ -88,7 +88,7 @@ function I(e) {
         entry: {
             start: H
         }
-    }) : null != w && w && (0, y.X)(V) ? (0, r.jsx)(j.A, {
+    }) : null != w && w && (0, y.X)(V) ? (0, r.jsx)(x.A, {
         embeddedApps: V,
         muted: M
     }) : null

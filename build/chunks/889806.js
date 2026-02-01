@@ -11,8 +11,8 @@ var r = n(627968),
     c = n(308528),
     u = n(442433),
     d = n(676002),
-    h = n(811024),
-    p = n(685399),
+    p = n(811024),
+    h = n(685399),
     g = n(323073),
     f = n(963027),
     m = n(5932),
@@ -20,9 +20,9 @@ var r = n(627968),
     A = n(454058),
     y = n(406704),
     O = n(734057),
-    _ = n(696451),
-    j = n(71393),
-    x = n(576705),
+    j = n(696451),
+    x = n(71393),
+    _ = n(576705),
     v = n(383501),
     E = n(222823),
     C = n(543465),
@@ -97,18 +97,18 @@ class U extends N.Ay {
             hasMoreActiveThreads: c,
             mentionCount: u,
             connectChannelDropTarget: d,
-            connectChannelDragSource: h,
-            connectDragPreview: p,
+            connectChannelDragSource: p,
+            connectDragPreview: h,
             canReorderChannel: g,
             isSubscriptionGated: b,
             isFavoriteSuggestion: A,
             subtitle: y,
             forceTopLevelThread: O,
-            embeddedApps: _,
-            resolvedUnreadSetting: j,
-            withGuildIcon: x,
+            embeddedApps: j,
+            resolvedUnreadSetting: x,
+            withGuildIcon: _,
             enableActivities: v
-        } = this.props, E = v && null != _ && _.length > 0, C = (0, m.M)(y), S = (0, r.jsx)("li", {
+        } = this.props, E = v && null != j && j.length > 0, C = (0, m.M)(y), S = (0, r.jsx)("li", {
             className: s()(this.getClassName(), {
                 [L.r9]: this.isDisabled(),
                 [L.wH]: n
@@ -136,11 +136,11 @@ class U extends N.Ay {
                     subtitleColor: null == C ? void 0 : C.color,
                     onMouseDown: this.handleMouseDown,
                     onContextMenu: this.handleContextMenu,
-                    connectDragPreview: g ? p : null,
+                    connectDragPreview: g ? h : null,
                     isFavoriteSuggestion: A,
                     channelTypeOverride: O ? R.rbe.GUILD_TEXT : void 0,
-                    resolvedUnreadSetting: j,
-                    withGuildIcon: x,
+                    resolvedUnreadSetting: x,
+                    withGuildIcon: _,
                     "aria-label": (0, f.Ay)({
                         channel: e,
                         unread: i,
@@ -155,7 +155,7 @@ class U extends N.Ay {
                 })
             })
         });
-        return g ? d(h(S)) : S
+        return g ? d(p(S)) : S
     }
     constructor(...e) {
         super(...e), M(this, "state", {
@@ -226,7 +226,7 @@ class U extends N.Ay {
                 null != l && (0, u.L3)(e, async () => {
                     let {
                         default: e
-                    } = await Promise.all([n.e("97262"), n.e("29534"), n.e("39778"), n.e("54266")]).then(n.bind(n, 385913));
+                    } = await Promise.all([n.e("97262"), n.e("29534"), n.e("93169"), n.e("39778"), n.e("54266")]).then(n.bind(n, 385913));
                     return n => (0, r.jsx)(e, k(G({}, n), {
                         user: l,
                         channel: t,
@@ -243,7 +243,7 @@ class U extends N.Ay {
                     channel: t
                 }))
             });
-            let l = j.A.getGuild(t.getGuildId());
+            let l = x.A.getGuild(t.getGuildId());
             null != l && (0, u.L3)(e, async () => {
                 let {
                     default: e
@@ -273,32 +273,32 @@ function B(e) {
         unread: E.Ay.hasUnread(t.id),
         ackMessageId: E.Ay.ackMessageId(t.id),
         isLowImportanceMention: E.Ay.getIsMentionLowImportance(t.id)
-    })), f = (0, a.bG)([C.Ay], () => C.Ay.resolveUnreadSetting(t)), m = (0, a.cf)([O.A, x.A], () => {
+    })), f = (0, a.bG)([C.Ay], () => C.Ay.resolveUnreadSetting(t)), m = (0, a.cf)([O.A, _.A], () => {
         let e = O.A.getChannel(t.parent_id);
         return {
-            canManageChannel: x.A.can(R.xBc.MANAGE_CHANNELS, t),
-            canReorderChannel: !0 !== l && (n.id === D.V || (null != e ? x.A.can(R.xBc.MANAGE_CHANNELS, e) : x.A.can(R.xBc.MANAGE_CHANNELS, n)))
+            canManageChannel: _.A.can(R.xBc.MANAGE_CHANNELS, t),
+            canReorderChannel: !0 !== l && (n.id === D.V || (null != e ? _.A.can(R.xBc.MANAGE_CHANNELS, e) : _.A.can(R.xBc.MANAGE_CHANNELS, n)))
         }
-    }), j = (0, a.bG)([A.A], () => A.A.shouldIndicateNewChannel(n.id, t.id)), {
+    }), x = (0, a.bG)([A.A], () => A.A.shouldIndicateNewChannel(n.id, t.id)), {
         needSubscriptionToAccess: S,
         isSubscriptionGated: I
-    } = (0, b.A)(t.id), N = (0, a.bG)([C.Ay], () => C.Ay.isFavorite(n.id, t.id)), P = (0, g.vL)(t), w = (0, h.Gp)(t.id), L = (0, T.A)({
+    } = (0, b.A)(t.id), N = (0, a.bG)([C.Ay], () => C.Ay.isFavorite(n.id, t.id)), P = (0, g.vL)(t), w = (0, p.Gp)(t.id), L = (0, T.A)({
         channel: t,
         isChannelCollapsed: !1,
         isChannelSelected: o,
         isSubscriptionGated: I,
         needSubscriptionToAccess: S,
-        isNewChannel: j,
+        isNewChannel: x,
         muted: s,
         enableActivities: w,
         resolvedUnreadSetting: f
-    }), M = (0, p.Ay)(t);
-    return (0, a.bG)([v.A, _.Ay], () => v.A.getChannelId() !== t.id && _.Ay.isCurrentUserGuest(t.getGuildId())) ? null : (0, r.jsx)(V, k(G({}, d, m, e), {
+    }), M = (0, h.Ay)(t);
+    return (0, a.bG)([v.A, j.Ay], () => v.A.getChannelId() !== t.id && j.Ay.isCurrentUserGuest(t.getGuildId())) ? null : (0, r.jsx)(V, k(G({}, d, m, e), {
         hasActiveThreads: c,
         hasMoreActiveThreads: u,
         isSubscriptionGated: I,
         needSubscriptionToAccess: S,
-        isNewChannel: j && e.canBeNewChannel,
+        isNewChannel: x && e.canBeNewChannel,
         isFavoriteSuggestion: i && !N,
         channelIsContentGated: P,
         channelInfo: L,

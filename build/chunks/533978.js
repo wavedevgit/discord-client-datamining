@@ -11,8 +11,8 @@ var r = n(627968),
     c = n(442433),
     u = n(688810),
     d = n(384059),
-    h = n(480890),
-    p = n(160761),
+    p = n(480890),
+    h = n(160761),
     g = n(421773),
     f = n(536432),
     m = n(674168),
@@ -20,9 +20,9 @@ var r = n(627968),
     A = n(173660),
     y = n(430452),
     O = n(246356),
-    _ = n(709562),
-    j = n(376086),
-    x = n(985018);
+    j = n(709562),
+    x = n(376086),
+    _ = n(985018);
 
 function v(e) {
     let {
@@ -44,16 +44,16 @@ function v(e) {
         suppress: D
     } = (0, A.A)(t), L = (0, i.bG)([y.A], () => y.A.isDeaf()), M = R || D || L, G = (0, f.VE)({
         isSoundboardButtonDisabled: M
-    }), [k, U] = (0, p.DP)(G), {
+    }), [k, U] = (0, h.DP)(G), {
         analyticsLocations: V
     } = (0, u.Ay)(), {
         isHovered: B,
         setIsHovered: H,
         onMouseEnter: F,
-        onMouseLeave: K
+        onMouseLeave: Y
     } = (0, g.A)(200, 300);
 
-    function Y(e) {
+    function K(e) {
         null != w && (0, c.L3)(e, async () => {
             let {
                 default: e
@@ -81,7 +81,7 @@ function v(e) {
                     guildId: w,
                     sourceAnalyticsLocations: V
                 }, t), l = l = {
-                    onInteraction: (0, h.s)("SoundboardContextMenu", S)
+                    onInteraction: (0, p.s)("SoundboardContextMenu", S)
                 }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
                     var n = Object.keys(e);
                     if (Object.getOwnPropertySymbols) {
@@ -97,12 +97,12 @@ function v(e) {
     }
 
     function W() {
-        (0, d.X)(S, d.O.SOUNDBOARD), E === j.P.SOUNDBOARD ? (null == C || C(void 0), K()) : (null != E ? (N(), F()) : N(), null == C || C(j.P.SOUNDBOARD))
+        (0, d.X)(S, d.O.SOUNDBOARD), E === x.P.SOUNDBOARD ? (null == C || C(void 0), Y()) : (null != E ? (N(), F()) : N(), null == C || C(x.P.SOUNDBOARD))
     }
     let z = l.useRef(null);
     return (0, r.jsx)(o.Y, {
         targetElementRef: z,
-        shouldShow: B && (E === j.P.SOUNDBOARD || null == E) || E === j.P.SOUNDBOARD,
+        shouldShow: B && (E === x.P.SOUNDBOARD || null == E) || E === x.P.SOUNDBOARD,
         animation: o.Y.Animation.FADE,
         animationPosition: "top",
         position: "top",
@@ -118,7 +118,7 @@ function v(e) {
             return M ? null : (0, r.jsx)(O.A, {
                 children: (0, r.jsx)("div", {
                     onMouseEnter: F,
-                    onMouseLeave: K,
+                    onMouseLeave: Y,
                     children: (0, r.jsx)(b.A, {
                         guildId: w,
                         channel: t,
@@ -132,23 +132,23 @@ function v(e) {
                 })
             })
         },
-        children: () => (0, r.jsx)(_.l, {
+        children: () => (0, r.jsx)(j.l, {
             ref: z,
             isTrayButton: !0,
             themeable: v,
-            label: R ? x.intl.string(x.t["Ox4/zU"]) : D ? x.intl.string(x.t["+YBKYI"]) : L ? x.intl.string(x.t.X1lQli) : void 0,
+            label: R ? _.intl.string(_.t["Ox4/zU"]) : D ? _.intl.string(_.t["+YBKYI"]) : L ? _.intl.string(_.t.X1lQli) : void 0,
             iconComponent: I,
             disabled: M,
-            onContextMenu: Y,
+            onContextMenu: K,
             onClick: W,
             onMouseEnter: e => {
                 T(), "focus" !== e.type && F()
             },
             onMouseLeave: () => {
-                null == E && (K(), P())
+                null == E && (Y(), P())
             },
-            isActive: B || E === j.P.SOUNDBOARD,
-            color: B || E === j.P.SOUNDBOARD ? "primaryDark" : void 0
+            isActive: B || E === x.P.SOUNDBOARD,
+            color: B || E === x.P.SOUNDBOARD ? "primaryDark" : void 0
         })
     })
 }

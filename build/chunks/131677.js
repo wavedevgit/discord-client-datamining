@@ -9,13 +9,13 @@ var r, l, i = n(311907),
     c = n(734057),
     u = n(222823),
     d = n(309010),
-    h = n(645959);
-let p = [],
+    p = n(645959);
+let h = [],
     g = new Set;
 
 function f() {
-    let e = h.A.getPrivateChannelIds().filter(e => u.Ay.getMentionCount(e) > 0);
-    return e.length > 20 && (e.length = 20), !(0, o.in)(e, p) && (p = e, g = new Set(e), !0)
+    let e = p.A.getPrivateChannelIds().filter(e => u.Ay.getMentionCount(e) > 0);
+    return e.length > 20 && (e.length = 20), !(0, o.in)(e, h) && (h = e, g = new Set(e), !0)
 }
 
 function m() {
@@ -30,10 +30,10 @@ function b(e) {
 }
 class A extends(r = i.Ay.Store) {
     initialize() {
-        this.waitFor(h.A, c.A, d.A, u.Ay)
+        this.waitFor(p.A, c.A, d.A, u.Ay)
     }
     getUnreadPrivateChannelIds() {
-        return p
+        return h
     }
 }(l = "displayName") in A ? Object.defineProperty(A, l, {
     value: "PrivateChannelReadStateStore",

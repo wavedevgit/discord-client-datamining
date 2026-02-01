@@ -1,6 +1,6 @@
 /** chunk id: 502103, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => f
+    A: () => m
 });
 var r = n(627968),
     i = n(64700),
@@ -15,13 +15,13 @@ var r = n(627968),
     h = n(349828),
     g = n(124759);
 
-function f(e) {
+function m(e) {
     var t;
-    let f = (0, s.TZ)(e),
-        m = g.dR.some(t => (null == e ? void 0 : e.id) !== h.V && c.Ib(t, e)),
+    let m = (0, s.TZ)(e),
+        f = g.dR.some(t => (null == e ? void 0 : e.id) !== h.V && c.Ib(t, e)),
         A = (null == e ? void 0 : e.defaultMessageNotifications) === d.orn.ALL_MESSAGES,
         _ = (0, u.G$)(l.V.DISABLE_UNSAFE_COMMUNITY_PERMISSIONS_NOTICE, null != (t = null == e ? void 0 : e.id) ? t : d.dJq),
-        b = f && (m || A) && !_,
+        b = m && (f || A) && !_,
         E = i.useCallback(() => {
             var t;
             (0, u._$)(l.V.DISABLE_UNSAFE_COMMUNITY_PERMISSIONS_NOTICE, null != (t = null == e ? void 0 : e.id) ? t : d.dJq, !0, p.i.DISMISS)
@@ -53,7 +53,7 @@ function f(e) {
                     return e
                 }({
                     guild: e,
-                    canEveryoneModerate: m,
+                    canEveryoneModerate: f,
                     isDefaultNotificationsAllMessages: A
                 }, n))
             }, {
@@ -63,5 +63,5 @@ function f(e) {
                 guild_id: null != (t = null == e ? void 0 : e.id) ? t : d.dJq
             }), O.current = !0
         }
-    }, [m, e, E, A, b])
+    }, [f, e, E, A, b])
 }

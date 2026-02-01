@@ -11,8 +11,8 @@ var r = n(627968),
     c = n(182061),
     u = n(886393),
     d = n(307623),
-    h = n(660273),
-    p = n(40389),
+    p = n(660273),
+    h = n(40389),
     g = n(707792),
     f = n(41402),
     m = n(271456),
@@ -20,9 +20,9 @@ var r = n(627968),
     A = n(565846),
     y = n(707653),
     O = n(50268),
-    _ = n(58736),
-    j = n(253932),
-    x = n(977997),
+    j = n(58736),
+    x = n(253932),
+    _ = n(977997),
     v = n(747926),
     E = n(985018);
 
@@ -84,7 +84,7 @@ function I(e) {
             let {
                 isShown: n
             } = t;
-            return (0, r.jsx)(_.Ay.Icon, S(C({}, e), {
+            return (0, r.jsx)(j.Ay.Icon, S(C({}, e), {
                 ref: s,
                 onClick: a,
                 tooltip: n ? null : c,
@@ -101,10 +101,10 @@ function N(e) {
         channel: t,
         closePopout: n,
         onSelect: l
-    } = e, i = (0, c.A)(t), _ = (0, g.A)(t), C = (0, A.A)(t.id), S = (0, b.A)(t), I = (0, O.A)({
+    } = e, i = (0, c.A)(t), j = (0, g.A)(t), C = (0, A.A)(t.id), S = (0, b.A)(t), I = (0, O.A)({
         id: t.id,
         label: E.intl.string(E.t.DQ797g)
-    }), N = (0, u.A)(t), T = (0, d.A)(t), P = (0, h.A)(t, "Toolbar Overflow"), w = (0, f.A)(t), R = (0, p.A)(t), D = (0, y.A)(t), L = (0, m.A)(t), M = j.SY.useSetting(), G = (0, a.bG)([x.A], () => !s().isEmpty(x.A.getVoiceStatesForChannel(t.id)));
+    }), N = (0, u.A)(t), T = (0, d.A)(t), P = (0, p.A)(t, "Toolbar Overflow"), w = (0, f.A)(t), R = (0, h.A)(t), D = (0, y.A)(t), L = (0, m.A)(t), M = x.SY.useSetting(), G = (0, a.bG)([_.A], () => !s().isEmpty(_.A.getVoiceStatesForChannel(t.id)));
     return (0, r.jsxs)(o.W1t, {
         "data-menu-migrated": !0,
         navId: "thread-context",
@@ -122,7 +122,7 @@ function N(e) {
                 }
             }) : null, L]
         }), (0, r.jsxs)(o.rXV, {
-            children: [D, i, _, T]
+            children: [D, i, j, T]
         }), (0, r.jsxs)(o.rXV, {
             children: [N, I]
         })]

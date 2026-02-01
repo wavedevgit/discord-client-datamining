@@ -1,16 +1,16 @@
-/** chunk id: 121616, original params: e,t,i (module,exports,require) **/
-i.d(t, {
+/** chunk id: 121616, original params: t,e,i (module,exports,require) **/
+i.d(e, {
     d: () => T
 });
 var n = i(64700),
     l = i(814278),
     s = i(419954),
     r = i(933297),
-    a = i(780964),
-    u = i(179014),
+    u = i(780964),
+    a = i(179014),
     o = i(437690),
     d = i(985018);
-let T = (0, s.zZ)(a.X.VOICE_SECURITY_CATEGORY, {
+let T = (0, s.zZ)(u.X.VOICE_SECURITY_CATEGORY, {
     useTitle: () => d.intl.string(d.t.xVk85F),
     useInlineNotice: function() {
         return n.useMemo(() => ({
@@ -21,5 +21,5 @@ let T = (0, s.zZ)(a.X.VOICE_SECURITY_CATEGORY, {
             })
         }), [])
     },
-    buildLayout: () => [u.r, o.f]
+    buildLayout: () => [a.r, o.f]
 })

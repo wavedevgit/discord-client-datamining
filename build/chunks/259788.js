@@ -1,11 +1,11 @@
 /** chunk id: 259788, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    Ay: () => p,
-    GI: () => c,
-    J5: () => o,
+    Ay: () => h,
+    GI: () => u,
+    J5: () => s,
     g_: () => d,
-    jc: () => s,
-    nj: () => u,
+    jc: () => o,
+    nj: () => c,
     nl: () => a
 });
 var i = n(839214);
@@ -15,11 +15,11 @@ let r = {
     },
     l = (0, i.D)(() => r),
     a = 1e4,
-    o = 2e4,
-    s = 500,
-    c = 1e3;
+    s = 2e4,
+    o = 500,
+    u = 1e3;
 
-function u(e) {
+function c(e) {
     l.setState({
         timeToLiveMs: e
     })
@@ -30,4 +30,4 @@ function d(e) {
         reappearTimeMs: e
     })
 }
-let p = l
+let h = l

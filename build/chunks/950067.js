@@ -15,8 +15,8 @@ var l = n(397927),
     p = n(14509),
     h = n(894778),
     g = n(447696),
-    f = n(684407),
-    m = n(919638),
+    m = n(684407),
+    f = n(919638),
     A = n(71393),
     _ = n(967198),
     b = n(287809),
@@ -92,7 +92,7 @@ class P extends s.A {
             let e = A.A.getGuild(x);
             null != e && (0, d.Qd)(e) && (s = !0, (0, g.Fy)(e.id))
         }
-        let P = () => 0 === m.A.totalGuilds && !O.isPlatformEmbedded,
+        let P = () => 0 === f.A.totalGuilds && !O.isPlatformEmbedded,
             w = o.xq();
         e = [{
             key: "Unified NUF Modal",
@@ -170,7 +170,7 @@ class P extends s.A {
             }, {
                 onCloseCallback: e
             }),
-            predicate: () => null != x && null != f.A.get(x) && f.A.get(x) !== f.E
+            predicate: () => null != x && null != m.A.get(x) && m.A.get(x) !== m.E
         }], t = () => {
             y.D(), h.A.flowStep(N.do.ANY, N.ju.NUF_COMPLETE, !0)
         }, [...e].reverse().forEach(e => {

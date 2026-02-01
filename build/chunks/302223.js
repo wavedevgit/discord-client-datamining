@@ -1,43 +1,43 @@
-/** chunk id: 302223, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    A: () => o
+/** chunk id: 302223, original params: e,t,r (module,exports,require) **/
+r.d(t, {
+    A: () => s
 });
-var a = n(627968);
-n(64700);
-var l = n(503698),
-    r = n.n(l),
-    i = n(51183),
-    s = n(802455);
+var n = r(627968);
+r(64700);
+var a = r(503698),
+    c = r.n(a),
+    l = r(51183),
+    u = r(802455);
 
-function o(e) {
+function s(e) {
     let {
         activity: t,
-        className: n,
-        emojiClassName: l,
-        textClassName: o,
-        placeholderText: c,
-        soloEmojiClassName: d,
-        animate: u = !0,
-        hideTooltip: m = !1,
-        hideEmoji: p = !1,
-        children: h
+        className: r,
+        emojiClassName: a,
+        textClassName: s,
+        placeholderText: i,
+        soloEmojiClassName: o,
+        animate: d = !0,
+        hideTooltip: f = !1,
+        hideEmoji: m = !1,
+        children: x
     } = e;
     if (null == t) return null;
     let {
-        emoji: x
-    } = t, g = null != t.state && "" !== t.state ? t.state : c;
-    return (0, a.jsxs)("div", {
-        className: r()(s.__invalid_container, n),
-        children: [p || null == x ? null : (0, a.jsx)(i.A, {
-            emoji: x,
-            className: r()(s.Z, l, null != d ? {
-                [d]: null == g || "" === g
+        emoji: h
+    } = t, b = null != t.state && "" !== t.state ? t.state : i;
+    return (0, n.jsxs)("div", {
+        className: c()(u.__invalid_container, r),
+        children: [m || null == h ? null : (0, n.jsx)(l.A, {
+            emoji: h,
+            className: c()(u.Z, a, null != o ? {
+                [o]: null == b || "" === b
             } : null),
-            animate: u,
-            hideTooltip: m
-        }), null != g && g.length > 0 ? (0, a.jsx)("span", {
-            className: o,
-            children: g
-        }) : null, h]
+            animate: d,
+            hideTooltip: f
+        }), null != b && b.length > 0 ? (0, n.jsx)("span", {
+            className: s,
+            children: b
+        }) : null, x]
     })
 }

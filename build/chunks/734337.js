@@ -1,59 +1,59 @@
-/** chunk id: 734337, original params: e,t,r (module,exports,require) **/
-r.d(t, {
+/** chunk id: 734337, original params: e,t,n (module,exports,require) **/
+n.d(t, {
     A: () => f
-}), r(896048);
-var n = r(627968);
-r(64700);
-var o = r(311907),
-    i = r(397927),
-    l = r(964404),
-    a = r(121046),
-    c = r(513963),
-    u = r(951829),
-    s = r(731854),
-    b = r(985018);
+}), n(896048);
+var r = n(627968);
+n(64700);
+var i = n(311907),
+    a = n(397927),
+    l = n(964404),
+    o = n(121046),
+    d = n(513963),
+    c = n(951829),
+    u = n(731854),
+    s = n(985018);
 
 function f(e) {
-    let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : s.x.DEFAULT,
-        [r, f, p] = (0, a.A)(e, t),
-        y = (0, o.bG)([l.Ay], () => l.Ay.disableHideSelfStreamAndVideoConfirmationAlert);
-    return r ? (0, n.jsx)(i.sLh, {
+    let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : u.x.DEFAULT,
+        [n, f, p] = (0, o.A)(e, t),
+        b = (0, i.bG)([l.Ay], () => l.Ay.disableHideSelfStreamAndVideoConfirmationAlert);
+    return n ? (0, r.jsx)(a.sLh, {
         id: "self-video-hide",
-        label: b.intl.string(b.t.MH8ESU),
+        label: s.intl.string(s.t.MH8ESU),
         checked: !f,
         action: () => {
-            if (y || f) return p(!f);
-            (0, i.qfG)(e => {
-                var t, r;
-                return (0, n.jsx)(c.A, (t = function(e) {
+            if (b || f) return p(!f);
+            (0, a.qfG)(e => {
+                var t, n;
+                return (0, r.jsx)(d.A, (t = function(e) {
                     for (var t = 1; t < arguments.length; t++) {
-                        var r = null != arguments[t] ? arguments[t] : {},
-                            n = Object.keys(r);
-                        "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
-                            return Object.getOwnPropertyDescriptor(r, e).enumerable
-                        }))), n.forEach(function(t) {
-                            var n;
-                            n = r[t], t in e ? Object.defineProperty(e, t, {
-                                value: n,
+                        var n = null != arguments[t] ? arguments[t] : {},
+                            r = Object.keys(n);
+                        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+                            return Object.getOwnPropertyDescriptor(n, e).enumerable
+                        }))), r.forEach(function(t) {
+                            var r;
+                            r = n[t], t in e ? Object.defineProperty(e, t, {
+                                value: r,
                                 enumerable: !0,
                                 configurable: !0,
                                 writable: !0
-                            }) : e[t] = n
+                            }) : e[t] = r
                         })
                     }
                     return e
-                }({}, e), r = r = {
-                    type: u.f.VIDEO,
+                }({}, e), n = n = {
+                    type: c.f.VIDEO,
                     onConfirm: () => p(!f)
-                }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
-                    var r = Object.keys(e);
+                }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
+                    var n = Object.keys(e);
                     if (Object.getOwnPropertySymbols) {
-                        var n = Object.getOwnPropertySymbols(e);
-                        r.push.apply(r, n)
+                        var r = Object.getOwnPropertySymbols(e);
+                        n.push.apply(n, r)
                     }
-                    return r
-                })(Object(r)).forEach(function(e) {
-                    Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(r, e))
+                    return n
+                })(Object(n)).forEach(function(e) {
+                    Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
                 }), t))
             })
         }

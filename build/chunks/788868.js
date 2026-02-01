@@ -16,7 +16,7 @@ n.d(t, {
     DA: () => eB,
     Dw: () => en,
     EG: () => eh,
-    EV: () => V,
+    EV: () => F,
     En: () => T,
     Er: () => A,
     FB: () => Y,
@@ -31,8 +31,8 @@ n.d(t, {
     Jo: () => e2,
     KG: () => ep,
     Kq: () => ez,
-    L9: () => F,
-    LE: () => eV,
+    L9: () => V,
+    LE: () => eF,
     M4: () => k,
     MB: () => ec,
     MX: () => er,
@@ -47,7 +47,7 @@ n.d(t, {
     Qz: () => eA,
     T: () => tr,
     T7: () => h,
-    TG: () => eF,
+    TG: () => eV,
     TP: () => eC,
     TU: () => ef,
     Tt: () => eo,
@@ -350,8 +350,8 @@ let R = Object.freeze({
     k = 2,
     U = 3,
     G = 28,
-    F = 30,
     V = 30,
+    F = 30,
     B = 7,
     H = 30,
     Y = "775514091874680832",
@@ -469,7 +469,7 @@ let eR = Object.freeze({
         [i.TVA.TIER_2]: 36,
         [i.TVA.TIER_3]: 48
     },
-    eF = Object.freeze({
+    eV = Object.freeze({
         [i.TVA.NONE]: {
             features: [],
             limits: {
@@ -523,7 +523,7 @@ let eR = Object.freeze({
             }
         }
     }),
-    eV = ["978380692553465866", "1024422698568122368", "511651871736201216", "511651876987469824", "511651880837840896", "642251038925127690", "944037208325619722", "511651885459963904", "1432523012455792640"],
+    eF = ["978380692553465866", "1024422698568122368", "511651871736201216", "511651876987469824", "511651880837840896", "642251038925127690", "944037208325619722", "511651885459963904", "1432523012455792640"],
     eB = ["590665532894740483", "944037355453415424", "944037391444738048", "590665538238152709"];
 var eH = function(e) {
         return e.SOUNDBOARD_PLAY = "soundboard play", e.PROFILE_THEME_COLOR = "profile_theme_color", e.PROFILE_BANNER = "profile_banner", e.ANIMATED_AVATAR = "animated_avatar", e.AVATAR_DECORATION = "avatar_decoration", e.CLIENT_THEME = "client_theme", e.SHARED_CANVAS = "shared_canvas", e.PROFILE_EFFECT = "profile_effect", e.DISPLAY_NAME_STYLES = "display_name_styles", e.PRESET = "preset", e

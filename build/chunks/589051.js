@@ -1,11 +1,12 @@
 /** chunk id: 589051, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    E: () => R,
+    E: () => D,
     Fg: () => m,
     H: () => A,
     Jo: () => u,
     LA: () => f,
+    NI: () => P,
     QC: () => g,
     X4: () => w,
     Yz: () => d,
@@ -354,7 +355,31 @@ function w(e) {
         location: e
     }).enabled
 }
+let R = (0, o.mj)({
+    name: "2025-11-overlay-chat",
+    kind: "user",
+    defaultConfig: {
+        hasChat: !1,
+        hasFriendList: !1
+    },
+    variations: {
+        1: {
+            hasChat: !0,
+            hasFriendList: !1
+        },
+        2: {
+            hasChat: !0,
+            hasFriendList: !0
+        }
+    }
+});
 
-function R() {
-    m("OVERLAY_INITIALIZED"), y("OVERLAY_INITIALIZED"), I("OVERLAY_INITIALIZED"), T("OVERLAY_INITIALIZED"), N("OVERLAY_INITIALIZED")
+function P(e) {
+    return R.getConfig({
+        location: e
+    })
+}
+
+function D() {
+    m("OVERLAY_INITIALIZED"), y("OVERLAY_INITIALIZED"), I("OVERLAY_INITIALIZED"), T("OVERLAY_INITIALIZED"), N("OVERLAY_INITIALIZED"), P("OVERLAY_INITIALIZED")
 }

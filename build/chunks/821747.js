@@ -12,8 +12,8 @@ var l = n(503698),
     c = n(20504),
     u = n(430452),
     d = n(824744),
-    h = n(723702),
-    p = n(447404),
+    p = n(723702),
+    h = n(447404),
     g = n(35204);
 
 function f(e) {
@@ -32,7 +32,7 @@ function f(e) {
         currentVolume: u.A.getLocalVolume(f, m),
         muted: u.A.isLocalMute(f, m)
     }));
-    return (0, r.jsx)(p.A, {
+    return (0, r.jsx)(h.A, {
         children: (0, r.jsx)(c.A, {
             currentWindow: b,
             iconClassName: i()(n, g.pd),
@@ -40,7 +40,7 @@ function f(e) {
             className: t,
             value: (0, d.M)(y),
             muted: O,
-            maxValue: h.isPlatformEmbedded ? 200 : 100,
+            maxValue: p.isPlatformEmbedded ? 200 : 100,
             onValueChange: e => {
                 e > 0 && O && a.A.toggleLocalMute(f, m), a.A.setLocalVolume(f, (0, d.w)(e), m)
             },

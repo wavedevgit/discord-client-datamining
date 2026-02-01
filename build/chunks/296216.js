@@ -1,7 +1,7 @@
 /** chunk id: 296216, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    F: () => h,
-    J: () => p
+    F: () => p,
+    J: () => h
 });
 var r = n(205369),
     l = n(22174),
@@ -13,14 +13,14 @@ var r = n(205369),
     u = n(652215);
 let d = "DRAGGABLE_USER";
 
-function h(e) {
+function p(e) {
     return (0, r.T)(d, {
         canDrop(e) {
             var t, n;
             let {
                 channel: r
-            } = e, l = r.getGuildId(), i = null != (t = null == (n = s.A.getGuild(l)) ? void 0 : n.maxVideoChannelUsers) ? t : -1, d = c.Ay.countVoiceStatesForChannel(r.id), h = null != l && o.A.hasVideo(r.id) && i > 0 && d >= i + 1;
-            return a.A.can(u.xBc.MOVE_MEMBERS, r) && a.A.can(u.xBc.CONNECT, r) && !h
+            } = e, l = r.getGuildId(), i = null != (t = null == (n = s.A.getGuild(l)) ? void 0 : n.maxVideoChannelUsers) ? t : -1, d = c.Ay.countVoiceStatesForChannel(r.id), p = null != l && o.A.hasVideo(r.id) && i > 0 && d >= i + 1;
+            return a.A.can(u.xBc.MOVE_MEMBERS, r) && a.A.can(u.xBc.CONNECT, r) && !p
         },
         drop(e, t) {
             let {
@@ -34,7 +34,7 @@ function h(e) {
     }))(e)
 }
 
-function p(e) {
+function h(e) {
     return (0, l.I)(d, {
         canDrag(e) {
             let {

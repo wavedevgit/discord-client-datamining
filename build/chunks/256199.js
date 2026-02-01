@@ -1,16 +1,16 @@
-/** chunk id: 256199, original params: e,t,i (module,exports,require) **/
-i.d(t, {
-    e: () => u
+/** chunk id: 256199, original params: t,e,i (module,exports,require) **/
+i.d(e, {
+    e: () => a
 });
 var n = i(627968),
     l = i(419954),
     s = i(780964),
     r = i(801264),
-    a = i(985018);
-let u = (0, l.E2)(s.X.CLIPS_QUALITY_INFOBOX, {
-    useSearchTerms: () => [a.intl.string(a.t["Z+MfqT"])],
+    u = i(985018);
+let a = (0, l.E2)(s.X.CLIPS_QUALITY_INFOBOX, {
+    useSearchTerms: () => [u.intl.string(u.t["Z+MfqT"])],
     Component: () => (0, n.jsx)(r.A, {
         look: r.k.INFO,
-        children: a.intl.string(a.t["Z+MfqT"])
+        children: u.intl.string(u.t["Z+MfqT"])
     })
 })

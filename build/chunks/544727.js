@@ -1,26 +1,26 @@
-/** chunk id: 544727, original params: e,t,i (module,exports,require) **/
-i.d(t, {
-    $: () => c
+/** chunk id: 544727, original params: t,e,i (module,exports,require) **/
+i.d(e, {
+    $: () => A
 });
 var n = i(627968);
 i(64700);
 var l = i(311907),
     s = i(397927),
     r = i(77729),
-    a = i(274372),
-    u = i(399925),
+    u = i(274372),
+    a = i(399925),
     o = i(419954),
     d = i(780964),
     T = i(985018);
-let c = (0, o.E2)(d.X.CLIPS_STORAGE_LOCATION, {
+let A = (0, o.E2)(d.X.CLIPS_STORAGE_LOCATION, {
     useSearchTerms: () => [T.intl.string(T.t.s4773E), T.intl.string(T.t.svjwGh)],
     Component: () => {
-        let e = (0, l.bG)([a.A], () => a.A.getSettings().storageLocation),
-            t = async () => {
-                let e = await r.A.fileManager.showOpenDialog({
+        let t = (0, l.bG)([u.A], () => u.A.getSettings().storageLocation),
+            e = async () => {
+                let t = await r.A.fileManager.showOpenDialog({
                     properties: ["openDirectory", "createDirectory"]
                 });
-                e.length > 0 && u.HU(e[0])
+                t.length > 0 && a.HU(t[0])
             };
         return (0, n.jsx)(s.D0$, {
             label: T.intl.string(T.t.s4773E),
@@ -28,12 +28,12 @@ let c = (0, o.E2)(d.X.CLIPS_STORAGE_LOCATION, {
             layout: "horizontal",
             children: (0, n.jsx)(s.DUT, {
                 "aria-label": T.intl.formatToPlainString(T.t.iMONTj, {
-                    storageLocation: e
+                    storageLocation: t
                 }),
-                onClick: t,
+                onClick: e,
                 children: (0, n.jsx)(s.ksK, {
                     tabIndex: -1,
-                    value: e,
+                    value: t,
                     editable: !1,
                     "aria-hidden": !0
                 })

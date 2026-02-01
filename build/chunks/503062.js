@@ -38,13 +38,13 @@ function x(e) {
         activities: g.A.getActivities(t.id),
         isMobileOnline: g.A.isMobileOnline(t.id)
     })), T = (0, p.A)(t.id), {
-        voiceActivityStatusEnabled: N
+        voiceActivityStatusEnabled: C
     } = (0, c.g)({
         location: "UserProfileMutualFriendRow"
     }), {
-        voiceChannel: C
+        voiceChannel: N
     } = (0, u.A)({
-        userId: N ? t.id : void 0,
+        userId: C ? t.id : void 0,
         guildId: v
     });
     return (0, r.jsxs)(a.DUT, {
@@ -65,7 +65,7 @@ function x(e) {
             (0, o.L3)(e, async () => {
                 let {
                     default: e
-                } = await Promise.all([n.e("97262"), n.e("3795"), n.e("32418"), n.e("16938")]).then(n.bind(n, 668569));
+                } = await Promise.all([n.e("97262"), n.e("3795"), n.e("32418"), n.e("57600")]).then(n.bind(n, 668569));
                 return n => {
                     var l, i;
                     return (0, r.jsx)(e, (l = function(e) {
@@ -118,7 +118,7 @@ function x(e) {
                 user: t,
                 activities: E,
                 applicationStream: T,
-                voiceChannel: C
+                voiceChannel: N
             })]
         })]
     })

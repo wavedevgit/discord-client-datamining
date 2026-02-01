@@ -11,8 +11,8 @@ var r = n(627968),
     c = n(311907),
     u = n(397927),
     d = n(793574),
-    h = n(688810),
-    p = n(735991),
+    p = n(688810),
+    h = n(735991),
     g = n(786115),
     f = n(975412),
     m = n(392054),
@@ -20,9 +20,9 @@ var r = n(627968),
     A = n(111042),
     y = n(767599),
     O = n(267102),
-    _ = n(246356),
-    j = n(111162),
-    x = n(954571),
+    j = n(246356),
+    x = n(111162),
+    _ = n(954571),
     v = n(795816),
     E = n(887700),
     C = n(855446),
@@ -36,13 +36,13 @@ function w(e) {
     var t;
     let n, i, {
             channel: a,
-            openInPopout: h,
+            openInPopout: p,
             onClick: m
         } = e,
         {
             fetchState: O,
-            voiceBannerCollection: _
-        } = (n = (0, c.bG)([j.default], () => j.default.onlyShowPreviewAppCollections) ? s.W.PREVIEW : s.W.ACTIVE, l.useEffect(() => {
+            voiceBannerCollection: j
+        } = (n = (0, c.bG)([x.default], () => x.default.onlyShowPreviewAppCollections) ? s.W.PREVIEW : s.W.ACTIVE, l.useEffect(() => {
             (0, b.An)({
                 surface: T,
                 activeState: n
@@ -57,11 +57,11 @@ function w(e) {
                 activeState: n
             }))[0]
         }),
-        x = O === A.e.FETCHING,
+        _ = O === A.e.FETCHING,
         v = l.useMemo(() => {
-            let e = null == _ ? void 0 : _.application_directory_collection_items[0];
+            let e = null == j ? void 0 : j.application_directory_collection_items[0];
             return null == e ? null : e.type === o.L.APPLICATION_BANNER ? e : null
-        }, [null == _ ? void 0 : _.application_directory_collection_items]),
+        }, [null == j ? void 0 : j.application_directory_collection_items]),
         {
             trackItemImpressionRef: E
         } = (0, g.A)({
@@ -70,9 +70,9 @@ function w(e) {
             sectionName: "app_launcher_in_voice_banner",
             sectionPosition: null == v ? void 0 : v.position,
             sectionOverallPosition: 0,
-            promotionalLabel: null != v ? (0, p.Ii)(v.application) : void 0
+            promotionalLabel: null != v ? (0, h.Ii)(v.application) : void 0
         });
-    return null == v || null == _ || x ? null : (null != v.id && null != v.image_hash && (i = (0, y.DH)({
+    return null == v || null == j || _ ? null : (null != v.id && null != v.image_hash && (i = (0, y.DH)({
         itemId: v.id,
         hash: v.image_hash,
         containerWidth: 584
@@ -85,7 +85,7 @@ function w(e) {
                     type: "channel",
                     channel: a
                 },
-                openInPopout: h,
+                openInPopout: p,
                 analyticsLocation: d.A.APP_LAUNCHER_IN_VOICE_BANNER,
                 initialState: {
                     applicationId: v.application.id
@@ -109,14 +109,14 @@ let R = l.forwardRef(function(e, t) {
         closePopout: a,
         onMouseEnter: o,
         onMouseLeave: c,
-        onClick: p,
+        onClick: h,
         className: g
     } = e, {
         id: b,
         guild_id: A
     } = i;
     l.useEffect(() => {
-        x.default.track(S.HAw.ACTIVITIES_CENTER_CONTROL_TRAY_BUTTON_HOVERED, {
+        _.default.track(S.HAw.ACTIVITIES_CENTER_CONTROL_TRAY_BUTTON_HOVERED, {
             channel_id: b,
             guild_id: A
         })
@@ -125,9 +125,9 @@ let R = l.forwardRef(function(e, t) {
     }, [a, s]);
     let y = (0, O.Us)(),
         {
-            analyticsLocations: j,
+            analyticsLocations: x,
             newestAnalyticsLocation: T
-        } = (0, h.Ay)(d.A.ACTIVITIES_MINI_SHELF),
+        } = (0, p.Ay)(d.A.ACTIVITIES_MINI_SHELF),
         R = y === S.BRT.POPOUT,
         D = (n = i.getGuildId(), (0, E.A)({
             guildId: n
@@ -146,17 +146,17 @@ let R = l.forwardRef(function(e, t) {
                 },
                 openInPopout: R,
                 analyticsLocation: T
-            }), c(), p()
-        }, [i, T, p, c, R]),
+            }), c(), h()
+        }, [i, T, h, c, R]),
         M = l.useCallback(e => {
-            o(), x.default.track(S.HAw.ACTIVITIES_MINI_SHELF_HOVERED, {
+            o(), _.default.track(S.HAw.ACTIVITIES_MINI_SHELF_HOVERED, {
                 channel_id: i.id,
                 guild_id: i.getGuildId()
             })
         }, [o, i]);
-    return (0, r.jsx)(h.f5, {
-        value: j,
-        children: (0, r.jsx)(_.A, {
+    return (0, r.jsx)(p.f5, {
+        value: x,
+        children: (0, r.jsx)(j.A, {
             children: (0, r.jsxs)(u.lGe, {
                 ref: t,
                 "aria-labelledby": P,
@@ -203,7 +203,7 @@ let R = l.forwardRef(function(e, t) {
                         openInPopout: R,
                         channel: i,
                         onClick: () => {
-                            p(), a()
+                            h(), a()
                         }
                     }), (0, r.jsx)("div", {
                         className: N.ht,
@@ -214,7 +214,7 @@ let R = l.forwardRef(function(e, t) {
                             },
                             activityItem: e,
                             onClick: () => {
-                                a(), p()
+                                a(), h()
                             },
                             aspectRatio: C.C.AspectRatio.THIRTEEN_BY_ELEVEN,
                             animatedDivClass: N.KU,

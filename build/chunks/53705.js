@@ -1,20 +1,20 @@
 /** chunk id: 53705, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    $: () => r,
-    L: () => s
+    $: () => s,
+    L: () => i
 });
-var i = n(73153),
+var r = n(73153),
     l = n(154323);
 
-function s(e, t) {
+function i(e, t) {
     let n = "boolean" == typeof t ? t : !l.A.get(e);
-    i.h.dispatch({
+    r.h.dispatch({
         type: "DEV_TOOLS_DESIGN_TOGGLE_WEB_SET",
         toggle: e,
         value: n
     })
 }
 
-function r() {
-    for (let e in l.A.enabled()) s(e, !1)
+function s() {
+    for (let e in l.A.enabled()) i(e, !1)
 }

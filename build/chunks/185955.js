@@ -25,10 +25,10 @@ let E = (0, o.Ld)(),
             availablePrimaryGuilds: t,
             pendingPrimaryGuildId: n,
             onChange: o
-        } = e, O = i.useMemo(() => new Map(t.map(e => [e.id, e])), [t]), C = (0, l.bG)([m.default], () => {
+        } = e, O = i.useMemo(() => new Map(t.map(e => [e.id, e])), [t]), x = (0, l.bG)([m.default], () => {
             var e;
             return (0, d.Zo)(null == (e = m.default.getCurrentUser()) ? void 0 : e.primaryGuild).guildId
-        }), x = void 0 !== n ? n : C, S = i.useMemo(() => t.reduce((e, t) => {
+        }), C = void 0 !== n ? n : x, S = i.useMemo(() => t.reduce((e, t) => {
             var n;
             return (null == (n = t.profile) ? void 0 : n.tag) != null && e.push({
                 label: t.name,
@@ -59,7 +59,7 @@ let E = (0, o.Ld)(),
                 iconSize: 32,
                 animate: !1
             })
-        }, [O]), y = i.useCallback(e => {
+        }, [O]), N = i.useCallback(e => {
             var t, n, i;
             if (null == e) return null;
             let l = O.get(e.value);
@@ -73,14 +73,14 @@ let E = (0, o.Ld)(),
                 textColor: "interactive-text-default",
                 textVariant: "text-sm/semibold"
             })
-        }, [O]), N = i.useCallback(e => {
+        }, [O]), y = i.useCallback(e => {
             let t = e[0];
             return null == t ? null : (0, r.jsx)(r.Fragment, {
                 children: T(t)
             })
         }, [T]), j = i.useCallback(e => {
             null == o || o(e)
-        }, [o]), v = i.useCallback(e => e === x, [x]), P = i.useCallback(e => e, []), R = i.useCallback(() => {
+        }, [o]), v = i.useCallback(e => e === C, [C]), P = i.useCallback(e => e, []), R = i.useCallback(() => {
             null == o || o(null)
         }, [o]), D = i.useRef(null);
         return (0, p.A)(D, f._F.GUILD_TAG), (0, r.jsxs)(_.A, {
@@ -98,11 +98,11 @@ let E = (0, o.Ld)(),
                 options: S,
                 select: j,
                 renderLeading: I,
-                renderTrailing: y,
-                renderOptionValue: N,
+                renderTrailing: N,
+                renderOptionValue: y,
                 serialize: P,
                 clear: R,
-                clearable: null != x,
+                clearable: null != C,
                 maxVisibleItems: 8,
                 "data-migration-pending": !0
             })]

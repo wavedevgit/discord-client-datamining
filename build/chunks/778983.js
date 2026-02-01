@@ -1,46 +1,46 @@
 /** chunk id: 778983, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => f
+    A: () => m
 });
-var r = n(627968),
-    l = n(311907),
+var l = n(627968),
+    r = n(311907),
     i = n(421380),
-    s = n(397927),
-    a = n(351001),
+    a = n(397927),
+    s = n(351001),
     o = n(145530),
     c = n(734057),
     u = n(320501),
     d = n(576705),
     h = n(102817),
     p = n(641131),
-    g = n(985018);
+    f = n(985018);
 
-function f(e) {
+function m(e) {
     let {
         message: t,
         user: n,
-        guild: f,
-        channel: m
-    } = e, b = (0, l.bG)([d.A], () => null != n && null != f && (0, a.Kd)(n, f, [d.A])), {
-        messageReference: A
-    } = t, y = (0, l.bG)([u.A], () => null != A ? u.A.getMessage(A.channel_id, A.message_id) : null), O = (0, l.bG)([c.A], () => null != y ? c.A.getChannel(y.channel_id) : null), _ = (0, l.bG)([c.A], () => {
+        guild: m,
+        channel: g
+    } = e, A = (0, r.bG)([d.A], () => null != n && null != m && (0, s.Kd)(n, m, [d.A])), {
+        messageReference: b
+    } = t, _ = (0, r.bG)([u.A], () => null != b ? u.A.getMessage(b.channel_id, b.message_id) : null), y = (0, r.bG)([c.A], () => null != _ ? c.A.getChannel(_.channel_id) : null), v = (0, r.bG)([c.A], () => {
         var e, t;
-        return null != (e = null == (t = c.A.getChannel(m.id)) ? void 0 : t.isArchivedThread()) && e
+        return null != (e = null == (t = c.A.getChannel(g.id)) ? void 0 : t.isArchivedThread()) && e
     });
-    if (!b) return null;
-    let j = null == y ? g.intl.string(p.default["0IZbwC"]) : g.intl.string(p.default.Uj6oD4),
-        x = null == y,
-        v = "delete-message-".concat(t.id);
-    return (0, r.jsx)(h.A, {
-        text: j,
-        icon: s.ucK,
+    if (!A) return null;
+    let E = null == _ ? f.intl.string(p.default["0IZbwC"]) : f.intl.string(p.default.Uj6oD4),
+        O = null == _,
+        C = "delete-message-".concat(t.id);
+    return (0, l.jsx)(h.A, {
+        text: E,
+        icon: a.ucK,
         onClick: () => {
-            null != O && null != y && o.A.confirmDelete(O, y, !1, {
-                isFlagResolved: _,
-                moderatorReportChannelId: m.id
+            null != y && null != _ && o.A.confirmDelete(y, _, !1, {
+                isFlagResolved: v,
+                moderatorReportChannelId: g.id
             })
         },
-        disabled: x,
+        disabled: O,
         color: i.$n.Colors.RED
-    }, v)
+    }, C)
 }

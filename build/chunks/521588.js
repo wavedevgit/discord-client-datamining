@@ -17,7 +17,7 @@ let a = e => {
         alert: c = !1,
         showBlurpleTreatment: u = !1,
         maskColor: d = 2,
-        additionalStyles: h
+        additionalStyles: p
     } = e;
     return (0, r.jsx)("span", {
         className: i()(s.Om, {
@@ -27,7 +27,7 @@ let a = e => {
             [s.Pn]: 1 === d,
             [s.HP]: 2 === d,
             [s.gl]: 3 === d,
-            [null != h ? h : ""]: void 0 !== h
+            [null != p ? p : ""]: void 0 !== p
         }),
         style: {
             height: o,

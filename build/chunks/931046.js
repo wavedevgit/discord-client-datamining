@@ -1,12 +1,12 @@
 /** chunk id: 931046, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    Ay: () => a
+    Ay: () => s
 });
-var r = n(311907),
-    l = n(470710),
-    i = n(313961),
-    s = n(806931);
+var i = n(311907),
+    r = n(470710),
+    l = n(313961),
+    a = n(806931);
 
-function a(e, t) {
-    return (0, r.bG)([l.A, i.A], () => l.A.isCallActive(e, t) && i.A.getParticipants(e).some(e => e.type === s.lp.USER && !e.ringing), [e, t])
+function s(e, t) {
+    return (0, i.bG)([r.A, l.A], () => r.A.isCallActive(e, t) && l.A.getParticipants(e).some(e => e.type === a.lp.USER && !e.ringing), [e, t])
 }

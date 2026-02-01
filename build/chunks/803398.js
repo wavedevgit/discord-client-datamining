@@ -1,37 +1,37 @@
 /** chunk id: 803398, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => h
+    A: () => p
 });
-var i = n(627968),
+var r = n(627968),
     l = n(64700),
-    s = n(311907),
-    r = n(397927),
+    i = n(311907),
+    s = n(397927),
     a = n(77468),
     o = n(974544),
     c = n(736653),
-    d = n(351906),
-    u = n(985018);
-let h = () => {
-    let e = (0, s.bG)([d.A], () => d.A.hidePersonalInformation),
+    u = n(351906),
+    d = n(985018);
+let p = () => {
+    let e = (0, i.bG)([u.A], () => u.A.hidePersonalInformation),
         t = (0, c.Ay)();
     return (l.useEffect(() => {
         a.A.fetch()
-    }, []), e) ? (0, i.jsx)(o.A, {}) : (0, i.jsxs)(r.BJc, {
+    }, []), e) ? (0, r.jsx)(o.A, {}) : (0, r.jsxs)(s.BJc, {
         gap: 16,
-        children: [(0, i.jsx)(r.Heading, {
+        children: [(0, r.jsx)(s.Heading, {
             variant: "heading-lg/semibold",
             color: "text-strong",
-            children: u.intl.string(u.t["Ig/XFa"])
-        }), (0, i.jsxs)(r.ppr, {
+            children: d.intl.string(d.t["Ig/XFa"])
+        }), (0, r.jsxs)(s.ppr, {
             theme: t,
-            children: [(0, i.jsx)(r.G8R, {
+            children: [(0, r.jsx)(s.G8R, {
                 darkSrc: n(289142),
                 lightSrc: n(796614),
                 width: 230,
                 height: 220
-            }), (0, i.jsx)(r.SGT, {
-                note: u.intl.string(u.t.WenGZ2),
-                children: u.intl.string(u.t.aoLS84)
+            }), (0, r.jsx)(s.SGT, {
+                note: d.intl.string(d.t.WenGZ2),
+                children: d.intl.string(d.t.aoLS84)
             })]
         })]
     })

@@ -28,11 +28,11 @@ function f(e) {
         withTutorial: h = !1
     } = e, {
         analyticsLocations: E
-    } = (0, o.Ay)(), O = (0, u.A)("enable_avatar_decoration_uploads"), C = (0, p.a4)({
+    } = (0, o.Ay)(), O = (0, u.A)("enable_avatar_decoration_uploads"), x = (0, p.a4)({
         user: t,
         guildId: null == n ? void 0 : n.id
     }), {
-        pendingAvatarDecoration: x,
+        pendingAvatarDecoration: C,
         errors: S
     } = (0, p.CP)(null == n ? void 0 : n.id), T = h ? a.wLn : s.$n;
     return (0, r.jsxs)(m.A, {
@@ -55,7 +55,7 @@ function f(e) {
                     [A.yj]: h
                 }),
                 children: g.intl.string(g.t.BVcYCx)
-            }), (void 0 === x ? null != C : null != x) && (0, r.jsx)("div", {
+            }), (void 0 === C ? null != x : null != C) && (0, r.jsx)("div", {
                 "data-button-hoisted-classname-wrapper": !0,
                 className: A.DT,
                 children: (0, r.jsx)(a.Button, {

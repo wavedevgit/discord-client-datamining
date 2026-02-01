@@ -1,20 +1,20 @@
-/** chunk id: 694307, original params: e,t,i (module,exports,require) **/
-i.d(t, {
+/** chunk id: 694307, original params: t,e,i (module,exports,require) **/
+i.d(e, {
     F: () => o
 });
 var n = i(419954),
     l = i(954571),
     s = i(253932),
     r = i(780964),
-    a = i(652215),
-    u = i(985018);
+    u = i(652215),
+    a = i(985018);
 let o = (0, n.zD)(r.X.CAMERA_PREVIEW_PREFERENCE, {
-    useTitle: () => u.intl.string(u.t["3Ppr1h"]),
-    useSubtitle: () => u.intl.string(u.t.WNbX4O),
+    useTitle: () => a.intl.string(a.t["3Ppr1h"]),
+    useSubtitle: () => a.intl.string(a.t.WNbX4O),
     useValue: s.bm.useSetting,
-    setValue: e => {
-        s.bm.updateSetting(e), l.default.track(a.HAw.UPDATE_USER_SETTINGS_LOCAL, {
-            always_preview_video: e
+    setValue: t => {
+        s.bm.updateSetting(t), l.default.track(u.HAw.UPDATE_USER_SETTINGS_LOCAL, {
+            always_preview_video: t
         })
     }
 })

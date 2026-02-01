@@ -11,8 +11,8 @@ var r = n(627968),
     c = n(417597),
     u = n(435371),
     d = n(793574),
-    h = n(688810),
-    p = n(587895),
+    p = n(688810),
+    h = n(587895),
     g = n(576030),
     f = n(44120),
     m = n(533406),
@@ -21,9 +21,9 @@ n(524380);
 var A = n(594832),
     y = n(146423),
     O = n(460442),
-    _ = n(216020),
-    j = n(652215),
-    x = n(788868),
+    j = n(216020),
+    x = n(652215),
+    _ = n(788868),
     v = n(518477),
     E = n(985018),
     C = n(556786);
@@ -74,27 +74,27 @@ function N(e) {
         wishlistId: o,
         style: c,
         tooltipTypeTitle: d,
-        showTypeTooltip: h,
-        tooltipIcon: p,
+        showTypeTooltip: p,
+        tooltipIcon: h,
         skuPreviewStyle: g,
         singleCardInfo: f,
         onViewWishlist: m,
-        onClick: j
-    } = e, x = 3 === n ? i - 4 : 0, S = 1 === i, {
+        onClick: x
+    } = e, _ = 3 === n ? i - 4 : 0, S = 1 === i, {
         trackUserProfileWishlistAction: I
     } = (0, b.NJ)(), N = l.useCallback(() => {
         (I({
-            action: x > 0 ? v.Mq.PRESS_WISHLIST_BREADCRUMB_OVERFLOW_CARD : v.Mq.PRESS_WISHLIST_BREADCRUMB_CARD,
-            skuId: x > 0 ? null : t.id,
+            action: _ > 0 ? v.Mq.PRESS_WISHLIST_BREADCRUMB_OVERFLOW_CARD : v.Mq.PRESS_WISHLIST_BREADCRUMB_CARD,
+            skuId: _ > 0 ? null : t.id,
             wishlistId: o,
             productLines: new Set([t.productLine])
-        }), x > 0) ? m(): j()
-    }, [t, x, o, m, j, I]), T = l.useMemo(() => x > 0 ? E.intl.string(E.t.TxBQzD) : h ? d : E.intl.string(E.t.pLPjsb), [h, d, x]), P = l.useMemo(() => h && 0 === x ? E.intl.string(E.t.ilhtIa) : "", [h, x]);
+        }), _ > 0) ? m(): x()
+    }, [t, _, o, m, x, I]), T = l.useMemo(() => _ > 0 ? E.intl.string(E.t.TxBQzD) : p ? d : E.intl.string(E.t.pLPjsb), [p, d, _]), P = l.useMemo(() => p && 0 === _ ? E.intl.string(E.t.ilhtIa) : "", [p, _]);
     return (0, r.jsxs)("div", {
         className: C.kL,
         children: [(0, r.jsx)(u.un, {
             asContainer: !0,
-            asset: x > 0 ? void 0 : p,
+            asset: _ > 0 ? void 0 : h,
             assetSize: A.Q8,
             title: T,
             body: P,
@@ -109,12 +109,12 @@ function N(e) {
                     cardStyle: s()(C.Nr, C.Q1, c),
                     skuPreviewStyle: s()(C.ho, g),
                     onClick: N,
-                    children: x > 0 && (0, r.jsx)(O.B, {
-                        count: x
+                    children: _ > 0 && (0, r.jsx)(O.B, {
+                        count: _
                     })
                 })
             })
-        }), S && (0, r.jsx)(_.A, {
+        }), S && (0, r.jsx)(j.A, {
             title: f.title,
             description: f.description,
             onClick: N
@@ -127,13 +127,13 @@ function T(e) {
         sku: t,
         wishlistOwner: n,
         analyticsLocations: i
-    } = e, s = I(e, ["sku", "wishlistOwner", "analyticsLocations"]), a = (0, c.bG)([p.A], () => p.A.getApplication(t.applicationId)), {
+    } = e, s = I(e, ["sku", "wishlistOwner", "analyticsLocations"]), a = (0, c.bG)([h.A], () => h.A.getApplication(t.applicationId)), {
         analyticsLocations: o
-    } = (0, h.Ay)(...null != i ? i : [], d.A.SLAYER_STOREFRONT_BREADCRUMB_WISHLIST_ITEM_CARD_GIFT_BUTTON), u = l.useCallback(() => {
+    } = (0, p.Ay)(...null != i ? i : [], d.A.SLAYER_STOREFRONT_BREADCRUMB_WISHLIST_ITEM_CARD_GIFT_BUTTON), u = l.useCallback(() => {
         (0, m.a)(t, {
             isGift: !0,
             giftRecipient: n,
-            giftingOrigin: x.vQ.USER_PROFILE_WISHLIST
+            giftingOrigin: _.vQ.USER_PROFILE_WISHLIST
         }, {
             analyticsLocations: o
         })
@@ -163,11 +163,11 @@ function P(e) {
         wishlistOwner: c,
         analyticsLocations: u,
         showTypeTooltip: d
-    } = e, h = I(e, ["sku", "wishlistOwner", "analyticsLocations", "showTypeTooltip"]), p = l.useCallback(() => {
+    } = e, p = I(e, ["sku", "wishlistOwner", "analyticsLocations", "showTypeTooltip"]), h = l.useCallback(() => {
         (0, f.A)({
             skuId: i.id,
             isGift: !0,
-            giftingOrigin: x.vQ.USER_PROFILE_WISHLIST,
+            giftingOrigin: _.vQ.USER_PROFILE_WISHLIST,
             analyticsLocations: null != u ? u : [],
             giftRecipient: c,
             variantsReturnStyle: o.g.VARIANTS_GROUP
@@ -205,12 +205,12 @@ function P(e) {
         singleCardInfo: b,
         wishlistOwner: c,
         analyticsLocations: u,
-        onClick: p,
+        onClick: h,
         showTypeTooltip: d,
         skuPreviewStyle: m,
         tooltipTypeTitle: E.intl.string(E.t.HFhcqh),
         tooltipIcon: d ? (0, r.jsx)(g.mW, {}) : void 0
-    }, h))
+    }, p))
 }
 
 function w(e) {
@@ -218,11 +218,11 @@ function w(e) {
         sku: t
     } = e, n = I(e, ["sku"]);
     switch (t.productLine) {
-        case j.EZt.SOCIAL_LAYER_GAME_ITEM:
+        case x.EZt.SOCIAL_LAYER_GAME_ITEM:
             return (0, r.jsx)(T, S({
                 sku: t
             }, n));
-        case j.EZt.COLLECTIBLES:
+        case x.EZt.COLLECTIBLES:
             return (0, r.jsx)(P, S({
                 sku: t
             }, n));

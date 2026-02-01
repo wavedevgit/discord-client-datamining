@@ -1,6 +1,6 @@
 /** chunk id: 328717, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => f
+    A: () => m
 });
 var r = n(627968);
 n(64700);
@@ -15,16 +15,16 @@ var i = n(43105),
     p = n(49999),
     h = n(985018),
     g = n(398932);
-let f = e => {
+let m = e => {
     let {
         targetElementRef: t,
-        discountOffer: f,
-        premiumSubscription: m,
+        discountOffer: m,
+        premiumSubscription: f,
         dismissCoachmark: A,
         children: _
     } = e, {
         analyticsLocations: b
-    } = (0, s.Ay)(a.A.CHURN_DISCOUNT_POPOVER), E = (0, c.iU)(d.gD.PREMIUM_MONTH_TIER_2, f, m), O = (0, r.jsx)(i.h, {
+    } = (0, s.Ay)(a.A.CHURN_DISCOUNT_POPOVER), E = (0, c.iU)(d.gD.PREMIUM_MONTH_TIER_2, m, f), O = (0, r.jsx)(i.h, {
         targetElementRef: t,
         position: "right",
         align: "top",
@@ -33,12 +33,12 @@ let f = e => {
             align: "start"
         },
         title: h.intl.format(h.t["3yZP0G"], {
-            percent: f.discount.amount
+            percent: m.discount.amount
         }).toString(),
         body: h.intl.format(h.t["3Q4wCy"], {
             discountedPrice: E,
-            billingPeriod: (0, o.Ke)(f.discount.user_usage_limit_interval),
-            numMonths: f.discount.user_usage_limit
+            billingPeriod: (0, o.Ke)(m.discount.user_usage_limit_interval),
+            numMonths: m.discount.user_usage_limit
         }),
         graphic: {
             type: "image",
@@ -73,7 +73,7 @@ let f = e => {
                             }
                             return e
                         }({}, t), i = i = {
-                            premiumSubscription: m,
+                            premiumSubscription: f,
                             analyticsLocations: b,
                             initialStep: u.g.CONFIRM_DISCOUNT
                         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {

@@ -1,7 +1,7 @@
 /** chunk id: 542535, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => V
+    A: () => F
 }), n(228524);
 var r = n(627968),
     i = n(64700),
@@ -75,7 +75,7 @@ function G(e, t) {
         Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
     }), e
 }
-let F = e => {
+let V = e => {
     let {
         badge: t,
         tieredTenureBadge: n,
@@ -89,7 +89,7 @@ let F = e => {
     }) : t.description
 };
 
-function V(e) {
+function F(e) {
     var t;
     let {
         badges: n,
@@ -98,7 +98,7 @@ function V(e) {
         displayProfile: b,
         onClose: j,
         shouldOpenBadgeTooltip: U,
-        shouldGlowTenureBadge: V
+        shouldGlowTenureBadge: F
     } = e, B = i.useRef(null), {
         analyticsLocations: H
     } = (0, d.Ay)(u.A.BADGE), {
@@ -178,7 +178,7 @@ function V(e) {
                     href: e.link,
                     "aria-label": e.description,
                     style: {
-                        filter: V && null != a ? "drop-shadow(0 0 5px ".concat(a.glowColor, ")") : void 0
+                        filter: F && null != a ? "drop-shadow(0 0 5px ".concat(a.glowColor, ")") : void 0
                     }
                 };
             if (N) {
@@ -206,7 +206,7 @@ function V(e) {
             let q = (0, r.jsx)(l.MzZ, G(k({}, x), {
                     children: D
                 })),
-                Q = F({
+                Q = V({
                     badge: e,
                     tieredTenureBadge: d && e.id !== L.K ? a : void 0,
                     currentUserOwnsOrbBadge: Z

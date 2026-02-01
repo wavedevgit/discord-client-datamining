@@ -22,13 +22,13 @@ var i = n(284009),
     h = n(593629),
     E = n(164599),
     O = n(63675),
-    C = n(617514),
-    x = n(546849),
+    x = n(617514),
+    C = n(546849),
     S = n(101058),
     T = n(207803),
     I = n(836602),
-    y = n(622543),
-    N = n(950191),
+    N = n(622543),
+    y = n(950191),
     j = n(287809),
     v = n(927578),
     P = n(985018),
@@ -40,7 +40,7 @@ function D() {
             let e = j.default.getCurrentUser();
             return l()(null != e, "DefaultCustomizationSections: user cannot be undefined"), e
         }),
-        U = (0, s.bG)([y.A], () => y.A.getUserProfile(G.id)),
+        U = (0, s.bG)([N.A], () => N.A.getUserProfile(G.id)),
         {
             pendingAvatar: k,
             pendingGlobalName: B,
@@ -94,7 +94,7 @@ function D() {
         J = v.Ay.canUsePremiumProfileCustomization(G),
         Q = (0, u.z5)(k, G.avatar),
         $ = (0, u.Ac)(H, null == U ? void 0 : U.banner),
-        ee = (0, N.Ay)(G.id),
+        ee = (0, y.Ay)(G.id),
         et = null == ee ? void 0 : ee.getLegacyUsername(),
         en = (null != (e = null == (w = Z.global_name) ? void 0 : w.length) ? e : 0) > 0 ? Z.global_name : null != (t = null == q ? void 0 : q.nick) ? t : [],
         er = (null != (n = null == (M = Z.bio) ? void 0 : M.length) ? n : 0) > 0 ? Z.bio : null != (i = null == q ? void 0 : q.bio) ? i : [],
@@ -108,13 +108,13 @@ function D() {
             pendingGlobalName: B,
             onGlobalNameChange: a.U6,
             user: G
-        }), (0, r.jsx)(x.A, {
+        }), (0, r.jsx)(C.A, {
             sectionTitle: P.intl.string(P.t["+T3RI/"]),
             errors: Z.pronouns,
             onPronounsChange: T.Oz,
             pendingPronouns: F,
             currentPronouns: null != (D = null == U ? void 0 : U.pronouns) ? D : ""
-        }, "pronouns"), (0, r.jsx)(C.A, {}), (0, r.jsx)(m.A, {
+        }, "pronouns"), (0, r.jsx)(x.A, {}), (0, r.jsx)(m.A, {
             onAvatarChange: a.zq,
             showRemoveAvatarButton: Q,
             errors: Z.avatar,

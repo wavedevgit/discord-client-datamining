@@ -11,8 +11,8 @@ var r = n(627968),
     c = n(990078),
     u = n(397927),
     d = n(104171),
-    h = n(793574),
-    p = n(688810),
+    p = n(793574),
+    h = n(688810),
     g = n(919395),
     f = n(657331),
     m = n(696451),
@@ -20,9 +20,9 @@ var r = n(627968),
     A = n(287809),
     y = n(583613),
     O = n(403362),
-    _ = n(58736),
-    j = n(518477),
-    x = n(985018),
+    j = n(58736),
+    x = n(518477),
+    _ = n(985018),
     v = n(940688);
 
 function E(e, t, n) {
@@ -87,7 +87,7 @@ class C {
         })), E(this, "renderMoreAvatars", () => (0, r.jsx)(c.m, {
             asContainer: !0,
             tag: "span",
-            text: x.intl.string(x.t["UTjRE/"]),
+            text: _.intl.string(_.t["UTjRE/"]),
             position: "bottom",
             children: (0, r.jsx)(u.DUT, {
                 className: v.OZ,
@@ -103,7 +103,7 @@ class C {
                 userId: this.userId,
                 channelId: this.channelId,
                 sourceAnalyticsLocations: this.analyticsLocations,
-                tabSection: j.RP.MUTUAL_GUILDS
+                tabSection: x.RP.MUTUAL_GUILDS
             })
         }), this.userId = e, this.user = t, this.channelId = n, this.analyticsLocations = l
     }
@@ -114,7 +114,7 @@ function S(e) {
         channel: t
     } = e, n = t.getRecipientId(), i = (0, g.EI)(n), s = Array(i.length).fill(null), {
         analyticsLocations: f
-    } = (0, p.Ay)(h.A.AKA), m = function(e) {
+    } = (0, h.Ay)(p.A.AKA), m = function(e) {
         let {
             userId: t,
             channelId: n,
@@ -135,19 +135,19 @@ function S(e) {
         userId: n,
         analyticsLocations: f,
         channelId: t.id
-    }), [y, O] = l.useState(!1), j = l.useCallback(() => {
+    }), [y, O] = l.useState(!1), x = l.useCallback(() => {
         O(!0)
     }, [O]), E = l.useCallback(() => {
         O(!1)
     }, [O]);
     return 0 === m.getNicknameGuildPairs().length && 0 === i.length ? (0, r.jsx)("div", {
         className: v.jH
-    }) : (0, r.jsxs)(p.f5, {
+    }) : (0, r.jsxs)(h.f5, {
         value: f,
-        children: [(0, r.jsx)(_.cG, {
+        children: [(0, r.jsx)(j.cG, {
             className: v.yF
         }), (0, r.jsx)(u.LpS, {
-            text: x.intl.string(x.t.l1QVfj),
+            text: _.intl.string(_.t.l1QVfj),
             disableColor: !0,
             className: v.RV
         }), i.length > 0 ? (0, r.jsx)(d.Ay, {
@@ -179,7 +179,7 @@ function S(e) {
             position: "bottom",
             className: v.wm,
             delay: 0,
-            onTooltipShow: j,
+            onTooltipShow: x,
             onTooltipHide: E,
             children: m.renderNicknamePairs(!y)
         }) : null]

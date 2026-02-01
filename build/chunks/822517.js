@@ -1,8 +1,8 @@
-/** chunk id: 822517, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    A: () => r
+/** chunk id: 822517, original params: e,n,t (module,exports,require) **/
+t.d(n, {
+    A: () => l
 });
-let r = (0, n(945810).mj)({
+let l = (0, t(945810).mj)({
     name: "2025-09-cmc-refresh",
     kind: "user",
     defaultConfig: {

@@ -14,8 +14,8 @@ var r = n(665260),
     p = n(587895),
     h = n(780964),
     g = n(954571),
-    f = n(353835),
-    m = n(307600),
+    m = n(353835),
+    f = n(307600),
     A = n(723702),
     _ = n(636401),
     b = n(90924),
@@ -63,7 +63,7 @@ let S = new Set([I.AM, I.eK]),
                         s = e.toString();
                     if (A.isPlatformEmbedded) {
                         let e = (0, a.f)() ? y.MLl.ACTIVITY_POPOUT : null;
-                        f.A.focus(e, !0)
+                        m.A.focus(e, !0)
                     }
                     let _ = p.A.getApplication(null == (i = t.application) ? void 0 : i.id),
                         b = (0, u.H)(null == r ? void 0 : r.location);
@@ -82,7 +82,7 @@ let S = new Set([I.AM, I.eK]),
                     }), Promise.resolve({
                         opened: !0
                     });
-                    return new Promise(e => (0, m.h)({
+                    return new Promise(e => (0, f.h)({
                         href: s,
                         shouldConfirm: !0,
                         onConfirm: () => {

@@ -11,8 +11,8 @@ var r = n(627968),
     c = n(110259),
     u = n(417597),
     d = n(397927),
-    h = n(846293),
-    p = n(774300),
+    p = n(846293),
+    h = n(774300),
     g = n(793574),
     f = n(688810),
     m = n(139286),
@@ -20,9 +20,9 @@ var r = n(627968),
     A = n(696451),
     y = n(71393),
     O = n(958590),
-    _ = n(576705),
-    j = n(427262),
-    x = n(582904),
+    j = n(576705),
+    x = n(427262),
+    _ = n(582904),
     v = n(652215),
     E = n(985018),
     C = n(357694),
@@ -54,7 +54,7 @@ function T(e) {
         onHoverOrFocus: i,
         setPopoutRef: a,
         closePopout: u
-    } = e, h = l.useRef(null), p = (0, x.L7)(h), b = (0, x.kt)({
+    } = e, p = l.useRef(null), h = (0, _.L7)(p), b = (0, _.kt)({
         channel: t
     }), {
         analyticsLocations: A
@@ -68,10 +68,10 @@ function T(e) {
             location_stack: A
         }
     }), l.useEffect(() => {
-        null == a || a(h.current)
+        null == a || a(p.current)
     }, [a]), l.useEffect(() => {
-        null == i || i(p.isHoveringOrFocusing)
-    }, [i, p]);
+        null == i || i(h.isHoveringOrFocusing)
+    }, [i, h]);
     let O = l.useCallback(() => {
         let e = y.A.getGuild(t.guild_id);
         o()(null != e, "VoiceInviteSuggestionsPopover must be used in context of a guild"), (0, d.mMO)(async () => {
@@ -98,7 +98,7 @@ function T(e) {
         }), u()
     }, [t, u]);
     return (0, r.jsx)("div", {
-        ref: h,
+        ref: p,
         "aria-label": E.intl.string(E.t.o53CL2),
         className: s()(S.popover, C.oO),
         children: (0, r.jsx)("div", {
@@ -136,15 +136,15 @@ function P(e) {
         user: n
     } = e, i = l.useRef(null), a = (0, u.bG)([A.Ay], () => A.Ay.getMember(t.guild_id, n.id), [t.guild_id, n.id]), {
         isHoveringOrFocusing: o
-    } = (0, x.L7)(i), [c, g] = l.useState(null), f = "success" === c || "sending" === c, m = l.useCallback(async () => {
+    } = (0, _.L7)(i), [c, g] = l.useState(null), f = "success" === c || "sending" === c, m = l.useCallback(async () => {
         if (f) return;
         async function e() {
             var e, n, r;
             let l = null != (e = O.A.getInvite(t.id, {})) ? e : null;
             if (null == l) {
-                if (!_.A.can(v.xBc.CREATE_INSTANT_INVITE, t)) return null;
+                if (!j.A.can(v.xBc.CREATE_INSTANT_INVITE, t)) return null;
                 try {
-                    await h.Ay.createInvite(t.id, {}, N)
+                    await p.Ay.createInvite(t.id, {}, N)
                 } catch (e) {
                     return null
                 }
@@ -154,8 +154,8 @@ function P(e) {
         }
         g("sending");
         let r = await e();
-        null == r ? g(null) : p.A.enqueue({
-            type: p.F.USER,
+        null == r ? g(null) : h.A.enqueue({
+            type: h.F.USER,
             user: n,
             inviteKey: r,
             location: N,
@@ -176,7 +176,7 @@ function P(e) {
         guildId: t.guild_id
     });
     if (null == a) return null;
-    let P = j.Ay.getName(n),
+    let P = x.Ay.getName(n),
         w = E.intl.string(E.t.jYnGPG);
     return (0, r.jsxs)(d.DUT, {
         innerRef: i,

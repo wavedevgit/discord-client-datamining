@@ -1,6 +1,6 @@
 /** chunk id: 502696, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => f
+    A: () => m
 });
 var r = n(627968);
 n(64700);
@@ -16,12 +16,12 @@ var i = n(397927),
     h = n(652215),
     g = n(985018);
 
-function f(e) {
+function m(e) {
     let {
         party: t,
         close: n,
-        onSelect: f
-    } = e, m = (0, c.A)(t), A = (0, p.A)(t), _ = (0, d.A)(t), b = (0, u.A)(t), E = (0, s.A)(t), O = (0, o.A)(t);
+        onSelect: m
+    } = e, f = (0, c.A)(t), A = (0, p.A)(t), _ = (0, d.A)(t), b = (0, u.A)(t), E = (0, s.A)(t), O = (0, o.A)(t);
     return (0, l.Ay)(() => {
         let e = t.currentActivities.filter(e => {
             var t, n;
@@ -36,8 +36,8 @@ function f(e) {
         navId: "now-playing-menu",
         onClose: n,
         "aria-label": g.intl.string(g.t.ogxXGq),
-        onSelect: f,
-        children: [m, (0, r.jsxs)(i.rXV, {
+        onSelect: m,
+        children: [f, (0, r.jsxs)(i.rXV, {
             children: [A, _]
         }), (0, r.jsx)(i.rXV, {
             children: b

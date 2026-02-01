@@ -14,14 +14,14 @@ var r = n(64700),
     p = n(803224),
     h = n(994500),
     g = n(503509),
-    f = n(723702),
-    m = n(837921),
+    m = n(723702),
+    f = n(837921),
     A = n(726249),
     _ = n(652215),
     b = n(985018);
 let E = new Set(["Blink", "Gecko", "WebKit"]),
     O = _.tEg;
-if (f.isPlatformEmbedded) O = e => m.Ay.setBadge(e);
+if (m.isPlatformEmbedded) O = e => f.Ay.setBadge(e);
 else if (E.has(s().layout)) {
     let e = new(l())({
         animation: "none"
@@ -45,7 +45,7 @@ function y() {
         });
     r.useEffect(() => {
         if (!e) return;
-        let t = m.Ay.bounceDock("critical"),
+        let t = f.Ay.bounceDock("critical"),
             n = (0, A.iA)({
                 messages: [b.intl.string(b.t["fk1/bX"])],
                 count: 50

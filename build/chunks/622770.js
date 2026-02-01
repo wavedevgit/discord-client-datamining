@@ -1,6 +1,6 @@
 /** chunk id: 622770, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => h
+    A: () => p
 });
 var r, l = n(627968);
 n(64700);
@@ -59,4 +59,4 @@ function d(e) {
     }, i))
 }
 d.Directions = u;
-let h = d
+let p = d

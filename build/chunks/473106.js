@@ -93,10 +93,10 @@ let j = {
                 id: e.id,
                 value: e,
                 label: e.name
-            })), [j, k] = i.useState(L.length > 0 ? L[0].value : null), [U, G] = i.useState(""), [F, V] = i.useState({
+            })), [j, k] = i.useState(L.length > 0 ? L[0].value : null), [U, G] = i.useState(""), [V, F] = i.useState({
                 plan_id: w.gD.PREMIUM_MONTH_TIER_2,
                 gift: "true"
-            }), B = "true" !== F.gift && null != P, [H, Y] = i.useState(L.length > 0 ? L[0].value : null), {
+            }), B = "true" !== V.gift && null != P, [H, Y] = i.useState(L.length > 0 ? L[0].value : null), {
                 analyticsLocations: W
             } = (0, h.Ay)(_.A.PAYMENT_FLOW_TEST_PAGE), [K, z] = i.useState(""), [q, Z] = i.useState(N.dJq), {
                 balance: Q,
@@ -230,7 +230,7 @@ let j = {
                             label: "Standalone: Gift/Subscription Purchase",
                             children: [(0, r.jsx)(u.l6P, {
                                 label: "Plan",
-                                value: F.plan_id,
+                                value: V.plan_id,
                                 options: [{
                                     id: "tier_2",
                                     value: w.gD.PREMIUM_MONTH_TIER_2,
@@ -245,7 +245,7 @@ let j = {
                                     label: "Nitro Basic"
                                 }],
                                 onSelectionChange: e => {
-                                    V(t => x(D({}, t), {
+                                    F(t => x(D({}, t), {
                                         plan_id: e
                                     }))
                                 },
@@ -253,7 +253,7 @@ let j = {
                                 fullWidth: !0
                             }), (0, r.jsx)(u.l6P, {
                                 label: "Type",
-                                value: F.gift,
+                                value: V.gift,
                                 options: [{
                                     id: "gift",
                                     value: "true",
@@ -264,7 +264,7 @@ let j = {
                                     label: "Not Gift"
                                 }],
                                 onSelectionChange: e => {
-                                    V(t => x(D({}, t), {
+                                    F(t => x(D({}, t), {
                                         gift: e
                                     }))
                                 },
@@ -279,7 +279,7 @@ let j = {
                                 text: "Open Link",
                                 disabled: B,
                                 onClick: () => {
-                                    window.open(N.BVt.BILLING_PREMIUM_SUBSCRIBE + "?" + a.stringify(D({}, F)))
+                                    window.open(N.BVt.BILLING_PREMIUM_SUBSCRIBE + "?" + a.stringify(D({}, V)))
                                 }
                             })
                         }), (0, r.jsx)(u.cGx, {}), (0, r.jsxs)(u.nVY, {

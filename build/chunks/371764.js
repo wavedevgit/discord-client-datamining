@@ -26,8 +26,8 @@ let E = e => {
         componentId: E,
         promotionBannerMarketingComponentFields: O
     } = e, {
-        analyticsLocations: C
-    } = (0, _.Ay)(), x = (0, u.p)();
+        analyticsLocations: x
+    } = (0, _.Ay)(), C = (0, u.p)();
     (0, p.A)({
         type: i.ImpressionTypes.VIEW,
         name: i.ImpressionNames.PREMIUM_MARKETING_COMPONENT,
@@ -39,8 +39,8 @@ let E = e => {
     let S = (0, f.Xn)("marketing_page_banner"),
         T = (0, g.h)({
             buttonAction: S.treatment === f.tz.PLAN_SELECTION ? o.dz.OPEN_PLAN_SELECTION_MODAL : null != (t = null == (n = O.button) ? void 0 : n.buttonAction) ? t : o.dz.OPEN_TIER_2_PAYMENT_MODAL,
-            analyticsLocations: C,
-            analyticsLocation: x.location
+            analyticsLocations: x,
+            analyticsLocation: C.location
         }),
         I = (0, A.a)(O.body);
     return (0, r.jsxs)("div", {

@@ -1,13 +1,13 @@
-/** chunk id: 840387, original params: t,e,n (module,exports,require) **/
-n.d(e, {
-    Z: () => a
+/** chunk id: 840387, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    Z: () => l
 });
 var r = n(311907),
     i = n(287809);
 
-function a() {
+function l() {
     return !1 === (0, r.bG)([i.default], () => {
-        var t;
-        return null == (t = i.default.getCurrentUser()) ? void 0 : t.nsfwAllowed
+        var e;
+        return null == (e = i.default.getCurrentUser()) ? void 0 : e.nsfwAllowed
     })
 }

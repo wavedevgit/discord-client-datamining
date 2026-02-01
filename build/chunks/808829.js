@@ -1,21 +1,22 @@
-/** chunk id: 808829, original params: t,e,n (module,exports,require) **/
-n.d(e, {
-    P: () => l
+/** chunk id: 808829, original params: e,t,n (module,exports,require) **/
+"use strict";
+n.d(t, {
+    P: () => i
 });
 var r = n(985018);
 
-function l(t) {
+function i(e) {
     let {
-        application: e,
+        application: t,
         username: n,
-        usernameOnClick: l
-    } = t;
-    return null != e ? r.intl.formatToParts(r.t.Tes5Ou, {
+        usernameOnClick: i
+    } = e;
+    return null != t ? r.intl.formatToParts(r.t.Tes5Ou, {
         username: n,
-        applicationName: e.name,
-        usernameOnClick: l
+        applicationName: t.name,
+        usernameOnClick: i
     }) : r.intl.formatToParts(r.t.PUJtgi, {
         username: n,
-        usernameOnClick: l
+        usernameOnClick: i
     })
 }

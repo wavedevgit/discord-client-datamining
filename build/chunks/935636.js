@@ -1,15 +1,15 @@
-/** chunk id: 935636, original params: e,t,i (module,exports,require) **/
-i.d(t, {
+/** chunk id: 935636, original params: t,e,i (module,exports,require) **/
+i.d(e, {
     I: () => d
 });
 var n = i(934551),
     l = i(314116),
     s = i(419954),
     r = i(203982),
-    a = i(780964),
-    u = i(652215),
+    u = i(780964),
+    a = i(652215),
     o = i(985018);
-let d = (0, s.i4)(a.X.LOGOUT_SIDEBAR_ITEM, {
+let d = (0, s.i4)(u.X.LOGOUT_SIDEBAR_ITEM, {
     useTitle: () => o.intl.string(o.t["2jxGer"]),
     icon: n.DoorExitIcon,
     onClick: () => {
@@ -18,7 +18,7 @@ let d = (0, s.i4)(a.X.LOGOUT_SIDEBAR_ITEM, {
             subtitle: o.intl.string(o.t.SUnWBB),
             confirmText: o.intl.string(o.t["2jxGer"]),
             onConfirm: () => {
-                r._.dispatch(u.jej.SETTINGS_TRIGGER_LOGOUT)
+                r._.dispatch(a.jej.SETTINGS_TRIGGER_LOGOUT)
             }
         })
     },

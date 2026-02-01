@@ -2,9 +2,9 @@
 n.d(t, {
     e: () => i
 });
-var r = n(311907),
-    l = n(971778);
+var l = n(311907),
+    r = n(971778);
 
 function i(e) {
-    return (0, r.bG)([l.A], () => null != e ? l.A.getVoiceFilter(e) : null)
+    return (0, l.bG)([r.A], () => null != e ? r.A.getVoiceFilter(e) : null)
 }

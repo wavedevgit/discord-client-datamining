@@ -1,6 +1,6 @@
 /** chunk id: 584569, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => P
+    A: () => E
 }), n(896048);
 var r, l, i = n(311907),
     a = n(205693),
@@ -16,8 +16,8 @@ var r, l, i = n(311907),
     y = n(607567),
     b = n(652215),
     _ = n(806931);
-let A = new o.A,
-    h = new o.A,
+let h = new o.A,
+    A = new o.A,
     v = new Set;
 
 function O(e, t, n) {
@@ -26,7 +26,7 @@ function O(e, t, n) {
             channelId: n
         }),
         l = (0, y.RQ)(r, null != t ? t : b.ME, e.id);
-    A.set(e.id, l);
+    h.set(e.id, l);
     let i = {
         type: _.lp.USER,
         user: e,
@@ -44,12 +44,12 @@ function O(e, t, n) {
         localVideoDisabled: !1,
         isPoppedOut: !1
     };
-    h.set(e.id, i)
+    A.set(e.id, i)
 }
 
 function S(e) {
-    let t = A.delete(e),
-        n = h.delete(e),
+    let t = h.delete(e),
+        n = A.delete(e),
         r = v.delete(e);
     return t || n || r
 }
@@ -68,23 +68,23 @@ function j() {
 }
 
 function x() {
-    A.clear(), h.clear(), v.clear()
+    h.clear(), A.clear(), v.clear()
 }
 class I extends(r = i.Ay.Store) {
     initialize() {
         this.waitFor(g.A, m.default, p.A, f.A), this.syncWith([m.default], j)
     }
     get desyncedVoiceStatesCount() {
-        return A.size()
+        return h.size()
     }
     getDesyncedUserIds() {
-        return A.keys()
+        return h.keys()
     }
     getDesyncedVoiceStates() {
-        return A.values()
+        return h.values()
     }
     getDesyncedParticipants() {
-        return h.values()
+        return A.values()
     }
 }(l = "displayName") in I ? Object.defineProperty(I, l, {
     value: "RTCConnectionDesyncStore",
@@ -92,7 +92,7 @@ class I extends(r = i.Ay.Store) {
     configurable: !0,
     writable: !0
 }) : I[l] = "RTCConnectionDesyncStore";
-let P = new I(s.h, {
+let E = new I(s.h, {
     CONNECTION_OPEN: function() {
         x()
     },

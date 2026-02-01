@@ -11,8 +11,8 @@ var r = n(627968),
     c = n(709562),
     u = n(222823),
     d = n(741961),
-    h = n(234320),
-    p = n(795816),
+    p = n(234320),
+    h = n(795816),
     g = n(933958),
     f = n(5867),
     m = n(652215),
@@ -39,11 +39,11 @@ function y(e) {
             }(e, t), Object.getOwnPropertySymbols)
             for (l = 0, n = Object.getOwnPropertySymbols(e); l < n.length; l++) r = n[l], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r]);
         return i
-    }(e, ["channelId", "className"]), O = l.useRef(null), _ = (0, s.bG)([g.Ay], () => g.Ay.getFocusedLayout() === f.E8.RESIZABLE), j = l.useCallback(() => {
-        let e = _ ? f.E8.NO_CHAT : f.E8.RESIZABLE;
-        (0, p.i5)(e)
-    }, [_]), {
-        unreadCount: x,
+    }(e, ["channelId", "className"]), O = l.useRef(null), j = (0, s.bG)([g.Ay], () => g.Ay.getFocusedLayout() === f.E8.RESIZABLE), x = l.useCallback(() => {
+        let e = j ? f.E8.NO_CHAT : f.E8.RESIZABLE;
+        (0, h.i5)(e)
+    }, [j]), {
+        unreadCount: _,
         mentionCount: v
     } = function(e) {
         let t = (0, s.bG)([d.A], () => !(0, i.isEmpty)(d.A.getTypingUsers(e)), [e]),
@@ -63,17 +63,17 @@ function y(e) {
         var e;
         null == (e = O.current) || e.focus()
     }, []);
-    (0, h.Vo)({
+    (0, p.Vo)({
         event: m.jej.FOCUS_CHAT_BUTTON,
         handler: E
     });
-    let C = _ ? b.intl.string(b.t["5MstTl"]) : b.intl.string(b.t.kkKapG),
+    let C = j ? b.intl.string(b.t["5MstTl"]) : b.intl.string(b.t.kkKapG),
         S = [C];
     v > 0 && S.push(b.intl.formatToPlainString(b.t["3l1GOx"], {
         mentionCount: v
-    })), x > 0 && S.push(b.intl.string(b.t.x5zAGZ));
+    })), _ > 0 && S.push(b.intl.string(b.t.x5zAGZ));
     let I = (0, s.bG)([g.Ay], () => g.Ay.getFocusedLayout()),
-        N = v > 0 ? v : x,
+        N = v > 0 ? v : _,
         T = N > 0;
     return (0, r.jsxs)("div", {
         className: A.iE,
@@ -97,7 +97,7 @@ function y(e) {
         }({
             isTrayButton: !0,
             buttonRef: O,
-            onClick: j,
+            onClick: x,
             label: C,
             "aria-label": S.join(", "),
             tooltipPosition: "top",

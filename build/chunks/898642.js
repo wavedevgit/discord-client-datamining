@@ -1,6 +1,6 @@
 /** chunk id: 898642, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => m
+    A: () => f
 }), n(896048);
 var r = n(627968);
 n(64700);
@@ -15,13 +15,13 @@ var i = n(311907),
     p = n(58736),
     h = n(652215),
     g = n(985018);
-let f = new Set(["ko", "ja"]);
+let m = new Set(["ko", "ja"]);
 
-function m(e) {
+function f(e) {
     let {
         className: t,
         focusSectionProps: n
-    } = e, m = (0, i.bG)([o.default], () => o.default.getCurrentUser()), A = (0, i.bG)([s.default], () => s.default.locale), _ = (0, d.mv)(m);
+    } = e, f = (0, i.bG)([o.default], () => o.default.getCurrentUser()), A = (0, i.bG)([s.default], () => s.default.locale), _ = (0, d.mv)(f);
     return (0, r.jsx)(a.MzZ, {
         href: u.C,
         target: "_blank",
@@ -50,7 +50,7 @@ function m(e) {
                 highlighted: _
             }),
             icon: a.cBN,
-            tooltipPosition: f.has(A) ? "left" : void 0,
+            tooltipPosition: m.has(A) ? "left" : void 0,
             tooltip: g.intl.string(g.t["cqEoj/"])
         }, n))
     })

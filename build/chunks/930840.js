@@ -1,78 +1,78 @@
-/** chunk id: 930840, original params: e,t,r (module,exports,require) **/
-r.d(t, {
-    c: () => d
-}), r(896048);
-var n = r(627968),
-    o = r(64700),
-    c = r(503698),
-    l = r.n(c),
-    s = r(990078),
-    a = r(397927),
-    i = r(957565),
-    u = r(985018),
-    p = r(770778);
+/** chunk id: 930840, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    c: () => h
+}), n(896048);
+var l = n(627968),
+    r = n(64700),
+    i = n(503698),
+    a = n.n(i),
+    s = n(990078),
+    o = n(397927),
+    c = n(957565),
+    u = n(985018),
+    d = n(770778);
 
-function d(e) {
-    var t, r;
+function h(e) {
+    var t, n;
     let {
-        chunks: c,
-        className: d,
-        onCopy: f
-    } = e, b = function(e, t) {
+        chunks: i,
+        className: h,
+        onCopy: p
+    } = e, f = function(e, t) {
         if (null == e) return {};
-        var r, n, o, c = {};
+        var n, l, r, i = {};
         if ("u" > typeof Reflect && Reflect.ownKeys) {
-            for (o = 0, r = Reflect.ownKeys(e); o < r.length; o++) n = r[o], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (c[n] = e[n]);
-            return c
+            for (r = 0, n = Reflect.ownKeys(e); r < n.length; r++) l = n[r], !(t.indexOf(l) >= 0) && Object.prototype.propertyIsEnumerable.call(e, l) && (i[l] = e[l]);
+            return i
         }
-        if (c = function(e, t) {
+        if (i = function(e, t) {
                 if (null == e) return {};
-                var r, n, o = {},
-                    c = Object.getOwnPropertyNames(e);
-                for (n = 0; n < c.length; n++) r = c[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (o[r] = e[r]);
-                return o
+                var n, l, r = {},
+                    i = Object.getOwnPropertyNames(e);
+                for (l = 0; l < i.length; l++) n = i[l], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n]);
+                return r
             }(e, t), Object.getOwnPropertySymbols)
-            for (o = 0, r = Object.getOwnPropertySymbols(e); o < r.length; o++) n = r[o], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (c[n] = e[n]);
-        return c
-    }(e, ["chunks", "className", "onCopy"]), y = o.useMemo(() => null == c ? void 0 : c.join(" "), [c]), [O, j] = o.useState(!1), m = o.useCallback(() => {
-        (0, i.C)(y, () => {
-            j(!0), null == f || f()
+            for (r = 0, n = Object.getOwnPropertySymbols(e); r < n.length; r++) l = n[r], !(t.indexOf(l) >= 0) && Object.prototype.propertyIsEnumerable.call(e, l) && (i[l] = e[l]);
+        return i
+    }(e, ["chunks", "className", "onCopy"]), m = r.useMemo(() => null == i ? void 0 : i.join(" "), [i]), [g, A] = r.useState(!1), b = r.useCallback(() => {
+        (0, c.C)(m, () => {
+            A(!0), null == p || p()
         })
-    }, [f, y]), g = O ? a.yr3 : a.TdU;
-    return (0, n.jsx)(a.DUT, {
-        className: l()(p.k, d),
-        onClick: m,
-        children: (0, n.jsx)(s.m, {
-            text: O ? u.intl.string(u.t.t5VZ88) : u.intl.string(u.t.OpuAlK),
-            children: (0, n.jsx)(g, (t = function(e) {
+    }, [p, m]), _ = g ? o.yr3 : o.TdU;
+    return (0, l.jsx)(o.DUT, {
+        className: a()(d.k, h),
+        onClick: b,
+        children: (0, l.jsx)(s.m, {
+            text: g ? u.intl.string(u.t.t5VZ88) : u.intl.string(u.t.OpuAlK),
+            children: (0, l.jsx)(_, (t = function(e) {
                 for (var t = 1; t < arguments.length; t++) {
-                    var r = null != arguments[t] ? arguments[t] : {},
-                        n = Object.keys(r);
-                    "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
-                        return Object.getOwnPropertyDescriptor(r, e).enumerable
-                    }))), n.forEach(function(t) {
-                        var n;
-                        n = r[t], t in e ? Object.defineProperty(e, t, {
-                            value: n,
+                    var n = null != arguments[t] ? arguments[t] : {},
+                        l = Object.keys(n);
+                    "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+                        return Object.getOwnPropertyDescriptor(n, e).enumerable
+                    }))), l.forEach(function(t) {
+                        var l;
+                        l = n[t], t in e ? Object.defineProperty(e, t, {
+                            value: l,
                             enumerable: !0,
                             configurable: !0,
                             writable: !0
-                        }) : e[t] = n
+                        }) : e[t] = l
                     })
                 }
                 return e
-            }({}, b), r = r = {
+            }({}, f), n = n = {
                 size: "xxs",
-                color: O ? a.LU0.colors.TEXT_FEEDBACK_POSITIVE : a.LU0.colors.INTERACTIVE_TEXT_DEFAULT
-            }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
-                var r = Object.keys(e);
+                color: g ? o.LU0.colors.TEXT_FEEDBACK_POSITIVE : o.LU0.colors.INTERACTIVE_TEXT_DEFAULT
+            }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
+                var n = Object.keys(e);
                 if (Object.getOwnPropertySymbols) {
-                    var n = Object.getOwnPropertySymbols(e);
-                    r.push.apply(r, n)
+                    var l = Object.getOwnPropertySymbols(e);
+                    n.push.apply(n, l)
                 }
-                return r
-            })(Object(r)).forEach(function(e) {
-                Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(r, e))
+                return n
+            })(Object(n)).forEach(function(e) {
+                Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
             }), t))
         })
     })

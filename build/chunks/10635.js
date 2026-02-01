@@ -11,8 +11,8 @@ var r = n(627968),
     c = n(688810),
     u = n(311016),
     d = n(713517),
-    h = n(182592),
-    p = n(562153),
+    p = n(182592),
+    h = n(562153),
     g = n(183555),
     f = n(672385),
     m = n(950191),
@@ -20,9 +20,9 @@ var r = n(627968),
     A = n(718019),
     y = n(31432),
     O = n(915614),
-    _ = n(389996),
-    j = n(743987),
-    x = n(900179),
+    j = n(389996),
+    x = n(743987),
+    _ = n(900179),
     v = n(946356),
     E = n(810396),
     C = n(35241),
@@ -109,7 +109,7 @@ function R(e) {
                         children: [(0, r.jsx)(E.A, {
                             user: n,
                             guildId: R.guild_id,
-                            nickname: p.Ay.getName(null, R.id, n),
+                            nickname: h.Ay.getName(null, R.id, n),
                             pronouns: null == L ? void 0 : L.pronouns,
                             onOpenProfile: D ? void 0 : F,
                             tags: (0, r.jsx)(y.A, {
@@ -118,19 +118,19 @@ function R(e) {
                             })
                         }), (0, r.jsxs)(v.A.Overlay, {
                             className: P.Lw,
-                            children: [(0, r.jsx)(x.A, {
+                            children: [(0, r.jsx)(_.A, {
                                 heading: N.intl.string(N.t["61W33d"]),
                                 headingColor: "text-strong",
-                                children: (0, r.jsx)(_.A, {
+                                children: (0, r.jsx)(j.A, {
                                     userBio: null == L ? void 0 : L.bio,
                                     userId: n.id,
                                     animateOnHoverOrFocusOnly: !0,
                                     isHoveringOrFocusing: B
                                 })
-                            }), (0, r.jsx)(x.A, {
+                            }), (0, r.jsx)(_.A, {
                                 heading: N.intl.string(N.t["A//N4k"]),
                                 headingColor: "text-strong",
-                                children: (0, r.jsx)(j.A, {
+                                children: (0, r.jsx)(x.A, {
                                     userId: n.id
                                 })
                             })]
@@ -148,7 +148,7 @@ function R(e) {
                         className: T.wC,
                         children: N.intl.string(N.t["+Xp3hq"])
                     })
-                }), (null == L ? void 0 : L.profileEffect) != null && (0, r.jsx)(h.A, {
+                }), (null == L ? void 0 : L.profileEffect) != null && (0, r.jsx)(p.A, {
                     skuId: null == L || null == (t = L.profileEffect) ? void 0 : t.skuId,
                     isHovering: H
                 })]

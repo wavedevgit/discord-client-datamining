@@ -8,7 +8,7 @@ n.d(t, {
     IS: () => _,
     N5: () => k,
     Ri: () => j,
-    X7: () => V,
+    X7: () => F,
     Xx: () => N,
     Xy: () => h,
     Ze: () => y,
@@ -17,7 +17,7 @@ n.d(t, {
     jd: () => w,
     nG: () => Z,
     p$: () => W,
-    sv: () => F,
+    sv: () => V,
     z7: () => Q,
     zD: () => G
 }), n(896048), n(321073);
@@ -165,11 +165,11 @@ function G(e, t) {
     return null == e || null == t ? null == e && null == t : e.isSame(t)
 }
 
-function F(e, t) {
+function V(e, t) {
     return null == e || null == t ? null == e && null == t : G(e.startDate, t.startDate) && G(e.endDate, t.endDate)
 }
 
-function V(e) {
+function F(e) {
     var t;
     let n = null != e.byWeekday ? [...e.byWeekday] : null,
         r = null == (t = e.byNWeekday) ? void 0 : t.map(e => new o.Bw(e.day, e.n)),
@@ -313,7 +313,7 @@ function Z(e, t) {
 
 function Q(e, t) {
     if (null == t) return d.z.NONE;
-    let n = V(t);
+    let n = F(t);
     switch (n.options.freq) {
         case o.p3.WEEKLY:
             if (n.options.interval < 1 || n.options.interval > 2) return d.z.NONE;

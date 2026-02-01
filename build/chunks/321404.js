@@ -1,16 +1,16 @@
-/** chunk id: 321404, original params: t,e,n (module,exports,require) **/
-n.d(e, {
-    O: () => l,
-    c: () => o
+/** chunk id: 321404, original params: e,n,t (module,exports,require) **/
+t.d(n, {
+    O: () => s,
+    c: () => a
 });
-var r = n(311907),
-    i = n(380335),
-    a = n(157550);
+var l = t(311907),
+    r = t(380335),
+    i = t(157550);
 
-function l(t) {
-    return (0, r.bG)([i.A], () => i.A.isMessageRequest(t), [t])
+function s(e) {
+    return (0, l.bG)([r.A], () => r.A.isMessageRequest(e), [e])
 }
 
-function o(t) {
-    return (0, r.bG)([i.A, a.A], () => null != t && (i.A.isMessageRequest(t) || a.A.isSpam(t)))
+function a(e) {
+    return (0, l.bG)([r.A, i.A], () => null != e && (r.A.isMessageRequest(e) || i.A.isSpam(e)))
 }

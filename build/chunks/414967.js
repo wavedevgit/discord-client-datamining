@@ -15,8 +15,8 @@ var i = n(607399),
     p = n(835095),
     h = n(287809),
     g = n(816733),
-    f = n(927578),
-    m = n(536194),
+    m = n(927578),
+    f = n(536194),
     A = n(661191),
     _ = n(40185),
     b = n(89366),
@@ -96,7 +96,7 @@ class w extends c.A {
             this.maybeOpenServerDriveAnnouncementModal(t.id, t.promotion_id, t.properties, !0)
         }), x(this, "getOfferFromStore", () => {
             let e = h.default.getCurrentUser();
-            if ((0, f.TW)(e)) return {};
+            if ((0, m.TW)(e)) return {};
             let t = [j.TU, j.KG, j.lj, j.HF].map(e => g.A.getUserDiscountOffer(e)).filter(e => null != e && !(0, d.w)(e)).shift();
             if (null != t) return {
                 userDiscountOffer: t
@@ -106,7 +106,7 @@ class w extends c.A {
                 userTrialOffer: n
             } : {}
         }), x(this, "mayShowAnnouncementModal", async () => {
-            if (await (0, _.hb)(), m.P.isDisallowPopupsSet()) return;
+            if (await (0, _.hb)(), f.P.isDisallowPopupsSet()) return;
             let e = this.getOfferFromStore(),
                 t = y.A.getCurrentConfig({
                     location: "announcementManager"
@@ -118,7 +118,7 @@ class w extends c.A {
                 }),
                 r = (0, u.k8)(a.M.Q2_2025_MARKETING_MOMENT_FOLLOW_UP_MODAL),
                 l = h.default.getCurrentUser();
-            if (!t || r || (0, s.ueM)() || (0, f.TW)(l) || await (0, E.m)(e.userTrialOffer) && (0, N.A)({
+            if (!t || r || (0, s.ueM)() || (0, m.TW)(l) || await (0, E.m)(e.userTrialOffer) && (0, N.A)({
                     upsellType: j.e.REVERSE_TRIAL_FOLLOWUP_UPSELL
                 }), (null == l || l.verified) && !(0, s.ueM)() && !i.Fr && !n) {
                 for (let t of (await (0, I._)(e)))

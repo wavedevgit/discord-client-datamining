@@ -152,7 +152,7 @@ let C = {
             effect: t
         } = e, {
             upsertConfig: n
-        } = (0, h.wu)(), r = (0, o.bG)([p.default], () => p.default.getCurrentUser()), [j, _] = l.useState(!0), O = l.useRef({}), [T, N] = l.useState(!1), [w, I] = l.useState(!1), [P, k] = l.useState([]), [R, D] = l.useState(C), M = l.useRef([]), [L, U] = l.useState(t.name), B = L.toLowerCase().replace(/\s+/g, "_"), G = l.useMemo(() => ({
+        } = (0, h.wu)(), r = (0, o.bG)([p.default], () => p.default.getCurrentUser()), [j, _] = l.useState(!0), O = l.useRef({}), [T, N] = l.useState(!1), [w, I] = l.useState(!1), [k, P] = l.useState([]), [R, D] = l.useState(C), M = l.useRef([]), [L, U] = l.useState(t.name), B = L.toLowerCase().replace(/\s+/g, "_"), G = l.useMemo(() => ({
             id: S,
             skuId: S,
             title: S,
@@ -160,9 +160,9 @@ let C = {
             accessibilityLabel: S,
             reducedMotionSrc: "",
             thumbnailPreviewSrc: "",
-            effects: P,
+            effects: k,
             animationType: s.l.ANIMATION_TYPE_UNSPECIFIED
-        }), [P]), F = e => {
+        }), [k]), F = e => {
             let t = e.currentTarget.files;
             return null == t ? null : t[0]
         }, V = (e, t) => {
@@ -175,7 +175,7 @@ let C = {
         };
         l.useEffect(() => {
             let e = t.config.effects;
-            e.length > 0 && k(e)
+            e.length > 0 && P(e)
         }, [t.config.effects]), l.useEffect(() => {
             let e = t.config.stillFrames;
             null != e && Object.entries(e).forEach(e => {
@@ -209,11 +209,11 @@ let C = {
                 skuId: e.skuId,
                 name: L,
                 config: {
-                    effects: P,
+                    effects: k,
                     stillFrames: R
                 }
             })
-        }, [P, R, L]), l.useEffect(() => () => {
+        }, [k, R, L]), l.useEffect(() => () => {
             M.current.forEach(e => {
                 URL.revokeObjectURL(e)
             }), M.current = []
@@ -230,8 +230,8 @@ let C = {
                     onChange: e => {
                         let t = F(e);
                         null != t && (0, x.Mz)(t, async e => {
-                            let n = await (0, x.Ay)(e, t, P.length);
-                            k(e => [...e, n])
+                            let n = await (0, x.Ay)(e, t, k.length);
+                            P(e => [...e, n])
                         })
                     },
                     multiple: !1
@@ -373,7 +373,7 @@ let C = {
                         }), (0, a.jsxs)("div", {
                             className: f.nM,
                             children: [(0, a.jsx)(d.A, {
-                                fileContents: () => (0, x.rs)(P),
+                                fileContents: () => (0, x.rs)(k),
                                 contentType: "text/plain",
                                 fileName: "".concat(B, "_timing_config.txt"),
                                 children: (0, a.jsx)(c.Button, {
@@ -386,7 +386,7 @@ let C = {
                                     name: L,
                                     readonly: !1,
                                     config: A(y({}, t.config), {
-                                        effects: P,
+                                        effects: k,
                                         stillFrames: R
                                     })
                                 })),
@@ -420,7 +420,7 @@ let C = {
                                 }, t)
                             })
                         })]
-                    }), P.some(e => {
+                    }), k.some(e => {
                         var t;
                         return (null != (t = e.randomizedSources) ? t : []).length > 0
                     }) && (0, a.jsxs)("div", {
@@ -461,10 +461,10 @@ let C = {
                             variant: "critical-secondary",
                             text: "Clear Assets",
                             onClick: () => {
-                                k([]), D(C)
+                                P([]), D(C)
                             }
                         })
-                    }), P.map((e, t) => (0, a.jsxs)("div", {
+                    }), k.map((e, t) => (0, a.jsxs)("div", {
                         className: f.ec,
                         children: [(0, a.jsxs)("div", {
                             className: f.D1,
@@ -505,7 +505,7 @@ let C = {
                                     value: e.start,
                                     className: f.hF,
                                     onChange: e => {
-                                        k(n => {
+                                        P(n => {
                                             let a = [...n],
                                                 l = n[t];
                                             return l.start = +e.target.value, a[t] = l, a
@@ -523,7 +523,7 @@ let C = {
                                     value: e.duration,
                                     className: f.hF,
                                     onChange: e => {
-                                        k(n => {
+                                        P(n => {
                                             let a = [...n],
                                                 l = n[t];
                                             return l.duration = +e.target.value, a[t] = l, a
@@ -544,7 +544,7 @@ let C = {
                                     checked: e.loop,
                                     className: f.OO,
                                     onChange: e => {
-                                        k(n => {
+                                        P(n => {
                                             let a = [...n],
                                                 l = n[t];
                                             return l.loop = e.target.checked, a[t] = l, a
@@ -562,7 +562,7 @@ let C = {
                                         value: e.loopDelay,
                                         className: f.hF,
                                         onChange: e => {
-                                            k(n => {
+                                            P(n => {
                                                 let a = [...n],
                                                     l = n[t];
                                                 return l.loopDelay = +e.target.value, a[t] = l, a
@@ -583,7 +583,7 @@ let C = {
                                 onChange: e => {
                                     let n;
                                     null != (n = F(e)) && (0, x.Mz)(n, e => {
-                                        k(a => {
+                                        P(a => {
                                             let l = [...a],
                                                 r = a[t];
                                             if (null == r) return a;
@@ -610,7 +610,7 @@ let C = {
                                 variant: "critical-secondary",
                                 text: "Remove Layer",
                                 onClick: () => {
-                                    k(t => t.filter(t => t !== e))
+                                    P(t => t.filter(t => t !== e))
                                 }
                             })]
                         })]

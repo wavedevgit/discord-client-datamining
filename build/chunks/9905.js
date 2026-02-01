@@ -1,6 +1,6 @@
 /** chunk id: 9905, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    J: () => h
+    J: () => p
 });
 var r = n(627968),
     l = n(64700),
@@ -26,24 +26,24 @@ let d = e => {
             })
         })
     },
-    h = l.memo(function(e) {
+    p = l.memo(function(e) {
         var t, n;
         let {
             item: l
-        } = e, h = null, p = !1, g = (0, i.bG)([o.A], () => o.A.getGuild(l.guild_id));
-        if (null != l.icon_name) h = (0, r.jsx)("img", {
+        } = e, p = null, h = !1, g = (0, i.bG)([o.A], () => o.A.getGuild(l.guild_id));
+        if (null != l.icon_name) p = (0, r.jsx)("img", {
             alt: "",
             src: c.rr[(0, c.yI)(l.icon_name)]
         });
         else if (null != l.other_user) {
             let e = l.other_user instanceof a.A ? l.other_user : new a.A(l.other_user),
                 n = null != (t = e.globalName) ? t : e.username;
-            h = (0, r.jsx)("img", {
+            p = (0, r.jsx)("img", {
                 alt: n,
                 className: u.Sl,
                 src: e.getAvatarURL(void 0, 40)
-            }), p = !0
-        } else h = null != l.icon_url ? (0, r.jsx)("img", {
+            }), h = !0
+        } else p = null != l.icon_url ? (0, r.jsx)("img", {
             alt: null != (n = null == g ? void 0 : g.name) ? n : "",
             className: u.Sl,
             src: l.icon_url
@@ -63,10 +63,10 @@ let d = e => {
                 className: u.dK,
                 children: (0, r.jsx)("div", {
                     className: u.ZS,
-                    style: p ? void 0 : {
+                    style: h ? void 0 : {
                         backgroundColor: (0, c.Pm)(l)
                     },
-                    children: h
+                    children: p
                 })
             }), (0, r.jsx)(d, {
                 mask: f

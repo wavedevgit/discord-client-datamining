@@ -12,8 +12,8 @@ var r = n(627968),
     c = n(110259),
     u = n(311907),
     d = n(827734),
-    h = n(397927),
-    p = n(442433),
+    p = n(397927),
+    h = n(442433),
     g = n(793574),
     f = n(688810),
     m = n(139286),
@@ -21,9 +21,9 @@ var r = n(627968),
     A = n(267102),
     y = n(342296),
     O = n(961350),
-    _ = n(696451),
-    j = n(562153),
-    x = n(105530),
+    j = n(696451),
+    x = n(562153),
+    _ = n(105530),
     v = n(806931),
     E = n(750201);
 
@@ -69,19 +69,19 @@ let I = l.memo(function(e) {
         } = e;
         return (0, r.jsxs)("div", {
             className: E.FS,
-            children: [s ? (0, r.jsx)(h.KTN, {
+            children: [s ? (0, r.jsx)(p.KTN, {
                 size: "lg",
                 className: E.Q6,
                 color: d.A.unsafe_rawColors.RED_400.css
-            }) : null, a ? (0, r.jsx)(h.G3N, {
+            }) : null, a ? (0, r.jsx)(p.G3N, {
                 size: "lg",
                 className: E.Q6
-            }) : null, (0, r.jsx)(h.Text, {
+            }) : null, (0, r.jsx)(p.Text, {
                 className: E.Qq,
                 variant: "text-sm/normal",
                 color: "text-strong",
-                children: j.Ay.getName(t, n, l)
-            }), i ? (0, r.jsx)(h._Jp, {
+                children: x.Ay.getName(t, n, l)
+            }), i ? (0, r.jsx)(p._Jp, {
                 className: E.EH,
                 color: d.A.unsafe_rawColors.GUILD_BOOSTING_PINK
             }) : null]
@@ -99,15 +99,15 @@ let I = l.memo(function(e) {
             blocked: c,
             ignored: u,
             rtsState: d
-        } = n, p = d === x.zF.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK, g = d === x.zF.REQUESTED_TO_SPEAK || p;
+        } = n, h = d === _.zF.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK, g = d === _.zF.REQUESTED_TO_SPEAK || h;
         return (0, r.jsxs)(r.Fragment, {
             children: [(0, r.jsxs)("div", {
                 className: E.H,
-                children: [g && (0, r.jsx)(h.E7M, {
+                children: [g && (0, r.jsx)(p.E7M, {
                     size: "md",
                     color: "currentColor",
                     className: s()(E.Kk, {
-                        [E.MD]: p
+                        [E.MD]: h
                     })
                 }), (0, r.jsx)("img", {
                     src: null != (t = o.getAvatarURL(i.guild_id, 56, !1)) ? t : void 0,
@@ -137,29 +137,29 @@ let I = l.memo(function(e) {
         } = e, {
             user: a,
             blocked: d
-        } = t, j = i.getGuildId(), x = O.default.getId(), {
+        } = t, x = i.getGuildId(), _ = O.default.getId(), {
             newestAnalyticsLocation: I
-        } = (0, f.Ay)(g.A.AUDIENCE_TILE), T = (0, A.Us)(), P = (0, u.bG)([_.Ay], () => {
+        } = (0, f.Ay)(g.A.AUDIENCE_TILE), T = (0, A.Us)(), P = (0, u.bG)([j.Ay], () => {
             var e;
-            return null != j && (null == (e = _.Ay.getMember(j, a.id)) ? void 0 : e.premiumSince) != null
-        }, [j, a.id]), w = l.useRef(null);
-        o()(null != j, "Channel cannot be guildless");
+            return null != x && (null == (e = j.Ay.getMember(x, a.id)) ? void 0 : e.premiumSince) != null
+        }, [x, a.id]), w = l.useRef(null);
+        o()(null != x, "Channel cannot be guildless");
         let R = l.useCallback(e => {
             (0, m.x)({
                 type: c.ImpressionTypes.MENU,
                 name: c.ImpressionNames.CALL_TILE_CONTEXT_MENU,
                 properties: {
                     location: "AudienceTile",
-                    is_tile_owner: a.id === x,
+                    is_tile_owner: a.id === _,
                     tile_type: v.qs.USER
                 }
-            }), (0, p.L3)(e, async () => {
+            }), (0, h.L3)(e, async () => {
                 let {
                     default: e
                 } = await Promise.all([n.e("97262"), n.e("29534"), n.e("55296"), n.e("84841"), n.e("31885")]).then(n.bind(n, 107632));
                 return t => (0, r.jsx)(e, S(C({}, t), {
                     user: a,
-                    guildId: j,
+                    guildId: x,
                     channel: i,
                     showMediaItems: !0,
                     showStageChannelItems: !0,
@@ -172,14 +172,14 @@ let I = l.memo(function(e) {
             }, {
                 context: T
             })
-        }, [a, x, T, j, i, I]);
+        }, [a, _, T, x, i, I]);
         return (0, r.jsx)(y.A, {
             targetElementRef: w,
             user: a,
             guildId: i.guild_id,
             channelId: i.id,
             clickTrap: !0,
-            children: e => (0, r.jsx)(h.DUT, S(C({
+            children: e => (0, r.jsx)(p.DUT, S(C({
                 innerRef: w,
                 className: s()(E.iA, {
                     [E.wP]: P || d,
@@ -189,7 +189,7 @@ let I = l.memo(function(e) {
             }, e), {
                 children: (0, r.jsx)(N, {
                     participant: t,
-                    guildId: j,
+                    guildId: x,
                     channel: i,
                     isPremium: P
                 })

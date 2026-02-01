@@ -1,13 +1,13 @@
-/** chunk id: 352694, original params: e,t,i (module,exports,require) **/
-i.d(t, {
-    S: () => u
+/** chunk id: 352694, original params: t,e,i (module,exports,require) **/
+i.d(e, {
+    S: () => a
 });
 var n = i(419954),
     l = i(780964),
     s = i(302871),
     r = i(794126),
-    a = i(985018);
-let u = (0, n.zZ)(l.X.APPEARANCE_THEME_CATEGORY, {
-    useSubnavLabel: () => a.intl.string(a.t.Ksh3ik),
+    u = i(985018);
+let a = (0, n.zZ)(l.X.APPEARANCE_THEME_CATEGORY, {
+    useSubnavLabel: () => u.intl.string(u.t.Ksh3ik),
     buildLayout: () => [r.v, s.u]
 })

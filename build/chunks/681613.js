@@ -14,8 +14,8 @@ var r = n(627968),
     p = n(636585),
     h = n(427262),
     g = n(652215),
-    f = n(985018),
-    m = n(239997);
+    m = n(985018),
+    f = n(239997);
 
 function A(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
@@ -40,47 +40,47 @@ function _(e) {
 }
 let b = {
     [g.g_B.NOW_PLAYING]: {
-        single: (e, t) => f.intl.format(f.t.NEckza, {
+        single: (e, t) => m.intl.format(m.t.NEckza, {
             user1: e.username,
             user1Hook: () => t(e)
         }),
-        double: (e, t, n) => f.intl.format(f.t["6uWulc"], {
+        double: (e, t, n) => m.intl.format(m.t["6uWulc"], {
             user1: e.username,
             user1Hook: () => n(e),
             user2: t.username,
             user2Hook: () => n(t)
         }),
-        other: e => f.intl.format(f.t["8fMgRU"], {
+        other: e => m.intl.format(m.t["8fMgRU"], {
             count: e
         })
     },
     [g.g_B.RECENTLY_PLAYED]: {
-        single: (e, t) => f.intl.format(f.t["nB/JNB"], {
+        single: (e, t) => m.intl.format(m.t["nB/JNB"], {
             user1: e.username,
             user1Hook: () => t(e)
         }),
-        double: (e, t, n) => f.intl.format(f.t.AZCcHU, {
+        double: (e, t, n) => m.intl.format(m.t.AZCcHU, {
             user1: e.username,
             user1Hook: () => n(e),
             user2: t.username,
             user2Hook: () => n(t)
         }),
-        other: e => f.intl.format(f.t.yNuaTU, {
+        other: e => m.intl.format(m.t.yNuaTU, {
             count: e
         })
     },
     [g.g_B.EVER_PLAYED]: {
-        single: (e, t) => f.intl.format(f.t.Fecf3N, {
+        single: (e, t) => m.intl.format(m.t.Fecf3N, {
             user1: e.username,
             user1Hook: () => t(e)
         }),
-        double: (e, t, n) => f.intl.format(f.t["0LiGbJ"], {
+        double: (e, t, n) => m.intl.format(m.t["0LiGbJ"], {
             user1: e.username,
             user1Hook: () => n(e),
             user2: t.username,
             user2Hook: () => n(t)
         }),
-        other: e => f.intl.format(f.t.Yx1rjU, {
+        other: e => m.intl.format(m.t.Yx1rjU, {
             count: e
         })
     }
@@ -100,7 +100,7 @@ class E extends i.PureComponent {
                 var n, i;
                 return (0, r.jsx)("span", (n = _({
                     ref: this.activityDiscordTagRef,
-                    className: m.Xh
+                    className: f.Xh
                 }, t), i = i = {
                     children: e.username
                 }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
@@ -125,9 +125,9 @@ class E extends i.PureComponent {
             userInfo: i
         } = e;
         return 0 === i.length ? null : (0, r.jsxs)("div", {
-            className: a()(m.r8, t),
+            className: a()(f.r8, t),
             children: [(0, r.jsx)(p.A, {
-                className: m.Fk,
+                className: f.Fk,
                 users: i.map(e => {
                     let {
                         user: t
@@ -138,18 +138,18 @@ class E extends i.PureComponent {
                 max: 4,
                 renderMoreUsers: this.renderPlayerOverflow
             }), (0, r.jsx)("div", {
-                className: m.h_,
+                className: f.h_,
                 children: this.renderDescription(n, i)
             })]
         })
     }
     constructor(...e) {
         super(...e), A(this, "activityDiscordTagRef", i.createRef()), A(this, "playerAvatarRef", i.createRef()), A(this, "renderUserTooltip", (e, t, n) => (0, r.jsxs)("div", {
-            className: m.YL,
+            className: f.YL,
             children: [(0, r.jsx)("div", {
                 children: h.Ay.getUserTag(e)
             }), (0, r.jsx)(u.Ay, {
-                className: m.ER,
+                className: f.ER,
                 start: t,
                 end: n,
                 location: u.Ay.Locations.ACTIVITY_FEED
@@ -169,8 +169,8 @@ class E extends i.PureComponent {
                     }),
                     children: (0, r.jsx)(o.euF, _({
                         ref: this.playerAvatarRef,
-                        className: a()(m.jd, {
-                            [m.hC]: !i
+                        className: a()(f.jd, {
+                            [f.hC]: !i
                         }),
                         src: e.getAvatarURL(void 0, 32),
                         "aria-label": e.username,
@@ -179,7 +179,7 @@ class E extends i.PureComponent {
                 })
             }, e.id)
         }), A(this, "renderPlayerOverflow", (e, t, n) => (0, r.jsx)("div", {
-            className: m.gQ,
+            className: f.gQ,
             children: e
         }, n))
     }

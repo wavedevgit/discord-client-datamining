@@ -14,8 +14,8 @@ var r = n(627968),
     p = n(582754),
     h = n(421380),
     g = n(397927),
-    f = n(73153),
-    m = n(442433),
+    m = n(73153),
+    f = n(442433),
     A = n(92077),
     _ = n(979604),
     b = n(707606),
@@ -532,7 +532,7 @@ let q = () => (0, r.jsx)(B, {
             })
         }
     }];
-class $ extends i.PureComponent {
+class J extends i.PureComponent {
     componentDidMount() {
         window.addEventListener("resize", this.throttledUpdateHeight)
     }
@@ -544,7 +544,7 @@ class $ extends i.PureComponent {
             applications: e
         } = this.props;
         e.forEach(e => {
-            e.finished && f.h.wait(() => {
+            e.finished && m.h.wait(() => {
                 A.Vt(e.applicationId, e.branchId)
             })
         }), window.removeEventListener("resize", this.throttledUpdateHeight), this.isUnmounted = !0
@@ -592,7 +592,7 @@ class $ extends i.PureComponent {
                 },
                 rowProps: {
                     onContextMenu: (e, t) => {
-                        m.L3(e, async () => {
+                        f.L3(e, async () => {
                             let {
                                 default: e
                             } = await n.e("881").then(n.bind(n, 163368));
@@ -643,7 +643,7 @@ class $ extends i.PureComponent {
     }
 }
 
-function J(e, t, n, r) {
+function $(e, t, n, r) {
     return e.reduce((e, i, l) => {
         let {
             applicationId: a,
@@ -662,8 +662,8 @@ function J(e, t, n, r) {
     }, [])
 }
 let ee = (0, E.A)(c.Ay.connectStores([O.A, T.A, j.A, C.A, x.A], () => ({
-    applications: [...J(j.A.activeItems, !1, O.A, T.A), ...J(j.A.finishedItems, !0, O.A, T.A)],
+    applications: [...$(j.A.activeItems, !1, O.A, T.A), ...$(j.A.finishedItems, !0, O.A, T.A)],
     paused: j.A.paused,
     isFocused: x.A.isFocused(),
     theme: C.A.theme
-}))((0, b.A)($)))
+}))((0, b.A)(J)))

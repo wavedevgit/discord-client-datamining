@@ -1,6 +1,6 @@
 /** chunk id: 889752, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => h
+    A: () => p
 });
 var r = n(64700),
     l = n(311907),
@@ -12,7 +12,7 @@ var r = n(64700),
     u = n(652215),
     d = n(957173);
 
-function h(e) {
+function p(e) {
     let t = (0, l.bG)([o.A, s.A, c.default, a.Ay], () => {
         let t = o.A.getGuild(e);
         if ((null == t ? void 0 : t.features.has(u.GuildFeatures.HUB)) !== !0 || !0 === s.A.hasViewedPrompt(d.X.REAL_NAME_PROMPT, t.id)) return null;

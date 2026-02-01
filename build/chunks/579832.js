@@ -1,5 +1,5 @@
-/** chunk id: 579832, original params: t,e,s (module,exports,require) **/
-var n = {
+/** chunk id: 579832, original params: e,t,n (module,exports,require) **/
+var i = {
     "./bg.png": "365627",
     "./cs.png": "408100",
     "./da.png": "903723",
@@ -33,17 +33,17 @@ var n = {
     "./zh-TW.png": "23880"
 };
 
-function r(t) {
-    return s(a(t))
+function s(e) {
+    return n(r(e))
 }
 
-function a(t) {
-    if (!s.o(n, t)) {
-        var e = Error("Cannot find module '" + t + "'");
-        throw e.code = "MODULE_NOT_FOUND", e
+function r(e) {
+    if (!n.o(i, e)) {
+        var t = Error("Cannot find module '" + e + "'");
+        throw t.code = "MODULE_NOT_FOUND", t
     }
-    return n[t]
+    return i[e]
 }
-r.keys = function() {
-    return Object.keys(n)
-}, r.resolve = a, t.exports = r, r.id = 579832
+s.keys = function() {
+    return Object.keys(i)
+}, s.resolve = r, e.exports = s, s.id = 579832

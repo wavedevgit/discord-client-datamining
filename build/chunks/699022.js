@@ -11,8 +11,8 @@ var r = n(627968),
     c = n(572164),
     u = n(399925),
     d = n(670470),
-    h = n(709562),
-    p = n(616356),
+    p = n(709562),
+    h = n(616356),
     g = n(961350),
     f = n(313961),
     m = n(384059),
@@ -25,8 +25,8 @@ function O(e) {
         channel: t
     } = e, {
         parentAnalyticsLocation: n
-    } = (0, a.Ay)(), O = (0, i.bG)([f.A], () => f.A.getSelectedParticipant(t.id)), _ = (null == O ? void 0 : O.type) === b.lp.STREAM, j = (0, i.bG)([p.A], () => _ ? p.A.getActiveStreamForStreamKey(O.id) : null), {
-        ignoreSenderPreference: x
+    } = (0, a.Ay)(), O = (0, i.bG)([f.A], () => f.A.getSelectedParticipant(t.id)), j = (null == O ? void 0 : O.type) === b.lp.STREAM, x = (0, i.bG)([h.A], () => j ? h.A.getActiveStreamForStreamKey(O.id) : null), {
+        ignoreSenderPreference: _
     } = d.A.useExperiment({
         location: "ActionBarClipsButton"
     }, {
@@ -35,9 +35,9 @@ function O(e) {
         viewerClippingAllowed: v,
         isAtMaxSavingClipOperations: E
     } = (0, i.cf)([o.A], () => ({
-        viewerClippingAllowed: null != j && (o.A.isViewerClippingAllowedForUser(j.ownerId) || x),
+        viewerClippingAllowed: null != x && (o.A.isViewerClippingAllowedForUser(x.ownerId) || _),
         isAtMaxSavingClipOperations: o.A.getIsAtMaxSaveClipOperations()
-    })), C = (0, c.Et)(), S = (null == j ? void 0 : j.ownerId) === g.default.getId(), I = !C || !(S || v) || E || null == O, N = l.useCallback(e => {
+    })), C = (0, c.Et)(), S = (null == x ? void 0 : x.ownerId) === g.default.getId(), I = !C || !(S || v) || E || null == O, N = l.useCallback(e => {
         var t, n;
         return (0, r.jsx)(s.xpe, (t = function(e) {
             for (var t = 1; t < arguments.length; t++) {
@@ -69,14 +69,14 @@ function O(e) {
             Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
         }), t))
     }, []);
-    return (0, r.jsx)(h.A, {
+    return (0, r.jsx)(p.A, {
         className: y.g,
         onClick: () => {
             I || ((0, m.X)(n, m.O.CLIP), S ? (0, u.l0)() : (0, u.yd)(O.id))
         },
         disabled: I,
         iconComponent: N,
-        label: null == j ? A.intl.string(A.t.eg5qtV) : S || v ? C ? E ? void 0 : A.intl.string(A.t.U4URzP) : A.intl.string(A.t.wSS1yN) : A.intl.string(A.t.aRifJX),
+        label: null == x ? A.intl.string(A.t.eg5qtV) : S || v ? C ? E ? void 0 : A.intl.string(A.t.U4URzP) : A.intl.string(A.t.wSS1yN) : A.intl.string(A.t.aRifJX),
         grow: !1
     })
 }

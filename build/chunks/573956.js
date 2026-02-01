@@ -1,6 +1,6 @@
 /** chunk id: 573956, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    G: () => x
+    G: () => _
 });
 var r = n(627968),
     l = n(64700),
@@ -11,8 +11,8 @@ var r = n(627968),
     c = n(442433),
     u = n(826673),
     d = n(591552),
-    h = n(202776),
-    p = n(454058),
+    p = n(202776),
+    h = n(454058),
     g = n(976860),
     f = n(222823),
     m = n(661191),
@@ -20,16 +20,16 @@ var r = n(627968),
     A = n(652793),
     y = n(652215),
     O = n(746080),
-    _ = n(790782),
-    j = n(985018);
+    j = n(790782),
+    x = n(985018);
 
-function x(e) {
+function _(e) {
     let {
         guild: t,
-        selected: x
-    } = e, v = (0, h.A)(t), E = (0, u.JZ)(s.M.CHANNEL_BROWSER_NEW_BADGE_NUX), C = (0, i.yK)([p.A], () => Array.from(p.A.getNewChannelIds(t.id)).filter(e => p.A.shouldIndicateNewChannel(t.id, e))), S = (0, i.bG)([f.Ay], () => f.Ay.hasUnread(t.id, _.P.GUILD_ONBOARDING_QUESTION)), I = C.length > b.rR, N = (0, i.bG)([d.A, f.Ay], () => {
+        selected: _
+    } = e, v = (0, p.A)(t), E = (0, u.JZ)(s.M.CHANNEL_BROWSER_NEW_BADGE_NUX), C = (0, i.yK)([h.A], () => Array.from(h.A.getNewChannelIds(t.id)).filter(e => h.A.shouldIndicateNewChannel(t.id, e))), S = (0, i.bG)([f.Ay], () => f.Ay.hasUnread(t.id, j.P.GUILD_ONBOARDING_QUESTION)), I = C.length > b.rR, N = (0, i.bG)([d.A, f.Ay], () => {
         let e = d.A.lastFetchedAt(t.id),
-            n = f.Ay.lastMessageId(t.id, _.P.GUILD_ONBOARDING_QUESTION);
+            n = f.Ay.lastMessageId(t.id, j.P.GUILD_ONBOARDING_QUESTION);
         if (null == n) return !1;
         let r = m.default.extractTimestamp(n);
         return null != e && e > r
@@ -74,9 +74,9 @@ function x(e) {
             }
         })
     }, [t]), w = null;
-    return E && !S && !I || x || N || (w = (0, r.jsx)(o.LpS, {
+    return E && !S && !I || _ || N || (w = (0, r.jsx)(o.LpS, {
         color: a.A.colors.BADGE_BACKGROUND_BRAND.css,
-        text: j.intl.string(j.t.y2b7CA)
+        text: x.intl.string(x.t.y2b7CA)
     })), (0, r.jsx)(A.G, {
         id: "channels-".concat(t.id),
         renderIcon: e => (0, r.jsx)(o.kiI, {
@@ -84,8 +84,8 @@ function x(e) {
             color: "currentColor",
             className: e
         }),
-        text: v ? j.intl.string(j.t.h9mGOP) : j.intl.string(j.t.et6wav),
-        selected: x,
+        text: v ? x.intl.string(x.t.h9mGOP) : x.intl.string(x.t.et6wav),
+        selected: _,
         onClick: T,
         onContextMenu: P,
         trailing: w

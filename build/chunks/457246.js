@@ -32,10 +32,10 @@ function d(e) {
                 name: u.intl.string(u.t.JEmsap)
             }
         }, [t, n]),
-        h = l.useCallback(e => {
+        p = l.useCallback(e => {
             null != t && a.A.changeCallRegion(t.channelId, e.id)
         }, [t]),
-        p = l.useMemo(() => null == n || 0 === n.length ? null : n.map(e => {
+        h = l.useMemo(() => null == n || 0 === n.length ? null : n.map(e => {
             let {
                 id: t,
                 name: n
@@ -45,13 +45,13 @@ function d(e) {
                 group: "region-select",
                 label: n,
                 checked: t === d.id,
-                action: () => h(e)
+                action: () => p(e)
             }, "region-".concat(t))
-        }), [n, d, h]);
+        }), [n, d, p]);
     return (0, r.jsx)(s.Drp, {
         id: "region-select",
         label: u.intl.string(u.t.w8gMqh),
         subtext: d.name,
-        children: p
+        children: h
     })
 }

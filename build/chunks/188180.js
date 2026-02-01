@@ -3,37 +3,37 @@ n.d(t, {
     X: () => f
 });
 var r = n(627968),
-    l = n(64700),
-    o = n(503698),
-    a = n.n(o),
-    i = n(837381),
+    o = n(64700),
+    a = n(503698),
+    i = n.n(a),
+    l = n(837381),
     c = n(397927),
     s = n(963935),
     u = n(894858),
-    d = n(942596),
-    b = n(362205),
-    y = n(71862);
+    _ = n(942596),
+    d = n(362205),
+    b = n(71862);
 
 function p(e) {
     var t, n;
     let {
-        tag: l,
-        onClick: o,
-        active: i,
+        tag: o,
+        onClick: a,
+        active: l,
         node: s,
         visibleContent: u,
-        panelKey: b,
+        panelKey: d,
         listItemProps: p,
         children: f
     } = e, {
-        icon: g,
-        StronglyDiscouragedCustomComponent: m,
-        trailing: h,
-        useTitle: j
-    } = s, O = null == j ? void 0 : j();
-    return (0, r.jsxs)(l, {
-        "data-settings-sidebar-item": b,
-        className: y.DB,
+        icon: y,
+        StronglyDiscouragedCustomComponent: g,
+        trailing: m,
+        useTitle: O
+    } = s, h = null == O ? void 0 : O();
+    return (0, r.jsxs)(o, {
+        "data-settings-sidebar-item": d,
+        className: b.DB,
         children: [(0, r.jsxs)(c.DUT, (t = function(e) {
             for (var t = 1; t < arguments.length; t++) {
                 var n = null != arguments[t] ? arguments[t] : {},
@@ -52,27 +52,27 @@ function p(e) {
             }
             return e
         }({}, p), n = n = {
-            className: a()(y.AS, {
-                [y.vu]: i
+            className: i()(b.AS, {
+                [b.vu]: l
             }),
-            onClick: o,
-            children: [null != m ? (0, r.jsx)(m, {}) : (0, r.jsxs)("div", {
-                className: y.Ly,
-                children: [(0, r.jsx)(g, {
+            onClick: a,
+            children: [null != g ? (0, r.jsx)(g, {}) : (0, r.jsxs)("div", {
+                className: b.Ly,
+                children: [(0, r.jsx)(y, {
                     color: "currentColor",
                     size: "refresh_sm",
-                    className: y.Kk
+                    className: b.Kk
                 }), (0, r.jsx)(c.Text, {
                     variant: "text-md/medium",
                     color: "currentColor",
-                    children: O
+                    children: h
                 })]
-            }), null != h && (0, r.jsx)("div", {
-                className: y.Ly,
-                children: (0, r.jsx)(d.Z, {
-                    trailing: h,
+            }), null != m && (0, r.jsx)("div", {
+                className: b.Ly,
+                children: (0, r.jsx)(_.Z, {
+                    trailing: m,
                     visibleContent: u,
-                    isSelected: i
+                    isSelected: l
                 })
             })]
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
@@ -92,39 +92,39 @@ function f(e) {
     let {
         node: t,
         visibleContent: n,
-        hoisted: o = !1
-    } = e, a = l.useMemo(() => t.layout[0], [t]), c = u.A.useField("currentPanelKey"), d = null != c && c === (null == a ? void 0 : a.key), y = l.useMemo(() => {
-        if (null == a || !(0, s.Iu)(a.layout)) return null;
-        let e = a.layout.filter(e => null != e.useTitle || null != e.useSubnavLabel);
+        hoisted: a = !1
+    } = e, i = o.useMemo(() => t.layout[0], [t]), c = u.A.useField("currentPanelKey"), _ = null != c && c === (null == i ? void 0 : i.key), b = o.useMemo(() => {
+        if (null == i || !(0, s.Iu)(i.layout)) return null;
+        let e = i.layout.filter(e => null != e.useTitle || null != e.useSubnavLabel);
         return e.length > 1 ? e : null
-    }, [a]), f = null != a ? () => {
-        let e = c === a.key && null != y ? y[0].key : a.key;
+    }, [i]), f = null != i ? () => {
+        let e = c === i.key && null != b ? b[0].key : i.key;
         u.A.setState({
             requestedTargetKey: e,
             showNavigationMobile: !1
         })
-    } : t.onClick, g = l.useMemo(() => d && null != y ? (0, r.jsx)(b.A, {
-        categories: y
-    }) : null, [d, y]), m = o ? "li" : "div";
-    return o ? (0, r.jsx)(p, {
-        tag: m,
-        panelKey: null == a ? void 0 : a.key,
+    } : t.onClick, y = o.useMemo(() => _ && null != b ? (0, r.jsx)(d.A, {
+        categories: b
+    }) : null, [_, b]), g = a ? "li" : "div";
+    return a ? (0, r.jsx)(p, {
+        tag: g,
+        panelKey: null == i ? void 0 : i.key,
         onClick: f,
-        active: d,
+        active: _,
         node: t,
         visibleContent: n,
-        children: g
-    }) : (0, r.jsx)(i.tG, {
+        children: y
+    }) : (0, r.jsx)(l.tG, {
         id: t.key,
         children: e => (0, r.jsx)(p, {
-            tag: m,
-            panelKey: null == a ? void 0 : a.key,
+            tag: g,
+            panelKey: null == i ? void 0 : i.key,
             onClick: f,
-            active: d,
+            active: _,
             node: t,
             visibleContent: n,
             listItemProps: e,
-            children: g
+            children: y
         })
     })
 }

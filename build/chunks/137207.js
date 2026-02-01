@@ -4,7 +4,7 @@ n.d(t, {
     G6: () => p,
     H0: () => P,
     Vj: () => R,
-    W5: () => C,
+    W5: () => m,
     nV: () => S,
     s6: () => N,
     wu: () => f
@@ -12,8 +12,8 @@ n.d(t, {
 var r = n(562465),
     i = n(73153),
     l = n(58149),
-    o = n(71393),
-    a = n(576705),
+    a = n(71393),
+    o = n(576705),
     s = n(403362),
     c = n(661191),
     u = n(615550),
@@ -111,7 +111,7 @@ async function P(e) {
     return Array.isArray(t.body) ? t.body.map(O) : []
 }
 async function y(e, t, n) {
-    a.A.can(_.xBc.MANAGE_MESSAGES, t) && await r.Bo.post({
+    o.A.can(_.xBc.MANAGE_MESSAGES, t) && await r.Bo.post({
         url: _.Rsh.GUILD_AUTOMOD_ALERT_ACTION(t.guild_id),
         body: {
             message_id: e,
@@ -122,9 +122,9 @@ async function y(e, t, n) {
     })
 }
 
-function C(e, t, n) {
-    let i = o.A.getGuild(e);
-    null != i && a.A.can(_.xBc.MANAGE_GUILD, i) && (0, d.rI)(() => {
+function m(e, t, n) {
+    let i = a.A.getGuild(e);
+    null != i && o.A.can(_.xBc.MANAGE_GUILD, i) && (0, d.rI)(() => {
         (0, l.zV)(_.HAw.GUILD_AUTOMOD_FEEDBACK, {
             feedback_type: u.Gb.MENTION_RAID_REMOVE_RESTRICTION,
             decision_id: t

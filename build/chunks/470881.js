@@ -15,21 +15,21 @@ var i = n(681154),
 function d(e) {
     let {
         item: t
-    } = e, n = "contentInventory" === t.data.kind ? t.data.content : null, d = null == n ? void 0 : n.extra, p = null == n ? void 0 : n.author_id, h = null == n ? void 0 : n.content_type, g = (null == d ? void 0 : d.type) === "played_game_extra" || (null == d ? void 0 : d.type) === "launched_activity_extra" ? d.application_id : void 0, f = (0, s.h)(g), m = (0, l.bG)([o.default], () => null != p ? o.default.getUser(p) : null, [p]), A = h === i.ContentInventoryEntryType.TOP_GAME, _ = null == f ? void 0 : f.getIconURL(240);
-    return (null == d ? void 0 : d.type) !== "played_game_extra" || "contentInventory" !== t.data.kind || null == f || null == m || null == _ ? null : (0, r.jsx)("div", {
+    } = e, n = "contentInventory" === t.data.kind ? t.data.content : null, d = null == n ? void 0 : n.extra, p = null == n ? void 0 : n.author_id, h = null == n ? void 0 : n.content_type, g = (null == d ? void 0 : d.type) === "played_game_extra" || (null == d ? void 0 : d.type) === "launched_activity_extra" ? d.application_id : void 0, m = (0, s.h)(g), f = (0, l.bG)([o.default], () => null != p ? o.default.getUser(p) : null, [p]), A = h === i.ContentInventoryEntryType.TOP_GAME, _ = null == m ? void 0 : m.getIconURL(240);
+    return (null == d ? void 0 : d.type) !== "played_game_extra" || "contentInventory" !== t.data.kind || null == m || null == f || null == _ ? null : (0, r.jsx)("div", {
         className: u.kL,
         children: (0, r.jsxs)("div", {
             className: u.Nr,
             children: [(0, r.jsx)("img", {
                 src: _,
-                alt: f.name,
+                alt: m.name,
                 className: u.Gt
             }), (0, r.jsxs)("div", {
                 className: u.Vx,
                 children: [(0, r.jsx)(a.Text, {
                     variant: "text-md/semibold",
                     color: "text-strong",
-                    children: f.name
+                    children: m.name
                 }), A && (0, r.jsx)("div", {
                     className: u.qS,
                     children: (0, r.jsx)(a.Text, {

@@ -14,8 +14,8 @@ var r = n(627968),
     p = n(763754),
     h = n(491182),
     g = n(860227),
-    f = n(538355),
-    m = n(699352),
+    m = n(538355),
+    f = n(699352),
     A = n(715628),
     _ = n(752636),
     b = n(675722),
@@ -77,7 +77,7 @@ let N = i.memo(function(e) {
         content: B,
         hasSpoilerEmbeds: H,
         hasBailedAst: F
-    } = (0, f.A)(N, {
+    } = (0, m.A)(N, {
         hideSimpleEmbedContent: P,
         allowList: G || V,
         allowHeading: G || V,
@@ -107,7 +107,7 @@ let N = i.memo(function(e) {
             hideTimestamp: !0,
             hideGuildTag: !1
         }),
-        childrenAccessories: e.hideAccessories ? void 0 : (0, m.J)(e, H, F),
+        childrenAccessories: e.hideAccessories ? void 0 : (0, f.J)(e, H, F),
         childrenMessageContent: (0, A.A)(e, B),
         childrenSystemMessage: (0, b.A)((i = C({}, e), l = l = {
             disableInteraction: U

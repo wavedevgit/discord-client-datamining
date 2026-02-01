@@ -1,5 +1,5 @@
-/** chunk id: 143177, original params: e,t,i (module,exports,require) **/
-i.d(t, {
+/** chunk id: 143177, original params: t,e,i (module,exports,require) **/
+i.d(e, {
     Y: () => r
 });
 var n = i(419954),
@@ -9,7 +9,7 @@ let r = (0, n.zD)(s.X.AD_OVERRIDE, {
     useTitle: () => "Always Deliver Ads",
     useSubtitle: () => "Makes the user targetable for all active ads.",
     useValue: () => l.HZ.useSetting(),
-    setValue: e => {
-        l.HZ.updateSetting(e)
+    setValue: t => {
+        l.HZ.updateSetting(t)
     }
 })

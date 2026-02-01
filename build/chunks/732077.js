@@ -11,8 +11,8 @@ var r = n(627968),
     c = n(734057),
     u = n(607567),
     d = n(403362),
-    h = n(108197),
-    p = n(985018),
+    p = n(108197),
+    h = n(985018),
     g = n(316945);
 let f = l.memo(function(e) {
     let {
@@ -33,7 +33,7 @@ let f = l.memo(function(e) {
         className: g.kL,
         children: (0, r.jsxs)("ul", {
             role: "group",
-            "aria-label": p.intl.formatToPlainString(p.t.EiyIi6, {
+            "aria-label": h.intl.formatToPlainString(h.t.EiyIi6, {
                 channelName: t.name
             }),
             children: [(0, r.jsx)("div", {
@@ -43,7 +43,7 @@ let f = l.memo(function(e) {
                 style: {
                     bottom: ("cozy" === m ? 28 : 24) + A
                 }
-            }), b.map((e, t) => (0, r.jsx)(h.A, {
+            }), b.map((e, t) => (0, r.jsx)(p.A, {
                 thread: e,
                 isSelectedChannel: (null == n ? void 0 : n.id) === e.id,
                 isSelectedVoice: l === e.id,

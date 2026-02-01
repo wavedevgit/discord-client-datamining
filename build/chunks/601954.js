@@ -1,14 +1,14 @@
-/** chunk id: 601954, original params: e,t,i (module,exports,require) **/
-i.d(t, {
+/** chunk id: 601954, original params: t,e,i (module,exports,require) **/
+i.d(e, {
     j: () => o
 });
 var n = i(419954),
     l = i(780964),
     s = i(440774),
     r = i(708399),
-    a = i(37987),
-    u = i(985018);
+    u = i(37987),
+    a = i(985018);
 let o = (0, n.zZ)(l.X.CONTENT_AND_SOCIAL_CONNECTED_GAMES_CATEGORY, {
-    useSearchTerms: () => [u.intl.string(u.t.YpCiMt)],
-    buildLayout: () => [s.B, r.I, a.q]
+    useSearchTerms: () => [a.intl.string(a.t.YpCiMt)],
+    buildLayout: () => [s.B, r.I, u.q]
 })

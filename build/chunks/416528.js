@@ -11,8 +11,8 @@ var r = n(627968),
     c = n(311907),
     u = n(990078),
     d = n(397927),
-    h = n(367513),
-    p = n(793574),
+    p = n(367513),
+    h = n(793574),
     g = n(688810),
     f = n(402216),
     m = n(689874),
@@ -20,9 +20,9 @@ var r = n(627968),
     A = n(966597),
     y = n(922281),
     O = n(51082),
-    _ = n(275731),
-    j = n(289552),
-    x = n(246356),
+    j = n(275731),
+    x = n(289552),
+    _ = n(246356),
     v = n(977851),
     E = n(772475),
     C = n(481947),
@@ -65,7 +65,7 @@ function L(e) {
         isChatOpen: n
     } = e, i = l.useRef(null), {
         analyticsLocations: a
-    } = (0, g.Ay)(p.A.VOICE_CHANNEL_HEADER), o = t.id, {
+    } = (0, g.Ay)(h.A.VOICE_CHANNEL_HEADER), o = t.id, {
         voiceParticipantsHidden: u,
         selectedParticipant: O,
         userParticipantCount: C,
@@ -91,7 +91,7 @@ function L(e) {
     }, "current-speaker")), U.push((0, r.jsx)(m.A, {
         className: R.x6,
         channelId: o
-    }, "clips-enabled-indicator")), (null == O ? void 0 : O.type) === P.lp.STREAM && (U.push((0, r.jsx)(_.A, {
+    }, "clips-enabled-indicator")), (null == O ? void 0 : O.type) === P.lp.STREAM && (U.push((0, r.jsx)(j.A, {
         className: R.x6,
         participant: O
     }, "warning")), U.push((0, r.jsx)(b.A, {
@@ -100,13 +100,13 @@ function L(e) {
         participant: O,
         showQuality: !0,
         premiumIndicator: !1
-    }, "live-indicator"))), (null == O ? void 0 : O.type) === P.lp.USER && U.push((0, r.jsx)(j.A, {
+    }, "live-indicator"))), (null == O ? void 0 : O.type) === P.lp.USER && U.push((0, r.jsx)(x.A, {
         className: R.x6,
         userId: O.id
     }, "video-warning")), u && !L && U.push((0, r.jsx)(d.YNO, {
         targetElementRef: i,
         position: "bottom",
-        renderPopout: () => (0, r.jsx)(x.A, {
+        renderPopout: () => (0, r.jsx)(_.A, {
             children: (0, r.jsx)(N.A, {
                 channel: t
             })
@@ -156,7 +156,7 @@ function L(e) {
         className: s()(R.x6, {
             [R.Lt]: n
         }),
-        onClick: () => h.A.toggleParticipantsList(t.id, !S)
+        onClick: () => p.A.toggleParticipantsList(t.id, !S)
     }, "participants-list-button")), w && U.push((0, r.jsx)(v.V, {
         channelId: t.id,
         className: s()(R.x6, {

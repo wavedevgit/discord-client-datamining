@@ -20,14 +20,14 @@ let d = function(e) {
         user: h,
         userIgnored: g
     } = e, {
-        voiceActivityStatusEnabled: f
+        voiceActivityStatusEnabled: m
     } = (0, i.G)({
         location: "StatusText"
     }), {
-        voiceChannel: m
+        voiceChannel: f
     } = (0, a.A)({
         userId: null == h ? void 0 : h.id
-    }), A = f ? m : void 0;
+    }), A = m ? f : void 0;
     return g ? (0, r.jsx)("div", {
         className: u.Q,
         children: c.intl.string(c.t.tFY5Zb)

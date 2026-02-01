@@ -17,14 +17,14 @@ function c(e) {
         disabled: c = !1,
         hideOnClick: u = !0,
         shouldShow: d,
-        forceOpen: h,
-        selected: p = !1
+        forceOpen: p,
+        selected: h = !1
     } = e, g = l.useMemo(() => null == n || c ? null : (0, r.jsx)("div", {
         className: o.SH,
         children: n
     }), [n, c]), f = i ? t : (0, r.jsx)("div", {
         className: s()(o.pm, {
-            [o.wH]: p
+            [o.wH]: h
         }),
         children: t
     });
@@ -34,7 +34,7 @@ function c(e) {
         spacing: 12,
         hideOnClick: u,
         shouldShow: d,
-        forceOpen: h,
+        forceOpen: p,
         ariaHidden: !0,
         asContainer: !i,
         children: f

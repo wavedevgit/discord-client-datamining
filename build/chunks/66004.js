@@ -20,7 +20,7 @@ function m(e) {
         guildId: n,
         userId: m,
         containerDimensions: g
-    } = e, y = (0, a.bG)([o.A], () => o.A.useReducedMotion), [b, _] = l.useState([]), A = b.length < 50;
+    } = e, y = (0, a.bG)([o.A], () => o.A.useReducedMotion), [b, _] = l.useState([]), h = b.length < 50;
     l.useEffect(() => {
         function e(e) {
             let {
@@ -32,7 +32,7 @@ function m(e) {
             } = e;
             if (null != m && m !== l) return;
             let d = null != a && null != s && null != o;
-            if (r === t && !y && A && d) {
+            if (r === t && !y && h && d) {
                 let e = (0, u.Br)(a),
                     r = null != a.id && !a.animated,
                     d = {
@@ -52,8 +52,8 @@ function m(e) {
         return s.h.subscribe("VOICE_CHANNEL_EFFECT_SEND", e), () => {
             s.h.unsubscribe("VOICE_CHANNEL_EFFECT_SEND", e)
         }
-    }, [t, n, m, y, A]);
-    let h = l.useCallback(e => {
+    }, [t, n, m, y, h]);
+    let A = l.useCallback(e => {
         _(t => {
             let n = [...t],
                 r = n.findIndex(t => t.id === e);
@@ -70,7 +70,7 @@ function m(e) {
             children: b.map(e => (0, r.jsx)(d.A, {
                 containerDimensions: g,
                 effect: e,
-                onComplete: h
+                onComplete: A
             }, e.id))
         })
     })

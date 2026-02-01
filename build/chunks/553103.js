@@ -11,8 +11,8 @@ var r = n(512750),
     c = n(998418),
     u = n(568065),
     d = n(652215),
-    h = n(333354),
-    p = n(985018);
+    p = n(333354),
+    h = n(985018);
 
 function g(e, t) {
     var n;
@@ -26,17 +26,17 @@ function g(e, t) {
         A = (0, a.j$)(e, t),
         y = null == m ? void 0 : m.storeRemovalDate,
         O = null != (n = null == g ? void 0 : g.has(d.GuildFeatures.PARTNERED)) && n,
-        _ = A && null != y && !O && b.type === u.b_.POWERUP_ACTIVATED,
-        j = _ ? {
-            title: p.intl.formatToPlainString(h.default.mgoPkU, {
+        j = A && null != y && !O && b.type === u.b_.POWERUP_ACTIVATED,
+        x = j ? {
+            title: h.intl.formatToPlainString(p.default.mgoPkU, {
                 perkName: null == m ? void 0 : m.title
             }),
-            description: p.intl.formatToPlainString(h.default.UT9pkI, {
+            description: h.intl.formatToPlainString(p.default.UT9pkI, {
                 dateString: (0, o.A)(y)
             })
         } : null;
     return {
-        shouldShow: _,
-        notificationConfig: j
+        shouldShow: j,
+        notificationConfig: x
     }
 }

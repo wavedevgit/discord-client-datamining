@@ -41,8 +41,8 @@ var r = n(627968),
     k = n(773669),
     U = n(963307),
     G = n(317525),
-    F = n(309010),
-    V = n(741961),
+    V = n(309010),
+    F = n(741961),
     B = n(287809),
     H = n(977997),
     Y = n(203982),
@@ -149,7 +149,7 @@ let er = z.Ay.getEnableHardwareAcceleration(),
             (0, _.L3)(e, async () => {
                 let {
                     default: e
-                } = await Promise.all([n.e("54809"), n.e("97262"), n.e("3795"), n.e("29534"), n.e("97283"), n.e("33818"), n.e("55296"), n.e("84841"), n.e("2016")]).then(n.bind(n, 107632)), t = H.A.isInChannel(F.A.getVoiceChannelId(), u.id);
+                } = await Promise.all([n.e("54809"), n.e("97262"), n.e("3795"), n.e("29534"), n.e("97283"), n.e("55296"), n.e("84841"), n.e("51444")]).then(n.bind(n, 107632)), t = H.A.isInChannel(V.A.getVoiceChannelId(), u.id);
                 return n => (0, r.jsx)(e, ee(J({}, n), {
                     user: u,
                     guildId: b,
@@ -236,7 +236,7 @@ let er = z.Ay.getEnableHardwareAcceleration(),
             channel: i,
             user: a,
             index: o
-        } = e, s = (0, c.rm)("".concat(o)), l = (0, f.bG)([V.A], () => V.A.isTyping(i.id, a.id)), u = (0, f.bG)([B.default], () => B.default.getCurrentUser()), d = (0, f.bG)([G.A], () => {
+        } = e, s = (0, c.rm)("".concat(o)), l = (0, f.bG)([F.A], () => F.A.isTyping(i.id, a.id)), u = (0, f.bG)([B.default], () => B.default.getCurrentUser()), d = (0, f.bG)([G.A], () => {
             var e;
             return null != t ? null == (e = G.A.getRole(i.guild_id, t)) ? void 0 : e.name : void 0
         }, [i, t]), p = (0, L.r)({

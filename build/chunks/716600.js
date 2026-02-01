@@ -1,6 +1,6 @@
 /** chunk id: 716600, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    t: () => f
+    t: () => m
 });
 var r = n(627968);
 n(64700);
@@ -16,8 +16,8 @@ var i = n(934551),
     h = n(985018),
     g = n(787076);
 
-function f(e) {
-    var t, n, f, m;
+function m(e) {
+    var t, n, m, f;
     let {
         componentId: A,
         promotionId: _,
@@ -28,8 +28,8 @@ function f(e) {
         isLightTheme: I
     } = e, v = "AnnouncementModalVariant1_".concat(A), {
         onClose: S
-    } = E, C = null != (t = null == (n = b.button) ? void 0 : n.copy) ? t : h.intl.string(h.t.YScQSF), N = (null == (f = b.button) ? void 0 : f.buttonAction) === l.dz.OPEN_MARKETING_PAGE ? "jump_to_mkt_button" : "get_nitro_button", T = (0, d.h)({
-        buttonAction: null == (m = b.button) ? void 0 : m.buttonAction,
+    } = E, C = null != (t = null == (n = b.button) ? void 0 : n.copy) ? t : h.intl.string(h.t.YScQSF), N = (null == (m = b.button) ? void 0 : m.buttonAction) === l.dz.OPEN_MARKETING_PAGE ? "jump_to_mkt_button" : "get_nitro_button", T = (0, d.h)({
+        buttonAction: null == (f = b.button) ? void 0 : f.buttonAction,
         analyticsLocations: O,
         analyticsLocation: y,
         onClose: S

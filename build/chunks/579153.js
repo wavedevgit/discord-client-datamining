@@ -11,8 +11,8 @@ var r = n(627968),
     c = n(480890),
     u = n(246356),
     d = n(709562),
-    h = n(806931),
-    p = n(985018);
+    p = n(806931),
+    h = n(985018);
 let g = e => {
     let {
         channel: t,
@@ -32,7 +32,7 @@ let g = e => {
                     channel: t,
                     remoteMode: n,
                     onInteraction: (0, c.s)("MoreSettingsMenu", g, {
-                        entrypoint: h.GK.THREE_DOT
+                        entrypoint: p.GK.THREE_DOT
                     })
                 })
             })
@@ -53,7 +53,7 @@ let g = e => {
                 onClick: e => {
                     (0, o.X)(g, o.O.MORE), n(e)
                 },
-                label: p.intl.string(p.t.PdRCRg),
+                label: h.intl.string(h.t.PdRCRg),
                 iconComponent: i.jNK,
                 color: "primaryDark",
                 isActive: l

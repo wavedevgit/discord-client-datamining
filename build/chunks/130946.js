@@ -1,7 +1,7 @@
 /** chunk id: 130946, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     A: () => S,
-    c: () => x
+    c: () => C
 });
 var r, i = n(627968);
 n(64700);
@@ -22,8 +22,8 @@ var l = n(503698),
     h = n(137815),
     E = n(967521),
     O = n(767032),
-    C = n(990521),
-    x = ((r = {}).SUBSCRIBER_HOME = "SUBSCRIBER_HOME", r.NITRO_SETTINGS = "SETTINGS", r.APPLICATION_NITRO_HOME = "APPLICATION_NITRO_HOME", r);
+    x = n(990521),
+    C = ((r = {}).SUBSCRIBER_HOME = "SUBSCRIBER_HOME", r.NITRO_SETTINGS = "SETTINGS", r.APPLICATION_NITRO_HOME = "APPLICATION_NITRO_HOME", r);
 let S = function(e) {
     let {
         variant: t
@@ -116,7 +116,7 @@ let S = function(e) {
                 className: b.m0,
                 children: (0, i.jsx)("img", {
                     alt: "",
-                    src: C.A,
+                    src: x.A,
                     className: b.$V
                 })
             })]

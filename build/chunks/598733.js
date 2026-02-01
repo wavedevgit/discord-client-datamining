@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     l = n(503698),
-    o = n.n(l),
-    a = n(311907),
+    a = n.n(l),
+    o = n(311907),
     s = n(421380),
     c = n(397927),
     u = n(686956),
@@ -18,9 +18,9 @@ var r = n(627968),
     I = n(985018),
     O = n(163677),
     N = n(1624);
-let p = 21552 == n.j ? () => {
-    let e = (0, a.bG)([_.A], () => _.A.getGuildId(), []),
-        t = (0, a.bG)([d.A], () => d.A.getGuild(e), [e]),
+let p = () => {
+    let e = (0, o.bG)([_.A], () => _.A.getGuildId(), []),
+        t = (0, o.bG)([d.A], () => d.A.getGuild(e), [e]),
         [n, l] = i.useState(!1);
     if (null == t) return null;
     let p = async () => {
@@ -34,12 +34,12 @@ let p = 21552 == n.j ? () => {
         }
     };
     return (0, r.jsxs)("div", {
-        className: o()(O.lm, N.lm),
+        className: a()(O.lm, N.lm),
         children: [(0, r.jsxs)(s.$n, {
             look: s.$n.Looks.OUTLINED,
             color: s.$n.Colors.WHITE,
             size: s.$n.Sizes.NONE,
-            className: o()(O.x6, O.aX),
+            className: a()(O.x6, O.aX),
             innerClassName: O.gb,
             onClick: () => {
                 (0, E.JK)().goBack()
@@ -65,4 +65,4 @@ let p = 21552 == n.j ? () => {
             })
         })]
     })
-} : null
+}

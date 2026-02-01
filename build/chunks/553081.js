@@ -21,13 +21,13 @@ var r = n(627968),
     h = n(26508),
     E = n(622543),
     O = n(94343),
-    C = n(576622),
-    x = n(166403),
+    x = n(576622),
+    C = n(166403),
     S = n(954571),
     T = n(170887),
     I = n(131168),
-    y = n(511484),
-    N = n(703982),
+    N = n(511484),
+    y = n(703982),
     j = n(326736),
     v = n(810036),
     P = n(160116),
@@ -47,14 +47,14 @@ let H = e => {
     i.useEffect(() => {
         u.h.wait(async () => {
             let e = [(0, A.Ay)()];
-            null != t && e.push((0, C.A)(t)), await Promise.all(e)
+            null != t && e.push((0, x.A)(t)), await Promise.all(e)
         })
     }, [t]), i.useEffect(() => {
         Z(!0)
     }, []), (0, g.P)(m.b);
     let H = i.useRef(null),
         V = i.useRef(null),
-        F = (0, o.bG)([x.A], () => x.A.getPremiumTypeSubscription()),
+        F = (0, o.bG)([C.A], () => C.A.getPremiumTypeSubscription()),
         {
             isReady: Y,
             programReward: W
@@ -64,7 +64,7 @@ let H = e => {
         })),
         K = i.useMemo(() => !!Y && "orbs" === new URLSearchParams(n.search).get("section"), [n.search, Y]);
     (0, O.A)(l, K);
-    let [z, Z] = i.useState(!1), X = (0, I.p)(), q = i.useRef(null), [J, Q] = i.useState(!1), [$, ee] = i.useState(!1), et = null != X && null != F && F.status === G.Dmq.CANCELED, en = (0, y.iU)(M.gD.PREMIUM_MONTH_TIER_2, X, F), er = !$ && et, {
+    let [z, Z] = i.useState(!1), X = (0, I.p)(), q = i.useRef(null), [J, Q] = i.useState(!1), [$, ee] = i.useState(!1), et = null != X && null != F && F.status === G.Dmq.CANCELED, en = (0, N.iU)(M.gD.PREMIUM_MONTH_TIER_2, X, F), er = !$ && et, {
         analyticsLocations: ei
     } = (0, p.Ay)(_.A.PREMIUM_SUBSCRIBER_NITRO_HOME), [el, es] = i.useState(!1), ea = (0, o.bG)([E.A], () => null != t ? E.A.getUserProfile(t) : null), eo = (0, T.A)({
         location: "PremiumSubscriberHome"
@@ -137,7 +137,7 @@ let H = e => {
                         alt: U.intl.string(U.t.X4IxWL)
                     })]
                 })
-            }), et && null != en && (0, r.jsx)(N.A, {
+            }), et && null != en && (0, r.jsx)(y.A, {
                 isVisible: er && z,
                 premiumSubscription: F,
                 churnDiscountOffer: X,

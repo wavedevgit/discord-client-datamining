@@ -1,18 +1,18 @@
 /** chunk id: 666717, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     PA: () => p,
-    RT: () => f,
+    RT: () => h,
     _t: () => d,
     av: () => u,
     iV: () => c,
-    yO: () => g
+    yO: () => f
 });
-var r = n(440745),
-    l = n.n(r),
+var l = n(440745),
+    r = n.n(l),
     i = n(317097),
     a = n(654107),
-    o = n(287809),
-    s = n(134753);
+    s = n(287809),
+    o = n(134753);
 
 function c(e) {
     let t = e.current,
@@ -23,13 +23,13 @@ function c(e) {
 function u(e, t) {
     let {
         width: n,
-        height: r,
-        left: l,
+        height: l,
+        left: r,
         top: i
     } = e.getBoundingClientRect();
     return {
-        x: (t.clientX - l) / n,
-        y: (t.clientY - i) / r
+        x: (t.clientX - r) / n,
+        y: (t.clientY - i) / l
     }
 }
 
@@ -37,7 +37,7 @@ function d(e, t) {
     return Math.round(e * t * window.devicePixelRatio)
 }
 
-function f(e, t, n) {
+function h(e, t, n) {
     return {
         x: d(e.x, t),
         y: d(e.y, n),
@@ -46,22 +46,22 @@ function f(e, t, n) {
 }
 
 function p(e) {
-    return e.type === s.Z.LINE
+    return e.type === o.Z.LINE
 }
 
-function g(e, t, n, r) {
-    var s;
-    let c = o.default.getUser(e),
+function f(e, t, n, l) {
+    var o;
+    let c = s.default.getUser(e),
         u = null == c ? void 0 : c.getAvatarURL(null, 80),
-        d = null != u ? null == (s = a.Ip.getState().palette[u]) ? void 0 : s[0] : null,
-        f = null != d ? "#".concat(l()({
+        d = null != u ? null == (o = a.Ip.getState().palette[u]) ? void 0 : o[0] : null,
+        h = null != d ? "#".concat(r()({
             r: d[0],
             g: d[1],
             b: d[2]
-        }).toHex()) : r,
-        p = (0, i.OK)((0, i.LX)(f)) > .5 ? n : t;
+        }).toHex()) : l,
+        p = (0, i.OK)((0, i.LX)(h)) > .5 ? n : t;
     return {
-        fillColor: f,
+        fillColor: h,
         outlineColor: p
     }
 }

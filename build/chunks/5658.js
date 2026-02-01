@@ -1,6 +1,6 @@
 /** chunk id: 5658, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => x
+    A: () => _
 }), n(896048);
 var r = n(627968),
     l = n(64700),
@@ -11,8 +11,8 @@ var r = n(627968),
     c = n(397927),
     u = n(73153),
     d = n(334738),
-    h = n(58149),
-    p = n(976860),
+    p = n(58149),
+    h = n(976860),
     g = n(734057),
     f = n(510560),
     m = n(572448),
@@ -20,9 +20,9 @@ var r = n(627968),
     A = n(502754),
     y = n(652215),
     O = n(985018),
-    _ = n(391900);
+    j = n(391900);
 
-function j(e) {
+function x(e) {
     for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -40,7 +40,7 @@ function j(e) {
     }
     return e
 }
-let x = l.memo(function(e) {
+let _ = l.memo(function(e) {
         let {
             channel: t,
             deleteChannel: n
@@ -55,8 +55,8 @@ let x = l.memo(function(e) {
             u([e, e - r])
         }
         let {
-            opacity: h,
-            size: p
+            opacity: p,
+            size: h
         } = (0, c.zhh)({
             config: {
                 clamp: !0,
@@ -69,8 +69,8 @@ let x = l.memo(function(e) {
                 n(t.channelId)
             }
         }, "animate-always"), g = {
-            opacity: h,
-            height: p.to(e => {
+            opacity: p,
+            height: h.to(e => {
                 var t, n;
                 return d ? (t = a, (n = o) + (t - n) * e) : "auto"
             })
@@ -78,7 +78,7 @@ let x = l.memo(function(e) {
         return (0, r.jsx)(i.animated.div, {
             ref: s,
             style: g,
-            children: (0, r.jsx)(v, j({}, e))
+            children: (0, r.jsx)(v, x({}, e))
         })
     }),
     v = l.memo(function(e) {
@@ -98,15 +98,15 @@ let x = l.memo(function(e) {
                 })
             }), null == o || !t.hasLoadedAnything) return null;
         let O = (e, r) => {
-            (0, h.zV)(y.HAw.INBOX_CHANNEL_CLICKED, {
+            (0, p.zV)(y.HAw.INBOX_CHANNEL_CLICKED, {
                 channel_id: t.channelId,
                 guild_id: t.guildId
             });
             let l = null != r ? r : t.oldestUnreadMessageId;
-            (0, p.pX)(y.BVt.CHANNEL(t.guildId, t.channelId, "forum" === t.type ? null : l)), n(e)
+            (0, h.pX)(y.BVt.CHANNEL(t.guildId, t.channelId, "forum" === t.type ? null : l)), n(e)
         };
         return (0, r.jsx)("div", {
-            className: _.Ix,
+            className: j.Ix,
             children: (0, r.jsx)(c.Fmo, {
                 component: (0, r.jsx)(m.A, {
                     channel: o,
@@ -118,10 +118,10 @@ let x = l.memo(function(e) {
                     getNumUnreadChannels: e.getNumUnreadChannels,
                     children: (0, r.jsxs)(c.ButtonGroup, {
                         size: "sm",
-                        className: _.GC,
+                        className: j.GC,
                         children: [(0, r.jsx)(f.A, {
                             channel: o
-                        }), (0, r.jsx)(E, j({}, e))]
+                        }), (0, r.jsx)(E, x({}, e))]
                     })
                 }),
                 children: t.collapsed ? null : "messages" === t.type ? (0, r.jsx)(A.A, {
@@ -152,7 +152,7 @@ function E(e) {
             size: "sm",
             icon: a ? c.iA$ : c.A9s,
             onClick: function() {
-                a && null != t.guildId ? l(t.guildId) : n(t), (0, h.zV)(y.HAw.INBOX_CHANNEL_ACKED, {
+                a && null != t.guildId ? l(t.guildId) : n(t), (0, p.zV)(y.HAw.INBOX_CHANNEL_ACKED, {
                     channel_id: t.channelId,
                     guild_id: t.guildId,
                     marked_all_channels_as_read: !1,

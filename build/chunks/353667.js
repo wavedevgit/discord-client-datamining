@@ -96,7 +96,7 @@ function O(e) {
     })
 }
 
-function C(e) {
+function x(e) {
     var t, n;
     let {
         panelKey: l,
@@ -159,7 +159,7 @@ function C(e) {
     })
 }
 
-function x(e) {
+function C(e) {
     let {
         panelKey: t,
         notice: n,
@@ -212,12 +212,12 @@ function T(e) {
         panelKey: t.key,
         notice: t.notice
     });
-    if ((0, _.zY)(n)) return (0, r.jsx)(C, {
+    if ((0, _.zY)(n)) return (0, r.jsx)(x, {
         panelKey: t.key,
         notice: t.notice,
         layout: n
     });
-    if ((0, _.Iu)(n)) return (0, r.jsx)(x, {
+    if ((0, _.Iu)(n)) return (0, r.jsx)(C, {
         panelKey: t.key,
         notice: t.notice,
         layout: n

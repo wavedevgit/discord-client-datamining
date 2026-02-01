@@ -15,9 +15,9 @@ var r = n(627968),
     p = n(958805),
     h = n(61881),
     g = n(985018),
-    f = n(461349);
+    m = n(461349);
 
-function m(e) {
+function f(e) {
     for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -44,7 +44,7 @@ function A(e) {
     return l || null == t ? (0, r.jsx)("div", {
         role: "img",
         "aria-label": s,
-        className: f.Np,
+        className: m.Np,
         children: (0, r.jsx)(c.Text, {
             variant: "text-xxs/medium",
             lineClamp: 3,
@@ -54,7 +54,7 @@ function A(e) {
     }) : (0, r.jsx)("img", {
         src: t,
         alt: s,
-        className: f.$_,
+        className: m.$_,
         onError: () => a(!0),
         onLoad: () => a(!1)
     })
@@ -65,7 +65,7 @@ function _(e) {
         imageSrc: t,
         gameName: n,
         applicationId: l,
-        userId: m,
+        userId: f,
         className: _,
         hideTooltip: b = !1,
         coverRef: E
@@ -73,7 +73,7 @@ function _(e) {
         location: "GameCover",
         applicationId: l,
         source: u.Ob.UserProfile,
-        sourceUserId: m,
+        sourceUserId: f,
         trackEntryPointImpression: !0
     }), I = null != n ? n : g.intl.string(g.t.GIWFlF), v = g.intl.formatToPlainString(g.t["8QLQB+"], {
         gameName: I
@@ -102,7 +102,7 @@ function _(e) {
         innerRef: E,
         onClick: S,
         "aria-label": v,
-        className: a()(f.vk, _),
+        className: a()(m.vk, _),
         children: (0, r.jsx)(A, {
             imageSrc: t,
             gameName: n
@@ -134,15 +134,15 @@ function b(e) {
             }(e, t), Object.getOwnPropertySymbols)
             for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (l[r] = e[r]);
         return l
-    }(e, ["applicationId", "userId", "className", "disableInteraction", "hideTooltip", "coverRef"]), d = a()(f.PY, i);
+    }(e, ["applicationId", "userId", "className", "disableInteraction", "hideTooltip", "coverRef"]), d = a()(m.PY, i);
     return l ? (0, r.jsx)(c.vN3, {
         children: (0, r.jsx)("div", {
             ref: o,
             className: d,
             tabIndex: -1,
-            children: (0, r.jsx)(A, m({}, u))
+            children: (0, r.jsx)(A, f({}, u))
         })
-    }) : (0, r.jsx)(_, m({
+    }) : (0, r.jsx)(_, f({
         className: d,
         applicationId: t,
         userId: n,

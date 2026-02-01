@@ -11,8 +11,8 @@ var r = n(627968),
     c = n(134753),
     u = n(246356),
     d = n(709562),
-    h = n(912276),
-    p = n(60504),
+    p = n(912276),
+    h = n(60504),
     g = n(985018);
 
 function f(e) {
@@ -25,14 +25,14 @@ function f(e) {
             emojiId: e.id
         }) : f && (0, a.Ol)(null), null == t || t()
     };
-    return (0, r.jsx)(p.A, {
+    return (0, r.jsx)(h.A, {
         renderPopout: e => {
             let {
                 closePopout: n,
                 onFocus: l
             } = e;
             return (0, r.jsx)(u.A, {
-                children: (0, r.jsx)(h.A, {
+                children: (0, r.jsx)(p.A, {
                     title: g.intl.string(g.t.XYLOyF),
                     channel: t,
                     closePopout: n,

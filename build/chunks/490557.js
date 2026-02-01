@@ -1,7 +1,7 @@
 /** chunk id: 490557, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     b: () => d,
-    l: () => h
+    l: () => p
 });
 var r = n(627968),
     l = n(503698),
@@ -23,7 +23,7 @@ function d(e) {
     })
 }
 
-function h(e) {
+function p(e) {
     let {
         className: t,
         powerup: n,

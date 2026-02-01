@@ -1,4 +1,4 @@
-/** chunk id: 384339, original params: e,n,t (module,exports,require) **/
+/** chunk id: 384339, original params: e,t,n (module,exports,require) **/
 e.exports = {
     wb: "videoList__95c18",
     Vd: "vertical__95c18",

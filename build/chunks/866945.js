@@ -1,58 +1,58 @@
 /** chunk id: 866945, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    e: () => h
+    e: () => p
 });
-var i = n(627968),
+var r = n(627968),
     l = n(64700),
-    s = n(503698),
-    r = n.n(s),
+    i = n(503698),
+    s = n.n(i),
     a = n(397927),
     o = n(558001),
     c = n(835002),
-    d = n(985018),
-    u = n(486529);
+    u = n(985018),
+    d = n(486529);
 
-function h(e) {
+function p(e) {
     let {
         label: t,
         labelHook: n,
-        count: s,
-        dismissNotice: h,
-        className: g,
-        noticeType: x
-    } = e, p = null != h;
+        count: i,
+        dismissNotice: p,
+        className: h,
+        noticeType: g
+    } = e, f = null != p;
     l.useEffect(() => {
-        (0, o.N)(x, c.YX.VIEWED)
-    }, [x]);
+        (0, o.N)(g, c.YX.VIEWED)
+    }, [g]);
     let m = l.useCallback(() => {
-            null != h && (h(), (0, o.N)(x, c.YX.DISMISS))
-        }, [x, h]),
-        A = l.useCallback(() => {
-            n(), (0, o.N)(x, c.YX.LEARN_MORE)
-        }, [x, n]);
-    return (0, i.jsxs)("div", {
-        className: r()(u.I, g),
-        children: [(0, i.jsx)(a.mir, {
+            null != p && (p(), (0, o.N)(g, c.YX.DISMISS))
+        }, [g, p]),
+        b = l.useCallback(() => {
+            n(), (0, o.N)(g, c.YX.LEARN_MORE)
+        }, [g, n]);
+    return (0, r.jsxs)("div", {
+        className: s()(d.I, h),
+        children: [(0, r.jsx)(a.mir, {
             size: "md"
-        }), (0, i.jsx)(a.Text, {
+        }), (0, r.jsx)(a.Text, {
             variant: "text-sm/medium",
             color: "interactive-text-active",
-            children: null != s ? d.intl.format(t, {
-                hook: (e, t) => (0, i.jsx)(a.MzZ, {
-                    onClick: A,
+            children: null != i ? u.intl.format(t, {
+                hook: (e, t) => (0, r.jsx)(a.MzZ, {
+                    onClick: b,
                     children: e
                 }, t),
-                count: s
-            }) : d.intl.format(t, {
-                hook: (e, t) => (0, i.jsx)(a.MzZ, {
-                    onClick: A,
+                count: i
+            }) : u.intl.format(t, {
+                hook: (e, t) => (0, r.jsx)(a.MzZ, {
+                    onClick: b,
                     children: e
                 }, t)
             })
-        }), p && (0, i.jsx)(a.DUT, {
-            className: u.b,
+        }), f && (0, r.jsx)(a.DUT, {
+            className: d.b,
             onClick: m,
-            children: (0, i.jsx)(a.PGe, {})
+            children: (0, r.jsx)(a.PGe, {})
         })]
     })
 }

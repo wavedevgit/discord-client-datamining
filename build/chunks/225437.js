@@ -1,6 +1,6 @@
 /** chunk id: 225437, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => f
+    A: () => m
 });
 var r, i = n(311907),
     l = n(506774),
@@ -62,7 +62,7 @@ class g extends(r = i.Ay.Store) {
     }
 }
 s(g, "displayName", "GuildTemplateTooltipStore");
-let f = new g(a.h, {
+let m = new g(a.h, {
     GUILD_TEMPLATE_DIRTY_TOOLTIP_REFRESH: function(e) {
         let {
             guildTemplate: t

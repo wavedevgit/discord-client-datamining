@@ -205,8 +205,8 @@ var M = function e(t) {
     k = n(94867),
     U = n(353841),
     G = k.call(R, Array.prototype.concat),
-    F = k.call(w, Array.prototype.splice),
-    V = k.call(R, String.prototype.replace),
+    V = k.call(w, Array.prototype.splice),
+    F = k.call(R, String.prototype.replace),
     B = k.call(R, String.prototype.slice),
     H = k.call(R, RegExp.prototype.exec),
     Y = /[^%.[\]]+|\[(?:(-?\d+(?:\.\d+)?)|(["'])((?:(?!\2)[^\\]|\\.)*?)\2)\]|(?=(?:\.|\[\])(?:\.|\[\]|%$))/g,
@@ -217,8 +217,8 @@ var M = function e(t) {
         if ("%" === t && "%" !== n) throw new c("invalid intrinsic syntax, expected closing `%`");
         if ("%" === n && "%" !== t) throw new c("invalid intrinsic syntax, expected opening `%`");
         var r = [];
-        return V(e, Y, function(e, t, n, i) {
-            r[r.length] = n ? V(i, W, "$1") : t || e
+        return F(e, Y, function(e, t, n, i) {
+            r[r.length] = n ? F(i, W, "$1") : t || e
         }), r
     },
     z = function(e, t) {
@@ -245,7 +245,7 @@ e.exports = function(e, t) {
         o = i.value,
         s = !1,
         l = i.alias;
-    l && (r = l[0], F(n, G([0, 1], l)));
+    l && (r = l[0], V(n, G([0, 1], l)));
     for (var d = 1, f = !0; d < n.length; d += 1) {
         var p = n[d],
             _ = B(p, 0, 1),

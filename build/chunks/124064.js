@@ -31,11 +31,11 @@ function h(e) {
         placeholder: h,
         currentBio: E,
         disabled: O = !1
-    } = e, [C, x] = i.useState(null != u ? u : E), [S, T] = i.useState((0, a.x7)(C)), I = i.useRef(E), y = i.useRef(!1);
+    } = e, [x, C] = i.useState(null != u ? u : E), [S, T] = i.useState((0, a.x7)(x)), I = i.useRef(E), N = i.useRef(!1);
     return i.useEffect(() => {
         if (I.current !== E) {
             let e = (0, a.x7)(E);
-            x(E), T(e)
+            C(E), T(e)
         }
         I.current = E
     }, [E]), (0, r.jsxs)(_.A, {
@@ -51,22 +51,22 @@ function h(e) {
             innerClassName: g.Z,
             maxCharacterCount: p.NA2,
             onChange: function(e, t, n) {
-                t !== C && (x(t), T(n), c(t))
+                t !== x && (C(t), T(n), c(t))
             },
             placeholder: h,
             channel: f,
-            textValue: C,
+            textValue: x,
             richValue: S,
             emojiPickerCloseOnModalOuterClick: !0,
             parentModalKey: d.USER_SETTINGS_MODAL_KEY,
             type: s.oU.PROFILE_BIO_INPUT,
             onBlur: () => {
-                y.current = !1
+                N.current = !1
             },
             onFocus: () => {
-                y.current = !0
+                N.current = !0
             },
-            focused: y.current,
+            focused: N.current,
             onSubmit: function() {
                 return new Promise(e => {
                     e({

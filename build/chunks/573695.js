@@ -1,11 +1,11 @@
 /** chunk id: 573695, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    B: () => l
+    B: () => r
 });
-var r = n(73153);
+var l = n(73153);
 
-function l(e) {
-    r.h.dispatch({
+function r(e) {
+    l.h.dispatch({
         type: "PRESENCE_SUBSCRIPTIONS_ADD",
         subscription: e
     })

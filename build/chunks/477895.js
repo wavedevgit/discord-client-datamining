@@ -1,5 +1,5 @@
-/** chunk id: 477895, original params: e,t,i (module,exports,require) **/
-i.d(t, {
+/** chunk id: 477895, original params: t,e,i (module,exports,require) **/
+i.d(e, {
     Bf: () => l
 });
 let n = (0, i(945810).mj)({
@@ -21,8 +21,8 @@ let n = (0, i(945810).mj)({
     }
 });
 
-function l(e) {
+function l(t) {
     return n.useConfig({
-        location: e
+        location: t
     })
 }

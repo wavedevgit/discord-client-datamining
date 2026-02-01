@@ -11,8 +11,8 @@ var r = n(627968),
     c = n(51758),
     u = n(141035),
     d = n(175203),
-    h = n(426660),
-    p = n(806931),
+    p = n(426660),
+    h = n(806931),
     g = n(985018),
     f = n(852887);
 let m = function(e) {
@@ -20,12 +20,12 @@ let m = function(e) {
         participants: t,
         channel: n,
         hasConnectPermission: m
-    } = e, b = t.filter(p.Xw), A = (0, c.H)(n.guild_id), y = l.useCallback(() => {
+    } = e, b = t.filter(h.Xw), A = (0, c.H)(n.guild_id), y = l.useCallback(() => {
         A ? (0, o.Ze)(n.guild_id, () => s.default.selectVoiceChannel(n.id)) : s.default.selectVoiceChannel(n.id)
     }, [n.id, n.guild_id, A]), O = 4 === b.length ? 2 : 3;
     return (0, r.jsxs)("div", {
         className: f.kL,
-        children: [(0, r.jsx)(h.A, {}), (0, r.jsx)("div", {
+        children: [(0, r.jsx)(p.A, {}), (0, r.jsx)("div", {
             className: f.os,
             style: {
                 maxWidth: 168 * O

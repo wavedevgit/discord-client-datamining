@@ -82,12 +82,12 @@ function p(e) {
             sourceAnalyticsLocations: h
         })
     }));
-    let f = i - g.length;
-    return f > 0 && g.push((0, r.jsx)(l.Drp, {
+    let m = i - g.length;
+    return m > 0 && g.push((0, r.jsx)(l.Drp, {
         id: "unknown-members-".concat(null == a ? void 0 : a.session_id),
         render: e => (0, r.jsx)(o.x, d(u({}, e), {
             label: c.intl.formatToPlainString(c.t["6Kqn9M"], {
-                count: f
+                count: m
             })
         }))
     })), g
@@ -116,7 +116,7 @@ function h(e) {
         return n.filter(t => !e.includes(t.id))
     }, [n, s]);
     if (s.length <= 1 && 0 === g.length) {
-        var f, m;
+        var m, f;
         return (0, r.jsx)(l.rXV, {
             label: n.length > 1 ? c.intl.formatToPlainString(c.t.C4WXvc, {
                 memberCount: n.length
@@ -125,7 +125,7 @@ function h(e) {
                 priorityMembers: t,
                 otherMembers: d,
                 totalMembers: n.length,
-                activity: null != (f = null == (m = s[0]) ? void 0 : m.activity) ? f : void 0,
+                activity: null != (m = null == (f = s[0]) ? void 0 : f.activity) ? m : void 0,
                 guildId: null == o ? void 0 : o.id,
                 sourceAnalyticsLocations: h
             })

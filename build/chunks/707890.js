@@ -1,46 +1,46 @@
 /** chunk id: 707890, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => S
+    A: () => x
 }), n(896048), n(927092), n(212978), n(201528), n(393431), n(752391), n(532706), n(42231), n(232424), n(757074), n(949626), n(767709), n(65162);
-var r, l, i = n(311907),
+var l, r, i = n(311907),
     a = n(205693),
-    o = n(73153),
-    s = n(652896),
+    s = n(73153),
+    o = n(652896),
     c = n(961350),
     u = n(383501),
     d = n(162605),
-    f = n(814278),
+    h = n(814278),
     p = n(440976),
-    g = n(787392),
+    f = n(787392),
     m = n(652215);
-let _ = new Map,
-    h = new Map,
-    y = !1,
-    A = null;
+let g = new Map,
+    A = new Map,
+    b = !1,
+    _ = null;
 
-function b() {
+function y() {
     return d.A.getAllActiveStreamKeys().reduce((e, t) => {
         let {
             ownerId: n
-        } = (0, s.Iy)(t), r = !0 === _.get(n), l = h.get(t) !== r;
-        return h.set(t, r), !!l || e
+        } = (0, o.Iy)(t), l = !0 === g.get(n), r = A.get(t) !== l;
+        return A.set(t, l), !!r || e
     }, !1)
 }
 
-function E() {
+function v() {
     var e;
     let t = null != (e = u.A.getUserIds()) ? e : new Set,
         n = c.default.getId(),
-        r = !0;
+        l = !0;
     for (let e of t)
-        if (n !== e && !0 !== _.get(e)) {
-            r = !1;
+        if (n !== e && !0 !== g.get(e)) {
+            l = !1;
             break
-        } let l = r !== y;
-    return y = r, l
+        } let r = l !== b;
+    return b = l, r
 }
 
-function v(e) {
+function E(e) {
     let {
         userId: t
     } = e;
@@ -49,59 +49,59 @@ function v(e) {
             let t = u.A.getSecureFramesRosterMapEntry(e);
             if (null == t) return !1;
             let n = new Uint8Array(t),
-                r = g.A.isKeyVerified(e, n) || p.A.isKeyVerified(e, n),
-                l = (0, f.m8)(e, [u.A, d.A]),
-                i = r && !l,
-                a = i !== _.get(e);
-            return _.set(e, i), a
+                l = f.A.isKeyVerified(e, n) || p.A.isKeyVerified(e, n),
+                r = (0, h.m8)(e, [u.A, d.A]),
+                i = l && !r,
+                a = i !== g.get(e);
+            return g.set(e, i), a
         }(t),
-        r = b(),
-        l = E();
-    return n || r || l
+        l = y(),
+        r = v();
+    return n || l || r
 }
 
 function O() {
-    _.clear(), h.clear(), y = !1
+    g.clear(), A.clear(), b = !1
 }
-class x extends(r = i.Ay.Store) {
+class C extends(l = i.Ay.Store) {
     initialize() {
-        this.waitFor(c.default, u.A, d.A, p.A, g.A)
+        this.waitFor(c.default, u.A, d.A, p.A, f.A)
     }
     isCallVerified() {
-        return y
+        return b
     }
     isStreamVerified(e) {
-        return h.get(e)
+        return A.get(e)
     }
     isUserVerified(e) {
-        return _.get(e)
+        return g.get(e)
     }
-}(l = "displayName") in x ? Object.defineProperty(x, l, {
+}(r = "displayName") in C ? Object.defineProperty(C, r, {
     value: "SecureFramesVerifiedStore",
     enumerable: !0,
     configurable: !0,
     writable: !0
-}) : x[l] = "SecureFramesVerifiedStore";
-let S = new x(o.h, {
+}) : C[r] = "SecureFramesVerifiedStore";
+let x = new C(s.h, {
     CONNECTION_OPEN: O,
     VOICE_CHANNEL_SELECT: function(e) {
         let {
             channelId: t
         } = e;
-        if (t === A) return !1;
-        A = t, O()
+        if (t === _) return !1;
+        _ = t, O()
     },
     RTC_CONNECTION_STATE: function(e) {
         let {
             streamKey: t,
             state: n,
-            context: r
+            context: l
         } = e;
         if (n !== m.S7L.DISCONNECTED) return !1;
-        switch (r) {
+        switch (l) {
             case a.x.STREAM:
                 if (null == t) return !1;
-                return h.delete(t), E();
+                return A.delete(t), v();
             case a.x.DEFAULT:
                 O()
         }
@@ -109,14 +109,14 @@ let S = new x(o.h, {
     RTC_CONNECTION_ROSTER_MAP_UPDATE: function(e) {
         let {
             userIds: t
-        } = e, n = c.default.getId(), r = t.reduce((e, t) => n === t ? e : !!v({
+        } = e, n = c.default.getId(), l = t.reduce((e, t) => n === t ? e : !!E({
             userId: t
-        }) || e, !1), l = b(), i = E();
-        return r || l || i
+        }) || e, !1), r = y(), i = v();
+        return l || r || i
     },
-    SECURE_FRAMES_TRANSIENT_KEY_CREATE: v,
-    SECURE_FRAMES_TRANSIENT_KEY_DELETE: v,
-    SECURE_FRAMES_VERIFIED_KEY_CREATE: v,
-    SECURE_FRAMES_VERIFIED_KEY_DELETE: v,
-    SECURE_FRAMES_USER_VERIFIED_KEYS_DELETE: v
+    SECURE_FRAMES_TRANSIENT_KEY_CREATE: E,
+    SECURE_FRAMES_TRANSIENT_KEY_DELETE: E,
+    SECURE_FRAMES_VERIFIED_KEY_CREATE: E,
+    SECURE_FRAMES_VERIFIED_KEY_DELETE: E,
+    SECURE_FRAMES_USER_VERIFIED_KEYS_DELETE: E
 })

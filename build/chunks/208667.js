@@ -1,6 +1,6 @@
 /** chunk id: 208667, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => p
+    A: () => h
 });
 var r = n(627968),
     l = n(64700),
@@ -11,13 +11,13 @@ var r = n(627968),
     c = n(139286),
     u = n(688895),
     d = n(456425),
-    h = n(1347);
+    p = n(1347);
 
-function p(e) {
+function h(e) {
     let {
         initialized: t,
         items: n,
-        loading: p,
+        loading: h,
         loadMore: g
     } = e, f = l.useRef(null), m = (0, o.A)("for-you", f);
     (0, c.A)({
@@ -76,7 +76,7 @@ function p(e) {
                     }
                     return e
                 }({
-                    className: h.kL,
+                    className: p.kL,
                     ref: e => {
                         var t;
                         f.current = e, i.current = null != (t = null == e ? void 0 : e.getScrollerNode()) ? t : null
@@ -85,8 +85,8 @@ function p(e) {
                     onScroll: b,
                     children: [(0, r.jsx)(d.$, {
                         items: n
-                    }), p ? (0, r.jsx)(a.y$y, {
-                        className: h.u1
+                    }), h ? (0, r.jsx)(a.y$y, {
+                        className: p.u1
                     }) : null]
                 }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
                     var n = Object.keys(e);
@@ -101,6 +101,6 @@ function p(e) {
             }
         })
     }) : (0, r.jsx)(a.y$y, {
-        className: h.k$
+        className: p.k$
     })
 }

@@ -1,11 +1,11 @@
 /** chunk id: 986692, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    j: () => l
+    j: () => r
 });
-var r = n(73153);
+var l = n(73153);
 
-function l(e) {
-    r.h.dispatch({
+function r(e) {
+    l.h.dispatch({
         type: "REMOVE_AUTOMOD_MESSAGE_NOTICE",
         messageId: e
     })

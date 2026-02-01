@@ -1,6 +1,6 @@
 /** chunk id: 796111, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => m
+    A: () => f
 }), n(896048), n(938796);
 var r = n(665260),
     i = n(562465),
@@ -14,9 +14,9 @@ var r = n(665260),
     p = n(629471),
     h = n(569475),
     g = n(613057),
-    f = n(652215);
-let m = {
-    [f.e$_.SEND_ANALYTICS_EVENT]: {
+    m = n(652215);
+let f = {
+    [m.e$_.SEND_ANALYTICS_EVENT]: {
         validation: e => (0, p.A)(e).required().keys({
             event_name: e.string().required(),
             event_properties: (0, p.A)(e).required()
@@ -34,9 +34,9 @@ let m = {
             let o = n.application.id,
                 p = (0, h.A)(),
                 g = null == p ? void 0 : p.getGuildId(),
-                m = s.A.getApplication(o);
-            if (!(0, r.Lt)(null != (t = null == m ? void 0 : m.flags) ? t : 0, f.gfo.EMBEDDED_FIRST_PARTY)) throw new u.A({
-                errorCode: f.Lw6.INVALID_COMMAND
+                f = s.A.getApplication(o);
+            if (!(0, r.Lt)(null != (t = null == f ? void 0 : f.flags) ? t : 0, m.gfo.EMBEDDED_FIRST_PARTY)) throw new u.A({
+                errorCode: m.Lw6.INVALID_COMMAND
             }, "This application cannot access this API");
             let A = (0, a.D)(o),
                 _ = {
@@ -65,17 +65,17 @@ let m = {
             }({}, _, l))
         }
     },
-    [f.e$_.GET_APPLICATION_TICKET]: {
+    [m.e$_.GET_APPLICATION_TICKET]: {
         scope: g.hj,
         handler(e) {
             let {
                 socket: t
             } = e, n = t.application.id;
             if (null == n) throw new u.A({
-                errorCode: f.Lw6.INVALID_COMMAND
+                errorCode: m.Lw6.INVALID_COMMAND
             }, "No application.");
             return i.Bo.post({
-                url: f.Rsh.APPLICATION_TICKET(n),
+                url: m.Rsh.APPLICATION_TICKET(n),
                 body: {
                     test_mode: o.A.inTestModeForApplication(n) || l.A.inDevModeForApplication(n)
                 },

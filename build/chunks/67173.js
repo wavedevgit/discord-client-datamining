@@ -14,8 +14,8 @@ var r = n(627968),
     p = n(701363),
     h = n(770178),
     g = n(826673),
-    f = n(379848),
-    m = n(954571),
+    m = n(379848),
+    f = n(954571),
     A = n(325087),
     _ = n(419818),
     b = n(652215),
@@ -34,7 +34,7 @@ let I = Math.ceil(Math.sqrt(115200)),
             dismissContent: j
         } = function() {
             let e = (0, u.useHasAnyModalOpen)(),
-                [t, n] = (0, f.kn)(e ? [] : [c.M.QUEST_HOME_ENTRYPOINT_ONBOARDING], E.m.PRIVATE_CHANNELS_LIST, !0),
+                [t, n] = (0, m.kn)(e ? [] : [c.M.QUEST_HOME_ENTRYPOINT_ONBOARDING], E.m.PRIVATE_CHANNELS_LIST, !0),
                 r = i.useCallback(() => {
                     n(E.i.TAKE_ACTION)
                 }, [n]);
@@ -93,7 +93,7 @@ let I = Math.ceil(Math.sqrt(115200)),
             }), w({
                 glowSpring: 1,
                 delay: 700
-            }), m.default.track(b.HAw.QUEST_HOME_ONBOARDING_POPOVER_RENDERED)
+            }), f.default.track(b.HAw.QUEST_HOME_ONBOARDING_POPOVER_RENDERED)
         }, [R, w]), [U, G] = i.useState(-1), V = i.useCallback(e => {
             G(e.contentRect.width)
         }, []), B = (0, h.w)(V, [], {

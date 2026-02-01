@@ -70,11 +70,11 @@ let L = "SelectedChannelStore",
     U = {},
     G = new Set;
 
-function F(e) {
+function V(e) {
     return String(e)
 }
 
-function V() {
+function F() {
     __OVERLAY__ || h.w.set(L, {
         selectedChannelId: a,
         selectedVoiceChannelId: s,
@@ -128,7 +128,7 @@ function K(e) {
         let e = O.A.getChannel(s);
         null != e && S.A.can(p.kg(C.xBc.VIEW_CHANNEL, C.xBc.CONNECT), e) || (s = null)
     }
-    W() && V()
+    W() && F()
 }
 
 function z(e) {
@@ -145,7 +145,7 @@ function Z(e) {
         channelId: n
     } = e;
     if (void 0 === t) return !1;
-    null == n && (n = B(t)), null != a && n !== a && (i = a), a = n, H(t, n), j[F(t)] !== n && (k[F(t)] = j[F(t)], j[F(t)] = a), V()
+    null == n && (n = B(t)), null != a && n !== a && (i = a), a = n, H(t, n), j[V(t)] !== n && (k[V(t)] = j[V(t)], j[V(t)] = a), F()
 }
 
 function Q(e) {
@@ -157,18 +157,18 @@ function Q(e) {
             t = null == e ? void 0 : e.guild_id;
         null != t && t !== T.A.getGuildId() && j[t] === s && (j[t] = B(t))
     }
-    s = t, V()
+    s = t, F()
 }
 
 function X(e, t, n) {
     let r = arguments.length > 3 && void 0 !== arguments[3] && arguments[3];
     if (G.delete(e), null == t) {
         let n = T.A.getGuildId();
-        j[F(n)] === e && (t = n)
+        j[V(n)] === e && (t = n)
     }
     let i = null != A.A.getGuild(t) ? t : null,
         a = !1;
-    s === e && (s = null, a = !0), j[F(i)] === e && (j[F(i)] = r && null != n ? n : B(F(i)), T.A.getGuildId() === i && (0, g.bG)(C.BVt.CHANNEL(t, j[F(i)])), a = !0), null != i && U[i] === e && (delete U[i], a = !0), a && V()
+    s === e && (s = null, a = !0), j[V(i)] === e && (j[V(i)] = r && null != n ? n : B(V(i)), T.A.getGuildId() === i && (0, g.bG)(C.BVt.CHANNEL(t, j[V(i)])), a = !0), null != i && U[i] === e && (delete U[i], a = !0), a && F()
 }
 
 function J(e) {
@@ -196,7 +196,7 @@ function ee(e) {
     } = e;
     if (null == j[t.id]) {
         let e = B(t.id);
-        j[t.id] = e, H(t.id, e), V()
+        j[t.id] = e, H(t.id, e), F()
     }
 }
 
@@ -208,7 +208,7 @@ function et(e) {
         }
     } = e;
     if (s === j[t] && (s = null), n) return !1;
-    delete U[t], delete j[t], V()
+    delete U[t], delete j[t], F()
 }
 
 function en(e) {
@@ -221,14 +221,14 @@ function en(e) {
             clearInterval(c);
             let e = null == (n = O.A.getChannel(s)) ? void 0 : n.getGuildId();
             t.guildId !== e && null == t.channelId || (s = t.channelId), l = Date.now(), null != s && (c = setInterval(() => {
-                l = Date.now(), V()
-            }, M)), V()
+                l = Date.now(), F()
+            }, M)), F()
         } else {
             if (t.userId !== b.default.getId()) return e;
             clearInterval(c), c = void 0, l = 0;
             let n = null == (i = O.A.getChannel(s)) ? void 0 : i.getGuildId(),
                 r = null == (a = O.A.getChannel(t.channelId)) ? void 0 : a.getGuildId();
-            (null != n && r === n || s === t.channelId) && (s = null), V()
+            (null != n && r === n || s === t.channelId) && (s = null), F()
         }
         return !0
     }, !1)
@@ -242,7 +242,7 @@ function er(e) {
     (null == o || t !== o.channelId) && (o = {
         channelId: t,
         guildId: n
-    }, V())
+    }, F())
 }
 
 function ei() {
@@ -282,7 +282,7 @@ class eo extends(u = _.Ay.Store) {
     getChannelId(e) {
         var t, n;
         let r = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1],
-            i = F(e === C.ME ? null : null != (t = null != e ? e : T.A.getGuildId()) ? t : null);
+            i = V(e === C.ME ? null : null != (t = null != e ? e : T.A.getGuildId()) ? t : null);
         return r ? null != (n = j[i]) ? n : B(i) : j[i]
     }
     getVoiceChannelId() {

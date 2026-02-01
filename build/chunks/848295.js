@@ -14,8 +14,8 @@ var r = n(627968),
     p = n(397927),
     h = n(775602),
     g = n(139286),
-    f = n(871751),
-    m = n(259407),
+    m = n(871751),
+    f = n(259407),
     A = n(915089),
     _ = n(607470),
     b = n(367727),
@@ -125,14 +125,14 @@ function w(e) {
     } = e, {
         onClose: F,
         transitionState: Y
-    } = x, K = (0, A.GV)(), W = G.length % 2 == 0, q = (0, c.bG)([h.A], () => h.A.useReducedMotion), [z, Q] = i.useState(Date.now()), [X, Z] = i.useState(0), [$, J] = i.useState(0), [ee, et] = i.useState(!1), [en, er] = i.useState(!0), ei = i.useRef(z), el = i.useRef(X), ea = i.useRef($), es = i.useRef(ee), eo = i.useRef(en), [ec, eu] = i.useState(j), ed = i.useRef(!1);
+    } = x, K = (0, A.GV)(), W = G.length % 2 == 0, q = (0, c.bG)([h.A], () => h.A.useReducedMotion), [z, Q] = i.useState(Date.now()), [X, Z] = i.useState(0), [J, $] = i.useState(0), [ee, et] = i.useState(!1), [en, er] = i.useState(!0), ei = i.useRef(z), el = i.useRef(X), ea = i.useRef(J), es = i.useRef(ee), eo = i.useRef(en), [ec, eu] = i.useState(j), ed = i.useRef(!1);
 
     function ep() {
         let e = Date.now(),
             t = e - ei.current,
             n = el.current,
             r = ea.current;
-        return es.current && (Z(n += t), eo.current || J(r += t)), Q(e), [n, r]
+        return es.current && (Z(n += t), eo.current || $(r += t)), Q(e), [n, r]
     }
     return (0, g.A)({
         type: s.ImpressionTypes.MODAL,
@@ -169,8 +169,8 @@ function w(e) {
             URL.revokeObjectURL(e.src)
         })
     }, [ec]), i.useEffect(() => {
-        ei.current = z, el.current = X, ea.current = $, es.current = ee, eo.current = en
-    }, [z, X, $, ee, en]), i.useEffect(() => () => {
+        ei.current = z, el.current = X, ea.current = J, es.current = ee, eo.current = en
+    }, [z, X, J, ee, en]), i.useEffect(() => () => {
         if ("video" === w.type || "embed" === w.type) {
             let [e, t] = ep();
             O.default.track(I.HAw.CHANGE_LOG_VIDEO_PLAYED, {
@@ -245,13 +245,13 @@ function w(e) {
                             default: e.isDefault
                         }, e.locale)
                     })
-                }) : "embed" === w.type ? (0, r.jsx)(f.rr, {
+                }) : "embed" === w.type ? (0, r.jsx)(m.rr, {
                     className: a()(C.Ki, L),
                     allowFullScreen: !1,
                     href: w.href,
                     thumbnail: w.thumbnail,
                     video: w.embed,
-                    provider: m.mt.YOUTUBE,
+                    provider: f.mt.YOUTUBE,
                     maxWidth: w.embed.width,
                     maxHeight: w.embed.height,
                     renderVideoComponent: E.$o,

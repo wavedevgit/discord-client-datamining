@@ -14,8 +14,8 @@ var r = n(627968),
     p = n(881973),
     h = n(965660),
     g = n(601193),
-    f = n(424956),
-    m = n(19925),
+    m = n(424956),
+    f = n(19925),
     A = n(689817),
     _ = n(38894),
     b = n(299579),
@@ -44,7 +44,7 @@ function v() {
             onClearSearch: w,
             onSearchSubmit: L,
             isSearchVisible: R
-        } = (0, m.X)({
+        } = (0, f.X)({
             loadId: e.current
         }),
         D = g.A.useField("searchBarState"),
@@ -75,7 +75,7 @@ function v() {
         {
             onGuildCardSeen: Y,
             onGuildCardClick: K
-        } = (0, f.p)({
+        } = (0, m.p)({
             guildDiscoveryCardSeenManager: F.current,
             loadId: e.current
         });

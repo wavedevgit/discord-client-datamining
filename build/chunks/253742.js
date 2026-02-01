@@ -14,8 +14,8 @@ var r = n(627968),
     p = n(770178),
     h = n(765548),
     g = n(793574),
-    f = n(688810),
-    m = n(659974),
+    m = n(688810),
+    f = n(659974),
     A = n(384059),
     _ = n(480890),
     b = n(551826),
@@ -95,7 +95,7 @@ function w(e) {
     let p = i.useRef(null),
         {
             parentAnalyticsLocation: h
-        } = (0, f.Ay)(),
+        } = (0, m.Ay)(),
         {
             channel: O,
             user: w,
@@ -159,7 +159,7 @@ function w(e) {
         }) : (0, u.L3)(e, async () => {
             let {
                 default: e
-            } = await Promise.all([n.e("97262"), n.e("32418"), n.e("99871")]).then(n.bind(n, 668569));
+            } = await Promise.all([n.e("97262"), n.e("32418"), n.e("22252")]).then(n.bind(n, 668569));
             return t => (0, r.jsx)(e, j(T({}, t), {
                 user: w,
                 showMediaItems: !0,
@@ -170,10 +170,10 @@ function w(e) {
         })
     }
     let z = (0, s.bG)([I.A], () => I.A.getVoiceVolume(w.id)),
-        Q = (0, m.v)({
+        Q = (0, f.v)({
             isSpeaking: G,
             voiceDb: z,
-            spreadDirection: m.O.INSET_ONLY,
+            spreadDirection: f.O.INSET_ONLY,
             maxInnerSpreadRadius: 3
         });
     return (0, r.jsx)(E.A, {
@@ -221,8 +221,8 @@ function L(e) {
         channel: n,
         className: l
     } = e, [u, d] = i.useState(!1), g = (0, s.bG)([O.default], () => O.default.getId()), {
-        containerRef: f,
-        maxVisibleAvatars: m
+        containerRef: m,
+        maxVisibleAvatars: f
     } = function(e) {
         let [t, n] = i.useState(7), r = (0, h.A)(() => {
             let t = null == l ? void 0 : l.current;
@@ -244,7 +244,7 @@ function L(e) {
                 if (r.length >= n) return [r, !0];
                 r.push(i)
             } return [r, !1]
-    }(t, g, m), b = u ? c.QGg : c.j96, E = u ? C.intl.string(C.t["Z/Tya5"]) : C.intl.string(C.t.XR5BAc), y = (0, r.jsx)(o.m, {
+    }(t, g, f), b = u ? c.QGg : c.j96, E = u ? C.intl.string(C.t["Z/Tya5"]) : C.intl.string(C.t.XR5BAc), y = (0, r.jsx)(o.m, {
         text: E,
         ariaHidden: !0,
         children: (0, r.jsx)(c.K0, {
@@ -261,7 +261,7 @@ function L(e) {
         className: a()(N.XG, l),
         fade: !0,
         children: (0, r.jsxs)("div", {
-            ref: f,
+            ref: m,
             className: a()(N.Xk, !u && N.yZ),
             role: "group",
             "aria-label": C.intl.string(C.t["/ZgaVU"]),

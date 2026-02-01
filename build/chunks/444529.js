@@ -2,12 +2,12 @@
 n.d(t, {
     A: () => c
 }), n(938796);
-var r = n(627968);
+var l = n(627968);
 n(64700);
-var l = n(665260),
+var r = n(665260),
     i = n(143413),
-    s = n(907495),
-    a = n(652215),
+    a = n(907495),
+    s = n(652215),
     o = n(119907);
 
 function c(e) {
@@ -22,19 +22,19 @@ function c(e) {
         buttonProps: {
             message: h,
             channel: p,
-            groupId: g,
-            compact: f = !1
+            groupId: f,
+            compact: m = !1
         },
-        messageWindow: m
-    } = e, b = h.state === a.cmJ.SENDING, A = h.id === g, y = (0, l.Lt)(h.flags, a.pr7.EPHEMERAL), O = h.state === a.cmJ.SEND_FAILED;
-    return b || y && !O ? null : (0, r.jsx)(s.A, {
+        messageWindow: g
+    } = e, A = h.state === s.cmJ.SENDING, b = h.id === f, _ = (0, r.Lt)(h.flags, s.pr7.EPHEMERAL), y = h.state === s.cmJ.SEND_FAILED;
+    return A || _ && !y ? null : (0, l.jsx)(a.A, {
         className: o.Uo,
         innerClassName: o.Mc,
-        isHeader: !f && A && !(0, i.A)(h),
-        isReply: !f && h.type === a.lAJ.REPLY && null != h.messageReference,
+        isHeader: !m && b && !(0, i.A)(h),
+        isReply: !m && h.type === s.lAJ.REPLY && null != h.messageReference,
         channel: p,
         message: h,
-        messageWindow: m,
+        messageWindow: g,
         setPopout: t,
         showEmojiPicker: n,
         showEmojiBurstPicker: c,

@@ -1,14 +1,14 @@
-/** chunk id: 718676, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    A: () => o
+/** chunk id: 718676, original params: e,n,t (module,exports,require) **/
+t.d(n, {
+    A: () => s
 });
-var r = n(627968);
-n(64700);
-var l = n(397927),
-    i = n(644230);
-let o = () => (0, r.jsx)("div", {
+var l = t(627968);
+t(64700);
+var r = t(397927),
+    i = t(644230);
+let s = () => (0, l.jsx)("div", {
     className: i._,
-    children: (0, r.jsx)(l.nvX, {
+    children: (0, l.jsx)(r.nvX, {
         dotRadius: 4,
         themed: !0
     })

@@ -11,8 +11,8 @@ var r = n(627968),
     c = n(937773),
     u = n(961350),
     d = n(734057),
-    h = n(309010),
-    p = n(559405),
+    p = n(309010),
+    h = n(559405),
     g = n(652215),
     f = n(307731),
     m = n(680930);
@@ -24,11 +24,11 @@ function b(e) {
         selectedDefaultStatus: b,
         setIsEmojiPickerOpen: A,
         defaultStatusVariant: y
-    } = e, O = l.useRef(null), _ = (0, i.bG)([h.A, d.A], () => d.A.getChannel(h.A.getVoiceChannelId())), j = l.useCallback(() => null != t ? (0, r.jsx)(a.A, {
+    } = e, O = l.useRef(null), j = (0, i.bG)([p.A, d.A], () => d.A.getChannel(p.A.getVoiceChannelId())), x = l.useCallback(() => null != t ? (0, r.jsx)(a.A, {
         emojiId: t.id,
         emojiName: t.name,
         animated: !!t.animated
-    }) : null != b ? (0, r.jsx)(p.A, {
+    }) : null != b ? (0, r.jsx)(h.A, {
         className: m.Kk,
         userId: u.default.getId(),
         size: 20,
@@ -48,8 +48,8 @@ function b(e) {
                 closePopout: l
             } = e;
             return (0, r.jsx)(c.A, {
-                channel: _,
-                guildId: null != (t = null == _ ? void 0 : _.guild_id) ? t : void 0,
+                channel: j,
+                guildId: null != (t = null == j ? void 0 : j.guild_id) ? t : void 0,
                 closePopout: l,
                 onSelectEmoji: e => {
                     var t;
@@ -99,7 +99,7 @@ function b(e) {
                 ref: O,
                 active: s,
                 tabIndex: 0,
-                renderButtonContents: null == t && null == b ? null : j
+                renderButtonContents: null == t && null == b ? null : x
             }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
                 var n = Object.keys(e);
                 if (Object.getOwnPropertySymbols) {

@@ -1,6 +1,5 @@
-/** chunk id: 63135, original params: e,n,t (module,exports,require) **/
-"use strict";
-t.r(e.exports = {
+/** chunk id: 63135, original params: e,t,n (module,exports,require) **/
+n.r(e.exports = {
     standardSidebarView: "standardSidebarView__23e6b",
     withUpsell: "withUpsell__23e6b",
     sidebarRegion: "sidebarRegion__23e6b",

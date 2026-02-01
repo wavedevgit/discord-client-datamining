@@ -1,43 +1,43 @@
-/** chunk id: 127938, original params: e,n,t (module,exports,require) **/
-t.d(n, {
+/** chunk id: 127938, original params: e,t,n (module,exports,require) **/
+n.d(t, {
     A: () => d
 });
-var r = t(627968),
-    o = t(64700),
-    a = t(311907),
-    i = t(833147),
-    l = t(33445),
-    c = t(91242),
-    _ = t(193855),
-    s = t(360469);
+var l = n(627968),
+    r = n(64700),
+    i = n(311907),
+    o = n(833147),
+    a = n(33445),
+    c = n(91242),
+    s = n(193855),
+    u = n(360469);
 
 function d() {
-    let e = (0, a.bG)([c.A], () => c.A.getConnectedFrame()),
-        n = (0, a.bG)([c.A], () => (null == e ? void 0 : e.applicationId) != null && c.A.isProxyTicketRefreshing(e.applicationId), [e]),
-        t = o.useCallback(e => {
-            let {
-                application: n
-            } = e;
-            return (0, r.jsx)(_.A, {
-                applicationId: n.id
-            })
-        }, []),
-        d = o.useCallback(n => {
+    let e = (0, i.bG)([c.A], () => c.A.getConnectedFrame()),
+        t = (0, i.bG)([c.A], () => (null == e ? void 0 : e.applicationId) != null && c.A.isProxyTicketRefreshing(e.applicationId), [e]),
+        n = r.useCallback(e => {
             let {
                 application: t
-            } = n, o = {};
-            null != e && (o.instance_id = "example-cl-instance", o.platform = s.vu.DESKTOP, null != e.proxyTicket && (o.discord_proxy_ticket = e.proxyTicket));
-            let a = null == e ? void 0 : e.url;
-            return (0, r.jsx)(i.A, {
-                application: t,
-                queryParams: o,
-                url: a
+            } = e;
+            return (0, l.jsx)(s.A, {
+                applicationId: t.id
+            })
+        }, []),
+        d = r.useCallback(t => {
+            let {
+                application: n
+            } = t, r = {};
+            null != e && (r.instance_id = "example-cl-instance", r.platform = u.vu.DESKTOP, null != e.proxyTicket && (r.discord_proxy_ticket = e.proxyTicket));
+            let i = null == e ? void 0 : e.url;
+            return (0, l.jsx)(o.A, {
+                application: n,
+                queryParams: r,
+                url: i
             })
         }, [e]);
-    return (0, r.jsx)(l.E, {
+    return (0, l.jsx)(a.E, {
         activity: e,
-        isLoading: n,
-        renderHeader: t,
+        isLoading: t,
+        renderHeader: n,
         renderActivityIFrameWithLoadedData: d
     })
 }

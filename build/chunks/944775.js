@@ -1,16 +1,16 @@
 /** chunk id: 944775, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     Lk: () => c,
-    hK: () => s
+    hK: () => o
 }), n(627968), n(64700);
-var r = n(73153),
-    l = n(395011);
+var l = n(73153),
+    r = n(395011);
 n(923917), n(574172), n(734057), n(383501);
 var i = n(256415);
 n(837921), n(927421);
 var a = n(980504);
 n(652215), n(985018);
-let o = {
+let s = {
     width: a.ed.width,
     height: a.ed.height,
     resizable: !1,
@@ -25,14 +25,14 @@ let o = {
     titleBarStyle: null
 };
 
-function s(e, t) {
-    let n = l.A.isOverlayV3EnabledForPID(t),
+function o(e, t) {
+    let n = r.A.isOverlayV3EnabledForPID(t),
         a = i.default.disableClickableRegions;
-    n || a || r.h.dispatch({
+    n || a || l.h.dispatch({
         type: "OVERLAY_SET_INPUT_LOCKED",
         locked: !1,
         pid: t
-    }), r.h.dispatch({
+    }), l.h.dispatch({
         type: "SOUNDBOARD_SET_OVERLAY_ENABLED",
         pid: t,
         enabled: !0,
@@ -41,17 +41,17 @@ function s(e, t) {
 }
 
 function c(e) {
-    r.h.dispatch({
+    l.h.dispatch({
         type: "SOUNDBOARD_SET_OVERLAY_ENABLED",
         pid: e,
         enabled: !1
     });
-    let t = l.A.isOverlayV3EnabledForPID(e),
+    let t = r.A.isOverlayV3EnabledForPID(e),
         n = i.default.disableClickableRegions;
-    i.default.isLocked(e) || t || n || r.h.dispatch({
+    i.default.isLocked(e) || t || n || l.h.dispatch({
         type: "OVERLAY_SET_INPUT_LOCKED",
         locked: !0,
         pid: e
     })
 }
-a.ed.padding, o.width, o.height
+a.ed.padding, s.width, s.height

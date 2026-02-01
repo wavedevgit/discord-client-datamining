@@ -15,8 +15,8 @@ var i = n(960488),
     p = n(498400),
     h = n(287809),
     g = n(107834),
-    f = n(652215),
-    m = n(788868),
+    m = n(652215),
+    f = n(788868),
     A = n(187585);
 let _ = l.Ay.connectStores([h.default], () => ({
     user: h.default.getCurrentUser()
@@ -38,10 +38,10 @@ let _ = l.Ay.connectStores([h.default], () => ({
                     className: A.u1
                 })
             }) : (0, r.jsx)(p.A, {
-                entrypoint: m.Mf.ApplicationStoreHome
+                entrypoint: f.Mf.ApplicationStoreHome
             })
         })]
     }) : (0, r.jsx)(i.rd, {
-        to: f.BVt.LOGIN
+        to: m.BVt.LOGIN
     })
 })))

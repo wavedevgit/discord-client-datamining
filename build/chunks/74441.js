@@ -25,9 +25,9 @@ function u(e) {
         shouldShow: a
     } = e, u = (0, r.bG)([l.Ay], () => l.Ay.getKeybindForAction(n, !1, !0));
     if (null == u || !a) return null;
-    let p = o.dI(u.shortcut),
-        h = d[n],
-        f = t ? h.slash : h.default;
+    let h = o.dI(u.shortcut),
+        p = d[n],
+        f = t ? p.slash : p.default;
     return (0, i.jsxs)("div", {
         className: c.U$,
         children: [(0, i.jsx)(f, {
@@ -37,7 +37,7 @@ function u(e) {
         }), (0, i.jsx)(s.Text, {
             variant: "text-xxs/semibold",
             className: c.z2,
-            children: p
+            children: h
         })]
     })
 }

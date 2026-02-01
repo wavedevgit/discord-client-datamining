@@ -11,8 +11,8 @@ var r = n(627968),
     c = n(933958),
     u = n(782091),
     d = n(139286),
-    h = n(313961),
-    p = n(826673),
+    p = n(313961),
+    h = n(826673),
     g = n(855687),
     f = n(267102),
     m = n(733586),
@@ -20,9 +20,9 @@ var r = n(627968),
     A = n(71393),
     y = n(576705),
     O = n(686502),
-    _ = n(175203),
-    j = n(263854),
-    x = n(794927),
+    j = n(175203),
+    x = n(263854),
+    _ = n(794927),
     v = n(652215),
     E = n(439197);
 
@@ -39,16 +39,16 @@ function C(e) {
         popoutType: w
     } = e, R = (0, f.Us)() === v.BRT.POPOUT, D = (0, a.bG)([A.A], () => A.A.getGuild(I.guild_id), [I.guild_id]), {
         dismissedActivityEntryPointTileChannel: L
-    } = (0, j.P)(), M = (0, a.bG)([h.A], () => h.A.getUserParticipantCount(I.id), [I]), G = (0, b.vp)(I.id, t), k = l.useCallback(() => {
+    } = (0, x.P)(), M = (0, a.bG)([p.A], () => p.A.getUserParticipantCount(I.id), [I]), G = (0, b.vp)(I.id, t), k = l.useCallback(() => {
         (0, s.r)(() => {
-            j.P.setState({
+            x.P.setState({
                 dismissedActivityEntryPointTileChannel: I.id
             })
         })
     }, [I.id]);
     l.useEffect(() => {
         null != L && I.id !== L && (0, s.r)(() => {
-            j.P.setState({
+            x.P.setState({
                 dismissedActivityEntryPointTileChannel: null
             })
         })
@@ -57,10 +57,10 @@ function C(e) {
         V = (null == D ? void 0 : D.afkChannelId) === I.id,
         B = I.userLimit <= 0 || I.userLimit > 1,
         H = (0, a.bG)([c.Ay], () => c.Ay.getEmbeddedActivitiesForChannel(I.id).length <= 0),
-        F = (0, p.JZ)(o.M.VC_TILE_ACTIVITIES_ENTRY_POINT),
-        K = (0, u.et)(I.id) !== u.xy.CAN_LAUNCH,
-        Y = null != L && L === I.id,
-        W = G.map(e => t => (0, r.jsx)(_.Ay, {
+        F = (0, h.JZ)(o.M.VC_TILE_ACTIVITIES_ENTRY_POINT),
+        Y = (0, u.et)(I.id) !== u.xy.CAN_LAUNCH,
+        K = null != L && L === I.id,
+        W = G.map(e => t => (0, r.jsx)(j.Ay, {
             participant: e,
             channel: I,
             className: E.V,
@@ -82,14 +82,14 @@ function C(e) {
         }
     }, {
         trackOnInitialLoad: !0
-    }, []), null != D && !V && (!(M >= 2) || !H || K || F || Y ? B && 1 === M && U && (H && !K ? W.push(e => (0, r.jsx)(O.y, {
+    }, []), null != D && !V && (!(M >= 2) || !H || Y || F || K ? B && 1 === M && U && (H && !Y ? W.push(e => (0, r.jsx)(O.y, {
         channel: I,
         guild: D,
         width: e,
         inPopout: R,
         handleClose: k,
         userParticipantCount: M
-    })) : W.push(e => (0, r.jsx)(x.A, {
+    })) : W.push(e => (0, r.jsx)(_.A, {
         width: e,
         channel: I,
         guild: D,

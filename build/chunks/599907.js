@@ -16,8 +16,8 @@ var r = n(627968),
     p = n(573435),
     h = n(635350),
     g = n(726187),
-    f = n(542678),
-    m = n(714991),
+    m = n(542678),
+    f = n(714991),
     A = n(776231),
     _ = n(486020),
     b = n(351022),
@@ -34,7 +34,7 @@ function N(e) {
         guild: t,
         onClick: l,
         onView: s
-    } = e, [g, f] = i.useState(!1), [b, N] = i.useState(!1), [T, j] = i.useState(!1), x = i.useRef(null), P = i.useCallback(async () => {
+    } = e, [g, m] = i.useState(!1), [b, N] = i.useState(!1), [T, j] = i.useState(!1), x = i.useRef(null), P = i.useCallback(async () => {
         N(!0);
         try {
             await l(t.id)
@@ -42,7 +42,7 @@ function N(e) {
             N(!1)
         }
     }, [t.id, l]), w = i.useCallback(e => {
-        e && !g && (f(!0), null == s || s(t.id))
+        e && !g && (m(!0), null == s || s(t.id))
     }, [t.id, g, s]), L = i.useCallback(e => {
         (0, u.L3)(e, async () => {
             let {
@@ -160,7 +160,7 @@ function N(e) {
                     className: I.gI,
                     children: [(0, r.jsxs)("div", {
                         className: I.DD,
-                        children: [(0, r.jsx)(m.A, {
+                        children: [(0, r.jsx)(f.A, {
                             className: I.n2,
                             guild: t,
                             tooltipColor: c.STz.Colors.PRIMARY
@@ -227,13 +227,13 @@ function j(e) {
         index: n,
         onClick: l,
         onView: a
-    } = e, s = i.useRef(null == t), o = i.useCallback((e, t, n, i) => null == t.guildId ? (0, r.jsx)(f.A, {
+    } = e, s = i.useRef(null == t), o = i.useCallback((e, t, n, i) => null == t.guildId ? (0, r.jsx)(m.A, {
         state: n,
         cleanUp: i,
         children: (0, r.jsx)(g.A, {
             className: I.qf
         })
-    }, e) : (0, r.jsx)(f.A, {
+    }, e) : (0, r.jsx)(m.A, {
         state: n,
         cleanUp: i,
         animate: s.current,

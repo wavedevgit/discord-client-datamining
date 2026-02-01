@@ -163,9 +163,9 @@ class A extends(r = a.PureComponent) {
             "aria-hidden": k,
             "aria-label": U,
             "aria-labelledby": G,
-            "aria-describedby": F
+            "aria-describedby": V
         } = this.props, {
-            fieldProps: V
+            fieldProps: F
         } = (0, f.ndh)(this.props), B = 0;
         b ? null != o && (null != c ? B = o[c] : null != l && (B = o[l])) : B = this.scaleValue(t), B = Math.min(Math.max(B, 0), 100);
         let H = "".concat(B, "%"),
@@ -194,7 +194,7 @@ class A extends(r = a.PureComponent) {
             }) : null,
             W = null != R ? R(t) : "".concat(B.toFixed(0), "%"),
             K = null != (e = null == D ? void 0 : D(t)) ? e : void 0;
-        return (0, i.jsx)(f.D0$, y(g({}, V), {
+        return (0, i.jsx)(f.D0$, y(g({}, F), {
             children: e => (0, i.jsx)(I, {
                 active: n,
                 keyboardFocused: r && _.A.keyboardModeEnabled,
@@ -219,7 +219,7 @@ class A extends(r = a.PureComponent) {
                             "aria-hidden": k,
                             "aria-label": U,
                             "aria-labelledby": G,
-                            "aria-describedby": null != F ? F : e.describedById,
+                            "aria-describedby": null != V ? V : e.describedById,
                             "aria-errormessage": e.errorMessageId,
                             "aria-invalid": null != e.errorMessageId,
                             "aria-valuetext": K,

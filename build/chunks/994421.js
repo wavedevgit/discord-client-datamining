@@ -1,20 +1,20 @@
-/** chunk id: 994421, original params: e,t,i (module,exports,require) **/
-i.d(t, {
+/** chunk id: 994421, original params: t,e,i (module,exports,require) **/
+i.d(e, {
     Z: () => o
 });
 var n = i(419954),
     l = i(780964),
     s = i(115980),
     r = i(985018);
-let a = (0, n.E2)(l.X.BILLING_TRANSACTION_HISTORY, {
+let u = (0, n.E2)(l.X.BILLING_TRANSACTION_HISTORY, {
         Component: s.ac,
         useSearchTerms: () => [r.intl.string(r.t.obLrcK)]
     }),
-    u = (0, n.E2)(l.X.BILLING_REDEMPTION_REDIRECT, {
+    a = (0, n.E2)(l.X.BILLING_REDEMPTION_REDIRECT, {
         Component: s.OH,
         useSearchTerms: () => [r.intl.string(r.t.obLrcK)]
     }),
     o = (0, n.zZ)(l.X.BILLING_TRANSACTION_HISTORY_CATEGORY, {
         useTitle: () => r.intl.string(r.t.obLrcK),
-        buildLayout: () => [a, u]
+        buildLayout: () => [u, a]
     })

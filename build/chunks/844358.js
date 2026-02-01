@@ -1,6 +1,6 @@
 /** chunk id: 844358, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => f
+    A: () => m
 }), n(896048);
 var r = n(627968),
     i = n(64700),
@@ -15,10 +15,10 @@ var r = n(627968),
     h = n(985018),
     g = n(742249);
 
-function f(e) {
+function m(e) {
     let {
         applicationId: t
-    } = e, [f, m] = i.useState(null), [A, _] = i.useState(!1), b = i.useRef(!1), E = !u.isPlatformEmbedded && !a.Fr, O = i.useMemo(() => (0, l.A)(), []);
+    } = e, [m, f] = i.useState(null), [A, _] = i.useState(!1), b = i.useRef(!1), E = !u.isPlatformEmbedded && !a.Fr, O = i.useMemo(() => (0, l.A)(), []);
     if (i.useEffect(() => {
             E && !0 !== b.current ? (Promise.resolve().then(n.bind(n, 129014)).then(e => {
                 let {
@@ -33,14 +33,14 @@ function f(e) {
                     }
                 }).then(e => {
                     let t = null != e && e;
-                    m(t), t || _(!0)
+                    f(t), t || _(!0)
                 }).catch(() => {
-                    m(!1), _(!0)
+                    f(!1), _(!0)
                 }).then(() => n.disconnect())
             }), b.current = !0) : E || _(!0)
         }, [t, E, O]), A) return (0, r.jsx)(c.A, {});
-    if (E && !1 !== f)
-        if (!0 === f) return (0, r.jsxs)("div", {
+    if (E && !1 !== m)
+        if (!0 === m) return (0, r.jsxs)("div", {
             className: g.k,
             children: [(0, r.jsx)(o.Heading, {
                 variant: "heading-xxl/bold",

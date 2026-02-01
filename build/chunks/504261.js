@@ -1,17 +1,17 @@
-/** chunk id: 504261, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    A: () => s
-}), n(896048);
-var i = n(64700);
-let s = e => {
-    let [t, n] = i.useState(!1);
+/** chunk id: 504261, original params: e,t,s (module,exports,require) **/
+s.d(t, {
+    A: () => n
+}), s(896048);
+var i = s(64700);
+let n = e => {
+    let [t, s] = i.useState(!1);
     return {
         isFocused: t,
         handleFocus: i.useCallback(t => {
-            e(t), n(!0)
-        }, [e, n]),
+            e(t), s(!0)
+        }, [e, s]),
         handleBlur: () => {
-            n(!1)
+            s(!1)
         }
     }
 }

@@ -1,6 +1,6 @@
 /** chunk id: 51264, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => m
+    A: () => f
 }), n(896048);
 var r = n(627968),
     i = n(64700),
@@ -14,19 +14,19 @@ var r = n(627968),
     p = n(828184),
     h = n(985018),
     g = n(908874);
-let f = "isHideDevBanner",
-    m = () => {
+let m = "isHideDevBanner",
+    f = () => {
         var e;
-        let [t, n] = (0, i.useState)((null == (e = o.w.get(f, "false")) ? void 0 : e.toString()) === "true"), l = (0, s.bG)([u.A], () => {
+        let [t, n] = (0, i.useState)((null == (e = o.w.get(m, "false")) ? void 0 : e.toString()) === "true"), l = (0, s.bG)([u.A], () => {
             var e;
             return (0, d.kK)() ? null == (e = u.A.getCurrentBuildOverride().overrides) ? void 0 : e.discord_web : null
         });
         if (t) return null;
-        let m = () => {
-                o.w.set(f, !0), n(!0)
+        let f = () => {
+                o.w.set(m, !0), n(!0)
             },
             A = () => (0, r.jsx)(c.DUT, {
-                onClick: m,
+                onClick: f,
                 className: g.b,
                 "aria-label": h.intl.string(h.t.WAI6xu),
                 children: (0, r.jsx)(c.PGe, {
@@ -45,7 +45,7 @@ let f = "isHideDevBanner",
             children: [(0, r.jsx)(p.A, {
                 className: g.Kk
             }), h.intl.format(h.t.uyrfYF, {
-                buildNumber: "492007"
+                buildNumber: "492018"
             }), (0, r.jsx)(A, {})]
         }) : null
     }

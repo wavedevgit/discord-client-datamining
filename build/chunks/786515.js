@@ -1,6 +1,6 @@
 /** chunk id: 786515, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => p
+    A: () => h
 });
 var r = n(627968),
     l = n(64700),
@@ -12,8 +12,8 @@ var r = n(627968),
     u = n(60504),
     d = n(985018);
 
-function h() {
-    return (h = Object.assign || function(e) {
+function p() {
+    return (p = Object.assign || function(e) {
         for (var t = 1; t < arguments.length; t++) {
             var n = arguments[t];
             for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r])
@@ -22,7 +22,7 @@ function h() {
     }).apply(this, arguments)
 }
 
-function p() {
+function h() {
     let e = (0, i.bG)([o.A], () => !o.A.visibleOverlayCanvas),
         t = l.useRef(null);
     return (0, r.jsx)(u.A, {
@@ -30,7 +30,7 @@ function p() {
         popoutTargetRef: t,
         children: n => {
             var l, i;
-            let {} = n, o = h({}, n);
+            let {} = n, o = p({}, n);
             return (0, r.jsx)(c.A, (l = function(e) {
                 for (var t = 1; t < arguments.length; t++) {
                     var n = null != arguments[t] ? arguments[t] : {},

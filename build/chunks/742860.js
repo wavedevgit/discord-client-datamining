@@ -1,6 +1,6 @@
 /** chunk id: 742860, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => $
+    A: () => Z
 }), n(896048), n(228524), n(801541);
 var a = n(627968),
     l = n(64700),
@@ -31,8 +31,8 @@ var a = n(627968),
     N = n(241124),
     w = n(212614),
     I = n(646764),
-    P = n(545986),
-    k = n(568329),
+    k = n(545986),
+    P = n(568329),
     R = n(207869),
     D = n(158265),
     M = n(933378),
@@ -151,7 +151,7 @@ function J(e) {
         taskDetails: x
     } = l.useContext(U.T), {
         expansionSpring: f
-    } = l.useContext(k.PW), j = l.useRef(null), A = (0, c.bG)([b.A], () => b.A.isEnrolling(o.id), [o]), S = l.useMemo(() => (0, C.tW)(o, C.fY.QUEST_BAR_HERO), [o]), O = (0, y.NA)({
+    } = l.useContext(P.PW), j = l.useRef(null), A = (0, c.bG)([b.A], () => b.A.isEnrolling(o.id), [o]), S = l.useMemo(() => (0, C.tW)(o, C.fY.QUEST_BAR_HERO), [o]), O = (0, y.NA)({
         quest: o
     }), T = l.useMemo(() => (0, C.tW)(o, C.fY.HERO_IMAGE), [o]), E = l.useMemo(() => null == T ? {} : {
         backgroundImage: "url(".concat(T.url, ")")
@@ -203,7 +203,7 @@ function J(e) {
                         loading: A,
                         text: O,
                         size: "sm",
-                        icon: (0, P.Oz)(o),
+                        icon: (0, k.Oz)(o),
                         fullWidth: !0
                     })
                 })]
@@ -258,10 +258,10 @@ function X(e) {
         taskDetails: d
     } = l.useContext(U.T), {
         expansionSpring: u
-    } = l.useContext(k.PW), m = (null == (t = c.userStatus) ? void 0 : t.completedAt) != null, p = d.percentComplete > 0, h = (0, A.Vn)(c), [x, g, f] = (0, A.Qo)(c, d), b = l.useRef(null), j = l.useRef(null), _ = (0, A.RR)({
+    } = l.useContext(P.PW), m = (null == (t = c.userStatus) ? void 0 : t.completedAt) != null, p = d.percentComplete > 0, h = (0, A.Vn)(c), [x, g, f] = (0, A.Qo)(c, d), b = l.useRef(null), j = l.useRef(null), _ = (0, A.RR)({
         quest: c
     }), y = (0, T.vv)(c), C = (0, A.I3)(c), E = l.useCallback(() => {
-        (0, P.d5)({
+        (0, k.d5)({
             quest: c,
             questContent: v.uF.QUEST_BAR_V2,
             sourceQuestContent: v.uF.QUEST_BAR_V2,
@@ -327,8 +327,8 @@ function X(e) {
         })]
     })
 }
-async function Z(e, t, n, a) {
-    (0, T.vv)(e) ? await (0, P.e0)(e, {
+async function $(e, t, n, a) {
+    (0, T.vv)(e) ? await (0, k.e0)(e, {
         questContent: t,
         questContentCTA: n,
         sourceQuestContent: a,
@@ -343,7 +343,7 @@ async function Z(e, t, n, a) {
         sourceQuestContent: a
     })
 }
-let $ = l.forwardRef(function(e, t) {
+let Z = l.forwardRef(function(e, t) {
     var n;
     let {
         children: r,
@@ -356,11 +356,11 @@ let $ = l.forwardRef(function(e, t) {
         quest: p
     } = l.useContext(U.T), {
         expansionSpring: h
-    } = l.useContext(k.PW), {
+    } = l.useContext(P.PW), {
         launchInGameActivity: x
     } = (0, A.zW)(p), g = (0, E.vA)(p), f = l.useCallback(async () => {
         let e = g ? S.Cy.START_QUEST : S.Cy.ACCEPT_QUEST;
-        await Z(p, v.uF.QUEST_BAR_V2, e, v.uF.QUEST_BAR_V2), g && x()
+        await $(p, v.uF.QUEST_BAR_V2, e, v.uF.QUEST_BAR_V2), g && x()
     }, [p, x, g]), b = (null == (n = p.userStatus) ? void 0 : n.enrolledAt) != null, j = u && m;
     return (0, a.jsxs)(s.animated.div, {
         "aria-hidden": !j,

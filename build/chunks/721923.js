@@ -101,7 +101,7 @@ let R = e => {
         useExpressiveButton: k = !1
     } = e, U = N(e, ["analyticsLocation", "analyticsSourceLocation", "guild", "buttonText", "targetBoostedGuildTier", "onClose", "closeLayer", "pauseAnimation", "applicationId", "handleSubscribeModalClose", "withHighlight", "icon", "intent", "useExpressiveButton"]), {
         analyticsLocations: G
-    } = (0, p.Ay)(), F = (0, h.Us)() === b.BRT.POPOUT, [V, B] = i.useState(!1), {
+    } = (0, p.Ay)(), V = (0, h.Us)() === b.BRT.POPOUT, [F, B] = i.useState(!1), {
         fractionalState: H
     } = (0, _.A)(), Y = (0, s.bG)([m.A], () => m.A.hasFetched);
     i.useEffect(() => {
@@ -121,7 +121,7 @@ let R = e => {
                 numberOfBoostsToAdd: K,
                 onClose: w,
                 closeLayer: R,
-                inPopout: F,
+                inPopout: V,
                 applicationId: D,
                 handleSubscribeModalClose: L,
                 intent: j
@@ -160,7 +160,7 @@ let R = e => {
     }) : k ? (0, r.jsx)(d.Button, {
         variant: "expressive",
         disabled: X,
-        loading: V,
+        loading: F,
         text: null != I ? I : v.intl.string(v.t.gKmQ1G),
         onClick: q
     }) : (0, r.jsx)(d.wLn, C(S({
@@ -170,7 +170,7 @@ let R = e => {
         className: o()(U.className, {
             [A.yj]: x
         }),
-        submitting: V,
+        submitting: F,
         onClick: q,
         pauseAnimation: P,
         children: Q

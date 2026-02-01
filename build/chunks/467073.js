@@ -1,28 +1,28 @@
 /** chunk id: 467073, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => g
+    A: () => f
 }), n(896048);
 var i = n(311907),
-    s = n(229527),
-    r = n(870136),
-    l = n(857071),
-    a = n(406704),
-    o = n(696451),
+    r = n(229527),
+    l = n(870136),
+    o = n(857071),
+    s = n(406704),
+    a = n(696451),
     c = n(834942),
-    d = n(576705),
-    u = n(707985),
-    h = n(652215);
+    u = n(576705),
+    d = n(707985),
+    p = n(652215);
 
-function g(e) {
+function f(e) {
     var t, n;
-    let g = null == e ? void 0 : e.guild_id,
-        m = (0, i.bG)([c.A], () => null == g || c.A.canChatInGuild(g), [g]),
-        p = (0, i.bG)([l.A], () => null != g && l.A.isLurking(g), [g]),
-        f = (0, i.bG)([o.Ay], () => null != g && o.Ay.isCurrentUserGuest(g), [g]),
-        v = (0, i.bG)([d.A], () => m && d.A.can(h.xBc.ADD_REACTIONS, e), [m, e]),
-        b = (0, s.ix)(g),
-        [, A] = (0, r.c)(g),
-        O = (0, a.Id)(e);
+    let f = null == e ? void 0 : e.guild_id,
+        b = (0, i.bG)([c.A], () => null == f || c.A.canChatInGuild(f), [f]),
+        O = (0, i.bG)([o.A], () => null != f && o.A.isLurking(f), [f]),
+        h = (0, i.bG)([a.Ay], () => null != f && a.Ay.isCurrentUserGuest(f), [f]),
+        m = (0, i.bG)([u.A], () => b && u.A.can(p.xBc.ADD_REACTIONS, e), [b, e]),
+        g = (0, r.ix)(f),
+        [, y] = (0, l.c)(f),
+        A = (0, s.Id)(e);
     return null == e ? {
         disableReactionReads: !0,
         disableReactionCreates: !0,
@@ -47,18 +47,18 @@ function g(e) {
             })
         }
         return e
-    }({}, (0, u.A)({
+    }({}, (0, d.A)({
         channel: e,
-        canChat: m,
+        canChat: b,
         renderReactions: !0,
-        canAddNewReactions: v,
-        isLurking: p,
-        communicationDisabled: A,
-        isActiveChannelOrUnarchivableThread: O,
-        isAutomodQuarantined: b
+        canAddNewReactions: m,
+        isLurking: O,
+        communicationDisabled: y,
+        isActiveChannelOrUnarchivableThread: A,
+        isAutomodQuarantined: g
     })), n = n = {
-        isLurking: p,
-        isGuest: f,
+        isLurking: O,
+        isGuest: h,
         isPendingMember: !1
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
         var n = Object.keys(e);

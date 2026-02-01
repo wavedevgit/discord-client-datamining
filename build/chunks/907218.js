@@ -1,44 +1,44 @@
-/** chunk id: 907218, original params: e,t,i (module,exports,require) **/
-i.d(t, {
+/** chunk id: 907218, original params: t,e,i (module,exports,require) **/
+i.d(e, {
     k: () => d
 });
 var n = i(311907),
     l = i(274372),
     s = i(399925),
     r = i(419954),
-    a = i(780964),
-    u = i(753070),
+    u = i(780964),
+    a = i(753070),
     o = i(985018);
-let d = (0, r.Hn)(a.X.CLIPS_FRAME_RATE, {
+let d = (0, r.Hn)(u.X.CLIPS_FRAME_RATE, {
     useTitle: () => o.intl.string(o.t["2wScL1"]),
     useSubtitle: () => o.intl.string(o.t["Rf9+fy"]),
     useValue: () => (0, n.bG)([l.A], () => l.A.getSettings().clipsQuality.frameRate),
-    setValue: e => {
+    setValue: t => {
         let {
-            clipsQuality: t
+            clipsQuality: e
         } = l.A.getSettings();
         s.GS({
-            resolution: t.resolution,
-            frameRate: e
+            resolution: e.resolution,
+            frameRate: t
         })
     },
     useOptions: () => [{
         id: "15",
-        value: u.kn.FPS_15,
+        value: a.kn.FPS_15,
         label: o.intl.formatToPlainString(o.t.Qb44XH, {
-            fps: u.kn.FPS_15
+            fps: a.kn.FPS_15
         })
     }, {
         id: "30",
-        value: u.kn.FPS_30,
+        value: a.kn.FPS_30,
         label: o.intl.formatToPlainString(o.t.Qb44XH, {
-            fps: u.kn.FPS_30
+            fps: a.kn.FPS_30
         })
     }, {
         id: "60",
-        value: u.kn.FPS_60,
+        value: a.kn.FPS_60,
         label: o.intl.formatToPlainString(o.t.Qb44XH, {
-            fps: u.kn.FPS_60
+            fps: a.kn.FPS_60
         })
     }],
     fieldLayout: "horizontal-responsive"

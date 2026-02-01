@@ -13,9 +13,9 @@ let c = Math.ceil(Math.sqrt(115200)),
     d = l.forwardRef(function(e, t) {
         let {
             children: n
-        } = e, [d, h] = l.useState(-1), p = l.useCallback(e => {
-            h(e.contentRect.width)
-        }, []), g = (0, a.w)(p, [], {
+        } = e, [d, p] = l.useState(-1), h = l.useCallback(e => {
+            p(e.contentRect.width)
+        }, []), g = (0, a.w)(h, [], {
             fireOnMount: !0
         }), [{
             shineSpring: f

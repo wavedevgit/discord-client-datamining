@@ -12,9 +12,9 @@ var l, a = n(735438),
     p = n(863036),
     h = n(734057),
     g = n(652215),
-    f = n(737045);
+    m = n(737045);
 
-function m(e, t, n) {
+function f(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -30,7 +30,7 @@ function A(e) {
         "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
             return Object.getOwnPropertyDescriptor(n, e).enumerable
         }))), r.forEach(function(t) {
-            m(e, t, n[t])
+            f(e, t, n[t])
         })
     }
     return e
@@ -57,7 +57,7 @@ let b = new Set,
     S = null,
     C = null,
     N = null,
-    T = c.w.get(f.t0) || !1;
+    T = c.w.get(m.t0) || !1;
 
 function j(e) {
     let t = e.getGuildId(),
@@ -111,7 +111,7 @@ class P extends(l = o.Ay.Store) {
         return T
     }
 }
-m(P, "displayName", "ChannelSettingsPermissionsStore");
+f(P, "displayName", "ChannelSettingsPermissionsStore");
 let w = new P(u.h, {
     CHANNEL_SETTINGS_SET_SECTION: function(e) {
         let {
@@ -183,6 +183,6 @@ let w = new P(u.h, {
         let {
             advancedMode: t
         } = e;
-        T = t, c.w.set(f.t0, t)
+        T = t, c.w.set(m.t0, t)
     }
 })

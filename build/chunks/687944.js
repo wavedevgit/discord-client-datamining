@@ -22,13 +22,13 @@ var i = n(990078),
     h = n(985018),
     E = n(424850),
     O = n(818724);
-let C = {
+let x = {
     page: b.liQ.USER_SETTINGS,
     section: b.JJy.SETTINGS_PREMIUM,
     object: b.ZSU.CARD
 };
 
-function x(e) {
+function C(e) {
     let {
         premiumSubscription: t,
         discountInfo: n,
@@ -103,8 +103,8 @@ let T = function(e) {
             isLoading: f,
             analyticsLocation: T,
             discountInfo: I,
-            renewalChurnDiscountInfo: y,
-            discountOffer: N
+            renewalChurnDiscountInfo: N,
+            discountOffer: y
         } = e,
         {
             analyticsLocations: j
@@ -152,7 +152,7 @@ let T = function(e) {
             })
         },
         P = _.Ay.getPlanIdFromInvoice(p, m),
-        R = (0, g.ux)(null == N ? void 0 : N.expires_at);
+        R = (0, g.ux)(null == y ? void 0 : y.expires_at);
     return (0, c.m1)(P) ? null : (0, r.jsx)("div", {
         className: E.S6,
         children: (0, r.jsx)(l.hLv, {
@@ -170,7 +170,7 @@ let T = function(e) {
                         className: E.tD,
                         variant: "text-sm/medium",
                         color: "text-strong",
-                        children: null != N && R
+                        children: null != y && R
                     })]
                 }), (0, r.jsx)("div", {
                     className: E.T
@@ -178,12 +178,12 @@ let T = function(e) {
                     className: E.ly,
                     children: [(0, r.jsxs)("div", {
                         className: E.Yc,
-                        children: [null != N ? (0, r.jsx)(S, {
-                            discountOffer: N,
+                        children: [null != y ? (0, r.jsx)(S, {
+                            discountOffer: y,
                             premiumSubscription: p
-                        }) : (0, r.jsx)(x, {
+                        }) : (0, r.jsx)(C, {
                             premiumSubscription: p,
-                            discountInfo: null != I ? I : y,
+                            discountInfo: null != I ? I : N,
                             invoicePreview: m,
                             isDiscountActive: null != I
                         }), (0, r.jsx)("div", {
@@ -210,7 +210,7 @@ let T = function(e) {
                                             (0, o.A)({
                                                 analyticsLocations: j,
                                                 analyticsLocation: T,
-                                                analyticsObject: C,
+                                                analyticsObject: x,
                                                 subscription: p
                                             })
                                         }

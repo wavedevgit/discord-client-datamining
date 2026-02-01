@@ -18,7 +18,7 @@ function u(e, t, n, u) {
             applicationId: u,
             appContext: (0, i.Us)()
         },
-        h = () => {
+        p = () => {
             null != t && e.type === o.rbe.GUILD_VOICE && (0, s.X)(function(e) {
                 for (var t = 1; t < arguments.length; t++) {
                     var n = null != arguments[t] ? arguments[t] : {},
@@ -43,7 +43,7 @@ function u(e, t, n, u) {
     return null != u ? (0, r.jsx)(l.Drp, {
         id: "invite-to-stream",
         label: c.intl.string(c.t["OzOM/q"]),
-        action: h,
+        action: p,
         icon: l.DpX,
         leadingAccessory: {
             type: "icon",
@@ -52,7 +52,7 @@ function u(e, t, n, u) {
     }) : null != t && null != e && a.A.can(o.xBc.CREATE_INSTANT_INVITE, e) ? (0, r.jsx)(l.Drp, {
         id: "invite-friends",
         label: c.intl.string(c.t["EE+P0H"]),
-        action: h,
+        action: p,
         icon: l.Rvf,
         leadingAccessory: {
             type: "icon",

@@ -1,7 +1,5 @@
 /** chunk id: 937136, original params: e,t,n (module,exports,require) **/
-"use strict";
-
-function r(e, t, n) {
+function i(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -10,9 +8,9 @@ function r(e, t, n) {
     }) : e[t] = n, e
 }
 n.d(t, {
-    p: () => i
+    p: () => r
 }), n(896048);
-class i {
+class r {
     empty() {
         return 0 === this.pending.size && 0 === this.fetching.size
     }
@@ -48,6 +46,6 @@ class i {
         }
     }
     constructor() {
-        r(this, "pending", new Set), r(this, "fetching", new Set)
+        i(this, "pending", new Set), i(this, "fetching", new Set)
     }
 }

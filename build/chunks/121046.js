@@ -1,21 +1,21 @@
-/** chunk id: 121046, original params: e,t,r (module,exports,require) **/
-r.d(t, {
-    A: () => u
+/** chunk id: 121046, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    A: () => c
 });
-var n = r(311907),
-    o = r(827343),
-    i = r(961350),
-    l = r(430452),
-    a = r(652215),
-    c = r(731854);
+var r = n(311907),
+    i = n(827343),
+    a = n(961350),
+    l = n(430452),
+    o = n(652215),
+    d = n(731854);
 
-function u(e) {
-    let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : c.x.DEFAULT,
-        r = (0, n.bG)([i.default], () => i.default.getId()),
-        u = (0, n.bG)([l.A], () => l.A.supports(c.O5.DISABLE_VIDEO)),
-        s = (0, n.bG)([l.A], () => l.A.isLocalVideoDisabled(r, t), [r, t]);
-    return [(null == e || e === r) && u, s, e => {
-        let n = e ? a.bb8.DISABLED : a.bb8.MANUAL_ENABLED;
-        o.A.setDisableLocalVideo(r, n, t)
+function c(e) {
+    let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : d.x.DEFAULT,
+        n = (0, r.bG)([a.default], () => a.default.getId()),
+        c = (0, r.bG)([l.A], () => l.A.supports(d.O5.DISABLE_VIDEO)),
+        u = (0, r.bG)([l.A], () => l.A.isLocalVideoDisabled(n, t), [n, t]);
+    return [(null == e || e === n) && c, u, e => {
+        let r = e ? o.bb8.DISABLED : o.bb8.MANUAL_ENABLED;
+        i.A.setDisableLocalVideo(n, r, t)
     }]
 }

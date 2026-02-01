@@ -17,14 +17,14 @@ function d(e) {
         item: t,
         profileOwner: n,
         isHighlighted: d,
-        cardSize: h = c.Y.MEDIUM
-    } = e, p = t.collectiblesItem;
-    switch (p.type) {
+        cardSize: p = c.Y.MEDIUM
+    } = e, h = t.collectiblesItem;
+    switch (h.type) {
         case l.R.PROFILE_EFFECT:
             return (0, r.jsx)("div", {
                 className: u.xC,
                 children: (0, r.jsx)(o.A, {
-                    skuId: p.skuId,
+                    skuId: h.skuId,
                     isHighlighted: d,
                     removeSetHeight: !0
                 })
@@ -33,7 +33,7 @@ function d(e) {
             return (0, r.jsx)("div", {
                 className: u._P,
                 children: (0, r.jsx)(s.i, {
-                    item: p,
+                    item: h,
                     user: n,
                     isHighlighted: d,
                     avatarSize: i._3J.SIZE_80
@@ -46,24 +46,24 @@ function d(e) {
                     className: u.Qt,
                     children: (0, r.jsx)(a.A, {
                         user: n,
-                        nameplate: p,
+                        nameplate: h,
                         isHighlighted: d,
                         showPlaceholderUser: !0,
                         showStatus: !0,
                         nameplatePreviewSize: "default",
-                        width: h === c.Y.SMALL ? 136 : 200
+                        width: p === c.Y.SMALL ? 136 : 200
                     })
                 }), (0, r.jsx)("div", {
                     className: u.BM,
                     "aria-hidden": !0,
                     children: (0, r.jsx)(a.A, {
                         user: n,
-                        nameplate: p,
+                        nameplate: h,
                         isHighlighted: d,
                         showPlaceholderUser: !0,
                         showStatus: !0,
                         nameplatePreviewSize: "default",
-                        width: h === c.Y.SMALL ? 136 : 200
+                        width: p === c.Y.SMALL ? 136 : 200
                     })
                 })]
             });

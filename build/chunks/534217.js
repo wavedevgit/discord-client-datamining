@@ -56,7 +56,7 @@ let O = e => {
             size: a._3J.SIZE_24
         }, i), t.id)
     },
-    C = e => {
+    x = e => {
         let {
             slotIndex: t
         } = e;
@@ -65,7 +65,7 @@ let O = e => {
             children: t
         })
     },
-    x = e => {
+    C = e => {
         let {
             referralSentUsers: t
         } = e;
@@ -80,7 +80,7 @@ let O = e => {
                         }, t[n].id);
                         e.push(i)
                     } else {
-                        let t = (0, r.jsx)(C, {
+                        let t = (0, r.jsx)(x, {
                             slotIndex: n + 1
                         }, n);
                         e.push(t)
@@ -122,7 +122,7 @@ let O = e => {
                 })
             }), (0, r.jsxs)("div", {
                 className: b.IH,
-                children: [(0, r.jsx)(x, {
+                children: [(0, r.jsx)(C, {
                     referralSentUsers: i
                 }), (0, r.jsxs)("div", {
                     className: b.n4,

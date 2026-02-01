@@ -1,6 +1,6 @@
 /** chunk id: 886217, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    Ok: () => f,
+    Ok: () => m,
     _B: () => g
 });
 var r = n(627968),
@@ -36,7 +36,7 @@ function g() {
         label: h.intl.string(h.t.L2mlUb)
     }]
 }
-let f = e => {
+let m = e => {
     let {
         questId: t,
         selectedSections: n

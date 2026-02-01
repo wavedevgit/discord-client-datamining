@@ -121,23 +121,23 @@ function R(e) {
     i.useEffect(() => {
         U(D)
     }, [U, D]);
-    let F = i.useMemo(() => "" === D ? j : null != b ? b(j, D) : (0, s.Ht)(j, D, null != O ? O : w), [j, D, b, O]),
-        V = i.useRef(void 0),
-        B = i.useMemo(() => ("single" === d ? V.current = j.find(e => e.value === y) : V.current = void 0, null == y || Array.isArray(y) && 0 === y.length) ? [] : (Array.isArray(y) ? y : [y]).map(e => j.find(t => t.value === e)).filter(e => null != e), [y, j, d]);
+    let V = i.useMemo(() => "" === D ? j : null != b ? b(j, D) : (0, s.Ht)(j, D, null != O ? O : w), [j, D, b, O]),
+        F = i.useRef(void 0),
+        B = i.useMemo(() => ("single" === d ? F.current = j.find(e => e.value === y) : F.current = void 0, null == y || Array.isArray(y) && 0 === y.length) ? [] : (Array.isArray(y) ? y : [y]).map(e => j.find(t => t.value === e)).filter(e => null != e), [y, j, d]);
     i.useEffect(() => {
         if (!R && "single" === d) {
             var e, t;
-            G(null != (e = null == (t = V.current) ? void 0 : t.label) ? e : "", "")
+            G(null != (e = null == (t = F.current) ? void 0 : t.label) ? e : "", "")
         }
     }, [G, B, d, R]), i.useEffect(() => {
-        if (o && null != V.current) {
-            let e = F.findIndex(e => {
+        if (o && null != F.current) {
+            let e = V.findIndex(e => {
                 var t;
-                return e.value === (null == (t = V.current) ? void 0 : t.value)
+                return e.value === (null == (t = F.current) ? void 0 : t.value)
             });
             N(-1 !== e ? e : null)
         }
-    }, [o, N, F]);
+    }, [o, N, V]);
     let H = f || _,
         Y = i.useCallback(e => {
             if (H || v && 0 === e.length) return;
@@ -162,7 +162,7 @@ function R(e) {
             hasValue: W,
             value: y,
             options: j,
-            filteredOptions: F,
+            filteredOptions: V,
             selectedOptions: B,
             maxOptionsVisible: a,
             query: x,
@@ -219,8 +219,8 @@ function D(e) {
         readOnly: k,
         loading: U,
         clearable: G,
-        required: F,
-        listBoxId: V,
+        required: V,
+        listBoxId: F,
         inputFieldRef: B,
         shouldFocusWrap: H,
         isInert: Y,
@@ -237,7 +237,7 @@ function D(e) {
         setQuery: et,
         isEditing: en,
         setIsEditing: er
-    } = (0, E.h)(), ei = "multiple" === M && K, ea = null != L ? (0, p.ZN)(V, L) : void 0, eo = i.useCallback(() => {
+    } = (0, E.h)(), ei = "multiple" === M && K, ea = null != L ? (0, p.ZN)(F, L) : void 0, eo = i.useCallback(() => {
         Y || null == Q || Q(!Z)
     }, [Y, Z, Q]), es = i.useCallback(() => {
         var e;
@@ -249,8 +249,8 @@ function D(e) {
         Y || null == Q || Q(!0)
     }, [Q, Y]), eu = i.useCallback(e => {
         var t;
-        (null == (t = e.relatedTarget) ? void 0 : t.closest('[data-list-id="'.concat(V, '"]'))) == null && (er(!1), null == Q || Q(!1), null == A || A(e))
-    }, [A, Q, V, er]);
+        (null == (t = e.relatedTarget) ? void 0 : t.closest('[data-list-id="'.concat(F, '"]'))) == null && (er(!1), null == Q || Q(!1), null == A || A(e))
+    }, [A, Q, F, er]);
     i.useEffect(() => {
         ei && !C && (P.current = setTimeout(() => {
             var e;
@@ -299,7 +299,7 @@ function D(e) {
                     if (e.preventDefault(), e.stopPropagation(), !Z || null == L || t - 1 < L) return;
                     let r = $[L];
                     if (null == r || !0 === r.disabled) return;
-                    if (F && 1 === J.length && J.includes(r)) return void z(J);
+                    if (V && 1 === J.length && J.includes(r)) return void z(J);
                     z("single" === M ? [r] : (0, p.qH)(M, J, r));
                     break;
                 case "Backspace":
@@ -319,7 +319,7 @@ function D(e) {
                     if (e.preventDefault(), 0 === t) return;
                     x(t - 1)
             }
-        }, [M, F, G, K, H, Z, S, es, z, J, ee, Q, $, L, x]),
+        }, [M, V, G, K, H, Z, S, es, z, J, ee, Q, $, L, x]),
         eh = i.useCallback(e => {
             er(!0), et(e.target.value), null == Q || Q(!0), null == h || h(e), x(null)
         }, [h, er, et, Q, x]),
@@ -396,7 +396,7 @@ function D(e) {
                             "aria-haspopup": "listbox",
                             "aria-autocomplete": "list",
                             "aria-busy": U,
-                            "aria-controls": V,
+                            "aria-controls": F,
                             "aria-expanded": !W || Z,
                             "aria-activedescendant": ea,
                             "aria-labelledby": "".concat(null == D ? void 0 : D.labelId),

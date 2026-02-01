@@ -19,20 +19,20 @@ var r, i, l = n(735438),
     h = n(945886),
     E = n(760751),
     O = n(576705),
-    C = n(222823),
-    x = n(309010),
+    x = n(222823),
+    C = n(309010),
     S = n(543465),
     T = n(403362),
     I = n(661191),
-    y = n(32603),
-    N = n(355097);
+    N = n(32603),
+    y = n(355097);
 let j = null,
     v = null,
-    P = new y.Ay;
+    P = new N.Ay;
 
 function R() {
-    let e = x.A.getChannelId(),
-        t = x.A.getVoiceChannelId();
+    let e = C.A.getChannelId(),
+        t = C.A.getVoiceChannelId();
     return j = e, v = t, P.clear()
 }
 
@@ -83,8 +83,8 @@ function U(e) {
 }
 
 function k() {
-    let e = x.A.getChannelId(),
-        t = x.A.getVoiceChannelId(),
+    let e = C.A.getChannelId(),
+        t = C.A.getVoiceChannelId(),
         n = j !== e || v !== t;
     return !!n && (s()([j, v, e, t]).uniq().forEach(e => {
         null != e && P.nonPositionalChannelIdUpdate(e) && (n = !0)
@@ -117,7 +117,7 @@ function F(e) {
 }
 class Y extends(r = a.Ay.Store) {
     initialize() {
-        this.waitFor(p.A, A.default, f.A, b.A, h.A, c.Ay, E.A, u.A, _.Ay, m.A, O.A, C.Ay, x.A, S.Ay, g.A)
+        this.waitFor(p.A, A.default, f.A, b.A, h.A, c.Ay, E.A, u.A, _.Ay, m.A, O.A, x.Ay, C.A, S.Ay, g.A)
     }
     getGuild(e, t) {
         var n, r;
@@ -315,7 +315,7 @@ let W = new Y(o.h, {
         let {
             settings: n
         } = e;
-        if (n.type !== N.oD.PRELOADED_USER_SETTINGS) return !1;
+        if (n.type !== y.oD.PRELOADED_USER_SETTINGS) return !1;
         let r = null == (t = n.proto.guilds) ? void 0 : t.guilds,
             i = !1;
         return null != r && I.default.keys(r).forEach(e => {

@@ -1,6 +1,6 @@
 /** chunk id: 193699, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => f
+    A: () => m
 });
 var r = n(627968);
 n(64700);
@@ -16,7 +16,7 @@ var i = n(503698),
     h = n(985018),
     g = n(786983);
 
-function f(e) {
+function m(e) {
     let {
         className: t,
         markAsDismissed: n

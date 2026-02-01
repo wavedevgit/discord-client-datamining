@@ -31,8 +31,8 @@ var a = n(627968),
     N = n(559506),
     w = n(646986),
     I = n(379654),
-    P = n(946356),
-    k = n(810396),
+    k = n(946356),
+    P = n(810396),
     R = n(376285),
     D = n(159218),
     M = n(442228),
@@ -51,8 +51,8 @@ var a = n(627968),
     Y = n(33042),
     J = n(347853),
     X = n(652215),
-    Z = n(49999),
-    $ = n(996988),
+    $ = n(49999),
+    Z = n(996988),
     ee = n(985018),
     et = n(423648),
     en = n(183959);
@@ -128,18 +128,18 @@ function el(e) {
             eI(!1)
         }, 500)
     }, []);
-    let eP = e => {
+    let ek = e => {
             null == n || n(), (0, C.openUserProfileModal)(ea({
                 customStatusPrompt: eN,
                 sourceAnalyticsLocations: ec
             }, ed, e))
         },
-        ek = (null == eo ? void 0 : eo.widgets) != null && eo.widgets.length > 0,
-        eR = ek ? [] : [o.M.WIDGETS_USER_PROFILE_ACCOUNT_POPOUT_NEW_BADGE],
+        eP = (null == eo ? void 0 : eo.widgets) != null && eo.widgets.length > 0,
+        eR = eP ? [] : [o.M.WIDGETS_USER_PROFILE_ACCOUNT_POPOUT_NEW_BADGE],
         [eD, eM] = (0, f.kn)(eR),
         eL = eD === o.M.WIDGETS_USER_PROFILE_ACCOUNT_POPOUT_NEW_BADGE,
         eU = l.useCallback(() => {
-            eM(Z.i.USER_DISMISS), n()
+            eM($.i.USER_DISMISS), n()
         }, [eM, n]),
         eB = l.useCallback(() => {
             eA(), eU()
@@ -165,28 +165,28 @@ function el(e) {
                 "data-layer": "base",
                 children: [(0, a.jsx)(Q.A, {
                     displayProfile: eo,
-                    handleOpenUserProfileModal: eP,
+                    handleOpenUserProfileModal: ek,
                     height: em
-                }), (0, a.jsxs)(P.A, {
+                }), (0, a.jsxs)(k.A, {
                     className: et.BK,
                     user: t,
                     displayProfile: eo,
-                    themeType: $.d.POPOUT,
+                    themeType: Z.d.POPOUT,
                     children: [(0, a.jsxs)("div", {
                         className: en.wx,
                         children: [(0, a.jsx)(T.A, {
                             user: t,
                             displayProfile: eo,
-                            themeType: $.d.POPOUT
+                            themeType: Z.d.POPOUT
                         }), (0, a.jsx)(S.A, {
                             user: t,
                             displayProfile: eo,
-                            themeType: $.d.POPOUT,
-                            onOpenProfile: es ? void 0 : eP
+                            themeType: Z.d.POPOUT,
+                            onOpenProfile: es ? void 0 : ek
                         }), (0, a.jsx)(D.A, {
                             ref: eO,
                             user: t,
-                            themeType: $.d.POPOUT,
+                            themeType: Z.d.POPOUT,
                             onCloseProfile: n,
                             prompt: eS ? eN : null
                         })]
@@ -197,15 +197,15 @@ function el(e) {
                         },
                         children: [(0, a.jsx)(N.A, {
                             userId: t.id
-                        }), (0, a.jsx)(k.A, {
+                        }), (0, a.jsx)(P.A, {
                             user: t,
                             className: et.Xh,
                             nickname: F.Ay.getName(void 0, null, t),
-                            onOpenProfile: es ? void 0 : eP,
+                            onOpenProfile: es ? void 0 : ek,
                             pronouns: null == eo ? void 0 : eo.pronouns,
                             tags: (0, a.jsx)(O.A, {
                                 displayProfile: eo,
-                                themeType: $.d.POPOUT,
+                                themeType: Z.d.POPOUT,
                                 onClose: n,
                                 shouldOpenBadgeTooltip: null != er ? e => e === er : void 0,
                                 shouldGlowTenureBadge: eE.current
@@ -219,21 +219,21 @@ function el(e) {
                             bio: null == eo ? void 0 : eo.bio,
                             hidePersonalInformation: eb,
                             onClose: n
-                        }), ek && (0, a.jsx)(I.A, {
+                        }), eP && (0, a.jsx)(I.A, {
                             user: t,
                             widgets: null == eo ? void 0 : eo.widgets,
-                            onOpenUserProfileModal: eP
+                            onOpenUserProfileModal: ek
                         }), (0, a.jsx)(E.A, {
                             isPremiumUser: eC,
                             onInteraction: n
                         }), (0, a.jsx)(w.A, {
                             user: t,
                             currentUser: t,
-                            onOpenUserProfileModal: eP,
+                            onOpenUserProfileModal: ek,
                             onClose: n
                         }), (0, a.jsxs)("div", {
                             className: et.T_,
-                            children: [(0, a.jsx)(P.A.Overlay, {
+                            children: [(0, a.jsx)(k.A.Overlay, {
                                 className: et.g0,
                                 children: (0, a.jsxs)(z.Gs, {
                                     children: [(0, a.jsx)(z.N3, {
@@ -319,7 +319,7 @@ function el(e) {
                                         } : void 0
                                     })]
                                 })
-                            }), (0, a.jsx)(P.A.Overlay, {
+                            }), (0, a.jsx)(k.A.Overlay, {
                                 className: et.g0,
                                 children: (0, a.jsxs)(z.Gs, {
                                     children: [(0, a.jsx)(z.N3, {

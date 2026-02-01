@@ -95,7 +95,7 @@ function f(e) {
             text: m.intl.string(m.t.xZEzbu),
             onClick: h
         })
-    }), [t.length, E, h]), C = i.useCallback(() => {
+    }), [t.length, E, h]), x = i.useCallback(() => {
         a.A.show({
             title: m.intl.string(m.t["D+aE7g"]),
             body: m.intl.string(m.t.EA4ZEk),
@@ -114,7 +114,7 @@ function f(e) {
                     variant: "critical-secondary",
                     size: "sm",
                     text: m.intl.string(m.t["D+aE7g"]),
-                    onClick: C
+                    onClick: x
                 })
             }), !n && (0, r.jsx)(d.x, {
                 setting: p.H.ACCOUNT_ENABLE_2FA,

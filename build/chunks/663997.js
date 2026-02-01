@@ -16,14 +16,14 @@ function d(e) {
     let {
         guildId: t,
         guildJoinRequests: n
-    } = e, l = r.useRef(!1), [d, h] = r.useState(null), p = r.useRef(null), g = r.useRef(!1);
+    } = e, l = r.useRef(!1), [d, p] = r.useState(null), h = r.useRef(null), g = r.useRef(!1);
     return {
         fetchNextPage: r.useCallback(async (e, r) => {
             if (l.current) return;
             let f = "".concat(e, "-").concat(r),
                 m = !1;
-            if (f !== p.current && (p.current = f, g.current = !1, m = !0), g.current) return;
-            null != d && h(null);
+            if (f !== h.current && (h.current = f, g.current = !1, m = !0), g.current) return;
+            null != d && p(null);
             let b = function(e, t, n, r) {
                 let l = n === c.B5.SUBMITTED;
                 if (t === c._e.TIMESTAMP_DESC)
@@ -77,7 +77,7 @@ function d(e) {
                     t.length < u && (g.current = !0)
                 }
             } catch (e) {
-                h(new s.LG(e).getAnyErrorMessage())
+                p(new s.LG(e).getAnyErrorMessage())
             } finally {
                 l.current = !1
             }

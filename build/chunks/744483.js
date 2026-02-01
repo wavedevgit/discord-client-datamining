@@ -12,17 +12,17 @@ var l = n(311907),
     c = n(168015),
     u = n(761640),
     d = n(58736),
-    h = n(652215),
-    p = n(985018);
+    p = n(652215),
+    h = n(985018);
 
 function g(e) {
     let {
         channel: t,
         showCallOrActivityPanel: n
-    } = e, g = (0, l.bG)([u.Ay], () => u.Ay.getSection(t.id, null == t ? void 0 : t.isDM())), f = (0, o.Ay)(t.getRecipientId()), m = (0, c.A)(), b = g === h.YvQ.PROFILE && m;
+    } = e, g = (0, l.bG)([u.Ay], () => u.Ay.getSection(t.id, null == t ? void 0 : t.isDM())), f = (0, o.Ay)(t.getRecipientId()), m = (0, c.A)(), b = g === p.YvQ.PROFILE && m;
     return (0, r.jsx)(d.In, {
         disabled: !m || n,
-        tooltip: !m || n ? p.intl.string(p.t.YneDgF) : b ? p.intl.string(p.t.niD64e) : p.intl.string(p.t["+FAsHq"]),
+        tooltip: !m || n ? h.intl.string(h.t.YneDgF) : b ? h.intl.string(h.t.niD64e) : h.intl.string(h.t["+FAsHq"]),
         icon: i.nRI,
         onClick: () => {
             (0, a.am)({

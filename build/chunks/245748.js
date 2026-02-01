@@ -2,25 +2,25 @@
 n.d(t, {
     A: () => o
 }), n(896048);
-var r = n(627968),
-    l = n(64700),
+var l = n(627968),
+    r = n(64700),
     i = n(503698),
-    s = n.n(i),
-    a = n(606878);
+    a = n.n(i),
+    s = n(606878);
 
 function o(e) {
     let {
         children: t,
         className: n,
         flashKey: i
-    } = e, [o, c] = l.useState(!1), u = l.useRef(null);
-    return l.useEffect(() => (c(!0), u.current = window.setTimeout(() => {
+    } = e, [o, c] = r.useState(!1), u = r.useRef(null);
+    return r.useEffect(() => (c(!0), u.current = window.setTimeout(() => {
         c(!1)
     }, 2e3), () => {
         null != u.current && clearTimeout(u.current)
-    }), [i]), (0, r.jsx)("div", {
+    }), [i]), (0, l.jsx)("div", {
         "data-flash": o,
-        className: s()(a.j, n),
+        className: a()(s.j, n),
         children: t
     })
 }

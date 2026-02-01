@@ -12,8 +12,8 @@ var l = n(284009),
     c = n(688810),
     u = n(384059),
     d = n(267102),
-    h = n(71393),
-    p = n(375492),
+    p = n(71393),
+    h = n(375492),
     g = n(576705),
     f = n(709562),
     m = n(652215),
@@ -44,9 +44,9 @@ function y(e) {
         stream: l,
         channel: y,
         exitFullScreen: O,
-        appContext: _,
-        analyticsLocation: j,
-        guildScheduledEvent: x,
+        appContext: j,
+        analyticsLocation: x,
+        guildScheduledEvent: _,
         shouldPrioritizeGroupPlusIcon: v = !1,
         isRichPresenceInvite: E = !1,
         iconClassName: C,
@@ -72,7 +72,7 @@ function y(e) {
         return i
     }(e, ["applicationId", "stream", "channel", "exitFullScreen", "appContext", "analyticsLocation", "guildScheduledEvent", "shouldPrioritizeGroupPlusIcon", "isRichPresenceInvite", "iconClassName", "look", "size", "buttonText", "color"]), w = (0, d.Us)(), {
         parentAnalyticsLocation: R
-    } = (0, c.Ay)(), D = null == y ? void 0 : y.getGuildId(), L = (0, s.bG)([h.A], () => null != D ? h.A.getGuild(D) : null, [D]), M = (0, s.bG)([p.A], () => null != t ? p.A.getApplicationActivity(t) : void 0), G = null == t || v ? a.DpX : a.dCJ, k = null != t ? b.intl.string(b.t["OzOM/q"]) : b.intl.string(b.t["6F9ivu"]);
+    } = (0, c.Ay)(), D = null == y ? void 0 : y.getGuildId(), L = (0, s.bG)([p.A], () => null != D ? p.A.getGuild(D) : null, [D]), M = (0, s.bG)([h.A], () => null != t ? h.A.getApplicationActivity(t) : void 0), G = null == t || v ? a.DpX : a.dCJ, k = null != t ? b.intl.string(b.t["OzOM/q"]) : b.intl.string(b.t["6F9ivu"]);
     return null != M && E ? (0, r.jsx)(f.A, {
         onClick: () => {
             null != R && (0, u.X)(R, u.O.INVITE), o.qf(M, !1, w)
@@ -132,10 +132,10 @@ function y(e) {
                     channel: y,
                     streamUserId: null == l ? void 0 : l.ownerId,
                     applicationId: t,
-                    appContext: null != _ ? _ : w,
+                    appContext: null != j ? j : w,
                     exitFullScreen: O,
-                    analyticsLocation: j,
-                    guildScheduledEvent: x
+                    analyticsLocation: x,
+                    guildScheduledEvent: _
                 })
         },
         iconComponent: G,

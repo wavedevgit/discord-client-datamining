@@ -1,7 +1,7 @@
 /** chunk id: 237631, original params: e,t,n (module,exports,require) **/
 let r, l;
 n.d(t, {
-    A: () => h
+    A: () => p
 });
 var i = n(627968);
 n(64700);
@@ -14,7 +14,7 @@ let u = null;
 function d(e) {
     null != r && e ? r() : null != l && l(), r = null, l = null
 }
-let h = {
+let p = {
     init() {
         a.h.subscribe("PREMIUM_REQUIRED_MODAL_OPEN", e => {
             let t;

@@ -27,16 +27,16 @@ function E(e) {
         initialSelectedEffect: l,
         className: E,
         sectionTitle: O,
-        forcedDivider: C = !1,
-        withTutorial: x = !1,
+        forcedDivider: x = !1,
+        withTutorial: C = !1,
         showBorder: S = !1
     } = e, {
         analyticsLocations: T
-    } = (0, c.Ay)(), I = _.Ay.canUsePremiumProfileCustomization(t), y = (0, p.N2)({
+    } = (0, c.Ay)(), I = _.Ay.canUsePremiumProfileCustomization(t), N = (0, p.N2)({
         user: t,
         guildId: null == n ? void 0 : n.id
     }), {
-        pendingProfileEffect: N,
+        pendingProfileEffect: y,
         errors: j
     } = (0, p.nZ)(null == n ? void 0 : n.id);
     i.useEffect(() => {
@@ -45,9 +45,9 @@ function E(e) {
             location_stack: T
         })
     }, [I, T]);
-    let v = x ? o.wLn : a.$n;
+    let v = C ? o.wLn : a.$n;
     return (0, r.jsx)(m.A, {
-        forcedDivider: C,
+        forcedDivider: x,
         borderType: g.i.PREMIUM,
         hasBackground: !0,
         title: O,
@@ -66,10 +66,10 @@ function E(e) {
                     })
                 },
                 className: s()({
-                    [h.yj]: x
+                    [h.yj]: C
                 }),
                 children: b.intl.string(b.t["/dRfCf"])
-            }), (void 0 === N ? null != y : null != N) && (0, r.jsx)("div", {
+            }), (void 0 === y ? null != N : null != y) && (0, r.jsx)("div", {
                 "data-button-hoisted-classname-wrapper": !0,
                 className: h.DT,
                 children: (0, r.jsx)(o.Button, {

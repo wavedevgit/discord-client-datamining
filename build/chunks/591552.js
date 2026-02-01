@@ -213,8 +213,8 @@ function j(e) {
 let k = [],
     U = [],
     G = [],
-    F = [];
-class V extends(r = o.Ay.Store) {
+    V = [];
+class F extends(r = o.Ay.Store) {
     initialize() {
         this.waitFor(c.A, p.Ay, l.A)
     }
@@ -286,11 +286,11 @@ class V extends(r = o.Ay.Store) {
     }
     getConnections(e) {
         var t, n;
-        return null != (t = null == (n = y[e]) ? void 0 : n.connections) ? t : F
+        return null != (t = null == (n = y[e]) ? void 0 : n.connections) ? t : V
     }
 }
-h(V, "displayName", "GuildOnboardingPromptsStore");
-let B = new V(s.h, {
+h(F, "displayName", "GuildOnboardingPromptsStore");
+let B = new F(s.h, {
     CONNECTION_OPEN: I,
     GUILD_DELETE: j,
     GUILD_ONBOARDING_PROMPTS_FETCH_START: A,

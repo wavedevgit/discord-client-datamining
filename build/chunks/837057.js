@@ -1,94 +1,94 @@
-/** chunk id: 837057, original params: e,t,n (module,exports,require) **/
-n.d(t, {
+/** chunk id: 837057, original params: e,t,l (module,exports,require) **/
+l.d(t, {
     transitionToGlobalDiscovery: () => function e(t) {
-        var n, g, _;
-        let h = t.tab;
+        var l, m, _;
+        let O = t.tab;
         switch (u.A.setState({
-                selectedTab: h
-            }), h) {
-            case d.GlobalDiscoveryTab.SERVERS:
-                let b = t.selectedServersTab;
-                return null != b ? l.A.setState({
-                    selectedTab: b,
-                    entrypoint: null != (n = t.entrypoint) ? n : f.J8.UNKNOWN
-                }) : l.A.setState({
-                    entrypoint: null != (g = t.entrypoint) ? g : f.J8.UNKNOWN
-                }), (0, s.pX)(p.BVt.GLOBAL_DISCOVERY_SERVERS, t.extra);
-            case d.GlobalDiscoveryTab.APPS:
+                selectedTab: O
+            }), O) {
+            case p.GlobalDiscoveryTab.SERVERS:
+                let N = t.selectedServersTab;
+                return null != N ? r.A.setState({
+                    selectedTab: N,
+                    entrypoint: null != (l = t.entrypoint) ? l : E.J8.UNKNOWN
+                }) : r.A.setState({
+                    entrypoint: null != (m = t.entrypoint) ? m : E.J8.UNKNOWN
+                }), (0, c.pX)(d.BVt.GLOBAL_DISCOVERY_SERVERS, t.extra);
+            case p.GlobalDiscoveryTab.APPS:
                 if (null != t.newSessionState) {
-                    let n = (0, i.YP)(),
+                    let l = (0, a.YP)(),
                         {
-                            guildId: l,
-                            entrypoint: a
+                            guildId: r,
+                            entrypoint: s
                         } = t.newSessionState;
-                    if (r.h.setState({
-                            sessionId: n,
-                            guildId: null != l ? l : null,
-                            entrypoint: a,
+                    if (n.h.setState({
+                            sessionId: l,
+                            guildId: null != r ? r : null,
+                            entrypoint: s,
                             trackedOpenedFromExternalEntrypoint: !1
-                        }), c.default.track(p.HAw.APP_DIRECTORY_OPENED, {
-                            source: null == a ? void 0 : a.name,
-                            session_id: n,
-                            guild_id: l,
-                            user_id: null == (_ = o.default.getCurrentUser()) ? void 0 : _.id
+                        }), o.default.track(d.HAw.APP_DIRECTORY_OPENED, {
+                            source: null == s ? void 0 : s.name,
+                            session_id: l,
+                            guild_id: r,
+                            user_id: null == (_ = i.default.getCurrentUser()) ? void 0 : _.id
                         }), t.newSessionState.restorePreviousView) return e(function() {
                         let {
                             lastItem: e
-                        } = r.tS.getState();
+                        } = n.tS.getState();
                         if (null != e) switch (e.type) {
-                            case r.ev.APPLICATION:
+                            case n.ev.APPLICATION:
                                 return {
-                                    tab: d.GlobalDiscoveryTab.APPS, applicationId: e.applicationId, section: e.section
+                                    tab: p.GlobalDiscoveryTab.APPS, applicationId: e.applicationId, section: e.section
                                 };
-                            case r.ev.CATEGORY:
+                            case n.ev.CATEGORY:
                                 return {
-                                    tab: d.GlobalDiscoveryTab.APPS, categoryId: Number(e.categoryId)
+                                    tab: p.GlobalDiscoveryTab.APPS, categoryId: Number(e.categoryId)
                                 };
-                            case r.ev.SEARCH:
+                            case n.ev.SEARCH:
                                 var t;
                                 return {
-                                    tab: d.GlobalDiscoveryTab.APPS, query: null != (t = e.query) ? t : "", page: e.page, categoryId: null != e.categoryId ? Number(e.categoryId) : void 0
+                                    tab: p.GlobalDiscoveryTab.APPS, query: null != (t = e.query) ? t : "", page: e.page, categoryId: null != e.categoryId ? Number(e.categoryId) : void 0
                                 }
                         }
                         return {
-                            tab: d.GlobalDiscoveryTab.APPS
+                            tab: p.GlobalDiscoveryTab.APPS
                         }
                     }())
                 }
                 if (null != t.applicationId) {
-                    if (t.section === m.GlobalDiscoveryAppsSections.STORE)
-                        if (null != t.skuId) return (0, s.pX)(p.BVt.GLOBAL_DISCOVERY_APPS_PROFILE_STORE_SKU(t.applicationId, t.skuId));
-                        else return (0, s.pX)(p.BVt.GLOBAL_DISCOVERY_APPS_PROFILE_SECTION(t.applicationId, m.GlobalDiscoveryAppsSections.STORE));
-                    return (0, s.pX)(p.BVt.GLOBAL_DISCOVERY_APPS_PROFILE(t.applicationId))
+                    if (t.section === T.GlobalDiscoveryAppsSections.STORE)
+                        if (null != t.skuId) return (0, c.pX)(d.BVt.GLOBAL_DISCOVERY_APPS_PROFILE_STORE_SKU(t.applicationId, t.skuId));
+                        else return (0, c.pX)(d.BVt.GLOBAL_DISCOVERY_APPS_PROFILE_SECTION(t.applicationId, T.GlobalDiscoveryAppsSections.STORE));
+                    return (0, c.pX)(d.BVt.GLOBAL_DISCOVERY_APPS_PROFILE(t.applicationId))
                 }
                 if (null != t.query) {
                     let e = new URLSearchParams;
-                    return "" !== t.query && e.set("q", t.query), null != t.categoryId && e.set("category_id", t.categoryId.toString()), null != t.page && e.set("page", t.page.toString()), (0, s.pX)(p.BVt.GLOBAL_DISCOVERY_APPS_SEARCH, {
+                    return "" !== t.query && e.set("q", t.query), null != t.categoryId && e.set("category_id", t.categoryId.toString()), null != t.page && e.set("page", t.page.toString()), (0, c.pX)(d.BVt.GLOBAL_DISCOVERY_APPS_SEARCH, {
                         search: e.toString()
                     })
                 }
-                if (null != t.categoryId) return (0, s.pX)(p.BVt.GLOBAL_DISCOVERY_APPS_CATEGORY(t.categoryId.toString()));
-                else return (0, s.pX)(p.BVt.GLOBAL_DISCOVERY_APPS);
-            case d.GlobalDiscoveryTab.QUESTS:
-                return (0, a.navigateToQuestHome)({
+                if (null != t.categoryId) return (0, c.pX)(d.BVt.GLOBAL_DISCOVERY_APPS_CATEGORY(t.categoryId.toString()));
+                else return (0, c.pX)(d.BVt.GLOBAL_DISCOVERY_APPS);
+            case p.GlobalDiscoveryTab.QUESTS:
+                return (0, s.navigateToQuestHome)({
                     fromContent: t.questContent,
                     questId: t.questId,
                     forceDiscoveryQuestHomeRoute: !0
                 });
             default:
-                throw Error("[transitionToGlobalDiscovery] Unhandled tab type: ".concat(h))
+                throw Error("[transitionToGlobalDiscovery] Unhandled tab type: ".concat(O))
         }
     }
-}), n(896048), n(680155), n(323874), n(14289), n(35956), n(65821);
-var r = n(310419),
-    i = n(965660),
-    l = n(601193),
-    a = n(545986),
-    s = n(976860),
-    o = n(287809),
-    c = n(954571),
-    u = n(726845),
-    d = n(488995),
-    p = n(652215),
-    m = n(435220),
-    f = n(324580)
+}), l(896048), l(680155), l(323874), l(14289), l(35956), l(65821);
+var n = l(310419),
+    a = l(965660),
+    r = l(601193),
+    s = l(545986),
+    c = l(976860),
+    i = l(287809),
+    o = l(954571),
+    u = l(726845),
+    p = l(488995),
+    d = l(652215),
+    T = l(435220),
+    E = l(324580)

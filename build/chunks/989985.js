@@ -1,43 +1,43 @@
 /** chunk id: 989985, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    _: () => a
+    _: () => s
 });
-var r = n(627968);
+var l = n(627968);
 n(64700);
-var l = n(503698),
-    i = n.n(l),
-    s = n(36353);
+var r = n(503698),
+    i = n.n(r),
+    a = n(36353);
 
-function a(e) {
+function s(e) {
     let {
         bannerIcon: t,
         bannerHeader: n,
-        bannerSubtext: l,
-        textStyles: a,
+        bannerSubtext: r,
+        textStyles: s,
         headerStyles: o,
         containerStyles: c,
         children: u
     } = e;
-    return (0, r.jsxs)("div", {
-        className: i()(s.Ew, c),
-        children: [(0, r.jsxs)("div", {
-            className: i()(s.lt, a),
-            children: [null != t && ("string" == typeof t ? (0, r.jsx)("img", {
+    return (0, l.jsxs)("div", {
+        className: i()(a.Ew, c),
+        children: [(0, l.jsxs)("div", {
+            className: i()(a.lt, s),
+            children: [null != t && ("string" == typeof t ? (0, l.jsx)("img", {
                 src: t,
                 alt: "",
-                className: s.q3
-            }) : t), (0, r.jsxs)("div", {
-                className: s._M,
-                children: [(0, r.jsx)("div", {
-                    className: i()(s.U_, o),
+                className: a.q3
+            }) : t), (0, l.jsxs)("div", {
+                className: a._M,
+                children: [(0, l.jsx)("div", {
+                    className: i()(a.U_, o),
                     children: n
-                }), null != l && (0, r.jsx)("div", {
-                    className: s.mi,
-                    children: l
+                }), null != r && (0, l.jsx)("div", {
+                    className: a.mi,
+                    children: r
                 })]
             })]
-        }), (0, r.jsx)("div", {
-            className: s.uu,
+        }), (0, l.jsx)("div", {
+            className: a.uu,
             children: u
         })]
     })

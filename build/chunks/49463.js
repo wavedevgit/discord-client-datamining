@@ -80,7 +80,7 @@ let O = "scientist:triggered",
     U = "staging" === window.GLOBAL_ENV.RELEASE_CHANNEL || (0, c.kK)(),
     G = {};
 
-function F(e) {
+function V(e) {
     let t = G[e];
     if (void 0 !== t) return t;
     {
@@ -88,11 +88,11 @@ function F(e) {
         return G[e] = t, t
     }
 }
-let V = h.NM.map(e => F(e)),
+let F = h.NM.map(e => V(e)),
     B = 6048e5;
 
 function H(e, t) {
-    return e || V.includes(t)
+    return e || F.includes(t)
 }
 
 function Y(e) {
@@ -109,8 +109,8 @@ function W(e, t, n, r) {
 }
 
 function K(e) {
-    if (e.type === h.Vh.USER) return F("".concat(e.bucket, "|").concat(e.revision));
-    if (e.type === h.Vh.GUILD) return F("".concat(e.bucket, "|").concat(e.revision, "|").concat(e.guildId));
+    if (e.type === h.Vh.USER) return V("".concat(e.bucket, "|").concat(e.revision));
+    if (e.type === h.Vh.GUILD) return V("".concat(e.bucket, "|").concat(e.revision, "|").concat(e.guildId));
     throw Error()
 }
 let z = Date.now(),
@@ -385,7 +385,7 @@ let ei = 1e4;
 
 function ea(e, t) {
     var n, r;
-    let i = F(t),
+    let i = V(t),
         a = L["".concat(i)];
     if (null == a) return null;
     let {
@@ -401,7 +401,7 @@ function ea(e, t) {
         hashResult: -1,
         triggerDebuggingEnabled: c
     };
-    let u = F("".concat(null != (n = a.hashKey) ? n : t, ":").concat(e)) % ei,
+    let u = V("".concat(null != (n = a.hashKey) ? n : t, ":").concat(e)) % ei,
         d = null;
     for (let t of null != (r = a.overridesFormatted) ? r : [])
         if (null !== (d = er(e, t, u))) return {
@@ -641,7 +641,7 @@ class ey extends f.A {
             let t = M[e];
             if (null != t) return t
         }
-        let t = F(e);
+        let t = V(e);
         return D["".concat(t)]
     }
     getGuildExperimentDescriptor(e, t) {
@@ -668,10 +668,10 @@ class ey extends f.A {
         return L
     }
     getLoadedUserExperiment(e) {
-        return D[F(e)]
+        return D[V(e)]
     }
     getLoadedGuildExperiment(e) {
-        return L[F(e)]
+        return L[V(e)]
     }
     getRecentExposures(e, t) {
         let n = "".concat(e, "|").concat(t, "|");
@@ -699,7 +699,7 @@ class ey extends f.A {
         let e = {},
             t = {};
         for (let n in Object.keys(R).forEach(e => {
-                t[F("".concat(e))] = e
+                t[V("".concat(e))] = e
             }), D) {
             let r = t[n];
             null != r && (e[r] = D[n].bucket)

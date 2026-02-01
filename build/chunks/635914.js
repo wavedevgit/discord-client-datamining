@@ -11,9 +11,9 @@ var r = n(627968),
     c = n(775121),
     u = n(203982),
     d = n(652215),
-    h = n(549756);
+    p = n(549756);
 
-function p(e, t, n) {
+function h(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -22,9 +22,9 @@ function p(e, t, n) {
     }) : e[t] = n, e
 }
 let g = () => (0, r.jsxs)("div", {
-    className: h.HR,
+    className: p.HR,
     children: [(0, r.jsx)("div", {
-        className: h.tW
+        className: p.tW
     }), (0, r.jsx)("img", {
         alt: "",
         src: n(24160)
@@ -48,28 +48,28 @@ class f extends l.PureComponent {
     }
     renderPrimary() {
         return (0, r.jsxs)("div", {
-            className: h.e8,
+            className: p.e8,
             children: [(0, r.jsx)("img", {
                 alt: "",
-                className: h.Lc,
+                className: p.Lc,
                 src: n(383922),
                 width: 70,
                 height: 69
             }), (0, r.jsx)("img", {
                 alt: "",
-                className: h.QP,
+                className: p.QP,
                 src: n(815995),
                 width: 96,
                 height: 95
             }), (0, r.jsx)("img", {
                 alt: "",
-                className: h.WB,
+                className: p.WB,
                 src: n(32315),
                 width: 183,
                 height: 104
             }), (0, r.jsx)("img", {
                 alt: "",
-                className: h.FQ,
+                className: p.FQ,
                 src: n(144298),
                 width: 69,
                 height: 180
@@ -78,32 +78,32 @@ class f extends l.PureComponent {
     }
     renderSecondary(e, t) {
         return (0, r.jsxs)("div", {
-            className: h.wv,
+            className: p.wv,
             style: {
                 top: t,
                 left: e
             },
             children: [(0, r.jsx)("img", {
                 alt: "",
-                className: h.Lc,
+                className: p.Lc,
                 src: n(61631),
                 width: 61,
                 height: 58
             }, "circle-inner"), (0, r.jsx)("img", {
                 alt: "",
-                className: h.QP,
+                className: p.QP,
                 src: n(850166),
                 width: 85,
                 height: 85
             }, "circle-outer"), (0, r.jsx)("img", {
                 alt: "",
-                className: h.WB,
+                className: p.WB,
                 src: n(822548),
                 width: 162,
                 height: 173
             }, "lines-secondary"), (0, r.jsx)("img", {
                 alt: "",
-                className: h.FQ,
+                className: p.FQ,
                 src: n(275242),
                 width: 156,
                 height: 306
@@ -119,8 +119,8 @@ class f extends l.PureComponent {
             scale: i
         } = this.state, a = [this.renderPrimary()];
         return e && a.push(this.renderSecondary(t, n)), (0, r.jsx)("div", {
-            className: s()(h.kL, {
-                [h.i0]: l
+            className: s()(p.kL, {
+                [p.i0]: l
             }),
             style: {
                 top: this.props.top,
@@ -131,13 +131,13 @@ class f extends l.PureComponent {
         })
     }
     constructor(...e) {
-        super(...e), p(this, "_renderSecondaryTimeout", null), p(this, "_doneTimeout", null), p(this, "state", {
+        super(...e), h(this, "_renderSecondaryTimeout", null), h(this, "_doneTimeout", null), h(this, "state", {
             animating: !1,
             renderSecondary: !1,
             scale: o().random(.6, 1, !0),
             offsetX: o().random(0, 140, !1) - 70,
             offsetY: o().random(0, 140, !1) - 70
-        }), p(this, "done", () => {
+        }), h(this, "done", () => {
             this.props.onAnimationComplete(this.props.componentId)
         })
     }
@@ -157,20 +157,20 @@ class m extends l.PureComponent {
     }
     render() {
         return (0, r.jsx)("div", {
-            className: s()(h.QO, {
-                [h.RK]: this.state.visible
+            className: s()(p.QO, {
+                [p.RK]: this.state.visible
             }),
             children: this.children
         })
     }
     constructor(...e) {
-        super(...e), p(this, "_timeouts", []), p(this, "children", []), p(this, "state", {
+        super(...e), h(this, "_timeouts", []), h(this, "children", []), h(this, "state", {
             explosions: 0,
             visible: !1
-        }), p(this, "setTimeout", (e, t) => {
+        }), h(this, "setTimeout", (e, t) => {
             let n = setTimeout(e, t);
             return this._timeouts.push(n), n
-        }), p(this, "removeExplosion", e => {
+        }), h(this, "removeExplosion", e => {
             let t = this.children,
                 n = t.findIndex(t => {
                     if (t.type !== f) return !1;
@@ -178,7 +178,7 @@ class m extends l.PureComponent {
                     return null != n.componentId && n.componentId === e
                 });
             n >= 0 && t.splice(n, 1), this.forceUpdate()
-        }), p(this, "createExplosion", () => {
+        }), h(this, "createExplosion", () => {
             let e = this.children,
                 t = window.innerWidth / 2 | 0,
                 n = window.innerHeight / 2 | 0;
@@ -193,9 +193,9 @@ class m extends l.PureComponent {
                     explosions: this.state.explosions + 1
                 })
             } else this.setTimeout(this.addSymbol, 750)
-        }), p(this, "addSymbol", () => {
+        }), h(this, "addSymbol", () => {
             this.children = [(0, r.jsx)(g, {}, "symbol")], this.forceUpdate(), this.setTimeout(this.delayedClose, 3e3)
-        }), p(this, "delayedClose", () => {
+        }), h(this, "delayedClose", () => {
             this.props.handleDemonClose()
         })
     }

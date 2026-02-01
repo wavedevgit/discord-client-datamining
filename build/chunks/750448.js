@@ -1,6 +1,6 @@
 /** chunk id: 750448, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => _
+    A: () => j
 }), n(896048);
 var r = n(627968),
     l = n(64700),
@@ -11,8 +11,8 @@ var r = n(627968),
     c = n(131677),
     u = n(711014),
     d = n(871697),
-    h = n(531685),
-    p = n(583613),
+    p = n(531685),
+    h = n(583613),
     g = n(652215),
     f = n(985018);
 let m = "app-download-item",
@@ -27,11 +27,11 @@ function y(e) {
     let n = o.default.getMutableGuildStates();
     return e === g.sFm.SERVER_DISCOVERY_BADGE && !d.A.hasViewed(g.sFm.SERVER_DISCOVERY_BADGE) || e !== m && e !== b && (null == (t = n[null != e ? e : "null"]) ? void 0 : t.highImportanceMentionCount) > 0
 }
-let O = (0, p.L_)((e, t, n) => ["null", ...t, ...e, b, g.sFm.E3_SERVER_DISCOVERY_BADGE, m]),
-    _ = l.forwardRef(function(e, t) {
+let O = (0, h.L_)((e, t, n) => ["null", ...t, ...e, b, g.sFm.E3_SERVER_DISCOVERY_BADGE, m]),
+    j = l.forwardRef(function(e, t) {
         var n, l;
         let d = (0, i.yK)([u.Ay, c.A, o.default], () => O(u.Ay.getGuildFolders(), c.A.getUnreadPrivateChannelIds(), o.default.getStoreChangeSentinel())),
-            p = (0, i.bG)([h.A], () => h.A.isFocused()),
+            h = (0, i.bG)([p.A], () => p.A.isFocused()),
             g = (0, i.bG)([a.A], () => a.A.getExpandedFolders());
         return (0, r.jsx)(s.A, (n = function(e) {
             for (var t = 1; t < arguments.length; t++) {
@@ -57,7 +57,7 @@ let O = (0, p.L_)((e, t, n) => ["null", ...t, ...e, b, g.sFm.E3_SERVER_DISCOVERY
             textUnread: f.intl.string(f.t.y2b7CA),
             textMention: f.intl.string(f.t.y2b7CA),
             isMentioned: y,
-            animate: p,
+            animate: h,
             expandedFolders: g
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
             var n = Object.keys(e);

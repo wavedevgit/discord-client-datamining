@@ -14,8 +14,8 @@ var r = n(627968),
     p = n(800342),
     h = n(490415),
     g = n(481859),
-    f = n(235986),
-    m = n(263063),
+    m = n(235986),
+    f = n(263063),
     A = n(857071),
     _ = n(976860),
     b = n(345942),
@@ -40,9 +40,9 @@ class N extends i.PureComponent {
             approximateMemberCount: e,
             approximatePresenceCount: t
         } = this.props.guild;
-        return null == e || null == t ? null : (0, r.jsxs)(f.A, {
+        return null == e || null == t ? null : (0, r.jsxs)(m.A, {
             className: S.Fj,
-            align: f.A.Align.CENTER,
+            align: m.A.Align.CENTER,
             children: [(0, r.jsx)("div", {
                 className: S.JX
             }), (0, r.jsx)("span", {
@@ -76,8 +76,8 @@ class N extends i.PureComponent {
             h = this.handleJoinOrView,
             A = c.$n.Looks.FILLED,
             _ = c.$n.Colors.PRIMARY;
-        return l ? n ? (A = c.$n.Looks.OUTLINED, _ = S.yh, p = (0, r.jsxs)(f.A, {
-            align: f.A.Align.CENTER,
+        return l ? n ? (A = c.$n.Looks.OUTLINED, _ = S.yh, p = (0, r.jsxs)(m.A, {
+            align: m.A.Align.CENTER,
             children: [(0, r.jsx)("div", {
                 children: v.intl.string(v.t.cEnaWx)
             }), (0, r.jsx)(u.A9s, {
@@ -93,10 +93,10 @@ class N extends i.PureComponent {
                 className: S.Qs,
                 children: [(0, r.jsxs)("div", {
                     className: S.pq,
-                    children: [(0, r.jsx)(m.A, {
+                    children: [(0, r.jsx)(f.A, {
                         guild: d,
                         active: !0,
-                        size: m.A.Sizes.LARGE,
+                        size: f.A.Sizes.LARGE,
                         className: S.$f
                     }), (0, r.jsxs)("div", {
                         className: S.aV,

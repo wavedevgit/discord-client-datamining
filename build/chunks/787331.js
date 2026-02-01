@@ -1,6 +1,6 @@
 /** chunk id: 787331, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => f
+    A: () => m
 });
 var r = n(627968);
 n(64700);
@@ -16,12 +16,12 @@ var i = n(397927),
     h = n(985018),
     g = n(276991);
 
-function f(e) {
+function m(e) {
     let {
         user: t,
         nickname: n,
-        status: f,
-        isFocused: m
+        status: m,
+        isFocused: f
     } = e, {
         analyticsLocations: A
     } = (0, a.Ay)(), _ = e => {
@@ -35,9 +35,9 @@ function f(e) {
         })
     }, b = e => {
         null == e || e.stopPropagation(), s.A.ignore(t.id)
-    }, E = f === p.clD.OFFLINE ? p.clD.UNKNOWN : f;
+    }, E = m === p.clD.OFFLINE ? p.clD.UNKNOWN : m;
     return (0, r.jsx)(u.A, {
-        isFocused: m,
+        isFocused: f,
         user: t,
         onClick: () => (0, o.openUserProfileModal)({
             userId: t.id,

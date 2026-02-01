@@ -40,19 +40,19 @@ function A(e) {
         location: "UserProfileModalV2Activity"
     }), {
         live: T,
-        recent: N,
-        stream: C
+        recent: C,
+        stream: N
     } = (0, f.A)(t.id), {
-        voiceChannel: k,
-        voiceActivity: R
+        voiceChannel: R,
+        voiceActivity: k
     } = (0, p.A)({
         userId: t.id,
         guildId: w
     }), D = (0, l.bG)([o.A], () => o.A.isFetchingUserOutbox(t.id)), L = t.id === n.id, G = (0, l.bG)([u.A, c.A], () => {
         let e = L ? u.A.getStatus() : c.A.getStatus(t.id);
         return e === i.clD.OFFLINE || e === i.clD.INVISIBLE
-    }), U = T.length > 0 || null != C, M = S && null == C && null == R && null != k, F = !G && (U || M), B = N.length > 0;
-    if (!F && !B && D) return (0, r.jsx)("div", {
+    }), M = T.length > 0 || null != N, U = S && null == N && null == k && null != R, F = !G && (M || U), W = C.length > 0;
+    if (!F && !W && D) return (0, r.jsx)("div", {
         className: I.kR,
         children: Array.from({
             length: 8
@@ -67,7 +67,7 @@ function A(e) {
             })]
         }, t))
     });
-    if (!F && !B && !D) {
+    if (!F && !W && !D) {
         var H;
         return L ? (0, r.jsx)(O.qv, {
             onClose: E
@@ -85,11 +85,11 @@ function A(e) {
             heading: _.intl.string(_.t.J6STd9),
             children: (0, r.jsxs)("ul", {
                 className: I.kR,
-                children: [null != C && (0, r.jsx)("li", {
+                children: [null != N && (0, r.jsx)("li", {
                     children: (0, r.jsx)(b.A, {
                         user: t,
                         currentUser: n,
-                        stream: C,
+                        stream: N,
                         onClose: E
                     })
                 }), T.map((e, l) => (0, r.jsx)("li", {
@@ -99,16 +99,16 @@ function A(e) {
                         activity: e,
                         onClose: E
                     })
-                }, "live-".concat(l))), M && (0, r.jsx)("li", {
+                }, "live-".concat(l))), U && (0, r.jsx)("li", {
                     children: (0, r.jsx)(y.A, {
                         user: t,
                         currentUser: n,
-                        voiceChannel: k,
+                        voiceChannel: R,
                         onClose: E
                     })
                 })]
             })
-        }) : null, B ? (0, r.jsx)(j.A, {
+        }) : null, W ? (0, r.jsx)(j.A, {
             heading: _.intl.string(_.t.jzgEoL),
             introText: L ? _.intl.format(_.t["4bk9Ak"], {
                 learnMoreHook: (e, t) => (0, r.jsx)(i.MzZ, {
@@ -119,7 +119,7 @@ function A(e) {
             scrollTargetId: x.bk.RECENT_ACTIVITY,
             children: (0, r.jsx)("ul", {
                 className: I.kR,
-                children: N.map(e => (0, r.jsx)("li", {
+                children: C.map(e => (0, r.jsx)("li", {
                     children: (0, r.jsx)(m.A, {
                         user: t,
                         entry: e,

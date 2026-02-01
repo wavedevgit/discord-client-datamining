@@ -14,8 +14,8 @@ var r = n(627968),
     p = n(545167),
     h = n(851580),
     g = n(222823),
-    f = n(287809),
-    m = n(371911),
+    m = n(287809),
+    f = n(371911),
     A = n(790782),
     _ = n(985018),
     b = n(656678);
@@ -25,7 +25,7 @@ function E(e) {
         onOpen: t,
         onClose: n,
         "data-jump-section": l
-    } = e, E = (0, s.bG)([f.default], () => f.default.getCurrentUser()), O = i.useRef(null), y = (0, s.bG)([g.Ay], () => (null == E ? void 0 : E.id) != null && g.Ay.getMentionCount(E.id, A.P.NOTIFICATION_CENTER) > 0), {
+    } = e, E = (0, s.bG)([m.default], () => m.default.getCurrentUser()), O = i.useRef(null), y = (0, s.bG)([g.Ay], () => (null == E ? void 0 : E.id) != null && g.Ay.getMentionCount(E.id, A.P.NOTIFICATION_CENTER) > 0), {
         titlebarIconSize: I,
         titlebarHoverHighlight: v
     } = (0, p.p)({
@@ -34,7 +34,7 @@ function E(e) {
         size: S,
         color: "currentColor"
     }), [S]);
-    return (0, r.jsx)(m.C, {
+    return (0, r.jsx)(f.C, {
         targetElementRef: O,
         onOpen: t,
         onClose: n,

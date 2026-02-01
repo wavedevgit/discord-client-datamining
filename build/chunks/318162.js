@@ -11,8 +11,8 @@ var r = n(627968),
     c = n(793574),
     u = n(688810),
     d = n(994500),
-    h = n(562153),
-    p = n(183555),
+    p = n(562153),
+    h = n(183555),
     g = n(672385),
     f = n(950191),
     m = n(249790),
@@ -20,9 +20,9 @@ var r = n(627968),
     A = n(254828),
     y = n(783123),
     O = n(996988),
-    _ = n(985018),
-    j = n(226632),
-    x = n(724693);
+    j = n(985018),
+    x = n(226632),
+    _ = n(724693);
 
 function v(e) {
     for (var t = 1; t < arguments.length; t++) {
@@ -50,14 +50,14 @@ function E(e) {
         onHide: E
     } = e, C = (0, f.Ay)(t.id), S = (0, o.Ay)(), I = (0, s.bG)([d.A], () => d.A.isBlocked(t.id)), {
         analyticsLocations: N
-    } = (0, u.Ay)(I ? c.A.BLOCKED_PROFILE_PANEL : c.A.IGNORED_PROFILE_PANEL), T = (0, p.pb)({
+    } = (0, u.Ay)(I ? c.A.BLOCKED_PROFILE_PANEL : c.A.IGNORED_PROFILE_PANEL), T = (0, h.pb)({
         layout: "SIDEBAR",
         userId: t.id,
         channelId: n.id
     }), P = l.useRef(null);
     return (0, r.jsx)(u.f5, {
         value: N,
-        children: (0, r.jsx)(p.of, {
+        children: (0, r.jsx)(h.of, {
             value: T,
             fetchStartedAt: null == C ? void 0 : C.fetchStartedAt,
             fetchEndedAt: null == C ? void 0 : C.fetchEndedAt,
@@ -70,25 +70,25 @@ function E(e) {
                 themeOverride: S,
                 children: (0, r.jsx)(i.d_W, {
                     children: (0, r.jsxs)("div", {
-                        className: j.kL,
+                        className: x.kL,
                         children: [(0, r.jsx)("img", {
                             alt: "",
-                            src: x,
-                            className: j.VH,
+                            src: _,
+                            className: x.VH,
                             "aria-hidden": !0
                         }), (0, r.jsxs)("div", {
-                            className: j.rf,
+                            className: x.rf,
                             children: [(0, r.jsxs)("div", {
-                                className: j.N1,
+                                className: x.N1,
                                 children: [(0, r.jsx)(m.A, {
                                     user: t
                                 }), (0, r.jsx)(a.Heading, {
                                     variant: "heading-lg/bold",
-                                    children: _.intl.string(_.t.b33pLD)
+                                    children: j.intl.string(j.t.b33pLD)
                                 }), (0, r.jsx)(a.Text, {
                                     variant: "text-sm/medium",
-                                    children: _.intl.format(I ? _.t["8F+WNz"] : _.t["/cZp5s"], {
-                                        username: h.Ay.getName(n.guild_id, n.id, t)
+                                    children: j.intl.format(I ? j.t["8F+WNz"] : j.t["/cZp5s"], {
+                                        username: p.Ay.getName(n.guild_id, n.id, t)
                                     })
                                 })]
                             }), (0, r.jsxs)(a.BJc, {

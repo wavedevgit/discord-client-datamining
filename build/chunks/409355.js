@@ -1,14 +1,14 @@
-/** chunk id: 409355, original params: e,t,i (module,exports,require) **/
-i.d(t, {
-    w: () => u
+/** chunk id: 409355, original params: t,e,i (module,exports,require) **/
+i.d(e, {
+    w: () => a
 });
 var n = i(419954),
     l = i(104954),
     s = i(780964),
     r = i(103435),
-    a = i(985018);
-let u = (0, n.zZ)(s.X.DATA_REQUEST_CATEGORY, {
-    useTitle: () => a.intl.string(a.t.VjDjpb),
+    u = i(985018);
+let a = (0, n.zZ)(s.X.DATA_REQUEST_CATEGORY, {
+    useTitle: () => u.intl.string(u.t.VjDjpb),
     initialize: () => {
         (0, l.s)()
     },

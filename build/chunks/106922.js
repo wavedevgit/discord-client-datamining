@@ -22,13 +22,13 @@ var r = n(627968),
     h = n(73825),
     E = n(974544),
     O = n(736653),
-    C = n(793574),
-    x = n(688810),
+    x = n(793574),
+    C = n(688810),
     S = n(86379),
     T = n(531260),
     I = n(160946),
-    y = n(459793),
-    N = n(721668),
+    N = n(459793),
+    y = n(721668),
     j = n(976860),
     v = n(780964),
     P = n(12901),
@@ -329,7 +329,7 @@ let ef = function() {
     let e = (0, S.H)(),
         {
             analyticsLocations: t
-        } = (0, x.Ay)(C.A.PREMIUM_SETTINGS),
+        } = (0, C.Ay)(x.A.PREMIUM_SETTINGS),
         n = (0, u.bG)([L.default], () => L.default.getCurrentUser()),
         l = (0, u.bG)([w.A], () => w.A.getPremiumTypeSubscription()),
         s = (0, u.bG)([w.A], () => w.A.hasFetchedSubscriptions()),
@@ -354,17 +354,17 @@ let ef = function() {
     }, [j, e]);
     let [R, M] = i.useState(!1);
     if (j) return (0, r.jsx)(E.A, {});
-    if (e) return (0, r.jsx)(y.uK, {});
+    if (e) return (0, r.jsx)(N.uK, {});
     let U = s && null !== l && a,
         k = m.fetched && m.isFractionalPremiumActive,
         B = null == n ? void 0 : n.isPremiumWithPremiumGroup();
-    if (!U && !k && !o && !B) return (0, r.jsx)(N.A, {
+    if (!U && !k && !o && !B) return (0, r.jsx)(y.A, {
         title: el.intl.string(el.t.dyq9TR),
         note: null
     });
     if (!U && !k && !B || o) return (0, r.jsx)(A.y$y, {});
     let H = !!(null == l ? void 0 : l.hasActiveTrial);
-    return (0, r.jsx)(x.f5, {
+    return (0, r.jsx)(C.f5, {
         value: t,
         children: (0, r.jsxs)(r.Fragment, {
             children: [(0, r.jsxs)("div", {

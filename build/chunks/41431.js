@@ -94,8 +94,8 @@ let N = i.memo(function(e) {
         M = i.useMemo(() => null != L ? d.Ay.getPlaybackPosition(L) : 0, [L]),
         j = (0, s.bG)([d.Ay], () => d.Ay.getPlaybackRate(d.k0.VOICE_MESSAGE)),
         [k, U] = i.useState(M > 0),
-        [G, F] = i.useState(M),
-        [V, B] = i.useState(b),
+        [G, V] = i.useState(M),
+        [F, B] = i.useState(b),
         [H, Y] = i.useState(!1),
         [W, K] = i.useState(!1),
         [z, q] = i.useState(!1),
@@ -126,7 +126,7 @@ let N = i.memo(function(e) {
         }, [eo, z, ea]),
         el = i.useCallback(e => {
             let t = x.current;
-            null != t && (F(e), t.currentTime = e, U(!0))
+            null != t && (V(e), t.currentTime = e, U(!0))
         }, []),
         ec = i.useCallback(() => {
             let e = x.current;
@@ -145,12 +145,12 @@ let N = i.memo(function(e) {
             q(!0)
         }, []),
         ep = i.useCallback(() => {
-            q(!1), G === V && eo(), ea(G)
-        }, [G, V, eo, ea]),
+            q(!1), G === F && eo(), ea(G)
+        }, [G, F, eo, ea]),
         e_ = i.useCallback(e => {
             let t = x.current;
-            null == V || null == t || (el(e * V), clearTimeout(et.current), et.current = void 0)
-        }, [V, el]);
+            null == F || null == t || (el(e * F), clearTimeout(et.current), et.current = void 0)
+        }, [F, el]);
     i.useEffect(() => {
         !k && W && U(!0)
     }, [W, k]);
@@ -191,7 +191,7 @@ let N = i.memo(function(e) {
                     i = null != r ? (e - r) / 1e3 : 0;
                 null == n || n(t, i), ea(t), eh.current = null
             }
-    }, [W, n, V, ea]), T(x, W, F), C(n, W, K);
+    }, [W, n, F, ea]), T(x, W, V), C(n, W, K);
     let eE = W ? l.E$n : l.udU,
         ey = W ? O.intl.string(O.t.ZcgDJX) : O.intl.string(O.t.RscU7I),
         eb = O.intl.formatToPlainString(O.t.LgCPMt, {
@@ -254,7 +254,7 @@ let N = i.memo(function(e) {
             className: v.ou,
             waveform: y,
             currentTime: G,
-            duration: null != V ? V : 1,
+            duration: null != F ? F : 1,
             playing: W,
             played: k,
             onDrag: e_,
@@ -263,7 +263,7 @@ let N = i.memo(function(e) {
         }), (0, r.jsx)(S, {
             played: k,
             currentTime: G,
-            duration: V
+            duration: F
         }), (0, r.jsx)(l.DUT, {
             className: v.LJ,
             onClick: () => I(j),

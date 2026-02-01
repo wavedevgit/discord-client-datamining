@@ -1,27 +1,27 @@
 /** chunk id: 551826, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => s
+    A: () => o
 });
-var r = n(627968);
+var l = n(627968);
 n(64700);
-var l = n(417597),
+var r = n(417597),
     i = n(397927),
     a = n(3137),
-    o = n(208343);
+    s = n(208343);
 
-function s(e) {
+function o(e) {
     let {
         isShaking: t,
         shakeLocation: n,
-        children: s,
+        children: o,
         className: c
-    } = e, u = (0, o.A)(n);
-    return (0, l.bG)([a.A], () => a.A.isEnabled({
+    } = e, u = (0, s.A)(n);
+    return (0, r.bG)([a.A], () => a.A.isEnabled({
         shakeLocation: n
-    })) ? (0, r.jsx)(i.bfh, {
+    })) ? (0, l.jsx)(i.bfh, {
         isShaking: t,
         intensity: u,
         className: c,
-        children: s
-    }) : s
+        children: o
+    }) : o
 }

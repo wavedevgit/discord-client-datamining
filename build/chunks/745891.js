@@ -1,7 +1,7 @@
 /** chunk id: 745891, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => _
+    A: () => m
 }), n(896048);
 var i = n(627968),
     r = n(64700),
@@ -12,14 +12,14 @@ var i = n(627968),
     c = n(256415),
     d = n(448296),
     u = n(672396),
-    p = n(652215),
-    h = n(985018),
+    h = n(652215),
+    p = n(985018),
     f = n(877911);
 let g = Object.values(u.Li).map(e => 100 * e),
     y = (0, a.Ld)();
-class m extends r.PureComponent {
+class A extends r.PureComponent {
     handleUpdateBackgroundOpacity(e) {
-        o.A.setTextWidgetOpacity((0, d.A)(e / 100)), o.A.track(p.HAw.OVERLAY_SETTINGS_UPDATED, {
+        o.A.setTextWidgetOpacity((0, d.A)(e / 100)), o.A.track(h.HAw.OVERLAY_SETTINGS_UPDATED, {
             text_opacity_slider: e
         })
     }
@@ -32,7 +32,7 @@ class m extends r.PureComponent {
             children: (0, i.jsx)("div", {
                 className: f.xJ,
                 children: (0, i.jsx)(l.Apm, {
-                    label: h.intl.string(h.t.OVovCb),
+                    label: p.intl.string(p.t.OVovCb),
                     mini: !0,
                     initialValue: this.initialValue,
                     defaultValue: this.initialValue,
@@ -42,7 +42,7 @@ class m extends r.PureComponent {
                     onValueChange: this.handleUpdateBackgroundOpacity,
                     asValueChanges: this.handlePreviewBackgroundOpacity,
                     markers: g,
-                    onMarkerRender: p.tEg,
+                    onMarkerRender: h.tEg,
                     equidistant: !0,
                     stickToMarkers: !0,
                     "aria-labelledby": y
@@ -62,6 +62,6 @@ class m extends r.PureComponent {
             }(this, "initialValue", 100 * this.props.opacity)
     }
 }
-let _ = s.Ay.connectStores([c.default], () => ({
+let m = s.Ay.connectStores([c.default], () => ({
     opacity: c.default.getTextWidgetOpacity()
-}))(m)
+}))(A)

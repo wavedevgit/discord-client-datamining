@@ -77,22 +77,22 @@ var j = o(function() {
         return 25 !== new S(1, "DataCloneError").code
     }),
     G = j || 25 !== S[A] || 25 !== T[A],
-    F = O ? k || U || G : j;
+    V = O ? k || U || G : j;
 r({
     global: !0,
     constructor: !0,
-    forced: F
+    forced: V
 }, {
-    DOMException: F ? D : S
+    DOMException: V ? D : S
 });
-var V = i(v),
-    B = V.prototype;
-for (var H in k && (O || S === V) && u(B, "toString", h), U && b && S === V && d(B, "code", x(function() {
+var F = i(v),
+    B = F.prototype;
+for (var H in k && (O || S === F) && u(B, "toString", h), U && b && S === F && d(B, "code", x(function() {
         return P(_(this).name)
     })), g)
     if (f(g, H)) {
         var Y = g[H],
             W = Y.s,
             K = l(6, Y.c);
-        f(V, W) || c(V, W, K), f(B, W) || c(B, W, K)
+        f(F, W) || c(F, W, K), f(B, W) || c(B, W, K)
     }

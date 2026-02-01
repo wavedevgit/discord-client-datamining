@@ -1,37 +1,37 @@
 /** chunk id: 586685, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    Ay: () => A,
-    SB: () => p,
-    VD: () => x,
+    Ay: () => b,
+    SB: () => f,
+    VD: () => g,
     b0: () => m
 });
-var i = n(627968);
+var r = n(627968);
 n(64700);
 var l = n(820284),
-    s = n(793574),
-    r = n(688810),
+    i = n(793574),
+    s = n(688810),
     a = n(459793),
     o = n(980545),
     c = n(195043),
-    d = n(326911),
-    u = n(265729),
-    h = n(531525),
-    g = n(652215);
+    u = n(326911),
+    d = n(265729),
+    p = n(531525),
+    h = n(652215);
 
-function x() {
-    return (0, i.jsx)(l.A, {
-        section: g.JJy.LIBRARY_INVENTORY_CODE_REDEMPTION,
-        children: (0, i.jsx)(d.A, {})
+function g() {
+    return (0, r.jsx)(l.A, {
+        section: h.JJy.LIBRARY_INVENTORY_CODE_REDEMPTION,
+        children: (0, r.jsx)(u.A, {})
     })
 }
 
-function p(e) {
+function f(e) {
     let {
         inOldSettings: t = !1
     } = e;
-    return (0, i.jsx)(l.A, {
-        section: g.JJy.QUESTS,
-        children: (0, i.jsx)(o.A, {
+    return (0, r.jsx)(l.A, {
+        section: h.JJy.QUESTS,
+        children: (0, r.jsx)(o.A, {
             inOldSettings: t
         })
     })
@@ -41,36 +41,36 @@ function m(e) {
     let {
         inOldSettings: t = !1
     } = e;
-    return (0, i.jsx)(l.A, {
-        section: g.JJy.LIBRARY_INVENTORY_GIFTS_LIST,
-        children: (0, i.jsx)(u.A, {
+    return (0, r.jsx)(l.A, {
+        section: h.JJy.LIBRARY_INVENTORY_GIFTS_LIST,
+        children: (0, r.jsx)(d.A, {
             inOldSettings: t
         })
     })
 }
 
-function A() {
+function b() {
     let {
         analyticsLocations: e
-    } = (0, r.Ay)(s.A.USER_SETTINGS_GIFT_INVENTORY);
-    return (0, i.jsxs)(r.f5, {
+    } = (0, s.Ay)(i.A.USER_SETTINGS_GIFT_INVENTORY);
+    return (0, r.jsxs)(s.f5, {
         value: e,
-        children: [(0, i.jsx)(c.x, {
-            setting: h.H.GIFT_CODE_REDEMPTION,
-            children: (0, i.jsx)(x, {})
-        }), (0, i.jsx)(c.x, {
-            setting: h.H.GIFT_INVENTORY_QUESTS,
-            children: (0, i.jsx)(p, {
+        children: [(0, r.jsx)(c.x, {
+            setting: p.H.GIFT_CODE_REDEMPTION,
+            children: (0, r.jsx)(g, {})
+        }), (0, r.jsx)(c.x, {
+            setting: p.H.GIFT_INVENTORY_QUESTS,
+            children: (0, r.jsx)(f, {
                 inOldSettings: !0
             })
-        }), (0, i.jsx)(c.x, {
-            setting: h.H.GIFT_INVENTORY_LIST,
-            children: (0, i.jsx)(m, {
+        }), (0, r.jsx)(c.x, {
+            setting: p.H.GIFT_INVENTORY_LIST,
+            children: (0, r.jsx)(m, {
                 inOldSettings: !0
             })
-        }), (0, i.jsx)(c.x, {
-            setting: h.H.GIFT_BLOCKED_PAYMENTS,
-            children: (0, i.jsx)(a.uK, {})
+        }), (0, r.jsx)(c.x, {
+            setting: p.H.GIFT_BLOCKED_PAYMENTS,
+            children: (0, r.jsx)(a.uK, {})
         })]
     })
 }

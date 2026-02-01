@@ -21,7 +21,7 @@ var r = n(627968),
     h = n(842130),
     E = n(985018),
     O = n(191248);
-let C = e => {
+let x = e => {
         let {
             title: t,
             buttonText: n,
@@ -47,7 +47,7 @@ let C = e => {
             })]
         })
     },
-    x = () => {
+    C = () => {
         let e = (0, A.vx)(),
             t = () => {
                 (0, _.openUserSettings)(d.X.CONTENT_AND_SOCIAL_PANEL, {
@@ -113,13 +113,13 @@ let C = e => {
                     color: "text-muted",
                     children: E.intl.string(h.default.Sv236e)
                 })]
-            }), (0, r.jsx)(C, {
+            }), (0, r.jsx)(x, {
                 title: E.intl.string(E.t["+o1pDZ"]),
                 buttonText: E.intl.string(E.t.bt75uw),
                 onButtonPress: () => s(f.u9.CONTENT_AND_SOCIAL)
             }), (0, r.jsx)(o.A, {
                 className: O.yF
-            }), (0, r.jsx)(C, {
+            }), (0, r.jsx)(x, {
                 title: E.intl.string(E.t.OAuOHD),
                 buttonText: E.intl.string(E.t.bt75uw),
                 onButtonPress: () => s(f.u9.DATA_AND_PRIVACY)
@@ -130,6 +130,6 @@ let C = e => {
         let e = (0, c.Z)();
         return 0 === (0, A.vx)().length ? null : (0, r.jsx)("div", {
             className: O.kL,
-            children: e ? (0, r.jsx)(x, {}) : (0, r.jsx)(S, {})
+            children: e ? (0, r.jsx)(C, {}) : (0, r.jsx)(S, {})
         })
     }

@@ -14,8 +14,8 @@ var r = n(627968),
     p = n(486020),
     h = n(998304),
     g = n(624458),
-    f = n(202384),
-    m = n(513461),
+    m = n(202384),
+    f = n(513461),
     A = n(212455),
     _ = n(892040),
     b = n(385310),
@@ -85,7 +85,7 @@ let C = e => {
             })
         },
         w = async () => {
-            await g.A.resetGuildJoinRequest(t), (0, f.Ze)(t)
+            await g.A.resetGuildJoinRequest(t), (0, m.Ze)(t)
         }, L = e => {
             e ? P(I.intl.format(I.t["9ZezpN"], {
                 name: null == j ? void 0 : j.name
@@ -105,12 +105,12 @@ let C = e => {
             children: (() => {
                 if (null == C) return null;
                 switch (C.applicationStatus) {
-                    case m.B5.SUBMITTED:
+                    case f.B5.SUBMITTED:
                         return (0, r.jsx)(E.A, {
                             onWithdrawApplication: () => L(!0),
                             guild: j
                         });
-                    case m.B5.REJECTED:
+                    case f.B5.REJECTED:
                         return (0, r.jsx)(b.A, {
                             reapplyText: I.intl.string(I.t.I1LYVk),
                             onReapply: w,
@@ -122,7 +122,7 @@ let C = e => {
                     default:
                         return (0, r.jsx)(_.K, {
                             onDiscardApplication: R,
-                            onContinueApplication: () => (0, f.Ze)(t),
+                            onContinueApplication: () => (0, m.Ze)(t),
                             guild: j
                         })
                 }

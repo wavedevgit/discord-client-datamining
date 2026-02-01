@@ -48,14 +48,14 @@ class h extends i.A {
             if ((null == d ? void 0 : d.find(e => e.id === h)) != null ? (0, a._)(o.sn.PING_ME) : (null != (t = null == d ? void 0 : d.length) ? t : 0) > 0 && (null == r ? void 0 : r.id) === h && (0, a._)(o.sn.PING_SOMEONE), !(0, u.gN)(null == r ? void 0 : r.id, h, i, p)) return !1;
             let g = u.Ay.getMostRecentMessageCombo(n),
                 {
-                    combo: f
+                    combo: m
                 } = null != g ? g : {};
-            if (null == f) return !1;
+            if (null == m) return !1;
             Object.values(o.sn).forEach(e => {
                 if (null != s.A.getUnlocked(e)) return;
                 let t = (0, o.vM)(e),
                     n = null == t ? void 0 : t.checkUnlock;
-                null == n || !1 !== n(f) && (0, a._)(e)
+                null == n || !1 !== n(m) && (0, a._)(e)
             })
         })
     }

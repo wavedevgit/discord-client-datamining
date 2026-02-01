@@ -32,8 +32,8 @@ function T(e) {
     let {
         quest: w,
         questContent: I,
-        isHovering: P,
-        contentPosition: k,
+        isHovering: k,
+        contentPosition: P,
         rowIndex: R,
         isVisibleInViewport: D,
         onReceiveErrorHints: M,
@@ -46,7 +46,7 @@ function T(e) {
     } = l.useContext(j.M), {
         expansionSpring: z
     } = (0, c.zhh)({
-        expansionSpring: +!!P,
+        expansionSpring: +!!k,
         config: (T = function(e) {
             for (var t = 1; t < arguments.length; t++) {
                 var n = null != arguments[t] ? arguments[t] : {},
@@ -78,8 +78,8 @@ function T(e) {
         }), T)
     }), q = (null == (n = w.userStatus) ? void 0 : n.completedAt) != null, Q = (null == (r = w.userStatus) ? void 0 : r.claimedAt) != null, Y = (0, f.ks)(w.config), J = (0, f._Z)(w.config), {
         completedRatio: X,
-        completedRatioDisplay: Z
-    } = (0, x.O9)(w), $ = (0, h.gj)(w, L, m.Ob.QuestHome, U), ee = l.useMemo(() => Q && Y ? C.intl.format(C.t["8Op4c4"], {
+        completedRatioDisplay: $
+    } = (0, x.O9)(w), Z = (0, h.gj)(w, L, m.Ob.QuestHome, U), ee = l.useMemo(() => Q && Y ? C.intl.format(C.t["8Op4c4"], {
         balanceHook: () => (0, a.jsxs)(E, {
             questId: w.id,
             children: [(0, a.jsx)(p.A, {
@@ -106,13 +106,13 @@ function T(e) {
             children: G
         }, w.id)
     }), [B, Q, G, w.id, J, Y]), et = l.useMemo(() => {
-        if (null != $) return (0, a.jsx)(c.Text, {
+        if (null != Z) return (0, a.jsx)(c.Text, {
             variant: "text-sm/medium",
             color: "text-muted",
             className: S.h_,
-            children: $
+            children: Z
         })
-    }, [$]), en = (0, o.bG)([u.A], () => u.A.useReducedMotion);
+    }, [Z]), en = (0, o.bG)([u.A], () => u.A.useReducedMotion);
     return (0, a.jsxs)("div", {
         className: S.kL,
         ref: U,
@@ -141,14 +141,14 @@ function T(e) {
                             quest: w,
                             size: 76,
                             percentComplete: X,
-                            percentCompleteText: P && !(0, g.Ic)(w) ? Z : void 0,
+                            percentCompleteText: k && !(0, g.Ic)(w) ? $ : void 0,
                             children: (0, a.jsx)("div", {
                                 className: S.yv,
                                 children: (0, a.jsx)(v.A, {
                                     quest: w,
                                     questContent: I,
                                     className: S.ve,
-                                    autoplay: P,
+                                    autoplay: k,
                                     onLoadComplete: K,
                                     lazyLoad: !0,
                                     sourceQuestContent: L
@@ -157,7 +157,7 @@ function T(e) {
                         })]
                     }) : (0, a.jsx)(v.A, {
                         quest: w,
-                        autoplay: P,
+                        autoplay: k,
                         questContent: I,
                         className: S.eB,
                         onLoadComplete: K,
@@ -192,7 +192,7 @@ function T(e) {
         }), (0, a.jsx)(y.A, {
             quest: w,
             questContent: I,
-            contentPosition: k,
+            contentPosition: P,
             rowIndex: R,
             onReceiveErrorHints: M,
             sourceQuestContent: L

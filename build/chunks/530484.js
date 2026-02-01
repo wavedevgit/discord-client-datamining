@@ -12,8 +12,8 @@ var l = n(311907),
     c = n(508654),
     u = n(222823),
     d = n(543465),
-    h = n(652793),
-    p = n(790782),
+    p = n(652793),
+    h = n(790782),
     g = n(985018),
     f = n(811094);
 
@@ -57,10 +57,10 @@ function A(e) {
         hasUnread: y,
         mentionCount: O
     } = (0, l.cf)([u.Ay], () => ({
-        hasUnread: u.Ay.hasUnread(t.id, p.P.GUILD_EVENT),
-        mentionCount: u.Ay.getMentionCount(t.id, p.P.GUILD_EVENT)
-    }), [t.id]), _ = (0, l.bG)([d.Ay], () => d.Ay.isMuteScheduledEventsEnabled(t.id));
-    async function j() {
+        hasUnread: u.Ay.hasUnread(t.id, h.P.GUILD_EVENT),
+        mentionCount: u.Ay.getMentionCount(t.id, h.P.GUILD_EVENT)
+    }), [t.id]), j = (0, l.bG)([d.Ay], () => d.Ay.isMuteScheduledEventsEnabled(t.id));
+    async function x() {
         await (0, s.mMO)(async () => {
             let {
                 default: e
@@ -70,11 +70,11 @@ function A(e) {
             }))
         }), (0, o.Dr)(i.M.GUILD_HEADER_EVENT_UPSELL)
     }
-    let x = (0, c.Ay)(t.id),
-        v = x.length > 0 ? g.intl.formatToPlainString(g.t.IBdqSu, {
-            number: x.length
+    let _ = (0, c.Ay)(t.id),
+        v = _.length > 0 ? g.intl.formatToPlainString(g.t.IBdqSu, {
+            number: _.length
         }) : g.intl.string(g.t.tlopTM);
-    return (0, r.jsx)(h.G, {
+    return (0, r.jsx)(p.G, {
         id: "upcoming-events-".concat(t.id),
         renderIcon: e => (0, r.jsx)(s.CTc, {
             size: "md",
@@ -83,7 +83,7 @@ function A(e) {
         }),
         text: v,
         selected: A,
-        onClick: j,
+        onClick: x,
         onContextMenu: e => {
             (0, a.L3)(e, async () => {
                 let {
@@ -94,8 +94,8 @@ function A(e) {
                 }))
             })
         },
-        showUnread: y && !_,
-        trailing: !_ && O > 0 ? (0, r.jsx)(s.hVq, {
+        showUnread: y && !j,
+        trailing: !j && O > 0 ? (0, r.jsx)(s.hVq, {
             className: f.Do,
             disableColor: !0,
             count: O

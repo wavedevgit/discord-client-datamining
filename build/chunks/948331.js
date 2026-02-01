@@ -1,6 +1,6 @@
 /** chunk id: 948331, original params: e,t,r (module,exports,require) **/
 r.d(t, {
-    g: () => S
+    g: () => y
 });
 var n = r(627968),
     l = r(64700),
@@ -12,18 +12,37 @@ var n = r(627968),
     u = r(404374),
     d = r(465794),
     h = r(927578),
-    p = r(226017),
-    f = r(652215),
+    f = r(226017),
+    p = r(652215),
     g = r(788868),
-    _ = r(985018),
+    S = r(985018),
     E = r(316163),
-    A = r(7410),
-    y = r(936037);
+    _ = r(7410),
+    A = r(936037);
 
-function S() {
-    return (0, p.A)() ? (0, n.jsx)("div", {
+function y() {
+    return (0, f.A)() ? (0, n.jsx)("div", {
         className: E.do,
         children: (0, n.jsxs)("div", {
+            className: E.U6,
+            children: [(0, n.jsx)("img", {
+                src: _,
+                className: E.Sl,
+                alt: ""
+            }), (0, n.jsx)(o.Heading, {
+                className: E.wx,
+                variant: "heading-xl/semibold",
+                color: "text-default",
+                children: S.intl.string(S.t.erEf2g)
+            }), (0, n.jsx)(a.EYj, {
+                variant: "text-md/medium",
+                color: "text-muted",
+                children: S.intl.string(S.t.NaRCXT)
+            })]
+        })
+    }) : (0, n.jsxs)("div", {
+        className: E.do,
+        children: [(0, n.jsxs)("div", {
             className: E.U6,
             children: [(0, n.jsx)("img", {
                 src: A,
@@ -33,36 +52,17 @@ function S() {
                 className: E.wx,
                 variant: "heading-xl/semibold",
                 color: "text-default",
-                children: _.intl.string(_.t.erEf2g)
+                children: S.intl.string(S.t.w4DRbZ)
             }), (0, n.jsx)(a.EYj, {
                 variant: "text-md/medium",
                 color: "text-muted",
-                children: _.intl.string(_.t.NaRCXT)
+                children: S.intl.string(S.t.F6u3E3)
             })]
-        })
-    }) : (0, n.jsxs)("div", {
-        className: E.do,
-        children: [(0, n.jsxs)("div", {
-            className: E.U6,
-            children: [(0, n.jsx)("img", {
-                src: y,
-                className: E.Sl,
-                alt: ""
-            }), (0, n.jsx)(o.Heading, {
-                className: E.wx,
-                variant: "heading-xl/semibold",
-                color: "text-default",
-                children: _.intl.string(_.t.w4DRbZ)
-            }), (0, n.jsx)(a.EYj, {
-                variant: "text-md/medium",
-                color: "text-muted",
-                children: _.intl.string(_.t.F6u3E3)
-            })]
-        }), (0, n.jsx)(b, {})]
+        }), (0, n.jsx)(m, {})]
     })
 }
 
-function b() {
+function m() {
     let e = (0, h.Dd)(g.PremiumTypes.TIER_2),
         t = l.useCallback(() => (0, o.mMO)(async () => {
             let {
@@ -89,7 +89,7 @@ function b() {
                 source: c.A.FOR_LATER_POPOUT
             }, t))
         }), []),
-        p = _.intl.format(_.t.qXh3fo, {
+        f = S.intl.format(S.t.qXh3fo, {
             nitroTierName: e,
             onClick: t
         });
@@ -102,14 +102,14 @@ function b() {
             variant: "text-xs/medium",
             color: "text-strong",
             className: E.tD,
-            children: p
+            children: f
         }), (0, n.jsx)(d.A, {
             className: E.Oy,
             size: i.lO.TINY,
             shinyButtonClassName: E.Oy,
             subscriptionTier: g.pe.TIER_2,
             premiumModalAnalyticsLocation: {
-                section: f.JJy.FOR_LATER_POPOUT_UPSELL
+                section: p.JJy.FOR_LATER_POPOUT_UPSELL
             }
         })]
     })

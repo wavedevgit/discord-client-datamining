@@ -11,9 +11,9 @@ var r = n(311907),
     c = n(661191),
     u = n(63995),
     d = n(69407),
-    h = n(652215);
+    p = n(652215);
 
-function p(e) {
+function h(e) {
     let {
         voiceState: t,
         userNick: n,
@@ -30,9 +30,9 @@ function p(e) {
 function g(e) {
     let [t] = (0, r.bG)([u.A, i.A, l.A], () => {
         let t;
-        return [(t = e === h.YYv ? c.default.keys(l.A.getFavoriteChannels()).map(e => i.A.getChannel(e)).filter(a.Vq).filter(e => e.isGuildStageVoice()) : u.A.getChannels(e)).reduce((e, t) => {
+        return [(t = e === p.YYv ? c.default.keys(l.A.getFavoriteChannels()).map(e => i.A.getChannel(e)).filter(a.Vq).filter(e => e.isGuildStageVoice()) : u.A.getChannels(e)).reduce((e, t) => {
             let n = u.A.getMutableParticipants(t.id, d.ip.SPEAKER);
-            return e[t.id] = n.filter(e => e.type === d.wY.VOICE).map(p), e
+            return e[t.id] = n.filter(e => e.type === d.wY.VOICE).map(h), e
         }, {}), t.reduce((e, t) => {
             let {
                 id: n

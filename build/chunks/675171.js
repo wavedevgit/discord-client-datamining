@@ -2,11 +2,11 @@
 n.d(t, {
     A: () => h
 });
-var r = n(417597),
-    l = n(933958),
+var l = n(417597),
+    r = n(933958),
     i = n(969151),
-    s = n(108959),
-    a = n(734057),
+    a = n(108959),
+    s = n(734057),
     o = n(626360),
     c = n(5867);
 let u = "no_text_activity",
@@ -20,8 +20,8 @@ let u = "no_text_activity",
     };
 
 function h() {
-    let e = (0, r.bG)([l.Ay], () => l.Ay.getCurrentEmbeddedActivity()),
-        t = (0, r.bG)([l.Ay], () => l.Ay.getActivityPanelMode()),
+    let e = (0, l.bG)([r.Ay], () => r.Ay.getCurrentEmbeddedActivity()),
+        t = (0, l.bG)([r.Ay], () => r.Ay.getActivityPanelMode()),
         n = (0, i.H)(null == e ? void 0 : e.location);
-    return void 0 === e || (0, s.A)(n, a.A) ? d[u] : d[t]
+    return void 0 === e || (0, a.A)(n, s.A) ? d[u] : d[t]
 }

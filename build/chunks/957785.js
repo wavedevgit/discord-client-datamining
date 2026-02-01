@@ -1,6 +1,6 @@
 /** chunk id: 957785, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => p
+    A: () => h
 }), n(896048);
 var r = n(627968),
     l = n(64700),
@@ -11,11 +11,11 @@ var r = n(627968),
     c = n(594832),
     u = n(183555),
     d = n(524380),
-    h = n(733557);
-let p = l.forwardRef(function(e, t) {
+    p = n(733557);
+let h = l.forwardRef(function(e, t) {
     var n, l, i;
     let {
-        onCardClick: p,
+        onCardClick: h,
         tooltipConfig: g,
         shouldScalePreview: f = !0,
         renderPreview: m,
@@ -23,23 +23,23 @@ let p = l.forwardRef(function(e, t) {
         isSingleCard: A = !1,
         wishlistId: y,
         wishlistItem: O,
-        cardSize: _ = d.Y.MEDIUM
+        cardSize: j = d.Y.MEDIUM
     } = e, {
-        skuId: j,
-        skuProductLine: x
+        skuId: x,
+        skuProductLine: _
     } = O, {
         trackUserProfileWishlistAction: v
-    } = (0, u.NJ)(), E = f ? h.ho : h.C8, C = A ? h.pr : h.Nr, S = null != b && b > 0, I = (0, r.jsxs)(o.DUT, {
+    } = (0, u.NJ)(), E = f ? p.ho : p.C8, C = A ? p.pr : p.Nr, S = null != b && b > 0, I = (0, r.jsxs)(o.DUT, {
         onClick: () => {
-            p(), v({
+            h(), v({
                 action: S ? "PRESS_WISHLIST_BREADCRUMB_OVERFLOW_CARD" : "PRESS_WISHLIST_BREADCRUMB_CARD",
-                skuId: S ? null : j,
+                skuId: S ? null : x,
                 wishlistId: y,
-                productLines: new Set([x])
+                productLines: new Set([_])
             })
         },
         className: s()(C, {
-            [h.ax]: _ === d.Y.SMALL
+            [p.ax]: j === d.Y.SMALL
         }),
         "aria-label": null != (n = g.title) ? n : "",
         innerRef: t,
@@ -47,7 +47,7 @@ let p = l.forwardRef(function(e, t) {
             className: E,
             children: m()
         }), S && (0, r.jsx)("div", {
-            className: h.sv,
+            className: p.sv,
             children: (0, r.jsxs)(o.Text, {
                 variant: "text-xs/medium",
                 color: "always-white",

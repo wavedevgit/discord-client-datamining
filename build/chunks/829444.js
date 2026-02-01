@@ -2,30 +2,30 @@
 n.d(t, {
     A: () => d
 });
-var r = n(64700),
-    l = n(417597),
+var l = n(64700),
+    r = n(417597),
     i = n(73153),
-    s = n(775602),
-    a = n(649963),
+    a = n(775602),
+    s = n(649963),
     o = n(253932),
     c = n(900210),
     u = n(505527);
 
 function d() {
     let e = o.Sf.useSetting(),
-        t = (0, l.bG)([s.A], () => s.A.useReducedMotion);
-    r.useEffect(() => {
+        t = (0, r.bG)([a.A], () => a.A.useReducedMotion);
+    l.useEffect(() => {
         function n(n) {
             let {
-                messageId: r,
-                channelId: l,
+                messageId: l,
+                channelId: r,
                 emoji: i,
-                optimistic: s,
+                optimistic: a,
                 reactionType: o
             } = n;
-            s || o !== u.v.BURST || !e || t || (0, a.on)({
-                channelId: l,
-                messageId: r,
+            a || o !== u.v.BURST || !e || t || (0, s.on)({
+                channelId: r,
+                messageId: l,
                 emoji: i,
                 key: c.W.EXTERNAL
             })

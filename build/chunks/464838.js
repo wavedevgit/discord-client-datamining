@@ -1,6 +1,6 @@
 /** chunk id: 464838, original params: t,e,n (module,exports,require) **/
 n.d(e, {
-    A: () => A
+    A: () => h
 });
 var r = n(627968);
 n(64700);
@@ -15,19 +15,19 @@ var i = n(492917),
     E = n(985018),
     _ = n(286965);
 
-function A(t) {
+function h(t) {
     let {
         senderId: e,
         trackAnalyticsEvent: n,
-        onNavigate: A
-    } = t, h = (0, a.bG)([l.default], () => {
+        onNavigate: h
+    } = t, A = (0, a.bG)([l.default], () => {
         let t = l.default.getUser(e);
         return o.Ay.getName(t)
     });
     return (0, r.jsx)(u.A, {
         header: E.intl.string(E.t.sSMgC6),
         description: E.intl.formatToPlainString(E.t.q2QrTY, {
-            username: h
+            username: A
         }),
         heroImage: (0, r.jsx)(i.$wK, {
             alt: E.intl.string(E.t["3QhxXJ"])
@@ -39,14 +39,14 @@ function A(t) {
                 variant: "primary",
                 fullWidth: !0,
                 onClick: () => {
-                    A(d.G.TAKE_ACTION), n(c.Wm.USER_TAKEOVER_MODAL_TAKE_ACTION)
+                    h(d.G.TAKE_ACTION), n(c.Wm.USER_TAKEOVER_MODAL_TAKE_ACTION)
                 }
             }), (0, r.jsx)(s.Button, {
                 text: E.intl.string(E.t.xLkGzP),
                 variant: "secondary",
                 fullWidth: !0,
                 onClick: () => {
-                    A(d.G.SAFETY_TIPS), n(c.Wm.USER_TAKEOVER_MODAL_SAFETY_TIPS)
+                    h(d.G.SAFETY_TIPS), n(c.Wm.USER_TAKEOVER_MODAL_SAFETY_TIPS)
                 }
             })]
         })

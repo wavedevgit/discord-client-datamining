@@ -14,8 +14,8 @@ var r = n(627968),
     p = n(936555),
     h = n(465932),
     g = n(142120),
-    f = n(742589),
-    m = n(71393),
+    m = n(742589),
+    f = n(71393),
     A = n(615405),
     _ = n(300233),
     b = n(217976),
@@ -31,7 +31,7 @@ var r = n(627968),
 function T(e) {
     let {
         guildId: t
-    } = e, n = (0, a.bG)([m.A], () => m.A.getGuild(t), [t]), T = (0, a.bG)([g.A], () => g.A.isConnected()), j = (0, p.A)(t), x = (0, b.A)(t), P = (0, a.bG)([A.A], () => A.A.isSubscriptionFetching), w = (0, _.X)(), {
+    } = e, n = (0, a.bG)([f.A], () => f.A.getGuild(t), [t]), T = (0, a.bG)([g.A], () => g.A.isConnected()), j = (0, p.A)(t), x = (0, b.A)(t), P = (0, a.bG)([A.A], () => A.A.isSubscriptionFetching), w = (0, _.X)(), {
         shouldHideGuildPurchaseEntryPoints: L,
         restrictionsLoading: R
     } = (0, h.MH)(t), D = null == n || !w || P || R;
@@ -52,13 +52,13 @@ function T(e) {
     }
     return (0, r.jsxs)("div", {
         className: N.kL,
-        children: [(0, r.jsxs)(f.A, {
+        children: [(0, r.jsxs)(m.A, {
             toolbar: (0, r.jsx)(i.Fragment, {}),
             className: N.jr,
-            children: [(0, r.jsx)(f.A.Icon, {
+            children: [(0, r.jsx)(m.A.Icon, {
                 icon: (0, s.kHD)(E.A),
                 "aria-hidden": !0
-            }), (0, r.jsx)(f.A.Title, {
+            }), (0, r.jsx)(m.A.Title, {
                 children: C.intl.string(C.t["KzCF/6"])
             })]
         }), (0, r.jsx)("div", {

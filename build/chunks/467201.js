@@ -14,8 +14,8 @@ var r = n(627968),
     p = n(609276),
     h = n(67480),
     g = n(328968),
-    f = n(371794),
-    m = n(681613),
+    m = n(371794),
+    f = n(681613),
     A = n(110434),
     _ = n(985018),
     b = n(589757);
@@ -27,7 +27,7 @@ class E extends i.Component {
                 className: b.f5,
                 children: [e.map(e => (0, r.jsx)("div", {
                     className: b.zA,
-                    children: (0, r.jsx)(m.A, {
+                    children: (0, r.jsx)(f.A, {
                         reason: e,
                         hidePersonalInformation: n
                     })
@@ -76,8 +76,8 @@ let O = s.Ay.connectStores([h.A, d.default, g.A, c.A, p.A, u.A], e => {
         sku: t
     } = e;
     return {
-        socialReasons: (0, f.my)(t.id, h.A, d.default, c.A, p.A),
-        nonSocialReasons: (0, f.ZH)(t.id, h.A, g.A),
+        socialReasons: (0, m.my)(t.id, h.A, d.default, c.A, p.A),
+        nonSocialReasons: (0, m.ZH)(t.id, h.A, g.A),
         hidePersonalInformation: u.A.hidePersonalInformation
     }
 })(E)

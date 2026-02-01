@@ -1,6 +1,6 @@
 /** chunk id: 494208, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => h
+    A: () => p
 }), n(896048);
 var r = n(627968),
     l = n(64700),
@@ -12,16 +12,16 @@ var r = n(627968),
     u = n(985018),
     d = n(498654);
 
-function h(e) {
+function p(e) {
     let {
         channel: t
-    } = e, [n, h] = l.useState(!1), p = l.useRef(null), g = (0, s.vL)(t), f = l.useCallback(() => {
-        h(!1)
+    } = e, [n, p] = l.useState(!1), h = l.useRef(null), g = (0, s.vL)(t), f = l.useCallback(() => {
+        p(!1)
     }, []), m = l.useCallback(() => {
-        n || (0, o.D3)("Popout"), h(!n)
+        n || (0, o.D3)("Popout"), p(!n)
     }, [n]);
     return (0, r.jsx)(i.YNO, {
-        targetElementRef: p,
+        targetElementRef: h,
         animation: i.YNO.Animation.NONE,
         position: "bottom",
         align: "right",
@@ -62,7 +62,7 @@ function h(e) {
                 }
                 return e
             }({}, e), l = l = {
-                ref: p,
+                ref: h,
                 className: d.Kk,
                 onClick: m,
                 icon: i.ysw,

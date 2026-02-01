@@ -11,8 +11,8 @@ var r = n(627968),
     c = n(311907),
     u = n(435371),
     d = n(397927),
-    h = n(933958),
-    p = n(104171),
+    p = n(933958),
+    h = n(104171),
     g = n(63995),
     f = n(69407),
     m = n(616356),
@@ -20,9 +20,9 @@ var r = n(627968),
     A = n(287809),
     y = n(607567),
     O = n(403362),
-    _ = n(661191),
-    j = n(181079),
-    x = n(652215),
+    j = n(661191),
+    x = n(181079),
+    _ = n(652215),
     v = n(985018),
     E = n(653750);
 
@@ -32,7 +32,7 @@ function C(e, t) {
         children: [(0, r.jsx)(e, {
             className: E.RI,
             color: "currentColor"
-        }), (0, r.jsx)(p.Ay, {
+        }), (0, r.jsx)(h.Ay, {
             guildId: void 0,
             users: t,
             max: 6
@@ -41,10 +41,10 @@ function C(e, t) {
 }
 
 function S() {
-    let e = (0, c.yK)([j.A, b.A], () => _.default.keys(j.A.getFavoriteChannels()).map(e => b.A.getChannel(e)).filter(O.Vq)),
+    let e = (0, c.yK)([x.A, b.A], () => j.default.keys(x.A.getFavoriteChannels()).map(e => b.A.getChannel(e)).filter(O.Vq)),
         t = e.map(e => e.id),
-        n = e.filter(e => e.type === x.rbe.GUILD_VOICE),
-        l = e.filter(e => e.type === x.rbe.GUILD_STAGE_VOICE).map(e => e.id),
+        n = e.filter(e => e.type === _.rbe.GUILD_VOICE),
+        l = e.filter(e => e.type === _.rbe.GUILD_STAGE_VOICE).map(e => e.id),
         i = (0, c.yK)([y.Ay], () => o().flatMap(n, e => y.Ay.getVoiceStatesForChannel(e).map(e => {
             let {
                 user: t
@@ -63,8 +63,8 @@ function S() {
             return e
         }),
         u = (0, c.yK)([m.A], () => m.A.getAllApplicationStreams().filter(e => t.includes(e.channelId)).map(e => e.ownerId), [t]),
-        v = (0, c.yK)([h.Ay], () => {
-            let e = h.Ay.getEmbeddedActivitiesByChannel(),
+        v = (0, c.yK)([p.Ay], () => {
+            let e = p.Ay.getEmbeddedActivitiesByChannel(),
                 n = [];
             for (let i of t) {
                 var r, l;
@@ -81,7 +81,7 @@ function S() {
                 size: "lg",
                 color: "currentColor",
                 className: E.RI
-            }), (0, r.jsx)(p.Ay, {
+            }), (0, r.jsx)(h.Ay, {
                 guildId: void 0,
                 users: s,
                 max: 3

@@ -1,6 +1,6 @@
 /** chunk id: 638324, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => y
+    A: () => N
 });
 var r = n(627968),
     i = n(64700),
@@ -21,9 +21,9 @@ var r = n(627968),
     h = n(997913),
     E = n(542457),
     O = n(355097),
-    C = n(531525);
+    x = n(531525);
 n(820575);
-var x = n(652215),
+var C = n(652215),
     S = n(985018),
     T = n(842130);
 
@@ -31,9 +31,9 @@ function I(e) {
     let {
         ingress: t,
         guildId: n
-    } = e, I = (0, A.q9)(), y = (0, m.K)(), N = g.$s.useSetting().includes(n), j = (0, o.uM)(), v = g.YX.useSetting(), P = g.Zr.useSetting().includes(n), R = i.useCallback(e => {
+    } = e, I = (0, A.q9)(), N = (0, m.K)(), y = g.$s.useSetting().includes(n), j = (0, o.uM)(), v = g.YX.useSetting(), P = g.Zr.useSetting().includes(n), R = i.useCallback(e => {
         let r = (0, _.xo)();
-        e ? r.delete(n) : r.add(n), g.Zr.updateSetting(Array.from(r)), d.default.track(x.HAw.USER_SERVER_PRIVACY_SETTINGS_ACTION, {
+        e ? r.delete(n) : r.add(n), g.Zr.updateSetting(Array.from(r)), d.default.track(C.HAw.USER_SERVER_PRIVACY_SETTINGS_ACTION, {
             action: E.m.RESTRICT_GUILD_MESSAGE_REQUEST_TOGGLE,
             ingress: t,
             guild_id: n
@@ -41,7 +41,7 @@ function I(e) {
     }, [t, n]);
 
     function D(e, t) {
-        d.default.track(x.HAw.GUILD_DEFAULT_MESSAGE_REQUEST_UPDATED, {
+        d.default.track(C.HAw.GUILD_DEFAULT_MESSAGE_REQUEST_UPDATED, {
             default_guilds_restricted: e,
             applied_to_existing_guilds: t
         })
@@ -66,32 +66,32 @@ function I(e) {
         }))
     }
     return (0, r.jsx)(f.h, {
-        setting: C.H.PRIVACY_SERVER_SPECIFIC_PRIVACY_MESSAGE_REQUESTS_V2,
+        setting: x.H.PRIVACY_SERVER_SPECIFIC_PRIVACY_MESSAGE_REQUESTS_V2,
         scrollPosition: O.d1.MESSAGE_REQUESTS_V2,
         children: "0" === n ? (0, r.jsx)(b.Ay, {
             title: S.intl.string(S.t["3o2ojh"]),
-            value: !y && !v,
+            value: !N && !v,
             onChange: e => L(e, !1),
-            disabled: y || j,
+            disabled: N || j,
             tooltipText: j ? S.intl.string(T.default["6Af/cw"]) : void 0,
             note: S.intl.format(S.t.wkm9a3, {
-                helpdeskArticle: u.A.getArticleURL(x.MVz.MESSAGE_REQUESTS)
+                helpdeskArticle: u.A.getArticleURL(C.MVz.MESSAGE_REQUESTS)
             })
         }) : (0, r.jsx)(b.Ay, {
             title: S.intl.string(S.t["3o2ojh"]),
-            value: !N && !P,
+            value: !y && !P,
             onChange: e => L(e, !0),
-            disabled: N,
+            disabled: y,
             note: I ? S.intl.format(S.t.WpnWLc, {
-                helpdeskArticle: u.A.getArticleURL(x.MVz.MESSAGE_REQUESTS)
+                helpdeskArticle: u.A.getArticleURL(C.MVz.MESSAGE_REQUESTS)
             }) : S.intl.format(S.t.wkm9a3, {
-                helpdeskArticle: u.A.getArticleURL(x.MVz.MESSAGE_REQUESTS)
+                helpdeskArticle: u.A.getArticleURL(C.MVz.MESSAGE_REQUESTS)
             })
         })
     })
 }
 
-function y(e) {
+function N(e) {
     let {
         ingress: t = O.bf.USER_SETTINGS_PRIVACY_SAFETY,
         guildId: n

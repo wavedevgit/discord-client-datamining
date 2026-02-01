@@ -14,8 +14,8 @@ var r = n(627968),
     p = n(793574),
     h = n(70730),
     g = n(777426),
-    f = n(976860),
-    m = n(734057),
+    m = n(976860),
+    f = n(734057),
     A = n(430452),
     _ = n(994500),
     b = n(427262),
@@ -62,7 +62,7 @@ function P(e) {
             applicationId: l ? n : null,
             location: "Friends"
         })
-    }, [n, l, t.id]), f = i.useCallback(() => {
+    }, [n, l, t.id]), m = i.useCallback(() => {
         let e = l ? T.intl.string(T.t.RLcE6x) : T.intl.string(T.t.cvSt1J);
         c.A.show({
             title: T.intl.formatToPlainString(T.t.fPLvZd, {
@@ -76,14 +76,14 @@ function P(e) {
             cancelText: T.intl.string(T.t["ETE/oC"]),
             onConfirm: g
         })
-    }, [g, l, t]), m = (0, s.bG)([A.A], () => A.A.supports(N.O5.VIDEO)), _ = t.isProvisional, O = l ? T.intl.string(T.t.RLcE6x) : T.intl.string(T.t.cvSt1J);
+    }, [g, l, t]), f = (0, s.bG)([A.A], () => A.A.supports(N.O5.VIDEO)), _ = t.isProvisional, O = l ? T.intl.string(T.t.RLcE6x) : T.intl.string(T.t.cvSt1J);
     return (0, r.jsxs)(o.W1t, {
         "data-menu-migrated-auto": !0,
         navId: "friend-row",
         "aria-label": T.intl.string(T.t.liqwPJ),
         onClose: d.Z_,
         onSelect: a,
-        children: [!_ && m ? (0, r.jsx)(o.Drp, {
+        children: [!_ && f ? (0, r.jsx)(o.Drp, {
             id: "start-video-call",
             label: T.intl.string(T.t.oCqlGG),
             action: h
@@ -94,7 +94,7 @@ function P(e) {
         }), (0, r.jsx)(o.Drp, {
             id: "remove-friend",
             label: O,
-            action: f,
+            action: m,
             color: "danger"
         })]
     })
@@ -117,16 +117,16 @@ class w extends i.PureComponent {
             isGameRelationship: s,
             giftIntentType: c,
             hasFriendAnniversarySection: u,
-            sectionIndex: f
+            sectionIndex: m
         } = this.props, {
-            isActiveRow: m
+            isActiveRow: f
         } = this.state;
-        return (0, h.p)(p.A.FRIENDS_LIST) && c === C.np.FRIEND_ANNIVERSARY && u && 0 === f ? (0, r.jsx)(g.A, {
+        return (0, h.p)(p.A.FRIENDS_LIST) && c === C.np.FRIEND_ANNIVERSARY && u && 0 === m ? (0, r.jsx)(g.A, {
             ref: this.peopleListItemRef,
             isFocused: t,
-            isActive: m,
+            isActive: f,
             recipientUser: e,
-            onOtherHover: () => m ? null : (0, d.Z_)(),
+            onOtherHover: () => f ? null : (0, d.Z_)(),
             onClick: this.handleOpenPrivateChannel,
             giftIntentType: c,
             status: l,
@@ -137,9 +137,9 @@ class w extends i.PureComponent {
         }) : (0, r.jsx)(y.A, {
             ref: this.peopleListItemRef,
             isFocused: t,
-            isActive: m,
+            isActive: f,
             user: e,
-            onOtherHover: () => m ? null : (0, d.Z_)(),
+            onOtherHover: () => f ? null : (0, d.Z_)(),
             onClick: this.handleOpenPrivateChannel,
             children: t => (0, r.jsxs)("div", {
                 className: j.a4,
@@ -182,8 +182,8 @@ class w extends i.PureComponent {
                 user: t
             } = this.props;
             e.stopPropagation();
-            let n = a().find(m.A.getMutablePrivateChannels(), e => e.type === S.rbe.DM && e.getRecipientId() === t.id);
-            null != n ? (0, f.pX)(S.BVt.CHANNEL(S.ME, n.id)) : u.A.openPrivateChannel({
+            let n = a().find(f.A.getMutablePrivateChannels(), e => e.type === S.rbe.DM && e.getRecipientId() === t.id);
+            null != n ? (0, m.pX)(S.BVt.CHANNEL(S.ME, n.id)) : u.A.openPrivateChannel({
                 recipientIds: t.id
             })
         }), x(this, "handleOpenActionsMenu", e => {

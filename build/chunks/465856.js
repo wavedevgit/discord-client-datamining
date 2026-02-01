@@ -1,7 +1,5 @@
 /** chunk id: 465856, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    A: () => r
-});
+"use strict";
 
 function r(e) {
     if (null != e.title && null != e.filename) {
@@ -11,3 +9,6 @@ function r(e) {
     }
     return e.filename
 }
+n.d(t, {
+    A: () => r
+})

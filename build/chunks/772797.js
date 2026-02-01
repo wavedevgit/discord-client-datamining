@@ -1,40 +1,40 @@
-/** chunk id: 772797, original params: e,t,i (module,exports,require) **/
-i.d(t, {
-    A: () => c
+/** chunk id: 772797, original params: t,e,i (module,exports,require) **/
+i.d(e, {
+    A: () => A
 });
 var n = i(311907),
     l = i(827343),
     s = i(419954),
     r = i(430452),
-    a = i(555444),
-    u = i(780964),
+    u = i(555444),
+    a = i(780964),
     o = i(903427),
     d = i(731854),
     T = i(985018);
-let c = (0, s.zD)(u.X.VOICE_PUSH_TO_TALK_LATCHING_SETTING, {
+let A = (0, s.zD)(a.X.VOICE_PUSH_TO_TALK_LATCHING_SETTING, {
     useTitle: () => T.intl.string(T.t.EGn1eN),
     useSubtitle: () => T.intl.string(T.t.iT257i),
     useSearchTerms: () => [T.intl.string(T.t["pS+K2L"]), T.intl.string(T.t.nuFtHH)],
     useValue: function() {
         return (0, n.bG)([r.A], () => {
             let {
-                pttLatchingEnabled: e
+                pttLatchingEnabled: t
             } = r.A.getModeOptions();
-            return null != e && e
+            return null != t && t
         })
     },
-    setValue: function(e) {
+    setValue: function(t) {
         l.A.setMode(d.TB.PUSH_TO_TALK, {
-            pttLatchingEnabled: e
+            pttLatchingEnabled: t
         })
     },
     usePredicate: function() {
-        let e = (0, o.P)(),
+        let t = (0, o.P)(),
             {
-                enableLatching: t
-            } = (0, a.y)({
+                enableLatching: e
+            } = (0, u.y)({
                 location: "PushToTalkLatchingSetting"
             });
-        return e && t
+        return t && e
     }
 })

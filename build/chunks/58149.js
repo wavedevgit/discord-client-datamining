@@ -9,7 +9,7 @@ n.d(t, {
     dI: () => U,
     dL: () => Y,
     qL: () => B,
-    zV: () => V
+    zV: () => F
 });
 var r = n(735438),
     i = n.n(r),
@@ -145,12 +145,12 @@ function G(e) {
     }, H(t.getGuildId(), t.id, n), (0, w.V)())
 }
 
-function F(e, t) {
+function V(e, t) {
     var n, r;
     return null == e ? null != t ? t : null : e.isPrivate() ? null : null != (n = null != (r = e.getGuildId()) ? r : t) ? n : null
 }
 
-function V(e) {
+function F(e) {
     let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {},
         n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
     if (T.default.isThrottled(e)) return;
@@ -158,7 +158,7 @@ function V(e) {
         i = "guild_id" in t ? t.guild_id : r ? v.A.getGuildId() : null,
         a = "channel_id" in t ? t.channel_id : r ? O.A.getChannelId(i) : null,
         o = u.A.getChannel(a),
-        s = L({}, t, M(F(o, i)), null != i && null != a && (0, P.jq)(a) ? j(i, a) : U(o));
+        s = L({}, t, M(V(o, i)), null != i && null != a && (0, P.jq)(a) ? j(i, a) : U(o));
     T.default.track(e, s, {
         flush: n
     })
@@ -227,6 +227,6 @@ function Y(e, t) {
     }), n
 }
 let W = {
-    trackWithMetadata: V,
+    trackWithMetadata: F,
     getVoiceStateMetadata: H
 }

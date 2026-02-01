@@ -1,8 +1,8 @@
-/** chunk id: 235390, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    MA: () => i
+/** chunk id: 235390, original params: e,t,r (module,exports,require) **/
+r.d(t, {
+    MA: () => o
 });
-let r = (0, n(600975).C)({
+let n = (0, r(600975).C)({
     kind: "user",
     id: "2025-04_ignore_user_feedback",
     label: "Ignore User Feedback Experiment",
@@ -27,8 +27,8 @@ let r = (0, n(600975).C)({
     }]
 });
 
-function i(e) {
-    return r.getCurrentConfig({
+function o(e) {
+    return n.getCurrentConfig({
         location: e
     }, {
         autoTrackExposure: !0

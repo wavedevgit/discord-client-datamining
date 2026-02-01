@@ -2,8 +2,8 @@
 n.d(t, {
     A: () => i
 }), n(896048);
-var r = n(64700),
-    l = n(684339);
+var l = n(64700),
+    r = n(684339);
 
 function i(e) {
     let {
@@ -11,10 +11,10 @@ function i(e) {
         videoSpinnerContext: n,
         userId: i,
         streamId: a,
-        loading: o,
-        paused: s = !1
-    } = e, [c] = r.useState(() => new l.M(t));
-    r.useEffect(() => {
-        s || (o ? c.onSpinnerStarted() : null != a && c.trackSpinnerDuration(n, i, a))
-    }, [o, s, a, c, n, i])
+        loading: s,
+        paused: o = !1
+    } = e, [c] = l.useState(() => new r.M(t));
+    l.useEffect(() => {
+        o || (s ? c.onSpinnerStarted() : null != a && c.trackSpinnerDuration(n, i, a))
+    }, [s, o, a, c, n, i])
 }

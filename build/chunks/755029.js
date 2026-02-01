@@ -1,7 +1,7 @@
 /** chunk id: 755029, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => h
+    A: () => p
 }), n(896048);
 var i = n(627968);
 n(64700);
@@ -13,17 +13,17 @@ var r = n(311907),
     c = n(309010),
     d = n(427603),
     u = n(980504),
-    p = n(761121);
+    h = n(761121);
 
-function h() {
-    let [e, t] = (0, r.yK)([s.A], () => [s.A.enabled, s.A.keepOpen]), n = (0, r.bG)([c.A], () => c.A.getVoiceChannelId()), h = (0, r.bG)([a.A], () => a.A.getChannel(n), [n]), f = null == h ? void 0 : h.getGuildId();
-    return e && null != h ? (0, i.jsx)("div", {
-        className: p.H,
+function p() {
+    let [e, t] = (0, r.yK)([s.A], () => [s.A.enabled, s.A.keepOpen]), n = (0, r.bG)([c.A], () => c.A.getVoiceChannelId()), p = (0, r.bG)([a.A], () => a.A.getChannel(n), [n]), f = null == p ? void 0 : p.getGuildId();
+    return e && null != p ? (0, i.jsx)("div", {
+        className: h.H,
         children: (0, i.jsx)(o.A, {
             width: u.ed.width,
             height: u.ed.height,
             guildId: f,
-            channel: h,
+            channel: p,
             keepOpen: t,
             onClose: function() {
                 let e = (0, d.A)();

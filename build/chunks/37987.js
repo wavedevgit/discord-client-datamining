@@ -1,30 +1,30 @@
-/** chunk id: 37987, original params: e,t,i (module,exports,require) **/
-i.d(t, {
+/** chunk id: 37987, original params: t,e,i (module,exports,require) **/
+i.d(e, {
     q: () => o
 });
 var n = i(873298),
     l = i(419954),
     s = i(253932),
     r = i(780964),
-    a = i(542877),
-    u = i(985018);
+    u = i(542877),
+    a = i(985018);
 let o = (0, l.Qx)(r.X.CONTENT_AND_SOCIAL_IN_GAME_DMS_SETTING, {
-    useTitle: () => u.intl.string(u.t["ms+Tme"]),
-    useSubtitle: () => u.intl.string(u.t["4NN4+/"]),
+    useTitle: () => a.intl.string(a.t["ms+Tme"]),
+    useSubtitle: () => a.intl.string(a.t["4NN4+/"]),
     useOptions: () => [{
-        name: u.intl.string(u.t.JIFnN9),
+        name: a.intl.string(a.t.JIFnN9),
         value: n.fL.SLAYER_SDK_RECEIVE_IN_GAME_DMS_ALL
     }, {
-        name: u.intl.string(u.t.rRdsk1),
+        name: a.intl.string(a.t.rRdsk1),
         value: n.fL.SLAYER_SDK_RECEIVE_IN_GAME_DMS_USERS_WITH_GAME
     }, {
-        name: u.intl.string(u.t.AolKwN),
+        name: a.intl.string(a.t.AolKwN),
         value: n.fL.SLAYER_SDK_RECEIVE_IN_GAME_DMS_NONE
     }],
     useValue: () => {
-        let e = s.TA.useSetting();
-        return e === n.fL.SLAYER_SDK_RECEIVE_IN_GAME_DMS_UNSET ? n.fL.SLAYER_SDK_RECEIVE_IN_GAME_DMS_ALL : e
+        let t = s.TA.useSetting();
+        return t === n.fL.SLAYER_SDK_RECEIVE_IN_GAME_DMS_UNSET ? n.fL.SLAYER_SDK_RECEIVE_IN_GAME_DMS_ALL : t
     },
-    setValue: e => s.TA.updateSetting(e),
-    usePredicate: a.K
+    setValue: t => s.TA.updateSetting(t),
+    usePredicate: u.K
 })

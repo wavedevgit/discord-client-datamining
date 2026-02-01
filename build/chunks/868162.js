@@ -22,10 +22,10 @@ function g(e, t, n) {
         writable: !0
     }) : e[t] = n, e
 }
-let f = {
+let m = {
         ignoredDevices: {}
     },
-    m = f,
+    f = m,
     A = !1,
     _ = {},
     b = {},
@@ -59,10 +59,10 @@ function S(e, t, n) {
 }
 class C extends(r = a.Ay.DeviceSettingsStore) {
     initialize(e) {
-        this.waitFor(u.A, c.A), m = null != e ? e : f
+        this.waitFor(u.A, c.A), f = null != e ? e : m
     }
     getUserAgnosticState() {
-        return m
+        return f
     }
     get initialized() {
         return A
@@ -178,9 +178,9 @@ let N = new C(s.h, {
         let {
             displayName: t
         } = e;
-        m.ignoredDevices[t] = !0, delete E[t]
+        f.ignoredDevices[t] = !0, delete E[t]
     },
     CONNECTED_DEVICE_NEVER_SHOW_MODAL: function() {
-        E = {}, m.neverShowModal = !0
+        E = {}, f.neverShowModal = !0
     }
 })

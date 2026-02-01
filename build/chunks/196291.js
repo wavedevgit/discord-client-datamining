@@ -21,13 +21,13 @@ var r = n(627968),
     h = n(207803),
     E = n(836602),
     O = n(193658),
-    C = n(954571),
-    x = n(927578),
+    x = n(954571),
+    C = n(927578),
     S = n(884546),
     T = n(230084),
     I = n(180020),
-    y = n(212168),
-    N = n(730588),
+    N = n(212168),
+    y = n(730588),
     j = n(63675),
     v = n(253604),
     P = n(652215),
@@ -42,7 +42,7 @@ function M(e) {
         user: M,
         isVisible: G,
         shouldShow: U
-    } = e, k = x.Ay.isPremium(M), B = x.Ay.canUseAnimatedAvatar(M), {
+    } = e, k = C.Ay.isPremium(M), B = C.Ay.canUseAnimatedAvatar(M), {
         pendingAvatar: H,
         pendingThemeColors: V,
         tryItOutThemeColors: F,
@@ -91,12 +91,12 @@ function M(e) {
         newestAnalyticsLocation: q,
         sourceAnalyticsLocations: J
     } = (0, c.Ay)(o.A.USER_SETTINGS_TRY_OUT_PREMIUM), Q = e => {
-        e && ((0, a.zq)(Y), (0, h.Zz)(F), (0, h.Dv)(W), C.default.track(P.HAw.TRY_IT_OUT_PRESET_SELECTED, {
+        e && ((0, a.zq)(Y), (0, h.Zz)(F), (0, h.Dv)(W), x.default.track(P.HAw.TRY_IT_OUT_PRESET_SELECTED, {
             preset: K
         }))
     };
     i.useEffect(() => {
-        G && C.default.track(P.HAw.PREMIUM_UPSELL_VIEWED, {
+        G && x.default.track(P.HAw.PREMIUM_UPSELL_VIEWED, {
             type: R.e.PREMIUM_PROFILE_TRY_IT_OUT,
             location: {
                 page: P.liQ.USER_SETTINGS
@@ -109,10 +109,10 @@ function M(e) {
         et = (0, m.U9)(ee, R.pe.TIER_2);
     return U ? (0, r.jsx)(c.f5, {
         value: X,
-        children: (0, r.jsxs)(y.A, {
+        children: (0, r.jsxs)(N.A, {
             ref: Z,
             className: w.MT,
-            type: y.i.PREMIUM,
+            type: N.i.PREMIUM,
             isShown: !0,
             hasBackground: !0,
             children: [(0, r.jsx)(S.A, {
@@ -154,7 +154,7 @@ function M(e) {
                         onThemeColorsChange: h.a,
                         showPremiumIcon: !1,
                         preventDisabled: !0
-                    }), (0, r.jsx)(N.A, {
+                    }), (0, r.jsx)(y.A, {
                         className: w.fz,
                         isTryItOut: !0,
                         showRemoveBannerButton: null != W,

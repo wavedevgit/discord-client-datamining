@@ -21,16 +21,16 @@ var r = n(627968),
     h = n(975662),
     E = n(322631),
     O = n(17307),
-    C = n(652215),
-    x = n(985018),
+    x = n(652215),
+    C = n(985018),
     S = n(520089),
     T = n(288894);
 let I = e => {
     let t, n, {
             isAllPerksVisible: l,
             setIsAllPerksVisible: I,
-            previousComponent: y,
-            enablePremiumBrandRefresh: N
+            previousComponent: N,
+            enablePremiumBrandRefresh: y
         } = e,
         j = i.useRef(null),
         v = i.useRef(null),
@@ -48,11 +48,11 @@ let I = e => {
             fractionalState: G
         } = (0, p.A)(),
         U = (0, g.d)();
-    M ? (t = x.intl.string(x.t["+vt7w9"]), n = x.intl.string(x.t.LgHbnL)) : (t = x.intl.string(x.t.LgHbnL), n = x.intl.string(x.t["+vt7w9"]));
+    M ? (t = C.intl.string(C.t["+vt7w9"]), n = C.intl.string(C.t.LgHbnL)) : (t = C.intl.string(C.t.LgHbnL), n = C.intl.string(C.t["+vt7w9"]));
     let k = () => {
-        I(!1), m.default.track(C.HAw.NITRO_HOME_NAVIGATION, {
+        I(!1), m.default.track(x.HAw.NITRO_HOME_NAVIGATION, {
             current_component: E.A2.SEE_ALL,
-            next_component: y,
+            next_component: N,
             interaction_component: "Back Button"
         })
     };
@@ -65,18 +65,18 @@ let I = e => {
         children: (0, r.jsx)(c.hLv, {
             color: "nitro-pink",
             className: s()(S.kL, S.Gd, {
-                [S.fv]: !N
+                [S.fv]: !y
             }),
             children: (0, r.jsxs)(_.f5, {
                 value: R,
-                children: [N ? (0, r.jsx)(f.A, {
+                children: [y ? (0, r.jsx)(f.A, {
                     onBackClick: k
                 }) : (0, r.jsx)(A.A, {
                     className: S.v1,
                     onBackClick: k
                 }), (0, r.jsxs)("div", {
                     className: s()(S.fi, {
-                        [S._9]: N
+                        [S._9]: y
                     }),
                     children: [(0, r.jsx)(c.Heading, {
                         variant: "heading-xxl/extrabold",
@@ -114,7 +114,7 @@ let I = e => {
                         variant: "heading-xxl/extrabold",
                         color: "text-strong",
                         className: S.R_,
-                        children: x.intl.string(x.t.LTaxu9)
+                        children: C.intl.string(C.t.LTaxu9)
                     }), (0, r.jsx)(b.A, {
                         className: S.Nm,
                         cards: (0, O.vx)({
@@ -132,7 +132,7 @@ let I = e => {
                 }), (0, r.jsx)(o.L, {
                     innerRef: v,
                     onChange: e => {
-                        e && !D && (m.default.track(C.HAw.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
+                        e && !D && (m.default.track(x.HAw.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
                             location_stack: R
                         }), L(!0))
                     },
@@ -145,7 +145,7 @@ let I = e => {
                     className: S.Kw,
                     width: 112,
                     height: 85,
-                    alt: x.intl.string(x.t.X4IxWL)
+                    alt: C.intl.string(C.t.X4IxWL)
                 })]
             })
         })

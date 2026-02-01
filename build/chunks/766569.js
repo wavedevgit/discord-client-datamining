@@ -21,13 +21,13 @@ var r = n(627968),
     h = n(622543),
     E = n(696451),
     O = n(351906),
-    C = n(287809),
-    x = n(975571),
+    x = n(287809),
+    C = n(975571),
     S = n(927578),
     T = n(159001),
     I = n(833336),
-    y = n(65767),
-    N = n(281052),
+    N = n(65767),
+    y = n(281052),
     j = n(687021),
     v = n(652215),
     P = n(985018),
@@ -84,8 +84,8 @@ function M(e) {
         selectedGuild: l
     } = e, {
         analyticsLocations: M
-    } = (0, p.Ay)(u.A.USER_SETTINGS_GUILD_PROFILE), G = (0, a.bG)([C.default], () => {
-        let e = C.default.getCurrentUser();
+    } = (0, p.Ay)(u.A.USER_SETTINGS_GUILD_PROFILE), G = (0, a.bG)([x.default], () => {
+        let e = x.default.getCurrentUser();
         return s()(null != e, "GuildIdentitySettingsPage: user cannot be undefined"), e
     }), U = (0, a.bG)([E.Ay], () => null != l ? E.Ay.getMember(l.id, G.id) : null), k = (0, a.bG)([h.A], () => !h.A.isFetchingProfile(G.id, null == l ? void 0 : l.id)), B = (0, a.bG)([O.A], () => O.A.hidePersonalInformation), H = (0, a.cf)([I.A], () => L(D({}, I.A.getAllPending()), {
         source: I.A.getSource()
@@ -131,7 +131,7 @@ function M(e) {
         children: [(0, r.jsx)(o.Text, {
             variant: "text-sm/normal",
             children: P.intl.format(P.t["/PTB2E"], {
-                helpCenterLink: x.A.getArticleURL(v.MVz.GUILD_PROFILES)
+                helpCenterLink: C.A.getArticleURL(v.MVz.GUILD_PROFILES)
             })
         }), null != l ? (0, r.jsxs)(r.Fragment, {
             children: [(0, r.jsx)(j.A, {
@@ -163,8 +163,8 @@ function M(e) {
                     className: null == z ? R.t : void 0,
                     isHighlighted: !0
                 })),
-                children: (0, r.jsx)(N.A, {})
+                children: (0, r.jsx)(y.A, {})
             })]
-        }) : (0, r.jsx)(y.A, {})]
+        }) : (0, r.jsx)(N.A, {})]
     }) : (0, r.jsx)(o.y$y, {})
 }

@@ -41,8 +41,8 @@ var r = n(627968),
     k = n(536432),
     U = n(102597),
     G = n(904054),
-    F = n(147472),
-    V = n(918530),
+    V = n(147472),
+    F = n(918530),
     B = n(114028),
     H = n(862933),
     Y = n(985417),
@@ -256,9 +256,9 @@ function ef(e) {
         categories: eM,
         availableSounds: ej,
         soundCounts: ek
-    } = (0, V.Ay)(a, {
+    } = (0, F.Ay)(a, {
         moveDefaultsToBottom: ex.enabled
-    }, e_), [eU, eG] = i.useState([]), eF = (0, V.Ip)(eM, eU, eP), eV = (0, y.RQ)(e => e.isNitroLockedSectionVisible), eB = i.useMemo(() => eF.filter(e => e.items.length > 0), [eF]), eH = i.useMemo(() => eB.findLastIndex(e => !!(0, L.Em)(e.categoryInfo) && e.categoryInfo.isNitroLocked), [eB]), eY = !eN && $ && -1 !== eH, eW = !eN && ex.enabled && !ex.bottomBar && eM.length > 6, eK = C.b0.useSetting(), ez = i.useMemo(() => new Set(eK), [eK]), eq = null == a, eZ = L.Ay.canUseCustomCallSounds(eC), eQ = i.useCallback(e => {
+    }, e_), [eU, eG] = i.useState([]), eV = (0, F.Ip)(eM, eU, eP), eF = (0, y.RQ)(e => e.isNitroLockedSectionVisible), eB = i.useMemo(() => eV.filter(e => e.items.length > 0), [eV]), eH = i.useMemo(() => eB.findLastIndex(e => !!(0, L.Em)(e.categoryInfo) && e.categoryInfo.isNitroLocked), [eB]), eY = !eN && $ && -1 !== eH, eW = !eN && ex.enabled && !ex.bottomBar && eM.length > 6, eK = C.b0.useSetting(), ez = i.useMemo(() => new Set(eK), [eK]), eq = null == a, eZ = L.Ay.canUseCustomCallSounds(eC), eQ = i.useCallback(e => {
         ez.has(e) ? ez.delete(e) : ez.add(e), C.b0.updateSetting(Array.from(ez))
     }, [ez]), eX = i.useCallback((e, t, n, r) => {
         if (null != I && !P) return I(e, n);
@@ -387,7 +387,7 @@ function ef(e) {
                 [Q.N4]: eg
             })
         }) : null
-    }, [eH, eY, eB.length, eg, ex.bottomBar]), e8 = i.useCallback(e => eG((0, F.lG)(e, ej, eC, a, ey)), [a, eC, ej, ey]), e9 = i.useCallback(e => {
+    }, [eH, eY, eB.length, eg, ex.bottomBar]), e8 = i.useCallback(e => eG((0, V.lG)(e, ej, eC, a, ey)), [a, eC, ej, ey]), e9 = i.useCallback(e => {
         (0, u.L3)(e, async () => {
             let {
                 default: e
@@ -437,7 +437,7 @@ function ef(e) {
     }, []), tr = i.useCallback(() => {
         if (ex.bottomBar) return null;
         if (eY) {
-            let e = eV;
+            let e = eF;
             return ex.enabled && (e = !0), (0, r.jsx)(A.d, {
                 showUpsell: e,
                 text: e2(),
@@ -450,7 +450,7 @@ function ef(e) {
             })
         }
         return null
-    }, [e2, tn, eY, ex.enabled, ex.bottomBar, eV, eS]), ti = i.useCallback(e => {
+    }, [e2, tn, eY, ex.enabled, ex.bottomBar, eF, eS]), ti = i.useCallback(e => {
         var t;
         return (null == e ? void 0 : e.item.type) !== M.uq.SOUND ? null : (0, r.jsx)(H.A, {
             closePicker: g,

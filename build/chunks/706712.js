@@ -141,7 +141,7 @@ function y(e) {
     (0, o.Ay)(() => (O(), () => {
         E()
     }));
-    let D = a.useCallback(() => {
+    let A = a.useCallback(() => {
         h(), S(), O()
     }, [h, S, O]);
     return (0, n.jsxs)("div", {
@@ -230,7 +230,7 @@ function y(e) {
                 variant: "primary",
                 size: "sm",
                 text: "Reset Frame Data",
-                onClick: D
+                onClick: A
             })
         })]
     })

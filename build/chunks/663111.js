@@ -14,8 +14,8 @@ var r = n(627968),
     p = n(545167),
     h = n(515610),
     g = n(91242),
-    f = n(263063),
-    m = n(394953),
+    m = n(263063),
+    f = n(394953),
     A = n(793322),
     _ = n(734057),
     b = n(71393),
@@ -41,7 +41,7 @@ function T(e) {
         R = null != P ? P : null == L ? void 0 : L.guild_id,
         D = (0, o.bG)([b.A], () => b.A.getGuild(R), [R]),
         M = (0, h.A)(),
-        k = (0, m.lI)(),
+        k = (0, f.lI)(),
         {
             guildTitleIconSize: U,
             guildIconSize: G
@@ -74,7 +74,7 @@ function T(e) {
         size: U
     })) : null != D ? (F = M ? (0, r.jsx)(u.Gg5, {
         size: U
-    }) : (0, r.jsx)(f.A, {
+    }) : (0, r.jsx)(m.A, {
         guild: D,
         size: G,
         active: !0,

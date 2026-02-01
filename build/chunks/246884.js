@@ -11,8 +11,8 @@ var r = n(627968),
     c = n(272613),
     u = n(398884),
     d = n(772366),
-    h = n(728321),
-    p = n(260509),
+    p = n(728321),
+    h = n(260509),
     g = n(71393),
     f = n(287809),
     m = n(531053),
@@ -20,8 +20,8 @@ var r = n(627968),
     A = n(652215),
     y = n(819638),
     O = n(985018),
-    _ = n(283237);
-let j = {
+    j = n(283237);
+let x = {
     origin: {
         x: -16,
         y: 0
@@ -34,7 +34,7 @@ let j = {
     }
 };
 
-function x(e) {
+function _(e) {
     (0, a.L3)(e, async () => {
         let {
             default: e
@@ -64,7 +64,7 @@ function v(e) {
     let {
         disableTooltip: t,
         lastTargetNode: n
-    } = e, a = (0, i.yK)([g.A], () => g.A.getGuildsArray()), v = (0, i.bG)([f.default], () => f.default.getCurrentUser()), E = l.useMemo(() => a.some(e => (0, p.bM)(e, v)), [a, v]), C = (0, s.red)(e => (0, s.fDT)(e, y.fc)), {
+    } = e, a = (0, i.yK)([g.A], () => g.A.getGuildsArray()), v = (0, i.bG)([f.default], () => f.default.getCurrentUser()), E = l.useMemo(() => a.some(e => (0, h.bM)(e, v)), [a, v]), C = (0, s.red)(e => (0, s.fDT)(e, y.fc)), {
         analyticsLocations: S
     } = (0, o.Ay)(), I = (0, r.jsx)(b.A, {
         showPill: !1,
@@ -84,15 +84,15 @@ function v(e) {
             })
         },
         selected: C,
-        onContextMenu: x,
+        onContextMenu: _,
         tooltip: O.intl.string(O.t.l5WIbf),
         icon: s.U1e
     });
     return t ? I : (0, r.jsx)("div", {
-        className: _.Uq,
-        children: (0, r.jsxs)(h.A, {
+        className: j.Uq,
+        children: (0, r.jsxs)(p.A, {
             tutorialId: E ? "create-more-servers" : "create-first-server",
-            inlineSpecs: j,
+            inlineSpecs: x,
             position: "right",
             children: [I, null != n && (0, r.jsx)(m.Ay, {
                 name: O.intl.string(O.t["45xjM5"]),

@@ -1,37 +1,37 @@
 /** chunk id: 479335, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    u: () => b
+    u: () => f
 });
-var r = n(627968),
-    l = n(64700),
-    i = n(311907),
+var i = n(627968),
+    r = n(64700),
+    l = n(311907),
     a = n(397927),
-    o = n(267102),
-    c = n(144485),
-    s = n(814278),
+    s = n(267102),
+    o = n(144485),
+    d = n(814278),
     u = n(259374),
-    d = n(961350),
-    p = n(985018);
+    c = n(961350),
+    A = n(985018);
 
-function b(e) {
+function f(e) {
     let {
         userId: t,
         channelId: n,
-        guildId: b,
+        guildId: f,
         minimal: g = !1
-    } = e, f = (0, u.k)({
+    } = e, b = (0, u.k)({
         channelId: n
-    }), A = (0, i.bG)([d.default], () => d.default.getId() === t), h = (0, o.Us)(), j = l.useCallback(() => {
-        c.A.openSecureFramesUserVerificationModal(t, n, () => (0, s.z4)({
+    }), p = (0, l.bG)([c.default], () => c.default.getId() === t), v = (0, s.Us)(), _ = r.useCallback(() => {
+        o.A.openSecureFramesUserVerificationModal(t, n, () => (0, d.z4)({
             userId: t,
             channelId: n,
-            guildId: b
-        }), h)
-    }, [h, n, b, t]);
-    return !f || A ? null : (0, r.jsx)(a.Drp, {
+            guildId: f
+        }), v)
+    }, [v, n, f, t]);
+    return !b || p ? null : (0, i.jsx)(a.Drp, {
         id: "secure-frames-user-verification",
-        label: p.intl.string(p.t["8ErYvY"]),
-        action: j,
+        label: A.intl.string(A.t["8ErYvY"]),
+        action: _,
         icon: g ? a.V1C : null,
         leadingAccessory: g ? {
             type: "icon",

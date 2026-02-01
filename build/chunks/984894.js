@@ -1,27 +1,27 @@
-/** chunk id: 984894, original params: e,t,l (module,exports,require) **/
-l.d(t, {
-    A: () => u
+/** chunk id: 984894, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    A: () => c
 });
-var n = l(627968);
-l(64700);
-var i = l(311907),
-    r = l(397927),
-    o = l(367513),
-    a = l(313961),
-    c = l(977997),
-    d = l(652215),
-    s = l(985018);
+var i = n(627968);
+n(64700);
+var r = n(311907),
+    l = n(397927),
+    a = n(367513),
+    s = n(313961),
+    o = n(977997),
+    d = n(652215),
+    u = n(985018);
 
-function u(e, t) {
-    let l = (0, i.bG)([a.A], () => e === a.A.getSelectedParticipantId(t), [t, e]);
-    return (0, i.bG)([a.A, c.A], () => {
-        let l = c.A.isInChannel(t, e) && c.A.hasVideo(t),
-            n = a.A.getLayout(t),
-            i = n === d.DUB.MINIMUM || n === d.DUB.NORMAL;
-        return !l || i
-    }, [t, e]) ? null : (0, n.jsx)(r.Drp, {
+function c(e, t) {
+    let n = (0, r.bG)([s.A], () => e === s.A.getSelectedParticipantId(t), [t, e]);
+    return (0, r.bG)([s.A, o.A], () => {
+        let n = o.A.isInChannel(t, e) && o.A.hasVideo(t),
+            i = s.A.getLayout(t),
+            r = i === d.DUB.MINIMUM || i === d.DUB.NORMAL;
+        return !n || r
+    }, [t, e]) ? null : (0, i.jsx)(l.Drp, {
         id: "focus-video",
-        label: l ? s.intl.string(s.t.KJPKUT) : s.intl.string(s.t["77cRN4"]),
-        action: () => o.A.selectParticipant(t, l ? null : e)
+        label: n ? u.intl.string(u.t.KJPKUT) : u.intl.string(u.t["77cRN4"]),
+        action: () => a.A.selectParticipant(t, n ? null : e)
     })
 }

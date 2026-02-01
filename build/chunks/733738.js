@@ -15,8 +15,8 @@ var i = n(503698),
     p = n(963169),
     h = n(985018),
     g = n(88808);
-let f = c.GY.binds["0"],
-    m = c.M$.binds["0"],
+let m = c.GY.binds["0"],
+    f = c.M$.binds["0"],
     A = e => {
         var t, n;
         let {
@@ -38,7 +38,7 @@ let f = c.GY.binds["0"],
                 ariaHidden: !0,
                 shouldShow: A,
                 text: h.intl.string(h.t.B9vzIP),
-                keyboardShortcut: f,
+                keyboardShortcut: m,
                 children: (0, r.jsx)(o.DUT, (t = function(e) {
                     for (var t = 1; t < arguments.length; t++) {
                         var n = null != arguments[t] ? arguments[t] : {},
@@ -82,7 +82,7 @@ let f = c.GY.binds["0"],
                 ariaHidden: !0,
                 shouldShow: _,
                 text: h.intl.string(h.t["9KJ29e"]),
-                keyboardShortcut: m,
+                keyboardShortcut: f,
                 children: (0, r.jsx)(o.DUT, {
                     "aria-label": h.intl.string(h.t["9KJ29e"]),
                     "aria-disabled": !_,

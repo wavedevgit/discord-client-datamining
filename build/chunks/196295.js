@@ -1,63 +1,63 @@
 /** chunk id: 196295, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => b
+    A: () => O
 }), n(321073), n(896048);
 var i = n(627968),
     r = n(64700),
     l = n(311907),
     a = n(397927),
-    o = n(412477),
-    s = n(592598),
-    c = n(243612),
-    u = n(545807),
+    s = n(412477),
+    o = n(592598),
+    u = n(243612),
+    c = n(545807),
     d = n(672910),
-    p = n(57019),
-    h = n(703552),
+    h = n(57019),
+    p = n(703552),
     f = n(672396),
-    m = n(652215),
-    g = n(985018),
+    g = n(652215),
+    m = n(985018),
     y = n(288507);
 let A = [];
 
-function O(e) {
+function v(e) {
     return e.notification.id
 }
 
-function E(e, t, n, r) {
+function b(e, t, n, r) {
     let {
         index: l,
         notification: a,
-        locked: o,
-        pinned: s
+        locked: s,
+        pinned: o
     } = t;
     return (0, i.jsx)(d.A, {
         index: l,
         notification: a,
-        locked: o,
-        pinned: s,
+        locked: s,
+        pinned: o,
         transitionState: n,
         cleanUp: r
     }, e)
 }
 
-function v(e) {
+function E(e) {
     return (0, i.jsx)("div", {
         className: y.k,
         children: e
     })
 }
-let b = r.memo(function(e) {
+let O = r.memo(function(e) {
     let {
         locked: t,
         pinned: n,
         showEmpty: d = !0
-    } = e, y = (0, l.bG)([h.A, s.A], () => {
-        if (s.A.isNotificationDisabled(f.KS.TextChat)) return A;
+    } = e, y = (0, l.bG)([p.A, o.A], () => {
+        if (o.A.isNotificationDisabled(f.KS.TextChat)) return A;
         let e = [],
             i = 0;
-        for (let r of h.A.getNotifications()) {
+        for (let r of p.A.getNotifications()) {
             if (i > 4) break;
-            (!t || r.status !== m.yFH.TIMED_OUT) && (e.push({
+            (!t || r.status !== g.yFH.TIMED_OUT) && (e.push({
                 index: i,
                 locked: t,
                 pinned: n,
@@ -65,17 +65,17 @@ let b = r.memo(function(e) {
             }), i++)
         }
         return e
-    }, [t, n], c.oQ), b = r.useState(() => new p.Fn(t))[0];
-    return (r.useLayoutEffect(() => b.updateState(y, t)), r.useLayoutEffect(() => (b.initialize((0, u.b)()), () => b.cleanUp()), [b]), 0 !== y.length || t) ? (0, i.jsx)(p.Gt.Provider, {
-        value: b,
+    }, [t, n], u.oQ), O = r.useState(() => new h.Fn(t))[0];
+    return (r.useLayoutEffect(() => O.updateState(y, t)), r.useLayoutEffect(() => (O.initialize((0, c.b)()), () => O.cleanUp()), [O]), 0 !== y.length || t) ? (0, i.jsx)(h.Gt.Provider, {
+        value: O,
         children: (0, i.jsx)(a.Fai, {
             items: y,
-            renderItem: E,
-            getItemKey: O,
-            wrapChildren: v
+            renderItem: b,
+            getItemKey: v,
+            wrapChildren: E
         })
-    }) : d ? t ? null : (0, i.jsx)(o.g, {
-        emptyText: g.intl.string(g.t.O1Nbjq),
+    }) : d ? t ? null : (0, i.jsx)(s.g, {
+        emptyText: m.intl.string(m.t.O1Nbjq),
         icon: a.XFE,
         absolute: !0
     }) : null

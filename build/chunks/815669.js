@@ -1,15 +1,15 @@
-/** chunk id: 815669, original params: e,t,i (module,exports,require) **/
-i.d(t, {
+/** chunk id: 815669, original params: t,e,i (module,exports,require) **/
+i.d(e, {
     z: () => o
 });
 var n = i(311907),
     l = i(955572),
     s = i(775602),
     r = i(419954),
-    a = i(780964),
-    u = i(985018);
-let o = (0, r.zD)(a.X.REDUCED_MOTION, {
-    useTitle: () => u.intl.string(u.t.b3XBzg),
+    u = i(780964),
+    a = i(985018);
+let o = (0, r.zD)(u.X.REDUCED_MOTION, {
+    useTitle: () => a.intl.string(a.t.b3XBzg),
     useValue: () => (0, n.bG)([s.A], () => s.A.useReducedMotion),
-    setValue: e => (0, l.qz)(e ? "reduce" : "no-preference")
+    setValue: t => (0, l.qz)(t ? "reduce" : "no-preference")
 })

@@ -1,13 +1,13 @@
 /** chunk id: 455067, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => f
+    A: () => m
 });
-var r = n(627968);
+var l = n(627968);
 n(64700);
-var l = n(311907),
+var r = n(311907),
     i = n(397927),
-    s = n(263063),
-    a = n(513461),
+    a = n(263063),
+    s = n(513461),
     o = n(654265),
     c = n(561446),
     u = n(287809),
@@ -15,47 +15,47 @@ var l = n(311907),
     h = n(985018),
     p = n(958404);
 
-function g(e) {
+function f(e) {
     var t;
     let {
         joinRequest: n,
         guild: o
-    } = e, c = (0, l.bG)([u.default], () => u.default.getUser(n.userId));
-    return (0, r.jsxs)("div", {
+    } = e, c = (0, r.bG)([u.default], () => u.default.getUser(n.userId));
+    return (0, l.jsxs)("div", {
         className: p.I8,
-        children: [(0, r.jsxs)("div", {
+        children: [(0, l.jsxs)("div", {
             className: p.Ov,
-            children: [null != o && (0, r.jsxs)("div", {
+            children: [null != o && (0, l.jsxs)("div", {
                 className: p.yB,
-                children: [(0, r.jsx)(s.A, {
+                children: [(0, l.jsx)(a.A, {
                     guild: o,
                     active: !0,
-                    size: s.A.Sizes.SMOL,
+                    size: a.A.Sizes.SMOL,
                     className: p.$f
-                }), (0, r.jsx)(i.Heading, {
+                }), (0, l.jsx)(i.Heading, {
                     variant: "heading-sm/semibold",
                     color: "text-strong",
                     children: o.name
                 })]
-            }), null != c && (0, r.jsx)(i.Heading, {
+            }), null != c && (0, l.jsx)(i.Heading, {
                 variant: "heading-xl/semibold",
                 color: "text-strong",
                 children: h.intl.format(h.t.jDV3i6, {
                     username: c.globalName
                 })
             })]
-        }), null == (t = n.formResponses) ? void 0 : t.filter(e => e.field_type !== a.rX.TERMS).map(e => {
-            let t = e.field_type === a.rX.MULTIPLE_CHOICE && null != e.response ? e.choices[e.response] : e.response;
-            return (0, r.jsxs)(r.Fragment, {
-                children: [(0, r.jsx)("hr", {
+        }), null == (t = n.formResponses) ? void 0 : t.filter(e => e.field_type !== s.rX.TERMS).map(e => {
+            let t = e.field_type === s.rX.MULTIPLE_CHOICE && null != e.response ? e.choices[e.response] : e.response;
+            return (0, l.jsxs)(l.Fragment, {
+                children: [(0, l.jsx)("hr", {
                     className: p.g2
-                }), (0, r.jsxs)("div", {
+                }), (0, l.jsxs)("div", {
                     className: p.fs,
-                    children: [(0, r.jsx)(i.Text, {
+                    children: [(0, l.jsx)(i.Text, {
                         variant: "text-xs/semibold",
                         color: "text-muted",
                         children: e.label
-                    }), (0, r.jsx)(i.Text, {
+                    }), (0, l.jsx)(i.Text, {
                         variant: "text-md/medium",
                         color: "text-strong",
                         children: t
@@ -66,28 +66,28 @@ function g(e) {
     })
 }
 
-function f(e) {
+function m(e) {
     let {
         channel: t
     } = e, {
         loading: n,
-        joinRequest: l,
-        joinRequestGuild: s
+        joinRequest: r,
+        joinRequestGuild: a
     } = (0, o.A)(t.id);
-    return (0, r.jsx)(d.Ay, {
+    return (0, l.jsx)(d.Ay, {
         channelId: t.id,
         className: p.kL,
-        children: null != l && null != l.formResponses ? (0, r.jsxs)("div", {
+        children: null != r && null != r.formResponses ? (0, l.jsxs)("div", {
             className: p.KJ,
-            children: [(0, r.jsx)("div", {
-                children: (0, r.jsx)(g, {
-                    guild: s,
-                    joinRequest: l
+            children: [(0, l.jsx)("div", {
+                children: (0, l.jsx)(f, {
+                    guild: a,
+                    joinRequest: r
                 })
-            }), (0, r.jsx)(c.A, {
+            }), (0, l.jsx)(c.A, {
                 channelId: t.id,
                 showProfile: !0
             })]
-        }) : n ? (0, r.jsx)(i.y$y, {}) : null
+        }) : n ? (0, l.jsx)(i.y$y, {}) : null
     })
 }

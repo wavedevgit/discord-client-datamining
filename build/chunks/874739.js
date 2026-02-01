@@ -1,6 +1,6 @@
 /** chunk id: 874739, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => _
+    A: () => j
 });
 var r = n(627968),
     l = n(64700),
@@ -11,8 +11,8 @@ var r = n(627968),
     c = n(493387),
     u = n(235986),
     d = n(808124),
-    h = n(203982),
-    p = n(484191),
+    p = n(203982),
+    h = n(484191),
     g = n(665450),
     f = n(526369),
     m = n(699707),
@@ -20,14 +20,14 @@ var r = n(627968),
     A = n(652215),
     y = n(806931),
     O = n(403264);
-let _ = (0, s.A)(e => {
+let j = (0, s.A)(e => {
     let {
         participants: t,
         filteredParticipants: n,
         selectedParticipant: s,
-        participantsVersion: _,
-        layout: j,
-        onSelectParticipant: x,
+        participantsVersion: j,
+        layout: x,
+        onSelectParticipant: _,
         onContextMenuParticipant: v,
         onFullscreenParticipant: E,
         channel: C,
@@ -44,19 +44,19 @@ let _ = (0, s.A)(e => {
         callContainerDimensions: G
     } = e;
     l.useEffect(() => {
-        h._.dispatch(A.jej.REMEASURE_TARGET)
+        p._.dispatch(A.jej.REMEASURE_TARGET)
     }, [P, w, G.width, G.height]);
-    let k = l.useMemo(() => n.filter(e => e.type !== y.lp.ACTIVITY || !e.participants.some(e => (0, a.S)(e))), [n, _]),
+    let k = l.useMemo(() => n.filter(e => e.type !== y.lp.ACTIVITY || !e.participants.some(e => (0, a.S)(e))), [n, j]),
         U = (0, i.bG)([o.A], () => o.A.getVoiceParticipantsHidden(C.id), [C.id]);
     if ((null == M ? void 0 : M.channelId) === C.id) return (0, r.jsx)(g.A, {
         height: w
     });
-    if ((null == C ? void 0 : C.isGuildVocalOrThread()) && !N) return (0, r.jsx)(p.A, {
+    if ((null == C ? void 0 : C.isGuildVocalOrThread()) && !N) return (0, r.jsx)(h.A, {
         channel: C,
         participants: t,
         hasConnectPermission: S
     });
-    if (n = N ? n : t, j === A.DUB.HAVEN) return (0, r.jsx)(d.A, {
+    if (n = N ? n : t, x === A.DUB.HAVEN) return (0, r.jsx)(d.A, {
         participants: n,
         channel: C,
         idle: R
@@ -85,7 +85,7 @@ let _ = (0, s.A)(e => {
                 className: O.g9,
                 participants: k,
                 totalNumberOfParticipants: t.length,
-                onClick: x,
+                onClick: _,
                 onDoubleClick: E,
                 onContextMenu: v,
                 inCall: N,
@@ -96,7 +96,7 @@ let _ = (0, s.A)(e => {
     return (0, r.jsx)(m.A, {
         onFullscreenParticipant: E,
         onContextMenuParticipant: v,
-        onSelectParticipant: x,
+        onSelectParticipant: _,
         selectedParticipant: s,
         filteredParticipants: k,
         participants: t,
@@ -105,7 +105,7 @@ let _ = (0, s.A)(e => {
         idle: R,
         height: w,
         width: P,
-        layout: j,
+        layout: x,
         inCall: N,
         channel: C,
         showParticipants: T

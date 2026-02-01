@@ -1,6 +1,6 @@
-/** chunk id: 88141, original params: e,t,i (module,exports,require) **/
-i.d(t, {
-    c: () => a
+/** chunk id: 88141, original params: t,e,i (module,exports,require) **/
+i.d(e, {
+    c: () => u
 });
 var n = i(419954),
     l = i(780964),
@@ -10,6 +10,6 @@ let r = (0, n.AK)(l.X.NOTIFICATIONS_TO_VOICE_AND_VIDEO_SOUNDS_NAVIGATOR, {
         useSearchTerms: () => [s.intl.string(s.t["MMy+lm"])],
         destinationKey: l.X.SOUNDS_CATEGORY
     }),
-    a = (0, n.gN)(l.X.NOTIFICATIONS_SOUNDS_RELATED_SETTINGS, {
+    u = (0, n.gN)(l.X.NOTIFICATIONS_SOUNDS_RELATED_SETTINGS, {
         buildLayout: () => [r]
     })

@@ -1,6 +1,6 @@
 /** chunk id: 860768, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => f
+    A: () => m
 }), n(896048);
 var r = n(627968),
     i = n(64700),
@@ -82,4 +82,4 @@ class g extends i.PureComponent {
         })
     }
 }
-let f = g
+let m = g

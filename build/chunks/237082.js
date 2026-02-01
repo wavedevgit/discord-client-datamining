@@ -1,5 +1,4 @@
-/** chunk id: 237082, original params: e,n,t (module,exports,require) **/
-"use strict";
+/** chunk id: 237082, original params: e,t,n (module,exports,require) **/
 e.exports = {
     PC: "premiumIcon_b68a35",
     tV: "platformIcon_b68a35",

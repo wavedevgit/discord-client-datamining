@@ -1,6 +1,6 @@
 /** chunk id: 156579, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => p
+    A: () => h
 });
 var r = n(627968);
 n(64700);
@@ -12,14 +12,14 @@ var l = n(417597),
     c = n(108959),
     u = n(829861),
     d = n(5867),
-    h = n(652215);
+    p = n(652215);
 
-function p(e) {
+function h(e) {
     let {
         maxHeight: t,
         renderExternalHeader: n
     } = e, {
-        connectedChannelId: p,
+        connectedChannelId: h,
         connectedActivity: g,
         activityPanelMode: f
     } = (0, l.cf)([a.Ay], () => {
@@ -30,10 +30,10 @@ function p(e) {
             connectedActivity: t,
             activityPanelMode: a.Ay.getActivityPanelMode()
         }
-    }), m = (0, l.bG)([i.A], () => i.A.getWindowOpen(h.MLl.ACTIVITY_POPOUT));
-    if (!(0, s.Gp)(p)) return null;
+    }), m = (0, l.bG)([i.A], () => i.A.getWindowOpen(p.MLl.ACTIVITY_POPOUT));
+    if (!(0, s.Gp)(h)) return null;
     let b = null == g ? void 0 : g.applicationId;
-    return f !== d.Gd.PANEL || null == b || m || null == p || null == g || (0, c.A)(p) ? null : (0, r.jsx)(u.A, {
+    return f !== d.Gd.PANEL || null == b || m || null == h || null == g || (0, c.A)(h) ? null : (0, r.jsx)(u.A, {
         maxHeight: t,
         connectedLocation: g.location,
         renderExternalHeader: n

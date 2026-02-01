@@ -12,9 +12,9 @@ var l = n(311907),
     c = n(531685),
     u = n(330465),
     d = n(65611),
-    h = n(652215);
+    p = n(652215);
 
-function p(e, t) {
+function h(e, t) {
     (0, i.L3)(e, async () => {
         let {
             default: e
@@ -65,10 +65,10 @@ function g(e) {
         draggable: !1,
         selected: n === m,
         preloadOnClick: !1,
-        contextMenu: p,
+        contextMenu: h,
         lowerBadge: (null == i ? void 0 : i.applicationStatus) === s.B5.REJECTED ? (0, d.eW)({
             guildJoinRequestStatus: i.applicationStatus
         }) : void 0,
-        route: h.BVt.GUILD_MEMBER_VERIFICATION(n)
+        route: p.BVt.GUILD_MEMBER_VERIFICATION(n)
     })
 }

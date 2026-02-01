@@ -11,8 +11,8 @@ var r = n(64700),
     c = n(485970),
     u = n(181940),
     d = n(299975),
-    h = n(568065),
-    p = n(652215);
+    p = n(568065),
+    h = n(652215);
 
 function g(e, t, n) {
     n && (0, i.s7G)(), (0, d.h)(e, t)
@@ -35,13 +35,13 @@ function f(e, t) {
                 } = r;
             if (null != m && null != t) return b < t.cost ? void(0, a.g)({
                 analyticsLocation: {
-                    page: p.liQ.GUILD_POWERUPS_OVERVIEW,
-                    section: p.JJy.GUILD_POWERUPS_OVERVIEW_CARD
+                    page: h.liQ.GUILD_POWERUPS_OVERVIEW,
+                    section: h.JJy.GUILD_POWERUPS_OVERVIEW_CARD
                 },
                 numberOfBoostsToAdd: t.cost - b,
                 analyticsLocations: n,
                 guild: m,
-                intent: t.type === h.o9.LEVEL ? h.Pn.LEVEL : h.Pn.PERK,
+                intent: t.type === p.o9.LEVEL ? p.Pn.LEVEL : p.Pn.PERK,
                 onSubscribeComplete: () => {
                     var e;
                     return null == (e = i(!0)) ? void 0 : e.then(() => {

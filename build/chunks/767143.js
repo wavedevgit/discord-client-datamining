@@ -44,8 +44,8 @@ var r = n(627968),
     k = n(486020),
     U = n(449054),
     G = n(927578),
-    F = n(450707),
-    V = n(252061),
+    V = n(450707),
+    F = n(252061),
     B = n(652176),
     H = n(652215),
     Y = n(746080),
@@ -105,7 +105,7 @@ let J = 32,
             emojiId: t.emojiId,
             currentGuildId: x.A.getGuildId()
         });
-        let n = (0, V.A)(t.name),
+        let n = (0, F.A)(t.name),
             i = n !== t.name;
         return (0, r.jsx)(c.l, {
             children: (0, r.jsx)(B.Uq, {
@@ -282,7 +282,7 @@ let J = 32,
             guildEmoji: L,
             demoMode: k = !1,
             nonce: U
-        } = e, V = (0, l.bG)([M.default], () => M.default.getCurrentUser()), q = (0, l.bG)([x.A], () => x.A.getGuildId()), Z = G.Ay.isPremium(V), Q = null != q && (q === (null == v ? void 0 : v.id) || q === (null == S ? void 0 : S.id)), X = null != S, J = null != (t = null == v ? void 0 : v.isDiscoverable()) && t;
+        } = e, F = (0, l.bG)([M.default], () => M.default.getCurrentUser()), q = (0, l.bG)([x.A], () => x.A.getGuildId()), Z = G.Ay.isPremium(F), Q = null != q && (q === (null == v ? void 0 : v.id) || q === (null == S ? void 0 : S.id)), X = null != S, J = null != (t = null == v ? void 0 : v.isDiscoverable()) && t;
         k && (Z = !0, J = !0, X = !1, Q = !1);
         let $ = ee(),
             {
@@ -314,7 +314,7 @@ let J = 32,
             disableTrack: !et
         });
         let el = x.A.getGuildId(),
-            ec = (0, F.O)({
+            ec = (0, V.O)({
                 sourceType: d,
                 expressionSourceApplication: b,
                 isPremium: Z,
@@ -342,8 +342,8 @@ let J = 32,
                 nonce: U,
                 demoMode: k
             }),
-            ep = ec.type === F.u.JOIN_GUILD,
-            e_ = ec.type === F.u.GET_PREMIUM,
+            ep = ec.type === V.u.JOIN_GUILD,
+            e_ = ec.type === V.u.GET_PREMIUM,
             eh = () => {
                 let e = async () => {
                     if (k || null == v || X) return;
@@ -487,7 +487,7 @@ let J = 32,
         }), e.id)), {
             type: f,
             description: _
-        } = o, m = () => f === F.u.GET_PREMIUM ? (0, r.jsxs)(r.Fragment, {
+        } = o, m = () => f === V.u.GET_PREMIUM ? (0, r.jsxs)(r.Fragment, {
             children: [(0, r.jsx)(P.A, {
                 subscriptionTier: W.pe.TIER_2,
                 textOptions: {
@@ -504,7 +504,7 @@ let J = 32,
                     children: _
                 })
             })]
-        }) : f === F.u.JOIN_GUILD ? (0, r.jsx)("div", {
+        }) : f === V.u.JOIN_GUILD ? (0, r.jsx)("div", {
             "data-button-hoisted-classname-wrapper": !0,
             className: z.lI,
             children: (0, r.jsx)(p.Button, {

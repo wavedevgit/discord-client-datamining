@@ -21,13 +21,13 @@ var r = n(627968),
     h = n(543767),
     E = n(420139),
     O = n(976860),
-    C = n(780964),
-    x = n(12901),
+    x = n(780964),
+    C = n(12901),
     S = n(840065),
     T = n(295405),
     I = n(379082),
-    y = n(710144),
-    N = n(815332),
+    N = n(710144),
+    y = n(815332),
     j = n(568286),
     v = n(638182),
     P = n(652215),
@@ -146,7 +146,7 @@ let M = e => {
         } = h, J = n.soft_deleted || null == a || V;
         return (0, r.jsxs)("div", {
             className: w.kL,
-            children: [(0, r.jsx)(y.A, {
+            children: [(0, r.jsx)(N.A, {
                 onClick: g,
                 className: w.N1,
                 children: e => {
@@ -217,7 +217,7 @@ let M = e => {
                 id: k,
                 children: [(0, r.jsx)("div", {
                     className: w.yF
-                }), (0, r.jsx)(N.A, {
+                }), (0, r.jsx)(y.A, {
                     groupListingId: l.id,
                     subscription: t,
                     className: w.kE
@@ -255,7 +255,7 @@ let M = e => {
                         })
                     },
                     onChangePlanClick: () => {
-                        null != a && ((0, O.pX)(P.BVt.CHANNEL(a.id, R.VV.ROLE_SUBSCRIPTIONS)), (0, x.default)(), _.A.show(P.kqX.BACK_TO_PREVIOUS_SCREEN, void 0, L.intl.string(L.t.DvbaM4), () => (0, S.openUserSettings)(C.X.SUBSCRIPTIONS_PANEL, {
+                        null != a && ((0, O.pX)(P.BVt.CHANNEL(a.id, R.VV.ROLE_SUBSCRIPTIONS)), (0, C.default)(), _.A.show(P.kqX.BACK_TO_PREVIOUS_SCREEN, void 0, L.intl.string(L.t.DvbaM4), () => (0, S.openUserSettings)(x.X.SUBSCRIPTIONS_PANEL, {
                             section: P.nc_.SUBSCRIPTIONS,
                             subsection: D.nR
                         })))

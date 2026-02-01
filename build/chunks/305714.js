@@ -25,14 +25,14 @@ let E = i.forwardRef((e, t) => {
         isFooterVisible: l,
         isDarkMode: E,
         isReducedMotion: O,
-        subscriptionTier: C
+        subscriptionTier: x
     } = e, {
-        analyticsLocations: x
-    } = (0, c.Ay)(o.A.PREMIUM_MARKETING_FOOTER_CTA), S = (0, _.ar)(), T = (0, u.TM)(), I = i.useRef(null), [y, N] = i.useState(!1);
+        analyticsLocations: C
+    } = (0, c.Ay)(o.A.PREMIUM_MARKETING_FOOTER_CTA), S = (0, _.ar)(), T = (0, u.TM)(), I = i.useRef(null), [N, y] = i.useState(!1);
     return i.useEffect(() => {
-        !l || O || y || null == I.current || I.current.play()
-    }, [l, O, y]), (0, r.jsx)(c.f5, {
-        value: x,
+        !l || O || N || null == I.current || I.current.play()
+    }, [l, O, N]), (0, r.jsx)(c.f5, {
+        value: C,
         children: (0, r.jsxs)("div", {
             ref: t,
             className: s()(A.kL, n),
@@ -42,7 +42,7 @@ let E = i.forwardRef((e, t) => {
                 color: "text-strong",
                 children: g.intl.string(g.t.lEw32m)
             }), (0, r.jsx)(p.KN, {
-                subscriptionTier: C,
+                subscriptionTier: x,
                 inOfferExperience: S,
                 containerClassName: A.Z5,
                 isApplicationHome: !0,
@@ -56,7 +56,7 @@ let E = i.forwardRef((e, t) => {
                     poster: b.A,
                     className: A.dV,
                     onEnded: () => {
-                        N(!0)
+                        y(!0)
                     },
                     ref: I,
                     children: (0, r.jsx)("source", {

@@ -14,9 +14,9 @@ var r = n(627968),
     p = n(341338),
     h = n(998515),
     g = n(652215),
-    f = n(58682);
+    m = n(58682);
 
-function m(e, t, n) {
+function f(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -33,7 +33,7 @@ class A extends i.Component {
             page: g.liQ.CHANNEL_STORE_LISTING,
             root: !0,
             children: (0, r.jsx)("div", {
-                className: f.gE,
+                className: m.gE,
                 children: (0, r.jsx)(l.qh, {
                     path: "*",
                     render: this.renderApplicationListing
@@ -42,13 +42,13 @@ class A extends i.Component {
         }) : null
     }
     constructor(...e) {
-        super(...e), m(this, "fetchStoreListing", e => {
+        super(...e), f(this, "fetchStoreListing", e => {
             let {
                 channel: t,
                 inputSkuId: n
             } = this.props;
             return null != e ? s.A.fetchChannelStoreListing(t.id, e) : null != n ? s.A.fetchChannelStoreListing(t.id, n) : s.A.fetchChannelStoreListing(t.id)
-        }), m(this, "renderApplicationListing", e => {
+        }), f(this, "renderApplicationListing", e => {
             let {
                 location: t
             } = e, {

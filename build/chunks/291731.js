@@ -11,8 +11,8 @@ var a, s = n(735438),
     p = n(863036),
     h = n(71393),
     g = n(576705),
-    f = n(718116),
-    m = n(652215);
+    m = n(718116),
+    f = n(652215);
 
 function A(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
@@ -38,17 +38,17 @@ function _(e) {
 let b = [],
     E = null,
     O = !1,
-    y = m.XlH.CLOSED,
+    y = f.XlH.CLOSED,
     I = {},
     v = !1,
     S = null;
 
 function C() {
-    if (r = null != (i = p.A.getChannel()) ? h.A.getGuild(i.guild_id) : null, b = null != i && null != r && g.A.can(m.xBc.MANAGE_WEBHOOKS, i) ? f.A.getWebhooksForChannel(r.id, i.id) : [], null != E) {
+    if (r = null != (i = p.A.getChannel()) ? h.A.getGuild(i.guild_id) : null, b = null != i && null != r && g.A.can(f.xBc.MANAGE_WEBHOOKS, i) ? m.A.getWebhooksForChannel(r.id, i.id) : [], null != E) {
         let e = T(E.id);
         null != e && (E = e)
     }
-    y = m.XlH.OPEN, I = {}, v = !1
+    y = f.XlH.OPEN, I = {}, v = !1
 }
 let N = o().debounce(() => {
     v && ((null == E || o().isEqual(E, T(E.id))) && (v = !1), v || x.emitChange())
@@ -64,7 +64,7 @@ function T(e) {
 }
 class j extends(a = c.Ay.Store) {
     initialize() {
-        this.waitFor(p.A, h.A, f.A, g.A)
+        this.waitFor(p.A, h.A, m.A, g.A)
     }
     hasChanges() {
         return v
@@ -86,7 +86,7 @@ class j extends(a = c.Ay.Store) {
     }
     getProps() {
         return {
-            submitting: y === m.XlH.SUBMITTING,
+            submitting: y === f.XlH.SUBMITTING,
             webhooks: b,
             editedWebhook: E,
             section: l,
@@ -105,8 +105,8 @@ let x = new j(u.h, __OVERLAY__ ? {} : {
             let {
                 section: t
             } = e;
-            if (t !== m.p_A.INTEGRATIONS) return !1;
-            if (l = m.wLn.OVERVIEW, null == r) {
+            if (t !== f.p_A.INTEGRATIONS) return !1;
+            if (l = f.wLn.OVERVIEW, null == r) {
                 let e = p.A.getChannel(),
                     t = null == e ? void 0 : e.getGuildId();
                 null != e && null != t && (d.A.fetchForChannel(t, e.id), O = !0), C()
@@ -137,7 +137,7 @@ let x = new j(u.h, __OVERLAY__ ? {} : {
             E = _({}, E), null != t.name && E.name !== t.name && (E.name = t.name, v = !0), void 0 !== t.avatar && E.avatar !== t.avatar && (E.avatar = t.avatar, v = !0), null != t.channelId && E.channel_id !== t.channelId && (E.channel_id = t.channelId, v = !0), v && N()
         },
         CHANNEL_SETTINGS_CLOSE: function() {
-            i = null, r = null, b = [], E = null, y = m.XlH.CLOSED
+            i = null, r = null, b = [], E = null, y = f.XlH.CLOSED
         },
         WEBHOOKS_UPDATE: function(e) {
             let {
@@ -145,7 +145,7 @@ let x = new j(u.h, __OVERLAY__ ? {} : {
                 channelId: n,
                 webhooks: l
             } = e;
-            if (O = !1, null != r && t === r.id && null != i && n === i.id && null != l && y !== m.XlH.SUBMITTING) {
+            if (O = !1, null != r && t === r.id && null != i && n === i.id && null != l && y !== f.XlH.SUBMITTING) {
                 for (let e = b.length - 1; e >= 0; e--) {
                     let t = b[e];
                     if (null != n && (null == t ? void 0 : t.channel_id) !== n) continue;
@@ -170,12 +170,12 @@ let x = new j(u.h, __OVERLAY__ ? {} : {
             }
         },
         INTEGRATION_SETTINGS_SUBMITTING: function() {
-            y = m.XlH.SUBMITTING, I = {}
+            y = f.XlH.SUBMITTING, I = {}
         },
         INTEGRATION_SETTINGS_SAVE_FAILURE: function(e) {
             var t;
-            if (y !== m.XlH.SUBMITTING) return !1;
-            y = m.XlH.OPEN, I = null != (t = e.errors) ? t : {}
+            if (y !== f.XlH.SUBMITTING) return !1;
+            y = f.XlH.OPEN, I = null != (t = e.errors) ? t : {}
         }
     }),
     P = x

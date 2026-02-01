@@ -15,8 +15,8 @@ var i = n(179771),
     p = n(181658),
     h = n(646865),
     g = n(795816),
-    f = n(851907),
-    m = n(980142),
+    m = n(851907),
+    f = n(980142),
     A = n(572946),
     _ = n(293588),
     b = n(267102),
@@ -45,7 +45,7 @@ async function G(e, t, n, r) {
     if (null == l || null == l.secrets || !(0, P.px)(r, l.party, l.secrets)) throw new x.A({
         errorCode: k.Lw6.NO_ELIGIBLE_ACTIVITY
     }, "No eligible activity for application. Ensure an activity includes a party and appropriate secret.");
-    let a = (0, m.A)(l, v.A);
+    let a = (0, f.A)(l, v.A);
     if (a) {
         let {
             lock: t
@@ -182,7 +182,7 @@ let V = {
                 channel: l,
                 guild: a,
                 frame: o
-            } = (0, R.W)(), u = (0, f.Ay)({
+            } = (0, R.W)(), u = (0, m.Ay)({
                 application: t.application,
                 channelId: null == l ? void 0 : l.id
             }), d = null != u ? E.A.getWindow(u) : void 0;

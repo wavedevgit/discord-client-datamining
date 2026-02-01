@@ -10,13 +10,13 @@ n.d(t, {
     SN: () => H,
     Ub: () => en,
     Yj: () => F,
-    e2: () => J,
+    e2: () => $,
     hk: () => V,
     lG: () => er,
     px: () => X,
     qG: () => Y,
     sq: () => ee,
-    uM: () => $
+    uM: () => J
 }), n(747238), n(591487), n(727858), n(896048), n(321073), n(65821), n(812715), n(938796), n(638769), n(735438);
 var r, i, l = n(567243),
     a = n(179771),
@@ -28,8 +28,8 @@ var r, i, l = n(567243),
     p = n(46054),
     h = n(763754),
     g = n(611010),
-    f = n(95701),
-    m = n(427157),
+    m = n(95701),
+    f = n(427157),
     A = n(734057),
     _ = n(71393),
     b = n(430452),
@@ -105,7 +105,7 @@ function B(e) {
 function H(e, t) {
     let n = [],
         r = e.getGuildId();
-    return [P.rbe.GUILD_CATEGORY, ...f.OU].includes(e.type) || n.push(new Promise(t => {
+    return [P.rbe.GUILD_CATEGORY, ...m.OU].includes(e.type) || n.push(new Promise(t => {
         E.A.whenReady(e.id, () => t()), c.A.fetchMessages({
             channelId: e.id,
             limit: P.EMb
@@ -134,7 +134,7 @@ function F(e) {
             channelId: e.channel_id
         }).map(G),
         n = A.A.getChannel(e.channel_id),
-        r = null != e.author ? new m.A(e.author) : void 0,
+        r = null != e.author ? new f.A(e.author) : void 0,
         i = null != e.author ? (0, h.FT)(r, n) : void 0;
     return {
         id: e.id,
@@ -254,7 +254,7 @@ function Z(e) {
         }, "Invalid Client ID")
     })
 }
-async function $(e, t, n) {
+async function J(e, t, n) {
     let r = d.A.getApplication(t);
     if ("string" == typeof n)
         if (e.transport === x.z4.POST_MESSAGE) {
@@ -283,7 +283,7 @@ async function $(e, t, n) {
         flags: o
     }
 }
-async function J(e, t) {
+async function $(e, t) {
     let n = U[e];
     null == n && (n = new o.A(t ? 2 : 60, k), U[e] = n), await n.process()
 }

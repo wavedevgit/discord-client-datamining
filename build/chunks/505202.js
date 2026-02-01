@@ -83,17 +83,17 @@ function v(e) {
         focusedClassName: k,
         dontCloseOnActionIfHoldingShiftKey: U,
         dontCloseOnAction: G,
-        iconProps: F
+        iconProps: V
     } = e, {
-        onSelect: V,
+        onSelect: F,
         onInteraction: B
     } = i.useContext(c.x), H = i.useRef(null), Y = (0, f.Y)("MenuItem"), W = i.useCallback(e => {
         var t;
         if (null == B || B({
                 type: c.Q.DEFAULT
             }), null == L) return !1;
-        e.shiftKey && U || G || x(), e.persist(), null == V || V(), (null != (t = e.nativeEvent.view) ? t : window).requestAnimationFrame(() => L(e))
-    }, [L, x, V, U, G, B]);
+        e.shiftKey && U || G || x(), e.persist(), null == F || F(), (null != (t = e.nativeEvent.view) ? t : window).requestAnimationFrame(() => L(e))
+    }, [L, x, F, U, G, B]);
     return i.useEffect(() => {
         P && ((0, u.Y)(H), null == M || M())
     }, [P, M]), (0, r.jsxs)(s.DUT, O(y({
@@ -114,8 +114,8 @@ function v(e) {
             className: g.iconContainerLeft,
             children: (0, r.jsx)(b, O(y({
                 color: "currentColor"
-            }, F), {
-                className: o()(g.icon, null == F ? void 0 : F.className)
+            }, V), {
+                className: o()(g.icon, null == V ? void 0 : V.className)
             }))
         }), (0, r.jsxs)("div", {
             className: g.label,
@@ -148,8 +148,8 @@ function v(e) {
             className: g.iconContainer,
             children: (0, r.jsx)(E, O(y({
                 color: "currentColor"
-            }, F), {
-                className: o()(g.icon, null == F ? void 0 : F.className)
+            }, V), {
+                className: o()(g.icon, null == V ? void 0 : V.className)
             }))
         }), C && (0, r.jsx)("div", {
             className: g.iconContainer,

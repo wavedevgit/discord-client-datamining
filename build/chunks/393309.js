@@ -108,7 +108,7 @@ function k(e) {
         }
         let b = (0, S.Gl)(t),
             O = E.A.getChannel(A.default.castMessageIdAsChannelId(n)),
-            v = await V(t, [], void 0, () => {
+            v = await F(t, [], void 0, () => {
                 let e = null != n ? w.Rsh.CHANNEL_MESSAGE_THREADS(t.id, n) : w.Rsh.CHANNEL_THREADS(t.id);
                 return a.Bo.post({
                     url: e,
@@ -121,12 +121,12 @@ function k(e) {
                     rejectWithError: !1
                 })
             });
-        v !== O && (l.A.clearDraft(t.id, y.C.ThreadSettings), l.A.clearDraft(t.id, y.C.FirstThreadMessage), null == c || c(v), (h || e.length > 0 || null != r && r.length > 0 || null != p && p.length > 0) && F(v, e, r, p, f)), u.A.clearAll(t.id, y.C.FirstThreadMessage)
+        v !== O && (l.A.clearDraft(t.id, y.C.ThreadSettings), l.A.clearDraft(t.id, y.C.FirstThreadMessage), null == c || c(v), (h || e.length > 0 || null != r && r.length > 0 || null != p && p.length > 0) && V(v, e, r, p, f)), u.A.clearAll(t.id, y.C.FirstThreadMessage)
     }, [t, n, i, c, o, s, d, f])
 }
 
 function U(e, t, n, r, i) {
-    return V(e, [], void 0, () => a.Bo.post({
+    return F(e, [], void 0, () => a.Bo.post({
         url: w.Rsh.CHANNEL_THREADS(e.id),
         body: {
             name: t,
@@ -180,7 +180,7 @@ function G(e) {
                 reason: r
             }), i
         }
-        let T = await V(t, s, h, () => a.Bo.post({
+        let T = await F(t, s, h, () => a.Bo.post({
             url: v,
             body: A,
             rejectWithError: !1
@@ -193,7 +193,7 @@ function G(e) {
     }, [t, n, o, c, s, d])
 }
 
-function F(e, t, n, r, i) {
+function V(e, t, n, r, i) {
     if (null != i && null != r && r.length > 0) i(e, r, t, n);
     else if (null != n && n.length > 0) return c.A.sendStickers(e.id, n, t, {
         location: R.Hx.THREAD_CREATION
@@ -202,7 +202,7 @@ function F(e, t, n, r, i) {
         location: R.Hx.THREAD_CREATION
     })
 }
-async function V(e, t, n, r) {
+async function F(e, t, n, r) {
     let i, a = e.isForumLikeChannel();
     try {
         i = await r(), null == i.body ? s.A.show({

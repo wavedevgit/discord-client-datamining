@@ -14,8 +14,8 @@ var r = n(627968),
     p = n(765671),
     h = n(736653),
     g = n(291661),
-    f = n(607470),
-    m = n(287809),
+    m = n(607470),
+    f = n(287809),
     A = n(954571),
     _ = n(341915),
     b = n(890687),
@@ -31,13 +31,13 @@ let T = (0, i.memo)(function(e) {
     var t, n, l, T, j, x;
     let {
         quest: P
-    } = e, [w, L] = (0, i.useState)(!1), [R, D] = (0, i.useState)(24), [M, k] = (0, i.useState)(!1), U = (0, i.useRef)(null), G = (0, i.useRef)(null), V = (0, i.useRef)(null), B = (0, c.bG)([m.default], () => m.default.getCurrentUser()), {
+    } = e, [w, L] = (0, i.useState)(!1), [R, D] = (0, i.useState)(24), [M, k] = (0, i.useState)(!1), U = (0, i.useRef)(null), G = (0, i.useRef)(null), V = (0, i.useRef)(null), B = (0, c.bG)([f.default], () => f.default.getCurrentUser()), {
         ref: H,
         height: F = 0
     } = (0, p.Ay)(), Y = (0, h.Ay)(), K = (0, b.S5)(null == (l = P.userStatus) ? void 0 : l.claimedAt, {
         month: "numeric",
         day: "numeric"
-    }), W = null != (t = null == (T = P.userStatus) ? void 0 : T.claimedTier) ? t : 0, q = P.config.rewards[W], z = (null == q ? void 0 : q.type) === o.l.FRACTIONAL_PREMIUM, Q = (null == q ? void 0 : q.type) === o.l.COLLECTIBLE, X = (null == q ? void 0 : q.type) === o.l.VIRTUAL_CURRENCY, Z = null == q || null == (x = q.collectibleProduct) || null == (j = x.items) ? void 0 : j[0], $ = (null == Z ? void 0 : Z.type) === s.R.AVATAR_DECORATION ? Z : null;
+    }), W = null != (t = null == (T = P.userStatus) ? void 0 : T.claimedTier) ? t : 0, q = P.config.rewards[W], z = (null == q ? void 0 : q.type) === o.l.FRACTIONAL_PREMIUM, Q = (null == q ? void 0 : q.type) === o.l.COLLECTIBLE, X = (null == q ? void 0 : q.type) === o.l.VIRTUAL_CURRENCY, Z = null == q || null == (x = q.collectibleProduct) || null == (j = x.items) ? void 0 : j[0], J = (null == Z ? void 0 : Z.type) === s.R.AVATAR_DECORATION ? Z : null;
     (0, p.i4)(U, e => {
         let {
             height: t
@@ -48,7 +48,7 @@ let T = (0, i.memo)(function(e) {
             i = V.current.getBoundingClientRect();
         D((r.top - n.top - i.height) / 2)
     });
-    let J = (0, u.Mw)(Y),
+    let $ = (0, u.Mw)(Y),
         ee = (0, i.useMemo)(() => null != P.config.cosponsorMetadata, [P]),
         et = (0, i.useMemo)(() => (0, E.tW)(P, E.fY.REWARD), [P]),
         en = w ? F + 8 : 0,
@@ -117,14 +117,14 @@ let T = (0, i.memo)(function(e) {
             className: a()(N.kL, {
                 [N.yo]: w
             }),
-            children: [null != B && Q && null != $ && (0, r.jsx)("div", {
+            children: [null != B && Q && null != J && (0, r.jsx)("div", {
                 ref: V,
                 className: N.FX,
                 style: {
                     top: R
                 },
                 children: (0, r.jsx)(g.A, {
-                    avatarDecorationOverride: $,
+                    avatarDecorationOverride: J,
                     user: B,
                     guildId: null,
                     animateOnHover: !w
@@ -135,7 +135,7 @@ let T = (0, i.memo)(function(e) {
                 className: N.Sl,
                 isAnimated: w,
                 questName: P.config.messages.questName
-            }) : et.isAnimated ? (0, r.jsx)(f.A, {
+            }) : et.isAnimated ? (0, r.jsx)(m.A, {
                 className: N.JU,
                 autoPlay: !1,
                 children: (0, r.jsx)("source", {
@@ -150,8 +150,8 @@ let T = (0, i.memo)(function(e) {
                 onError: () => ec(et.url)
             }), (0, r.jsx)("div", {
                 className: a()(N.Lw, {
-                    [N.en]: J,
-                    [N.So]: !J
+                    [N.en]: $,
+                    [N.So]: !$
                 })
             }), (0, r.jsx)("div", {
                 ref: G,
@@ -178,9 +178,9 @@ let T = (0, i.memo)(function(e) {
                     })
                 }), (0, r.jsx)(d.Text, {
                     variant: "text-sm/medium",
-                    color: J ? "text-muted" : "always-white",
+                    color: $ ? "text-muted" : "always-white",
                     style: {
-                        opacity: J ? 1 : .75
+                        opacity: $ ? 1 : .75
                     },
                     children: C.intl.format(C.t["kXVcV+"], {
                         reward: q.name,

@@ -313,8 +313,8 @@ var m = {
             }, r)
         }
     },
-    F = [],
-    V = function(e, t) {
+    V = [],
+    F = function(e, t) {
         var n = this;
         void 0 === t && (t = "u" > typeof document), this.instances = [], this.value = {
             setHelmet: function(e) {
@@ -322,14 +322,14 @@ var m = {
             },
             helmetInstances: {
                 get: function() {
-                    return n.canUseDOM ? F : n.instances
+                    return n.canUseDOM ? V : n.instances
                 },
                 add: function(e) {
-                    (n.canUseDOM ? F : n.instances).push(e)
+                    (n.canUseDOM ? V : n.instances).push(e)
                 },
                 remove: function(e) {
-                    var t = (n.canUseDOM ? F : n.instances).indexOf(e);
-                    (n.canUseDOM ? F : n.instances).splice(t, 1)
+                    var t = (n.canUseDOM ? V : n.instances).indexOf(e);
+                    (n.canUseDOM ? V : n.instances).splice(t, 1)
                 }
             }
         }, this.context = e, this.canUseDOM = t, t || (e.helmet = G({
@@ -359,7 +359,7 @@ var m = {
     W = function(e) {
         function t(n) {
             var r;
-            return (r = e.call(this, n) || this).helmetData = new V(r.props.context, t.canUseDOM), r
+            return (r = e.call(this, n) || this).helmetData = new F(r.props.context, t.canUseDOM), r
         }
         return p(t, e), t.prototype.render = function() {
             return r.createElement(B.Provider, {
@@ -595,7 +595,7 @@ var X = ["children"],
                 n = h(e, J),
                 i = f({}, n),
                 a = n.helmetData;
-            return t && (i = this.mapChildrenToProps(t, i)), !a || a instanceof V || (a = new V(a.context, a.instances)), a ? r.createElement(Q, f({}, i, {
+            return t && (i = this.mapChildrenToProps(t, i)), !a || a instanceof F || (a = new F(a.context, a.instances)), a ? r.createElement(Q, f({}, i, {
                 context: a.value,
                 helmetData: void 0
             })) : r.createElement(B.Consumer, null, function(e) {

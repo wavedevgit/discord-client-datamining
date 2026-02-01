@@ -1,6 +1,6 @@
 /** chunk id: 508094, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => m
+    A: () => f
 }), n(321073), n(896048);
 var r = n(179771),
     i = n(793574),
@@ -14,9 +14,9 @@ var r = n(179771),
     p = n(629471),
     h = n(693806),
     g = n(613057),
-    f = n(818348);
-let m = {
-    [f.e$.GET_SOUNDBOARD_SOUNDS]: {
+    m = n(818348);
+let f = {
+    [m.e$.GET_SOUNDBOARD_SOUNDS]: {
         scope: {
             [g.sm.ANY]: [r.F.RPC, g.hj]
         },
@@ -27,7 +27,7 @@ let m = {
             return e.forEach(e => e.forEach(e => t.push((0, s.A2)(e)))), t
         }
     },
-    [f.e$.PLAY_SOUNDBOARD_SOUND]: {
+    [m.e$.PLAY_SOUNDBOARD_SOUND]: {
         scope: {
             [g.sm.ALL]: [r.F.RPC, r.F.RPC_VOICE_WRITE]
         },
@@ -48,15 +48,15 @@ let m = {
                 p = (0, h.A)(),
                 g = null != s && null != r && (0, o.Ir)(r, s, p);
             if (null == p) throw new d.A({
-                errorCode: f.Lw.INVALID_CHANNEL
+                errorCode: m.Lw.INVALID_CHANNEL
             }, "Invalid Channel.");
             if (g)
                 if ((0, c.A)(p)) null != s && (0, o.Ak)(s, p.id, [i.A.RPC]);
                 else throw new d.A({
-                    errorCode: f.Lw.INVALID_PERMISSIONS
+                    errorCode: m.Lw.INVALID_PERMISSIONS
                 }, "Invalid Permissions.");
             else throw new d.A({
-                errorCode: f.Lw.INVALID_SOUND
+                errorCode: m.Lw.INVALID_SOUND
             }, "Invalid Sound.")
         }
     }

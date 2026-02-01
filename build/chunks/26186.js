@@ -1,12 +1,12 @@
-/** chunk id: 26186, original params: e,t,i (module,exports,require) **/
-i.d(t, {
-    H: () => a
+/** chunk id: 26186, original params: t,e,i (module,exports,require) **/
+i.d(e, {
+    H: () => u
 });
 var n = i(419954),
     l = i(253932),
     s = i(780964),
     r = i(985018);
-let a = (0, n.zD)(s.X.CHAT_INLINE_MEDIA_UPLOADS, {
+let u = (0, n.zD)(s.X.CHAT_INLINE_MEDIA_UPLOADS, {
     useTitle: () => r.intl.string(r.t.VP11No),
     useSubtitle: () => r.intl.formatToPlainString(r.t.qjjvqO, {
         maxSize: 10

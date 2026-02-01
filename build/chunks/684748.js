@@ -1,7 +1,7 @@
 /** chunk id: 684748, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    J: () => p,
+    J: () => h,
     Y: () => u
 }), n(747238);
 var i = n(684013),
@@ -61,7 +61,7 @@ function u(e, t) {
     }
 }
 
-function p() {
+function h() {
     let e = r.Ay.getOverlayKeybind();
     return null != e ? (0, l.dI)(e.shortcut, !0).split(" + ") : ["???"]
 }

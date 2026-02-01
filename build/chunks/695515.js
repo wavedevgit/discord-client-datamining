@@ -48,8 +48,8 @@ function c(t, e) {
 let T = null,
     S = null,
     A = {},
-    C = !1,
-    f = F(),
+    f = !1,
+    C = F(),
     I = Y(),
     N = null,
     p = M(),
@@ -91,7 +91,7 @@ function P() {
     let t = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : [];
     return arguments.length > 1 && arguments[1], A = t.length > 0 ? t.reduce((t, e) => c(_({}, t), {
         [e.user_id]: e
-    }), {}) : {}, C = !0, A
+    }), {}) : {}, f = !0, A
 }
 
 function w(t) {
@@ -99,12 +99,12 @@ function w(t) {
 }
 
 function V(t, e) {
-    let n = e ? f : F();
+    let n = e ? C : F();
     return t.forEach(t => {
         let e = t.display_type,
             i = n.get(e);
         void 0 === i || i.has(t.event_id) || i.set(t.event_id, t)
-    }), f = n
+    }), C = n
 }
 
 function k(t) {
@@ -118,7 +118,7 @@ function k(t) {
     }, O)
 }
 
-function H(t) {
+function G(t) {
     U = t.reduce((t, e) => {
         if (null != e.invoice_items && e.invoice_items.length > 0) {
             let n = e.invoice_items[0],
@@ -135,7 +135,7 @@ function H(t) {
     }, {})
 }
 
-function G() {
+function H() {
     y = !0
 }
 
@@ -156,7 +156,7 @@ function j(t) {
         totalSpendCurrency: c,
         invoices: A
     } = n;
-    T = u, S = s, V(l), w(a), k(r), P(e), null != A && H(A), L = d, D = E, v = _, m = c, b = null != i ? i : null, y = !1, h = o.default.fromTimestamp(Date.now()), g = !0
+    T = u, S = s, V(l), w(a), k(r), P(e), null != A && G(A), L = d, D = E, v = _, m = c, b = null != i ? i : null, y = !1, h = o.default.fromTimestamp(Date.now()), g = !0
 }
 
 function Q(t) {
@@ -190,7 +190,7 @@ function W(t) {
         totalSpendCurrency: E,
         invoices: _
     } = e;
-    T = r, S = a, V(n), w(i), k(l), null != _ && H(_), L = u, D = s, y = !1, h = o.default.fromTimestamp(Date.now()), v = d, m = E
+    T = r, S = a, V(n), w(i), k(l), null != _ && G(_), L = u, D = s, y = !1, h = o.default.fromTimestamp(Date.now()), v = d, m = E
 }
 
 function K(t) {
@@ -262,7 +262,7 @@ function $(t) {
 }
 
 function tt() {
-    T = null, S = null, A = {}, f = F(), I = Y(), O = {}, y = !1, h = null, p = M(), C = !1, L = [], D = [], v = null, m = null, U = {}, b = null, g = !1
+    T = null, S = null, A = {}, C = F(), I = Y(), O = {}, y = !1, h = null, p = M(), f = !1, L = [], D = [], v = null, m = null, U = {}, b = null, g = !1
 }
 class te extends l.A {
     initialize() {
@@ -287,7 +287,7 @@ class te extends l.A {
                     let [e, n] = t;
                     return "".concat(e, ":").concat(n)
                 }),
-                teenActivity: (t = [], f.forEach(e => {
+                teenActivity: (t = [], C.forEach(e => {
                     t.push(...Array.from(e.values()))
                 }), t),
                 guilds: Object.values(O)
@@ -309,7 +309,7 @@ class te extends l.A {
         return null == S ? null : o.default.extractTimestamp(S)
     }
     getActionsForDisplayType(t) {
-        let e = f.get(t);
+        let e = C.get(t);
         return null != e ? Array.from(e.values()) : []
     }
     getTotalForDisplayType(t) {
@@ -331,7 +331,7 @@ class te extends l.A {
         return g
     }
     getAreLinkedUsersProcessed() {
-        return C
+        return f
     }
     getUserCountry() {
         return R
@@ -366,7 +366,7 @@ class te extends l.A {
             CURRENT_USER_UPDATE: Z,
             CACHE_LOADED_LAZY: () => this.loadCache(),
             FAMILY_CENTER_INITIAL_LOAD: j,
-            FAMILY_CENTER_FETCH_START: G,
+            FAMILY_CENTER_FETCH_START: H,
             FAMILY_CENTER_LINKED_USERS_FETCH_SUCCESS: Q,
             FAMILY_CENTER_TEEN_ACTIVITY_FETCH_SUCCESS: W,
             FAMILY_CENTER_TEEN_ACTIVITY_MORE_FETCH_SUCCESS: K,

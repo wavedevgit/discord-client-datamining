@@ -21,13 +21,13 @@ var r = n(627968),
     h = n(40185),
     E = n(89366),
     O = n(411268),
-    C = n(422936),
-    x = n(234419),
+    x = n(422936),
+    C = n(234419),
     S = n(863156),
     T = n(194509),
     I = n(396375),
-    y = n(511484),
-    N = n(231265),
+    N = n(511484),
+    y = n(231265),
     j = n(795269),
     v = n(38720),
     P = n(788868),
@@ -57,7 +57,7 @@ function U(e) {
     return e
 }
 let k = () => {
-        let e = (0, N._)();
+        let e = (0, y._)();
         return (0, r.jsx)(j.ir, {
             text: e,
             className: D.QR,
@@ -162,7 +162,7 @@ let k = () => {
         var t;
         let n, {
                 className: l,
-                hideCTAs: N = !1,
+                hideCTAs: y = !1,
                 headingOverride: L,
                 hidePill: w = !1,
                 selectedPlanColumnClassName: M,
@@ -178,12 +178,12 @@ let k = () => {
             X = (0, a.bG)([A.default], () => A.default.getCurrentUser()),
             q = null != X && X.isPremiumWithPremiumGroup(),
             J = (0, b.YE)(X, P.PremiumTypes.TIER_2),
-            Q = (0, x.V)(),
+            Q = (0, C.V)(),
             $ = null == Q || null == (t = Q.subscription_trial) ? void 0 : t.sku_id,
             ee = (0, E.Us)(),
-            et = (0, C.O)(),
-            en = null != et && (0, y.U9)(et, P.pe.TIER_2),
-            er = (0, y.N1)(P.gD.PREMIUM_MONTH_TIER_2),
+            et = (0, x.O)(),
+            en = null != et && (0, N.U9)(et, P.pe.TIER_2),
+            er = (0, N.N1)(P.gD.PREMIUM_MONTH_TIER_2),
             ei = "".concat(er, "/").concat((0, b.FJ)(P.WT.MONTH)),
             el = (0, b.JM)(P.gD.PREMIUM_MONTH_TIER_0),
             es = (0, b.JM)(P.gD.PREMIUM_MONTH_TIER_2),
@@ -212,7 +212,7 @@ let k = () => {
                     isPremiumGroup: q
                 })
             };
-        N ? eo.push({
+        y ? eo.push({
             label: null,
             column1: null,
             column2: null,

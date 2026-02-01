@@ -14,8 +14,8 @@ var r = n(627968),
     p = n(397927),
     h = n(944791),
     g = n(775602),
-    f = n(793574),
-    m = n(139286),
+    m = n(793574),
+    f = n(139286),
     A = n(197111),
     _ = n(10088),
     b = n(979286),
@@ -51,8 +51,8 @@ var r = n(627968),
     Q = n(203879),
     X = n(409389),
     Z = n(881172),
-    $ = n(724339),
-    J = n(516226),
+    J = n(724339),
+    $ = n(516226),
     ee = n(321503),
     et = n(65513),
     en = n(475529),
@@ -69,7 +69,7 @@ var r = n(627968),
     eh = n(595411),
     eg = n(602557);
 
-function ef(e) {
+function em(e) {
     for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -87,7 +87,7 @@ function ef(e) {
     }
     return e
 }
-let em = i.createContext({});
+let ef = i.createContext({});
 
 function eA(e) {
     let {
@@ -163,15 +163,15 @@ function eb(e) {
         onSelectTab: u,
         scrollerRef: d,
         selectedTab: p
-    } = i.useContext(em), {
+    } = i.useContext(ef), {
         takeover: h,
         isLoading: g
     } = (0, Y._b)(), {
-        enabled: f
+        enabled: m
     } = (0, L.Z)({
         location: er.rE.QUEST_HOME_DESKTOP
     }), {
-        enabled: m
+        enabled: f
     } = H.XM.useConfig({
         location: er.rE.QUEST_HOME_DESKTOP
     }), A = i.useRef(null), _ = i.useCallback(() => {
@@ -184,7 +184,7 @@ function eb(e) {
             onScroll: c,
             ref: d,
             children: [function() {
-                if (!o && m) {
+                if (!o && f) {
                     if (p !== Y.NC.ALL) return null;
                     if (g) return (0, r.jsx)(et.s, {});
                     if (null != h) return (0, r.jsx)(et.A, {
@@ -196,7 +196,7 @@ function eb(e) {
             }(), (0, r.jsx)(C.A, {
                 children: (0, r.jsxs)("div", {
                     className: a()(eo.Qs, {
-                        [eo.HR]: m && !f && p !== Y.NC.ALL
+                        [eo.HR]: f && !m && p !== Y.NC.ALL
                     }),
                     children: [n, s ? p === Y.NC.CLAIMED ? (0, r.jsx)(Z.A, {
                         onSelectTab: u
@@ -229,14 +229,14 @@ let eE = function(e) {
     let {
         onScroll: k,
         scrollPosition: H
-    } = (0, v.G)(), W = z.A.getState().getUtmCurrentContext(), Q = (0, $.W)(e => e.registerAssetLoad), X = i.useRef(W);
+    } = (0, v.G)(), W = z.A.getState().getUtmCurrentContext(), Q = (0, J.W)(e => e.registerAssetLoad), X = i.useRef(W);
     i.useEffect(() => {
         X.current = W
     }), i.useEffect(() => {
         let {
             current: e
         } = X;
-        (0, m.x)({
+        (0, f.x)({
             name: c.ImpressionNames.QUEST_HOME,
             type: c.ImpressionTypes.VIEW,
             properties: {
@@ -269,7 +269,7 @@ let eE = function(e) {
             }), (0, b.Cz)({
                 tab: el.G2.ORBS,
                 analyticsLocations: [],
-                analyticsSource: f.A.ORBS_BALANCE_MENU
+                analyticsSource: m.A.ORBS_BALANCE_MENU
             })
         }, []);
     i.useEffect(() => {
@@ -318,7 +318,7 @@ let eE = function(e) {
     let eh = i.useCallback(() => {
             (0, q.navigateToQuestHome)({
                 fromContent: V.uF.QUEST_HOME_MOVE_CALLOUT_DISCOVER
-            }), M.default.track(ei.HAw.QUEST_CONTENT_CLICKED, ef({
+            }), M.default.track(ei.HAw.QUEST_CONTENT_CLICKED, em({
                 cta_name: K.Cy.VIEW_QUESTS,
                 click_id: (0, o.A)(),
                 is_targeted: !1
@@ -326,7 +326,7 @@ let eE = function(e) {
         }, []),
         eg = i.useCallback(e => {
             var t, n, r;
-            l.replace((n = ef({}, l.location), r = r = {
+            l.replace((n = em({}, l.location), r = r = {
                 hash: void 0
             }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
                 var n = Object.keys(e);
@@ -341,11 +341,11 @@ let eE = function(e) {
                 animate: !1
             }), x(e)
         }, [l, x]);
-    return (0, r.jsx)(J.M.Provider, {
+    return (0, r.jsx)($.M.Provider, {
         value: {
             onAssetLoadComplete: Q
         },
-        children: (0, r.jsx)(em.Provider, {
+        children: (0, r.jsx)(ef.Provider, {
             value: i.useMemo(() => ({
                 isInDiscoverQuestHomeTab: g,
                 onScroll: k,
@@ -405,7 +405,7 @@ let eE = function(e) {
                                 onClick: () => (0, b.Cz)({
                                     tab: el.G2.ORBS,
                                     analyticsLocations: [],
-                                    analyticsSource: f.A.INTRO_TO_ORBS_QUEST_BANNER
+                                    analyticsSource: m.A.INTRO_TO_ORBS_QUEST_BANNER
                                 })
                             }), (0, r.jsx)(p.Button, {
                                 variant: "overlay-secondary",

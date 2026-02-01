@@ -10,8 +10,8 @@ var r, l = n(627968),
     c = n.n(o),
     u = n(615300),
     d = n(52133),
-    h = n(397927),
-    p = n(473134);
+    p = n(397927),
+    h = n(473134);
 
 function g(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
@@ -85,14 +85,14 @@ class b extends i.Component {
             onClick: r
         } = this.props;
         return (0, l.jsx)(u.A.div, {
-            className: a()(p.M0, e, {
-                [p.R]: n
+            className: a()(h.M0, e, {
+                [h.R]: n
             }),
             onClick: r,
             style: this.getAnimatedStyle(),
             "aria-hidden": n,
             children: (0, l.jsx)("span", {
-                className: p.Qq,
+                className: h.Qq,
                 children: t
             })
         })
@@ -148,7 +148,7 @@ class A extends(r = i.PureComponent) {
             className: null != s ? s : void 0,
             children: (0, l.jsx)(b, {
                 hide: !0 === c || null == e && null == t,
-                className: a()(o, null != t ? p.lE : p.gy),
+                className: a()(o, null != t ? h.lE : h.gy),
                 text: null != t ? n : r,
                 reverse: i,
                 animate: u && !d.enabled,
@@ -177,14 +177,14 @@ class A extends(r = i.PureComponent) {
                     null == a && l(e, i, c) && (a = e), null == o && r(e, i, c) && (o = e)
                 },
                 d = i ? c.length - 1 : 0,
-                h = c[d];
-            for (; null != h;) {
-                if ("string" == typeof h) {
-                    if (n(h, i, c)) break;
-                    u(h)
+                p = c[d];
+            for (; null != p;) {
+                if ("string" == typeof p) {
+                    if (n(p, i, c)) break;
+                    u(p)
                 } else {
                     let e = !1;
-                    for (let t of h) {
+                    for (let t of p) {
                         if (n(t, i, c)) {
                             e = !0;
                             break
@@ -193,7 +193,7 @@ class A extends(r = i.PureComponent) {
                     }
                     if (e) break
                 }
-                d += i ? -1 : 1, h = c[d]
+                d += i ? -1 : 1, p = c[d]
             }
             null != s && s(a, o, i), this.setState({
                 mention: a,
@@ -211,8 +211,8 @@ class A extends(r = i.PureComponent) {
         })
     }
 }
-g(A, "contextType", h.CZY), g(A, "defaultProps", {
-    className: p.kL,
+g(A, "contextType", p.CZY), g(A, "defaultProps", {
+    className: h.kL,
     reverse: !1,
     hide: !1,
     animate: !0

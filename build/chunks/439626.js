@@ -4,7 +4,7 @@ n.d(t, {
     A0: () => W,
     BF: () => X,
     VP: () => q,
-    XI: () => F,
+    XI: () => V,
     fI: () => $,
     fh: () => et
 });
@@ -122,7 +122,7 @@ let j = (0, x.createContext)(null),
     k = (0, x.createContext)(null),
     U = (0, x.createContext)(null),
     G = (0, x.createContext)(null),
-    F = (0, x.forwardRef)(function(e, t) {
+    V = (0, x.forwardRef)(function(e, t) {
         var n;
         [e, t] = (0, o.JT)(e, t, k);
         let r = (0, _.R)(e),
@@ -144,7 +144,7 @@ let j = (0, x.createContext)(null),
         return x.createElement(d.GQ, {
             content: u,
             createCollection: () => new M
-        }, n => x.createElement(V, {
+        }, n => x.createElement(F, {
             props: e,
             forwardedRef: t,
             selectionState: r,
@@ -152,7 +152,7 @@ let j = (0, x.createContext)(null),
         }))
     });
 
-function V({
+function F({
     props: e,
     forwardedRef: t,
     selectionState: n,
@@ -192,13 +192,13 @@ function V({
             isVirtualized: T
         }, S, t),
         k = S.selectionManager,
-        F = !!(null == L ? void 0 : L.useDraggableCollectionState),
-        V = !!(null == L ? void 0 : L.useDroppableCollectionState);
-    (0, x.useRef)(F), (0, x.useRef)(V), (0, x.useEffect)(() => {}, [F, V]);
+        V = !!(null == L ? void 0 : L.useDraggableCollectionState),
+        F = !!(null == L ? void 0 : L.useDroppableCollectionState);
+    (0, x.useRef)(V), (0, x.useRef)(F), (0, x.useEffect)(() => {}, [V, F]);
     let H = !1,
         Y = null,
         W = (0, x.useRef)(null);
-    if (F && L) {
+    if (V && L) {
         u = L.useDraggableCollectionState({
             collection: S.collection,
             selectionManager: k,
@@ -209,7 +209,7 @@ function V({
             ref: W
         }, L.renderDragPreview) : null
     }
-    if (V && L) {
+    if (F && L) {
         d = L.useDroppableCollectionState({
             collection: S.collection,
             selectionManager: k
@@ -243,7 +243,7 @@ function V({
             isFocusVisible: q,
             state: S
         }
-    }), Q = !!(F && !(null == u ? void 0 : u.isDisabled)), X = Z.style, J = null;
+    }), Q = !!(V && !(null == u ? void 0 : u.isDisabled)), X = Z.style, J = null;
     A && (J = A.useTableColumnResizeState({
         tableWidth: A.tableWidth
     }, S), T || (X = {
@@ -590,11 +590,11 @@ let $ = (0, d.yq)(J, (e, t, n) => {
             dropPosition: "on"
         }
     }, h, k));
-    let F = (0, x.useRef)(null);
+    let V = (0, x.useRef)(null);
     (0, x.useEffect)(() => {
-        _ && F.current
+        _ && V.current
     }, []);
-    let V = _ && _.isDragging(n.key),
+    let F = _ && _.isDragging(n.key),
         {
             children: H,
             ...Y
@@ -610,7 +610,7 @@ let $ = (0, d.yq)(J, (e, t, n) => {
                 isFocusVisible: S,
                 selectionMode: f.selectionManager.selectionMode,
                 selectionBehavior: f.selectionManager.selectionBehavior,
-                isDragging: V,
+                isDragging: F,
                 isDropTarget: null == u ? void 0 : u.isDropTarget,
                 isFocusVisibleWithin: R,
                 id: n.key
@@ -646,7 +646,7 @@ let $ = (0, d.yq)(J, (e, t, n) => {
         "data-focused": O.isFocused || void 0,
         "data-focus-visible": S || void 0,
         "data-pressed": O.isPressed || void 0,
-        "data-dragging": V || void 0,
+        "data-dragging": F || void 0,
         "data-drop-target": (null == u ? void 0 : u.isDropTarget) || void 0,
         "data-selection-mode": "none" === f.selectionManager.selectionMode ? void 0 : f.selectionManager.selectionMode,
         "data-focus-visible-within": R || void 0
@@ -663,7 +663,7 @@ let $ = (0, d.yq)(J, (e, t, n) => {
                     [o.P_]: {},
                     drag: {
                         ...null == c ? void 0 : c.dragButtonProps,
-                        ref: F,
+                        ref: V,
                         style: {
                             pointerEvents: "none"
                         }

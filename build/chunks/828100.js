@@ -10,8 +10,8 @@ var r, l = n(627968),
     c = n(884362),
     u = n(311907),
     d = n(52133),
-    h = n(397927),
-    p = n(951001),
+    p = n(397927),
+    h = n(951001),
     g = n(775602),
     f = n(793574),
     m = n(58149),
@@ -19,9 +19,9 @@ var r, l = n(627968),
     A = n(660387),
     y = n(343328),
     O = n(485947),
-    _ = n(915089),
-    j = n(725323),
-    x = n(611924),
+    j = n(915089),
+    x = n(725323),
+    _ = n(611924),
     v = n(95550),
     E = n(380335),
     C = n(309199),
@@ -277,8 +277,8 @@ class V extends(r = i.Component) {
                         for (l = 0, n = Object.getOwnPropertySymbols(e); l < n.length; l++) r = n[l], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r]);
                     return i
                 }(r, ["ref", "role"]);
-                return (0, l.jsx)(h.skg, {
-                    children: r => (0, l.jsx)(h.B8B, G({
+                return (0, l.jsx)(p.skg, {
+                    children: r => (0, l.jsx)(p.B8B, G({
                         fade: !0,
                         innerRole: s,
                         innerAriaLabel: D.intl.string(D.t.YUU0RF),
@@ -334,7 +334,7 @@ class V extends(r = i.Component) {
         }), M(this, "getSectionHeight", e => 24 * (0 !== e)), M(this, "handleScroll", a()(() => {
             if (null != this._list) {
                 let e = this._list.getScrollerNode();
-                null != e && p.A.updateChannelListScroll(R.ME, e.scrollTop)
+                null != e && h.A.updateChannelListScroll(R.ME, e.scrollTop)
             }
             void 0 !== this.props.onHandleScroll && this.props.onHandleScroll()
         }, 100)), M(this, "renderDM", (e, t) => {
@@ -378,12 +378,12 @@ class V extends(r = i.Component) {
                 children: [(0, l.jsx)("span", {
                     className: L.TK,
                     children: D.intl.string(D.t.YUU0RF)
-                }), (0, l.jsx)(v.A, {
+                }), (0, l.jsx)(v.Ay, {
                     tooltip: D.intl.string(D.t["6Urw1t"]),
                     tooltipPosition: "top",
                     className: L.U2,
                     iconClassName: L.Br,
-                    icon: h.TIR,
+                    icon: p.TIR,
                     subscribeToGlobalHotkey: !0
                 })]
             }, t)
@@ -411,16 +411,16 @@ M(V, "defaultProps", {
 let B = e => {
     let {
         density: t
-    } = (0, h.wRf)(), {
+    } = (0, p.wRf)(), {
         version: n,
         theme: r,
         children: s,
         listScrollerRef: a
-    } = e, d = i.Children.count(s), p = N.A.getMutablePrivateChannels(), m = (0, C.uX)(p), A = (0, u.yK)([P.A, E.A, S.A], () => {
+    } = e, d = i.Children.count(s), h = N.A.getMutablePrivateChannels(), m = (0, C.uX)(h), A = (0, u.yK)([P.A, E.A, S.A], () => {
         let e = P.A.getPrivateChannelIds();
         return (0, C.eh)(e, [E.A, S.A])
     });
-    (0, x.P)(j._);
+    (0, _.P)(x._);
     let {
         analyticsLocations: y
     } = (0, b.Ay)(f.A.CONTACTS_LIST), O = (0, I.NC)(), {
@@ -457,7 +457,7 @@ let B = e => {
                 requestAnimationFrame(() => setTimeout(e, 100))
             }
         })
-    }), [R]), U = (0, _.GV)(), B = (0, c.Ay)({
+    }), [R]), U = (0, j.GV)(), B = (0, c.Ay)({
         id: "private-channels-".concat(U),
         isEnabled: v,
         scrollToStart: L,

@@ -22,13 +22,13 @@ var r = n(627968),
 n(820575);
 var E = n(652215),
     O = n(985018),
-    C = n(842130);
+    x = n(842130);
 
-function x(e) {
+function C(e) {
     let {
         ingress: t,
         guildId: n
-    } = e, b = (0, p.q9)(), x = u.$s.useSetting().includes(n), S = (0, d.K)(), T = (0, _.e)(), I = (0, s.uM)(), y = i.useCallback(e => {
+    } = e, b = (0, p.q9)(), C = u.$s.useSetting().includes(n), S = (0, d.K)(), T = (0, _.e)(), I = (0, s.uM)(), N = i.useCallback(e => {
         let r = (0, c.Tb)();
         e ? r.delete(n) : r.add(n), u.$s.updateSetting(Array.from(r)), o.default.track(E.HAw.USER_SERVER_PRIVACY_SETTINGS_ACTION, {
             action: f.m.DIRECT_MESSAGES_TOGGLE,
@@ -37,7 +37,7 @@ function x(e) {
         })
     }, [n, t]);
 
-    function N(e, t) {
+    function y(e, t) {
         o.default.track(E.HAw.GUILD_DEFAULT_DMS_UPDATED, {
             default_guilds_restricted: e,
             applied_to_existing_guilds: t
@@ -59,20 +59,20 @@ function x(e) {
                     cancelText: O.intl.string(O.t.p89ACt),
                     confirmButtonColor: l.$n.Colors.BRAND,
                     onConfirm: () => {
-                        u.n6.updateSetting(t), N(t, !1)
+                        u.n6.updateSetting(t), y(t, !1)
                     },
                     onCancel: () => {
-                        u.n6.updateSetting(t), u.$s.updateSetting(t ? a.A.getGuildIds() : []), N(t, !0)
+                        u.n6.updateSetting(t), u.$s.updateSetting(t ? a.A.getGuildIds() : []), y(t, !0)
                     }
                 })
             },
             disabled: I,
-            tooltipText: I ? O.intl.string(C.default["6Af/cw"]) : void 0
+            tooltipText: I ? O.intl.string(x.default["6Af/cw"]) : void 0
         }) : (0, r.jsx)(g.Ay, {
             title: j,
             note: b ? O.intl.string(O.t.V0ka0Q) : T ? O.intl.string(O.t.F9WY3f) : O.intl.string(O.t.G7c3Xo),
-            value: !x,
-            onChange: y
+            value: !C,
+            onChange: N
         })
     })
 }
@@ -82,7 +82,7 @@ function S(e) {
         ingress: t = b.bf.USER_SETTINGS_PRIVACY_SAFETY,
         guildId: n
     } = e, i = (0, p.Tx)();
-    return (0, r.jsx)(x, {
+    return (0, r.jsx)(C, {
         ingress: t,
         guildId: null != n ? n : i
     })

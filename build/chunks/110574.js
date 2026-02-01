@@ -77,19 +77,19 @@ function G(e, t) {
     }), e
 }
 
-function F(e, t) {
+function V(e, t) {
     if (null == e) return {};
     var n, r, i, a = {};
     if ("u" > typeof Reflect && Reflect.ownKeys) {
         for (i = 0, n = Reflect.ownKeys(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
         return a
     }
-    if (a = V(e, t), Object.getOwnPropertySymbols)
+    if (a = F(e, t), Object.getOwnPropertySymbols)
         for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
     return a
 }
 
-function V(e, t) {
+function F(e, t) {
     if (null == e) return {};
     var n, r, i = {},
         a = Object.getOwnPropertyNames(e);
@@ -300,7 +300,7 @@ let B = (0, w.xI)(l.A.MEMBER_LIST_ITEM_AVATAR_DECORATION_PADDING),
             guildId: x,
             className: j,
             nameplate: U,
-            hideClanTag: V = !1,
+            hideClanTag: F = !1,
             hideSubtext: B = !1,
             hideTooltip: Y = !1,
             onMouseDown: W,
@@ -336,7 +336,7 @@ let B = (0, w.xI)(l.A.MEMBER_LIST_ITEM_AVATAR_DECORATION_PADDING),
             guildId: x
         }), eI = null != eo ? eo : {}, {
             onFocus: eS
-        } = eI, eT = F(eI, ["onFocus"]), eC = (0, S.gn)(x, el, null != a ? a : null), [eN, ew] = i.useState(!1);
+        } = eI, eT = V(eI, ["onFocus"]), eC = (0, S.gn)(x, el, null != a ? a : null), [eN, ew] = i.useState(!1);
         i.useEffect(() => {
             t && ew(!1)
         }, [t]);
@@ -400,7 +400,7 @@ let B = (0, w.xI)(l.A.MEMBER_LIST_ITEM_AVATAR_DECORATION_PADDING),
                         colorString: null != n ? n : null,
                         name: null != E ? E : ec,
                         colorStrings: eC,
-                        hideClanTag: V,
+                        hideClanTag: F,
                         user: y,
                         guildId: x,
                         isHovering: ef
@@ -414,7 +414,7 @@ let B = (0, w.xI)(l.A.MEMBER_LIST_ITEM_AVATAR_DECORATION_PADDING),
                             colorString: null != n ? n : null,
                             name: null != E ? E : ec,
                             colorStrings: eC,
-                            hideClanTag: V,
+                            hideClanTag: F,
                             user: y,
                             guildId: x,
                             isHovering: ef

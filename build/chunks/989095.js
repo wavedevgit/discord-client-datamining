@@ -2,12 +2,12 @@
 n.d(t, {
     A: () => i
 });
-var r = n(110259),
-    l = n(139286);
+var l = n(110259),
+    r = n(139286);
 
 function i(e) {
-    return (0, l.A)({
-        type: r.ImpressionTypes.VIEW,
-        name: r.ImpressionNames.NOTIFICATION_SETTING_UNREAD_NUDGE
+    return (0, r.A)({
+        type: l.ImpressionTypes.VIEW,
+        name: l.ImpressionNames.NOTIFICATION_SETTING_UNREAD_NUDGE
     }, void 0, [e.id]), null
 }

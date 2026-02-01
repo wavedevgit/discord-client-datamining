@@ -11,8 +11,8 @@ var r = n(627968),
     c = n(717558),
     u = n(933958),
     d = n(627363),
-    h = n(429913),
-    p = n(313961),
+    p = n(429913),
+    h = n(313961),
     g = n(532622),
     f = n(140547),
     m = n(242919),
@@ -20,9 +20,9 @@ var r = n(627968),
     A = n(220995),
     y = n(582904),
     O = n(551826),
-    _ = n(159426),
-    j = n(25528),
-    x = n(530804),
+    j = n(159426),
+    x = n(25528),
+    _ = n(530804),
     v = n(481947),
     E = n(616356),
     C = n(961350),
@@ -50,20 +50,20 @@ let U = l.memo(e => {
     } = e, T = A.id, k = (0, a.bG)([C.default], () => C.default.getId() === T, [T]), [U, V, B] = (0, a.yK)([I.A], () => k ? [!I.A.isSupported() || I.A.isSelfMute() || I.A.isSelfMutedTemporarily(), I.A.isSelfDeaf(), !1] : [!I.A.isSupported() || I.A.isLocalMute(T), !1, I.A.isLocalVideoDisabled(T)], [k, T]), H = (0, a.bG)([w.A], () => w.A.isPrioritySpeaker(T)), F = (0, c.A)({
         userId: T,
         checkSoundSharing: !0
-    }), K = (0, a.bG)([w.A], () => w.A.isCurrentUserPTTLatched()), Y = k && K, W = (0, a.bG)([S.Ay], () => S.Ay.isGuestOrLurker(y.guild_id, T)), z = (0, a.bG)([p.A], () => p.A.getGuildRingingUsers(y.id).has(T)), q = (0, a.bG)([u.Ay], () => u.Ay.getEmbeddedActivitiesForChannel(y.id).find(e => {
+    }), Y = (0, a.bG)([w.A], () => w.A.isCurrentUserPTTLatched()), K = k && Y, W = (0, a.bG)([S.Ay], () => S.Ay.isGuestOrLurker(y.guild_id, T)), z = (0, a.bG)([h.A], () => h.A.getGuildRingingUsers(y.id).has(T)), X = (0, a.bG)([u.Ay], () => u.Ay.getEmbeddedActivitiesForChannel(y.id).find(e => {
         let {
             userIds: t
         } = e;
         return t.has(T)
-    }), [T, y.id]), X = (0, h.A)(null != q ? [q.applicationId] : []), J = (0, j.A)(T, y.guild_id)[0], Q = null != (t = (0, d.YY)(null == J ? void 0 : J.application_id).data) ? t : void 0, [Z, $] = (0, a.yK)([E.A], () => [E.A.getStreamForUser(T, y.getGuildId()), E.A.getActiveStreamForUser(T, y.getGuildId())], [y, T]), ee = (0, a.bG)([P.A], () => P.A.getSessionById(v)), et = D.Ay.useName(A), en = (0, a.bG)([R.A], () => R.A.getVoicePlatformForChannel(y.id, T), [y.id, T]), {
+    }), [T, y.id]), q = (0, p.A)(null != X ? [X.applicationId] : []), J = (0, x.A)(T, y.guild_id)[0], Q = null != (t = (0, d.YY)(null == J ? void 0 : J.application_id).data) ? t : void 0, [Z, $] = (0, a.yK)([E.A], () => [E.A.getStreamForUser(T, y.getGuildId()), E.A.getActiveStreamForUser(T, y.getGuildId())], [y, T]), ee = (0, a.bG)([P.A], () => P.A.getSessionById(v)), et = D.Ay.useName(A), en = (0, a.bG)([R.A], () => R.A.getVoicePlatformForChannel(y.id, T), [y.id, T]), {
         enableHangStatus: er
     } = (0, f.$j)({
         guildId: y.guild_id,
         location: "VoiceUsers"
-    }), el = (0, g.Ay)(y, !0, A), ei = (0, a.bG)([m.A], () => k ? m.A.getHangStatusActivity() : null, [k]), es = (0, b.h)(T), ea = (0, x.uy)(y.id, T), {
+    }), el = (0, g.Ay)(y, !0, A), ei = (0, a.bG)([m.A], () => k ? m.A.getHangStatusActivity() : null, [k]), es = (0, b.h)(T), ea = (0, _.uy)(y.id, T), {
         enableVCStatusIcons: eo,
         enableRequestToStream: ec
-    } = _.m.useExperiment({
+    } = j.m.useExperiment({
         guildId: y.guild_id,
         location: "VoiceUsers"
     }, {
@@ -100,10 +100,10 @@ let U = l.memo(e => {
             mute: s || U,
             deaf: o || V,
             speaking: F,
-            latched: Y,
+            latched: K,
             ringing: z,
             priority: H,
-            embeddedApplication: X[0],
+            embeddedApplication: q[0],
             isStreaming: null != Z && Z.channelId === y.id,
             isWatching: null != $ && $.state !== M.XYD.ENDED,
             isGuest: W,
@@ -139,9 +139,9 @@ let V = [],
             numAudience: m,
             withGuildIcon: b = !1,
             className: O,
-            children: _,
-            isThread: j = !1
-        } = e, [E, S] = l.useState(null), [I, P] = l.useState(!1), w = l.useRef(null), R = (0, x.$n)(i.id, null != c ? c : V), {
+            children: j,
+            isThread: x = !1
+        } = e, [E, S] = l.useState(null), [I, P] = l.useState(!1), w = l.useRef(null), R = (0, _.$n)(i.id, null != c ? c : V), {
             shouldShow: D,
             dismiss: G
         } = (0, y.Z0)(i, {
@@ -152,9 +152,9 @@ let V = [],
             S(null)
         })), F = l.useCallback(e => {
             t && (P(!0), H.current.cancel(), w.current = e, B.current.delay())
-        }, [t]), K = l.useCallback(e => {
+        }, [t]), Y = l.useCallback(e => {
             t && (B.current.cancel(), w.current = null, P(!1), H.current.delay())
-        }, [t]), Y = (0, a.yK)([T.A], () => {
+        }, [t]), K = (0, a.yK)([T.A], () => {
             if (u) return [];
             let e = new Set;
             return null == R || R.forEach(t => {
@@ -166,11 +166,11 @@ let V = [],
                 })
             }), Array.from(e)
         });
-        (0, h.A)(Y);
+        (0, p.A)(K);
         let W = (() => {
             if (null == R || 0 === R.length) return null;
             let e = u && R.length > d + 1 ? R.slice(0, d) : R,
-                t = p.A.getGuildRingingUsers(i.id),
+                t = h.A.getGuildRingingUsers(i.id),
                 l = e.map(e => {
                     var l;
                     let {
@@ -192,7 +192,7 @@ let V = [],
                         collapsed: u,
                         canDrag: n && N.A.can(M.xBc.MOVE_MEMBERS, i),
                         showPreview: F,
-                        hidePreview: K,
+                        hidePreview: Y,
                         previewIsOpen: I,
                         shouldShowHoverPopout: E === s.id,
                         tabIndex: g,
@@ -209,13 +209,13 @@ let V = [],
                 numUsers: R.length - d
             })), l
         })();
-        return null == W && null == _ ? null : (0, r.jsxs)(v.Wr, {
+        return null == W && null == j ? null : (0, r.jsxs)(v.Wr, {
             className: s()(O, k.p_, {
                 [k.yZ]: u,
                 [k.lY]: b,
-                [k.fT]: j
+                [k.fT]: x
             }),
             collapsed: u,
-            children: [W, _]
+            children: [W, j]
         })
     }

@@ -11,8 +11,8 @@ var r = n(627968),
     c = n(397927),
     u = n(933958),
     d = n(104171),
-    h = n(297334),
-    p = n(47167),
+    p = n(297334),
+    h = n(47167),
     g = n(392567),
     f = n(21119),
     m = n(907459),
@@ -20,9 +20,9 @@ var r = n(627968),
     A = n(994500),
     y = n(543465),
     O = n(287809),
-    _ = n(607567),
-    j = n(985018),
-    x = n(653750);
+    j = n(607567),
+    x = n(985018),
+    _ = n(653750);
 
 function v(e) {
     let {
@@ -30,9 +30,9 @@ function v(e) {
         users: n
     } = e;
     return 0 === n.length ? null : (0, r.jsxs)("div", {
-        className: x.nM,
+        className: _.nM,
         children: [(0, r.jsx)(t, {
-            className: x.RI,
+            className: _.RI,
             color: "currentColor"
         }), (0, r.jsx)(d.Ay, {
             users: n,
@@ -50,7 +50,7 @@ function E(e) {
         variant: "text-xs/normal",
         color: "text-muted",
         className: n,
-        children: j.intl.string(j.t.fpKdS1)
+        children: x.intl.string(x.t.fpKdS1)
     }) : (0, r.jsx)(g.A, {
         muteConfig: t,
         className: n
@@ -58,7 +58,7 @@ function E(e) {
 }
 
 function C(e) {
-    let t, n, i, o, d, p, g, j, C, S, I, N, T, {
+    let t, n, i, o, d, h, g, x, C, S, I, N, T, {
             channel: P
         } = e,
         w = P.id,
@@ -66,21 +66,21 @@ function C(e) {
             activityUsers: R,
             streamUsers: D,
             voiceUsers: L
-        } = (t = P.id, n = (0, a.yK)([A.A], () => A.A.getBlockedOrIgnoredIDs()), i = (0, a.bG)([f.A], () => f.A.getUserAffinitiesMap(), []), o = (0, a.yK)([u.Ay, O.default], () => u.Ay.getEmbeddedActivitiesForChannel(t).flatMap(e => Array.from(e.userIds)).map(e => O.default.getUser(e)), [t]), d = l.useMemo(() => (0, h.aw)(o, n), [o, n]), p = l.useMemo(() => (0, m.L)(d, i, "DirectMessageTooltip - activityUsers"), [d, i]), g = (0, a.yK)([b.A, O.default], () => {
+        } = (t = P.id, n = (0, a.yK)([A.A], () => A.A.getBlockedOrIgnoredIDs()), i = (0, a.bG)([f.A], () => f.A.getUserAffinitiesMap(), []), o = (0, a.yK)([u.Ay, O.default], () => u.Ay.getEmbeddedActivitiesForChannel(t).flatMap(e => Array.from(e.userIds)).map(e => O.default.getUser(e)), [t]), d = l.useMemo(() => (0, p.aw)(o, n), [o, n]), h = l.useMemo(() => (0, m.L)(d, i, "DirectMessageTooltip - activityUsers"), [d, i]), g = (0, a.yK)([b.A, O.default], () => {
             let e = b.A.getAllApplicationStreamsForChannel(t).map(e => e.ownerId).map(e => O.default.getUser(e));
-            return (0, h.aw)(e, n)
-        }, [t, n]), j = l.useMemo(() => (0, h.aw)(g, n), [g, n]), C = l.useMemo(() => (0, m.L)(j, i, "DirectMessageTooltip - activityUsers"), [j, i]), S = l.useMemo(() => C.filter(e => !p.some(t => t.id === e.id)), [C, p]), I = (0, a.yK)([_.Ay], () => {
-            let e = _.Ay.getVoiceStatesForChannel(P).map(e => {
+            return (0, p.aw)(e, n)
+        }, [t, n]), x = l.useMemo(() => (0, p.aw)(g, n), [g, n]), C = l.useMemo(() => (0, m.L)(x, i, "DirectMessageTooltip - activityUsers"), [x, i]), S = l.useMemo(() => C.filter(e => !h.some(t => t.id === e.id)), [C, h]), I = (0, a.yK)([j.Ay], () => {
+            let e = j.Ay.getVoiceStatesForChannel(P).map(e => {
                 let {
                     user: t
                 } = e;
                 return t
             });
-            return (0, h.aw)(e, n)
-        }, [P, n]), N = l.useMemo(() => (0, h.aw)(I, n), [I, n]), T = l.useMemo(() => (0, m.L)(N, i, "DirectMessageTooltip - voiceUsers"), [N, i]), {
-            voiceUsers: l.useMemo(() => T.filter(e => !p.some(t => t.id === e.id) && !C.some(t => t.id === e.id)), [T, p, C]),
+            return (0, p.aw)(e, n)
+        }, [P, n]), N = l.useMemo(() => (0, p.aw)(I, n), [I, n]), T = l.useMemo(() => (0, m.L)(N, i, "DirectMessageTooltip - voiceUsers"), [N, i]), {
+            voiceUsers: l.useMemo(() => T.filter(e => !h.some(t => t.id === e.id) && !C.some(t => t.id === e.id)), [T, h, C]),
             streamUsers: S,
-            activityUsers: p
+            activityUsers: h
         }),
         M = (0, r.jsx)(v, {
             icon: c.HKD,
@@ -104,8 +104,8 @@ function C(e) {
     return (0, r.jsxs)(r.Fragment, {
         children: [M, G, k, U ? (0, r.jsx)(E, {
             muteConfig: V,
-            className: s()(x.LM, {
-                [x.Sx]: null != M || null != G
+            className: s()(_.LM, {
+                [_.Sx]: null != M || null != G
             })
         }) : null]
     })
@@ -114,12 +114,12 @@ function C(e) {
 function S(e) {
     let {
         channel: t
-    } = e, n = (0, p.Ay)(t);
+    } = e, n = (0, h.Ay)(t);
     return (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)("div", {
-            className: s()(x.nM, x.Dl),
+            className: s()(_.nM, _.Dl),
             children: (0, r.jsx)("span", {
-                className: s()(x.cN, x.NT),
+                className: s()(_.cN, _.NT),
                 children: n
             })
         }), (0, r.jsx)(C, {
@@ -132,8 +132,8 @@ function I(e) {
     let {
         channel: t,
         children: n
-    } = e, i = (0, p.Ay)(t), s = l.useMemo(() => (0, r.jsx)("div", {
-        className: x.A_,
+    } = e, i = (0, h.Ay)(t), s = l.useMemo(() => (0, r.jsx)("div", {
+        className: _.A_,
         children: (0, r.jsx)(S, {
             channel: t
         })

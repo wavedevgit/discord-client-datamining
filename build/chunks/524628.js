@@ -31,7 +31,7 @@ function u(e) {
             })
         }), Array.from({
             length: n
-        }).map((e, t) => (0, r.jsx)(h, {}, t))]
+        }).map((e, t) => (0, r.jsx)(p, {}, t))]
     })
 }
 
@@ -44,7 +44,7 @@ function d(e) {
     })
 }
 
-function h() {
+function p() {
     let e = (0, a.bG)([o.A], () => o.A.useReducedMotion);
     return (0, r.jsxs)("div", {
         style: {

@@ -11,8 +11,8 @@ var r = n(627968),
     c = n(509963),
     u = n(704761),
     d = n(531260),
-    h = n(793943),
-    p = n(411976),
+    p = n(793943),
+    h = n(411976),
     g = n(912309),
     f = n(400492),
     m = n(728321),
@@ -20,9 +20,9 @@ var r = n(627968),
     A = n(287809),
     y = n(816733),
     O = n(619921),
-    _ = n(194871),
-    j = n(966846),
-    x = n(674378),
+    j = n(194871),
+    x = n(966846),
+    _ = n(674378),
     v = n(87941),
     E = n(941971),
     C = n(900848),
@@ -51,11 +51,11 @@ function L(e) {
     let {
         selected: s,
         user: d,
-        badge: p,
+        badge: h,
         link: g,
         showProgressBadge: b
-    } = e, [A, y] = l.useState(!1), [O, _] = l.useState(!1), [j, x] = l.useState(null), [v, T] = l.useState(0), L = (0, i.Vd)("home"), M = (0, h.fy)().activePanel === h.HP.APP_ICON, G = () => {
-        x(null), T(0), clearTimeout(j)
+    } = e, [A, y] = l.useState(!1), [O, j] = l.useState(!1), [x, _] = l.useState(null), [v, T] = l.useState(0), L = (0, i.Vd)("home"), M = (0, p.fy)().activePanel === p.HP.APP_ICON, G = () => {
+        _(null), T(0), clearTimeout(x)
     };
     if (null == d) return null;
     let k = w.intl.string(w.t.YUU0RF);
@@ -68,10 +68,10 @@ function L(e) {
     let V = s || A || M,
         B = (0, r.jsx)(o.Qk9, {
             selected: !0,
-            lowerBadge: p > 0 ? (0, I.wN)(p) : null,
+            lowerBadge: h > 0 ? (0, I.wN)(h) : null,
             upperBadge: U,
             lowerBadgeSize: {
-                width: (0, o.o6S)(p)
+                width: (0, o.o6S)(h)
             },
             children: (0, r.jsx)(o.jlP, (t = function(e) {
                 for (var t = 1; t < arguments.length; t++) {
@@ -94,11 +94,11 @@ function L(e) {
                 onMouseEnter: () => y(!0),
                 onMouseLeave: () => y(!1),
                 onClick: () => {
-                    if (!__OVERLAY__ && (null != j && clearTimeout(j), x(setTimeout(G, 500)), T(v + 1), 15 === v)) {
+                    if (!__OVERLAY__ && (null != x && clearTimeout(x), _(setTimeout(G, 500)), T(v + 1), 15 === v)) {
                         G();
                         let e = !a.w.get(N.wqg);
-                        a.w.set(N.wqg, e), e && a.w.set(P.L, !0), e ? (0, f.Ak)("discodo") : (0, f.Ak)("user_leave"), _(!0), setTimeout(() => {
-                            _(!1)
+                        a.w.set(N.wqg, e), e && a.w.set(P.L, !0), e ? (0, f.Ak)("discodo") : (0, f.Ak)("user_leave"), j(!0), setTimeout(() => {
+                            j(!1)
                         }, 1e3)
                     }
                 },
@@ -153,13 +153,13 @@ function L(e) {
 
 function M() {
     let e = (0, v.q)(),
-        t = (0, s.bG)([j.A, _.A], () => {
-            let e = (0, c.v)(j.A.activeItems, _.A),
+        t = (0, s.bG)([x.A, j.A], () => {
+            let e = (0, c.v)(x.A.activeItems, j.A),
                 {
                     total: t,
                     progress: n
-                } = x.zY(e),
-                r = x.uA(n, t);
+                } = _.zY(e),
+                r = _.uA(n, t);
             return r > 0 && r < 100
         }),
         n = (0, g.kX)(),
@@ -173,14 +173,14 @@ function M() {
             unviewedDiscountCount: y.A.getUnacknowledgedDiscountOffers().length
         })),
         u = i.fractionalState === T.xc.NONE ? a + o : 0,
-        h = (0, s.bG)([A.default], () => A.default.getCurrentUser()),
-        f = (0, p.W)(),
+        p = (0, s.bG)([A.default], () => A.default.getCurrentUser()),
+        f = (0, h.W)(),
         m = n + u + f,
         E = m === u && u > 0 && n + f === 0,
         C = O.A.getHomeLink();
     return E && (C = N.BVt.APPLICATION_STORE), (0, r.jsx)(L, {
         selected: e,
-        user: h,
+        user: p,
         selectedChannelId: b.A.getChannelId(N.ME),
         badge: m,
         link: C,

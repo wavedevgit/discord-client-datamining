@@ -108,7 +108,7 @@ function L(e) {
         applicationId: t,
         branchId: n,
         flags: r
-    } = e, i = (0, d.gW)(t, n), a = F(t, n);
+    } = e, i = (0, d.gW)(t, n), a = V(t, n);
     null != a && !a.isHidden() && o.Lt(r, p.hM6.HIDDEN) && (T = !0), A.add(i)
 }
 
@@ -149,19 +149,19 @@ function U() {
 }
 
 function G(e) {
-    let t = V();
+    let t = F();
     return Object.keys(t).forEach(n => {
         e(t[n]) || delete t[n]
     }), t
 }
 
-function F(e, t) {
+function V(e, t) {
     var n;
     let r = (0, d.gW)(e, t);
     return null != (n = O[r]) ? n : v[r]
 }
 
-function V() {
+function F() {
     return h({}, v, O)
 }
 class B extends(r = s.Ay.Store) {
@@ -174,19 +174,19 @@ class B extends(r = s.Ay.Store) {
         return G(e => !e.isHidden())
     }
     getAllLibraryApplications() {
-        return V()
+        return F()
     }
     hasLibraryApplication() {
-        return Object.keys(V()).length > 0
+        return Object.keys(F()).length > 0
     }
     hasApplication(e, t) {
         let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
-            r = F(e, t);
+            r = V(e, t);
         return !(null == r || !n && r.isHidden()) && (0, d.XZ)(r)
     }
     getLibraryApplication(e, t) {
         let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
-            r = F(e, t);
+            r = V(e, t);
         return n && null != r ? (0, d.XZ)(r) ? r : null : r
     }
     getActiveLibraryApplication(e) {
@@ -198,7 +198,7 @@ class B extends(r = s.Ay.Store) {
                 a = null != (r = O[i]) ? r : v[i];
             if (null != a && (0, d.XZ)(a) && (t || !a.isHidden())) return a
         }
-        let i = V();
+        let i = F();
         for (let n in i)
             if (i[n].id === e) {
                 let e = i[n];
@@ -215,7 +215,7 @@ class B extends(r = s.Ay.Store) {
         return b
     }
     get entitledBranchIds() {
-        return a()(V()).values().filter(e => (0, d.XZ)(e)).map(e => e.branchId).value()
+        return a()(F()).values().filter(e => (0, d.XZ)(e)).map(e => e.branchId).value()
     }
     get hasRemovedLibraryApplicationThisSession() {
         return T

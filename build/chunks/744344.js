@@ -1,27 +1,27 @@
-/** chunk id: 744344, original params: e,t,i (module,exports,require) **/
-i.d(t, {
-    r: () => c
+/** chunk id: 744344, original params: t,e,i (module,exports,require) **/
+i.d(e, {
+    r: () => A
 }), i(228524);
 var n = i(311907),
     l = i(684013),
     s = i(592598),
     r = i(419954),
-    a = i(780964),
-    u = i(790076),
+    u = i(780964),
+    a = i(790076),
     o = i(985018);
-let d = (0, u.ze)(!0);
+let d = (0, a.ze)(!0);
 
-function T(e) {
-    return (0, r.zD)(e.key, {
-        useTitle: () => o.intl.string(e.title),
-        useSubtitle: () => o.intl.string(e.description),
-        useValue: () => !(0, n.bG)([s.A], () => s.A.getDisabledNotifications().has(e.disabledSetting)),
-        setValue: t => {
-            l.A.setNotificationDisabledSetting(e.disabledSetting, !t)
+function T(t) {
+    return (0, r.zD)(t.key, {
+        useTitle: () => o.intl.string(t.title),
+        useSubtitle: () => o.intl.string(t.description),
+        useValue: () => !(0, n.bG)([s.A], () => s.A.getDisabledNotifications().has(t.disabledSetting)),
+        setValue: e => {
+            l.A.setNotificationDisabledSetting(t.disabledSetting, !e)
         },
-        usePredicate: e.usePredicate
+        usePredicate: t.usePredicate
     })
 }
-let c = (0, r.FW)(a.X.OVERLAY_NOTIFICATIONS_LIST, {
+let A = (0, r.FW)(u.X.OVERLAY_NOTIFICATIONS_LIST, {
     buildLayout: () => d.map(T)
 })

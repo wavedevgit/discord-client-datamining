@@ -1,5 +1,5 @@
-/** chunk id: 553777, original params: e,n,t (module,exports,require) **/
+/** chunk id: 553777, original params: e,t,n (module,exports,require) **/
 e.exports = {
-    k: "container__50c27",
-    p: "list__50c27"
+    kL: "container__50c27",
+    Qs: "content__50c27"
 }

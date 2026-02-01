@@ -2,7 +2,7 @@
 "use strict";
 let r;
 n.d(t, {
-    A: () => F
+    A: () => V
 }), n(65821), n(896048);
 var i, a = n(311907),
     o = n(73153),
@@ -292,7 +292,7 @@ class G extends(i = a.Ay.Store) {
     }
 }
 c(G, "displayName", "SocialLayerStorefrontStore");
-let F = new G(o.h, {
+let V = new G(o.h, {
     LOGOUT: b,
     POST_CONNECTION_OPEN: N,
     ENTITLEMENT_CREATE: S,

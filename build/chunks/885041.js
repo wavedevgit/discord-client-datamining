@@ -14,8 +14,8 @@ var r = n(627968),
     p = n(686956),
     h = n(956793),
     g = n(271866),
-    f = n(18422),
-    m = n(159084),
+    m = n(18422),
+    f = n(159084),
     A = n(775602),
     _ = n(502229),
     b = n(836753),
@@ -51,8 +51,8 @@ var r = n(627968),
     Q = n(142120),
     X = n(507263),
     Z = n(998345),
-    $ = n(435875),
-    J = n(707592),
+    J = n(435875),
+    $ = n(707592),
     ee = n(997509),
     et = n(268313),
     en = n(998654),
@@ -68,8 +68,8 @@ var r = n(627968),
     ep = n(950067),
     eh = n(682492),
     eg = n(584257),
-    ef = n(64585),
-    em = n(281913),
+    em = n(64585),
+    ef = n(281913),
     eA = n(334116),
     e_ = n(194970),
     eb = n(414967),
@@ -105,8 +105,8 @@ var r = n(627968),
     eQ = n(734057),
     eX = n(650048),
     eZ = n(71393),
-    e$ = n(186111),
-    eJ = n(189081),
+    eJ = n(186111),
+    e$ = n(189081),
     e0 = n(309010),
     e1 = n(967198),
     e6 = n(147964),
@@ -115,8 +115,8 @@ var r = n(627968),
     e5 = n(856588),
     e8 = n(612181),
     e2 = n(723702),
-    e3 = n(837921),
-    e4 = n(715671),
+    e4 = n(837921),
+    e3 = n(715671),
     te = n(652215),
     tt = n(746080),
     tn = n(771016),
@@ -145,11 +145,11 @@ function tl(e) {
 }
 n(115036), n(943577), n(131319), n(794383), n(845618), n(712687), n(328968), n(67480), n(874486), n(162605), n(2866), n(628965), n(836602), n(833336), n(555337), n(863036), n(291731), n(176360), n(972937), n(279061), n(750128), n(921955);
 let ta = !1;
-(0, C.as)(), s.Ay.initialize(), eT.A.loadServer(), e2.isPlatformEmbedded && (e3.Ay.on("USER_SETTINGS_OPEN", (e, t) => {
-    e$.A.getLayers().includes(te.zgK.USER_SETTINGS) || (0, eY.openUserSettings)()
-}), e3.Ay.on("LAUNCH_APPLICATION", (e, t) => {
-    let n = eJ.A.getActiveLibraryApplication(t);
-    e4.playApplication(t, n, {
+(0, C.as)(), s.Ay.initialize(), eT.A.loadServer(), e2.isPlatformEmbedded && (e4.Ay.on("USER_SETTINGS_OPEN", (e, t) => {
+    eJ.A.getLayers().includes(te.zgK.USER_SETTINGS) || (0, eY.openUserSettings)()
+}), e4.Ay.on("LAUNCH_APPLICATION", (e, t) => {
+    let n = e$.A.getActiveLibraryApplication(t);
+    e3.playApplication(t, n, {
         analyticsParams: {
             location: {
                 page: te.liQ.DIRECT,
@@ -158,7 +158,7 @@ let ta = !1;
         }
     })
 }));
-let ts = (0, m.z)(e => {
+let ts = (0, f.z)(e => {
         let {
             location: t
         } = e, n = (0, eF.default)(t.pathname);
@@ -167,7 +167,7 @@ let ts = (0, m.z)(e => {
                 match: n,
                 urlOrigin: "deeplink"
             })
-        }), (0, r.jsx)(f.A, {
+        }), (0, r.jsx)(m.A, {
             deepLinkType: tr.XK.USER_SETTINGS,
             path: t.pathname,
             search: t.search,
@@ -186,7 +186,7 @@ let ts = (0, m.z)(e => {
             })
         })
     }),
-    to = (0, m.z)(e => {
+    to = (0, f.z)(e => {
         let {
             location: t
         } = e, i = (0, eh.parsePlaygroundUrl)(t.pathname);
@@ -197,7 +197,7 @@ let ts = (0, m.z)(e => {
             e({
                 match: i
             })
-        }), (0, r.jsx)(f.A, {
+        }), (0, r.jsx)(m.A, {
             deepLinkType: tr.XK.PLAYGROUND,
             path: t.pathname,
             paramsBuilder: function(e, t) {
@@ -227,7 +227,7 @@ let ts = (0, m.z)(e => {
             let {
                 match: e
             } = this.props;
-            null != e && null != e.params.inviteCode && (0, $.q)({
+            null != e && null != e.params.inviteCode && (0, J.q)({
                 code: e.params.inviteCode
             })
         }
@@ -242,7 +242,7 @@ let ts = (0, m.z)(e => {
                 to: te.BVt.DEFAULT_LOGGED_OUT
             });
             if (e) {
-                let e = tf(t);
+                let e = tm(t);
                 return null == e || (e.params.guildId === te.ME || null != eZ.A.getGuild(e.params.guildId)) && null != eQ.A.getChannel(e.params.channelId) ? (0, r.jsx)(a.rd, {
                     to: t
                 }) : (0, r.jsx)(a.rd, {
@@ -252,7 +252,7 @@ let ts = (0, m.z)(e => {
             return null
         }
     }),
-    tu = (0, m.z)((0, T.C)(x.A, null, {
+    tu = (0, f.z)((0, T.C)(x.A, null, {
         passProps: !1
     })),
     td = (0, T.C)(Z.default, null, {
@@ -340,12 +340,12 @@ let tg = [{
             action: i
         } = t.params;
         return e7.A.whenInitialized(() => {
-            eJ.A.whenInitialized(() => {
+            e$.A.whenInitialized(() => {
                 switch (i) {
                     case "launch": {
-                        let e = eJ.A.getActiveLibraryApplication(n);
+                        let e = e$.A.getActiveLibraryApplication(n);
                         if (null == e) return;
-                        e4.playApplication(e.id, e, {
+                        e3.playApplication(e.id, e, {
                             analyticsParams: {
                                 location: {
                                     page: te.liQ.DIRECT,
@@ -359,7 +359,7 @@ let tg = [{
                         e6.A.whenInitialized(() => g.q1(n));
                         break;
                     case "uninstall": {
-                        let e = eJ.A.getActiveLibraryApplication(n);
+                        let e = e$.A.getActiveLibraryApplication(n);
                         if (null == e) return;
                         (0, u.z)(e.id, e.branchId, te.ThZ.URI_SCHEME)
                     }
@@ -474,7 +474,7 @@ let tg = [{
             guildEventId: i
         } = t.params;
         return (0, X.B)(() => {
-            (0, J.uR)({
+            (0, $.uR)({
                 eventId: i
             })
         }), (0, r.jsx)(a.rd, {
@@ -523,7 +523,7 @@ let tg = [{
     }
 }];
 
-function tf(e) {
+function tm(e) {
     for (let {
             path: t,
             isChatRoute: n
@@ -538,7 +538,7 @@ function tf(e) {
     return null
 }
 
-function tm(e) {
+function tf(e) {
     let {
         channelId: t,
         guildId: n,
@@ -552,7 +552,7 @@ function tm(e) {
 }
 class tA extends i.PureComponent {
     componentDidMount() {
-        e3.Ay.setZoomFactor(A.A.zoom), eT.A.init(), j.A.initialize(), e_.A.initialize(), K.A.initialize(), eW.A.initialize(), W.A.initialize(), eO.A.initialize(), U.A.initialize(), es.A.initialize(), _.A.init(), z.A.init(), q.A.init(), ep.A.initialize(), v.A.initialize(), B.A.initialize(), ey.A.initialize(), y.Ay.initialize(), H.Ay.initialize(), eK.A.initialize(), er.Ay.initialize(), eA.A.initialize(), O.A.initialize(), ei.A.init(), w.A.init(), e5.A.init(), E.A.initialize(), ek.A.init(), e9.A.init(), eV.A.init(), eL.A.initialize(), eR.A.initialize(), eG.A.initialize(), eH.A.init(), V.A.initialize(), b.A.initialize(), ej.A.initialize(), ew.A.initialize(), ef.A.initialize(), eg.A.initialize(), em.A.initialize(), L.A.initialize(), R.A.initialize(), Y.A.initialize(), ea.A.initialize(), el.A.init({
+        e4.Ay.setZoomFactor(A.A.zoom), eT.A.init(), j.A.initialize(), e_.A.initialize(), K.A.initialize(), eW.A.initialize(), W.A.initialize(), eO.A.initialize(), U.A.initialize(), es.A.initialize(), _.A.init(), z.A.init(), q.A.init(), ep.A.initialize(), v.A.initialize(), B.A.initialize(), ey.A.initialize(), y.Ay.initialize(), H.Ay.initialize(), eK.A.initialize(), er.Ay.initialize(), eA.A.initialize(), O.A.initialize(), ei.A.init(), w.A.init(), e5.A.init(), E.A.initialize(), ek.A.init(), e9.A.init(), eV.A.init(), eL.A.initialize(), eR.A.initialize(), eG.A.initialize(), eH.A.init(), V.A.initialize(), b.A.initialize(), ej.A.initialize(), ew.A.initialize(), em.A.initialize(), eg.A.initialize(), ef.A.initialize(), L.A.initialize(), R.A.initialize(), Y.A.initialize(), ea.A.initialize(), el.A.init({
             hasModalOpen: o.ueM,
             openModal: () => (0, o.mMO)(async () => {
                 let {
@@ -563,7 +563,7 @@ class tA extends i.PureComponent {
         }), eo.A.initialize(), eI.A.initialize(), eb.A.initialize(), k.A.initialize(), P.A.initialize(), S.A.initialize(), this.rewriterUnlisten = ev.A.addRouteRewriter(this.ensureChannelMatchesGuild), this.historyUnlisten = ev.A.addRouteChangeListener(this.handleHistoryChange)
     }
     componentWillUnmount() {
-        eT.A.terminate(), eW.A.terminate(), eO.A.terminate(), e_.A.terminate(), j.A.terminate(), y.Ay.terminate(), H.Ay.terminate(), eK.A.terminate(), O.A.terminate(), ey.A.terminate(), eA.A.terminate(), eG.A.terminate(), E.A.terminate(), V.A.terminate(), eo.A.terminate(), b.A.terminate(), eI.A.terminate(), ej.A.terminate(), ew.A.terminate(), ef.A.terminate(), eg.A.terminate(), em.A.terminate(), L.A.terminate(), R.A.terminate(), eb.A.terminate(), k.A.terminate(), F.A.terminate(), P.A.terminate(), S.A.terminate(), Y.A.terminate(), ea.A.terminate(), this.historyUnlisten(), this.rewriterUnlisten()
+        eT.A.terminate(), eW.A.terminate(), eO.A.terminate(), e_.A.terminate(), j.A.terminate(), y.Ay.terminate(), H.Ay.terminate(), eK.A.terminate(), O.A.terminate(), ey.A.terminate(), eA.A.terminate(), eG.A.terminate(), E.A.terminate(), V.A.terminate(), eo.A.terminate(), b.A.terminate(), eI.A.terminate(), ej.A.terminate(), ew.A.terminate(), em.A.terminate(), eg.A.terminate(), ef.A.terminate(), L.A.terminate(), R.A.terminate(), eb.A.terminate(), k.A.terminate(), F.A.terminate(), P.A.terminate(), S.A.terminate(), Y.A.terminate(), ea.A.terminate(), this.historyUnlisten(), this.rewriterUnlisten()
     }
     handleHistoryChange(e, t) {
         let {
@@ -576,19 +576,19 @@ class tA extends i.PureComponent {
             null == t || (0, eN.Q)(e) && c.A.startSession(t)
         }(n),
         function(e, t) {
-            let n = tf(e);
+            let n = tm(e);
             if (null == n) return;
             let {
                 guildId: r,
                 channelId: i,
                 messageId: s,
                 threadId: o
-            } = th(n), c = (0, eS.nn)(r), u = (0, eS.ts)(i), d = (0, eS.ts)(o), g = e1.A.getGuildId(), f = g !== r;
-            if (c && f && p.A.selectGuild(r), c && u) {
+            } = th(n), c = (0, eS.nn)(r), u = (0, eS.ts)(i), d = (0, eS.ts)(o), g = e1.A.getGuildId(), m = g !== r;
+            if (c && m && p.A.selectGuild(r), c && u) {
                 let n = e0.A.getChannelId(g),
                     a = n !== i,
                     c = null != ez.Ay.getGuildSidebarState(r);
-                if (!ta || f || a || null != s) {
+                if (!ta || m || a || null != s) {
                     ta = !0, h.default.selectChannel({
                         guildId: r,
                         channelId: i,
@@ -619,11 +619,11 @@ class tA extends i.PureComponent {
                 } else null == i || a || ex.A.closeChannelSidebar(i);
                 let u = eu.A.getIsOpen();
                 if (i === tt.VV.ROLE_SUBSCRIPTIONS) ec.A.closeSidebar();
-                else if (f && u) {
+                else if (m && u) {
                     let t = null == g && r === te.ME,
                         n = e === te.BVt.GUILD_DISCOVERY;
                     t || n ? ec.A.closeSidebar() : ec.A.openSidebar()
-                } else(a && u || !f && !a) && ec.A.closeSidebar()
+                } else(a && u || !m && !a) && ec.A.closeSidebar()
             } else tp.some(t => {
                 var n;
                 return (null == (n = (0, a.B6)(e, t)) ? void 0 : n.isExact) === !0
@@ -637,7 +637,7 @@ class tA extends i.PureComponent {
         if (!Q.A.isConnected()) return null;
         let {
             pathname: t
-        } = e, n = tf(t);
+        } = e, n = tm(t);
         if (null == n) return null;
         let {
             guildId: r,
@@ -646,7 +646,7 @@ class tA extends i.PureComponent {
         } = th(n), a = (0, eS.nn)(r) && r !== te.ME && r !== te.YYv;
         if (null != i && (0, eS.ts)(i) && !(0, tt.jq)(i) && a) {
             let n = eQ.A.getChannel(i);
-            if (null == n) eM.A.loadThread(i).then(() => tm({
+            if (null == n) eM.A.loadThread(i).then(() => tf({
                 channelId: i,
                 guildId: r,
                 pathname: t
@@ -658,7 +658,7 @@ class tA extends i.PureComponent {
             if (null != l) {
                 if (!((0, eS.ts)(l) && !(0, tt.jq)(i))) return null;
                 let n = eQ.A.getChannel(l);
-                if (null == n) eM.A.loadThread(l).then(() => tm({
+                if (null == n) eM.A.loadThread(l).then(() => tf({
                     channelId: l,
                     guildId: r,
                     pathname: t

@@ -1,6 +1,6 @@
 /** chunk id: 480720, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => h
+    A: () => p
 });
 var r = n(64700),
     l = n(734057),
@@ -12,7 +12,7 @@ var r = n(64700),
     u = n(748975),
     d = n(652215);
 
-function h(e) {
+function p(e) {
     let {
         onTransition: t
     } = e;

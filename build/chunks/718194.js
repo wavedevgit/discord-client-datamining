@@ -1,10 +1,10 @@
-/** chunk id: 718194, original params: t,e,n (module,exports,require) **/
-n.d(e, {
-    YK: () => s
+/** chunk id: 718194, original params: t,i,n (module,exports,require) **/
+n.d(i, {
+    YK: () => a
 });
-var i = n(600975),
+var e = n(600975),
     r = n(652215);
-let l = (0, i.C)({
+let l = (0, e.C)({
         kind: "user",
         id: "2023-11_voice_activity_notification_user",
         label: "Voice Activity Notifications for User",
@@ -25,7 +25,7 @@ let l = (0, i.C)({
             }
         }]
     }),
-    a = (0, i.C)({
+    s = (0, e.C)({
         kind: "guild",
         id: "2023-11_voice_activity_notification_guild",
         label: "General Voice Channel Notifications for Guild",
@@ -41,23 +41,23 @@ let l = (0, i.C)({
         }]
     });
 
-function s(t) {
-    var e;
+function a(t) {
+    var i;
     let {
         voiceChannelActivityNotifsEnabled: n
-    } = a.useExperiment({
+    } = s.useExperiment({
         location: "useVoiceActivityNotificationSettingsExperiment",
-        guildId: null != (e = null == t ? void 0 : t.getGuildId()) ? e : r.dJq
+        guildId: null != (i = null == t ? void 0 : t.getGuildId()) ? i : r.dJq
     }, {
         disable: (null == t ? void 0 : t.type) !== r.rbe.GUILD_VOICE,
         autoTrackExposure: !1
     }), {
-        enabled: i
+        enabled: e
     } = l.useExperiment({
         location: "useVoiceActivityNotificationSettingsExperiment"
     }, {
         disable: (null == t ? void 0 : t.type) !== r.rbe.GUILD_VOICE || !n,
         autoTrackExposure: !0
     });
-    return (null == t ? void 0 : t.type) === r.rbe.GUILD_VOICE && n && i
+    return (null == t ? void 0 : t.type) === r.rbe.GUILD_VOICE && n && e
 }

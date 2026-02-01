@@ -40,8 +40,8 @@ var r = n(627968),
     k = n(520650),
     U = n(985018),
     G = n(152290);
-let F = 0,
-    V = 5e3;
+let V = 0,
+    F = 5e3;
 
 function B(e) {
     let [t, n] = i.useState(0), [r, a] = i.useState(!1), o = i.useRef(e);
@@ -158,7 +158,7 @@ function q(e) {
                 type: "text",
                 value: l,
                 onChange: e => u(e.target.value),
-                placeholder: "".concat(F, "\xb0"),
+                placeholder: "".concat(V, "\xb0"),
                 className: G.A9
             })]
         }), (0, r.jsxs)("div", {
@@ -257,7 +257,7 @@ function Q(e) {
     i.useEffect(() => {
         if (t) return s.current = !1, p.current = setTimeout(() => {
             s.current || o(!0)
-        }, V), () => {
+        }, F), () => {
             null != p.current && clearTimeout(p.current)
         }
     }, [t]);
@@ -407,18 +407,18 @@ function ee(e) {
         setColors: C,
         setChassisMixAmount: D,
         setGradientAngle: x
-    } = (0, T.ko)(), [j, F] = i.useState(null != (t = A[0]) ? t : T.OT), V = (0, s.bG)([v.A], () => v.A.theme), B = (0, E.JZ)(l.M.CUSTOM_THEME_ENTRYPOINT_GRADIENT), {
+    } = (0, T.ko)(), [j, V] = i.useState(null != (t = A[0]) ? t : T.OT), F = (0, s.bG)([v.A], () => v.A.theme), B = (0, E.JZ)(l.M.CUSTOM_THEME_ENTRYPOINT_GRADIENT), {
         analyticsLocations: H
     } = (0, m.Ay)(h.A.CUSTOM_THEMES_EDITOR), Y = (0, s.bG)([w.A], () => w.A.getSavedCustomTheme()), K = async () => {
         b.current = !0, await (0, p.u_)({
-            theme: V,
+            theme: F,
             customUserThemeSettings: {
                 colors: A,
                 gradientColorStops: [],
                 gradientAngle: S,
                 baseMix: I
             }
-        }), (0, R.Yl)(A, I, S, V, H), null == a || a(M.i.TAKE_ACTION), B || (0, E.Dr)(l.M.CUSTOM_THEME_ENTRYPOINT_GRADIENT), (0, g.Jp)(), (0, O.XG)()
+        }), (0, R.Yl)(A, I, S, F, H), null == a || a(M.i.TAKE_ACTION), B || (0, E.Dr)(l.M.CUSTOM_THEME_ENTRYPOINT_GRADIENT), (0, g.Jp)(), (0, O.XG)()
     }, z = () => {
         u(N.JB.RESET_BUTTON), (0, R.G_)()
     }, X = A.length > 0;
@@ -459,7 +459,7 @@ function ee(e) {
                         children: U.intl.string(k.default.uSL2Gy)
                     }), (0, r.jsx)(P.e, {
                         onChange: e => {
-                            F(e), 0 === A.length && (0, N.$Y)(A, e, C)
+                            V(e), 0 === A.length && (0, N.$Y)(A, e, C)
                         },
                         value: j,
                         colors: A,

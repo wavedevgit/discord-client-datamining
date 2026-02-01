@@ -1,6 +1,6 @@
 /** chunk id: 738876, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => _
+    A: () => j
 }), n(896048);
 var r = n(627968),
     l = n(64700),
@@ -11,8 +11,8 @@ var r = n(627968),
     c = n(31717),
     u = n(834942),
     d = n(186111),
-    h = n(576705),
-    p = n(994500),
+    p = n(576705),
+    h = n(994500),
     g = n(287809),
     f = n(203982),
     m = n(518960),
@@ -20,14 +20,14 @@ var r = n(627968),
     A = n(698638),
     y = n(652215),
     O = n(985018);
-let _ = function(e) {
+let j = function(e) {
     let {
         className: t,
         style: n,
-        channel: _,
-        draftType: j
-    } = e, [x, v] = l.useState(!0), E = (0, i.bG)([d.A], () => d.A.hasLayers()), C = (0, i.bG)([h.A], () => null != _ && h.A.can(y.xBc.ATTACH_FILES, _), [_]), S = null != (0, i.bG)([a.A], () => a.A.getActiveCommand(_.id)), I = _.getGuildId(), N = j === c.C.FirstThreadMessage, T = (0, s.vL)(_), P = l.useMemo(() => !E && (_.isPrivate() && !_.isManaged() || null != I && !T && C && u.A.canChatInGuild(I)), [C, T, _, I, E]), w = N ? y.kvI.GUILD_THREADS_ONLY.has(_.type) ? O.intl.string(O.t.RBBLhL) : O.intl.string(O.t.gUx4eu) : x ? O.intl.format(O.t.dYP2Fc, {
-        destination: (0, o.m1)(_, g.default, p.A, !0)
+        channel: j,
+        draftType: x
+    } = e, [_, v] = l.useState(!0), E = (0, i.bG)([d.A], () => d.A.hasLayers()), C = (0, i.bG)([p.A], () => null != j && p.A.can(y.xBc.ATTACH_FILES, j), [j]), S = null != (0, i.bG)([a.A], () => a.A.getActiveCommand(j.id)), I = j.getGuildId(), N = x === c.C.FirstThreadMessage, T = (0, s.vL)(j), P = l.useMemo(() => !E && (j.isPrivate() && !j.isManaged() || null != I && !T && C && u.A.canChatInGuild(I)), [C, T, j, I, E]), w = N ? y.kvI.GUILD_THREADS_ONLY.has(j.type) ? O.intl.string(O.t.RBBLhL) : O.intl.string(O.t.gUx4eu) : _ ? O.intl.format(O.t.dYP2Fc, {
+        destination: (0, o.m1)(j, g.default, h.A, !0)
     }) : O.intl.string(O.t.h76ulG);
     return S || !P ? null : (0, r.jsx)(b.A, {
         className: t,
@@ -37,15 +37,15 @@ let _ = function(e) {
         icons: A.ir,
         onDrop: e => {
             if (S) return !1;
-            P && null != _ && ((0, m.R)(e, _, j, {
-                requireConfirm: x,
+            P && null != j && ((0, m.R)(e, j, x, {
+                requireConfirm: _,
                 origin: "drag_drop"
             }), f._.dispatchToLastSubscribed(y.jej.TEXTAREA_FOCUS))
         },
         onDragClear: () => v(!0),
         onDragOver: e => {
             if (S) return !1;
-            N || e.shiftKey !== x || v(!e.shiftKey)
+            N || e.shiftKey !== _ || v(!e.shiftKey)
         }
     })
 }

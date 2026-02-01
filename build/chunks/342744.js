@@ -30,7 +30,7 @@ async function O(e, t, n, r) {
     }, (0, b.UC)(i, e.currency, e.paymentSourceId), r)
 }
 
-function C(e) {
+function x(e) {
     let {
         errorMsg: t
     } = e;
@@ -48,7 +48,7 @@ function C(e) {
     })
 }
 
-function x() {
+function C() {
     return (0, r.jsxs)("div", {
         className: E.rf,
         children: [(0, r.jsx)("div", {
@@ -72,16 +72,16 @@ function S(e) {
     }, []);
     let E = (0, o.bG)([f.A], () => f.A.getPremiumTypeSubscription()),
         [S, T] = i.useState(1),
-        [I, y] = i.useState(!1),
-        [N, j] = i.useState(null),
+        [I, N] = i.useState(!1),
+        [y, j] = i.useState(null),
         v = i.useCallback(async () => {
             if (null != E) try {
-                y(!0), j(null);
+                N(!0), j(null);
                 let e = (0, A.v)(E, 1);
                 s()((0, b.bx)(e) <= (0, b.bx)(E.additionalPlans), "Uncanceling should not increase the number of guild subscriptions"), await O(E, e, t, u), T(2)
             } catch (t) {
                 let e = t instanceof _.Ey ? t : new _.Ey(t, t.code);
-                j(h.intl.string(e.code === p.tG.BILLING_PAUSE_INVALID_UPDATE ? h.t.dq4vq7 : h.t["5mlOCW"])), y(!1)
+                j(h.intl.string(e.code === p.tG.BILLING_PAUSE_INVALID_UPDATE ? h.t.dq4vq7 : h.t["5mlOCW"])), N(!1)
             }
         }, [E, t, u]);
     return (0, r.jsx)(g.f5, {
@@ -128,11 +128,11 @@ function S(e) {
                 if (null == E) return (0, r.jsx)(c.y$y, {});
                 switch (S) {
                     case 1:
-                        return (0, r.jsx)(C, {
-                            errorMsg: N
+                        return (0, r.jsx)(x, {
+                            errorMsg: y
                         });
                     case 2:
-                        return (0, r.jsx)(x, {});
+                        return (0, r.jsx)(C, {});
                     default:
                         throw Error("Unexpected step: ".concat(S))
                 }

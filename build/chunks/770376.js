@@ -1,27 +1,27 @@
-/** chunk id: 770376, original params: e,t,r (module,exports,require) **/
-r.d(t, {
+/** chunk id: 770376, original params: e,t,n (module,exports,require) **/
+n.d(t, {
     A: () => u,
-    f: () => a
+    f: () => c
 });
-var n = r(554146),
-    o = r(506774),
-    c = r(367727),
-    i = r(927813),
-    l = r(49999);
-let s = "doNotShowReorderModal";
+var r = n(554146),
+    l = n(506774),
+    i = n(367727),
+    s = n(927813),
+    a = n(49999);
+let o = "doNotShowReorderModal";
 
-function a() {
-    (0, c.uh)(n.M.CHANNEL_REORDER_MODAL_DISMISS_SETTING, {
-        dismissAction: l.i.USER_DISMISS
+function c() {
+    (0, i.uh)(r.M.CHANNEL_REORDER_MODAL_DISMISS_SETTING, {
+        dismissAction: a.i.USER_DISMISS
     })
 }
 
 function u() {
-    null != o.w.get(s) && o.w.remove(s);
+    null != l.w.get(o) && l.w.remove(o);
     let {
         isDismissed: e
-    } = (0, c.FZ)(n.M.CHANNEL_REORDER_MODAL_DISMISS_SETTING, {
-        cooldownDurationMs: i.A.Millis.WEEK
+    } = (0, i.FZ)(r.M.CHANNEL_REORDER_MODAL_DISMISS_SETTING, {
+        cooldownDurationMs: s.A.Millis.WEEK
     });
     return !e
 }

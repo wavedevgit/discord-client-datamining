@@ -21,13 +21,13 @@ var r = n(627968),
     h = n(50268),
     E = n(922301),
     O = n(81400),
-    C = n(557722),
-    x = n(951122),
+    x = n(557722),
+    C = n(951122),
     S = n(772786),
     T = n(207560),
     I = n(195043),
-    y = n(790114),
-    N = n(836602),
+    N = n(790114),
+    y = n(836602),
     j = n(262),
     v = n(950191),
     P = n(854627),
@@ -94,13 +94,13 @@ function ee(e) {
     let {
         className: a,
         user: o
-    } = e, c = i.useRef(null), p = (0, x.Jz)(), m = (0, S.g)(), g = (0, O.EC)(), A = null != (t = null == g || null == (l = g.nick) ? void 0 : l[0]) ? t : null, [f, b] = i.useState(!1);
+    } = e, c = i.useRef(null), p = (0, C.Jz)(), m = (0, S.g)(), g = (0, O.EC)(), A = null != (t = null == g || null == (l = g.nick) ? void 0 : l[0]) ? t : null, [f, b] = i.useState(!1);
     i.useEffect(() => {
         b(null != c.current && c.current.scrollWidth > c.current.clientWidth)
     }, [o.username]);
     let h = !o.isClaimed(),
         E = p && !o.hasUniqueUsername() && !o.hasVerifiedEmailOrPhone() || h,
-        C = E ? Z.intl.string(Z.t["7Ngnyr"]) : void 0;
+        x = E ? Z.intl.string(Z.t["7Ngnyr"]) : void 0;
     return (0, r.jsxs)("div", {
         className: s()(X.ZZ, a),
         children: [(0, r.jsx)("div", {
@@ -151,7 +151,7 @@ function ee(e) {
                 })
             })
         }), (0, r.jsx)(u.m, {
-            text: C,
+            text: x,
             children: (0, r.jsx)("div", {
                 "data-button-hoisted-classname-wrapper": !0,
                 className: X.pr,
@@ -379,7 +379,7 @@ function ei(e) {
                             title: Z.intl.string(Z.t["3CTiKi"]),
                             children: l.hasFlag(W.nhx.MFA_SMS) ? Z.intl.string(Z.t.jrhJyo) : void 0,
                             actionText: Z.intl.string(Z.t.N86XcP),
-                            handleSubmit: e => C.A.removePhone(e, C.d.USER_SETTINGS_UPDATE)
+                            handleSubmit: e => x.A.removePhone(e, x.d.USER_SETTINGS_UPDATE)
                         })))
                     }
                 })
@@ -397,7 +397,7 @@ function ei(e) {
                                 default: e
                             } = await Promise.resolve().then(n.bind(n, 615715));
                             return t => (0, r.jsx)(e, q({
-                                reason: C.d.USER_SETTINGS_UPDATE
+                                reason: x.d.USER_SETTINGS_UPDATE
                             }, t))
                         }, {
                             modalKey: K.V
@@ -491,7 +491,7 @@ function ea() {
         n = (0, v.Ay)(t.id),
         i = (0, j.A)(n),
         l = B.jP.useSetting(),
-        s = (0, c.bG)([N.A], () => N.A.getErrors()),
+        s = (0, c.bG)([y.A], () => y.A.getErrors()),
         a = null == s || null == (e = s.avatar) ? void 0 : e[0],
         {
             avatarSrc: d,
@@ -500,7 +500,7 @@ function ea() {
             userId: null == t ? void 0 : t.id,
             size: _._3J.SIZE_80
         }),
-        m = (0, y.A)(),
+        m = (0, N.A)(),
         g = (0, T.fk)(),
         A = (0, k.j)("UserSettingsAccountProfileCard");
     return (0, r.jsxs)("div", {

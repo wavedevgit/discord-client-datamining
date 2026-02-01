@@ -14,8 +14,8 @@ var r = n(627968),
     p = n(71393),
     h = n(287809),
     g = n(661191),
-    f = n(652215),
-    m = n(985018),
+    m = n(652215),
+    f = n(985018),
     A = n(310633);
 
 function _(e) {
@@ -110,21 +110,21 @@ function _(e) {
                     let e = (() => {
                         switch (n.data.kind) {
                             case "message":
-                                if (n.channelType === f.rbe.GUILD_ANNOUNCEMENT) return m.intl.string(m.t["8P08G9"]);
-                                return m.intl.string(m.t.hMFMY9);
+                                if (n.channelType === m.rbe.GUILD_ANNOUNCEMENT) return f.intl.string(f.t["8P08G9"]);
+                                return f.intl.string(f.t.hMFMY9);
                             case "generatedCandidate":
-                                return m.intl.string(m.t.ljgIO9);
+                                return f.intl.string(f.t.ljgIO9);
                             case "guildEvent":
-                                return m.intl.string(m.t["6pFsLQ"]);
+                                return f.intl.string(f.t["6pFsLQ"]);
                             case "forumThread":
-                                return m.intl.string(m.t.bYNuVx);
+                                return f.intl.string(f.t.bYNuVx);
                             case "contentInventory":
                                 switch (n.data.content.content_type) {
                                     case l.ContentInventoryEntryType.CUSTOM_STATUS:
-                                        return m.intl.string(m.t.fxOLPR);
+                                        return f.intl.string(f.t.fxOLPR);
                                     case l.ContentInventoryEntryType.TOP_GAME:
                                     case l.ContentInventoryEntryType.PLAYED_GAME:
-                                        return m.intl.string(m.t.ktOTRQ);
+                                        return f.intl.string(f.t.ktOTRQ);
                                     default:
                                         return "".concat(n.data.content.content_type)
                                 }
@@ -148,7 +148,7 @@ function _(e) {
                                 children: e
                             }), (0, r.jsx)("span", {
                                 className: A.o4,
-                                children: m.intl.string(m.t.CHUAYk)
+                                children: f.intl.string(f.t.CHUAYk)
                             }), (0, r.jsxs)("span", {
                                 className: A.o4,
                                 children: [null != t && (0, r.jsx)(t, {

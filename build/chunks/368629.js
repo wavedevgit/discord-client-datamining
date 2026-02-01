@@ -1,8 +1,8 @@
 /** chunk id: 368629, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    r: () => l
+    r: () => i
 });
-let i = (0, n(600975).C)({
+let r = (0, n(600975).C)({
     kind: "user",
     id: "2025-07_user_profile_holdout_h2",
     label: "User Profile Holdout H2 Experiment",
@@ -18,16 +18,16 @@ let i = (0, n(600975).C)({
     }]
 });
 
-function l(e) {
+function i(e) {
     let {
         location: t,
         autoTrackExposure: n = !0
     } = e, {
-        isInHoldout: l
-    } = i.useExperiment({
+        isInHoldout: i
+    } = r.useExperiment({
         location: t
     }, {
         autoTrackExposure: n
     });
-    return l
+    return i
 }

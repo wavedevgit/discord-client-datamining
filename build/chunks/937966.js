@@ -1,34 +1,34 @@
-/** chunk id: 937966, original params: e,t,i (module,exports,require) **/
-i.d(t, {
-    _: () => A
+/** chunk id: 937966, original params: t,e,i (module,exports,require) **/
+i.d(e, {
+    _: () => S
 });
 var n = i(311907),
     l = i(290595),
     s = i(171316),
     r = i(419954),
-    a = i(153488),
-    u = i(975571),
+    u = i(153488),
+    a = i(975571),
     o = i(780964),
     d = i(997913),
     T = i(652215),
-    c = i(985018);
-let A = (0, r.zD)(o.X.DATA_USAGE_PERSONALIZATION_SETTING, {
-    useTitle: () => c.intl.string(c.t.MNKzyg),
-    useSubtitle: () => c.intl.format(c.t["eQL/Mr"], {
-        helpdeskArticle: u.A.getArticleURL(T.MVz.DATA_USED_FOR_RECOMMENDED)
+    A = i(985018);
+let S = (0, r.zD)(o.X.DATA_USAGE_PERSONALIZATION_SETTING, {
+    useTitle: () => A.intl.string(A.t.MNKzyg),
+    useSubtitle: () => A.intl.format(A.t["eQL/Mr"], {
+        helpdeskArticle: a.A.getArticleURL(T.MVz.DATA_USED_FOR_RECOMMENDED)
     }),
     useValue: function() {
-        return (0, n.bG)([a.A], () => a.A.hasConsented(T.YAq.PERSONALIZATION))
+        return (0, n.bG)([u.A], () => u.A.hasConsented(T.YAq.PERSONALIZATION))
     },
-    setValue: function(e) {
-        e ? (0, l.U)([T.YAq.PERSONALIZATION], []).catch(d.i) : (0, d.O)({
-            header: c.intl.string(c.t["9SNpzv"]),
-            confirmText: c.intl.string(c.t["9g5UGw"]),
-            cancelText: c.intl.string(c.t["+ZLPw9"]),
+    setValue: function(t) {
+        t ? (0, l.U)([T.YAq.PERSONALIZATION], []).catch(d.i) : (0, d.O)({
+            header: A.intl.string(A.t["9SNpzv"]),
+            confirmText: A.intl.string(A.t["9g5UGw"]),
+            cancelText: A.intl.string(A.t["+ZLPw9"]),
             onConfirm: () => {
                 (0, l.U)([], [T.YAq.PERSONALIZATION]).catch(d.i)
             },
-            body: c.intl.string(c.t.gJvDDh)
+            body: A.intl.string(A.t.gJvDDh)
         })
     },
     useDisabled: s.uM

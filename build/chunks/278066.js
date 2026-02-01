@@ -22,7 +22,7 @@ function h(e, t, n) {
     }) : e[t] = n, e
 }
 var g = ((r = {}).SECTION_NO_RESULTS = "SECTION_NO_RESULTS", r);
-let f = Object.freeze({
+let m = Object.freeze({
         SECTION_ALL: {
             lightSrc: n(445451),
             darkSrc: n(642269),
@@ -96,7 +96,7 @@ let f = Object.freeze({
             })
         }
     }),
-    m = e => {
+    f = e => {
         let {
             theme: t
         } = e, n = d.intl.string(d.t["oi+B4p"]);
@@ -119,15 +119,15 @@ class A extends l.PureComponent {
             switch (e) {
                 case u.m3P.ADD_FRIEND:
                 case u.m3P.ALL:
-                    return f.SECTION_ALL;
+                    return m.SECTION_ALL;
                 case u.m3P.ONLINE:
-                    return f.SECTION_ONLINE;
+                    return m.SECTION_ONLINE;
                 case u.m3P.PENDING:
-                    return f.SECTION_PENDING;
+                    return m.SECTION_PENDING;
                 case u.m3P.SUGGESTIONS:
-                    return f.SECTION_SUGGESTIONS;
+                    return m.SECTION_SUGGESTIONS;
                 case "SECTION_NO_RESULTS":
-                    return f.SECTION_NO_RESULTS;
+                    return m.SECTION_NO_RESULTS;
                 default:
                     throw Error("FriendsEmptyState: Invalid empty state")
             }
@@ -135,7 +135,7 @@ class A extends l.PureComponent {
         return e === u.m3P.ADD_FRIEND ? (0, i.jsx)(a.A.div, {
             className: p.VD,
             style: r,
-            children: (0, i.jsx)(m, {
+            children: (0, i.jsx)(f, {
                 theme: n
             })
         }) : (0, i.jsx)(a.A.div, {

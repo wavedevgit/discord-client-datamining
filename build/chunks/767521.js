@@ -1,6 +1,6 @@
 /** chunk id: 767521, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => f
+    A: () => m
 });
 var r = n(627968),
     i = n(64700),
@@ -14,29 +14,29 @@ var r = n(627968),
     p = n(652215),
     h = n(985018),
     g = n(882773);
-let f = function() {
+let m = function() {
     let {
         analyticsLocations: e
     } = (0, c.Ay)(), t = (0, l.bG)([d.A], () => d.A.theme), n = i.useRef(null);
     i.useEffect(() => {
         null == n.current && (n.current = t)
     }, [t]);
-    let f = (0, s.rdh)(a.A.colors.BACKGROUND_BASE_LOW, p.NJ8.LIGHT),
-        m = (0, s.rdh)(a.A.colors.BACKGROUND_BASE_LOW, p.NJ8.DARKER),
+    let m = (0, s.rdh)(a.A.colors.BACKGROUND_BASE_LOW, p.NJ8.LIGHT),
+        f = (0, s.rdh)(a.A.colors.BACKGROUND_BASE_LOW, p.NJ8.DARKER),
         A = (0, s.rdh)(a.A.colors.BACKGROUND_BASE_LOW, p.NJ8.MIDNIGHT),
         _ = i.useMemo(() => [{
             theme: p.NJ8.LIGHT,
             label: h.t.K2sFfo,
-            color: f.hex()
+            color: m.hex()
         }, {
             theme: p.NJ8.DARKER,
             label: h.t.b8Cei3,
-            color: m.hex()
+            color: f.hex()
         }, {
             theme: p.NJ8.MIDNIGHT,
             label: h.t.Do4ZJx,
             color: A.hex()
-        }], [f, m, A]),
+        }], [m, f, A]),
         b = i.useCallback(t => {
             (0, u.X8)({
                 isPersisted: !0,

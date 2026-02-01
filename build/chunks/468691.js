@@ -14,8 +14,8 @@ var r = n(627968),
     p = n(186111),
     h = n(742077),
     g = n(268387),
-    f = n(715671),
-    m = n(652215),
+    m = n(715671),
+    f = n(652215),
     A = n(985018),
     _ = n(75755);
 
@@ -96,30 +96,30 @@ class E extends i.Component {
             if (l || e.ctrlKey || e.altKey || e.metaKey || null == o) return;
             let c = null == (t = (0, s.BF)(e)) ? void 0 : t.activeElement;
             if (!(c !== o.current && (0, s.Cw)(c))) switch (e.which) {
-                case m.Ks6.ESCAPE:
+                case f.Ks6.ESCAPE:
                     e.target !== o.current ? this.reset() : null != o.current && (null == (n = o.current) || n.blur());
                     break;
-                case m.Ks6.ENTER:
+                case f.Ks6.ENTER:
                     if (null != i) {
                         e.preventDefault();
                         let t = a.find(e => e.key === i);
                         if (null == t) return;
                         let n = t.libraryApplication;
-                        f.performDefaultLibraryApplicationAction(n, {
+                        m.performDefaultLibraryApplicationAction(n, {
                             analyticsParams: {
-                                source: m.ThZ.APPLICATION_LIBRARY,
+                                source: f.ThZ.APPLICATION_LIBRARY,
                                 location: {
-                                    page: m.liQ.LIBRARY,
-                                    section: m.JJy.LIBRARY_APPLICATION_LIST,
-                                    object: m.ZSU.BUTTON_CTA
+                                    page: f.liQ.LIBRARY,
+                                    section: f.JJy.LIBRARY_APPLICATION_LIST,
+                                    object: f.ZSU.BUTTON_CTA
                                 }
                             }
                         })
                     }
                     break;
-                case m.Ks6.ARROW_DOWN:
-                case m.Ks6.ARROW_UP:
-                    e.preventDefault(), e.stopPropagation(), this.updateActiveRow(e.which === m.Ks6.ARROW_DOWN ? 1 : -1);
+                case f.Ks6.ARROW_DOWN:
+                case f.Ks6.ARROW_UP:
+                    e.preventDefault(), e.stopPropagation(), this.updateActiveRow(e.which === f.Ks6.ARROW_DOWN ? 1 : -1);
                     break;
                 default:
                     null != o.current && e.target !== o.current && (null == (r = o.current) || r.focus())

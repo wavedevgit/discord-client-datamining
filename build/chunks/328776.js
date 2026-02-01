@@ -11,8 +11,8 @@ var r = n(627968),
     c = n(215530),
     u = n(168015),
     d = n(454719),
-    h = n(10635),
-    p = n(318162),
+    p = n(10635),
+    h = n(318162),
     g = n(762561),
     f = n(985018);
 
@@ -38,7 +38,7 @@ function m(e) {
 function b(e) {
     let {
         channel: t
-    } = e, [n] = t.recipients, b = (0, i.bG)([a.default], () => a.default.getUser(n)), A = (0, i.bG)([a.default], () => a.default.getCurrentUser()), y = (0, u.A)(), [O, _] = (0, c.A)(n);
+    } = e, [n] = t.recipients, b = (0, i.bG)([a.default], () => a.default.getUser(n)), A = (0, i.bG)([a.default], () => a.default.getCurrentUser()), y = (0, u.A)(), [O, j] = (0, c.A)(n);
     if (l.useEffect(() => {
             (0, d.A)(null != b ? b : n, {
                 type: "sidebar",
@@ -48,24 +48,24 @@ function b(e) {
                 channelId: t.id
             })
         }, [b, n, t.id]), null == b || null == A || !y) return null;
-    let j = "user-profile-sidebar-heading-".concat(b.id),
-        x = o.Ay.getName(null, t.id, b);
+    let x = "user-profile-sidebar-heading-".concat(b.id),
+        _ = o.Ay.getName(null, t.id, b);
     return (0, r.jsx)("aside", {
-        "aria-labelledby": j,
+        "aria-labelledby": x,
         children: (0, r.jsx)(s.Fmo, {
             component: (0, r.jsx)(s.AC4, {
                 children: (0, r.jsx)(s.H, {
-                    id: j,
+                    id: x,
                     children: f.intl.format(f.t.KRe1Fk, {
-                        name: x
+                        name: _
                     })
                 })
             }),
-            children: O ? (0, r.jsx)(p.A, m({
+            children: O ? (0, r.jsx)(h.A, m({
                 user: b,
                 currentUser: A,
-                onHide: _
-            }, e)) : b.isNonUserBot() ? (0, r.jsx)(h.A, m({
+                onHide: j
+            }, e)) : b.isNonUserBot() ? (0, r.jsx)(p.A, m({
                 user: b,
                 currentUser: A
             }, e)) : (0, r.jsx)(g.A, m({

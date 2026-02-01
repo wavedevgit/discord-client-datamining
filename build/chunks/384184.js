@@ -14,8 +14,8 @@ var r = n(627968),
     p = n(471271),
     h = n(629199),
     g = n(772659),
-    f = n(985018),
-    m = n(360830);
+    m = n(985018),
+    f = n(360830);
 
 function A(e) {
     let {
@@ -23,7 +23,7 @@ function A(e) {
         user: n,
         channel: A
     } = e, _ = (0, d.r)(), b = i.useCallback(() => {
-        (0, a.showToast)((0, a.createToast)(f.intl.string(f.t.pIQ3h4), a.ToastType.FAILURE)), s.A.increment({
+        (0, a.showToast)((0, a.createToast)(m.intl.string(m.t.pIQ3h4), a.ToastType.FAILURE)), s.A.increment({
             name: l.K.SPAM_MESSAGE_REQUEST_ERROR_VIEW
         })
     }, []), E = i.useCallback(() => {
@@ -42,17 +42,17 @@ function A(e) {
         onError: b
     }), C = I || v, N = C || S;
     return (0, r.jsxs)("div", {
-        className: m.kL,
+        className: f.kL,
         children: [(0, r.jsx)(h.A, {
             otherUser: n,
             channel: A,
             active: t
         }), (0, r.jsxs)("div", {
-            className: m.o1,
+            className: f.o1,
             children: [(0, r.jsx)(a.Button, {
                 variant: "secondary",
                 size: "sm",
-                text: f.intl.string(f.t.vicfl6),
+                text: m.intl.string(m.t.vicfl6),
                 onClick: e => {
                     y(A.id), e.stopPropagation()
                 },

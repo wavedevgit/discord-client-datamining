@@ -1,6 +1,6 @@
 /** chunk id: 389405, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => m
+    A: () => f
 }), n(747238), n(896048);
 var r = n(627968),
     i = n(64700),
@@ -14,12 +14,12 @@ var r = n(627968),
     p = n(652215),
     h = n(613057),
     g = n(985018),
-    f = n(742249);
+    m = n(742249);
 
-function m(e) {
+function f(e) {
     let {
         applicationId: t
-    } = e.match.params, [m, A] = i.useState(!1), _ = i.useRef(!1), [b, E] = i.useState(null), O = !u.isPlatformEmbedded && !a.Fr && !m, y = i.useMemo(() => (0, l.A)(), []);
+    } = e.match.params, [f, A] = i.useState(!1), _ = i.useRef(!1), [b, E] = i.useState(null), O = !u.isPlatformEmbedded && !a.Fr && !f, y = i.useMemo(() => (0, l.A)(), []);
     return (i.useEffect(() => {
         O && !0 !== _.current && (Promise.resolve().then(n.bind(n, 129014)).then(e => {
             let {
@@ -50,7 +50,7 @@ function m(e) {
             }).then(() => n.disconnect())
         }), _.current = !0)
     }, [t, O, y]), O && !1 !== b) ? !0 === b ? (0, r.jsxs)("div", {
-        className: f.k,
+        className: m.k,
         children: [(0, r.jsx)(o.Heading, {
             variant: "heading-xxl/bold",
             children: g.intl.string(g.t.csrAMJ)
@@ -63,7 +63,7 @@ function m(e) {
             onClick: () => A(!0)
         })]
     }) : (0, r.jsxs)("div", {
-        className: f.k,
+        className: m.k,
         children: [(0, r.jsx)(o.Heading, {
             variant: "heading-xxl/bold",
             children: g.intl.string(g.t["Z+hCVU"])

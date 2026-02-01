@@ -1,6 +1,6 @@
 /** chunk id: 885459, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => m
+    A: () => f
 }), n(896048), n(680155), n(323874), n(14289), n(35956), n(747238), n(321073);
 var r = n(627968),
     i = n(64700),
@@ -15,15 +15,15 @@ var r = n(627968),
     h = n(886217),
     g = n(652215);
 
-function f(e) {
+function m(e) {
     return new URLSearchParams(e).get(u.L1.QUEST_ID)
 }
-let m = function(e) {
+let f = function(e) {
     let {
         questId: t
     } = e, {
         questId: n,
-        setQuestId: m
+        setQuestId: f
     } = function(e) {
         let t = (0, l.W6)(),
             [n, r] = i.useState(e),
@@ -31,10 +31,10 @@ let m = function(e) {
                 search: a
             } = (0, l.zy)();
         return i.useEffect(() => {
-            let t = f(a);
+            let t = m(a);
             null != t ? r(t) : null != e && r(e)
         }, [e, a]), i.useEffect(() => {
-            if (null == n || f(a) === n) return;
+            if (null == n || m(a) === n) return;
             let e = new URLSearchParams;
             e.set(u.L1.TAB, u.NC.PREVIEW_TOOL), e.set(u.L1.QUEST_ID, n), t.push("".concat(g.BVt.QUEST_HOME_V2, "?").concat(e.toString()))
         }, [n, t, a]), {
@@ -61,7 +61,7 @@ let m = function(e) {
     return (0, r.jsx)(p.A, {
         controls: (0, r.jsx)(d.A, {
             questId: n,
-            setQuestId: m,
+            setQuestId: f,
             quest: A,
             refreshQuest: () => {
                 null != n && (0, o.dQ)(n)

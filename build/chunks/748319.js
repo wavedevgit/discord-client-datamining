@@ -32,8 +32,8 @@ var a = n(627968),
     N = n(521502),
     w = n(380610),
     I = n(313961),
-    P = n(617354),
-    k = n(980923),
+    k = n(617354),
+    P = n(980923),
     R = n(206018),
     D = n(18235),
     M = n(183184),
@@ -52,8 +52,8 @@ var a = n(627968),
     Y = n(967054),
     J = n(226540),
     X = n(227),
-    Z = n(772786),
-    $ = n(134991),
+    $ = n(772786),
+    Z = n(134991),
     ee = n(967370),
     et = n(535731),
     en = n(201805),
@@ -86,8 +86,8 @@ var a = n(627968),
     eN = n(203982),
     ew = n(927813),
     eI = n(403362),
-    eP = n(536194),
-    ek = n(427262),
+    ek = n(536194),
+    eP = n(427262),
     eR = n(837921),
     eD = n(350535),
     eM = n(42473),
@@ -138,9 +138,9 @@ function eQ(e, t) {
 let eY = eR.Ay.getEnableHardwareAcceleration() ? h.JsQ : h.euF,
     eJ = 2.5 * ew.A.Millis.SECOND,
     eX = 2 * ew.A.Millis.MINUTE,
-    eZ = 5 * ew.A.Millis.SECOND;
+    e$ = 5 * ew.A.Millis.SECOND;
 
-function e$(e) {
+function eZ(e) {
     let {
         ref: t,
         speaking: n,
@@ -319,7 +319,7 @@ class e0 extends l.PureComponent {
             hoverText: i,
             forceHover: e,
             children: (0, a.jsx)(A.A, {
-                text: ek.Ay.humanizeStatus(r)
+                text: eP.Ay.humanizeStatus(r)
             })
         }) : i
     }
@@ -330,7 +330,7 @@ class e0 extends l.PureComponent {
             },
             onClick: n
         } = e;
-        return (0, a.jsx)(e$, eQ(eq({}, this.props), {
+        return (0, a.jsx)(eZ, eQ(eq({}, this.props), {
             ref: this.avatarWithPopoutRef,
             handleClick: n,
             handleMouseLeave: this.handleMouseLeave,
@@ -662,7 +662,7 @@ function e9(e) {
         a = l.useRef(new u.Ep),
         [r, i] = l.useState(!1);
     l.useEffect(() => {
-        t && n && (i(!0), a.current.start(eZ, () => {
+        t && n && (i(!0), a.current.start(e$, () => {
             i(!1)
         }))
     }, [t, n]);
@@ -704,7 +704,7 @@ function e6() {
         }),
         p = (0, c.bG)([eC.A], () => eC.A.isCurrentUserPTTLatched()),
         x = (0, c.bG)([eC.A], () => eC.A.getVoiceVolume(n)),
-        g = ek.Ay.useUserTag(t, {
+        g = eP.Ay.useUserTag(t, {
             decoration: "never"
         }),
         b = (0, c.bG)([eS.A], () => eS.A.hidePersonalInformation),
@@ -721,21 +721,21 @@ function e6() {
             selfDeaf: C,
             deaf: E
         } = (0, ec.A)(v),
-        P = (0, c.bG)([N.A], () => {
+        k = (0, c.bG)([N.A], () => {
             var e;
             return (0, w.kK)() ? null == (e = N.A.getCurrentBuildOverride().overrides) ? void 0 : e.discord_web : null
         }),
-        k = (0, c.bG)([eT.A], () => eT.A.getPremiumTypeSubscription()),
+        P = (0, c.bG)([eT.A], () => eT.A.getPremiumTypeSubscription()),
         R = (0, c.bG)([ej.A], () => ej.A.getSpeakingWhileMuted()),
         D = (0, c.bG)([I.A], () => I.A.isFullscreenInContext()),
         M = (0, c.bG)([ev.A], () => ev.A.hasLayers()),
-        L = (0, h.red)(h.DXt) || M || eP.P.isDisallowPopupsSet() || D,
-        U = (0, Z.g)(),
+        L = (0, h.red)(h.DXt) || M || ek.P.isDisallowPopupsSet() || D,
+        U = (0, $.g)(),
         B = (0, c.bG)([H.default], () => null != H.default.getAwaitingRemoteSessionInfo()),
         G = (0, c.bG)([ey.A], () => ey.A.getGuildId()),
         F = null == t ? void 0 : t.avatarDecoration,
         V = (0, T.A)(F),
-        W = null != (e = ek.Ay.useName(t)) ? e : "",
+        W = null != (e = eP.Ay.useName(t)) ? e : "",
         {
             voiceActivityStatusEnabled: K
         } = (0, j.G)({
@@ -755,7 +755,7 @@ function e6() {
         } = (0, en.c9)({
             location: eV.rE.CONFLICT_CHECKS
         }),
-        $ = (0, c.bG)([ea.A, eO.default, eb.A], () => {
+        Z = (0, c.bG)([ea.A, eO.default, eb.A], () => {
             let e, t = ea.A.getSyncingWith(),
                 n = ea.A.getActivity(),
                 a = [];
@@ -800,7 +800,7 @@ function e6() {
             userTag: g,
             hidePrivateData: b,
             occluded: L,
-            premiumSubscription: k,
+            premiumSubscription: P,
             selfDeaf: C,
             selfMute: y,
             serverDeaf: E,
@@ -813,7 +813,7 @@ function e6() {
             status: s,
             streaming: i,
             suppress: A,
-            webBuildOverride: P,
+            webBuildOverride: k,
             awaitingRemote: B,
             isEligibleForPomelo: U,
             voiceActivityStatusEnabled: K,
@@ -822,7 +822,7 @@ function e6() {
             avatarDecoration: V,
             isQuestBarEmpty: J,
             hasLoadedQuestBar: X,
-            isListenAlongVisible: $,
+            isListenAlongVisible: Z,
             deviceChangedTooltipType: eE,
             onDismissDeviceChangedTooltip: () => eN(eE),
             shouldShowPTTJoinTooltip: eo,
@@ -872,7 +872,7 @@ function e7(e) {
             })
         }, _.events), {
             plated: null != m
-        })), (0, a.jsx)($.V, {
+        })), (0, a.jsx)(Z.V, {
             targetElementRef: x,
             shouldShow: g,
             onDismiss: () => f(!1)
@@ -925,9 +925,9 @@ function e2(e) {
             events: w,
             play: I
         } = (0, eh.q)(A),
-        P = r || s ? h.O1p : N,
+        k = r || s ? h.O1p : N,
         D = (0, c.bG)([ej.A], () => ej.A.getSettings().modeOptions.shortcut),
-        M = (0, k.A)(n, r, s, o);
+        M = (0, P.A)(n, r, s, o);
     t = g ? {
         tooltipType: "green_void_do_not_use",
         tooltipText: eH.intl.string(eH.t["29gnR4"]),
@@ -998,7 +998,7 @@ function e2(e) {
                         "aria-label": eH.intl.string(eH.t.w4m945),
                         className: eK.$o,
                         disabled: o,
-                        icon: (0, a.jsx)(P, {
+                        icon: (0, a.jsx)(k, {
                             size: "custom",
                             width: 20,
                             height: 20,
@@ -1079,7 +1079,7 @@ function e8(e) {
         }
     } = (0, m.I)(p ? "undeafen" : "deafen"), v = n ? h.TJE : x, {
         name: j
-    } = (0, z.x5)(eW.oh.AUDIO_OUTPUT), _ = (0, P.A)(t, n, r), {
+    } = (0, z.x5)(eW.oh.AUDIO_OUTPUT), _ = (0, k.A)(t, n, r), {
         analyticsLocations: y
     } = (0, O.Ay)(S.A.AUDIO_OUTPUT_BUTTON), A = l.useRef(null);
     return l.useEffect(() => () => g(), [p, g]), (0, a.jsx)(O.f5, {

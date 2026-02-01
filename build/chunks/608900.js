@@ -12,7 +12,7 @@ var r = n(627968),
     u = n(985018),
     d = n(529414);
 
-function h(e) {
+function p(e) {
     let {
         width: t = 24,
         height: n = 24,
@@ -43,14 +43,14 @@ function h(e) {
     })
 }
 
-function p(e) {
+function h(e) {
     let {
         className: t,
         numRequestToSpeak: n
     } = e, l = n > 0;
     return (0, r.jsxs)("div", {
         className: s()(d.v, t),
-        children: [(0, r.jsx)(h, {
+        children: [(0, r.jsx)(p, {
             isBadged: l
         }), l ? (0, r.jsx)(o.Text, {
             className: d.F,
@@ -107,7 +107,7 @@ function g(e) {
         onClick: d,
         label: n ? u.intl.string(u.t.gKGz7A) : u.intl.string(u.t.ImQ4dW),
         className: i,
-        iconComponent: () => (0, r.jsx)(p, {
+        iconComponent: () => (0, r.jsx)(h, {
             numRequestToSpeak: s,
             className: i
         })

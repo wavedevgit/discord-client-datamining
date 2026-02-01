@@ -1,15 +1,15 @@
-/** chunk id: 70456, original params: e,n,t (module,exports,require) **/
+/** chunk id: 70456, original params: e,t,n (module,exports,require) **/
 "use strict";
-t.d(n, {
-    N: () => r
+n.d(t, {
+    N: () => l
 });
-var i = t(353640),
-    l = t(121894);
-let r = (0, i.v)(e => ({
+var i = n(353640),
+    r = n(121894);
+let l = (0, i.v)(e => ({
     canCloseModal: !0,
-    onUpdateCanCloseModal(n) {
-        (0, l.r)(() => e({
-            canCloseModal: n
+    onUpdateCanCloseModal(t) {
+        (0, r.r)(() => e({
+            canCloseModal: t
         }))
     }
 }))

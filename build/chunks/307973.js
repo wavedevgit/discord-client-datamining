@@ -26,7 +26,7 @@ let p = e => {
         hammerAssetClassName: h,
         keyAssetClassName: E,
         starAssetClassName: O,
-        animationSpeedScale: C = 1
+        animationSpeedScale: x = 1
     } = e;
     return (0, r.jsxs)(r.Fragment, {
         children: [null != i && (0, r.jsx)("div", {
@@ -55,7 +55,7 @@ let p = e => {
                 } : void 0,
                 animateXAxisWiggle: !0,
                 isMotionReduced: t,
-                animationSpeedScale: C,
+                animationSpeedScale: x,
                 children: (0, r.jsx)("img", {
                     src: o.A,
                     className: f,
@@ -78,7 +78,7 @@ let p = e => {
                 } : void 0,
                 animateXAxisWiggle: !0,
                 isMotionReduced: t,
-                animationSpeedScale: C,
+                animationSpeedScale: x,
                 children: (0, r.jsx)("img", {
                     src: c.A,
                     className: b,
@@ -101,7 +101,7 @@ let p = e => {
                 } : void 0,
                 animateXAxisWiggle: !0,
                 isMotionReduced: t,
-                animationSpeedScale: C,
+                animationSpeedScale: x,
                 children: (0, r.jsx)("img", {
                     src: d.A,
                     className: h,
@@ -134,7 +134,7 @@ let p = e => {
                 } : void 0,
                 animateXAxisWiggle: !0,
                 isMotionReduced: t,
-                animationSpeedScale: C,
+                animationSpeedScale: x,
                 children: (0, r.jsx)("img", {
                     src: u.A,
                     className: E,
@@ -167,7 +167,7 @@ let p = e => {
                 } : void 0,
                 animateXAxisWiggle: !0,
                 isMotionReduced: t,
-                animationSpeedScale: C,
+                animationSpeedScale: x,
                 children: (0, r.jsx)("img", {
                     src: _.A,
                     className: O,

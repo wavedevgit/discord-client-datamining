@@ -11,8 +11,8 @@ var r = n(627968),
     c = n(15285),
     u = n(616356),
     d = n(274372),
-    h = n(572164),
-    p = n(806931),
+    p = n(572164),
+    h = n(806931),
     g = n(985018),
     f = n(639291);
 let m = e => {
@@ -24,7 +24,7 @@ let m = e => {
         if (null == t) return !1;
         let n = u.A.getCurrentUserActiveStream(),
             r = null == (e = c.Ay.getVisibleGame()) ? void 0 : e.windowHandle;
-        return !!(null != n && (0, h.TD)() || null != r && (0, h.Ao)()) || o.A.getParticipants(t).some(e => e.type === p.lp.USER && d.A.isClipsEnabledForUser(e.user.id))
+        return !!(null != n && (0, p.TD)() || null != r && (0, p.Ao)()) || o.A.getParticipants(t).some(e => e.type === h.lp.USER && d.A.isClipsEnabledForUser(e.user.id))
     }) ? (0, r.jsx)(s.m, {
         text: g.intl.string(g.t.DJXW3G),
         children: (0, r.jsxs)("div", {

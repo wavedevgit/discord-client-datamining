@@ -1,6 +1,6 @@
 /** chunk id: 349555, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => f
+    A: () => m
 }), n(896048);
 var r = n(627968),
     i = n(64700),
@@ -15,13 +15,13 @@ var r = n(627968),
     h = n(985018),
     g = n(142011);
 
-function f(e) {
+function m(e) {
     let {
         quests: t,
         excludedQuests: n,
         isFetching: l,
-        hasFetched: f,
-        hasFiltersApplied: m = !1,
+        hasFetched: m,
+        hasFiltersApplied: f = !1,
         onClearFilters: A
     } = e, _ = i.useRef(!1), b = (0, o.zy)(), E = i.useMemo(() => {
         if (b.hash.length > 0) {
@@ -34,13 +34,13 @@ function f(e) {
     i.useEffect(() => {
         _.current = !1
     }, [b.hash]), i.useEffect(() => {
-        if (null == E || _.current || l || !f) return;
+        if (null == E || _.current || l || !m) return;
         let e = document.getElementById("quest-tile-".concat(E));
         null == e || e.scrollIntoView({
             behavior: "smooth",
             block: "center"
         }), _.current = !0
-    }, [t, E, b, l, f]);
+    }, [t, E, b, l, m]);
     let O = null != E,
         [y, I] = i.useState(window.innerWidth);
     i.useEffect(() => {
@@ -58,11 +58,11 @@ function f(e) {
         className: g.y7,
         children: [(0, r.jsx)(c.Heading, {
             variant: "heading-xl/semibold",
-            children: h.intl.string(m ? h.t.PBfFnx : h.t.NqFP6z)
+            children: h.intl.string(f ? h.t.PBfFnx : h.t.NqFP6z)
         }), (0, r.jsx)(c.Text, {
             variant: "text-md/normal",
             color: "text-subtle",
-            children: m ? h.intl.format(h.t.LdYS1H, {
+            children: f ? h.intl.format(h.t.LdYS1H, {
                 onClick: A
             }) : h.intl.string(h.t.LhD4yH)
         })]

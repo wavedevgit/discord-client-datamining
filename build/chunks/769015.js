@@ -86,38 +86,36 @@ let O = i.forwardRef(function(e, t) {
             className: A,
             guildClassName: I,
             size: S = g.MEDIUM,
-            allowUnknownGameIcon: T = !0
+            allowUnknownGameIcon: T = !0,
+            unknownGameIconFallback: C
         } = e,
-        [C, N] = i.useState(null),
-        [w, R] = i.useState(!1),
-        P = i.useCallback(e => {
-            R(e)
+        [N, w] = i.useState(null),
+        [R, P] = i.useState(!1),
+        D = i.useCallback(e => {
+            P(e)
         }, []),
-        D = i.useRef(null);
+        L = i.useRef(null);
     i.useEffect(() => {
-        null != D.current && w && (cancelIdleCallback(D.current), D.current = null)
-    }, [w]);
-    let L = (0, s.K)(P);
+        null != L.current && R && (cancelIdleCallback(L.current), L.current = null)
+    }, [R]);
+    let x = (0, s.K)(D);
     if (null != O && (n = y(O)), null != a && null == n && (a instanceof f.Ay ? n = a.getIconURL(E(S)) : null != a.icon && (n = p.Ay.getApplicationIconURL({
             id: a.id,
             icon: a.icon
         }))), n = (0, c.A)(v, n), i.useEffect(() => {
             if (null == n || "" === n) return;
-            if ((0, p.V0)(n) || (0, d.LE)(n)) {
-                console.log("JANK loaded src ".concat(n, " as data URI or isImageLoaded")), N(n);
-                return
-            }
+            if ((0, p.V0)(n) || (0, d.LE)(n)) return void w(n);
             let e = () => (0, d.yt)(n, (e, t) => {
-                N(n)
+                w(n)
             });
-            if (w) return e();
+            if (R) return e();
             let t = requestIdleCallback(() => {
-                D.current = null, e()
+                L.current = null, e()
             });
-            return D.current = t, () => {
-                null != D.current && (cancelIdleCallback(D.current), D.current = null)
+            return L.current = t, () => {
+                null != L.current && (cancelIdleCallback(L.current), L.current = null)
             }
-        }, [n, w]), void 0 === n && null != _) {
+        }, [n, R]), void 0 === n && null != _) {
         let e = b(S);
         return (0, r.jsx)(u.A, {
             className: o()(m.Gt, I, A),
@@ -125,33 +123,33 @@ let O = i.forwardRef(function(e, t) {
             size: e
         })
     }
-    if (null == n || "" === n) return T ? (0, r.jsx)(l._7Z, {
+    if (null == n || "" === n) return T ? null != C ? C : (0, r.jsx)(l._7Z, {
         size: "md",
         color: "currentColor",
         className: o()(m.Gt, S, A)
     }) : null;
-    let x = null == a ? void 0 : a.name,
-        M = null != x && "" !== x ? h.intl.formatToPlainString(h.t.tiKyYg, {
-            applicationName: x
+    let M = null == a ? void 0 : a.name,
+        j = null != M && "" !== M ? h.intl.formatToPlainString(h.t.tiKyYg, {
+            applicationName: M
         }) : h.intl.string(h.t["2B/phM"]),
-        j = (0, p.V0)(n),
-        k = (0, d.LE)(n),
-        U = C === n || j || k;
+        k = (0, p.V0)(n),
+        U = (0, d.LE)(n),
+        G = N === n || k || U;
     return (0, r.jsxs)(r.Fragment, {
-        children: [U ? null : (0, r.jsx)("div", {
+        children: [G ? null : (0, r.jsx)("div", {
             className: o()(m.qD, S, A)
         }), (0, r.jsx)("img", {
             ref: t,
-            alt: M,
+            alt: j,
             src: n,
             className: o()(m.Gt, S, A),
-            style: U ? void 0 : {
+            style: G ? void 0 : {
                 display: "none"
             }
         }), (0, r.jsx)("div", {
             className: m.Xc,
             children: (0, r.jsx)("div", {
-                ref: L,
+                ref: x,
                 className: m.Pr
             })
         })]

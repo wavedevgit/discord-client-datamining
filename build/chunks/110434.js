@@ -1,6 +1,6 @@
 /** chunk id: 110434, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => m
+    A: () => f
 }), n(65821);
 var r, i = n(627968);
 n(64700);
@@ -39,7 +39,7 @@ let g = s.Ay.connectStores([u.A], () => ({
             })]
         })
     }),
-    f = e => {
+    m = e => {
         let {
             data: t,
             className: n
@@ -63,5 +63,5 @@ let g = s.Ay.connectStores([u.A], () => ({
         }
         throw Error("Unknown type")
     };
-f.Types = h;
-let m = f
+m.Types = h;
+let f = m

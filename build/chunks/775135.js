@@ -14,8 +14,8 @@ var r = n(627968),
     p = n(289357),
     h = n(264328),
     g = n(636781),
-    f = n(935158),
-    m = n(836953),
+    m = n(935158),
+    f = n(836953),
     A = n(314457),
     _ = n(536194),
     b = n(612340),
@@ -35,7 +35,7 @@ function T(e) {
     var t;
     let {
         guild: n
-    } = e, [p, g] = i.useState(null != (t = s.w.get(v.hV)) ? t : 0), f = (0, l.yK)(v.cJ, () => v.cA.filter(e => {
+    } = e, [p, g] = i.useState(null != (t = s.w.get(v.hV)) ? t : 0), m = (0, l.yK)(v.cJ, () => v.cA.filter(e => {
         let {
             dismissibleContentType: t,
             store: r
@@ -43,7 +43,7 @@ function T(e) {
         return !0 === (null == r ? void 0 : r.channelNoticePredicate(n, p)) && !C.has(t)
     }).map(e => e.dismissibleContentType), [n, p]);
     return (0, r.jsx)(c.Ay, {
-        contentTypes: f,
+        contentTypes: m,
         groupName: S.m.CHANNEL_NOTICES,
         children: e => {
             let {
@@ -117,11 +117,11 @@ let j = e => {
                 guild: t
             });
         case I.G.COMMANDS_MIGRATION:
-            return (0, r.jsx)(f.A, {
+            return (0, r.jsx)(m.A, {
                 guild: t
             });
         case I.G.APPLICATION_SUBSCRIPTION_EXPIRATION:
-            return (0, r.jsx)(m.A, {
+            return (0, r.jsx)(f.A, {
                 guild: t
             });
         case I.G.HUB_STUDY_ROOM:

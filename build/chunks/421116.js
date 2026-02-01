@@ -21,13 +21,13 @@ var r = n(627968),
     h = n(954571),
     E = n(927578),
     O = n(40185),
-    C = n(170887),
-    x = n(130946),
+    x = n(170887),
+    C = n(130946),
     S = n(407775),
     T = n(501007),
     I = n(26010),
-    y = n(54009),
-    N = n(252711),
+    N = n(54009),
+    y = n(252711),
     j = n(584767),
     v = n(191430),
     P = n(475805),
@@ -71,7 +71,7 @@ let K = () => {
         {
             analyticsLocations: em
         } = (0, g.Ay)(m.A.PREMIUM_MARKETING),
-        eg = (0, C.A)({
+        eg = (0, x.A)({
             location: "PremiumMarketing"
         }),
         eA = !Q && !en && (eg || !ee);
@@ -96,8 +96,8 @@ let K = () => {
         {
             home: eE,
             whatsNew: eO,
-            bestOfNitro: eC,
-            plans: ex,
+            bestOfNitro: ex,
+            plans: eC,
             compare: eS
         } = eb,
         eT = eg ? F : Y,
@@ -108,7 +108,7 @@ let K = () => {
             }),
             "data-cy": "tier-0-marketing-page",
             children: [eg && (0, r.jsxs)(r.Fragment, {
-                children: [(0, r.jsx)(y.A, {
+                children: [(0, r.jsx)(N.A, {
                     className: F.topOfPageGradient
                 }), (0, r.jsx)(M.A, {
                     navBarSections: eb,
@@ -146,8 +146,8 @@ let K = () => {
                     })
                 }), e_ && (0, r.jsx)("div", {
                     className: eT.promoBannerContainer,
-                    children: (0, r.jsx)(x.A, {
-                        variant: x.c.APPLICATION_NITRO_HOME
+                    children: (0, r.jsx)(C.A, {
+                        variant: C.c.APPLICATION_NITRO_HOME
                     })
                 }), (0, r.jsx)("div", {
                     className: eT.whatsNewSectionContainer,
@@ -159,7 +159,7 @@ let K = () => {
                     })
                 }), (0, r.jsx)("div", {
                     className: eT.bestOfNitroSectionContainer,
-                    ref: eC.ref,
+                    ref: ex.ref,
                     children: (0, r.jsx)(I.oO, {
                         shouldLoadVideo: es,
                         isReducedMotion: X,
@@ -167,7 +167,7 @@ let K = () => {
                     })
                 }), (0, r.jsx)("div", {
                     className: eT.premiumTierCardsContainer,
-                    ref: ex.ref,
+                    ref: eC.ref,
                     children: (0, r.jsx)(c.L, {
                         innerRef: l,
                         onChange: e => er(e),
@@ -185,7 +185,7 @@ let K = () => {
                     ref: eS.ref,
                     children: eg ? (0, r.jsx)(D.A, {}) : (0, r.jsx)(j.A, {})
                 })]
-            }), !eg && (0, r.jsx)(N.A, {
+            }), !eg && (0, r.jsx)(y.A, {
                 isVisible: eA && es,
                 subscriptionTier: eu,
                 isApplicationHome: !0,
@@ -220,7 +220,7 @@ let K = () => {
                     isVisible: eA && es,
                     subscriptionTier: eu,
                     isEligibleForBogoPromotion: e_
-                }), (0, r.jsx)(y.A, {
+                }), (0, r.jsx)(N.A, {
                     className: F.bottomOfPageGradient
                 })]
             })]

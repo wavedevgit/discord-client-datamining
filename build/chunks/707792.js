@@ -1,24 +1,24 @@
-/** chunk id: 707792, original params: t,n,i (module,exports,require) **/
-i.d(n, {
-    A: () => o
+/** chunk id: 707792, original params: t,e,n (module,exports,require) **/
+n.d(e, {
+    A: () => s
 });
-var e = i(627968);
-i(64700);
-var r = i(397927),
-    l = i(867455),
-    a = i(406704),
-    d = i(985018);
+var i = n(627968);
+n(64700);
+var r = n(397927),
+    l = n(867455),
+    a = n(406704),
+    o = n(985018);
 
-function o(t) {
-    let n = (0, a.H_)(t),
-        i = t.isLockedThread();
-    if (!(!n || t.isModeratorReportChannel())) return i ? (0, e.jsx)(r.Drp, {
+function s(t) {
+    let e = (0, a.H_)(t),
+        n = t.isLockedThread();
+    if (!(!e || t.isModeratorReportChannel())) return n ? (0, i.jsx)(r.Drp, {
         id: "unlock-thread",
-        label: t.isForumPost() ? d.intl.string(d.t["/OKSxp"]) : d.intl.string(d.t["jeyb/W"]),
+        label: t.isForumPost() ? o.intl.string(o.t["/OKSxp"]) : o.intl.string(o.t["jeyb/W"]),
         action: () => l.A.unlockThread(t)
-    }) : (0, e.jsx)(r.Drp, {
+    }) : (0, i.jsx)(r.Drp, {
         id: "lock-thread",
-        label: t.isForumPost() ? d.intl.string(d.t["Ur/0Na"]) : d.intl.string(d.t.HoCqm8),
+        label: t.isForumPost() ? o.intl.string(o.t["Ur/0Na"]) : o.intl.string(o.t.HoCqm8),
         action: () => l.A.lockThread(t)
     })
 }

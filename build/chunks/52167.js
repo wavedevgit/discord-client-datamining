@@ -21,13 +21,13 @@ var r = n(417597),
     h = n(338832),
     E = n(252373),
     O = n(522799),
-    C = n(795710),
-    x = n(484813),
+    x = n(795710),
+    C = n(484813),
     S = n(1748),
     T = n(772473),
     I = n(64514),
-    y = n(121818),
-    N = n(536851),
+    N = n(121818),
+    y = n(536851),
     j = n(992186),
     v = n(629139),
     P = n(753563),
@@ -63,7 +63,7 @@ let G = (e, t, n) => (0, i.Mw)(e) ? t : n,
                 title: p.intl.string(p.t["/xvEMy"]),
                 description: p.intl.string(p.t.HKWdjj),
                 className: t.clientThemesCard,
-                imageSource: N,
+                imageSource: y,
                 imageClassName: t.clientThemesImage
             },
             customAppIcons: {
@@ -123,25 +123,25 @@ let G = (e, t, n) => (0, i.Mw)(e) ? t : n,
             soundboard: {
                 title: p.intl.string(p.t["lGcW+c"]),
                 description: p.intl.string(p.t["/fDyO+"]),
-                imageSource: G(i, O, C),
+                imageSource: G(i, O, x),
                 imageClassName: t.soundboardImage
             },
             stickers: {
                 title: p.intl.string(p.t["1c+xwT"]),
                 description: p.intl.string(p.t.hJG8ZN),
-                imageSource: G(i, x, L),
+                imageSource: G(i, C, L),
                 imageClassName: t.stickersImage
             },
             stickersBurst: {
                 title: p.intl.string(p.t.tzdIwI),
                 description: p.intl.string(p.t.hJG8ZN),
-                imageSource: G(i, x, L),
+                imageSource: G(i, C, L),
                 imageClassName: t.stickersImage
             },
             stickersPremiumPerk: {
                 title: p.intl.string(p.t.tzdIwI),
                 description: p.intl.string(p.t.hJG8ZN),
-                imageSource: G(i, x, L),
+                imageSource: G(i, C, L),
                 imageClassName: t.stickersImage
             },
             streaming: {
@@ -169,7 +169,7 @@ let G = (e, t, n) => (0, i.Mw)(e) ? t : n,
             videoBackground: {
                 title: p.intl.string(p.t.NaGpTf),
                 description: p.intl.string(p.t["A8O/Qw"]),
-                imageSource: G(i, I, y),
+                imageSource: G(i, I, N),
                 imageClassName: t.videoBackgroundImage
             }
         }

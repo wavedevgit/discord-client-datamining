@@ -15,8 +15,8 @@ var i = n(554146),
     p = n(576705),
     h = n(853742),
     g = n(652215),
-    f = n(49999);
-class m extends s.A {
+    m = n(49999);
+class f extends s.A {
     _initialize() {
         a.h.subscribe("CHANNEL_SELECT", this.handleChannelSelect)
     }
@@ -25,13 +25,13 @@ class m extends s.A {
     }
     handleChannelSelect(e) {
         var t;
-        let a, s, m, A, _, {
+        let a, s, f, A, _, {
             guildId: b
         } = e;
-        if (null == b || (s = !!(null == (a = d.A.getGuild(b)) ? void 0 : a.features.has(g.GuildFeatures.COMMUNITY)), m = p.A.can(g.xBc.MANAGE_CHANNELS, a), A = (0, o.k8)(i.M.FORUM_CHANNEL_UPSELL_MODAL), _ = null != (t = u.A.getMemberCount(b)) ? t : 0, !s || !m || A || !(_ >= 200))) return;
+        if (null == b || (s = !!(null == (a = d.A.getGuild(b)) ? void 0 : a.features.has(g.GuildFeatures.COMMUNITY)), f = p.A.can(g.xBc.MANAGE_CHANNELS, a), A = (0, o.k8)(i.M.FORUM_CHANNEL_UPSELL_MODAL), _ = null != (t = u.A.getMemberCount(b)) ? t : 0, !s || !f || A || !(_ >= 200))) return;
         (0, h.zd)(), (0, c.Vh)(i.M.FORUM_CHANNEL_UPSELL_MODAL);
         let E = function() {
-            let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : f.i.DISMISS;
+            let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : m.i.DISMISS;
             (0, o.Dr)(i.M.FORUM_CHANNEL_UPSELL_MODAL, {
                 dismissAction: e
             })
@@ -78,10 +78,10 @@ class m extends s.A {
             }
         }, {
             onCloseCallback: () => (0, o.Dr)(i.M.FORUM_CHANNEL_UPSELL_MODAL, {
-                dismissAction: f.i.DISMISS
+                dismissAction: m.i.DISMISS
             }),
             onCloseRequest: g.FXj
         })
     }
 }
-let A = new m
+let A = new f

@@ -1,6 +1,6 @@
 /** chunk id: 867624, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => p
+    A: () => h
 });
 var r = n(627968);
 n(64700);
@@ -12,9 +12,9 @@ var l = n(311907),
     c = n(58736),
     u = n(652215),
     d = n(521732),
-    h = n(985018);
+    p = n(985018);
 
-function p(e) {
+function h(e) {
     let {
         channel: t
     } = e, n = (0, l.bG)([a.A], () => a.A.shouldShowTopicsBar());
@@ -29,7 +29,7 @@ function p(e) {
                 channel_type: t.type
             }), (0, s.Oz)()
         },
-        tooltip: n ? h.intl.string(h.t.nGs3kO) : h.intl.string(h.t.bIm2sF),
+        tooltip: n ? p.intl.string(p.t.nGs3kO) : p.intl.string(p.t.bIm2sF),
         selected: n,
         "aria-expanded": n
     })

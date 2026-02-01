@@ -1,16 +1,16 @@
-/** chunk id: 644619, original params: e,t,i (module,exports,require) **/
-i.d(t, {
-    G: () => u
+/** chunk id: 644619, original params: t,e,i (module,exports,require) **/
+i.d(e, {
+    G: () => a
 });
 var n = i(419954),
     l = i(780964),
     s = i(42439),
     r = i(424994),
-    a = i(985018);
-let u = (0, n.zZ)(l.X.REGISTERED_GAMES_ADDED_GAMES_CATEGORY, {
+    u = i(985018);
+let a = (0, n.zZ)(l.X.REGISTERED_GAMES_ADDED_GAMES_CATEGORY, {
     buildLayout: () => [s.K],
-    useTitle: () => a.intl.string(a.t.jCOdvx),
-    useSubtitle: () => a.intl.format(a.t.KPA3m9, {
+    useTitle: () => u.intl.string(u.t.jCOdvx),
+    useSubtitle: () => u.intl.format(u.t.KPA3m9, {
         igdbLink: r.s8
     })
 })

@@ -99,7 +99,7 @@ function S(e) {
         position: M
     } = e, j = A(e, ["title", "body", "assetUrl", "previewUrl", "disableMediaViewer", "action", "caretConfig", "badge", "textLink", "onWatchVideo", "onRequestClose", "popoverRef", "position"]), {
         reducedMotion: k
-    } = i.useContext(o.CZY), U = (0, a.R)(), G = null != (t = null == (n = (y = (0, o.G98)()).isWindowFocused) ? void 0 : n.call(y)) ? t : U, F = i.useRef(null), V = (0, o.RJq)(T), B = i.useCallback(() => ({
+    } = i.useContext(o.CZY), U = (0, a.R)(), G = null != (t = null == (n = (y = (0, o.G98)()).isWindowFocused) ? void 0 : n.call(y)) ? t : U, V = i.useRef(null), F = (0, o.RJq)(T), B = i.useCallback(() => ({
         type: "VIDEO",
         url: S,
         proxyUrl: S,
@@ -110,16 +110,16 @@ function S(e) {
     }), [S, O]);
     i.useEffect(() => {
         var e, t;
-        null != F.current && (!k.enabled && G ? null == (e = F.current) || e.play().catch(h.tE) : null == (t = F.current) || t.pause())
+        null != V.current && (!k.enabled && G ? null == (e = V.current) || e.play().catch(h.tE) : null == (t = V.current) || t.pause())
     }, [G, k.enabled]);
     let H = i.useCallback(() => {
-            null !== F.current && F.current.pause(), null == L || L()
+            null !== V.current && V.current.pause(), null == L || L()
         }, [L]),
         Y = i.useCallback(() => {
-            null !== F.current && F.current.pause(), null == L || L()
+            null !== V.current && V.current.pause(), null == L || L()
         }, [L]),
         W = i.useCallback(() => {
-            null !== F.current && F.current.pause();
+            null !== V.current && V.current.pause();
             let e = B();
             (0, c.R)({
                 items: [e],
@@ -128,12 +128,12 @@ function S(e) {
                 shouldHideMediaOptions: !0
             }), null == L || L(), null == D || D()
         }, [B, D, L]),
-        K = V ? (0, r.jsx)(o.vYh, {
+        K = F ? (0, r.jsx)(o.vYh, {
             type: "image",
             src: T
         }) : (0, r.jsxs)(r.Fragment, {
             children: [(0, r.jsx)(l.A, {
-                ref: F,
+                ref: V,
                 src: T,
                 width: 232,
                 height: 131,

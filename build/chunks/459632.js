@@ -1,60 +1,60 @@
-/** chunk id: 459632, original params: e,n,t (module,exports,require) **/
-t.d(n, {
-    A: () => _
+/** chunk id: 459632, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    A: () => s
 });
-var r = t(627968);
-t(64700);
-var o = t(397927),
-    a = t(688810),
-    i = t(384059),
-    l = t(709562),
-    c = t(985018);
+var l = n(627968);
+n(64700);
+var r = n(397927),
+    i = n(688810),
+    o = n(384059),
+    a = n(709562),
+    c = n(985018);
 
-function _(e) {
+function s(e) {
     let {
-        onClick: n
-    } = e, t = function(e, n) {
+        onClick: t
+    } = e, n = function(e, t) {
         if (null == e) return {};
-        var t, r, o, a = {};
+        var n, l, r, i = {};
         if ("u" > typeof Reflect && Reflect.ownKeys) {
-            for (o = 0, t = Reflect.ownKeys(e); o < t.length; o++) r = t[o], !(n.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
-            return a
+            for (r = 0, n = Reflect.ownKeys(e); r < n.length; r++) l = n[r], !(t.indexOf(l) >= 0) && Object.prototype.propertyIsEnumerable.call(e, l) && (i[l] = e[l]);
+            return i
         }
-        if (a = function(e, n) {
+        if (i = function(e, t) {
                 if (null == e) return {};
-                var t, r, o = {},
-                    a = Object.getOwnPropertyNames(e);
-                for (r = 0; r < a.length; r++) t = a[r], !(n.indexOf(t) >= 0) && Object.prototype.propertyIsEnumerable.call(e, t) && (o[t] = e[t]);
-                return o
-            }(e, n), Object.getOwnPropertySymbols)
-            for (o = 0, t = Object.getOwnPropertySymbols(e); o < t.length; o++) r = t[o], !(n.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
-        return a
+                var n, l, r = {},
+                    i = Object.getOwnPropertyNames(e);
+                for (l = 0; l < i.length; l++) n = i[l], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n]);
+                return r
+            }(e, t), Object.getOwnPropertySymbols)
+            for (r = 0, n = Object.getOwnPropertySymbols(e); r < n.length; r++) l = n[r], !(t.indexOf(l) >= 0) && Object.prototype.propertyIsEnumerable.call(e, l) && (i[l] = e[l]);
+        return i
     }(e, ["onClick"]), {
-        parentAnalyticsLocation: _
-    } = (0, a.Ay)();
-    return (0, r.jsx)(l.A, function(e) {
-        for (var n = 1; n < arguments.length; n++) {
-            var t = null != arguments[n] ? arguments[n] : {},
-                r = Object.keys(t);
-            "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(t).filter(function(e) {
-                return Object.getOwnPropertyDescriptor(t, e).enumerable
-            }))), r.forEach(function(n) {
-                var r;
-                r = t[n], n in e ? Object.defineProperty(e, n, {
-                    value: r,
+        parentAnalyticsLocation: s
+    } = (0, i.Ay)();
+    return (0, l.jsx)(a.A, function(e) {
+        for (var t = 1; t < arguments.length; t++) {
+            var n = null != arguments[t] ? arguments[t] : {},
+                l = Object.keys(n);
+            "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+                return Object.getOwnPropertyDescriptor(n, e).enumerable
+            }))), l.forEach(function(t) {
+                var l;
+                l = n[t], t in e ? Object.defineProperty(e, t, {
+                    value: l,
                     enumerable: !0,
                     configurable: !0,
                     writable: !0
-                }) : e[n] = r
+                }) : e[t] = l
             })
         }
         return e
     }({
         label: c.intl.string(c.t["UKOtz+"]),
-        iconComponent: o.jNK,
+        iconComponent: r.jNK,
         tooltipPosition: "bottom",
         onClick: e => {
-            (0, i.X)(_, i.O.MORE), n(e)
+            (0, o.X)(s, o.O.MORE), t(e)
         }
-    }, t))
+    }, n))
 }

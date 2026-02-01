@@ -1,33 +1,33 @@
-/** chunk id: 169930, original params: e,t,i (module,exports,require) **/
-i.d(t, {
-    _: () => c
+/** chunk id: 169930, original params: t,e,i (module,exports,require) **/
+i.d(e, {
+    _: () => A
 });
 var n = i(793574),
     l = i(419954),
     s = i(796774),
     r = i(536432),
-    a = i(975571),
-    u = i(824744),
+    u = i(975571),
+    a = i(824744),
     o = i(780964),
     d = i(652215),
     T = i(985018);
-let c = (0, l.sN)(o.X.SOUNDBOARD_VOLUME_SETTING, {
+let A = (0, l.sN)(o.X.SOUNDBOARD_VOLUME_SETTING, {
     useTitle: () => T.intl.string(T.t.kbFsAD),
     useSubtitle: () => T.intl.format(T.t.BPbGq7, {
-        helpCenterArticle: a.A.getArticleURL(d.MVz.SOUNDBOARD)
+        helpCenterArticle: u.A.getArticleURL(d.MVz.SOUNDBOARD)
     }),
-    setValue: function(e) {
-        let t = [n.A.USER_SETTINGS_VOICE_AND_VIDEO],
-            i = (0, u.w)(e);
-        (0, s.iy)(i, t)
+    setValue: function(t) {
+        let e = [n.A.USER_SETTINGS_VOICE_AND_VIDEO],
+            i = (0, a.w)(t);
+        (0, s.iy)(i, e)
     },
     minValue: 0,
     maxValue: 100,
     getInitialValue: function() {
-        let e = (0, r.wH)();
-        return (0, u.M)(e)
+        let t = (0, r.wH)();
+        return (0, a.M)(t)
     },
-    onValueRender: function(e) {
-        return "".concat(e.toFixed(0), "%")
+    onValueRender: function(t) {
+        return "".concat(t.toFixed(0), "%")
     }
 })

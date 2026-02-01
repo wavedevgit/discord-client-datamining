@@ -1,37 +1,37 @@
 /** chunk id: 714642, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    V: () => g,
-    t: () => m
+    V: () => m,
+    t: () => g
 }), n(747238);
 var i = n(627968);
 n(64700);
 var r = n(397927),
     l = n(572164),
     a = n(87001),
-    o = n(532624),
-    s = n(350535),
-    c = n(22802),
-    u = n(592598),
+    s = n(532624),
+    o = n(350535),
+    u = n(22802),
+    c = n(592598),
     d = n(581730),
-    p = n(672396),
-    h = n(652215),
+    h = n(672396),
+    p = n(652215),
     f = n(985018);
 
-function m() {
-    if (u.A.isNotificationDisabled(p.KS.ClipsReminderNotification) || a.A.getWindowOpen(h.MLl.ACTIVITY_POPOUT)) return null;
+function g() {
+    if (c.A.isNotificationDisabled(h.KS.ClipsReminderNotification) || a.A.getWindowOpen(p.MLl.ACTIVITY_POPOUT)) return null;
     let {
         trackView: e,
         trackClick: t
-    } = (0, d.Y9)(p.KS.ClipsReminderNotification, {
-        notif_type: p.KS.ClipsReminderNotification
-    }), n = o.Ay.getKeybindForAction(h.hCu.SAVE_CLIP), m = (0, l.TD)();
-    if (null == n || !m) return null;
-    let g = s.dI(n.shortcut, !0);
+    } = (0, d.Y9)(h.KS.ClipsReminderNotification, {
+        notif_type: h.KS.ClipsReminderNotification
+    }), n = s.Ay.getKeybindForAction(p.hCu.SAVE_CLIP), g = (0, l.TD)();
+    if (null == n || !g) return null;
+    let m = o.dI(n.shortcut, !0);
     return {
         title: f.intl.format(f.t.S5uhCN, {
-            keybind: g,
-            keybindHook: (e, t) => (0, i.jsx)(c.b, {
-                keybind: g.split("+")
+            keybind: m,
+            keybindHook: (e, t) => (0, i.jsx)(u.b, {
+                keybind: m.split("+")
             }, t)
         }),
         icon: (0, i.jsx)(r.xgA, {
@@ -47,12 +47,12 @@ function m() {
     }
 }
 
-function g(e) {
+function m(e) {
     let {
         trackView: t,
         trackClick: n
-    } = (0, d.Y9)(p.KS.ClipsNotification, {
-        notif_type: p.KS.ClipsNotification
+    } = (0, d.Y9)(h.KS.ClipsNotification, {
+        notif_type: h.KS.ClipsNotification
     });
     return {
         title: e,

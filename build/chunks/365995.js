@@ -1,19 +1,19 @@
-/** chunk id: 365995, original params: e,n,t (module,exports,require) **/
-t.d(n, {
-    A: () => l
+/** chunk id: 365995, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    A: () => a
 });
-var r = t(64700),
-    o = t(311907),
-    a = t(87001),
-    i = t(652215);
+var l = n(64700),
+    r = n(311907),
+    i = n(87001),
+    o = n(652215);
 
-function l() {
-    let e = (0, o.bG)([a.A], () => a.A.getWindow(i.MLl.ACTIVITY_POPOUT)),
-        n = r.useMemo(() => null == e ? void 0 : e.window.document, [e]),
-        t = r.useMemo(() => null == n ? void 0 : n.getElementById("app-mount"), [n]);
+function a() {
+    let e = (0, r.bG)([i.A], () => i.A.getWindow(o.MLl.ACTIVITY_POPOUT)),
+        t = l.useMemo(() => null == e ? void 0 : e.window.document, [e]),
+        n = l.useMemo(() => null == t ? void 0 : t.getElementById("app-mount"), [t]);
     return {
         popoutWindow: e,
-        currentDocument: n,
-        rootNode: t
+        currentDocument: t,
+        rootNode: n
     }
 }

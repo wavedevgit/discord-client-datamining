@@ -473,7 +473,7 @@ function G(e) {
     })
 }
 
-function F(e) {
+function V(e) {
     let {
         status: t,
         isMobile: n,
@@ -490,7 +490,7 @@ function F(e) {
     }))
 }
 
-function V(e) {
+function F(e) {
     let {
         children: t,
         size: n,
@@ -611,10 +611,10 @@ function H(e) {
         ref: L,
         CutoutIcon: M,
         avatarTooltipAsset: j,
-        avatarTooltipText: F,
+        avatarTooltipText: V,
         avatarTooltipTitle: H
     } = e, Y = n !== h.clD.UNKNOWN ? n : null, W = (0, g.Kj)(a), K = null != Y ? Math.ceil((W.status * g.x - W.status) / 2) : 0, z = W.size + K, q = (0, u.S3)(Y, s), Z = i.useId();
-    return (0, r.jsx)(V, A(O({}, e), {
+    return (0, r.jsx)(F, A(O({}, e), {
         ariaLabel: w,
         ariaHidden: N,
         status: Y,
@@ -666,7 +666,7 @@ function H(e) {
                 })
             }) : null, null != M && U(W, M), null != H && G(W, l, f, {
                 avatarTooltipTitle: H,
-                avatarTooltipText: F
+                avatarTooltipText: V
             }, j)]
         })
     }))
@@ -717,14 +717,14 @@ function K(e) {
         avatarTooltipTitle: X
     } = e, J = (0, u.S3)(R, P), $ = i.useId(), ee = i.useId(), [et] = i.useState(() => O({
         fill: a
-    }, F({
+    }, V({
         size: S,
         status: n,
         isMobile: t,
         isTyping: !1
     }))), en = i.useMemo(() => O({
         fill: J
-    }, F({
+    }, V({
         size: S,
         status: R,
         isMobile: f,
@@ -757,7 +757,7 @@ function K(e) {
             scale: 1
         }] : []
     }, C() ? "animate-always" : "animate-never", [z, R]);
-    return (0, r.jsx)(V, A(O({}, e), {
+    return (0, r.jsx)(F, A(O({}, e), {
         ariaLabel: H,
         ariaHidden: k,
         typingOffset: eh,

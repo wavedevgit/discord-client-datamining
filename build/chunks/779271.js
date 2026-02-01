@@ -17,14 +17,14 @@ let d = l.memo(function(e) {
         onClick: l,
         className: i,
         collapsed: d,
-        speakers: h,
-        channel: p,
+        speakers: p,
+        channel: h,
         isStreamLive: g
     } = e;
     return (0, r.jsxs)(a.DUT, {
         onClick: l,
         className: s()(u.kL, i),
-        children: [null == h ? (0, r.jsx)(a.nFg, {
+        children: [null == p ? (0, r.jsx)(a.nFg, {
             size: "custom",
             color: "currentColor",
             width: 20,
@@ -41,10 +41,10 @@ let d = l.memo(function(e) {
             variant: "text-md/semibold",
             className: u.Qq,
             children: [t, " — ", n]
-        }), d && null != p && null != h && h.length > 0 && (0, r.jsxs)(r.Fragment, {
+        }), d && null != h && null != p && p.length > 0 && (0, r.jsxs)(r.Fragment, {
             children: [(0, r.jsx)(c.A, {
-                channel: p,
-                speakers: h
+                channel: h,
+                speakers: p
             }), g && (0, r.jsx)(o.Ay, {})]
         }), (0, r.jsx)(a.abt, {
             size: "custom",

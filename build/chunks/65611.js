@@ -1,8 +1,8 @@
 /** chunk id: 65611, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     eW: () => g,
-    em: () => h,
-    oi: () => p,
+    em: () => p,
+    oi: () => h,
     wN: () => d
 }), n(896048);
 var r = n(627968);
@@ -23,7 +23,7 @@ function d(e, t, n) {
     })
 }
 
-function h() {
+function p() {
     return (0, r.jsx)(a.fkz, {
         icon: (0, a.kHD)(c.A),
         disableColor: !0,
@@ -31,7 +31,7 @@ function h() {
     })
 }
 
-function p(e) {
+function h(e) {
     let t, {
         audio: n,
         video: r,

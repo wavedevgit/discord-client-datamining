@@ -12,8 +12,8 @@ var r = n(64700),
     c = n(425059),
     u = n(218152),
     d = n(451909),
-    h = n(31717),
-    p = n(522602),
+    p = n(31717),
+    h = n(522602),
     g = n(393309),
     f = n(381941),
     m = n(985018);
@@ -38,10 +38,10 @@ function b(e) {
                 (0, o.openUploadError)({
                     title: m.intl.string(m.t.B3vFdU),
                     help: null != (u = null == c ? void 0 : c.message) ? u : m.intl.string(m.t.zMEjJg)
-                }), "" !== n && "" === h.A.getDraft(e.id, h.C.FirstThreadMessage) && i.A.saveDraft(e.id, n, h.C.FirstThreadMessage), 0 === p.A.getUploadCount(e.id, h.C.FirstThreadMessage) && a.A.setUploads({
+                }), "" !== n && "" === p.A.getDraft(e.id, p.C.FirstThreadMessage) && i.A.saveDraft(e.id, n, p.C.FirstThreadMessage), 0 === h.A.getUploadCount(e.id, p.C.FirstThreadMessage) && a.A.setUploads({
                     channelId: e.id,
                     uploads: t,
-                    draftType: h.C.FirstThreadMessage
+                    draftType: p.C.FirstThreadMessage
                 })
             }
         })

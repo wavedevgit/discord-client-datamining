@@ -1,7 +1,7 @@
 /** chunk id: 198525, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => F
+    A: () => V
 }), n(896048);
 var r = n(627968),
     i = n(64700),
@@ -61,9 +61,9 @@ let j = "8px",
     U = 222;
 
 function G(e) {
-    var t, S, x, G, F;
+    var t, S, x, G, V;
     let {
-        quest: V,
+        quest: F,
         memberListItemRef: B,
         applicationStream: H,
         position: Y,
@@ -75,10 +75,10 @@ function G(e) {
         var e;
         return null != (e = g.A.getChannel(null == H ? void 0 : H.channelId)) ? e : null
     }), Q = (0, T.ix)({
-        quest: V,
+        quest: F,
         questContent: E.uF.MEMBERS_LIST,
         sourceQuestContent: E.uF.MEMBERS_LIST
-    }), X = (null == V || null == (S = V.userStatus) ? void 0 : S.claimedAt) != null, J = (null == V || null == (x = V.userStatus) ? void 0 : x.enrolledAt) != null, $ = (null == V || null == (G = V.userStatus) ? void 0 : G.completedAt) != null, ee = (0, s.bG)([m.A], () => m.A.getState().theme), et = (0, c.Mw)(ee) ? P.NJ.DARK : P.NJ.LIGHT, en = (0, s.bG)([_.A], () => _.A.useReducedMotion), {
+    }), X = (null == F || null == (S = F.userStatus) ? void 0 : S.claimedAt) != null, J = (null == F || null == (x = F.userStatus) ? void 0 : x.enrolledAt) != null, $ = (null == F || null == (G = F.userStatus) ? void 0 : G.completedAt) != null, ee = (0, s.bG)([m.A], () => m.A.getState().theme), et = (0, c.Mw)(ee) ? P.NJ.DARK : P.NJ.LIGHT, en = (0, s.bG)([_.A], () => _.A.useReducedMotion), {
         ref: er,
         height: ei
     } = (0, p.Ay)(), [ea, eo] = i.useState(en), es = (0, h.aL)(), el = (0, o.KF)();
@@ -126,12 +126,12 @@ function G(e) {
         ef = "top" === Y ? "".concat(j, " ").concat(j, " 0 0") : "0 0 ".concat(j, " ").concat(j),
         ep = () => {
             (0, O.Y5)({
-                questId: V.id,
+                questId: F.id,
                 questContent: E.uF.MEMBERS_LIST,
                 questContentCTA: v.Cy.OPEN_DISCLOSURE,
                 trackGuildAndChannelMetadata: !0,
                 sourceQuestContent: E.uF.MEMBERS_LIST
-            }), (0, N.Zc)(V, {
+            }), (0, N.Zc)(F, {
                 content: E.uF.MEMBERS_LIST,
                 ctaContent: v.Cy.OPEN_DISCLOSURE,
                 sourceQuestContent: E.uF.MEMBERS_LIST
@@ -139,14 +139,14 @@ function G(e) {
         },
         e_ = () => {
             (0, O.Y5)({
-                questId: V.id,
+                questId: F.id,
                 questContent: E.uF.MEMBERS_LIST,
                 questContentCTA: v.Cy.LEARN_MORE,
                 trackGuildAndChannelMetadata: !0,
                 sourceQuestContent: E.uF.MEMBERS_LIST
             }), (0, N.navigateToQuestHome)({
                 fromContent: E.uF.MEMBERS_LIST,
-                questId: V.id
+                questId: F.id
             })
         },
         eh = e => {
@@ -154,7 +154,7 @@ function G(e) {
         },
         em = () => {
             (0, I.Ll)(H, Z) && null != Z ? ((0, O.Y5)({
-                questId: V.id,
+                questId: F.id,
                 questContent: E.uF.MEMBERS_LIST,
                 questContentCTA: v.Cy.WATCH_STREAM,
                 trackGuildAndChannelMetadata: !0,
@@ -166,7 +166,7 @@ function G(e) {
                 return t => (0, r.jsx)(e, M({
                     username: null != q ? q : "",
                     onConfirm: () => ((0, O.Y5)({
-                        questId: V.id,
+                        questId: F.id,
                         questContent: E.uF.MEMBERS_LIST,
                         questContentCTA: v.Cy.WATCH_STREAM_CONFIRM,
                         trackGuildAndChannelMetadata: !0,
@@ -176,7 +176,7 @@ function G(e) {
             })) : e_()
         },
         eg = (0, y.NA)({
-            quest: V
+            quest: F
         }),
         eE = (() => {
             if ($ && !X) return {
@@ -197,9 +197,9 @@ function G(e) {
                 handleClickCta: em,
                 tileAssetType: "game"
             };
-            let e = (0, I.vA)(V) ? eg : D.intl.string(D.t["BSXPZ+"]);
+            let e = (0, I.vA)(F) ? eg : D.intl.string(D.t["BSXPZ+"]);
             return {
-                headerText: (0, I.vA)(V) && (0, A.vl)(V) && !V.config.features.includes(w.Li.CLOUD_GAMING_ACTIVITY) ? e : D.intl.string(D.t.Bz6SkH),
+                headerText: (0, I.vA)(F) && (0, A.vl)(F) && !F.config.features.includes(w.Li.CLOUD_GAMING_ACTIVITY) ? e : D.intl.string(D.t.Bz6SkH),
                 ctaText: e,
                 handleClickCta: e_,
                 tileAssetType: "game"
@@ -212,7 +212,7 @@ function G(e) {
         "aria-expanded": ea,
         className: L.iE,
         style: {
-            width: null != (t = null == (F = B.current) ? void 0 : F.clientWidth) ? t : U,
+            width: null != (t = null == (V = B.current) ? void 0 : V.clientWidth) ? t : U,
             height: ec.height,
             overflow: ea ? "visible" : "hidden",
             borderRadius: ef
@@ -242,7 +242,7 @@ function G(e) {
                             color: "text-muted",
                             className: L.BK,
                             children: D.intl.format(D.t["Lm8/mH"], {
-                                gamePublisher: V.config.messages.gamePublisher
+                                gamePublisher: F.config.messages.gamePublisher
                             })
                         }), (0, r.jsx)(u.cBN, {
                             size: "custom",
@@ -261,14 +261,14 @@ function G(e) {
                             className: L.ae
                         })), "game" === eE.tileAssetType && (0, r.jsx)("img", {
                             alt: D.intl.formatToPlainString(D.t.IskzPg, {
-                                gameTitle: V.config.messages.gameTitle,
-                                gamePublisher: V.config.messages.gamePublisher
+                                gameTitle: F.config.messages.gameTitle,
+                                gamePublisher: F.config.messages.gamePublisher
                             }),
                             className: L.TW,
-                            src: (0, b.tW)(V, b.fY.GAME_TILE, et).url
+                            src: (0, b.tW)(F, b.fY.GAME_TILE, et).url
                         }), "reward" === eE.tileAssetType && (0, r.jsx)(C.A, {
                             className: L.TW,
-                            quest: V,
+                            quest: F,
                             questContent: E.uF.MEMBERS_LIST,
                             learnMoreStyle: "icon",
                             onClick: ed,
@@ -288,7 +288,7 @@ function G(e) {
     })
 }
 
-function F(e) {
+function V(e) {
     return (0, r.jsx)(S.R, {
         questOrQuests: e.quest,
         questContent: E.uF.MEMBERS_LIST,

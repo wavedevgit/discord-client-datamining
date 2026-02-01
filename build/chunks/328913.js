@@ -11,13 +11,13 @@ var i, r = n(627968),
     c = n(685603),
     d = n(467627),
     u = n(967198),
-    p = n(855790),
-    h = n(335022),
+    h = n(855790),
+    p = n(335022),
     f = n(714977),
     g = n(266244),
     y = n(439817),
-    m = n(985018),
-    _ = n(90901);
+    A = n(985018),
+    m = n(90901);
 
 function b(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
@@ -28,7 +28,7 @@ function b(e, t, n) {
     }) : e[t] = n, e
 }
 
-function A(e) {
+function O(e) {
     let {
         closePopout: t
     } = e;
@@ -36,25 +36,25 @@ function A(e) {
         onClose: t
     })
 }
-class O extends(i = s.PureComponent) {
+class _ extends(i = s.PureComponent) {
     render() {
         let {
             selectedGuildId: e,
             locked: t,
             contained: n,
             className: i
-        } = this.props, s = null != e ? (0, r.jsx)(h.A, {
+        } = this.props, s = null != e ? (0, r.jsx)(p.A, {
             guildId: e,
             onDragStart: this.onDragStart
         }, e) : (0, r.jsx)(y.A, {
-            title: m.intl.string(m.t.YUU0RF),
-            renderSettings: A,
+            title: A.intl.string(A.t.YUU0RF),
+            renderSettings: O,
             onDragStart: this.onDragStart,
             children: (0, r.jsx)(g.A, {})
-        }), l = n ? "div" : p.Ay;
+        }), l = n ? "div" : h.Ay;
         return (0, r.jsxs)(l, {
-            className: o()(_.E, {
-                [_.H]: !n
+            className: o()(m.E, {
+                [m.H]: !n
             }, i),
             children: [(0, r.jsx)(d.A, {
                 isOverlay: !0,
@@ -72,9 +72,9 @@ class O extends(i = s.PureComponent) {
         })
     }
 }
-b(O, "defaultProps", {
+b(_, "defaultProps", {
     contained: !1
 });
 let v = a.Ay.connectStores([u.A], () => ({
     selectedGuildId: u.A.getGuildId()
-}))(O)
+}))(_)

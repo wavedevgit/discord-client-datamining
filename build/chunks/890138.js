@@ -1,11 +1,11 @@
-/** chunk id: 890138, original params: t,e,n (module,exports,require) **/
-n.d(e, {
-    u: () => i
+/** chunk id: 890138, original params: t,e,i (module,exports,require) **/
+i.d(e, {
+    u: () => l
 });
-var a = n(73153);
+var n = i(73153);
 
-function i(t, e) {
-    a.h.dispatch({
+function l(t, e) {
+    n.h.dispatch({
         type: "TRACK",
         event: t,
         properties: e

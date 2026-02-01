@@ -1,7 +1,7 @@
 /** chunk id: 530804, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     $n: () => b,
-    uy: () => A,
+    uy: () => h,
     vp: () => _
 }), n(896048), n(321073);
 var r = n(64700),
@@ -66,7 +66,7 @@ function _(e, t) {
     })(n, t), [n, t])
 }
 
-function A(e, t) {
+function h(e, t) {
     let n = (0, i.bG)([c.default], () => c.default.getId() === t),
         l = (0, i.bG)([f.A], () => f.A.getChannelId()),
         a = r.useRef(null),

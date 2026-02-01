@@ -11,8 +11,8 @@ var r = n(627968),
     c = n(676002),
     u = n(734057),
     d = n(808728),
-    h = n(576705),
-    p = n(557534),
+    p = n(576705),
+    h = n(557534),
     g = n(166444),
     f = n(652215),
     m = n(790782),
@@ -25,14 +25,14 @@ let A = (0, c.a)(function(e) {
         disableManageChannels: A,
         sorting: y,
         sortingType: O,
-        sortingPosition: _,
-        connectChannelDragSource: j,
-        connectChannelDropTarget: x,
+        sortingPosition: j,
+        connectChannelDragSource: x,
+        connectChannelDropTarget: _,
         tabIndex: v
     } = e, E = (0, a.bG)([u.A, d.Ay], () => {
         let e = d.Ay.getDirectoryChannelIds(t.id);
         return 0 === e.length ? null : u.A.getChannel(e[0])
-    }), C = (0, a.bG)([u.A], () => u.A.getChannel(null == E ? void 0 : E.parent_id)), S = i === (null == E ? void 0 : E.id), I = (0, a.bG)([h.A], () => null != C ? h.A.can(f.xBc.MANAGE_CHANNELS, C) : null != t && h.A.can(f.xBc.MANAGE_CHANNELS, t)), N = l.useCallback(e => {
+    }), C = (0, a.bG)([u.A], () => u.A.getChannel(null == E ? void 0 : E.parent_id)), S = i === (null == E ? void 0 : E.id), I = (0, a.bG)([p.A], () => null != C ? p.A.can(f.xBc.MANAGE_CHANNELS, C) : null != t && p.A.can(f.xBc.MANAGE_CHANNELS, t)), N = l.useCallback(e => {
         null != E && (0, o.L3)(e, async () => {
             let {
                 default: e
@@ -72,8 +72,8 @@ let A = (0, c.a)(function(e) {
         })
     }, [E]);
     if (null == E) return null;
-    let T = (0, p.O6)(c, _),
-        P = (0, p.h$)(E, y, O),
+    let T = (0, h.O6)(c, j),
+        P = (0, h.h$)(E, y, O),
         w = (0, r.jsx)("div", {
             className: s()(T, {
                 [b.r9]: P,
@@ -88,15 +88,15 @@ let A = (0, c.a)(function(e) {
                 onContextMenu: N,
                 forceInteractable: !0,
                 resolvedUnreadSetting: m.e.ONLY_MENTIONS,
-                children: [(0, r.jsx)(p.gQ, {
+                children: [(0, r.jsx)(h.gQ, {
                     channel: E,
                     tabIndex: v
-                }), (0, r.jsx)(p.Jd, {
+                }), (0, r.jsx)(h.Jd, {
                     channel: E,
                     disableManageChannels: A,
                     tabIndex: v
                 })]
             })
         });
-    return I && (w = x(j(w))), w
+    return I && (w = _(x(w))), w
 })

@@ -11,8 +11,8 @@ var r = n(627968),
     c = n(397927),
     u = n(104171),
     d = n(47868),
-    h = n(986738),
-    p = n(394412),
+    p = n(986738),
+    h = n(394412),
     g = n(859894),
     f = n(931991),
     m = n(426660),
@@ -20,28 +20,28 @@ var r = n(627968),
     A = n(233993),
     y = n(19844),
     O = n(505543),
-    _ = n(985018),
-    j = n(529471);
+    j = n(985018),
+    x = n(529471);
 
-function x(e) {
+function _(e) {
     let {
         onClick: t,
         className: n
     } = e, l = c.cNw;
     return (0, r.jsx)(d.A, {
         iconContainerClassName: s()({
-            [j.q8]: !1
+            [x.q8]: !1
         }),
         icon: (0, r.jsx)(l, {
             size: "custom",
             color: "currentColor",
-            className: j.Pz,
+            className: x.Pz,
             height: 20,
             width: 20
         }),
         color: o.A.unsafe_rawColors.PRIMARY_700.css,
-        title: _.intl.string(_.t["jMLfp/"]),
-        description: _.intl.string(_.t["Vd/rEX"]),
+        title: j.intl.string(j.t["jMLfp/"]),
+        description: j.intl.string(j.t["Vd/rEX"]),
         onClick: t,
         className: n
     })
@@ -55,9 +55,9 @@ function v(e) {
         usersInSummary: l
     } = (0, y.A)(t.id);
     return (0, r.jsxs)("div", {
-        className: j.P1,
+        className: x.P1,
         children: [(0, r.jsx)(u.Ay, {
-            className: j.Ip,
+            className: x.Ip,
             guildId: t.guild_id,
             users: l,
             size: u.DN.SIZE_16
@@ -66,15 +66,15 @@ function v(e) {
             color: "text-default",
             children: function(e) {
                 if (0 === e.length) return "";
-                if (1 === e.length) return _.intl.formatToPlainString(_.t["5ULgaQ"], {
+                if (1 === e.length) return j.intl.formatToPlainString(j.t["5ULgaQ"], {
                     first: e[0].userNick
                 });
-                if (2 === e.length) return _.intl.formatToPlainString(_.t.BHK0Op, {
+                if (2 === e.length) return j.intl.formatToPlainString(j.t.BHK0Op, {
                     first: e[0].userNick,
                     second: e[1].userNick
                 });
                 let t = e.length - 2;
-                return _.intl.formatToPlainString(_.t.T3MT4n, {
+                return j.intl.formatToPlainString(j.t.T3MT4n, {
                     first: e[0].userNick,
                     second: e[1].userNick,
                     numOthers: t
@@ -92,36 +92,36 @@ function E(e) {
         canCreateGuildEvent: u
     } = (0, f.nr)(t), d = (0, O.A)(t.id), y = l.useRef(null);
     return (0, r.jsxs)("div", {
-        className: j.kL,
+        className: x.kL,
         ref: y,
         children: [(0, r.jsx)(m.A, {
             eventTargetRef: y
         }), (0, r.jsxs)("div", {
-            className: j.Qs,
+            className: x.Qs,
             children: [(0, r.jsxs)("div", {
-                className: j.N1,
+                className: x.N1,
                 children: [(0, r.jsx)(c.Heading, {
-                    className: j.__invalid_title,
+                    className: x.__invalid_title,
                     variant: "heading-xxl/normal",
-                    children: _.intl.string(_.t.QGnDLs)
+                    children: j.intl.string(j.t.QGnDLs)
                 }), (0, r.jsx)(c.Text, {
                     tag: "div",
-                    className: j.VA,
+                    className: x.VA,
                     variant: "heading-lg/normal",
-                    children: _.intl.string(_.t.djfK36)
+                    children: j.intl.string(j.t.djfK36)
                 })]
-            }), d ? null : (0, r.jsx)(p.A, {
+            }), d ? null : (0, r.jsx)(h.A, {
                 channelId: t.id,
                 showDismiss: !1
             }), i ? (0, r.jsx)(g.A, {
-                className: j.fN,
+                className: x.fN,
                 channel: t
-            }) : null, u ? (0, r.jsx)(h.A, {
-                className: j.fN,
+            }) : null, u ? (0, r.jsx)(p.A, {
+                className: x.fN,
                 guildId: o
-            }) : null, i ? (0, r.jsx)(x, {
+            }) : null, i ? (0, r.jsx)(_, {
                 className: s()({
-                    [j.fN]: !0
+                    [x.fN]: !0
                 }),
                 onClick: n
             }) : null, (0, r.jsx)(v, {

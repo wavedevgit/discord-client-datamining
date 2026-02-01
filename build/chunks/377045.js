@@ -11,8 +11,8 @@ var r = n(627968),
     c = n(353202),
     u = n(544028),
     d = n(967198),
-    h = n(652215),
-    p = n(985018),
+    p = n(652215),
+    h = n(985018),
     g = n(70461);
 
 function f(e) {
@@ -22,16 +22,16 @@ function f(e) {
     l.useEffect(() => {
         c.A.loadThread(f)
     });
-    let m = (0, s.bG)([d.A], () => d.A.getGuildId()) === h.YYv,
+    let m = (0, s.bG)([d.A], () => d.A.getGuildId()) === p.YYv,
         b = (0, s.bG)([u.A], () => u.A.theme);
     return t = m ? (0, r.jsx)(a.SGT, {
-        note: p.intl.string(p.t["D5SN5/"]),
-        children: p.intl.string(p.t.xVTAdb)
+        note: h.intl.string(h.t["D5SN5/"]),
+        children: h.intl.string(h.t.xVTAdb)
     }) : null != f ? (0, r.jsx)(a.y$y, {
         type: a.y$y.Type.SPINNING_CIRCLE
     }) : (0, r.jsx)(a.SGT, {
-        note: p.intl.string(p.t["LTr+x9"]),
-        children: p.intl.string(p.t.ai6Lbr)
+        note: h.intl.string(h.t["LTr+x9"]),
+        children: h.intl.string(h.t.ai6Lbr)
     }), (0, r.jsxs)("div", {
         className: g.j,
         children: [i.Fr && (0, r.jsx)(o.Ay, {

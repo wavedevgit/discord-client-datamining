@@ -11,8 +11,8 @@ var r = n(627968),
     c = n(203982),
     u = n(607508),
     d = n(914703),
-    h = n(37411),
-    p = n(652215),
+    p = n(37411),
+    h = n(652215),
     g = n(985018);
 
 function f(e) {
@@ -53,11 +53,11 @@ function b(e) {
     } = e, n = (0, u.X)(t), [b, A] = l.useState(!1), y = l.useRef(null), O = (0, i.bG)([o.A], () => null != t.guild_id && o.A.isLurking(t.guild_id));
     if (l.useEffect(() => {
             let e = () => A(!0);
-            return c._.subscribe(p.jej.OPEN_THREAD_NOTIFICATION_SETTINGS, e), () => {
-                c._.unsubscribe(p.jej.OPEN_THREAD_NOTIFICATION_SETTINGS, e)
+            return c._.subscribe(h.jej.OPEN_THREAD_NOTIFICATION_SETTINGS, e), () => {
+                c._.unsubscribe(h.jej.OPEN_THREAD_NOTIFICATION_SETTINGS, e)
             }
         }, []), O) return null;
-    let _ = g.intl.string(g.t.h850Ss);
+    let j = g.intl.string(g.t.h850Ss);
     return (0, r.jsx)(s.YNO, {
         targetElementRef: y,
         shouldShow: b,
@@ -78,9 +78,9 @@ function b(e) {
             return (0, r.jsx)(a.Ay.Icon, m(f({}, e), {
                 ref: y,
                 onClick: () => A(e => !e),
-                tooltip: l ? null : _,
-                icon: n === h.CP.NO_MESSAGES ? s.a_I : s.XFE,
-                "aria-label": _,
+                tooltip: l ? null : j,
+                icon: n === p.CP.NO_MESSAGES ? s.a_I : s.XFE,
+                "aria-label": j,
                 selected: l
             }))
         }

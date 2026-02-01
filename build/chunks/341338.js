@@ -14,8 +14,8 @@ var r = n(627968),
     p = n(421380),
     h = n(397927),
     g = n(73153),
-    f = n(436946),
-    m = n(339048),
+    m = n(436946),
+    f = n(339048),
     A = n(800342),
     _ = n(820284),
     b = n(774334),
@@ -51,8 +51,8 @@ var r = n(627968),
     Q = n(893638),
     X = n(283508),
     Z = n(852860),
-    $ = n(363994),
-    J = n(612391),
+    J = n(363994),
+    $ = n(612391),
     ee = n(467201),
     et = n(428899),
     en = n(897550),
@@ -119,7 +119,7 @@ class eh extends i.PureComponent {
             } = l.state;
             this._analyticsSource = e, this._extraAnalyticsProperties = t
         } else this._analyticsSource = ea.$OG;
-        (null == t || t.isSlimDirectoryVersion()) && a(), null != e && (n || i || (0, m.LM)(e.applicationId), r && g.h.wait(() => (0, f.n)(e.applicationId))), this.trackViewed(), this.replaceUrlWithSlug()
+        (null == t || t.isSlimDirectoryVersion()) && a(), null != e && (n || i || (0, f.LM)(e.applicationId), r && g.h.wait(() => (0, m.n)(e.applicationId))), this.trackViewed(), this.replaceUrlWithSlug()
     }
     componentDidUpdate(e) {
         let {
@@ -137,7 +137,7 @@ class eh extends i.PureComponent {
                 slug: a
             }), (t !== e.locale || i !== e.skuId) && o(), r && !e.shouldFetchStatistics) {
             if (null == n) throw Error("Unexpected missing sku");
-            g.h.wait(() => (0, f.n)(n.applicationId))
+            g.h.wait(() => (0, m.n)(n.applicationId))
         }(i !== e.skuId || l !== e.storeListingId) && (this._trackedViewed = !1), this.trackViewed(), this.replaceUrlWithSlug()
     }
     componentWillUnmount() {
@@ -411,7 +411,7 @@ class eh extends i.PureComponent {
             return (0, r.jsxs)(i.Fragment, {
                 children: [(0, r.jsx)(N.HI, {
                     location: e.name
-                }), this.renderJsonLD(), this.renderHeader(e, t), (0, r.jsx)($.A, {
+                }), this.renderJsonLD(), this.renderHeader(e, t), (0, r.jsx)(J.A, {
                     game: e
                 }), n]
             })
@@ -555,8 +555,8 @@ class eh extends i.PureComponent {
                         }),
                         children: [null != t ? (0, j.A)(t) : null, null != e && null != t ? (0, r.jsx)("div", {
                             children: "deprecated!"
-                        }) : null, (0, r.jsx)(J.A, {
-                            messageStyle: J.g.SHORT,
+                        }) : null, (0, r.jsx)($.A, {
+                            messageStyle: $.g.SHORT,
                             className: ec.Mb
                         })]
                     })

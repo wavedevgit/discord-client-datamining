@@ -122,7 +122,7 @@ function G(e) {
     a()(null != n, "Window root was null while unmounting"), n.unmount(), delete w[e], delete N[e], delete P[e], delete R[e]
 }
 
-function F(e, t, r) {
+function V(e, t, r) {
     let i = e.document,
         o = new URL(t).origin,
         s = new URL("".concat(window.location.protocol, "//").concat(window.location.host)).origin,
@@ -132,8 +132,8 @@ function F(e, t, r) {
     c.href = t, c.rel = "stylesheet", c.integrity = r, a()(null != i.head, "Document head was null"), i.head.appendChild(c)
 }
 
-function V(e, t) {
-    for (let e of document.querySelectorAll('link[rel="stylesheet"]')) F(t, e.href, e.integrity)
+function F(e, t) {
+    for (let e of document.querySelectorAll('link[rel="stylesheet"]')) V(t, e.href, e.integrity)
 }
 
 function B(e) {
@@ -141,7 +141,7 @@ function B(e) {
         n = P[e];
     if (null == t) return void T.warn("Failed to open window", e);
     let r = t.document;
-    (0, g.a3)(r, x), t.addEventListener("focus", x), t.addEventListener("blur", x), t.addEventListener("resize", M), j ? k(e, t) : V(e, t);
+    (0, g.a3)(r, x), t.addEventListener("focus", x), t.addEventListener("blur", x), t.addEventListener("resize", M), j ? k(e, t) : F(e, t);
     let i = (0, l.createRoot)(r.getElementById(L));
     a()(null != i, "No render target for popout!"), R[e] = i, i.render(n(e))
 }
@@ -263,7 +263,7 @@ function X(e) {
         url: t,
         integrity: n
     } = e;
-    for (let e of Object.values(w)) null == e || e.closed || F(e, t, n)
+    for (let e of Object.values(w)) null == e || e.closed || V(e, t, n)
 }
 class J extends(r = c.Ay.PersistedStore) {
     initialize(e) {

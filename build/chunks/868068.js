@@ -3,9 +3,9 @@ n.d(t, {
     K: () => a,
     O: () => i
 });
-var l = n(56562),
-    r = n(927813),
-    s = n(652215);
+var r = n(56562),
+    l = n(927813),
+    o = n(652215);
 let i = {
         None: void 0,
         Terraria: {
@@ -23,10 +23,10 @@ let i = {
             pid: 1234,
             pidPath: [],
             windowHandle: "13229",
-            fullscreenType: l.aI.BORDERLESS_FULLSCREEN,
+            fullscreenType: r.aI.BORDERLESS_FULLSCREEN,
             isLauncher: !1,
-            start: Date.now() - r.A.Millis.HOUR,
-            distributor: s.d3x.STEAM
+            start: Date.now() - l.A.Millis.HOUR,
+            distributor: o.d3x.STEAM
         }
     },
     a = Object.keys(i)

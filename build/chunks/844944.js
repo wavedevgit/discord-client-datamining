@@ -146,7 +146,7 @@ function G(e) {
     null != r && (A(n, E, r.applicationStatus), j(t))
 }
 
-function F(e) {
+function V(e) {
     let {
         guildId: t,
         action: n
@@ -157,14 +157,14 @@ function F(e) {
         }))
     }), v(t, 0)
 }
-let V = {};
+let F = {};
 
 function B(e) {
     let {
         guildId: t,
         applicationTab: n
     } = e;
-    n !== V[t] && (V[t] = n)
+    n !== F[t] && (F[t] = n)
 }
 let H = {};
 
@@ -176,7 +176,7 @@ function Y(e) {
     } = e;
     if (r === H[n]) return;
     H[n] = r;
-    let i = null != (t = V[n]) ? t : f.B5.SUBMITTED;
+    let i = null != (t = F[n]) ? t : f.B5.SUBMITTED;
     "REVIEW_APPLICATION" !== i && ((0, d.mf)(i) && x.clear(), (0, d.ar)(i) && L.clear())
 }
 let W = {};
@@ -215,7 +215,7 @@ class Z extends(r = o.Ay.Store) {
     getSelectedApplicationTab(e) {
         var t;
         let n = f.B5.SUBMITTED;
-        return null != (t = V[e]) ? t : n
+        return null != (t = F[e]) ? t : n
     }
     getSelectedSortOrder(e) {
         var t;
@@ -232,7 +232,7 @@ let Q = new Z(l.h, {
     GUILD_JOIN_REQUESTS_FETCH_SUCCESS: C,
     GUILD_JOIN_REQUESTS_FETCH_START: T,
     GUILD_JOIN_REQUESTS_FETCH_FAILURE: N,
-    GUILD_JOIN_REQUESTS_BULK_ACTION: F,
+    GUILD_JOIN_REQUESTS_BULK_ACTION: V,
     GUILD_JOIN_REQUEST_CREATE: U,
     GUILD_JOIN_REQUEST_UPDATE: U,
     GUILD_JOIN_REQUEST_DELETE: G,

@@ -1,16 +1,16 @@
 /** chunk id: 420819, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => l
+    A: () => r
 });
-var r = n(621466);
+var l = n(621466);
 
-function l(e, t) {
+function r(e, t) {
     let n = e.offsetTop,
-        l = e.offsetParent;
-    for (; null != l;) {
+        r = e.offsetParent;
+    for (; null != r;) {
         var i;
-        if (l === t || !(0, r.vq)(l, HTMLElement)) break;
-        n += null != (i = l.offsetTop) ? i : 0, l = l.offsetParent
+        if (r === t || !(0, l.vq)(r, HTMLElement)) break;
+        n += null != (i = r.offsetTop) ? i : 0, r = r.offsetParent
     }
     return n
 }

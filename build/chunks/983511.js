@@ -21,13 +21,13 @@ var r = n(627968),
     h = n(683433),
     E = n(692440),
     O = n(178368),
-    C = n(97352),
-    x = n(166403),
+    x = n(97352),
+    C = n(166403),
     S = n(473145),
     T = n(927578),
     I = n(580630),
-    y = n(802790),
-    N = n(788868),
+    N = n(802790),
+    y = n(788868),
     j = n(818348),
     v = n(985018),
     P = n(397415);
@@ -98,7 +98,7 @@ function L(e) {
         onBack: u,
         onNext: m,
         onClose: O
-    } = e, [x, S] = i.useState(!1), [j, R] = i.useState(null), [L, w] = i.useMemo(() => {
+    } = e, [C, S] = i.useState(!1), [j, R] = i.useState(null), [L, w] = i.useMemo(() => {
         try {
             return [(0, f.v)(s, -1), !1]
         } catch (e) {
@@ -115,11 +115,11 @@ function L(e) {
     let {
         premiumSubscriptionPlan: G,
         premiumGuildPlan: U
-    } = (0, o.cf)([C.A], () => {
-        let e = C.A.get(s.planId);
+    } = (0, o.cf)([x.A], () => {
+        let e = x.A.get(s.planId);
         return {
             premiumSubscriptionPlan: e,
-            premiumGuildPlan: null != e ? C.A.getForSkuAndInterval((0, T.mH)(N.pe.GUILD), e.interval, e.intervalCount) : null
+            premiumGuildPlan: null != e ? x.A.getForSkuAndInterval((0, T.mH)(y.pe.GUILD), e.interval, e.intervalCount) : null
         }
     }), {
         analyticsLocations: k
@@ -142,18 +142,18 @@ function L(e) {
             let {
                 planId: t
             } = e;
-            return !N.pW.has(t)
+            return !y.pW.has(t)
         }) && null == s.renewalMutations || (null == (l = s.renewalMutations) ? void 0 : l.items.find(e => {
             let {
                 planId: t
             } = e;
-            return !N.pW.has(t)
+            return !y.pW.has(t)
         })) != null,
         Y = L.some(e => {
             let {
                 planId: t
             } = e;
-            return N.pW.has(t)
+            return y.pW.has(t)
         }),
         W = F || Y ? V.total - B.total : -B.total,
         {
@@ -166,7 +166,7 @@ function L(e) {
     return s.isPausedForFractionalPremium && d.fetched && (Z = v.intl.format(v.t.eb0xgS, {
         expirationDate: d.endsAt.toDate()
     })), (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(y.A, {
+        children: [(0, r.jsx)(N.A, {
             "data-migration-pending": !0,
             onClose: O
         }), (0, r.jsxs)(c.$mQ, {
@@ -205,7 +205,7 @@ function L(e) {
             children: [(0, r.jsx)(c.Button, {
                 variant: "critical-primary",
                 text: v.intl.string(v.t["/AS/gM"]),
-                disabled: x,
+                disabled: C,
                 onClick: async () => {
                     try {
                         S(!0), R(null), await D(s, L, k, a), m()
@@ -259,9 +259,9 @@ function M(e) {
         onClose: s
     } = e;
     i.useEffect(() => {
-        x.A.hasFetchedSubscriptions() || (0, d.hP)()
+        C.A.hasFetchedSubscriptions() || (0, d.hP)()
     }, []);
-    let a = (0, o.bG)([x.A], () => x.A.getPremiumTypeSubscription()),
+    let a = (0, o.bG)([C.A], () => C.A.getPremiumTypeSubscription()),
         u = (0, m.A)(),
         [g, A] = i.useState(1),
         {

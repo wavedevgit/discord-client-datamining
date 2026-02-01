@@ -12,8 +12,8 @@ var i, r = n(627968),
     c = n.n(a),
     d = n(990078),
     u = n(397927),
-    p = n(652215),
-    h = n(484932);
+    h = n(652215),
+    p = n(484932);
 
 function f(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
@@ -23,13 +23,13 @@ function f(e, t, n) {
         writable: !0
     }) : e[t] = n, e
 }
-let g = p.UVF.DEFAULT,
+let g = h.UVF.DEFAULT,
     y = 1,
-    m = s.createContext({
+    A = s.createContext({
         type: g,
         opacity: y
     }),
-    _ = s.createContext(void 0),
+    m = s.createContext(void 0),
     b = e => {
         let {
             children: t,
@@ -51,12 +51,12 @@ let g = p.UVF.DEFAULT,
                 for (r = 0, n = Object.getOwnPropertySymbols(e); r < n.length; r++) i = n[r], !(t.indexOf(i) >= 0) && Object.prototype.propertyIsEnumerable.call(e, i) && (s[i] = e[i]);
             return s
         }(e, ["children", "className"]);
-        return (0, r.jsx)(m.Consumer, {
+        return (0, r.jsx)(A.Consumer, {
             children: e => {
                 let {
                     type: s
                 } = e;
-                return (0, r.jsx)(_.Consumer, {
+                return (0, r.jsx)(m.Consumer, {
                     children: e => {
                         var l, a;
                         return (0, r.jsx)("div", (l = function(e) {
@@ -71,7 +71,7 @@ let g = p.UVF.DEFAULT,
                             }
                             return e
                         }({
-                            className: o()(h.bar, h[c()(s)], n),
+                            className: o()(p.bar, p[c()(s)], n),
                             style: e
                         }, i), a = a = {
                             children: t
@@ -90,17 +90,17 @@ let g = p.UVF.DEFAULT,
             }
         })
     };
-class A extends(i = s.PureComponent) {
+class O extends(i = s.PureComponent) {
     render() {
         let {
             disableScroll: e,
             children: t,
             className: n
         } = this.props;
-        return (0, r.jsx)(_.Consumer, {
-            children: i => (0, r.jsx)(m.Consumer, {
+        return (0, r.jsx)(m.Consumer, {
+            children: i => (0, r.jsx)(A.Consumer, {
                 children: s => {
-                    let l = o()(h.body, h[c()(s.type)], n);
+                    let l = o()(p.body, p[c()(s.type)], n);
                     return e ? (0, r.jsx)("div", {
                         className: l,
                         style: i,
@@ -115,10 +115,10 @@ class A extends(i = s.PureComponent) {
         })
     }
 }
-f(A, "defaultProps", {
+f(O, "defaultProps", {
     disableScroll: !1
 });
-let O = e => {
+let _ = e => {
         let {
             type: t = g,
             width: n,
@@ -128,13 +128,13 @@ let O = e => {
             opacity: a = y,
             onClick: d
         } = e;
-        return (0, r.jsx)(m.Provider, {
+        return (0, r.jsx)(A.Provider, {
             value: {
                 type: t,
                 opacity: a
             },
             children: (0, r.jsx)("div", {
-                className: o()(h.widget, h[c()(t)], l),
+                className: o()(p.widget, p[c()(t)], l),
                 style: {
                     width: n,
                     height: i
@@ -150,24 +150,24 @@ let O = e => {
             className: n,
             dynamicSize: i = !1
         } = e;
-        return (0, r.jsx)(_.Consumer, {
+        return (0, r.jsx)(m.Consumer, {
             children: e => (0, r.jsx)("div", {
-                className: o()(h.content, {
-                    [h.staticSize]: !i
+                className: o()(p.content, {
+                    [p.staticSize]: !i
                 }, n),
                 style: e,
                 children: t
             })
         })
     };
-O.Background = e => {
+_.Background = e => {
     let {
         children: t,
         opacityOverride: n
     } = e;
     if (null == t) return null;
-    let i = [b, A, v];
-    return (0, r.jsx)(m.Consumer, {
+    let i = [b, O, v];
+    return (0, r.jsx)(A.Consumer, {
         children: e => {
             let {
                 opacity: l
@@ -178,7 +178,7 @@ O.Background = e => {
                 style: o
             });
             {
-                if (i.includes(t.type)) return (0, r.jsx)(_.Provider, {
+                if (i.includes(t.type)) return (0, r.jsx)(m.Provider, {
                     value: o,
                     children: t
                 });
@@ -187,7 +187,7 @@ O.Background = e => {
             }
         }
     })
-}, O.Body = A, O.Content = v, O.Icon = e => {
+}, _.Body = O, _.Content = v, _.Icon = e => {
     let {
         ref: t,
         icon: n,
@@ -196,11 +196,11 @@ O.Background = e => {
         tooltipPosition: l = "top",
         isTutorial: a = !1,
         isActive: c,
-        size: p = 20
+        size: h = 20
     } = e;
     return (0, r.jsx)(d.m, {
         __unsupportedReactNodeAsText: a ? (0, r.jsx)("div", {
-            className: h.tutorialTip,
+            className: p.tutorialTip,
             children: i
         }) : i,
         "aria-label": i,
@@ -208,19 +208,19 @@ O.Background = e => {
         forceOpen: a,
         children: (0, r.jsx)(u.DUT, {
             onClick: s,
-            className: o()(h.icon, {
-                [h.toggledIconOn]: c
+            className: o()(p.icon, {
+                [p.toggledIconOn]: c
             }),
             innerRef: t,
             "aria-label": i,
             children: (0, r.jsx)(n, {
                 color: "currentColor",
                 size: "custom",
-                width: p,
-                height: p,
+                width: h,
+                height: h,
                 role: "img"
             })
         })
     })
-}, O.Bar = b;
-let E = O
+}, _.Bar = b;
+let E = _

@@ -1,7 +1,7 @@
 /** chunk id: 665037, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     A: () => A,
-    G: () => m
+    G: () => f
 });
 var r, i = n(64700),
     l = n(311907),
@@ -14,14 +14,14 @@ var r, i = n(64700),
     p = n(788866),
     h = n(992250),
     g = n(15438),
-    f = n(652215),
-    m = ((r = {})[r.ENABLE_PUBLIC_GUILD = 0] = "ENABLE_PUBLIC_GUILD", r[r.MAX_MEMBER_COUNT = 1] = "MAX_MEMBER_COUNT", r[r.GUILD_LIVE_CHANNEL = 2] = "GUILD_LIVE_CHANNEL", r[r.GUILD_MFA_WARNING = 3] = "GUILD_MFA_WARNING", r[r.COMMANDS_MIGRATION = 4] = "COMMANDS_MIGRATION", r[r.APPLICATION_SUBSCRIPTION_EXPIRATION = 5] = "APPLICATION_SUBSCRIPTION_EXPIRATION", r[r.HUB_STUDY_ROOM = 6] = "HUB_STUDY_ROOM", r[r.CLAN_UPSELL = 7] = "CLAN_UPSELL", r);
+    m = n(652215),
+    f = ((r = {})[r.ENABLE_PUBLIC_GUILD = 0] = "ENABLE_PUBLIC_GUILD", r[r.MAX_MEMBER_COUNT = 1] = "MAX_MEMBER_COUNT", r[r.GUILD_LIVE_CHANNEL = 2] = "GUILD_LIVE_CHANNEL", r[r.GUILD_MFA_WARNING = 3] = "GUILD_MFA_WARNING", r[r.COMMANDS_MIGRATION = 4] = "COMMANDS_MIGRATION", r[r.APPLICATION_SUBSCRIPTION_EXPIRATION = 5] = "APPLICATION_SUBSCRIPTION_EXPIRATION", r[r.HUB_STUDY_ROOM = 6] = "HUB_STUDY_ROOM", r[r.CLAN_UPSELL = 7] = "CLAN_UPSELL", r);
 
 function A(e) {
     var t;
-    let n = null != (t = null == e ? void 0 : e.id) ? t : f.dJq,
+    let n = null != (t = null == e ? void 0 : e.id) ? t : m.dJq,
         r = (0, l.bG)([p.A], () => p.A.isVisible(e)),
-        m = (0, l.bG)([g.A], () => g.A.isVisible(e)),
+        f = (0, l.bG)([g.A], () => g.A.isVisible(e)),
         A = (0, s.C)(n),
         _ = (0, l.bG)([h.A], () => h.A.isVisible(e)),
         b = u.A.useShouldShowChannelNotice(n),
@@ -30,12 +30,12 @@ function A(e) {
             enableStudyGroup: O
         } = (0, c.y)(e),
         y = E.length > 0,
-        I = O && !(null == e ? void 0 : e.features.has(f.GuildFeatures.HUB)),
+        I = O && !(null == e ? void 0 : e.features.has(m.GuildFeatures.HUB)),
         v = (0, o.WG)(n);
     if (i.useEffect(() => {
             a.A.getGuildEventsForCurrentUser(n)
         }, [n]), r) return 0;
-    if (m) return 1;
+    if (f) return 1;
     if (A || null != v) return 2;
     if (_) return 3;
     if (b) return 4;

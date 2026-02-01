@@ -1,43 +1,44 @@
 /** chunk id: 532197, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    A: () => b
+    A: () => g
 });
-var r, l, a = n(627968),
-    i = n(64700),
+var i, s, r = n(627968),
+    l = n(64700),
     o = n(503698),
-    s = n.n(o),
-    c = n(397927),
-    d = n(262633);
-let u = {
+    a = n.n(o),
+    d = n(397927),
+    u = n(262633);
+let c = {
         UP: "up",
         RIGHT: "right",
         DOWN: "down",
         LEFT: "left"
     },
-    _ = {
-        [u.UP]: "",
-        [u.RIGHT]: d.pG,
-        [u.DOWN]: d.TR,
-        [u.LEFT]: d.kb
+    h = {
+        [c.UP]: "",
+        [c.RIGHT]: u.pG,
+        [c.DOWN]: u.TR,
+        [c.LEFT]: u.kb
     };
-class m extends(l = i.PureComponent) {
+class p extends(s = l.PureComponent) {
     render() {
         let {
             direction: e,
             className: t
         } = this.props;
-        return (0, a.jsx)(c.z$m, {
+        return (0, r.jsx)(d.z$m, {
             size: "md",
             color: "currentColor",
-            className: s()(t, {
-                [_[e]]: !0
+            className: a()(t, {
+                [h[e]]: !0
             })
         })
     }
-}(r = "Directions") in m ? Object.defineProperty(m, r, {
-    value: u,
+}(i = "Directions") in p ? Object.defineProperty(p, i, {
+    value: c,
     enumerable: !0,
     configurable: !0,
     writable: !0
-}) : m[r] = u;
-let b = m
+}) : p[i] = c;
+let g = p

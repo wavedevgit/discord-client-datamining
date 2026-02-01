@@ -1,7 +1,7 @@
 /** chunk id: 725951, original params: e,t,r (module,exports,require) **/
 r.d(t, {
-    A: () => _,
-    f: () => p
+    A: () => S,
+    f: () => f
 });
 var n, l = r(627968),
     s = r(64700),
@@ -32,8 +32,8 @@ function h(e) {
     }
     return e
 }
-var p = ((n = {})[n.RIGHT = -1] = "RIGHT", n[n.LEFT = 1] = "LEFT", n);
-let f = {
+var f = ((n = {})[n.RIGHT = -1] = "RIGHT", n[n.LEFT = 1] = "LEFT", n);
+let p = {
     friction: 7,
     tension: 40,
     clamp: !0
@@ -77,13 +77,13 @@ class g extends s.PureComponent {
         super(e), d(this, "_animated", void 0), this._animated = new o.A.Value(-1 * e.direction)
     }
 }
-let _ = e => {
+let S = e => {
     let {
         children: t,
         step: r,
         direction: n,
         className: s,
-        springSettings: a = f,
+        springSettings: a = p,
         fadeInOut: o = !1
     } = e;
     return (0, l.jsx)(c.F, {

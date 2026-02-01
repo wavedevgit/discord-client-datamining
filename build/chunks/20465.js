@@ -12,8 +12,8 @@ var r = n(627968),
     c = n(311907),
     u = n(397927),
     d = n(73153),
-    h = n(367513),
-    p = n(843472),
+    p = n(367513),
+    h = n(843472),
     g = n(386467),
     f = n(465364),
     m = n(763754),
@@ -21,14 +21,14 @@ var r = n(627968),
     A = n(378058),
     y = n(148355),
     O = n(320501),
-    _ = n(994500),
-    j = n(486020),
-    x = n(927813),
+    j = n(994500),
+    x = n(486020),
+    _ = n(927813),
     v = n(403362),
     E = n(652215),
     C = n(838541),
     S = n(279633);
-let I = 10 * x.A.Millis.SECOND;
+let I = 10 * _.A.Millis.SECOND;
 
 function N(e) {
     var t;
@@ -37,11 +37,11 @@ function N(e) {
     } = e, {
         isBlocked: i,
         isIgnored: a
-    } = (0, c.cf)([_.A], () => ({
-        isBlocked: _.A.isBlockedForMessage(n),
-        isIgnored: _.A.isIgnoredForMessage(n)
-    }), [n]), o = (0, m.X4)(n), d = l.useContext(g.A), [O, x] = l.useState(!1), v = l.useCallback(e => {
-        "A" !== e.target.nodeName && (h.A.updateChatOpen(n.channel_id, !0), p.A.jumpToMessage({
+    } = (0, c.cf)([j.A], () => ({
+        isBlocked: j.A.isBlockedForMessage(n),
+        isIgnored: j.A.isIgnoredForMessage(n)
+    }), [n]), o = (0, m.X4)(n), d = l.useContext(g.A), [O, _] = l.useState(!1), v = l.useCallback(e => {
+        "A" !== e.target.nodeName && (p.A.updateChatOpen(n.channel_id, !0), h.A.jumpToMessage({
             channelId: n.channel_id,
             messageId: n.id,
             flash: !0
@@ -66,10 +66,10 @@ function N(e) {
     return (0, r.jsxs)(u.DUT, {
         className: S.oR,
         onMouseEnter: () => {
-            x(!0)
+            _(!0)
         },
         onMouseLeave: () => {
-            x(!1)
+            _(!1)
         },
         onClick: v,
         children: [(0, r.jsxs)("div", {
@@ -81,7 +81,7 @@ function N(e) {
             }), null != R ? null : T]
         }), (0, r.jsx)("img", {
             alt: "",
-            src: (null == o ? void 0 : o.guildMemberAvatar) != null && null != d ? (0, j.s7)({
+            src: (null == o ? void 0 : o.guildMemberAvatar) != null && null != d ? (0, x.s7)({
                 guildId: d,
                 userId: n.author.id,
                 avatar: o.guildMemberAvatar
@@ -95,8 +95,8 @@ function T(e) {
     let {
         channelId: t,
         className: n
-    } = e, [i, h] = l.useState(!1), {
-        toastsHidden: p,
+    } = e, [i, p] = l.useState(!1), {
+        toastsHidden: h,
         toastMessages: g
     } = function(e) {
         var t;
@@ -105,8 +105,8 @@ function T(e) {
             isFrozen: r,
             count: i,
             lingerMs: s
-        } = e, [a, o] = l.useState([]), [u, h] = l.useState(!1), p = l.useRef(null), g = l.useRef(void 0), f = l.useCallback(() => {
-            o([]), h(!0)
+        } = e, [a, o] = l.useState([]), [u, p] = l.useState(!1), h = l.useRef(null), g = l.useRef(void 0), f = l.useCallback(() => {
+            o([]), p(!0)
         }, []);
         l.useEffect(() => {
             function e(e) {
@@ -127,8 +127,8 @@ function T(e) {
                 let t = e.length - 3;
                 return [...e.slice(t)]
             })
-        }, [a]), r && null == p.current ? p.current = a : r || null == p.current || (p.current = null);
-        let m = null != (t = p.current) ? t : a;
+        }, [a]), r && null == h.current ? h.current = a : r || null == h.current || (h.current = null);
+        let m = null != (t = h.current) ? t : a;
         return {
             toastsHidden: u,
             toastMessages: (0, c.yK)([O.A], () => m.map(e => O.A.getMessage(n, e)), [n, m]).filter(v.Vq)
@@ -152,12 +152,12 @@ function T(e) {
             e[r.id] = t, t += l + 8
         }(0, a.isEqual)(e, y.current) || b(e)
     }, [g]);
-    let _ = g.map(e => ({
+    let j = g.map(e => ({
             message: e,
             height: f.current[e.id],
             y: m[e.id]
         })),
-        j = (0, u.pnh)(_, {
+        x = (0, u.pnh)(j, {
             keys: e => e.message.id,
             from: () => ({
                 opacity: 0
@@ -186,7 +186,7 @@ function T(e) {
                 } = e;
                 return {
                     opacity: 0,
-                    translateY: p ? n : -(null != t ? t : 0) - 8,
+                    translateY: h ? n : -(null != t ? t : 0) - 8,
                     pointerEvents: "none"
                 }
             }
@@ -196,12 +196,12 @@ function T(e) {
         children: e => (0, r.jsx)("div", {
             className: s()(n, e),
             onMouseEnter: () => {
-                h(!0)
+                p(!0)
             },
             onMouseLeave: () => {
-                h(!1)
+                p(!1)
             },
-            children: j((e, t) => (0, r.jsx)(o.animated.div, {
+            children: x((e, t) => (0, r.jsx)(o.animated.div, {
                 ref: e => A(t.message.id, null != e ? e.offsetHeight : null),
                 className: S.T_,
                 style: e,

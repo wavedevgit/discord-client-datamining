@@ -2,7 +2,7 @@
 n.d(t, {
     AK: () => I,
     D1: () => A,
-    E2: () => y,
+    E2: () => N,
     FW: () => b,
     Hn: () => S,
     Hr: () => o,
@@ -14,11 +14,11 @@ n.d(t, {
     gN: () => f,
     hl: () => s,
     i4: () => d,
-    sN: () => x,
+    sN: () => C,
     t_: () => u,
     v_: () => E,
     zC: () => p,
-    zD: () => C,
+    zD: () => x,
     zZ: () => m
 }), n(896048), n(65821);
 var r = n(963935);
@@ -153,11 +153,11 @@ function O(e, t) {
     return h(e, r.Z6.BUTTON, t)
 }
 
-function C(e, t) {
+function x(e, t) {
     return h(e, r.Z6.TOGGLE, t)
 }
 
-function x(e, t) {
+function C(e, t) {
     return h(e, r.Z6.SLIDER, t)
 }
 
@@ -173,6 +173,6 @@ function I(e, t) {
     return h(e, r.Z6.NAVIGATOR, t)
 }
 
-function y(e, t) {
+function N(e, t) {
     return h(e, r.Z6.CUSTOM, t)
 }

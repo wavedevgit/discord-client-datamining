@@ -15,8 +15,8 @@ var r = n(627968),
     p = n(875444),
     h = n(770031),
     g = n(932340),
-    f = n(545167),
-    m = n(420936),
+    m = n(545167),
+    f = n(420936),
     A = n(733738),
     _ = n(27169),
     b = n(871432),
@@ -68,12 +68,12 @@ let V = i.memo(function() {
     }), {
         titlebarFastTravel: n,
         quickSwitcherInsteadOfTitle: l
-    } = (0, m.t)({
+    } = (0, f.t)({
         location: "AppTitleBar"
     }), {
         backForwardButtons: s,
         titlebarIconSize: _
-    } = (0, f.p)({
+    } = (0, m.p)({
         location: "AppTitleBar"
     }), {
         hasBugReporterAccess: v

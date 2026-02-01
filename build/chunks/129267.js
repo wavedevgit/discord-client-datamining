@@ -1,31 +1,31 @@
-/** chunk id: 129267, original params: e,t,i (module,exports,require) **/
-i.d(t, {
-    X: () => c
+/** chunk id: 129267, original params: t,e,i (module,exports,require) **/
+i.d(e, {
+    X: () => A
 });
 var n = i(419117),
     l = i(419954),
     s = i(780964),
     r = i(931852),
-    a = i(528237),
-    u = i(693804),
+    u = i(528237),
+    a = i(693804),
     o = i(985018);
 let d = s.X.NOTIFICATIONS_ADVANCED_ACCORDION,
     T = (0, l.bd)(d, {
-        useTitle: e => e ? o.intl.string(o.t.RyimDk) : o.intl.string(o.t.CUICbO),
+        useTitle: t => t ? o.intl.string(o.t.RyimDk) : o.intl.string(o.t.CUICbO),
         useCollapsedSubtitle: function() {
             return (0, n.A)(d, {
-                formatter: e => {
+                formatter: t => {
                     let {
-                        title: t,
+                        title: e,
                         index: i
-                    } = e;
-                    return "string" != typeof t ? t : 0 === i ? "".concat(t.charAt(0).toLocaleUpperCase()).concat(t.slice(1).toLocaleLowerCase()) : t.toLocaleLowerCase()
+                    } = t;
+                    return "string" != typeof e ? e : 0 === i ? "".concat(e.charAt(0).toLocaleUpperCase()).concat(e.slice(1).toLocaleLowerCase()) : e.toLocaleLowerCase()
                 }
             })
         },
-        buildLayout: () => [r.z, a.m, u.j]
+        buildLayout: () => [r.z, u.m, a.j]
     }),
-    c = (0, l.zZ)(s.X.NOTIFICATIONS_ADVANCED_CATEGORY, {
+    A = (0, l.zZ)(s.X.NOTIFICATIONS_ADVANCED_CATEGORY, {
         useTitle: () => o.intl.string(o.t["31DySj"]),
         buildLayout: () => [T]
     })

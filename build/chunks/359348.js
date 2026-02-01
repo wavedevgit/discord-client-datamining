@@ -11,8 +11,8 @@ var r = n(627968),
     c = n(688810),
     u = n(384059),
     d = n(42473),
-    h = n(186111),
-    p = n(532624),
+    p = n(186111),
+    h = n(532624),
     g = n(350535),
     f = n(274372),
     m = n(572164),
@@ -20,9 +20,9 @@ var r = n(627968),
     A = n(652215),
     y = n(985018),
     O = n(345314),
-    _ = n(145394);
+    j = n(145394);
 
-function j(e) {
+function x(e) {
     (0, o.L3)(e, async () => {
         let {
             default: e
@@ -47,7 +47,7 @@ function j(e) {
         }({}, t))
     })
 }
-let x = e => {
+let _ = e => {
         let {
             keybindString: t,
             targetElementRef: n
@@ -72,7 +72,7 @@ let x = e => {
             }),
             graphic: {
                 type: "image",
-                src: _
+                src: j
             },
             caretConfig: {
                 align: "center"
@@ -85,15 +85,15 @@ let x = e => {
             {
                 parentAnalyticsLocation: t
             } = (0, c.Ay)(),
-            n = (0, i.bG)([h.A], () => h.A.hasLayers()),
+            n = (0, i.bG)([p.A], () => p.A.hasLayers()),
             s = (0, m.Et)(),
             o = (0, i.bG)([f.A], () => f.A.getIsAtMaxSaveClipOperations()),
-            O = (0, i.bG)([p.Ay], () => p.Ay.getKeybindForAction(A.hCu.SAVE_CLIP));
+            O = (0, i.bG)([h.Ay], () => h.Ay.getKeybindForAction(A.hCu.SAVE_CLIP));
         if (!s || null == O || n) return null;
-        let _ = g.dI(O.shortcut, !0);
+        let j = g.dI(O.shortcut, !0);
         return (0, r.jsxs)(r.Fragment, {
-            children: [(0, r.jsx)(x, {
-                keybindString: _,
+            children: [(0, r.jsx)(_, {
+                keybindString: j,
                 targetElementRef: e
             }), (0, r.jsx)(d.A, {
                 ref: e,
@@ -104,7 +104,7 @@ let x = e => {
                 onClick: () => {
                     (0, b.l0)(), (0, u.X)(t, u.O.CLIP)
                 },
-                onContextMenu: j,
+                onContextMenu: x,
                 icon: a.xgA
             })]
         })

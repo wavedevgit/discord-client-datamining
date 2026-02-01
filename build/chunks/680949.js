@@ -11,10 +11,10 @@ var r = n(627968),
     c = n(134753),
     u = n(709562),
     d = n(60504),
-    h = n(985018);
+    p = n(985018);
 
-function p() {
-    return (p = Object.assign || function(e) {
+function h() {
+    return (h = Object.assign || function(e) {
         for (var t = 1; t < arguments.length; t++) {
             var n = arguments[t];
             for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r])
@@ -37,7 +37,7 @@ function g() {
         popoutTargetRef: n,
         children: e => {
             var l, i;
-            let {} = e, a = p({}, e);
+            let {} = e, a = h({}, e);
             return (0, r.jsx)(u.A, (l = function(e) {
                 for (var t = 1; t < arguments.length; t++) {
                     var n = null != arguments[t] ? arguments[t] : {},
@@ -57,7 +57,7 @@ function g() {
                 return e
             }({}, a), i = i = {
                 buttonRef: n,
-                label: h.intl.string(h.t.ZQCf9V),
+                label: p.intl.string(p.t.ZQCf9V),
                 isActive: t,
                 iconComponent: s.R2l,
                 onClick: g

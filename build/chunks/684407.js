@@ -10,9 +10,9 @@ let s = {},
     u = {},
     c = !1,
     E = !1,
-    d = !1;
+    _ = !1;
 
-function _(e) {
+function d(e) {
     let {
         guild: t
     } = e.invite;
@@ -34,7 +34,7 @@ class A extends(r = a.Ay.Store) {
         return E
     }
     hasError() {
-        return d
+        return _
     }
     hasSeen(e) {
         let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
@@ -52,8 +52,8 @@ class A extends(r = a.Ay.Store) {
     writable: !0
 }) : A[l] = "WelcomeScreenStore";
 let T = new A(i.h, {
-    INVITE_RESOLVE_SUCCESS: _,
-    INVITE_ACCEPT_SUCCESS: _,
+    INVITE_RESOLVE_SUCCESS: d,
+    INVITE_ACCEPT_SUCCESS: d,
     WELCOME_SCREEN_SUBMIT_SUCCESS: g,
     WELCOME_SCREEN_UPDATE: g,
     WELCOME_SCREEN_VIEW: function(e) {
@@ -75,10 +75,10 @@ let T = new A(i.h, {
         u[t] = !1
     },
     WELCOME_SCREEN_FETCH_START: function() {
-        E = !0, d = !1
+        E = !0, _ = !1
     },
     WELCOME_SCREEN_FETCH_SUCCESS: function(e) {
-        E = !1, d = !1;
+        E = !1, _ = !1;
         let {
             welcomeScreen: t,
             guildId: n
@@ -86,6 +86,6 @@ let T = new A(i.h, {
         o[n] = null != t ? t : s
     },
     WELCOME_SCREEN_FETCH_FAIL: function() {
-        E = !1, d = !0
+        E = !1, _ = !0
     }
 })

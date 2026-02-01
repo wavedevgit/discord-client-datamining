@@ -11,8 +11,8 @@ var r = n(627968),
     c = n(935649),
     u = n(847599),
     d = n(323073),
-    h = n(506164),
-    p = n(985018),
+    p = n(506164),
+    h = n(985018),
     g = n(635510);
 
 function f(e) {
@@ -68,7 +68,7 @@ function m(e) {
     }, []), O = (t = f({}, m), n = n = {
         guildId: null == i ? void 0 : i.id,
         channelId: s,
-        disagreement: p.intl.string(p.t["/g10LC"])
+        disagreement: h.intl.string(h.t["/g10LC"])
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
@@ -82,13 +82,13 @@ function m(e) {
     switch (g) {
         case u.A5.NSFW_CHANNEL_AGE_VERIFY:
         case u.A5.GUILD_LARGE_SERVER:
-            return (0, r.jsx)(h.A, f({
+            return (0, r.jsx)(p.A, f({
                 onAgree: y,
                 onDisagree: b,
                 modalType: g
             }, O));
         default:
-            return (0, r.jsx)(h.A, f({
+            return (0, r.jsx)(p.A, f({
                 onAgree: A,
                 onDisagree: b,
                 modalType: g

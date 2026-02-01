@@ -1,13 +1,13 @@
 /** chunk id: 263834, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    L: () => s
+    L: () => i
 });
-var i = n(73153),
+var r = n(73153),
     l = n(865116);
 
-function s(e, t) {
+function i(e, t) {
     let n = "boolean" == typeof t ? t : !l.Ay.get(e);
-    i.h.dispatch({
+    r.h.dispatch({
         type: "DEV_TOOLS_DEV_SETTING_SET",
         toggle: e,
         value: n

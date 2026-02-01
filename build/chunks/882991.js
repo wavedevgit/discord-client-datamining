@@ -1,6 +1,6 @@
 /** chunk id: 882991, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => f
+    A: () => m
 }), n(896048);
 var r = n(627968);
 n(64700);
@@ -34,16 +34,16 @@ class g extends a.A {
             var t;
             let {
                 voiceStates: l
-            } = e, a = s.default.getId(), g = null == (t = c.A.getSession()) ? void 0 : t.sessionId, f = l.find(e => e.userId === a && e.sessionId === g);
-            if (null == f) return;
-            let m = f.channelId;
-            if (null == m) {
+            } = e, a = s.default.getId(), g = null == (t = c.A.getSession()) ? void 0 : t.sessionId, m = l.find(e => e.userId === a && e.sessionId === g);
+            if (null == m) return;
+            let f = m.channelId;
+            if (null == f) {
                 (0, i.kBI)(h) && (0, i.OoC)(h);
                 return
             }
-            let A = o.A.getChannel(m);
+            let A = o.A.getChannel(f);
             if (!(null == A ? void 0 : A.isGuildStageVoice())) return;
-            let _ = (0, u.eY)(f) === u.zF.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK;
+            let _ = (0, u.eY)(m) === u.zF.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK;
             if (null != A && _) {
                 if ((0, i.kBI)(h)) return;
                 (0, i.mMO)(async () => {
@@ -84,4 +84,4 @@ class g extends a.A {
         })
     }
 }
-let f = new g
+let m = new g

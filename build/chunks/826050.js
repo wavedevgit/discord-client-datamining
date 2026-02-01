@@ -10,8 +10,8 @@ var r, l = n(627968),
     c = n(451988),
     u = n(397927),
     d = n(203982),
-    h = n(652215),
-    p = n(985018),
+    p = n(652215),
+    h = n(985018),
     g = n(792728);
 
 function f(e, t, n) {
@@ -30,10 +30,10 @@ class b extends(r = i.PureComponent) {
     componentDidMount() {
         this.setState({
             shown: !0
-        }), d._.subscribe(h.jej.QUICKSWITCHER_RESULT_FOCUS, this.handleResultFocus)
+        }), d._.subscribe(p.jej.QUICKSWITCHER_RESULT_FOCUS, this.handleResultFocus)
     }
     componentWillUnmount() {
-        this.focusTimeout.stop(), d._.unsubscribe(h.jej.QUICKSWITCHER_RESULT_FOCUS, this.handleResultFocus)
+        this.focusTimeout.stop(), d._.unsubscribe(p.jej.QUICKSWITCHER_RESULT_FOCUS, this.handleResultFocus)
     }
     componentDidUpdate() {
         let {
@@ -93,10 +93,10 @@ class b extends(r = i.PureComponent) {
             className: g.fi,
             children: [(0, l.jsx)("div", {
                 className: g.Iv,
-                children: p.intl.string(p.t.Mp0IGK)
+                children: h.intl.string(h.t.Mp0IGK)
             }), (0, l.jsx)("div", {
                 className: g.kp,
-                children: p.intl.string(p.t["3CbpwH"])
+                children: h.intl.string(h.t["3CbpwH"])
             })]
         })
     }

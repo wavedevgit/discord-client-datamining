@@ -13,8 +13,8 @@ var r, i = n(627968),
     p = n(398590),
     h = n(390435),
     g = n(775121),
-    f = n(268218),
-    m = n(361158),
+    m = n(268218),
+    f = n(361158),
     A = n(97469),
     _ = n(186111),
     b = n(203982),
@@ -56,28 +56,28 @@ function S(e, t) {
         Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
     }), e
 }
-let C = (0, f.Fe)({
+let C = (0, m.Fe)({
         createPromise: () => n.e("67878").then(n.bind(n, 655297)),
         webpackId: 655297,
         name: "UserSettings"
     }),
-    N = (0, f.Fe)({
+    N = (0, m.Fe)({
         createPromise: () => Promise.resolve().then(n.bind(n, 944771)),
         webpackId: 944771,
         name: "ComponentPlayground"
     }),
-    T = (0, f.Fe)({
-        createPromise: () => Promise.all([n.e("43600"), n.e("68587"), n.e("21968"), n.e("78888")]).then(n.bind(n, 667587)),
+    T = (0, m.Fe)({
+        createPromise: () => Promise.all([n.e("68587"), n.e("43600"), n.e("21968"), n.e("78888")]).then(n.bind(n, 667587)),
         webpackId: 667587,
         name: "ChannelSettings"
     }),
-    j = (0, f.Fe)({
+    j = (0, m.Fe)({
         createPromise: () => n.e("59275").then(n.bind(n, 737630)),
         webpackId: 737630,
         name: "CollectiblesShop"
     }),
-    x = (0, f.Fe)({
-        createPromise: () => Promise.all([n.e("43600"), n.e("68587"), n.e("63379"), n.e("56026"), n.e("16301"), n.e("22191"), n.e("25961"), n.e("21968"), n.e("35894"), n.e("50796"), n.e("11810"), n.e("8458"), n.e("39048"), n.e("98700")]).then(n.bind(n, 422559)),
+    x = (0, m.Fe)({
+        createPromise: () => Promise.all([n.e("68587"), n.e("43600"), n.e("63379"), n.e("56026"), n.e("16301"), n.e("22191"), n.e("25961"), n.e("21968"), n.e("35894"), n.e("50796"), n.e("11810"), n.e("8458"), n.e("39048"), n.e("98700")]).then(n.bind(n, 422559)),
         webpackId: 422559,
         name: "GuildSettings"
     }),
@@ -315,7 +315,7 @@ class k extends l.PureComponent {
 function U(e) {
     let t = (0, A.NC)(),
         n = (0, c.bG)([_.A], () => _.A.getLayers()),
-        r = (0, m.xr)(e => e.fullScreenLayers.length > 0 && !e.fullScreenLayers.some(e => e.options.showAppUnderLayer));
+        r = (0, f.xr)(e => e.fullScreenLayers.length > 0 && !e.fullScreenLayers.some(e => e.options.showAppUnderLayer));
     return (0, i.jsx)(k, S(v({}, e), {
         sidebarTheme: t,
         layers: n,

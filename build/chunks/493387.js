@@ -1,6 +1,6 @@
 /** chunk id: 493387, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => j
+    A: () => x
 }), n(321073), n(896048);
 var r = n(627968),
     l = n(64700),
@@ -11,8 +11,8 @@ var r = n(627968),
     c = n(73939),
     u = n(582754),
     d = n(397927),
-    h = n(736653),
-    p = n(531685),
+    p = n(736653),
+    h = n(531685),
     g = n(85448),
     f = n(806931),
     m = n(254187),
@@ -35,7 +35,7 @@ let O = {
     EASING_IN: a.A.Easing.inOut(a.A.Easing.back()),
     EASING_OUT: a.A.Easing.quad
 };
-class _ extends l.PureComponent {
+class j extends l.PureComponent {
     componentDidMount() {
         this.componentDidAppear()
     }
@@ -144,7 +144,7 @@ class _ extends l.PureComponent {
     }
 }
 
-function j(e) {
+function x(e) {
     var t;
     let {
         participants: n,
@@ -153,7 +153,7 @@ function j(e) {
         onClick: a,
         width: u,
         guildId: b
-    } = e, A = (0, h.Ay)(), y = (t = n.length, ((0, d.FT9)(d._3J.SIZE_80) + 16) * t > u ? d._3J.SIZE_40 : d._3J.SIZE_80), O = (0, o.bG)([p.A], () => p.A.isFocused()), j = n.map(e => {
+    } = e, A = (0, p.Ay)(), y = (t = n.length, ((0, d.FT9)(d._3J.SIZE_80) + 16) * t > u ? d._3J.SIZE_40 : d._3J.SIZE_80), O = (0, o.bG)([h.A], () => h.A.isFocused()), x = n.map(e => {
         var t, n;
         if (e.type !== f.lp.USER) return null;
         let {
@@ -163,7 +163,7 @@ function j(e) {
             latched: c,
             ringing: u
         } = e;
-        return (0, r.jsx)(_, {
+        return (0, r.jsx)(j, {
             className: m.Wp,
             width: (0, d.FT9)(y),
             theme: A,
@@ -188,6 +188,6 @@ function j(e) {
         component: "div",
         role: "list",
         className: s()(m.zr, i),
-        children: j
+        children: x
     })
 }

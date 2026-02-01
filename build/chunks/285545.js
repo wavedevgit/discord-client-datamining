@@ -1,6 +1,6 @@
 /** chunk id: 285545, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    i: () => f
+    i: () => m
 }), n(896048), n(321073);
 var r = n(64700),
     i = n(311907),
@@ -15,11 +15,11 @@ var r = n(64700),
     h = n(567061),
     g = n(118972);
 
-function f(e) {
+function m(e) {
     let {
         showDot: t,
         notificationItem: n
-    } = e, [f, m] = r.useState(!1), {
+    } = e, [m, f] = r.useState(!1), {
         unreadItems: A,
         readItems: _,
         allUnreadItemsHydrated: b
@@ -60,7 +60,7 @@ function f(e) {
             let {
                 viewableItems: t
             } = e;
-            if (t.some(e => "end" === e.item.data.kind) && m(!0), 0 === t.length) return;
+            if (t.some(e => "end" === e.item.data.kind) && f(!0), 0 === t.length) return;
             S(t);
             let n = [],
                 r = (0, d.P0)(t),
@@ -77,7 +77,7 @@ function f(e) {
                 id: e.id,
                 type: (0, u.xG)(e)
             })), E)
-        }, [E, m]),
+        }, [E, f]),
         P = r.useCallback(e => {
             let {
                 viewableItems: t
@@ -210,7 +210,7 @@ function f(e) {
         loading: O,
         version: E,
         visibleItemIds: v,
-        endVisible: f,
+        endVisible: m,
         isRefreshing: y,
         handleOnRefresh: R,
         stickyHeaderIndices: M,

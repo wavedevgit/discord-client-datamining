@@ -40,8 +40,8 @@ var r, i = n(627968),
     k = n(723702),
     U = n(677134),
     G = n(837921),
-    F = n(913934),
-    V = n(869146),
+    V = n(913934),
+    F = n(869146),
     B = n(652215),
     H = n(392164),
     Y = n(32069);
@@ -97,7 +97,7 @@ class Q extends(r = a.Component) {
         let {
             guestWindow: e
         } = this.props, t = e.document;
-        null == t.querySelector("title") && null != t.head && t.head.appendChild(t.createElement("title")), this.updateTitle(), this.updateClientTheme(), (0, F.M)(e), e.addEventListener("blur", this.handleBlur), k.isPlatformEmbedded ? t.addEventListener("contextmenu", U.contextMenuCallbackNative, !1) : t.addEventListener("contextmenu", U.contextMenuCallbackWeb, !1), e.addEventListener("beforeunload", this.beforeUnload), this.registerPopoutGlobalKeybinds()
+        null == t.querySelector("title") && null != t.head && t.head.appendChild(t.createElement("title")), this.updateTitle(), this.updateClientTheme(), (0, V.M)(e), e.addEventListener("blur", this.handleBlur), k.isPlatformEmbedded ? t.addEventListener("contextmenu", U.contextMenuCallbackNative, !1) : t.addEventListener("contextmenu", U.contextMenuCallbackWeb, !1), e.addEventListener("beforeunload", this.beforeUnload), this.registerPopoutGlobalKeybinds()
     }
     componentDidUpdate(e) {
         let {
@@ -209,7 +209,7 @@ class Q extends(r = a.Component) {
             let {
                 onBeforeUnload: t
             } = this.props, n = () => {
-                V.A.unmountWindow(this.props.windowKey), k.isPlatformEmbedded && G.Ay.close(this.props.windowKey)
+                F.A.unmountWindow(this.props.windowKey), k.isPlatformEmbedded && G.Ay.close(this.props.windowKey)
             };
             null != t ? t({
                 e,
@@ -252,9 +252,9 @@ let X = a.forwardRef(function(e, t) {
         let {
             guestWindow: r,
             isFullScreen: a
-        } = (0, _.cf)([V.A], () => ({
-            guestWindow: V.A.getWindow(e.windowKey),
-            isFullScreen: V.A.isWindowFullScreen(e.windowKey)
+        } = (0, _.cf)([F.A], () => ({
+            guestWindow: F.A.getWindow(e.windowKey),
+            isFullScreen: F.A.isWindowFullScreen(e.windowKey)
         }));
         c()(null != r, "Missing guestWindow reference");
         let {

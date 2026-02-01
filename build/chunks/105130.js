@@ -13,7 +13,7 @@ var o = n(592653),
     u = n(360469);
 
 function d(e, t, n) {
-    var d, p, h, g, f, m, A, _;
+    var d, p, h, g, m, f, A, _;
     switch (t) {
         case c.ZE4.ACTIVITY_PIP_MODE_UPDATE: {
             let t = null == (d = e.application) ? void 0 : d.id,
@@ -53,11 +53,11 @@ function d(e, t, n) {
             if (!t) return null;
             let r = a.A.getQuest(t),
                 i = (0, s.TP)(r);
-            if (null == r || null == i || i !== (null == (m = e.application) ? void 0 : m.id)) return null;
+            if (null == r || null == i || i !== (null == (f = e.application) ? void 0 : f.id)) return null;
             return {
                 quest_id: t,
                 is_enrolled: (null == (A = r.userStatus) ? void 0 : A.enrolledAt) != null,
-                enrolled_at: null != (f = null == (_ = r.userStatus) ? void 0 : _.enrolledAt) ? f : null
+                enrolled_at: null != (m = null == (_ = r.userStatus) ? void 0 : _.enrolledAt) ? m : null
             }
         }
         default:

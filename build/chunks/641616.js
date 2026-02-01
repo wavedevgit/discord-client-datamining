@@ -32,8 +32,8 @@ var p = n(173628),
     N = n(615112),
     w = n(501379),
     I = n(517538),
-    P = n(211162),
-    k = n(436102),
+    k = n(211162),
+    P = n(436102),
     R = n(435459),
     D = n(68738),
     M = n(912878),
@@ -52,8 +52,8 @@ var p = n(173628),
     Y = n(661652),
     J = n(953414),
     X = n(344673),
-    Z = n(491982),
-    $ = n(573121),
+    $ = n(491982),
+    Z = n(573121),
     ee = n(851828),
     et = n(375582),
     en = n(263758),
@@ -237,7 +237,7 @@ function ec() {
             name: "Layers",
             group: ei.fu.UI,
             tags: ["verification", "safety flow"],
-            render: () => (0, a.jsx)(k.A, {})
+            render: () => (0, a.jsx)(P.A, {})
         }), e.push({
             id: "affinity",
             name: "Affinity",
@@ -316,7 +316,7 @@ function ec() {
             name: "Voice Filters",
             group: ei.fu.AUDIO_VIDEO,
             tags: ["soundboard", "effects"],
-            render: () => (0, a.jsx)($.A, {})
+            render: () => (0, a.jsx)(Z.A, {})
         }), e.push({
             id: "krisp_tester",
             name: "Krisp Tester",
@@ -339,7 +339,7 @@ function ec() {
             name: "Language",
             group: ei.fu.UI,
             tags: ["locale"],
-            render: () => (0, a.jsx)(P.A, {})
+            render: () => (0, a.jsx)(k.A, {})
         }), e.push({
             id: "word_frequency",
             name: "Word Frequency",
@@ -359,7 +359,7 @@ function ec() {
             id: "virtual_currency_config",
             name: "Virtual Currency Config",
             group: ei.fu.QUESTS,
-            render: () => (0, a.jsx)(Z.A, {})
+            render: () => (0, a.jsx)($.A, {})
         }), e.push({
             id: "Revenue Storybook",
             name: "Revenue Storybook",

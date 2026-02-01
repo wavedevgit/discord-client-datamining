@@ -2,12 +2,12 @@
 n.d(t, {
     A: () => u
 });
-var r = n(64700),
-    l = n(311907),
+var l = n(64700),
+    r = n(311907),
     i = n(652896),
     a = n(162605),
-    o = n(954571),
-    s = n(652215),
+    s = n(954571),
+    o = n(652215),
     c = n(788868);
 
 function u(e, t) {
@@ -15,26 +15,26 @@ function u(e, t) {
         handleMouseDown: n,
         handleMouseMove: u,
         handleMouseUp: d,
-        handleMouseEnter: f
-    } = e, p = r.useRef(null), g = (0, l.bG)([a.A], () => a.A.getRTCConnection((0, i._z)(t))), m = r.useCallback((e, t, r) => {
-        p.current = Date.now(), n(e, t, r)
+        handleMouseEnter: h
+    } = e, p = l.useRef(null), f = (0, r.bG)([a.A], () => a.A.getRTCConnection((0, i._z)(t))), m = l.useCallback((e, t, l) => {
+        p.current = Date.now(), n(e, t, l)
     }, [n]);
     return {
-        handleMouseUp: r.useCallback((e, t, n) => {
+        handleMouseUp: l.useCallback((e, t, n) => {
             if (d(e, t, n), null != p.current) {
-                var r;
-                null != g && (r = Date.now() - p.current, o.default.track(s.HAw.PREMIUM_FEATURE_USAGE, {
+                var l;
+                null != f && (l = Date.now() - p.current, s.default.track(o.HAw.PREMIUM_FEATURE_USAGE, {
                     feature_name: "".concat(c.Ae.SHARED_CANVAS, "_").concat(e.type),
                     feature_tier: c.tz.FREE,
-                    media_session_id: g.getMediaSessionId(),
-                    parent_media_session_id: g.parentMediaSessionId,
-                    guild_id: g.guildId,
-                    duration: r
+                    media_session_id: f.getMediaSessionId(),
+                    parent_media_session_id: f.parentMediaSessionId,
+                    guild_id: f.guildId,
+                    duration: l
                 })), p.current = null
             }
-        }, [d, g]),
+        }, [d, f]),
         handleMouseDown: m,
         handleMouseMove: u,
-        handleMouseEnter: f
+        handleMouseEnter: h
     }
 }

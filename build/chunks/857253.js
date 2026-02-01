@@ -5,13 +5,13 @@ n.d(t, {
 var r = n(311907),
     l = n(961350),
     i = n(977997),
-    u = n(643501);
+    s = n(643501);
 
 function a() {
-    return (0, r.bG)([l.default, i.A, u.default], () => {
+    return (0, r.bG)([l.default, i.A, s.default], () => {
         var e;
         let t = l.default.getId(),
-            n = u.default.getRemoteSessionId();
+            n = s.default.getRemoteSessionId();
         return null != (e = i.A.getVoiceStateForSession(t, n)) ? e : void 0
     }, [])
 }

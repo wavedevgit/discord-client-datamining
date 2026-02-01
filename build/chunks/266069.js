@@ -11,8 +11,8 @@ var r = n(627968),
     c = n(435371),
     u = n(397927),
     d = n(242919),
-    h = n(985018),
-    p = n(519501),
+    p = n(985018),
+    h = n(519501),
     g = n(658122);
 
 function f(e) {
@@ -22,9 +22,9 @@ function f(e) {
         setStatus: i,
         isFavorited: f,
         onFavoriteClick: m
-    } = e, [b, A] = l.useState(!1), y = (0, a.bG)([d.A], () => d.A.getFavoritedStatuses().length >= d.x), O = null != m, _ = l.useCallback(e => {
+    } = e, [b, A] = l.useState(!1), y = (0, a.bG)([d.A], () => d.A.getFavoritedStatuses().length >= d.x), O = null != m, j = l.useCallback(e => {
         e.stopPropagation(), null == m || m()
-    }, [m]), j = f ? u.Gg5 : u.yA2;
+    }, [m]), x = f ? u.Gg5 : u.yA2;
     return (0, r.jsxs)(u.DUT, {
         onClick: i,
         onMouseEnter: () => {
@@ -33,20 +33,20 @@ function f(e) {
         onMouseLeave: () => {
             A(!1)
         },
-        className: s()(g.item, g.labelContainer, p.kL),
+        className: s()(g.item, g.labelContainer, h.kL),
         children: [(0, r.jsx)("div", {
             children: n
         }), (0, r.jsx)(u.Text, {
             variant: "text-md/normal",
-            className: p.rv,
+            className: h.rv,
             children: t
         }), b && O && (0, r.jsx)(c.m_, {
-            text: y && !f ? h.intl.string(h.t.YSDH9n) : void 0,
+            text: y && !f ? p.intl.string(p.t.YSDH9n) : void 0,
             children: (0, r.jsx)(u.DUT, {
-                className: s()(p.ff, p.wB),
-                onClick: _,
-                children: (0, r.jsx)(j, {
-                    className: p.ut,
+                className: s()(h.ff, h.wB),
+                onClick: j,
+                children: (0, r.jsx)(x, {
+                    className: h.ut,
                     color: f ? o.A.colors.ICON_FEEDBACK_WARNING : "currentColor"
                 })
             })

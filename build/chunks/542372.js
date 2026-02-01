@@ -11,8 +11,8 @@ var r = n(627968),
     c = n(688810),
     u = n(313961),
     d = n(384059),
-    h = n(574172),
-    p = n(423562),
+    p = n(574172),
+    h = n(423562),
     g = n(309010),
     f = n(954571),
     m = n(203982),
@@ -25,10 +25,10 @@ function O(e) {
         channel: t,
         appContext: n,
         popoutOpen: O,
-        popoutWindow: _,
-        currentWindow: j
+        popoutWindow: j,
+        currentWindow: x
     } = e, {
-        parentAnalyticsLocation: x
+        parentAnalyticsLocation: _
     } = (0, c.Ay)(), v = n === y.BRT.POPOUT, E = l.useRef(null), {
         currentLayout: C,
         mode: S
@@ -50,14 +50,14 @@ function O(e) {
             currentDocument: T,
             rootNode: P
         } = l.useMemo(() => {
-            let e = null != _ && v ? _.document : document,
-                t = j.document.getElementById("app-mount");
+            let e = null != j && v ? j.document : document,
+                t = x.document.getElementById("app-mount");
             return {
-                currentWindow: j,
+                currentWindow: x,
                 currentDocument: e,
                 rootNode: t
             }
-        }, [_, v, j]),
+        }, [j, v, x]),
         w = O && !v,
         R = S === y._Of.VIDEO && I && !w,
         D = l.useCallback((e, r) => {
@@ -69,8 +69,8 @@ function O(e) {
             }, T))
         }, [T, D, P]),
         M = l.useCallback(e => () => {
-            null != P && ((0, d.X)(x, d.O.FULL_SCREEN, e !== y.DUB.FULL_SCREEN), e !== y.DUB.FULL_SCREEN ? (N.current = e, D(e, y.DUB.FULL_SCREEN), (0, A.tl)(P)) : L(e))
-        }, [D, L, P, x]);
+            null != P && ((0, d.X)(_, d.O.FULL_SCREEN, e !== y.DUB.FULL_SCREEN), e !== y.DUB.FULL_SCREEN ? (N.current = e, D(e, y.DUB.FULL_SCREEN), (0, A.tl)(P)) : L(e))
+        }, [D, L, P, _]);
     l.useEffect(() => {
         let e = () => {
             null != P && ((0, A._U)(P, T) || C !== y.DUB.FULL_SCREEN || M(C)())
@@ -116,11 +116,11 @@ function O(e) {
     }, [C, v]), l.useEffect(() => {
         null != P && E.current === y._Of.VIDEO && S === y._Of.VOICE && (0, A.sP)(P, T)
     }, [T, S, E, P]), l.useEffect(() => {
-        !I && v && s.h.wait(() => h.close(y.MLl.CHANNEL_CALL_POPOUT))
-    }, [I, v]), R) ? (0, r.jsx)(p.A, {
+        !I && v && s.h.wait(() => p.close(y.MLl.CHANNEL_CALL_POPOUT))
+    }, [I, v]), R) ? (0, r.jsx)(h.A, {
         themeable: !1,
         node: P,
-        guestWindow: _,
+        guestWindow: j,
         onClick: M(C)
     }) : null
 }

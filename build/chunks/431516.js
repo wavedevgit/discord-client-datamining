@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(397927),
     l = n(790381),
     i = n(266080),
-    u = n(544105);
+    s = n(544105);
 
 function a(e) {
-    return null != e ? (0, r.kHD)(e === u.f$.XBOX ? i.A : l.A) : r.qo0
+    return null != e ? (0, r.kHD)(e === s.f$.XBOX ? i.A : l.A) : r.qo0
 }

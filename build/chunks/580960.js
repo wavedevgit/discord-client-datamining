@@ -1,6 +1,6 @@
 /** chunk id: 580960, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => _
+    A: () => j
 }), n(65821), n(896048);
 var r = n(627968);
 n(64700);
@@ -12,8 +12,8 @@ var l = n(397927),
     c = n(219271),
     u = n(287809),
     d = n(816733),
-    h = n(927578),
-    p = n(882442),
+    p = n(927578),
+    h = n(882442),
     g = n(869968),
     f = n(694080),
     m = n(70730);
@@ -106,7 +106,7 @@ class O extends s.A {
         super(...e), b(this, "_premiumPaymentModalCloseResolve", null), b(this, "_premiumPaymentModalCloseReject", null), b(this, "_maybeFetchPremiumOffer", async () => {
             let e = u.default.getCurrentUser();
             if (null != e && e.verified) {
-                let t = (d.A.canFractionalPremiumUserUseOffer() || !(0, h.TW)(e)) && !d.A.isFetchingOffer();
+                let t = (d.A.canFractionalPremiumUserUseOffer() || !(0, p.TW)(e)) && !d.A.isFetchingOffer();
                 await (0, f._D)("PremiumManager", t)
             }
             i.h.dispatch({
@@ -114,7 +114,7 @@ class O extends s.A {
             })
         }), b(this, "_maybeFetchCheckoutRecovery", async () => {
             let e = u.default.getCurrentUser();
-            null != e && e.verified && !(0, h.TW)(e) && g.A.shouldFetchCheckoutRecovery() && await (0, p.c)()
+            null != e && e.verified && !(0, p.TW)(e) && g.A.shouldFetchCheckoutRecovery() && await (0, h.c)()
         }), b(this, "_maybeFetchUserAffinities", () => {
             let {
                 enabled: e
@@ -140,4 +140,4 @@ class O extends s.A {
         })
     }
 }
-let _ = new O
+let j = new O

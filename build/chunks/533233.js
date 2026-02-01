@@ -1,6 +1,6 @@
 /** chunk id: 533233, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => h
+    A: () => p
 });
 var r = n(311907),
     l = n(313961),
@@ -12,15 +12,15 @@ var r = n(311907),
     u = n(96566),
     d = n(652215);
 
-function h(e) {
+function p(e) {
     var t;
     let n = (0, r.bG)([l.A], () => l.A.getStageVideoLimitBoostUpsellDismissed(e.id), [e.id]),
-        h = (0, a.uy)(e.id),
-        p = (0, a.zy)(e.id, o.ip.AUDIENCE),
+        p = (0, a.uy)(e.id),
+        h = (0, a.zy)(e.id, o.ip.AUDIENCE),
         g = (0, u.qT)(e.id),
         f = (0, r.bG)([i.A], () => i.A.getGuild(e.guild_id), [e.guild_id]),
         m = (0, r.bG)([s.A], () => s.A.can(c.QY, e), [e]),
         b = null != (t = null == f ? void 0 : f.maxStageVideoChannelUsers) ? t : 0,
         A = !(null != f && f.features.has(d.GuildFeatures.COMMUNITY)) && b > d.uaN;
-    return g && !n && m && !A && h + p >= b
+    return g && !n && m && !A && p + h >= b
 }

@@ -1,6 +1,6 @@
 /** chunk id: 345485, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => m
+    A: () => f
 });
 var r = n(627968);
 n(64700);
@@ -15,13 +15,13 @@ var i = n(110259),
     p = n(652215),
     h = n(49999),
     g = n(985018),
-    f = n(330766);
+    m = n(330766);
 
-function m(e) {
+function f(e) {
     let {
         guildId: t,
         markAsDismissed: n,
-        targetElementRef: m
+        targetElementRef: f
     } = e, A = (0, l.bG)([u.A, d.default], () => {
         let e = d.default.getCurrentUser(),
             n = u.A.getGuild(t);
@@ -35,12 +35,12 @@ function m(e) {
             is_owner: A
         }
     }), (0, r.jsx)(a.AM, {
-        targetElementRef: m,
+        targetElementRef: f,
         title: g.intl.string(g.t.C0m4rQ),
         body: g.intl.string(g.t.zOHfEX),
         graphic: {
             type: "image",
-            src: f
+            src: m
         },
         actions: [{
             text: g.intl.string(g.t.OgQQbG),

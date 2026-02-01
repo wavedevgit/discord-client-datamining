@@ -1,15 +1,15 @@
-/** chunk id: 246743, original params: e,t,i (module,exports,require) **/
-i.d(t, {
+/** chunk id: 246743, original params: t,e,i (module,exports,require) **/
+i.d(e, {
     W: () => o
 });
 var n = i(311907),
     l = i(955572),
     s = i(775602),
     r = i(419954),
-    a = i(780964),
-    u = i(985018);
-let o = (0, r.zD)(a.X.SYNC_REDUCED_MOTION, {
-    useTitle: () => u.intl.string(u.t["+Dx+HD"]),
+    u = i(780964),
+    a = i(985018);
+let o = (0, r.zD)(u.X.SYNC_REDUCED_MOTION, {
+    useTitle: () => a.intl.string(a.t["+Dx+HD"]),
     useValue: () => (0, n.bG)([s.A], () => "auto" === s.A.rawPrefersReducedMotion),
-    setValue: e => (0, l.qz)(e ? "auto" : s.A.systemPrefersReducedMotion)
+    setValue: t => (0, l.qz)(t ? "auto" : s.A.systemPrefersReducedMotion)
 })

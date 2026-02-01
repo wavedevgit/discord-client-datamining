@@ -14,8 +14,8 @@ var r = n(627968),
     p = n(785796),
     h = n(775602),
     g = n(142120),
-    f = n(552122),
-    m = n(400492),
+    m = n(552122),
+    f = n(400492),
     A = n(312671),
     _ = n(210714),
     b = n(773669),
@@ -40,7 +40,7 @@ class j extends i.PureComponent {
     createSound() {
         let {
             soundpack: e
-        } = this.props, t = (0, m.aN)("discodo", e);
+        } = this.props, t = (0, f.aN)("discodo", e);
         return t.volume = 1, t
     }
     componentDidMount() {
@@ -201,7 +201,7 @@ class j extends i.PureComponent {
             })];
             return b.default.locale.startsWith("en-") && e.push(C.intl.string(C.t.dQ9Wqk)), e[o().random(e.length - 1)]
         }()), T(this, "_eventLoadingText", function() {
-            let e = f.A.getLoadingTips();
+            let e = m.A.getLoadingTips();
             if (null != e && e.length > 0) return e[o().random(e.length - 1)]
         }()), T(this, "handleReady", () => {
             this.setState({

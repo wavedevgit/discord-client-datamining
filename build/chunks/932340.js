@@ -14,8 +14,8 @@ var r = n(627968),
     p = n(274372),
     h = n(915618),
     g = n(361157),
-    f = n(798817),
-    m = n(696016),
+    m = n(798817),
+    f = n(696016),
     A = n(985018);
 
 function _(e) {
@@ -67,11 +67,11 @@ function _(e) {
                 return e
             }({}, t))
         }, {
-            modalKey: m.nm
+            modalKey: f.nm
         })
     }
     return (i.useEffect(() => (v ? j() : x(), () => x()), [v, j, x]), E && b) ? (0, r.jsxs)(r.Fragment, {
-        children: [null != C && t && I && S && !(0, a.ueM)() && !T && (0, r.jsx)(f.A, {
+        children: [null != C && t && I && S && !(0, a.ueM)() && !T && (0, r.jsx)(m.A, {
             clipIconRef: C,
             lastClipsSession: y,
             onOpenClipsGallery: P

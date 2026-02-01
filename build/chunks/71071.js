@@ -29,9 +29,9 @@ __OVERLAY__ && l.h.subscribe("OVERLAY_OAUTH2_AUTHORIZE_MODAL_OPEN", function(e) 
             }(e, t), Object.getOwnPropertySymbols)
             for (r = 0, n = Object.getOwnPropertySymbols(e); r < n.length; r++) i = n[r], !(t.indexOf(i) >= 0) && Object.prototype.propertyIsEnumerable.call(e, i) && (s[i] = e[i]);
         return s
-    }(a, ["authorizations", "permissions"]), p = "OAuth2Authorize_".concat(t, "_").concat(u.guildId, "_").concat(u.channelId);
+    }(a, ["authorizations", "permissions"]), h = "OAuth2Authorize_".concat(t, "_").concat(u.guildId, "_").concat(u.channelId);
 
-    function h(e) {
+    function p(e) {
         let {
             location: n
         } = e;
@@ -70,7 +70,7 @@ __OVERLAY__ && l.h.subscribe("OVERLAY_OAUTH2_AUTHORIZE_MODAL_OPEN", function(e) 
             }({}, t, u), r = r = {
                 authorizations: new Map(c),
                 permissions: f,
-                callback: h
+                callback: p
             }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
                 var n = Object.keys(e);
                 if (Object.getOwnPropertySymbols) {
@@ -83,9 +83,9 @@ __OVERLAY__ && l.h.subscribe("OVERLAY_OAUTH2_AUTHORIZE_MODAL_OPEN", function(e) 
             }), n))
         }
     }, {
-        modalKey: p,
+        modalKey: h,
         onCloseRequest: () => {
-            (0, s.OoC)(p), h({})
+            (0, s.OoC)(h), p({})
         }
     })
 })

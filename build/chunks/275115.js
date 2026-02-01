@@ -146,13 +146,13 @@ function G() {
     return y = null, !0
 }
 
-function F(e) {
+function V(e) {
     let {
         pid: t
     } = e;
     return 0 === t ? D() : L(), !0
 }
-class V extends(r = o.Ay.Store) {
+class F extends(r = o.Ay.Store) {
     initialize() {
         this.waitFor(f.A, c.A)
     }
@@ -163,12 +163,12 @@ class V extends(r = o.Ay.Store) {
         return O
     }
 }
-m(V, "displayName", "Overlay-v3-Native-Debug-Module-Store");
-let B = new V(l.h, __OVERLAY__ || !_.OX ? {} : {
+m(F, "displayName", "Overlay-v3-Native-Debug-Module-Store");
+let B = new F(l.h, __OVERLAY__ || !_.OX ? {} : {
     OVERLAY_V3_LOAD_NATIVE_MODULE_SUCCESS: U,
     OVERLAY_V3_LOAD_NATIVE_MODULE_FAILED: G,
     OVERLAY_SET_CLICK_ZONES: j,
-    OVERLAY_FOCUSED: F,
+    OVERLAY_FOCUSED: V,
     OVERLAY_V3_NATIVE_REFRESH_HOST_WINDOW: k,
     OVERLAY_CRASHED: M
 })

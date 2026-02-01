@@ -1,100 +1,100 @@
 /** chunk id: 928764, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => F
+    A: () => V
 }), n(896048);
-var r = n(627968),
-    l = n(64700),
+var l = n(627968),
+    r = n(64700),
     i = n(503698),
-    s = n.n(i),
-    a = n(311907),
+    a = n.n(i),
+    s = n(311907),
     o = n(506774),
     c = n(990078),
     u = n(397927),
     d = n(843472),
     h = n(56562),
     p = n(765671),
-    g = n(304072),
-    f = n(390395),
-    m = n(659195),
-    b = n(505527),
-    A = n(467073),
-    y = n(960538),
-    O = n(898280),
-    _ = n(573163),
-    j = n(260821),
-    x = n(226698),
-    v = n(376708),
-    E = n(715757),
-    C = n(390897),
-    S = n(704860),
+    f = n(304072),
+    m = n(390395),
+    g = n(659195),
+    A = n(505527),
+    b = n(467073),
+    _ = n(960538),
+    y = n(898280),
+    v = n(573163),
+    E = n(260821),
+    O = n(226698),
+    C = n(376708),
+    x = n(715757),
+    S = n(390897),
+    j = n(704860),
     I = n(152007),
-    N = n(867455),
-    T = n(734057),
+    T = n(867455),
+    N = n(734057),
     P = n(147036),
     w = n(957565),
     R = n(435470),
     D = n(473503),
-    L = n(853742),
-    M = n(652215),
-    G = n(985018),
-    k = n(641131),
-    U = n(256366),
-    V = n(233080),
-    B = n(165180);
+    M = n(853742),
+    L = n(652215),
+    k = n(985018),
+    U = n(641131),
+    G = n(256366),
+    F = n(233080),
+    H = n(165180);
 
-function H(e) {
+function B(e) {
     let {
         channel: t
-    } = e, i = t.isArchivedThread(), s = (0, v.uW)(t), [a, c] = l.useState(!1), d = () => {
-        c(!0), x.A.resolveFlag(t.id).then(() => {
+    } = e, i = t.isArchivedThread(), a = (0, C.uW)(t), [s, c] = r.useState(!1), d = () => {
+        c(!0), O.A.resolveFlag(t.id).then(() => {
             c(!1)
         })
     };
-    return s ? (0, r.jsx)(u.Button, {
+    return a ? (0, l.jsx)(u.Button, {
         size: "sm",
         variant: "secondary",
-        text: i ? G.intl.string(k.default["2Y4vkk"]) : G.intl.string(k.default.YIbR4r),
+        text: i ? k.intl.string(U.default["2Y4vkk"]) : k.intl.string(U.default.YIbR4r),
         onClick: () => {
-            !0 === o.w.get(C.f) ? d() : (0, u.mMO)(async () => {
+            !0 === o.w.get(S.f) ? d() : (0, u.mMO)(async () => {
                 let {
                     default: e
                 } = await Promise.resolve().then(n.bind(n, 390897));
                 return t => {
                     let {
                         transitionState: n,
-                        onClose: l
+                        onClose: r
                     } = t;
-                    return (0, r.jsx)(e, {
+                    return (0, l.jsx)(e, {
                         transitionState: n,
-                        onClose: l,
+                        onClose: r,
                         handleResolveFlag: d
                     })
                 }
             })
         },
-        loading: a,
+        loading: s,
         icon: u.A9s,
         disabled: i
     }) : null
 }
 
-function F(e) {
+function V(e) {
     let {
         postId: t,
         isFirstMessage: n,
         isLastItem: i = !1,
         parentChannelId: o
     } = e, {
-        ref: x,
-        width: v
-    } = (0, p.Ay)(), [C, k] = l.useState(3), [F, K] = l.useState(!n), [Y, W] = (0, g.A)(!1, 2e3), z = (0, a.bG)([T.A], () => T.A.getChannel(t), [t]), {
-        firstMessage: q
-    } = (0, D.OA)(z), X = (0, a.bG)([I.A], () => I.A.hasJoined(t)), {
-        disableReactionUpdates: J,
-        disableReactionCreates: Q,
-        isLurking: Z,
+        ref: O,
+        width: C
+    } = (0, p.Ay)(), [S, U] = r.useState(3), [V, K] = r.useState(!n), [W, z] = (0, f.A)(!1, 2e3), q = (0, s.bG)([N.A], () => N.A.getChannel(t), [t]), {
+        firstMessage: Y
+    } = (0, D.OA)(q), J = (0, s.bG)([I.A], () => I.A.hasJoined(t)), {
+        disableReactionUpdates: Z,
+        disableReactionCreates: X,
+        isLurking: Q,
         isPendingMember: $
-    } = (0, A.A)(z), ee = (0, E.W1)(z), et = (0, a.bG)([T.A], () => T.A.getChannel(o)), en = (0, R.Ck)(et), er = (0, a.bG)([f.A], () => f.A.shouldDisplayPrompt(t) && !0 === n, [t, n]), el = l.useCallback(e => {
+    } = (0, b.A)(q), ee = (0, x.W1)(q), et = (0, s.bG)([N.A], () => N.A.getChannel(o)), en = (0, R.Ck)(et), el = (0, s.bG)([m.A], () => m.A.shouldDisplayPrompt(t) && !0 === n, [t, n]), er = r.useCallback(e => {
         let t = e[0];
         if (null != t && n) {
             let e = t.intersectionRect,
@@ -102,56 +102,56 @@ function F(e) {
             K((e.bottom - e.top) / (n.bottom - n.top) < 1)
         }
     }, [n]);
-    l.useLayoutEffect(() => {
-        let e = x.current;
+    r.useLayoutEffect(() => {
+        let e = O.current;
         if (null == e || !n) return;
-        let t = new IntersectionObserver(el, {
+        let t = new IntersectionObserver(er, {
             threshold: 1
         });
         return t.observe(e), () => {
             t.disconnect()
         }
     });
-    let [ei, es] = l.useState(!0);
-    if (l.useEffect(() => {
-            null == v || (k(Math.floor((v - 280) / 58)), es(!1))
-        }, [v]), null == z || null == q) return null;
-    let ea = q.reactions.length > 0,
+    let [ei, ea] = r.useState(!0);
+    if (r.useEffect(() => {
+            null == C || (U(Math.floor((C - 280) / 58)), ea(!1))
+        }, [C]), null == q || null == Y) return null;
+    let es = Y.reactions.length > 0,
         eo = () => {
-            (0, L.jC)({
-                postId: z.id,
+            (0, M.jC)({
+                postId: q.id,
                 location: {
-                    section: M.JJy.CHANNEL_HEADER
+                    section: L.JJy.CHANNEL_HEADER
                 }
-            }), (0, w.C)((0, P.af)(z, et), () => W(!0))
+            }), (0, w.C)((0, P.af)(q, et), () => z(!0))
         },
-        ec = X ? u.A9s : u.XFE;
-    return (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsxs)("div", {
-            className: s()(U.kL, {
-                [U.wx]: F
+        ec = J ? u.A9s : u.XFE;
+    return (0, l.jsxs)(l.Fragment, {
+        children: [(0, l.jsxs)("div", {
+            className: a()(G.kL, {
+                [G.wx]: V
             }),
-            ref: x,
-            children: [ee ? (0, r.jsx)("div", {
-                className: U.kX,
-                children: (0, r.jsx)(S.A, {
-                    message: q,
-                    channel: z
+            ref: O,
+            children: [ee ? (0, l.jsx)("div", {
+                className: G.kX,
+                children: (0, l.jsx)(j.A, {
+                    message: Y,
+                    channel: q
                 })
-            }) : (0, r.jsxs)("div", {
-                className: s()(U.hY, {
-                    [U.Lq]: ei
+            }) : (0, l.jsxs)("div", {
+                className: a()(G.hY, {
+                    [G.Lq]: ei
                 }),
-                children: [!ea && !Q && null != en && (0, r.jsx)("div", {
-                    className: V.reactions,
-                    children: (0, r.jsx)(j.qT, {
-                        message: q,
+                children: [!es && !X && null != en && (0, l.jsx)("div", {
+                    className: F.reactions,
+                    children: (0, l.jsx)(E.qT, {
+                        message: Y,
                         readOnly: !1,
                         useChatFontScaling: !1,
-                        isLurking: Z,
+                        isLurking: Q,
                         isPendingMember: $,
                         emoji: en,
-                        type: b.v.NORMAL,
+                        type: A.v.NORMAL,
                         hideCount: !0,
                         count: 0,
                         me: !1,
@@ -159,80 +159,80 @@ function F(e) {
                         me_burst: !1,
                         emojiSize: "reaction"
                     })
-                }), (0, r.jsx)(_.A, {
-                    message: q,
-                    channel: z,
+                }), (0, l.jsx)(v.A, {
+                    message: Y,
+                    channel: q,
                     disableReactionCreates: !0,
-                    disableReactionUpdates: J,
-                    isLurking: Z,
+                    disableReactionUpdates: Z,
+                    isLurking: Q,
                     isPendingMember: $,
-                    maxReactions: C,
-                    className: U.Br,
+                    maxReactions: S,
+                    className: G.Br,
                     useChatFontScaling: !1,
                     isForumToolbar: !0,
                     forceHideReactionCreates: !0
-                }), !Q && (0, r.jsx)(y.t, {
-                    message: q,
-                    channel: z,
+                }), !X && (0, l.jsx)(_.t, {
+                    message: Y,
+                    channel: q,
                     useChatFontScaling: !1,
-                    className: s()(B.secondary, U.vU, {
-                        [U.w$]: !ea
+                    className: a()(H.secondary, G.vU, {
+                        [G.w$]: !es
                     }),
                     isForumToolbar: !0,
-                    children: !ea && G.intl.string(G.t.xpOyTO)
+                    children: !es && k.intl.string(k.t.xpOyTO)
                 })]
-            }), (0, r.jsxs)("div", {
-                className: U.Uo,
-                children: [ee ? (0, r.jsx)(H, {
-                    channel: z
-                }) : !Z && (0, r.jsx)(c.m, {
-                    text: G.intl.string(G.t.F7oeDv),
-                    children: (0, r.jsx)(u.Button, {
+            }), (0, l.jsxs)("div", {
+                className: G.Uo,
+                children: [ee ? (0, l.jsx)(B, {
+                    channel: q
+                }) : !Q && (0, l.jsx)(c.m, {
+                    text: k.intl.string(k.t.F7oeDv),
+                    children: (0, l.jsx)(u.Button, {
                         icon: ec,
                         size: "sm",
                         variant: "secondary",
-                        text: X ? G.intl.string(G.t["7OkUzs"]) : G.intl.string(G.t["3aOv+h"]),
+                        text: J ? k.intl.string(k.t["7OkUzs"]) : k.intl.string(k.t["3aOv+h"]),
                         onClick: () => {
-                            X ? N.A.leaveThread(z, "Forum Toolbar") : N.A.joinThread(z, "Forum Toolbar")
+                            J ? T.A.leaveThread(q, "Forum Toolbar") : T.A.joinThread(q, "Forum Toolbar")
                         }
                     })
-                }), (0, r.jsx)(c.m, {
-                    text: G.intl.string(G.t.WqhZss),
-                    children: Y ? (0, r.jsx)(u.Button, {
+                }), (0, l.jsx)(c.m, {
+                    text: k.intl.string(k.t.WqhZss),
+                    children: W ? (0, l.jsx)(u.Button, {
                         icon: u.A9s,
                         size: "sm",
                         variant: "secondary",
                         onClick: eo,
-                        text: G.intl.string(G.t.t5VZ88)
-                    }) : (0, r.jsx)(u.K0, {
+                        text: k.intl.string(k.t.t5VZ88)
+                    }) : (0, l.jsx)(u.K0, {
                         icon: u.qYV,
                         size: "sm",
                         variant: "secondary",
                         onClick: eo,
-                        "aria-label": G.intl.string(G.t.WqhZss)
+                        "aria-label": k.intl.string(k.t.WqhZss)
                     })
-                }), !n && (0, r.jsx)(c.m, {
-                    text: G.intl.string(G.t.nFP4oa),
-                    children: (0, r.jsx)(u.K0, {
+                }), !n && (0, l.jsx)(c.m, {
+                    text: k.intl.string(k.t.nFP4oa),
+                    children: (0, l.jsx)(u.K0, {
                         icon: u.Dl6,
                         size: "sm",
                         variant: "secondary",
                         onClick: () => {
                             d.A.jumpToMessage({
-                                channelId: z.id,
-                                messageId: z.id,
+                                channelId: q.id,
+                                messageId: q.id,
                                 flash: !0,
                                 jumpType: h.US.INSTANT
                             })
                         },
-                        "aria-label": G.intl.string(G.t.nFP4oa)
+                        "aria-label": k.intl.string(k.t.nFP4oa)
                     })
                 })]
             })]
-        }), er && (0, r.jsx)(m.A, {
+        }), el && (0, l.jsx)(g.A, {
             threadId: t
-        }), (0, r.jsx)(O.A, {
-            channel: z,
+        }), (0, l.jsx)(y.A, {
+            channel: q,
             isLastItem: i
         })]
     })

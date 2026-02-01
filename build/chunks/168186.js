@@ -12,7 +12,7 @@ n.d(t, {
     Qr: () => x,
     XM: () => w,
     bq: () => j,
-    gI: () => F,
+    gI: () => V,
     hT: () => C,
     my: () => U,
     zl: () => D
@@ -363,7 +363,7 @@ function G(e) {
     return null == t ? null : "triggering_interaction_metadata" in t ? t.triggering_interaction_metadata : t
 }
 
-function F(e, t) {
+function V(e, t) {
     var n;
     let r = null == (n = t.result) ? void 0 : n.sections;
     return null != r && e in r

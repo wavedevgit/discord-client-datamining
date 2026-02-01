@@ -1,54 +1,54 @@
-/** chunk id: 371185, original params: t,a,s (module,exports,require) **/
-s.d(a, {
+/** chunk id: 371185, original params: t,e,a (module,exports,require) **/
+a.d(e, {
     default: () => C
 });
-var e = s(627968),
-    l = s(64700),
-    n = s(158954),
-    i = s(417597),
-    o = s(49229),
-    r = s(928658),
-    c = s(662502),
-    u = s(287809),
-    k = s(427262),
-    d = s(192311),
-    p = s(327337),
-    b = s(985018);
+var s = a(627968),
+    l = a(64700),
+    n = a(158954),
+    r = a(417597),
+    i = a(49229),
+    o = a(928658),
+    u = a(662502),
+    c = a(287809),
+    k = a(427262),
+    d = a(192311),
+    p = a(327337),
+    b = a(985018);
 
 function C(t) {
     let {
-        userId: a,
-        channelId: s,
+        userId: e,
+        channelId: a,
         transitionState: C,
-        onBlock: h,
-        onBlockAndReport: f,
-        onClose: g,
-        onCancel: m
-    } = t, x = (0, d.W)(s), v = l.useCallback(() => {
-        o.A.blockUser(a, {
+        onBlock: g,
+        onBlockAndReport: h,
+        onClose: v,
+        onCancel: A
+    } = t, f = (0, d.W)(a), m = l.useCallback(() => {
+        i.A.blockUser(e, {
             location: p.Rx
         }).then(() => {
-            c.A.showBlockSuccessToast(a, s)
+            u.A.showBlockSuccessToast(e, a)
         })
-    }, [a, s]), j = l.useCallback(() => {
-        v(), h(), g()
-    }, [v, h, g]), w = l.useCallback(() => {
-        v(), (0, r.jJ)(x), f(), g()
-    }, [x, v, f, g]), y = l.useCallback(() => (null == m || m(), null == g || g(), Promise.resolve()), [m, g]), z = (0, i.bG)([u.default], () => u.default.getUser(a)), A = k.Ay.useName(z);
-    return (0, e.jsx)(n.Modal, {
+    }, [e, a]), x = l.useCallback(() => {
+        m(), g(), v()
+    }, [m, g, v]), M = l.useCallback(() => {
+        m(), (0, o.jJ)(f), h(), v()
+    }, [f, m, h, v]), U = l.useCallback(() => (null == A || A(), null == v || v(), Promise.resolve()), [A, v]), j = (0, r.bG)([c.default], () => c.default.getUser(e)), w = k.Ay.useName(j);
+    return (0, s.jsx)(n.Modal, {
         transitionState: C,
-        onClose: y,
+        onClose: U,
         title: b.intl.formatToPlainString(b.t.x5pOn9, {
-            name: A
+            name: w
         }),
         subtitle: b.intl.string(b.t.aedkso),
         actions: [{
             text: b.intl.string(b.t["3pzujz"]),
-            onClick: w,
+            onClick: M,
             variant: "secondary"
         }, {
             text: b.intl.string(b.t.MzsUsp),
-            onClick: j,
+            onClick: x,
             variant: "primary"
         }]
     })

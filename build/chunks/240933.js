@@ -1,52 +1,52 @@
 /** chunk id: 240933, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => u
+    A: () => c
 });
 var i = n(544420),
     r = n(684013),
     l = n(742984),
     a = n(592598),
-    o = n(581730),
-    s = n(672396),
-    c = n(985018);
+    s = n(581730),
+    o = n(672396),
+    u = n(985018);
 
-function u(e, t, n, u, d) {
-    if (a.A.isNotificationDisabled(s.KS.ActivityInvite) || null == t.activity || null == u.id) return null;
-    let p = t.activity.type,
-        h = d.session_id;
-    if (null == h) return null;
+function c(e, t, n, c, d) {
+    if (a.A.isNotificationDisabled(o.KS.ActivityInvite) || null == t.activity || null == c.id) return null;
+    let h = t.activity.type,
+        p = d.session_id;
+    if (null == p) return null;
     let {
         icon: f,
-        title: m,
-        body: g
+        title: g,
+        body: m
     } = (0, l.TB)(e, t, n), {
         trackView: y,
         trackClick: A
-    } = (0, o.Y9)(s.KS.ActivityInvite, {
-        notif_type: s.KS.ActivityInvite,
+    } = (0, s.Y9)(o.KS.ActivityInvite, {
+        notif_type: o.KS.ActivityInvite,
         notif_user_id: n.id,
         message_id: t.id,
         message_type: t.type,
         guild_id: e.guild_id,
         channel_id: e.id,
         channel_type: e.type,
-        activity_type: p,
+        activity_type: h,
         activity_name: d.name
     });
     return {
         icon: f,
-        title: m,
-        body: g,
+        title: g,
+        body: m,
         onNotificationShow: () => {
             y()
         },
-        confirmText: c.intl.string(c.t.VJlc0S),
+        confirmText: u.intl.string(u.t.VJlc0S),
         onConfirmClick: (l, a) => {
-            var o;
+            var s;
             i.A.join({
                 userId: n.id,
-                sessionId: h,
-                applicationId: null != (o = u.altId) ? o : u.id,
+                sessionId: p,
+                applicationId: null != (s = c.altId) ? s : c.id,
                 channelId: e.id,
                 messageId: t.id
             }), r.A.updateNotificationStatus(a), A("join")

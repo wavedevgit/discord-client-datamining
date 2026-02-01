@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     l = n(311907),
-    o = n(554146),
-    a = n(397927),
+    a = n(554146),
+    o = n(397927),
     s = n(728364),
     c = n(264779),
     u = n(597758),
@@ -31,7 +31,7 @@ let P = e => {
     }, {
         autoTrackExposure: !1,
         disable: P
-    }), C = i.useCallback(() => {
+    }), m = i.useCallback(() => {
         A.default.track(N.HAw.OUTBOUND_PROMOTION_NOTICE_CLICKED), (0, d.openUserSettings)(E.X.GIFT_PANEL, {
             section: N.nc_.INVENTORY
         }), u.Ay.dismissOutboundPromotionNotice()
@@ -49,21 +49,21 @@ let P = e => {
                 visibleContent: t,
                 markAsDismissed: n
             } = e;
-            if (t === o.M.THIRD_PARTY_OUTBOUND_PROMO_NAGBAR) return (0, r.jsxs)(a.$Td, {
-                color: a.Hv$.PREMIUM_TIER_2,
-                children: [(0, r.jsx)(a.PMB, {
+            if (t === a.M.THIRD_PARTY_OUTBOUND_PROMO_NAGBAR) return (0, r.jsxs)(o.$Td, {
+                color: o.Hv$.PREMIUM_TIER_2,
+                children: [(0, r.jsx)(o.PMB, {
                     noticeType: N.kqX.OUTBOUND_PROMOTION,
                     onClick: () => {
                         u.Ay.dismissOutboundPromotionNotice(), null !== n && n(O.i.USER_DISMISS)
                     }
-                }), (0, r.jsx)(a.tvc, {
+                }), (0, r.jsx)(o.tvc, {
                     size: "md",
                     color: "currentColor",
                     className: S.P
-                }), y ? R.intl.string(R.t["5JMiOo"]) : R.intl.string(R.t["Pzh+G2"]), (0, r.jsx)(a.Z_L, {
+                }), y ? R.intl.string(R.t["5JMiOo"]) : R.intl.string(R.t["Pzh+G2"]), (0, r.jsx)(o.Z_L, {
                     noticeType: N.kqX.OUTBOUND_PROMOTION,
                     onClick: () => {
-                        C(), null !== n && n(O.i.TAKE_ACTION)
+                        m(), null !== n && n(O.i.TAKE_ACTION)
                     },
                     children: R.intl.string(R.t.jVcuVY)
                 })]

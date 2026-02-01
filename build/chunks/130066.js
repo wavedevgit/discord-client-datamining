@@ -1,75 +1,75 @@
 /** chunk id: 130066, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => R
+    A: () => w
 });
-var i = n(627968),
+var r = n(627968),
     l = n(311907),
-    s = n(195043),
-    r = n(628965),
+    i = n(195043),
+    s = n(628965),
     a = n(740625),
     o = n(524738),
     c = n(378631),
-    d = n(962789),
-    u = n(476009),
-    h = n(585052),
-    g = n(831320),
-    x = n(965563),
-    p = n(320134),
+    u = n(962789),
+    d = n(476009),
+    p = n(585052),
+    h = n(831320),
+    g = n(965563),
+    f = n(320134),
     m = n(604151),
-    A = n(638130),
-    b = n(389242),
-    j = n(772538),
+    b = n(638130),
+    A = n(389242),
+    y = n(772538),
     O = n(61610),
-    E = n(751461),
-    S = n(638324),
-    f = n(428854),
-    C = n(531525),
-    v = n(190363),
-    y = n(652215),
-    T = n(985018);
-let _ = () => (0, i.jsxs)(p.A, {
-        title: T.intl.string(T.t.xVRG4P),
-        webSetting: C.H.PRIVACY_AND_SAFETY_CONTENT_CATEGORY,
-        children: [(0, i.jsx)(A.f, {}), (0, i.jsx)(h.A, {}), (0, i.jsx)(u.A, {}), (0, i.jsx)(c.A, {}), (0, i.jsx)(b.A, {})]
+    j = n(751461),
+    x = n(638324),
+    _ = n(428854),
+    v = n(531525),
+    E = n(190363),
+    C = n(652215),
+    S = n(985018);
+let I = () => (0, r.jsxs)(f.A, {
+        title: S.intl.string(S.t.xVRG4P),
+        webSetting: v.H.PRIVACY_AND_SAFETY_CONTENT_CATEGORY,
+        children: [(0, r.jsx)(b.f, {}), (0, r.jsx)(p.A, {}), (0, r.jsx)(d.A, {}), (0, r.jsx)(c.A, {}), (0, r.jsx)(A.A, {})]
     }),
-    N = () => (0, i.jsxs)(p.A, {
-        title: T.intl.string(T.t["y62Z/d"]),
-        webSetting: C.H.PRIVACY_AND_SAFETY_SOCIAL_PERMISSIONS_CATEGORY,
-        children: [(0, i.jsx)(s.x, {
-            setting: C.H.PRIVACY_AND_SAFETY_SERVER_SELECTOR,
-            children: (0, i.jsx)(x.A, {})
-        }), (0, i.jsx)(E.A, {}), (0, i.jsx)(S.A, {}), (0, i.jsx)(O.A, {}), (0, i.jsx)(j.A, {})]
+    N = () => (0, r.jsxs)(f.A, {
+        title: S.intl.string(S.t["y62Z/d"]),
+        webSetting: v.H.PRIVACY_AND_SAFETY_SOCIAL_PERMISSIONS_CATEGORY,
+        children: [(0, r.jsx)(i.x, {
+            setting: v.H.PRIVACY_AND_SAFETY_SERVER_SELECTOR,
+            children: (0, r.jsx)(g.A, {})
+        }), (0, r.jsx)(j.A, {}), (0, r.jsx)(x.A, {}), (0, r.jsx)(O.A, {}), (0, r.jsx)(y.A, {})]
     }),
-    I = () => (0, i.jsxs)(p.A, {
-        title: T.intl.string(T.t["1Qn8iV"]),
-        webSetting: C.H.PRIVACY_AND_SAFETY_FRIEND_REQUESTS_CATEGORY,
-        children: [(0, i.jsx)(g.A, {}), (0, i.jsx)(m.Ay, {})]
+    T = () => (0, r.jsxs)(f.A, {
+        title: S.intl.string(S.t["1Qn8iV"]),
+        webSetting: v.H.PRIVACY_AND_SAFETY_FRIEND_REQUESTS_CATEGORY,
+        children: [(0, r.jsx)(h.A, {}), (0, r.jsx)(m.Ay, {})]
     }),
-    P = () => (0, i.jsxs)(i.Fragment, {
-        children: [(0, i.jsx)(_, {}), (0, i.jsx)(N, {}), (0, i.jsx)(I, {})]
+    P = () => (0, r.jsxs)(r.Fragment, {
+        children: [(0, r.jsx)(I, {}), (0, r.jsx)(N, {}), (0, r.jsx)(T, {})]
     });
 
-function R() {
-    let e = (0, l.bG)([r.A], () => r.A.getSubsection()),
+function w() {
+    let e = (0, l.bG)([s.A], () => s.A.getSubsection()),
         t = [{
-            title: T.intl.string(T.t["/7xJCF"]),
+            title: S.intl.string(S.t["/7xJCF"]),
             component: P,
-            setting: C.H.CONTENT_SOCIAL_DISCORD_TAB
+            setting: v.H.CONTENT_SOCIAL_DISCORD_TAB
         }, {
-            title: T.intl.string(T.t.YpCiMt),
-            component: d.A,
-            setting: C.H.CONTENT_SOCIAL_CONNECTED_GAMES
+            title: S.intl.string(S.t.YpCiMt),
+            component: u.A,
+            setting: v.H.CONTENT_SOCIAL_CONNECTED_GAMES
         }];
-    return (0, i.jsx)(a.R, {
-        header: T.intl.string(T.t["+o1pDZ"]),
-        notice: (0, i.jsx)(f.A, {
-            page: f.R.CONTENT_AND_SOCIAL
+    return (0, r.jsx)(a.R, {
+        header: S.intl.string(S.t["+o1pDZ"]),
+        notice: (0, r.jsx)(_.A, {
+            page: _.R.CONTENT_AND_SOCIAL
         }),
-        children: (0, i.jsx)(o.A, {
-            parentSetting: C.H.CONTENT_SOCIAL,
-            settingsSection: y.nc_.CONTENT_AND_SOCIAL,
+        children: (0, r.jsx)(o.A, {
+            parentSetting: v.H.CONTENT_SOCIAL,
+            settingsSection: C.nc_.CONTENT_AND_SOCIAL,
             tabs: t,
-            defaultTabIndex: e === v.k ? 1 : void 0
+            defaultTabIndex: e === E.k ? 1 : void 0
         })
     })
 }

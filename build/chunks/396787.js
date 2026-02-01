@@ -1,20 +1,20 @@
 /** chunk id: 396787, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    F5: () => p,
+    F5: () => h,
     XA: () => f,
-    jv: () => h
+    jv: () => p
 });
 var l = n(627968);
 n(64700);
 var r = n(653922),
     i = n(397927),
     a = n(157559),
-    o = n(308528),
-    s = n(793574),
+    s = n(308528),
+    o = n(793574),
     c = n(576470),
     u = n(339984),
     d = n(985018);
-let p = (e, t) => (0, i.mMO)(async () => {
+let h = (e, t) => (0, i.mMO)(async () => {
         let {
             default: r
         } = await Promise.all([n.e("79149"), n.e("53653"), n.e("66863")]).then(n.bind(n, 551028));
@@ -41,14 +41,14 @@ let p = (e, t) => (0, i.mMO)(async () => {
             uploadType: u.HL.AVATAR,
             showUpsellHeader: !1,
             modalTitle: d.intl.string(d.t["6yrpFR"]),
-            analyticsLocation: s.A.GROUP_DM_ICON_EDITOR,
+            analyticsLocation: o.A.GROUP_DM_ICON_EDITOR,
             analyticsLocations: t,
             allowRecentAvatarsSelection: !1
         }, n))
     }),
-    h = (e, t) => {
-        p(n => {
-            o.A.setIcon(e, n.imageUri, t).catch(f)
+    p = (e, t) => {
+        h(n => {
+            s.A.setIcon(e, n.imageUri, t).catch(f)
         }, [t])
     },
     f = e => {

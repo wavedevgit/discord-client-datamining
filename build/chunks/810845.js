@@ -1,37 +1,37 @@
-/** chunk id: 810845, original params: e,t,l (module,exports,require) **/
-l.d(t, {
-    A: () => p
+/** chunk id: 810845, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    A: () => g
 });
-var n = l(627968),
-    i = l(64700),
-    r = l(311907),
-    o = l(397927),
-    a = l(367513),
-    c = l(401843),
-    d = l(574172),
-    s = l(911900),
-    u = l(313961),
-    A = l(806931),
-    g = l(985018);
+var i = n(627968),
+    r = n(64700),
+    l = n(311907),
+    a = n(397927),
+    s = n(367513),
+    o = n(401843),
+    d = n(574172),
+    u = n(911900),
+    c = n(313961),
+    A = n(806931),
+    f = n(985018);
 
-function p(e, t) {
+function g(e, t) {
     let {
-        enabled: l
-    } = s.A.useConfig({
+        enabled: n
+    } = u.A.useConfig({
         location: "useCallTilePopoutItem"
-    }), p = (0, r.bG)([u.A], () => u.A.getParticipant(e, t)), b = (0, r.bG)([u.A], () => u.A.isParticipantPoppedOut(e, t)), f = i.useCallback(() => {
-        null != p && ((0, A.Ay)(p) && (0, c.A9)(p.stream, {
+    }), g = (0, l.bG)([c.A], () => c.A.getParticipant(e, t)), b = (0, l.bG)([c.A], () => c.A.isParticipantPoppedOut(e, t)), p = r.useCallback(() => {
+        null != g && ((0, A.Ay)(g) && (0, o.A9)(g.stream, {
             forceMultiple: !0
-        }), a.A.popoutParticipant(e, p.id), d.openCallTilePopout(e, p.id))
-    }, [p, e]);
-    return b || null == p || !l || p.type === A.lp.ACTIVITY ? null : (0, n.jsx)(o.Drp, {
+        }), s.A.popoutParticipant(e, g.id), d.openCallTilePopout(e, g.id))
+    }, [g, e]);
+    return b || null == g || !n || g.type === A.lp.ACTIVITY ? null : (0, i.jsx)(a.Drp, {
         id: "call-tile-popout",
-        label: (0, A.Ay)(p) ? g.intl.string(g.t.Cm4aDQ) : null != p.streamId ? g.intl.string(g.t["8Xyas9"]) : g.intl.string(g.t.ifpl2s),
-        action: f,
-        icon: o.tfB,
+        label: (0, A.Ay)(g) ? f.intl.string(f.t.Cm4aDQ) : null != g.streamId ? f.intl.string(f.t["8Xyas9"]) : f.intl.string(f.t.ifpl2s),
+        action: p,
+        icon: a.tfB,
         leadingAccessory: {
             type: "icon",
-            icon: o.tfB
+            icon: a.tfB
         }
     })
 }

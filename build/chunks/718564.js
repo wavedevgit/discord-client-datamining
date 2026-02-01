@@ -1,5 +1,8 @@
-/** chunk id: 718564, original params: t,e,n (module,exports,require) **/
-n.d(e, {
-    W: () => l
+/** chunk id: 718564, original params: e,t,n (module,exports,require) **/
+"use strict";
+n.d(t, {
+    W: () => r
 });
-var r, l = ((r = {}).RAID = "raid", r.MENTION_RAID = "mention_raid", r.ACTIVITY_ALERTS_ENABLED = "activity_alerts_enabled", r.INTERACTION_BLOCKED = "interaction_blocked", r)
+var r = function(e) {
+    return e.RAID = "raid", e.MENTION_RAID = "mention_raid", e.ACTIVITY_ALERTS_ENABLED = "activity_alerts_enabled", e.INTERACTION_BLOCKED = "interaction_blocked", e
+}({})

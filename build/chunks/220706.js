@@ -2,10 +2,10 @@
 n.d(t, {
     A: () => h
 });
-var r, l = n(311907),
+var l, r = n(311907),
     i = n(73153),
-    s = n(734057),
-    a = n(746080);
+    a = n(734057),
+    s = n(746080);
 
 function o(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
@@ -17,10 +17,10 @@ function o(e, t, n) {
 }
 let c = {},
     u = {};
-class d extends(r = l.Ay.PersistedStore) {
+class d extends(l = r.Ay.PersistedStore) {
     initialize(e) {
         var t;
-        this.waitFor(s.A), c = null != (t = null == e ? void 0 : e.selectedResourceChannelIdByGuildId) ? t : {}
+        this.waitFor(a.A), c = null != (t = null == e ? void 0 : e.selectedResourceChannelIdByGuildId) ? t : {}
     }
     getState() {
         return {
@@ -42,11 +42,11 @@ let h = new d(i.h, {
             channelId: t,
             guildId: n
         } = e;
-        if (null == n || t === a.VV.GUILD_HOME) return;
-        let r = s.A.getChannel(t),
-            l = c[n],
+        if (null == n || t === s.VV.GUILD_HOME) return;
+        let l = a.A.getChannel(t),
+            r = c[n],
             i = u[n];
-        (null == r ? void 0 : r.isThread()) && (null == r ? void 0 : r.parent_id) != null && [i, l].includes(null == r ? void 0 : r.parent_id) || (t !== l && delete c[n], t !== i && delete u[n])
+        (null == l ? void 0 : l.isThread()) && (null == l ? void 0 : l.parent_id) != null && [i, r].includes(null == l ? void 0 : l.parent_id) || (t !== r && delete c[n], t !== i && delete u[n])
     },
     SELECT_HOME_RESOURCE_CHANNEL: function(e) {
         let {

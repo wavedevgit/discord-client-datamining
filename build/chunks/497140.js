@@ -1,6 +1,6 @@
 /** chunk id: 497140, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => p
+    A: () => h
 }), n(896048);
 var r = n(627968),
     l = n(64700),
@@ -12,7 +12,7 @@ var r = n(627968),
     u = n(550591),
     d = n(794398);
 
-function h(e) {
+function p(e) {
     for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -31,8 +31,8 @@ function h(e) {
     return e
 }
 
-function p(e) {
-    let [t, p] = l.useState(!1), g = (0, i.Vd)("guild-".concat(e.id));
+function h(e) {
+    let [t, h] = l.useState(!1), g = (0, i.Vd)("guild-".concat(e.id));
     return (0, r.jsx)(c.c, {
         children: (0, r.jsx)(u.A, {
             text: e.name,
@@ -44,20 +44,20 @@ function p(e) {
                     disableColor: !0,
                     className: d._
                 }),
-                children: (0, r.jsx)(s.jlP, h({
+                children: (0, r.jsx)(s.jlP, p({
                     name: e.name,
                     onMouseEnter: () => {
-                        p(!0)
+                        h(!0)
                     },
                     onMouseLeave: () => {
-                        p(!1)
+                        h(!1)
                     },
                     onClick: () => {
                         (0, s.mMO)(async () => {
                             let {
                                 default: t
                             } = await n.e("42945").then(n.bind(n, 537560));
-                            return n => (0, r.jsx)(t, h({
+                            return n => (0, r.jsx)(t, p({
                                 name: e.name,
                                 guildId: e.id
                             }, n))

@@ -174,7 +174,7 @@ var M = function(e, t) {
     },
     G = function(e, t, n) {
         void 0 === t && (t = []), void 0 === n && (n = {});
-        var r = V;
+        var r = F;
         e.default && !0 !== e.default && (r = Object.keys(e = e.default));
         for (var i, o = R(r); !(i = o()).done;) {
             var s = i.value,
@@ -183,10 +183,10 @@ var M = function(e, t) {
         }
         return n
     },
-    F = function(e, t, n) {
+    V = function(e, t, n) {
         return G(t, n, e)
     },
-    V = ["pause", "cancel", "config", "immediate", "onDelayEnd", "onProps", "onStart", "onChange", "onRest"],
+    F = ["pause", "cancel", "config", "immediate", "onDelayEnd", "onProps", "onStart", "onChange", "onRest"],
     B = {
         config: 1,
         from: 1,
@@ -752,7 +752,7 @@ var er = function(e) {
                     return a.is.und(t[e]) ? o[e] : t[e]
                 },
                 u = e_(c("onDelayEnd"), r);
-            u && u(t, this), t.default && F(o, t, ["pause", "cancel"]);
+            u && u(t, this), t.default && V(o, t, ["pause", "cancel"]);
             var d = i.to,
                 _ = i.from,
                 h = e.to,
@@ -789,12 +789,12 @@ var er = function(e) {
                     if (k !== w.constructor) throw Error("Cannot animate between " + w.constructor.name + " and " + k.name + ', as the "to" prop suggests')
                 } var U = w.constructor,
                 G = !!v,
-                V = !1;
+                F = !1;
             if (!G) {
                 var B = R || this.is(es) && b;
-                (O || B) && (G = !(V = a.isEqual(W(P), D))), a.isEqual(S.decay, C) && a.isEqual(S.velocity, N) || (G = !0)
+                (O || B) && (G = !(F = a.isEqual(W(P), D))), a.isEqual(S.decay, C) && a.isEqual(S.velocity, N) || (G = !0)
             }
-            if (V && this.is(ec) && (i.changed && !R ? G = !0 : G || this._stop()), !I) {
+            if (F && this.is(ec) && (i.changed && !R ? G = !0 : G || this._stop()), !I) {
                 (G || a.getFluidConfig(d)) && (i.values = w.getPayload(), i.toValues = v ? null : U == f.AnimatedString ? [1] : a.toArray(D)), i.immediate = j, i.onStart = e_(c("onStart"), r), i.onChange = e_(c("onChange"), r);
                 var H = i.onRest,
                     Y = R && !t.onRest ? H[0] || a.noop : eh(e_(c("onRest"), r), this);
@@ -1304,9 +1304,9 @@ function ej(e, t, n) {
 var ek = "mount",
     eU = "enter",
     eG = "update",
-    eF = "leave";
+    eV = "leave";
 
-function eV(e, t, n) {
+function eF(e, t, n) {
     var r = t.ref,
         l = t.reset,
         c = t.sort,
@@ -1360,8 +1360,8 @@ function eV(e, t, n) {
         if (l == ek) r = t.enter, i = eU;
         else {
             var c = 0 > m.indexOf(s);
-            if (l != eF)
-                if (c) r = t.leave, i = eF;
+            if (l != eV)
+                if (c) r = t.leave, i = eV;
                 else {
                     if (!(r = t.update)) return;
                     i = eG
@@ -1397,7 +1397,7 @@ function eV(e, t, n) {
                     var r = t.every(function(e) {
                         return e.ctrl.idle
                     });
-                    if (n.phase == eF) {
+                    if (n.phase == eV) {
                         var i = x(p, n.item);
                         if (!1 !== i) {
                             var o = !0 === i ? 0 : i;
@@ -1485,7 +1485,7 @@ function eW(e) {
     var t = e.items,
         n = e.children,
         r = g(e, ["items", "children"]);
-    return s.createElement(s.Fragment, null, eV(t, r)(n))
+    return s.createElement(s.Fragment, null, eF(t, r)(n))
 }
 var eK = function(e) {
         function t(t, n) {
@@ -1572,4 +1572,4 @@ Object.keys(b).forEach(function(e) {
     get: function() {
         return a.createInterpolator
     }
-}), t.BailSignal = er, t.Controller = ev, t.FrameValue = eo, t.Interpolation = eK, t.Spring = eH, t.SpringContext = eP, t.SpringHandle = eL, t.SpringValue = ef, t.Trail = eY, t.Transition = eW, t.config = v, t.inferTo = Y, t.interpolate = eq, t.to = ez, t.update = eZ, t.useChain = O, t.useSpring = eM, t.useSprings = ex, t.useTrail = ej, t.useTransition = eV
+}), t.BailSignal = er, t.Controller = ev, t.FrameValue = eo, t.Interpolation = eK, t.Spring = eH, t.SpringContext = eP, t.SpringHandle = eL, t.SpringValue = ef, t.Trail = eY, t.Transition = eW, t.config = v, t.inferTo = Y, t.interpolate = eq, t.to = ez, t.update = eZ, t.useChain = O, t.useSpring = eM, t.useSprings = ex, t.useTrail = ej, t.useTransition = eF

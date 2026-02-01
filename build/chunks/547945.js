@@ -11,8 +11,8 @@ var r = n(627968),
     c = n(837381),
     u = n(158954),
     d = n(311907),
-    h = n(397927),
-    p = n(928039),
+    p = n(397927),
+    h = n(928039),
     g = n(636922),
     f = n(976860),
     m = n(151282),
@@ -20,9 +20,9 @@ var r = n(627968),
     A = n(551640),
     y = n(970244),
     O = n(253932),
-    _ = n(383233),
-    j = n(734057),
-    x = n(287809),
+    j = n(383233),
+    x = n(734057),
+    _ = n(287809),
     v = n(403362),
     E = n(572448),
     C = n(963702),
@@ -47,11 +47,11 @@ function w() {
         t = l.useMemo(() => Object.values(e).sort((e, t) => new Date(e.sendAtTimestamp) > new Date(t.sendAtTimestamp) ? -1 : 1), [e]),
         n = (0, d.bG)([b.A], () => b.A.loading, []),
         i = l.useRef(null),
-        s = (0, p.A)("scheduled-messages", i);
-    return n ? (0, r.jsx)(h.y$y, {
+        s = (0, h.A)("scheduled-messages", i);
+    return n ? (0, r.jsx)(p.y$y, {
         className: N.k$
     }) : 0 === t.length ? (0, r.jsx)(C.A, {
-        Icon: h.O4,
+        Icon: p.O4,
         header: I.intl.string(I.t.aJQZfZ),
         tip: I.intl.string(I.t.rCN4pN)
     }) : (0, r.jsx)(c.hD, {
@@ -78,7 +78,7 @@ function w() {
                         for (l = 0, n = Object.getOwnPropertySymbols(e); l < n.length; l++) r = n[l], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r]);
                     return i
                 }(e, ["ref"]);
-                return (0, r.jsx)(h.T7Y, (n = function(e) {
+                return (0, r.jsx)(p.T7Y, (n = function(e) {
                     for (var t = 1; t < arguments.length; t++) {
                         var n = null != arguments[t] ? arguments[t] : {},
                             r = Object.keys(n);
@@ -124,7 +124,7 @@ function R(e) {
         scheduledMessages: t
     } = e, n = l.useMemo(() => t.reduce((e, t) => {
         var n, r;
-        let l = j.A.getChannel(t.scheduledMessage.channelId);
+        let l = x.A.getChannel(t.scheduledMessage.channelId);
         return null == l || (e[l.id] = {
             channel: l,
             scheduledMessages: [...null != (n = null == (r = e[l.id]) ? void 0 : r.scheduledMessages) ? n : [], t]
@@ -159,10 +159,10 @@ let D = l.memo(function(e) {
         scheduledMessage: t,
         channel: n,
         isPendingDeletion: i
-    } = e, a = new _.Ay({
+    } = e, a = new j.Ay({
         id: t.scheduledMessageId,
         content: t.scheduledMessage.content,
-        author: x.default.getUser(t.userId),
+        author: _.default.getUser(t.userId),
         timestamp: o()(t.sendAtTimestamp).toDate(),
         channel_id: t.scheduledMessage.channelId
     }), {
@@ -197,7 +197,7 @@ let D = l.memo(function(e) {
             default:
                 (0, v.xb)(e)
         }
-    }(t.state), p = l.useCallback(() => {
+    }(t.state), h = l.useCallback(() => {
         (0, m.mk)(t.scheduledMessageId).then(() => {
             (0, y.Re)()
         }).catch(e => {
@@ -213,10 +213,10 @@ let D = l.memo(function(e) {
             [N._4]: c,
             [N.j3]: !c
         }),
-        children: i ? (0, r.jsx)(h.y$y, {
+        children: i ? (0, r.jsx)(p.y$y, {
             className: N.$5
         }) : (0, r.jsxs)(r.Fragment, {
-            children: [(0, r.jsx)(h.Text, {
+            children: [(0, r.jsx)(p.Text, {
                 variant: "text-xs/semibold",
                 color: c ? "text-feedback-critical" : "text-feedback-positive",
                 className: N.Rq,
@@ -233,13 +233,13 @@ let D = l.memo(function(e) {
                 }, a.id), (0, r.jsxs)(u.e2v, {
                     size: "sm",
                     children: [(0, r.jsx)(u.K0, {
-                        icon: h.O4,
+                        icon: p.O4,
                         onClick: f,
                         variant: "icon-only",
                         "aria-label": I.intl.string(I.t.SBcdAN)
                     }), (0, r.jsx)(u.K0, {
-                        icon: h.aXh,
-                        onClick: p,
+                        icon: p.aXh,
+                        onClick: h,
                         "aria-label": I.intl.string(I.t.O3sL8F),
                         variant: "icon-only"
                     })]

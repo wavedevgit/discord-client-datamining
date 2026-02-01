@@ -12,8 +12,8 @@ var l = n(417597),
     c = n(966597),
     u = n(85109),
     d = n(566908),
-    h = n(646468),
-    p = n(790368),
+    p = n(646468),
+    h = n(790368),
     g = n(435084),
     f = n(412484),
     m = n(985018),
@@ -23,7 +23,7 @@ function A(e) {
     let {
         tab: t,
         setTab: n,
-        badgeState: h,
+        badgeState: p,
         closePopout: g
     } = e, {
         enabled: f,
@@ -32,7 +32,7 @@ function A(e) {
         location: "RecentsPopout"
     }), O = (0, d.Sc)({
         location: "RecentsHeader"
-    }), _ = (0, l.bG)([u.A], () => u.A.getOverdueMessageReminderCount());
+    }), j = (0, l.bG)([u.A], () => u.A.getOverdueMessageReminderCount());
     return (0, r.jsxs)(o.Y9, {
         className: b.wx,
         children: [(0, r.jsxs)("div", {
@@ -55,7 +55,7 @@ function A(e) {
                 "aria-label": m.intl.string(m.t["8k+6QY"]),
                 children: [(0, r.jsx)(y, {
                     tab: t
-                }), (0, r.jsx)(p.A, {
+                }), (0, r.jsx)(h.A, {
                     closePopout: g
                 })]
             })]
@@ -71,7 +71,7 @@ function A(e) {
                     id: i.Y2.FOR_YOU,
                     "aria-label": m.intl.string(m.t["En+D+u"]),
                     className: b.Mf,
-                    children: [m.intl.string(m.t["En+D+u"]), (null == h ? void 0 : h.badgeForYou) ? (0, r.jsx)(a.SC0, {
+                    children: [m.intl.string(m.t["En+D+u"]), (null == p ? void 0 : p.badgeForYou) ? (0, r.jsx)(a.SC0, {
                         color: s.A.colors.BACKGROUND_FEEDBACK_NOTIFICATION.css,
                         className: b.bG
                     }) : null]
@@ -88,8 +88,8 @@ function A(e) {
                     "aria-label": m.intl.string(m.t["2pAkDA"]),
                     id: i.Y2.BOOKMARKS,
                     className: b.Mf,
-                    children: 0 === _ ? m.intl.string(m.t["2pAkDA"]) : m.intl.formatToPlainString(m.t.I4fryG, {
-                        count: _
+                    children: 0 === j ? m.intl.string(m.t["2pAkDA"]) : m.intl.formatToPlainString(m.t.I4fryG, {
+                        count: j
                     })
                 }) : null, O ? (0, r.jsx)(a.VQ0.Item, {
                     "aria-label": "scheduled",
@@ -106,5 +106,5 @@ function y(e) {
     let {
         tab: t
     } = e;
-    return t === i.Y2.FOR_YOU ? (0, r.jsx)(h.xc, {}) : t === i.Y2.UNREADS ? (0, r.jsx)(f.NH, {}) : t === i.Y2.MENTIONS ? (0, r.jsx)(g.A, {}) : null
+    return t === i.Y2.FOR_YOU ? (0, r.jsx)(p.xc, {}) : t === i.Y2.UNREADS ? (0, r.jsx)(f.NH, {}) : t === i.Y2.MENTIONS ? (0, r.jsx)(g.A, {}) : null
 }

@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(562465),
     i = n(626584),
     l = n(152007),
-    o = n(867455),
-    a = n(734057),
+    a = n(867455),
+    o = n(734057),
     s = n(320501),
     c = n(222823),
     u = n(287809),
@@ -23,8 +23,8 @@ async function A(e, t) {
     i.forAll(e => {
         E.default.compare(e.id, T) > 0 && (0, c.Wm)(e, n) && I++
     });
-    let O = a.A.getChannel(e);
-    null != O && O.isThread() && (O.isArchivedThread() && await o.A.unarchiveThread(O, !1), l.A.hasJoined(e) || await o.A.joinThread(O, "Mark Unread")), _.log("Marking unread", {
+    let O = o.A.getChannel(e);
+    null != O && O.isThread() && (O.isArchivedThread() && await a.A.unarchiveThread(O, !1), l.A.hasJoined(e) || await a.A.joinThread(O, "Mark Unread")), _.log("Marking unread", {
         channelId: e,
         messageId: t
     }), r.Bo.post({

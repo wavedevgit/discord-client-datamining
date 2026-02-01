@@ -1,11 +1,11 @@
 /** chunk id: 199160, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => f
+    A: () => m
 }), n(896048);
-var r, l = n(311907),
+var l, r = n(311907),
     i = n(73153);
 
-function s(e, t, n) {
+function a(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -14,14 +14,14 @@ function s(e, t, n) {
     }) : e[t] = n, e
 }
 
-function a(e) {
+function s(e) {
     for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+            l = Object.keys(n);
+        "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
             return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
-            s(e, t, n[t])
+        }))), l.forEach(function(t) {
+            a(e, t, n[t])
         })
     }
     return e
@@ -31,8 +31,8 @@ function o(e, t) {
     return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
-            var r = Object.getOwnPropertySymbols(e);
-            n.push.apply(n, r)
+            var l = Object.getOwnPropertySymbols(e);
+            n.push.apply(n, l)
         }
         return n
     })(Object(t)).forEach(function(n) {
@@ -47,7 +47,7 @@ let c = !1,
 function p() {
     h = {}
 }
-class g extends(r = l.Ay.Store) {
+class f extends(l = r.Ay.Store) {
     getMessagesPendingDeletion() {
         return d
     }
@@ -61,22 +61,22 @@ class g extends(r = l.Ay.Store) {
         return c
     }
 }
-s(g, "displayName", "scheduledMessageStore");
-let f = new g(i.h, {
+a(f, "displayName", "scheduledMessageStore");
+let m = new f(i.h, {
     SCHEDULED_MESSAGES_CREATE_SUCCESS: function(e) {
         let {
             channelId: t,
             scheduledMessageSend: n
         } = e;
-        u = o(a({}, u), {
+        u = o(s({}, u), {
             [n.scheduledMessageId]: n
-        }), h = a({}, h), delete h[t]
+        }), h = s({}, h), delete h[t]
     },
     SCHEDULED_MESSAGES_UPDATE_SUCCESS: function(e) {
         let {
             scheduledMessageSend: t
         } = e;
-        u = o(a({}, u), {
+        u = o(s({}, u), {
             [t.scheduledMessageId]: t
         })
     },
@@ -92,7 +92,7 @@ let f = new g(i.h, {
             scheduledMessageId: t
         } = e;
         if (!d.has(t)) return !1;
-        (d = new Set(d)).delete(t), u = a({}, u), delete u[t]
+        (d = new Set(d)).delete(t), u = s({}, u), delete u[t]
     },
     SCHEDULED_MESSAGES_DELETE_FAILURE: function(e) {
         let {
@@ -121,7 +121,7 @@ let f = new g(i.h, {
             channelId: t,
             scheduledTimestamp: n
         } = e;
-        h = o(a({}, h), {
+        h = o(s({}, h), {
             [t]: {
                 channelId: t,
                 scheduledTimestamp: n
@@ -132,7 +132,7 @@ let f = new g(i.h, {
         let {
             channelId: t
         } = e;
-        h = a({}, h), delete h[t]
+        h = s({}, h), delete h[t]
     },
     LOGOUT: p,
     CONNECTION_OPEN: p

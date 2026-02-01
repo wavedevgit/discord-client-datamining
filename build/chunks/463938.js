@@ -11,8 +11,8 @@ var r = n(627968),
     c = n(701785),
     u = n(65995),
     d = n(976860),
-    h = n(147925),
-    p = n(652215),
+    p = n(147925),
+    h = n(652215),
     g = n(746080),
     f = n(985018),
     m = n(949684);
@@ -28,13 +28,13 @@ let A = l.memo(function(e) {
     var t, n;
     let {
         guild: A
-    } = e, y = (0, s.bG)([c.h], () => c.h.getNewMemberActions(A.id), [A.id]), O = (0, s.bG)([u.A], () => u.A.getCompletedActions(A.id)), _ = l.useMemo(() => {
+    } = e, y = (0, s.bG)([c.h], () => c.h.getNewMemberActions(A.id), [A.id]), O = (0, s.bG)([u.A], () => u.A.getCompletedActions(A.id)), j = l.useMemo(() => {
         if (null == y || null == O) return 0;
         let e = 0;
         return y.forEach(t => {
             null != O[t.channelId] && e++
         }), e
-    }, [O, y]), j = null == y ? 0 : y.length, x = (0, i.rm)("progress-bar-".concat(A.id));
+    }, [O, y]), x = null == y ? 0 : y.length, _ = (0, i.rm)("progress-bar-".concat(A.id));
     return (0, r.jsxs)("li", {
         children: [(0, r.jsxs)(o.DUT, (t = function(e) {
             for (var t = 1; t < arguments.length; t++) {
@@ -53,7 +53,7 @@ let A = l.memo(function(e) {
                 })
             }
             return e
-        }({}, x), n = n = {
+        }({}, _), n = n = {
             role: "button",
             focusProps: {
                 offset: {
@@ -62,7 +62,7 @@ let A = l.memo(function(e) {
             },
             className: m.G9,
             onClick: function() {
-                (0, d.pX)(p.BVt.CHANNEL(A.id, g.VV.GUILD_HOME))
+                (0, d.pX)(h.BVt.CHANNEL(A.id, g.VV.GUILD_HOME))
             },
             children: [(0, r.jsxs)("div", {
                 className: m.A1,
@@ -77,20 +77,20 @@ let A = l.memo(function(e) {
                         className: m.Cv,
                         children: f.intl.format(f.t.eqZ1lW, {
                             numberHook: b,
-                            total: j.toString(),
-                            completed: _.toString()
+                            total: x.toString(),
+                            completed: j.toString()
                         })
-                    }), (0, r.jsx)(h.A, {
+                    }), (0, r.jsx)(p.A, {
                         className: m.UE,
                         width: 16,
                         height: 16,
-                        direction: h.A.Directions.RIGHT
+                        direction: p.A.Directions.RIGHT
                     })]
                 })]
             }), (0, r.jsx)(o.iCB, {
                 className: m.hr,
                 foregroundGradientColor: [a.A.unsafe_rawColors.GREEN_300.css, a.A.unsafe_rawColors.GREEN_230.css],
-                percent: _ / j * 100 + 3,
+                percent: j / x * 100 + 3,
                 animate: !0
             })]
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {

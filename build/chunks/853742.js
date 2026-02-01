@@ -22,10 +22,10 @@ n.d(t, {
     jr: () => v,
     pO: () => C,
     py: () => S,
-    rH: () => F,
+    rH: () => V,
     ri: () => k,
     sB: () => A,
-    zd: () => V
+    zd: () => F
 }), n(733351);
 var r = n(58149),
     i = n(332456),
@@ -374,7 +374,7 @@ function G() {
     r.Ay.trackWithMetadata(p.HAw.FORUM_CHANNEL_ENABLE_PREVIEW_CLICKED)
 }
 
-function F(e) {
+function V(e) {
     r.Ay.trackWithMetadata(p.HAw.CHANNEL_OPENED, g(h({}, (0, r.H$)(e.guild_id), (0, r.dI)(e), (0, i.C)(e, !0), (0, r.qL)(e.id)), {
         channel_view: "Split View",
         platform: (0, c.getPlatform)()
@@ -383,7 +383,7 @@ function F(e) {
     })
 }
 
-function V() {
+function F() {
     r.Ay.trackWithMetadata(p.HAw.OPEN_MODAL, {
         type: "Forum Channel Upsell Modal",
         location: {

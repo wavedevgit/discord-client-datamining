@@ -2,7 +2,7 @@
 n.d(t, {
     t: () => l
 });
-let i = (0, n(945810).mj)({
+let r = (0, n(945810).mj)({
         name: "2025-10-collectibles-custom-cursors",
         kind: "user",
         defaultConfig: {
@@ -17,6 +17,6 @@ let i = (0, n(945810).mj)({
             }
         }
     }),
-    l = e => i.getConfig({
+    l = e => r.getConfig({
         location: e
     }).enableCustomCursors

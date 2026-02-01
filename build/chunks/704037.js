@@ -1,6 +1,6 @@
 /** chunk id: 704037, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    l: () => p
+    l: () => h
 }), n(896048), n(667532);
 var r = n(627968),
     l = n(64700),
@@ -12,7 +12,7 @@ var r = n(627968),
     u = n(743790),
     d = n(960016);
 
-function h(e) {
+function p(e) {
     let {
         children: t
     } = e;
@@ -25,16 +25,16 @@ function h(e) {
     })
 }
 
-function p(e) {
+function h(e) {
     let {
         guildIds: t
-    } = e, n = (0, i.bG)([c.A], () => c.A.getGuildId()), a = (0, i.yK)([o.A], () => t.map(e => o.A.getGuild(e)), [t]), p = (0, l.useMemo)(() => a.filter(e => null != e), [a]), {
+    } = e, n = (0, i.bG)([c.A], () => c.A.getGuildId()), a = (0, i.yK)([o.A], () => t.map(e => o.A.getGuild(e)), [t]), h = (0, l.useMemo)(() => a.filter(e => null != e), [a]), {
         visibleGuilds: g,
         numTruncated: f
     } = (0, l.useMemo)(() => {
-        let e = [...p];
+        let e = [...h];
         if (null != n) {
-            let t = p.findIndex(e => e.id === n); - 1 !== t && (e.splice(t, 1), e.unshift(p[t]))
+            let t = h.findIndex(e => e.id === n); - 1 !== t && (e.splice(t, 1), e.unshift(h[t]))
         }
         return 4 === e.length ? {
             visibleGuilds: e,
@@ -45,15 +45,15 @@ function p(e) {
             visibleGuilds: e.slice(0, 3),
             numTruncated: e.length - 3
         }
-    }, [p, n]);
+    }, [h, n]);
     return (0, r.jsxs)("div", {
         className: d.WM,
-        children: [g.map(e => (0, r.jsx)(h, {
+        children: [g.map(e => (0, r.jsx)(p, {
             children: (0, r.jsx)(u.$, {
                 guild: e,
                 size: 20
             })
-        }, e.id)), f > 0 && (0, r.jsx)(h, {
+        }, e.id)), f > 0 && (0, r.jsx)(p, {
             children: (0, r.jsxs)(s.Text, {
                 className: d.br,
                 color: "text-subtle",

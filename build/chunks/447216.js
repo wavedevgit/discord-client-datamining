@@ -187,7 +187,7 @@ function G(e) {
     }), x(t, n, r)
 }
 
-function F(e) {
+function V(e) {
     let {
         context: t,
         userId: n
@@ -195,7 +195,7 @@ function F(e) {
     n !== f.default.getId() && M(t, n, p.A.isLocalMute(n, t))
 }
 
-function V(e) {
+function F(e) {
     let {
         context: t,
         userId: n
@@ -214,8 +214,8 @@ class H extends l.A {
         super(...e), y(this, "actions", {
             POST_CONNECTION_OPEN: D,
             AUDIO_SET_LOCAL_VOLUME: G,
-            AUDIO_TOGGLE_LOCAL_MUTE: F,
-            AUDIO_TOGGLE_LOCAL_SOUNDBOARD_MUTE: V,
+            AUDIO_TOGGLE_LOCAL_MUTE: V,
+            AUDIO_TOGGLE_LOCAL_SOUNDBOARD_MUTE: F,
             MEDIA_ENGINE_RESET_SETTINGS: B
         })
     }

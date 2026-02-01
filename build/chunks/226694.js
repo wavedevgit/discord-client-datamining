@@ -12,8 +12,8 @@ var r = n(627968),
     c = n(397927),
     u = n(442433),
     d = n(686956),
-    h = n(573435),
-    p = n(101555),
+    p = n(573435),
+    h = n(101555),
     g = n(263063),
     f = n(714991),
     m = n(776231),
@@ -21,9 +21,9 @@ var r = n(627968),
     A = n(71393),
     y = n(486020),
     O = n(860689),
-    _ = n(352123),
-    j = n(682557),
-    x = n(652215),
+    j = n(352123),
+    x = n(682557),
+    _ = n(652215),
     v = n(985018),
     E = n(856528),
     C = n(166382);
@@ -83,15 +83,15 @@ function T(e) {
         entry: t
     } = e, [i, a] = l.useState(!1), u = l.useRef(null), {
         canEdit: d
-    } = (0, _.A)(t);
+    } = (0, j.A)(t);
     return (0, r.jsx)("div", {
         className: s()(E.fc, {
             [E.QX]: i
         }),
-        children: (0, r.jsxs)(p.Ay, {
+        children: (0, r.jsxs)(h.Ay, {
             children: [d ? (0, r.jsx)(o.m, {
                 text: v.intl.string(v.t.XnuOvN),
-                children: (0, r.jsx)(p.$n, {
+                children: (0, r.jsx)(h.$n, {
                     onClick: () => {
                         (0, c.mMO)(async () => {
                             let {
@@ -109,7 +109,7 @@ function T(e) {
                         className: E.IQ
                     })
                 })
-            }) : null, (0, r.jsx)(j.A, {
+            }) : null, (0, r.jsx)(x.A, {
                 targetElementRef: u,
                 onRequestOpen: () => a(!0),
                 onRequestClose: () => a(!1),
@@ -137,7 +137,7 @@ function T(e) {
                     }(e, ["onClick"]);
                     return (0, r.jsx)(o.m, {
                         text: v.intl.string(v.t["UKOtz+"]),
-                        children: (0, r.jsx)(p.$n, I(S({}, n), {
+                        children: (0, r.jsx)(h.$n, I(S({}, n), {
                             onClick: e => {
                                 t(e)
                             },
@@ -159,16 +159,16 @@ let P = l.memo(function(e) {
     var t;
     let {
         entry: i
-    } = e, [s, o] = l.useState(!1), p = null != (0, a.bG)([A.A], () => A.A.getGuild(i.guildId)), _ = async () => {
+    } = e, [s, o] = l.useState(!1), h = null != (0, a.bG)([A.A], () => A.A.getGuild(i.guildId)), j = async () => {
         o(!0);
         try {
-            p ? (0, b.u)(i.guildId) : await d.A.joinGuild(i.guildId, {
-                source: x.Q4z.DIRECTORY_ENTRY
+            h ? (0, b.u)(i.guildId) : await d.A.joinGuild(i.guildId, {
+                source: _.Q4z.DIRECTORY_ENTRY
             })
         } finally {
             o(!1)
         }
-    }, j = y.Ay.getGuildSplashURL({
+    }, x = y.Ay.getGuildSplashURL({
         id: i.guildId,
         splash: i.splash,
         size: 300 * (0, m.mZ)()
@@ -177,7 +177,7 @@ let P = l.memo(function(e) {
         icon: i.icon,
         size: 40
     })) ? t : void 0, N = v.intl.string(v.t.VJlc0S);
-    return p && (N = v.intl.string(v.t.cqWE2Z)), (0, r.jsxs)("div", {
+    return h && (N = v.intl.string(v.t.cqWE2Z)), (0, r.jsxs)("div", {
         className: E.Nr,
         onContextMenu: e => {
             (0, u.L3)(e, async () => {
@@ -193,15 +193,15 @@ let P = l.memo(function(e) {
             className: E.MY,
             children: [(0, r.jsx)("div", {
                 className: E.Yi,
-                children: null != j && (0, r.jsx)("img", {
-                    src: j,
+                children: null != x && (0, r.jsx)("img", {
+                    src: x,
                     alt: "",
                     className: E.j0
                 })
             }), (0, r.jsx)("div", {
                 className: E.$f,
-                children: (0, r.jsx)(h.Ay, {
-                    mask: h.Ay.Masks.SQUIRCLE,
+                children: (0, r.jsx)(p.Ay, {
+                    mask: p.Ay.Masks.SQUIRCLE,
                     width: 48,
                     height: 48,
                     children: (0, r.jsx)("div", {
@@ -263,8 +263,8 @@ let P = l.memo(function(e) {
                 className: E.PD,
                 children: (0, r.jsx)(c.Button, {
                     loading: s,
-                    variant: p ? "secondary" : "active",
-                    onClick: _,
+                    variant: h ? "secondary" : "active",
+                    onClick: j,
                     text: N,
                     fullWidth: !0
                 })

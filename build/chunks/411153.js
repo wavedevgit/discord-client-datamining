@@ -2,7 +2,7 @@
 n.d(t, {
     Ag: () => c,
     Ay: () => g,
-    QO: () => d,
+    QO: () => _,
     pq: () => E
 });
 var l = n(989349),
@@ -143,15 +143,15 @@ function E(e) {
     }
     return o.RWi.ALL
 }
-class d {
+class _ {
     constructor(e, t, n) {
         u(this, "key", void 0), u(this, "oldValue", void 0), u(this, "newValue", void 0), u(this, "subtarget", void 0), this.key = e, this.oldValue = t, this.newValue = n
     }
 }
-class _ extends a.A {
+class d extends a.A {
     constructor(e) {
         var t, n, l, a, i, o;
         super(), u(this, "id", void 0), u(this, "actionType", void 0), u(this, "action", void 0), u(this, "targetType", void 0), u(this, "targetId", void 0), u(this, "target", void 0), u(this, "userId", void 0), u(this, "changes", void 0), u(this, "timestampStart", void 0), u(this, "timestampEnd", void 0), u(this, "user", void 0), u(this, "options", void 0), this.id = e.id, this.action = e.action, this.actionType = E(this.action), this.targetId = e.targetId, this.timestampStart = null != (t = e.timestampStart) ? t : r()(s.default.extractTimestamp(this.id)), this.timestampEnd = null != (n = e.timestampEnd) ? n : this.timestampStart, this.userId = e.userId, this.changes = null != (l = e.changes) ? l : [], this.targetType = c(this.action), this.options = null != (a = e.options) ? a : {}, this.target = null != (i = e.target) ? i : e.id, this.user = null != (o = e.user) ? o : null
     }
 }
-let g = _
+let g = d

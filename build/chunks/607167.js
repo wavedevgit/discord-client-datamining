@@ -37,8 +37,8 @@ var r = n(860511),
     k = j,
     U = k && k[R],
     G = r[w],
-    F = G && G[R],
-    V = Object.prototype,
+    V = G && G[R],
+    F = Object.prototype,
     B = r.Array,
     H = r.RangeError,
     Y = i(b),
@@ -99,10 +99,10 @@ if (o) {
         return new j, new j(1.5), new j(NaN), 1 !== j.length || er && !C
     }) ? ((k = function(e) {
         return f(this, U), v(new j(h(e)), this, k)
-    })[R] = U, U.constructor = k, A(k, j)) : er && C && l(j, "name", N), y && E(F) !== V && y(F, V);
+    })[R] = U, U.constructor = k, A(k, j)) : er && C && l(j, "name", N), y && E(V) !== F && y(V, F);
     var ei = new G(new k(2)),
-        ea = i(F.setInt8);
-    ei.setInt8(0, 0x80000000), ei.setInt8(1, 0x80000001), (ei.getInt8(0) || !ei.getInt8(1)) && u(F, {
+        ea = i(V.setInt8);
+    ei.setInt8(0, 0x80000000), ei.setInt8(1, 0x80000001), (ei.getInt8(0) || !ei.getInt8(1)) && u(V, {
         setInt8: function(e, t) {
             ea(this, e, t << 24 >> 24)
         },
@@ -120,8 +120,8 @@ if (o) {
         bytes: Y(B(t), 0),
         byteLength: t
     }), a || (this.byteLength = t, this.detached = !1)
-})[R], F = (G = function(e, t, n) {
-    f(this, F), f(e, U);
+})[R], V = (G = function(e, t, n) {
+    f(this, V), f(e, U);
     var r = L(e),
         i = r.byteLength,
         o = p(t);
@@ -134,7 +134,7 @@ if (o) {
         byteOffset: o,
         bytes: r.bytes
     }), a || (this.buffer = e, this.byteLength = n, this.byteOffset = o)
-})[R], a && (ee(k, "byteLength", L), ee(G, "buffer", x), ee(G, "byteLength", x), ee(G, "byteOffset", x)), u(F, {
+})[R], a && (ee(k, "byteLength", L), ee(G, "buffer", x), ee(G, "byteLength", x), ee(G, "byteOffset", x)), u(V, {
     getInt8: function(e) {
         return et(this, 1, e)[0] << 24 >> 24
     },

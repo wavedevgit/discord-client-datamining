@@ -21,13 +21,13 @@ var r = n(627968),
     h = n(407217),
     E = n(919395),
     O = n(884546),
-    C = n(287070),
-    x = n(158358),
+    x = n(287070),
+    C = n(158358),
     S = n(196291),
     T = n(101058),
     I = n(836602),
-    y = n(814390),
-    N = n(351906),
+    N = n(814390),
+    y = n(351906),
     j = n(287809),
     v = n(954571),
     P = n(927578),
@@ -76,7 +76,7 @@ function B() {
             let e = j.default.getCurrentUser();
             return s()(null != e, "UserSettingsProfileCustomization: user cannot be undefined"), e
         }),
-        n = (0, a.bG)([N.A], () => N.A.hidePersonalInformation),
+        n = (0, a.bG)([y.A], () => y.A.hidePersonalInformation),
         l = (0, a.cf)([I.A], () => k(U({}, I.A.getPendingChanges()), {
             showNotice: I.A.showNotice()
         })),
@@ -111,7 +111,7 @@ function B() {
             pendingValue: V,
             userValue: null == t || null == (e = t.collectibles) ? void 0 : e.nameplate
         }),
-        z = (0, y.A)() && null != B ? A.Ay.parse(void 0, B).content : B,
+        z = (0, N.A)() && null != B ? A.Ay.parse(void 0, B).content : B,
         Z = P.Ay.canUsePremiumProfileCustomization(t),
         {
             analyticsLocations: X,
@@ -126,7 +126,7 @@ function B() {
     return n ? (0, r.jsx)(_.A, {}) : (0, r.jsxs)(m.f5, {
         value: X,
         children: [(0, r.jsx)(g.A, {}), (0, r.jsx)(O.A, {
-            profilePreview: (0, r.jsx)(C.A, k(U({
+            profilePreview: (0, r.jsx)(x.A, k(U({
                 user: t,
                 canUsePremiumCustomization: Z,
                 onUpsellClick: D.A,
@@ -142,7 +142,7 @@ function B() {
                 isHighlighted: !0
             })),
             children: (0, r.jsx)(L.A, {})
-        }), $ && (0, r.jsx)(x.A, {}), (0, r.jsx)(o.L, {
+        }), $ && (0, r.jsx)(C.A, {}), (0, r.jsx)(o.L, {
             innerRef: et,
             onChange: e => Q(e),
             threshold: .25,

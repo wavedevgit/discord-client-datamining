@@ -5,8 +5,8 @@ n.d(t, {
     LH: () => O,
     Se: () => m,
     WD: () => g,
-    YS: () => p,
-    Yc: () => h,
+    YS: () => h,
+    Yc: () => p,
     ZM: () => f,
     uU: () => y
 });
@@ -19,7 +19,7 @@ var r = n(111956),
     c = n(938764),
     u = n(946116),
     d = n(652215);
-let h = l()(async (e, t) => {
+let p = l()(async (e, t) => {
         try {
             a.h.dispatch({
                 type: "GUILD_DIRECTORY_FETCH_START"
@@ -42,7 +42,7 @@ let h = l()(async (e, t) => {
             })
         }
     }, 200),
-    p = l()(async e => {
+    h = l()(async e => {
         try {
             let t = await s.Bo.get({
                 url: d.Rsh.DIRECTORY_CHANNEL_CATEGORY_COUNTS(e),

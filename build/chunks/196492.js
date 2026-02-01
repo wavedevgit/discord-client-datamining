@@ -30,12 +30,12 @@ function u(e) {
     return e
 }
 let d = "ActivityInviteManager",
-    h = () => {
+    p = () => {
         s.h.dispatch({
             type: "ACTIVITY_INVITE_MODAL_CLOSE"
         })
     };
-class p extends a.A {
+class h extends a.A {
     _initialize() {
         s.h.subscribe("ACTIVITY_INVITE_MODAL_OPEN", this.handleModalOpen), s.h.subscribe("ACTIVITY_INVITE_MODAL_CLOSE", this.handleModalClose)
     }
@@ -47,7 +47,7 @@ class p extends a.A {
             activity: t,
             isPrivate: s,
             context: a
-        } = e, p = a === o.BRT.POPOUT ? i.KX8 : i.SYi;
+        } = e, h = a === o.BRT.POPOUT ? i.KX8 : i.SYi;
         s ? (0, i.qfG)(e => {
             var n, s;
             return (0, r.jsx)(l.Modal, (n = u({
@@ -76,21 +76,21 @@ class p extends a.A {
                 Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(s, e))
             }), n))
         }, {
-            onCloseCallback: h,
+            onCloseCallback: p,
             modalKey: d
-        }, p) : (0, i.mMO)(async () => {
+        }, h) : (0, i.mMO)(async () => {
             let {
                 default: e
             } = await n.e("27759").then(n.bind(n, 555570));
             return t => (0, r.jsx)(e, u({}, t))
         }, {
-            onCloseCallback: h,
+            onCloseCallback: p,
             modalKey: d,
-            contextKey: p
+            contextKey: h
         })
     }
     handleModalClose(e) {
         (0, i.OoC)(d)
     }
 }
-let g = new p
+let g = new h

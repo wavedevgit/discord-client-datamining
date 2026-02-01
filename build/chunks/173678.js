@@ -12,8 +12,8 @@ var r = n(627968),
     c = n(44120),
     u = n(353157),
     d = n(957785),
-    h = n(788868),
-    p = n(985018),
+    p = n(788868),
+    h = n(985018),
     g = n(733557),
     f = n(101616);
 
@@ -21,7 +21,7 @@ function m(e, t, n) {
     (0, c.A)({
         skuId: e.skuId,
         isGift: !0,
-        giftingOrigin: h.vQ.USER_PROFILE_WISHLIST,
+        giftingOrigin: p.vQ.USER_PROFILE_WISHLIST,
         analyticsLocations: n,
         giftRecipient: t,
         variantsReturnStyle: i.g.VARIANTS_GROUP
@@ -34,21 +34,21 @@ function b(e, t) {
         profileOwner: i,
         analyticsLocations: s,
         onViewWishlist: c,
-        isSingleCard: h = !1,
+        isSingleCard: p = !1,
         wishlistId: f,
         showTypeTooltip: b = !1,
         cardSize: A
-    } = t, y = null != e.bundleItems && e.bundleItems.length > 0, O = null != n && n > 0, _ = b && !O, j = O ? p.intl.string(p.t.TxBQzD) : p.intl.string(p.t.pLPjsb), x = {
-        title: _ ? p.intl.string(p.t.HFhcqh) : j,
-        body: _ ? p.intl.string(p.t.ilhtIa) : void 0,
-        renderIcon: _ ? a.GM : void 0,
+    } = t, y = null != e.bundleItems && e.bundleItems.length > 0, O = null != n && n > 0, j = b && !O, x = O ? h.intl.string(h.t.TxBQzD) : h.intl.string(h.t.pLPjsb), _ = {
+        title: j ? h.intl.string(h.t.HFhcqh) : x,
+        body: j ? h.intl.string(h.t.ilhtIa) : void 0,
+        renderIcon: j ? a.GM : void 0,
         shouldShow: !0
     }, v = !y && e.collectiblesItem.type === l.R.PROFILE_EFFECT;
     return (0, r.jsx)(d.A, {
         onCardClick: () => {
             O ? c() : m(e, i, s)
         },
-        tooltipConfig: x,
+        tooltipConfig: _,
         shouldScalePreview: y || !v,
         renderPreview: () => {
             if (y) {
@@ -71,7 +71,7 @@ function b(e, t) {
             })
         },
         moreCount: n,
-        isSingleCard: h,
+        isSingleCard: p,
         wishlistItem: e,
         wishlistId: f,
         cardSize: A
@@ -91,14 +91,14 @@ function A(e, t) {
         isSingleCard: !0,
         wishlistId: a,
         index: 0
-    }), d = c ? p.intl.string(p.t.Zr5tjn) : function(e) {
+    }), d = c ? h.intl.string(h.t.Zr5tjn) : function(e) {
         switch (e.collectiblesItem.type) {
             case l.R.AVATAR_DECORATION:
-                return p.intl.string(p.t["7v0T9P"]);
+                return h.intl.string(h.t["7v0T9P"]);
             case l.R.PROFILE_EFFECT:
-                return p.intl.string(p.t.wR5wOo);
+                return h.intl.string(h.t.wR5wOo);
             case l.R.NAMEPLATE:
-                return p.intl.string(p.t.x5CoXR);
+                return h.intl.string(h.t.x5CoXR);
             default:
                 return ""
         }
@@ -112,7 +112,7 @@ function A(e, t) {
                     m(e, n, i)
                 },
                 className: f.Hh,
-                "aria-label": p.intl.string(p.t.pLPjsb),
+                "aria-label": h.intl.string(h.t.pLPjsb),
                 children: (0, r.jsx)(s.Text, {
                     variant: "text-sm/semibold",
                     color: "text-default",

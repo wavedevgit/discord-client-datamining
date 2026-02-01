@@ -11,8 +11,8 @@ var r = n(627968),
     c = n(599941),
     u = n(251766),
     d = n(950344),
-    h = n(136179),
-    p = n(250253),
+    p = n(136179),
+    h = n(250253),
     g = n(652215),
     f = n(985018),
     m = n(18318);
@@ -24,7 +24,7 @@ function b(e) {
     } = e, b = (0, u.e)({
         guildId: t,
         channelId: n
-    }), A = (0, c.uk)(t), y = (0, c.Tq)(t), O = (0, i.bG)([o.A], () => o.A.getGuild(t), [t]), _ = null == O ? void 0 : O.name, j = (0, i.bG)([a.A], () => a.A.getChannel(n)), x = l.useMemo(() => {
+    }), A = (0, c.uk)(t), y = (0, c.Tq)(t), O = (0, i.bG)([o.A], () => o.A.getGuild(t), [t]), j = null == O ? void 0 : O.name, x = (0, i.bG)([a.A], () => a.A.getChannel(n)), _ = l.useMemo(() => {
         let e = {};
         for (let t of A)
             for (let n of t.subscription_listings_ids) e[n] = t.id;
@@ -45,20 +45,20 @@ function b(e) {
             variant: "heading-xl/semibold",
             className: m.DX,
             children: f.intl.format(f.t.xHMpym, {
-                serverName: _,
-                channelName: null == j ? void 0 : j.name
+                serverName: j,
+                channelName: null == x ? void 0 : x.name
             })
         }), (0, r.jsx)(s.Text, {
             className: m.Lv,
             variant: "text-md/normal",
             color: "text-default",
             children: null == y ? void 0 : y.description
-        }), (0, r.jsx)(h.A, {
+        }), (0, r.jsx)(p.A, {
             guildId: t,
-            children: b.filter(e => null != x[e.id]).map(e => (0, r.jsx)(p.A, {
+            children: b.filter(e => null != _[e.id]).map(e => (0, r.jsx)(h.A, {
                 guildId: t,
                 listingId: e.id,
-                groupListingId: x[e.id],
+                groupListingId: _[e.id],
                 analyticsLocation: g.ThZ.ROLE_SUBSCRIPTION_GATED_CHANNEL
             }, e.id))
         })]

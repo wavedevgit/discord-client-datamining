@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
     Ay: () => eo,
-    pK: () => V
+    pK: () => F
 }), n(667532), n(321073);
 var r, i = n(735438),
     a = n.n(i),
@@ -89,13 +89,13 @@ function G(e) {
     })
 }
 
-function F(e) {
+function V(e) {
     if (e instanceof h.Ay) return e;
     let t = E.A.getMessage(e.channel_id, e.id);
     return null != t ? t : (0, d.rh)(e)
 }
 
-function V(e) {
+function F(e) {
     let t = g.A.getBasicChannel(e.channel_id);
     if (null == t || !I.kvI.GUILD_TEXTUAL.has(t.type) || v.Ay.isGuildOrCategoryOrChannelMuted(t.guild_id, t.id) || (0, u.UK)(t.id)) return !1;
     switch (v.Ay.resolvedMessageNotifications(t)) {
@@ -123,7 +123,7 @@ function B(e) {
         hasMoreAfter: t,
         messages: n,
         isAfter: r
-    } = e, i = a().map(n, F);
+    } = e, i = a().map(n, V);
     U({
         addedMessages: i
     }), r ? N = N.concat(i) : (N = i, R = {}), a().forEach(i, e => {
@@ -143,7 +143,7 @@ function Y(e) {
     if (null == n || n.type === I.rbe.DM || L.guildFilter === I.KE7.THIS_SERVER && n.getGuildId() !== O.A.getGuildId()) return null;
     let r = m.default.getId();
     if (b.A.isBlockedOrIgnoredForMessage(e) || (0, _.A)(e, r)) return null;
-    e = F(e);
+    e = V(e);
     let i = !L.everyoneFilter,
         a = !L.roleFilter;
     return (0, f.Ay)({
@@ -302,7 +302,7 @@ class ea extends(r = o.Ay.Store) {
         return x || N.length > 0 ? N : null
     }
     getSettingsFilteredMentions() {
-        return x || N.length > 0 ? N.filter(V) : null
+        return x || N.length > 0 ? N.filter(F) : null
     }
     hasMention(e) {
         return R[e]

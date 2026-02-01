@@ -12,8 +12,8 @@ var l = n(837381),
     c = n(900848),
     u = n(550591),
     d = n(818348),
-    h = n(985018),
-    p = n(697491);
+    p = n(985018),
+    h = n(697491);
 
 function g() {
     var e, t;
@@ -21,7 +21,7 @@ function g() {
         g = (0, l.Vd)("unavailable-guilds-button");
     return n <= 0 ? null : (0, r.jsx)(c.c, {
         children: (0, r.jsx)(u.A, {
-            text: h.intl.format(h.t["TnH05/"], {
+            text: p.intl.format(p.t["TnH05/"], {
                 count: n
             }),
             children: (0, r.jsx)(s.MzZ, (e = function(e) {
@@ -44,8 +44,8 @@ function g() {
             }({
                 href: d.qF.STATUS,
                 target: "_blank",
-                className: p.h,
-                "aria-label": h.intl.formatToPlainString(h.t["MEpX+2"], {
+                className: h.h,
+                "aria-label": p.intl.formatToPlainString(p.t["MEpX+2"], {
                     count: n
                 })
             }, g), t = t = {

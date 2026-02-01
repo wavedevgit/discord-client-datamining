@@ -4,8 +4,8 @@ n.d(t, {
     $8: () => P,
     NI: () => w,
     Q9: () => j,
-    ST: () => V,
-    Sr: () => F,
+    ST: () => F,
+    Sr: () => V,
     Wv: () => x,
     YU: () => M,
     b8: () => k,
@@ -162,11 +162,11 @@ function G(e) {
     }, [e, l, c])
 }
 
-function F(e) {
+function V(e) {
     return null != e && E.zn.has(e)
 }
 
-function V(e) {
+function F(e) {
     return I.has(e) ? A.intl.string(A.t.lSWVTM) : (0, m.H)(A.intl.string(A.t.JHNunj), A.intl.string(A.t.xYXsr6))
 }
 

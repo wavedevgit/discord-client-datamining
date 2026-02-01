@@ -1,36 +1,36 @@
 /** chunk id: 362205, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => m
+    A: () => g
 }), n(896048);
 var r = n(627968),
-    l = n(64700),
-    o = n(503698),
-    a = n.n(o),
-    i = n(284009),
-    c = n.n(i),
+    o = n(64700),
+    a = n(503698),
+    i = n.n(a),
+    l = n(284009),
+    c = n.n(l),
     s = n(353709),
     u = n(837381),
-    d = n(397927),
-    b = n(964486),
-    y = n(894858),
+    _ = n(397927),
+    d = n(964486),
+    b = n(894858),
     p = n(890690),
     f = n(637577);
 
-function g(e) {
+function y(e) {
     let {
         category: t,
         onClick: n,
-        active: l
+        active: o
     } = e, {
-        useTitle: o,
-        useSubnavLabel: i,
+        useTitle: a,
+        useSubnavLabel: l,
         key: s
-    } = t, b = null == o ? void 0 : o(), y = null == i ? void 0 : i(), p = null != y ? y : b;
+    } = t, d = null == a ? void 0 : a(), b = null == l ? void 0 : l(), p = null != b ? b : d;
     return c()(null != p, "[SettingsSubnavigationCategory] Category must have a title"), (0, r.jsx)(u.tG, {
         id: s,
         children: e => {
-            var t, o;
-            return (0, r.jsx)(d.DUT, (t = function(e) {
+            var t, a;
+            return (0, r.jsx)(_.DUT, (t = function(e) {
                 for (var t = 1; t < arguments.length; t++) {
                     var n = null != arguments[t] ? arguments[t] : {},
                         r = Object.keys(n);
@@ -49,46 +49,46 @@ function g(e) {
                 return e
             }({
                 onClick: n,
-                className: a()(f.AS, {
-                    [f.vu]: l
+                className: i()(f.AS, {
+                    [f.vu]: o
                 })
-            }, e), o = o = {
+            }, e), a = a = {
                 children: p
-            }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(o)) : (function(e, t) {
+            }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
                 var n = Object.keys(e);
                 if (Object.getOwnPropertySymbols) {
                     var r = Object.getOwnPropertySymbols(e);
                     n.push.apply(n, r)
                 }
                 return n
-            })(Object(o)).forEach(function(e) {
-                Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(o, e))
+            })(Object(a)).forEach(function(e) {
+                Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(a, e))
             }), t), s)
         }
     })
 }
 
-function m(e) {
+function g(e) {
     let {
         categories: t
-    } = e, n = y.A.useField("currentCategoryKey");
-    (0, b.Ay)(() => {
-        t.some(e => e.key === n) || y.A.setState({
+    } = e, n = b.A.useField("currentCategoryKey");
+    (0, d.Ay)(() => {
+        t.some(e => e.key === n) || b.A.setState({
             currentCategoryKey: t[0].key
         })
     });
-    let o = l.useMemo(() => Math.max(t.findIndex(e => e.key === n), 0), [t, n]),
+    let a = o.useMemo(() => Math.max(t.findIndex(e => e.key === n), 0), [t, n]),
         {
-            thumbRef: a,
-            trackRef: i,
+            thumbRef: i,
+            trackRef: l,
             thumbAnchorRef: c,
             springs: u
         } = function(e) {
-            let t = l.useRef(null),
-                n = l.useRef(null),
-                r = l.useRef(null),
-                o = l.useRef(!0),
-                [a, i] = (0, d.zhh)(() => ({
+            let t = o.useRef(null),
+                n = o.useRef(null),
+                r = o.useRef(null),
+                a = o.useRef(!0),
+                [i, l] = (0, _.zhh)(() => ({
                     y: 0,
                     height: 0,
                     config: {
@@ -97,48 +97,48 @@ function m(e) {
                         tension: 300
                     }
                 }));
-            return l.useLayoutEffect(() => {
+            return o.useLayoutEffect(() => {
                 if (null == t.current || null == n.current || null == r.current) return;
-                let [e, l] = [t.current.getBoundingClientRect(), r.current.getBoundingClientRect()];
-                if (o.current) {
-                    o.current = !1, a.y.set(l.y - e.y), a.height.set(l.height);
+                let [e, o] = [t.current.getBoundingClientRect(), r.current.getBoundingClientRect()];
+                if (a.current) {
+                    a.current = !1, i.y.set(o.y - e.y), i.height.set(o.height);
                     return
                 }
-                i({
-                    y: l.y - e.y,
-                    height: l.height
+                l({
+                    y: o.y - e.y,
+                    height: o.height
                 })
-            }, [e, i, a.y, a.height]), {
+            }, [e, l, i.y, i.height]), {
                 thumbRef: n,
                 trackRef: t,
                 thumbAnchorRef: r,
-                springs: a
+                springs: i
             }
-        }(o);
+        }(a);
     return (0, p.o)(), (0, r.jsxs)("div", {
         className: f.o8,
         role: "list",
         style: {
             "--custom-nav-count": t.length,
-            "--custom-nav-index": o
+            "--custom-nav-index": a
         },
         children: [(0, r.jsx)("div", {
             className: f.u4,
             "aria-hidden": "true",
-            ref: i,
+            ref: l,
             children: (0, r.jsx)(s.animated.div, {
                 className: f.FF,
                 style: u,
-                ref: a
+                ref: i
             })
         }), (0, r.jsx)("div", {
             className: f.gu,
             "aria-hidden": "true",
             ref: c
-        }), t.map(e => (0, r.jsx)(g, {
+        }), t.map(e => (0, r.jsx)(y, {
             onClick: () => {
                 var t;
-                return t = e.key, void y.A.setState({
+                return t = e.key, void b.A.setState({
                     requestedTargetKey: t,
                     showNavigationMobile: !1
                 })

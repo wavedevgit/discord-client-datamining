@@ -11,8 +11,8 @@ var r = n(627968),
     c = n(837057),
     u = n(310419),
     d = n(606256),
-    h = n(488995),
-    p = n(324580),
+    p = n(488995),
+    h = n(324580),
     g = n(654487),
     f = n(985018);
 let m = l.forwardRef(function(e, t) {
@@ -23,25 +23,25 @@ let m = l.forwardRef(function(e, t) {
         className: A
     } = e, y = l.useCallback(() => {
         (0, a.WL)({
-            source: h.GlobalDiscoveryAnalyticsLocations.GUILDS_BAR_ICON
+            source: p.GlobalDiscoveryAnalyticsLocations.GUILDS_BAR_ICON
         });
-        let e = void 0 !== b ? h.GlobalDiscoveryTab.QUESTS : o.A.getField("selectedTab");
+        let e = void 0 !== b ? p.GlobalDiscoveryTab.QUESTS : o.A.getField("selectedTab");
         switch (e) {
-            case h.GlobalDiscoveryTab.QUESTS:
+            case p.GlobalDiscoveryTab.QUESTS:
                 return (0, c.transitionToGlobalDiscovery)({
-                    tab: h.GlobalDiscoveryTab.QUESTS,
+                    tab: p.GlobalDiscoveryTab.QUESTS,
                     location: g.rE.DISCOVERY_COMPASS,
                     questContent: i.u.DISCOVERY_COMPASS,
                     questId: b
                 });
-            case h.GlobalDiscoveryTab.SERVERS:
+            case p.GlobalDiscoveryTab.SERVERS:
                 return (0, c.transitionToGlobalDiscovery)({
-                    tab: h.GlobalDiscoveryTab.SERVERS,
-                    entrypoint: p.J8.GUILDS_BAR
+                    tab: p.GlobalDiscoveryTab.SERVERS,
+                    entrypoint: h.J8.GUILDS_BAR
                 });
-            case h.GlobalDiscoveryTab.APPS:
+            case p.GlobalDiscoveryTab.APPS:
                 return (0, c.transitionToGlobalDiscovery)({
-                    tab: h.GlobalDiscoveryTab.APPS,
+                    tab: p.GlobalDiscoveryTab.APPS,
                     newSessionState: {
                         entrypoint: {
                             name: u.sW.GLOBAL_DISCOVERY_BUTTON

@@ -11,8 +11,8 @@ var r = n(627968),
     c = n(442433),
     u = n(46054),
     d = n(742589),
-    h = n(652215),
-    p = n(985018),
+    p = n(652215),
+    h = n(985018),
     g = n(980017),
     f = n(206314);
 
@@ -58,11 +58,11 @@ class y extends l.Component {
                 onClick: this.handleClick,
                 children: [(0, r.jsx)(o.DUT, {
                     onClick: this.handleClick,
-                    "aria-label": p.intl.string(p.t.mKwsSp),
+                    "aria-label": h.intl.string(h.t.mKwsSp),
                     className: g.h8
                 }), null == e.linkedLobby || t ? u.A.parseTopic(e.topic, !0, {
                     channelId: e.id
-                }) : p.intl.string(p.t["XJVlf/"])]
+                }) : h.intl.string(h.t["XJVlf/"])]
             })]
         }) : null
     }
@@ -84,7 +84,7 @@ class y extends l.Component {
         }), m(this, "onMouseMove", () => {
             this._mouseDown && (this._mouseDown = !1)
         }), m(this, "onMouseUp", e => {
-            this._mouseDown && e.button !== h.hE4.SECONDARY && this.handleOpenTopic(e), this._mouseUp = !0, this._mouseDown = !1
+            this._mouseDown && e.button !== p.hE4.SECONDARY && this.handleOpenTopic(e), this._mouseUp = !0, this._mouseDown = !1
         }), m(this, "handleContextMenu", e => {
             let {
                 channel: t,

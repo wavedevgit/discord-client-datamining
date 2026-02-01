@@ -1,22 +1,22 @@
-/** chunk id: 501496, original params: e,t,i (module,exports,require) **/
-i.d(t, {
-    A: () => A
+/** chunk id: 501496, original params: t,e,i (module,exports,require) **/
+i.d(e, {
+    A: () => S
 });
 var n = i(627968);
 i(64700);
 var l = i(417597),
     s = i(397927),
     r = i(17143),
-    a = i(430452),
-    u = i(975571),
+    u = i(430452),
+    a = i(975571),
     o = i(652215),
     d = i(731854),
     T = i(985018),
-    c = i(835818);
+    A = i(835818);
 
-function A() {
-    return (0, l.bG)([a.A], () => a.A.supports(d.O5.LOOPBACK)) ? (0, n.jsx)("div", {
-        className: c.a,
+function S() {
+    return (0, l.bG)([u.A], () => u.A.supports(d.O5.LOOPBACK)) ? (0, n.jsx)("div", {
+        className: A.a,
         children: (0, n.jsx)(r.A, {
             title: T.intl.string(T.t.gyljWE),
             description: T.intl.string(T.t["8hhsCU"]),
@@ -24,8 +24,8 @@ function A() {
             captionVoice: T.intl.string(T.t.bp3JOV),
             captionNoVoice: (0, n.jsxs)(n.Fragment, {
                 children: [T.intl.string(T.t["MA+OZh"]), (0, n.jsx)(s.MzZ, {
-                    className: c.X,
-                    href: u.A.getArticleURL(o.MVz.NO_INPUT_DETECTED),
+                    className: A.X,
+                    href: a.A.getArticleURL(o.MVz.NO_INPUT_DETECTED),
                     children: T.intl.string(T.t.RYKKox)
                 })]
             }),

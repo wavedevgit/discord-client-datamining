@@ -1,78 +1,78 @@
 /** chunk id: 561446, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => y
+    A: () => _
 });
-var r = n(627968);
+var l = n(627968);
 n(64700);
-var l = n(311907),
+var r = n(311907),
     i = n(990078),
-    s = n(397927),
-    a = n(58736),
+    a = n(397927),
+    s = n(58736),
     o = n(657331),
     c = n(498642),
     u = n(71393),
     d = n(576705),
     h = n(661191),
     p = n(844944),
-    g = n(513461),
-    f = n(123393),
-    m = n(652215),
-    b = n(985018),
-    A = n(116228);
+    f = n(513461),
+    m = n(123393),
+    g = n(652215),
+    A = n(985018),
+    b = n(116228);
 
-function y(e) {
+function _(e) {
     let {
         channelId: t,
         showProfile: n = !1,
-        showTrailingDivider: y = !1
-    } = e, O = h.default.cast(t), {
-        joinRequest: _,
-        isModmin: j,
-        guildId: x,
-        maxMembers: v
-    } = (0, l.cf)([p.A, u.A, d.A], () => {
-        let e = p.A.getRequest(O),
+        showTrailingDivider: _ = !1
+    } = e, y = h.default.cast(t), {
+        joinRequest: v,
+        isModmin: E,
+        guildId: O,
+        maxMembers: C
+    } = (0, r.cf)([p.A, u.A, d.A], () => {
+        let e = p.A.getRequest(y),
             t = u.A.getGuild(null == e ? void 0 : e.guildId);
         return {
             joinRequest: e,
-            isModmin: null != t && d.A.can(m.xBc.KICK_MEMBERS, t),
+            isModmin: null != t && d.A.can(g.xBc.KICK_MEMBERS, t),
             guildId: null == t ? void 0 : t.id,
             maxMembers: null == t ? void 0 : t.maxMembers
         }
-    }), E = (0, l.bG)([c.A], () => null != x ? c.A.getMemberCount(x) : 0), C = null != v && (null != E ? E : 0) >= v, {
-        approveRequest: S,
+    }), x = (0, r.bG)([c.A], () => null != O ? c.A.getMemberCount(O) : 0), S = null != C && (null != x ? x : 0) >= C, {
+        approveRequest: j,
         rejectRequest: I,
-        submitting: N
-    } = (0, f.W)(null == _ ? void 0 : _.guildId, null == _ ? void 0 : _.userId, null == _ ? void 0 : _.joinRequestId);
-    return null != _ && _.applicationStatus === g.B5.SUBMITTED && j ? (0, r.jsxs)("div", {
-        className: A.U,
-        children: [(0, r.jsx)(i.m, {
-            text: b.intl.string(b.t.cdPGbE),
-            shouldShow: C,
-            children: (0, r.jsx)(s.Button, {
+        submitting: T
+    } = (0, m.W)(null == v ? void 0 : v.guildId, null == v ? void 0 : v.userId, null == v ? void 0 : v.joinRequestId);
+    return null != v && v.applicationStatus === f.B5.SUBMITTED && E ? (0, l.jsxs)("div", {
+        className: b.U,
+        children: [(0, l.jsx)(i.m, {
+            text: A.intl.string(A.t.cdPGbE),
+            shouldShow: S,
+            children: (0, l.jsx)(a.Button, {
                 variant: "active",
                 size: "sm",
-                text: b.intl.string(b.t.BzjDQJ),
-                loading: N,
-                onClick: S,
-                disabled: C
+                text: A.intl.string(A.t.BzjDQJ),
+                loading: T,
+                onClick: j,
+                disabled: S
             })
-        }), (0, r.jsx)(s.Button, {
+        }), (0, l.jsx)(a.Button, {
             variant: "critical-primary",
             size: "sm",
-            text: b.intl.string(b.t.hDtbsz),
+            text: A.intl.string(A.t.hDtbsz),
             onClick: I,
-            disabled: N || _.applicationStatus !== g.B5.SUBMITTED
-        }), n && (0, r.jsx)(s.Button, {
+            disabled: T || v.applicationStatus !== f.B5.SUBMITTED
+        }), n && (0, l.jsx)(a.Button, {
             onClick: () => {
                 (0, o.openUserProfileModal)({
-                    userId: _.userId,
-                    guildId: _.guildId
+                    userId: v.userId,
+                    guildId: v.guildId
                 })
             },
             variant: "secondary",
             size: "sm",
-            text: b.intl.string(b.t.iXAna6)
-        }), y && (0, r.jsx)(a.Ay.Divider, {})]
+            text: A.intl.string(A.t.iXAna6)
+        }), _ && (0, l.jsx)(s.Ay.Divider, {})]
     }) : null
 }

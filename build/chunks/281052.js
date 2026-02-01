@@ -22,13 +22,13 @@ var i = n(284009),
     h = n(63675),
     E = n(546849),
     O = n(101058),
-    C = n(622543),
-    x = n(696451),
+    x = n(622543),
+    C = n(696451),
     S = n(287809),
     T = n(927578),
     I = n(427262),
-    y = n(159001),
-    N = n(833336),
+    N = n(159001),
+    y = n(833336),
     j = n(684732),
     v = n(168917),
     P = n(746706),
@@ -52,7 +52,7 @@ function w(e) {
         pendingThemeColors: Y,
         errors: W,
         guild: K
-    } = (0, s.cf)([N.A], () => {
+    } = (0, s.cf)([y.A], () => {
         let {
             pendingAvatar: e,
             pendingNickname: t,
@@ -60,7 +60,7 @@ function w(e) {
             pendingPronouns: r,
             pendingBanner: i,
             pendingThemeColors: l
-        } = N.A.getAllPending();
+        } = y.A.getAllPending();
         return {
             pendingAvatar: e,
             pendingNickname: t,
@@ -68,8 +68,8 @@ function w(e) {
             pendingBio: n,
             pendingPronouns: r,
             pendingThemeColors: l,
-            errors: N.A.getErrors(),
-            guild: N.A.getGuild()
+            errors: y.A.getErrors(),
+            guild: y.A.getGuild()
         }
     }), z = (0, O.V7)({
         userId: G.id,
@@ -77,8 +77,8 @@ function w(e) {
     }), Z = null != M ? M : K;
     l()(null != Z, "guild should not be null");
     let X = (0, c.EC)(Z.id),
-        q = (0, s.bG)([x.Ay], () => null == Z.id ? null : x.Ay.getMember(Z.id, G.id)),
-        J = (0, s.bG)([C.A], () => C.A.getGuildMemberProfile(G.id, Z.id)),
+        q = (0, s.bG)([C.Ay], () => null == Z.id ? null : C.Ay.getMember(Z.id, G.id)),
+        J = (0, s.bG)([x.A], () => x.A.getGuildMemberProfile(G.id, Z.id)),
         Q = T.Ay.canUsePremiumProfileCustomization(G),
         $ = (0, u.z5)(k, null == q ? void 0 : q.avatar),
         ee = (0, u.Ac)(H, null == J ? void 0 : J.banner),
@@ -120,7 +120,7 @@ function w(e) {
                     })]
                 }),
                 showRemoveAvatarButton: $,
-                onAvatarChange: e => ei(e, null == q ? void 0 : q.avatar, y.zq),
+                onAvatarChange: e => ei(e, null == q ? void 0 : q.avatar, N.zq),
                 errors: null == W ? void 0 : W.avatar,
                 guildId: Z.id,
                 disabled: !Q
@@ -167,7 +167,7 @@ function w(e) {
             }, "effect"), (0, r.jsx)(f.A, {
                 showRemoveBannerButton: ee,
                 errors: null == W ? void 0 : W.banner,
-                onBannerChange: e => ei(e, null == J ? void 0 : J.banner, y.Iz),
+                onBannerChange: e => ei(e, null == J ? void 0 : J.banner, N.Iz),
                 guildId: null == Z ? void 0 : Z.id,
                 disabled: !Q
             }, "banner"), (0, r.jsx)(h.A, {

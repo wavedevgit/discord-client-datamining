@@ -1,13 +1,13 @@
 /** chunk id: 991982, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    R: () => a,
-    Y: () => o
+    R: () => o,
+    Y: () => a
 });
 var r = n(627968);
 n(64700);
-var l = n(397927);
+var i = n(397927);
 
-function i(e) {
+function l(e) {
     for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -26,40 +26,40 @@ function i(e) {
     return e
 }
 
-function a(e) {
+function o(e) {
     let {
         guildId: t,
-        userId: a,
-        anaylticsLocations: o,
-        modReportId: u
+        userId: o,
+        anaylticsLocations: a,
+        modReportId: c
     } = e;
-    (0, l.mMO)(async () => {
+    (0, i.mMO)(async () => {
         let {
             default: e
         } = await n.e("94390").then(n.bind(n, 524085));
-        return n => (0, r.jsx)(e, i({
+        return n => (0, r.jsx)(e, l({
             guildId: t,
-            userId: a,
-            anaylticsLocations: o,
-            modReportId: u
+            userId: o,
+            anaylticsLocations: a,
+            modReportId: c
         }, n))
     })
 }
 
-function o(e) {
+function a(e) {
     let {
         guildId: t,
-        userId: a,
-        anaylticsLocations: o
+        userId: o,
+        anaylticsLocations: a
     } = e;
-    (0, l.mMO)(async () => {
+    (0, i.mMO)(async () => {
         let {
             default: e
         } = await n.e("31815").then(n.bind(n, 21754));
-        return n => (0, r.jsx)(e, i({
+        return n => (0, r.jsx)(e, l({
             guildId: t,
-            userId: a,
-            anaylticsLocations: o
+            userId: o,
+            anaylticsLocations: a
         }, n))
     })
 }

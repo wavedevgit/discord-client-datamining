@@ -1,8 +1,8 @@
 /** chunk id: 502633, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => r
+    A: () => l
 });
-let r = (0, n(600975).C)({
+let l = (0, n(600975).C)({
     kind: "guild",
     id: "2023-01_shared_canvas",
     label: "Shared Canvas",

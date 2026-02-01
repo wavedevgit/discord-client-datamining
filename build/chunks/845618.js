@@ -3,54 +3,54 @@ n.d(t, {
     cH: () => ee,
     pD: () => et
 }), n(896048), n(321073);
-var r, l = n(136722),
+var l, r = n(136722),
     i = n(311907),
     a = n(506774),
-    o = n(73153),
-    s = n(308528),
+    s = n(73153),
+    o = n(308528),
     c = n(367513),
     u = n(686956),
     d = n(264686),
-    f = n(956793),
+    h = n(956793),
     p = n(77729),
-    g = n(883600),
+    f = n(883600),
     m = n(47167),
-    _ = n(435470),
-    h = n(707592),
-    y = n(22007),
-    A = n(380335),
-    b = n(141468),
-    E = n(535586),
-    v = n(742984),
+    g = n(435470),
+    A = n(707592),
+    b = n(22007),
+    _ = n(380335),
+    y = n(141468),
+    v = n(535586),
+    E = n(742984),
     O = n(277628),
-    x = n(976860),
-    S = n(378570),
-    C = n(323443),
-    N = n(446600),
+    C = n(976860),
+    x = n(378570),
+    S = n(323443),
+    j = n(446600),
     I = n(747926),
-    j = n(253932),
-    T = n(260509),
-    w = n(734057),
-    P = n(71393),
+    T = n(253932),
+    N = n(260509),
+    P = n(734057),
+    w = n(71393),
     R = n(320501),
     D = n(803224),
-    k = n(576705),
+    M = n(576705),
     L = n(222823),
-    M = n(994500),
+    k = n(994500),
     U = n(309010),
-    V = n(461213),
+    G = n(461213),
     F = n(351906),
-    G = n(287809),
+    H = n(287809),
     B = n(977997),
-    H = n(954571),
-    W = n(562153),
-    z = n(723702),
-    Y = n(427262),
-    K = n(970061),
-    Z = n(652215),
-    q = n(988794),
-    X = n(672396),
-    J = n(985018);
+    V = n(954571),
+    K = n(562153),
+    W = n(723702),
+    z = n(427262),
+    q = n(970061),
+    Y = n(652215),
+    J = n(988794),
+    Z = n(672396),
+    X = n(985018);
 
 function Q(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
@@ -64,10 +64,10 @@ function Q(e, t, n) {
 function $(e) {
     for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+            l = Object.keys(n);
+        "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
             return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
+        }))), l.forEach(function(t) {
             Q(e, t, n[t])
         })
     }
@@ -76,21 +76,21 @@ function $(e) {
 let ee = "message1",
     et = .4,
     en = (null === p.A || void 0 === p.A ? void 0 : p.A.features.supports("notifications")) ? 20 : 1,
-    er = "discord_dismissed_notification_shown",
-    el = document.hasFocus(),
+    el = "discord_dismissed_notification_shown",
+    er = document.hasFocus(),
     ei = null,
     ea = new Set,
-    eo = ["FR", "GF", "PF", "TF", "RE", "GP", "MQ", "YT", "NC", "PM", "WF"],
-    es = new class {
+    es = ["FR", "GF", "PF", "TF", "RE", "GP", "MQ", "YT", "NC", "PM", "WF"],
+    eo = new class {
         track(e, t, n) {
-            let r = this._channels[e];
-            for (null == r && (r = [], this._channels[e] = r), r.push({
+            let l = this._channels[e];
+            for (null == l && (l = [], this._channels[e] = l), l.push({
                     notification: t,
                     trackingProps: n
-                }); r.length > en;) {
-                var l;
-                let e = r.shift();
-                (null == e || null == (l = e.notification) ? void 0 : l.close) != null && (e.notification.close(), H.default.track(Z.HAw.NOTIFICATION_ACTION, $({
+                }); l.length > en;) {
+                var r;
+                let e = l.shift();
+                (null == e || null == (r = e.notification) ? void 0 : r.close) != null && (e.notification.close(), V.default.track(Y.HAw.NOTIFICATION_ACTION, $({
                     action: "REMOVE"
                 }, e.trackingProps)))
             }
@@ -102,7 +102,7 @@ let ee = "message1",
                     notification: t,
                     trackingProps: n
                 } = e;
-                t.close(), H.default.track(Z.HAw.NOTIFICATION_ACTION, $({
+                t.close(), V.default.track(Y.HAw.NOTIFICATION_ACTION, $({
                     action: "ACK"
                 }, n))
             }))
@@ -113,23 +113,23 @@ let ee = "message1",
     };
 
 function ec() {
-    return !!(D.A.getDesktopType() === Z.nRU.NEVER || V.A.getStatus() === Z.clD.DND || j.NO.getSetting())
+    return !!(D.A.getDesktopType() === Y.nRU.NEVER || G.A.getStatus() === Y.clD.DND || T.NO.getSetting())
 }
 
 function eu(e) {
     return null != B.A.getVoiceStateForChannel(e)
 }
-class ed extends(r = i.Ay.Store) {
+class ed extends(l = i.Ay.Store) {
     initialize() {
-        this.waitFor(g.A, w.A, P.A, A.A, R.A, D.A, k.A, M.A, U.A, V.A, N.A, F.A, G.default, B.A)
+        this.waitFor(f.A, P.A, w.A, _.A, R.A, D.A, M.A, k.A, U.A, G.A, j.A, F.A, H.default, B.A)
     }
 }
-Q(ed, "displayName", "NotificationStore"), new ed(o.h, __OVERLAY__ ? {} : {
+Q(ed, "displayName", "NotificationStore"), new ed(s.h, __OVERLAY__ ? {} : {
     NOTIFICATIONS_SET_PERMISSION_STATE: function(e) {
         let {
             enabled: t
         } = e;
-        t !== Z.kCE.ENABLED || z.isPlatformEmbedded || K.A.showNotification(n(705194), J.intl.string(J.t.VSgOVg), J.intl.string(J.t["1UJvqc"]), {
+        t !== Y.kCE.ENABLED || W.isPlatformEmbedded || q.A.showNotification(n(705194), X.intl.string(X.t.VSgOVg), X.intl.string(X.t["1UJvqc"]), {
             notif_type: "NOTIFICATIONS_SET_PERMISSION_STATE"
         }, {
             sound: ee,
@@ -145,118 +145,118 @@ Q(ed, "displayName", "NotificationStore"), new ed(o.h, __OVERLAY__ ? {} : {
         let {
             icon: t,
             title: n,
-            body: r,
-            trackingProps: l,
+            body: l,
+            trackingProps: r,
             options: i
         } = e;
-        return !ec() && (K.A.showNotification(t, n, r, l, i), !1)
+        return !ec() && (q.A.showNotification(t, n, l, r, i), !1)
     },
     WINDOW_FOCUS: function(e) {
-        if (el = e.focused) {
+        if (er = e.focused) {
             let e = U.A.getChannelId();
-            null != e && es.clearChannel(e)
+            null != e && eo.clearChannel(e)
         }
     },
     MESSAGE_CREATE: function(e) {
-        var t, r, l;
+        var t, l, r;
         let {
             channelId: i,
             message: a,
-            optimistic: s
+            optimistic: o
         } = e;
-        if (s) return !1;
-        let u = w.A.getChannel(i),
-            f = G.default.getUser(null == (r = a.author) ? void 0 : r.id),
-            p = G.default.getCurrentUser();
-        if (null == u || null == f || null == p) return !1;
-        let m = (0, v.lx)(a, i, !el),
-            _ = D.A.getNotifyMessagesInSelectedChannel() && (0, v.kY)(a, i);
-        if (!m && !_ || a.type === Z.lAJ.CHANGELOG && (null == a.changelog_id || g.A.latestChangelogId() !== a.changelog_id)) return !1;
-        let h = !D.A.isSoundDisabled(ee);
-        if (_ && (h && K.A.playNotificationSound("message3", .4), !el) || !m) return !1;
-        let y = n(242286).default,
-            A = n(592598).A;
-        if (null != y.getFocusedPID() && !A.isNotificationDisabled(X.KS.TextChat) && !F.A.disableNotifications) return !1;
+        if (o) return !1;
+        let u = P.A.getChannel(i),
+            h = H.default.getUser(null == (l = a.author) ? void 0 : l.id),
+            p = H.default.getCurrentUser();
+        if (null == u || null == h || null == p) return !1;
+        let m = (0, E.lx)(a, i, !er),
+            g = D.A.getNotifyMessagesInSelectedChannel() && (0, E.kY)(a, i);
+        if (!m && !g || a.type === Y.lAJ.CHANGELOG && (null == a.changelog_id || f.A.latestChangelogId() !== a.changelog_id)) return !1;
+        let A = !D.A.isSoundDisabled(ee);
+        if (g && (A && q.A.playNotificationSound("message3", .4), !er) || !m) return !1;
+        let b = n(242286).default,
+            _ = n(592598).A;
+        if (null != b.getFocusedPID() && !_.isNotificationDisabled(Z.KS.TextChat) && !F.A.disableNotifications) return !1;
         let {
-            icon: x,
-            title: C,
-            body: N,
+            icon: C,
+            title: S,
+            body: j,
             emoji: I
-        } = (0, v.TB)(u, a, f), j = !(0, O.Z)("NotificationStore.handleMessage", null == p ? void 0 : p.id);
-        if (o.h.dispatch({
+        } = (0, E.TB)(u, a, h), T = !(0, O.Z)("NotificationStore.handleMessage", null == p ? void 0 : p.id);
+        if (s.h.dispatch({
                 type: "RPC_NOTIFICATION_CREATE",
                 channelId: u.id,
                 message: a,
-                icon: x,
-                title: C,
-                body: N
-            }), (0, E.n)(a, u.guild_id), D.A.getDesktopType() === Z.nRU.NEVER) return h && K.A.playNotificationSound(ee, et), !1;
-        let T = null != (t = R.A.getMessage(i, a.id)) ? t : (0, b.rh)(a);
-        K.A.showNotification(x, C, N, {
+                icon: C,
+                title: S,
+                body: j
+            }), (0, v.n)(a, u.guild_id), D.A.getDesktopType() === Y.nRU.NEVER) return A && q.A.playNotificationSound(ee, et), !1;
+        let N = null != (t = R.A.getMessage(i, a.id)) ? t : (0, y.rh)(a);
+        q.A.showNotification(C, S, j, {
             notif_type: "MESSAGE_CREATE",
-            notif_user_id: null == (l = a.author) ? void 0 : l.id,
+            notif_user_id: null == (r = a.author) ? void 0 : r.id,
             message_id: a.id,
             message_type: a.type,
             channel_id: u.id,
             channel_type: u.type,
             guild_id: u.guild_id,
-            badge: (0, L.Wm)(T, p)
+            badge: (0, L.Wm)(N, p)
         }, {
-            omitViewTracking: j,
+            omitViewTracking: T,
             tag: a.id,
-            sound: h ? ee : void 0,
+            sound: A ? ee : void 0,
             volume: et,
             onClick() {
-                (0, S.iN)(u.id), (u.type === Z.rbe.GUILD_VOICE || u.type === Z.rbe.GUILD_STAGE_VOICE) && c.A.updateChatOpen(u.id, !0), d.default.clickedNotification()
+                (0, x.iN)(u.id), (u.type === Y.rbe.GUILD_VOICE || u.type === Y.rbe.GUILD_STAGE_VOICE) && c.A.updateChatOpen(u.id, !0), d.default.clickedNotification()
             },
             isUserAvatar: !0,
-            messageRecord: T,
-            fallbackDeepLink: (0, K.I)(Z.BVt.CHANNEL(u.guild_id, u.id, a.id)),
+            messageRecord: N,
+            fallbackDeepLink: (0, q.I)(Y.BVt.CHANNEL(u.guild_id, u.id, a.id)),
             emoji: I
         }).then(e => {
-            null != e && es.track(u.id, e.notification, e.trackingProps)
+            null != e && eo.track(u.id, e.notification, e.trackingProps)
         })
     },
     CHANNEL_SELECT: function(e) {
         let {
             channelId: t
         } = e;
-        return null != t && es.clearChannel(t), !1
+        return null != t && eo.clearChannel(t), !1
     },
     MESSAGE_ACK: function(e) {
         let {
             channelId: t
         } = e;
-        return es.clearChannel(t), !1
+        return eo.clearChannel(t), !1
     },
     ACTIVITY_START: function(e) {
         let {
             userId: t,
             activity: n
         } = e;
-        if (ec() || n.type !== Z.$pd.PLAYING) return !1;
+        if (ec() || n.type !== Y.$pd.PLAYING) return !1;
         {
-            let e = G.default.getUser(t);
+            let e = H.default.getUser(t);
             if (null == e) return !1;
-            let r = Y.Ay.getName(e),
-                l = n.name,
+            let l = z.Ay.getName(e),
+                r = n.name,
                 i = e.getAvatarURL(void 0, 128),
-                a = J.intl.string(J.t.XoTWsI),
-                o = J.intl.formatToPlainString(J.t.o4Aipn, {
-                    username: r,
-                    gameName: l
+                a = X.intl.string(X.t.XoTWsI),
+                s = X.intl.formatToPlainString(X.t.o4Aipn, {
+                    username: l,
+                    gameName: r
                 });
-            return K.A.showNotification(i, a, o, {
+            return q.A.showNotification(i, a, s, {
                 notif_type: "ACTIVITY_START",
-                activity_type: Z.$pd.PLAYING,
+                activity_type: Y.$pd.PLAYING,
                 notif_user_id: t,
-                activity_name: l
+                activity_name: r
             }, {
                 sound: "message2",
                 playSoundIfDisabled: !1,
                 volume: .4,
                 onClick() {
-                    s.A.openPrivateChannel({
+                    o.A.openPrivateChannel({
                         recipientIds: t
                     })
                 },
@@ -269,22 +269,22 @@ Q(ed, "displayName", "NotificationStore"), new ed(o.h, __OVERLAY__ ? {} : {
             voiceStates: t
         } = e;
         if (ec()) return;
-        let n = G.default.getCurrentUser();
+        let n = H.default.getCurrentUser();
         if (null == n) return;
-        let r = t.find(e => e.userId === n.id);
-        if (null == r) return;
+        let l = t.find(e => e.userId === n.id);
+        if (null == l) return;
         let {
-            channelId: l,
+            channelId: r,
             guildId: i,
             suppress: a,
-            requestToSpeakTimestamp: o
-        } = r;
-        if (null == l || null == i || !(!a && null != o)) return;
-        let s = P.A.getGuild(i),
-            c = w.A.getChannel(l),
-            u = N.A.getStageInstanceByChannel(l);
-        null != s && null != c && null != u && K.A.showNotification((0, T.Iv)(s, 128), c.name, J.intl.formatToPlainString(J.t.sqnsSP, {
-            channelName: (0, m.m1)(c, G.default, M.A),
+            requestToSpeakTimestamp: s
+        } = l;
+        if (null == r || null == i || !(!a && null != s)) return;
+        let o = w.A.getGuild(i),
+            c = P.A.getChannel(r),
+            u = j.A.getStageInstanceByChannel(r);
+        null != o && null != c && null != u && q.A.showNotification((0, N.Iv)(o, 128), c.name, X.intl.formatToPlainString(X.t.sqnsSP, {
+            channelName: (0, m.m1)(c, H.default, k.A),
             channelTopic: null == u ? void 0 : u.topic
         }), {
             notif_type: "Stage Speak Invite"
@@ -297,23 +297,23 @@ Q(ed, "displayName", "NotificationStore"), new ed(o.h, __OVERLAY__ ? {} : {
             instance: t
         } = e;
         if (ec() || !t.send_start_notification || eu(t.channel_id)) return !1;
-        let n = G.default.getCurrentUser(),
-            r = P.A.getGuild(t.guild_id),
-            i = w.A.getChannel(t.channel_id),
-            a = G.default.getUser(t.host_id);
-        if (null == n || null == i || null == r || null == a || !(0, v.Wv)(n, a, i) || !k.A.can(l.kg(Z.xBc.CONNECT, Z.xBc.VIEW_CHANNEL), i) || ea.has(t.id)) return !1;
-        ea.add(t.id), K.A.showNotification((0, T.Iv)(r, 128), J.intl.formatToPlainString(J.t.bZ4Okd, {
-            guildName: r.name
-        }), J.intl.formatToPlainString(J.t.qTelnO, {
-            username: W.Ay.getName(r.id, i.id, a),
+        let n = H.default.getCurrentUser(),
+            l = w.A.getGuild(t.guild_id),
+            i = P.A.getChannel(t.channel_id),
+            a = H.default.getUser(t.host_id);
+        if (null == n || null == i || null == l || null == a || !(0, E.Wv)(n, a, i) || !M.A.can(r.kg(Y.xBc.CONNECT, Y.xBc.VIEW_CHANNEL), i) || ea.has(t.id)) return !1;
+        ea.add(t.id), q.A.showNotification((0, N.Iv)(l, 128), X.intl.formatToPlainString(X.t.bZ4Okd, {
+            guildName: l.name
+        }), X.intl.formatToPlainString(X.t.qTelnO, {
+            username: K.Ay.getName(l.id, i.id, a),
             topic: t.topic
         }), {
             notif_type: "STAGE_INSTANCE_CREATE",
-            guild_id: r.id,
+            guild_id: l.id,
             channel_id: i.id
         }, {
             onClick() {
-                (0, C.av)(i)
+                (0, S.av)(i)
             },
             isUserAvatar: !1
         })
@@ -329,43 +329,43 @@ Q(ed, "displayName", "NotificationStore"), new ed(o.h, __OVERLAY__ ? {} : {
             guildScheduledEvent: t
         } = e;
         if (ec() || null == t.notification_type) return !1;
-        t.notification_type === q.b8.EVENT_START && (t.entity_type === q.Ps.STAGE_INSTANCE || t.entity_type === q.Ps.VOICE ? function(e) {
+        t.notification_type === J.b8.EVENT_START && (t.entity_type === J.Ps.STAGE_INSTANCE || t.entity_type === J.Ps.VOICE ? function(e) {
             if (ec()) return;
             let t = e.channel_id;
             if (null == t || eu(t)) return;
-            let n = G.default.getCurrentUser(),
-                r = P.A.getGuild(e.guild_id),
-                i = w.A.getChannel(e.channel_id),
-                a = G.default.getUser(e.host_id);
-            null != n && null != i && null != r && null != a && k.A.can(l.kg(Z.xBc.CONNECT, Z.xBc.VIEW_CHANNEL), i) && K.A.showNotification((0, T.Iv)(r, 128), J.intl.formatToPlainString(J.t.bOu6Wn, {
-                guildName: r.name
-            }), J.intl.formatToPlainString(J.t.GV9L8u, {
+            let n = H.default.getCurrentUser(),
+                l = w.A.getGuild(e.guild_id),
+                i = P.A.getChannel(e.channel_id),
+                a = H.default.getUser(e.host_id);
+            null != n && null != i && null != l && null != a && M.A.can(r.kg(Y.xBc.CONNECT, Y.xBc.VIEW_CHANNEL), i) && q.A.showNotification((0, N.Iv)(l, 128), X.intl.formatToPlainString(X.t.bOu6Wn, {
+                guildName: l.name
+            }), X.intl.formatToPlainString(X.t.GV9L8u, {
                 topic: e.name,
-                username: W.Ay.getName(r.id, i.id, a)
+                username: K.Ay.getName(l.id, i.id, a)
             }), {
                 notif_type: "GUILD_SCHEDULED_EVENT_UPDATE",
-                guild_id: r.id,
+                guild_id: l.id,
                 channel_id: i.id
             }, {
                 onClick() {
-                    e.entity_type === q.Ps.STAGE_INSTANCE && (0, C.av)(i), e.entity_type === q.Ps.VOICE && f.default.selectVoiceChannel(i.id)
+                    e.entity_type === J.Ps.STAGE_INSTANCE && (0, S.av)(i), e.entity_type === J.Ps.VOICE && h.default.selectVoiceChannel(i.id)
                 },
                 isUserAvatar: !1
             })
-        }(t) : t.entity_type === q.Ps.EXTERNAL && function(e) {
+        }(t) : t.entity_type === J.Ps.EXTERNAL && function(e) {
             if (ec()) return;
-            let t = G.default.getCurrentUser(),
-                n = P.A.getGuild(e.guild_id);
-            null == t || null == n || K.A.showNotification((0, T.Iv)(n, 128), J.intl.formatToPlainString(J.t.bOu6Wn, {
+            let t = H.default.getCurrentUser(),
+                n = w.A.getGuild(e.guild_id);
+            null == t || null == n || q.A.showNotification((0, N.Iv)(n, 128), X.intl.formatToPlainString(X.t.bOu6Wn, {
                 guildName: n.name
-            }), J.intl.formatToPlainString(J.t.mYyaRB, {
+            }), X.intl.formatToPlainString(X.t.mYyaRB, {
                 topic: e.name
             }), {
                 notif_type: "GUILD_SCHEDULED_EVENT_UPDATE",
                 guild_id: n.id
             }, {
                 onClick() {
-                    u.A.transitionToGuildSync(e.guild_id), (0, h.uR)({
+                    u.A.transitionToGuildSync(e.guild_id), (0, A.uR)({
                         eventId: e.id
                     })
                 },
@@ -377,28 +377,28 @@ Q(ed, "displayName", "NotificationStore"), new ed(o.h, __OVERLAY__ ? {} : {
         var t;
         let {
             channel: n,
-            isNewlyCreated: r
+            isNewlyCreated: l
         } = e;
         if (ec()) return !1;
-        let l = w.A.getChannel(n.parent_id);
-        if (null == l || !Z.kvI.GUILD_THREADS_ONLY.has(l.type) || !r || !(0, v.q1)(n, l, !el)) return !1;
+        let r = P.A.getChannel(n.parent_id);
+        if (null == r || !Y.kvI.GUILD_THREADS_ONLY.has(r.type) || !l || !(0, E.q1)(n, r, !er)) return !1;
         let {
             author: i,
             user: a
-        } = (0, _.tY)(n);
+        } = (0, g.tY)(n);
         if (null == a) return !1;
-        let o = P.A.getGuild(l.guild_id);
-        if (null == o) return !1;
-        let s = J.intl.formatToPlainString(J.t["2IGVl5"], {
-                channelName: l.name,
-                guildName: o.name
+        let s = w.A.getGuild(r.guild_id);
+        if (null == s) return !1;
+        let o = X.intl.formatToPlainString(X.t["2IGVl5"], {
+                channelName: r.name,
+                guildName: s.name
             }),
-            c = J.intl.formatToPlainString(J.t.jPhTvT, {
+            c = X.intl.formatToPlainString(X.t.jPhTvT, {
                 channelName: n.name,
                 userUsername: null != (t = null == i ? void 0 : i.nick) ? t : null == a ? void 0 : a.username
             }),
             u = a.getAvatarURL(void 0, 128);
-        K.A.showNotification(u, s, c, {
+        q.A.showNotification(u, o, c, {
             notif_type: "THREAD_CREATE",
             notif_user_id: a.id
         }, {
@@ -411,68 +411,68 @@ Q(ed, "displayName", "NotificationStore"), new ed(o.h, __OVERLAY__ ? {} : {
     GENERIC_PUSH_NOTIFICATION_SENT: function(e) {
         let t, {
             icon: n,
-            title: r,
-            body: l,
+            title: l,
+            body: r,
             route: i,
             trackingType: a,
-            tag: o
+            tag: s
         } = e;
-        if (ec() || null == r || null == l || null == a || "reactions_push_notification" === a.toLowerCase()) return !1;
-        K.A.showNotification(n, r, l, {
+        if (ec() || null == l || null == r || null == a || "reactions_push_notification" === a.toLowerCase()) return !1;
+        q.A.showNotification(n, l, r, {
             notif_type: a
         }, {
             onClick() {
-                null != i && ((0, y.A)(i), d.default.clickedNotification())
+                null != i && ((0, b.A)(i), d.default.clickedNotification())
             },
-            tag: o,
+            tag: s,
             isUserAvatar: !1
         }).then(e => {
-            null != e && null != t && es.track(t, e.notification, e.trackingProps)
+            null != e && null != t && eo.track(t, e.notification, e.trackingProps)
         })
     },
     REACTION_NOTIFICATION_SENT: function(e) {
         let {
             icon: t,
             title: n,
-            body: r,
-            route: l,
+            body: l,
+            route: r,
             trackingType: i,
             message: a
         } = e;
-        if (ec() || null == n || null == r || null == i) return !1;
-        let o = a.channel_id;
-        if (null == o || U.A.getCurrentlySelectedChannelId() === o && el) return !1;
-        K.A.showNotification(t, n, r, {
+        if (ec() || null == n || null == l || null == i) return !1;
+        let s = a.channel_id;
+        if (null == s || U.A.getCurrentlySelectedChannelId() === s && er) return !1;
+        q.A.showNotification(t, n, l, {
             notif_type: i
         }, {
             onClick() {
-                null != l && ((0, y.A)(l), d.default.clickedNotification())
+                null != r && ((0, b.A)(r), d.default.clickedNotification())
             },
             isUserAvatar: !0
         }).then(e => {
-            null != e && null != o && es.track(o, e.notification, e.trackingProps)
+            null != e && null != s && eo.track(s, e.notification, e.trackingProps)
         })
     },
     WINDOW_HIDDEN: function() {
-        let e = (0, z.isWindows)(),
-            t = (0, z.isLinux)();
-        if (!(!a.w.get(er, !1) && z.isPlatformEmbedded && (e || t))) return !1;
-        let r = !1;
-        return null != ei && (r = eo.includes(ei)), !!r && (K.A.showNotification(n(608598), J.intl.string(J.t.VSgOVg), J.intl.string(J.t["+J/F66"]), {
+        let e = (0, W.isWindows)(),
+            t = (0, W.isLinux)();
+        if (!(!a.w.get(el, !1) && W.isPlatformEmbedded && (e || t))) return !1;
+        let l = !1;
+        return null != ei && (l = es.includes(ei)), !!l && (q.A.showNotification(n(608598), X.intl.string(X.t.VSgOVg), X.intl.string(X.t["+J/F66"]), {
             notif_type: "WINDOW_HIDDEN"
         }, {
             overrideStreamerMode: !0,
             onClick: () => {
-                (0, x.pX)(Z.BVt.SETTINGS(e ? "windows" : "linux"))
+                (0, C.pX)(Y.BVt.SETTINGS(e ? "windows" : "linux"))
             },
             onShown: () => {
-                a.w.set(er, !0)
+                a.w.set(el, !0)
             },
             isUserAvatar: !1
         }), !1)
     },
     LOGOUT: function() {
-        return a.w.remove(er), !1
+        return a.w.remove(el), !1
     },
     CONNECTION_OPEN: function(e) {
         let {
@@ -488,17 +488,17 @@ Q(ed, "displayName", "NotificationStore"), new ed(o.h, __OVERLAY__ ? {} : {
         if (ec()) return !1;
         let n = t.message;
         if (null == n || null == n.author) return !1;
-        let r = w.A.getChannel(t.saveData.channelId);
-        if (null == r) return !1;
+        let l = P.A.getChannel(t.saveData.channelId);
+        if (null == l) return !1;
         let {
-            icon: l,
+            icon: r,
             body: i
-        } = (0, v.TB)(r, n, n.author);
-        K.A.showNotification(l, J.intl.string(J.t.IjZJB5), i, {
+        } = (0, E.TB)(l, n, n.author);
+        q.A.showNotification(r, X.intl.string(X.t.IjZJB5), i, {
             notif_type: "MESSAGE_REMINDER_DUE"
         }, {
             onClick() {
-                (0, y.A)(Z.BVt.CHANNEL(null == r ? void 0 : r.getGuildId(), r.id, n.id))
+                (0, b.A)(Y.BVt.CHANNEL(null == l ? void 0 : l.getGuildId(), l.id, n.id))
             },
             isUserAvatar: !0
         })

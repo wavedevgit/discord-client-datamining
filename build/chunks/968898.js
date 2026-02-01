@@ -1,12 +1,12 @@
 /** chunk id: 968898, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    CS: () => T,
+    CS: () => P,
     GQ: () => N,
-    O0: () => w,
+    O0: () => T,
     Pl: () => S,
     RE: () => x,
     X1: () => j,
-    we: () => E
+    we: () => C
 }), n(896048);
 var r = n(627968),
     l = n(64700),
@@ -24,8 +24,8 @@ var r = n(627968),
     y = n(302614),
     b = n(395011),
     _ = n(119191),
-    A = n(581730),
-    h = n(481484),
+    h = n(581730),
+    A = n(481484),
     v = n(985018),
     O = n(859804);
 
@@ -51,7 +51,7 @@ function x(e, t) {
 function I(e, t) {
     let n = l.useRef(null == e ? void 0 : e.showExtrasHintTimestamp),
         [r, i] = l.useState(!1),
-        a = (0, h.A)(),
+        a = (0, A.A)(),
         s = l.useRef(void 0);
     return l.useEffect(() => {
         let r = null == e ? void 0 : e.showExtrasHintTimestamp;
@@ -67,14 +67,14 @@ function I(e, t) {
         }
     }), r && a
 }
-let P = 8e3;
+let E = 8e3;
 
-function E(e) {
+function C(e) {
     let {
         children: t,
         widgetId: n
     } = e, l = (0, s.bG)([m.A], () => m.A.getWidget(n), [n]);
-    return I(l, P) ? (0, r.jsxs)(r.Fragment, {
+    return I(l, E) ? (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(y.A, {
             className: O.Z,
             children: (0, r.jsx)(u.DUT, {
@@ -88,7 +88,7 @@ function E(e) {
                 children: (0, r.jsx)(u.Text, {
                     variant: "text-xs/semibold",
                     color: "text-strong",
-                    children: (0, _.sI)((0, A.Jn)(), v.t["1XA04X"], v.intl.string(v.t.uZZGzf), {
+                    children: (0, _.sI)((0, h.Jn)(), v.t["1XA04X"], v.intl.string(v.t.uZZGzf), {
                         useFlexboxLayout: !0,
                         highlightAdminWarningIfElevated: !1,
                         keybindClassName: O.P
@@ -108,11 +108,11 @@ function E(e) {
     })
 }
 
-function T(e) {
+function P(e) {
     let {
         onClick: t
     } = e;
-    if ((0, h.A)()) return null;
+    if ((0, A.A)()) return null;
     let n = v.intl.string(v.t["3D5yo/"]);
     return (0, r.jsx)(c.m, {
         text: n,
@@ -133,7 +133,7 @@ function N(e) {
         widgetId: t,
         showAllStreams: n
     } = e, l = n ? v.intl.string(v.t.q2B3rh) : v.intl.string(v.t.JKGi6o);
-    return (0, h.A)() ? null : (0, r.jsx)(c.m, {
+    return (0, A.A)() ? null : (0, r.jsx)(c.m, {
         text: l,
         "aria-label": l,
         children: (0, r.jsx)(u.DUT, {
@@ -151,11 +151,11 @@ function N(e) {
     })
 }
 
-function w(e) {
+function T(e) {
     let {
         id: t,
         pinned: n
-    } = e, l = n ? v.intl.string(v.t.cSu80j) : v.intl.string(v.t.cM8Vnm), i = (0, h.A)();
+    } = e, l = n ? v.intl.string(v.t.cSu80j) : v.intl.string(v.t.cM8Vnm), i = (0, A.A)();
     return (0, r.jsx)(c.m, {
         text: l,
         "aria-label": l,

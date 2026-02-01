@@ -1,19 +1,19 @@
-/** chunk id: 32096, original params: e,t,i (module,exports,require) **/
-i.d(t, {
+/** chunk id: 32096, original params: t,e,i (module,exports,require) **/
+i.d(e, {
     A: () => o,
-    b: () => u
+    b: () => a
 });
 var n = i(419954),
     l = i(464477),
     s = i(780964),
     r = i(978551),
-    a = i(985018);
+    u = i(985018);
 
-function u() {
+function a() {
     return !l.K7
 }
 let o = (0, n.E2)(s.X.ACCOUNT_TWO_FACTOR_CRYPTO_NOTICE, {
-    useSearchTerms: () => [a.intl.string(a.t.m0FidJ)],
-    usePredicate: u,
+    useSearchTerms: () => [u.intl.string(u.t.m0FidJ)],
+    usePredicate: a,
     Component: r.A
 })

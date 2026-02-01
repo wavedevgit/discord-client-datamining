@@ -1,6 +1,6 @@
 /** chunk id: 79746, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => m
+    A: () => f
 }), n(896048);
 var r = n(451988),
     i = n(73153),
@@ -22,7 +22,7 @@ function h(e, t, n) {
     }) : e[t] = n, e
 }
 let g = a.default.getToken();
-class f extends l.A {
+class m extends l.A {
     _initialize() {
         this.focusedOrForegrounded = (0, d.R)(), a.default.addChangeListener(this.handleAuthenticationChange), i.h.subscribe("WINDOW_FOCUS", this.handleWindowFocus), i.h.subscribe("APP_STATE_UPDATE", this.handleAppStateUpdate), i.h.subscribe("QUESTS_ENROLL_SUCCESS", this.handleEnrollmentSuccess), i.h.subscribe("LOGIN_SUCCESS", this.handleLogin), i.h.subscribe("LOGOUT", this.handleLogout), this.scheduleHeartbeatTracking()
     }
@@ -92,4 +92,4 @@ class f extends l.A {
         })
     }
 }
-let m = new f
+let f = new m

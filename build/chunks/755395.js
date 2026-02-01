@@ -51,7 +51,7 @@ function u(e) {
         onClick: p,
         ref: h,
         noBackground: g = !1
-    } = e, f = function(e, t) {
+    } = e, m = function(e, t) {
         if (null == e) return {};
         var n, r, i, l = {};
         if ("u" > typeof Reflect && Reflect.ownKeys) {
@@ -80,7 +80,7 @@ function u(e) {
             [s.bG]: null != p,
             [s._$]: g
         })
-    }, f), {
+    }, m), {
         children: d
     })) : (0, r.jsx)("div", c(o({
         ref: h,
@@ -91,7 +91,7 @@ function u(e) {
             [s.vu]: i,
             [s._$]: g
         })
-    }, f), {
+    }, m), {
         children: d
     }))
 }
