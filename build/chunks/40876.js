@@ -224,7 +224,7 @@ let i = {
         neverLoadBeforeConnectionOpen: !0
     },
     OverlayTextChatAutomaticLifecycleManager: {
-        actions: ["CHANNEL_SELECT", "SIDEBAR_VIEW_CHANNEL", "OVERLAY_TEXT_CHAT_ADD_OR_UPDATE_CHANNEL", "OVERLAY_TEXT_CHAT_SELECT_CHANNEL", "OVERLAY_TEXT_CHAT_REMOVE_CHANNEL"],
+        actions: ["CHANNEL_SELECT", "SIDEBAR_VIEW_CHANNEL", "OVERLAY_TEXT_CHAT_ADD_OR_UPDATE_CHANNEL", "OVERLAY_TEXT_CHAT_SELECT_CHANNEL", "OVERLAY_TEXT_CHAT_REMOVE_CHANNEL", "OVERLAY_TEXT_CHAT_SET_VOICE_CHAT_MINIMIZED"],
         inlineRequire: () => n(171076).A,
         neverLoadBeforeConnectionOpen: !0
     },

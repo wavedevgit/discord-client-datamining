@@ -115,6 +115,7 @@ let d = {
     },
     f = {
         analyticsName: "overlay",
+        attachments: !0,
         autocomplete: {
             addReactionShortcut: !0,
             forceChatLayer: !0,
