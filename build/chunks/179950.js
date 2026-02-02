@@ -1,77 +1,78 @@
 /** chunk id: 179950, original params: e,t,r (module,exports,require) **/
 r.d(t, {
-    default: () => u
+    default: () => b
 }), r(896048);
 var n = r(627968),
     l = r(64700),
-    o = r(397927),
-    s = r(10005),
-    i = r(208993),
-    c = r(842130),
-    a = r(985018),
-    d = r(229468);
-let u = e => {
+    i = r(397927),
+    o = r(10005),
+    s = r(438732),
+    c = r(208993),
+    a = r(842130),
+    d = r(985018),
+    u = r(229468);
+let b = e => {
     let {
         currentUser: t,
         otherUser: r,
-        transitionState: u,
-        onClose: b
-    } = e, f = l.useCallback(() => {
-        b()
-    }, [b]), p = t.nsfwAllowed, [j, y] = l.useState(!1), [g, x] = l.useState(!1), h = l.useCallback(() => {
-        x(!0), y(!1)
+        transitionState: b,
+        onClose: f
+    } = e, p = l.useCallback(() => {
+        f()
+    }, [f]), j = (0, s.A)(), [y, g] = l.useState(!1), [x, h] = l.useState(!1), O = l.useCallback(() => {
+        h(!0), g(!1)
     }, []), {
-        disconnectLinkRequest: O,
-        isDisconnectLoading: m
-    } = (0, s.A)({
-        onSuccess: f,
-        onError: h
+        disconnectLinkRequest: m,
+        isDisconnectLoading: v
+    } = (0, o.A)({
+        onSuccess: p,
+        onError: O
     });
-    return (0, n.jsxs)(o.dWK, {
-        transitionState: u,
-        onClose: b,
-        children: [g && (0, n.jsx)(o.wx6, {
+    return (0, n.jsxs)(i.dWK, {
+        transitionState: b,
+        onClose: f,
+        children: [x && (0, n.jsx)(i.wx6, {
             type: "critical",
-            children: a.intl.string(c.default.krIDdy)
-        }), (0, n.jsxs)(o.cwr, {
-            children: [(0, n.jsx)(i.A.Header, {
+            children: d.intl.string(a.default.krIDdy)
+        }), (0, n.jsxs)(i.cwr, {
+            children: [(0, n.jsx)(c.A.Header, {
                 currentUser: t,
                 otherUser: r,
-                header: a.intl.formatToPlainString(c.default["NMSTb/"], {
-                    isAdult: String(p)
+                header: d.intl.formatToPlainString(a.default["NMSTb/"], {
+                    isAdult: String(j)
                 }),
-                icon: (0, n.jsx)(o.PGe, {
+                icon: (0, n.jsx)(i.PGe, {
                     size: "md",
                     color: "currentColor",
-                    className: d.ut
+                    className: u.ut
                 })
-            }), (0, n.jsxs)(o.BJc, {
+            }), (0, n.jsxs)(i.BJc, {
                 gap: 16,
-                children: [(0, n.jsx)(i.A.Notice, {
-                    notice: p ? a.intl.string(c.default.EvMGLT) : a.intl.string(c.default.f1SUeW)
-                }), (0, n.jsx)(o.Checkbox, {
-                    checked: j,
+                children: [(0, n.jsx)(c.A.Notice, {
+                    notice: j ? d.intl.string(a.default.EvMGLT) : d.intl.string(a.default.f1SUeW)
+                }), (0, n.jsx)(i.Checkbox, {
+                    checked: y,
                     onChange: e => {
-                        y(e), x(!1)
+                        g(e), h(!1)
                     },
-                    label: p ? a.intl.string(c.default["/MYCee"]) : a.intl.string(c.default.VJaHUb)
+                    label: j ? d.intl.string(a.default["/MYCee"]) : d.intl.string(a.default.VJaHUb)
                 })]
             })]
-        }), (0, n.jsx)(o.H7u, {
+        }), (0, n.jsx)(i.H7u, {
             actionsFullWidth: !0,
             actions: [{
                 variant: "secondary",
-                text: a.intl.string(a.t["ETE/oC"]),
-                onClick: b,
-                disabled: m
+                text: d.intl.string(d.t["ETE/oC"]),
+                onClick: f,
+                disabled: v
             }, {
                 variant: "critical-primary",
-                text: a.intl.string(c.default["c5L+sl"]),
+                text: d.intl.string(a.default["c5L+sl"]),
                 onClick: () => {
-                    x(!1), O(r.id)
+                    h(!1), m(r.id)
                 },
-                disabled: !j || m,
-                loading: m
+                disabled: !y || v,
+                loading: v
             }]
         })]
     })

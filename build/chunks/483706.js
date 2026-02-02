@@ -8,13 +8,13 @@ var r = n(627968),
     s = n(397927),
     a = n(308528),
     o = n(922529),
-    c = n(840387),
-    d = n(780964),
-    u = n(12901),
-    _ = n(840065),
-    p = n(899847),
-    m = n(809697),
-    g = n(153739),
+    c = n(780964),
+    d = n(12901),
+    u = n(840065),
+    _ = n(899847),
+    p = n(809697),
+    m = n(153739),
+    g = n(534654),
     A = n(834981),
     f = n(191627),
     b = n(652215),
@@ -50,7 +50,7 @@ let x = e => {
     C = () => {
         let e = (0, A.vx)(),
             t = () => {
-                (0, _.openUserSettings)(d.X.CONTENT_AND_SOCIAL_PANEL, {
+                (0, u.openUserSettings)(c.X.CONTENT_AND_SOCIAL_PANEL, {
                     section: b.nc_.CONTENT_AND_SOCIAL
                 })
             };
@@ -80,7 +80,7 @@ let x = e => {
                     count: e.length
                 }),
                 onClick: () => {
-                    (0, u.default)(), a.A.openPrivateChannel({
+                    (0, d.default)(), a.A.openPrivateChannel({
                         recipientIds: e
                     })
                 },
@@ -90,13 +90,13 @@ let x = e => {
         })
     },
     S = () => {
-        let e = (0, g.y3)(),
-            t = (0, g.tl)(),
+        let e = (0, m.y3)(),
+            t = (0, m.tl)(),
             {
                 handleTabChange: n
-            } = (0, m.A)();
+            } = (0, p.A)();
         i.useEffect(() => {
-            (null == e ? void 0 : e.id) != null && t && p.Ay.fetchTeenSettingsAndConsents(null == e ? void 0 : e.id)
+            (null == e ? void 0 : e.id) != null && t && _.Ay.fetchTeenSettingsAndConsents(null == e ? void 0 : e.id)
         }, [null == e ? void 0 : e.id, t]);
         let s = e => {
             n(e)
@@ -127,7 +127,7 @@ let x = e => {
         })
     },
     T = () => {
-        let e = (0, c.Z)();
+        let e = (0, g.A)();
         return 0 === (0, A.vx)().length ? null : (0, r.jsx)("div", {
             className: O.kL,
             children: e ? (0, r.jsx)(C, {}) : (0, r.jsx)(S, {})
