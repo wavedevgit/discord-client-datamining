@@ -18,13 +18,36 @@ final class e4 extends f4 {
         return Float.intBitsToFloat(this.f15231a.getInt(obj, j10));
     }
 
+    /*  JADX ERROR: JadxRuntimeException in pass: InlineMethods
+        jadx.core.utils.exceptions.JadxRuntimeException: Failed to process method for inline: com.google.android.gms.internal.play_billing.g4.n(java.lang.Object, long, boolean):void
+        	at jadx.core.dex.visitors.InlineMethods.processInvokeInsn(InlineMethods.java:76)
+        	at jadx.core.dex.visitors.InlineMethods.visit(InlineMethods.java:51)
+        Caused by: java.lang.ArrayIndexOutOfBoundsException: Index -1 out of bounds for length 2
+        	at java.base/java.util.ArrayList.add(ArrayList.java:455)
+        	at java.base/java.util.ArrayList.add(ArrayList.java:467)
+        	at jadx.core.dex.instructions.args.SSAVar.use(SSAVar.java:126)
+        	at jadx.core.dex.nodes.InsnNode.rebindArgs(InsnNode.java:481)
+        	at jadx.core.dex.instructions.mods.TernaryInsn.rebindArgs(TernaryInsn.java:92)
+        	at jadx.core.dex.nodes.InsnNode.rebindArgs(InsnNode.java:484)
+        	at jadx.core.utils.BlockUtils.replaceInsn(BlockUtils.java:1079)
+        	at jadx.core.utils.BlockUtils.replaceInsn(BlockUtils.java:1088)
+        	at jadx.core.dex.visitors.InlineMethods.inlineMethod(InlineMethods.java:115)
+        	at jadx.core.dex.visitors.InlineMethods.processInvokeInsn(InlineMethods.java:74)
+        	... 1 more
+        */
     @Override // com.google.android.gms.internal.play_billing.f4
-    public final void c(Object obj, long j10, boolean z10) {
-        if (g4.f15248h) {
-            g4.d(obj, j10, r3 ? (byte) 1 : (byte) 0);
-        } else {
-            g4.e(obj, j10, r3 ? (byte) 1 : (byte) 0);
-        }
+    public final void c(java.lang.Object r2, long r3, boolean r5) {
+        /*
+            r1 = this;
+            boolean r0 = com.google.android.gms.internal.play_billing.g4.f15248h
+            if (r0 == 0) goto L8
+            com.google.android.gms.internal.play_billing.g4.n(r2, r3, r5)
+            return
+        L8:
+            com.google.android.gms.internal.play_billing.g4.o(r2, r3, r5)
+            return
+        */
+        throw new UnsupportedOperationException("Method not decompiled: com.google.android.gms.internal.play_billing.e4.c(java.lang.Object, long, boolean):void");
     }
 
     @Override // com.google.android.gms.internal.play_billing.f4
