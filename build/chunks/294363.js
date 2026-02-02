@@ -1,8 +1,8 @@
 /** chunk id: 294363, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => T,
-    b: () => C
+    A: () => C,
+    b: () => T
 }), n(896048);
 var r = n(627968),
     i = n(64700),
@@ -148,7 +148,7 @@ function I(e) {
     })
 }
 
-function T(e) {
+function C(e) {
     var t, n;
     let {
         guild: l
@@ -169,7 +169,7 @@ function T(e) {
     })
 }
 
-function C(e) {
+function T(e) {
     var t, n;
     let {
         guild: l

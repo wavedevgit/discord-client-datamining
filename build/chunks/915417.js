@@ -66,7 +66,7 @@ function _(e) {
             g.A.setSection(h.BEX.PROFILE)
         }, []);
     if (null == n) return null;
-    let T = null != t ? t : null == v ? void 0 : v.formFields;
+    let C = null != t ? t : null == v ? void 0 : v.formFields;
     return (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(s.DZT, {
             variant: "heading-md/semibold",
@@ -82,9 +82,9 @@ function _(e) {
             guildId: n.id
         }), (0, r.jsx)("div", {
             className: x.Zd,
-            children: null != T ? (0, r.jsx)(p.a, {
+            children: null != C ? (0, r.jsx)(p.a, {
                 guild: n,
-                formFields: T
+                formFields: C
             }) : (0, r.jsx)(o.y$y, {})
         }), (0, r.jsx)("div", {
             className: x.yF

@@ -263,7 +263,7 @@ function I(e) {
     })
 }
 
-function T(e) {
+function C(e) {
     let {
         guild: t,
         guildMetadata: n
@@ -302,7 +302,7 @@ function T(e) {
     })
 }
 
-function C(e) {
+function T(e) {
     let {
         preferredLocale: t
     } = e, n = i.useMemo(() => (0, v.fr)(), []), l = i.useCallback(e => {
@@ -366,10 +366,10 @@ function w(e) {
             guildMetadata: a,
             requireTag: c,
             error: s.keywords
-        }), (0, r.jsx)(P, {}), (0, r.jsx)(T, {
+        }), (0, r.jsx)(P, {}), (0, r.jsx)(C, {
             guild: o,
             guildMetadata: a
-        }), (0, r.jsx)(P, {}), (0, r.jsx)(C, {
+        }), (0, r.jsx)(P, {}), (0, r.jsx)(T, {
             preferredLocale: o.preferredLocale
         }), (0, r.jsx)(P, {}), (0, r.jsx)("div", {
             children: (0, r.jsx)(j.D, {

@@ -44,14 +44,14 @@ function O(e) {
             embedEnabled: t,
             embedChannelId: n
         }
-    }), N = i.useMemo(() => (0, b.k)(t), [t]), S = i.useMemo(() => (0, b.Z)(t), [t]), [I, T] = i.useState(!1), C = null != c && l.i.VISIBLE.has(c.visibility), P = !v && !C && !A;
+    }), N = i.useMemo(() => (0, b.k)(t), [t]), S = i.useMemo(() => (0, b.Z)(t), [t]), [I, C] = i.useState(!1), T = null != c && l.i.VISIBLE.has(c.visibility), P = !v && !T && !A;
     i.useEffect(() => {
         y || (0, p.D)(t)
     }, [y, t]), i.useEffect(() => {
         m()
     }, [t, m]);
     let w = i.useCallback(async e => {
-        T(!0), await (0, h.E)(t, e, E), T(!1)
+        C(!0), await (0, h.E)(t, e, E), C(!1)
     }, [E, t]);
     return y ? (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(o.dOG, {

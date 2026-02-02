@@ -29,8 +29,8 @@ var r = n(627968),
     N = n(927573),
     S = n(652215),
     I = n(985018),
-    T = n(727938),
-    C = n(261223);
+    C = n(727938),
+    T = n(261223);
 
 function P(e) {
     for (var t = 1; t < arguments.length; t++) {
@@ -117,7 +117,7 @@ function D(e) {
                     }
                 }],
                 children: (0, r.jsx)(d.Text, {
-                    className: T.Of,
+                    className: C.Of,
                     color: "text-muted",
                     variant: "text-md/normal",
                     children: I.intl.string(I.t.jxIxJL)
@@ -140,7 +140,7 @@ function D(e) {
         })
     }
     return (0, m.E)(f, "GuildSettingsRolesEditMembers"), (0, r.jsx)("div", {
-        className: C.Q,
+        className: T.Q,
         children: (0, r.jsx)(h.A, {
             targetElementRef: p,
             userId: t.id,
@@ -149,23 +149,23 @@ function D(e) {
             position: "left",
             children: e => (0, r.jsxs)(d.DUT, w(P({}, e), {
                 innerRef: p,
-                className: T.TL,
+                className: C.TL,
                 onContextMenu: j,
                 children: [(0, r.jsx)(E.A, {
-                    className: T.bu,
+                    className: C.bu,
                     avatarURL: t.avatarURL,
                     name: t.name,
                     bot: t.bot,
                     verifiedBot: t.verifiedBot,
                     userTag: t.userTag
                 }), (0, r.jsx)("div", {
-                    className: T.O6,
+                    className: C.O6,
                     children: (0, r.jsx)(c.m, {
                         text: g ? I.intl.string(I.t.wkrQaK) : I.intl.string(I.t["7sFNfW"]),
                         position: "top",
                         children: (0, r.jsx)(d.DUT, {
-                            className: s()(T.DT, {
-                                [T.li]: g
+                            className: s()(C.DT, {
+                                [C.li]: g
                             }),
                             onClick: x,
                             children: (0, r.jsx)(d.aXh, {
@@ -186,14 +186,14 @@ function G(e) {
         locked: n
     } = e;
     return (0, r.jsx)("div", {
-        className: C.Q,
+        className: T.Q,
         children: (0, r.jsxs)("div", {
-            className: s()(T.TL, T.xs),
+            className: s()(C.TL, C.xs),
             children: [(0, r.jsx)(d.nFg, {
                 size: "md",
                 color: "currentColor"
             }), (0, r.jsx)(d.Text, {
-                className: T.Tf,
+                className: C.Tf,
                 variant: "text-sm/semibold",
                 color: "text-muted",
                 children: I.intl.format(I.t.P9pZOW, {
@@ -228,7 +228,7 @@ function L(e) {
     return (0, r.jsx)(f.f5, {
         value: g,
         children: (0, r.jsx)(d.Eie, {
-            className: T.p_,
+            className: C.p_,
             sections: [Math.max(h.length, 1)],
             sectionHeight: s,
             renderSection: () => (0, r.jsx)("div", {
@@ -269,7 +269,7 @@ function k(e) {
         handleAddClick: l
     } = e;
     return (0, r.jsxs)("div", {
-        className: T.MT,
+        className: C.MT,
         children: [(0, r.jsx)(d.IWV, {
             query: t,
             onChange: n,
@@ -317,15 +317,15 @@ function M(e) {
         })
     };
     return (0, r.jsxs)("div", {
-        className: T.kL,
+        className: C.kL,
         children: [(0, r.jsx)("div", {
-            className: T.N1,
+            className: C.N1,
             ref: p,
             children: (0, r.jsx)("div", {
-                className: C.Q,
+                className: T.Q,
                 children: (0, r.jsxs)("div", {
-                    className: s()(C.wx, {
-                        [C.l6]: !f
+                    className: s()(T.wx, {
+                        [T.l6]: !f
                     }),
                     children: [(0, r.jsx)(A.A, {
                         guild: t,
@@ -338,7 +338,7 @@ function M(e) {
                         locked: b,
                         handleAddClick: E
                     }), O ? (0, r.jsx)(d.po8, {
-                        className: T.v6,
+                        className: C.v6,
                         messageType: d.YCn.INFO,
                         children: I.intl.string(I.t.RQxHZ8)
                     }) : null]

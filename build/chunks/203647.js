@@ -1,6 +1,6 @@
 /** chunk id: 203647, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => A
+    A: () => w
 });
 var r = n(627968),
     l = n(64700),
@@ -125,7 +125,7 @@ let I = l.memo(function(e) {
     })
 });
 
-function A(e) {
+function w(e) {
     let {
         items: t,
         profileOwner: n,

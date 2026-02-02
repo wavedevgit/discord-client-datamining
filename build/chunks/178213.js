@@ -1,8 +1,8 @@
-/** chunk id: 178213, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    G: () => l
+/** chunk id: 178213, original params: e,t,r (module,exports,require) **/
+r.d(t, {
+    G: () => i
 });
-let r = (0, n(945810).mj)({
+let n = (0, r(945810).mj)({
     name: "2026-01-wishlist-sku-preview",
     kind: "user",
     defaultConfig: {
@@ -18,8 +18,8 @@ let r = (0, n(945810).mj)({
     }
 });
 
-function l(e) {
-    return r.useConfig({
+function i(e) {
+    return n.useConfig({
         location: e
     }).enabled
 }

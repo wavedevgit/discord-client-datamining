@@ -1,12 +1,13 @@
 /** chunk id: 279263, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => l
+    A: () => c
 }), n(896048);
 var r = n(867051),
-    i = n(942269);
+    i = n(548965),
+    a = n(942269);
 
-function a(e, t, n) {
+function o(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -14,8 +15,8 @@ function a(e, t, n) {
         writable: !0
     }) : e[t] = n, e
 }
-let o = "Note";
-class s extends i.yW {
+let s = "Note";
+class l extends a.yW {
     getNote(e) {
         return this.database.get(e)
     }
@@ -23,23 +24,23 @@ class s extends i.yW {
         return this.database
     }
     constructor(...e) {
-        super(...e), a(this, "database", this.addKVDatabase("notes"))
+        super(...e), o(this, "database", this.addKVDatabase("notes"))
     }
 }
-a(s, "displayName", "NoteStore");
-let l = new s({
+o(l, "displayName", "NoteStore");
+let c = new l({
     CONNECTION_OPEN: (e, t) => t.clear(),
     OVERLAY_INITIALIZE: (e, t) => t.clear(),
     USER_NOTE_UPDATE: (e, t) => {
-        t.set(e.id, (0, r.yE)(o, {
+        t.set(e.id, (0, r.yE)(s, {
             loading: !1,
             note: e.note
         }))
     },
     USER_NOTE_LOAD_START: (e, t) => {
-        t.set(e.userId, (0, r.yE)(o, {
+        t.set(e.userId, (0, r.yE)(s, {
             loading: !0,
             note: null
         }))
     }
-})
+}, i.P4.getCachedBridgedStoreMode())

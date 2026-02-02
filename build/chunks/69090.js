@@ -29,8 +29,8 @@ var r = n(627968),
     N = n(856644),
     S = n(359837),
     I = n(533448),
-    T = n(927573),
-    C = n(652215),
+    C = n(927573),
+    T = n(652215),
     P = n(985018),
     w = n(819644),
     R = n(107550);
@@ -84,7 +84,7 @@ function k(e) {
     }, [n.id]);
     let h = i.useRef(!1);
     i.useEffect(() => {
-        h.current || "" === u.trimStart() || (y.default.track(C.HAw.SEARCH_STARTED, {
+        h.current || "" === u.trimStart() || (y.default.track(T.HAw.SEARCH_STARTED, {
             search_type: "Roles"
         }), h.current = !0)
     }, [u]);
@@ -96,7 +96,7 @@ function k(e) {
             handleDragReset: O,
             handleDragComplete: S
         } = (0, I.A)(x),
-        T = i.useCallback(e => {
+        C = i.useCallback(e => {
             var i;
             let {
                 row: l
@@ -123,7 +123,7 @@ function k(e) {
         sectionHeight: d,
         renderSection: o,
         rowHeight: 61,
-        renderRow: T
+        renderRow: C
     })
 }
 
@@ -158,7 +158,7 @@ function U(e) {
         disableHover: E,
         disableDrag: N,
         setEditRoleId: I,
-        setSelectedSection: C
+        setSelectedSection: T
     } = e, k = (0, S.c)(p, x, d), M = null != k, [U, F] = i.useState(!1), H = i.useMemo(() => ({
         type: L,
         item: () => (v(d.id), {
@@ -271,7 +271,7 @@ function U(e) {
             children: (0, r.jsxs)(g.DUT, {
                 className: s()(w.Tb, R.Hp),
                 onClick: function() {
-                    Z(), C(T.T$.MEMBERS)
+                    Z(), T(C.T$.MEMBERS)
                 },
                 children: [(0, r.jsx)(g.Text, {
                     variant: "text-md/normal",
@@ -332,7 +332,7 @@ function B(e) {
         className: m,
         enableTooltip: u
     }));
-    let y = null != (t = o.colorString) ? t : C.TpD;
+    let y = null != (t = o.colorString) ? t : T.TpD;
     return j && f && (y = "url(#".concat(b, ")")), (0, r.jsxs)(r.Fragment, {
         children: [j && f && (0, r.jsx)("svg", {
             width: "0",

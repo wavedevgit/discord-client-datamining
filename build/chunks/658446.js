@@ -119,10 +119,10 @@ let S = e => {
         } = e,
         [S, I] = (0, u.yK)([j.Ay], () => [j.Ay.getDiscoveryChecklist(a), j.Ay.isLoading()], [a]),
         {
-            nsfwProperties: T
+            nsfwProperties: C
         } = null != S ? S : {},
-        C = null == l ? void 0 : l.features.has(_.GuildFeatures.PARTNERED),
-        P = null == T ? void 0 : T.channels_banned_keywords,
+        T = null == l ? void 0 : l.features.has(_.GuildFeatures.PARTNERED),
+        P = null == C ? void 0 : C.channels_banned_keywords,
         w = (0, u.bG)([f.Ay], () => {
             var e, t, n;
             if (null == P) return [];
@@ -146,7 +146,7 @@ let S = e => {
             className: v.__invalid_spinner
         })]
     });
-    let R = C ? O.t["WH+1Yz"] : O.t.a4MYDO,
+    let R = T ? O.t["WH+1Yz"] : O.t.a4MYDO,
         D = [{
             name: O.intl.string(O.t.yvk9py),
             failingName: O.intl.string(O.t["IY/UT/"]),
@@ -240,7 +240,7 @@ let S = e => {
             failingName: O.intl.string(O.t["jURyO+"]),
             description: O.intl.string(O.t.wikb1q),
             failingDescription: (0, r.jsxs)(r.Fragment, {
-                children: [(null == T ? void 0 : T.channels) != null ? (0, r.jsx)(p.Text, {
+                children: [(null == C ? void 0 : C.channels) != null ? (0, r.jsx)(p.Text, {
                     color: "text-muted",
                     variant: "text-sm/normal",
                     children: O.intl.format(O.t["T+DQYY"], {
@@ -259,7 +259,7 @@ let S = e => {
                             children: ["#", t.name, ": ", n.join(", ")]
                         }, t.id) : null
                     })
-                }) : null, (null == T ? void 0 : T.name) != null ? (0, r.jsx)(p.Text, {
+                }) : null, (null == C ? void 0 : C.name) != null ? (0, r.jsx)(p.Text, {
                     color: "text-muted",
                     variant: "text-sm/normal",
                     children: O.intl.format(O.t.KVD8E3, {
@@ -268,7 +268,7 @@ let S = e => {
                             children: e
                         }, t)
                     })
-                }) : null, (null == T ? void 0 : T.description) != null ? (0, r.jsx)(p.Text, {
+                }) : null, (null == C ? void 0 : C.description) != null ? (0, r.jsx)(p.Text, {
                     color: "text-muted",
                     variant: "text-sm/normal",
                     children: O.intl.format(O.t["/W9Kel"], {
@@ -277,13 +277,13 @@ let S = e => {
                             children: e
                         }, t)
                     })
-                }) : null, (null == T ? void 0 : T.icon) != null || (null == T ? void 0 : T.discovery_splash) != null || (null == T ? void 0 : T.invite_splash) != null || (null == T ? void 0 : T.banner) != null ? (0, r.jsx)(p.Text, {
+                }) : null, (null == C ? void 0 : C.icon) != null || (null == C ? void 0 : C.discovery_splash) != null || (null == C ? void 0 : C.invite_splash) != null || (null == C ? void 0 : C.banner) != null ? (0, r.jsx)(p.Text, {
                     color: "text-muted",
                     variant: "text-sm/normal",
                     children: O.intl.string(O.t.WVKQ6q)
                 }) : null]
             }),
-            checked: null == T || 0 === Object.keys(T).length
+            checked: null == C || 0 === Object.keys(C).length
         }, {
             name: O.intl.string(O.t.lSXnL9),
             failingName: O.intl.string(O.t.awA3Pb),

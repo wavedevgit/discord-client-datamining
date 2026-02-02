@@ -36,13 +36,13 @@ function x(e) {
             return null == (t = e.subscription_plans[0]) ? void 0 : t.price
         });
         return null == j ? void 0 : j.filter(t => !e.includes(t))
-    }, [x, A, j]), I = null == E, T = null != (t = null == E ? void 0 : E.published) && t, C = null != (n = null == E ? void 0 : E.archived) && n;
+    }, [x, A, j]), I = null == E, C = null != (t = null == E ? void 0 : E.published) && t, T = null != (n = null == E ? void 0 : E.archived) && n;
     return (0, r.jsxs)("div", {
         className: b.rf,
         children: [null != O && (0, r.jsx)(a.wx6, {
             type: "critical",
             children: O.getAnyErrorMessage()
-        }), !T && !N && !C && (0, r.jsxs)("div", {
+        }), !C && !N && !T && (0, r.jsxs)("div", {
             className: b.Oy,
             children: [(0, r.jsxs)("div", {
                 children: [(0, r.jsx)(a.Heading, {

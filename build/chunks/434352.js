@@ -1,6 +1,6 @@
 /** chunk id: 434352, original params: e,n,t (module,exports,require) **/
 t.d(n, {
-    A: () => o
+    A: () => c
 });
 var i = t(627968);
 t(64700);
@@ -8,13 +8,11 @@ var r = t(397927),
     l = t(494713),
     a = t(985018);
 
-function o(e) {
+function c(e) {
     let {
         guildFriendsEnabled: n
-    } = l.A.useExperiment({
+    } = l.A.useConfig({
         location: "useFriendsItem"
-    }, {
-        autoTrackExposure: !1
     });
     return n ? (0, i.jsx)(r.Drp, {
         id: "friends",

@@ -143,9 +143,10 @@ let er = z.Ay.getEnableHardwareAcceleration(),
             guildId: b,
             isTyping: O,
             isMobileOnline: v,
-            premiumSince: A,
-            nameplate: I
-        } = e, S = et(e, ["colorString", "colorStrings", "colorRoleName", "colorRoleId", "isOwner", "nick", "user", "currentUser", "activities", "applicationStream", "status", "channel", "guildId", "isTyping", "isMobileOnline", "premiumSince", "nameplate"]), T = i.useRef(null), [C, N] = i.useState(!1), w = null != A ? new Date(A) : null, R = i.useCallback(e => {
+            isVROnline: A,
+            premiumSince: I,
+            nameplate: S
+        } = e, T = et(e, ["colorString", "colorStrings", "colorRoleName", "colorRoleId", "isOwner", "nick", "user", "currentUser", "activities", "applicationStream", "status", "channel", "guildId", "isTyping", "isMobileOnline", "isVROnline", "premiumSince", "nameplate"]), C = i.useRef(null), [N, w] = i.useState(!1), R = null != I ? new Date(I) : null, D = i.useCallback(e => {
             (0, _.L3)(e, async () => {
                 let {
                     default: e
@@ -157,7 +158,7 @@ let er = z.Ay.getEnableHardwareAcceleration(),
                     showMediaItems: t
                 }))
             })
-        }, [u, b, y]), D = i.useCallback(() => {
+        }, [u, b, y]), L = i.useCallback(() => {
             let e = "@".concat(K.Ay.getUserTag(u, {
                     decoration: "never"
                 })),
@@ -168,7 +169,7 @@ let er = z.Ay.getEnableHardwareAcceleration(),
                 plainText: e,
                 rawText: t
             }), m.A.startTyping(y.id)
-        }, [u, y.id]), L = i.useCallback(e => {
+        }, [u, y.id]), x = i.useCallback(e => {
             null != b && (e.stopPropagation(), (0, P.K)({
                 guildId: b,
                 location: {
@@ -178,17 +179,17 @@ let er = z.Ay.getEnableHardwareAcceleration(),
             }))
         }, [b]);
         return (0, r.jsx)(j.A, {
-            targetElementRef: T,
+            targetElementRef: C,
             user: u,
             guildId: b,
             channelId: y.id,
             roleId: s,
             position: d.Fr ? "window_center" : "left",
             spacing: 16,
-            onShiftClick: D,
-            shouldShow: C,
+            onShiftClick: L,
+            shouldShow: N,
             onRequestClose: () => {
-                N(!1)
+                w(!1)
             },
             children: e => {
                 let {
@@ -196,9 +197,9 @@ let er = z.Ay.getEnableHardwareAcceleration(),
                     onMouseDown: i
                 } = e, s = et(e, ["onClick", "onMouseDown"]);
                 return (0, r.jsx)(g.A, J({
-                    ref: T,
+                    ref: C,
                     className: Q.Dc,
-                    onContextMenu: R,
+                    onContextMenu: D,
                     shouldAnimateStatus: er,
                     user: u,
                     currentUser: f,
@@ -207,7 +208,7 @@ let er = z.Ay.getEnableHardwareAcceleration(),
                     activities: p,
                     applicationStream: h,
                     isOwner: l,
-                    premiumSince: w,
+                    premiumSince: R,
                     colorString: t,
                     colorStrings: a,
                     colorRoleName: o,
@@ -215,15 +216,16 @@ let er = z.Ay.getEnableHardwareAcceleration(),
                     channel: y,
                     guildId: b,
                     isMobile: v,
-                    onClickPremiumGuildIcon: L,
-                    selected: C,
-                    itemProps: S,
-                    nameplate: I,
+                    isVR: A,
+                    onClickPremiumGuildIcon: x,
+                    selected: N,
+                    itemProps: T,
+                    nameplate: S,
                     onClick: e => {
-                        e.shiftKey ? null == D || D() : N(e => !e)
+                        e.shiftKey ? null == L || L() : w(e => !e)
                     },
                     onMouseDown: e => {
-                        C ? e.stopPropagation() : null == i || i(e)
+                        N ? e.stopPropagation() : null == i || i(e)
                     }
                 }, s))
             }
@@ -484,10 +486,11 @@ class ed extends i.Component {
                         status: l,
                         isOwner: c,
                         isMobileOnline: u,
-                        nick: d,
-                        activities: f,
-                        applicationStream: p,
-                        premiumSince: _
+                        isVROnline: d,
+                        nick: f,
+                        activities: p,
+                        applicationStream: _,
+                        premiumSince: h
                     } = o;
                     return (0, r.jsx)(el, {
                         colorString: e,
@@ -496,13 +499,14 @@ class ed extends i.Component {
                         user: s,
                         status: l,
                         isOwner: c,
-                        nick: d,
-                        activities: this._areActivitiesExperimentallyHidden ? [] : f,
-                        applicationStream: p,
+                        nick: f,
+                        activities: this._areActivitiesExperimentallyHidden ? [] : p,
+                        applicationStream: _,
                         channel: a,
                         guildId: a.guild_id,
-                        premiumSince: _,
+                        premiumSince: h,
                         isMobileOnline: u,
+                        isVROnline: d,
                         index: i
                     }, "member-".concat(o.user.id))
                 }

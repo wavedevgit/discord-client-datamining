@@ -7,8 +7,8 @@ n.d(t, {
 });
 var r, l = n(64700),
     a = n(989349),
-    s = n.n(a),
-    i = n(311907),
+    i = n.n(a),
+    s = n(311907),
     o = n(308528),
     c = n(22007),
     u = n(95701),
@@ -29,17 +29,17 @@ function h(e) {
     };
     let l = 0 === r ? f.t.TjNWNF : f.t.H4gnX9,
         a = 0 === r ? f.t.haia16 : f.t["Uq7Y+7"],
-        i = n > t;
+        s = n > t;
     return {
-        dueInText: f.intl.formatToPlainString(i ? a : l, {
-            duration: s().duration(t.getTime() - n.getTime(), "millisecond").humanize()
+        dueInText: f.intl.formatToPlainString(s ? a : l, {
+            duration: i().duration(t.getTime() - n.getTime(), "millisecond").humanize()
         }),
-        isOverdue: i
+        isOverdue: s
     }
 }
 
 function O(e) {
-    let t = (0, i.bG)([p.A], () => p.A.getChannel(e.saveData.channelId));
+    let t = (0, s.bG)([p.A], () => p.A.getChannel(e.saveData.channelId));
     return l.useMemo(() => null != t ? t : null != e.message ? new u.jb({
         id: e.saveData.channelId,
         guild_id: e.saveData.guildId,

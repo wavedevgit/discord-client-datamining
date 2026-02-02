@@ -3,7 +3,7 @@
 n.d(t, {
     Ay: () => R,
     Kh: () => E,
-    MD: () => T,
+    MD: () => C,
     fh: () => A
 }), n(321073), n(896048);
 var r = n(627968),
@@ -73,7 +73,7 @@ let A = e => {
             children: l
         })
     },
-    T = e => {
+    C = e => {
         let {
             children: t
         } = e;
@@ -87,7 +87,7 @@ let A = e => {
             })]
         })
     },
-    C = () => {
+    T = () => {
         let e = (0, r.jsx)(d.m, {
             text: v.intl.string(v.t.q3PkL5),
             children: (0, r.jsx)(u.mir, {
@@ -153,7 +153,7 @@ let A = e => {
     }, {
         key: "amount",
         cellClassName: s()(y.Fh, y.WI),
-        renderHeader: () => (0, r.jsx)(C, {}),
+        renderHeader: () => (0, r.jsx)(T, {}),
         render(e, t) {
             let {
                 expandedRows: n

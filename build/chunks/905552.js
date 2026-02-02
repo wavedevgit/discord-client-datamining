@@ -1,15 +1,15 @@
 /** chunk id: 905552, original params: e,t,n (module,exports,require) **/
-let r;
+let l;
 n.d(t, {
     A: () => o
 });
-var l = n(9302);
+var r = n(9302);
 
 function o(e, t) {
     if (__OVERLAY__) {
         let e = t.getGame(),
-            n = (0, l.getPID)();
-        return null == e || null == n ? null : (null == r ? void 0 : r.id) === e.id && (null == r ? void 0 : r.pid) === n ? r : r = {
+            n = (0, r.getPID)();
+        return null == e || null == n ? null : (null == l ? void 0 : l.id) === e.id && (null == l ? void 0 : l.pid) === n ? l : l = {
             id: e.id,
             pid: n,
             pidPath: [],

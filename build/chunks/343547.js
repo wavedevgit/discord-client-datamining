@@ -59,9 +59,10 @@ let P = E.A.getArticleURL(C.MVz.ORBS_REWARDS_FAQ),
                             text: N.intl.string(I.default.BxjHiu),
                             variant: t ? "overlay-primary" : "secondary",
                             onClick: () => (0, f.pX)(T.BV.COLLECTIBLES_SHOP_WITH_TAB(S.G2.ORBS))
-                        }), headerText: N.intl.format(I.default.cfE8Oh, {
-                            days: Math.max(1, i)
-                        }), subheaderText: N.intl.format(I.default["53tWRt"], {
+                        }), headerText: N.intl.format(I.default.BxLJQL, {
+                            days: Math.max(1, i),
+                            orbsCount: e.reward_amount
+                        }), subheaderText: N.intl.format(I.default.tUV1vV, {
                             helpdeskArticle: P
                         })
                     };

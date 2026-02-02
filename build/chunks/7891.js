@@ -1,7 +1,7 @@
 /** chunk id: 7891, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => T
+    A: () => C
 }), n(896048), n(747238);
 var r = n(627968),
     i = n(64700),
@@ -35,10 +35,10 @@ let A = [0xdb2389, 0xba2be9, 8804082, 6576370, 5335282, 2652110, 2128781, 219659
         } = e, c = (0, _.Tq)(l.id), {
             loading: b,
             updateSubscriptionsSettings: j
-        } = (0, _.KE)(), [S, I] = i.useState(l.features.has(O.GuildFeatures.CREATOR_STORE_PAGE)), [T, C] = i.useState(null != (t = null == c ? void 0 : c.store_page_primary_color) ? t : N), [P, w] = i.useState(null == c ? void 0 : c.store_page_trailer_url), R = null == P || null != P.match(E), [D, G] = i.useState(null != (n = null == c ? void 0 : c.store_page_show_subscriber_count) && n), L = i.useRef(null == c ? void 0 : c.store_page_slug).current, k = S !== l.features.has(O.GuildFeatures.CREATOR_STORE_PAGE) || (null == c ? void 0 : c.store_page_primary_color) == null && T !== N || (null == c ? void 0 : c.store_page_primary_color) != null && T !== (null == c ? void 0 : c.store_page_primary_color) || P !== (null == c ? void 0 : c.store_page_trailer_url) || null != D && D !== (null == c ? void 0 : c.store_page_show_subscriber_count), M = async () => {
+        } = (0, _.KE)(), [S, I] = i.useState(l.features.has(O.GuildFeatures.CREATOR_STORE_PAGE)), [C, T] = i.useState(null != (t = null == c ? void 0 : c.store_page_primary_color) ? t : N), [P, w] = i.useState(null == c ? void 0 : c.store_page_trailer_url), R = null == P || null != P.match(E), [D, G] = i.useState(null != (n = null == c ? void 0 : c.store_page_show_subscriber_count) && n), L = i.useRef(null == c ? void 0 : c.store_page_slug).current, k = S !== l.features.has(O.GuildFeatures.CREATOR_STORE_PAGE) || (null == c ? void 0 : c.store_page_primary_color) == null && C !== N || (null == c ? void 0 : c.store_page_primary_color) != null && C !== (null == c ? void 0 : c.store_page_primary_color) || P !== (null == c ? void 0 : c.store_page_trailer_url) || null != D && D !== (null == c ? void 0 : c.store_page_show_subscriber_count), M = async () => {
             o()(null != c, "Settings must be defined");
             let e = {};
-            S !== l.features.has(O.GuildFeatures.CREATOR_STORE_PAGE) && (e.store_page_enabled = S), ((null == c ? void 0 : c.store_page_primary_color) == null && T !== N || (null == c ? void 0 : c.store_page_primary_color) != null && T !== (null == c ? void 0 : c.store_page_primary_color)) && (e.store_page_primary_color = T), P !== (null == c ? void 0 : c.store_page_trailer_url) && (e.store_page_trailer_url = P), D !== (null == c ? void 0 : c.store_page_show_subscriber_count) && (e.store_page_show_subscriber_count = D), Object.keys(e).length > 0 && (await j(l.id, e), "store_page_enabled" in e && x.default.track(O.HAw.GUILD_ROLE_SUBSCRIPTION_STORE_PAGE_TOGGLED, function(e) {
+            S !== l.features.has(O.GuildFeatures.CREATOR_STORE_PAGE) && (e.store_page_enabled = S), ((null == c ? void 0 : c.store_page_primary_color) == null && C !== N || (null == c ? void 0 : c.store_page_primary_color) != null && C !== (null == c ? void 0 : c.store_page_primary_color)) && (e.store_page_primary_color = C), P !== (null == c ? void 0 : c.store_page_trailer_url) && (e.store_page_trailer_url = P), D !== (null == c ? void 0 : c.store_page_show_subscriber_count) && (e.store_page_show_subscriber_count = D), Object.keys(e).length > 0 && (await j(l.id, e), "store_page_enabled" in e && x.default.track(O.HAw.GUILD_ROLE_SUBSCRIPTION_STORE_PAGE_TOGGLED, function(e) {
                 for (var t = 1; t < arguments.length; t++) {
                     var n = null != arguments[t] ? arguments[t] : {},
                         r = Object.keys(n);
@@ -104,7 +104,7 @@ let A = [0xdb2389, 0xba2be9, 8804082, 6576370, 5335282, 2652110, 2128781, 219659
                     children: [(0, r.jsx)(g.Text, {
                         variant: "text-md/medium",
                         style: {
-                            backgroundColor: "#".concat(T.toString(16).padStart(6, "0"))
+                            backgroundColor: "#".concat(C.toString(16).padStart(6, "0"))
                         },
                         className: y.pB,
                         children: v.intl.string(v.t.l6iM36)
@@ -112,8 +112,8 @@ let A = [0xdb2389, 0xba2be9, 8804082, 6576370, 5335282, 2652110, 2128781, 219659
                         colors: A,
                         customColor: null,
                         defaultColor: N,
-                        value: T,
-                        onChange: e => C(e),
+                        value: C,
+                        onChange: e => T(e),
                         renderDefaultButton: () => null,
                         renderCustomButton: () => null,
                         colorContainerClassName: y.jP,
@@ -148,7 +148,7 @@ let A = [0xdb2389, 0xba2be9, 8804082, 6576370, 5335282, 2652110, 2128781, 219659
                         submitting: b,
                         onReset: () => {
                             var e, t;
-                            I(l.features.has(O.GuildFeatures.CREATOR_STORE_PAGE)), C(null != (e = null == c ? void 0 : c.store_page_primary_color) ? e : N), w(null == c ? void 0 : c.store_page_trailer_url), G(null != (t = null == c ? void 0 : c.store_page_show_subscriber_count) && t)
+                            I(l.features.has(O.GuildFeatures.CREATOR_STORE_PAGE)), T(null != (e = null == c ? void 0 : c.store_page_primary_color) ? e : N), w(null == c ? void 0 : c.store_page_trailer_url), G(null != (t = null == c ? void 0 : c.store_page_show_subscriber_count) && t)
                         },
                         onSave: M,
                         disabled: H
@@ -168,7 +168,7 @@ function I() {
     }) : (0, r.jsx)(g.y$y, {})
 }
 
-function T() {
+function C() {
     let e = (0, c.bG)([b.A], () => b.A.getGuild());
     return (0, r.jsx)(j.H, {
         guildId: null == e ? void 0 : e.id,

@@ -1,6 +1,6 @@
 /** chunk id: 790417, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => A
+    A: () => w
 });
 var r = n(627968);
 n(64700);
@@ -26,12 +26,12 @@ var l = n(311907),
     _ = n(985018),
     I = n(897757);
 
-function A(e) {
+function w(e) {
     let {
         user: t,
         currentUser: n,
-        displayProfile: A,
-        guildId: w,
+        displayProfile: w,
+        guildId: A,
         channelId: P,
         onClose: E
     } = e, {
@@ -43,15 +43,15 @@ function A(e) {
         recent: C,
         stream: N
     } = (0, f.A)(t.id), {
-        voiceChannel: R,
-        voiceActivity: k
+        voiceChannel: k,
+        voiceActivity: R
     } = (0, p.A)({
         userId: t.id,
-        guildId: w
+        guildId: A
     }), D = (0, l.bG)([o.A], () => o.A.isFetchingUserOutbox(t.id)), L = t.id === n.id, G = (0, l.bG)([u.A, c.A], () => {
         let e = L ? u.A.getStatus() : c.A.getStatus(t.id);
         return e === i.clD.OFFLINE || e === i.clD.INVISIBLE
-    }), M = T.length > 0 || null != N, U = S && null == N && null == k && null != R, F = !G && (M || U), W = C.length > 0;
+    }), M = T.length > 0 || null != N, U = S && null == N && null == R && null != k, F = !G && (M || U), W = C.length > 0;
     if (!F && !W && D) return (0, r.jsx)("div", {
         className: I.kR,
         children: Array.from({
@@ -68,12 +68,12 @@ function A(e) {
         }, t))
     });
     if (!F && !W && !D) {
-        var H;
+        var B;
         return L ? (0, r.jsx)(O.qv, {
             onClose: E
         }) : (0, r.jsx)(O.zf, {
             user: t,
-            guildId: null != (H = null == A ? void 0 : A.guildId) ? H : w,
+            guildId: null != (B = null == w ? void 0 : w.guildId) ? B : A,
             channelId: P,
             onClose: E
         })
@@ -103,7 +103,7 @@ function A(e) {
                     children: (0, r.jsx)(y.A, {
                         user: t,
                         currentUser: n,
-                        voiceChannel: R,
+                        voiceChannel: k,
                         onClose: E
                     })
                 })]

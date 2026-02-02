@@ -1,19 +1,29 @@
 /** chunk id: 394577, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    A: () => r
+    A: () => a
 });
-let r = (0, n(945810).mj)({
-    name: "2026-01-expand-voice-invite-suggestions",
-    kind: "user",
+var r = n(600975),
+    i = n(688151);
+let a = (0, r.C)({
+    id: "2026-02_expand_voice_invite_suggestions",
+    kind: "guild",
+    label: "Expand Voice Invite Suggestions",
+    commonTriggerPoint: i.$G.VOICE_CALL,
     defaultConfig: {
         totalSuggestions: 5
     },
-    variations: {
-        0: {
+    treatments: [{
+        id: 0,
+        label: "Control",
+        config: {
             totalSuggestions: 5
-        },
-        1: {
+        }
+    }, {
+        id: 1,
+        label: "More Suggestions (10)",
+        config: {
             totalSuggestions: 10
         }
-    }
+    }]
 })

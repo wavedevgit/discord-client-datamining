@@ -1,7 +1,7 @@
 /** chunk id: 718019, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => R
+    A: () => P
 }), n(896048);
 var r = n(627968),
     i = n(64700),
@@ -24,9 +24,10 @@ var r = n(627968),
     O = n(652215),
     v = n(788868),
     A = n(996988),
-    I = n(735027);
+    I = n(985018),
+    S = n(735027);
 
-function S(e, t, n) {
+function T(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -35,20 +36,20 @@ function S(e, t, n) {
     }) : e[t] = n, e
 }
 
-function T(e) {
+function C(e) {
     for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
         "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
             return Object.getOwnPropertyDescriptor(n, e).enumerable
         }))), r.forEach(function(t) {
-            S(e, t, n[t])
+            T(e, t, n[t])
         })
     }
     return e
 }
 
-function C(e, t) {
+function N(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
         var r = Object.getOwnPropertySymbols(e);
@@ -59,73 +60,78 @@ function C(e, t) {
     return n
 }
 
-function N(e, t) {
-    return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : C(Object(t)).forEach(function(n) {
+function w(e, t) {
+    return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : N(Object(t)).forEach(function(n) {
         Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
     }), e
 }
-let w = h.Ay.getEnableHardwareAcceleration() ? l.JsQ : l.euF;
+let R = h.Ay.getEnableHardwareAcceleration() ? l.JsQ : l.euF;
 
-function R(e) {
+function P(e) {
     let {
         user: t,
         displayProfile: n,
         guildId: a,
         channelId: h,
-        themeType: S,
-        animateOnHover: C,
-        onOpenProfile: R,
-        className: P,
-        previewStatus: D
+        themeType: T,
+        animateOnHover: N,
+        onOpenProfile: P,
+        className: D,
+        previewStatus: L
     } = e, {
-        theme: L
+        theme: x
     } = (0, y.E)(), {
-        analyticsLocations: x
+        analyticsLocations: M
     } = (0, d.Ay)(u.A.AVATAR), {
-        trackUserProfileAction: M
-    } = (0, m.NJ)(), j = _.Ay.isPremiumAtLeast(null == n ? void 0 : n.premiumType, v.PremiumTypes.TIER_2), k = i.useMemo(() => t.isNonUserBot() || (0, f.c)(t, h), [t, h]), {
-        live: U
-    } = (0, g.A)(t.id), [G] = U, {
-        status: V,
-        isMobileOnline: F
+        trackUserProfileAction: j
+    } = (0, m.NJ)(), k = _.Ay.isPremiumAtLeast(null == n ? void 0 : n.premiumType, v.PremiumTypes.TIER_2), U = i.useMemo(() => t.isNonUserBot() || (0, f.c)(t, h), [t, h]), {
+        live: G
+    } = (0, g.A)(t.id), [V] = G, {
+        status: F,
+        isMobileOnline: B,
+        isVROnline: H
     } = (0, s.cf)([p.A], () => ({
-        status: (0, c.A)(G) ? O.clD.STREAMING : p.A.getStatus(t.id),
-        isMobileOnline: p.A.isMobileOnline(t.id)
-    })), B = void 0 !== D ? D : V, H = [A.d.MODAL, A.d.MODAL_V2].includes(S) ? l._3J.SIZE_120 : l._3J.SIZE_80, Y = o()(I.my, P), {
-        avatarDecorationSrc: W,
-        avatarSrc: K,
-        eventHandlers: z
+        status: (0, c.A)(V) ? O.clD.STREAMING : p.A.getStatus(t.id),
+        isMobileOnline: p.A.isMobileOnline(t.id),
+        isVROnline: p.A.isVROnline(t.id)
+    })), Y = void 0 !== L ? L : F, W = [A.d.MODAL, A.d.MODAL_V2].includes(T) ? l._3J.SIZE_120 : l._3J.SIZE_80, K = o()(S.my, D), {
+        avatarDecorationSrc: z,
+        avatarSrc: q,
+        eventHandlers: Z
     } = (0, E.A)({
         userId: t.id,
         guildId: null != n ? n.guildId : a,
-        size: H,
-        animateOnHover: C
-    }), q = (0, r.jsx)(w, {
-        src: K,
-        avatarDecoration: W,
-        size: H,
+        size: W,
+        animateOnHover: N
+    }), Q = (0, r.jsx)(R, {
+        src: q,
+        avatarDecoration: z,
+        size: W,
         "aria-label": t.username,
-        imageClassName: null != R ? I.Lw : void 0,
-        status: k ? O.clD.UNKNOWN : B,
-        statusBackdropColor: j && !k ? (0, l.C$5)(L) : void 0,
-        isMobile: F,
+        imageClassName: null != P ? S.Lw : void 0,
+        status: U ? O.clD.UNKNOWN : Y,
+        statusBackdropColor: k && !U ? (0, l.C$5)(x) : void 0,
+        isMobile: B,
+        isVR: H,
         statusTooltip: !0,
         statusTooltipDelay: b.In
     });
-    return null == R ? (0, r.jsx)("div", N(T({}, z), {
-        className: Y,
-        children: q
-    })) : (0, r.jsx)(l.DUT, N(T({}, z), {
-        className: o()(Y, I.vk),
+    return null == P ? (0, r.jsx)("div", w(C({}, Z), {
+        className: K,
+        children: Q
+    })) : (0, r.jsx)(l.sqX, w(C({
+        "aria-label": I.intl.string(I.t["+Xp3hq"])
+    }, Z), {
+        className: o()(K, S.vk),
         focusProps: {
-            ringClassName: I.Rg
+            ringClassName: S.Rg
         },
         onClick: () => {
-            M({
+            j({
                 action: "PRESS_VIEW_PROFILE",
-                analyticsLocations: x
-            }), null == R || R()
+                analyticsLocations: M
+            }), null == P || P()
         },
-        children: q
+        children: Q
     }))
 }

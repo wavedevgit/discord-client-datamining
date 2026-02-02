@@ -1,15 +1,15 @@
-/** chunk id: 486318, original params: t,i,a (module,exports,require) **/
-a.d(i, {
+/** chunk id: 486318, original params: t,a,i (module,exports,require) **/
+i.d(a, {
     N: () => r,
     e: () => l
 });
-var n = a(397927),
-    e = a(871123);
+var n = i(397927),
+    e = i(871123);
 
 function l(t) {
     let {
-        imageUrl: i,
-        backgroundImageUrl: a,
+        imageUrl: a,
+        backgroundImageUrl: i,
         altText: e,
         customClassNames: l
     } = t;
@@ -18,8 +18,8 @@ function l(t) {
         component: n.Oz7.SOCIAL_LAYER_SKU_PREVIEW,
         aspectRatio: "16/9",
         props: {
-            imageUrl: i,
-            backgroundImageUrl: a,
+            imageUrl: a,
+            backgroundImageUrl: i,
             altText: e,
             customClassNames: l
         }

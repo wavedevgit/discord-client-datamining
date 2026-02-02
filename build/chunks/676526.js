@@ -69,18 +69,18 @@ function h(e) {
         coverRef: _
     } = e, {
         coverImageUrl: I,
-        gameName: A,
-        isLoading: w
+        gameName: w,
+        isLoading: A
     } = (0, g.A)(t.applicationId), {
         registerDragHandleRef: P
     } = (0, u.r)(), E = (0, m.A)(t.applicationId).length > 0, S = o.default.getCurrentUser(), T = (null == S ? void 0 : S.id) === n, C = !h && T, {
         isDragging: N
     } = (0, a.V)(e => ({
         isDragging: e.isDragging()
-    })), R = () => (0, r.jsxs)(r.Fragment, {
+    })), k = () => (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(d.A, {
             imageSrc: I,
-            gameName: A,
+            gameName: w,
             applicationId: t.applicationId,
             userId: n,
             disableInteraction: h,
@@ -104,17 +104,17 @@ function h(e) {
             onRemove: () => null == v ? void 0 : v(t.applicationId)
         })]
     });
-    return w ? (0, r.jsx)("div", {
+    return A ? (0, r.jsx)("div", {
         className: y.mD
     }) : C ? (0, r.jsx)(j, {
         widgetType: l,
         index: null != x ? x : 0,
         game: t,
         coverImageUrl: I,
-        gameName: A,
-        children: R()
+        gameName: w,
+        children: k()
     }) : (0, r.jsx)("div", {
         className: O.kL,
-        children: R()
+        children: k()
     })
 }

@@ -29,8 +29,8 @@ var r = n(627968),
     N = n(603349),
     S = n(954571),
     I = n(488926),
-    T = n(997509),
-    C = n(694012),
+    C = n(997509),
+    T = n(694012),
     P = n(652215),
     w = n(818348),
     R = n(650583),
@@ -83,8 +83,8 @@ let M = "WELCOME_CHANNEL",
             y = (0, u.bG)([E.A], () => E.A.getChannel(o.channel_id)),
             A = (0, u.bG)([j.Ay], () => null != o.emoji_id ? j.Ay.getUsableCustomEmojiById(o.emoji_id) : null),
             S = null != y && I.MJ(P.xBc.VIEW_CHANNEL, y),
-            T = null != (t = (0, x.gU)(y)) ? t : g.N$i,
-            C = (0, b.Ay)(y, !1),
+            C = null != (t = (0, x.gU)(y)) ? t : g.N$i,
+            T = (0, b.Ay)(y, !1),
             R = () => {
                 (0, g.mMO)(async () => {
                     let {
@@ -125,7 +125,7 @@ let M = "WELCOME_CHANNEL",
             emojiId: null == A ? void 0 : A.id,
             emojiName: null != A ? A.name : o.emoji_name,
             animated: !!(null == A ? void 0 : A.animated)
-        }) : (0, r.jsx)(T, {
+        }) : (0, r.jsx)(C, {
             size: "md",
             color: "currentColor",
             className: G.p
@@ -163,12 +163,12 @@ let M = "WELCOME_CHANNEL",
                     className: S ? void 0 : G.op,
                     variant: "text-xs/normal",
                     color: "text-default",
-                    children: [(0, r.jsx)(T, {
+                    children: [(0, r.jsx)(C, {
                         className: G.nO,
                         size: "xxs",
                         color: "currentColor"
                     }), (0, r.jsx)("span", {
-                        children: S ? C : D.intl.string(D.t.zFuCsF)
+                        children: S ? T : D.intl.string(D.t.zFuCsF)
                     })]
                 })]
             }), (0, r.jsx)(g.K0, {
@@ -225,7 +225,7 @@ let M = "WELCOME_CHANNEL",
             }
         }, [m, E, j, I, t]), i.useEffect(() => () => (0, y.Vv)(), []);
         let H = i.useCallback(() => {
-            null != t && T.A.open(t.id, P.BEX.ONBOARDING)
+            null != t && C.A.open(t.id, P.BEX.ONBOARDING)
         }, [t]);
         return null == t ? null : (0, r.jsxs)("div", {
             children: [(0, r.jsx)(g.Heading, {
@@ -247,7 +247,7 @@ let M = "WELCOME_CHANNEL",
             }), (0, r.jsx)(g.Text, {
                 variant: "text-sm/normal",
                 children: D.intl.string(D.t.w2d74x)
-            }), (0, r.jsx)(C.A, {
+            }), (0, r.jsx)(T.A, {
                 enabled: I,
                 onPreview: (null == E ? void 0 : E.length) === 0 ? void 0 : () => {
                     null != t && (0, g.mMO)(async () => {

@@ -66,11 +66,11 @@ function N(e) {
         settingsGuild: N,
         settingsMetadata: S,
         settingsProfile: I
-    } = e, T = N.id, [C, P] = i.useState(!1), [w, R] = i.useState(null), D = N.features.has(O.GuildFeatures.MEMBER_VERIFICATION_MANUAL_APPROVAL), G = null != (t = (0, m.H)({
+    } = e, C = N.id, [T, P] = i.useState(!1), [w, R] = i.useState(null), D = N.features.has(O.GuildFeatures.MEMBER_VERIFICATION_MANUAL_APPROVAL), G = null != (t = (0, m.H)({
         guildId: N.id
     })) ? t : 0, L = i.useCallback(() => {
-        R(null), f.A.init(T, O.BEX.ACCESS)
-    }, [T]), k = i.useCallback(async e => {
+        R(null), f.A.init(C, O.BEX.ACCESS)
+    }, [C]), k = i.useCallback(async e => {
         try {
             P(!0), await e(), R(null)
         } finally {
@@ -78,7 +78,7 @@ function N(e) {
         }
     }, []), M = i.useCallback(async e => {
         try {
-            await f.A.saveGuild(T, e, {
+            await f.A.saveGuild(C, e, {
                 throwErr: !0
             })
         } catch (e) {
@@ -86,13 +86,13 @@ function N(e) {
                 statusPageURL: O.qF7.STATUS
             })), e
         }
-    }, [T]), U = i.useCallback(async (e, t, n) => {
+    }, [C]), U = i.useCallback(async (e, t, n) => {
         try {
-            await d.Ay.updateVerificationForm(T, e, t, n)
+            await d.Ay.updateVerificationForm(C, e, t, n)
         } catch (e) {
             throw R(new o.LG(e).getAnyErrorMessage()), e
         }
-    }, [T]), B = i.useCallback(async (e, t, n) => {
+    }, [C]), B = i.useCallback(async (e, t, n) => {
         let r = t.length > 0 ? [{
             field_type: u.rX.TERMS,
             label: y.intl.string(y.t["9suSIA"]),
@@ -183,7 +183,7 @@ function N(e) {
                     default: e
                 } = await n.e("35125").then(n.bind(n, 60852));
                 return n => (0, r.jsx)(e, E(A({}, n), {
-                    guildId: T,
+                    guildId: C,
                     onConfirm: t
                 }))
             }) : t())
@@ -192,16 +192,16 @@ function N(e) {
                 default: t
             } = await n.e("63452").then(n.bind(n, 78903));
             return n => (0, r.jsx)(t, E(A({}, n), {
-                guildId: T,
+                guildId: C,
                 submittedGuildJoinRequestsCount: G,
                 onConfirm: e
             }))
         }) : e())
-    }), [D, F, l, T, G]), V = l.joinType === j.J.DISCOVERABLE && l.settingsView === _.v.ELIGIBLE_DISABLED, K = null != N.description && S.primaryCategoryId !== v.ig && S.keywords.length > 0;
+    }), [D, F, l, C, G]), V = l.joinType === j.J.DISCOVERABLE && l.settingsView === _.v.ELIGIBLE_DISABLED, K = null != N.description && S.primaryCategoryId !== v.ig && S.keywords.length > 0;
     return (0, r.jsx)(s.A, {
         message: V ? y.intl.string(y.t.V2G2Yr) : void 0,
         onSaveText: V ? y.intl.string(y.t["qjtt/p"]) : void 0,
-        submitting: C,
+        submitting: T,
         errorMessage: w,
         onReset: L,
         onSave: H,

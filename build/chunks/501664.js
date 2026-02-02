@@ -21,8 +21,8 @@ function d(e) {
         className: p,
         discountOfferAmount: f,
         hideStrikethroughPrice: x = !1,
-        nitroIconType: h,
-        nitroIconSize: v = "md"
+        nitroIconType: v,
+        nitroIconSize: h = "md"
     } = e, g = (0, a.yt)(l, c.lid.DEFAULT);
     if (null == g) return null;
     if (g.amount <= 0) return (0, r.jsx)("div", {
@@ -76,8 +76,8 @@ function d(e) {
             className: i()({
                 [u.q9]: null == f
             }),
-            nitroIconType: A ? h : void 0,
-            nitroIconSize: v,
+            nitroIconType: A ? v : void 0,
+            nitroIconSize: h,
             discountOfferAmount: f
         })]
     })

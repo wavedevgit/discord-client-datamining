@@ -64,14 +64,14 @@ let s = e => {
                 hasPreviewAssets: !1
             };
             let x = null == e || null == (p = e.refTargetBackground) ? void 0 : p.asset,
-                h = null == x ? void 0 : x.resting,
-                v = null == x ? void 0 : x.hovered;
+                v = null == x ? void 0 : x.resting,
+                h = null == x ? void 0 : x.hovered;
             return {
                 hasPreviewAssets: f,
-                buttonBGHoverDark: null != (r = null != n ? n : t) ? r : null == v ? void 0 : v.dark,
-                buttonBGHoverLight: null != (i = null != s ? s : t) ? i : null == v ? void 0 : v.light,
-                buttonBGRestingDark: null != (a = null != c ? c : o) ? a : null == h ? void 0 : h.dark,
-                buttonBGRestingLight: null != (m = null != u ? u : o) ? m : null == h ? void 0 : h.light,
+                buttonBGHoverDark: null != (r = null != n ? n : t) ? r : null == h ? void 0 : h.dark,
+                buttonBGHoverLight: null != (i = null != s ? s : t) ? i : null == h ? void 0 : h.light,
+                buttonBGRestingDark: null != (a = null != c ? c : o) ? a : null == v ? void 0 : v.dark,
+                buttonBGRestingLight: null != (m = null != u ? u : o) ? m : null == v ? void 0 : v.light,
                 coachtipAvatar: null != d ? d : null == e ? void 0 : e.avatar
             }
         }, [t, n, s, o, c, u, d, e])

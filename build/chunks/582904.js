@@ -19,20 +19,23 @@ var r = n(64700),
 function g(e) {
     let {
         channel: t
-    } = e, {
-        totalSuggestions: n
-    } = s.A.useConfig({
+    } = e, n = null == t ? void 0 : t.guild_id, {
+        totalSuggestions: i
+    } = s.A.useExperiment({
+        guildId: n,
         location: "useVoiceInviteSuggestions"
-    }), i = (0, l.bG)([a.A], () => a.A.getUserAffinitiesMap(), []), p = null == t ? void 0 : t.guild_id, h = new Set((0, l.bG)([u.Ay], () => null == t ? [] : u.Ay.getVoiceStatesForChannel(t).map(e => e.user.id), [t])), g = (0, l.yK)([o.Ay, c.default], () => o.Ay.getMembers(p).map(e => c.default.getUser(e.userId)).filter(d.Vq).filter(e => !h.has(e.id)), [p, h]);
+    }, {
+        autoTrackExposure: !1
+    }), p = (0, l.bG)([a.A], () => a.A.getUserAffinitiesMap(), []), h = new Set((0, l.bG)([u.Ay], () => null == t ? [] : u.Ay.getVoiceStatesForChannel(t).map(e => e.user.id), [t])), g = (0, l.yK)([o.Ay, c.default], () => o.Ay.getMembers(n).map(e => c.default.getUser(e.userId)).filter(d.Vq).filter(e => !h.has(e.id)), [n, h]);
     return r.useMemo(() => g.toSorted((e, t) => {
-        var n, r, l, s;
+        var n, r, l, i;
         let {
-            id: a
+            id: s
         } = e, {
-            id: o
+            id: a
         } = t;
-        return (null != (n = null == (l = i.get(o)) ? void 0 : l.vcProbability) ? n : 0) - (null != (r = null == (s = i.get(a)) ? void 0 : s.vcProbability) ? r : 0)
-    }), [g, i]).slice(0, n)
+        return (null != (n = null == (l = p.get(a)) ? void 0 : l.vcProbability) ? n : 0) - (null != (r = null == (i = p.get(s)) ? void 0 : i.vcProbability) ? r : 0)
+    }), [g, p]).slice(0, i)
 }
 
 function f(e) {

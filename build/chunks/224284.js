@@ -20,8 +20,8 @@ function u(e) {
         let e = (0, a.tW)(n, a.fY.VIDEO_PLAYER_TRANSCRIPT, void 0, !1);
         (null == d || d.questId !== n.id || d.fetchStatus === s.Lx.NONE || d.fetchStatus === s.Lx.SUCCESS && (null == e ? void 0 : e.url) !== d.url) && (0, i.qY)(n)
     }, [d, n]);
-    let f = (null == d ? void 0 : d.questId) === n.id && (null == d ? void 0 : d.fetchStatus) === s.Lx.SUCCESS && null != (t = d.text) ? t : "",
-        m = l.useMemo(() => f.split("\n").map(e => e.trim()).filter(e => e.length > 0), [f]);
+    let p = (null == d ? void 0 : d.questId) === n.id && (null == d ? void 0 : d.fetchStatus) === s.Lx.SUCCESS && null != (t = d.text) ? t : "",
+        f = l.useMemo(() => p.split("\n").map(e => e.trim()).filter(e => e.length > 0), [p]);
     return (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsxs)("div", {
             className: c.Mm,
@@ -50,7 +50,7 @@ function u(e) {
                     }) : (0, r.jsx)(o.Heading, {
                         variant: "heading-md/normal",
                         color: "text-muted",
-                        children: m.map((e, t) => (0, r.jsx)("p", {
+                        children: f.map((e, t) => (0, r.jsx)("p", {
                             children: e
                         }, t))
                     })

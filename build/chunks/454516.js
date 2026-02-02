@@ -1,7 +1,7 @@
 /** chunk id: 454516, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => C
+    A: () => T
 }), n(896048), n(733351), n(228524), n(321073);
 var r = n(627968),
     i = n(64700),
@@ -153,7 +153,7 @@ let I = i.forwardRef(function(e, t) {
     })
 });
 
-function T(e) {
+function C(e) {
     let {
         guildId: t,
         storedSearchQuery: n
@@ -215,12 +215,12 @@ function T(e) {
     })
 }
 
-function C() {
+function T() {
     var e, t;
     let {
         guild: c,
         searchQuery: m
-    } = (0, a.bG)([x.A], () => x.A.getProps(), [], l.isEqual), b = null != m && m.trim().length > 0, j = (0, u.A)(b), _ = b !== j, [A] = (0, a.bG)([x.A], () => x.A.getBans(), [], h.D), S = null != (e = null == A ? void 0 : A.size) ? e : 0, C = (0, g.Ay)(), P = null != (t = null == c ? void 0 : c.id) ? t : O.dJq, w = i.useRef(null), R = i.useCallback(e => null == e || 0 === e.length ? e => null != e : t => {
+    } = (0, a.bG)([x.A], () => x.A.getProps(), [], l.isEqual), b = null != m && m.trim().length > 0, j = (0, u.A)(b), _ = b !== j, [A] = (0, a.bG)([x.A], () => x.A.getBans(), [], h.D), S = null != (e = null == A ? void 0 : A.size) ? e : 0, T = (0, g.Ay)(), P = null != (t = null == c ? void 0 : c.id) ? t : O.dJq, w = i.useRef(null), R = i.useCallback(e => null == e || 0 === e.length ? e => null != e : t => {
         if (null == t || 0 === e.trim().length) return !1;
         let [
             [n], r
@@ -263,7 +263,7 @@ function C() {
     }, [H, U.currentPage]);
     return null == c ? null : (0, r.jsxs)("div", {
         className: y.kL,
-        children: [(0, r.jsx)(T, {
+        children: [(0, r.jsx)(C, {
             guildId: P,
             storedSearchQuery: m
         }), (0, r.jsxs)("div", {
@@ -274,7 +274,7 @@ function C() {
                 sortedBans: z,
                 ref: w
             }), !k && M && (0, r.jsxs)(o.ppr, {
-                theme: C,
+                theme: T,
                 className: y.p$,
                 children: [(0, r.jsx)(o.G8R, {
                     darkSrc: n(29093),

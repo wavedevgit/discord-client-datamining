@@ -108,7 +108,7 @@ function j(e) {
             draggingId: I
         } = (0, o.A)(y, A);
     if (null == s) return null;
-    let T = j.length < f.pA;
+    let C = j.length < f.pA;
     return (0, r.jsx)("div", {
         className: b.kL,
         children: (0, r.jsxs)("div", {
@@ -138,7 +138,7 @@ function j(e) {
             }), (0, r.jsxs)("button", {
                 className: b.qG,
                 onClick: v,
-                disabled: !T || _,
+                disabled: !C || _,
                 type: "button",
                 children: [(0, r.jsx)(a.U1e, {
                     size: "custom",
@@ -150,7 +150,7 @@ function j(e) {
                     color: "text-brand",
                     children: h.intl.string(h.t["03EqaC"])
                 })]
-            }), !T && (0, r.jsx)(a.Text, {
+            }), !C && (0, r.jsx)(a.Text, {
                 variant: "text-sm/normal",
                 color: "text-muted",
                 children: h.intl.format(h.t.Nc7guW, {

@@ -2,7 +2,7 @@
 n.d(t, {
     IA: () => v,
     jB: () => _,
-    qv: () => w,
+    qv: () => A,
     zf: () => I
 }), n(896048);
 var r = n(627968),
@@ -103,7 +103,7 @@ function I(e) {
     })
 }
 
-function A() {
+function w() {
     let e = (0, s.Ay)();
     return (0, r.jsx)("div", {
         className: b.HU,
@@ -120,7 +120,7 @@ function A() {
     })
 }
 
-function w(e) {
+function A(e) {
     let {
         onClose: t
     } = e, n = l.useCallback(() => {
@@ -136,7 +136,7 @@ function w(e) {
     return (0, r.jsxs)(x, {
         heading: m.intl.string(m.t.VB6LWY),
         bodyText: m.intl.string(m.t.KpjsU9),
-        children: [(0, r.jsx)(A, {}), (0, r.jsxs)("div", {
+        children: [(0, r.jsx)(w, {}), (0, r.jsxs)("div", {
             className: b.v0,
             children: [(0, r.jsx)(p.FD, {
                 text: m.intl.string(m.t["/Hl24U"]),

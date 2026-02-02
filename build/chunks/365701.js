@@ -3,7 +3,7 @@
 n.d(t, {
     Ay: () => P,
     Jx: () => I,
-    lz: () => T
+    lz: () => C
 }), n(733351), n(228524), n(896048);
 var r, i = n(627968),
     l = n(64700),
@@ -72,7 +72,7 @@ class S extends(r = d.Ay.Store) {
 N(S, "displayName", "GuildSettingsTemplateMetadataStore_");
 let I = new S(f.h);
 
-function T() {
+function C() {
     let [e, t] = l.useState(!1), n = async () => {
         t(!0), await I.save(), t(!1)
     };
@@ -80,11 +80,11 @@ function T() {
         submitting: e,
         onReset: I.reset,
         onSave: n,
-        disabled: !C(I.name)
+        disabled: !T(I.name)
     })
 }
 
-function C(e) {
+function T(e) {
     return null != e && e.trim().length >= 2
 }
 
@@ -264,7 +264,7 @@ function G() {
             s(!0)
         }, []),
         c = l.useMemo(() => {
-            if (!(r || e.length < 1 || C(e))) return y.intl.string(y.t.IHAlh1)
+            if (!(r || e.length < 1 || T(e))) return y.intl.string(y.t.IHAlh1)
         }, [e, r]);
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(p.ksK, {
@@ -348,7 +348,7 @@ function k(e) {
         variant: "primary",
         text: y.intl.string(y.t.Wxdi8A),
         loading: r,
-        disabled: !C(n),
+        disabled: !T(n),
         onClick: a
     })
 }

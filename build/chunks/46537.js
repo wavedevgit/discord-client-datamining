@@ -1,15 +1,15 @@
 /** chunk id: 46537, original params: e,t,r (module,exports,require) **/
 r.d(t, {
     b: () => f,
-    u: () => m
+    u: () => h
 }), r(896048);
 var n = r(64700),
     i = r(311907),
     l = r(576030),
     s = r(287809),
-    o = r(403362),
+    a = r(403362),
     u = r(427262),
-    a = r(594832),
+    o = r(594832),
     c = r(652215),
     d = r(985018);
 
@@ -42,7 +42,7 @@ function f(e, t) {
                 }
             }(r);
         return i || s ? r.map(e => !i && s ? {
-            title: e.source === a.uS.WISHLIST ? d.intl.formatToPlainString(d.t.p3RmJF, {
+            title: e.source === o.uS.WISHLIST ? d.intl.formatToPlainString(d.t.p3RmJF, {
                 username: n
             }) : d.intl.string(d.t.Ig6VDH),
             renderIcon: e.productLine !== c.EZt.COLLECTIBLES ? e.renderIcon : void 0,
@@ -53,7 +53,7 @@ function f(e, t) {
             shouldShow: !0
         } : {
             title: e.productLine === c.EZt.SOCIAL_LAYER_GAME_ITEM ? d.intl.string(d.t["4yiU7x"]) : d.intl.string(d.t.HFhcqh),
-            body: e.source === a.uS.WISHLIST ? d.intl.formatToPlainString(d.t.p3RmJF, {
+            body: e.source === o.uS.WISHLIST ? d.intl.formatToPlainString(d.t.p3RmJF, {
                 username: n
             }) : d.intl.string(d.t.Ig6VDH),
             renderIcon: e.renderIcon,
@@ -64,14 +64,14 @@ function f(e, t) {
     }, [e, t])
 }
 
-function m(e, t) {
-    let r = (0, i.yK)([s.default], () => e.map(e => s.default.getUser(e.gifterUserId)).filter(o.Vq), [e]),
-        a = n.useMemo(() => r.reduce((e, t) => (e[t.id] = t, e), {}), [r]);
+function h(e, t) {
+    let r = (0, i.yK)([s.default], () => e.map(e => s.default.getUser(e.gifterUserId)).filter(a.Vq), [e]),
+        o = n.useMemo(() => r.reduce((e, t) => (e[t.id] = t, e), {}), [r]);
     return n.useMemo(() => {
         let r = new Set(e.map(e => e.skuProductLine)).size > 1;
         return e.map(e => {
-            let n = t && e.isOwned && null != e.gifterUserId && null != a[e.gifterUserId],
-                i = null != e.gifterUserId && null != a[e.gifterUserId] ? u.Ay.getName(a[e.gifterUserId]) : null;
+            let n = t && e.isOwned && null != e.gifterUserId && null != o[e.gifterUserId],
+                i = null != e.gifterUserId && null != o[e.gifterUserId] ? u.Ay.getName(o[e.gifterUserId]) : null;
             return r || n ? {
                 title: n ? d.intl.formatToPlainString(d.t.TL4ktE, {
                     username: i
@@ -83,5 +83,5 @@ function m(e, t) {
                 shouldShow: !1
             }
         })
-    }, [e, t, a])
+    }, [e, t, o])
 }

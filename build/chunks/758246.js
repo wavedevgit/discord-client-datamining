@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
     A: () => P,
-    j: () => T
+    j: () => C
 }), n(228524), n(896048), n(693327), n(554719), n(680155), n(323874), n(14289), n(35956), n(747238), n(812715), n(866193), n(591487), n(727858);
 var r = n(627968),
     i = n(64700);
@@ -31,7 +31,7 @@ var l = n(311907),
     N = n(985018),
     S = n(628080);
 let I = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
-    T = () => {
+    C = () => {
         let {
             guild: e,
             guildMetadata: t,
@@ -65,14 +65,14 @@ let I = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
             }
         })
     },
-    C = () => {
+    T = () => {
         var e;
         let t = i.useRef(null),
             s = (0, l.bG)([_.A], () => _.A.getGuild()),
-            [T, C] = i.useState(!1);
+            [C, T] = i.useState(!1);
         i.useEffect(() => {
-            T || null == s || ((0, g.Mu)(), (0, g.mo)(s.id), (0, g.ax)(s.id), C(!0))
-        }, [s, T]);
+            C || null == s || ((0, g.Mu)(), (0, g.mo)(s.id), (0, g.ax)(s.id), T(!0))
+        }, [s, C]);
         let {
             canManageGuild: P
         } = (0, l.cf)([h.A], () => ({
@@ -424,4 +424,4 @@ let I = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
             })
         })
     },
-    P = () => null == (0, l.bG)([_.A], () => _.A.getGuild()) ? null : (0, r.jsx)(C, {})
+    P = () => null == (0, l.bG)([_.A], () => _.A.getGuild()) ? null : (0, r.jsx)(T, {})

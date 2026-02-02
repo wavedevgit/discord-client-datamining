@@ -29,8 +29,8 @@ function x(e) {
         channelId: _,
         onSelect: I
     } = e, {
-        theme: A,
-        themeType: w
+        theme: w,
+        themeType: A
     } = (0, m.E)(), P = l.useMemo(() => t.isNonUserBot() || (0, f.c)(t, _), [t, _]), {
         activities: E,
         isMobileOnline: S
@@ -48,7 +48,7 @@ function x(e) {
         guildId: v
     });
     return (0, r.jsxs)(a.DUT, {
-        focusProps: w === y.d.MODAL_V2 ? {
+        focusProps: A === y.d.MODAL_V2 ? {
             offset: {
                 top: 4,
                 right: 4,
@@ -105,7 +105,7 @@ function x(e) {
             "aria-label": t.username,
             size: j,
             status: P ? b.clD.UNKNOWN : x,
-            statusBackdropColor: P ? void 0 : (0, a.C$5)(A),
+            statusBackdropColor: P ? void 0 : (0, a.C$5)(w),
             isMobile: S,
             className: O.my
         }), (0, r.jsxs)("div", {

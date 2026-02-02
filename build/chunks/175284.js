@@ -1,203 +1,137 @@
 /** chunk id: 175284, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => I
+    A: () => h
 }), n(228524), n(896048);
 var r = n(627968),
     i = n(64700),
     l = n(503698),
     s = n.n(l),
-    a = n(989349),
-    o = n.n(a),
-    c = n(554146),
-    d = n(397927),
-    u = n(157559),
-    g = n(686956),
-    m = n(386849),
-    p = n(826673),
-    f = n(801264),
-    h = n(576705),
-    b = n(405269),
-    x = n(975571),
-    j = n(997509),
-    _ = n(50249),
-    O = n(305053),
-    v = n(512031),
-    y = n(652215),
-    A = n(49999),
-    E = n(818348),
-    N = n(985018),
-    S = n(107550);
+    a = n(397927),
+    o = n(686956),
+    c = n(975571),
+    d = n(50249),
+    u = n(305053),
+    g = n(512031),
+    m = n(652215),
+    p = n(985018),
+    f = n(107550);
 
-function I(e) {
+function h(e) {
     let {
         guild: t,
         everyoneRole: n,
         filteredRoles: l,
         setEditRoleId: s,
-        query: a,
-        setQuery: o,
-        setHeaderHeight: c
-    } = e, u = i.useRef(null), {
-        enabled: g
-    } = m.A.useExperiment({
-        guildId: t.id,
-        location: "GuildSettingsRolesOverviewHeader"
-    });
+        query: o,
+        setQuery: c,
+        setHeaderHeight: d
+    } = e, m = i.useRef(null);
     i.useEffect(() => {
         var e, t;
-        c(null != (e = null == (t = u.current) ? void 0 : t.offsetHeight) ? e : v.p4)
-    }, [c]);
-    let p = i.useCallback(() => {
-            s(n.id)
-        }, [s, n.id]),
-        f = g ? O.A : T;
+        d(null != (e = null == (t = m.current) ? void 0 : t.offsetHeight) ? e : g.p4)
+    }, [d]);
+    let h = i.useCallback(() => {
+        s(n.id)
+    }, [s, n.id]);
     return (0, r.jsxs)("div", {
-        ref: u,
-        children: [(0, r.jsx)(d.Heading, {
+        ref: m,
+        children: [(0, r.jsx)(a.Heading, {
             variant: "heading-lg/semibold",
-            children: N.intl.string(N.t["LPJmL/"])
-        }), (0, r.jsx)(d.Text, {
-            className: S.h_,
+            children: p.intl.string(p.t["LPJmL/"])
+        }), (0, r.jsx)(a.Text, {
+            className: f.h_,
             color: "text-default",
             variant: "text-sm/normal",
-            children: N.intl.string(N.t["1ydhVp"])
-        }), (0, r.jsx)(f, {
+            children: p.intl.string(p.t["1ydhVp"])
+        }), (0, r.jsx)(u.A, {
             guild: t
-        }), (0, r.jsx)(C, {
+        }), (0, r.jsx)(b, {
             guild: t,
             everyoneRole: n,
             filteredRoles: l,
-            query: a,
-            setQuery: o,
-            onEveryoneRoleClick: p
+            query: o,
+            setQuery: c,
+            onEveryoneRoleClick: h
         })]
     })
 }
 
-function T(e) {
-    let {
-        guild: t
-    } = e;
-    i.useEffect(() => {
-        (0, p.dX)(c.M.GUILD_PIN_PERMISSION_MIGRATION_NOTIFICATION, t.id, {
-            dismissAction: A.i.INDIRECT_ACTION,
-            guildId: t.id,
-            forceTrack: !0
-        })
-    }, [t]);
-    let n = (0, b.i$)(o()(y.X30), "LL"),
-        l = t.features.has(y.GuildFeatures.PIN_PERMISSION_MIGRATION_COMPLETE) ? (0, r.jsx)(d.Text, {
-            variant: "text-sm/normal",
-            children: N.intl.format(N.t.Vg2oTN, {
-                breakingChangeDate: n
-            })
-        }) : h.A.can(E.xB.ADMINISTRATOR, t) ? (0, r.jsx)(d.Text, {
-            variant: "text-sm/normal",
-            children: N.intl.format(N.t.HYM8OE, {
-                onClickMigrate: () => {
-                    u.A.show({
-                        title: N.intl.string(N.t.nFE8dD),
-                        body: N.intl.format(N.t["1PAzQ6"], {
-                            guildName: t.name
-                        }),
-                        cancelText: N.intl.string(N.t["ETE/oC"]),
-                        confirmText: N.intl.string(N.t["cY+Oob"]),
-                        onConfirm: () => {
-                            j.A.migratePinPermission(t.id)
-                        }
-                    })
-                },
-                breakingChangeDate: n
-            })
-        }) : (0, r.jsx)(d.Text, {
-            variant: "text-sm/normal",
-            children: N.intl.format(N.t.cAuU1S, {
-                breakingChangeDate: n
-            })
-        });
-    return (0, r.jsx)(f.A, {
-        look: f.k.WARNING,
-        className: S.q4,
-        children: l
-    })
-}
-
-function C(e) {
+function b(e) {
     let {
         guild: t,
         everyoneRole: n,
         filteredRoles: i,
         query: l,
-        setQuery: a,
-        onEveryoneRoleClick: o
+        setQuery: o,
+        onEveryoneRoleClick: u
     } = e;
     return (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(_.A, {
+        children: [(0, r.jsx)(d.A, {
             role: n,
-            onClick: o
-        }), (0, r.jsx)(P, {
+            onClick: u
+        }), (0, r.jsx)(x, {
             guild: t,
             query: l,
-            setQuery: a
-        }), (0, r.jsx)(d.Text, {
-            className: S.BK,
+            setQuery: o
+        }), (0, r.jsx)(a.Text, {
+            className: f.BK,
             color: "text-default",
             variant: "text-sm/normal",
-            children: N.intl.format(N.t.xkC3Yf, {
-                articleURL: x.A.getArticleURL(y.MVz.PERMISSIONS_TUTORIAL)
+            children: p.intl.format(p.t.xkC3Yf, {
+                articleURL: c.A.getArticleURL(m.MVz.PERMISSIONS_TUTORIAL)
             })
         }), (0, r.jsx)("div", {
-            className: S.kA,
+            className: f.kA,
             children: (0, r.jsxs)("div", {
-                className: S.qd,
+                className: f.qd,
                 children: [(0, r.jsx)("div", {
-                    className: S._M
-                }), (0, r.jsx)(d.Text, {
-                    className: s()(S.jA, S.N5),
+                    className: f._M
+                }), (0, r.jsx)(a.Text, {
+                    className: s()(f.jA, f.N5),
                     variant: "text-sm/normal",
-                    children: N.intl.format(N.t["38N3Vz"], {
+                    children: p.intl.format(p.t["38N3Vz"], {
                         numRoles: String(i.length)
                     })
-                }), (0, r.jsx)(d.Text, {
-                    className: s()(S.jA, S.Hp),
+                }), (0, r.jsx)(a.Text, {
+                    className: s()(f.jA, f.Hp),
                     variant: "text-sm/normal",
-                    children: N.intl.string(N.t["9Oq93m"])
+                    children: p.intl.string(p.t["9Oq93m"])
                 }), (0, r.jsx)("div", {
-                    className: S.DE
+                    className: f.DE
                 })]
             })
         })]
     })
 }
 
-function P(e) {
+function x(e) {
     let {
         guild: t,
         query: n,
         setQuery: l
-    } = e, [s, a] = i.useState(!1), o = i.useCallback(e => {
+    } = e, [s, c] = i.useState(!1), d = i.useCallback(e => {
         l(e)
-    }, [l]), c = i.useCallback(() => {
+    }, [l]), u = i.useCallback(() => {
         l("")
-    }, [l]), u = async () => {
-        a(!0), await g.A.createRole(t.id), a(!1)
+    }, [l]), g = async () => {
+        c(!0), await o.A.createRole(t.id), c(!1)
     };
     return (0, r.jsx)("div", {
-        className: S.__invalid_rolesList,
+        className: f.__invalid_rolesList,
         children: (0, r.jsxs)("div", {
-            className: S.MT,
-            children: [(0, r.jsx)(d.IWV, {
+            className: f.MT,
+            children: [(0, r.jsx)(a.IWV, {
                 query: n,
-                onChange: o,
-                onClear: c,
-                placeholder: N.intl.string(N.t.Sojqsr),
-                "aria-label": N.intl.string(N.t.Sojqsr)
-            }), (0, r.jsx)(d.Button, {
+                onChange: d,
+                onClear: u,
+                placeholder: p.intl.string(p.t.Sojqsr),
+                "aria-label": p.intl.string(p.t.Sojqsr)
+            }), (0, r.jsx)(a.Button, {
                 size: "sm",
-                onClick: u,
+                onClick: g,
                 loading: s,
-                text: N.intl.string(N.t.JZZjQK)
+                text: p.intl.string(p.t.JZZjQK)
             })]
         })
     })

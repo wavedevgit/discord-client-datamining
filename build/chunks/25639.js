@@ -1,12 +1,12 @@
 /** chunk id: 25639, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => N,
+    A: () => E,
     s: () => h
 }), n(896048);
 var l, r, i = n(311907),
     a = n(73153),
-    s = n(967198),
-    o = n(977997);
+    o = n(967198),
+    s = n(977997);
 
 function u(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
@@ -47,16 +47,16 @@ let f = {},
     g = {},
     p = null;
 
-function m(e) {
+function b(e) {
     null != g[e] && (clearTimeout(g[e]), delete g[e])
 }
 
-function b(e) {
-    m(e), g[e] = setTimeout(() => {
+function m(e) {
+    b(e), g[e] = setTimeout(() => {
         let t = f[e];
         null != t && (f[e] = d(c({}, t), {
             style: "GENTLE_AMBIENT"
-        }), E.emitChange()), delete g[e]
+        }), j.emitChange()), delete g[e]
     }, 2e3)
 }
 
@@ -70,7 +70,7 @@ function v() {
 }
 class O extends(l = i.Ay.Store) {
     initialize() {
-        this.waitFor(o.A, s.A)
+        this.waitFor(s.A, o.A)
     }
     getAnimationStyle(e) {
         var t, n;
@@ -82,11 +82,11 @@ class O extends(l = i.Ay.Store) {
     }
 }
 u(O, "displayName", "VoiceChannelAnimationStateStore");
-let E = new O(a.h, {
+let j = new O(a.h, {
         VOICE_STATE_UPDATES: function(e) {
             let {
                 voiceStates: t
-            } = e, n = s.A.getGuildId();
+            } = e, n = o.A.getGuildId();
             n !== p && null != n && (p = n);
             let l = {};
             for (let e of t) {
@@ -102,10 +102,10 @@ let E = new O(a.h, {
                 return 0 === r && i > 0 ? (f[e] = {
                     style: "GENTLE_AMBIENT_WITH_INTRO",
                     userCount: i
-                }, b(e), !0) : r > 0 && i > r ? (f[e] = {
+                }, m(e), !0) : r > 0 && i > r ? (f[e] = {
                     style: "HIGH_CONTRAST",
                     userCount: i
-                }, b(e), !0) : 0 === i ? (m(e), delete f[e], !0) : null != l && i !== r && (f[e] = d(c({}, l), {
+                }, m(e), !0) : 0 === i ? (b(e), delete f[e], !0) : null != l && i !== r && (f[e] = d(c({}, l), {
                     userCount: i
                 }), !0)
             })(e, t) && (a = !0);
@@ -117,7 +117,7 @@ let E = new O(a.h, {
             } = e;
             if (t === p || null == t) return !1;
             p = t, y();
-            let n = o.A.getVoiceStates(t),
+            let n = s.A.getVoiceStates(t),
                 l = {};
             for (let e of Object.values(n))
                 if (null != e.channelId) {
@@ -132,4 +132,4 @@ let E = new O(a.h, {
         CONNECTION_OPEN: v,
         LOGOUT: v
     }),
-    N = E
+    E = j

@@ -1,6 +1,6 @@
 /** chunk id: 255266, original params: e,t,r (module,exports,require) **/
 r.d(t, {
-    A: () => d,
+    A: () => b,
     q: () => A
 });
 var n, l = r(627968),
@@ -17,23 +17,23 @@ let f = {
     h = {
         SMALL_32: [13, 11, 10, 10, 10, 10, 10]
     },
-    d = function(e) {
+    b = function(e) {
         let {
             className: t,
             iconClassName: r,
             size: n,
             channel: s,
             guild: A,
-            locked: d,
-            hasActiveThreads: b
+            locked: b,
+            hasActiveThreads: d
         } = e;
         if (null == A) return null;
         let _ = (0, o.Iv)(A, 48),
             p = h[n],
             y = f[n],
             O = (0, a.gU)(s, A, {
-                locked: d,
-                hasActiveThreads: b
+                locked: b,
+                hasActiveThreads: d
             });
         if (null == O) return null;
         let E = null != A ? (0, o.Rb)(A) : "";

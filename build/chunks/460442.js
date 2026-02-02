@@ -1,24 +1,25 @@
-/** chunk id: 460442, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    B: () => f,
-    g: () => d
+/** chunk id: 460442, original params: e,t,r (module,exports,require) **/
+r.d(t, {
+    BF: () => f,
+    Yb: () => h,
+    gS: () => d
 });
-var r = n(627968);
-n(64700);
-var l = n(503698),
-    i = n.n(l),
-    a = n(158954),
-    o = n(827734),
-    s = n(985018),
-    c = n(865444);
+var n = r(627968);
+r(64700);
+var i = r(503698),
+    l = r.n(i),
+    s = r(158954),
+    a = r(827734),
+    u = r(985018),
+    o = r(865444);
 
-function u(e) {
+function c(e) {
     let {
         icon: t,
-        style: n
+        style: r
     } = e;
-    return (0, r.jsx)("div", {
-        className: i()(c.Lw, n),
+    return (0, n.jsx)("div", {
+        className: l()(o.Lw, r),
         children: t
     })
 }
@@ -27,15 +28,15 @@ function d(e) {
     let {
         isHoveringOrFocusing: t
     } = e;
-    return (0, r.jsx)(u, {
-        style: i()(c.AI, t && c.mW),
-        icon: (0, r.jsx)(a.rOg, {
+    return (0, n.jsx)(c, {
+        style: l()(o.AI, t && o.mW),
+        icon: (0, n.jsx)(s.rOg, {
             size: "custom",
-            color: o.A.colors.WHITE,
+            color: a.A.colors.WHITE,
             width: 38,
             height: 38,
-            className: i()(c.x6, c.AI),
-            "aria-label": s.intl.string(s.t.L5Pt9L)
+            className: l()(o.x6, o.AI),
+            "aria-label": u.intl.string(u.t.L5Pt9L)
         })
     })
 }
@@ -44,12 +45,28 @@ function f(e) {
     let {
         count: t
     } = e;
-    return (0, r.jsx)(u, {
-        style: c.RF,
-        icon: (0, r.jsxs)(a.EYj, {
+    return (0, n.jsx)(c, {
+        style: o.RF,
+        icon: (0, n.jsxs)(s.EYj, {
             variant: "text-sm/medium",
             color: "always-white",
             children: ["+", t + 1]
+        })
+    })
+}
+
+function h(e) {
+    let {
+        count: t
+    } = e;
+    return (0, n.jsx)(c, {
+        style: o.RF,
+        icon: (0, n.jsx)(s.EYj, {
+            variant: "text-sm/medium",
+            color: "always-white",
+            children: u.intl.format(u.t.F6iMs4, {
+                count: t
+            })
         })
     })
 }

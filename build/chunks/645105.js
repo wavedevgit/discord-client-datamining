@@ -1,7 +1,7 @@
 /** chunk id: 645105, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => C
+    A: () => T
 }), n(321073), n(896048);
 var r = n(627968),
     i = n(64700),
@@ -186,8 +186,8 @@ function I(e) {
     if (null == c) return null;
     let {
         headerText: I,
-        headerSubtext: T,
-        descriptionText: C,
+        headerSubtext: C,
+        descriptionText: T,
         icon: P
     } = c, w = !(0, u.wC)(t);
     return (0, r.jsxs)(r.Fragment, {
@@ -210,12 +210,12 @@ function I(e) {
                 }), (0, r.jsx)(a.Text, {
                     className: _.bL,
                     variant: "text-sm/normal",
-                    children: T
+                    children: C
                 })]
             }), w && (0, r.jsx)(a.Text, {
                 className: _.mT,
                 variant: "text-sm/normal",
-                children: C
+                children: T
             }), (0, r.jsx)(y, {
                 rule: t,
                 triggerType: t.triggerType
@@ -245,7 +245,7 @@ function I(e) {
     })
 }
 
-function T(e) {
+function C(e) {
     let {
         triggerType: t,
         onSetupRule: n
@@ -293,7 +293,7 @@ function T(e) {
     })
 }
 
-function C(e) {
+function T(e) {
     let {
         rule: t,
         triggerType: i,
@@ -311,7 +311,7 @@ function C(e) {
                 rule: t
             }, n))
         }))
-    }, m = (0, r.jsx)(T, {
+    }, m = (0, r.jsx)(C, {
         triggerType: i,
         onSetupRule: d
     });

@@ -1,7 +1,7 @@
 /** chunk id: 614164, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => T
+    A: () => C
 }), n(896048), n(321073), n(864466), n(443073);
 var r = n(627968),
     i = n(64700),
@@ -80,7 +80,7 @@ function I(e) {
     })
 }
 
-function T(e) {
+function C(e) {
     let {
         guild: t,
         role: n,
@@ -88,8 +88,8 @@ function T(e) {
         setSelectedSection: a,
         integrations: o
     } = e, {
-        headerHeight: T,
-        headerRef: C
+        headerHeight: C,
+        headerRef: T
     } = (0, b.A)(0), {
         scrolledToTop: P,
         handleScroll: w
@@ -239,7 +239,7 @@ function T(e) {
     return (0, r.jsx)(d.GtU, {
         className: A.XG,
         style: {
-            scrollPaddingTop: T
+            scrollPaddingTop: C
         },
         onScroll: w,
         children: (0, r.jsxs)("div", {
@@ -248,7 +248,7 @@ function T(e) {
                 className: s()(E.wx, E.ln, {
                     [E.l6]: !P
                 }),
-                ref: C,
+                ref: T,
                 children: (0, r.jsx)(j.A, {
                     guild: t,
                     role: n,

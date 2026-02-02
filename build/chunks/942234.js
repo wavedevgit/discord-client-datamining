@@ -51,33 +51,32 @@ class p extends r.PureComponent {
             permissions: a,
             locked: c,
             permissionRender: u,
-            hasBypassSlowmodePermission: p,
-            guildId: m
-        } = this.props, g = null == u ? void 0 : u(l), b = !!(c || g), f = "string" == typeof g && "" !== g ? s.KTN : void 0, h = null == a ? (0, i.jsx)(d.A, {
+            guildId: p
+        } = this.props, m = null == u ? void 0 : u(l), g = !!(c || m), b = "string" == typeof m && "" !== m ? s.KTN : void 0, f = null == a ? (0, i.jsx)(d.A, {
             label: n,
             description: (0, o.Nk)(r),
-            icon: f,
-            disabled: b,
+            icon: b,
+            disabled: g,
             value: this.getOverwriteValue(l),
             onChange: e => this.handleChange(l, e)
         }, String(l)) : (0, i.jsx)(s.dOG, {
             label: n,
             description: (0, o.Nk)(r),
-            icon: f,
-            disabled: b,
+            icon: b,
+            disabled: g,
             checked: this.getPermissionValue(l, a),
             onChange: e => this.handleChange(l, e)
-        }, String(l)), x = (0, o.x3)(l, p, m);
+        }, String(l)), h = (0, o.x3)(l, p);
         return (0, i.jsxs)(i.Fragment, {
             children: [t > 0 && (0, i.jsx)(s.cGx, {}), (0, i.jsxs)(s.BJc, {
                 gap: 8,
-                children: [h, null != x && (0, i.jsx)(s.po8, {
+                children: [f, null != h && (0, i.jsx)(s.po8, {
                     messageType: s.YCn.WARNING,
-                    children: x
-                }), "string" == typeof g && "" !== g && (0, i.jsx)(s.Text, {
+                    children: h
+                }), "string" == typeof m && "" !== m && (0, i.jsx)(s.Text, {
                     variant: "text-xs/medium",
                     color: "text-feedback-critical",
-                    children: g
+                    children: m
                 })]
             })]
         })

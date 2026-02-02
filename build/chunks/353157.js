@@ -1,69 +1,69 @@
-/** chunk id: 353157, original params: e,t,n (module,exports,require) **/
-n.d(t, {
+/** chunk id: 353157, original params: e,t,r (module,exports,require) **/
+r.d(t, {
     A: () => d
 });
-var r = n(627968);
-n(64700);
-var l = n(575593),
-    i = n(397927),
-    s = n(929283),
-    a = n(550111),
-    o = n(331402),
-    c = n(242640),
-    u = n(752276);
+var n = r(627968);
+r(64700);
+var i = r(575593),
+    l = r(397927),
+    s = r(929283),
+    a = r(550111),
+    u = r(331402),
+    o = r(242640),
+    c = r(752276);
 
 function d(e) {
     let {
         item: t,
-        profileOwner: n,
+        profileOwner: r,
         isHighlighted: d,
-        cardSize: p = c.Y.MEDIUM
+        cardSize: f = o.Y.MEDIUM
     } = e, h = t.collectiblesItem;
     switch (h.type) {
-        case l.R.PROFILE_EFFECT:
-            return (0, r.jsx)("div", {
-                className: u.xC,
-                children: (0, r.jsx)(o.A, {
+        case i.R.PROFILE_EFFECT:
+            return (0, n.jsx)("div", {
+                className: c.xC,
+                children: (0, n.jsx)(u.A, {
                     skuId: h.skuId,
                     isHighlighted: d,
                     removeSetHeight: !0
                 })
             });
-        case l.R.AVATAR_DECORATION:
-            return (0, r.jsx)("div", {
-                className: u._P,
-                children: (0, r.jsx)(s.i, {
+        case i.R.AVATAR_DECORATION:
+            return (0, n.jsx)("div", {
+                className: c._P,
+                children: (0, n.jsx)(s.i, {
                     item: h,
-                    user: n,
+                    user: r,
                     isHighlighted: d,
-                    avatarSize: i._3J.SIZE_80
+                    avatarSize: l._3J.SIZE_80
                 })
             });
-        case l.R.NAMEPLATE:
-            return (0, r.jsxs)("div", {
-                className: u.M4,
-                children: [(0, r.jsx)("div", {
-                    className: u.Qt,
-                    children: (0, r.jsx)(a.A, {
-                        user: n,
+        case i.R.NAMEPLATE:
+            return (0, n.jsxs)("div", {
+                className: c.M4,
+                children: [(0, n.jsx)("div", {
+                    className: c.Qt,
+                    children: (0, n.jsx)(a.A, {
+                        user: r,
                         nameplate: h,
                         isHighlighted: d,
                         showPlaceholderUser: !0,
                         showStatus: !0,
                         nameplatePreviewSize: "default",
-                        width: p === c.Y.SMALL ? 136 : 200
+                        width: f === o.Y.SMALL ? 136 : 200
                     })
-                }), (0, r.jsx)("div", {
-                    className: u.BM,
+                }), (0, n.jsx)("div", {
+                    className: c.BM,
                     "aria-hidden": !0,
-                    children: (0, r.jsx)(a.A, {
-                        user: n,
+                    children: (0, n.jsx)(a.A, {
+                        user: r,
                         nameplate: h,
                         isHighlighted: d,
                         showPlaceholderUser: !0,
                         showStatus: !0,
                         nameplatePreviewSize: "default",
-                        width: p === c.Y.SMALL ? 136 : 200
+                        width: f === o.Y.SMALL ? 136 : 200
                     })
                 })]
             });

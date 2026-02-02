@@ -1,49 +1,53 @@
 /** chunk id: 33324, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => x
+    A: () => _
 }), n(321073);
 var r = n(417597),
     l = n(41200),
-    i = n(496767),
-    s = n(134413),
-    a = n(701785),
-    o = n(101611),
-    c = n(473529),
-    u = n(978165),
-    d = n(960253),
-    p = n(18905),
-    h = n(395504),
-    g = n(488803),
-    f = n(385160),
-    m = n(363487),
-    b = n(871123),
-    A = n(916023),
-    y = n(590877),
-    O = n(281405),
-    j = n(652215);
+    i = n(903223),
+    s = n(496767),
+    a = n(134413),
+    o = n(701785),
+    c = n(101611),
+    u = n(473529),
+    d = n(978165),
+    p = n(960253),
+    h = n(18905),
+    g = n(395504),
+    f = n(488803),
+    m = n(385160),
+    b = n(363487),
+    A = n(871123),
+    y = n(916023),
+    O = n(590877),
+    j = n(281405),
+    x = n(652215);
 
-function x(e) {
-    let t = (0, p.A)(e.id),
-        n = (0, i.W)(e.id),
-        x = (0, d.vz)(e.id),
-        _ = (0, l.r)(e),
-        v = (0, b.jz)(e),
-        E = (0, A.kt)({
+function _(e) {
+    let t = (0, h.A)(e.id),
+        n = (0, s.W)(e.id),
+        _ = (0, p.vz)(e.id),
+        v = (0, l.r)(e),
+        E = (0, A.jz)(e),
+        C = (0, y.kt)({
             location: "guild-action-rows"
         }),
-        C = (0, c.d)(e.id),
-        S = (0, r.bG)([a.h], () => a.h.getNewMemberActions(e.id), [e.id]),
-        I = (0, u.A)(e.id),
-        N = (0, o.jY)(e.id),
-        T = (0, s.fw)(e.id),
-        P = [],
-        w = e.features.has(j.GuildFeatures.HUB),
-        R = e.features.has(j.GuildFeatures.COMMUNITY),
-        D = (0, y.w)(!(0, h.WW)(e.id)),
-        L = e.features.has(j.GuildFeatures.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY),
-        M = (0, m.A)(e.id);
-    (0, f.Ao)("useGuildActionRows");
-    let G = (0, g.C$)(e.id, "useGuildActionRows"),
-        k = e.features.has(j.GuildFeatures.GAME_SERVERS);
-    return w && P.push(O.n.GUILD_HUB_HEADER_OPTIONS), !N && C && I && null != S && S.length > 0 ? P.push(O.n.GUILD_NEW_MEMBER_ACTIONS_PROGRESS_BAR) : e.premiumProgressBarEnabled && P.push(O.n.GUILD_PREMIUM_PROGRESS_BAR), !w && C && P.push(O.n.GUILD_HOME), t && P.push(O.n.GUILD_SCHEDULED_EVENTS), !w && R && D && P.push(O.n.CHANNELS_AND_ROLES), x && P.push(O.n.GUILD_ROLE_SUBSCRIPTIONS), _ && P.push(O.n.GUILD_SHOP), v && E && P.push(O.n.GUILD_GAME_SHOP), (T && (R || L) || n && e.features.has(j.GuildFeatures.MEMBER_VERIFICATION_MANUAL_APPROVAL)) && P.push(O.n.GUILD_MOD_DASH_MEMBER_SAFETY), M && P.push(O.n.GUILD_BOOSTS), G && k && P.push(O.n.GAME_SERVERS), P
+        S = (0, u.d)(e.id),
+        I = (0, r.bG)([o.h], () => o.h.getNewMemberActions(e.id), [e.id]),
+        N = (0, d.A)(e.id),
+        T = (0, c.jY)(e.id),
+        P = (0, a.fw)(e.id),
+        w = [],
+        R = e.features.has(x.GuildFeatures.HUB),
+        D = e.features.has(x.GuildFeatures.COMMUNITY),
+        L = (0, O.w)(!(0, g.WW)(e.id)),
+        M = e.features.has(x.GuildFeatures.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY),
+        G = (0, b.A)(e.id);
+    (0, m.Ao)("useGuildActionRows");
+    let k = (0, f.C$)(e.id, "useGuildActionRows"),
+        U = e.features.has(x.GuildFeatures.GAME_SERVERS),
+        V = (0, i.ws)(e, {
+            location: "guild-action-rows"
+        });
+    return R && w.push(j.n.GUILD_HUB_HEADER_OPTIONS), !T && S && N && null != I && I.length > 0 ? w.push(j.n.GUILD_NEW_MEMBER_ACTIONS_PROGRESS_BAR) : V && w.push(j.n.GUILD_PREMIUM_PROGRESS_BAR), !R && S && w.push(j.n.GUILD_HOME), t && w.push(j.n.GUILD_SCHEDULED_EVENTS), !R && D && L && w.push(j.n.CHANNELS_AND_ROLES), _ && w.push(j.n.GUILD_ROLE_SUBSCRIPTIONS), v && w.push(j.n.GUILD_SHOP), E && C && w.push(j.n.GUILD_GAME_SHOP), (P && (D || M) || n && e.features.has(x.GuildFeatures.MEMBER_VERIFICATION_MANUAL_APPROVAL)) && w.push(j.n.GUILD_MOD_DASH_MEMBER_SAFETY), G && w.push(j.n.GUILD_BOOSTS), k && U && w.push(j.n.GAME_SERVERS), w
 }

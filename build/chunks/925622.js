@@ -31,8 +31,8 @@ var l = n(311907),
     N = n(652215),
     S = n(985018),
     I = n(944620),
-    T = n(597306);
-let C = "dismissedCommunityFeaturesUpsell",
+    C = n(597306);
+let T = "dismissedCommunityFeaturesUpsell",
     P = () => {
         let e, {
                 guild: t,
@@ -68,7 +68,7 @@ let C = "dismissedCommunityFeaturesUpsell",
             discoveryEnabled: t,
             onboardingEnabled: n,
             guild: o
-        } = e, [c, d] = i.useState(!0 === a.w.get(C)), p = (0, l.bG)([b.A], () => {
+        } = e, [c, d] = i.useState(!0 === a.w.get(T)), p = (0, l.bG)([b.A], () => {
             var e;
             return null != (e = b.A.getMemberCount(o.id)) ? e : 0
         }), [h, j] = i.useState(!1);
@@ -98,7 +98,7 @@ let C = "dismissedCommunityFeaturesUpsell",
             children: [(0, r.jsxs)("div", {
                 className: I.xw,
                 children: [(0, r.jsx)("img", {
-                    src: T,
+                    src: C,
                     alt: "",
                     width: 60,
                     className: I.Tn
@@ -118,7 +118,7 @@ let C = "dismissedCommunityFeaturesUpsell",
                 size: u.$n.Sizes.NONE,
                 className: I.kz,
                 onClick: () => {
-                    a.w.set(C, !0), d(!0)
+                    a.w.set(T, !0), d(!0)
                 },
                 children: (0, r.jsx)(g.PGe, {
                     size: "md",
@@ -184,7 +184,7 @@ let C = "dismissedCommunityFeaturesUpsell",
             })),
             m = (0, l.bG)([h.Ay], () => null != s ? h.Ay.getChannels(s.id) : null),
             f = i.useMemo(E.fr, []),
-            b = !0 !== a.w.get(C);
+            b = !0 !== a.w.get(T);
         if (null == s) return null;
         let x = [];
         null != m && m[h.I6].forEach(e => {

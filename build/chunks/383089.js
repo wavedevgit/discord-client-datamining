@@ -1,6 +1,6 @@
 /** chunk id: 383089, original params: t,e,i (module,exports,require) **/
 i.d(e, {
-    m: () => u
+    m: () => d
 });
 var n = i(627968);
 i(64700);
@@ -11,24 +11,24 @@ var a = i(158954),
     o = i(985018),
     c = i(23337);
 
-function u(t) {
+function d(t) {
     let {
         sku: e,
         application: i,
         primaryCTAButtonProps: l,
-        transitionState: u,
+        transitionState: d,
         onClose: _,
         hasAlreadyLinked: x,
         canStartAuthorization: m,
-        bodyText: p,
-        title: f
+        bodyText: f,
+        title: p
     } = t;
     return (0, n.jsxs)(a.dWK, {
-        transitionState: u,
+        transitionState: d,
         onClose: _,
         children: [(0, n.jsx)(r.z, {
             sku: e,
-            title: f
+            title: p
         }), (0, n.jsxs)(a.cwr, {
             children: [(0, n.jsxs)("div", {
                 className: c.S3,
@@ -36,8 +36,8 @@ function u(t) {
                     variant: "text-md/normal",
                     color: "text-subtle",
                     className: c.jJ,
-                    children: p
-                }), (0, n.jsx)(d, {
+                    children: f
+                }), (0, n.jsx)(u, {
                     isConnected: x,
                     application: i
                 })]
@@ -63,7 +63,7 @@ function u(t) {
     })
 }
 
-function d(t) {
+function u(t) {
     let {
         isConnected: e,
         application: i

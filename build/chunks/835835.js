@@ -7,9 +7,9 @@ n.d(t, {
 var r = n(627968),
     l = n(64700),
     a = n(503698),
-    s = n.n(a),
-    i = n(735438),
-    o = n.n(i),
+    i = n.n(a),
+    s = n(735438),
+    o = n.n(s),
     c = n(837381),
     u = n(311907),
     p = n(397927),
@@ -50,7 +50,7 @@ let T = e => {
             className: a
         } = e;
         return (0, r.jsxs)("div", {
-            className: s()(a, L.wx),
+            className: i()(a, L.wx),
             children: [(0, r.jsxs)("div", {
                 className: L.gn,
                 children: [null != n ? (0, r.jsx)(n, {
@@ -152,7 +152,7 @@ function G(e) {
         analyticsName: t,
         items: n,
         hasMore: a,
-        loading: i,
+        loading: s,
         loadMore: d,
         renderHeader: h,
         renderEmptyState: O,
@@ -187,20 +187,20 @@ function G(e) {
     let D = l.useCallback(() => {
             var e;
             let t = null == (e = x.current) ? void 0 : e.getScrollerState();
-            null != t && t.scrollHeight - t.scrollTop - t.offsetHeight < 250 && a && !i && (null == d || d())
-        }, [a, d, i]),
+            null != t && t.scrollHeight - t.scrollTop - t.offsetHeight < 250 && a && !s && (null == d || d())
+        }, [a, d, s]),
         W = [],
         F = !0;
-    null == n || i && 0 === n.length ? W = [(0, r.jsx)("div", {
-        className: s()(L.zC, L.k$),
+    null == n || s && 0 === n.length ? W = [(0, r.jsx)("div", {
+        className: i()(L.zC, L.k$),
         children: (0, r.jsx)(p.y$y, {})
     }, "spinner")] : 0 === n.length ? W.push((0, r.jsx)(l.Fragment, {
         children: O()
     }, "empty-state")) : (F = !1, W = [], o().each(n, e => {
         W.push(...y(e))
     }));
-    let k = null;
-    null != n && n.length > 0 && null != d && (k = i ? (0, r.jsx)("div", {
+    let R = null;
+    null != n && n.length > 0 && null != d && (R = s ? (0, r.jsx)("div", {
         className: L.sw,
         children: (0, r.jsx)(p.y$y, {})
     }, "loading-more-after") : a ? (0, r.jsx)("div", {
@@ -216,8 +216,8 @@ function G(e) {
         className: L.lJ,
         children: O()
     }));
-    let R = null == b ? void 0 : b(),
-        K = F && null != R ? (0, r.jsx)("div", {
+    let k = null == b ? void 0 : b(),
+        K = F && null != k ? (0, r.jsx)("div", {
             className: L.qr,
             children: (0, r.jsx)(A.A, {
                 style: {
@@ -225,7 +225,7 @@ function G(e) {
                     paddingTop: 10,
                     paddingBottom: 10
                 },
-                children: R
+                children: k
             })
         }) : null,
         U = {
@@ -234,7 +234,7 @@ function G(e) {
     w && (U.maxHeight -= 40);
     let B = null != d && a;
     return (0, r.jsx)("div", {
-        className: s()(j, L.KQ),
+        className: i()(j, L.KQ),
         style: U,
         onClick: C,
         onDoubleClick: C,
@@ -242,7 +242,7 @@ function G(e) {
         children: (0, r.jsxs)(p.Fmo, {
             component: h(),
             children: [(0, r.jsxs)(p.T7Y, {
-                className: s()(L.m4, I),
+                className: i()(L.m4, I),
                 onScroll: B ? D : void 0,
                 ref: x,
                 children: [(0, r.jsx)(c.hD, {
@@ -296,7 +296,7 @@ function G(e) {
                             }), t))
                         }
                     })
-                }), k]
+                }), R]
             }), K]
         })
     })
@@ -307,8 +307,8 @@ function D(e) {
         analyticsName: t,
         onFetch: n,
         channel: a,
-        messages: s,
-        hasMore: i,
+        messages: i,
+        hasMore: s,
         loading: o,
         loadMore: c,
         onJump: p,
@@ -340,10 +340,10 @@ function D(e) {
     l.useEffect(() => {
         n(a)
     }, [a, n]);
-    let S = l.useMemo(() => null == s ? void 0 : s.map(e => ({
+    let S = l.useMemo(() => null == i ? void 0 : i.map(e => ({
         message: e,
         channel: a
-    })), [s, a]);
+    })), [i, a]);
     return (0, r.jsx)(G, {
         className: E,
         scrollerClassName: m,
@@ -352,7 +352,7 @@ function D(e) {
         analyticsName: t,
         renderEmptyState: b,
         renderHeader: A,
-        hasMore: i,
+        hasMore: s,
         loadMore: c,
         getProTip: _,
         renderItem: function(e) {

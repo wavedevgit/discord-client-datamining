@@ -1,40 +1,40 @@
 /** chunk id: 935101, original params: e,t,_ (module,exports,require) **/
 _.d(t, {
-    A: () => f
+    A: () => b
 }), _(896048);
-var o = _(64700),
+var n = _(64700),
     a = _(311907),
-    n = _(205693),
+    o = _(205693),
     c = _(451988),
     r = _(430452),
     i = _(383501),
-    s = _(485296),
-    d = _(927813),
-    l = _(340913),
+    l = _(485296),
+    s = _(927813),
+    d = _(340913),
     u = _(731854);
-let p = 3 * d.A.Millis.SECOND;
+let f = 3 * s.A.Millis.SECOND;
 
-function f() {
+function b() {
     let {
         showPTTSpeakingIndicator: e
-    } = l.A.useConfig({
+    } = d.A.useConfig({
         location: "useSpeakingWhilePTT"
-    }), [t, _] = o.useState(!1), d = (0, a.bG)([r.A], () => r.A.getMode() === u.TB.PUSH_TO_TALK), f = (0, a.bG)([i.A], () => i.A.getRTCConnectionId()), b = o.useRef(new c.Ep);
-    return o.useEffect(() => {
+    }), [t, _] = n.useState(!1), s = (0, a.bG)([r.A], () => r.A.getMode() === u.TB.PUSH_TO_TALK), b = (0, a.bG)([i.A], () => i.A.getRTCConnectionId()), p = n.useRef(new c.Ep);
+    return n.useEffect(() => {
         _(!1)
-    }, [f]), o.useEffect(() => {
+    }, [b]), n.useEffect(() => {
         let t = 0,
-            o = b.current;
+            n = p.current;
 
         function a(e, a) {
-            let n = (a & u.ME.VOICE) === u.ME.VOICE,
-                c = s.A.isCurrentUserPTTActive();
-            n && !c ? ++t >= 5 && (_(!0), o.start(p, () => {
+            let o = (a & u.ME.VOICE) === u.ME.VOICE,
+                c = l.A.isCurrentUserPTTActive();
+            o && !c ? ++t >= 5 && (_(!0), n.start(f, () => {
                 _(!1)
             })) : t = 0
         }
-        return e && d && null != f && r.A.getMediaEngine().on(n.bg.VoiceActivity, a), () => {
-            r.A.getMediaEngine().removeListener(n.bg.VoiceActivity, a), o.stop()
+        return e && s && null != b && r.A.getMediaEngine().on(o.bg.VoiceActivity, a), () => {
+            r.A.getMediaEngine().removeListener(o.bg.VoiceActivity, a), n.stop()
         }
-    }, [e, d, f]), t
+    }, [e, s, b]), t
 }

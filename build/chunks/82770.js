@@ -7,13 +7,13 @@ t(64700);
 var r = t(397927),
     l = t(837057),
     a = t(310419),
-    o = t(488995),
-    c = t(985018);
+    c = t(488995),
+    o = t(985018);
 
 function d(e) {
     return (0, i.jsx)(r.Drp, {
         id: "application-directory",
-        label: c.intl.string(c.t.AKcFUj),
+        label: o.intl.string(o.t.AKcFUj),
         icon: r.k9F,
         leadingAccessory: {
             type: "icon",
@@ -21,7 +21,7 @@ function d(e) {
         },
         action: () => {
             (0, l.transitionToGlobalDiscovery)({
-                tab: o.GlobalDiscoveryTab.APPS,
+                tab: c.GlobalDiscoveryTab.APPS,
                 newSessionState: {
                     entrypoint: {
                         name: a.sW.GUILD_HEADER_POPOUT

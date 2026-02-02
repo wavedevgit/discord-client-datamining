@@ -65,8 +65,8 @@ function N(e) {
     } = e, N = (0, f.cY)(h), {
         editStateIds: S,
         addNewEditStateId: I,
-        addNewEditStateFromTemplate: T,
-        removeEditStateId: C
+        addNewEditStateFromTemplate: C,
+        removeEditStateId: T
     } = x.d0(h, t, {
         includeSoftDeleted: !0
     }), [P, w] = i.useState({}), R = i.useMemo(() => {
@@ -85,14 +85,14 @@ function N(e) {
             } = await n.e("263").then(n.bind(n, 486010));
             return n => (0, r.jsx)(e, A(y({}, n), {
                 guildId: t,
-                addNewEditStateFromTemplate: T,
+                addNewEditStateFromTemplate: C,
                 addNewEditStateFromScratch: I,
                 priceTiers: l
             }))
         }, {
             modalKey: E
         }) : I()
-    }, [t, T, I, l, G, D]), k = x.Zw(R), M = i.useCallback(() => R.forEach(x.Ts), [R]), U = (0, b.gN)(), B = (0, o.bG)([g.A], () => g.A.getProps().subsection);
+    }, [t, C, I, l, G, D]), k = x.Zw(R), M = i.useCallback(() => R.forEach(x.Ts), [R]), U = (0, b.gN)(), B = (0, o.bG)([g.A], () => g.A.getProps().subsection);
     return i.useEffect(() => (B === _.nd0.ROLE_SUBSCRIPTION_TIER_TEMPLATE && L(), () => {
         (0, u.OoC)(E)
     }), [B, L]), (0, r.jsxs)(r.Fragment, {
@@ -104,14 +104,14 @@ function N(e) {
                 allSubscriptionListings: N,
                 priceTiers: l,
                 groupListingId: h,
-                onDeleteEditState: () => C(e),
+                onDeleteEditState: () => T(e),
                 onBeforeDispatchNewListing: t => {
                     var n;
                     return n = t.id, void w(t => A(y({}, t), {
                         [n]: e
                     }))
                 },
-                onAfterDispatchNewListing: () => C(e)
+                onAfterDispatchNewListing: () => T(e)
             }, e)), (0, r.jsxs)(u.DUT, {
                 onClick: U ? void 0 : L,
                 className: s()(v.l2, {

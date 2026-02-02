@@ -29,7 +29,7 @@ var r = n(627968),
     N = n(568065),
     S = n(985018),
     I = n(65146);
-let T = e => {
+let C = e => {
         let {
             children: t,
             currentGuildTier: n,
@@ -50,7 +50,7 @@ let T = e => {
             })]
         })
     },
-    C = () => (0, r.jsx)("div", {
+    T = () => (0, r.jsx)("div", {
         className: I.Yf,
         children: (0, r.jsx)("img", {
             className: I.d4,
@@ -122,7 +122,7 @@ let T = e => {
         let G = l.stickers,
             L = [{
                 tier: E.TVA.NONE,
-                title: (0, r.jsx)(T, {
+                title: (0, r.jsx)(C, {
                     guildStickers: G,
                     currentGuildTier: w,
                     tier: E.TVA.NONE,
@@ -130,7 +130,7 @@ let T = e => {
                 })
             }, {
                 tier: E.TVA.TIER_1,
-                title: (0, r.jsx)(T, {
+                title: (0, r.jsx)(C, {
                     guildStickers: G,
                     currentGuildTier: w,
                     tier: E.TVA.TIER_1,
@@ -138,7 +138,7 @@ let T = e => {
                 })
             }, {
                 tier: E.TVA.TIER_2,
-                title: (0, r.jsx)(T, {
+                title: (0, r.jsx)(C, {
                     guildStickers: G,
                     currentGuildTier: w,
                     tier: E.TVA.TIER_2,
@@ -146,7 +146,7 @@ let T = e => {
                 })
             }, {
                 tier: E.TVA.TIER_3,
-                title: (0, r.jsx)(T, {
+                title: (0, r.jsx)(C, {
                     guildStickers: G,
                     currentGuildTier: w,
                     tier: E.TVA.TIER_3,
@@ -162,13 +162,13 @@ let T = e => {
                         onSetRef: x,
                         tier: O,
                         tiers: y,
-                        tierIndex: T
+                        tierIndex: C
                     } = e,
                     {
                         canCreateExpressions: L,
                         canManageGuildExpression: k
                     } = (0, f.ie)(t),
-                    M = y[T - 1],
+                    M = y[C - 1],
                     U = null != M ? (0, _.aG)(M.tier) : 0,
                     B = (0, _.aG)(O.tier, t),
                     F = (0, _.Cp)(O.tier),
@@ -183,7 +183,7 @@ let T = e => {
                     Z = F - H.length,
                     Q = W ? Math.min(5 - (H.length + 0) % 5, Z) : 0,
                     q = [];
-                for (let e = 0; e < Q; e++) q.push((0, r.jsx)(C, {}, "placeholder-".concat(e)));
+                for (let e = 0; e < Q; e++) q.push((0, r.jsx)(T, {}, "placeholder-".concat(e)));
                 let $ = t.premiumTier < O.tier && j >= E.M2T[O.tier],
                     ee = S.intl.string(S.t.dtFw5c),
                     et = () => {
@@ -206,8 +206,8 @@ let T = e => {
                     let e = N.a8[O.tier];
                     null != e && (0, h.Qh)(t.id, e)
                 }, ee = S.intl.string(S.t.g7lkrU), t.premiumTier + 1 !== O.tier && (en = !0, l = S.intl.string(S.t.mTMkY2))) : (en = !0, l = S.intl.string(S.t.hwPEJR)));
-                let er = z === T + 1 && z > w,
-                    ei = W || er || T > w;
+                let er = z === C + 1 && z > w,
+                    ei = W || er || C > w;
                 return er ? g = (0, r.jsx)(m.A, {
                     guild: t,
                     size: o.$n.Sizes.SMALL,
@@ -227,7 +227,7 @@ let T = e => {
                     tier: O,
                     onSetRef: x,
                     isAnimatedTo: b,
-                    hasBottomMargin: T !== y.length - 1,
+                    hasBottomMargin: C !== y.length - 1,
                     withCardBody: !Y,
                     headerButton: g,
                     showHeaderLockStatus: ei,

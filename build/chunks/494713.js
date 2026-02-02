@@ -2,18 +2,15 @@
 t.d(n, {
     A: () => i
 });
-let i = (0, t(600975).C)({
+let i = (0, t(945810).mj)({
+    name: "2026-01-friends-in-server",
     kind: "user",
-    id: "2024-09_friends_in_server",
-    label: "Friends in Server",
     defaultConfig: {
         guildFriendsEnabled: !1
     },
-    treatments: [{
-        id: 1,
-        label: "Enabled",
-        config: {
+    variations: {
+        1: {
             guildFriendsEnabled: !0
         }
-    }]
+    }
 })
