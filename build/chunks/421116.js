@@ -27,8 +27,8 @@ var r = n(627968),
     T = n(501007),
     I = n(26010),
     N = n(54009),
-    y = n(252711),
-    j = n(584767),
+    j = n(252711),
+    y = n(584767),
     v = n(191430),
     P = n(475805),
     R = n(564230),
@@ -183,9 +183,9 @@ let K = () => {
                 }), (0, r.jsx)("div", {
                     className: eT.planComparisonTableContainer,
                     ref: eS.ref,
-                    children: eg ? (0, r.jsx)(D.A, {}) : (0, r.jsx)(j.A, {})
+                    children: eg ? (0, r.jsx)(D.A, {}) : (0, r.jsx)(y.A, {})
                 })]
-            }), !eg && (0, r.jsx)(y.A, {
+            }), !eg && (0, r.jsx)(j.A, {
                 isVisible: eA && es,
                 subscriptionTier: eu,
                 isApplicationHome: !0,

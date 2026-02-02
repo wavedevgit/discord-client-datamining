@@ -23,8 +23,8 @@ var r = n(627968),
     v = n(590180),
     C = n(161918),
     A = n(790297),
-    S = n(338769),
-    x = n(841702),
+    x = n(338769),
+    S = n(841702),
     O = n(716633),
     y = n(621653),
     j = n(983545),
@@ -75,7 +75,7 @@ let U = e => {
             {
                 categories: K,
                 refreshCategories: W
-            } = (0, x.Ay)({
+            } = (0, S.Ay)({
                 logPerf: !0
             }, {
                 sessionId: n,
@@ -116,7 +116,7 @@ let U = e => {
         }, []);
         let {
             analyticsLocations: ea
-        } = (0, A.lC)(ee), ei = (0, S.V)(ee, "collectibles_shop");
+        } = (0, A.lC)(ee), ei = (0, x.V)(ee, "collectibles_shop");
         return (0, r.jsx)(f.f5, {
             value: ea,
             children: (0, r.jsx)(E.R9, {
@@ -139,7 +139,7 @@ let U = e => {
                             children: [(0, r.jsx)(k.G, {
                                 handleTransition: en,
                                 selectedTab: ee
-                            }), null != ei && ei.type === S.Z.COUNTDOWN && (0, r.jsx)(R.k, {
+                            }), null != ei && ei.type === x.Z.COUNTDOWN && (0, r.jsx)(R.k, {
                                 message: ei.message,
                                 onClick: () => en(w.G2.HOME),
                                 variant: "pink",

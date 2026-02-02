@@ -5,13 +5,13 @@ n.d(t, {
 var r = n(627968),
     o = n(64700),
     a = n(340287),
-    i = n(397927),
-    l = n(830215),
+    l = n(397927),
+    i = n(830215),
     c = n(964486),
     s = n(883662),
     u = n(628965),
-    _ = n(203982),
-    d = n(115063),
+    d = n(203982),
+    _ = n(115063),
     b = n(152056),
     p = n(780964),
     f = n(162396),
@@ -27,7 +27,7 @@ function x(e) {
         destinationPanel: t,
         originPanel: n
     } = e;
-    (0, d.iY)({
+    (0, _.iY)({
         destinationPane: t,
         originPane: n,
         subsection: u.A.getSubsection(),
@@ -55,13 +55,13 @@ function v(e) {
             }(e, t), Object.getOwnPropertySymbols)
             for (o = 0, n = Object.getOwnPropertySymbols(e); o < n.length; o++) r = n[o], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
         return a
-    }(e, ["target"]), i = b.A.useField("query"), d = o.useRef(null);
+    }(e, ["target"]), l = b.A.useField("query"), _ = o.useRef(null);
     (0, c.Ay)(() => {
         let e = u.A.getSection();
         null != e && (x({
             destinationPanel: e,
             originPanel: null
-        }), d.current = e)
+        }), _.current = e)
     });
     let h = o.useCallback(e => {
             b.A.setState({
@@ -74,11 +74,11 @@ function v(e) {
             (0, a.flushSync)(() => {
                 v(!0), (0, y.default)()
             }), setImmediate(() => {
-                l.A.logout("settings")
+                i.A.logout("settings")
             })
         };
-        return _._.subscribe(O.jej.SETTINGS_TRIGGER_LOGOUT, e), () => {
-            _._.unsubscribe(O.jej.SETTINGS_TRIGGER_LOGOUT, e)
+        return d._.subscribe(O.jej.SETTINGS_TRIGGER_LOGOUT, e), () => {
+            d._.unsubscribe(O.jej.SETTINGS_TRIGGER_LOGOUT, e)
         }
     }, []), j) ? null : (0, r.jsx)(s.A, function(e) {
         for (var t = 1; t < arguments.length; t++) {
@@ -105,12 +105,12 @@ function v(e) {
             let t = (0, m.getUserSettingsSectionsByWebUserSettings)().get(e);
             null != t && (x({
                 destinationPanel: t,
-                originPanel: d.current
-            }), d.current = t)
+                originPanel: _.current
+            }), _.current = t)
         },
         target: t,
         defaultTarget: p.X.ACCOUNT_PANEL,
-        searchQuery: i,
+        searchQuery: l,
         onSearchChange: h
     }, n))
 }
@@ -118,11 +118,11 @@ function v(e) {
 function S() {
     return (0, r.jsxs)("div", {
         className: j.t,
-        children: [(0, r.jsx)(i.Text, {
+        children: [(0, r.jsx)(l.Text, {
             variant: "text-sm/semibold",
             color: "text-strong",
             children: h.intl.string(h.t.zihbmv)
-        }), (0, r.jsx)(i.Text, {
+        }), (0, r.jsx)(l.Text, {
             variant: "text-sm/normal",
             color: "text-subtle",
             children: h.intl.string(h.t.XclvsB)

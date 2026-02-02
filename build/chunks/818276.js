@@ -1,6 +1,6 @@
 /** chunk id: 818276, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => b
+    A: () => v
 }), n(896048);
 var a = n(627968),
     l = n(64700),
@@ -9,60 +9,61 @@ var a = n(627968),
     s = n(353709),
     o = n(341915),
     c = n(890687),
-    d = n(568329),
-    u = n(207869),
-    m = n(158265),
-    p = n(963713),
-    h = n(277928),
-    x = n(783602),
-    g = n(272111),
-    f = n(596850);
-let b = l.forwardRef(function(e, t) {
+    d = n(398025),
+    u = n(568329),
+    m = n(207869),
+    p = n(158265),
+    h = n(963713),
+    x = n(277928),
+    g = n(783602),
+    f = n(272111),
+    b = n(596850);
+let v = l.forwardRef(function(e, t) {
     var n, r;
     let {
-        className: b,
-        overlayRef: v
+        className: v,
+        overlayRef: j
     } = e, {
-        expansionSpring: j
-    } = l.useContext(d.PW), {
-        quest: _,
-        taskDetails: y,
-        isExpanded: A,
-        isExpansionAnimationComplete: C
-    } = l.useContext(p.T), S = (null == (n = _.userStatus) ? void 0 : n.completedAt) != null, O = (0, c.I3)(_), T = l.useRef(null), E = (null == (r = _.userStatus) ? void 0 : r.enrolledAt) != null, N = null != O ? O.percentComplete : y.percentComplete, [w, I] = l.useState(!1);
+        expansionSpring: _
+    } = l.useContext(u.PW), {
+        quest: y,
+        taskDetails: A,
+        isExpanded: C,
+        isExpansionAnimationComplete: S
+    } = l.useContext(h.T), O = (null == (n = y.userStatus) ? void 0 : n.completedAt) != null, T = (0, c.I3)(y), E = l.useRef(null), N = (null == (r = y.userStatus) ? void 0 : r.enrolledAt) != null, w = null != T ? T.percentComplete : A.percentComplete, [I, k] = l.useState(!1);
     return (0, a.jsxs)(a.Fragment, {
-        children: [S && (0, a.jsx)(m.A, {
-            overlayRef: v,
-            progressBarRef: T,
-            isHovered: w
+        children: [O && (0, a.jsx)(p.A, {
+            overlayRef: j,
+            progressBarRef: E,
+            isHovered: I
         }), (0, a.jsx)(s.animated.div, {
             ref: t,
-            "aria-hidden": A && C,
-            className: i()(b, f.hR, {
-                [f.Ag]: A,
-                [f.s]: E
+            "aria-hidden": C && S,
+            className: i()(v, b.hR, {
+                [b.Ag]: C,
+                [b.s]: N
             }),
             style: {
-                opacity: j.to({
+                opacity: (0, d.a)(_.to({
                     range: [0, 1],
                     output: [1, 0]
-                }),
-                backgroundImage: S ? "linear-gradient(90deg, ".concat(g.V, ", ").concat(g.u, ")") : void 0
+                })),
+                backgroundImage: O ? "linear-gradient(90deg, ".concat(f.V, ", ").concat(f.u, ")") : void 0
             },
-            onMouseEnter: () => I(!0),
-            onMouseLeave: () => I(!1),
+            onMouseEnter: () => k(!0),
+            onMouseLeave: () => k(!1),
             children: (0, a.jsxs)("div", {
-                className: f.o8,
-                children: [S && (0, a.jsxs)(a.Fragment, {
-                    children: [(0, a.jsx)(x.A, {}), (0, a.jsx)("div", {
-                        className: f.yF
+                className: b.o8,
+                children: [O && (0, a.jsxs)(a.Fragment, {
+                    children: [(0, a.jsx)(g.A, {}), (0, a.jsx)("div", {
+                        className: b.yF
                     })]
-                }), E ? (0, a.jsx)(h.A, {
+                }), N ? (0, a.jsx)(x.A, {
                     contentLocation: "collapsed",
-                    progressBarRef: T,
+                    progressBarRef: E,
                     isExpanded: !1,
-                    percentComplete: N
-                }) : null, S && (0, a.jsx)(u.f, {
+                    percentComplete: w
+                }) : null, O && (0, a.jsx)(m.f, {
                     awaitingConsoleConnections: !1,
                     hasMadeProgress: !0,
                     isProgressing: !1,

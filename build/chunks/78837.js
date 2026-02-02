@@ -36,7 +36,7 @@ function A(e) {
         N = (0, p.w)(I, [], {
             enabled: null != f
         }),
-        y = l && null != O;
+        j = l && null != O;
     return i.useLayoutEffect(() => {
         null != E.current && null == O && x(E.current.clientHeight)
     }, [O]), (0, r.jsxs)(o.EN, {
@@ -49,7 +49,7 @@ function A(e) {
                 minHeight: O
             } : void 0,
             title: t,
-            description: y ? void 0 : n,
+            description: j ? void 0 : n,
             secondaryTrailingElement: (0, r.jsx)(_.vN3, {
                 children: (0, r.jsx)(c.$, {
                     slot: "trigger",

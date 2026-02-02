@@ -1,6 +1,6 @@
 /** chunk id: 530240, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => y,
+    A: () => j,
     N: () => N
 }), n(321073), n(896048);
 var r = n(627968),
@@ -271,7 +271,7 @@ function N(e) {
     })
 }
 
-function y(e) {
+function j(e) {
     let {
         guildBoostSlots: t,
         premiumSubscription: n

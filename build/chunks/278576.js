@@ -5,8 +5,8 @@ n.d(t, {
 }), n(747238), n(896048), n(680155), n(323874), n(14289), n(35956);
 var r = n(64700),
     l = n(960488),
-    s = n(398590),
-    a = n(976860),
+    s = n(976860),
+    a = n(840065),
     i = n(652215);
 
 function o() {
@@ -33,9 +33,9 @@ function o() {
     }({
         onClose: r.useCallback(() => {
             if (0 === o) {
-                (0, a.aX)(), (0, s.id)(i.zgK.USER_SETTINGS);
+                (0, s.aX)(), (0, a.openUserSettings)();
                 return
-            }(0, a.EL)() ? (0, a.aX)() : (0, a.pX)(i.BVt.APP)
+            }(0, s.EL)() ? (0, s.aX)() : (0, s.pX)(i.BVt.APP)
         }, [o]),
         source: o
     }, t)

@@ -27,8 +27,8 @@ var r = n(627968),
     T = n(67480),
     I = n(147925),
     N = n(957565),
-    y = n(45938),
-    j = n(615396),
+    j = n(45938),
+    y = n(615396),
     v = n(788868),
     P = n(985018),
     R = n(539785);
@@ -70,7 +70,7 @@ class L extends i.PureComponent {
             className: R.Gj,
             children: [(0, r.jsx)(_.e2O, {
                 className: R.ph,
-                value: (0, y.Zq)(t.code),
+                value: (0, j.Zq)(t.code),
                 text: this.copyButtonText,
                 mode: n,
                 supportsCopy: N.p5,
@@ -100,7 +100,7 @@ class L extends i.PureComponent {
                 giftCode: t,
                 sku: n
             } = this.props;
-            (0, y.AK)(t, n), (0, N.C)(e, () => this.setState({
+            (0, j.AK)(t, n), (0, N.C)(e, () => this.setState({
                 copyMode: _.qCr.SUCCESS
             }), () => this.setState({
                 copyMode: _.qCr.ERROR
@@ -291,7 +291,7 @@ let M = c.Ay.connectStores([T.A, C.A, x.A, g.A, S.A, O.default], e => {
         isFetching: x.A.getUserGiftCodesFetchingForSKUAndPlan(t, n),
         loadedAt: x.A.getUserGiftCodesLoadedAtForSKUAndPlan(t, n),
         application: g.A.getApplication(i.applicationId),
-        subscriptionPlan: null != n ? (0, j.c9)(n) : null,
+        subscriptionPlan: null != n ? (0, y.c9)(n) : null,
         giftCodes: l
     }
 })(w)

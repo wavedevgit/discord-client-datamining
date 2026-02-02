@@ -1,6 +1,6 @@
 /** chunk id: 353667, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    j: () => T
+    j: () => S
 }), n(896048), n(65821);
 var r = n(627968),
     i = n(64700),
@@ -15,11 +15,10 @@ var r = n(627968),
     p = n(894858),
     m = n(641324),
     g = n(46373),
-    A = n(890690),
-    f = n(49999),
-    b = n(872175);
+    A = n(49999),
+    f = n(872175);
 
-function h(e) {
+function b(e) {
     let {
         notice: t,
         children: n
@@ -43,7 +42,7 @@ function h(e) {
             element: e
         } = t;
         return (0, r.jsx)(a.FQk, {
-            className: b.lm,
+            className: f.lm,
             children: (0, r.jsx)(e, {})
         })
     }, [t, o]);
@@ -55,21 +54,34 @@ function h(e) {
     })
 }
 
-function E(e) {
+function h(e) {
     let {
         scrollerRef: t,
         panelKey: n,
         notice: l,
         children: s
     } = e, o = i.useRef(null);
-    return (0, r.jsx)(h, {
+    return i.useEffect(() => p.A.subscribe(e => {
+        let {
+            navTransition: t
+        } = e;
+        return null == t ? void 0 : t.targetKey
+    }, e => {
+        n === e && p.A.setState({
+            navTransition: void 0,
+            disableSidebarCategoryAutoSelect: !1
+        })
+    }, {
+        equalityFn: (e, t) => e === t,
+        fireImmediately: !0
+    }), [n]), (0, r.jsx)(b, {
         notice: l,
         children: (0, r.jsx)(a.ArX, {
             "data-settings-panel-scroller": !0,
-            className: b.XG,
+            className: f.XG,
             ref: t,
             children: (0, r.jsx)("div", {
-                className: b.nd,
+                className: f.nd,
                 ref: o,
                 children: (0, r.jsx)(a.xpW, {
                     containerRef: o,
@@ -80,23 +92,23 @@ function E(e) {
     })
 }
 
-function O(e) {
+function E(e) {
     let {
         layout: t
     } = e;
     return (0, r.jsx)("div", {
-        className: b.LZ,
+        className: f.LZ,
         children: t.map((e, n) => (0, r.jsxs)(i.Fragment, {
             children: [(0, r.jsx)(m.A, {
                 node: e
             }), n !== t.length - 1 && (0, r.jsx)(g.A, {
-                className: b.yF
+                className: f.yF
             })]
         }, e.key))
     })
 }
 
-function x(e) {
+function O(e) {
     var t, n;
     let {
         panelKey: l,
@@ -119,11 +131,11 @@ function x(e) {
         })
     }, [s, l]);
     let _ = null != (n = s.find(e => e.key === c)) ? n : s[0];
-    return (0, r.jsxs)(E, {
+    return (0, r.jsxs)(h, {
         panelKey: l,
         notice: o,
         children: [(0, r.jsx)(a.VQ0, {
-            className: b.$H,
+            className: f.$H,
             selectedItem: c,
             onItemSelect: e => {
                 d(() => {
@@ -152,43 +164,42 @@ function x(e) {
             })
         }), (0, r.jsx)(a.VQ0.Panel, {
             id: c,
-            children: null != _.StronglyDiscouragedCustomComponent ? (0, r.jsx)(_.StronglyDiscouragedCustomComponent, {}) : (0, r.jsx)(O, {
+            children: null != _.StronglyDiscouragedCustomComponent ? (0, r.jsx)(_.StronglyDiscouragedCustomComponent, {}) : (0, r.jsx)(E, {
                 layout: _.layout
             })
         })]
     })
 }
 
-function C(e) {
+function x(e) {
     let {
         panelKey: t,
         notice: n,
-        layout: l
-    } = e, s = i.useRef(null);
-    return (0, A.u)(t, l, s), (0, r.jsx)(E, {
-        scrollerRef: s,
+        layout: i
+    } = e;
+    return (0, r.jsx)(h, {
         panelKey: t,
         notice: n,
-        children: (0, r.jsx)(O, {
-            layout: l
+        children: (0, r.jsx)(E, {
+            layout: i
         })
     })
 }
 
-function S(e) {
+function C(e) {
     let {
         component: t,
         panelKey: n,
         notice: i
     } = e;
-    return (0, r.jsx)(E, {
+    return (0, r.jsx)(h, {
         panelKey: n,
         notice: i,
         children: (0, r.jsx)(t, {})
     })
 }
 
-function T(e) {
+function S(e) {
     let {
         node: t
     } = e, {
@@ -202,22 +213,22 @@ function T(e) {
             } = t.parent, i = "getDismissibleContentTypes" in r ? null == (n = r.getDismissibleContentTypes) ? void 0 : n.call(r) : null;
             null != i && i.forEach(e => {
                 (0, c.Dr)(e, {
-                    dismissAction: f.i.AUTO,
+                    dismissAction: A.i.AUTO,
                     forceTrack: !0
                 })
             })
         }, [t]), s && t.hideInStreamerMode) return (0, r.jsx)(o.A, {});
-    if (null != t.StronglyDiscouragedCustomComponent) return (0, r.jsx)(S, {
+    if (null != t.StronglyDiscouragedCustomComponent) return (0, r.jsx)(C, {
         component: t.StronglyDiscouragedCustomComponent,
         panelKey: t.key,
         notice: t.notice
     });
-    if ((0, _.zY)(n)) return (0, r.jsx)(x, {
+    if ((0, _.zY)(n)) return (0, r.jsx)(O, {
         panelKey: t.key,
         notice: t.notice,
         layout: n
     });
-    if ((0, _.Iu)(n)) return (0, r.jsx)(C, {
+    if ((0, _.Iu)(n)) return (0, r.jsx)(x, {
         panelKey: t.key,
         notice: t.notice,
         layout: n

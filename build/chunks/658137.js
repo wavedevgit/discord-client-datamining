@@ -27,8 +27,8 @@ var r = n(627968),
     T = n(985018),
     I = n(413515),
     N = n(182514),
-    y = n(619947),
-    j = n(733907);
+    j = n(619947),
+    y = n(733907);
 let v = i.forwardRef((e, t) => {
     let {
         className: n,
@@ -94,12 +94,12 @@ let v = i.forwardRef((e, t) => {
                     autoPlay: !F,
                     playsInline: !0,
                     preload: F ? "none" : "auto",
-                    poster: y.A,
+                    poster: j.A,
                     loop: !0,
                     className: I.gm,
                     ref: R,
                     children: (0, r.jsx)("source", {
-                        src: V ? N.A : j.A,
+                        src: V ? N.A : y.A,
                         type: V ? S.a.MP4 : S.a.WEBM
                     })
                 })

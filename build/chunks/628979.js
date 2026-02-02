@@ -27,7 +27,7 @@ function b(e) {
     } = e, {
         searchQuery: h,
         onSetSearchQuery: E
-    } = (0, g.v)(), [v, C] = l.useState(""), A = (0, d.uM)(), S = (0, i.bG)([c.default], () => c.default.locale), x = l.useRef(null), [O, y] = l.useState(!1);
+    } = (0, g.v)(), [v, C] = l.useState(""), A = (0, d.uM)(), x = (0, i.bG)([c.default], () => c.default.locale), S = l.useRef(null), [O, y] = l.useState(!1);
     l.useEffect(() => {
         let e = setTimeout(() => {
             E(v)
@@ -55,7 +55,7 @@ function b(e) {
         L = l.useCallback(() => {
             n !== f.G2.CATALOG && t(f.G2.CATALOG), T(f.uY.SEARCH_ICON), y(!0), setTimeout(() => {
                 var e;
-                return null == (e = x.current) ? void 0 : e.focus()
+                return null == (e = S.current) ? void 0 : e.focus()
             })
         }, [n, t, T]),
         I = l.useCallback(() => {
@@ -78,13 +78,13 @@ function b(e) {
         }),
         B = (0, r.jsx)(o.IWV, {
             size: "sm",
-            ref: x,
+            ref: S,
             onKeyDown: j,
             query: v,
             onChange: C,
             onClear: k,
             onBlur: N,
-            placeholder: "en-US" === S ? p.intl.string(p.t.arz34K) : p.intl.string(p.t["hIt/Nm"])
+            placeholder: "en-US" === x ? p.intl.string(p.t.arz34K) : p.intl.string(p.t["hIt/Nm"])
         }),
         w = {
             "--custom-search-bar-width": "".concat(f.rr, "px"),

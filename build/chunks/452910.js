@@ -32,7 +32,7 @@ let f = e => {
     } = e, S = (0, d.V)(), T = null == S ? void 0 : S.subscription_trial, I = (0, c.O)(), N = (0, a.FY)({
         intervalType: null == T ? void 0 : T.interval,
         intervalCount: null == T ? void 0 : T.interval_count
-    }), y = (0, o.G)({
+    }), j = (0, o.G)({
         defaultResponse: g.intl.string(g.t["8x0jKT"]),
         onNonTier2Subscriber: g.intl.string(g.t.IJI7yk),
         onTier2TrialOffer: N,
@@ -40,12 +40,12 @@ let f = e => {
         onDiscountOffer: g.intl.formatToPlainString(g.t.bkQ4bH, {
             percent: null == I ? void 0 : I.discount.amount
         })
-    }), j = (0, _.Q)(C);
+    }), y = (0, _.Q)(C);
     return (0, r.jsxs)("div", {
-        className: l()(A.L_, null == j || null == (t = j.overlayContainer) ? void 0 : t.className),
+        className: l()(A.L_, null == y || null == (t = y.overlayContainer) ? void 0 : t.className),
         children: [(0, r.jsx)(p.A, {
             title: n,
-            cardVariantStyleInfo: j,
+            cardVariantStyleInfo: y,
             titleClassName: i,
             subtitle: b,
             description: h,
@@ -56,7 +56,7 @@ let f = e => {
             color: s.$n.Colors.CUSTOM,
             subscriptionTier: m.pe.TIER_2,
             textOptions: {
-                textOverride: y
+                textOverride: j
             },
             showGradient: !0
         }), null != E && null != x && (0, r.jsx)(s.$n, {

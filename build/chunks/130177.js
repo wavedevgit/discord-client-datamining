@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(627968),
     o = n(64700),
     a = n(43105),
-    i = n(964486),
-    l = n(49999);
+    l = n(964486),
+    i = n(49999);
 
 function c(e) {
     let {
@@ -15,12 +15,12 @@ function c(e) {
         visibleContent: c,
         markAsDismissed: s,
         props: u
-    } = e, [_, d] = o.useState(!1), b = o.useRef(null);
-    (0, i.Ay)(() => (b.current = setTimeout(() => d(!0), 250), () => {
-        clearTimeout(b.current), s(l.i.AUTO_DISMISS)
+    } = e, [d, _] = o.useState(!1), b = o.useRef(null);
+    (0, l.Ay)(() => (b.current = setTimeout(() => _(!0), 250), () => {
+        clearTimeout(b.current), s(i.i.AUTO_DISMISS)
     }));
     let p = o.useCallback(e => {
-        s("user:explicit" === e ? l.i.USER_DISMISS : l.i.AUTO_DISMISS)
+        s("user:explicit" === e ? i.i.USER_DISMISS : i.i.AUTO_DISMISS)
     }, [s]);
     return (0, r.jsx)(a.h, function(e) {
         for (var t = 1; t < arguments.length; t++) {
@@ -41,7 +41,7 @@ function c(e) {
         return e
     }({
         targetElementRef: n,
-        shouldShow: _ && c === t,
+        shouldShow: d && c === t,
         onRequestClose: p
     }, u))
 }

@@ -27,8 +27,8 @@ var r = n(627968),
     T = n(170887),
     I = n(131168),
     N = n(511484),
-    y = n(703982),
-    j = n(326736),
+    j = n(703982),
+    y = n(326736),
     v = n(810036),
     P = n(160116),
     R = n(530060),
@@ -92,12 +92,12 @@ let H = e => {
                             userDiscountOffer: X,
                             discountedPrice: en
                         })
-                    }), (0, r.jsx)(j.A, {
+                    }), (0, r.jsx)(y.A, {
                         variant: w.cJ.WHATS_NEW,
                         className: k.Iw,
                         noBackground: !0,
                         leftAlignHeaders: !0
-                    }), (0, r.jsx)(j.A, {
+                    }), (0, r.jsx)(y.A, {
                         className: k.xU,
                         variant: w.cJ.PERKS_DISCOVERABILITY,
                         noBackground: !0,
@@ -137,7 +137,7 @@ let H = e => {
                         alt: U.intl.string(U.t.X4IxWL)
                     })]
                 })
-            }), et && null != en && (0, r.jsx)(y.A, {
+            }), et && null != en && (0, r.jsx)(j.A, {
                 isVisible: er && z,
                 premiumSubscription: F,
                 churnDiscountOffer: X,

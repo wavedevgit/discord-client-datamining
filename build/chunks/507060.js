@@ -1,6 +1,6 @@
 /** chunk id: 507060, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => U
+    A: () => k
 }), n(321073);
 var r, i = n(627968),
     l = n(64700),
@@ -57,48 +57,42 @@ function S(e, t) {
     }), e
 }
 let C = (0, m.Fe)({
-        createPromise: () => n.e("67878").then(n.bind(n, 655297)),
-        webpackId: 655297,
-        name: "UserSettings"
-    }),
-    N = (0, m.Fe)({
         createPromise: () => Promise.resolve().then(n.bind(n, 944771)),
         webpackId: 944771,
         name: "ComponentPlayground"
     }),
-    T = (0, m.Fe)({
+    N = (0, m.Fe)({
         createPromise: () => Promise.all([n.e("68587"), n.e("43600"), n.e("21968"), n.e("78888")]).then(n.bind(n, 667587)),
         webpackId: 667587,
         name: "ChannelSettings"
     }),
-    j = (0, m.Fe)({
+    T = (0, m.Fe)({
         createPromise: () => n.e("59275").then(n.bind(n, 737630)),
         webpackId: 737630,
         name: "CollectiblesShop"
     }),
-    x = (0, m.Fe)({
+    j = (0, m.Fe)({
         createPromise: () => Promise.all([n.e("68587"), n.e("43600"), n.e("63379"), n.e("56026"), n.e("16301"), n.e("22191"), n.e("25961"), n.e("21968"), n.e("35894"), n.e("50796"), n.e("11810"), n.e("8458"), n.e("39048"), n.e("98700")]).then(n.bind(n, 422559)),
         webpackId: 422559,
         name: "GuildSettings"
     }),
-    P = {
-        [E.zgK.USER_SETTINGS]: () => (0, i.jsx)(C, {}),
-        [E.zgK.CHANNEL_SETTINGS]: () => (0, i.jsx)(T, {}),
-        [E.zgK.GUILD_SETTINGS]: () => (0, i.jsx)(x, {}),
-        [E.zgK.COLLECTIBLES_SHOP]: () => (0, i.jsx)(j, {}),
-        [E.zgK.COMPONENT_PLAYGROUND]: () => (0, i.jsx)(N, {})
+    x = {
+        [E.zgK.CHANNEL_SETTINGS]: () => (0, i.jsx)(N, {}),
+        [E.zgK.GUILD_SETTINGS]: () => (0, i.jsx)(j, {}),
+        [E.zgK.COLLECTIBLES_SHOP]: () => (0, i.jsx)(T, {}),
+        [E.zgK.COMPONENT_PLAYGROUND]: () => (0, i.jsx)(C, {})
     },
-    w = "SHOWN",
-    L = "HIDDEN",
-    R = {
+    P = "SHOWN",
+    w = "HIDDEN",
+    L = {
         friction: 10,
         tension: 100
     };
 
-function D() {
+function R() {
     return l.useEffect(() => (g.A.enable(), g.A.enableTemp(h.w), () => g.A.disableTemp()), []), null
 }
-class M extends(r = l.PureComponent) {
+class D extends(r = l.PureComponent) {
     static getDerivedStateFromProps(e, t) {
         return e.mode !== t.mode ? {
             animating: !0,
@@ -112,8 +106,8 @@ class M extends(r = l.PureComponent) {
             mode: n
         } = e;
         if (t !== n) {
-            if (t === w && n === L) return this.animateIn();
-            if (t === L && n === w) return this.animateUnder()
+            if (t === P && n === w) return this.animateIn();
+            if (t === w && n === P) return this.animateUnder()
         }
     }
     componentWillEnter(e) {
@@ -138,9 +132,9 @@ class M extends(r = l.PureComponent) {
         } = this.state;
         o.A.parallel([o.A.spring(t, v({
             toValue: 1
-        }, R)), o.A.spring(n, v({
+        }, L)), o.A.spring(n, v({
             toValue: 1
-        }, R))]).start(() => this.animateComplete(e))
+        }, L))]).start(() => this.animateComplete(e))
     }
     animateOut(e) {
         c.Ay.Emitter.pause(500);
@@ -150,9 +144,9 @@ class M extends(r = l.PureComponent) {
         } = this.state;
         o.A.parallel([o.A.spring(t, v({
             toValue: 0
-        }, R)), o.A.spring(n, v({
+        }, L)), o.A.spring(n, v({
             toValue: 1.1
-        }, R))]).start(() => {
+        }, L))]).start(() => {
             e(), b._.dispatch(E.jej.LAYER_POP_COMPLETE)
         })
     }
@@ -164,9 +158,9 @@ class M extends(r = l.PureComponent) {
         } = this.state;
         o.A.parallel([o.A.spring(e, v({
             toValue: 0
-        }, R)), o.A.spring(t, v({
+        }, L)), o.A.spring(t, v({
             toValue: .93
-        }, R))]).start(() => this.animateComplete())
+        }, L))]).start(() => this.animateComplete())
     }
     animateComplete(e) {
         this.setState({
@@ -197,15 +191,13 @@ class M extends(r = l.PureComponent) {
                 }(e, t), Object.getOwnPropertySymbols)
                 for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (l[r] = e[r]);
             return l
-        }(t, ["name", "mode", "children", "baseLayer"]), u = r === L, p = e || u ? this.getAnimatedStyle() : null, h = !u && !a, g = (0, i.jsx)(o.A.div, S(v({
+        }(t, ["name", "mode", "children", "baseLayer"]), u = r === w, p = e || u ? this.getAnimatedStyle() : null, h = !u && !a, g = (0, i.jsx)(o.A.div, S(v({
             ref: e => this.containerRef.current = null != e ? e.componentRef : void 0,
             "data-layer": null != n ? n : "base",
             "aria-hidden": u,
             "aria-modal": h,
             "aria-label": h ? function(e) {
                 switch (e) {
-                    case E.zgK.USER_SETTINGS:
-                        return O.intl.string(O.t.cduTBL);
                     case E.zgK.CHANNEL_SETTINGS:
                         return O.intl.string(O.t.XPDhcc);
                     case E.zgK.COLLECTIBLES_SHOP:
@@ -220,7 +212,7 @@ class M extends(r = l.PureComponent) {
             className: s()(y.qd, {
                 [y.n3]: a,
                 [y.bW]: e,
-                "stop-animations": r === L
+                "stop-animations": r === w
             }),
             style: p
         }, c), {
@@ -253,7 +245,7 @@ class M extends(r = l.PureComponent) {
         super(e), I(this, "containerRef", l.createRef());
         let t = 1,
             n = 1;
-        e.mode === L && (t = .93, n = 0), this.state = {
+        e.mode === w && (t = .93, n = 0), this.state = {
             animating: !1,
             scale: new o.A.Value(t),
             opacity: new o.A.Value(n),
@@ -261,10 +253,10 @@ class M extends(r = l.PureComponent) {
         }
     }
 }
-I(M, "defaultProps", {
+I(D, "defaultProps", {
     baseLayer: !1
-}), I(M, "contextType", d.CZY);
-class k extends l.PureComponent {
+}), I(D, "contextType", d.CZY);
+class M extends l.PureComponent {
     componentDidMount() {
         b._.subscribe(E.jej.LAYER_POP_ESCAPE_KEY, p.jH)
     }
@@ -279,18 +271,18 @@ class k extends l.PureComponent {
         } = this.props, {
             length: r
         } = t, l = [];
-        return l.push((0, i.jsx)(M, {
-            mode: 0 !== r || n ? L : w,
+        return l.push((0, i.jsx)(D, {
+            mode: 0 !== r || n ? w : P,
             baseLayer: !0,
             children: e
         }, "layer-base")), t.forEach((e, t) => l.push(this.renderComponent(e, t, r))), l
     }
     renderComponent(e, t, n) {
         let r;
-        return r = "string" == typeof e ? P[e]() : (0, i.jsx)(e, {}), (0, i.jsxs)(M, {
+        return r = "string" == typeof e ? x[e]() : (0, i.jsx)(e, {}), (0, i.jsxs)(D, {
             name: "string" == typeof e ? e : void 0,
-            mode: t === n - 1 ? w : L,
-            children: [(0, i.jsx)(D, {}), r]
+            mode: t === n - 1 ? P : w,
+            children: [(0, i.jsx)(R, {}), r]
         }, "layer-".concat(t))
     }
     renderArtisanalHack() {
@@ -312,11 +304,11 @@ class k extends l.PureComponent {
     }
 }
 
-function U(e) {
+function k(e) {
     let t = (0, A.NC)(),
         n = (0, c.bG)([_.A], () => _.A.getLayers()),
         r = (0, f.xr)(e => e.fullScreenLayers.length > 0 && !e.fullScreenLayers.some(e => e.options.showAppUnderLayer));
-    return (0, i.jsx)(k, S(v({}, e), {
+    return (0, i.jsx)(M, S(v({}, e), {
         sidebarTheme: t,
         layers: n,
         hasFullScreenLayer: r

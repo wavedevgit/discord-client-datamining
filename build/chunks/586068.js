@@ -1,11 +1,11 @@
 /** chunk id: 586068, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    KJ: () => y,
+    KJ: () => j,
     N_: () => P,
     OS: () => T,
     Y9: () => v,
     c3: () => I,
-    lg: () => j,
+    lg: () => y,
     nG: () => N,
     vw: () => R
 }), n(896048), n(747238);
@@ -369,7 +369,7 @@ class N extends l.Component {
         })
     }
 }
-class y extends l.Component {
+class j extends l.Component {
     renderIcon() {
         let {
             user: e,
@@ -465,7 +465,7 @@ class y extends l.Component {
         })
     }
 }
-class j extends l.Component {
+class y extends l.Component {
     renderContent() {
         let {
             children: e,

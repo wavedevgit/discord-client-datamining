@@ -27,8 +27,8 @@ var r = n(627968),
     T = n(159001),
     I = n(833336),
     N = n(65767),
-    y = n(281052),
-    j = n(687021),
+    j = n(281052),
+    y = n(687021),
     v = n(652215),
     P = n(985018),
     R = n(764121);
@@ -134,7 +134,7 @@ function M(e) {
                 helpCenterLink: C.A.getArticleURL(v.MVz.GUILD_PROFILES)
             })
         }), null != l ? (0, r.jsxs)(r.Fragment, {
-            children: [(0, r.jsx)(j.A, {
+            children: [(0, r.jsx)(y.A, {
                 guildId: l.id,
                 onChange: e => {
                     null != e && (0, T.JJ)(e)
@@ -163,7 +163,7 @@ function M(e) {
                     className: null == z ? R.t : void 0,
                     isHighlighted: !0
                 })),
-                children: (0, r.jsx)(y.A, {})
+                children: (0, r.jsx)(j.A, {})
             })]
         }) : (0, r.jsx)(N.A, {})]
     }) : (0, r.jsx)(o.y$y, {})

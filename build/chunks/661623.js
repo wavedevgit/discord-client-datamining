@@ -23,8 +23,8 @@ var r = n(627968),
     v = n(985018),
     C = n(514294),
     A = n(620399),
-    S = n(68465),
-    x = n(165530),
+    x = n(68465),
+    S = n(165530),
     O = n(871237);
 let y = l.memo(function(e) {
     let {
@@ -136,8 +136,8 @@ let y = l.memo(function(e) {
                                             analyticsLocations: [],
                                             overrideGraphic: {
                                                 type: "video",
-                                                src: x.A,
-                                                fallbackImageSrc: S.A,
+                                                src: S.A,
+                                                fallbackImageSrc: x.A,
                                                 loop: !0,
                                                 loopAt: 6,
                                                 aspectRatio: "16/9"

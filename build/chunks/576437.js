@@ -10,7 +10,7 @@ var r = n(627968),
     o = n(832248),
     c = n(201805),
     u = n(253932),
-    d = n(186111),
+    d = n(995377),
     p = n(461213),
     h = n(954571),
     g = n(130802),
@@ -31,7 +31,7 @@ let A = e => {
             hasLoadedQuestBar: r
         } = (0, c.c9)({
             location: b.rE.CONFLICT_CHECKS
-        }), l = u.tz.useSetting(), s = (0, i.bG)([d.A], () => d.A.getLayers().includes(f.zgK.USER_SETTINGS)), a = (0, i.bG)([p.A], () => p.A.getStatus()), {
+        }), l = u.tz.useSetting(), s = (0, d.G)(), a = (0, i.bG)([p.A], () => p.A.getStatus()), {
             isOpen: h
         } = (0, o.A)();
         if ((n && r || t) && !s && !h && !__OVERLAY__) {

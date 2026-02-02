@@ -73,12 +73,12 @@ let E = (0, o.Ld)(),
                 textColor: "interactive-text-default",
                 textVariant: "text-sm/semibold"
             })
-        }, [O]), y = i.useCallback(e => {
+        }, [O]), j = i.useCallback(e => {
             let t = e[0];
             return null == t ? null : (0, r.jsx)(r.Fragment, {
                 children: T(t)
             })
-        }, [T]), j = i.useCallback(e => {
+        }, [T]), y = i.useCallback(e => {
             null == o || o(e)
         }, [o]), v = i.useCallback(e => e === C, [C]), P = i.useCallback(e => e, []), R = i.useCallback(() => {
             null == o || o(null)
@@ -96,10 +96,10 @@ let E = (0, o.Ld)(),
                 optionClassName: h.S0,
                 isSelected: v,
                 options: S,
-                select: j,
+                select: y,
                 renderLeading: I,
                 renderTrailing: N,
-                renderOptionValue: y,
+                renderOptionValue: j,
                 serialize: P,
                 clear: R,
                 clearable: null != C,

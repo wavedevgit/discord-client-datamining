@@ -28,8 +28,8 @@ var r = n(627968),
     T = n(436805),
     I = n(773349),
     N = n(283900),
-    y = n(475833),
-    j = n(469696),
+    j = n(475833),
+    y = n(469696),
     v = n(400553),
     P = n(191627),
     R = n(652215),
@@ -92,7 +92,7 @@ function U(e) {
     }, [t, _]);
     o()(E, "No text for action type: ".concat(t));
     let N = t === P.NV.PURCHASES && null != d ? E.sectionHeader(d) : E.sectionHeader(c),
-        y = i.useCallback(e => {
+        j = i.useCallback(e => {
             let {
                 row: t
             } = e, n = a[t];
@@ -118,7 +118,7 @@ function U(e) {
             }
             return null
         }, [a, E.timestampFormatter]),
-        j = i.useCallback(() => (0, r.jsxs)(r.Fragment, {
+        y = i.useCallback(() => (0, r.jsxs)(r.Fragment, {
             children: [(0, r.jsx)(u.Text, {
                 className: w.bV,
                 variant: "text-md/semibold",
@@ -134,12 +134,12 @@ function U(e) {
     let v = a.slice(0, O);
     return (0, r.jsxs)("div", {
         className: w.A2,
-        children: [j(), (0, r.jsx)("div", {
+        children: [y(), (0, r.jsx)("div", {
             className: w.o1,
             style: {
                 maxHeight: 65 * v.length
             },
-            children: v.map((e, t) => y({
+            children: v.map((e, t) => j({
                 row: t
             }))
         }), v.length < c ? (0, r.jsx)(u.DUT, {
@@ -198,7 +198,7 @@ let k = () => {
                 avatarSize: i
             }), (0, r.jsxs)("div", {
                 className: w.TK,
-                children: [(0, r.jsx)(y.A, {
+                children: [(0, r.jsx)(j.A, {
                     user: s,
                     hideUserTag: l
                 }), void 0 !== n ? (0, r.jsx)(u.Text, {
@@ -288,7 +288,7 @@ let H = () => {
                             return (0, r.jsx)(U, {
                                 displayType: t
                             }, "".concat(t, "-list"))
-                        }) : (0, r.jsx)(j.A, {
+                        }) : (0, r.jsx)(y.A, {
                             className: w.RL,
                             text: null != i ? i : ""
                         })]

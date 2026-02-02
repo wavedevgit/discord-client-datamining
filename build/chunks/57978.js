@@ -27,8 +27,8 @@ var r, i, l, s = n(627968),
     T = n(985018),
     I = n(520650),
     N = n(927961),
-    y = n(817577),
-    j = n(748222),
+    j = n(817577),
+    y = n(748222),
     v = n(743501),
     P = n(652700),
     R = n(282818),
@@ -72,11 +72,11 @@ let ei = () => {
         }))
     }, [e]), l = (0, A.TM)(), et = f.A.getArticleURL(O.MVz.REFERRAL_PROGRAM), en = {
         premiumGroup: {
-            thumbnail: y,
-            assetUrl: y
+            thumbnail: j,
+            assetUrl: j
         },
         serverProfiles: {
-            thumbnail: j,
+            thumbnail: y,
             assetUrl: l ? $.Ay : ee.Ay
         },
         customThemes: {

@@ -1,6 +1,6 @@
 /** chunk id: 420139, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => j
+    A: () => y
 }), n(896048), n(65821);
 var r = n(627968),
     i = n(64700),
@@ -27,22 +27,22 @@ var r = n(627968),
     T = n(652215),
     I = n(985018),
     N = n(752375),
-    y = n(20976);
+    j = n(20976);
 
-function j(e) {
+function y(e) {
     let {
         subscription: t,
         onPaymentSourceAdded: n,
         highlightAddPaymentMethodButton: l,
         dropdownClassName: a,
-        analyticsLocation: j,
+        analyticsLocation: y,
         currentInvoicePreview: P,
         disabled: R = !1
     } = e, D = (0, c.bG)([b.A], () => b.A.hidePersonalInformation), [L, w] = (0, c.yK)([h.A], () => [h.A.paymentSources, h.A.hasFetchedPaymentSources]), M = (0, f.Y)((0, C.MP)(t)), {
         analyticsLocations: G
     } = (0, A.Ay)(), U = i.useMemo(() => Object.values(L).filter(e => !e.invalid), [L]), [k, B] = i.useState(!1), [H, V] = i.useState(t.currency), F = async (e, n, r) => {
         if (null == t) throw Error("missing subscription and paymentSource");
-        null == e ? await _.r6(t, n, r, G, j) : await _.uK(t, e, n, r, G, j), B(!1), V(n)
+        null == e ? await _.r6(t, n, r, G, y) : await _.uK(t, e, n, r, G, y), B(!1), V(n)
     }, Y = async (e, n, r) => {
         B(!0);
         let i = await (0, S.OQ)({
@@ -51,7 +51,7 @@ function j(e) {
                 renewal: !0,
                 currency: n,
                 analyticsLocations: G,
-                analyticsLocation: j
+                analyticsLocation: y
             }),
             l = {
                 amount: i.subtotal,
@@ -93,7 +93,7 @@ function j(e) {
                 return e
             }({}, e), n = n = {
                 onAddPaymentSource: K,
-                analyticsLocation: j
+                analyticsLocation: y
             }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
                 var n = Object.keys(e);
                 if (Object.getOwnPropertySymbols) {
@@ -155,7 +155,7 @@ function j(e) {
             })), null != t.paymentSourceId ? (0, r.jsx)(m.f, {
                 currencies: i,
                 children: (0, r.jsx)("div", {
-                    className: s()(N.Gl, y.Uu, y.Hu),
+                    className: s()(N.Gl, j.Uu, j.Hu),
                     children: (0, r.jsx)(m.A, {
                         label: I.intl.string(I.t["0YjaXf"]),
                         selectedCurrency: H,

@@ -1,6 +1,6 @@
 /** chunk id: 533808, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => j
+    A: () => y
 }), n(896048), n(747238);
 var r, i = n(627968),
     l = n(64700),
@@ -58,7 +58,7 @@ function I(e, t) {
     }), e
 }
 let N = "isDefault";
-class y extends(r = l.PureComponent) {
+class j extends(r = l.PureComponent) {
     componentWillUnmount() {
         p.h.wait(() => {
             (0, m.ey)(), (0, m.tc)()
@@ -298,12 +298,12 @@ class y extends(r = l.PureComponent) {
         }
     }
 }
-S(y, "defaultProps", {
+S(j, "defaultProps", {
     onDelete: () => {},
     onSubmit: () => {},
     onCancel: () => {}
 });
-let j = c.Ay.connectStores([f.A], () => ({
+let y = c.Ay.connectStores([f.A], () => ({
     updateError: f.A.editSourceError,
     removeError: f.A.removeSourceError
-}))(y)
+}))(j)

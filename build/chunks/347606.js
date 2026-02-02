@@ -6,49 +6,47 @@ var r = n(627968),
     i = n(64700),
     l = n(503698),
     s = n.n(l),
-    a = n(942381),
-    o = n(172218),
-    c = n(775602),
-    d = n(963935),
-    u = n(894858),
+    a = n(172218),
+    o = n(775602),
+    c = n(963935),
+    d = n(894858),
+    u = n(397274),
     _ = n(270952);
 
 function p(e) {
     let {
         node: t,
         children: n
-    } = e, l = i.useRef(!1), [p, m] = i.useState(!1), g = (0, o.K)(e => {
+    } = e, l = i.useRef(!1), [p, m] = i.useState(!1), g = (0, a.K)(e => {
         l.current = e, e && m(!1)
-    }, .5), A = i.useRef(null), f = i.useCallback(() => {
-        null != A.current && (cancelAnimationFrame(A.current), A.current = null)
-    }, []);
+    }, .5), A = i.useCallback(async e => {
+        null == g.current || null == e || e.targetKey !== t.key || null != e.targetAccordionKey || (e.animateScroll && !o.A.useReducedMotion || t.type === c.Z6.CATEGORY || m(!0), l.current && m(!1), d.A.setState({
+            disableSidebarCategoryAutoSelect: !0
+        }), u.A.clearInitialScrollListener(), await u.A.scrollIntoView(g.current, {
+            animate: e.animateScroll,
+            block: e.scrollBlock
+        }), u.A.setInitialScrollListener(() => {
+            d.A.setState({
+                disableSidebarCategoryAutoSelect: !1
+            })
+        }), d.A.setState({
+            navTransition: void 0
+        }))
+    }, [t.key, t.type, g]);
     return i.useEffect(() => {
-        let e = u.A.subscribe(e => {
+        let e = d.A.subscribe(e => {
             let {
                 navTransition: t
             } = e;
             return t
-        }, e => {
-            if (f(), null == e || e.targetKey !== t.key || null != e.targetAccordionKey) return;
-            let n = e.animateScroll && !c.A.useReducedMotion;
-            n || t.type === d.Z6.CATEGORY || m(!0), A.current = requestAnimationFrame(() => {
-                var t, r;
-                let i = null != (t = e.scrollBlock) ? t : "start";
-                null == (r = g.current) || r.scrollIntoView({
-                    behavior: n ? "smooth" : "auto",
-                    block: i
-                }), u.A.setState({
-                    navTransition: void 0
-                }), l.current && m(!1)
-            })
-        }, {
-            equalityFn: a.x,
+        }, A, {
+            equalityFn: (e, t) => e === t,
             fireImmediately: !0
         });
         return () => {
-            e(), f()
+            e(), u.A.clearInitialScrollListener()
         }
-    }, [f, t.key, t.type, g]), (0, r.jsx)("div", {
+    }, [A]), (0, r.jsx)("div", {
         ref: g,
         "data-debug-key": t.key,
         className: s()(_.k, p && _.j),

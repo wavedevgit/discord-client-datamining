@@ -104,10 +104,10 @@ let T = function(e) {
             analyticsLocation: T,
             discountInfo: I,
             renewalChurnDiscountInfo: N,
-            discountOffer: y
+            discountOffer: j
         } = e,
         {
-            analyticsLocations: j
+            analyticsLocations: y
         } = (0, a.Ay)(s.A.CHURN_DISCOUNT_SUBSCRIPTION_HEADER),
         v = e => {
             (0, l.mMO)(async () => {
@@ -136,7 +136,7 @@ let T = function(e) {
                     }({}, n), l = l = {
                         premiumSubscription: p,
                         analyticsLocation: T,
-                        analyticsLocations: j,
+                        analyticsLocations: y,
                         initialStep: e
                     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
                         var n = Object.keys(e);
@@ -152,7 +152,7 @@ let T = function(e) {
             })
         },
         P = _.Ay.getPlanIdFromInvoice(p, m),
-        R = (0, g.ux)(null == y ? void 0 : y.expires_at);
+        R = (0, g.ux)(null == j ? void 0 : j.expires_at);
     return (0, c.m1)(P) ? null : (0, r.jsx)("div", {
         className: E.S6,
         children: (0, r.jsx)(l.hLv, {
@@ -170,7 +170,7 @@ let T = function(e) {
                         className: E.tD,
                         variant: "text-sm/medium",
                         color: "text-strong",
-                        children: null != y && R
+                        children: null != j && R
                     })]
                 }), (0, r.jsx)("div", {
                     className: E.T
@@ -178,8 +178,8 @@ let T = function(e) {
                     className: E.ly,
                     children: [(0, r.jsxs)("div", {
                         className: E.Yc,
-                        children: [null != y ? (0, r.jsx)(S, {
-                            discountOffer: y,
+                        children: [null != j ? (0, r.jsx)(S, {
+                            discountOffer: j,
                             premiumSubscription: p
                         }) : (0, r.jsx)(C, {
                             premiumSubscription: p,
@@ -208,7 +208,7 @@ let T = function(e) {
                                         size: "md",
                                         onClick: () => {
                                             (0, o.A)({
-                                                analyticsLocations: j,
+                                                analyticsLocations: y,
                                                 analyticsLocation: T,
                                                 analyticsObject: x,
                                                 subscription: p

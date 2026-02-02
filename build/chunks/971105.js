@@ -26,8 +26,8 @@ var r, i = n(627968),
     T = n(652215),
     I = n(788868),
     N = n(818348),
-    y = n(985018),
-    j = n(166789),
+    j = n(985018),
+    y = n(166789),
     v = n(124953);
 
 function P(e, t, n) {
@@ -108,7 +108,7 @@ function L(e) {
                     return l
                 }(e, ["ref"]);
                 return (0, i.jsx)(h.A, D(R({
-                    className: j.GD,
+                    className: y.GD,
                     currentPageIndex: c,
                     onChangePage: b,
                     numPages: s,
@@ -116,11 +116,11 @@ function L(e) {
                     ref: t
                 }, l), {
                     children: (0, i.jsx)(_.T7Y, {
-                        className: j.Bd,
+                        className: y.Bd,
                         ref: o,
                         overflow: "auto",
                         children: A.map((e, t) => (0, i.jsx)(S.A, {
-                            className: a()(j.Nj, j.Bd),
+                            className: a()(y.Nj, y.Bd),
                             payment: e,
                             locale: n,
                             compactMode: r
@@ -142,15 +142,15 @@ class w extends(r = l.PureComponent) {
     }
     renderPremiumExternalSubscription(e) {
         return c()(null != e.paymentGateway, "Expected payment gateway when rendering for external subscription"), (0, i.jsxs)(_.ZpM, {
-            className: j.K1,
+            className: y.K1,
             children: [(0, i.jsx)("div", {
-                className: j.BF,
-                children: y.intl.format(y.t["6mIX6s"], {
+                className: y.BF,
+                children: j.intl.format(j.t["6mIX6s"], {
                     paymentGatewayName: N.qm[e.paymentGateway]
                 })
             }), (0, i.jsx)("div", {
-                className: j.Q2,
-                children: y.intl.format(y.t.eG0uZB, {
+                className: y.Q2,
+                children: j.intl.format(j.t.eG0uZB, {
                     paymentGatewayName: N.qm[e.paymentGateway],
                     billingHistoryLink: (0, C.tW)(e.paymentGateway, "BILLING_HISTORY")
                 })
@@ -165,22 +165,22 @@ class w extends(r = l.PureComponent) {
             locale: r
         } = this.props, l = null != n && n.isPurchasedExternally;
         return 0 !== t.length || l ? (0, i.jsxs)("div", {
-            className: j.GD,
+            className: y.GD,
             children: [null != n && l ? this.renderPremiumExternalSubscription(n) : null, t.length > 0 ? (0, i.jsxs)("div", {
-                className: a()(j.PQ, j.GD),
+                className: a()(y.PQ, y.GD),
                 children: [e ? null : (0, i.jsx)("div", {
-                    className: a()(j.Nj, j.Bd),
+                    className: a()(y.Nj, y.Bd),
                     children: (0, i.jsxs)(b.A, {
-                        className: j.Yi,
+                        className: y.Yi,
                         children: [(0, i.jsx)("div", {
                             className: v.p6,
-                            children: y.intl.string(y.t["5t11BV"])
+                            children: j.intl.string(j.t["5t11BV"])
                         }), (0, i.jsx)("div", {
-                            className: j.Ir,
-                            children: y.intl.string(y.t.yAAPb2)
+                            className: y.Ir,
+                            children: j.intl.string(j.t.yAAPb2)
                         }), (0, i.jsx)("div", {
                             className: v.vj,
-                            children: y.intl.string(y.t["6MqHXV"])
+                            children: j.intl.string(j.t["6MqHXV"])
                         })]
                     })
                 }), (0, i.jsx)(L, {

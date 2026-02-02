@@ -5,13 +5,13 @@ n.d(t, {
 var r = n(627968),
     o = n(64700),
     a = n(503698),
-    i = n.n(a),
-    l = n(837381),
+    l = n.n(a),
+    i = n(837381),
     c = n(397927),
     s = n(963935),
     u = n(894858),
-    _ = n(942596),
-    d = n(362205),
+    d = n(942596),
+    _ = n(362205),
     b = n(71862);
 
 function p(e) {
@@ -19,10 +19,10 @@ function p(e) {
     let {
         tag: o,
         onClick: a,
-        active: l,
+        active: i,
         node: s,
         visibleContent: u,
-        panelKey: d,
+        panelKey: _,
         listItemProps: p,
         children: f
     } = e, {
@@ -32,7 +32,7 @@ function p(e) {
         useTitle: O
     } = s, h = null == O ? void 0 : O();
     return (0, r.jsxs)(o, {
-        "data-settings-sidebar-item": d,
+        "data-settings-sidebar-item": _,
         className: b.DB,
         children: [(0, r.jsxs)(c.DUT, (t = function(e) {
             for (var t = 1; t < arguments.length; t++) {
@@ -52,8 +52,8 @@ function p(e) {
             }
             return e
         }({}, p), n = n = {
-            className: i()(b.AS, {
-                [b.vu]: l
+            className: l()(b.AS, {
+                [b.vu]: i
             }),
             onClick: a,
             children: [null != g ? (0, r.jsx)(g, {}) : (0, r.jsxs)("div", {
@@ -69,10 +69,10 @@ function p(e) {
                 })]
             }), null != m && (0, r.jsx)("div", {
                 className: b.Ly,
-                children: (0, r.jsx)(_.Z, {
+                children: (0, r.jsx)(d.Z, {
                     trailing: m,
                     visibleContent: u,
-                    isSelected: l
+                    isSelected: i
                 })
             })]
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
@@ -93,34 +93,34 @@ function f(e) {
         node: t,
         visibleContent: n,
         hoisted: a = !1
-    } = e, i = o.useMemo(() => t.layout[0], [t]), c = u.A.useField("currentPanelKey"), _ = null != c && c === (null == i ? void 0 : i.key), b = o.useMemo(() => {
-        if (null == i || !(0, s.Iu)(i.layout)) return null;
-        let e = i.layout.filter(e => null != e.useTitle || null != e.useSubnavLabel);
+    } = e, l = o.useMemo(() => t.layout[0], [t]), c = u.A.useField("currentPanelKey"), d = null != c && c === (null == l ? void 0 : l.key), b = o.useMemo(() => {
+        if (null == l || !(0, s.Iu)(l.layout)) return null;
+        let e = l.layout.filter(e => null != e.useTitle || null != e.useSubnavLabel);
         return e.length > 1 ? e : null
-    }, [i]), f = null != i ? () => {
-        let e = c === i.key && null != b ? b[0].key : i.key;
+    }, [l]), f = null != l ? () => {
+        let e = c === l.key && null != b ? b[0].key : l.key;
         u.A.setState({
             requestedTargetKey: e,
             showNavigationMobile: !1
         })
-    } : t.onClick, y = o.useMemo(() => _ && null != b ? (0, r.jsx)(d.A, {
+    } : t.onClick, y = o.useMemo(() => d && null != b ? (0, r.jsx)(_.A, {
         categories: b
-    }) : null, [_, b]), g = a ? "li" : "div";
+    }) : null, [d, b]), g = a ? "li" : "div";
     return a ? (0, r.jsx)(p, {
         tag: g,
-        panelKey: null == i ? void 0 : i.key,
+        panelKey: null == l ? void 0 : l.key,
         onClick: f,
-        active: _,
+        active: d,
         node: t,
         visibleContent: n,
         children: y
-    }) : (0, r.jsx)(l.tG, {
+    }) : (0, r.jsx)(i.tG, {
         id: t.key,
         children: e => (0, r.jsx)(p, {
             tag: g,
-            panelKey: null == i ? void 0 : i.key,
+            panelKey: null == l ? void 0 : l.key,
             onClick: f,
-            active: _,
+            active: d,
             node: t,
             visibleContent: n,
             listItemProps: e,

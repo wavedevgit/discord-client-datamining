@@ -73,7 +73,7 @@ let N = e => {
             })
         })
     },
-    y = e => {
+    j = e => {
         let {
             numSentReferrals: t,
             placement: n
@@ -90,7 +90,7 @@ let N = e => {
             })]
         })
     },
-    j = e => {
+    y = e => {
         let {
             userRecords: t
         } = e, n = t.length, i = n < 1 ? null : t[0], l = n < 2 ? null : t[1], s = n < 3 ? null : t[2];
@@ -99,13 +99,13 @@ let N = e => {
             children: [(0, r.jsx)(N, {
                 userRecord: i,
                 placement: 1
-            }), (0, r.jsx)(y, {
+            }), (0, r.jsx)(j, {
                 numSentReferrals: n,
                 placement: 1
             }), (0, r.jsx)(N, {
                 userRecord: l,
                 placement: 2
-            }), (0, r.jsx)(y, {
+            }), (0, r.jsx)(j, {
                 numSentReferrals: n,
                 placement: 2
             }), (0, r.jsx)(N, {
@@ -127,7 +127,7 @@ let N = e => {
         l.forEach(e => {
             e === f.aK.REDEEMED && N.redeemed++, e === f.aK.CONVERTED && (N.redeemed++, N.converted++)
         });
-        let y = N.sent === h.Z,
+        let j = N.sent === h.Z,
             v = A.A.getArticleURL(x.MVz.REFERRAL_PROGRAM),
             {
                 analyticsLocations: P
@@ -149,9 +149,9 @@ let N = e => {
                         variant: t ? "heading-xl/extrabold" : "heading-xxl/extrabold",
                         className: S.R0,
                         children: (0, O.X8)({
-                            hasSentAll: y
+                            hasSentAll: j
                         })
-                    }), (0, r.jsx)(j, {
+                    }), (0, r.jsx)(y, {
                         userRecords: p
                     }), (0, r.jsx)(d.Text, {
                         variant: t ? "text-sm/normal" : "text-lg/medium",
@@ -203,7 +203,7 @@ let N = e => {
                                     src: T,
                                     alt: "",
                                     className: S.QH
-                                }), y ? C.intl.string(C.t.SY9tyI) : C.intl.string(C.t.Lm2nFc)]
+                                }), j ? C.intl.string(C.t.SY9tyI) : C.intl.string(C.t.Lm2nFc)]
                             })
                         })
                     })]

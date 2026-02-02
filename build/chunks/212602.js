@@ -50,7 +50,7 @@ let E = () => {
             value: "popularity",
             id: "popularity"
         }
-    }, []), S = l.useCallback(e => ({
+    }, []), x = l.useCallback(e => ({
         recent: {
             sortType: o.$.RECENCY,
             sortDirection: i.A.DESC
@@ -71,8 +71,8 @@ let E = () => {
             sortType: o.$.RELEVANCE,
             sortDirection: i.A.DESC
         }
-    })[e], []), x = l.useCallback(e => {
-        let n = A(S(e));
+    })[e], []), S = l.useCallback(e => {
+        let n = A(x(e));
         u.default.track(p.HAw.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
             collectibles_shop_session_id: null == s ? void 0 : s.sessionId,
             page_section: null == s ? void 0 : s.pageSection,
@@ -81,8 +81,8 @@ let E = () => {
             page_size: null == s ? void 0 : s.pageSize,
             cta_name: "sort by ".concat(n.label.toLowerCase()),
             page_type: "catalog"
-        }), t(S(e))
-    }, [s, A, S, t]), O = A(e);
+        }), t(x(e))
+    }, [s, A, x, t]), O = A(e);
     return (0, r.jsx)("div", {
         className: a()(b.k, {
             [h.T3]: E
@@ -91,7 +91,7 @@ let E = () => {
             label: _.intl.string(_.t.uaX705),
             hideLabel: !0,
             options: C.map(A),
-            onSelectionChange: x,
+            onSelectionChange: S,
             value: O.value,
             selectionMode: "single",
             fullWidth: !0

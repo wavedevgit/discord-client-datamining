@@ -1,7 +1,7 @@
 /** chunk id: 429876, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => x
+    A: () => S
 }), n(896048);
 var r = n(627968),
     l = n(64700),
@@ -23,9 +23,9 @@ var r = n(627968),
     v = n(758836),
     C = n(652215),
     A = n(985018),
-    S = n(356365);
+    x = n(356365);
 
-function x(e) {
+function S(e) {
     let {
         tab: t,
         sortedCategories: n,
@@ -54,11 +54,11 @@ function x(e) {
         };
         return e(), window.addEventListener("resize", e), () => window.removeEventListener("resize", e)
     }, []), (0, r.jsx)("div", {
-        className: S.VM,
+        className: x.VM,
         children: (0, r.jsxs)("main", {
-            className: S.MY,
+            className: x.MY,
             children: [(0, r.jsx)(i.GtU, {
-                className: S.OW,
+                className: x.OW,
                 ref: u,
                 onScroll: g,
                 children: (0, r.jsx)(O, {
@@ -72,9 +72,9 @@ function x(e) {
                     initialCategoryId: s
                 })
             }), b && !E && (0, r.jsx)("div", {
-                className: S.yF
+                className: x.yF
             }), b && !E && (0, r.jsx)(i.HOs, {
-                className: S.kT,
+                className: x.kT,
                 children: (0, r.jsx)(_.A, {})
             })]
         })
@@ -87,7 +87,7 @@ let O = e => {
         setFilterBarOpen: s,
         tab: o,
         scrollerRef: m,
-        sortedCategories: x,
+        sortedCategories: S,
         setCategoryRef: O,
         initialCategoryId: y
     } = e, j = l.useRef(null), T = (0, d.v)(e => e.hasDefaultFilters()), L = (0, u.uM)(), {
@@ -120,20 +120,20 @@ let O = e => {
         };
         return document.addEventListener("mousedown", e), () => document.removeEventListener("mousedown", e)
     }, [t, n, s, L]), (0, r.jsx)("div", {
-        className: S.en,
+        className: x.en,
         children: (0, r.jsxs)("div", {
-            className: S.pf,
+            className: x.pf,
             children: [(0, r.jsxs)("div", {
-                className: S.ne,
+                className: x.ne,
                 children: [(0, r.jsx)("div", {
-                    className: S.lQ,
+                    className: x.lQ,
                     children: (0, r.jsx)(g.A, {})
                 }), (0, r.jsxs)("div", {
-                    className: a()(S.wR, {
-                        [S.Im]: t
+                    className: a()(x.wR, {
+                        [x.Im]: t
                     }),
                     children: [(0, r.jsxs)("div", {
-                        className: S.Ul,
+                        className: x.Ul,
                         children: [(0, r.jsx)(i.Text, {
                             variant: "text-md/semibold",
                             children: A.intl.string(A.t.uaX705)
@@ -160,10 +160,10 @@ let O = e => {
                         })
                     })]
                 }), n && t && (0, r.jsx)("div", {
-                    className: S.Dh,
+                    className: x.Dh,
                     ref: j,
                     children: (0, r.jsx)(i.T7Y, {
-                        className: S.Qo,
+                        className: x.Qo,
                         children: (0, r.jsx)(_.A, {})
                     })
                 })]
@@ -175,7 +175,7 @@ let O = e => {
                     pageIndex: k
                 },
                 children: (0, r.jsx)(f.A, {
-                    sortedCategories: x,
+                    sortedCategories: S,
                     setCategoryRef: O,
                     currentPage: k,
                     handlePageChange: N,

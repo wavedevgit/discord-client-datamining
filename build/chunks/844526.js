@@ -10,7 +10,7 @@ var a = n(627968),
     o = n(775602),
     c = n(379848),
     d = n(832248),
-    u = n(186111),
+    u = n(995377),
     m = n(203982),
     p = n(764231),
     h = n(881141),
@@ -24,7 +24,7 @@ function j(e) {
     let {
         groupName: t,
         targetElementRef: n
-    } = e, l = (0, h.A)(), s = (0, r.bG)([o.A], () => o.A.useReducedMotion), m = (0, d.A)(e => e.isOpen), p = (0, r.bG)([u.A], () => u.A.getLayers().includes(f.zgK.USER_SETTINGS));
+    } = e, l = (0, h.A)(), s = (0, r.bG)([o.A], () => o.A.useReducedMotion), m = (0, d.A)(e => e.isOpen), p = (0, u.G)();
     return s || null == l || m || p ? null : (0, a.jsx)(c.zJ, {
         contentType: i.M.NITRO_TENURE_BADGE_LEVEL_UP,
         timeRecurringConfig: {

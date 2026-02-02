@@ -5,13 +5,13 @@ n.d(t, {
 var r = n(627968),
     o = n(64700),
     a = n(311907),
-    i = n(521489),
-    l = n(397927),
+    l = n(521489),
+    i = n(397927),
     c = n(775602),
     s = n(531685),
     u = n(203982),
-    _ = n(418829),
-    d = n(652215);
+    d = n(418829),
+    _ = n(652215);
 
 function b(e) {
     var t, n;
@@ -49,13 +49,13 @@ function b(e) {
             } = e;
             !w && k && (v(!0), C(null != t ? t : 1.4), clearTimeout(P.current), P.current = setTimeout(() => v(!1), null != n ? n : 1e3))
         };
-        return u._.subscribe(d.jej.SHAKE_SETTINGS_MODAL, e), () => {
-            u._.unsubscribe(d.jej.SHAKE_SETTINGS_MODAL, e), clearTimeout(P.current)
+        return u._.subscribe(_.jej.SHAKE_SETTINGS_MODAL, e), () => {
+            u._.unsubscribe(_.jej.SHAKE_SETTINGS_MODAL, e), clearTimeout(P.current)
         }
-    }, [w, k]), (0, r.jsx)(l.bfh, {
+    }, [w, k]), (0, r.jsx)(i.bfh, {
         isShaking: x,
         intensity: S,
-        children: (0, r.jsx)(i.N, (t = function(e) {
+        children: (0, r.jsx)(l.N, (t = function(e) {
             for (var t = 1; t < arguments.length; t++) {
                 var n = null != arguments[t] ? arguments[t] : {},
                     r = Object.keys(n);
@@ -73,7 +73,7 @@ function b(e) {
             }
             return e
         }({}, j), n = n = {
-            children: (0, r.jsx)(_.A, {
+            children: (0, r.jsx)(d.A, {
                 onClose: j.onClose,
                 partialRoot: b,
                 target: p,

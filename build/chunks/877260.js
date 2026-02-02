@@ -5,13 +5,13 @@ n.d(t, {
 var r = n(627968),
     o = n(64700),
     a = n(503698),
-    i = n.n(a),
-    l = n(837381),
+    l = n.n(a),
+    i = n(837381),
     c = n(607399),
     s = n(554146),
     u = n(397927),
-    _ = n(775602),
-    d = n(928039),
+    d = n(775602),
+    _ = n(928039),
     b = n(379848),
     p = n(97469),
     f = n(933297),
@@ -52,7 +52,7 @@ function j(e) {
         return t.layout.forEach(t => {
             t.hoisted ? e.push(t) : n.push(t)
         }), [e, n]
-    }, [t.layout]), k = (0, p.NC)(), T = (0, d.A)("settings-sidebar", S), A = y.A.useField("currentPanelKey");
+    }, [t.layout]), k = (0, p.NC)(), T = (0, _.A)("settings-sidebar", S), A = y.A.useField("currentPanelKey");
     return o.useEffect(() => {
         var e;
         if (null == S.current || null == A) return;
@@ -62,7 +62,7 @@ function j(e) {
         null != r && S.current.scrollIntoViewNode({
             node: r,
             padding: 8,
-            animate: !_.A.useReducedMotion && n
+            animate: !d.A.useReducedMotion && n
         })
     }, [A]), (0, r.jsx)(u.NPJ, {
         theme: k,
@@ -73,7 +73,7 @@ function j(e) {
                     visibleContent: o
                 } = t;
                 return (0, r.jsxs)("div", {
-                    className: i()(h.pz, e, {
+                    className: l()(h.pz, e, {
                         [h.Hw]: c.Fr,
                         [h.n7]: j
                     }),
@@ -98,14 +98,14 @@ function j(e) {
                             searchQuery: g,
                             onSearchChange: m
                         }), null != s && 0 === w.length && (0, r.jsx)(s, {})]
-                    }), (0, r.jsx)(l.hD, {
+                    }), (0, r.jsx)(i.hD, {
                         navigator: T,
-                        children: (0, r.jsx)(l.PR, {
+                        children: (0, r.jsx)(i.PR, {
                             children: e => {
                                 var t, a;
                                 let {
-                                    ref: i
-                                } = e, l = function(e, t) {
+                                    ref: l
+                                } = e, i = function(e, t) {
                                     if (null == e) return {};
                                     var n, r, o, a = {};
                                     if ("u" > typeof Reflect && Reflect.ownKeys) {
@@ -142,11 +142,11 @@ function j(e) {
                                 }({
                                     ref: e => {
                                         var t;
-                                        S.current = e, i.current = null != (t = null == e ? void 0 : e.getScrollerNode()) ? t : null
+                                        S.current = e, l.current = null != (t = null == e ? void 0 : e.getScrollerNode()) ? t : null
                                     },
                                     className: h.Mt,
                                     fade: !0
-                                }, l), a = a = {
+                                }, i), a = a = {
                                     children: [(0, r.jsx)("nav", {
                                         className: h.C$,
                                         children: w.map(e => (0, r.jsx)(x, {
@@ -179,17 +179,17 @@ function x(e) {
         section: n,
         visibleContent: o,
         hoisted: a = !1
-    } = e, i = null == (t = n.useTitle) ? void 0 : t.call(n);
+    } = e, l = null == (t = n.useTitle) ? void 0 : t.call(n);
     return (0, r.jsxs)("ul", {
         className: h.uW,
-        "aria-label": i,
-        children: [null != i && (0, r.jsx)("div", {
+        "aria-label": l,
+        children: [null != l && (0, r.jsx)("div", {
             className: h.a9,
             children: (0, r.jsx)(u.Heading, {
                 className: h.Pf,
                 variant: "heading-sm/medium",
                 color: "text-muted",
-                children: i
+                children: l
             })
         }), n.layout.map(e => (0, r.jsx)(m.X, {
             node: e,
@@ -203,9 +203,9 @@ function v(e) {
     let {
         searchQuery: t,
         onSearchChange: n
-    } = e, a = o.useRef(null), [i, l] = (0, b.kn)([s.M.USER_SETTINGS_REDESIGN_EDUCATION_POPOVER]), c = o.useCallback(() => {
+    } = e, a = o.useRef(null), [l, i] = (0, b.kn)([s.M.USER_SETTINGS_REDESIGN_EDUCATION_POPOVER]), c = o.useCallback(() => {
         n("")
-    }, [n]), _ = o.useMemo(() => ({
+    }, [n]), d = o.useMemo(() => ({
         title: O.intl.string(O.t.Kv519a),
         body: O.intl.string(O.t.cTGJBZ),
         badge: "new",
@@ -226,9 +226,9 @@ function v(e) {
         }), (0, r.jsx)(g.A, {
             dismissibleContentType: s.M.USER_SETTINGS_REDESIGN_EDUCATION_POPOVER,
             targetElementRef: a,
-            visibleContent: i,
-            markAsDismissed: l,
-            props: _
+            visibleContent: l,
+            markAsDismissed: i,
+            props: d
         })]
     })
 }
