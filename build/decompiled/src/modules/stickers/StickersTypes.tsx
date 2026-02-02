@@ -129,4 +129,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.StickerMetadataTypes = var3;
     var2.StickerSelectLocation = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1412, 4184, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1412, 4186, 2]);

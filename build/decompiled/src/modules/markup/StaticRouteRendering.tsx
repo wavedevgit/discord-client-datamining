@@ -27,37 +27,37 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/markup/StaticRouteRendering.tsx';
     var3 = var4.bind(var5)(var3);
     var3 = function(arg0) { // Environment: var1
-        _fun44095: for (var _fun44095_ip = 0;;) switch (_fun44095_ip) {
+        _fun44099: for (var _fun44099_ip = 0;;) switch (_fun44099_ip) {
             case 0:
                 var1 = arg0;
                 var0 = 'home';
                 if (!(var0 !== var1)) {
-                    _fun44095_ip = 250;
-                    continue _fun44095
+                    _fun44099_ip = 250;
+                    continue _fun44099
                 }
             case 14:
                 var0 = 'guide';
                 if (!(var0 !== var1)) {
-                    _fun44095_ip = 250;
-                    continue _fun44095
+                    _fun44099_ip = 250;
+                    continue _fun44099
                 }
             case 27:
                 var0 = 'browse';
                 if (!(var0 !== var1)) {
-                    _fun44095_ip = 188;
-                    continue _fun44095
+                    _fun44099_ip = 188;
+                    continue _fun44099
                 }
             case 40:
                 var0 = 'customize';
                 if (!(var0 !== var1)) {
-                    _fun44095_ip = 126;
-                    continue _fun44095
+                    _fun44099_ip = 126;
+                    continue _fun44099
                 }
             case 50:
                 var0 = 'linked-roles';
                 if (!(var0 !== var1)) {
-                    _fun44095_ip = 64;
-                    continue _fun44095
+                    _fun44099_ip = 64;
+                    continue _fun44099
                 }
             case 60:
                 var0 = null;
@@ -126,14 +126,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.staticRouteToTranslation = var3;
     var1 = function(arg0, arg1, arg2) { // Environment: var1
-        _fun44096: for (var _fun44096_ip = 0;;) switch (_fun44096_ip) {
+        _fun44100: for (var _fun44100_ip = 0;;) switch (_fun44100_ip) {
             case 0:
                 var4 = arg2;
                 var1 = 'linked-roles';
                 var0 = arg0;
                 if (!(var1 !== var0)) {
-                    _fun44096_ip = 20;
-                    continue _fun44096
+                    _fun44100_ip = 20;
+                    continue _fun44100
                 }
             case 16:
                 var0 = null;
@@ -141,8 +141,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 20:
                 var0 = null;
                 if (!(var0 != var4)) {
-                    _fun44096_ip = 91;
-                    continue _fun44096
+                    _fun44100_ip = 91;
+                    continue _fun44100
                 }
             case 26:
                 var3 = _closure1_slot2;
@@ -152,24 +152,24 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var0 == var2;
                 var1 = null;
                 if (var3) {
-                    _fun44096_ip = 89;
-                    continue _fun44096
+                    _fun44100_ip = 89;
+                    continue _fun44100
                 }
             case 57:
                 var4 = var2.tags;
                 var5 = var0 == var4;
                 var3 = undefined;
                 if (var5) {
-                    _fun44096_ip = 78;
-                    continue _fun44096
+                    _fun44100_ip = 78;
+                    continue _fun44100
                 }
             case 72:
                 var3 = var4.guild_connections;
             case 78:
                 var1 = null;
                 if (!(var1 === var3)) {
-                    _fun44096_ip = 89;
-                    continue _fun44096
+                    _fun44100_ip = 89;
+                    continue _fun44100
                 }
             case 84:
                 var1 = var2.name;

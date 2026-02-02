@@ -53,4 +53,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var1.UploadErrorCodes;
     var2.UploadErrorCodes = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [2, 3310, 3311, 3312, 3313, 3314, 3317, 3318]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [2, 3312, 3313, 3314, 3315, 3316, 3319, 3320]);

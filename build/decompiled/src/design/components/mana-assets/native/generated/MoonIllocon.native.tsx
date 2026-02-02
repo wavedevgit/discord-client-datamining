@@ -28,7 +28,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'design/components/mana-assets/native/generated/MoonIllocon.native.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun52578: for (var _fun52578_ip = 0;;) switch (_fun52578_ip) {
+        _fun52582: for (var _fun52582_ip = 0;;) switch (_fun52582_ip) {
             case 0:
                 var0 = arg0;
                 var6 = var0.accessible;
@@ -37,8 +37,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var0.size;
                 var3 = undefined;
                 if (!(var7 === var3)) {
-                    _fun52578_ip = 32;
-                    continue _fun52578
+                    _fun52582_ip = 32;
+                    continue _fun52582
                 }
             case 29:
                 var7 = 64;
@@ -73,4 +73,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.MoonIllocon = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [33, 4667, 6188, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [33, 4669, 6190, 2]);

@@ -2389,18 +2389,19 @@ public final class R {
         public static int modules_intl_messages_secondtestcompiledmessages = 0x7f1203cb;
         public static int modules_intl_messages_testcompiledmessages = 0x7f1203cc;
         public static int modules_notifications_inbox_notificationsinboxcompiledmessages = 0x7f1203cd;
-        public static int modules_parent_tools_familycentercompiledmessages = 0x7f1203ce;
-        public static int modules_premium_game_server_gameservercompiledmessages = 0x7f1203cf;
-        public static int modules_premium_gifting_premiumgiftingcompiledmessages = 0x7f1203d0;
-        public static int modules_premium_powerups_guildpowerupscompiledmessages = 0x7f1203d1;
-        public static int modules_premium_premium_group_premiumgroupcompiledmessages = 0x7f1203d2;
-        public static int modules_premium_tenure_reward_tenurerewardcompiledmessages = 0x7f1203d3;
-        public static int modules_private_browsing_perk_intl_privatebrowsingperkcompiledmessages = 0x7f1203d4;
-        public static int modules_report_to_mod_reporttomodcompiledmessages = 0x7f1203d5;
-        public static int modules_request_to_stream_requesttostreamcompiledmessages = 0x7f1203d6;
-        public static int modules_safety_flows_safetyflowscompiledmessages = 0x7f1203d7;
-        public static int modules_self_remediation_feedback_selfremediationfeedbackcompiledmessages = 0x7f1203d8;
-        public static int modules_voice_filters_voicefilternamescompiledmessages = 0x7f1203d9;
+        public static int modules_overlay_web_v3_overlaywidgetscompiledmessages = 0x7f1203ce;
+        public static int modules_parent_tools_familycentercompiledmessages = 0x7f1203cf;
+        public static int modules_premium_game_server_gameservercompiledmessages = 0x7f1203d0;
+        public static int modules_premium_gifting_premiumgiftingcompiledmessages = 0x7f1203d1;
+        public static int modules_premium_powerups_guildpowerupscompiledmessages = 0x7f1203d2;
+        public static int modules_premium_premium_group_premiumgroupcompiledmessages = 0x7f1203d3;
+        public static int modules_premium_tenure_reward_tenurerewardcompiledmessages = 0x7f1203d4;
+        public static int modules_private_browsing_perk_intl_privatebrowsingperkcompiledmessages = 0x7f1203d5;
+        public static int modules_report_to_mod_reporttomodcompiledmessages = 0x7f1203d6;
+        public static int modules_request_to_stream_requesttostreamcompiledmessages = 0x7f1203d7;
+        public static int modules_safety_flows_safetyflowscompiledmessages = 0x7f1203d8;
+        public static int modules_self_remediation_feedback_selfremediationfeedbackcompiledmessages = 0x7f1203d9;
+        public static int modules_voice_filters_voicefilternamescompiledmessages = 0x7f1203da;
 
         private raw() {
         }

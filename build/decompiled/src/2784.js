@@ -1,73 +1,66 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var5 = require;
-    var1 = exports;
-    var6 = dependencyMap;
-    var4 = function arg0() {
-        _fun22769: for (var _fun22769_ip = 0;;) switch (_fun22769_ip) {
+    var0 = exports;
+    var1 = global;
+    var4 = var1.Object;
+    var3 = var4.defineProperty;
+    var2 = {};
+    var1 = true;
+    var2.value = var1;
+    var1 = '__esModule';
+    var1 = var3.bind(var4)(var0, var1, var2);
+    var1 = function arg0, arg1() {
+        _fun22768: for (var _fun22768_ip = 0;;) switch (_fun22768_ip) {
             case 0:
-                var2 = arg0;
-                if (!var2) {
-                    _fun22769_ip = 18;
-                    continue _fun22769
+                var0 = arg0;
+                var7 = arg1;
+                var1 = null;
+                if (!(var1 != var0)) {
+                    _fun22768_ip = 80;
+                    continue _fun22768
                 }
-            case 6:
-                var1 = var2.__esModule;
-                var0 = var2;
-                if (var1) {
-                    _fun22769_ip = 27;
-                    continue _fun22769
-                }
-            case 18:
-                var1 = {};
-                var1.default = var2;
-                var0 = var1;
-            case 27:
+            case 12:
+                var5 = var7;
+                var1 = global;
+                for (var2 in var5)
+                    case 25: {
+                        case 34: var9 = var2;
+                        var8 = var1.Object;
+                        var8 = var8.prototype;
+                        var10 = var8.hasOwnProperty;
+                        var8 = var10.call;
+                        var8 = var8.bind(var10)(var7, var9);
+                        if (!var8) {
+                            _fun22768_ip = 25;
+                            continue _fun22768
+                        }
+                        case 68: var8 = var7[var9];
+                        var0[var9] = var8;
+                        _fun22768_ip = 25;
+                        continue _fun22768;
+                    }
+            case 78:
                 return var0;
+            case 80:
+                var0 = global;
+                var2 = var0.TypeError;
+                var0 = var2.prototype;
+                var1 = Object.create(var0, {
+                    constructor: {
+                        value: var2
+                    }
+                });
+                var12 = 'assign requires that input parameter not be null or undefined';
+                var13 = var1;
+                var0 = new var13[var2](var12, var11);
+                var0 = var0 instanceof Object ? var0 : var1;
+                throw var0;
         }
     };
-    var0 = global;
-    var8 = var0.Object;
-    var7 = var8.defineProperty;
-    var2 = {};
-    var0 = true;
-    var2.value = var0;
-    var0 = '__esModule';
-    var0 = var7.bind(var8)(var1, var0, var2);
-    var0 = function arg0, arg1() {
-        var4 = undefined;
-        var1 = undefined;
-        var2 = _closure1_slot1;
-        var3 = var2.default;
-        var1 = arguments;
-        var2 = var1;
-        var1 = 1;
-        var1 = var3.bind(var4)(var1, var2);
-        var0 = _closure1_slot0;
-        var3 = var0.default;
-        var0 = global;
-        var1 = var0.Date;
-        var0 = var1.now;
-        var2 = var0.bind(var1)();
-        var1 = arg0;
-        var0 = arg1;
-        var0 = var3.bind(var4)(var1, var2, var0);
-        return var0;
-    };
-    var1.default = var0;
-    var0 = 0;
-    var2 = var6[var0];
+    var0.default = var1;
+    var1 = var0.default;
+    var0 = arg4;
+    var0.exports = var1;
     var0 = undefined;
-    var2 = var5.bind(var0)(var2);
-    var2 = var4.bind(var0)(var2);
-    var _closure1_slot0 = var2;
-    var2 = 1;
-    var2 = var6[var2];
-    var2 = var5.bind(var0)(var2);
-    var2 = var4.bind(var0)(var2);
-    var _closure1_slot1 = var2;
-    var2 = var1.default;
-    var1 = arg4;
-    var1.exports = var2;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [2780, 2533]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, []);

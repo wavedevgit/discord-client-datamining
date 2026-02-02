@@ -1,23 +1,10 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var5 = require;
-    var6 = dependencyMap;
-    var4 = 0;
-    var1 = var6[var4];
-    var0 = undefined;
-    var3 = var5.bind(var0)(var1);
-    var2 = var3.shape;
     var1 = {};
-    var7 = var6[var4];
-    var7 = var5.bind(var0)(var7);
-    var7 = var7.number;
-    var1.x = var7;
-    var4 = var6[var4];
-    var4 = var5.bind(var0)(var4);
-    var4 = var4.number;
-    var1.y = var4;
-    var2 = var2.bind(var3)(var1);
-    var1 = module;
-    var1.exports = var2;
+    var0 = ['none', 'button', 'togglebutton', 'link', 'search', 'image', 'keyboardkey', 'text', 'adjustable', 'imagebutton', 'header', 'summary', 'alert', 'checkbox', 'combobox', 'menu', 'menubar', 'menuitem', 'progressbar', 'radio', 'radiogroup', 'scrollbar', 'spinbutton', 'switch', 'tab', 'tablist', 'timer', 'toolbar'];
+    var1.DeprecatedAccessibilityRoles = var0;
+    var0 = module;
+    var0.exports = var1;
+    var0 = undefined;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3179]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, []);

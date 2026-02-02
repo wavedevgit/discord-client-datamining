@@ -48,7 +48,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.bind(var6)(var4);
     var2.AnimatedKeyboardExperiment = var3;
     var1 = function() {
-        _fun88970: for (var _fun88970_ip = 0;;) switch (_fun88970_ip) {
+        _fun88974: for (var _fun88974_ip = 0;;) switch (_fun88974_ip) {
             case 0:
                 var3 = _closure1_slot0;
                 var2 = _closure1_slot1;
@@ -61,8 +61,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = !var0;
                 var0 = !var2;
                 if (var2) {
-                    _fun88970_ip = 48;
-                    continue _fun88970
+                    _fun88974_ip = 48;
+                    continue _fun88974
                 }
             case 44:
                 var0 = _closure1_slot2;

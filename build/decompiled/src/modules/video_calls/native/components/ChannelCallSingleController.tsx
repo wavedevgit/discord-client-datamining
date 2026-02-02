@@ -52,7 +52,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/video_calls/native/components/ChannelCallSingleController.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Environment: var1
-        _fun68608: for (var _fun68608_ip = 0;;) switch (_fun68608_ip) {
+        _fun68612: for (var _fun68612_ip = 0;;) switch (_fun68612_ip) {
             case 0:
                 var1 = arg0;
                 var6 = var1.selectedParticipant;
@@ -114,29 +114,29 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = _closure1_slot7;
                 var0 = var0.STREAM;
                 if (!(var0 !== var1)) {
-                    _fun68608_ip = 263;
-                    continue _fun68608
+                    _fun68612_ip = 263;
+                    continue _fun68612
                 }
             case 136:
                 var0 = _closure1_slot7;
                 var0 = var0.USER;
                 if (!(var0 !== var1)) {
-                    _fun68608_ip = 220;
-                    continue _fun68608
+                    _fun68612_ip = 220;
+                    continue _fun68612
                 }
             case 150:
                 var0 = _closure1_slot7;
                 var0 = var0.HIDDEN_STREAM;
                 if (!(var0 !== var1)) {
-                    _fun68608_ip = 216;
-                    continue _fun68608
+                    _fun68612_ip = 216;
+                    continue _fun68612
                 }
             case 164:
                 var0 = _closure1_slot7;
                 var0 = var0.ACTIVITY;
                 if (!(var0 !== var1)) {
-                    _fun68608_ip = 180;
-                    continue _fun68608
+                    _fun68612_ip = 180;
+                    continue _fun68612
                 }
             case 178:
                 return var4;
@@ -178,22 +178,22 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = null;
                 var2 = var0 != var2;
                 if (!var2) {
-                    _fun68608_ip = 354;
-                    continue _fun68608
+                    _fun68612_ip = 354;
+                    continue _fun68612
                 }
             case 296:
                 var3 = _closure1_slot8;
                 var2 = _closure1_slot1;
                 if (!(var8 !== var1)) {
-                    _fun68608_ip = 321;
-                    continue _fun68608
+                    _fun68612_ip = 321;
+                    continue _fun68612
                 }
             case 308:
                 var8 = _closure1_slot2;
                 var1 = 10;
                 var1 = var8[var1];
-                _fun68608_ip = 332;
-                continue _fun68608;
+                _fun68612_ip = 332;
+                continue _fun68612;
             case 321:
                 var8 = _closure1_slot2;
                 var7 = 9;
@@ -210,4 +210,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.ChannelCallSingleController = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 3673, 1216, 660, 3482, 33, 795, 4266, 566, 8559, 8561, 8562, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 3675, 1216, 660, 3484, 33, 795, 4268, 566, 8561, 8563, 8564, 2]);

@@ -81,4 +81,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.createChannelFollowAddSystemMessage = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1234, 3942, 6640, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1234, 3944, 6642, 2]);

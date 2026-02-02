@@ -1,10 +1,10 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var6 = require;
     var2 = exports;
-    var7 = dependencyMap;
-    var _closure1_slot0 = var6;
-    var _closure1_slot1 = var7;
+    var1 = require;
+    var _closure1_slot0 = var1;
+    var1 = dependencyMap;
+    var _closure1_slot1 = var1;
     var1 = global;
     var5 = var1.Object;
     var4 = var5.defineProperty;
@@ -13,235 +13,168 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.value = var1;
     var1 = '__esModule';
     var1 = var4.bind(var5)(var2, var1, var3);
-    var3 = {};
-    var1 = "function pnpm_delayTs1(delayMs,_nextAnimation,reduceMotion){const{defineAnimation,getReduceMotionForAnimation}=this.__closure;return defineAnimation(_nextAnimation,function(){'worklet';const nextAnimation=typeof _nextAnimation==='function'?_nextAnimation():_nextAnimation;function delay(animation,now){const{startTime:startTime,started:started,previousAnimation:previousAnimation}=animation;const current=animation.current;if(now-startTime>=delayMs||animation.reduceMotion){if(!started){nextAnimation.onStart(nextAnimation,current,now,previousAnimation);animation.previousAnimation=null;animation.started=true;}const finished=nextAnimation.onFrame(nextAnimation,now);animation.current=nextAnimation.current;return finished;}else if(previousAnimation){const finished=previousAnimation.finished||previousAnimation.onFrame(previousAnimation,now);animation.current=previousAnimation.current;if(finished){animation.previousAnimation=null;}}return false;}function onStart(animation,value,now,previousAnimation){animation.startTime=now;animation.started=false;animation.current=value;if(previousAnimation===animation){animation.previousAnimation=previousAnimation.previousAnimation;}else{animation.previousAnimation=previousAnimation;}if(nextAnimation.reduceMotion===undefined){nextAnimation.reduceMotion=animation.reduceMotion;}}const callback=function(finished){if(nextAnimation.callback){nextAnimation.callback(finished);}};return{isHigherOrder:true,onFrame:delay,onStart:onStart,current:nextAnimation.current,callback:callback,previousAnimation:null,startTime:0,started:false,reduceMotion:getReduceMotionForAnimation(reduceMotion)};});}";
-    var3.code = var1;
     var1 = {};
-    var4 = "function pnpm_delayTs2(){const{_nextAnimation,delayMs,getReduceMotionForAnimation,reduceMotion}=this.__closure;const nextAnimation=typeof _nextAnimation==='function'?_nextAnimation():_nextAnimation;function delay(animation,now){const{startTime:startTime,started:started,previousAnimation:previousAnimation}=animation;const current=animation.current;if(now-startTime>=delayMs||animation.reduceMotion){if(!started){nextAnimation.onStart(nextAnimation,current,now,previousAnimation);animation.previousAnimation=null;animation.started=true;}const finished=nextAnimation.onFrame(nextAnimation,now);animation.current=nextAnimation.current;return finished;}else if(previousAnimation){const finished=previousAnimation.finished||previousAnimation.onFrame(previousAnimation,now);animation.current=previousAnimation.current;if(finished){animation.previousAnimation=null;}}return false;}function onStart(animation,value,now,previousAnimation){animation.startTime=now;animation.started=false;animation.current=value;if(previousAnimation===animation){animation.previousAnimation=previousAnimation.previousAnimation;}else{animation.previousAnimation=previousAnimation;}if(nextAnimation.reduceMotion===undefined){nextAnimation.reduceMotion=animation.reduceMotion;}}const callback=function(finished){if(nextAnimation.callback){nextAnimation.callback(finished);}};return{isHigherOrder:true,onFrame:delay,onStart:onStart,current:nextAnimation.current,callback:callback,previousAnimation:null,startTime:0,started:false,reduceMotion:getReduceMotionForAnimation(reduceMotion)};}";
-    var1.code = var4;
+    var3 = 'function rubberBandDecay_Pnpm_rubberBandDecayTs1(animation,now,config){const{SLOPE_FACTOR,DERIVATIVE_EPS,VELOCITY_EPS}=this.__closure;const{lastTimestamp:lastTimestamp,startTimestamp:startTimestamp,current:current,velocity:velocity}=animation;const deltaTime=Math.min(now-lastTimestamp,64);const clampIndex=Math.abs(current-config.clamp[0])<Math.abs(current-config.clamp[1])?0:1;let derivative=0;if(current<config.clamp[0]||current>config.clamp[1]){derivative=current-config.clamp[clampIndex];}const v=velocity*Math.exp(-(1-config.deceleration)*(now-startTimestamp)*SLOPE_FACTOR)-derivative*config.rubberBandFactor;if(Math.abs(derivative)>DERIVATIVE_EPS){animation.springActive=true;}else if(animation.springActive){animation.current=config.clamp[clampIndex];return true;}else if(Math.abs(v)<VELOCITY_EPS){return true;}animation.current=current+v*config.velocityFactor*deltaTime/1000;animation.velocity=v;animation.lastTimestamp=now;return false;}';
+    var1.code = var3;
     var _closure1_slot2 = var1;
-    var1 = function arg0, arg1, arg2() {
-        var11 = arg0;
-        var3 = arg1;
-        var6 = arg2;
-        var _closure2_slot0 = var11;
-        var _closure2_slot1 = var3;
-        var _closure2_slot2 = var6;
-        var9 = _closure1_slot0;
-        var10 = _closure1_slot1;
-        var7 = 0;
-        var1 = var10[var7];
-        var8 = undefined;
-        var2 = var9.bind(var8)(var1);
-        var1 = var2.defineAnimation;
-        var0 = function() {
-            _fun33732: for (var _fun33732_ip = 0;;) switch (_fun33732_ip) {
+    var1 = function() { // Environment: var0
+        var0 = function arg0, arg1, arg2() {
+            _fun33730: for (var _fun33730_ip = 0;;) switch (_fun33730_ip) {
                 case 0:
-                    var0 = _closure2_slot1;
-                    var3 = 'function';
-                    var0 = typeof var0;
-                    if (!(var3 !== var0)) {
-                        _fun33732_ip = 26;
-                        continue _fun33732
+                    var1 = arg0;
+                    var0 = arg1;
+                    var3 = arg2;
+                    var2 = var1.lastTimestamp;
+                    var6 = var1.startTimestamp;
+                    var4 = var1.current;
+                    var9 = var1.velocity;
+                    var8 = global;
+                    var10 = var8.Math;
+                    var7 = var10.min;
+                    var5 = var0 - var2;
+                    var2 = 64;
+                    var5 = var7.bind(var10)(var5, var2);
+                    var10 = var8.Math;
+                    var7 = var10.abs;
+                    var2 = var3.clamp;
+                    var11 = 0;
+                    var2 = var2[var11];
+                    var2 = var4 - var2;
+                    var7 = var7.bind(var10)(var2);
+                    var13 = var8.Math;
+                    var12 = var13.abs;
+                    var2 = var3.clamp;
+                    var10 = 1;
+                    var2 = var2[var10];
+                    var2 = var4 - var2;
+                    var2 = var12.bind(var13)(var2);
+                    var2 = var7 < var2;
+                    var7 = var10;
+                    if (!var2) {
+                        _fun33730_ip = 137;
+                        continue _fun33730
                     }
-                case 20:
-                    var3 = _closure2_slot1;
-                    _fun33732_ip = 36;
-                    continue _fun33732;
-                case 26:
-                    var4 = _closure2_slot1;
-                    var0 = undefined;
-                    var3 = var4.bind(var0)();
-                case 36:
-                    var _closure3_slot0 = var3;
-                    var0 = {};
-                    var4 = true;
-                    var0.isHigherOrder = var4;
-                    var4 = function arg0, arg1() {
-                        _fun33733: for (var _fun33733_ip = 0;;) switch (_fun33733_ip) {
-                            case 0:
-                                var2 = arg0;
-                                var5 = arg1;
-                                var1 = var2.startTime;
-                                var0 = var2.started;
-                                var6 = var2.previousAnimation;
-                                var4 = var2.current;
-                                var3 = var5 - var1;
-                                var1 = _closure2_slot0;
-                                if (!(!(var3 >= var1))) {
-                                    _fun33733_ip = 103;
-                                    continue _fun33733
-                                }
-                            case 44:
-                                var1 = var2.reduceMotion;
-                                if (var1) {
-                                    _fun33733_ip = 103;
-                                    continue _fun33733
-                                }
-                            case 53:
-                                if (!var6) {
-                                    _fun33733_ip = 99;
-                                    continue _fun33733
-                                }
-                            case 56:
-                                var1 = var6.finished;
-                                if (var1) {
-                                    _fun33733_ip = 77;
-                                    continue _fun33733
-                                }
-                            case 65:
-                                var3 = var6.onFrame;
-                                var1 = var3.bind(var6)(var6, var5);
-                            case 77:
-                                var3 = var6.current;
-                                var2.current = var3;
-                                if (!var1) {
-                                    _fun33733_ip = 99;
-                                    continue _fun33733
-                                }
-                            case 91:
-                                var1 = null;
-                                var2.previousAnimation = var1;
-                            case 99:
-                                var1 = false;
-                                return var1;
-                            case 103:
-                                if (var0) {
-                                    _fun33733_ip = 155;
-                                    continue _fun33733
-                                }
-                            case 106:
-                                var3 = _closure3_slot0;
-                                var1 = var3.onStart;
-                                var10 = _closure3_slot0;
-                                var11 = var3;
-                                var9 = var4;
-                                var8 = var5;
-                                var7 = var6;
-                                var0 = var11[var1](var10, var9, var8, var7, var6);
-                                var0 = null;
-                                var2.previousAnimation = var0;
-                                var0 = true;
-                                var2.started = var0;
-                            case 155:
-                                var4 = _closure3_slot0;
-                                var3 = var4.onFrame;
-                                var0 = _closure3_slot0;
-                                var0 = var3.bind(var4)(var0, var5);
-                                var1 = _closure3_slot0;
-                                var1 = var1.current;
-                                var2.current = var1;
-                                return var0;
-                        }
-                    };
-                    var0.onFrame = var4;
-                    var4 = function arg0, arg1, arg2, arg3() {
-                        _fun33734: for (var _fun33734_ip = 0;;) switch (_fun33734_ip) {
-                            case 0:
-                                var1 = arg0;
-                                var2 = arg3;
-                                var0 = arg2;
-                                var1.startTime = var0;
-                                var0 = false;
-                                var1.started = var0;
-                                var0 = arg1;
-                                var1.current = var0;
-                                var0 = var2;
-                                if (!(var0 === var1)) {
-                                    _fun33734_ip = 45;
-                                    continue _fun33734
-                                }
-                            case 39:
-                                var0 = var2.previousAnimation;
-                            case 45:
-                                var1.previousAnimation = var0;
-                                var0 = _closure3_slot0;
-                                var3 = var0.reduceMotion;
-                                var0 = undefined;
-                                if (!(var0 === var3)) {
-                                    _fun33734_ip = 86;
-                                    continue _fun33734
-                                }
-                            case 70:
-                                var2 = _closure3_slot0;
-                                var1 = var1.reduceMotion;
-                                var2.reduceMotion = var1;
-                            case 86:
-                                return var0;
-                        }
-                    };
-                    var0.onStart = var4;
-                    var3 = var3.current;
-                    var0.current = var3;
-                    var2 = function arg0() {
-                        _fun33735: for (var _fun33735_ip = 0;;) switch (_fun33735_ip) {
-                            case 0:
-                                var1 = _closure3_slot0;
-                                var1 = var1.callback;
-                                if (!var1) {
-                                    _fun33735_ip = 34;
-                                    continue _fun33735
-                                }
-                            case 16:
-                                var2 = _closure3_slot0;
-                                var1 = var2.callback;
-                                var0 = arg0;
-                                var0 = var1.bind(var2)(var0);
-                            case 34:
-                                var0 = undefined;
-                                return var0;
-                        }
-                    };
-                    var0.callback = var2;
-                    var2 = null;
-                    var0.previousAnimation = var2;
-                    var3 = 0;
-                    var0.startTime = var3;
-                    var2 = false;
-                    var0.started = var2;
-                    var4 = _closure1_slot0;
+                case 135:
+                    var7 = 0;
+                case 137:
+                    var2 = var3.clamp;
+                    var2 = var2[var11];
+                    var2 = var4 < var2;
+                    if (var2) {
+                        _fun33730_ip = 168;
+                        continue _fun33730
+                    }
+                case 154:
+                    var12 = var3.clamp;
+                    var12 = var12[var10];
+                    var2 = var4 > var12;
+                case 168:
+                    var13 = 0;
+                    if (!var2) {
+                        _fun33730_ip = 187;
+                        continue _fun33730
+                    }
+                case 173:
+                    var2 = var3.clamp;
+                    var2 = var2[var7];
+                    var13 = var4 - var2;
+                case 187:
+                    var14 = var8.Math;
+                    var12 = var14.exp;
+                    var2 = var3.deceleration;
+                    var2 = var10 - var2;
+                    var6 = var0 - var6;
+                    var2 = -var2;
+                    var15 = var2 * var6;
+                    var16 = _closure1_slot0;
                     var2 = _closure1_slot1;
-                    var3 = var2[var3];
-                    var2 = undefined;
-                    var3 = var4.bind(var2)(var3);
-                    var2 = var3.getReduceMotionForAnimation;
-                    var1 = _closure2_slot2;
-                    var1 = var2.bind(var3)(var1);
-                    var0.reduceMotion = var1;
+                    var2 = var2[var11];
+                    var10 = undefined;
+                    var2 = var16.bind(var10)(var2);
+                    var2 = var2.SLOPE_FACTOR;
+                    var2 = var15 * var2;
+                    var2 = var12.bind(var14)(var2);
+                    var9 = var9 * var2;
+                    var2 = var3.rubberBandFactor;
+                    var2 = var13 * var2;
+                    var2 = var9 - var2;
+                    var12 = var8.Math;
+                    var9 = var12.abs;
+                    var12 = var9.bind(var12)(var13);
+                    var9 = 0.1;
+                    if (!(!(var12 > var9))) {
+                        _fun33730_ip = 383;
+                        continue _fun33730
+                    }
+                case 306:
+                    var9 = var1.springActive;
+                    if (var9) {
+                        _fun33730_ip = 363;
+                        continue _fun33730
+                    }
+                case 315:
+                    var9 = var8.Math;
+                    var8 = var9.abs;
+                    var8 = var8.bind(var9)(var2);
+                    var9 = _closure1_slot0;
+                    var6 = _closure1_slot1;
+                    var6 = var6[var11];
+                    var6 = var9.bind(var10)(var6);
+                    var6 = var6.VELOCITY_EPS;
+                    if (!(var8 < var6)) {
+                        _fun33730_ip = 391;
+                        continue _fun33730
+                    }
+                case 359:
+                    var6 = true;
+                    return var6;
+                case 363:
+                    var6 = var3.clamp;
+                    var6 = var6[var7];
+                    var1.current = var6;
+                    var6 = true;
+                    return var6;
+                case 383:
+                    var6 = true;
+                    var1.springActive = var6;
+                case 391:
+                    var3 = var3.velocityFactor;
+                    var3 = var2 * var3;
+                    var5 = var3 * var5;
+                    var3 = 1000;
+                    var3 = var5 / var3;
+                    var3 = var4 + var3;
+                    var1.current = var3;
+                    var1.velocity = var2;
+                    var1.lastTimestamp = var0;
+                    var0 = false;
                     return var0;
             }
         };
-        var5 = {};
-        var5._nextAnimation = var3;
-        var5.delayMs = var11;
-        var7 = var10[var7];
-        var7 = var9.bind(var8)(var7);
-        var7 = var7.getReduceMotionForAnimation;
-        var5.getReduceMotionForAnimation = var7;
-        var5.reduceMotion = var6;
-        var0.__closure = var5;
-        var5 = 7904568249320.0;
-        var0.__workletHash = var5;
-        var4 = _closure1_slot2;
-        var0.__initData = var4;
-        var0 = var1.bind(var2)(var3, var0);
+        var2 = {};
+        var5 = _closure1_slot0;
+        var6 = _closure1_slot1;
+        var3 = 0;
+        var7 = var6[var3];
+        var4 = undefined;
+        var7 = var5.bind(var4)(var7);
+        var7 = var7.SLOPE_FACTOR;
+        var2.SLOPE_FACTOR = var7;
+        var7 = 0.1;
+        var2.DERIVATIVE_EPS = var7;
+        var3 = var6[var3];
+        var3 = var5.bind(var4)(var3);
+        var3 = var3.VELOCITY_EPS;
+        var2.VELOCITY_EPS = var3;
+        var0.__closure = var2;
+        var2 = 5389749401303.0;
+        var0.__workletHash = var2;
+        var1 = _closure1_slot2;
+        var0.__initData = var1;
         return var0;
     };
-    var4 = {};
-    var5 = 0;
-    var8 = var7[var5];
     var0 = undefined;
-    var8 = var6.bind(var0)(var8);
-    var8 = var8.defineAnimation;
-    var4.defineAnimation = var8;
-    var5 = var7[var5];
-    var5 = var6.bind(var0)(var5);
-    var5 = var5.getReduceMotionForAnimation;
-    var4.getReduceMotionForAnimation = var5;
-    var1.__closure = var4;
-    var4 = 10965419997083.0;
-    var1.__workletHash = var4;
-    var1.__initData = var3;
-    var2.withDelay = var1;
+    var1 = var1.bind(var0)();
+    var2.rubberBandDecay = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3720]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3758]);

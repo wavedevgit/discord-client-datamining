@@ -78,23 +78,23 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = 'handleFileSystemStoreChanged';
         var0.key = var5;
         var5 = function() {
-            _fun93260: for (var _fun93260_ip = 0;;) switch (_fun93260_ip) {
+            _fun93264: for (var _fun93264_ip = 0;;) switch (_fun93264_ip) {
                 case 0:
                     var1 = this;
                     var0 = _closure1_slot4;
                     var0 = var0.isLowDisk;
                     var3 = var0;
                     if (!var3) {
-                        _fun93260_ip = 32;
-                        continue _fun93260
+                        _fun93264_ip = 32;
+                        continue _fun93264
                     }
                 case 22:
                     var4 = var1.isLowDisk;
                     var3 = var4 !== var0;
                 case 32:
                     if (!var3) {
-                        _fun93260_ip = 83;
-                        continue _fun93260
+                        _fun93264_ip = 83;
+                        continue _fun93264
                     }
                 case 35:
                     var4 = _closure1_slot0;
@@ -107,8 +107,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var3 = var2.bind(var3)();
                     var2 = null;
                     if (!(var2 != var3)) {
-                        _fun93260_ip = 83;
-                        continue _fun93260
+                        _fun93264_ip = 83;
+                        continue _fun93264
                     }
                 case 73:
                     var2 = var3.incrementalVacuum;
@@ -153,4 +153,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 4332, 1637, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 4334, 1637, 2]);

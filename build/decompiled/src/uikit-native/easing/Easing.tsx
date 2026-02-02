@@ -41,4 +41,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.STANDARD_EASING = var3;
     var2.DECELERATED_EASING = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3679, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3681, 2]);

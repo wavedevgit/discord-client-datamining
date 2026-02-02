@@ -33,7 +33,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/polls/useVoteReactors.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun76065: for (var _fun76065_ip = 0;;) switch (_fun76065_ip) {
+        _fun76069: for (var _fun76069_ip = 0;;) switch (_fun76069_ip) {
             case 0:
                 var1 = arg0;
                 var10 = var1.channelId;
@@ -62,7 +62,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var9[var1];
                 var11 = var8.bind(var3)(var1);
                 var13 = function() { // Environment: var0
-                    _fun76066: for (var _fun76066_ip = 0;;) switch (_fun76066_ip) {
+                    _fun76070: for (var _fun76070_ip = 0;;) switch (_fun76070_ip) {
                         case 0:
                             var7 = _closure1_slot3;
                             var6 = var7.getReactions;
@@ -88,16 +88,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var3 = null;
                             var4 = var3 == var5;
                             if (var4) {
-                                _fun76066_ip = 113;
-                                continue _fun76066
+                                _fun76070_ip = 113;
+                                continue _fun76070
                             }
                         case 104:
                             var4 = var5.values;
                             var0 = var4.bind(var5)();
                         case 113:
                             if (!(var3 == var0)) {
-                                _fun76066_ip = 121;
-                                continue _fun76066
+                                _fun76070_ip = 121;
+                                continue _fun76070
                             }
                         case 117:
                             var0 = new Array(0);
@@ -116,8 +116,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = null;
                 var5 = var2 == var4;
                 if (var5) {
-                    _fun76065_ip = 161;
-                    continue _fun76065
+                    _fun76069_ip = 161;
+                    continue _fun76069
                 }
             case 155:
                 var3 = var4.vote;
@@ -125,8 +125,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var2 != var3;
                 var2 = 0;
                 if (!var4) {
-                    _fun76065_ip = 173;
-                    continue _fun76065
+                    _fun76069_ip = 173;
+                    continue _fun76069
                 }
             case 170:
                 var2 = var3;
@@ -139,4 +139,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [6514, 660, 566, 6516, 644, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [6516, 660, 566, 6518, 644, 2]);

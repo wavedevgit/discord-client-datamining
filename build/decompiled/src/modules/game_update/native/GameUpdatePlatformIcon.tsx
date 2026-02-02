@@ -31,7 +31,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/game_update/native/GameUpdatePlatformIcon.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun118052: for (var _fun118052_ip = 0;;) switch (_fun118052_ip) {
+        _fun118053: for (var _fun118053_ip = 0;;) switch (_fun118053_ip) {
             case 0:
                 var0 = arg0;
                 var2 = var0.platform;
@@ -44,8 +44,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.PlatformType;
                 var1 = var1.DESKTOP;
                 if (!(var1 !== var2)) {
-                    _fun118052_ip = 471;
-                    continue _fun118052
+                    _fun118053_ip = 471;
+                    continue _fun118053
                 }
             case 53:
                 var4 = _closure1_slot0;
@@ -55,8 +55,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.PlatformType;
                 var1 = var1.XBOX;
                 if (!(var1 !== var2)) {
-                    _fun118052_ip = 423;
-                    continue _fun118052
+                    _fun118053_ip = 423;
+                    continue _fun118053
                 }
             case 89:
                 var4 = _closure1_slot0;
@@ -66,8 +66,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.PlatformType;
                 var1 = var1.PLAYSTATION;
                 if (!(var1 !== var2)) {
-                    _fun118052_ip = 375;
-                    continue _fun118052
+                    _fun118053_ip = 375;
+                    continue _fun118053
                 }
             case 125:
                 var4 = _closure1_slot0;
@@ -77,8 +77,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.PlatformType;
                 var1 = var1.NINTENDO;
                 if (!(var1 !== var2)) {
-                    _fun118052_ip = 327;
-                    continue _fun118052
+                    _fun118053_ip = 327;
+                    continue _fun118053
                 }
             case 161:
                 var4 = _closure1_slot0;
@@ -88,8 +88,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.PlatformType;
                 var1 = var1.ANDROID;
                 if (!(var1 !== var2)) {
-                    _fun118052_ip = 279;
-                    continue _fun118052
+                    _fun118053_ip = 279;
+                    continue _fun118053
                 }
             case 194:
                 var4 = _closure1_slot0;
@@ -99,8 +99,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.PlatformType;
                 var1 = var1.IOS;
                 if (!(var1 !== var2)) {
-                    _fun118052_ip = 231;
-                    continue _fun118052
+                    _fun118053_ip = 231;
+                    continue _fun118053
                 }
             case 227:
                 var1 = null;
@@ -187,4 +187,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.GameUpdatePlatformIcon = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 7792, 10482, 10673, 10672, 15008, 10483, 15010, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 7794, 10484, 10675, 10674, 15009, 10485, 15011, 2]);

@@ -24,7 +24,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'design/tokens/native/SemanticColorContext.native.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun27221: for (var _fun27221_ip = 0;;) switch (_fun27221_ip) {
+        _fun27225: for (var _fun27225_ip = 0;;) switch (_fun27225_ip) {
             case 0:
                 var0 = arg0;
                 var2 = _closure1_slot0;
@@ -46,8 +46,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var2.bind(var4)(var8, var1);
                 var4 = null;
                 if (!(var4 != var5)) {
-                    _fun27221_ip = 322;
-                    continue _fun27221
+                    _fun27225_ip = 322;
+                    continue _fun27225
                 }
             case 96:
                 var12 = var0.theme;
@@ -56,8 +56,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var4 == var2;
                 var0 = null;
                 if (var8) {
-                    _fun27221_ip = 319;
-                    continue _fun27221
+                    _fun27225_ip = 319;
+                    continue _fun27225
                 }
             case 126:
                 var10 = _closure1_slot0;
@@ -71,8 +71,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = var10.bind(var13)(var8);
                 var8 = var10.int2hex;
                 if (!(var4 != var11)) {
-                    _fun27221_ip = 178;
-                    continue _fun27221
+                    _fun27225_ip = 178;
+                    continue _fun27225
                 }
             case 175:
                 var2 = var11;
@@ -98,8 +98,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = var6.bind(var11)(var12);
                 var6 = 'dark';
                 if (!var11) {
-                    _fun27221_ip = 280;
-                    continue _fun27221
+                    _fun27225_ip = 280;
+                    continue _fun27225
                 }
             case 276:
                 var6 = 'light';
@@ -121,8 +121,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = 1;
                 var6 = var2;
                 if (var8) {
-                    _fun27221_ip = 340;
-                    continue _fun27221
+                    _fun27225_ip = 340;
+                    continue _fun27225
                 }
             case 337:
                 var6 = var7;
@@ -130,8 +130,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0.contrast = var6;
                 var4 = var4 != var5;
                 if (var4) {
-                    _fun27221_ip = 355;
-                    continue _fun27221
+                    _fun27225_ip = 355;
+                    continue _fun27225
                 }
             case 352:
                 var2 = var3;
@@ -143,4 +143,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getSemanticColorContextFromThemeContext = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [668, 669, 3112, 3117, 3154, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [668, 669, 3114, 3119, 3156, 2]);

@@ -1,7 +1,7 @@
 // components_native/common/MessageLoadingSpinner.tsx
 // @ts-nocheck
 export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun64511: for (var _fun64511_ip = 0;;) switch (_fun64511_ip) {
+    _fun64515: for (var _fun64515_ip = 0;;) switch (_fun64515_ip) {
         case 0:
             var4 = require;
             var2 = exports;
@@ -37,8 +37,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var6 = var3.bind(var6)();
             var3 = null;
             if (var6) {
-                _fun64511_ip = 146;
-                continue _fun64511
+                _fun64515_ip = 146;
+                continue _fun64515
             }
         case 135:
             var6 = 'DCDMessageLoadingSpinner';
@@ -52,14 +52,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var3 = 'components_native/common/MessageLoadingSpinner.tsx';
             var3 = var4.bind(var5)(var3);
             var1 = function arg0() {
-                _fun64512: for (var _fun64512_ip = 0;;) switch (_fun64512_ip) {
+                _fun64516: for (var _fun64516_ip = 0;;) switch (_fun64516_ip) {
                     case 0:
                         var1 = arg0;
                         var3 = _closure1_slot2;
                         var0 = null;
                         if (!(var0 == var3)) {
-                            _fun64512_ip = 65;
-                            continue _fun64512
+                            _fun64516_ip = 65;
+                            continue _fun64516
                         }
                     case 16:
                         var5 = _closure1_slot1;
@@ -74,8 +74,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var0 = copyDataProperties(var7, var6);
                         var0 = undefined;
                         var0 = var5.bind(var0)(var4, var3);
-                        _fun64512_ip = 93;
-                        continue _fun64512;
+                        _fun64516_ip = 93;
+                        continue _fun64516;
                     case 65:
                         var4 = _closure1_slot1;
                         var3 = _closure1_slot2;

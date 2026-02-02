@@ -32,14 +32,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot3 = var3;
     var3 = var7.forwardRef;
     var1 = function(arg0, arg1) { // Environment: var1
-        _fun37307: for (var _fun37307_ip = 0;;) switch (_fun37307_ip) {
+        _fun37311: for (var _fun37311_ip = 0;;) switch (_fun37311_ip) {
             case 0:
                 var2 = arg0;
                 var9 = var2.accessibilityViewIsModal;
                 var3 = undefined;
                 if (!(var9 === var3)) {
-                    _fun37307_ip = 17;
-                    continue _fun37307
+                    _fun37311_ip = 17;
+                    continue _fun37311
                 }
             case 15:
                 var9 = false;
@@ -62,15 +62,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = var1;
                 var4 = copyDataProperties(var13, var12, var11);
                 if (!var9) {
-                    _fun37307_ip = 79;
-                    continue _fun37307
+                    _fun37311_ip = 75;
+                    continue _fun37311
+                }
+            case 71:
+                if (!(var6 != var5)) {
+                    _fun37311_ip = 175;
+                    continue _fun37311
                 }
             case 75:
-                if (!(var6 != var5)) {
-                    _fun37307_ip = 179;
-                    continue _fun37307
-                }
-            case 79:
                 var2 = _closure1_slot0;
                 var10 = _closure1_slot1;
                 var1 = 3;
@@ -88,12 +88,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0.nativeID = var8;
                 var6 = var6 == var8;
                 if (!var6) {
-                    _fun37307_ip = 151;
-                    continue _fun37307
+                    _fun37311_ip = 147;
+                    continue _fun37311
                 }
-            case 148:
+            case 144:
                 var6 = var7;
-            case 151:
+            case 147:
                 var0.collapsable = var6;
                 var0.onAccessibilityEscape = var5;
                 var13 = var0;
@@ -101,7 +101,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = copyDataProperties(var13, var12);
                 var0 = var2.bind(var3)(var1, var0);
                 return var0;
-            case 179:
+            case 175:
                 var0 = global;
                 var2 = var0.Error;
                 var0 = var2.prototype;
@@ -132,4 +132,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.AccessibilityView = var3;
     var2.AccessibilityViewAnimated = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 4026, 3679, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 4028, 3681, 2]);

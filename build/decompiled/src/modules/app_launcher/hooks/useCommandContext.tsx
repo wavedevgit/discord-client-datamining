@@ -4,14 +4,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2 = exports;
     var5 = dependencyMap;
     var3 = function arg0() {
-        _fun89582: for (var _fun89582_ip = 0;;) switch (_fun89582_ip) {
+        _fun89586: for (var _fun89586_ip = 0;;) switch (_fun89586_ip) {
             case 0:
                 var1 = arg0;
                 var2 = var1.type;
                 var0 = 'contextless';
                 if (!(var0 !== var2)) {
-                    _fun89582_ip = 62;
-                    continue _fun89582
+                    _fun89586_ip = 62;
+                    continue _fun89586
                 }
             case 18:
                 var0 = {};
@@ -23,8 +23,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.guild_id;
                 var1 = var2.bind(var3)(var1);
                 var0.guild = var1;
-                _fun89582_ip = 77;
-                continue _fun89582;
+                _fun89586_ip = 77;
+                continue _fun89586;
             case 62:
                 var1 = {};
                 var2 = undefined;

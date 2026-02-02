@@ -26,7 +26,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot2 = var3;
     var3 = var6.forwardRef;
     var1 = function(arg0, arg1) { // Environment: var1
-        _fun47973: for (var _fun47973_ip = 0;;) switch (_fun47973_ip) {
+        _fun47977: for (var _fun47977_ip = 0;;) switch (_fun47977_ip) {
             case 0:
                 var7 = arg0;
                 var2 = _closure1_slot0;
@@ -50,8 +50,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1 != var2;
                 var6 = undefined;
                 if (!var1) {
-                    _fun47973_ip = 121;
-                    continue _fun47973
+                    _fun47977_ip = 121;
+                    continue _fun47977
                 }
             case 95:
                 var1 = {};
@@ -101,4 +101,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.TextField = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 5359, 5365, 5366, 5368, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 5361, 5367, 5368, 5370, 2]);

@@ -89,14 +89,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = 'isEqual';
         var0.key = var5;
         var5 = function arg0() {
-            _fun87016: for (var _fun87016_ip = 0;;) switch (_fun87016_ip) {
+            _fun87020: for (var _fun87020_ip = 0;;) switch (_fun87020_ip) {
                 case 0:
                     var1 = arg0;
                     var0 = _closure2_slot0;
                     var0 = var1 instanceof var0;
                     if (!var0) {
-                        _fun87016_ip = 34;
-                        continue _fun87016
+                        _fun87020_ip = 34;
+                        continue _fun87020
                     }
                 case 17:
                     var2 = var1.applicationId;
@@ -167,4 +167,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.ApplicationWidget = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 4624, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 4626, 2]);

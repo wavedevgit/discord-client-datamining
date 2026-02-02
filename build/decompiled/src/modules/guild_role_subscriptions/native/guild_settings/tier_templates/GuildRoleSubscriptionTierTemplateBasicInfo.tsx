@@ -263,4 +263,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.GuildRoleSubscriptionTierTemplateBasicInfo = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1615, 483, 33, 1297, 671, 4667, 9226, 3900, 1234, 4570, 10729, 4836, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1615, 483, 33, 1297, 671, 4669, 9228, 3902, 1234, 4572, 10731, 4838, 2]);

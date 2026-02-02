@@ -90,7 +90,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/collectibles/native/AvatarDecorationSampleV2.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun56733: for (var _fun56733_ip = 0;;) switch (_fun56733_ip) {
+        _fun56737: for (var _fun56737_ip = 0;;) switch (_fun56737_ip) {
             case 0:
                 var0 = arg0;
                 var13 = var0.item;
@@ -128,16 +128,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9[0] = var16;
                 var16 = var10;
                 if (!var10) {
-                    _fun56733_ip = 166;
-                    continue _fun56733
+                    _fun56737_ip = 166;
+                    continue _fun56737
                 }
             case 160:
                 var16 = var14.purchased;
             case 166:
                 var9[1] = var16;
                 if (!var15) {
-                    _fun56733_ip = 179;
-                    continue _fun56733
+                    _fun56737_ip = 179;
+                    continue _fun56737
                 }
             case 173:
                 var15 = var14.threeTierBundle;
@@ -148,8 +148,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4.resizeMode = var9;
                 var9 = null;
                 if (!(var9 == var7)) {
-                    _fun56733_ip = 221;
-                    continue _fun56733
+                    _fun56737_ip = 221;
+                    continue _fun56737
                 }
             case 201:
                 var15 = _closure1_slot1;
@@ -169,8 +169,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = new Array(2);
                 var9[0] = var15;
                 if (!var10) {
-                    _fun56733_ip = 272;
-                    continue _fun56733
+                    _fun56737_ip = 272;
+                    continue _fun56737
                 }
             case 266:
                 var10 = var14.purchased;
@@ -200,4 +200,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = 0.8333333333333334;
     var2.avatarPlaceholderSizeRatio = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 44, 3452, 6873, 5713, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 44, 3454, 6875, 5715, 2]);

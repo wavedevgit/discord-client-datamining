@@ -34,7 +34,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/reactions/canAddNewReactions.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Environment: var1
-        _fun57269: for (var _fun57269_ip = 0;;) switch (_fun57269_ip) {
+        _fun57273: for (var _fun57273_ip = 0;;) switch (_fun57273_ip) {
             case 0:
                 var2 = arg0;
                 var0 = var2.getGuildId;
@@ -42,8 +42,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = null;
                 var0 = var0 != var4;
                 if (!var0) {
-                    _fun57269_ip = 40;
-                    continue _fun57269
+                    _fun57273_ip = 40;
+                    continue _fun57273
                 }
             case 22:
                 var3 = _closure1_slot0;
@@ -51,8 +51,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var1.bind(var3)(var4);
             case 40:
                 if (!var0) {
-                    _fun57269_ip = 72;
-                    continue _fun57269
+                    _fun57273_ip = 72;
+                    continue _fun57273
                 }
             case 43:
                 var4 = _closure1_slot1;
@@ -62,8 +62,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var3.bind(var4)(var1, var2);
             case 72:
                 if (var0) {
-                    _fun57269_ip = 85;
-                    continue _fun57269
+                    _fun57273_ip = 85;
+                    continue _fun57273
                 }
             case 75:
                 var1 = var2.isPrivate;
@@ -74,4 +74,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [4198, 3050, 660, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [4200, 3052, 660, 2]);

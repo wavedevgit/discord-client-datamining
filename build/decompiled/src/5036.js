@@ -1,210 +1,154 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var5 = require;
+    var4 = require;
     var2 = exports;
-    var6 = dependencyMap;
-    var _closure1_slot0 = var5;
-    var _closure1_slot1 = var6;
+    var3 = dependencyMap;
+    var _closure1_slot0 = var4;
+    var _closure1_slot1 = var3;
     var0 = global;
     var7 = var0.Object;
-    var4 = var7.defineProperty;
-    var3 = {};
+    var6 = var7.defineProperty;
+    var5 = {};
     var0 = true;
-    var3.value = var0;
+    var5.value = var0;
     var0 = '__esModule';
-    var0 = var4.bind(var7)(var2, var0, var3);
-    var4 = 0;
-    var3 = var6[var4];
+    var0 = var6.bind(var7)(var2, var0, var5);
+    var0 = 0;
+    var3 = var3[var0];
     var0 = undefined;
-    var7 = var5.bind(var0)(var3);
-    var3 = var7.memo;
-    var7 = var7.useMemo;
-    var _closure1_slot2 = var7;
-    var7 = var6[var4];
-    var4 = metroImportDefault;
-    var4 = var4.bind(var0)(var7);
-    var4 = 1;
-    var4 = var6[var4];
-    var4 = var5.bind(var0)(var4);
-    var7 = var4.StyleSheet;
-    var _closure1_slot3 = var7;
-    var4 = var4.View;
-    var _closure1_slot4 = var4;
-    var4 = 2;
-    var4 = var6[var4];
-    var4 = var5.bind(var0)(var4);
-    var5 = var4.jsx;
-    var _closure1_slot5 = var5;
-    var4 = var4.jsxs;
-    var _closure1_slot6 = var4;
+    var3 = var4.bind(var0)(var3);
+    var3 = var3.memo;
+    var4 = {};
+    var5 = 'function pnpm_BottomSheetFooterContainerTsx1(){const{animatedHandleHeight,INITIAL_HANDLE_HEIGHT,animatedKeyboardHeightInContainer,animatedContainerHeight,animatedPosition,animatedKeyboardState,animatedFooterHeight,KEYBOARD_STATE}=this.__closure;const handleHeight=animatedHandleHeight.get();if(handleHeight===INITIAL_HANDLE_HEIGHT){return 0;}const keyboardHeight=animatedKeyboardHeightInContainer.get();const containerHeight=animatedContainerHeight.get();const position=animatedPosition.get();const keyboardState=animatedKeyboardState.get();const footerHeight=animatedFooterHeight.get();let footerTranslateY=Math.max(0,containerHeight-position);if(keyboardState===KEYBOARD_STATE.SHOWN){footerTranslateY=footerTranslateY-keyboardHeight;}footerTranslateY=footerTranslateY-footerHeight-handleHeight;return footerTranslateY;}';
+    var4.code = var5;
+    var _closure1_slot2 = var4;
     var1 = function arg0() {
-        _fun45344: for (var _fun45344_ip = 0;;) switch (_fun45344_ip) {
-            case 0:
-                var2 = arg0;
-                var1 = var2.style;
-                var _closure2_slot0 = var1;
-                var8 = var2.indicatorStyle;
-                var _closure2_slot1 = var8;
-                var12 = var2.accessible;
-                var3 = undefined;
-                if (!(var3 === var12)) {
-                    _fun45344_ip = 64;
-                    continue _fun45344
-                }
-            case 35:
-                var5 = _closure1_slot0;
-                var6 = _closure1_slot1;
-                var4 = 3;
-                var4 = var6[var4];
-                var4 = var5.bind(var3)(var4);
-                var12 = var4.DEFAULT_ACCESSIBLE;
-            case 64:
-                var11 = var2.accessibilityRole;
-                if (!(var3 === var11)) {
-                    _fun45344_ip = 102;
-                    continue _fun45344
-                }
-            case 73:
-                var5 = _closure1_slot0;
-                var6 = _closure1_slot1;
-                var4 = 3;
-                var4 = var6[var4];
-                var4 = var5.bind(var3)(var4);
-                var11 = var4.DEFAULT_ACCESSIBILITY_ROLE;
-            case 102:
-                var10 = var2.accessibilityLabel;
-                if (!(var3 === var10)) {
-                    _fun45344_ip = 140;
-                    continue _fun45344
-                }
-            case 111:
-                var5 = _closure1_slot0;
-                var6 = _closure1_slot1;
-                var4 = 3;
-                var4 = var6[var4];
-                var4 = var5.bind(var3)(var4);
-                var10 = var4.DEFAULT_ACCESSIBILITY_LABEL;
-            case 140:
-                var7 = var2.accessibilityHint;
-                if (!(var3 === var7)) {
-                    _fun45344_ip = 179;
-                    continue _fun45344
-                }
-            case 150:
-                var5 = _closure1_slot0;
-                var6 = _closure1_slot1;
-                var4 = 3;
-                var4 = var6[var4];
-                var4 = var5.bind(var3)(var4);
-                var7 = var4.DEFAULT_ACCESSIBILITY_HINT;
-            case 179:
-                var5 = var2.children;
-                var2 = _closure1_slot2;
-                var6 = new Array(1);
-                var6[0] = var1;
-                var1 = function() { // Environment: var0
-                    var3 = _closure1_slot0;
-                    var2 = _closure1_slot1;
-                    var0 = 4;
-                    var2 = var2[var0];
-                    var0 = undefined;
-                    var0 = var3.bind(var0)(var2);
-                    var0 = var0.styles;
-                    var2 = var0.container;
-                    var0 = new Array(2);
-                    var0[0] = var2;
-                    var3 = _closure1_slot3;
-                    var2 = var3.flatten;
-                    var1 = _closure2_slot0;
-                    var1 = var2.bind(var3)(var1);
-                    var0[1] = var1;
-                    return var0;
-                };
-                var6 = var2.bind(var3)(var1, var6);
-                var1 = new Array(1);
-                var1[0] = var8;
-                var0 = function() { // Environment: var0
-                    var3 = _closure1_slot0;
-                    var2 = _closure1_slot1;
-                    var0 = 4;
-                    var2 = var2[var0];
-                    var0 = undefined;
-                    var0 = var3.bind(var0)(var2);
-                    var0 = var0.styles;
-                    var2 = var0.indicator;
-                    var0 = new Array(2);
-                    var0[0] = var2;
-                    var3 = _closure1_slot3;
-                    var2 = var3.flatten;
+        var0 = arg0;
+        var2 = var0.renderFooter;
+        var15 = _closure1_slot0;
+        var16 = _closure1_slot1;
+        var0 = 1;
+        var0 = var16[var0];
+        var1 = undefined;
+        var5 = var15.bind(var1)(var0);
+        var0 = var5.useBottomSheetInternal;
+        var0 = var0.bind(var5)();
+        var11 = var0.animatedContainerHeight;
+        var _closure2_slot0 = var11;
+        var7 = var0.animatedHandleHeight;
+        var _closure2_slot1 = var7;
+        var8 = var0.animatedFooterHeight;
+        var _closure2_slot2 = var8;
+        var10 = var0.animatedPosition;
+        var _closure2_slot3 = var10;
+        var9 = var0.animatedKeyboardState;
+        var _closure2_slot4 = var9;
+        var12 = var0.animatedKeyboardHeightInContainer;
+        var _closure2_slot5 = var12;
+        var0 = {};
+        var5 = 2;
+        var5 = var16[var5];
+        var6 = var15.bind(var1)(var5);
+        var5 = var6.useDerivedValue;
+        var4 = function() {
+            _fun45345: for (var _fun45345_ip = 0;;) switch (_fun45345_ip) {
+                case 0:
                     var1 = _closure2_slot1;
-                    var1 = var2.bind(var3)(var1);
-                    var0[1] = var1;
+                    var0 = var1.get;
+                    var1 = var0.bind(var1)();
+                    var4 = _closure1_slot0;
+                    var5 = _closure1_slot1;
+                    var3 = 3;
+                    var3 = var5[var3];
+                    var7 = undefined;
+                    var3 = var4.bind(var7)(var3);
+                    var3 = var3.INITIAL_HANDLE_HEIGHT;
+                    if (!(var1 !== var3)) {
+                        _fun45345_ip = 197;
+                        continue _fun45345
+                    }
+                case 54:
+                    var4 = _closure2_slot5;
+                    var3 = var4.get;
+                    var4 = var3.bind(var4)();
+                    var5 = _closure2_slot0;
+                    var3 = var5.get;
+                    var5 = var3.bind(var5)();
+                    var6 = _closure2_slot3;
+                    var3 = var6.get;
+                    var3 = var3.bind(var6)();
+                    var8 = _closure2_slot4;
+                    var6 = var8.get;
+                    var6 = var6.bind(var8)();
+                    var8 = _closure2_slot2;
+                    var2 = var8.get;
+                    var2 = var2.bind(var8)();
+                    var8 = global;
+                    var9 = var8.Math;
+                    var8 = var9.max;
+                    var5 = var5 - var3;
+                    var3 = 0;
+                    var3 = var8.bind(var9)(var3, var5);
+                    var5 = _closure1_slot0;
+                    var8 = _closure1_slot1;
+                    var0 = 4;
+                    var0 = var8[var0];
+                    var0 = var5.bind(var7)(var0);
+                    var0 = var0.KEYBOARD_STATE;
+                    var5 = var0.SHOWN;
+                    var0 = var3;
+                    if (!(var6 === var5)) {
+                        _fun45345_ip = 187;
+                        continue _fun45345
+                    }
+                case 183:
+                    var0 = var3 - var4;
+                case 187:
+                    var0 = var0 - var2;
+                    var0 = var0 - var1;
                     return var0;
-                };
-                var8 = var2.bind(var3)(var0, var1);
-                var2 = _closure1_slot6;
-                var1 = _closure1_slot4;
-                var0 = {};
-                var0.style = var6;
-                var6 = null;
-                var13 = var6 != var12;
-                var9 = undefined;
-                if (!var13) {
-                    _fun45344_ip = 257;
-                    continue _fun45344
-                }
-            case 254:
-                var9 = var12;
-            case 257:
-                var0.accessible = var9;
-                var12 = var6 != var11;
-                var9 = undefined;
-                if (!var12) {
-                    _fun45344_ip = 273;
-                    continue _fun45344
-                }
-            case 270:
-                var9 = var11;
-            case 273:
-                var0.accessibilityRole = var9;
-                var11 = var6 != var10;
-                var9 = undefined;
-                if (!var11) {
-                    _fun45344_ip = 289;
-                    continue _fun45344
-                }
-            case 286:
-                var9 = var10;
-            case 289:
-                var0.accessibilityLabel = var9;
-                var9 = var6 != var7;
-                var6 = undefined;
-                if (!var9) {
-                    _fun45344_ip = 305;
-                    continue _fun45344
-                }
-            case 302:
-                var6 = var7;
-            case 305:
-                var0.accessibilityHint = var6;
-                var6 = true;
-                var0.collapsable = var6;
-                var7 = _closure1_slot5;
-                var6 = _closure1_slot4;
-                var4 = {};
-                var4.style = var8;
-                var6 = var7.bind(var3)(var6, var4);
-                var4 = new Array(2);
-                var4[0] = var6;
-                var4[1] = var5;
-                var0.children = var4;
-                var0 = var2.bind(var3)(var1, var0);
-                return var0;
-        }
+                case 197:
+                    var0 = 0;
+                    return var0;
+            }
+        };
+        var13 = {};
+        var13.animatedHandleHeight = var7;
+        var14 = 3;
+        var14 = var16[var14];
+        var14 = var15.bind(var1)(var14);
+        var14 = var14.INITIAL_HANDLE_HEIGHT;
+        var13.INITIAL_HANDLE_HEIGHT = var14;
+        var13.animatedKeyboardHeightInContainer = var12;
+        var13.animatedContainerHeight = var11;
+        var13.animatedPosition = var10;
+        var13.animatedKeyboardState = var9;
+        var13.animatedFooterHeight = var8;
+        var14 = 4;
+        var14 = var16[var14];
+        var14 = var15.bind(var1)(var14);
+        var14 = var14.KEYBOARD_STATE;
+        var13.KEYBOARD_STATE = var14;
+        var4.__closure = var13;
+        var13 = 8297656659240.0;
+        var4.__workletHash = var13;
+        var3 = _closure1_slot2;
+        var4.__initData = var3;
+        var3 = new Array(6);
+        var3[0] = var12;
+        var3[1] = var11;
+        var3[2] = var10;
+        var3[3] = var9;
+        var3[4] = var8;
+        var3[5] = var7;
+        var3 = var5.bind(var6)(var4, var3);
+        var0.animatedFooterPosition = var3;
+        var0 = var2.bind(var1)(var0);
+        return var0;
     };
     var1 = var3.bind(var0)(var1);
-    var3 = 'BottomSheetHandle';
+    var3 = 'BottomSheetFooterContainer';
     var1.displayName = var3;
-    var2.default = var1;
+    var2.BottomSheetFooterContainer = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 5037, 5038]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 4903, 3682, 4902, 4899]);

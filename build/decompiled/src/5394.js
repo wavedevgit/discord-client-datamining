@@ -1,104 +1,138 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun48111: for (var _fun48111_ip = 0;;) switch (_fun48111_ip) {
-        case 0:
-            var2 = exports;
-            var0 = global;
-            var4 = var0.Object;
-            var3 = var4.defineProperty;
-            var1 = {};
-            var0 = true;
-            var1.value = var0;
-            var0 = '__esModule';
-            var0 = var3.bind(var4)(var2, var0, var1);
-            var0 = undefined;
-            var2.styles = var0;
-            var1 = dependencyMap;
-            var6 = 0;
-            var3 = var1[var6];
-            var1 = require;
-            var7 = var1.bind(var0)(var3);
-            var4 = var7.StyleSheet;
-            var3 = var4.create;
-            var1 = {};
-            var5 = {
-                'marginTop': 20,
-                'alignItems': 'center',
-                'position': 'absolute'
-            };
-            var1.stepNumber = var5;
-            var5 = {
-                'zIndex': 1,
-                'width': '100%'
-            };
-            var1.sliderMainContainer = var5;
-            var5 = {};
-            var8 = 40;
-            var5.height = var8;
-            var1.defaultSlideriOS = var5;
-            var5 = {};
-            var1.defaultSlider = var5;
-            var5 = {
-                'flex': 1,
-                'flexDirection': 'row',
-                'justifyContent': 'space-between',
-                'top': null,
-                'zIndex': 2
-            };
-            var7 = var7.Platform;
-            var8 = var7.OS;
-            var7 = 'ios';
-            if (!(var7 === var8)) {
-                _fun48111_ip = 171;
-                continue _fun48111
-            }
-        case 168:
-            var6 = 10;
-        case 171:
-            var5.top = var6;
-            var1.stepsIndicator = var5;
-            var5 = {
-                'alignItems': 'center',
-                'alignContent': 'center',
-                'alignSelf': 'center',
-                'justifyContent': 'center',
-                'position': 'absolute',
-                'zIndex': 3
-            };
-            var1.trackMarkContainer = var5;
-            var5 = {
-                'position': 'absolute',
-                'zIndex': 3,
-                'justifyContent': 'center',
-                'alignItems': 'center',
-                'alignContent': 'center'
-            };
-            var1.thumbImageContainer = var5;
-            var5 = {
-                'alignContent': 'center',
-                'alignItems': 'center',
-                'position': 'absolute'
-            };
-            var1.thumbImage = var5;
-            var5 = {
-                'alignItems': 'center',
-                'alignContent': 'center'
-            };
-            var1.stepIndicatorElement = var5;
-            var5 = {
-                'height': 20,
-                'width': 5,
-                'backgroundColor': '#CCCCCC'
-            };
-            var1.defaultIndicatorMarked = var5;
-            var5 = {
-                'height': 10,
-                'width': 2,
-                'backgroundColor': '#C0C0C0'
-            };
-            var1.defaultIndicatorIdle = var5;
-            var1 = var3.bind(var4)(var1);
-            var2.styles = var1;
-            return var0;
-    }
-})(undefined, undefined, undefined, undefined, undefined, undefined, [27]);
+    var4 = require;
+    var2 = exports;
+    var6 = dependencyMap;
+    var0 = 0;
+    var3 = var6[var0];
+    var0 = undefined;
+    var5 = var4.bind(var0)(var3);
+    var8 = global;
+    var11 = var8.Object;
+    var10 = var11.defineProperty;
+    var9 = {};
+    var7 = true;
+    var9.value = var7;
+    var3 = '__esModule';
+    var3 = var10.bind(var11)(var2, var3, var9);
+    var2.__INTERNAL_VIEW_CONFIG = var0;
+    var2.default = var0;
+    var3 = 1;
+    var3 = var6[var3];
+    var3 = var4.bind(var0)(var3);
+    var3 = var5.bind(var0)(var3);
+    var3 = {};
+    var5 = 'RNCSlider';
+    var3.uiViewClassName = var5;
+    var9 = {};
+    var10 = {};
+    var11 = {
+        'captured': 'onChangeCapture',
+        'bubbled': 'onChange'
+    };
+    var10.phasedRegistrationNames = var11;
+    var9.topChange = var10;
+    var10 = {};
+    var11 = {
+        'captured': 'onRNCSliderValueChangeCapture',
+        'bubbled': 'onRNCSliderValueChange'
+    };
+    var10.phasedRegistrationNames = var11;
+    var9.topRNCSliderValueChange = var10;
+    var3.bubblingEventTypes = var9;
+    var9 = {};
+    var10 = {};
+    var11 = 'onRNCSliderSlidingStart';
+    var10.registrationName = var11;
+    var9.topRNCSliderSlidingStart = var10;
+    var10 = {};
+    var11 = 'onRNCSliderSlidingComplete';
+    var10.registrationName = var11;
+    var9.topRNCSliderSlidingComplete = var10;
+    var3.directEventTypes = var9;
+    var10 = var8.Object;
+    var9 = var10.assign;
+    var8 = {
+        'accessibilityUnits': true,
+        'accessibilityIncrements': true,
+        'disabled': true,
+        'inverted': true,
+        'vertical': true,
+        'tapToSeek': true,
+        'maximumTrackImage': null,
+        'maximumTrackTintColor': null,
+        'maximumValue': true
+    };
+    var11 = {};
+    var12 = 2;
+    var13 = var6[var12];
+    var13 = var4.bind(var0)(var13);
+    var11.process = var13;
+    var8.maximumTrackImage = var11;
+    var11 = {};
+    var13 = 3;
+    var14 = var6[var13];
+    var14 = var4.bind(var0)(var14);
+    var14 = var14.default;
+    var11.process = var14;
+    var8.maximumTrackTintColor = var11;
+    var11 = {};
+    var14 = var6[var12];
+    var14 = var4.bind(var0)(var14);
+    var11.process = var14;
+    var8.minimumTrackImage = var11;
+    var11 = {};
+    var14 = var6[var13];
+    var14 = var4.bind(var0)(var14);
+    var14 = var14.default;
+    var11.process = var14;
+    var8.minimumTrackTintColor = var11;
+    var8.minimumValue = var7;
+    var8.step = var7;
+    var8.testID = var7;
+    var11 = {};
+    var14 = var6[var12];
+    var14 = var4.bind(var0)(var14);
+    var11.process = var14;
+    var8.thumbImage = var11;
+    var11 = {};
+    var13 = var6[var13];
+    var13 = var4.bind(var0)(var13);
+    var13 = var13.default;
+    var11.process = var13;
+    var8.thumbTintColor = var11;
+    var11 = {};
+    var12 = var6[var12];
+    var12 = var4.bind(var0)(var12);
+    var11.process = var12;
+    var8.trackImage = var11;
+    var8.value = var7;
+    var8.lowerLimit = var7;
+    var8.upperLimit = var7;
+    var7 = 4;
+    var7 = var6[var7];
+    var12 = var4.bind(var0)(var7);
+    var11 = var12.ConditionallyIgnoredEventHandlers;
+    var7 = {
+        'onChange': true,
+        'onRNCSliderSlidingStart': true,
+        'onRNCSliderSlidingComplete': true,
+        'onRNCSliderValueChange': true
+    };
+    var7 = var11.bind(var12)(var7);
+    var7 = var9.bind(var10)(var8, var7);
+    var3.validAttributes = var7;
+    var2.__INTERNAL_VIEW_CONFIG = var3;
+    var _closure1_slot0 = var3;
+    var3 = 5;
+    var3 = var6[var3];
+    var4 = var4.bind(var0)(var3);
+    var3 = var4.get;
+    var1 = function() { // Environment: var1
+        var0 = _closure1_slot0;
+        return var0;
+    };
+    var1 = var3.bind(var4)(var5, var1);
+    var2.default = var1;
+    return var0;
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5392, 445, 90, 38, 110, 42]);

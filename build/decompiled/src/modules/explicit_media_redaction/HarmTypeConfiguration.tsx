@@ -71,7 +71,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var14 = 'obscure_blur_effect_explicit_content_enabled';
     var5.devSettingKey = var14;
     var14 = function arg0() {
-        _fun39271: for (var _fun39271_ip = 0;;) switch (_fun39271_ip) {
+        _fun39275: for (var _fun39275_ip = 0;;) switch (_fun39275_ip) {
             case 0:
                 var0 = arg0;
                 var4 = null;
@@ -79,16 +79,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = undefined;
                 var3 = undefined;
                 if (var2) {
-                    _fun39271_ip = 37;
-                    continue _fun39271
+                    _fun39275_ip = 37;
+                    continue _fun39275
                 }
             case 16:
                 var0 = var0.textAndImages;
                 var2 = var4 == var0;
                 var3 = undefined;
                 if (var2) {
-                    _fun39271_ip = 37;
-                    continue _fun39271
+                    _fun39275_ip = 37;
+                    continue _fun39275
                 }
             case 31:
                 var3 = var0.explicitContentSettings;
@@ -104,8 +104,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var4 == var3;
                 var5 = undefined;
                 if (var8) {
-                    _fun39271_ip = 89;
-                    continue _fun39271
+                    _fun39275_ip = 89;
+                    continue _fun39275
                 }
             case 83:
                 var5 = var3.explicitContentGuilds;
@@ -120,8 +120,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var4 == var3;
                 var5 = undefined;
                 if (var8) {
-                    _fun39271_ip = 138;
-                    continue _fun39271
+                    _fun39275_ip = 138;
+                    continue _fun39275
                 }
             case 132:
                 var5 = var3.explicitContentFriendDm;
@@ -136,8 +136,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var4 == var3;
                 var1 = undefined;
                 if (var4) {
-                    _fun39271_ip = 187;
-                    continue _fun39271
+                    _fun39275_ip = 187;
+                    continue _fun39275
                 }
             case 181:
                 var1 = var3.explicitContentNonFriendDm;
@@ -148,13 +148,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var5.getProtoUserSettings = var14;
     var14 = function arg0() {
-        _fun39272: for (var _fun39272_ip = 0;;) switch (_fun39272_ip) {
+        _fun39276: for (var _fun39276_ip = 0;;) switch (_fun39276_ip) {
             case 0:
                 var8 = arg0;
                 var6 = null;
                 if (!(var6 == var8)) {
-                    _fun39272_ip = 250;
-                    continue _fun39272
+                    _fun39276_ip = 250;
+                    continue _fun39276
                 }
             case 12:
                 var0 = {};
@@ -175,8 +175,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = var6 == var9;
                 var4 = undefined;
                 if (var10) {
-                    _fun39272_ip = 94;
-                    continue _fun39272
+                    _fun39276_ip = 94;
+                    continue _fun39276
                 }
             case 88:
                 var4 = var9.explicitContentGuilds;
@@ -196,8 +196,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = var6 == var9;
                 var4 = undefined;
                 if (var10) {
-                    _fun39272_ip = 168;
-                    continue _fun39272
+                    _fun39276_ip = 168;
+                    continue _fun39276
                 }
             case 162:
                 var4 = var9.explicitContentFriendDm;
@@ -217,8 +217,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var6 == var3;
                 var1 = undefined;
                 if (var4) {
-                    _fun39272_ip = 242;
-                    continue _fun39272
+                    _fun39276_ip = 242;
+                    continue _fun39276
                 }
             case 236:
                 var1 = var3.explicitContentNonFriendDm;
@@ -243,8 +243,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var12 = var6 == var8;
                 var9 = undefined;
                 if (var12) {
-                    _fun39272_ip = 351;
-                    continue _fun39272
+                    _fun39276_ip = 351;
+                    continue _fun39276
                 }
             case 318:
                 var13 = _closure1_slot0;
@@ -275,8 +275,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var12 = var6 == var8;
                 var5 = undefined;
                 if (var12) {
-                    _fun39272_ip = 466;
-                    continue _fun39272
+                    _fun39276_ip = 466;
+                    continue _fun39276
                 }
             case 433:
                 var13 = _closure1_slot0;
@@ -304,8 +304,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var6 == var8;
                 var6 = undefined;
                 if (var9) {
-                    _fun39272_ip = 572;
-                    continue _fun39272
+                    _fun39276_ip = 572;
+                    continue _fun39276
                 }
             case 539:
                 var9 = _closure1_slot0;
@@ -348,7 +348,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var14 = 'obscure_blur_effect_gore_content_enabled';
     var5.devSettingKey = var14;
     var14 = function arg0() {
-        _fun39273: for (var _fun39273_ip = 0;;) switch (_fun39273_ip) {
+        _fun39277: for (var _fun39277_ip = 0;;) switch (_fun39277_ip) {
             case 0:
                 var0 = arg0;
                 var4 = null;
@@ -356,16 +356,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = undefined;
                 var3 = undefined;
                 if (var2) {
-                    _fun39273_ip = 37;
-                    continue _fun39273
+                    _fun39277_ip = 37;
+                    continue _fun39277
                 }
             case 16:
                 var0 = var0.textAndImages;
                 var2 = var4 == var0;
                 var3 = undefined;
                 if (var2) {
-                    _fun39273_ip = 37;
-                    continue _fun39273
+                    _fun39277_ip = 37;
+                    continue _fun39277
                 }
             case 31:
                 var3 = var0.goreContentSettings;
@@ -381,8 +381,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var4 == var3;
                 var5 = undefined;
                 if (var8) {
-                    _fun39273_ip = 89;
-                    continue _fun39273
+                    _fun39277_ip = 89;
+                    continue _fun39277
                 }
             case 83:
                 var5 = var3.goreContentGuilds;
@@ -397,8 +397,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var4 == var3;
                 var5 = undefined;
                 if (var8) {
-                    _fun39273_ip = 138;
-                    continue _fun39273
+                    _fun39277_ip = 138;
+                    continue _fun39277
                 }
             case 132:
                 var5 = var3.goreContentFriendDm;
@@ -413,8 +413,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var4 == var3;
                 var1 = undefined;
                 if (var4) {
-                    _fun39273_ip = 187;
-                    continue _fun39273
+                    _fun39277_ip = 187;
+                    continue _fun39277
                 }
             case 181:
                 var1 = var3.goreContentNonFriendDm;
@@ -425,13 +425,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var5.getProtoUserSettings = var14;
     var14 = function arg0() {
-        _fun39274: for (var _fun39274_ip = 0;;) switch (_fun39274_ip) {
+        _fun39278: for (var _fun39278_ip = 0;;) switch (_fun39278_ip) {
             case 0:
                 var8 = arg0;
                 var6 = null;
                 if (!(var6 == var8)) {
-                    _fun39274_ip = 250;
-                    continue _fun39274
+                    _fun39278_ip = 250;
+                    continue _fun39278
                 }
             case 12:
                 var0 = {};
@@ -452,8 +452,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = var6 == var9;
                 var4 = undefined;
                 if (var10) {
-                    _fun39274_ip = 94;
-                    continue _fun39274
+                    _fun39278_ip = 94;
+                    continue _fun39278
                 }
             case 88:
                 var4 = var9.goreContentGuilds;
@@ -473,8 +473,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = var6 == var9;
                 var4 = undefined;
                 if (var10) {
-                    _fun39274_ip = 168;
-                    continue _fun39274
+                    _fun39278_ip = 168;
+                    continue _fun39278
                 }
             case 162:
                 var4 = var9.goreContentFriendDm;
@@ -494,8 +494,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var6 == var3;
                 var1 = undefined;
                 if (var4) {
-                    _fun39274_ip = 242;
-                    continue _fun39274
+                    _fun39278_ip = 242;
+                    continue _fun39278
                 }
             case 236:
                 var1 = var3.goreContentNonFriendDm;
@@ -520,8 +520,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var12 = var6 == var8;
                 var9 = undefined;
                 if (var12) {
-                    _fun39274_ip = 351;
-                    continue _fun39274
+                    _fun39278_ip = 351;
+                    continue _fun39278
                 }
             case 318:
                 var13 = _closure1_slot0;
@@ -552,8 +552,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var12 = var6 == var8;
                 var5 = undefined;
                 if (var12) {
-                    _fun39274_ip = 466;
-                    continue _fun39274
+                    _fun39278_ip = 466;
+                    continue _fun39278
                 }
             case 433:
                 var13 = _closure1_slot0;
@@ -581,8 +581,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var6 == var8;
                 var6 = undefined;
                 if (var9) {
-                    _fun39274_ip = 572;
-                    continue _fun39274
+                    _fun39278_ip = 572;
+                    continue _fun39278
                 }
             case 539:
                 var9 = _closure1_slot0;
@@ -625,7 +625,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var10 = 'obscure_blur_effect_self_harm_content_enabled';
     var5.devSettingKey = var10;
     var10 = function arg0() {
-        _fun39275: for (var _fun39275_ip = 0;;) switch (_fun39275_ip) {
+        _fun39279: for (var _fun39279_ip = 0;;) switch (_fun39279_ip) {
             case 0:
                 var0 = arg0;
                 var4 = null;
@@ -633,16 +633,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = undefined;
                 var3 = undefined;
                 if (var2) {
-                    _fun39275_ip = 37;
-                    continue _fun39275
+                    _fun39279_ip = 37;
+                    continue _fun39279
                 }
             case 16:
                 var0 = var0.textAndImages;
                 var2 = var4 == var0;
                 var3 = undefined;
                 if (var2) {
-                    _fun39275_ip = 37;
-                    continue _fun39275
+                    _fun39279_ip = 37;
+                    continue _fun39279
                 }
             case 31:
                 var3 = var0.selfHarmContentSettings;
@@ -658,8 +658,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var4 == var3;
                 var5 = undefined;
                 if (var8) {
-                    _fun39275_ip = 89;
-                    continue _fun39275
+                    _fun39279_ip = 89;
+                    continue _fun39279
                 }
             case 83:
                 var5 = var3.selfHarmContentGuilds;
@@ -674,8 +674,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var4 == var3;
                 var5 = undefined;
                 if (var8) {
-                    _fun39275_ip = 138;
-                    continue _fun39275
+                    _fun39279_ip = 138;
+                    continue _fun39279
                 }
             case 132:
                 var5 = var3.selfHarmContentFriendDm;
@@ -690,8 +690,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var4 == var3;
                 var1 = undefined;
                 if (var4) {
-                    _fun39275_ip = 187;
-                    continue _fun39275
+                    _fun39279_ip = 187;
+                    continue _fun39279
                 }
             case 181:
                 var1 = var3.selfHarmContentNonFriendDm;
@@ -749,4 +749,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.ContentHarmTypeBitMask = var3;
     var2.CONTENT_SCAN_TYPE_REGISTRY = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 4236, 3938, 4237, 1348, 4238, 4245, 1311, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 4238, 3940, 4239, 1348, 4240, 4247, 1311, 2]);

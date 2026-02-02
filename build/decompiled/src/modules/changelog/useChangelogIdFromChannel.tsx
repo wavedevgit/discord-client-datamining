@@ -27,7 +27,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/changelog/useChangelogIdFromChannel.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun90536: for (var _fun90536_ip = 0;;) switch (_fun90536_ip) {
+        _fun90540: for (var _fun90540_ip = 0;;) switch (_fun90540_ip) {
             case 0:
                 var0 = arg0;
                 var _closure2_slot0 = var0;
@@ -52,8 +52,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = null;
                 var2 = var2 == var1;
                 if (var2) {
-                    _fun90536_ip = 79;
-                    continue _fun90536
+                    _fun90540_ip = 79;
+                    continue _fun90540
                 }
             case 73:
                 var0 = var1.changelogId;
@@ -63,4 +63,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [4213, 566, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [4215, 566, 2]);

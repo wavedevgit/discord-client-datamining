@@ -21,28 +21,28 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var _closure1_slot7 = var0;
     var1 = function arg0() {
-        _fun60863: for (var _fun60863_ip = 0;;) switch (_fun60863_ip) {
+        _fun60867: for (var _fun60867_ip = 0;;) switch (_fun60867_ip) {
             case 0:
                 var2 = arg0;
                 var1 = null;
                 var3 = var1 == var2;
                 var0 = null;
                 if (var3) {
-                    _fun60863_ip = 288;
-                    continue _fun60863
+                    _fun60867_ip = 288;
+                    continue _fun60867
                 }
             case 17:
                 var3 = var2.email;
                 if (!(var1 != var3)) {
-                    _fun60863_ip = 163;
-                    continue _fun60863
+                    _fun60867_ip = 163;
+                    continue _fun60867
                 }
             case 30:
                 var2 = var2.verified;
                 var1 = null;
                 if (var2) {
-                    _fun60863_ip = 161;
-                    continue _fun60863
+                    _fun60867_ip = 161;
+                    continue _fun60867
                 }
             case 41:
                 var2 = {};
@@ -72,8 +72,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2.button = var3;
                 var1 = var2;
             case 161:
-                _fun60863_ip = 285;
-                continue _fun60863;
+                _fun60867_ip = 285;
+                continue _fun60867;
             case 163:
                 var2 = {};
                 var7 = _closure1_slot0;
@@ -184,7 +184,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/user_settings/native/account/UserSettingsAccountUnverifiedHeader.tsx';
     var4 = var5.bind(var6)(var4);
     var3 = function() {
-        _fun60864: for (var _fun60864_ip = 0;;) switch (_fun60864_ip) {
+        _fun60868: for (var _fun60868_ip = 0;;) switch (_fun60868_ip) {
             case 0:
                 var0 = _closure1_slot6;
                 var4 = undefined;
@@ -210,8 +210,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = null;
                 var1 = var0 == var9;
                 if (var1) {
-                    _fun60864_ip = 282;
-                    continue _fun60864
+                    _fun60868_ip = 282;
+                    continue _fun60868
                 }
             case 84:
                 var3 = _closure1_slot5;
@@ -268,4 +268,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.default = var3;
     var2.getBannerText = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 1613, 33, 1297, 671, 7425, 1234, 566, 4865, 3900, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 1613, 33, 1297, 671, 7427, 1234, 566, 4867, 3902, 2]);

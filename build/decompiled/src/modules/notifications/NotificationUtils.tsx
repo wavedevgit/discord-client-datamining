@@ -157,15 +157,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getMuteTimeOptions = var3;
     var3 = function arg0() {
-        _fun69825: for (var _fun69825_ip = 0;;) switch (_fun69825_ip) {
+        _fun69829: for (var _fun69829_ip = 0;;) switch (_fun69829_ip) {
             case 0:
                 var3 = arg0;
                 var1 = arguments[1];
                 var _closure2_slot0 = var3;
                 var4 = undefined;
                 if (!(var1 === var4)) {
-                    _fun69825_ip = 25;
-                    continue _fun69825
+                    _fun69829_ip = 25;
+                    continue _fun69829
                 }
             case 18:
                 var1 = _closure1_slot8;
@@ -180,7 +180,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var1.bind(var2)(var3);
                 var1 = var2.filter;
                 var0 = function(arg0) { // Environment: var0
-                    _fun69826: for (var _fun69826_ip = 0;;) switch (_fun69826_ip) {
+                    _fun69830: for (var _fun69830_ip = 0;;) switch (_fun69830_ip) {
                         case 0:
                             var5 = arg0;
                             var0 = _closure2_slot0;
@@ -202,8 +202,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var12 = var10 != var0;
                             var1 = 0;
                             if (!var12) {
-                                _fun69826_ip = 88;
-                                continue _fun69826
+                                _fun69830_ip = 88;
+                                continue _fun69830
                             }
                         case 85:
                             var1 = var0;
@@ -212,8 +212,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var0 = var0.UNREADS_ALL_MESSAGES;
                             var1 = var7.bind(var11)(var1, var0);
                             if (var1) {
-                                _fun69826_ip = 171;
-                                continue _fun69826
+                                _fun69830_ip = 171;
+                                continue _fun69830
                             }
                         case 107:
                             var7 = _closure1_slot2;
@@ -227,8 +227,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var10 = var10 != var0;
                             var9 = 0;
                             if (!var10) {
-                                _fun69826_ip = 155;
-                                continue _fun69826
+                                _fun69830_ip = 155;
+                                continue _fun69830
                             }
                         case 152:
                             var9 = var0;
@@ -241,23 +241,23 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var0 = var0.ignoreUnreadSetting;
                             var0 = !var0;
                             if (!var0) {
-                                _fun69826_ip = 190;
-                                continue _fun69826
+                                _fun69830_ip = 190;
+                                continue _fun69830
                             }
                         case 187:
                             var0 = var1;
                         case 190:
                             if (var0) {
-                                _fun69826_ip = 215;
-                                continue _fun69826
+                                _fun69830_ip = 215;
+                                continue _fun69830
                             }
                         case 193:
                             var1 = _closure2_slot1;
                             var1 = var1.ignoreNotificationSetting;
                             var1 = !var1;
                             if (!var1) {
-                                _fun69826_ip = 212;
-                                continue _fun69826
+                                _fun69830_ip = 212;
+                                continue _fun69830
                             }
                         case 209:
                             var1 = var4;
@@ -265,16 +265,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var0 = var1;
                         case 215:
                             if (var0) {
-                                _fun69826_ip = 276;
-                                continue _fun69826
+                                _fun69830_ip = 276;
+                                continue _fun69830
                             }
                         case 218:
                             var1 = _closure2_slot1;
                             var1 = var1.ignoreMute;
                             var1 = !var1;
                             if (!var1) {
-                                _fun69826_ip = 273;
-                                continue _fun69826
+                                _fun69830_ip = 273;
+                                continue _fun69830
                             }
                         case 234:
                             var4 = _closure1_slot0;
@@ -324,4 +324,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.shouldShowUseNewNotificationSystem = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [4267, 660, 1351, 665, 1234, 21, 1384, 3053, 566, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [4269, 660, 1351, 665, 1234, 21, 1384, 3055, 566, 2]);

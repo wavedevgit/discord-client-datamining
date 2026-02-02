@@ -1,154 +1,88 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var2 = exports;
+    var1 = exports;
     var0 = global;
-    var5 = var0.Object;
-    var4 = var5.defineProperty;
-    var3 = {};
+    var4 = var0.Object;
+    var3 = var4.defineProperty;
+    var2 = {};
     var0 = true;
-    var3.value = var0;
+    var2.value = var0;
     var0 = '__esModule';
-    var0 = var4.bind(var5)(var2, var0, var3);
-    var3 = dependencyMap;
-    var0 = 0;
-    var4 = var3[var0];
-    var3 = metroImportDefault;
+    var0 = var3.bind(var4)(var1, var0, var2);
+    var6 = {};
+    var7 = 0;
+    var6.UNKNOWN_REPLACEMENT_MODE = var7;
+    var0 = 'UNKNOWN_REPLACEMENT_MODE';
+    var6[var7] = var0;
+    var3 = 1;
+    var6.WITH_TIME_PRORATION = var3;
+    var0 = 'WITH_TIME_PRORATION';
+    var6[var3] = var0;
+    var2 = 2;
+    var6.CHARGE_PRORATED_PRICE = var2;
+    var0 = 'CHARGE_PRORATED_PRICE';
+    var6[var2] = var0;
+    var4 = 3;
+    var6.WITHOUT_PRORATION = var4;
+    var0 = 'WITHOUT_PRORATION';
+    var6[var4] = var0;
+    var4 = 5;
+    var6.CHARGE_FULL_PRICE = var4;
+    var0 = 'CHARGE_FULL_PRICE';
+    var6[var4] = var0;
+    var4 = 6;
+    var6.DEFERRED = var4;
+    var0 = 'DEFERRED';
+    var6[var4] = var0;
+    var5 = {};
+    var5.UNSPECIFIED_STATE = var7;
+    var0 = 'UNSPECIFIED_STATE';
+    var5[var7] = var0;
+    var5.PURCHASED = var3;
+    var0 = 'PURCHASED';
+    var5[var3] = var0;
+    var5.PENDING = var2;
+    var0 = 'PENDING';
+    var5[var2] = var0;
+    var4 = {};
+    var4.NOT_SET = var7;
+    var0 = 'NOT_SET';
+    var4[var7] = var0;
+    var4.GOOGLE_PLAY = var3;
+    var0 = 'GOOGLE_PLAY';
+    var4[var3] = var0;
+    var4.AMAZON = var2;
+    var0 = 'AMAZON';
+    var4[var2] = var0;
+    var3 = {};
+    var0 = 'subs';
+    var3.subs = var0;
+    var0 = 'sub';
+    var3.sub = var0;
+    var0 = 'inapp';
+    var3.inapp = var0;
+    var0 = 'iap';
+    var3.iap = var0;
+    var2 = {};
+    var0 = 'PURCHASE';
+    var2.PURCHASE = var0;
+    var0 = 'RENEWAL';
+    var2.RENEWAL = var0;
+    var0 = {};
+    var7 = 'android';
+    var0.android = var7;
+    var7 = 'amazon';
+    var0.amazon = var7;
+    var7 = 'ios';
+    var0.ios = var7;
+    var1.ReplacementModesAndroid = var6;
+    var1.PurchaseStateAndroid = var5;
+    var5 = 'iap-promoted-product';
+    var1.PROMOTED_PRODUCT = var5;
+    var1.InstallSourceAndroid = var4;
+    var1.ProductType = var3;
+    var1.TransactionReason = var2;
+    var1.SubscriptionPlatform = var0;
     var0 = undefined;
-    var3 = var3.bind(var0)(var4);
-    var _closure1_slot0 = var3;
-    var1 = function() { // Environment: var1
-        var3 = _closure1_slot0;
-        var2 = undefined;
-        var1 = function*(arg0, arg1) { // Environment: var0
-            var0 = function*(arg0, arg1) { // Original name: ?anon_0_, environment: var0
-                _fun58302: for (var _fun58302_ip = 0;;) switch (_fun58302_ip) {
-                    case 0:
-                        StartGenerator();
-                        var9 = arg1;
-                        ResumeGenerator(result_out_reg = 0, return_bool_out_reg = 1);
-                        if (var1) {
-                            _fun58302_ip = 253;
-                            continue _fun58302
-                        }
-                    case 13:
-                        var2 = global;
-                        var5 = var2.fetch;
-                        var7 = var2.Object;
-                        var6 = var7.assign;
-                        var3 = {};
-                        var1 = null;
-                        var8 = var1 == var9;
-                        var4 = undefined;
-                        var10 = undefined;
-                        if (var8) {
-                            _fun58302_ip = 53;
-                            continue _fun58302
-                        }
-                    case 47:
-                        var10 = var9.method;
-                    case 53:
-                        var11 = var1 != var10;
-                        var8 = 'GET';
-                        if (!var11) {
-                            _fun58302_ip = 69;
-                            continue _fun58302
-                        }
-                    case 66:
-                        var8 = var10;
-                    case 69:
-                        var3.method = var8;
-                        var8 = {
-                            'Accept': 'application/json',
-                            'Content-Type': 'application/json'
-                        };
-                        var3.headers = var8;
-                        if (!(var1 != var9)) {
-                            _fun58302_ip = 105;
-                            continue _fun58302
-                        }
-                    case 97:
-                        var1 = var9.body;
-                        if (var1) {
-                            _fun58302_ip = 109;
-                            continue _fun58302
-                        }
-                    case 105:
-                        var1 = {};
-                        _fun58302_ip = 140;
-                        continue _fun58302;
-                    case 109:
-                        var8 = {};
-                        var11 = var2.JSON;
-                        var10 = var11.stringify;
-                        var9 = var9.body;
-                        var9 = var10.bind(var11)(var9);
-                        var8.body = var9;
-                        var1 = var8;
-                    case 140:
-                        var3 = var6.bind(var7)(var3, var1);
-                        var1 = arg0;
-                        var1 = var5.bind(var4)(var1, var3);
-                        SaveGenerator(address = 159);
-                    case 157:
-                        return var1;
-                    case 159:
-                        ResumeGenerator(result_out_reg = 1, return_bool_out_reg = 3);
-                        if (var3) {
-                            _fun58302_ip = 250;
-                            continue _fun58302
-                        }
-                    case 165:
-                        var3 = var1.ok;
-                        if (var3) {
-                            _fun58302_ip = 237;
-                            continue _fun58302
-                        }
-                    case 174:
-                        var5 = var2.Object;
-                        var4 = var5.assign;
-                        var6 = var2.Error;
-                        var13 = var1.statusText;
-                        var3 = var6.prototype;
-                        var3 = Object.create(var3, {
-                            constructor: {
-                                value: var6
-                            }
-                        });
-                        var14 = var3;
-                        var2 = new var14[var6](var13, var12);
-                        var3 = var2 instanceof Object ? var2 : var3;
-                        var2 = {};
-                        var6 = var1.status;
-                        var2.statusCode = var6;
-                        var2 = var4.bind(var5)(var3, var2);
-                        throw var2;
-                    case 237:
-                        var2 = var1.json;
-                        var2 = var2.bind(var1)();
-                        return var2;
-                    case 250:
-                        return var1;
-                    case 253:
-                        return var0;
-                }
-            };
-            return var0;
-        };
-        var1 = var3.bind(var2)(var1);
-        var _closure2_slot0 = var1;
-        var0 = function arg0, arg1() {
-            var0 = undefined;
-            var3 = _closure2_slot0;
-            var2 = var3.apply;
-            var0 = arguments;
-            var1 = var0;
-            var0 = this;
-            var0 = var2.bind(var3)(var0, var1);
-            return var0;
-        };
-        return var0;
-    };
-    var1 = var1.bind(var0)();
-    var2.enhancedFetch = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, []);

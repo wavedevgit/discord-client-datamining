@@ -1,76 +1,78 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var0 = exports;
-    var1 = global;
-    var4 = var1.Object;
-    var3 = var4.defineProperty;
-    var2 = {};
-    var1 = true;
-    var2.value = var1;
-    var1 = '__esModule';
-    var1 = var3.bind(var4)(var0, var1, var2);
-    var1 = function arg0() {
-        _fun21791: for (var _fun21791_ip = 0;;) switch (_fun21791_ip) {
+    var5 = require;
+    var1 = exports;
+    var6 = dependencyMap;
+    var4 = function arg0() {
+        _fun21789: for (var _fun21789_ip = 0;;) switch (_fun21789_ip) {
             case 0:
-                var1 = arg0;
-                var0 = null;
-                if (!(var0 !== var1)) {
-                    _fun21791_ip = 96;
-                    continue _fun21791
+                var2 = arg0;
+                if (!var2) {
+                    _fun21789_ip = 18;
+                    continue _fun21789
                 }
-            case 9:
-                var0 = true;
-                if (!(var0 !== var1)) {
-                    _fun21791_ip = 96;
-                    continue _fun21791
-                }
-            case 15:
-                var0 = false;
-                if (!(var0 !== var1)) {
-                    _fun21791_ip = 96;
-                    continue _fun21791
-                }
-            case 21:
-                var2 = global;
-                var0 = var2.Number;
-                var3 = undefined;
-                var0 = var0.bind(var3)(var1);
-                var1 = var2.isNaN;
-                var1 = var1.bind(var3)(var0);
+            case 6:
+                var1 = var2.__esModule;
+                var0 = var2;
                 if (var1) {
-                    _fun21791_ip = 94;
-                    continue _fun21791
+                    _fun21789_ip = 27;
+                    continue _fun21789
                 }
-            case 50:
-                var1 = 0;
-                if (!(!(var0 < var1))) {
-                    _fun21791_ip = 75;
-                    continue _fun21791
-                }
-            case 56:
-                var3 = var2.Math;
-                var1 = var3.floor;
-                var1 = var1.bind(var3)(var0);
-                _fun21791_ip = 92;
-                continue _fun21791;
-            case 75:
-                var3 = var2.Math;
-                var2 = var3.ceil;
-                var1 = var2.bind(var3)(var0);
-            case 92:
-                return var1;
-            case 94:
-                return var0;
-            case 96:
-                var0 = global;
-                var0 = var0.NaN;
+            case 18:
+                var1 = {};
+                var1.default = var2;
+                var0 = var1;
+            case 27:
                 return var0;
         }
     };
-    var0.default = var1;
-    var1 = var0.default;
-    var0 = arg4;
-    var0.exports = var1;
+    var0 = global;
+    var8 = var0.Object;
+    var7 = var8.defineProperty;
+    var2 = {};
+    var0 = true;
+    var2.value = var0;
+    var0 = '__esModule';
+    var0 = var7.bind(var8)(var1, var0, var2);
+    var0 = function arg0, arg1, arg2() {
+        var4 = arg2;
+        var3 = undefined;
+        var1 = undefined;
+        var2 = _closure1_slot0;
+        var5 = var2.default;
+        var1 = arguments;
+        var2 = var1;
+        var1 = 2;
+        var1 = var5.bind(var3)(var1, var2);
+        var1 = _closure1_slot1;
+        var2 = var1.default;
+        var1 = arg0;
+        var1 = var2.bind(var3)(var1, var4);
+        var0 = _closure1_slot1;
+        var2 = var0.default;
+        var0 = arg1;
+        var2 = var2.bind(var3)(var0, var4);
+        var0 = var1.getTime;
+        var1 = var0.bind(var1)();
+        var0 = var2.getTime;
+        var0 = var0.bind(var2)();
+        var0 = var1 === var0;
+        return var0;
+    };
+    var1.default = var0;
+    var0 = 0;
+    var2 = var6[var0];
     var0 = undefined;
+    var2 = var5.bind(var0)(var2);
+    var2 = var4.bind(var0)(var2);
+    var _closure1_slot0 = var2;
+    var2 = 1;
+    var2 = var6[var2];
+    var2 = var5.bind(var0)(var2);
+    var2 = var4.bind(var0)(var2);
+    var _closure1_slot1 = var2;
+    var2 = var1.default;
+    var1 = arg4;
+    var1.exports = var2;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, []);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [2535, 2537]);

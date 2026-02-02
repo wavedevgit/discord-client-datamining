@@ -56,7 +56,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = var7.UserCircleIcon;
     var1.IconComponent = var7;
     var7 = function() {
-        _fun80736: for (var _fun80736_ip = 0;;) switch (_fun80736_ip) {
+        _fun80740: for (var _fun80740_ip = 0;;) switch (_fun80740_ip) {
             case 0:
                 var2 = _closure1_slot0;
                 var3 = _closure1_slot2;
@@ -68,8 +68,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var0.bind(var2)();
                 var0 = null;
                 if (!var2) {
-                    _fun80736_ip = 144;
-                    continue _fun80736
+                    _fun80740_ip = 144;
+                    continue _fun80740
                 }
             case 40:
                 var3 = _closure1_slot3;
@@ -125,4 +125,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 33, 10241, 4888, 671, 4045, 7474, 8943, 1234, 9059, 10084, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 33, 10243, 4890, 671, 4047, 7476, 8945, 1234, 9061, 10086, 2]);

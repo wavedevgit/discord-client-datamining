@@ -28,14 +28,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/auth/externalFingerprint.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun117929: for (var _fun117929_ip = 0;;) switch (_fun117929_ip) {
+        _fun117930: for (var _fun117930_ip = 0;;) switch (_fun117930_ip) {
             case 0:
                 var2 = _closure1_slot3;
                 var1 = var2.isAuthenticated;
                 var1 = var1.bind(var2)();
                 if (var1) {
-                    _fun117929_ip = 133;
-                    continue _fun117929
+                    _fun117930_ip = 133;
+                    continue _fun117930
                 }
             case 20:
                 var5 = _closure1_slot0;
@@ -54,8 +54,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var1.fingerprint;
                 var1 = null;
                 if (!(var1 != var3)) {
-                    _fun117929_ip = 133;
-                    continue _fun117929
+                    _fun117930_ip = 133;
+                    continue _fun117930
                 }
             case 88:
                 var1 = _closure1_slot1;
@@ -76,4 +76,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1216, 3299, 806, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1216, 3301, 806, 2]);

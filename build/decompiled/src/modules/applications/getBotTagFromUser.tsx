@@ -25,27 +25,27 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/applications/getBotTagFromUser.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun72560: for (var _fun72560_ip = 0;;) switch (_fun72560_ip) {
+        _fun72564: for (var _fun72564_ip = 0;;) switch (_fun72564_ip) {
             case 0:
                 var0 = arg0;
                 var1 = var0.isSystemUser;
                 var1 = var1.bind(var0)();
                 if (var1) {
-                    _fun72560_ip = 42;
-                    continue _fun72560
+                    _fun72564_ip = 42;
+                    continue _fun72564
                 }
             case 16:
                 var1 = var0.bot;
                 var0 = undefined;
                 if (!var1) {
-                    _fun72560_ip = 55;
-                    continue _fun72560
+                    _fun72564_ip = 55;
+                    continue _fun72564
                 }
             case 27:
                 var1 = _closure1_slot0;
                 var0 = var1.BOT;
-                _fun72560_ip = 55;
-                continue _fun72560;
+                _fun72564_ip = 55;
+                continue _fun72564;
             case 42:
                 var1 = _closure1_slot0;
                 var0 = var1.SYSTEM_DM;
@@ -55,4 +55,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getBotTagTypeFromUser = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3444, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3446, 2]);

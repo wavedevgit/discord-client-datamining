@@ -114,4 +114,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.TASK_TYPE_TO_TITLE = var3;
     var2.TaskInputType = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1234, 2075, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1234, 2077, 2]);

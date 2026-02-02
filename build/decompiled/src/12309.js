@@ -1,11 +1,15 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = function() { // Environment: var0
-        var0 = this;
-        var1 = {};
-        var0.callbacks = var1;
-        var1 = {};
-        var0.directMap = var1;
+    var1 = function(arg0, arg1) { // Environment: var0
+        var4 = this;
+        var3 = var4.bind;
+        var2 = arg0;
+        var1 = function() { // Environment: var0
+            var0 = undefined;
+            return var0;
+        };
+        var0 = arg1;
+        var0 = var3.bind(var4)(var2, var1, var0);
         return var0;
     };
     var0 = arg4;

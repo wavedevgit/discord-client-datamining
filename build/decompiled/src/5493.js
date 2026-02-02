@@ -8,7 +8,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot1 = var4;
     var _closure1_slot2 = var5;
     var0 = function() {
-        _fun48702: for (var _fun48702_ip = 0;;) switch (_fun48702_ip) {
+        _fun48696: for (var _fun48696_ip = 0;;) switch (_fun48696_ip) {
             case 0:
             case 2: // try_start_0
                 var1 = global;
@@ -29,8 +29,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = !var1;
                 var _closure2_slot0 = var1;
             case 70: // try_end0
-                _fun48702_ip = 74;
-                continue _fun48702;
+                _fun48696_ip = 74;
+                continue _fun48696;
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
@@ -40,13 +40,13 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var0 = !var0;
                     return var0;
                 };
-                _closure1_slot11 = var1;
+                _closure1_slot9 = var1;
                 var0 = undefined;
                 var0 = var1.bind(var0)();
                 return var0;
         }
     };
-    var _closure1_slot11 = var0;
+    var _closure1_slot9 = var0;
     var0 = global;
     var8 = var0.Object;
     var7 = var8.defineProperty;
@@ -83,21 +83,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = 6;
     var3 = var5[var3];
     var3 = var6.bind(var0)(var3);
-    var3 = var3.Image;
-    var _closure1_slot8 = var3;
-    var3 = 7;
-    var3 = var5[var3];
-    var3 = var6.bind(var0)(var3);
     var3 = var3.jsx;
-    var _closure1_slot9 = var3;
-    var3 = /\s+/;
-    var _closure1_slot10 = var3;
-    var3 = 11;
+    var _closure1_slot8 = var3;
+    var3 = 9;
     var3 = var5[var3];
     var3 = var4.bind(var0)(var3);
     var1 = function(arg0) { // Environment: var1
         var3 = function() {
-            _fun48706: for (var _fun48706_ip = 0;;) switch (_fun48706_ip) {
+            _fun48700: for (var _fun48700_ip = 0;;) switch (_fun48700_ip) {
                 case 0:
                     var3 = this;
                     var2 = undefined;
@@ -108,19 +101,19 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var0 = _closure1_slot6;
                     var8 = var0.bind(var2)(var1);
                     var1 = _closure1_slot5;
-                    var0 = _closure1_slot11;
+                    var0 = _closure1_slot9;
                     var0 = var0.bind(var2)();
                     if (var0) {
-                        _fun48706_ip = 69;
-                        continue _fun48706
+                        _fun48700_ip = 69;
+                        continue _fun48700
                     }
                 case 51:
                     var6 = var8.apply;
                     var4 = arguments;
                     var0 = var4;
                     var0 = var6.bind(var8)(var3, var0);
-                    _fun48706_ip = 105;
-                    continue _fun48706;
+                    _fun48700_ip = 105;
+                    continue _fun48700;
                 case 69:
                     var6 = global;
                     var7 = var6.Reflect;
@@ -145,132 +138,53 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var5 = 'render';
         var4.key = var5;
         var0 = function() {
-            _fun48707: for (var _fun48707_ip = 0;;) switch (_fun48707_ip) {
-                case 0:
-                    var10 = this;
-                    var _closure3_slot0 = var10;
-                    var9 = var10.props;
-                    var4 = var9.preserveAspectRatio;
-                    var13 = var9.x;
-                    var12 = var9.y;
-                    var5 = var9.width;
-                    var1 = var9.height;
-                    var0 = var9.xlinkHref;
-                    var11 = var9.href;
-                    var3 = undefined;
-                    if (!(var3 === var11)) {
-                        _fun48707_ip = 61;
-                        continue _fun48707
-                    }
-                case 58:
-                    var11 = var0;
-                case 61:
-                    var0 = var9.onLoad;
-                    if (var4) {
-                        _fun48707_ip = 76;
-                        continue _fun48707
-                    }
-                case 70:
-                    var7 = new Array(0);
-                    _fun48707_ip = 103;
-                    continue _fun48707;
-                case 76:
-                    var2 = var4.trim;
-                    var6 = var2.bind(var4)();
-                    var4 = var6.split;
-                    var2 = _closure1_slot10;
-                    var7 = var4.bind(var6)(var2);
-                case 103:
-                    var4 = 0;
-                    var2 = var7[var4];
-                    var6 = 1;
-                    var6 = var7[var6];
-                    var7 = {};
-                    var7.x = var13;
-                    var7.y = var12;
-                    var7.width = var5;
-                    var7.height = var1;
-                    var7.onLoad = var0;
-                    var12 = _closure1_slot0;
-                    var1 = _closure1_slot2;
-                    var5 = 8;
-                    var1 = var1[var5];
-                    var1 = var12.bind(var3)(var1);
-                    var1 = var1.meetOrSliceTypes;
-                    var1 = var1[var6];
-                    if (var1) {
-                        _fun48707_ip = 177;
-                        continue _fun48707
-                    }
-                case 175:
-                    var1 = 0;
-                case 177:
-                    var7.meetOrSlice = var1;
-                    var4 = _closure1_slot0;
-                    var1 = _closure1_slot2;
-                    var1 = var1[var5];
-                    var1 = var4.bind(var3)(var1);
-                    var1 = var1.alignEnum;
-                    var1 = var1[var2];
-                    if (var1) {
-                        _fun48707_ip = 218;
-                        continue _fun48707
-                    }
-                case 212:
-                    var1 = 'xMidYMid';
-                case 218:
-                    var7.align = var1;
-                    var1 = null;
-                    if (!var11) {
-                        _fun48707_ip = 266;
-                        continue _fun48707
-                    }
-                case 228:
-                    var5 = _closure1_slot8;
-                    var4 = var5.resolveAssetSource;
-                    var12 = 'string';
-                    var6 = typeof var11;
-                    var2 = var11;
-                    if (!(var12 === var6)) {
-                        _fun48707_ip = 261;
-                        continue _fun48707
-                    }
-                case 252:
-                    var6 = {};
-                    var6.uri = var11;
-                    var2 = var6;
-                case 261:
-                    var1 = var4.bind(var5)(var2);
-                case 266:
-                    var7.src = var1;
-                    var2 = _closure1_slot9;
-                    var4 = _closure1_slot1;
-                    var11 = _closure1_slot2;
-                    var1 = 9;
-                    var1 = var11[var1];
-                    var1 = var4.bind(var3)(var1);
-                    var4 = global;
-                    var6 = var4.Object;
-                    var5 = var6.assign;
-                    var4 = {};
-                    var8 = function arg0() {
-                        var2 = _closure3_slot0;
-                        var1 = var2.refMethod;
-                        var0 = arg0;
-                        var0 = var1.bind(var2)(var0);
-                        return var0;
-                    };
-                    var4.ref = var8;
-                    var8 = _closure1_slot0;
-                    var0 = 10;
-                    var0 = var11[var0];
-                    var8 = var8.bind(var3)(var0);
-                    var0 = var8.withoutXY;
-                    var0 = var0.bind(var8)(var10, var9);
-                    var0 = var5.bind(var6)(var4, var0, var7);
-                    var0 = var2.bind(var3)(var1, var0);
-                    return var0;
-            }
+            var11 = this;
+            var _closure3_slot0 = var11;
+            var10 = var11.props;
+            var3 = var10.x;
+            var2 = var10.y;
+            var1 = var10.width;
+            var0 = var10.height;
+            var9 = var10.children;
+            var8 = {};
+            var8.x = var3;
+            var8.y = var2;
+            var8.width = var1;
+            var8.height = var0;
+            var3 = _closure1_slot8;
+            var5 = _closure1_slot1;
+            var12 = _closure1_slot2;
+            var1 = 7;
+            var1 = var12[var1];
+            var2 = undefined;
+            var1 = var5.bind(var2)(var1);
+            var5 = global;
+            var7 = var5.Object;
+            var6 = var7.assign;
+            var5 = {};
+            var4 = function arg0() {
+                var2 = _closure3_slot0;
+                var1 = var2.refMethod;
+                var0 = arg0;
+                var0 = var1.bind(var2)(var0);
+                return var0;
+            };
+            var5.ref = var4;
+            var4 = _closure1_slot0;
+            var0 = 8;
+            var0 = var12[var0];
+            var4 = var4.bind(var2)(var0);
+            var0 = var4.withoutXY;
+            var15 = var0.bind(var4)(var11, var10);
+            var0 = {};
+            var0.children = var9;
+            var17 = var7;
+            var16 = var5;
+            var14 = var8;
+            var13 = var0;
+            var0 = var17[var6](var16, var15, var14, var13, var12);
+            var0 = var3.bind(var2)(var1, var0);
+            return var0;
         };
         var4.value = var0;
         var0 = new Array(1);
@@ -279,16 +193,15 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var1 = var1.bind(var0)(var3);
-    var3 = 'Image';
+    var3 = 'ForeignObject';
     var1.displayName = var3;
     var3 = {
-        'x': 0,
-        'y': 0,
-        'width': 0,
-        'height': 0,
-        'preserveAspectRatio': 'xMidYMid meet'
+        'x': '0%',
+        'y': '0%',
+        'width': '100%',
+        'height': '100%'
     };
     var1.defaultProps = var3;
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 15, 17, 18, 31, 27, 33, 5435, 5494, 5437, 5446]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 15, 17, 18, 31, 33, 5494, 5439, 5438]);

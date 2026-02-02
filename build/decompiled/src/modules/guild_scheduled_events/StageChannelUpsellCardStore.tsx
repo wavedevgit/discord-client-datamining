@@ -103,4 +103,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useStageChannelUpsellCardStore = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1378, 797, 587, 802, 3035, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1378, 797, 587, 802, 3037, 2]);

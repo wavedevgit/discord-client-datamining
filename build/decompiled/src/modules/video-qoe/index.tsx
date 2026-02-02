@@ -50,4 +50,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var1.getVideoQoEMetricsConfig;
     var2.getVideoQoEMetricsConfig = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [2, 10632, 10636, 10634, 10637, 10633, 10638]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [2, 10634, 10638, 10636, 10639, 10635, 10640]);

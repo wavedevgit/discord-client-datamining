@@ -4,19 +4,19 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = exports;
     var6 = dependencyMap;
     var4 = function arg0() {
-        _fun22820: for (var _fun22820_ip = 0;;) switch (_fun22820_ip) {
+        _fun22818: for (var _fun22818_ip = 0;;) switch (_fun22818_ip) {
             case 0:
                 var2 = arg0;
                 if (!var2) {
-                    _fun22820_ip = 18;
-                    continue _fun22820
+                    _fun22818_ip = 18;
+                    continue _fun22818
                 }
             case 6:
                 var1 = var2.__esModule;
                 var0 = var2;
                 if (var1) {
-                    _fun22820_ip = 27;
-                    continue _fun22820
+                    _fun22818_ip = 27;
+                    continue _fun22818
                 }
             case 18:
                 var1 = {};
@@ -35,28 +35,56 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = '__esModule';
     var0 = var7.bind(var8)(var1, var0, var2);
     var0 = function arg0() {
-        var2 = undefined;
-        var1 = undefined;
-        var3 = _closure1_slot1;
-        var4 = var3.default;
-        var1 = arguments;
-        var3 = var1;
-        var1 = 1;
-        var1 = var4.bind(var2)(var1, var3);
-        var0 = _closure1_slot0;
-        var1 = var0.default;
-        var0 = arg0;
-        var1 = var1.bind(var2)(var0);
-        var0 = var1.getFullYear;
-        var0 = var0.bind(var1)();
-        var1 = global;
-        var3 = var1.Math;
-        var2 = var3.floor;
-        var1 = 10;
-        var0 = var0 / var1;
-        var0 = var2.bind(var3)(var0);
-        var0 = var1 * var0;
-        return var0;
+        _fun22819: for (var _fun22819_ip = 0;;) switch (_fun22819_ip) {
+            case 0:
+                var3 = undefined;
+                var0 = undefined;
+                var2 = _closure1_slot2;
+                var4 = var2.default;
+                var0 = arguments;
+                var2 = var0;
+                var0 = 1;
+                var0 = var4.bind(var3)(var0, var2);
+                var0 = _closure1_slot0;
+                var2 = var0.default;
+                var0 = arg0;
+                var2 = var2.bind(var3)(var0);
+                var0 = global;
+                var5 = var0.String;
+                var4 = var0.Date;
+                var6 = var4.prototype;
+                var6 = Object.create(var6, {
+                    constructor: {
+                        value: var4
+                    }
+                });
+                var9 = var6;
+                var8 = var2;
+                var4 = new var9[var4](var8, var7);
+                var4 = var4 instanceof Object ? var4 : var6;
+                var5 = var5.bind(var3)(var4);
+                var4 = 'Invalid Date';
+                if (!(var4 !== var5)) {
+                    _fun22819_ip = 130;
+                    continue _fun22819
+                }
+            case 99:
+                var1 = _closure1_slot1;
+                var1 = var1.default;
+                var2 = var1.bind(var3)(var2);
+                var1 = 365;
+                if (!var2) {
+                    _fun22819_ip = 128;
+                    continue _fun22819
+                }
+            case 122:
+                var1 = 366;
+            case 128:
+                return var1;
+            case 130:
+                var0 = var0.NaN;
+                return var0;
+        }
     };
     var1.default = var0;
     var0 = 0;
@@ -70,8 +98,13 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = var5.bind(var0)(var2);
     var2 = var4.bind(var0)(var2);
     var _closure1_slot1 = var2;
+    var2 = 2;
+    var2 = var6[var2];
+    var2 = var5.bind(var0)(var2);
+    var2 = var4.bind(var0)(var2);
+    var _closure1_slot2 = var2;
     var2 = var1.default;
     var1 = arg4;
     var1.exports = var2;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [2532, 2533]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [2534, 2801, 2535]);

@@ -1,198 +1,331 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var3 = require;
-    var5 = metroImportDefault;
-    var2 = exports;
-    var4 = dependencyMap;
-    var0 = global;
-    var7 = var0.Object;
-    var6 = var7.defineProperty;
-    var1 = {};
-    var0 = true;
-    var1.value = var0;
-    var0 = '__esModule';
-    var0 = var6.bind(var7)(var2, var0, var1);
-    var0 = 0;
-    var1 = var4[var0];
+    var1 = exports;
+    var2 = require;
+    var _closure1_slot0 = var2;
+    var2 = dependencyMap;
+    var _closure1_slot1 = var2;
+    var2 = global;
+    var5 = var2.Object;
+    var4 = var5.defineProperty;
+    var3 = {};
+    var2 = true;
+    var3.value = var2;
+    var2 = '__esModule';
+    var2 = var4.bind(var5)(var1, var2, var3);
+    var2 = {};
+    var3 = 'function pnpm_useScrollHandlerTs1(event,context){const{handleOnScroll,onScroll,runOnJS}=this.__closure;handleOnScroll(event,context);if(onScroll){runOnJS(onScroll)({nativeEvent:event});}}';
+    var2.code = var3;
+    var _closure1_slot2 = var2;
+    var2 = {};
+    var3 = 'function pnpm_useScrollHandlerTs2(event,context){const{handleOnBeginDrag,onScrollBeginDrag,runOnJS}=this.__closure;handleOnBeginDrag(event,context);if(onScrollBeginDrag){runOnJS(onScrollBeginDrag)({nativeEvent:event});}}';
+    var2.code = var3;
+    var _closure1_slot3 = var2;
+    var2 = {};
+    var3 = 'function pnpm_useScrollHandlerTs3(event,context){const{handleOnEndDrag,onScrollEndDrag,runOnJS}=this.__closure;handleOnEndDrag(event,context);if(onScrollEndDrag){runOnJS(onScrollEndDrag)({nativeEvent:event});}}';
+    var2.code = var3;
+    var _closure1_slot4 = var2;
+    var0 = function() {
+        _fun44632: for (var _fun44632_ip = 0;;) switch (_fun44632_ip) {
+            case 0:
+                var19 = undefined;
+                var2 = undefined;
+                var0 = arguments.length;
+                var10 = 0;
+                if (!(var0 > var10)) {
+                    _fun44632_ip = 23;
+                    continue _fun44632
+                }
+            case 15:
+                var0 = arguments[var10];
+                if (!(var19 === var0)) {
+                    _fun44632_ip = 51;
+                    continue _fun44632
+                }
+            case 23:
+                var1 = _closure1_slot0;
+                var0 = _closure1_slot1;
+                var0 = var0[var10];
+                var0 = var1.bind(var19)(var0);
+                var4 = var0.useScrollEventsHandlersDefault;
+                _fun44632_ip = 55;
+                continue _fun44632;
+            case 51:
+                var4 = arguments[var10];
+            case 55:
+                var0 = arguments.length;
+                var20 = 1;
+                var0 = var0 > var20;
+                var9 = undefined;
+                if (!var0) {
+                    _fun44632_ip = 74;
+                    continue _fun44632
+                }
+            case 70:
+                var9 = arguments[var20];
+            case 74:
+                var _closure2_slot0 = var9;
+                var0 = arguments.length;
+                var5 = 2;
+                var0 = var0 > var5;
+                var8 = undefined;
+                if (!var0) {
+                    _fun44632_ip = 97;
+                    continue _fun44632
+                }
+            case 93:
+                var8 = arguments[var5];
+            case 97:
+                var _closure2_slot1 = var8;
+                var1 = arguments.length;
+                var0 = 3;
+                var1 = var1 > var0;
+                var7 = undefined;
+                if (!var1) {
+                    _fun44632_ip = 120;
+                    continue _fun44632
+                }
+            case 116:
+                var7 = arguments[var0];
+            case 120:
+                var _closure2_slot2 = var7;
+                var0 = arguments.length;
+                var1 = 4;
+                var6 = var0 > var1;
+                var0 = undefined;
+                if (!var6) {
+                    _fun44632_ip = 143;
+                    continue _fun44632
+                }
+            case 139:
+                var0 = arguments[var1];
+            case 143:
+                var6 = _closure1_slot0;
+                var1 = _closure1_slot1;
+                var2 = var1[var20];
+                var11 = var6.bind(var19)(var2);
+                var2 = var11.useAnimatedRef;
+                var2 = var2.bind(var11)();
+                var1 = var1[var20];
+                var6 = var6.bind(var19)(var1);
+                var1 = var6.useSharedValue;
+                var1 = var1.bind(var6)(var10);
+                var0 = var4.bind(var19)(var2, var1, var0);
+                var14 = var0.handleOnScroll;
+                if (!(var19 === var14)) {
+                    _fun44632_ip = 233;
+                    continue _fun44632
+                }
+            case 210:
+                var6 = _closure1_slot0;
+                var4 = _closure1_slot1;
+                var4 = var4[var5];
+                var4 = var6.bind(var19)(var4);
+                var14 = var4.workletNoop;
+            case 233:
+                var _closure2_slot3 = var14;
+                var13 = var0.handleOnBeginDrag;
+                if (!(var19 === var13)) {
+                    _fun44632_ip = 270;
+                    continue _fun44632
+                }
+            case 247:
+                var6 = _closure1_slot0;
+                var4 = _closure1_slot1;
+                var4 = var4[var5];
+                var4 = var6.bind(var19)(var4);
+                var13 = var4.workletNoop;
+            case 270:
+                var _closure2_slot4 = var13;
+                var12 = var0.handleOnEndDrag;
+                if (!(var19 === var12)) {
+                    _fun44632_ip = 307;
+                    continue _fun44632
+                }
+            case 284:
+                var6 = _closure1_slot0;
+                var4 = _closure1_slot1;
+                var4 = var4[var5];
+                var4 = var6.bind(var19)(var4);
+                var12 = var4.workletNoop;
+            case 307:
+                var _closure2_slot5 = var12;
+                var10 = var0.handleOnMomentumEnd;
+                if (!(var19 === var10)) {
+                    _fun44632_ip = 344;
+                    continue _fun44632
+                }
+            case 321:
+                var6 = _closure1_slot0;
+                var4 = _closure1_slot1;
+                var4 = var4[var5];
+                var4 = var6.bind(var19)(var4);
+                var10 = var4.workletNoop;
+            case 344:
+                var11 = var0.handleOnMomentumBegin;
+                if (!(var19 === var11)) {
+                    _fun44632_ip = 379;
+                    continue _fun44632
+                }
+            case 356:
+                var4 = _closure1_slot0;
+                var0 = _closure1_slot1;
+                var0 = var0[var5];
+                var0 = var4.bind(var19)(var0);
+                var11 = var0.workletNoop;
+            case 379:
+                var0 = {};
+                var18 = _closure1_slot0;
+                var17 = _closure1_slot1;
+                var4 = var17[var20];
+                var6 = var18.bind(var19)(var4);
+                var5 = var6.useAnimatedScrollHandler;
+                var4 = {};
+                var16 = function arg0, arg1() {
+                    _fun44633: for (var _fun44633_ip = 0;;) switch (_fun44633_ip) {
+                        case 0:
+                            var3 = arg0;
+                            var4 = _closure2_slot3;
+                            var0 = undefined;
+                            var2 = arg1;
+                            var2 = var4.bind(var0)(var3, var2);
+                            var2 = _closure2_slot0;
+                            if (!var2) {
+                                _fun44633_ip = 77;
+                                continue _fun44633
+                            }
+                        case 28:
+                            var4 = _closure1_slot0;
+                            var5 = _closure1_slot1;
+                            var2 = 1;
+                            var2 = var5[var2];
+                            var4 = var4.bind(var0)(var2);
+                            var2 = var4.runOnJS;
+                            var1 = _closure2_slot0;
+                            var2 = var2.bind(var4)(var1);
+                            var1 = {};
+                            var1.nativeEvent = var3;
+                            var1 = var2.bind(var0)(var1);
+                        case 77:
+                            return var0;
+                    }
+                };
+                var21 = {};
+                var21.handleOnScroll = var14;
+                var21.onScroll = var9;
+                var22 = var17[var20];
+                var22 = var18.bind(var19)(var22);
+                var22 = var22.runOnJS;
+                var21.runOnJS = var22;
+                var16.__closure = var21;
+                var21 = 13105350120634.0;
+                var16.__workletHash = var21;
+                var21 = _closure1_slot2;
+                var16.__initData = var21;
+                var4.onScroll = var16;
+                var16 = function arg0, arg1() {
+                    _fun44634: for (var _fun44634_ip = 0;;) switch (_fun44634_ip) {
+                        case 0:
+                            var3 = arg0;
+                            var4 = _closure2_slot4;
+                            var0 = undefined;
+                            var2 = arg1;
+                            var2 = var4.bind(var0)(var3, var2);
+                            var2 = _closure2_slot1;
+                            if (!var2) {
+                                _fun44634_ip = 77;
+                                continue _fun44634
+                            }
+                        case 28:
+                            var4 = _closure1_slot0;
+                            var5 = _closure1_slot1;
+                            var2 = 1;
+                            var2 = var5[var2];
+                            var4 = var4.bind(var0)(var2);
+                            var2 = var4.runOnJS;
+                            var1 = _closure2_slot1;
+                            var2 = var2.bind(var4)(var1);
+                            var1 = {};
+                            var1.nativeEvent = var3;
+                            var1 = var2.bind(var0)(var1);
+                        case 77:
+                            return var0;
+                    }
+                };
+                var21 = {};
+                var21.handleOnBeginDrag = var13;
+                var21.onScrollBeginDrag = var8;
+                var22 = var17[var20];
+                var22 = var18.bind(var19)(var22);
+                var22 = var22.runOnJS;
+                var21.runOnJS = var22;
+                var16.__closure = var21;
+                var21 = 803385440782.0;
+                var16.__workletHash = var21;
+                var21 = _closure1_slot3;
+                var16.__initData = var21;
+                var4.onBeginDrag = var16;
+                var3 = function arg0, arg1() {
+                    _fun44635: for (var _fun44635_ip = 0;;) switch (_fun44635_ip) {
+                        case 0:
+                            var3 = arg0;
+                            var4 = _closure2_slot5;
+                            var0 = undefined;
+                            var2 = arg1;
+                            var2 = var4.bind(var0)(var3, var2);
+                            var2 = _closure2_slot2;
+                            if (!var2) {
+                                _fun44635_ip = 77;
+                                continue _fun44635
+                            }
+                        case 28:
+                            var4 = _closure1_slot0;
+                            var5 = _closure1_slot1;
+                            var2 = 1;
+                            var2 = var5[var2];
+                            var4 = var4.bind(var0)(var2);
+                            var2 = var4.runOnJS;
+                            var1 = _closure2_slot2;
+                            var2 = var2.bind(var4)(var1);
+                            var1 = {};
+                            var1.nativeEvent = var3;
+                            var1 = var2.bind(var0)(var1);
+                        case 77:
+                            return var0;
+                    }
+                };
+                var16 = {};
+                var16.handleOnEndDrag = var12;
+                var16.onScrollEndDrag = var7;
+                var17 = var17[var20];
+                var17 = var18.bind(var19)(var17);
+                var17 = var17.runOnJS;
+                var16.runOnJS = var17;
+                var3.__closure = var16;
+                var16 = 3274737678599.0;
+                var3.__workletHash = var16;
+                var15 = _closure1_slot4;
+                var3.__initData = var15;
+                var4.onEndDrag = var3;
+                var4.onMomentumBegin = var11;
+                var4.onMomentumEnd = var10;
+                var3 = new Array(8);
+                var3[0] = var14;
+                var3[1] = var13;
+                var3[2] = var12;
+                var3[3] = var11;
+                var3[4] = var10;
+                var3[5] = var9;
+                var3[6] = var8;
+                var3[7] = var7;
+                var3 = var5.bind(var6)(var4, var3);
+                var0.scrollHandler = var3;
+                var0.scrollableRef = var2;
+                var0.scrollableContentOffsetY = var1;
+                return var0;
+        }
+    };
+    var1.useScrollHandler = var0;
     var0 = undefined;
-    var6 = var3.bind(var0)(var1);
-    var1 = var6.initialize;
-    var1 = var1.bind(var6)();
-    var1 = 1;
-    var1 = var4[var1];
-    var1 = var3.bind(var0)(var1);
-    var1 = var1.Directions;
-    var2.Directions = var1;
-    var1 = 2;
-    var1 = var4[var1];
-    var1 = var3.bind(var0)(var1);
-    var1 = var1.State;
-    var2.State = var1;
-    var1 = 3;
-    var1 = var4[var1];
-    var1 = var3.bind(var0)(var1);
-    var1 = var1.PointerType;
-    var2.PointerType = var1;
-    var1 = 4;
-    var1 = var4[var1];
-    var1 = var5.bind(var0)(var1);
-    var2.gestureHandlerRootHOC = var1;
-    var1 = 5;
-    var1 = var4[var1];
-    var1 = var5.bind(var0)(var1);
-    var2.GestureHandlerRootView = var1;
-    var1 = 6;
-    var1 = var4[var1];
-    var1 = var3.bind(var0)(var1);
-    var1 = var1.MouseButton;
-    var2.MouseButton = var1;
-    var1 = 7;
-    var1 = var4[var1];
-    var1 = var3.bind(var0)(var1);
-    var1 = var1.TapGestureHandler;
-    var2.TapGestureHandler = var1;
-    var1 = 8;
-    var1 = var4[var1];
-    var1 = var3.bind(var0)(var1);
-    var1 = var1.ForceTouchGestureHandler;
-    var2.ForceTouchGestureHandler = var1;
-    var1 = 9;
-    var1 = var4[var1];
-    var1 = var3.bind(var0)(var1);
-    var1 = var1.LongPressGestureHandler;
-    var2.LongPressGestureHandler = var1;
-    var1 = 10;
-    var1 = var4[var1];
-    var1 = var3.bind(var0)(var1);
-    var1 = var1.PanGestureHandler;
-    var2.PanGestureHandler = var1;
-    var1 = 11;
-    var1 = var4[var1];
-    var1 = var3.bind(var0)(var1);
-    var1 = var1.PinchGestureHandler;
-    var2.PinchGestureHandler = var1;
-    var1 = 12;
-    var1 = var4[var1];
-    var1 = var3.bind(var0)(var1);
-    var1 = var1.RotationGestureHandler;
-    var2.RotationGestureHandler = var1;
-    var1 = 13;
-    var1 = var4[var1];
-    var1 = var3.bind(var0)(var1);
-    var1 = var1.FlingGestureHandler;
-    var2.FlingGestureHandler = var1;
-    var1 = 14;
-    var1 = var4[var1];
-    var1 = var5.bind(var0)(var1);
-    var2.createNativeWrapper = var1;
-    var1 = 15;
-    var1 = var4[var1];
-    var1 = var3.bind(var0)(var1);
-    var1 = var1.GestureDetector;
-    var2.GestureDetector = var1;
-    var1 = 16;
-    var1 = var4[var1];
-    var1 = var3.bind(var0)(var1);
-    var1 = var1.GestureObjects;
-    var2.Gesture = var1;
-    var1 = 17;
-    var1 = var4[var1];
-    var1 = var3.bind(var0)(var1);
-    var1 = var1.NativeViewGestureHandler;
-    var2.NativeViewGestureHandler = var1;
-    var1 = 18;
-    var6 = var4[var1];
-    var6 = var3.bind(var0)(var6);
-    var6 = var6.RawButton;
-    var2.RawButton = var6;
-    var6 = var4[var1];
-    var6 = var3.bind(var0)(var6);
-    var6 = var6.BaseButton;
-    var2.BaseButton = var6;
-    var6 = var4[var1];
-    var6 = var3.bind(var0)(var6);
-    var6 = var6.RectButton;
-    var2.RectButton = var6;
-    var6 = var4[var1];
-    var6 = var3.bind(var0)(var6);
-    var6 = var6.BorderlessButton;
-    var2.BorderlessButton = var6;
-    var1 = var4[var1];
-    var1 = var3.bind(var0)(var1);
-    var1 = var1.PureNativeButton;
-    var2.PureNativeButton = var1;
-    var1 = 19;
-    var6 = var4[var1];
-    var6 = var3.bind(var0)(var6);
-    var6 = var6.TouchableHighlight;
-    var2.TouchableHighlight = var6;
-    var6 = var4[var1];
-    var6 = var3.bind(var0)(var6);
-    var6 = var6.TouchableNativeFeedback;
-    var2.TouchableNativeFeedback = var6;
-    var6 = var4[var1];
-    var6 = var3.bind(var0)(var6);
-    var6 = var6.TouchableOpacity;
-    var2.TouchableOpacity = var6;
-    var1 = var4[var1];
-    var1 = var3.bind(var0)(var1);
-    var1 = var1.TouchableWithoutFeedback;
-    var2.TouchableWithoutFeedback = var1;
-    var1 = 20;
-    var6 = var4[var1];
-    var6 = var3.bind(var0)(var6);
-    var6 = var6.ScrollView;
-    var2.ScrollView = var6;
-    var6 = var4[var1];
-    var6 = var3.bind(var0)(var6);
-    var6 = var6.Switch;
-    var2.Switch = var6;
-    var6 = var4[var1];
-    var6 = var3.bind(var0)(var6);
-    var6 = var6.TextInput;
-    var2.TextInput = var6;
-    var6 = var4[var1];
-    var6 = var3.bind(var0)(var6);
-    var6 = var6.DrawerLayoutAndroid;
-    var2.DrawerLayoutAndroid = var6;
-    var6 = var4[var1];
-    var6 = var3.bind(var0)(var6);
-    var6 = var6.FlatList;
-    var2.FlatList = var6;
-    var1 = var4[var1];
-    var1 = var3.bind(var0)(var1);
-    var1 = var1.RefreshControl;
-    var2.RefreshControl = var1;
-    var1 = 21;
-    var1 = var4[var1];
-    var1 = var3.bind(var0)(var1);
-    var1 = var1.Text;
-    var2.Text = var1;
-    var1 = 22;
-    var1 = var4[var1];
-    var1 = var3.bind(var0)(var1);
-    var1 = var1.HoverEffect;
-    var2.HoverEffect = var1;
-    var1 = 23;
-    var1 = var4[var1];
-    var1 = var5.bind(var0)(var1);
-    var2.Swipeable = var1;
-    var1 = 24;
-    var1 = var4[var1];
-    var1 = var5.bind(var0)(var1);
-    var2.Pressable = var1;
-    var1 = 25;
-    var1 = var4[var1];
-    var1 = var5.bind(var0)(var1);
-    var2.DrawerLayout = var1;
-    var1 = 26;
-    var5 = var4[var1];
-    var5 = var3.bind(var0)(var5);
-    var5 = var5.enableExperimentalWebImplementation;
-    var2.enableExperimentalWebImplementation = var5;
-    var1 = var4[var1];
-    var1 = var3.bind(var0)(var1);
-    var1 = var1.enableLegacyWebImplementation;
-    var2.enableLegacyWebImplementation = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [4925, 4935, 4929, 4936, 4937, 4938, 4941, 4942, 4951, 4953, 4954, 4955, 4956, 4957, 4958, 4960, 4975, 4959, 4986, 4989, 4995, 4996, 4962, 4997, 4998, 5004, 4964]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [4925, 3682, 4915]);

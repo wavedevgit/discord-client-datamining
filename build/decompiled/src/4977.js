@@ -1,558 +1,360 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var5 = metroImportDefault;
     var2 = exports;
-    var4 = dependencyMap;
-    var0 = function() {
-        _fun44921: for (var _fun44921_ip = 0;;) switch (_fun44921_ip) {
+    var1 = dependencyMap;
+    var0 = require;
+    var _closure1_slot0 = var0;
+    var _closure1_slot1 = var1;
+    var0 = global;
+    var6 = var0.Object;
+    var5 = var6.defineProperty;
+    var4 = {};
+    var0 = true;
+    var4.value = var0;
+    var0 = '__esModule';
+    var0 = var5.bind(var6)(var2, var0, var4);
+    var0 = 0;
+    var4 = var1[var0];
+    var1 = metroImportDefault;
+    var0 = undefined;
+    var1 = var1.bind(var0)(var4);
+    var _closure1_slot2 = var1;
+    var1 = {};
+    var4 = function() {
+        var2 = _closure1_slot0;
+        var1 = _closure1_slot1;
+        var0 = 1;
+        var1 = var1[var0];
+        var0 = undefined;
+        var0 = var2.bind(var0)(var1);
+        var0 = var0.TapGesture;
+        var1 = var0.prototype;
+        var1 = Object.create(var1, {
+            constructor: {
+                value: var0
+            }
+        });
+        var4 = var1;
+        var0 = new var4[var0](var3);
+        var0 = var0 instanceof Object ? var0 : var1;
+        return var0;
+    };
+    var1.Tap = var4;
+    var4 = function() {
+        var2 = _closure1_slot0;
+        var1 = _closure1_slot1;
+        var0 = 2;
+        var1 = var1[var0];
+        var0 = undefined;
+        var0 = var2.bind(var0)(var1);
+        var0 = var0.PanGesture;
+        var1 = var0.prototype;
+        var1 = Object.create(var1, {
+            constructor: {
+                value: var0
+            }
+        });
+        var4 = var1;
+        var0 = new var4[var0](var3);
+        var0 = var0 instanceof Object ? var0 : var1;
+        return var0;
+    };
+    var1.Pan = var4;
+    var4 = function() {
+        var2 = _closure1_slot0;
+        var1 = _closure1_slot1;
+        var0 = 3;
+        var1 = var1[var0];
+        var0 = undefined;
+        var0 = var2.bind(var0)(var1);
+        var0 = var0.PinchGesture;
+        var1 = var0.prototype;
+        var1 = Object.create(var1, {
+            constructor: {
+                value: var0
+            }
+        });
+        var4 = var1;
+        var0 = new var4[var0](var3);
+        var0 = var0 instanceof Object ? var0 : var1;
+        return var0;
+    };
+    var1.Pinch = var4;
+    var4 = function() {
+        var2 = _closure1_slot0;
+        var1 = _closure1_slot1;
+        var0 = 4;
+        var1 = var1[var0];
+        var0 = undefined;
+        var0 = var2.bind(var0)(var1);
+        var0 = var0.RotationGesture;
+        var1 = var0.prototype;
+        var1 = Object.create(var1, {
+            constructor: {
+                value: var0
+            }
+        });
+        var4 = var1;
+        var0 = new var4[var0](var3);
+        var0 = var0 instanceof Object ? var0 : var1;
+        return var0;
+    };
+    var1.Rotation = var4;
+    var4 = function() {
+        var2 = _closure1_slot0;
+        var1 = _closure1_slot1;
+        var0 = 5;
+        var1 = var1[var0];
+        var0 = undefined;
+        var0 = var2.bind(var0)(var1);
+        var0 = var0.FlingGesture;
+        var1 = var0.prototype;
+        var1 = Object.create(var1, {
+            constructor: {
+                value: var0
+            }
+        });
+        var4 = var1;
+        var0 = new var4[var0](var3);
+        var0 = var0 instanceof Object ? var0 : var1;
+        return var0;
+    };
+    var1.Fling = var4;
+    var4 = function() {
+        var2 = _closure1_slot0;
+        var1 = _closure1_slot1;
+        var0 = 6;
+        var1 = var1[var0];
+        var0 = undefined;
+        var0 = var2.bind(var0)(var1);
+        var0 = var0.LongPressGesture;
+        var1 = var0.prototype;
+        var1 = Object.create(var1, {
+            constructor: {
+                value: var0
+            }
+        });
+        var4 = var1;
+        var0 = new var4[var0](var3);
+        var0 = var0 instanceof Object ? var0 : var1;
+        return var0;
+    };
+    var1.LongPress = var4;
+    var4 = function() {
+        var2 = _closure1_slot0;
+        var1 = _closure1_slot1;
+        var0 = 7;
+        var1 = var1[var0];
+        var0 = undefined;
+        var0 = var2.bind(var0)(var1);
+        var0 = var0.ForceTouchGesture;
+        var1 = var0.prototype;
+        var1 = Object.create(var1, {
+            constructor: {
+                value: var0
+            }
+        });
+        var4 = var1;
+        var0 = new var4[var0](var3);
+        var0 = var0 instanceof Object ? var0 : var1;
+        return var0;
+    };
+    var1.ForceTouch = var4;
+    var4 = function() {
+        var2 = _closure1_slot0;
+        var1 = _closure1_slot1;
+        var0 = 8;
+        var1 = var1[var0];
+        var0 = undefined;
+        var0 = var2.bind(var0)(var1);
+        var0 = var0.NativeGesture;
+        var1 = var0.prototype;
+        var1 = Object.create(var1, {
+            constructor: {
+                value: var0
+            }
+        });
+        var4 = var1;
+        var0 = new var4[var0](var3);
+        var0 = var0 instanceof Object ? var0 : var1;
+        return var0;
+    };
+    var1.Native = var4;
+    var4 = function() {
+        var2 = _closure1_slot0;
+        var1 = _closure1_slot1;
+        var0 = 9;
+        var1 = var1[var0];
+        var0 = undefined;
+        var0 = var2.bind(var0)(var1);
+        var0 = var0.ManualGesture;
+        var1 = var0.prototype;
+        var1 = Object.create(var1, {
+            constructor: {
+                value: var0
+            }
+        });
+        var4 = var1;
+        var0 = new var4[var0](var3);
+        var0 = var0 instanceof Object ? var0 : var1;
+        return var0;
+    };
+    var1.Manual = var4;
+    var4 = function() {
+        var2 = _closure1_slot0;
+        var1 = _closure1_slot1;
+        var0 = 10;
+        var1 = var1[var0];
+        var0 = undefined;
+        var0 = var2.bind(var0)(var1);
+        var0 = var0.HoverGesture;
+        var1 = var0.prototype;
+        var1 = Object.create(var1, {
+            constructor: {
+                value: var0
+            }
+        });
+        var4 = var1;
+        var0 = new var4[var0](var3);
+        var0 = var0 instanceof Object ? var0 : var1;
+        return var0;
+    };
+    var1.Hover = var4;
+    var4 = function() {
+        _fun44908: for (var _fun44908_ip = 0;;) switch (_fun44908_ip) {
             case 0:
-            case 2: // try_start_0
-                var1 = global;
-                var2 = var1.Boolean;
-                var2 = var2.prototype;
-                var3 = var2.valueOf;
-                var2 = var3.call;
-                var7 = var1.Reflect;
-                var6 = var7.construct;
-                var5 = var1.Boolean;
-                var4 = new Array(0);
-                var1 = function() { // Environment: var0
-                    var0 = undefined;
-                    return var0;
-                };
-                var1 = var6.bind(var7)(var5, var4, var1);
-                var1 = var2.bind(var3)(var1);
-                var1 = !var1;
-                var _closure2_slot0 = var1;
-            case 70: // try_end0
-                _fun44921_ip = 74;
-                continue _fun44921;
-            case 72: // catch_target0
-                CatchBlockStart(arg_register = 1);
-            case 74:
-                var1 = function() {
-                    var0 = _closure2_slot0;
-                    var0 = !var0;
-                    var0 = !var0;
-                    return var0;
-                };
-                _closure1_slot8 = var1;
-                var0 = undefined;
-                var0 = var1.bind(var0)();
+                var3 = undefined;
+                var4 = undefined;
+                var1 = arguments.length;
+                var0 = global;
+                var0 = var0.Array;
+                var2 = var0.prototype;
+                var2 = Object.create(var2, {
+                    constructor: {
+                        value: var0
+                    }
+                });
+                var8 = var2;
+                var7 = var1;
+                var0 = new var8[var0](var7, var6);
+                var2 = var0 instanceof Object ? var0 : var2;
+                var0 = 0;
+                var5 = var0 < var1;
+                if (!var5) {
+                    _fun44908_ip = 62;
+                    continue _fun44908
+                }
+            case 47:
+                var5 = arguments[var0];
+                var2[var0] = var5;
+                var0 = var0 + 1;
+                if (var0 < var1) {
+                    _fun44908_ip = 47;
+                    continue _fun44908
+                }
+            case 62:
+                var1 = _closure1_slot2;
+                var4 = _closure1_slot0;
+                var5 = _closure1_slot1;
+                var0 = 11;
+                var0 = var5[var0];
+                var0 = var4.bind(var3)(var0);
+                var0 = var0.ComposedGesture;
+                var0 = var1.bind(var3)(var0, var2);
                 return var0;
         }
     };
-    var _closure1_slot8 = var0;
-    var0 = global;
-    var7 = var0.Object;
-    var6 = var7.defineProperty;
-    var3 = {};
-    var0 = true;
-    var3.value = var0;
-    var0 = '__esModule';
-    var0 = var6.bind(var7)(var2, var0, var3);
-    var0 = 0;
-    var3 = var4[var0];
-    var0 = undefined;
-    var3 = var5.bind(var0)(var3);
-    var _closure1_slot0 = var3;
-    var3 = 1;
-    var3 = var4[var3];
-    var3 = var5.bind(var0)(var3);
-    var _closure1_slot1 = var3;
-    var3 = 2;
-    var3 = var4[var3];
-    var3 = var5.bind(var0)(var3);
-    var _closure1_slot2 = var3;
-    var3 = 3;
-    var3 = var4[var3];
-    var3 = var5.bind(var0)(var3);
-    var _closure1_slot3 = var3;
-    var3 = 4;
-    var3 = var4[var3];
-    var3 = var5.bind(var0)(var3);
-    var _closure1_slot4 = var3;
-    var3 = 5;
-    var3 = var4[var3];
-    var3 = var5.bind(var0)(var3);
-    var _closure1_slot5 = var3;
-    var3 = {};
-    var5 = 'function changeEventCalculator_Pnpm_panGestureTs1(current,previous){let changePayload;if(previous===undefined){changePayload={changeX:current.translationX,changeY:current.translationY};}else{changePayload={changeX:current.translationX-previous.translationX,changeY:current.translationY-previous.translationY};}return{...current,...changePayload};}';
-    var3.code = var5;
-    var _closure1_slot6 = var3;
-    var3 = function() { // Environment: var1
-        var0 = function arg0, arg1() {
-            _fun44925: for (var _fun44925_ip = 0;;) switch (_fun44925_ip) {
-                case 0:
-                    var4 = arg0;
-                    var0 = arg1;
-                    var1 = undefined;
-                    if (!(var1 !== var0)) {
-                        _fun44925_ip = 58;
-                        continue _fun44925
+    var1.Race = var4;
+    var4 = function() {
+        _fun44909: for (var _fun44909_ip = 0;;) switch (_fun44909_ip) {
+            case 0:
+                var3 = undefined;
+                var4 = undefined;
+                var1 = arguments.length;
+                var0 = global;
+                var0 = var0.Array;
+                var2 = var0.prototype;
+                var2 = Object.create(var2, {
+                    constructor: {
+                        value: var0
                     }
-                case 12:
-                    var3 = {};
-                    var2 = var4.translationX;
-                    var1 = var0.translationX;
-                    var1 = var2 - var1;
-                    var3.changeX = var1;
-                    var1 = var4.translationY;
-                    var0 = var0.translationY;
-                    var0 = var1 - var0;
-                    var3.changeY = var0;
-                    _fun44925_ip = 85;
-                    continue _fun44925;
-                case 58:
-                    var0 = {};
-                    var1 = var4.translationX;
-                    var0.changeX = var1;
-                    var1 = var4.translationY;
-                    var0.changeY = var1;
-                    var3 = var0;
-                case 85:
-                    var0 = global;
-                    var2 = var0.Object;
-                    var1 = var2.assign;
-                    var0 = {};
-                    var0 = var1.bind(var2)(var0, var4, var3);
-                    return var0;
-            }
-        };
-        var1 = {};
-        var0.__closure = var1;
-        var1 = 1947784830943.0;
-        var0.__workletHash = var1;
-        var1 = _closure1_slot6;
-        var0.__initData = var1;
-        return var0;
-    };
-    var3 = var3.bind(var0)();
-    var _closure1_slot7 = var3;
-    var3 = 6;
-    var4 = var4[var3];
-    var3 = arg1;
-    var3 = var3.bind(var0)(var4);
-    var3 = var3.ContinousBaseGesture;
-    var1 = function(arg0) { // Environment: var1
-        var3 = function() {
-            _fun44927: for (var _fun44927_ip = 0;;) switch (_fun44927_ip) {
-                case 0:
-                    var3 = this;
-                    var0 = _closure1_slot0;
-                    var1 = _closure2_slot0;
-                    var2 = undefined;
-                    var0 = var0.bind(var2)(var3, var1);
-                    var0 = _closure1_slot3;
-                    var8 = var0.bind(var2)(var1);
-                    var1 = _closure1_slot2;
-                    var0 = _closure1_slot8;
-                    var0 = var0.bind(var2)();
-                    if (var0) {
-                        _fun44927_ip = 62;
-                        continue _fun44927
-                    }
-                case 49:
-                    var0 = var8.apply;
-                    var0 = var0.bind(var8)(var3, var2);
-                    _fun44927_ip = 100;
-                    continue _fun44927;
-                case 62:
-                    var5 = global;
-                    var7 = var5.Reflect;
-                    var6 = var7.construct;
-                    var4 = _closure1_slot3;
-                    var4 = var4.bind(var2)(var3);
-                    var5 = var4.constructor;
-                    var4 = new Array(0);
-                    var0 = var6.bind(var7)(var8, var4, var5);
-                case 100:
-                    var0 = var1.bind(var2)(var3, var0);
-                    var1 = {};
-                    var0.config = var1;
-                    var1 = 'PanGestureHandler';
-                    var0.handlerName = var1;
-                    return var0;
-            }
-        };
-        var _closure2_slot0 = var3;
-        var4 = _closure1_slot5;
-        var2 = undefined;
-        var1 = arg0;
-        var1 = var4.bind(var2)(var3, var1);
-        var1 = _closure1_slot1;
-        var4 = {};
-        var0 = 'activeOffsetY';
-        var4.key = var0;
-        var0 = function arg0() {
-            _fun44928: for (var _fun44928_ip = 0;;) switch (_fun44928_ip) {
-                case 0:
-                    var3 = arg0;
-                    var0 = this;
-                    var1 = global;
-                    var2 = var1.Array;
-                    var1 = var2.isArray;
-                    var2 = var1.bind(var2)(var3);
-                    var1 = 0;
-                    if (var2) {
-                        _fun44928_ip = 59;
-                        continue _fun44928
-                    }
-                case 29:
-                    if (!(!(var3 < var1))) {
-                        _fun44928_ip = 46;
-                        continue _fun44928
-                    }
-                case 33:
-                    var2 = var0.config;
-                    var2.activeOffsetYEnd = var3;
-                    _fun44928_ip = 92;
-                    continue _fun44928;
-                case 46:
-                    var2 = var0.config;
-                    var2.activeOffsetYStart = var3;
-                    _fun44928_ip = 92;
-                    continue _fun44928;
-                case 59:
-                    var2 = var0.config;
-                    var1 = var3[var1];
-                    var2.activeOffsetYStart = var1;
-                    var2 = var0.config;
-                    var1 = 1;
-                    var1 = var3[var1];
-                    var2.activeOffsetYEnd = var1;
-                case 92:
-                    return var0;
-            }
-        };
-        var4.value = var0;
-        var0 = new Array(14);
-        var0[0] = var4;
-        var4 = {};
-        var6 = 'activeOffsetX';
-        var4.key = var6;
-        var6 = function arg0() {
-            _fun44929: for (var _fun44929_ip = 0;;) switch (_fun44929_ip) {
-                case 0:
-                    var3 = arg0;
-                    var0 = this;
-                    var1 = global;
-                    var2 = var1.Array;
-                    var1 = var2.isArray;
-                    var2 = var1.bind(var2)(var3);
-                    var1 = 0;
-                    if (var2) {
-                        _fun44929_ip = 59;
-                        continue _fun44929
-                    }
-                case 29:
-                    if (!(!(var3 < var1))) {
-                        _fun44929_ip = 46;
-                        continue _fun44929
-                    }
-                case 33:
-                    var2 = var0.config;
-                    var2.activeOffsetXEnd = var3;
-                    _fun44929_ip = 92;
-                    continue _fun44929;
-                case 46:
-                    var2 = var0.config;
-                    var2.activeOffsetXStart = var3;
-                    _fun44929_ip = 92;
-                    continue _fun44929;
-                case 59:
-                    var2 = var0.config;
-                    var1 = var3[var1];
-                    var2.activeOffsetXStart = var1;
-                    var2 = var0.config;
-                    var1 = 1;
-                    var1 = var3[var1];
-                    var2.activeOffsetXEnd = var1;
-                case 92:
-                    return var0;
-            }
-        };
-        var4.value = var6;
-        var0[1] = var4;
-        var4 = {};
-        var6 = 'failOffsetY';
-        var4.key = var6;
-        var6 = function arg0() {
-            _fun44930: for (var _fun44930_ip = 0;;) switch (_fun44930_ip) {
-                case 0:
-                    var3 = arg0;
-                    var0 = this;
-                    var1 = global;
-                    var2 = var1.Array;
-                    var1 = var2.isArray;
-                    var2 = var1.bind(var2)(var3);
-                    var1 = 0;
-                    if (var2) {
-                        _fun44930_ip = 59;
-                        continue _fun44930
-                    }
-                case 29:
-                    if (!(!(var3 < var1))) {
-                        _fun44930_ip = 46;
-                        continue _fun44930
-                    }
-                case 33:
-                    var2 = var0.config;
-                    var2.failOffsetYEnd = var3;
-                    _fun44930_ip = 92;
-                    continue _fun44930;
-                case 46:
-                    var2 = var0.config;
-                    var2.failOffsetYStart = var3;
-                    _fun44930_ip = 92;
-                    continue _fun44930;
-                case 59:
-                    var2 = var0.config;
-                    var1 = var3[var1];
-                    var2.failOffsetYStart = var1;
-                    var2 = var0.config;
-                    var1 = 1;
-                    var1 = var3[var1];
-                    var2.failOffsetYEnd = var1;
-                case 92:
-                    return var0;
-            }
-        };
-        var4.value = var6;
-        var0[2] = var4;
-        var4 = {};
-        var6 = 'failOffsetX';
-        var4.key = var6;
-        var6 = function arg0() {
-            _fun44931: for (var _fun44931_ip = 0;;) switch (_fun44931_ip) {
-                case 0:
-                    var3 = arg0;
-                    var0 = this;
-                    var1 = global;
-                    var2 = var1.Array;
-                    var1 = var2.isArray;
-                    var2 = var1.bind(var2)(var3);
-                    var1 = 0;
-                    if (var2) {
-                        _fun44931_ip = 59;
-                        continue _fun44931
-                    }
-                case 29:
-                    if (!(!(var3 < var1))) {
-                        _fun44931_ip = 46;
-                        continue _fun44931
-                    }
-                case 33:
-                    var2 = var0.config;
-                    var2.failOffsetXEnd = var3;
-                    _fun44931_ip = 92;
-                    continue _fun44931;
-                case 46:
-                    var2 = var0.config;
-                    var2.failOffsetXStart = var3;
-                    _fun44931_ip = 92;
-                    continue _fun44931;
-                case 59:
-                    var2 = var0.config;
-                    var1 = var3[var1];
-                    var2.failOffsetXStart = var1;
-                    var2 = var0.config;
-                    var1 = 1;
-                    var1 = var3[var1];
-                    var2.failOffsetXEnd = var1;
-                case 92:
-                    return var0;
-            }
-        };
-        var4.value = var6;
-        var0[3] = var4;
-        var4 = {};
-        var6 = 'minPointers';
-        var4.key = var6;
-        var6 = function arg0() {
-            var0 = this;
-            var2 = var0.config;
-            var1 = arg0;
-            var2.minPointers = var1;
-            return var0;
-        };
-        var4.value = var6;
-        var0[4] = var4;
-        var4 = {};
-        var6 = 'maxPointers';
-        var4.key = var6;
-        var6 = function arg0() {
-            var0 = this;
-            var2 = var0.config;
-            var1 = arg0;
-            var2.maxPointers = var1;
-            return var0;
-        };
-        var4.value = var6;
-        var0[5] = var4;
-        var4 = {};
-        var6 = 'minDistance';
-        var4.key = var6;
-        var6 = function arg0() {
-            var0 = this;
-            var2 = var0.config;
-            var1 = arg0;
-            var2.minDist = var1;
-            return var0;
-        };
-        var4.value = var6;
-        var0[6] = var4;
-        var4 = {};
-        var6 = 'minVelocity';
-        var4.key = var6;
-        var6 = function arg0() {
-            var0 = this;
-            var2 = var0.config;
-            var1 = arg0;
-            var2.minVelocity = var1;
-            return var0;
-        };
-        var4.value = var6;
-        var0[7] = var4;
-        var4 = {};
-        var6 = 'minVelocityX';
-        var4.key = var6;
-        var6 = function arg0() {
-            var0 = this;
-            var2 = var0.config;
-            var1 = arg0;
-            var2.minVelocityX = var1;
-            return var0;
-        };
-        var4.value = var6;
-        var0[8] = var4;
-        var4 = {};
-        var6 = 'minVelocityY';
-        var4.key = var6;
-        var6 = function arg0() {
-            var0 = this;
-            var2 = var0.config;
-            var1 = arg0;
-            var2.minVelocityY = var1;
-            return var0;
-        };
-        var4.value = var6;
-        var0[9] = var4;
-        var4 = {};
-        var6 = 'averageTouches';
-        var4.key = var6;
-        var6 = function arg0() {
-            var0 = this;
-            var2 = var0.config;
-            var1 = arg0;
-            var2.avgTouches = var1;
-            return var0;
-        };
-        var4.value = var6;
-        var0[10] = var4;
-        var4 = {};
-        var6 = 'enableTrackpadTwoFingerGesture';
-        var4.key = var6;
-        var6 = function arg0() {
-            var0 = this;
-            var2 = var0.config;
-            var1 = arg0;
-            var2.enableTrackpadTwoFingerGesture = var1;
-            return var0;
-        };
-        var4.value = var6;
-        var0[11] = var4;
-        var4 = {};
-        var6 = 'activateAfterLongPress';
-        var4.key = var6;
-        var6 = function arg0() {
-            var0 = this;
-            var2 = var0.config;
-            var1 = arg0;
-            var2.activateAfterLongPress = var1;
-            return var0;
-        };
-        var4.value = var6;
-        var0[12] = var4;
-        var4 = {};
-        var6 = 'onChange';
-        var4.key = var6;
-        var5 = function arg0() {
-            var5 = this;
-            var1 = var5.handlers;
-            var0 = _closure1_slot7;
-            var1.changeEventCalculator = var0;
-            var9 = _closure2_slot0;
-            var3 = function arg0, arg1, arg2, arg3() {
-                _fun44942: for (var _fun44942_ip = 0;;) switch (_fun44942_ip) {
-                    case 0:
-                        var4 = arg0;
-                        var6 = arg2;
-                        var _closure4_slot0 = var6;
-                        var5 = _closure1_slot4;
-                        var3 = _closure1_slot3;
-                        var0 = 1;
-                        var2 = 3;
-                        var7 = var0 & var2;
-                        var0 = var4;
-                        if (!var7) {
-                            _fun44942_ip = 44;
-                            continue _fun44942
-                        }
-                    case 39:
-                        var0 = var4.prototype;
-                    case 44:
-                        var4 = undefined;
-                        var3 = var3.bind(var4)(var0);
-                        var0 = 'onChange';
-                        var4 = var5.bind(var4)(var3, var0, var6);
-                        var _closure4_slot1 = var4;
-                        var0 = 2;
-                        var2 = var0 & var2;
-                        var0 = var4;
-                        if (!var2) {
-                            _fun44942_ip = 98;
-                            continue _fun44942
-                        }
-                    case 79:
-                        var3 = 'function';
-                        var2 = typeof var4;
-                        var0 = var4;
-                        if (!(var3 === var2)) {
-                            _fun44942_ip = 98;
-                            continue _fun44942
-                        }
-                    case 93:
-                        var0 = function(arg0) { // Environment: var1
-                            var3 = _closure4_slot1;
-                            var2 = var3.apply;
-                            var1 = _closure4_slot0;
-                            var0 = arg0;
-                            var0 = var2.bind(var3)(var1, var0);
-                            return var0;
-                        };
-                    case 98:
-                        return var0;
+                });
+                var8 = var2;
+                var7 = var1;
+                var0 = new var8[var0](var7, var6);
+                var2 = var0 instanceof Object ? var0 : var2;
+                var0 = 0;
+                var5 = var0 < var1;
+                if (!var5) {
+                    _fun44909_ip = 62;
+                    continue _fun44909
                 }
-            };
-            var2 = undefined;
-            var8 = 'onChange';
-            var6 = 3;
-            var10 = undefined;
-            var7 = var5;
-            var1 = var10[var3](var9, var8, var7, var6, var5);
-            var0 = new Array(1);
-            var3 = arg0;
-            var0[0] = var3;
-            var0 = var1.bind(var2)(var0);
-            return var0;
-        };
-        var4.value = var5;
-        var0[13] = var4;
-        var0 = var1.bind(var2)(var3, var0);
-        return var0;
+            case 47:
+                var5 = arguments[var0];
+                var2[var0] = var5;
+                var0 = var0 + 1;
+                if (var0 < var1) {
+                    _fun44909_ip = 47;
+                    continue _fun44909
+                }
+            case 62:
+                var1 = _closure1_slot2;
+                var4 = _closure1_slot0;
+                var5 = _closure1_slot1;
+                var0 = 11;
+                var0 = var5[var0];
+                var0 = var4.bind(var3)(var0);
+                var0 = var0.SimultaneousGesture;
+                var0 = var1.bind(var3)(var0, var2);
+                return var0;
+        }
     };
-    var1 = var1.bind(var0)(var3);
-    var2.PanGesture = var1;
+    var1.Simultaneous = var4;
+    var3 = function() {
+        _fun44910: for (var _fun44910_ip = 0;;) switch (_fun44910_ip) {
+            case 0:
+                var3 = undefined;
+                var4 = undefined;
+                var1 = arguments.length;
+                var0 = global;
+                var0 = var0.Array;
+                var2 = var0.prototype;
+                var2 = Object.create(var2, {
+                    constructor: {
+                        value: var0
+                    }
+                });
+                var8 = var2;
+                var7 = var1;
+                var0 = new var8[var0](var7, var6);
+                var2 = var0 instanceof Object ? var0 : var2;
+                var0 = 0;
+                var5 = var0 < var1;
+                if (!var5) {
+                    _fun44910_ip = 62;
+                    continue _fun44910
+                }
+            case 47:
+                var5 = arguments[var0];
+                var2[var0] = var5;
+                var0 = var0 + 1;
+                if (var0 < var1) {
+                    _fun44910_ip = 47;
+                    continue _fun44910
+                }
+            case 62:
+                var1 = _closure1_slot2;
+                var4 = _closure1_slot0;
+                var5 = _closure1_slot1;
+                var0 = 11;
+                var0 = var5[var0];
+                var0 = var4.bind(var3)(var0);
+                var0 = var0.ExclusiveGesture;
+                var0 = var1.bind(var3)(var0, var2);
+                return var0;
+        }
+    };
+    var1.Exclusive = var3;
+    var2.GestureObjects = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 15, 17, 102, 18, 4963]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [164, 4978, 4979, 4980, 4981, 4982, 4983, 4984, 4985, 4986, 4964, 4987]);

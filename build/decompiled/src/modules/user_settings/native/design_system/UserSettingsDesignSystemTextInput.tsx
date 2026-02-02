@@ -42,7 +42,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var _closure1_slot9 = var0;
     var0 = function arg0() {
-        _fun87800: for (var _fun87800_ip = 0;;) switch (_fun87800_ip) {
+        _fun87804: for (var _fun87804_ip = 0;;) switch (_fun87804_ip) {
             case 0:
                 var6 = arg0;
                 var9 = var6.defaultValue;
@@ -53,8 +53,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = 'default';
                 var0 = var7;
                 if (!var3) {
-                    _fun87800_ip = 65;
-                    continue _fun87800
+                    _fun87804_ip = 65;
+                    continue _fun87804
                 }
             case 39:
                 var8 = var9.includes;
@@ -62,8 +62,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var8.bind(var9)(var3);
                 var0 = var7;
                 if (!var3) {
-                    _fun87800_ip = 65;
-                    continue _fun87800
+                    _fun87804_ip = 65;
+                    continue _fun87804
                 }
             case 61:
                 var0 = 'error';
@@ -94,8 +94,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = 'error';
                 var7 = undefined;
                 if (!(var6 === var8)) {
-                    _fun87800_ip = 169;
-                    continue _fun87800
+                    _fun87804_ip = 169;
+                    continue _fun87804
                 }
             case 163:
                 var7 = "Username can't contain spaces";
@@ -114,7 +114,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = 'leadingIcon';
                 var0[var5] = var6;
                 var5 = function arg0() {
-                    _fun87801: for (var _fun87801_ip = 0;;) switch (_fun87801_ip) {
+                    _fun87805: for (var _fun87805_ip = 0;;) switch (_fun87805_ip) {
                         case 0:
                             var3 = arg0;
                             var2 = _closure2_slot0;
@@ -123,8 +123,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var0 = var1.bind(var3)(var0);
                             var1 = 'default';
                             if (!var0) {
-                                _fun87801_ip = 37;
-                                continue _fun87801
+                                _fun87805_ip = 37;
+                                continue _fun87805
                             }
                         case 33:
                             var1 = 'error';
@@ -142,7 +142,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var _closure1_slot10 = var0;
     var0 = function arg0() {
-        _fun87802: for (var _fun87802_ip = 0;;) switch (_fun87802_ip) {
+        _fun87806: for (var _fun87806_ip = 0;;) switch (_fun87806_ip) {
             case 0:
                 var5 = arg0;
                 var9 = var5.defaultValue;
@@ -153,8 +153,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = 'default';
                 var1 = var7;
                 if (!var6) {
-                    _fun87802_ip = 65;
-                    continue _fun87802
+                    _fun87806_ip = 65;
+                    continue _fun87806
                 }
             case 39:
                 var8 = var9.includes;
@@ -162,8 +162,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var8.bind(var9)(var6);
                 var1 = var7;
                 if (!var6) {
-                    _fun87802_ip = 65;
-                    continue _fun87802
+                    _fun87806_ip = 65;
+                    continue _fun87806
                 }
             case 61:
                 var1 = 'error';
@@ -194,8 +194,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = 'error';
                 var6 = undefined;
                 if (!(var5 === var7)) {
-                    _fun87802_ip = 169;
-                    continue _fun87802
+                    _fun87806_ip = 169;
+                    continue _fun87806
                 }
             case 163:
                 var6 = "Username can't contain spaces";
@@ -203,7 +203,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = 'errorMessage';
                 var0[var5] = var6;
                 var5 = function arg0() {
-                    _fun87803: for (var _fun87803_ip = 0;;) switch (_fun87803_ip) {
+                    _fun87807: for (var _fun87807_ip = 0;;) switch (_fun87807_ip) {
                         case 0:
                             var3 = arg0;
                             var2 = _closure2_slot0;
@@ -212,8 +212,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var0 = var1.bind(var3)(var0);
                             var1 = 'default';
                             if (!var0) {
-                                _fun87803_ip = 37;
-                                continue _fun87803
+                                _fun87807_ip = 37;
+                                continue _fun87807
                             }
                         case 33:
                             var1 = 'error';
@@ -331,7 +331,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var _closure1_slot13 = var0;
     var0 = function() {
-        _fun87806: for (var _fun87806_ip = 0;;) switch (_fun87806_ip) {
+        _fun87810: for (var _fun87810_ip = 0;;) switch (_fun87810_ip) {
             case 0:
                 var2 = _closure1_slot4;
                 var1 = var2.useState;
@@ -367,8 +367,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = 'error';
                 var7 = undefined;
                 if (!(var8 === var9)) {
-                    _fun87806_ip = 147;
-                    continue _fun87806
+                    _fun87810_ip = 147;
+                    continue _fun87810
                 }
             case 141:
                 var7 = "Username can't contain spaces";
@@ -397,7 +397,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var5.AtIcon;
                 var0.trailingIcon = var5;
                 var4 = function arg0() {
-                    _fun87808: for (var _fun87808_ip = 0;;) switch (_fun87808_ip) {
+                    _fun87812: for (var _fun87812_ip = 0;;) switch (_fun87812_ip) {
                         case 0:
                             var4 = arg0;
                             var2 = _closure2_slot1;
@@ -409,8 +409,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var3 = var3.bind(var4)(var1);
                             var1 = 'default';
                             if (!var3) {
-                                _fun87808_ip = 48;
-                                continue _fun87808
+                                _fun87812_ip = 48;
+                                continue _fun87812
                             }
                         case 44:
                             var1 = 'error';
@@ -1188,4 +1188,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 33, 1297, 671, 4863, 4039, 5363, 4817, 11332, 4894, 5174, 5350, 3900, 4809, 5351, 6971, 7470, 5331, 5364, 4043, 3237, 7499, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 33, 1297, 671, 4865, 4041, 5365, 4819, 11334, 4896, 5176, 5352, 3902, 4811, 5353, 6973, 7472, 5333, 5366, 4045, 3239, 7501, 2]);

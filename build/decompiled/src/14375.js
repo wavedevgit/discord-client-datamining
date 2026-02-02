@@ -4,185 +4,115 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var0.IntlMessageFormat;
     var2 = var3.__addLocaleData;
     var1 = {};
-    var4 = 'ru';
+    var4 = 'ro';
     var1.locale = var4;
     var4 = function arg0, arg1() {
-        _fun112178: for (var _fun112178_ip = 0;;) switch (_fun112178_ip) {
+        _fun112177: for (var _fun112177_ip = 0;;) switch (_fun112177_ip) {
             case 0:
-                var0 = global;
-                var2 = var0.String;
-                var1 = undefined;
-                var0 = arg0;
-                var2 = var2.bind(var1)(var0);
-                var1 = var2.split;
+                var2 = arg0;
+                var3 = global;
+                var0 = var3.String;
+                var7 = undefined;
+                var4 = var0.bind(var7)(var2);
+                var1 = var4.split;
                 var0 = '.';
-                var0 = var1.bind(var2)(var0);
+                var0 = var1.bind(var4)(var0);
+                var1 = 1;
+                var4 = var0[var1];
+                var4 = !var4;
+                var6 = var3.Number;
                 var3 = 0;
                 var5 = var0[var3];
-                var1 = 1;
-                var0 = var0[var1];
-                var4 = !var0;
-                var2 = var5.slice;
-                var0 = -1;
-                var7 = var2.bind(var5)(var0);
-                var2 = var5.slice;
+                var5 = var6.bind(var7)(var5);
+                var6 = var5 == var2;
+                if (!var6) {
+                    _fun112177_ip = 86;
+                    continue _fun112177
+                }
+            case 66:
+                var7 = var0[var3];
+                var5 = var7.slice;
                 var0 = -2;
-                var6 = var2.bind(var5)(var0);
-                var5 = 'other';
-                var2 = arg1;
-                var0 = var5;
-                if (var2) {
-                    _fun112178_ip = 233;
-                    continue _fun112178
+                var6 = var5.bind(var7)(var0);
+            case 86:
+                var0 = arg1;
+                if (var0) {
+                    _fun112177_ip = 156;
+                    continue _fun112177
+                }
+            case 92:
+                if (!(var1 == var2)) {
+                    _fun112177_ip = 103;
+                    continue _fun112177
                 }
             case 96:
-                if (!var4) {
-                    _fun112178_ip = 117;
-                    continue _fun112178
-                }
-            case 99:
-                if (!(var1 == var7)) {
-                    _fun112178_ip = 117;
-                    continue _fun112178
+                var0 = 'one';
+                if (var4) {
+                    _fun112177_ip = 154;
+                    continue _fun112177
                 }
             case 103:
-                var1 = 11;
-                var2 = var1 != var6;
-                var1 = 'one';
-                if (var2) {
-                    _fun112178_ip = 230;
-                    continue _fun112178
-                }
-            case 117:
                 if (!var4) {
-                    _fun112178_ip = 164;
-                    continue _fun112178
+                    _fun112177_ip = 147;
+                    continue _fun112177
                 }
-            case 120:
-                var2 = 2;
-                if (!(var7 >= var2)) {
-                    _fun112178_ip = 164;
-                    continue _fun112178
+            case 106:
+                if (!(var3 != var2)) {
+                    _fun112177_ip = 147;
+                    continue _fun112177
                 }
-            case 127:
-                var2 = 4;
-                if (!(var7 <= var2)) {
-                    _fun112178_ip = 164;
-                    continue _fun112178
+            case 110:
+                var4 = var1 != var2;
+                var5 = 'other';
+                var3 = var5;
+                if (!var4) {
+                    _fun112177_ip = 151;
+                    continue _fun112177
+                }
+            case 124:
+                var4 = var6 >= var1;
+                var3 = var5;
+                if (!var4) {
+                    _fun112177_ip = 151;
+                    continue _fun112177
                 }
             case 134:
-                var2 = 12;
-                var8 = var6 < var2;
-                var9 = 'few';
-                var2 = var9;
-                if (var8) {
-                    _fun112178_ip = 227;
-                    continue _fun112178
-                }
-            case 151:
-                var8 = 14;
-                var8 = var6 > var8;
-                var2 = var9;
-                if (var8) {
-                    _fun112178_ip = 227;
-                    continue _fun112178
-                }
-            case 164:
-                if (!var4) {
-                    _fun112178_ip = 171;
-                    continue _fun112178
-                }
-            case 167:
-                if (!(var3 != var7)) {
-                    _fun112178_ip = 220;
-                    continue _fun112178
-                }
-            case 171:
-                if (!var4) {
-                    _fun112178_ip = 188;
-                    continue _fun112178
-                }
-            case 174:
-                var3 = 5;
-                if (!(var7 >= var3)) {
-                    _fun112178_ip = 188;
-                    continue _fun112178
-                }
-            case 181:
-                var3 = 9;
-                if (!(!(var7 <= var3))) {
-                    _fun112178_ip = 220;
-                    continue _fun112178
-                }
-            case 188:
-                var3 = var5;
-                if (!var4) {
-                    _fun112178_ip = 224;
-                    continue _fun112178
-                }
-            case 194:
-                var4 = 11;
-                var4 = var6 >= var4;
-                var3 = var5;
-                if (!var4) {
-                    _fun112178_ip = 224;
-                    continue _fun112178
-                }
-            case 207:
-                var4 = 14;
+                var4 = 19;
                 var4 = var6 <= var4;
                 var3 = var5;
                 if (!var4) {
-                    _fun112178_ip = 224;
-                    continue _fun112178
+                    _fun112177_ip = 151;
+                    continue _fun112177
                 }
-            case 220:
-                var3 = 'many';
-            case 224:
-                var2 = var3;
-            case 227:
-                var1 = var2;
-            case 230:
+            case 147:
+                var3 = 'few';
+            case 151:
+                var0 = var3;
+            case 154:
+                _fun112177_ip = 174;
+                continue _fun112177;
+            case 156:
+                var2 = var1 == var2;
+                var1 = 'other';
+                if (!var2) {
+                    _fun112177_ip = 171;
+                    continue _fun112177
+                }
+            case 167:
+                var1 = 'one';
+            case 171:
                 var0 = var1;
-            case 233:
+            case 174:
                 return var0;
         }
     };
     var1.pluralRuleFunction = var4;
     var1 = var2.bind(var3)(var1);
-    var3 = var0.IntlMessageFormat;
-    var2 = var3.__addLocaleData;
-    var1 = {
-        'locale': 'ru-BY',
-        'parentLocale': 'ru'
-    };
-    var1 = var2.bind(var3)(var1);
-    var3 = var0.IntlMessageFormat;
-    var2 = var3.__addLocaleData;
-    var1 = {
-        'locale': 'ru-KG',
-        'parentLocale': 'ru'
-    };
-    var1 = var2.bind(var3)(var1);
-    var3 = var0.IntlMessageFormat;
-    var2 = var3.__addLocaleData;
-    var1 = {
-        'locale': 'ru-KZ',
-        'parentLocale': 'ru'
-    };
-    var1 = var2.bind(var3)(var1);
-    var3 = var0.IntlMessageFormat;
-    var2 = var3.__addLocaleData;
-    var1 = {
-        'locale': 'ru-MD',
-        'parentLocale': 'ru'
-    };
-    var1 = var2.bind(var3)(var1);
     var2 = var0.IntlMessageFormat;
     var1 = var2.__addLocaleData;
     var0 = {
-        'locale': 'ru-UA',
-        'parentLocale': 'ru'
+        'locale': 'ro-MD',
+        'parentLocale': 'ro'
     };
     var0 = var1.bind(var2)(var0);
     var0 = undefined;

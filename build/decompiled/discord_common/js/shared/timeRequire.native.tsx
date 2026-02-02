@@ -24,7 +24,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = '../discord_common/js/shared/timeRequire.native.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0, arg1() {
-        _fun40264: for (var _fun40264_ip = 0;;) switch (_fun40264_ip) {
+        _fun40268: for (var _fun40268_ip = 0;;) switch (_fun40268_ip) {
             case 0:
                 var9 = arg0;
                 var1 = global;
@@ -40,8 +40,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var2 - var5;
                 var2 = 5;
                 if (!(var5 >= var2)) {
-                    _fun40264_ip = 273;
-                    continue _fun40264
+                    _fun40268_ip = 273;
+                    continue _fun40268
                 }
             case 60:
                 var6 = _closure1_slot0;
@@ -49,8 +49,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = 'function';
                 var6 = typeof var6;
                 if (!(var7 !== var6)) {
-                    _fun40264_ip = 147;
-                    continue _fun40264
+                    _fun40268_ip = 147;
+                    continue _fun40268
                 }
             case 84:
                 var7 = _closure1_slot1;
@@ -65,8 +65,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var7.bind(var6)(var9);
                 var6 = '🏃';
                 var6 = var8.bind(var10)(var6, var7, var5);
-                _fun40264_ip = 273;
-                continue _fun40264;
+                _fun40268_ip = 273;
+                continue _fun40268;
             case 147:
                 var7 = _closure1_slot0;
                 var6 = var7.getModules;

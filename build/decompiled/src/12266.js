@@ -22,11 +22,11 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var6 = var1;
         var0 = new var6[var3](var5, var4, var3);
         var0 = var0 instanceof Object ? var0 : var1;
-        var0 = var0.patch;
+        var0 = var0.major;
         return var0;
     };
     var0 = arg4;
     var0.exports = var1;
     var0 = undefined;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [12254]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [12256]);

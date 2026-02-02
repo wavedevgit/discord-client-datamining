@@ -99,7 +99,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.onGameProfileOpen = var3;
     var3 = function arg0() {
-        _fun88718: for (var _fun88718_ip = 0;;) switch (_fun88718_ip) {
+        _fun88722: for (var _fun88722_ip = 0;;) switch (_fun88722_ip) {
             case 0:
                 var0 = arg0;
                 var5 = var0.message;
@@ -112,14 +112,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = 'avatar';
                 var3 = var0 === var1;
                 if (var3) {
-                    _fun88718_ip = 64;
-                    continue _fun88718
+                    _fun88722_ip = 64;
+                    continue _fun88722
                 }
             case 53:
                 var0 = 'username';
                 if (!(var0 === var1)) {
-                    _fun88718_ip = 220;
-                    continue _fun88718
+                    _fun88722_ip = 220;
+                    continue _fun88722
                 }
             case 64:
                 var1 = _closure1_slot6;
@@ -127,8 +127,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var0.bind(var1)(var2);
                 var7 = null;
                 if (!(var7 != var9)) {
-                    _fun88718_ip = 220;
-                    continue _fun88718
+                    _fun88722_ip = 220;
+                    continue _fun88722
                 }
             case 88:
                 var1 = _closure1_slot1;
@@ -144,8 +144,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var7 == var8;
                 var7 = undefined;
                 if (var9) {
-                    _fun88718_ip = 141;
-                    continue _fun88718
+                    _fun88722_ip = 141;
+                    continue _fun88722
                 }
             case 136:
                 var7 = var8.id;
@@ -159,15 +159,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var7[var4];
                 var4 = var5.bind(var6)(var4);
                 if (var3) {
-                    _fun88718_ip = 193;
-                    continue _fun88718
+                    _fun88722_ip = 193;
+                    continue _fun88722
                 }
             case 177:
                 var5 = var4.USERNAME;
                 var3 = new Array(1);
                 var3[0] = var5;
-                _fun88718_ip = 210;
-                continue _fun88718;
+                _fun88722_ip = 210;
+                continue _fun88722;
             case 193:
                 var5 = var4.AVATAR;
                 var4 = new Array(1);
@@ -198,4 +198,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.clearDeleteHistoryError = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1372, 1661, 3172, 1613, 11497, 660, 806, 795, 11498, 5541, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1372, 1661, 3174, 1613, 11499, 660, 806, 795, 11500, 5543, 2]);

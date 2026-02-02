@@ -25,15 +25,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/connections/FederatedSocialUtils.tsx';
     var3 = var4.bind(var5)(var3);
     var3 = function arg0, arg1() {
-        _fun51533: for (var _fun51533_ip = 0;;) switch (_fun51533_ip) {
+        _fun51537: for (var _fun51537_ip = 0;;) switch (_fun51537_ip) {
             case 0:
                 var2 = arg0;
                 var0 = _closure1_slot0;
                 var1 = var0.MASTODON;
                 var0 = arg1;
                 if (!(var0 === var1)) {
-                    _fun51533_ip = 47;
-                    continue _fun51533
+                    _fun51537_ip = 47;
+                    continue _fun51537
                 }
             case 23:
                 var1 = /^@?[a-z0-9_]+([.-]+[a-z0-9_]+)*@[^@]+\.[^.@]{2,}$/i;
@@ -48,23 +48,23 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.validateHandle = var3;
     var1 = function arg0() {
-        _fun51534: for (var _fun51534_ip = 0;;) switch (_fun51534_ip) {
+        _fun51538: for (var _fun51538_ip = 0;;) switch (_fun51538_ip) {
             case 0:
                 var3 = arg0;
                 var0 = _closure1_slot0;
                 var2 = var0.MASTODON;
                 var0 = '@example@mastodon.social';
                 if (!(var3 !== var2)) {
-                    _fun51534_ip = 55;
-                    continue _fun51534
+                    _fun51538_ip = 55;
+                    continue _fun51538
                 }
             case 26:
                 var1 = _closure1_slot0;
                 var2 = var1.BLUESKY;
                 var1 = 'clyde@example.com';
                 if (!(var3 === var2)) {
-                    _fun51534_ip = 52;
-                    continue _fun51534
+                    _fun51538_ip = 52;
+                    continue _fun51538
                 }
             case 46:
                 var1 = 'example.bsky.social';

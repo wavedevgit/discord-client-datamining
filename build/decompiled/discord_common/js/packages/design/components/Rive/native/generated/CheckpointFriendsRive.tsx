@@ -199,15 +199,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = '../discord_common/js/packages/design/components/Rive/native/generated/CheckpointFriendsRive.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun27434: for (var _fun27434_ip = 0;;) switch (_fun27434_ip) {
+        _fun27438: for (var _fun27438_ip = 0;;) switch (_fun27438_ip) {
             case 0:
                 var2 = arg0;
                 var0 = var2.artboard;
                 var8 = 'MAIN';
                 var3 = undefined;
                 if (!(var3 !== var0)) {
-                    _fun27434_ip = 22;
-                    continue _fun27434
+                    _fun27438_ip = 22;
+                    continue _fun27438
                 }
             case 19:
                 var8 = var0;
@@ -216,8 +216,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var2.defaultViewModelInstance;
                 var6 = 'threeFriends';
                 if (!(var3 !== var0)) {
-                    _fun27434_ip = 47;
-                    continue _fun27434
+                    _fun27438_ip = 47;
+                    continue _fun27438
                 }
             case 44:
                 var6 = var0;
@@ -255,4 +255,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.CheckpointFriendsRive = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [29, 31, 33, 3134, 3145, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [29, 31, 33, 3136, 3147, 2]);

@@ -1,46 +1,84 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = exports;
+    var5 = require;
+    var2 = exports;
+    var7 = dependencyMap;
     var0 = global;
-    var4 = var0.Object;
-    var3 = var4.defineProperty;
-    var2 = {};
+    var6 = var0.Object;
+    var4 = var6.defineProperty;
+    var1 = {};
     var0 = true;
-    var2.value = var0;
+    var1.value = var0;
     var0 = '__esModule';
-    var0 = var3.bind(var4)(var1, var0, var2);
-    var0 = function arg0() {
-        _fun48787: for (var _fun48787_ip = 0;;) switch (_fun48787_ip) {
-            case 0:
-                var2 = arg0;
-                var0 = global;
-                var1 = var0.Array;
-                var0 = var1.isArray;
-                var0 = var0.bind(var1)(var2);
-                var3 = var2;
-                if (!var0) {
-                    _fun48787_ip = 41;
-                    continue _fun48787
-                }
-            case 27:
-                var1 = var2.join;
-                var0 = ',';
-                var3 = var1.bind(var2)(var0);
-            case 41:
-                var2 = var3.replace;
-                var1 = /[^eE]-/;
-                var0 = ' -';
-                var2 = var2.bind(var3)(var1, var0);
-                var1 = var2.split;
-                var0 = /(?:\s+|\s*,\s*)/g;
-                var2 = var1.bind(var2)(var0);
-                var1 = var2.join;
-                var0 = ' ';
-                var0 = var1.bind(var2)(var0);
-                return var0;
-        }
+    var0 = var4.bind(var6)(var2, var0, var1);
+    var1 = {};
+    var6 = 'RNSVGPattern';
+    var1.uiViewClassName = var6;
+    var4 = {
+        'name': true,
+        'opacity': true,
+        'matrix': true,
+        'mask': true,
+        'markerStart': true,
+        'markerMid': true,
+        'markerEnd': true,
+        'clipPath': true,
+        'clipRule': true,
+        'responsible': true,
+        'display': true,
+        'pointerEvents': true,
+        'color': null,
+        'fill': true,
+        'fillOpacity': true,
+        'fillRule': true,
+        'stroke': true,
+        'strokeOpacity': true,
+        'strokeWidth': true,
+        'strokeLinecap': true,
+        'strokeLinejoin': true,
+        'strokeDasharray': true,
+        'strokeDashoffset': true,
+        'strokeMiterlimit': true,
+        'vectorEffect': true,
+        'propList': true,
+        'filter': true,
+        'fontSize': true,
+        'fontWeight': true,
+        'font': true,
+        'x': true,
+        'y': true,
+        'height': true,
+        'width': true,
+        'patternUnits': true,
+        'patternContentUnits': true,
+        'patternTransform': true,
+        'minX': true,
+        'minY': true,
+        'vbWidth': true,
+        'vbHeight': true,
+        'align': true,
+        'meetOrSlice': true
     };
-    var1.default = var0;
+    var8 = {};
+    var0 = 0;
+    var9 = var7[var0];
     var0 = undefined;
+    var9 = var5.bind(var0)(var9);
+    var9 = var9.default;
+    var8.process = var9;
+    var4.color = var8;
+    var1.validAttributes = var4;
+    var _closure1_slot0 = var1;
+    var4 = 1;
+    var4 = var7[var4];
+    var5 = var5.bind(var0)(var4);
+    var4 = var5.get;
+    var3 = function() { // Environment: var3
+        var0 = _closure1_slot0;
+        return var0;
+    };
+    var3 = var4.bind(var5)(var6, var3);
+    var2.default = var3;
+    var2.__INTERNAL_VIEW_CONFIG = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, []);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [38, 42]);

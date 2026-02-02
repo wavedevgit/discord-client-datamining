@@ -22,4 +22,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = 'modules/debug/native/ReactotronConfig.tsx';
     var1 = var2.bind(var3)(var1);
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [12692, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [12693, 2]);

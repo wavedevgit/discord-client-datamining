@@ -1,319 +1,172 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
+    var5 = require;
     var2 = exports;
-    var3 = dependencyMap;
-    var0 = require;
-    var _closure1_slot0 = var0;
-    var _closure1_slot1 = var3;
-    var0 = global;
-    var6 = var0.Object;
-    var5 = var6.defineProperty;
-    var4 = {};
+    var26 = dependencyMap;
+    var15 = global;
+    var4 = var15.Object;
+    var3 = var4.defineProperty;
+    var1 = {};
     var0 = true;
-    var4.value = var0;
+    var1.value = var0;
     var0 = '__esModule';
-    var0 = var5.bind(var6)(var2, var0, var4);
-    var0 = 0;
-    var4 = var3[var0];
-    var3 = metroImportDefault;
+    var0 = var3.bind(var4)(var2, var0, var1);
+    var4 = {};
+    var14 = 0;
+    var4.LINEAR = var14;
+    var0 = 'LINEAR';
+    var4[var14] = var0;
+    var13 = 1;
+    var4.SEQUENCED = var13;
+    var0 = 'SEQUENCED';
+    var4[var13] = var0;
+    var12 = 2;
+    var4.FADING = var12;
+    var0 = 'FADING';
+    var4[var12] = var0;
+    var11 = 3;
+    var4.JUMPING = var11;
+    var0 = 'JUMPING';
+    var4[var11] = var0;
+    var10 = 4;
+    var4.CURVED = var10;
+    var0 = 'CURVED';
+    var4[var10] = var0;
+    var9 = 5;
+    var4.ENTRY_EXIT = var9;
+    var0 = 'ENTRY_EXIT';
+    var4[var9] = var0;
+    var37 = var15.Object;
+    var36 = var37.assign;
+    var1 = var26[var14];
     var0 = undefined;
-    var3 = var3.bind(var0)(var4);
-    var _closure1_slot2 = var3;
-    var1 = function arg0() {
-        _fun33643: for (var _fun33643_ip = 0;;) switch (_fun33643_ip) {
-            case 0:
-                var0 = arg0;
-                var27 = undefined;
-                var28 = undefined;
-                var29 = undefined;
-                var30 = undefined;
-                var31 = undefined;
-                var32 = undefined;
-                var5 = var0.name;
-                var26 = global;
-                var2 = var26.HermesInternal;
-                var4 = var2.concat;
-                var3 = '@keyframes ';
-                var2 = ' { ';
-                var2 = var4.bind(var3)(var5, var2);
-                var _closure2_slot0 = var2;
-                var3 = var26.Object;
-                var2 = var3.entries;
-                var0 = var0.style;
-                var0 = var2.bind(var3)(var0);
-                var25 = var0;
-                var3 = var25[Symbol.iterator];
-                var25 = var3().next;
-                var2 = '} ';
-                var24 = '';
-                var23 = '% { ';
-                var22 = 'transform:';
-                var21 = '; ';
-                var20 = ': ';
-                var19 = 'transform';
-                var18 = 'top: ';
-                var17 = 'px; ';
-                var16 = 'originY';
-                var15 = 'left: ';
-                var14 = 'originX';
-                var12 = 1;
-                var11 = 'animation-timing-function: cubic-bezier(';
-                var10 = ');';
-                var9 = 'linear';
-                var8 = 2;
-                var7 = 0;
-                var6 = 'easing';
-                var5 = 100;
-                var4 = 'to';
-                var0 = 'from';
-            case 191:
-                var34 = var25().value;
-                var33 = var3;
-                if (!(var33 !== var27)) {
-                    _fun33643_ip = 719;
-                    continue _fun33643
-                }
-            case 205: // try_start_1
-                var33 = _closure1_slot2;
-                var34 = var33.bind(var27)(var34, var8);
-                var33 = var34[var7];
-                var28 = var33;
-                var29 = var34[var12];
-                var35 = 0;
-                if (!(var0 !== var33)) {
-                    _fun33643_ip = 248;
-                    continue _fun33643
-                }
-            case 232:
-                var34 = var28;
-                var33 = var5;
-                if (!(var4 !== var34)) {
-                    _fun33643_ip = 245;
-                    continue _fun33643
-                }
-            case 242:
-                var33 = var28;
-            case 245:
-                var35 = var33;
-            case 248:
-                var34 = _closure2_slot0;
-                var33 = var26.HermesInternal;
-                var33 = var33.concat;
-                var33 = var33.bind(var24)(var35, var23);
-                var33 = var34 + var33;
-                _closure2_slot0 = var33;
-                var35 = var26.Object;
-                var34 = var35.entries;
-                var33 = var29;
-                var35 = var34.bind(var35)(var33);
-                var33 = var35;
-                var34 = var33[Symbol.iterator];
-                var33 = var34().next;
-            case 303:
-                var36 = var33().value;
-                var35 = var34;
-                if (!(var35 !== var27)) {
-                    _fun33643_ip = 695;
-                    continue _fun33643
-                }
-            case 317: // try_start_0
-                var35 = _closure1_slot2;
-                var36 = var35.bind(var27)(var36, var8);
-                var35 = var36[var7];
-                var30 = var35;
-                var31 = var36[var12];
-                if (!(var6 === var35)) {
-                    _fun33643_ip = 505;
-                    continue _fun33643
-                }
-            case 345:
-                var32 = var9;
-                var36 = var31;
-                var37 = _closure1_slot0;
-                var35 = _closure1_slot1;
-                var35 = var35[var12];
-                var35 = var37.bind(var27)(var35);
-                var35 = var35.WebEasings;
-                var36 = var36 in var35;
-                var35 = var31;
-                if (var36) {
-                    _fun33643_ip = 429;
-                    continue _fun33643
-                }
-            case 384:
-                var37 = var35.name;
-                var38 = _closure1_slot0;
-                var36 = _closure1_slot1;
-                var36 = var36[var12];
-                var36 = var38.bind(var27)(var36);
-                var36 = var36.WebEasings;
-                var36 = var37 in var36;
-                if (!var36) {
-                    _fun33643_ip = 432;
-                    continue _fun33643
-                }
-            case 419:
-                var36 = var31;
-                var32 = var36.name;
-                _fun33643_ip = 432;
-                continue _fun33643;
-            case 429:
-                var32 = var35;
-            case 432:
-                var36 = _closure2_slot0;
-                var37 = _closure1_slot0;
-                var35 = _closure1_slot1;
-                var35 = var35[var12];
-                var35 = var37.bind(var27)(var35);
-                var37 = var35.WebEasings;
-                var35 = var32;
-                var37 = var37[var35];
-                var35 = var37.toString;
-                var37 = var35.bind(var37)();
-                var35 = var26.HermesInternal;
-                var35 = var35.concat;
-                var35 = var35.bind(var11)(var37, var10);
-                var35 = var36 + var35;
-                _closure2_slot0 = var35;
-                _fun33643_ip = 683;
-                continue _fun33643;
-            case 505:
-                var35 = var30;
-                if (!(var14 === var35)) {
-                    _fun33643_ip = 549;
-                    continue _fun33643
-                }
-            case 512:
-                var36 = _closure2_slot0;
-                var37 = var31;
-                var35 = var26.HermesInternal;
-                var35 = var35.concat;
-                var35 = var35.bind(var15)(var37, var17);
-                var35 = var36 + var35;
-                _closure2_slot0 = var35;
-                _fun33643_ip = 683;
-                continue _fun33643;
-            case 549:
-                var35 = var30;
-                if (!(var16 === var35)) {
-                    _fun33643_ip = 590;
-                    continue _fun33643
-                }
-            case 556:
-                var36 = _closure2_slot0;
-                var37 = var31;
-                var35 = var26.HermesInternal;
-                var35 = var35.concat;
-                var35 = var35.bind(var18)(var37, var17);
-                var35 = var36 + var35;
-                _closure2_slot0 = var35;
-                _fun33643_ip = 683;
-                continue _fun33643;
-            case 590:
-                var35 = var30;
-                if (!(var19 !== var35)) {
-                    _fun33643_ip = 641;
-                    continue _fun33643
-                }
-            case 597:
-                var36 = _closure2_slot0;
-                var42 = var30;
-                var40 = var31;
-                var35 = var26.HermesInternal;
-                var35 = var35.concat;
-                var43 = var24;
-                var41 = var20;
-                var39 = var21;
-                var35 = var43[var35](var42, var41, var40, var39, var38);
-                var35 = var36 + var35;
-                _closure2_slot0 = var35;
-                _fun33643_ip = 683;
-                continue _fun33643;
-            case 641:
-                var35 = _closure2_slot0;
-                var35 = var35 + var22;
-                _closure2_slot0 = var35;
-                var37 = var31;
-                var36 = var37.forEach;
-                var35 = function(arg0) { // Environment: var1
-                    _fun33644: for (var _fun33644_ip = 0;;) switch (_fun33644_ip) {
-                        case 0:
-                            var11 = global;
-                            var2 = var11.Object;
-                            var1 = var2.entries;
-                            var0 = arg0;
-                            var0 = var1.bind(var2)(var0);
-                            var10 = var0;
-                            var2 = var10[Symbol.iterator];
-                            var10 = var2().next;
-                            var0 = undefined;
-                            var8 = 2;
-                            var7 = 0;
-                            var6 = 1;
-                            var4 = ' ';
-                            var3 = '(';
-                            var1 = ')';
-                        case 58:
-                            var13 = var10().value;
-                            var12 = var2;
-                            if (!(var12 !== var0)) {
-                                _fun33644_ip = 132;
-                                continue _fun33644
-                            }
-                        case 69: // try_start_0
-                            var12 = _closure1_slot2;
-                            var12 = var12.bind(var0)(var13, var8);
-                            var19 = var12[var7];
-                            var17 = var12[var6];
-                            var13 = _closure2_slot0;
-                            var12 = var11.HermesInternal;
-                            var12 = var12.concat;
-                            var20 = var4;
-                            var18 = var3;
-                            var16 = var1;
-                            var12 = var20[var12](var19, var18, var17, var16, var15);
-                            var12 = var13 + var12;
-                            _closure2_slot0 = var12;
-                        case 123: // try_end0
-                            _fun33644_ip = 58;
-                            continue _fun33644;
-                        case 125: // catch_target0
-                            CatchBlockStart(arg_register = 1);
-                            var2.return();
-                            throw var1;
-                        case 132:
-                            return var0;
-                    }
-                };
-                var35 = var36.bind(var37)(var35);
-                var35 = _closure2_slot0;
-                var35 = var35 + var21;
-                _closure2_slot0 = var35;
-            case 683: // try_end0
-                _fun33643_ip = 303;
-                continue _fun33643;
-            case 688: // catch_target0
-                CatchBlockStart(arg_register = 33);
-                var34.return();
-                throw var33;
-            case 695:
-                var33 = _closure2_slot0;
-                var33 = var33 + var2;
-                _closure2_slot0 = var33;
-            case 707: // try_end1
-                _fun33643_ip = 191;
-                continue _fun33643;
-            case 712: // catch_target1
-                CatchBlockStart(arg_register = 0);
-                var3.return();
-                throw var0;
-            case 719:
-                var0 = _closure2_slot0;
-                var0 = var0 + var2;
-                _closure2_slot0 = var0;
-                return var0;
-        }
-    };
-    var2.convertAnimationObjectToKeyframes = var1;
+    var1 = var5.bind(var0)(var1);
+    var56 = var1.FadeInData;
+    var1 = var26[var14];
+    var1 = var5.bind(var0)(var1);
+    var55 = var1.FadeOutData;
+    var1 = var26[var13];
+    var1 = var5.bind(var0)(var1);
+    var54 = var1.BounceInData;
+    var1 = var26[var13];
+    var1 = var5.bind(var0)(var1);
+    var53 = var1.BounceOutData;
+    var1 = var26[var12];
+    var1 = var5.bind(var0)(var1);
+    var52 = var1.FlipInData;
+    var1 = var26[var12];
+    var1 = var5.bind(var0)(var1);
+    var51 = var1.FlipOutData;
+    var1 = var26[var11];
+    var1 = var5.bind(var0)(var1);
+    var50 = var1.StretchInData;
+    var1 = var26[var11];
+    var1 = var5.bind(var0)(var1);
+    var49 = var1.StretchOutData;
+    var1 = var26[var10];
+    var1 = var5.bind(var0)(var1);
+    var48 = var1.ZoomInData;
+    var1 = var26[var10];
+    var1 = var5.bind(var0)(var1);
+    var47 = var1.ZoomOutData;
+    var1 = var26[var9];
+    var1 = var5.bind(var0)(var1);
+    var46 = var1.SlideInData;
+    var1 = var26[var9];
+    var1 = var5.bind(var0)(var1);
+    var45 = var1.SlideOutData;
+    var8 = 6;
+    var1 = var26[var8];
+    var1 = var5.bind(var0)(var1);
+    var44 = var1.LightSpeedInData;
+    var1 = var26[var8];
+    var1 = var5.bind(var0)(var1);
+    var43 = var1.LightSpeedOutData;
+    var7 = 7;
+    var1 = var26[var7];
+    var1 = var5.bind(var0)(var1);
+    var42 = var1.PinwheelData;
+    var6 = 8;
+    var1 = var26[var6];
+    var1 = var5.bind(var0)(var1);
+    var41 = var1.RotateInData;
+    var1 = var26[var6];
+    var1 = var5.bind(var0)(var1);
+    var40 = var1.RotateOutData;
+    var1 = 9;
+    var3 = var26[var1];
+    var3 = var5.bind(var0)(var3);
+    var39 = var3.RollInData;
+    var3 = var26[var1];
+    var3 = var5.bind(var0)(var3);
+    var38 = var3.RollOutData;
+    var57 = {};
+    var58 = var37;
+    var3 = var58[var36](var57, var56, var55, var54, var53, var52, var51, var50, var49, var48, var47, var46, var45, var44, var43, var42, var41, var40, var39, var38, var37);
+    var25 = var15.Object;
+    var24 = var25.assign;
+    var15 = var26[var14];
+    var15 = var5.bind(var0)(var15);
+    var56 = var15.FadeIn;
+    var14 = var26[var14];
+    var14 = var5.bind(var0)(var14);
+    var55 = var14.FadeOut;
+    var14 = var26[var13];
+    var14 = var5.bind(var0)(var14);
+    var54 = var14.BounceIn;
+    var13 = var26[var13];
+    var13 = var5.bind(var0)(var13);
+    var53 = var13.BounceOut;
+    var13 = var26[var12];
+    var13 = var5.bind(var0)(var13);
+    var52 = var13.FlipIn;
+    var12 = var26[var12];
+    var12 = var5.bind(var0)(var12);
+    var51 = var12.FlipOut;
+    var12 = var26[var11];
+    var12 = var5.bind(var0)(var12);
+    var50 = var12.StretchIn;
+    var11 = var26[var11];
+    var11 = var5.bind(var0)(var11);
+    var49 = var11.StretchOut;
+    var11 = var26[var10];
+    var11 = var5.bind(var0)(var11);
+    var48 = var11.ZoomIn;
+    var10 = var26[var10];
+    var10 = var5.bind(var0)(var10);
+    var47 = var10.ZoomOut;
+    var10 = var26[var9];
+    var10 = var5.bind(var0)(var10);
+    var46 = var10.SlideIn;
+    var9 = var26[var9];
+    var9 = var5.bind(var0)(var9);
+    var45 = var9.SlideOut;
+    var9 = var26[var8];
+    var9 = var5.bind(var0)(var9);
+    var44 = var9.LightSpeedIn;
+    var8 = var26[var8];
+    var8 = var5.bind(var0)(var8);
+    var43 = var8.LightSpeedOut;
+    var7 = var26[var7];
+    var7 = var5.bind(var0)(var7);
+    var42 = var7.Pinwheel;
+    var7 = var26[var6];
+    var7 = var5.bind(var0)(var7);
+    var41 = var7.RotateIn;
+    var6 = var26[var6];
+    var6 = var5.bind(var0)(var6);
+    var40 = var6.RotateOut;
+    var6 = var26[var1];
+    var6 = var5.bind(var0)(var6);
+    var39 = var6.RollIn;
+    var1 = var26[var1];
+    var1 = var5.bind(var0)(var1);
+    var38 = var1.RollOut;
+    var57 = {};
+    var58 = var25;
+    var1 = var58[var24](var57, var56, var55, var54, var53, var52, var51, var50, var49, var48, var47, var46, var45, var44, var43, var42, var41, var40, var39, var38, var37);
+    var2.TransitionType = var4;
+    var2.AnimationsData = var3;
+    var2.Animations = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 3739]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3739, 3742, 3743, 3744, 3745, 3746, 3747, 3748, 3749, 3750]);

@@ -1843,4 +1843,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.GUILD_SELECTABLE_CHANNELS_KEY = var3;
     var2.GUILD_VOCAL_CHANNELS_KEY = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 15, 17, 18, 1663, 1375, 3049, 1376, 1216, 1372, 1672, 1410, 3050, 3059, 1613, 660, 22, 4755, 484, 3055, 566, 806, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 15, 17, 18, 1663, 1375, 3051, 1376, 1216, 1372, 1672, 1410, 3052, 3061, 1613, 660, 22, 4757, 484, 3057, 566, 806, 2]);

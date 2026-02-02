@@ -4,35 +4,37 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var1;
     var1 = dependencyMap;
     var _closure1_slot1 = var1;
-    var1 = function arg0() {
-        _fun28872: for (var _fun28872_ip = 0;;) switch (_fun28872_ip) {
+    var1 = function() {
+        _fun28869: for (var _fun28869_ip = 0;;) switch (_fun28869_ip) {
             case 0:
-                var4 = arg0;
-                var3 = typeof var4;
-                var0 = 'Symbol';
-                var1 = 'symbol';
-                if (!(var1 !== var3)) {
-                    _fun28872_ip = 62;
-                    continue _fun28872
-                }
-            case 18:
-                var1 = 'BigInt';
-                var2 = 'bigint';
-                if (!(var2 !== var3)) {
-                    _fun28872_ip = 59;
-                    continue _fun28872
-                }
-            case 30:
-                var5 = _closure1_slot0;
+                var2 = _closure1_slot0;
                 var3 = _closure1_slot1;
-                var2 = 0;
-                var2 = var3[var2];
+                var1 = 0;
+                var1 = var3[var1];
                 var3 = undefined;
-                var2 = var5.bind(var3)(var2);
-                var1 = var2.bind(var3)(var4);
-            case 59:
-                var0 = var1;
-            case 62:
+                var1 = var2.bind(var3)(var1);
+                var1 = var1.bind(var3)();
+                var1 = global;
+                var2 = var1.Promise;
+                var2 = var2.allSettled;
+                var4 = 'function';
+                var2 = typeof var2;
+                if (!(var4 !== var2)) {
+                    _fun28869_ip = 75;
+                    continue _fun28869
+                }
+            case 53:
+                var2 = _closure1_slot0;
+                var4 = _closure1_slot1;
+                var0 = 1;
+                var0 = var4[var0];
+                var0 = var2.bind(var3)(var0);
+                _fun28869_ip = 87;
+                continue _fun28869;
+            case 75:
+                var1 = var1.Promise;
+                var0 = var1.allSettled;
+            case 87:
                 return var0;
         }
     };
@@ -40,4 +42,4 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0.exports = var1;
     var0 = undefined;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3326]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3324, 3326]);

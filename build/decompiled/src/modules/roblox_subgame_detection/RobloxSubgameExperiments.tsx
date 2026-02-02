@@ -93,4 +93,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.ViewRobloxSubgamesInRichPresenceExperiment = var3;
     var2.FetchRobloxSubgamesRolloutExperiment = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1301, 3074, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1301, 3076, 2]);

@@ -29,7 +29,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/native_permissions/mobile/openPrivacySettings.native.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function() {
-        _fun37121: for (var _fun37121_ip = 0;;) switch (_fun37121_ip) {
+        _fun37125: for (var _fun37125_ip = 0;;) switch (_fun37125_ip) {
             case 0:
                 var3 = _closure1_slot0;
                 var2 = _closure1_slot2;
@@ -40,16 +40,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var3.isAndroid;
                 var2 = var2.bind(var3)();
                 if (var2) {
-                    _fun37121_ip = 60;
-                    continue _fun37121
+                    _fun37125_ip = 60;
+                    continue _fun37125
                 }
             case 38:
                 var2 = _closure1_slot3;
                 var3 = var2.DeviceSettingsManager;
                 var2 = var3.openPrivacySettings;
                 var2 = var2.bind(var3)();
-                _fun37121_ip = 90;
-                continue _fun37121;
+                _fun37125_ip = 90;
+                continue _fun37125;
             case 60:
                 var2 = _closure1_slot1;
                 var3 = _closure1_slot2;
@@ -64,4 +64,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 478, 3984, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 478, 3986, 2]);

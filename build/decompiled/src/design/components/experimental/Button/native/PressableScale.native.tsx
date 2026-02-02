@@ -43,15 +43,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot5 = var3;
     var3 = var6.forwardRef;
     var1 = function(arg0, arg1) { // Environment: var1
-        _fun57392: for (var _fun57392_ip = 0;;) switch (_fun57392_ip) {
+        _fun57396: for (var _fun57396_ip = 0;;) switch (_fun57396_ip) {
             case 0:
                 var2 = arg0;
                 var4 = var2.style;
                 var10 = var2.scaleAmountInPx;
                 var3 = undefined;
                 if (!(var10 === var3)) {
-                    _fun57392_ip = 23;
-                    continue _fun57392
+                    _fun57396_ip = 23;
+                    continue _fun57396
                 }
             case 20:
                 var10 = 8;
@@ -126,4 +126,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.PressableScale = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [29, 31, 27, 33, 3679, 4048, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [29, 31, 27, 33, 3681, 4050, 2]);

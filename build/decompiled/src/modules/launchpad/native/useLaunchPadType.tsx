@@ -27,7 +27,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/launchpad/native/useLaunchPadType.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function() {
-        _fun76971: for (var _fun76971_ip = 0;;) switch (_fun76971_ip) {
+        _fun76975: for (var _fun76975_ip = 0;;) switch (_fun76975_ip) {
             case 0:
                 var4 = _closure1_slot0;
                 var2 = _closure1_slot1;
@@ -44,8 +44,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var2.LaunchPadMode;
                 var2 = var2.LAUNCH_PAD_DISABLED;
                 if (!(var2 !== var3)) {
-                    _fun76971_ip = 209;
-                    continue _fun76971
+                    _fun76975_ip = 209;
+                    continue _fun76975
                 }
             case 72:
                 var4 = _closure1_slot0;
@@ -55,8 +55,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var2.LaunchPadMode;
                 var2 = var2.LAUNCH_PAD_GESTURE_FULL_SCREEN;
                 if (!(var2 !== var3)) {
-                    _fun76971_ip = 197;
-                    continue _fun76971
+                    _fun76975_ip = 197;
+                    continue _fun76975
                 }
             case 105:
                 var4 = _closure1_slot0;
@@ -66,8 +66,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var2.LaunchPadMode;
                 var2 = var2.LAUNCH_PAD_GESTURE_RIGHT_EDGE;
                 if (!(var2 !== var3)) {
-                    _fun76971_ip = 185;
-                    continue _fun76971
+                    _fun76975_ip = 185;
+                    continue _fun76975
                 }
             case 138:
                 var4 = _closure1_slot0;
@@ -77,8 +77,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var2.LaunchPadMode;
                 var2 = var2.LAUNCH_PAD_PULL_TAB;
                 if (!(var2 !== var3)) {
-                    _fun76971_ip = 173;
-                    continue _fun76971
+                    _fun76975_ip = 173;
+                    continue _fun76975
                 }
             case 171:
                 return var1;
@@ -102,4 +102,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [9752, 1348, 1311, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [9754, 1348, 1311, 2]);

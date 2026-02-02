@@ -48,4 +48,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useSafetyHubAccountStanding = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [10054, 566, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [10056, 566, 2]);

@@ -22,21 +22,21 @@ public final class R {
         public static int message1 = 0x7f1203b6;
         public static int message2 = 0x7f1203b7;
         public static int message3 = 0x7f1203b8;
-        public static int mute = 0x7f1203da;
-        public static int ptt_start = 0x7f120409;
-        public static int ptt_stop = 0x7f12040a;
-        public static int reconnect = 0x7f12040b;
-        public static int stage_waiting = 0x7f12040d;
-        public static int stream_ended = 0x7f12040e;
-        public static int stream_started = 0x7f12040f;
-        public static int stream_user_joined = 0x7f120410;
-        public static int stream_user_left = 0x7f120411;
-        public static int undeafen = 0x7f120412;
-        public static int unmute = 0x7f120413;
-        public static int user_join = 0x7f120414;
-        public static int user_leave = 0x7f120415;
-        public static int user_moved = 0x7f120416;
-        public static int vibing_wumpus = 0x7f120417;
+        public static int mute = 0x7f1203db;
+        public static int ptt_start = 0x7f12040a;
+        public static int ptt_stop = 0x7f12040b;
+        public static int reconnect = 0x7f12040c;
+        public static int stage_waiting = 0x7f12040e;
+        public static int stream_ended = 0x7f12040f;
+        public static int stream_started = 0x7f120410;
+        public static int stream_user_joined = 0x7f120411;
+        public static int stream_user_left = 0x7f120412;
+        public static int undeafen = 0x7f120413;
+        public static int unmute = 0x7f120414;
+        public static int user_join = 0x7f120415;
+        public static int user_leave = 0x7f120416;
+        public static int user_moved = 0x7f120417;
+        public static int vibing_wumpus = 0x7f120418;
 
         private raw() {
         }

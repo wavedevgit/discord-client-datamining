@@ -22,7 +22,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/activities/utils/isActivitySupportedOnClientPlatform.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun63940: for (var _fun63940_ip = 0;;) switch (_fun63940_ip) {
+        _fun63944: for (var _fun63944_ip = 0;;) switch (_fun63944_ip) {
             case 0:
                 var4 = arg0;
                 var5 = _closure1_slot0;
@@ -36,8 +36,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = _closure1_slot0;
                 var5 = _closure1_slot1;
                 if (var6) {
-                    _fun63940_ip = 112;
-                    continue _fun63940
+                    _fun63944_ip = 112;
+                    continue _fun63944
                 }
             case 48:
                 var3 = var5[var3];
@@ -51,18 +51,18 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var6.bind(var1)(var0);
                 var0 = var0.EmbeddedActivitySupportedPlatforms;
                 if (var3) {
-                    _fun63940_ip = 104;
-                    continue _fun63940
+                    _fun63944_ip = 104;
+                    continue _fun63944
                 }
             case 96:
                 var3 = var0.WEB;
-                _fun63940_ip = 110;
-                continue _fun63940;
+                _fun63944_ip = 110;
+                continue _fun63944;
             case 104:
                 var3 = var0.ANDROID;
             case 110:
-                _fun63940_ip = 136;
-                continue _fun63940;
+                _fun63944_ip = 136;
+                continue _fun63944;
             case 112:
                 var0 = 1;
                 var0 = var5[var0];
@@ -74,8 +74,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var0 == var4;
                 var1 = undefined;
                 if (var2) {
-                    _fun63940_ip = 157;
-                    continue _fun63940
+                    _fun63944_ip = 157;
+                    continue _fun63944
                 }
             case 147:
                 var2 = var4.includes;
@@ -83,8 +83,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 157:
                 var0 = var0 != var1;
                 if (!var0) {
-                    _fun63940_ip = 167;
-                    continue _fun63940
+                    _fun63944_ip = 167;
+                    continue _fun63944
                 }
             case 164:
                 var0 = var1;

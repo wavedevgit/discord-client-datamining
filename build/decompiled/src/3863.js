@@ -1,30 +1,19 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var3 = require;
-    var2 = exports;
-    var4 = dependencyMap;
+    var1 = exports;
     var0 = global;
-    var6 = var0.Object;
-    var5 = var6.defineProperty;
-    var1 = {};
+    var4 = var0.Object;
+    var3 = var4.defineProperty;
+    var2 = {};
     var0 = true;
-    var1.value = var0;
+    var2.value = var0;
     var0 = '__esModule';
-    var0 = var5.bind(var6)(var2, var0, var1);
-    var1 = 0;
-    var5 = var4[var1];
+    var0 = var3.bind(var4)(var1, var0, var2);
+    var0 = function() {
+        var0 = "It looks like you might be using shared value's .value inside reanimated inline style. If you want a component to update when shared value changes you should use the shared value directly instead of its current state represented by `.value`. See documentation here: https://docs.swmansion.com/react-native-reanimated/docs/fundamentals/glossary/#animations-in-inline-styling";
+        return var0;
+    };
+    var1.getUseOfValueInStyleWarning = var0;
     var0 = undefined;
-    var5 = var3.bind(var0)(var5);
-    var5 = var5.finishScreenTransition;
-    var2.finishScreenTransition = var5;
-    var1 = var4[var1];
-    var1 = var3.bind(var0)(var1);
-    var1 = var1.startScreenTransition;
-    var2.startScreenTransition = var1;
-    var1 = 1;
-    var1 = var4[var1];
-    var1 = var3.bind(var0)(var1);
-    var1 = var1.ScreenTransition;
-    var2.ScreenTransition = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3864, 3868]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, []);

@@ -5,7 +5,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2 = exports;
     var4 = dependencyMap;
     var0 = function arg0, arg1, arg2() {
-        _fun28805: for (var _fun28805_ip = 0;;) switch (_fun28805_ip) {
+        _fun28809: for (var _fun28809_ip = 0;;) switch (_fun28809_ip) {
             case 0:
                 var3 = arg0;
                 var5 = arg2;
@@ -17,21 +17,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = _closure1_slot7;
                 var0 = var0.bind(var2)();
                 if (var0) {
-                    _fun28805_ip = 51;
-                    continue _fun28805
+                    _fun28809_ip = 51;
+                    continue _fun28809
                 }
             case 38:
                 var0 = var8.apply;
                 var0 = var0.bind(var8)(var3, var5);
-                _fun28805_ip = 92;
-                continue _fun28805;
+                _fun28809_ip = 92;
+                continue _fun28809;
             case 51:
                 var6 = global;
                 var7 = var6.Reflect;
                 var6 = var7.construct;
                 if (var5) {
-                    _fun28805_ip = 71;
-                    continue _fun28805
+                    _fun28809_ip = 71;
+                    continue _fun28809
                 }
             case 67:
                 var5 = new Array(0);
@@ -47,7 +47,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var _closure1_slot6 = var0;
     var0 = function() {
-        _fun28806: for (var _fun28806_ip = 0;;) switch (_fun28806_ip) {
+        _fun28810: for (var _fun28810_ip = 0;;) switch (_fun28810_ip) {
             case 0:
             case 2: // try_start_0
                 var1 = global;
@@ -68,8 +68,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = !var1;
                 var _closure2_slot0 = var1;
             case 70: // try_end0
-                _fun28806_ip = 74;
-                continue _fun28806;
+                _fun28810_ip = 74;
+                continue _fun28810;
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
@@ -124,7 +124,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var5.bind(var0)(var3);
     var1 = function(arg0) { // Environment: var1
         var2 = function arg0() {
-            _fun28810: for (var _fun28810_ip = 0;;) switch (_fun28810_ip) {
+            _fun28814: for (var _fun28814_ip = 0;;) switch (_fun28814_ip) {
                 case 0:
                     var6 = this;
                     var0 = arg0;
@@ -136,8 +136,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var4 = var8.param;
                     var1 = null;
                     if (!(var1 == var4)) {
-                        _fun28810_ip = 75;
-                        continue _fun28810
+                        _fun28814_ip = 75;
+                        continue _fun28814
                     }
                 case 45:
                     var5 = _closure1_slot6;
@@ -146,8 +146,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1 = new Array(1);
                     var1[0] = var7;
                     var1 = var5.bind(var2)(var6, var4, var1);
-                    _fun28810_ip = 130;
-                    continue _fun28810;
+                    _fun28814_ip = 130;
+                    continue _fun28814;
                 case 75:
                     var5 = _closure1_slot6;
                     var4 = _closure2_slot0;
@@ -187,4 +187,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [7, 6, 16, 15, 17, 18, 3312, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [7, 6, 16, 15, 17, 18, 3314, 2]);

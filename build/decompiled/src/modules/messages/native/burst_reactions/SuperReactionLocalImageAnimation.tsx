@@ -33,7 +33,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/messages/native/burst_reactions/SuperReactionLocalImageAnimation.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun92230: for (var _fun92230_ip = 0;;) switch (_fun92230_ip) {
+        _fun92234: for (var _fun92234_ip = 0;;) switch (_fun92234_ip) {
             case 0:
                 var3 = arg0;
                 var7 = var3.localImageSource;
@@ -60,8 +60,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var3.bind(var6)(var2);
                 var2 = var0 == var6;
                 if (var2) {
-                    _fun92230_ip = 152;
-                    continue _fun92230
+                    _fun92234_ip = 152;
+                    continue _fun92234
                 }
             case 99:
                 var3 = _closure1_slot3;
@@ -84,4 +84,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 6518, 6560, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 6520, 6562, 2]);

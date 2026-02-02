@@ -27,7 +27,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/premium/hooks/useScheduledForcedUpdate.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun58029: for (var _fun58029_ip = 0;;) switch (_fun58029_ip) {
+        _fun58033: for (var _fun58033_ip = 0;;) switch (_fun58033_ip) {
             case 0:
                 var0 = arg0;
                 var7 = var0.delay;
@@ -35,8 +35,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var0.disable;
                 var0 = undefined;
                 if (!(var6 === var0)) {
-                    _fun58029_ip = 29;
-                    continue _fun58029
+                    _fun58033_ip = 29;
+                    continue _fun58033
                 }
             case 27:
                 var6 = false;
@@ -58,19 +58,19 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2[1] = var6;
                 var2[2] = var5;
                 var1 = function() { // Environment: var1
-                    _fun58030: for (var _fun58030_ip = 0;;) switch (_fun58030_ip) {
+                    _fun58034: for (var _fun58034_ip = 0;;) switch (_fun58034_ip) {
                         case 0:
                             var3 = _closure2_slot0;
                             var2 = 0;
                             if (!(!(var3 <= var2))) {
-                                _fun58030_ip = 58;
-                                continue _fun58030
+                                _fun58034_ip = 58;
+                                continue _fun58034
                             }
                         case 15:
                             var2 = _closure2_slot1;
                             if (var2) {
-                                _fun58030_ip = 58;
-                                continue _fun58030
+                                _fun58034_ip = 58;
+                                continue _fun58034
                             }
                         case 22:
                             var2 = global;
@@ -105,4 +105,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 7022, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 7024, 2]);

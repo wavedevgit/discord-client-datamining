@@ -37,7 +37,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/messages/native/renderer/system_messages/ThreadStarterSystemMessage.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun55710: for (var _fun55710_ip = 0;;) switch (_fun55710_ip) {
+        _fun55714: for (var _fun55714_ip = 0;;) switch (_fun55714_ip) {
             case 0:
                 var4 = arg0;
                 var0 = var4.message;
@@ -66,8 +66,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var0.LOADED;
                 var0 = null;
                 if (!(var5 !== var1)) {
-                    _fun55710_ip = 218;
-                    continue _fun55710
+                    _fun55714_ip = 218;
+                    continue _fun55714
                 }
             case 124:
                 var1 = {};
@@ -98,4 +98,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.createThreadStarterSystemMessage = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [4232, 660, 44, 1234, 6640, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [4234, 660, 44, 1234, 6642, 2]);

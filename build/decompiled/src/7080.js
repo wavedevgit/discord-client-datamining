@@ -9,12 +9,12 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = var3.registerAsset;
     var1 = {
         '__packager_asset': true,
-        'httpServerLocation': '/assets/images/native/premium/logos',
-        'width': 179.5,
-        'height': 70,
+        'httpServerLocation': '/assets/images/native/premium/illustrations',
+        'width': 140.5,
+        'height': 89.5,
         'scales': null,
-        'hash': '894749452230f66f12adff4cbc7b37d2',
-        'name': 'img_logo_nitro_classic',
+        'hash': '26fec1ac0e2aea05499090830fe99884',
+        'name': 'img_boost_hands',
         'type': 'png'
     };
     var4 = [2, 3];

@@ -27,15 +27,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/guild_products/GuildProductSystemMessageUtils.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun55432: for (var _fun55432_ip = 0;;) switch (_fun55432_ip) {
+        _fun55436: for (var _fun55436_ip = 0;;) switch (_fun55436_ip) {
             case 0:
                 var0 = arg0;
                 var6 = var0.username;
                 var5 = var0.usernameOnClickHandler;
                 var7 = undefined;
                 if (!(var5 === var7)) {
-                    _fun55432_ip = 27;
-                    continue _fun55432
+                    _fun55436_ip = 27;
+                    continue _fun55436
                 }
             case 20:
                 var5 = _closure1_slot2;

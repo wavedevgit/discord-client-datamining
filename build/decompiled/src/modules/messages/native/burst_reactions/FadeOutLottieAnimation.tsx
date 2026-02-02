@@ -62,7 +62,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/messages/native/burst_reactions/FadeOutLottieAnimation.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun54484: for (var _fun54484_ip = 0;;) switch (_fun54484_ip) {
+        _fun54488: for (var _fun54488_ip = 0;;) switch (_fun54488_ip) {
             case 0:
                 var4 = arg0;
                 var0 = var4.onComplete;
@@ -126,37 +126,37 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var12 = var16.bind(var4)(var5);
                 var6 = var12.useAnimatedStyle;
                 var5 = function() {
-                    _fun54487: for (var _fun54487_ip = 0;;) switch (_fun54487_ip) {
+                    _fun54491: for (var _fun54491_ip = 0;;) switch (_fun54491_ip) {
                         case 0:
                             var0 = _closure2_slot1;
                             if (var0) {
-                                _fun54487_ip = 24;
-                                continue _fun54487
+                                _fun54491_ip = 24;
+                                continue _fun54491
                             }
                         case 10:
                             var0 = {};
                             var1 = 1;
                             var0.opacity = var1;
-                            _fun54487_ip = 197;
-                            continue _fun54487;
+                            _fun54491_ip = 197;
+                            continue _fun54491;
                         case 24:
                             var1 = _closure2_slot1;
                             if (!var1) {
-                                _fun54487_ip = 38;
-                                continue _fun54487
+                                _fun54491_ip = 38;
+                                continue _fun54491
                             }
                         case 31:
                             var1 = _closure2_slot3;
                             if (var1) {
-                                _fun54487_ip = 51;
-                                continue _fun54487
+                                _fun54491_ip = 51;
+                                continue _fun54491
                             }
                         case 38:
                             var1 = {};
                             var2 = 0;
                             var1.opacity = var2;
-                            _fun54487_ip = 194;
-                            continue _fun54487;
+                            _fun54491_ip = 194;
+                            continue _fun54491;
                         case 51:
                             var2 = {};
                             var12 = _closure1_slot0;
@@ -170,12 +170,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var4 = 300;
                             var6.duration = var4;
                             var5 = function arg0() {
-                                _fun54488: for (var _fun54488_ip = 0;;) switch (_fun54488_ip) {
+                                _fun54492: for (var _fun54492_ip = 0;;) switch (_fun54492_ip) {
                                     case 0:
                                         var0 = arg0;
                                         if (!var0) {
-                                            _fun54488_ip = 55;
-                                            continue _fun54488
+                                            _fun54492_ip = 55;
+                                            continue _fun54492
                                         }
                                     case 6:
                                         var1 = _closure1_slot0;
@@ -241,14 +241,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5.__initData = var13;
                 var5 = var6.bind(var12)(var5);
                 if (!var3) {
-                    _fun54484_ip = 322;
-                    continue _fun54484
+                    _fun54488_ip = 322;
+                    continue _fun54488
                 }
             case 317:
                 var0 = null;
                 if (!var2) {
-                    _fun54484_ip = 435;
-                    continue _fun54484
+                    _fun54488_ip = 435;
+                    continue _fun54488
                 }
             case 322:
                 var3 = _closure1_slot6;
@@ -267,21 +267,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = var11.content;
                 var5.style = var11;
                 if (!var10) {
-                    _fun54484_ip = 394;
-                    continue _fun54484
+                    _fun54488_ip = 394;
+                    continue _fun54488
                 }
             case 384:
                 var9 = 0.5;
             case 394:
                 var5.speed = var9;
                 var8 = function arg0() {
-                    _fun54489: for (var _fun54489_ip = 0;;) switch (_fun54489_ip) {
+                    _fun54493: for (var _fun54493_ip = 0;;) switch (_fun54493_ip) {
                         case 0:
                             var2 = _closure2_slot0;
                             var1 = null;
                             if (!(var1 != var2)) {
-                                _fun54489_ip = 27;
-                                continue _fun54489
+                                _fun54493_ip = 27;
+                                continue _fun54493
                             }
                         case 13:
                             var3 = _closure2_slot0;
@@ -309,4 +309,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 1298, 33, 566, 3679, 4056, 6561, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 1298, 33, 566, 3681, 4058, 6563, 2]);

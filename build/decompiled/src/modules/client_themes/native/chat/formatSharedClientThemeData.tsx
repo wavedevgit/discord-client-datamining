@@ -29,15 +29,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/client_themes/native/chat/formatSharedClientThemeData.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0, arg1, arg2) { // Environment: var1
-        _fun56116: for (var _fun56116_ip = 0;;) switch (_fun56116_ip) {
+        _fun56120: for (var _fun56120_ip = 0;;) switch (_fun56120_ip) {
             case 0:
                 var2 = arg1;
                 var0 = arg0;
                 var1 = var0.sharedClientTheme;
                 var6 = undefined;
                 if (!(var6 === var1)) {
-                    _fun56116_ip = 20;
-                    continue _fun56116
+                    _fun56120_ip = 20;
+                    continue _fun56120
                 }
             case 18:
                 return var6;
@@ -53,8 +53,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = '';
                 var1 = var3;
                 if (!(var6 !== var4)) {
-                    _fun56116_ip = 73;
-                    continue _fun56116
+                    _fun56120_ip = 73;
+                    continue _fun56120
                 }
             case 68:
                 var1 = var2.uri;
@@ -113,4 +113,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.formatSharedClientThemeData = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 5712, 1234, 2011, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 5714, 1234, 2013, 2]);

@@ -90,7 +90,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.ContactSyncModes = var4;
     var2.useContactSyncModalStore = var3;
     var3 = function arg0() {
-        _fun80479: for (var _fun80479_ip = 0;;) switch (_fun80479_ip) {
+        _fun80483: for (var _fun80483_ip = 0;;) switch (_fun80483_ip) {
             case 0:
                 var0 = arg0;
                 var _closure2_slot0 = var0;
@@ -104,8 +104,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = undefined;
                 var4 = undefined;
                 if (var6) {
-                    _fun80479_ip = 55;
-                    continue _fun80479
+                    _fun80483_ip = 55;
+                    continue _fun80483
                 }
             case 50:
                 var4 = var5.name;
@@ -117,8 +117,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var3 == var4;
                 var3 = undefined;
                 if (var5) {
-                    _fun80479_ip = 87;
-                    continue _fun80479
+                    _fun80483_ip = 87;
+                    continue _fun80483
                 }
             case 81:
                 var3 = var4.phone;
@@ -353,15 +353,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.setPhoneToken = var3;
     var3 = function arg0() {
-        _fun80500: for (var _fun80500_ip = 0;;) switch (_fun80500_ip) {
+        _fun80504: for (var _fun80504_ip = 0;;) switch (_fun80504_ip) {
             case 0:
                 var2 = arguments[1];
                 var0 = arg0;
                 var _closure2_slot0 = var0;
                 var0 = undefined;
                 if (!(var2 === var0)) {
-                    _fun80500_ip = 20;
-                    continue _fun80500
+                    _fun80504_ip = 20;
+                    continue _fun80504
                 }
             case 18:
                 var2 = false;
@@ -461,7 +461,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.setError = var3;
     var3 = function() {
-        _fun80509: for (var _fun80509_ip = 0;;) switch (_fun80509_ip) {
+        _fun80513: for (var _fun80513_ip = 0;;) switch (_fun80513_ip) {
             case 0:
                 var2 = _closure1_slot7;
                 var0 = undefined;
@@ -471,8 +471,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0.ONBOARDING;
                 var0 = var2 === var0;
                 if (var0) {
-                    _fun80509_ip = 49;
-                    continue _fun80509
+                    _fun80513_ip = 49;
+                    continue _fun80513
                 }
             case 35:
                 var1 = _closure1_slot6;
@@ -484,7 +484,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useIsOnboarding = var3;
     var1 = function() {
-        _fun80510: for (var _fun80510_ip = 0;;) switch (_fun80510_ip) {
+        _fun80514: for (var _fun80514_ip = 0;;) switch (_fun80514_ip) {
             case 0:
                 var2 = _closure1_slot7;
                 var0 = var2.getState;
@@ -494,8 +494,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0.ONBOARDING;
                 var0 = var2 === var0;
                 if (var0) {
-                    _fun80510_ip = 53;
-                    continue _fun80510
+                    _fun80514_ip = 53;
+                    continue _fun80514
                 }
             case 39:
                 var1 = _closure1_slot6;
@@ -507,4 +507,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getIsOnboarding = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [4483, 1613, 10214, 660, 629, 802, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [4485, 1613, 10216, 660, 629, 802, 2]);

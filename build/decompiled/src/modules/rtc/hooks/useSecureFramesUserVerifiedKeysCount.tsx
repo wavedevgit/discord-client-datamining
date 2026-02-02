@@ -42,13 +42,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var3 = new Array(1);
         var3[0] = var2;
         var2 = function() { // Environment: var0
-            _fun66807: for (var _fun66807_ip = 0;;) switch (_fun66807_ip) {
+            _fun66811: for (var _fun66811_ip = 0;;) switch (_fun66811_ip) {
                 case 0:
                     var2 = _closure2_slot1;
                     var0 = null;
                     if (!(var0 != var2)) {
-                        _fun66807_ip = 83;
-                        continue _fun66807
+                        _fun66811_ip = 83;
+                        continue _fun66811
                     }
                 case 13:
                     var2 = global;
@@ -92,7 +92,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1[0] = var6;
         var1[1] = var5;
         var0 = function() { // Environment: var0
-            _fun66808: for (var _fun66808_ip = 0;;) switch (_fun66808_ip) {
+            _fun66812: for (var _fun66812_ip = 0;;) switch (_fun66812_ip) {
                 case 0:
                     var2 = _closure1_slot3;
                     var1 = var2.getUserVerifiedKeys;
@@ -102,8 +102,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1 = var0 == var3;
                     var0 = 0;
                     if (var1) {
-                        _fun66808_ip = 78;
-                        continue _fun66808
+                        _fun66812_ip = 78;
+                        continue _fun66812
                     }
                 case 36:
                     var1 = global;
@@ -128,4 +128,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useSecureFramesUserVerifiedKeysCount = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 8207, 8208, 566, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 8209, 8210, 566, 2]);

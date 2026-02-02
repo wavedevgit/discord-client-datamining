@@ -58,4 +58,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useCanRaiseHand = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3050, 483, 566, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3052, 483, 566, 2]);

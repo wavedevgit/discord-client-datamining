@@ -736,7 +736,7 @@ public final class CrashReporting {
         options.setEnableAutoActivityLifecycleTracing(false);
         options.setTracesSampleRate(Double.valueOf(0.0d));
         options.setSampleRate(Double.valueOf(d10));
-        options.setProguardUuid("b7c9b145-2914-4cbd-a842-a0190d40ec8b");
+        options.setProguardUuid("07050f54-3d53-4aab-a89f-60a55289c541");
         options.setTag(TAG_BUILD_NUMBER, clientInfo.getVersionCode());
         options.setTag(TAG_APP_VERSION, clientInfo.getVersionName());
         options.setBeforeSend(new k7.c() { // from class: com.discord.crash_reporting.e

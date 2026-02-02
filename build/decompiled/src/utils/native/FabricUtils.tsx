@@ -25,7 +25,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = 'utils/native/FabricUtils.tsx';
     var5 = var6.bind(var7)(var5);
     var4 = function() {
-        _fun35049: for (var _fun35049_ip = 0;;) switch (_fun35049_ip) {
+        _fun35053: for (var _fun35053_ip = 0;;) switch (_fun35053_ip) {
             case 0:
                 var1 = _closure1_slot0;
                 var0 = _closure1_slot1;
@@ -37,8 +37,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var0 == var1;
                 var1 = undefined;
                 if (var3) {
-                    _fun35049_ip = 62;
-                    continue _fun35049
+                    _fun35053_ip = 62;
+                    continue _fun35053
                 }
             case 35:
                 var3 = _closure1_slot0;
@@ -50,8 +50,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 62:
                 var0 = var0 != var1;
                 if (!var0) {
-                    _fun35049_ip = 72;
-                    continue _fun35049
+                    _fun35053_ip = 72;
+                    continue _fun35053
                 }
             case 69:
                 var0 = var1;
@@ -63,4 +63,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var3 === var1;
     var2.isBridgeless = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3871, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3873, 2]);

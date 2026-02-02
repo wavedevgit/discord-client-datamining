@@ -8,7 +8,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot1 = var5;
     var _closure1_slot2 = var6;
     var0 = function() {
-        _fun48599: for (var _fun48599_ip = 0;;) switch (_fun48599_ip) {
+        _fun48593: for (var _fun48593_ip = 0;;) switch (_fun48593_ip) {
             case 0:
             case 2: // try_start_0
                 var1 = global;
@@ -29,8 +29,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = !var1;
                 var _closure2_slot0 = var1;
             case 70: // try_end0
-                _fun48599_ip = 74;
-                continue _fun48599;
+                _fun48593_ip = 74;
+                continue _fun48593;
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
@@ -89,7 +89,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = var5.bind(var0)(var4);
     var1 = function(arg0) { // Environment: var1
         var3 = function() {
-            _fun48603: for (var _fun48603_ip = 0;;) switch (_fun48603_ip) {
+            _fun48597: for (var _fun48597_ip = 0;;) switch (_fun48597_ip) {
                 case 0:
                     var3 = this;
                     var2 = undefined;
@@ -103,16 +103,16 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var0 = _closure1_slot9;
                     var0 = var0.bind(var2)();
                     if (var0) {
-                        _fun48603_ip = 69;
-                        continue _fun48603
+                        _fun48597_ip = 69;
+                        continue _fun48597
                     }
                 case 51:
                     var6 = var8.apply;
                     var4 = arguments;
                     var0 = var4;
                     var0 = var6.bind(var8)(var3, var0);
-                    _fun48603_ip = 105;
-                    continue _fun48603;
+                    _fun48597_ip = 105;
+                    continue _fun48597;
                 case 69:
                     var6 = global;
                     var7 = var6.Reflect;
@@ -137,39 +137,38 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var5 = 'render';
         var4.key = var5;
         var0 = function() {
-            var10 = this;
-            var _closure3_slot0 = var10;
+            var0 = this;
+            var _closure3_slot0 = var0;
             var3 = _closure1_slot8;
-            var5 = _closure1_slot1;
-            var9 = _closure1_slot2;
+            var9 = _closure1_slot1;
+            var10 = _closure1_slot2;
             var1 = 7;
-            var1 = var9[var1];
+            var1 = var10[var1];
             var2 = undefined;
-            var1 = var5.bind(var2)(var1);
+            var1 = var9.bind(var2)(var1);
             var5 = global;
             var7 = var5.Object;
             var6 = var7.assign;
             var5 = {};
-            var4 = function arg0() {
+            var8 = function arg0() {
                 var2 = _closure3_slot0;
                 var1 = var2.refMethod;
                 var0 = arg0;
                 var0 = var1.bind(var2)(var0);
                 return var0;
             };
-            var5.ref = var4;
-            var8 = _closure1_slot0;
-            var0 = 8;
-            var4 = var9[var0];
-            var12 = var8.bind(var2)(var4);
+            var5.ref = var8;
+            var11 = _closure1_slot0;
+            var8 = 8;
+            var4 = var10[var8];
+            var12 = var11.bind(var2)(var4);
             var11 = var12.extractFilter;
-            var4 = var10.props;
+            var4 = var0.props;
             var4 = var11.bind(var12)(var4);
-            var0 = var9[var0];
-            var9 = var8.bind(var2)(var0);
-            var8 = var9.extractFeMerge;
-            var0 = var10.props;
-            var0 = var8.bind(var9)(var0, var10);
+            var8 = var10[var8];
+            var8 = var9.bind(var2)(var8);
+            var0 = var0.props;
+            var0 = var8.bind(var2)(var0);
             var0 = var6.bind(var7)(var5, var4, var0);
             var0 = var3.bind(var2)(var1, var0);
             return var0;
@@ -181,14 +180,18 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var1 = var1.bind(var0)(var4);
-    var4 = 'FeMerge';
+    var4 = 'FeFlood';
     var1.displayName = var4;
-    var6 = var3.Object;
-    var5 = var6.assign;
-    var4 = var1.defaultPrimitiveProps;
-    var3 = {};
-    var3 = var5.bind(var6)(var3, var4);
+    var7 = var3.Object;
+    var6 = var7.assign;
+    var5 = var1.defaultPrimitiveProps;
+    var4 = {};
+    var3 = {
+        'floodColor': 'black',
+        'floodOpacity': 1
+    };
+    var3 = var6.bind(var7)(var4, var5, var3);
     var1.defaultProps = var3;
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 15, 17, 18, 31, 33, 5479, 5460, 5461]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 15, 17, 18, 31, 33, 5479, 5462, 5463]);

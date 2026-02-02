@@ -1187,7 +1187,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2 = var2.bind(var3)(var1);
         var1 = var2.some;
         var0 = function(arg0) { // Environment: var0
-            _fun47784: for (var _fun47784_ip = 0;;) switch (_fun47784_ip) {
+            _fun47788: for (var _fun47788_ip = 0;;) switch (_fun47788_ip) {
                 case 0:
                     var3 = arg0;
                     var4 = _closure1_slot1;
@@ -1200,8 +1200,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = _closure2_slot0;
                     var0 = var2.bind(var4)(var0, var3);
                     if (!var0) {
-                        _fun47784_ip = 66;
-                        continue _fun47784
+                        _fun47788_ip = 66;
+                        continue _fun47788
                     }
                 case 49:
                     var2 = _closure1_slot4;
@@ -1217,7 +1217,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.containsDisallowedPermission = var3;
     var1 = function arg0() {
-        _fun47785: for (var _fun47785_ip = 0;;) switch (_fun47785_ip) {
+        _fun47789: for (var _fun47789_ip = 0;;) switch (_fun47789_ip) {
             case 0:
                 var3 = arg0;
                 var0 = var3.toString;
@@ -1226,8 +1226,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var0[var1];
                 var0 = null;
                 if (!(var0 != var1)) {
-                    _fun47785_ip = 37;
-                    continue _fun47785
+                    _fun47789_ip = 37;
+                    continue _fun47789
                 }
             case 29:
                 var0 = undefined;

@@ -25,14 +25,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/collectibles/records/CollectiblesPrices.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun42280: for (var _fun42280_ip = 0;;) switch (_fun42280_ip) {
+        _fun42284: for (var _fun42284_ip = 0;;) switch (_fun42284_ip) {
             case 0:
                 var3 = arg0;
                 var _closure2_slot0 = var3;
                 var1 = null;
                 if (!(var1 != var3)) {
-                    _fun42280_ip = 54;
-                    continue _fun42280
+                    _fun42284_ip = 54;
+                    continue _fun42284
                 }
             case 15:
                 var1 = global;
@@ -41,15 +41,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var1.bind(var2)(var3);
                 var2 = var3.reduce;
                 var1 = function(arg0, arg1) { // Environment: var0
-                    _fun42281: for (var _fun42281_ip = 0;;) switch (_fun42281_ip) {
+                    _fun42285: for (var _fun42285_ip = 0;;) switch (_fun42285_ip) {
                         case 0:
                             var0 = arg0;
                             var2 = arg1;
                             var4 = _closure2_slot0;
                             var3 = null;
                             if (!(var3 != var4)) {
-                                _fun42281_ip = 100;
-                                continue _fun42281
+                                _fun42285_ip = 100;
+                                continue _fun42285
                             }
                         case 19:
                             var1 = _closure2_slot0;
@@ -83,8 +83,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 };
                 var0 = {};
                 var0 = var2.bind(var3)(var1, var0);
-                _fun42280_ip = 56;
-                continue _fun42280;
+                _fun42284_ip = 56;
+                continue _fun42284;
             case 54:
                 var0 = {};
             case 56:
@@ -93,4 +93,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getPricesFromServer = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3069, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3071, 2]);

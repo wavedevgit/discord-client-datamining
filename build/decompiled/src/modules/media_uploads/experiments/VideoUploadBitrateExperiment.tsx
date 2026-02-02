@@ -53,7 +53,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/media_uploads/experiments/VideoUploadBitrateExperiment.tsx';
     var3 = var4.bind(var5)(var3);
     var3 = function arg0() {
-        _fun37532: for (var _fun37532_ip = 0;;) switch (_fun37532_ip) {
+        _fun37536: for (var _fun37536_ip = 0;;) switch (_fun37536_ip) {
             case 0:
                 var0 = arg0;
                 var3 = var0.location;
@@ -74,16 +74,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var1.isInHoldout;
                 var1 = {};
                 if (var2) {
-                    _fun37532_ip = 98;
-                    continue _fun37532
+                    _fun37536_ip = 98;
+                    continue _fun37536
                 }
             case 77:
                 var2 = _closure1_slot3;
                 var0 = var2.getConfig;
                 var1.location = var3;
                 var0 = var0.bind(var2)(var1);
-                _fun37532_ip = 109;
-                continue _fun37532;
+                _fun37536_ip = 109;
+                continue _fun37536;
             case 98:
                 var2 = 1;
                 var1.bitrateMultiplier = var2;
@@ -94,15 +94,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getVideoUploadBitrateConfig = var3;
     var1 = function arg0() {
-        _fun37533: for (var _fun37533_ip = 0;;) switch (_fun37533_ip) {
+        _fun37537: for (var _fun37537_ip = 0;;) switch (_fun37537_ip) {
             case 0:
                 var2 = arg0;
                 var0 = _closure1_slot2;
                 var0 = var0.MEDIUM;
                 var0 = var2 === var0;
                 if (var0) {
-                    _fun37533_ip = 37;
-                    continue _fun37533
+                    _fun37537_ip = 37;
+                    continue _fun37537
                 }
             case 23:
                 var1 = _closure1_slot2;
@@ -114,4 +114,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.shouldApplyBitrateExperiment = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3156, 1301, 1588, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3158, 1301, 1588, 2]);

@@ -27,7 +27,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/rich_presence/PresenceActivityFiltering.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0, arg1() {
-        _fun50429: for (var _fun50429_ip = 0;;) switch (_fun50429_ip) {
+        _fun50433: for (var _fun50433_ip = 0;;) switch (_fun50433_ip) {
             case 0:
                 var0 = arg0;
                 var2 = arg1;
@@ -35,15 +35,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var0.id;
                 var5 = null;
                 if (!(var5 !== var2)) {
-                    _fun50429_ip = 124;
-                    continue _fun50429
+                    _fun50433_ip = 124;
+                    continue _fun50433
                 }
             case 23:
                 var3 = var0.id;
                 var2 = undefined;
                 if (!(var2 !== var3)) {
-                    _fun50429_ip = 124;
-                    continue _fun50429
+                    _fun50433_ip = 124;
+                    continue _fun50433
                 }
             case 34:
                 var4 = _closure1_slot2;
@@ -52,16 +52,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var3.bind(var4)(var0);
                 var0 = var5 != var3;
                 if (!var0) {
-                    _fun50429_ip = 74;
-                    continue _fun50429
+                    _fun50433_ip = 74;
+                    continue _fun50433
                 }
             case 64:
                 var4 = var3.linkedGames;
                 var0 = var5 != var4;
             case 74:
                 if (!var0) {
-                    _fun50429_ip = 94;
-                    continue _fun50429
+                    _fun50433_ip = 94;
+                    continue _fun50433
                 }
             case 77:
                 var4 = var3.linkedGames;
@@ -70,14 +70,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var5 > var4;
             case 94:
                 if (!var0) {
-                    _fun50429_ip = 122;
-                    continue _fun50429
+                    _fun50433_ip = 122;
+                    continue _fun50433
                 }
             case 97:
                 var4 = var3.linkedGames;
                 var3 = var4.find;
                 var1 = function(arg0) { // Environment: var1
-                    _fun50430: for (var _fun50430_ip = 0;;) switch (_fun50430_ip) {
+                    _fun50434: for (var _fun50434_ip = 0;;) switch (_fun50434_ip) {
                         case 0:
                             var1 = arg0;
                             var2 = var1.type;
@@ -91,8 +91,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var0 = var0.LINKED;
                             var0 = var2 === var0;
                             if (!var0) {
-                                _fun50430_ip = 77;
-                                continue _fun50430
+                                _fun50434_ip = 77;
+                                continue _fun50434
                             }
                         case 52:
                             var3 = var1.id;
@@ -130,4 +130,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.doesGameHaveRichPresence = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3413, 1636, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3415, 1636, 2]);

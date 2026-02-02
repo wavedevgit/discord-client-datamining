@@ -21,19 +21,19 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2 = var3.bind(var1)(var2);
         var1 = var2.experimental_createToken;
         var0 = function(arg0) { // Environment: var0
-            _fun44255: for (var _fun44255_ip = 0;;) switch (_fun44255_ip) {
+            _fun44259: for (var _fun44259_ip = 0;;) switch (_fun44259_ip) {
                 case 0:
                     var0 = arg0;
                     var1 = var0.primaryColor;
                     var0 = null;
                     if (!(var0 == var1)) {
-                        _fun44255_ip = 24;
-                        continue _fun44255
+                        _fun44259_ip = 24;
+                        continue _fun44259
                     }
                 case 15:
                     var0 = _closure2_slot0;
-                    _fun44255_ip = 31;
-                    continue _fun44255;
+                    _fun44259_ip = 31;
+                    continue _fun44259;
                 case 24:
                     var0 = _closure2_slot1;
                 case 31:
@@ -110,52 +110,52 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2 = var3.bind(var1)(var2);
         var1 = var2.experimental_createToken;
         var0 = function(arg0) { // Environment: var0
-            _fun44257: for (var _fun44257_ip = 0;;) switch (_fun44257_ip) {
+            _fun44261: for (var _fun44261_ip = 0;;) switch (_fun44261_ip) {
                 case 0:
                     var0 = arg0;
                     var1 = var0.gradient;
                     var0 = null;
                     if (!(var0 == var1)) {
-                        _fun44257_ip = 287;
-                        continue _fun44257
+                        _fun44261_ip = 287;
+                        continue _fun44261
                     }
                 case 18:
                     var2 = _closure2_slot0;
                     var1 = 'none';
                     if (!(var1 !== var2)) {
-                        _fun44257_ip = 287;
-                        continue _fun44257
+                        _fun44261_ip = 287;
+                        continue _fun44261
                     }
                 case 36:
                     var1 = _closure2_slot0;
                     var0 = 'border';
                     if (!(var0 !== var1)) {
-                        _fun44257_ip = 248;
-                        continue _fun44257
+                        _fun44261_ip = 248;
+                        continue _fun44261
                     }
                 case 51:
                     var0 = 'high';
                     if (!(var0 !== var1)) {
-                        _fun44257_ip = 209;
-                        continue _fun44257
+                        _fun44261_ip = 209;
+                        continue _fun44261
                     }
                 case 62:
                     var0 = 'ledge';
                     if (!(var0 !== var1)) {
-                        _fun44257_ip = 170;
-                        continue _fun44257
+                        _fun44261_ip = 170;
+                        continue _fun44261
                     }
                 case 72:
                     var0 = 'low';
                     if (!(var0 !== var1)) {
-                        _fun44257_ip = 131;
-                        continue _fun44257
+                        _fun44261_ip = 131;
+                        continue _fun44261
                     }
                 case 80:
                     var0 = 'medium';
                     if (!(var0 !== var1)) {
-                        _fun44257_ip = 92;
-                        continue _fun44257
+                        _fun44261_ip = 92;
+                        continue _fun44261
                     }
                 case 88:
                     var0 = undefined;

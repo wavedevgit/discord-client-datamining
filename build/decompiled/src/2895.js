@@ -4,19 +4,19 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = exports;
     var6 = dependencyMap;
     var4 = function arg0() {
-        _fun23679: for (var _fun23679_ip = 0;;) switch (_fun23679_ip) {
+        _fun23677: for (var _fun23677_ip = 0;;) switch (_fun23677_ip) {
             case 0:
                 var2 = arg0;
                 if (!var2) {
-                    _fun23679_ip = 18;
-                    continue _fun23679
+                    _fun23677_ip = 18;
+                    continue _fun23677
                 }
             case 6:
                 var1 = var2.__esModule;
                 var0 = var2;
                 if (var1) {
-                    _fun23679_ip = 27;
-                    continue _fun23679
+                    _fun23677_ip = 27;
+                    continue _fun23677
                 }
             case 18:
                 var1 = {};
@@ -50,7 +50,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = var1.now;
         var1 = var0.bind(var1)();
         var0 = arg0;
-        var0 = var2.bind(var3)(var0, var1);
+        var0 = var2.bind(var3)(var1, var0);
         return var0;
     };
     var1.default = var0;
@@ -69,4 +69,4 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = arg4;
     var1.exports = var2;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [2887, 2533]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [2887, 2535]);

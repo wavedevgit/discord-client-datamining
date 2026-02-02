@@ -61,7 +61,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot6 = var3;
     var3 = var6.memo;
     var1 = function arg0() {
-        _fun103345: for (var _fun103345_ip = 0;;) switch (_fun103345_ip) {
+        _fun103346: for (var _fun103346_ip = 0;;) switch (_fun103346_ip) {
             case 0:
                 var0 = arg0;
                 var2 = var0.route;
@@ -87,24 +87,24 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var1 == var2;
                 var0 = undefined;
                 if (var3) {
-                    _fun103345_ip = 120;
-                    continue _fun103345
+                    _fun103346_ip = 120;
+                    continue _fun103346
                 }
             case 99:
                 var2 = var2.params;
                 var3 = var1 == var2;
                 var0 = undefined;
                 if (var3) {
-                    _fun103345_ip = 120;
-                    continue _fun103345
+                    _fun103346_ip = 120;
+                    continue _fun103346
                 }
             case 114:
                 var0 = var2.inNestedNavigator;
             case 120:
                 var7 = var1 != var0;
                 if (!var7) {
-                    _fun103345_ip = 130;
-                    continue _fun103345
+                    _fun103346_ip = 130;
+                    continue _fun103346
                 }
             case 127:
                 var7 = var0;
@@ -118,8 +118,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0.isChatBesideChannelList;
                 var3 = _closure1_slot5;
                 if (var0) {
-                    _fun103345_ip = 202;
-                    continue _fun103345
+                    _fun103346_ip = 202;
+                    continue _fun103346
                 }
             case 167:
                 var1 = _closure1_slot1;
@@ -130,8 +130,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = {};
                 var0.inNestedNavigator = var7;
                 var0 = var3.bind(var4)(var1, var0);
-                _fun103345_ip = 278;
-                continue _fun103345;
+                _fun103346_ip = 278;
+                continue _fun103346;
             case 202:
                 var2 = _closure1_slot3;
                 var1 = {};
@@ -165,4 +165,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 6902, 33, 1297, 671, 1568, 13075, 3881, 13466, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 6904, 33, 1297, 671, 1568, 13076, 3883, 13467, 2]);

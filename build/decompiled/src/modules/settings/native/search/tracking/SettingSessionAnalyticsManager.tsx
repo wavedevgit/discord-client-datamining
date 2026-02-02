@@ -80,13 +80,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = 'maybeTrackSettingSearchQueryEntered';
         var0.key = var5;
         var5 = function() {
-            _fun88566: for (var _fun88566_ip = 0;;) switch (_fun88566_ip) {
+            _fun88570: for (var _fun88570_ip = 0;;) switch (_fun88570_ip) {
                 case 0:
                     var1 = this;
                     var0 = var1.trackedQueryEntered;
                     if (var0) {
-                        _fun88566_ip = 55;
-                        continue _fun88566
+                        _fun88570_ip = 55;
+                        continue _fun88570
                     }
                 case 12:
                     var3 = _closure1_slot0;
@@ -110,20 +110,20 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = 'terminate';
         var0.key = var5;
         var4 = function() {
-            _fun88567: for (var _fun88567_ip = 0;;) switch (_fun88567_ip) {
+            _fun88571: for (var _fun88571_ip = 0;;) switch (_fun88571_ip) {
                 case 0:
                     var1 = this;
                     var2 = var1.searchSessionStartTime;
                     var0 = null;
                     if (!(var0 != var2)) {
-                        _fun88567_ip = 108;
-                        continue _fun88567
+                        _fun88571_ip = 108;
+                        continue _fun88571
                     }
                 case 15:
                     var2 = var1.searchSessionId;
                     if (!(var0 != var2)) {
-                        _fun88567_ip = 108;
-                        continue _fun88567
+                        _fun88571_ip = 108;
+                        continue _fun88571
                     }
                 case 25:
                     var2 = global;
@@ -173,4 +173,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.SettingSearchSessionAnalyticsManager = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 491, 11468, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 491, 11470, 2]);

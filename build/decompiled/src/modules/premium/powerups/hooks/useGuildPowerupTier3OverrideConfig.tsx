@@ -33,7 +33,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/premium/powerups/hooks/useGuildPowerupTier3OverrideConfig.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun102340: for (var _fun102340_ip = 0;;) switch (_fun102340_ip) {
+        _fun102341: for (var _fun102341_ip = 0;;) switch (_fun102341_ip) {
             case 0:
                 var1 = arg0;
                 var _closure2_slot0 = var1;
@@ -48,7 +48,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = new Array(1);
                 var1[0] = var5;
                 var0 = function() { // Environment: var0
-                    _fun102341: for (var _fun102341_ip = 0;;) switch (_fun102341_ip) {
+                    _fun102342: for (var _fun102342_ip = 0;;) switch (_fun102342_ip) {
                         case 0:
                             var3 = _closure1_slot3;
                             var2 = var3.getGuild;
@@ -58,8 +58,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var3 = var1 == var2;
                             var1 = undefined;
                             if (var3) {
-                                _fun102341_ip = 61;
-                                continue _fun102341
+                                _fun102342_ip = 61;
+                                continue _fun102342
                             }
                         case 35:
                             var3 = var2.features;
@@ -75,16 +75,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 };
                 var0 = var3.bind(var4)(var1, var0);
                 if (var0) {
-                    _fun102340_ip = 83;
-                    continue _fun102340
+                    _fun102341_ip = 83;
+                    continue _fun102341
                 }
             case 67:
                 var0 = {
                     'shouldShow': false,
                     'text': ''
                 };
-                _fun102340_ip = 158;
-                continue _fun102340;
+                _fun102341_ip = 158;
+                continue _fun102341;
             case 83:
                 var1 = {};
                 var3 = true;

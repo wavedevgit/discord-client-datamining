@@ -42,7 +42,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/user_profile/native/UserProfileVoiceActivityIcon.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun61950: for (var _fun61950_ip = 0;;) switch (_fun61950_ip) {
+        _fun61954: for (var _fun61954_ip = 0;;) switch (_fun61954_ip) {
             case 0:
                 var3 = arg0;
                 var5 = var3.channel;
@@ -66,14 +66,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = new Array(1);
                 var2[0] = var8;
                 var1 = function() { // Environment: var1
-                    _fun61951: for (var _fun61951_ip = 0;;) switch (_fun61951_ip) {
+                    _fun61955: for (var _fun61955_ip = 0;;) switch (_fun61955_ip) {
                         case 0:
                             var2 = _closure2_slot0;
                             var0 = var2.isPrivate;
                             var0 = var0.bind(var2)();
                             if (var0) {
-                                _fun61951_ip = 53;
-                                continue _fun61951
+                                _fun61955_ip = 53;
+                                continue _fun61955
                             }
                         case 20:
                             var4 = _closure1_slot3;
@@ -90,23 +90,23 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var5.isDM;
                 var2 = var2.bind(var5)();
                 if (var2) {
-                    _fun61950_ip = 402;
-                    continue _fun61950
+                    _fun61954_ip = 402;
+                    continue _fun61954
                 }
             case 106:
                 var2 = var5.isGroupDM;
                 var2 = var2.bind(var5)();
                 if (var2) {
-                    _fun61950_ip = 402;
-                    continue _fun61950
+                    _fun61954_ip = 402;
+                    continue _fun61954
                 }
             case 122:
                 var2 = var5.isGuildStageVoice;
                 var2 = var2.bind(var5)();
                 var1 = !var1;
                 if (var1) {
-                    _fun61950_ip = 163;
-                    continue _fun61950
+                    _fun61954_ip = 163;
+                    continue _fun61954
                 }
             case 138:
                 var7 = _closure1_slot1;
@@ -117,18 +117,18 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var6.bind(var3)(var5);
             case 163:
                 if (!var2) {
-                    _fun61950_ip = 172;
-                    continue _fun61950
+                    _fun61954_ip = 172;
+                    continue _fun61954
                 }
             case 166:
                 if (var1) {
-                    _fun61950_ip = 352;
-                    continue _fun61950
+                    _fun61954_ip = 352;
+                    continue _fun61954
                 }
             case 172:
                 if (var2) {
-                    _fun61950_ip = 302;
-                    continue _fun61950
+                    _fun61954_ip = 302;
+                    continue _fun61954
                 }
             case 178:
                 var2 = var5.isNSFW;
@@ -137,21 +137,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = _closure1_slot0;
                 var7 = _closure1_slot2;
                 if (var2) {
-                    _fun61950_ip = 264;
-                    continue _fun61950
+                    _fun61954_ip = 264;
+                    continue _fun61954
                 }
             case 203:
                 if (var1) {
-                    _fun61950_ip = 226;
-                    continue _fun61950
+                    _fun61954_ip = 226;
+                    continue _fun61954
                 }
             case 206:
                 var1 = 11;
                 var1 = var7[var1];
                 var1 = var5.bind(var3)(var1);
                 var2 = var1.VoiceNormalIcon;
-                _fun61950_ip = 244;
-                continue _fun61950;
+                _fun61954_ip = 244;
+                continue _fun61954;
             case 226:
                 var1 = 10;
                 var1 = var7[var1];
@@ -163,8 +163,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = var4;
                 var8 = copyDataProperties(var11, var10);
                 var1 = var6.bind(var3)(var2, var1);
-                _fun61950_ip = 300;
-                continue _fun61950;
+                _fun61954_ip = 300;
+                continue _fun61954;
             case 264:
                 var2 = 9;
                 var2 = var7[var2];
@@ -176,8 +176,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = copyDataProperties(var11, var10);
                 var1 = var6.bind(var3)(var5, var2);
             case 300:
-                _fun61950_ip = 350;
-                continue _fun61950;
+                _fun61954_ip = 350;
+                continue _fun61954;
             case 302:
                 var6 = _closure1_slot5;
                 var5 = _closure1_slot0;
@@ -192,8 +192,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = copyDataProperties(var11, var10);
                 var1 = var6.bind(var3)(var5, var2);
             case 350:
-                _fun61950_ip = 400;
-                continue _fun61950;
+                _fun61954_ip = 400;
+                continue _fun61954;
             case 352:
                 var6 = _closure1_slot5;
                 var5 = _closure1_slot0;
@@ -227,4 +227,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 3050, 483, 33, 566, 7745, 4548, 4822, 4823, 4825, 4824, 4826, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 3052, 483, 33, 566, 7747, 4550, 4824, 4825, 4827, 4826, 4828, 2]);

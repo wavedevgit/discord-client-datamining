@@ -27,127 +27,6 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/explicit_media_redaction/hooks/useExplicitMediaAttachmentsForMessage.tsx';
     var3 = var4.bind(var5)(var3);
     var3 = function(arg0, arg1, arg2) { // Environment: var1
-        _fun72951: for (var _fun72951_ip = 0;;) switch (_fun72951_ip) {
-            case 0:
-                var3 = arg2;
-                var1 = arg0;
-                var _closure2_slot0 = var1;
-                var1 = arg1;
-                var _closure2_slot1 = var1;
-                var _closure2_slot2 = var3;
-                var4 = _closure1_slot0;
-                var6 = _closure1_slot1;
-                var2 = 1;
-                var2 = var6[var2];
-                var5 = undefined;
-                var8 = var4.bind(var5)(var2);
-                var7 = var8.useStateFromStores;
-                var1 = _closure1_slot2;
-                var2 = new Array(1);
-                var2[0] = var1;
-                var1 = function() { // Environment: var0
-                    var3 = _closure1_slot2;
-                    var2 = var3.getMessage;
-                    var1 = _closure2_slot0;
-                    var0 = _closure2_slot1;
-                    var0 = var2.bind(var3)(var1, var0);
-                    return var0;
-                };
-                var2 = var7.bind(var8)(var2, var1);
-                var1 = 2;
-                var1 = var6[var1];
-                var4 = var4.bind(var5)(var1);
-                var1 = var4.useEnabledHarmTypesBitmaskForMessage;
-                var1 = var1.bind(var4)(var2);
-                var _closure2_slot3 = var1;
-                var1 = null;
-                if (!(var1 != var2)) {
-                    _fun72951_ip = 175;
-                    continue _fun72951
-                }
-            case 111:
-                if (!(var5 === var3)) {
-                    _fun72951_ip = 124;
-                    continue _fun72951
-                }
-            case 115:
-                var4 = function(arg0) { // Environment: var0
-                    var5 = _closure1_slot0;
-                    var6 = _closure1_slot1;
-                    var0 = 3;
-                    var0 = var6[var0];
-                    var4 = undefined;
-                    var3 = var5.bind(var4)(var0);
-                    var2 = var3.isMediaObscuredForHarmTypes;
-                    var1 = {};
-                    var0 = 4;
-                    var0 = var6[var0];
-                    var0 = var5.bind(var4)(var0);
-                    var0 = var0.ObscuredMediaTypes;
-                    var0 = var0.Attachment;
-                    var1.type = var0;
-                    var0 = arg0;
-                    var1.media = var0;
-                    var0 = _closure2_slot3;
-                    var0 = var2.bind(var3)(var1, var0);
-                    return var0;
-                };
-                _fun72951_ip = 131;
-                continue _fun72951;
-            case 124:
-                var4 = function(arg0) { // Environment: var0
-                    _fun72953: for (var _fun72953_ip = 0;;) switch (_fun72953_ip) {
-                        case 0:
-                            var2 = arg0;
-                            var3 = var2.url;
-                            var0 = _closure2_slot2;
-                            var0 = var3 === var0;
-                            if (var0) {
-                                _fun72953_ip = 35;
-                                continue _fun72953
-                            }
-                        case 22:
-                            var2 = var2.id;
-                            var1 = _closure2_slot2;
-                            var0 = var2 === var1;
-                        case 35:
-                            return var0;
-                    }
-                };
-            case 131:
-                var3 = var1 == var2;
-                var0 = undefined;
-                if (var3) {
-                    _fun72951_ip = 165;
-                    continue _fun72951
-                }
-            case 140:
-                var3 = var2.attachments;
-                var2 = var1 == var3;
-                var0 = undefined;
-                if (var2) {
-                    _fun72951_ip = 165;
-                    continue _fun72951
-                }
-            case 155:
-                var2 = var3.filter;
-                var0 = var2.bind(var3)(var4);
-            case 165:
-                if (!(var1 == var0)) {
-                    _fun72951_ip = 173;
-                    continue _fun72951
-                }
-            case 169:
-                var0 = new Array(0);
-            case 173:
-                return var0;
-            case 175:
-                var0 = new Array(0);
-                return var0;
-        }
-    };
-    var2.useRedactableMediaAttachmentsForMessage = var3;
-    var1 = function(arg0, arg1, arg2) { // Environment: var1
         _fun72955: for (var _fun72955_ip = 0;;) switch (_fun72955_ip) {
             case 0:
                 var3 = arg2;
@@ -205,7 +84,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = var6[var0];
                     var0 = var5.bind(var4)(var0);
                     var0 = var0.ObscuredMediaTypes;
-                    var0 = var0.Embed;
+                    var0 = var0.Attachment;
                     var1.type = var0;
                     var0 = arg0;
                     var1.media = var0;
@@ -217,11 +96,23 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 continue _fun72955;
             case 124:
                 var4 = function(arg0) { // Environment: var0
-                    var0 = arg0;
-                    var1 = var0.id;
-                    var0 = _closure2_slot2;
-                    var0 = var1 === var0;
-                    return var0;
+                    _fun72957: for (var _fun72957_ip = 0;;) switch (_fun72957_ip) {
+                        case 0:
+                            var2 = arg0;
+                            var3 = var2.url;
+                            var0 = _closure2_slot2;
+                            var0 = var3 === var0;
+                            if (var0) {
+                                _fun72957_ip = 35;
+                                continue _fun72957
+                            }
+                        case 22:
+                            var2 = var2.id;
+                            var1 = _closure2_slot2;
+                            var0 = var2 === var1;
+                        case 35:
+                            return var0;
+                    }
                 };
             case 131:
                 var3 = var1 == var2;
@@ -231,7 +122,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     continue _fun72955
                 }
             case 140:
-                var3 = var2.embeds;
+                var3 = var2.attachments;
                 var2 = var1 == var3;
                 var0 = undefined;
                 if (var2) {
@@ -255,6 +146,115 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
         }
     };
+    var2.useRedactableMediaAttachmentsForMessage = var3;
+    var1 = function(arg0, arg1, arg2) { // Environment: var1
+        _fun72959: for (var _fun72959_ip = 0;;) switch (_fun72959_ip) {
+            case 0:
+                var3 = arg2;
+                var1 = arg0;
+                var _closure2_slot0 = var1;
+                var1 = arg1;
+                var _closure2_slot1 = var1;
+                var _closure2_slot2 = var3;
+                var4 = _closure1_slot0;
+                var6 = _closure1_slot1;
+                var2 = 1;
+                var2 = var6[var2];
+                var5 = undefined;
+                var8 = var4.bind(var5)(var2);
+                var7 = var8.useStateFromStores;
+                var1 = _closure1_slot2;
+                var2 = new Array(1);
+                var2[0] = var1;
+                var1 = function() { // Environment: var0
+                    var3 = _closure1_slot2;
+                    var2 = var3.getMessage;
+                    var1 = _closure2_slot0;
+                    var0 = _closure2_slot1;
+                    var0 = var2.bind(var3)(var1, var0);
+                    return var0;
+                };
+                var2 = var7.bind(var8)(var2, var1);
+                var1 = 2;
+                var1 = var6[var1];
+                var4 = var4.bind(var5)(var1);
+                var1 = var4.useEnabledHarmTypesBitmaskForMessage;
+                var1 = var1.bind(var4)(var2);
+                var _closure2_slot3 = var1;
+                var1 = null;
+                if (!(var1 != var2)) {
+                    _fun72959_ip = 175;
+                    continue _fun72959
+                }
+            case 111:
+                if (!(var5 === var3)) {
+                    _fun72959_ip = 124;
+                    continue _fun72959
+                }
+            case 115:
+                var4 = function(arg0) { // Environment: var0
+                    var5 = _closure1_slot0;
+                    var6 = _closure1_slot1;
+                    var0 = 3;
+                    var0 = var6[var0];
+                    var4 = undefined;
+                    var3 = var5.bind(var4)(var0);
+                    var2 = var3.isMediaObscuredForHarmTypes;
+                    var1 = {};
+                    var0 = 4;
+                    var0 = var6[var0];
+                    var0 = var5.bind(var4)(var0);
+                    var0 = var0.ObscuredMediaTypes;
+                    var0 = var0.Embed;
+                    var1.type = var0;
+                    var0 = arg0;
+                    var1.media = var0;
+                    var0 = _closure2_slot3;
+                    var0 = var2.bind(var3)(var1, var0);
+                    return var0;
+                };
+                _fun72959_ip = 131;
+                continue _fun72959;
+            case 124:
+                var4 = function(arg0) { // Environment: var0
+                    var0 = arg0;
+                    var1 = var0.id;
+                    var0 = _closure2_slot2;
+                    var0 = var1 === var0;
+                    return var0;
+                };
+            case 131:
+                var3 = var1 == var2;
+                var0 = undefined;
+                if (var3) {
+                    _fun72959_ip = 165;
+                    continue _fun72959
+                }
+            case 140:
+                var3 = var2.embeds;
+                var2 = var1 == var3;
+                var0 = undefined;
+                if (var2) {
+                    _fun72959_ip = 165;
+                    continue _fun72959
+                }
+            case 155:
+                var2 = var3.filter;
+                var0 = var2.bind(var3)(var4);
+            case 165:
+                if (!(var1 == var0)) {
+                    _fun72959_ip = 173;
+                    continue _fun72959
+                }
+            case 169:
+                var0 = new Array(0);
+            case 173:
+                return var0;
+            case 175:
+                var0 = new Array(0);
+                return var0;
+        }
+    };
     var2.useRedactableMediaEmbedsForMessage = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [4213, 632, 9137, 4234, 4237, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [4215, 632, 9139, 4236, 4239, 2]);

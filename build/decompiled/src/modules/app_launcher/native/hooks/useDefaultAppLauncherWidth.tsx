@@ -29,7 +29,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/app_launcher/native/hooks/useDefaultAppLauncherWidth.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun61768: for (var _fun61768_ip = 0;;) switch (_fun61768_ip) {
+        _fun61772: for (var _fun61772_ip = 0;;) switch (_fun61772_ip) {
             case 0:
                 var2 = _closure1_slot1;
                 var5 = _closure1_slot2;
@@ -48,8 +48,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = arg0;
                 var0 = var4;
                 if (!(var2 !== var3)) {
-                    _fun61768_ip = 95;
-                    continue _fun61768
+                    _fun61772_ip = 95;
+                    continue _fun61772
                 }
             case 72:
                 var2 = global;
@@ -63,4 +63,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useDefaultAppLauncherWidth = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [4895, 1464, 7696, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [4897, 1464, 7698, 2]);

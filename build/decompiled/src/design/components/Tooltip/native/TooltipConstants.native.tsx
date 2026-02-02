@@ -34,21 +34,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'design/components/Tooltip/native/TooltipConstants.native.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun57354: for (var _fun57354_ip = 0;;) switch (_fun57354_ip) {
+        _fun57358: for (var _fun57358_ip = 0;;) switch (_fun57358_ip) {
             case 0:
                 var3 = -8;
                 var2 = 'top';
                 var1 = arg0;
                 if (!(var2 === var1)) {
-                    _fun57354_ip = 22;
-                    continue _fun57354
+                    _fun57358_ip = 22;
+                    continue _fun57358
                 }
             case 19:
                 var3 = 8;
             case 22:
                 var _closure2_slot0 = var3;
                 var0 = function arg0, arg1() {
-                    _fun57355: for (var _fun57355_ip = 0;;) switch (_fun57355_ip) {
+                    _fun57359: for (var _fun57359_ip = 0;;) switch (_fun57359_ip) {
                         case 0:
                             var6 = arg0;
                             var5 = arg1;
@@ -64,8 +64,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var3 = 1;
                             var2 = 0;
                             if (!(var3 !== var6)) {
-                                _fun57355_ip = 55;
-                                continue _fun57355
+                                _fun57359_ip = 55;
+                                continue _fun57359
                             }
                         case 48:
                             var2 = _closure2_slot0;
@@ -118,4 +118,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.tooltipEnterExitAnimation = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [4040, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [4042, 2]);

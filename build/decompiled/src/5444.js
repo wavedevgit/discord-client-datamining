@@ -1,326 +1,297 @@
 // null
-module.exports =(function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-var5 = require;
-        var2 = exports;
-        var6 = dependencyMap;
-        var _closure1_slot0 = var5;
-        var0 = metroImportDefault;
-        var _closure1_slot1 = var0;
-        var _closure1_slot2 = var6;
-        var0 = function arg0() {
-            _fun48373: for(var _fun48373_ip = 0; ; ) switch(_fun48373_ip) {
-case 0:
-                var4 = arg0;
+module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
+    var1 = exports;
+    var2 = metroImportDefault;
+    var _closure1_slot0 = var2;
+    var2 = dependencyMap;
+    var _closure1_slot1 = var2;
+    var2 = global;
+    var5 = var2.Object;
+    var4 = var5.defineProperty;
+    var3 = {};
+    var2 = true;
+    var3.value = var2;
+    var2 = '__esModule';
+    var2 = var4.bind(var5)(var1, var2, var3);
+    var2 = {
+        'butt': 0,
+        'square': 2,
+        'round': 1
+    };
+    var _closure1_slot2 = var2;
+    var2 = {
+        'miter': 0,
+        'bevel': 2,
+        'round': 1
+    };
+    var _closure1_slot3 = var2;
+    var2 = {
+        'none': 0,
+        'default': 0,
+        'nonScalingStroke': 1,
+        'non-scaling-stroke': 1,
+        'inherit': 2,
+        'uri': 3
+    };
+    var _closure1_slot4 = var2;
+    var0 = function arg0, arg1, arg2() {
+        _fun48373: for (var _fun48373_ip = 0;;) switch (_fun48373_ip) {
+            case 0:
+                var1 = arg0;
+                var0 = arg1;
+                var5 = arg2;
+                var13 = var0.stroke;
+                var11 = var0.strokeOpacity;
+                var8 = var0.strokeLinecap;
+                var7 = var0.strokeLinejoin;
+                var9 = var0.strokeDasharray;
+                var2 = var0.strokeWidth;
+                var4 = var0.strokeDashoffset;
+                var6 = var0.strokeMiterlimit;
+                var3 = var0.vectorEffect;
                 var0 = null;
-                if(!var4) { _fun48373_ip = 65; continue _fun48373 }
-case 8:
-                var3 = var4.split;
-                var2 = _closure1_slot9;
-                var3 = var3.bind(var4)(var2);
-                var2 = 0;
-                var5 = var3[var2];
-                var3 = var5.replace;
-                var2 = _closure1_slot7;
-                var4 = '';
-                var3 = var3.bind(var5)(var2, var4);
-                var2 = var3.replace;
-                var1 = _closure1_slot8;
-                var0 = var2.bind(var3)(var1, var4);
-case 65:
-                return var0;
-            }
-        };
-        var _closure1_slot11 = var0;
-        var3 = function arg0() {
-            _fun48374: for(var _fun48374_ip = 0; ; ) switch(_fun48374_ip) {
-case 0:
-                var0 = arg0;
-                var21 = var0.fontData;
-                var20 = var0.fontStyle;
-                var19 = var0.fontVariant;
-                var18 = var0.fontWeight;
-                var17 = var0.fontStretch;
-                var15 = var0.fontSize;
-                var16 = var0.fontFamily;
-                var14 = var0.textAnchor;
-                var13 = var0.textDecoration;
-                var12 = var0.letterSpacing;
-                var11 = var0.wordSpacing;
-                var10 = var0.kerning;
-                var8 = var0.fontFeatureSettings;
-                var6 = var0.fontVariantLigatures;
-                var5 = var0.fontVariationSettings;
-                var2 = var0.font;
-                var3 = _closure1_slot0;
-                var0 = _closure1_slot2;
-                var7 = 2;
-                var0 = var0[var7];
-                var9 = undefined;
-                var4 = var3.bind(var9)(var0);
-                var3 = var4.pickNotNil;
-                var0 = {};
-                var0.fontData = var21;
-                var0.fontStyle = var20;
-                var0.fontVariant = var19;
-                var0.fontWeight = var18;
-                var0.fontStretch = var17;
-                var0.fontSize = var15;
-                var15 = _closure1_slot11;
-                var15 = var15.bind(var9)(var16);
-                var0.fontFamily = var15;
-                var0.textAnchor = var14;
-                var0.textDecoration = var13;
-                var0.letterSpacing = var12;
-                var0.wordSpacing = var11;
-                var0.kerning = var10;
-                var0.fontFeatureSettings = var8;
-                var0.fontVariantLigatures = var6;
-                var0.fontVariationSettings = var5;
-                var4 = var3.bind(var4)(var0);
-                var5 = 'string';
-                var0 = typeof var2;
-                var3 = var2;
-                if(!(var5 === var0)) { _fun48374_ip = 470; continue _fun48374 }
-case 238:
-                var0 = global;
-                var0 = var0.Object;
-                var0 = var0.prototype;
-                var6 = var0.hasOwnProperty;
-                var5 = var6.call;
-                var0 = _closure1_slot10;
-                var0 = var5.bind(var6)(var0, var2);
-                if(var0) { _fun48374_ip = 459; continue _fun48374 }
-case 278:
-                var5 = _closure1_slot6;
-                var0 = var5.exec;
-                var10 = var0.bind(var5)(var2);
-                if(var10) { _fun48374_ip = 311; continue _fun48374 }
-case 296:
-                var5 = _closure1_slot10;
-                var0 = null;
-                var5[var2] = var0;
-                _fun48374_ip = 467; continue _fun48374;
-case 311:
-                var11 = /bold/;
-                var8 = var11.exec;
-                var5 = 1;
-                var6 = var10[var5];
-                var12 = var8.bind(var11)(var6);
-                var8 = /italic/;
-                var6 = var8.exec;
-                var5 = var10[var5];
-                var8 = var6.bind(var8)(var5);
-                var6 = _closure1_slot10;
-                var5 = {};
-                var7 = var10[var7];
-                if(var7) { _fun48374_ip = 388; continue _fun48374 }
-case 385:
-                var7 = 12;
-case 388:
-                var5.fontSize = var7;
-                var7 = 'normal';
-                var11 = var7;
-                if(!var12) { _fun48374_ip = 407; continue _fun48374 }
-case 403:
-                var11 = 'bold';
-case 407:
-                var5.fontWeight = var11;
-                if(!var8) { _fun48374_ip = 419; continue _fun48374 }
-case 415:
-                var7 = 'italic';
-case 419:
-                var5.fontStyle = var7;
-                var8 = _closure1_slot11;
-                var7 = 3;
-                var7 = var10[var7];
-                var7 = var8.bind(var9)(var7);
-                var5.fontFamily = var7;
-                var6[var2] = var5;
-                var5 = _closure1_slot10;
-                var0 = var5[var2];
-                _fun48374_ip = 467; continue _fun48374;
-case 459:
-                var1 = _closure1_slot10;
-                var0 = var1[var2];
-case 467:
-                var3 = var0;
-case 470:
-                var0 = global;
-                var2 = var0.Object;
-                var1 = var2.assign;
-                var0 = {};
-                var0 = var1.bind(var2)(var0, var3, var4);
-                return var0;
-            }
-        };
-        var _closure1_slot12 = var3;
-        var0 = function arg0() {
-            _fun48375: for(var _fun48375_ip = 0; ; ) switch(_fun48375_ip) {
-case 0:
-                var6 = arg0;
-                var2 = typeof var6;
-                var0 = 'string';
-                if(!(var0 !== var2)) { _fun48375_ip = 25; continue _fun48375 }
-case 14:
-                var1 = 'number';
-                var0 = var6;
-                if(!(var1 === var2)) { _fun48375_ip = 63; continue _fun48375 }
-case 25:
-                var4 = _closure1_slot5;
-                var3 = _closure1_slot3;
-                var2 = {};
-                var1 = global;
-                var5 = var1.String;
-                var1 = undefined;
-                var5 = var5.bind(var1)(var6);
-                var2.children = var5;
-                var0 = var4.bind(var1)(var3, var2);
-case 63:
-                return var0;
-            }
-        };
-        var _closure1_slot13 = var0;
-        var0 = global;
-        var8 = var0.Object;
-        var7 = var8.defineProperty;
-        var4 = {};
-        var0 = true;
-        var4.value = var0;
-        var0 = '__esModule';
-        var0 = var7.bind(var8)(var2, var0, var4);
-        var4 = 0;
-        var8 = var6[var4];
-        var7 = arg3;
-        var0 = undefined;
-        var7 = var7.bind(var0)(var8);
-        var4 = var6[var4];
-        var4 = var5.bind(var0)(var4);
-        var4 = var4.Children;
-        var _closure1_slot4 = var4;
-        var4 = 1;
-        var4 = var6[var4];
-        var4 = var5.bind(var0)(var4);
-        var4 = var4.jsx;
-        var _closure1_slot5 = var4;
-        var4 = /^\s*((?:(?:normal|bold|italic)\s+)*)(?:(\d+(?:\.\d+)?(?:%|px|em|pt|pc|mm|cm|in]))*(?:\s*\\/.*?)?\s+)?\s*"?([^"]*)/i;
-        var _closure1_slot6 = var4;
-        var4 = /^[\s"']*/;
-        var _closure1_slot7 = var4;
-        var4 = /[\s"']*$/;
-        var _closure1_slot8 = var4;
-        var4 = /\s*,\s*/g;
-        var _closure1_slot9 = var4;
-        var4 = {};
-        var _closure1_slot10 = var4;
-        var4 = function arg0, arg1() {
-            _fun48376: for(var _fun48376_ip = 0; ; ) switch(_fun48376_ip) {
-case 0:
-                var5 = arg0;
-                var10 = var5.x;
-                var9 = var5.y;
-                var8 = var5.dx;
-                var7 = var5.dy;
-                var3 = var5.rotate;
-                var15 = var5.children;
-                var6 = var5.inlineSize;
-                var4 = var5.baselineShift;
-                var2 = var5.verticalAlign;
-                var1 = var5.alignmentBaseline;
-                var11 = typeof var15;
-                var0 = 'string';
-                if(!(var0 !== var11)) { _fun48376_ip = 149; continue _fun48376 }
-case 71:
-                var0 = 'number';
-                if(!(var0 !== var11)) { _fun48376_ip = 149; continue _fun48376 }
-case 79:
-                var12 = _closure1_slot4;
-                var11 = var12.count;
-                var12 = var11.bind(var12)(var15);
-                var11 = 1;
-                if(!(!(var12 > var11))) { _fun48376_ip = 128; continue _fun48376 }
-case 104:
-                var11 = global;
-                var12 = var11.Array;
-                var11 = var12.isArray;
-                var12 = var11.bind(var12)(var15);
-                var11 = var15;
-                if(!var12) { _fun48376_ip = 147; continue _fun48376 }
-case 128:
-                var13 = _closure1_slot4;
-                var12 = var13.map;
-                var0 = _closure1_slot13;
-                var11 = var12.bind(var13)(var15, var0);
-case 147:
-                _fun48376_ip = 198; continue _fun48376;
-case 149:
-                var12 = arg1;
-                var0 = null;
-                if(!var12) { _fun48376_ip = 195; continue _fun48376 }
-case 157:
-                var16 = _closure1_slot5;
-                var14 = _closure1_slot3;
-                var13 = {};
-                var12 = global;
-                var17 = var12.String;
+                if (!(var0 != var13)) {
+                    _fun48373_ip = 118;
+                    continue _fun48373
+                }
+            case 69:
+                var12 = var5.push;
+                var10 = 'stroke';
+                var10 = var12.bind(var5)(var10);
+                var14 = _closure1_slot0;
+                var12 = _closure1_slot1;
+                var10 = 0;
+                var10 = var12[var10];
                 var12 = undefined;
-                var17 = var17.bind(var12)(var15);
-                var13.children = var17;
-                var0 = var16.bind(var12)(var14, var13);
-case 195:
-                var11 = var0;
-case 198:
-                var0 = {};
-                var12 = null;
-                if(!(var12 === var11)) { _fun48376_ip = 221; continue _fun48376 }
-case 206:
-                var13 = global;
-                var14 = var13.String;
-                var13 = undefined;
-                var12 = var14.bind(var13)(var15);
-case 221:
-                var0.content = var12;
-                var0.children = var11;
-                var0.inlineSize = var6;
-                var0.baselineShift = var4;
-                var0.verticalAlign = var2;
-                var0.alignmentBaseline = var1;
-                var4 = _closure1_slot12;
-                var2 = undefined;
-                var4 = var4.bind(var2)(var5);
-                var0.font = var4;
-                var4 = _closure1_slot1;
-                var5 = _closure1_slot2;
-                var1 = 3;
-                var6 = var5[var1];
-                var6 = var4.bind(var2)(var6);
-                var6 = var6.bind(var2)(var10);
-                var0.x = var6;
-                var6 = var5[var1];
-                var6 = var4.bind(var2)(var6);
-                var6 = var6.bind(var2)(var9);
-                var0.y = var6;
-                var6 = var5[var1];
-                var6 = var4.bind(var2)(var6);
-                var6 = var6.bind(var2)(var8);
-                var0.dx = var6;
-                var6 = var5[var1];
-                var6 = var4.bind(var2)(var6);
-                var6 = var6.bind(var2)(var7);
-                var0.dy = var6;
-                var1 = var5[var1];
-                var1 = var4.bind(var2)(var1);
-                var1 = var1.bind(var2)(var3);
-                var0.rotate = var1;
+                var10 = var14.bind(var12)(var10);
+                var10 = var10.bind(var12)(var13);
+                var1.stroke = var10;
+            case 118:
+                if (!(var0 != var2)) {
+                    _fun48373_ip = 142;
+                    continue _fun48373
+                }
+            case 122:
+                var12 = var5.push;
+                var10 = 'strokeWidth';
+                var10 = var12.bind(var5)(var10);
+                var1.strokeWidth = var2;
+            case 142:
+                if (!(var0 != var11)) {
+                    _fun48373_ip = 196;
+                    continue _fun48373
+                }
+            case 146:
+                var10 = var5.push;
+                var2 = 'strokeOpacity';
+                var2 = var10.bind(var5)(var2);
+                var12 = _closure1_slot0;
+                var10 = _closure1_slot1;
+                var2 = 1;
+                var2 = var10[var2];
+                var10 = undefined;
+                var2 = var12.bind(var10)(var2);
+                var2 = var2.bind(var10)(var11);
+                var1.strokeOpacity = var2;
+            case 196:
+                if (!(var0 != var9)) {
+                    _fun48373_ip = 303;
+                    continue _fun48373
+                }
+            case 200:
+                var10 = var5.push;
+                var2 = 'strokeDasharray';
+                var2 = var10.bind(var5)(var2);
+                var11 = null;
+                if (!var9) {
+                    _fun48373_ip = 259;
+                    continue _fun48373
+                }
+            case 219:
+                var2 = 'none';
+                var11 = null;
+                if (!(var2 !== var9)) {
+                    _fun48373_ip = 259;
+                    continue _fun48373
+                }
+            case 229:
+                var12 = _closure1_slot0;
+                var10 = _closure1_slot1;
+                var2 = 2;
+                var2 = var10[var2];
+                var10 = undefined;
+                var2 = var12.bind(var10)(var2);
+                var11 = var2.bind(var10)(var9);
+            case 259:
+                var2 = var11;
+                if (!var11) {
+                    _fun48373_ip = 297;
+                    continue _fun48373
+                }
+            case 265:
+                var12 = var11.length;
+                var10 = 2;
+                var12 = var12 % var10;
+                var10 = 1;
+                var2 = var11;
+                if (!(var12 === var10)) {
+                    _fun48373_ip = 297;
+                    continue _fun48373
+                }
+            case 287:
+                var10 = var11.concat;
+                var2 = var10.bind(var11)(var11);
+            case 297:
+                var1.strokeDasharray = var2;
+            case 303:
+                if (!(var0 != var4)) {
+                    _fun48373_ip = 348;
+                    continue _fun48373
+                }
+            case 307:
+                var10 = var5.push;
+                var2 = 'strokeDashoffset';
+                var2 = var10.bind(var5)(var2);
+                var2 = null;
+                if (!var9) {
+                    _fun48373_ip = 342;
+                    continue _fun48373
+                }
+            case 326:
+                var2 = null;
+                if (!var4) {
+                    _fun48373_ip = 342;
+                    continue _fun48373
+                }
+            case 331:
+                var4 = var4 - 0;
+                if (var4) {
+                    _fun48373_ip = 339;
+                    continue _fun48373
+                }
+            case 337:
+                var4 = 0;
+            case 339:
+                var2 = var4;
+            case 342:
+                var1.strokeDashoffset = var2;
+            case 348:
+                if (!(var0 != var8)) {
+                    _fun48373_ip = 394;
+                    continue _fun48373
+                }
+            case 352:
+                var4 = var5.push;
+                var2 = 'strokeLinecap';
+                var2 = var4.bind(var5)(var2);
+                var2 = var8;
+                if (!var2) {
+                    _fun48373_ip = 383;
+                    continue _fun48373
+                }
+            case 372:
+                var4 = _closure1_slot2;
+                var2 = var4[var8];
+            case 383:
+                if (var2) {
+                    _fun48373_ip = 388;
+                    continue _fun48373
+                }
+            case 386:
+                var2 = 0;
+            case 388:
+                var1.strokeLinecap = var2;
+            case 394:
+                if (!(var0 != var7)) {
+                    _fun48373_ip = 440;
+                    continue _fun48373
+                }
+            case 398:
+                var4 = var5.push;
+                var2 = 'strokeLinejoin';
+                var2 = var4.bind(var5)(var2);
+                var2 = var7;
+                if (!var2) {
+                    _fun48373_ip = 429;
+                    continue _fun48373
+                }
+            case 418:
+                var4 = _closure1_slot3;
+                var2 = var4[var7];
+            case 429:
+                if (var2) {
+                    _fun48373_ip = 434;
+                    continue _fun48373
+                }
+            case 432:
+                var2 = 0;
+            case 434:
+                var1.strokeLinejoin = var2;
+            case 440:
+                if (!(var0 != var6)) {
+                    _fun48373_ip = 505;
+                    continue _fun48373
+                }
+            case 444:
+                var4 = var5.push;
+                var2 = 'strokeMiterlimit';
+                var2 = var4.bind(var5)(var2);
+                var2 = var6;
+                if (!var6) {
+                    _fun48373_ip = 493;
+                    continue _fun48373
+                }
+            case 464:
+                var5 = 'number';
+                var4 = typeof var6;
+                var2 = var6;
+                if (!(var5 !== var4)) {
+                    _fun48373_ip = 493;
+                    continue _fun48373
+                }
+            case 478:
+                var4 = global;
+                var5 = var4.parseFloat;
+                var4 = undefined;
+                var2 = var5.bind(var4)(var6);
+            case 493:
+                if (var2) {
+                    _fun48373_ip = 499;
+                    continue _fun48373
+                }
+            case 496:
+                var2 = 4;
+            case 499:
+                var1.strokeMiterlimit = var2;
+            case 505:
+                if (!(var0 != var3)) {
+                    _fun48373_ip = 537;
+                    continue _fun48373
+                }
+            case 509:
+                var0 = var3;
+                if (!var0) {
+                    _fun48373_ip = 526;
+                    continue _fun48373
+                }
+            case 515:
+                var2 = _closure1_slot4;
+                var0 = var2[var3];
+            case 526:
+                if (var0) {
+                    _fun48373_ip = 531;
+                    continue _fun48373
+                }
+            case 529:
+                var0 = 0;
+            case 531:
+                var1.vectorEffect = var0;
+            case 537:
+                var0 = undefined;
                 return var0;
-            }
-        };
-        var2.default = var4;
-        var2.extractFont = var3;
-        var1 = function arg0() {
-            var0 = arg0;
-            var _closure1_slot3 = var0;
-            var0 = undefined;
-            return var0;
-        };
-        var2.setTSpan = var1;
-        return var0;})(undefined,undefined,undefined,undefined,undefined,undefined,[31,33,5438,5443]);
+        }
+    };
+    var1.default = var0;
+    var0 = undefined;
+    return var0;
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5442, 5430, 5445]);

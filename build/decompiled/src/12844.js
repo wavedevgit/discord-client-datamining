@@ -13,56 +13,66 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = undefined;
         var4 = var2.bind(var0)(var4);
         var4 = var4.GLOBAL_OBJ;
-        var4 = var4.onunhandledrejection;
+        var4 = var4.onerror;
         _closure1_slot2 = var4;
         var4 = var3[var1];
         var4 = var2.bind(var0)(var4);
         var5 = var4.GLOBAL_OBJ;
-        var4 = function(arg0) { // Environment: var4
-            _fun98841: for (var _fun98841_ip = 0;;) switch (_fun98841_ip) {
+        var4 = function(arg0, arg1, arg2, arg3, arg4) { // Environment: var4
+            _fun98838: for (var _fun98838_ip = 0;;) switch (_fun98838_ip) {
                 case 0:
                     var4 = undefined;
                     var1 = undefined;
-                    var3 = _closure1_slot0;
-                    var5 = _closure1_slot1;
-                    var0 = 0;
-                    var0 = var5[var0];
-                    var5 = var3.bind(var4)(var0);
-                    var4 = var5.triggerHandlers;
-                    var3 = 'unhandledrejection';
+                    var5 = {};
+                    var0 = arg3;
+                    var5.column = var0;
+                    var0 = arg4;
+                    var5.error = var0;
+                    var0 = arg2;
+                    var5.line = var0;
                     var0 = arg0;
-                    var0 = var4.bind(var5)(var3, var0);
+                    var5.msg = var0;
+                    var0 = arg1;
+                    var5.url = var0;
+                    var3 = _closure1_slot0;
+                    var6 = _closure1_slot1;
+                    var0 = 0;
+                    var0 = var6[var0];
+                    var4 = var3.bind(var4)(var0);
+                    var3 = var4.triggerHandlers;
+                    var0 = 'error';
+                    var0 = var3.bind(var4)(var0, var5);
                     var0 = _closure1_slot2;
-                    if (!var0) {
-                        _fun98841_ip = 67;
-                        continue _fun98841
-                    }
-                case 54:
-                    var3 = _closure1_slot2;
-                    var3 = var3.__SENTRY_LOADER__;
-                    var0 = !var3;
-                case 67:
                     var0 = !var0;
                     if (var0) {
-                        _fun98841_ip = 95;
-                        continue _fun98841
+                        _fun98838_ip = 102;
+                        continue _fun98838
                     }
-                case 73:
+                case 92:
+                    var3 = _closure1_slot2;
+                    var0 = var3.__SENTRY_LOADER__;
+                case 102:
+                    var0 = !var0;
+                    if (!var0) {
+                        _fun98838_ip = 130;
+                        continue _fun98838
+                    }
+                case 108:
                     var4 = _closure1_slot2;
                     var3 = var4.apply;
                     var1 = arguments;
                     var2 = var1;
                     var1 = this;
                     var0 = var3.bind(var4)(var1, var2);
-                case 95:
+                case 130:
                     return var0;
             }
         };
-        var5.onunhandledrejection = var4;
+        var5.onerror = var4;
         var1 = var3[var1];
         var1 = var2.bind(var0)(var1);
         var1 = var1.GLOBAL_OBJ;
-        var2 = var1.onunhandledrejection;
+        var2 = var1.onerror;
         var1 = true;
         var2.__SENTRY_INSTRUMENTED__ = var1;
         return var0;
@@ -86,7 +96,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = undefined;
         var8 = var3.bind(var0)(var4);
         var7 = var8.addHandler;
-        var4 = 'unhandledrejection';
+        var4 = 'error';
         var6 = arg0;
         var6 = var7.bind(var8)(var4, var6);
         var2 = var5[var2];
@@ -96,7 +106,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var1 = var2.bind(var3)(var4, var1);
         return var0;
     };
-    var1.addGlobalUnhandledRejectionInstrumentationHandler = var0;
+    var1.addGlobalErrorInstrumentationHandler = var0;
     var0 = undefined;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [12837, 12830]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [12838, 12831]);

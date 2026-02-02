@@ -1,199 +1,89 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var4 = require;
+    var3 = metroImportDefault;
     var2 = exports;
-    var5 = dependencyMap;
-    var _closure1_slot0 = var4;
-    var _closure1_slot1 = var5;
+    var6 = dependencyMap;
     var0 = global;
     var7 = var0.Object;
-    var6 = var7.defineProperty;
-    var3 = {};
+    var4 = var7.defineProperty;
+    var1 = {};
     var0 = true;
-    var3.value = var0;
+    var1.value = var0;
     var0 = '__esModule';
-    var0 = var6.bind(var7)(var2, var0, var3);
+    var0 = var4.bind(var7)(var2, var0, var1);
     var0 = 0;
-    var6 = var5[var0];
-    var3 = metroImportDefault;
+    var1 = var6[var0];
     var0 = undefined;
-    var3 = var3.bind(var0)(var6);
-    var _closure1_slot2 = var3;
-    var3 = 1;
-    var3 = var5[var3];
-    var3 = var4.bind(var0)(var3);
-    var3 = var3.NativeModules;
-    var5 = var3.RNIapAmazonModule;
-    var _closure1_slot3 = var5;
-    var3 = function() { // Environment: var1
-        var3 = _closure1_slot2;
-        var2 = undefined;
-        var1 = function*(arg0) { // Environment: var0
-            var0 = function*(arg0) { // Original name: ?anon_0_, environment: var0
-                _fun58330: for (var _fun58330_ip = 0;;) switch (_fun58330_ip) {
-                    case 0:
-                        StartGenerator();
-                        var1 = arg0;
-                        ResumeGenerator(result_out_reg = 0, return_bool_out_reg = 2);
-                        if (var2) {
-                            _fun58330_ip = 164;
-                            continue _fun58330
-                        }
-                    case 13:
-                        var10 = var1.developerSecret;
-                        var9 = var1.userId;
-                        var8 = var1.receiptId;
-                        var1 = var1.useSandbox;
-                        var4 = undefined;
-                        if (!(var4 !== var1)) {
-                            _fun58330_ip = 55;
-                            continue _fun58330
-                        }
-                    case 48:
-                        var7 = '';
-                        if (!var1) {
-                            _fun58330_ip = 61;
-                            continue _fun58330
-                        }
-                    case 55:
-                        var7 = 'sandbox/';
-                    case 61:
-                        var1 = global;
-                        var1 = var1.HermesInternal;
-                        var6 = var1.concat;
-                        var18 = 'https://appstore-sdk.amazon.com/';
-                        var16 = 'version/1.0/verifyReceiptId/developer/';
-                        var14 = '/user/';
-                        var12 = '/receiptId/';
-                        var17 = var7;
-                        var15 = var10;
-                        var13 = var9;
-                        var11 = var8;
-                        var3 = var18[var6](var17, var16, var15, var14, var13, var12, var11, var10);
-                        var2 = _closure1_slot0;
-                        var5 = _closure1_slot1;
-                        var1 = 2;
-                        var1 = var5[var1];
-                        var2 = var2.bind(var4)(var1);
-                        var1 = var2.enhancedFetch;
-                        var1 = var1.bind(var2)(var3);
-                        SaveGenerator(address = 152);
-                    case 150:
-                        return var1;
-                    case 152:
-                        ResumeGenerator(result_out_reg = 1, return_bool_out_reg = 2);
-                        if (var2) {
-                            _fun58330_ip = 161;
-                            continue _fun58330
-                        }
-                    case 158:
-                        return var1;
-                    case 161:
-                        return var1;
-                    case 164:
-                        return var0;
-                }
-            };
-            return var0;
-        };
-        var1 = var3.bind(var2)(var1);
-        var _closure2_slot0 = var1;
-        var0 = function arg0() {
-            var0 = undefined;
-            var3 = _closure2_slot0;
-            var2 = var3.apply;
-            var0 = arguments;
-            var1 = var0;
-            var0 = this;
-            var0 = var2.bind(var3)(var0, var1);
-            return var0;
-        };
+    var4 = var3.bind(var0)(var1);
+    var1 = 1;
+    var1 = var6[var1];
+    var1 = var3.bind(var0)(var1);
+    var _closure1_slot0 = var1;
+    var3 = {};
+    var1 = 'E_UNKNOWN';
+    var3.E_UNKNOWN = var1;
+    var1 = 'E_USER_CANCELLED';
+    var3.E_USER_CANCELLED = var1;
+    var1 = 'E_USER_ERROR';
+    var3.E_USER_ERROR = var1;
+    var1 = 'E_ITEM_UNAVAILABLE';
+    var3.E_ITEM_UNAVAILABLE = var1;
+    var1 = 'E_REMOTE_ERROR';
+    var3.E_REMOTE_ERROR = var1;
+    var1 = 'E_NETWORK_ERROR';
+    var3.E_NETWORK_ERROR = var1;
+    var1 = 'E_SERVICE_ERROR';
+    var3.E_SERVICE_ERROR = var1;
+    var1 = 'E_RECEIPT_FAILED';
+    var3.E_RECEIPT_FAILED = var1;
+    var1 = 'E_RECEIPT_FINISHED_FAILED';
+    var3.E_RECEIPT_FINISHED_FAILED = var1;
+    var1 = 'E_NOT_PREPARED';
+    var3.E_NOT_PREPARED = var1;
+    var1 = 'E_NOT_ENDED';
+    var3.E_NOT_ENDED = var1;
+    var1 = 'E_ALREADY_OWNED';
+    var3.E_ALREADY_OWNED = var1;
+    var1 = 'E_DEVELOPER_ERROR';
+    var3.E_DEVELOPER_ERROR = var1;
+    var1 = 'E_BILLING_RESPONSE_JSON_PARSE_ERROR';
+    var3.E_BILLING_RESPONSE_JSON_PARSE_ERROR = var1;
+    var1 = 'E_DEFERRED_PAYMENT';
+    var3.E_DEFERRED_PAYMENT = var1;
+    var1 = 'E_INTERRUPTED';
+    var3.E_INTERRUPTED = var1;
+    var1 = 'E_IAP_NOT_AVAILABLE';
+    var3.E_IAP_NOT_AVAILABLE = var1;
+    var1 = function arg0, arg1, arg2, arg3, arg4, arg5() {
+        var6 = arg1;
+        var5 = arg2;
+        var4 = arg3;
+        var3 = arg4;
+        var2 = arg5;
+        var1 = this;
+        var8 = _closure1_slot0;
+        var7 = _closure1_slot1;
+        var0 = undefined;
+        var7 = var8.bind(var0)(var1, var7);
+        var7 = arg0;
+        var1.name = var7;
+        var1.message = var6;
+        var1.responseCode = var5;
+        var1.debugMessage = var4;
+        var1.code = var3;
+        var1.productId = var2;
+        var7 = '[react-native-iap]: PurchaseError';
+        var1.name = var7;
+        var1.message = var6;
+        var1.responseCode = var5;
+        var1.debugMessage = var4;
+        var1.code = var3;
+        var1.productId = var2;
         return var0;
     };
-    var4 = var3.bind(var0)();
-    var3 = function() { // Environment: var1
-        var3 = _closure1_slot2;
-        var2 = undefined;
-        var1 = function*() { // Environment: var0
-            var0 = function*() { // Original name: ?anon_0_, environment: var0
-                _fun58334: for (var _fun58334_ip = 0;;) switch (_fun58334_ip) {
-                    case 0:
-                        StartGenerator();
-                        ResumeGenerator(result_out_reg = 0, return_bool_out_reg = 1);
-                        if (var1) {
-                            _fun58334_ip = 27;
-                            continue _fun58334
-                        }
-                    case 7:
-                        var2 = _closure1_slot3;
-                        var1 = var2.verifyLicense;
-                        var1 = var1.bind(var2)();
-                        return var1;
-                    case 27:
-                        return var0;
-                }
-            };
-            return var0;
-        };
-        var1 = var3.bind(var2)(var1);
-        var _closure2_slot0 = var1;
-        var0 = function() {
-            var0 = undefined;
-            var3 = _closure2_slot0;
-            var2 = var3.apply;
-            var0 = arguments;
-            var1 = var0;
-            var0 = this;
-            var0 = var2.bind(var3)(var0, var1);
-            return var0;
-        };
-        return var0;
-    };
-    var3 = var3.bind(var0)();
-    var1 = function() { // Environment: var1
-        var3 = _closure1_slot2;
-        var2 = undefined;
-        var1 = function*(arg0) { // Environment: var0
-            var0 = function*(arg0) { // Original name: ?anon_0_, environment: var0
-                _fun58338: for (var _fun58338_ip = 0;;) switch (_fun58338_ip) {
-                    case 0:
-                        StartGenerator();
-                        ResumeGenerator(result_out_reg = 0, return_bool_out_reg = 1);
-                        if (var1) {
-                            _fun58338_ip = 37;
-                            continue _fun58338
-                        }
-                    case 7:
-                        var1 = arg0;
-                        var3 = var1.isAmazonDevice;
-                        var2 = _closure1_slot3;
-                        var1 = var2.deepLinkToSubscriptions;
-                        var1 = var1.bind(var2)(var3);
-                        return var1;
-                    case 37:
-                        return var0;
-                }
-            };
-            return var0;
-        };
-        var1 = var3.bind(var2)(var1);
-        var _closure2_slot0 = var1;
-        var0 = function arg0() {
-            var0 = undefined;
-            var3 = _closure2_slot0;
-            var2 = var3.apply;
-            var0 = arguments;
-            var1 = var0;
-            var0 = this;
-            var0 = var2.bind(var3)(var0, var1);
-            return var0;
-        };
-        return var0;
-    };
-    var1 = var1.bind(var0)();
-    var2.AmazonModule = var5;
-    var2.validateReceiptAmazon = var4;
-    var2.verifyLicense = var3;
-    var2.deepLinkToSubscriptionsAmazon = var1;
+    var _closure1_slot1 = var1;
+    var1 = var4.bind(var0)(var1);
+    var2.ErrorCode = var3;
+    var2.PurchaseError = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 27, 7106]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [7, 6]);

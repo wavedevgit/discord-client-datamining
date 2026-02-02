@@ -1,61 +1,190 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var1 = exports;
-    var0 = require;
-    var _closure1_slot0 = var0;
-    var0 = dependencyMap;
-    var _closure1_slot1 = var0;
-    var0 = function arg0() {
-        _fun99092: for (var _fun99092_ip = 0;;) switch (_fun99092_ip) {
+    var2 = function arg0() {
+        _fun99090: for (var _fun99090_ip = 0;;) switch (_fun99090_ip) {
             case 0:
-                var0 = arg0;
-                var2 = var0.__SENTRY__;
-                if (var2) {
-                    _fun99092_ip = 14;
-                    continue _fun99092
+                var1 = arg0;
+                var0 = 400;
+                if (!(var1 < var0)) {
+                    _fun99090_ip = 23;
+                    continue _fun99090
                 }
-            case 12:
-                var2 = {};
-            case 14:
-                var0.__SENTRY__ = var2;
-                var0 = var2.version;
-                if (var0) {
-                    _fun99092_ip = 59;
-                    continue _fun99092
+            case 13:
+                var2 = 100;
+                if (!(!(var1 >= var2))) {
+                    _fun99090_ip = 323;
+                    continue _fun99090
                 }
-            case 29:
-                var4 = _closure1_slot0;
-                var3 = _closure1_slot1;
-                var1 = 0;
-                var3 = var3[var1];
-                var1 = undefined;
-                var1 = var4.bind(var1)(var3);
-                var0 = var1.SDK_VERSION;
-            case 59:
-                var2.version = var0;
-                var4 = _closure1_slot0;
-                var5 = _closure1_slot1;
-                var0 = 0;
-                var1 = var5[var0];
-                var3 = undefined;
-                var1 = var4.bind(var3)(var1);
-                var1 = var1.SDK_VERSION;
-                var0 = var5[var0];
-                var0 = var4.bind(var3)(var0);
-                var0 = var0.SDK_VERSION;
-                var0 = var2[var0];
-                if (var0) {
-                    _fun99092_ip = 119;
-                    continue _fun99092
+            case 23:
+                if (!(var1 >= var0)) {
+                    _fun99090_ip = 37;
+                    continue _fun99090
                 }
-            case 117:
+            case 27:
+                var0 = 500;
+                if (!(!(var1 < var0))) {
+                    _fun99090_ip = 151;
+                    continue _fun99090
+                }
+            case 37:
+                var0 = 500;
+                if (!(var1 >= var0)) {
+                    _fun99090_ip = 57;
+                    continue _fun99090
+                }
+            case 47:
+                var0 = 600;
+                if (!(!(var1 < var0))) {
+                    _fun99090_ip = 73;
+                    continue _fun99090
+                }
+            case 57:
+                var0 = {
+                    'code': 2,
+                    'message': 'unknown_error'
+                };
+                return var0;
+            case 73:
+                var0 = 501;
+                if (!(var0 !== var1)) {
+                    _fun99090_ip = 139;
+                    continue _fun99090
+                }
+            case 83:
+                var0 = 503;
+                if (!(var0 !== var1)) {
+                    _fun99090_ip = 127;
+                    continue _fun99090
+                }
+            case 93:
+                var0 = 504;
+                if (!(var0 !== var1)) {
+                    _fun99090_ip = 115;
+                    continue _fun99090
+                }
+            case 103:
+                var0 = {
+                    'code': 2,
+                    'message': 'internal_error'
+                };
+                return var0;
+            case 115:
+                var0 = {
+                    'code': 2,
+                    'message': 'deadline_exceeded'
+                };
+                return var0;
+            case 127:
+                var0 = {
+                    'code': 2,
+                    'message': 'unavailable'
+                };
+                return var0;
+            case 139:
+                var0 = {
+                    'code': 2,
+                    'message': 'unimplemented'
+                };
+                return var0;
+            case 151:
+                var0 = 401;
+                if (!(var0 !== var1)) {
+                    _fun99090_ip = 311;
+                    continue _fun99090
+                }
+            case 164:
+                var0 = 403;
+                if (!(var0 !== var1)) {
+                    _fun99090_ip = 299;
+                    continue _fun99090
+                }
+            case 177:
+                var0 = 404;
+                if (!(var0 !== var1)) {
+                    _fun99090_ip = 287;
+                    continue _fun99090
+                }
+            case 187:
+                var0 = 409;
+                if (!(var0 !== var1)) {
+                    _fun99090_ip = 275;
+                    continue _fun99090
+                }
+            case 197:
+                var0 = 413;
+                if (!(var0 !== var1)) {
+                    _fun99090_ip = 263;
+                    continue _fun99090
+                }
+            case 207:
+                var0 = 429;
+                if (!(var0 !== var1)) {
+                    _fun99090_ip = 251;
+                    continue _fun99090
+                }
+            case 217:
+                var0 = 499;
+                if (!(var0 !== var1)) {
+                    _fun99090_ip = 239;
+                    continue _fun99090
+                }
+            case 227:
+                var0 = {
+                    'code': 2,
+                    'message': 'invalid_argument'
+                };
+                return var0;
+            case 239:
+                var0 = {
+                    'code': 2,
+                    'message': 'cancelled'
+                };
+                return var0;
+            case 251:
+                var0 = {
+                    'code': 2,
+                    'message': 'resource_exhausted'
+                };
+                return var0;
+            case 263:
+                var0 = {
+                    'code': 2,
+                    'message': 'failed_precondition'
+                };
+                return var0;
+            case 275:
+                var0 = {
+                    'code': 2,
+                    'message': 'already_exists'
+                };
+                return var0;
+            case 287:
+                var0 = {
+                    'code': 2,
+                    'message': 'not_found'
+                };
+                return var0;
+            case 299:
+                var0 = {
+                    'code': 2,
+                    'message': 'permission_denied'
+                };
+                return var0;
+            case 311:
+                var0 = {
+                    'code': 2,
+                    'message': 'unauthenticated'
+                };
+                return var0;
+            case 323:
                 var0 = {};
-            case 119:
-                var2[var1] = var0;
+                var1 = 1;
+                var0.code = var1;
                 return var0;
         }
     };
-    var _closure1_slot2 = var0;
+    var _closure1_slot0 = var2;
     var3 = global;
     var6 = var3.Object;
     var5 = var6.defineProperty;
@@ -64,23 +193,38 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4.value = var3;
     var3 = '__esModule';
     var3 = var5.bind(var6)(var1, var3, var4);
-    var2 = function() {
-        var5 = _closure1_slot2;
-        var2 = _closure1_slot0;
-        var3 = _closure1_slot1;
-        var0 = 0;
-        var4 = var3[var0];
-        var1 = undefined;
-        var4 = var2.bind(var1)(var4);
-        var4 = var4.GLOBAL_OBJ;
-        var4 = var5.bind(var1)(var4);
-        var0 = var3[var0];
-        var0 = var2.bind(var1)(var0);
-        var0 = var0.GLOBAL_OBJ;
-        return var0;
+    var3 = 2;
+    var1.SPAN_STATUS_ERROR = var3;
+    var3 = 1;
+    var1.SPAN_STATUS_OK = var3;
+    var3 = 0;
+    var1.SPAN_STATUS_UNSET = var3;
+    var1.getSpanStatusFromHttpCode = var2;
+    var0 = function arg0, arg1() {
+        _fun99091: for (var _fun99091_ip = 0;;) switch (_fun99091_ip) {
+            case 0:
+                var3 = arg0;
+                var2 = arg1;
+                var1 = var3.setAttribute;
+                var0 = 'http.response.status_code';
+                var0 = var1.bind(var3)(var0, var2);
+                var1 = _closure1_slot0;
+                var0 = undefined;
+                var2 = var1.bind(var0)(var2);
+                var4 = var2.message;
+                var1 = 'unknown_error';
+                if (!(var1 !== var4)) {
+                    _fun99091_ip = 64;
+                    continue _fun99091
+                }
+            case 53:
+                var1 = var3.setStatus;
+                var1 = var1.bind(var3)(var2);
+            case 64:
+                return var0;
+        }
     };
-    var1.getMainCarrier = var2;
-    var1.getSentryCarrier = var0;
+    var1.setHttpStatus = var0;
     var0 = undefined;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [12824]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, []);

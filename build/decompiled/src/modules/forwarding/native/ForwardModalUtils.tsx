@@ -36,7 +36,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'forward-modal';
     var2.FORWARD_MODAL_KEY = var3;
     var3 = function arg0() {
-        _fun70858: for (var _fun70858_ip = 0;;) switch (_fun70858_ip) {
+        _fun70862: for (var _fun70862_ip = 0;;) switch (_fun70862_ip) {
             case 0:
                 var1 = arg0;
                 var10 = var1.message;
@@ -44,8 +44,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var1.initialSelectedDestinations;
                 var0 = undefined;
                 if (!(var9 === var0)) {
-                    _fun70858_ip = 29;
-                    continue _fun70858
+                    _fun70862_ip = 29;
+                    continue _fun70862
                 }
             case 25:
                 var9 = new Array(0);
@@ -72,8 +72,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var3.getIsWindowLarge;
                 var1 = var1.bind(var3)();
                 if (!var1) {
-                    _fun70858_ip = 164;
-                    continue _fun70858
+                    _fun70862_ip = 164;
+                    continue _fun70862
                 }
             case 134:
                 var5 = _closure1_slot0;
@@ -106,8 +106,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3.customSendHandler = var2;
                 var2 = undefined;
                 if (var1) {
-                    _fun70858_ip = 268;
-                    continue _fun70858
+                    _fun70862_ip = 268;
+                    continue _fun70862
                 }
             case 254:
                 var1 = {};
@@ -178,4 +178,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.showForwardFailedAlertModal = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 3677, 8839, 7647, 478, 4525, 8840, 1307, 9133, 3988, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 3679, 8841, 7649, 478, 4527, 8842, 1307, 9135, 3990, 2]);

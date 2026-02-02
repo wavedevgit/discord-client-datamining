@@ -28,7 +28,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'design/components/mana-assets/native/generated/ServerIconGeargrindExample.native.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun52740: for (var _fun52740_ip = 0;;) switch (_fun52740_ip) {
+        _fun52744: for (var _fun52744_ip = 0;;) switch (_fun52744_ip) {
             case 0:
                 var0 = arg0;
                 var6 = var0.accessible;
@@ -37,16 +37,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var0.width;
                 var3 = undefined;
                 if (!(var9 === var3)) {
-                    _fun52740_ip = 32;
-                    continue _fun52740
+                    _fun52744_ip = 32;
+                    continue _fun52744
                 }
             case 29:
                 var9 = 100;
             case 32:
                 var7 = var0.height;
                 if (!(var7 === var3)) {
-                    _fun52740_ip = 44;
-                    continue _fun52740
+                    _fun52744_ip = 44;
+                    continue _fun52744
                 }
             case 41:
                 var7 = 100;
@@ -81,4 +81,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.ServerIconGeargrindExample = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [33, 4667, 6296, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [33, 4669, 6298, 2]);

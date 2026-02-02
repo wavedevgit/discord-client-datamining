@@ -1,121 +1,76 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun96945: for (var _fun96945_ip = 0;;) switch (_fun96945_ip) {
-        case 0:
-            var3 = require;
-            var2 = exports;
-            var4 = dependencyMap;
-            var1 = global;
-            var8 = var1.Object;
-            var7 = var8.defineProperty;
-            var6 = {};
-            var0 = true;
-            var6.value = var0;
-            var0 = '__esModule';
-            var0 = var7.bind(var8)(var2, var0, var6);
-            var0 = 0;
-            var6 = var4[var0];
-            var0 = undefined;
-            var6 = var3.bind(var0)(var6);
-            var6 = var6.NativeModules;
-            var7 = null;
-            var _closure1_slot0 = var7;
-            var7 = var6.BlobModule;
-            var6 = var7;
-            if (!var6) {
-                _fun96945_ip = 97;
-                continue _fun96945
-            }
-        case 80:
-            var8 = var7.BLOB_URI_SCHEME;
-            var9 = 'string';
-            var8 = typeof var8;
-            var6 = var9 === var8;
-        case 97:
-            if (!var6) {
-                _fun96945_ip = 176;
-                continue _fun96945
-            }
-        case 100:
-            var8 = var7.BLOB_URI_SCHEME;
-            var6 = ':';
-            var6 = var8 + var6;
-            _closure1_slot0 = var6;
-            var8 = var7.BLOB_URI_HOST;
-            var9 = 'string';
-            var8 = typeof var8;
-            if (!(var9 === var8)) {
-                _fun96945_ip = 176;
-                continue _fun96945
-            }
-        case 135:
-            var9 = var7.BLOB_URI_HOST;
-            var1 = var1.HermesInternal;
-            var8 = var1.concat;
-            var7 = '//';
-            var1 = '/';
-            var1 = var8.bind(var7)(var9, var1);
-            var1 = var6 + var1;
-            _closure1_slot0 = var1;
-        case 176:
-            var1 = 1;
-            var6 = var4[var1];
-            var6 = var3.bind(var0)(var6);
-            var7 = var6.URL;
-            var6 = function arg0() {
-                _fun96946: for (var _fun96946_ip = 0;;) switch (_fun96946_ip) {
-                    case 0:
-                        var0 = arg0;
-                        var3 = _closure1_slot0;
-                        var2 = null;
-                        if (!(var2 !== var3)) {
-                            _fun96946_ip = 82;
-                            continue _fun96946
-                        }
-                    case 16:
-                        var13 = _closure1_slot0;
-                        var1 = var0.data;
-                        var12 = var1.blobId;
-                        var1 = var0.data;
-                        var10 = var1.offset;
-                        var8 = var0.size;
-                        var0 = global;
-                        var0 = var0.HermesInternal;
-                        var3 = var0.concat;
-                        var14 = '';
-                        var11 = '?offset=';
-                        var9 = '&size=';
-                        var0 = var14[var3](var13, var12, var11, var10, var9, var8, var7);
-                        return var0;
-                    case 82:
-                        var0 = global;
-                        var2 = var0.Error;
-                        var0 = var2.prototype;
-                        var1 = Object.create(var0, {
-                            constructor: {
-                                value: var2
-                            }
-                        });
-                        var13 = 'Cannot create URL for blob!';
-                        var14 = var1;
-                        var0 = new var14[var2](var13, var12);
-                        var0 = var0 instanceof Object ? var0 : var1;
-                        throw var0;
-                }
-            };
-            var7.createObjectURL = var6;
-            var6 = var4[var1];
-            var6 = var3.bind(var0)(var6);
-            var6 = var6.URL;
-            var5 = function arg0() {
-                var0 = undefined;
-                return var0;
-            };
-            var6.revokeObjectURL = var5;
-            var1 = var4[var1];
-            var1 = var3.bind(var0)(var1);
-            var1 = var1.URL;
-            var2.URL = var1;
-            return var0;
-    }
-})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 12667]);
+    var1 = {
+        'name': 'react-native-url-polyfill',
+        'version': '2.0.0',
+        'description': 'A lightweight and trustworthy URL polyfill for React Native',
+        'keywords': null,
+        'bugs': null,
+        'homepage': 'https://github.com/charpeni/react-native-url-polyfill',
+        'readme': 'https://github.com/charpeni/react-native-url-polyfill#readme',
+        'repository': null,
+        'main': 'index.js',
+        'types': 'index.d.ts'
+    };
+    var0 = ['URL', 'URLSearchParams', 'polyfill', 'react native', 'whatwg-url'];
+    var1.keywords = var0;
+    var0 = {};
+    var2 = 'https://github.com/charpeni/react-native-url-polyfill/issues';
+    var0.url = var2;
+    var1.bugs = var0;
+    var0 = {
+        'type': 'git',
+        'url': 'https://github.com/charpeni/react-native-url-polyfill.git'
+    };
+    var1.repository = var0;
+    var0 = {
+        'test': 'jest',
+        'lint': 'eslint .',
+        'prepare': 'husky install',
+        'bundle-size': 'node scripts/bundle-size'
+    };
+    var1.scripts = var0;
+    var0 = 'Nicolas Charpentier <nicolas.charpentier079@gmail.com>';
+    var1.author = var0;
+    var0 = 'MIT';
+    var1.license = var0;
+    var0 = {};
+    var2 = '8.0.0-3';
+    var0['whatwg-url-without-unicode'] = var2;
+    var1.dependencies = var0;
+    var0 = {
+        '@react-native-community/eslint-config': '3.2.0',
+        'detox': '20.9.1',
+        'eslint': '8.44.0',
+        'eslint-plugin-prettier': '4.2.1',
+        'husky': '8.0.3',
+        'jest': '29.5.0',
+        'lint-staged': '13.2.3',
+        'metro-react-native-babel-preset': '0.76.7',
+        'nanoid': '3.3.6',
+        'prettier': '2.8.8',
+        'react': '18.2.0',
+        'react-native': '0.72.1',
+        'react-native-bundle-scale': '1.1.0',
+        'typescript': '5.1.6'
+    };
+    var1.devDependencies = var0;
+    var0 = {};
+    var2 = '*';
+    var0['react-native'] = var2;
+    var1.peerDependencies = var0;
+    var0 = {};
+    var2 = 'react-native';
+    var0.preset = var2;
+    var2 = ['/node_modules/', './platforms/'];
+    var0.testPathIgnorePatterns = var2;
+    var1.jest = var0;
+    var0 = {};
+    var2 = ['eslint --fix'];
+    var0['*.js'] = var2;
+    var1['lint-staged'] = var0;
+    var0 = module;
+    var0.exports = var1;
+    var0 = undefined;
+    return var0;
+})(undefined, undefined, undefined, undefined, undefined, undefined, []);

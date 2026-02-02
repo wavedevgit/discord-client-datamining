@@ -1077,6 +1077,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var183.VIDEO = var17;
             var20 = 'VOICE_V3';
             var183.VOICE_V3 = var20;
+            var20 = 'TEXT_CHAT_V3';
+            var183.TEXT_CHAT_V3 = var20;
             var20 = 'TEXT';
             var183.TEXT = var20;
             var20 = 'GUILDS_TEXT';
@@ -16696,28 +16698,28 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var231 = var221[var236];
             var234 = var220.bind(var0)(var231);
             for (var231 in var234)
-                case 62132: {
-                    case 62141: var238 = var231;
+                case 62144: {
+                    case 62153: var238 = var231;
                     var237 = var221[var236];
                     var237 = var220.bind(var0)(var237);
                     var237 = var237[var238];
                     var2[var238] = var237;
-                    _fun7394_ip = 62132;
+                    _fun7394_ip = 62144;
                     continue _fun7394;
                 }
-        case 62163:
+        case 62175:
             var230 = var221[var230];
             var235 = var220.bind(var0)(var230);
             var233 = var235;
             for (var230 in var233)
-                case 62183: {
-                    case 62192: var237 = var230;
+                case 62195: {
+                    case 62204: var237 = var230;
                     var236 = var235[var237];
                     var2[var237] = var236;
-                    _fun7394_ip = 62183;
+                    _fun7394_ip = 62195;
                     continue _fun7394;
                 }
-        case 62205:
+        case 62217:
             var2.Routes = var229;
             var2.ME = var228;
             var2.FAVORITES = var227;

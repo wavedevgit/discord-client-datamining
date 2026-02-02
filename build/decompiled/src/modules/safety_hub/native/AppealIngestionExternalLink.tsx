@@ -112,13 +112,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = 'button';
         var0.accessibilityRole = var5;
         var4 = function() {
-            _fun79541: for (var _fun79541_ip = 0;;) switch (_fun79541_ip) {
+            _fun79545: for (var _fun79545_ip = 0;;) switch (_fun79545_ip) {
                 case 0:
                     var2 = _closure2_slot1;
                     var0 = null;
                     if (!(var0 != var2)) {
-                        _fun79541_ip = 23;
-                        continue _fun79541
+                        _fun79545_ip = 23;
+                        continue _fun79545
                     }
                 case 13:
                     var2 = _closure2_slot1;
@@ -180,4 +180,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 4865, 3103, 3900, 4045, 6465, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 4867, 3105, 3902, 4047, 6467, 2]);

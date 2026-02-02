@@ -39,7 +39,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/webauthn/native/UserSettingsWebAuthn.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun79589: for (var _fun79589_ip = 0;;) switch (_fun79589_ip) {
+        _fun79593: for (var _fun79593_ip = 0;;) switch (_fun79593_ip) {
             case 0:
                 var0 = arg0;
                 var2 = var0.navigation;
@@ -47,8 +47,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var0.initialRouteName;
                 var3 = undefined;
                 if (!(var5 === var3)) {
-                    _fun79589_ip = 40;
-                    continue _fun79589
+                    _fun79593_ip = 40;
+                    continue _fun79593
                 }
             case 27:
                 var2 = _closure1_slot4;
@@ -56,8 +56,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 40:
                 var0 = var0.showNav;
                 if (!(var0 === var3)) {
-                    _fun79589_ip = 52;
-                    continue _fun79589
+                    _fun79593_ip = 52;
+                    continue _fun79593
                 }
             case 50:
                 var0 = false;
@@ -107,4 +107,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 7453, 33, 7452, 5748, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 7455, 33, 7454, 5750, 2]);

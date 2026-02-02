@@ -17,10 +17,20 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = var1.bind(var0)(var3);
     var1 = var1.Platform;
     var1 = function arg0, arg1, arg2() {
-        var1 = 56;
-        var0 = arg1;
-        var0 = var1 + var0;
-        return var0;
+        _fun99871: for (var _fun99871_ip = 0;;) switch (_fun99871_ip) {
+            case 0:
+                var0 = arg0;
+                var1 = arg2;
+                if (var1) {
+                    _fun99871_ip = 17;
+                    continue _fun99871
+                }
+            case 9:
+                var1 = arg1;
+                var0 = var1.y;
+            case 17:
+                return var0;
+        }
     };
     var2.default = var1;
     return var0;

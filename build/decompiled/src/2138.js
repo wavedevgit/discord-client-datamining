@@ -9,10 +9,10 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = var3.registerAsset;
     var1 = {
         '__packager_asset': true,
-        'httpServerLocation': '/assets/modules/notifications_inbox',
+        'httpServerLocation': '/assets/.cache/intl/bW9kdWxlcy9ub3RpZmljYXRpb25zX2luYm94',
         'scales': null,
-        'hash': '979ffd23ac7c056952037af41549f09b',
-        'name': 'NotificationsInbox.compiled.messages',
+        'hash': '9d509155690dc2c2a7ca0d1b2d8ad2f3',
+        'name': 'zh-CN.messages.9d509155690dc2c2a7ca0d1b2d8ad2f3.compiled.messages',
         'type': 'jsona'
     };
     var4 = [1];

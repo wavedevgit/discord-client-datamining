@@ -48,7 +48,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2 = var1.bind(var2)();
         var1 = var2.then;
         var0 = function() { // Environment: var0
-            _fun67354: for (var _fun67354_ip = 0;;) switch (_fun67354_ip) {
+            _fun67358: for (var _fun67358_ip = 0;;) switch (_fun67358_ip) {
                 case 0:
                     var2 = _closure1_slot1;
                     var1 = _closure1_slot2;
@@ -63,8 +63,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var6 = _closure2_slot0;
                     var5 = null;
                     if (!(var5 == var6)) {
-                        _fun67354_ip = 85;
-                        continue _fun67354
+                        _fun67358_ip = 85;
+                        continue _fun67358
                     }
                 case 55:
                     var5 = global;
@@ -78,8 +78,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var8 = var6;
                     var5 = new var8[var5](var7);
                     var5 = var5 instanceof Object ? var5 : var6;
-                    _fun67354_ip = 89;
-                    continue _fun67354;
+                    _fun67358_ip = 89;
+                    continue _fun67358;
                 case 85:
                     var5 = _closure2_slot0;
                 case 89:
@@ -118,4 +118,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.searchInviteSuggestions = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [8307, 8309, 806, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [8309, 8311, 806, 2]);

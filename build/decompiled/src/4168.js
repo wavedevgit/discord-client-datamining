@@ -1,241 +1,250 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var3 = metroImportDefault;
-    var2 = exports;
-    var1 = dependencyMap;
-    var0 = require;
-    var _closure1_slot0 = var0;
-    var _closure1_slot1 = var3;
-    var _closure1_slot2 = var1;
-    var0 = function arg0, arg1() {
-        _fun38263: for (var _fun38263_ip = 0;;) switch (_fun38263_ip) {
-            case 0:
-                var4 = _closure1_slot0;
-                var1 = _closure1_slot2;
-                var3 = 1;
-                var1 = var1[var3];
-                var2 = undefined;
-                var6 = var4.bind(var2)(var1);
-                var5 = var6.getPascalStringFromDataView;
-                var4 = arg0;
-                var1 = arg1;
-                var1 = var5.bind(var6)(var4, var1);
-                var0 = _closure1_slot3;
-                var5 = 2;
-                var1 = var0.bind(var2)(var1, var5);
-                var2 = 0;
-                var4 = var1[var2];
-                var0 = {};
-                var1 = var1[var3];
-                var0.tagName = var1;
-                var1 = var3 + var4;
-                var4 = var4 % var5;
-                if (!(var4 === var2)) {
-                    _fun38263_ip = 88;
-                    continue _fun38263
-                }
-            case 85:
-                var2 = var3;
-            case 88:
-                var1 = var1 + var2;
-                var0.tagNameSize = var1;
-                return var0;
-        }
+    var1 = exports;
+    var2 = global;
+    var5 = var2.Object;
+    var4 = var5.defineProperty;
+    var3 = {};
+    var2 = true;
+    var3.value = var2;
+    var2 = '__esModule';
+    var2 = var4.bind(var5)(var1, var2, var3);
+    var2 = {
+        'xmp': 'http://ns.adobe.com/xap/1.0/',
+        'tiff': 'http://ns.adobe.com/tiff/1.0/',
+        'exif': 'http://ns.adobe.com/exif/1.0/',
+        'dc': 'http://purl.org/dc/elements/1.1/',
+        'xmpMM': 'http://ns.adobe.com/xap/1.0/mm/',
+        'stEvt': 'http://ns.adobe.com/xap/1.0/sType/ResourceEvent#',
+        'stRef': 'http://ns.adobe.com/xap/1.0/sType/ResourceRef#',
+        'photoshop': 'http://ns.adobe.com/photoshop/1.0/'
     };
-    var _closure1_slot8 = var0;
-    var0 = global;
-    var7 = var0.Object;
-    var6 = var7.defineProperty;
-    var5 = {};
-    var0 = true;
-    var5.value = var0;
-    var0 = '__esModule';
-    var0 = var6.bind(var7)(var2, var0, var5);
-    var0 = 0;
-    var1 = var1[var0];
-    var0 = undefined;
-    var1 = var3.bind(var0)(var1);
-    var _closure1_slot3 = var1;
-    var1 = {};
-    var3 = function arg0, arg1() {
-        _fun38264: for (var _fun38264_ip = 0;;) switch (_fun38264_ip) {
+    var _closure1_slot0 = var2;
+    var2 = function arg0() {
+        _fun38236: for (var _fun38236_ip = 0;;) switch (_fun38236_ip) {
             case 0:
-                var18 = arg0;
-                var17 = arg1;
-                var12 = undefined;
-                var0 = undefined;
-                var13 = undefined;
-                var14 = undefined;
-                var15 = undefined;
-                var16 = undefined;
-                var2 = _closure1_slot0;
-                var1 = _closure1_slot2;
-                var10 = 1;
-                var1 = var1[var10];
-                var3 = var2.bind(var12)(var1);
-                var2 = var3.getDataView;
-                var9 = global;
-                var1 = var9.Uint8Array;
-                var4 = var1.prototype;
-                var4 = Object.create(var4, {
+                var4 = arg0;
+                var3 = ['prefix is non-null and namespace is null', 'prefix not bound to a namespace', 'prefix inte bundet till en namnrymd'];
+                var0 = /Namespace prefix .+ is not defined/;
+                var3[3] = var0;
+                var0 = var3.length;
+                var2 = 0;
+                var0 = var2 < var0;
+                var1 = global;
+                if (!var0) {
+                    _fun38236_ip = 107;
+                    continue _fun38236
+                }
+            case 47:
+                var6 = var1.RegExp;
+                var7 = var3[var2];
+                var5 = var6.prototype;
+                var5 = Object.create(var5, {
                     constructor: {
-                        value: var1
+                        value: var6
                     }
                 });
-                var29 = var4;
-                var28 = var18;
-                var1 = new var29[var1](var28, var27);
-                var1 = var1 instanceof Object ? var1 : var4;
-                var1 = var1.buffer;
-                var8 = var2.bind(var3)(var1);
-                var0 = {};
-                var1 = var18.length;
-                var7 = 0;
-                var1 = var7 < var1;
-                var6 = 2;
-                var5 = 3;
-                var4 = '<no description formatter>';
-                var3 = 'undefined-';
-                var2 = 0;
-                if (!var1) {
-                    _fun38264_ip = 537;
-                    continue _fun38264
+                var8 = var5;
+                var0 = new var8[var6](var7, var6);
+                var6 = var0 instanceof Object ? var0 : var5;
+                var5 = var6.test;
+                var0 = var4.message;
+                var0 = var5.bind(var6)(var0);
+                if (var0) {
+                    _fun38236_ip = 111;
+                    continue _fun38236
                 }
-            case 128:
-                var20 = _closure1_slot0;
-                var1 = _closure1_slot2;
-                var19 = var1[var10];
-                var21 = var20.bind(var12)(var19);
-                var20 = var21.getStringFromDataView;
-                var19 = _closure1_slot7;
-                var21 = var20.bind(var21)(var8, var2, var19);
-                var19 = _closure1_slot7;
-                var23 = var2 + var19;
-                var20 = _closure1_slot1;
-                var19 = var1[var6];
-                var22 = var20.bind(var12)(var19);
-                var19 = var22.getShortAt;
-                var13 = var19.bind(var22)(var8, var23);
-                var19 = _closure1_slot8;
-                var22 = _closure1_slot5;
-                var22 = var23 + var22;
-                var19 = var19.bind(var12)(var8, var22);
-                var14 = var19.tagName;
-                var19 = var19.tagNameSize;
-                var19 = var22 + var19;
-                var1 = var1[var6];
-                var20 = var20.bind(var12)(var1);
-                var1 = var20.getLongAt;
-                var20 = var1.bind(var20)(var8, var19);
-                var1 = _closure1_slot6;
-                var19 = var19 + var1;
-                var1 = _closure1_slot4;
-                if (!(var21 === var1)) {
-                    _fun38264_ip = 513;
-                    continue _fun38264
+            case 95:
+                var2 = var2 + 1;
+                var0 = var3.length;
+                if (var2 < var0) {
+                    _fun38236_ip = 47;
+                    continue _fun38236
                 }
-            case 269:
-                var24 = _closure1_slot0;
-                var1 = _closure1_slot2;
-                var21 = var1[var10];
-                var23 = var24.bind(var12)(var21);
-                var22 = var23.getDataView;
-                var21 = var8.buffer;
-                var25 = var22.bind(var23)(var21, var19, var20);
-                var15 = var25;
-                var22 = {};
-                var21 = var13;
-                var22.id = var21;
-                var23 = var1[var10];
-                var24 = var24.bind(var12)(var23);
-                var23 = var24.getStringFromDataView;
-                var23 = var23.bind(var24)(var25, var7, var20);
-                var22.value = var23;
-                var16 = var22;
-                var22 = _closure1_slot1;
-                var1 = var1[var5];
-                var1 = var22.bind(var12)(var1);
-                var1 = var1[var21];
-                if (var1) {
-                    _fun38264_ip = 403;
-                    continue _fun38264
-                }
-            case 366:
-                if (!var17) {
-                    _fun38264_ip = 513;
-                    continue _fun38264
-                }
-            case 372:
-                var22 = var0;
-                var21 = var13;
-                var1 = var9.HermesInternal;
-                var1 = var1.concat;
-                var21 = var1.bind(var3)(var21);
-                var1 = var16;
-                var22[var21] = var1;
-                _fun38264_ip = 513;
-                continue _fun38264;
-            case 403: // try_start_0
-                var21 = var16;
-                var22 = _closure1_slot1;
-                var1 = _closure1_slot2;
-                var1 = var1[var5];
-                var22 = var22.bind(var12)(var1);
-                var1 = var13;
-                var23 = var22[var1];
-                var22 = var23.description;
-                var1 = var15;
-                var1 = var22.bind(var23)(var1);
-                var21.description = var1;
-            case 449: // try_end0
-                _fun38264_ip = 462;
-                continue _fun38264;
-            case 451: // catch_target0
-                CatchBlockStart(arg_register = 1);
-                var1 = var16;
-                var1.description = var4;
-            case 462:
-                var22 = var0;
-                var21 = var14;
-                var1 = var21;
-                if (var21) {
-                    _fun38264_ip = 503;
-                    continue _fun38264
-                }
-            case 474:
-                var23 = _closure1_slot1;
-                var21 = _closure1_slot2;
-                var21 = var21[var5];
-                var23 = var23.bind(var12)(var21);
-                var21 = var13;
-                var21 = var23[var21];
-                var1 = var21.name;
-            case 503:
-                var21 = var1;
-                var1 = var16;
-                var22[var21] = var1;
-            case 513:
-                var1 = var20 % var6;
-                var1 = var20 + var1;
-                var2 = var19 + var1;
-                var1 = var18.length;
-                if (var2 < var1) {
-                    _fun38264_ip = 128;
-                    continue _fun38264
-                }
-            case 537:
+            case 107:
+                var0 = false;
+                return var0;
+            case 111:
+                var0 = true;
                 return var0;
         }
     };
-    var1.read = var3;
-    var3 = '8BIM';
-    var _closure1_slot4 = var3;
-    var5 = 2;
-    var _closure1_slot5 = var5;
-    var5 = 4;
-    var _closure1_slot6 = var5;
-    var3 = var3.length;
-    var _closure1_slot7 = var3;
-    var2.default = var1;
+    var1.isMissingNamespaceError = var2;
+    var0 = function arg0() {
+        _fun38237: for (var _fun38237_ip = 0;;) switch (_fun38237_ip) {
+            case 0:
+                var4 = arg0;
+                var2 = var4.match;
+                var1 = /<([A-Za-z_][A-Za-z0-9._-]*)([^>]*)>/;
+                var1 = var2.bind(var4)(var1);
+                if (var1) {
+                    _fun38237_ip = 35;
+                    continue _fun38237
+                }
+            case 33:
+                return var4;
+            case 35:
+                var10 = 1;
+                var6 = var1[var10];
+                var1 = new Array(0);
+                var3 = /xmlns:([\w-]+)=["'][^"']+["']/g;
+                var2 = var3.exec;
+                var2 = var2.bind(var3)(var4);
+                var9 = null;
+                var8 = -1;
+                if (!(var9 !== var2)) {
+                    _fun38237_ip = 131;
+                    continue _fun38237
+                }
+            case 83:
+                var7 = var1.indexOf;
+                var5 = var2[var10];
+                var5 = var7.bind(var1)(var5);
+                if (!(var8 === var5)) {
+                    _fun38237_ip = 116;
+                    continue _fun38237
+                }
+            case 102:
+                var7 = var1.push;
+                var5 = var2[var10];
+                var5 = var7.bind(var1)(var5);
+            case 116:
+                var5 = var3.exec;
+                var2 = var5.bind(var3)(var4);
+                if (var9 !== var2) {
+                    _fun38237_ip = 83;
+                    continue _fun38237
+                }
+            case 131:
+                var _closure2_slot0 = var1;
+                var2 = new Array(0);
+                var7 = /\b([A-Za-z_][A-Za-z0-9._-]*):[A-Za-z_][A-Za-z0-9._-]*\b/g;
+                var1 = var7.exec;
+                var1 = var1.bind(var7)(var4);
+                var5 = 'xml';
+                var3 = 'xmlns';
+                if (!(var9 !== var1)) {
+                    _fun38237_ip = 236;
+                    continue _fun38237
+                }
+            case 178:
+                var12 = var1[var10];
+                var11 = var3 !== var12;
+                if (!var11) {
+                    _fun38237_ip = 193;
+                    continue _fun38237
+                }
+            case 189:
+                var11 = var5 !== var12;
+            case 193:
+                if (!var11) {
+                    _fun38237_ip = 221;
+                    continue _fun38237
+                }
+            case 196:
+                var11 = var2.indexOf;
+                var11 = var11.bind(var2)(var12);
+                if (!(var8 === var11)) {
+                    _fun38237_ip = 221;
+                    continue _fun38237
+                }
+            case 211:
+                var11 = var2.push;
+                var11 = var11.bind(var2)(var12);
+            case 221:
+                var11 = var7.exec;
+                var1 = var11.bind(var7)(var4);
+                if (var9 !== var1) {
+                    _fun38237_ip = 178;
+                    continue _fun38237
+                }
+            case 236:
+                var1 = var2.filter;
+                var0 = function(arg0) { // Environment: var0
+                    var2 = _closure2_slot0;
+                    var1 = var2.indexOf;
+                    var0 = arg0;
+                    var1 = var1.bind(var2)(var0);
+                    var0 = -1;
+                    var0 = var0 === var1;
+                    return var0;
+                };
+                var11 = var1.bind(var2)(var0);
+                var1 = var11.length;
+                var10 = 0;
+                var0 = var4;
+                if (!(var10 !== var1)) {
+                    _fun38237_ip = 465;
+                    continue _fun38237
+                }
+            case 268:
+                var3 = new Array(0);
+                var1 = var11.length;
+                var1 = var10 < var1;
+                var9 = ' xmlns:';
+                var8 = '="';
+                var7 = '"';
+                var5 = 'http://fallback.namespace/';
+                var10 = 0;
+                if (!var1) {
+                    _fun38237_ip = 368;
+                    continue _fun38237
+                }
+            case 311:
+                var1 = var11[var10];
+                var12 = _closure1_slot0;
+                var13 = var12[var1];
+                if (var13) {
+                    _fun38237_ip = 330;
+                    continue _fun38237
+                }
+            case 326:
+                var13 = var5 + var1;
+            case 330:
+                var12 = var3.push;
+                var1 = var9 + var1;
+                var1 = var1 + var8;
+                var1 = var1 + var13;
+                var1 = var1 + var7;
+                var1 = var12.bind(var3)(var1);
+                var10 = var10 + 1;
+                var1 = var11.length;
+                if (var10 < var1) {
+                    _fun38237_ip = 311;
+                    continue _fun38237
+                }
+            case 368:
+                var2 = var3.join;
+                var1 = '';
+                var5 = var2.bind(var3)(var1);
+                var1 = global;
+                var7 = var1.RegExp;
+                var1 = '<';
+                var8 = var1 + var6;
+                var2 = var7.prototype;
+                var3 = Object.create(var2, {
+                    constructor: {
+                        value: var7
+                    }
+                });
+                var2 = '([^>]*)>';
+                var15 = var8 + var2;
+                var16 = var3;
+                var2 = new var16[var7](var15, var14);
+                var3 = var2 instanceof Object ? var2 : var3;
+                var2 = var4.replace;
+                var6 = var1 + var6;
+                var1 = '$1';
+                var1 = var6 + var1;
+                var5 = var1 + var5;
+                var1 = '>';
+                var1 = var5 + var1;
+                var0 = var2.bind(var4)(var3, var1);
+            case 465:
+                return var0;
+        }
+    };
+    var1.addMissingNamespaces = var0;
+    var0 = undefined;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 4129, 4146, 4169]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, []);

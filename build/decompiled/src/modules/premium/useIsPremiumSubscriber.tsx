@@ -32,13 +32,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/premium/useIsPremiumSubscriber.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function() {
-        _fun59562: for (var _fun59562_ip = 0;;) switch (_fun59562_ip) {
+        _fun59566: for (var _fun59566_ip = 0;;) switch (_fun59566_ip) {
             case 0:
                 var1 = arguments[0];
                 var4 = undefined;
                 if (!(var1 === var4)) {
-                    _fun59562_ip = 24;
-                    continue _fun59562
+                    _fun59566_ip = 24;
+                    continue _fun59566
                 }
             case 11:
                 var2 = _closure1_slot3;

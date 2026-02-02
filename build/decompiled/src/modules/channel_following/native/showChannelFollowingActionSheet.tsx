@@ -142,4 +142,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot4 = var1;
     var2.showChannelFollowingActionSheet = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 3237, 9729, 1307, 3895, 9735, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 3239, 9731, 1307, 3897, 9737, 2]);

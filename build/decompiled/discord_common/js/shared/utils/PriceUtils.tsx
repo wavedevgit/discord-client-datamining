@@ -398,15 +398,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4[var3] = var8;
     var _closure1_slot5 = var4;
     var3 = function arg0, arg1() {
-        _fun42104: for (var _fun42104_ip = 0;;) switch (_fun42104_ip) {
+        _fun42108: for (var _fun42108_ip = 0;;) switch (_fun42108_ip) {
             case 0:
                 var3 = arg1;
                 var1 = _closure1_slot5;
                 var4 = var1[var3];
                 var1 = null;
                 if (!(var1 != var4)) {
-                    _fun42104_ip = 98;
-                    continue _fun42104
+                    _fun42108_ip = 98;
+                    continue _fun42108
                 }
             case 20:
                 var2 = _closure1_slot0;
@@ -459,15 +459,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = '../discord_common/js/shared/utils/PriceUtils.tsx';
     var5 = var6.bind(var7)(var5);
     var5 = function(arg0, arg1, arg2) { // Environment: var1
-        _fun42105: for (var _fun42105_ip = 0;;) switch (_fun42105_ip) {
+        _fun42109: for (var _fun42109_ip = 0;;) switch (_fun42109_ip) {
             case 0:
                 var1 = arg0;
                 var6 = arg1;
                 var3 = arguments[3];
                 var5 = undefined;
                 if (!(var3 === var5)) {
-                    _fun42105_ip = 17;
-                    continue _fun42105
+                    _fun42109_ip = 17;
+                    continue _fun42109
                 }
             case 15:
                 var3 = {};
@@ -475,15 +475,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = _closure1_slot4;
                 var0 = var0.DISCORD_ORB;
                 if (!(var6 !== var0)) {
-                    _fun42105_ip = 137;
-                    continue _fun42105
+                    _fun42109_ip = 137;
+                    continue _fun42109
                 }
             case 34:
                 var0 = var3.convertToMajorUnits;
                 var7 = var5 === var0;
                 if (var7) {
-                    _fun42105_ip = 50;
-                    continue _fun42105
+                    _fun42109_ip = 50;
+                    continue _fun42109
                 }
             case 47:
                 var7 = var0;
@@ -505,8 +505,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var3.format;
                 var0 = var1;
                 if (!var7) {
-                    _fun42105_ip = 130;
-                    continue _fun42105
+                    _fun42109_ip = 130;
+                    continue _fun42109
                 }
             case 120:
                 var4 = _closure1_slot6;
@@ -524,15 +524,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.CurrencyExponents = var4;
     var2.convertToMajorCurrencyUnits = var3;
     var1 = function(arg0, arg1) { // Environment: var1
-        _fun42106: for (var _fun42106_ip = 0;;) switch (_fun42106_ip) {
+        _fun42110: for (var _fun42110_ip = 0;;) switch (_fun42110_ip) {
             case 0:
                 var3 = arg1;
                 var1 = _closure1_slot5;
                 var4 = var1[var3];
                 var1 = null;
                 if (!(var1 != var4)) {
-                    _fun42106_ip = 98;
-                    continue _fun42106
+                    _fun42110_ip = 98;
+                    continue _fun42110
                 }
             case 20:
                 var2 = _closure1_slot0;
@@ -580,4 +580,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.convertToMinorCurrencyUnits = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [29, 483, 4574, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [29, 483, 4576, 2]);

@@ -31,7 +31,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot4 = var1;
     var1 = {};
     var6 = function() {
-        _fun117567: for (var _fun117567_ip = 0;;) switch (_fun117567_ip) {
+        _fun117568: for (var _fun117568_ip = 0;;) switch (_fun117568_ip) {
             case 0:
                 var2 = _closure1_slot2;
                 var0 = var2.getCurrentUserActiveStream;
@@ -41,8 +41,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = undefined;
                 var0 = undefined;
                 if (!var2) {
-                    _fun117567_ip = 169;
-                    continue _fun117567
+                    _fun117568_ip = 169;
+                    continue _fun117568
                 }
             case 33:
                 var5 = _closure1_slot3;
@@ -53,8 +53,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var3 != var2;
                 var0 = undefined;
                 if (!var2) {
-                    _fun117567_ip = 169;
-                    continue _fun117567
+                    _fun117568_ip = 169;
+                    continue _fun117568
                 }
             case 67:
                 var2 = {};
@@ -107,4 +107,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.AVErrorStreamSoundshareFailedDefinition = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3673, 3584, 660, 7967, 14938, 3464, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3675, 3586, 660, 7969, 14939, 3466, 2]);

@@ -164,15 +164,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var3 = var2.bind(var3)(var1);
         var2 = var3.then;
         var1 = function(arg0) { // Environment: var1
-            _fun69154: for (var _fun69154_ip = 0;;) switch (_fun69154_ip) {
+            _fun69158: for (var _fun69158_ip = 0;;) switch (_fun69158_ip) {
                 case 0:
                     var1 = arg0;
                     var2 = var1.length;
                     var4 = '';
                     var0 = 0;
                     if (!(var0 !== var2)) {
-                        _fun69154_ip = 22;
-                        continue _fun69154
+                        _fun69158_ip = 22;
+                        continue _fun69158
                     }
                 case 18:
                     var4 = var1[var0];
@@ -197,4 +197,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.chooseReplayPath = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [8606, 806, 8173, 3033, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [8608, 806, 8175, 3035, 2]);

@@ -9,7 +9,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var5;
     var0 = function arg0() {
-        _fun68015: for (var _fun68015_ip = 0;;) switch (_fun68015_ip) {
+        _fun68019: for (var _fun68019_ip = 0;;) switch (_fun68019_ip) {
             case 0:
                 var0 = arg0;
                 var7 = var0.children;
@@ -37,8 +37,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4.source = var10;
                 var10 = null;
                 if (!(var10 == var8)) {
-                    _fun68015_ip = 133;
-                    continue _fun68015
+                    _fun68019_ip = 133;
+                    continue _fun68019
                 }
             case 107:
                 var10 = _closure1_slot1;
@@ -156,7 +156,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/voice_chat/native/components/VoiceChatHeaderIcon.tsx';
     var3 = var4.bind(var5)(var3);
     var3 = function arg0() {
-        _fun68016: for (var _fun68016_ip = 0;;) switch (_fun68016_ip) {
+        _fun68020: for (var _fun68020_ip = 0;;) switch (_fun68020_ip) {
             case 0:
                 var0 = arg0;
                 var8 = var0.accessibilityLabel;
@@ -186,8 +186,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = new Array(2);
                 var6[0] = var8;
                 if (!var7) {
-                    _fun68016_ip = 122;
-                    continue _fun68016
+                    _fun68020_ip = 122;
+                    continue _fun68020
                 }
             case 116:
                 var7 = var11.disabledOpacity;
@@ -277,4 +277,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.VoiceChatCallScreenHeaderIcon = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 3906, 660, 33, 1297, 671, 4666, 566, 8390, 22, 3118, 4865, 4045, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 3908, 660, 33, 1297, 671, 4668, 566, 8392, 22, 3120, 4867, 4047, 2]);

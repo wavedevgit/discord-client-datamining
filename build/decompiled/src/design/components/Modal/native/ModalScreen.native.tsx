@@ -55,7 +55,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'design/components/Modal/native/ModalScreen.native.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun52946: for (var _fun52946_ip = 0;;) switch (_fun52946_ip) {
+        _fun52950: for (var _fun52950_ip = 0;;) switch (_fun52950_ip) {
             case 0:
                 var0 = arg0;
                 var8 = var0.backgroundColor;
@@ -79,8 +79,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = {};
                 var10 = null;
                 if (!(var10 == var8)) {
-                    _fun52946_ip = 97;
-                    continue _fun52946
+                    _fun52950_ip = 97;
+                    continue _fun52950
                 }
             case 87:
                 var9 = var9.container;
@@ -102,4 +102,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.ModalScreen = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 4856, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 4858, 2]);

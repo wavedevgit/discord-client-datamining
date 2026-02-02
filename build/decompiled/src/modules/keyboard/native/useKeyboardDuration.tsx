@@ -24,7 +24,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/keyboard/native/useKeyboardDuration.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function() {
-        _fun44400: for (var _fun44400_ip = 0;;) switch (_fun44400_ip) {
+        _fun44404: for (var _fun44404_ip = 0;;) switch (_fun44404_ip) {
             case 0:
                 var2 = _closure1_slot0;
                 var3 = _closure1_slot2;
@@ -36,8 +36,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var0.bind(var2)();
                 var0 = 300;
                 if (var2) {
-                    _fun44400_ip = 79;
-                    continue _fun44400
+                    _fun44404_ip = 79;
+                    continue _fun44404
                 }
             case 43:
                 var2 = _closure1_slot1;

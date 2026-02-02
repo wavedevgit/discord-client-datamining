@@ -27,7 +27,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/self_mod/inappropriate_conversation/hooks/useInappropriateConversationBannerForChannel.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0, arg1() {
-        _fun72863: for (var _fun72863_ip = 0;;) switch (_fun72863_ip) {
+        _fun72867: for (var _fun72867_ip = 0;;) switch (_fun72867_ip) {
             case 0:
                 var7 = arg0;
                 var6 = _closure1_slot0;
@@ -59,25 +59,25 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.INAPPROPRIATE_CONVERSATION_TIER_2;
                 var1 = var5.bind(var6)(var7, var1);
                 if (!var3) {
-                    _fun72863_ip = 169;
-                    continue _fun72863
+                    _fun72867_ip = 169;
+                    continue _fun72867
                 }
             case 130:
                 if (!var2) {
-                    _fun72863_ip = 169;
-                    continue _fun72863
+                    _fun72867_ip = 169;
+                    continue _fun72867
                 }
             case 133:
                 var3 = var4.length;
                 var2 = 0;
                 if (!(var2 !== var3)) {
-                    _fun72863_ip = 169;
-                    continue _fun72863
+                    _fun72867_ip = 169;
+                    continue _fun72867
                 }
             case 144:
                 var3 = var4.some;
                 var2 = function(arg0) { // Environment: var2
-                    _fun72864: for (var _fun72864_ip = 0;;) switch (_fun72864_ip) {
+                    _fun72868: for (var _fun72868_ip = 0;;) switch (_fun72868_ip) {
                         case 0:
                             var2 = arg0;
                             var3 = var2.type;
@@ -85,8 +85,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var0 = var0.INAPPROPRIATE_CONVERSATION_TIER_1;
                             var0 = var3 === var0;
                             if (var0) {
-                                _fun72864_ip = 65;
-                                continue _fun72864
+                                _fun72868_ip = 65;
+                                continue _fun72868
                             }
                         case 28:
                             var3 = var2.type;
@@ -94,8 +94,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var1 = var1.INAPPROPRIATE_CONVERSATION_TIER_2;
                             var1 = var3 === var1;
                             if (!var1) {
-                                _fun72864_ip = 62;
-                                continue _fun72864
+                                _fun72868_ip = 62;
+                                continue _fun72868
                             }
                         case 50:
                             var3 = var2.dismiss_timestamp;
@@ -109,8 +109,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 };
                 var2 = var3.bind(var4)(var2);
                 if (var2) {
-                    _fun72863_ip = 169;
-                    continue _fun72863
+                    _fun72867_ip = 169;
+                    continue _fun72867
                 }
             case 167:
                 return var1;
@@ -120,4 +120,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useInappropriateConversationBannerForChannel = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [8958, 8954, 8955, 8957, 9116, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [8960, 8956, 8957, 8959, 9118, 2]);

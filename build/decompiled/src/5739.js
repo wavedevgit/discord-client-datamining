@@ -10,11 +10,11 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = {
         '__packager_asset': true,
         'httpServerLocation': '/assets/modules/user_settings/native/connections/two_way_link/images',
-        'width': 18,
-        'height': 18.5,
+        'width': 59,
+        'height': 85.5,
         'scales': null,
-        'hash': '84a5f82b0047a661ec45232254da9031',
-        'name': 'app_installed_check',
+        'hash': '07edfc27bc58db41fd8c1993a9ed69f0',
+        'name': 'xbox_app_phone',
         'type': 'png'
     };
     var4 = [2, 3];

@@ -1,198 +1,153 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun37802: for (var _fun37802_ip = 0;;) switch (_fun37802_ip) {
-        case 0:
-            var4 = require;
-            var3 = exports;
-            var5 = dependencyMap;
-            var1 = this;
-            var2 = var1;
-            if (!var1) {
-                _fun37802_ip = 26;
-                continue _fun37802
-            }
-        case 20:
-            var2 = var1.__createBinding;
-        case 26:
-            if (var2) {
-                _fun37802_ip = 60;
-                continue _fun37802
-            }
-        case 29:
-            var6 = global;
-            var6 = var6.Object;
-            var6 = var6.create;
-            if (var6) {
-                _fun37802_ip = 52;
-                continue _fun37802
-            }
-        case 45:
-            var6 = function(arg0, arg1, arg2, arg3) { // Environment: var0
-                _fun37805: for (var _fun37805_ip = 0;;) switch (_fun37805_ip) {
-                    case 0:
-                        var2 = arg2;
-                        var3 = arg3;
-                        var0 = undefined;
-                        if (!(var0 === var3)) {
-                            _fun37805_ip = 15;
-                            continue _fun37805
-                        }
-                    case 12:
-                        var3 = var2;
-                    case 15:
-                        var1 = arg1;
-                        var2 = var1[var2];
-                        var1 = arg0;
-                        var1[var3] = var2;
-                        return var0;
-                }
-            };
-            _fun37802_ip = 57;
-            continue _fun37802;
-        case 52:
-            var6 = function(arg0, arg1, arg2, arg3) { // Environment: var0
-                _fun37803: for (var _fun37803_ip = 0;;) switch (_fun37803_ip) {
-                    case 0:
-                        var7 = arg1;
-                        var6 = arg2;
-                        var5 = arg3;
-                        var _closure2_slot0 = var7;
-                        var _closure2_slot1 = var6;
-                        var0 = undefined;
-                        if (!(var0 === var5)) {
-                            _fun37803_ip = 28;
-                            continue _fun37803
-                        }
-                    case 25:
-                        var5 = var6;
-                    case 28:
-                        var1 = global;
-                        var4 = var1.Object;
-                        var2 = var4.getOwnPropertyDescriptor;
-                        var4 = var2.bind(var4)(var7, var6);
-                        var2 = var4;
-                        if (!var4) {
-                            _fun37803_ip = 94;
-                            continue _fun37803
-                        }
-                    case 54:
-                        var6 = 'get';
-                        var6 = var6 in var4;
-                        if (var6) {
-                            _fun37803_ip = 82;
-                            continue _fun37803
-                        }
-                    case 65:
-                        var6 = var4.writable;
-                        if (var6) {
-                            _fun37803_ip = 80;
-                            continue _fun37803
-                        }
-                    case 74:
-                        var6 = var4.configurable;
-                    case 80:
-                        _fun37803_ip = 91;
-                        continue _fun37803;
-                    case 82:
-                        var7 = var7.__esModule;
-                        var6 = !var7;
-                    case 91:
-                        var2 = !var6;
-                    case 94:
-                        if (var2) {
-                            _fun37803_ip = 117;
-                            continue _fun37803
-                        }
-                    case 97:
-                        var2 = {};
-                        var6 = true;
-                        var2.enumerable = var6;
-                        var3 = function() {
-                            var1 = _closure2_slot0;
-                            var0 = _closure2_slot1;
-                            var0 = var1[var0];
-                            return var0;
-                        };
-                        var2.get = var3;
-                        var4 = var2;
-                    case 117:
-                        var3 = var1.Object;
-                        var2 = var3.defineProperty;
-                        var1 = arg0;
-                        var1 = var2.bind(var3)(var1, var5, var4);
-                        return var0;
-                }
-            };
-        case 57:
-            var2 = var6;
-        case 60:
-            var _closure1_slot0 = var2;
-            var2 = var1;
-            if (!var2) {
-                _fun37802_ip = 76;
-                continue _fun37802
-            }
-        case 70:
-            var2 = var1.__exportStar;
-        case 76:
-            if (var2) {
-                _fun37802_ip = 84;
-                continue _fun37802
-            }
-        case 79:
-            var2 = function(arg0, arg1) { // Environment: var0
-                _fun37806: for (var _fun37806_ip = 0;;) switch (_fun37806_ip) {
-                    case 0:
-                        var10 = arg0;
-                        var9 = arg1;
-                        var7 = var10;
-                        var0 = undefined;
-                        var2 = global;
-                        var1 = 'default';
-                        for (var4 in var7)
-                            case 28: {
-                                case 37: var12 = var4;
-                                var11 = var1 === var12;
-                                if (var11) {
-                                    _fun37806_ip = 75;
-                                    continue _fun37806
-                                }
-                                case 47: var13 = var2.Object;
-                                var13 = var13.prototype;
-                                var14 = var13.hasOwnProperty;
-                                var13 = var14.call;
-                                var11 = var13.bind(var14)(var9, var12);
-                                case 75: if (var11) {
-                                    _fun37806_ip = 28;
-                                    continue _fun37806
-                                }
-                                case 78: var11 = _closure1_slot0;
-                                var11 = var11.bind(var0)(var9, var10, var12);
-                                _fun37806_ip = 28;
-                                continue _fun37806;
-                            }
-                    case 91:
-                        return var0;
-                }
-            };
-        case 84:
-            var0 = global;
-            var7 = var0.Object;
-            var6 = var7.defineProperty;
-            var1 = {};
-            var0 = true;
-            var1.value = var0;
-            var0 = '__esModule';
-            var0 = var6.bind(var7)(var3, var0, var1);
-            var0 = 0;
-            var1 = var5[var0];
-            var0 = undefined;
-            var1 = var4.bind(var0)(var1);
-            var1 = var2.bind(var0)(var1, var3);
-            var1 = 1;
-            var1 = var5[var1];
-            var1 = var4.bind(var0)(var1);
-            var1 = var2.bind(var0)(var1, var3);
-            return var0;
-    }
-})(undefined, undefined, undefined, undefined, undefined, undefined, [4116, 4118]);
+    var5 = require;
+    var1 = exports;
+    var6 = dependencyMap;
+    var0 = 0;
+    var2 = var6[var0];
+    var0 = undefined;
+    var3 = var5.bind(var0)(var2);
+    var2 = 1;
+    var2 = var6[var2];
+    var2 = var5.bind(var0)(var2);
+    var _closure1_slot0 = var2;
+    var2 = global;
+    var7 = var2.Object;
+    var6 = var7.defineProperty;
+    var5 = {};
+    var2 = true;
+    var5.value = var2;
+    var2 = '__esModule';
+    var2 = var6.bind(var7)(var1, var2, var5);
+    var1.CompressedTypes = var0;
+    var2 = function() {
+        var3 = _closure1_slot0;
+        var2 = _closure1_slot1;
+        var0 = undefined;
+        var1 = this;
+        var1 = var3.bind(var0)(var1, var2);
+        return var0;
+    };
+    var _closure1_slot1 = var2;
+    var2 = var3.bind(var0)(var2);
+    var1.CompressedTypes = var2;
+    var1 = {
+        'extension': '7z',
+        'mimeType': 'application/x-7z-compressed',
+        'description': '7-Zip compressed file'
+    };
+    var4 = {};
+    var3 = [55, 122, 188, 175, 39, 28];
+    var4.sequence = var3;
+    var3 = new Array(1);
+    var3[0] = var4;
+    var1.signatures = var3;
+    var2._7Z = var1;
+    var1 = {
+        'extension': 'lzh',
+        'mimeType': 'application/x-lzh-compressed',
+        'description': 'Compressed file using Lempel-Ziv and Haruyasu (LZH) compression algorithm'
+    };
+    var4 = {};
+    var3 = [45, 104, 108, 48, 45];
+    var4.sequence = var3;
+    var3 = 'Lempel Ziv Huffman archive file Method 0 (No compression)';
+    var4.description = var3;
+    var3 = ['lha'];
+    var4.compatibleExtensions = var3;
+    var3 = new Array(2);
+    var3[0] = var4;
+    var4 = {};
+    var5 = [45, 104, 108, 53, 45];
+    var4.sequence = var5;
+    var5 = 'Lempel Ziv Huffman archive file Method 5 (8KiB sliding window)';
+    var4.description = var5;
+    var5 = ['lha'];
+    var4.compatibleExtensions = var5;
+    var3[1] = var4;
+    var1.signatures = var3;
+    var2.LZH = var1;
+    var1 = {
+        'extension': 'rar',
+        'mimeType': 'application/x-rar-compressed',
+        'description': 'Roshal ARchive compressed archive file'
+    };
+    var4 = {};
+    var3 = [82, 97, 114, 33, 26, 7, 0];
+    var4.sequence = var3;
+    var3 = 'Compressed archive v5.00 onwards';
+    var4.description = var3;
+    var3 = new Array(2);
+    var3[0] = var4;
+    var4 = {};
+    var5 = [82, 97, 114, 33, 26, 7, 1, 0];
+    var4.sequence = var5;
+    var5 = 'Compressed archive v1.50 onwards';
+    var4.description = var5;
+    var3[1] = var4;
+    var1.signatures = var3;
+    var2.RAR = var1;
+    var1 = {
+        'extension': 'zip',
+        'mimeType': 'application/zip',
+        'description': 'Compressed archive file'
+    };
+    var4 = {
+        'sequence': null,
+        'offset': 29152,
+        'description': 'WinZip compressed archive'
+    };
+    var3 = [87, 105, 110, 90, 105, 112];
+    var4.sequence = var3;
+    var3 = new Array(7);
+    var3[0] = var4;
+    var4 = {};
+    var5 = [80, 75, 3, 4, 20, 0, 1, 0, 99, 0, 0, 0, 0, 0];
+    var4.sequence = var5;
+    var5 = 'ZLock Pro encrypted ZIP';
+    var4.description = var5;
+    var3[1] = var4;
+    var4 = {
+        'sequence': null,
+        'offset': 30,
+        'description': 'PKLITE compressed ZIP archive (see also PKZIP)'
+    };
+    var5 = [80, 75, 76, 73, 84, 69];
+    var4.sequence = var5;
+    var3[2] = var4;
+    var4 = {
+        'sequence': null,
+        'offset': 526,
+        'description': 'PKSFX self-extracting executable compressed file (see also PKZIP)'
+    };
+    var5 = [80, 75, 83, 112, 88];
+    var4.sequence = var5;
+    var3[3] = var4;
+    var4 = {};
+    var5 = [80, 75, 3, 4];
+    var4.sequence = var5;
+    var5 = 'PKZIP archive file - zip file format and multiple formats based on it';
+    var4.description = var5;
+    var5 = ['aar', 'apk', 'docx', 'epub', 'ipa', 'jar', 'kmz', 'maff', 'msix', 'odp', 'ods', 'odt', 'pk3', 'pk4', 'pptx', 'usdz', 'vsdx', 'xlsx', 'xpi'];
+    var4.compatibleExtensions = var5;
+    var3[4] = var4;
+    var4 = {};
+    var5 = [80, 75, 5, 6];
+    var4.sequence = var5;
+    var5 = 'PKZIP empty archive file - zip file format and multiple formats based on it';
+    var4.description = var5;
+    var5 = ['aar', 'apk', 'docx', 'epub', 'ipa', 'jar', 'kmz', 'maff', 'msix', 'odp', 'ods', 'odt', 'pk3', 'pk4', 'pptx', 'usdz', 'vsdx', 'xlsx', 'xpi'];
+    var4.compatibleExtensions = var5;
+    var3[5] = var4;
+    var4 = {};
+    var5 = [80, 75, 7, 8];
+    var4.sequence = var5;
+    var5 = 'PKZIP multivolume archive file - zip file format and multiple formats based on it';
+    var4.description = var5;
+    var5 = ['aar', 'apk', 'docx', 'epub', 'ipa', 'jar', 'kmz', 'maff', 'msix', 'odp', 'ods', 'odt', 'pk3', 'pk4', 'pptx', 'usdz', 'vsdx', 'xlsx', 'xpi'];
+    var4.compatibleExtensions = var5;
+    var3[6] = var4;
+    var1.signatures = var3;
+    var2.ZIP = var1;
+    return var0;
+})(undefined, undefined, undefined, undefined, undefined, undefined, [7, 6]);

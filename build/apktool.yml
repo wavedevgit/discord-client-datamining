@@ -9,8 +9,8 @@ sdkInfo:
 packageInfo:
   forcedPackageId: 127
 versionInfo:
-  versionCode: 315206
-  versionName: 315.6 - Alpha
+  versionCode: 316200
+  versionName: 316.0 - Alpha
 doNotCompress:
 - arsc
 - jpg
@@ -680,5 +680,6 @@ doNotCompress:
 - res/raw/modules_guild_settings_server_monetization_tags_web_guildsettingstagscompiledmessages.jsona
 - res/raw/modules_intl_messages_secondtestcompiledmessages.jsona
 - res/raw/modules_notifications_inbox_notificationsinboxcompiledmessages.jsona
+- res/raw/modules_overlay_web_v3_overlaywidgetscompiledmessages.jsona
 - res/raw/modules_premium_tenure_reward_tenurerewardcompiledmessages.jsona
 - res/raw/modules_private_browsing_perk_intl_privatebrowsingperkcompiledmessages.jsona

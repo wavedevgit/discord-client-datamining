@@ -84,7 +84,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = 'getStats';
         var4.key = var1;
         var1 = function() {
-            _fun93688: for (var _fun93688_ip = 0;;) switch (_fun93688_ip) {
+            _fun93692: for (var _fun93692_ip = 0;;) switch (_fun93692_ip) {
                 case 0:
                     var0 = this;
                     var2 = var0.cpuHistogram;
@@ -106,15 +106,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var3 = var9 == var2;
                     var2 = undefined;
                     if (var3) {
-                        _fun93688_ip = 161;
-                        continue _fun93688
+                        _fun93692_ip = 161;
+                        continue _fun93692
                     }
                 case 87:
                     var3 = var9 == var4;
                     var2 = undefined;
                     if (var3) {
-                        _fun93688_ip = 161;
-                        continue _fun93688
+                        _fun93692_ip = 161;
+                        continue _fun93692
                     }
                 case 96:
                     var5 = var4.usage;
@@ -153,8 +153,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var10 = var10[var3];
                     var0.client_performance_cpu_percentile95 = var10;
                     if (!(var9 == var2)) {
-                        _fun93688_ip = 273;
-                        continue _fun93688
+                        _fun93692_ip = 273;
+                        continue _fun93692
                     }
                 case 267:
                     var2 = var8.mean;
@@ -191,7 +191,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var6 = 'takeSample';
         var4.key = var6;
         var6 = function() {
-            _fun93689: for (var _fun93689_ip = 0;;) switch (_fun93689_ip) {
+            _fun93693: for (var _fun93693_ip = 0;;) switch (_fun93693_ip) {
                 case 0:
                     var1 = this;
                     var3 = _closure1_slot1;
@@ -208,8 +208,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var3 = var2.bind(var3)();
                     var2 = null;
                     if (!(var2 == var4)) {
-                        _fun93689_ip = 116;
-                        continue _fun93689
+                        _fun93693_ip = 116;
+                        continue _fun93693
                     }
                 case 63:
                     var6 = _closure1_slot1;
@@ -219,22 +219,22 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var5 = var6.getCurrentCPUUsagePercent;
                     var7 = var5.bind(var6)();
                     if (!(var2 != var7)) {
-                        _fun93689_ip = 234;
-                        continue _fun93689
+                        _fun93693_ip = 234;
+                        continue _fun93693
                     }
                 case 97:
                     var6 = var1.cpuHistogram;
                     var5 = var6.addSample;
                     var5 = var5.bind(var6)(var7);
-                    _fun93689_ip = 234;
-                    continue _fun93689;
+                    _fun93693_ip = 234;
+                    continue _fun93693;
                 case 116:
                     var5 = var1.lastCPU;
                     var7 = var2 != var5;
                     var5 = true;
                     if (!var7) {
-                        _fun93689_ip = 225;
-                        continue _fun93689
+                        _fun93693_ip = 225;
+                        continue _fun93693
                     }
                 case 131:
                     var8 = var4.sampleTime;
@@ -244,8 +244,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var5 = false;
                     var7 = 1;
                     if (!(var10 >= var7)) {
-                        _fun93689_ip = 225;
-                        continue _fun93689
+                        _fun93693_ip = 225;
+                        continue _fun93693
                     }
                 case 162:
                     var8 = var4.usage;
@@ -263,15 +263,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var5 = true;
                 case 225:
                     if (!var5) {
-                        _fun93689_ip = 234;
-                        continue _fun93689
+                        _fun93693_ip = 234;
+                        continue _fun93693
                     }
                 case 228:
                     var1.lastCPU = var4;
                 case 234:
                     if (!(var2 != var3)) {
-                        _fun93689_ip = 255;
-                        continue _fun93689
+                        _fun93693_ip = 255;
+                        continue _fun93693
                     }
                 case 238:
                     var2 = var1.memoryHistogram;
@@ -290,13 +290,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = undefined;
         var6 = function*() { // Environment: var5
             var0 = function*() { // Original name: ?anon_0_, environment: var0
-                _fun93691: for (var _fun93691_ip = 0;;) switch (_fun93691_ip) {
+                _fun93695: for (var _fun93695_ip = 0;;) switch (_fun93695_ip) {
                     case 0:
                         StartGenerator();
                         ResumeGenerator(result_out_reg = 0, return_bool_out_reg = 1);
                         if (var1) {
-                            _fun93691_ip = 81;
-                            continue _fun93691
+                            _fun93695_ip = 81;
+                            continue _fun93695
                         }
                     case 7: // try_start_0
                         var3 = _closure1_slot0;
@@ -316,8 +316,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     case 56:
                         ResumeGenerator(result_out_reg = 1, return_bool_out_reg = 2);
                         if (var2) {
-                            _fun93691_ip = 71;
-                            continue _fun93691
+                            _fun93695_ip = 71;
+                            continue _fun93695
                         }
                     case 62:
                         var2 = var1.batteryLevel;
@@ -354,14 +354,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4.key = var6;
         var6 = function*() { // Environment: var5
             var0 = function*() { // Original name: ?anon_0_, environment: var0
-                _fun93694: for (var _fun93694_ip = 0;;) switch (_fun93694_ip) {
+                _fun93698: for (var _fun93698_ip = 0;;) switch (_fun93698_ip) {
                     case 0:
                         StartGenerator();
                         var2 = this;
                         ResumeGenerator(result_out_reg = 0, return_bool_out_reg = 1);
                         if (var1) {
-                            _fun93694_ip = 44;
-                            continue _fun93694
+                            _fun93698_ip = 44;
+                            continue _fun93698
                         }
                     case 10:
                         var1 = var2.getCurrentBattery;
@@ -372,8 +372,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     case 24:
                         ResumeGenerator(result_out_reg = 1, return_bool_out_reg = 3);
                         if (var3) {
-                            _fun93694_ip = 41;
-                            continue _fun93694
+                            _fun93698_ip = 41;
+                            continue _fun93698
                         }
                     case 30:
                         var2.lastBattery = var1;
@@ -406,14 +406,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4.key = var6;
         var6 = function*() { // Environment: var5
             var0 = function*() { // Original name: ?anon_0_, environment: var0
-                _fun93697: for (var _fun93697_ip = 0;;) switch (_fun93697_ip) {
+                _fun93701: for (var _fun93701_ip = 0;;) switch (_fun93701_ip) {
                     case 0:
                         StartGenerator();
                         var5 = this;
                         ResumeGenerator(result_out_reg = 0, return_bool_out_reg = 1);
                         if (var1) {
-                            _fun93697_ip = 148;
-                            continue _fun93697
+                            _fun93701_ip = 148;
+                            continue _fun93701
                         }
                     case 13:
                         var1 = var5.getCurrentBattery;
@@ -424,20 +424,20 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     case 27:
                         ResumeGenerator(result_out_reg = 1, return_bool_out_reg = 2);
                         if (var2) {
-                            _fun93697_ip = 145;
-                            continue _fun93697
+                            _fun93701_ip = 145;
+                            continue _fun93701
                         }
                     case 33:
                         var2 = var5.lastBattery;
                         var4 = null;
                         if (!(var4 != var2)) {
-                            _fun93697_ip = 116;
-                            continue _fun93697
+                            _fun93701_ip = 116;
+                            continue _fun93701
                         }
                     case 45:
                         if (!(var4 != var1)) {
-                            _fun93697_ip = 116;
-                            continue _fun93697
+                            _fun93701_ip = 116;
+                            continue _fun93701
                         }
                     case 49:
                         var2 = {};
@@ -454,8 +454,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var3 = var7.bind(var8)(var3);
                         var3 = var3 / var6;
                         var2.batteryUsageRounded = var3;
-                        _fun93697_ip = 142;
-                        continue _fun93697;
+                        _fun93701_ip = 142;
+                        continue _fun93701;
                     case 116:
                         var3 = {};
                         var5 = var5.lastBattery;
@@ -499,4 +499,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 6, 7, 12212, 12176, 12218, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 6, 7, 12214, 12178, 12220, 2]);

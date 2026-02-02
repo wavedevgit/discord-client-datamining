@@ -33,15 +33,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'design/components/Icon/native/redesign/generated/HeadphonesIcon.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Environment: var1
-        _fun82556: for (var _fun82556_ip = 0;;) switch (_fun82556_ip) {
+        _fun82560: for (var _fun82560_ip = 0;;) switch (_fun82560_ip) {
             case 0:
                 var2 = arg0;
                 var5 = var2.style;
                 var6 = var2.color;
                 var3 = undefined;
                 if (!(var6 === var3)) {
-                    _fun82556_ip = 53;
-                    continue _fun82556
+                    _fun82560_ip = 53;
+                    continue _fun82560
                 }
             case 19:
                 var1 = _closure1_slot1;
@@ -83,4 +83,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.HeadphonesIcon = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 671, 3109, 10560, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 671, 3111, 10562, 2]);

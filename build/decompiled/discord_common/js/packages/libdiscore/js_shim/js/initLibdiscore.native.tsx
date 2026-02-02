@@ -10,13 +10,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var3 = _closure1_slot0;
         var2 = function*() { // Environment: var2
             var0 = function*() { // Original name: ?anon_0_, environment: var0
-                _fun37589: for (var _fun37589_ip = 0;;) switch (_fun37589_ip) {
+                _fun37593: for (var _fun37593_ip = 0;;) switch (_fun37593_ip) {
                     case 0:
                         StartGenerator();
                         ResumeGenerator(result_out_reg = 0, return_bool_out_reg = 1);
                         if (var1) {
-                            _fun37589_ip = 12;
-                            continue _fun37589
+                            _fun37593_ip = 12;
+                            continue _fun37593
                         }
                     case 7:
                         var1 = undefined;
@@ -88,4 +88,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.initLibdiscore = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 27, 4086, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 27, 4088, 2]);

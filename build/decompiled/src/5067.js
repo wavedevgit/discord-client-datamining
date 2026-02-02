@@ -1,36 +1,32 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var0 = module;
-    var2 = require;
-    var _closure1_slot0 = var2;
-    var2 = dependencyMap;
-    var _closure1_slot1 = var2;
-    var1 = function arg0() {
-        _fun45507: for (var _fun45507_ip = 0;;) switch (_fun45507_ip) {
+    var1 = function arg0, arg1() {
+        _fun45506: for (var _fun45506_ip = 0;;) switch (_fun45506_ip) {
             case 0:
-                var3 = _closure1_slot0;
-                var4 = _closure1_slot1;
-                var0 = 0;
-                var0 = var4[var0];
-                var2 = undefined;
-                var5 = var3.bind(var2)(var0);
                 var1 = arg0;
-                var0 = 'string';
-                var1 = var5.bind(var2)(var1, var0);
-                var0 = 1;
-                var0 = var4[var0];
-                var2 = var3.bind(var2)(var0);
-                var0 = var2.default;
-                var3 = var0.bind(var2)(var1);
-                var2 = 'symbol';
-                var0 = var1;
-                if (!(var2 != var3)) {
-                    _fun45507_ip = 73;
-                    continue _fun45507
+                var0 = arg1;
+                var0 = var1 instanceof var0;
+                if (var0) {
+                    _fun45506_ip = 49;
+                    continue _fun45506
                 }
-            case 70:
-                var0 = '' + var1;
-            case 73:
+            case 13:
+                var0 = global;
+                var2 = var0.TypeError;
+                var0 = var2.prototype;
+                var1 = Object.create(var0, {
+                    constructor: {
+                        value: var2
+                    }
+                });
+                var3 = 'Cannot call a class as a function';
+                var4 = var1;
+                var0 = new var4[var2](var3, var2);
+                var0 = var0 instanceof Object ? var0 : var1;
+                throw var0;
+            case 49:
+                var0 = undefined;
                 return var0;
         }
     };
@@ -43,4 +39,4 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1.default = var0;
     var0 = undefined;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5068, 5069]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, []);

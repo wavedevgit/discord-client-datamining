@@ -46,7 +46,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = new Array(1);
         var1[0] = var4;
         var0 = function() { // Environment: var0
-            _fun116002: for (var _fun116002_ip = 0;;) switch (_fun116002_ip) {
+            _fun116003: for (var _fun116003_ip = 0;;) switch (_fun116003_ip) {
                 case 0:
                     var9 = _closure1_slot0;
                     var5 = _closure1_slot3;
@@ -113,8 +113,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1 = var1.bind(var2)(var3);
                     var2 = null;
                     if (!(var2 != var1)) {
-                        _fun116002_ip = 285;
-                        continue _fun116002
+                        _fun116003_ip = 285;
+                        continue _fun116003
                     }
                 case 258:
                     var0.author = var1;
@@ -138,4 +138,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useGuildSettingsRoleExampleMessage = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 1620, 660, 3931, 6505, 1234, 6915, 14734, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 1620, 660, 3933, 6507, 1234, 6917, 14735, 2]);

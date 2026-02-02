@@ -80,4 +80,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useFileOrLinkImageDimensions = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 8861, 1464, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 8863, 1464, 2]);

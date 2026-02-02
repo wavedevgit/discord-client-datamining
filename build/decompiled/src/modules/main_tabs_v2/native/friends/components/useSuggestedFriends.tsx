@@ -42,13 +42,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/main_tabs_v2/native/friends/components/useSuggestedFriends.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun101407: for (var _fun101407_ip = 0;;) switch (_fun101407_ip) {
+        _fun101408: for (var _fun101408_ip = 0;;) switch (_fun101408_ip) {
             case 0:
                 var1 = arg0;
                 var3 = null;
                 if (!(var3 == var1)) {
-                    _fun101407_ip = 13;
-                    continue _fun101407
+                    _fun101408_ip = 13;
+                    continue _fun101408
                 }
             case 11:
                 var1 = {};
@@ -86,8 +86,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var7[var4];
                 var3 = var3 == var6;
                 if (var3) {
-                    _fun101407_ip = 137;
-                    continue _fun101407
+                    _fun101408_ip = 137;
+                    continue _fun101408
                 }
             case 134:
                 var3 = var6;
@@ -100,12 +100,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2[1] = var1;
                 var2[2] = var3;
                 var0 = function() { // Environment: var0
-                    _fun101409: for (var _fun101409_ip = 0;;) switch (_fun101409_ip) {
+                    _fun101410: for (var _fun101410_ip = 0;;) switch (_fun101410_ip) {
                         case 0:
                             var2 = _closure2_slot2;
                             if (var2) {
-                                _fun101409_ip = 18;
-                                continue _fun101409
+                                _fun101410_ip = 18;
+                                continue _fun101410
                             }
                         case 12:
                             var2 = new Array(0);
@@ -125,7 +125,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var3 = _closure2_slot0;
                             var2 = var3.map;
                             var1 = function(arg0) { // Environment: var0
-                                _fun101411: for (var _fun101411_ip = 0;;) switch (_fun101411_ip) {
+                                _fun101412: for (var _fun101412_ip = 0;;) switch (_fun101412_ip) {
                                     case 0:
                                         var1 = arg0;
                                         var0 = {};
@@ -136,8 +136,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                         var4 = var2 != var3;
                                         var2 = undefined;
                                         if (!var4) {
-                                            _fun101411_ip = 33;
-                                            continue _fun101411
+                                            _fun101412_ip = 33;
+                                            continue _fun101412
                                         }
                                     case 30:
                                         var2 = var3;
@@ -198,13 +198,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0.setAdded = var4;
                 var0.friendSuggestions = var2;
                 if (var3) {
-                    _fun101407_ip = 206;
-                    continue _fun101407
+                    _fun101408_ip = 206;
+                    continue _fun101408
                 }
             case 199:
                 var1 = var1.length;
-                _fun101407_ip = 211;
-                continue _fun101407;
+                _fun101408_ip = 211;
+                continue _fun101408;
             case 206:
                 var1 = var2.length;
             case 211:
@@ -214,4 +214,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 9040, 10368, 632, 22, 3195, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 9042, 10370, 632, 22, 3197, 2]);

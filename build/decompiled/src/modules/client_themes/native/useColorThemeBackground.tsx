@@ -27,7 +27,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/client_themes/native/useColorThemeBackground.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function() {
-        _fun28000: for (var _fun28000_ip = 0;;) switch (_fun28000_ip) {
+        _fun28004: for (var _fun28004_ip = 0;;) switch (_fun28004_ip) {
             case 0:
                 var3 = _closure1_slot0;
                 var4 = _closure1_slot1;
@@ -52,8 +52,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.bind(var2)();
                 var2 = null;
                 if (!(var2 != var1)) {
-                    _fun28000_ip = 86;
-                    continue _fun28000
+                    _fun28004_ip = 86;
+                    continue _fun28004
                 }
             case 83:
                 var0 = var1;
@@ -63,4 +63,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3168, 632, 3202, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3170, 632, 3204, 2]);

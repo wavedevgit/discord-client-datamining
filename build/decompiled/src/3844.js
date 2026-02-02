@@ -14,28 +14,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = var3[var0];
     var3 = require;
     var0 = undefined;
-    var3 = var3.bind(var0)(var4);
-    var3 = var3.useCallback;
+    var4 = var3.bind(var0)(var4);
+    var3 = var4.isReducedMotionEnabledInSystem;
+    var3 = var3.bind(var4)();
     var _closure1_slot0 = var3;
-    var1 = function arg0, arg1() {
-        _fun34851: for (var _fun34851_ip = 0;;) switch (_fun34851_ip) {
-            case 0:
-                var3 = arg1;
-                var2 = _closure1_slot0;
-                var0 = null;
-                if (!(var0 == var3)) {
-                    _fun34851_ip = 20;
-                    continue _fun34851
-                }
-            case 16:
-                var3 = new Array(0);
-            case 20:
-                var1 = undefined;
-                var0 = arg0;
-                var0 = var2.bind(var1)(var0, var3);
-                return var0;
-        }
+    var1 = function() {
+        var0 = _closure1_slot0;
+        return var0;
     };
-    var2.useWorkletCallback = var1;
+    var2.useReducedMotion = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3723]);

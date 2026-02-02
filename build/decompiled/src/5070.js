@@ -6,64 +6,88 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = dependencyMap;
     var _closure1_slot1 = var2;
     var1 = function arg0, arg1() {
-        _fun45515: for (var _fun45515_ip = 0;;) switch (_fun45515_ip) {
+        _fun45513: for (var _fun45513_ip = 0;;) switch (_fun45513_ip) {
             case 0:
-                var0 = arg1;
-                if (!var0) {
-                    _fun45515_ip = 59;
-                    continue _fun45515
-                }
-            case 6:
-                var3 = _closure1_slot0;
-                var2 = _closure1_slot1;
-                var1 = 0;
-                var2 = var2[var1];
-                var1 = undefined;
-                var2 = var3.bind(var1)(var2);
-                var1 = var2.default;
-                var2 = var1.bind(var2)(var0);
-                var1 = 'object';
-                if (!(var1 != var2)) {
-                    _fun45515_ip = 134;
-                    continue _fun45515
-                }
-            case 48:
-                var2 = 'function';
-                var1 = typeof var0;
-                if (!(var2 !== var1)) {
-                    _fun45515_ip = 134;
-                    continue _fun45515
-                }
-            case 59:
-                var3 = undefined;
-                if (!(var3 === var0)) {
-                    _fun45515_ip = 98;
-                    continue _fun45515
-                }
-            case 65:
+                var0 = arg0;
+                var8 = arg1;
                 var2 = _closure1_slot0;
-                var4 = _closure1_slot1;
-                var1 = 1;
-                var1 = var4[var1];
-                var2 = var2.bind(var3)(var1);
-                var1 = arg0;
-                var1 = var2.bind(var3)(var1);
+                var1 = _closure1_slot1;
+                var7 = 0;
+                var1 = var1[var7];
+                var6 = undefined;
+                var2 = var2.bind(var6)(var1);
+                var1 = var2.default;
+                var1 = var1.bind(var2)(var0);
+                var4 = 'object';
+                if (!(var4 == var1)) {
+                    _fun45513_ip = 193;
+                    continue _fun45513
+                }
+            case 51:
+                if (!var0) {
+                    _fun45513_ip = 193;
+                    continue _fun45513
+                }
+            case 57:
+                var2 = global;
+                var1 = var2.Symbol;
+                var1 = var1.toPrimitive;
+                var5 = var0[var1];
+                if (!(var6 === var5)) {
+                    _fun45513_ip = 108;
+                    continue _fun45513
+                }
+            case 79:
+                var1 = 'string';
+                if (!(var1 !== var8)) {
+                    _fun45513_ip = 95;
+                    continue _fun45513
+                }
+            case 87:
+                var1 = var2.Number;
+                _fun45513_ip = 101;
+                continue _fun45513;
+            case 95:
+                var1 = var2.String;
+            case 101:
+                var1 = var1.bind(var6)(var0);
                 return var1;
-            case 98:
-                var1 = global;
-                var3 = var1.TypeError;
-                var1 = var3.prototype;
-                var2 = Object.create(var1, {
+            case 108:
+                var1 = var5.call;
+                if (var8) {
+                    _fun45513_ip = 120;
+                    continue _fun45513
+                }
+            case 116:
+                var8 = 'default';
+            case 120:
+                var1 = var1.bind(var5)(var0, var8);
+                var5 = _closure1_slot0;
+                var3 = _closure1_slot1;
+                var3 = var3[var7];
+                var5 = var5.bind(var6)(var3);
+                var3 = var5.default;
+                var3 = var3.bind(var5)(var1);
+                if (!(var4 == var3)) {
+                    _fun45513_ip = 191;
+                    continue _fun45513
+                }
+            case 157:
+                var4 = var2.TypeError;
+                var2 = var4.prototype;
+                var3 = Object.create(var2, {
                     constructor: {
-                        value: var3
+                        value: var4
                     }
                 });
-                var5 = 'Derived constructors may only return object or undefined';
-                var6 = var2;
-                var1 = new var6[var3](var5, var4);
-                var1 = var1 instanceof Object ? var1 : var2;
-                throw var1;
-            case 134:
+                var11 = '@@toPrimitive must return a primitive value.';
+                var12 = var3;
+                var2 = new var12[var4](var11, var10);
+                var2 = var2 instanceof Object ? var2 : var3;
+                throw var2;
+            case 191:
+                return var1;
+            case 193:
                 return var0;
         }
     };
@@ -76,4 +100,4 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1.default = var0;
     var0 = undefined;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5069, 5071]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5071]);

@@ -46,7 +46,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.isGuildEligibleForRoleSubscriptions = var3;
     var3 = function arg0() {
-        _fun49830: for (var _fun49830_ip = 0;;) switch (_fun49830_ip) {
+        _fun49834: for (var _fun49834_ip = 0;;) switch (_fun49834_ip) {
             case 0:
                 var3 = arg0;
                 var2 = _closure1_slot0;
@@ -60,8 +60,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = {};
                 var5 = null;
                 if (!(var5 == var3)) {
-                    _fun49830_ip = 52;
-                    continue _fun49830
+                    _fun49834_ip = 52;
+                    continue _fun49834
                 }
             case 48:
                 var3 = _closure1_slot2;
@@ -75,15 +75,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useRoleSubscriptionMaxTiersExperiment = var3;
     var3 = function(arg0) { // Environment: var1
-        _fun49831: for (var _fun49831_ip = 0;;) switch (_fun49831_ip) {
+        _fun49835: for (var _fun49835_ip = 0;;) switch (_fun49835_ip) {
             case 0:
                 var2 = arg0;
                 var _closure2_slot0 = var2;
                 var0 = null;
                 var0 = var0 != var2;
                 if (!var0) {
-                    _fun49831_ip = 41;
-                    continue _fun49831
+                    _fun49835_ip = 41;
+                    continue _fun49835
                 }
             case 18:
                 var3 = _closure1_slot3;
@@ -103,7 +103,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.hasEnabledMonetization = var3;
     var3 = function arg0() {
-        _fun49833: for (var _fun49833_ip = 0;;) switch (_fun49833_ip) {
+        _fun49837: for (var _fun49837_ip = 0;;) switch (_fun49837_ip) {
             case 0:
                 var3 = arg0;
                 var2 = _closure1_slot0;
@@ -119,15 +119,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var7 == var3;
                 var0 = undefined;
                 if (var8) {
-                    _fun49833_ip = 58;
-                    continue _fun49833
+                    _fun49837_ip = 58;
+                    continue _fun49837
                 }
             case 53:
                 var0 = var3.id;
             case 58:
                 if (!(var7 == var0)) {
-                    _fun49833_ip = 66;
-                    continue _fun49833
+                    _fun49837_ip = 66;
+                    continue _fun49837
                 }
             case 62:
                 var0 = _closure1_slot2;
@@ -148,8 +148,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var2.useIsExpeditedOnboardingGuild;
                 var1 = var1.bind(var2)(var3);
                 if (!var0) {
-                    _fun49833_ip = 137;
-                    continue _fun49833
+                    _fun49837_ip = 137;
+                    continue _fun49837
                 }
             case 134:
                 var0 = var1;
@@ -159,7 +159,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useGuildEligibleForRoleSubscriptionsMobileTeamSetup = var3;
     var3 = function arg0() {
-        _fun49834: for (var _fun49834_ip = 0;;) switch (_fun49834_ip) {
+        _fun49838: for (var _fun49838_ip = 0;;) switch (_fun49838_ip) {
             case 0:
                 var0 = arg0;
                 var3 = _closure1_slot0;
@@ -173,8 +173,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = {};
                 var5 = null;
                 if (!(var5 == var0)) {
-                    _fun49834_ip = 52;
-                    continue _fun49834
+                    _fun49838_ip = 52;
+                    continue _fun49838
                 }
             case 48:
                 var0 = _closure1_slot2;
@@ -192,7 +192,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.isGuildEligibleForTierTemplates = var3;
     var3 = function arg0() {
-        _fun49835: for (var _fun49835_ip = 0;;) switch (_fun49835_ip) {
+        _fun49839: for (var _fun49839_ip = 0;;) switch (_fun49839_ip) {
             case 0:
                 var0 = arg0;
                 var3 = _closure1_slot0;
@@ -206,8 +206,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = {};
                 var5 = null;
                 if (!(var5 == var0)) {
-                    _fun49835_ip = 52;
-                    continue _fun49835
+                    _fun49839_ip = 52;
+                    continue _fun49839
                 }
             case 48:
                 var0 = _closure1_slot2;
@@ -225,7 +225,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useGuildEligibleForTierTemplates = var3;
     var3 = function arg0() {
-        _fun49836: for (var _fun49836_ip = 0;;) switch (_fun49836_ip) {
+        _fun49840: for (var _fun49840_ip = 0;;) switch (_fun49840_ip) {
             case 0:
                 var0 = arg0;
                 var3 = _closure1_slot0;
@@ -239,8 +239,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = {};
                 var5 = null;
                 if (!(var5 == var0)) {
-                    _fun49836_ip = 52;
-                    continue _fun49836
+                    _fun49840_ip = 52;
+                    continue _fun49840
                 }
             case 48:
                 var0 = _closure1_slot2;
@@ -298,4 +298,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useUserEligibleForTierTemplates = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 5596, 5598, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 5598, 5600, 2]);

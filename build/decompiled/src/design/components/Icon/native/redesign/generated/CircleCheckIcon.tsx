@@ -40,23 +40,23 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'design/components/Icon/native/redesign/generated/CircleCheckIcon.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Environment: var1
-        _fun28072: for (var _fun28072_ip = 0;;) switch (_fun28072_ip) {
+        _fun28076: for (var _fun28076_ip = 0;;) switch (_fun28076_ip) {
             case 0:
                 var2 = arg0;
                 var9 = var2.style;
                 var12 = var2.secondaryColor;
                 var3 = undefined;
                 if (!(var12 === var3)) {
-                    _fun28072_ip = 24;
-                    continue _fun28072
+                    _fun28076_ip = 24;
+                    continue _fun28076
                 }
             case 20:
                 var12 = 'transparent';
             case 24:
                 var10 = var2.color;
                 if (!(var10 === var3)) {
-                    _fun28072_ip = 67;
-                    continue _fun28072
+                    _fun28076_ip = 67;
+                    continue _fun28076
                 }
             case 33:
                 var1 = _closure1_slot1;
@@ -139,4 +139,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.CircleCheckIcon = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 671, 3109, 3231, 3232, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 671, 3111, 3233, 3234, 2]);

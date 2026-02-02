@@ -14,13 +14,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var3 = _closure1_slot3;
         var2 = function*(arg0, arg1, arg2) { // Environment: var2
             var0 = function*(arg0, arg1, arg2) { // Original name: ?anon_0_, environment: var0
-                _fun66924: for (var _fun66924_ip = 0;;) switch (_fun66924_ip) {
+                _fun66928: for (var _fun66928_ip = 0;;) switch (_fun66928_ip) {
                     case 0:
                         StartGenerator();
                         ResumeGenerator(result_out_reg = 0, return_bool_out_reg = 3);
                         if (var3) {
-                            _fun66924_ip = 247;
-                            continue _fun66924
+                            _fun66928_ip = 247;
+                            continue _fun66928
                         }
                     case 10:
                         var2 = arg0;
@@ -44,12 +44,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     case 72:
                         ResumeGenerator(result_out_reg = 1, return_bool_out_reg = 2);
                         if (var2) {
-                            _fun66924_ip = 83;
-                            continue _fun66924
+                            _fun66928_ip = 83;
+                            continue _fun66928
                         }
                     case 78: // try_end0
-                        _fun66924_ip = 242;
-                        continue _fun66924;
+                        _fun66928_ip = 242;
+                        continue _fun66928;
                     case 83:
                         return var1;
                     case 86: // catch_target0
@@ -138,4 +138,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.transferToPlaystationWithAlert = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 8255, 3962, 1234, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 8257, 3964, 1234, 2]);

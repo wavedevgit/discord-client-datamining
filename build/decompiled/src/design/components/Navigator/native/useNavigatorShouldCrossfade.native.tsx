@@ -27,7 +27,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'design/components/Navigator/native/useNavigatorShouldCrossfade.native.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function() {
-        _fun50997: for (var _fun50997_ip = 0;;) switch (_fun50997_ip) {
+        _fun51001: for (var _fun51001_ip = 0;;) switch (_fun51001_ip) {
             case 0:
                 var2 = _closure1_slot2;
                 var1 = var2.useContext;
@@ -48,8 +48,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var3.isAndroid;
                 var2 = var2.bind(var3)();
                 if (!var2) {
-                    _fun50997_ip = 91;
-                    continue _fun50997
+                    _fun51001_ip = 91;
+                    continue _fun51001
                 }
             case 88:
                 var0 = var1;
@@ -59,4 +59,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useNavigatorShouldCrossfade = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 478, 3124, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 478, 3126, 2]);

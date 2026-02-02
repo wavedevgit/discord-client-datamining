@@ -7,54 +7,55 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = function arg0() {
         _fun28900: for (var _fun28900_ip = 0;;) switch (_fun28900_ip) {
             case 0:
-                var5 = _closure1_slot0;
-                var6 = _closure1_slot1;
-                var0 = 0;
-                var2 = var6[var0];
+                var3 = arg0;
+                var5 = undefined;
                 var4 = undefined;
-                var3 = var5.bind(var4)(var2);
-                var2 = arg0;
-                var3 = var3.bind(var4)(var2);
-                var2 = 1;
-                var2 = var6[var2];
-                var2 = var5.bind(var4)(var2);
-                var2 = var2.bind(var4)(var3);
-                if (!var2) {
-                    _fun28900_ip = 120;
+                var0 = null;
+                if (!(var0 != var3)) {
+                    _fun28900_ip = 15;
                     continue _fun28900
                 }
-            case 52:
-                if (!(var0 !== var3)) {
-                    _fun28900_ip = 120;
-                    continue _fun28900
-                }
-            case 56:
+            case 13:
+                return var3;
+            case 15:
                 var2 = _closure1_slot0;
-                var5 = _closure1_slot1;
-                var1 = 2;
-                var1 = var5[var1];
-                var1 = var2.bind(var4)(var1);
-                var3 = var1.bind(var4)(var3);
-                var1 = 3;
-                var1 = var5[var1];
-                var2 = var2.bind(var4)(var1);
-                var1 = 4294967296.0;
-                var2 = var2.bind(var4)(var3, var1);
+                var0 = _closure1_slot1;
                 var1 = 0;
-                if (!(var1 !== var2)) {
-                    _fun28900_ip = 118;
+                var0 = var0[var1];
+                var2 = var2.bind(var5)(var0);
+                var0 = arguments.length;
+                var0 = var0 > var1;
+                if (!var0) {
+                    _fun28900_ip = 54;
                     continue _fun28900
                 }
-            case 115:
-                var1 = var2;
-            case 118:
-                return var1;
-            case 120:
-                return var0;
+            case 47:
+                var1 = 1;
+                var0 = arguments[var1];
+            case 54:
+                if (var0) {
+                    _fun28900_ip = 67;
+                    continue _fun28900
+                }
+            case 57:
+                var1 = 'Cannot call method on ';
+                var0 = var1 + var3;
+            case 67:
+                var1 = var2.prototype;
+                var1 = Object.create(var1, {
+                    constructor: {
+                        value: var2
+                    }
+                });
+                var7 = var1;
+                var6 = var0;
+                var0 = new var7[var2](var6, var5);
+                var0 = var0 instanceof Object ? var0 : var1;
+                throw var0;
         }
     };
     var0 = arg4;
     var0.exports = var1;
     var0 = undefined;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3339, 3356, 3357, 3359]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [518]);

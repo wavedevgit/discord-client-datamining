@@ -27,7 +27,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/polls/useMaybeAddPollsMarketingEasterEggNote.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun73998: for (var _fun73998_ip = 0;;) switch (_fun73998_ip) {
+        _fun74002: for (var _fun74002_ip = 0;;) switch (_fun74002_ip) {
             case 0:
                 var5 = arg0;
                 var2 = _closure1_slot0;
@@ -52,14 +52,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = ':pizza:';
                 var0 = var5;
                 if (!(var3 === var5)) {
-                    _fun73998_ip = 144;
-                    continue _fun73998
+                    _fun74002_ip = 144;
+                    continue _fun74002
                 }
             case 73:
                 var0 = var5;
                 if (!var2) {
-                    _fun73998_ip = 144;
-                    continue _fun73998
+                    _fun74002_ip = 144;
+                    continue _fun74002
                 }
             case 79:
                 var2 = _closure1_slot0;

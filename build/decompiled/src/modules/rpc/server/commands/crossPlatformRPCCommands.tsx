@@ -128,4 +128,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.crossPlatformCommands = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [12742, 12744, 12746, 12747, 12748, 12749, 12750, 12755, 12761, 12762, 12763, 12764, 12765, 12766, 12767, 12774, 12777, 12778, 12779, 12780, 12781, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [12743, 12745, 12747, 12748, 12749, 12750, 12751, 12756, 12762, 12763, 12764, 12765, 12766, 12767, 12768, 12775, 12778, 12779, 12780, 12781, 12782, 2]);

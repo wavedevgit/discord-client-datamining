@@ -82,4 +82,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useSoundmojiRenderingExperiment = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1591, 3074, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1591, 3076, 2]);

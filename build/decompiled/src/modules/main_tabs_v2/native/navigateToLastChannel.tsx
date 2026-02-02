@@ -24,7 +24,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/main_tabs_v2/native/navigateToLastChannel.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function() {
-        _fun61770: for (var _fun61770_ip = 0;;) switch (_fun61770_ip) {
+        _fun61774: for (var _fun61774_ip = 0;;) switch (_fun61774_ip) {
             case 0:
                 var3 = _closure1_slot0;
                 var6 = _closure1_slot2;
@@ -42,16 +42,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = null;
                 var3 = var1 != var4;
                 if (!var3) {
-                    _fun61770_ip = 88;
-                    continue _fun61770
+                    _fun61774_ip = 88;
+                    continue _fun61774
                 }
             case 64:
                 var6 = var4.params;
                 var7 = var1 == var6;
                 var5 = undefined;
                 if (var7) {
-                    _fun61770_ip = 84;
-                    continue _fun61770
+                    _fun61774_ip = 84;
+                    continue _fun61774
                 }
             case 79:
                 var5 = var6.channelId;
@@ -59,8 +59,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var1 != var5;
             case 88:
                 if (!var3) {
-                    _fun61770_ip = 142;
-                    continue _fun61770
+                    _fun61774_ip = 142;
+                    continue _fun61774
                 }
             case 91:
                 var3 = _closure1_slot0;
@@ -73,8 +73,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var1 == var4;
                 var1 = undefined;
                 if (var5) {
-                    _fun61770_ip = 137;
-                    continue _fun61770
+                    _fun61774_ip = 137;
+                    continue _fun61774
                 }
             case 132:
                 var1 = var4.channelId;
@@ -86,4 +86,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3878, 7699, 3902, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3880, 7701, 3904, 2]);

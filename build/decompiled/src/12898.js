@@ -5,259 +5,107 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var2;
     var2 = dependencyMap;
     var _closure1_slot1 = var2;
-    var3 = function arg0, arg1() {
-        _fun99262: for (var _fun99262_ip = 0;;) switch (_fun99262_ip) {
+    var2 = global;
+    var5 = var2.Object;
+    var4 = var5.defineProperty;
+    var3 = {};
+    var2 = true;
+    var3.value = var2;
+    var2 = '__esModule';
+    var2 = var4.bind(var5)(var1, var2, var3);
+    var0 = function arg0, arg1() {
+        _fun99257: for (var _fun99257_ip = 0;;) switch (_fun99257_ip) {
             case 0:
+                var2 = undefined;
+                var8 = undefined;
+                var5 = arg0;
                 var3 = arg1;
-                var0 = var3.getOptions;
-                var5 = var0.bind(var3)();
-                var0 = var3.getDsn;
-                var0 = var0.bind(var3)();
-                if (var0) {
-                    _fun99262_ip = 28;
-                    continue _fun99262
+                var4 = undefined;
+                var1 = undefined;
+                var6 = arguments.length;
+                var7 = 2;
+                if (!(var6 > var7)) {
+                    _fun99257_ip = 34;
+                    continue _fun99257
                 }
             case 26:
-                var0 = {};
-            case 28:
-                var4 = var0.publicKey;
-                var1 = _closure1_slot0;
-                var2 = _closure1_slot1;
-                var0 = 0;
-                var0 = var2[var0];
-                var9 = undefined;
-                var2 = var1.bind(var9)(var0);
-                var1 = var2.dropUndefinedKeys;
-                var0 = {};
-                var6 = var5.environment;
-                if (var6) {
-                    _fun99262_ip = 101;
-                    continue _fun99262
+                var6 = arguments[var7];
+                if (!(var2 === var6)) {
+                    _fun99257_ip = 43;
+                    continue _fun99257
                 }
-            case 75:
-                var8 = _closure1_slot0;
-                var10 = _closure1_slot1;
-                var7 = 1;
-                var7 = var10[var7];
-                var7 = var8.bind(var9)(var7);
-                var6 = var7.DEFAULT_ENVIRONMENT;
-            case 101:
-                var0.environment = var6;
-                var5 = var5.release;
-                var0.release = var5;
-                var0.public_key = var4;
-                var4 = arg0;
-                var0.trace_id = var4;
-                var0 = var1.bind(var2)(var0);
-                var2 = var3.emit;
-                var1 = 'createDsc';
-                var1 = var2.bind(var3)(var1, var0);
+            case 34:
+                var6 = function() { // Environment: var0
+                    var0 = undefined;
+                    return var0;
+                };
+                _fun99257_ip = 47;
+                continue _fun99257;
+            case 43:
+                var6 = arguments[var7];
+            case 47:
+                var1 = var6;
+            case 50: // try_start_0
+                var4 = var5.bind(var2)();
+            case 54: // try_end0
+                var6 = var4;
+                var5 = var3;
+                var4 = var1;
+                var0 = function arg0, arg1, arg2() {
+                    _fun99259: for (var _fun99259_ip = 0;;) switch (_fun99259_ip) {
+                        case 0:
+                            var3 = arg0;
+                            var2 = arg2;
+                            var1 = arg1;
+                            var _closure3_slot0 = var1;
+                            var _closure3_slot1 = var2;
+                            var5 = _closure1_slot0;
+                            var4 = _closure1_slot1;
+                            var1 = 0;
+                            var4 = var4[var1];
+                            var1 = undefined;
+                            var5 = var5.bind(var1)(var4);
+                            var4 = var5.isThenable;
+                            var4 = var4.bind(var5)(var3);
+                            if (var4) {
+                                _fun99259_ip = 63;
+                                continue _fun99259
+                            }
+                        case 57:
+                            var1 = var2.bind(var1)();
+                            return var3;
+                        case 63:
+                            var2 = var3.then;
+                            var1 = function(arg0) { // Environment: var0
+                                var1 = _closure3_slot1;
+                                var0 = undefined;
+                                var0 = var1.bind(var0)();
+                                var0 = arg0;
+                                return var0;
+                            };
+                            var0 = function(arg0) { // Environment: var0
+                                var0 = arg0;
+                                var3 = _closure3_slot0;
+                                var2 = undefined;
+                                var3 = var3.bind(var2)(var0);
+                                var1 = _closure3_slot1;
+                                var1 = var1.bind(var2)();
+                                throw var0;
+                            };
+                            var0 = var2.bind(var3)(var1, var0);
+                            return var0;
+                    }
+                };
+                var0 = var0.bind(var2)(var6, var5, var4);
                 return var0;
+            case 79: // catch_target0
+                CatchBlockStart(arg_register = 0);
+                var3 = var3.bind(var2)(var0);
+                var1 = var1.bind(var2)();
+                throw var0;
         }
     };
-    var _closure1_slot3 = var3;
-    var2 = function arg0() {
-        _fun99263: for (var _fun99263_ip = 0;;) switch (_fun99263_ip) {
-            case 0:
-                var4 = arg0;
-                var1 = _closure1_slot0;
-                var2 = _closure1_slot1;
-                var0 = 2;
-                var0 = var2[var0];
-                var7 = undefined;
-                var1 = var1.bind(var7)(var0);
-                var0 = var1.getClient;
-                var6 = var0.bind(var1)();
-                if (var6) {
-                    _fun99263_ip = 45;
-                    continue _fun99263
-                }
-            case 41:
-                var0 = {};
-                return var0;
-            case 45:
-                var1 = _closure1_slot3;
-                var2 = _closure1_slot0;
-                var0 = _closure1_slot1;
-                var9 = 3;
-                var0 = var0[var9];
-                var2 = var2.bind(var7)(var0);
-                var0 = var2.spanToJSON;
-                var0 = var0.bind(var2)(var4);
-                var0 = var0.trace_id;
-                if (var0) {
-                    _fun99263_ip = 93;
-                    continue _fun99263
-                }
-            case 89:
-                var0 = '';
-            case 93:
-                var2 = var1.bind(var7)(var0, var6);
-                var1 = _closure1_slot0;
-                var0 = _closure1_slot1;
-                var0 = var0[var9];
-                var1 = var1.bind(var7)(var0);
-                var0 = var1.getRootSpan;
-                var5 = var0.bind(var1)(var4);
-                var0 = _closure1_slot2;
-                var0 = var5[var0];
-                if (var0) {
-                    _fun99263_ip = 448;
-                    continue _fun99263
-                }
-            case 141:
-                var1 = var5.spanContext;
-                var1 = var1.bind(var5)();
-                var8 = var1.traceState;
-                var10 = var8;
-                if (!var10) {
-                    _fun99263_ip = 179;
-                    continue _fun99263
-                }
-            case 163:
-                var4 = var8.get;
-                var1 = 'sentry.dsc';
-                var10 = var4.bind(var8)(var1);
-            case 179:
-                var1 = var10;
-                if (!var1) {
-                    _fun99263_ip = 215;
-                    continue _fun99263
-                }
-            case 185:
-                var8 = _closure1_slot0;
-                var11 = _closure1_slot1;
-                var4 = 0;
-                var4 = var11[var4];
-                var8 = var8.bind(var7)(var4);
-                var4 = var8.baggageHeaderToDynamicSamplingContext;
-                var1 = var4.bind(var8)(var10);
-            case 215:
-                if (var1) {
-                    _fun99263_ip = 446;
-                    continue _fun99263
-                }
-            case 221:
-                var8 = _closure1_slot0;
-                var4 = _closure1_slot1;
-                var4 = var4[var9];
-                var8 = var8.bind(var7)(var4);
-                var4 = var8.spanToJSON;
-                var4 = var4.bind(var8)(var5);
-                var10 = var4.data;
-                if (var10) {
-                    _fun99263_ip = 259;
-                    continue _fun99263
-                }
-            case 257:
-                var10 = {};
-            case 259:
-                var11 = _closure1_slot0;
-                var8 = _closure1_slot1;
-                var12 = 4;
-                var8 = var8[var12];
-                var8 = var11.bind(var7)(var8);
-                var8 = var8.SEMANTIC_ATTRIBUTE_SENTRY_SAMPLE_RATE;
-                var13 = var10[var8];
-                var8 = null;
-                if (!(var8 != var13)) {
-                    _fun99263_ip = 323;
-                    continue _fun99263
-                }
-            case 295:
-                var8 = global;
-                var8 = var8.HermesInternal;
-                var11 = var8.concat;
-                var8 = '';
-                var8 = var11.bind(var8)(var13);
-                var2.sample_rate = var8;
-            case 323:
-                var11 = _closure1_slot0;
-                var8 = _closure1_slot1;
-                var8 = var8[var12];
-                var8 = var11.bind(var7)(var8);
-                var8 = var8.SEMANTIC_ATTRIBUTE_SENTRY_SOURCE;
-                var10 = var10[var8];
-                var4 = var4.description;
-                var8 = 'url';
-                var8 = var8 !== var10;
-                if (!var8) {
-                    _fun99263_ip = 369;
-                    continue _fun99263
-                }
-            case 366:
-                var8 = var4;
-            case 369:
-                if (!var8) {
-                    _fun99263_ip = 378;
-                    continue _fun99263
-                }
-            case 372:
-                var2.transaction = var4;
-            case 378:
-                var4 = global;
-                var4 = var4.String;
-                var8 = _closure1_slot0;
-                var3 = _closure1_slot1;
-                var3 = var3[var9];
-                var8 = var8.bind(var7)(var3);
-                var3 = var8.spanIsSampled;
-                var3 = var3.bind(var8)(var5);
-                var3 = var4.bind(var7)(var3);
-                var2.sampled = var3;
-                var4 = var6.emit;
-                var3 = 'createDsc';
-                var3 = var4.bind(var6)(var3, var2, var5);
-                return var2;
-            case 446:
-                return var1;
-            case 448:
-                return var0;
-        }
-    };
-    var _closure1_slot4 = var2;
-    var4 = global;
-    var7 = var4.Object;
-    var6 = var7.defineProperty;
-    var5 = {};
-    var4 = true;
-    var5.value = var4;
-    var4 = '__esModule';
-    var4 = var6.bind(var7)(var1, var4, var5);
-    var4 = '_frozenDsc';
-    var _closure1_slot2 = var4;
-    var4 = function arg0, arg1() {
-        var3 = _closure1_slot0;
-        var2 = _closure1_slot1;
-        var0 = 0;
-        var2 = var2[var0];
-        var0 = undefined;
-        var5 = var3.bind(var0)(var2);
-        var4 = var5.addNonEnumerableProperty;
-        var3 = _closure1_slot2;
-        var2 = arg0;
-        var1 = arg1;
-        var1 = var4.bind(var5)(var2, var3, var1);
-        return var0;
-    };
-    var1.freezeDscOnSpan = var4;
-    var1.getDynamicSamplingContextFromClient = var3;
-    var1.getDynamicSamplingContextFromSpan = var2;
-    var0 = function arg0() {
-        var2 = _closure1_slot4;
-        var3 = undefined;
-        var1 = arg0;
-        var2 = var2.bind(var3)(var1);
-        var1 = _closure1_slot0;
-        var4 = _closure1_slot1;
-        var0 = 0;
-        var0 = var4[var0];
-        var1 = var1.bind(var3)(var0);
-        var0 = var1.dynamicSamplingContextToSentryBaggageHeader;
-        var0 = var0.bind(var1)(var2);
-        return var0;
-    };
-    var1.spanToBaggageHeader = var0;
+    var1.handleCallbackErrors = var0;
     var0 = undefined;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [12824, 12899, 12889, 12878, 12879]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [12825]);

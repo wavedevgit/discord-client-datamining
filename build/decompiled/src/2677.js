@@ -1,271 +1,481 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun22155: for (var _fun22155_ip = 0;;) switch (_fun22155_ip) {
-        case 0:
-            var4 = require;
-            var1 = exports;
-            var5 = dependencyMap;
-            var _closure1_slot0 = var4;
-            var _closure1_slot1 = var5;
-            var0 = function arg0() {
-                var1 = _closure1_slot3;
+    var1 = exports;
+    var0 = function arg0, arg1() {
+        _fun22153: for (var _fun22153_ip = 0;;) switch (_fun22153_ip) {
+            case 0:
                 var0 = arg0;
-                var1 = var1[var0];
-                var0 = "'у ";
-                var1 = var0 + var1;
-                var0 = " о' p";
-                var0 = var1 + var0;
+                var6 = arg1;
+                var1 = var0.one;
+                var3 = undefined;
+                if (!(var3 !== var1)) {
+                    _fun22153_ip = 28;
+                    continue _fun22153
+                }
+            case 18:
+                var1 = 1;
+                if (!(var1 !== var6)) {
+                    _fun22153_ip = 195;
+                    continue _fun22153
+                }
+            case 28:
+                var1 = 10;
+                var5 = var6 % var1;
+                var2 = 100;
+                var2 = var6 % var2;
+                var4 = 1;
+                if (!(var4 === var5)) {
+                    _fun22153_ip = 56;
+                    continue _fun22153
+                }
+            case 49:
+                var4 = 11;
+                if (!(var4 === var2)) {
+                    _fun22153_ip = 157;
+                    continue _fun22153
+                }
+            case 56:
+                var4 = 2;
+                if (!(var5 >= var4)) {
+                    _fun22153_ip = 81;
+                    continue _fun22153
+                }
+            case 63:
+                var4 = 4;
+                if (!(var5 <= var4)) {
+                    _fun22153_ip = 81;
+                    continue _fun22153
+                }
+            case 70:
+                if (!(!(var2 < var1))) {
+                    _fun22153_ip = 119;
+                    continue _fun22153
+                }
+            case 74:
+                var1 = 20;
+                if (!(!(var2 > var1))) {
+                    _fun22153_ip = 119;
+                    continue _fun22153
+                }
+            case 81:
+                var5 = var0.pluralGenitive;
+                var4 = var5.replace;
+                var1 = global;
+                var1 = var1.String;
+                var2 = var1.bind(var3)(var6);
+                var1 = '{{count}}';
+                var1 = var4.bind(var5)(var1, var2);
+                _fun22153_ip = 155;
+                continue _fun22153;
+            case 119:
+                var7 = var0.singularGenitive;
+                var5 = var7.replace;
+                var2 = global;
+                var2 = var2.String;
+                var4 = var2.bind(var3)(var6);
+                var2 = '{{count}}';
+                var1 = var5.bind(var7)(var2, var4);
+            case 155:
+                _fun22153_ip = 193;
+                continue _fun22153;
+            case 157:
+                var5 = var0.singularNominative;
+                var4 = var5.replace;
+                var2 = global;
+                var2 = var2.String;
+                var3 = var2.bind(var3)(var6);
+                var2 = '{{count}}';
+                var1 = var4.bind(var5)(var2, var3);
+            case 193:
+                return var1;
+            case 195:
+                var0 = var0.one;
                 return var0;
-            };
-            var _closure1_slot5 = var0;
-            var0 = global;
-            var7 = var0.Object;
-            var6 = var7.defineProperty;
-            var3 = {};
-            var0 = true;
-            var3.value = var0;
-            var0 = '__esModule';
-            var0 = var6.bind(var7)(var1, var0, var3);
-            var0 = undefined;
-            var1.default = var0;
-            var3 = 0;
-            var3 = var5[var3];
-            var5 = var4.bind(var0)(var3);
-            if (!var5) {
-                _fun22155_ip = 94;
-                continue _fun22155
+        }
+    };
+    var _closure1_slot1 = var0;
+    var5 = function arg0() {
+        var1 = arg0;
+        var _closure2_slot0 = var1;
+        var0 = function(arg0, arg1) { // Environment: var0
+            _fun22155: for (var _fun22155_ip = 0;;) switch (_fun22155_ip) {
+                case 0:
+                    var6 = arg0;
+                    var1 = arg1;
+                    if (!var1) {
+                        _fun22155_ip = 18;
+                        continue _fun22155
+                    }
+                case 9:
+                    var0 = var1.addSuffix;
+                    if (var0) {
+                        _fun22155_ip = 51;
+                        continue _fun22155
+                    }
+                case 18:
+                    var3 = _closure1_slot1;
+                    var0 = _closure2_slot0;
+                    var2 = var0.regular;
+                    var0 = undefined;
+                    var0 = var3.bind(var0)(var2, var6);
+                    _fun22155_ip = 214;
+                    continue _fun22155;
+                case 51:
+                    var2 = var1.comparison;
+                    if (!var2) {
+                        _fun22155_ip = 72;
+                        continue _fun22155
+                    }
+                case 60:
+                    var2 = var1.comparison;
+                    var1 = 0;
+                    if (!(!(var2 > var1))) {
+                        _fun22155_ip = 141;
+                        continue _fun22155
+                    }
+                case 72:
+                    var1 = _closure2_slot0;
+                    var1 = var1.past;
+                    var4 = _closure1_slot1;
+                    var2 = _closure2_slot0;
+                    if (var1) {
+                        _fun22155_ip = 125;
+                        continue _fun22155
+                    }
+                case 99:
+                    var3 = var2.regular;
+                    var1 = undefined;
+                    var3 = var4.bind(var1)(var3, var6);
+                    var1 = ' тому';
+                    var1 = var3 + var1;
+                    _fun22155_ip = 139;
+                    continue _fun22155;
+                case 125:
+                    var3 = var2.past;
+                    var2 = undefined;
+                    var1 = var4.bind(var2)(var3, var6);
+                case 139:
+                    _fun22155_ip = 211;
+                    continue _fun22155;
+                case 141:
+                    var2 = _closure2_slot0;
+                    var2 = var2.future;
+                    var5 = _closure1_slot1;
+                    var3 = _closure2_slot0;
+                    if (var2) {
+                        _fun22155_ip = 194;
+                        continue _fun22155
+                    }
+                case 168:
+                    var4 = var3.regular;
+                    var2 = undefined;
+                    var4 = var5.bind(var2)(var4, var6);
+                    var2 = 'за ';
+                    var2 = var2 + var4;
+                    _fun22155_ip = 208;
+                    continue _fun22155;
+                case 194:
+                    var4 = var3.future;
+                    var3 = undefined;
+                    var2 = var5.bind(var3)(var4, var6);
+                case 208:
+                    var1 = var2;
+                case 211:
+                    var0 = var1;
+                case 214:
+                    return var0;
             }
-        case 82:
-            var4 = var5.__esModule;
-            var3 = var5;
-            if (var4) {
-                _fun22155_ip = 103;
-                continue _fun22155
-            }
-        case 94:
-            var4 = {};
-            var4.default = var5;
-            var3 = var4;
-        case 103:
-            var _closure1_slot2 = var3;
-            var3 = ['неділю', 'понеділок', 'вівторок', 'середу', 'четвер', 'п’ятницю', 'суботу'];
-            var _closure1_slot3 = var3;
-            var3 = {
-                'lastWeek': null,
-                'yesterday': "'вчора о' p",
-                'today': "'сьогодні о' p",
-                'tomorrow': "'завтра о' p",
-                'nextWeek': null,
-                'other': 'P'
-            };
-            var4 = function arg0, arg1, arg2() {
-                _fun22157: for (var _fun22157_ip = 0;;) switch (_fun22157_ip) {
-                    case 0:
-                        var4 = _closure1_slot0;
-                        var2 = _closure1_slot1;
-                        var0 = 1;
-                        var2 = var2[var0];
-                        var3 = undefined;
-                        var2 = var4.bind(var3)(var2);
-                        var4 = var2.toDate;
-                        var2 = arg0;
-                        var7 = var4.bind(var3)(var2);
-                        var2 = var7.getUTCDay;
-                        var2 = var2.bind(var7)();
-                        var4 = _closure1_slot2;
-                        var6 = var4.default;
-                        var5 = arg1;
-                        var4 = arg2;
-                        var4 = var6.bind(var3)(var7, var5, var4);
-                        if (var4) {
-                            _fun22157_ip = 173;
-                            continue _fun22157
-                        }
-                    case 74:
-                        var4 = _closure1_slot3;
-                        var5 = var4[var2];
-                        var4 = 0;
-                        if (!(var4 !== var2)) {
-                            _fun22157_ip = 151;
-                            continue _fun22157
-                        }
-                    case 88:
-                        var4 = 3;
-                        if (!(var4 !== var2)) {
-                            _fun22157_ip = 151;
-                            continue _fun22157
-                        }
-                    case 95:
-                        var4 = 5;
-                        if (!(var4 !== var2)) {
-                            _fun22157_ip = 151;
-                            continue _fun22157
-                        }
-                    case 102:
-                        var4 = 6;
-                        if (!(var4 !== var2)) {
-                            _fun22157_ip = 151;
-                            continue _fun22157
-                        }
-                    case 109:
-                        if (!(var0 !== var2)) {
-                            _fun22157_ip = 129;
-                            continue _fun22157
-                        }
-                    case 113:
-                        var0 = 2;
-                        if (!(var0 !== var2)) {
-                            _fun22157_ip = 129;
-                            continue _fun22157
-                        }
-                    case 120:
-                        var4 = 4;
-                        var0 = undefined;
-                        if (!(var4 === var2)) {
-                            _fun22157_ip = 171;
-                            continue _fun22157
-                        }
-                    case 129:
-                        var4 = "'у минулий ";
-                        var6 = var4 + var5;
-                        var4 = " о' p";
-                        var0 = var6 + var4;
-                        _fun22157_ip = 171;
-                        continue _fun22157;
-                    case 151:
-                        var4 = "'у минулу ";
-                        var5 = var4 + var5;
-                        var4 = " о' p";
-                        var0 = var5 + var4;
-                    case 171:
-                        _fun22157_ip = 182;
-                        continue _fun22157;
-                    case 173:
-                        var1 = _closure1_slot5;
-                        var0 = var1.bind(var3)(var2);
-                    case 182:
-                        return var0;
+        };
+        return var0;
+    };
+    var0 = global;
+    var6 = var0.Object;
+    var4 = var6.defineProperty;
+    var3 = {};
+    var0 = true;
+    var3.value = var0;
+    var0 = '__esModule';
+    var0 = var4.bind(var6)(var1, var0, var3);
+    var0 = undefined;
+    var1.default = var0;
+    var3 = {};
+    var4 = {};
+    var6 = {
+        'one': 'менше секунди',
+        'singularNominative': 'менше {{count}} секунди',
+        'singularGenitive': 'менше {{count}} секунд',
+        'pluralGenitive': 'менше {{count}} секунд'
+    };
+    var4.regular = var6;
+    var6 = {
+        'one': 'менше, ніж за секунду',
+        'singularNominative': 'менше, ніж за {{count}} секунду',
+        'singularGenitive': 'менше, ніж за {{count}} секунди',
+        'pluralGenitive': 'менше, ніж за {{count}} секунд'
+    };
+    var4.future = var6;
+    var4 = var5.bind(var0)(var4);
+    var3.lessThanXSeconds = var4;
+    var4 = {};
+    var6 = {
+        'singularNominative': '{{count}} секунда',
+        'singularGenitive': '{{count}} секунди',
+        'pluralGenitive': '{{count}} секунд'
+    };
+    var4.regular = var6;
+    var6 = {
+        'singularNominative': '{{count}} секунду тому',
+        'singularGenitive': '{{count}} секунди тому',
+        'pluralGenitive': '{{count}} секунд тому'
+    };
+    var4.past = var6;
+    var6 = {
+        'singularNominative': 'за {{count}} секунду',
+        'singularGenitive': 'за {{count}} секунди',
+        'pluralGenitive': 'за {{count}} секунд'
+    };
+    var4.future = var6;
+    var4 = var5.bind(var0)(var4);
+    var3.xSeconds = var4;
+    var4 = function arg0, arg1() {
+        _fun22156: for (var _fun22156_ip = 0;;) switch (_fun22156_ip) {
+            case 0:
+                var2 = arg1;
+                var3 = 'півхвилини';
+                var0 = var3;
+                if (!var2) {
+                    _fun22156_ip = 72;
+                    continue _fun22156
                 }
-            };
-            var3.lastWeek = var4;
-            var4 = function arg0, arg1, arg2() {
-                _fun22158: for (var _fun22158_ip = 0;;) switch (_fun22158_ip) {
-                    case 0:
-                        var4 = _closure1_slot0;
-                        var2 = _closure1_slot1;
-                        var0 = 1;
-                        var2 = var2[var0];
-                        var3 = undefined;
-                        var2 = var4.bind(var3)(var2);
-                        var4 = var2.toDate;
-                        var2 = arg0;
-                        var7 = var4.bind(var3)(var2);
-                        var2 = var7.getUTCDay;
-                        var2 = var2.bind(var7)();
-                        var4 = _closure1_slot2;
-                        var6 = var4.default;
-                        var5 = arg1;
-                        var4 = arg2;
-                        var4 = var6.bind(var3)(var7, var5, var4);
-                        if (var4) {
-                            _fun22158_ip = 173;
-                            continue _fun22158
-                        }
-                    case 74:
-                        var4 = _closure1_slot3;
-                        var5 = var4[var2];
-                        var4 = 0;
-                        if (!(var4 !== var2)) {
-                            _fun22158_ip = 151;
-                            continue _fun22158
-                        }
-                    case 88:
-                        var4 = 3;
-                        if (!(var4 !== var2)) {
-                            _fun22158_ip = 151;
-                            continue _fun22158
-                        }
-                    case 95:
-                        var4 = 5;
-                        if (!(var4 !== var2)) {
-                            _fun22158_ip = 151;
-                            continue _fun22158
-                        }
-                    case 102:
-                        var4 = 6;
-                        if (!(var4 !== var2)) {
-                            _fun22158_ip = 151;
-                            continue _fun22158
-                        }
-                    case 109:
-                        if (!(var0 !== var2)) {
-                            _fun22158_ip = 129;
-                            continue _fun22158
-                        }
-                    case 113:
-                        var0 = 2;
-                        if (!(var0 !== var2)) {
-                            _fun22158_ip = 129;
-                            continue _fun22158
-                        }
-                    case 120:
-                        var4 = 4;
-                        var0 = undefined;
-                        if (!(var4 === var2)) {
-                            _fun22158_ip = 171;
-                            continue _fun22158
-                        }
-                    case 129:
-                        var4 = "'у наступний ";
-                        var6 = var4 + var5;
-                        var4 = " о' p";
-                        var0 = var6 + var4;
-                        _fun22158_ip = 171;
-                        continue _fun22158;
-                    case 151:
-                        var4 = "'у наступну ";
-                        var5 = var4 + var5;
-                        var4 = " о' p";
-                        var0 = var5 + var4;
-                    case 171:
-                        _fun22158_ip = 182;
-                        continue _fun22158;
-                    case 173:
-                        var1 = _closure1_slot5;
-                        var0 = var1.bind(var3)(var2);
-                    case 182:
-                        return var0;
+            case 15:
+                var1 = var2.addSuffix;
+                var0 = var3;
+                if (!var1) {
+                    _fun22156_ip = 72;
+                    continue _fun22156
                 }
-            };
-            var3.nextWeek = var4;
-            var _closure1_slot4 = var3;
-            var2 = function arg0, arg1, arg2, arg3() {
-                _fun22159: for (var _fun22159_ip = 0;;) switch (_fun22159_ip) {
-                    case 0:
-                        var1 = _closure1_slot4;
-                        var0 = arg0;
-                        var5 = var1[var0];
-                        var2 = 'function';
-                        var1 = typeof var5;
-                        var0 = var5;
-                        if (!(var2 === var1)) {
-                            _fun22159_ip = 46;
-                            continue _fun22159
-                        }
-                    case 28:
-                        var4 = undefined;
-                        var3 = arg1;
-                        var2 = arg2;
-                        var1 = arg3;
-                        var0 = var5.bind(var4)(var3, var2, var1);
-                    case 46:
-                        return var0;
+            case 27:
+                var4 = var2.comparison;
+                var3 = 'півхвилини тому';
+                var1 = var3;
+                if (!var4) {
+                    _fun22156_ip = 69;
+                    continue _fun22156
                 }
-            };
-            var1.default = var2;
-            var2 = var1.default;
-            var1 = arg4;
-            var1.exports = var2;
-            return var0;
-    }
-})(undefined, undefined, undefined, undefined, undefined, undefined, [2534, 2678]);
+            case 45:
+                var4 = var2.comparison;
+                var2 = 0;
+                var2 = var4 > var2;
+                var1 = var3;
+                if (!var2) {
+                    _fun22156_ip = 69;
+                    continue _fun22156
+                }
+            case 63:
+                var1 = 'за півхвилини';
+            case 69:
+                var0 = var1;
+            case 72:
+                return var0;
+        }
+    };
+    var3.halfAMinute = var4;
+    var4 = {};
+    var6 = {
+        'one': 'менше хвилини',
+        'singularNominative': 'менше {{count}} хвилини',
+        'singularGenitive': 'менше {{count}} хвилин',
+        'pluralGenitive': 'менше {{count}} хвилин'
+    };
+    var4.regular = var6;
+    var6 = {
+        'one': 'менше, ніж за хвилину',
+        'singularNominative': 'менше, ніж за {{count}} хвилину',
+        'singularGenitive': 'менше, ніж за {{count}} хвилини',
+        'pluralGenitive': 'менше, ніж за {{count}} хвилин'
+    };
+    var4.future = var6;
+    var4 = var5.bind(var0)(var4);
+    var3.lessThanXMinutes = var4;
+    var4 = {};
+    var6 = {
+        'singularNominative': '{{count}} хвилина',
+        'singularGenitive': '{{count}} хвилини',
+        'pluralGenitive': '{{count}} хвилин'
+    };
+    var4.regular = var6;
+    var6 = {
+        'singularNominative': '{{count}} хвилину тому',
+        'singularGenitive': '{{count}} хвилини тому',
+        'pluralGenitive': '{{count}} хвилин тому'
+    };
+    var4.past = var6;
+    var6 = {
+        'singularNominative': 'за {{count}} хвилину',
+        'singularGenitive': 'за {{count}} хвилини',
+        'pluralGenitive': 'за {{count}} хвилин'
+    };
+    var4.future = var6;
+    var4 = var5.bind(var0)(var4);
+    var3.xMinutes = var4;
+    var4 = {};
+    var6 = {
+        'singularNominative': 'близько {{count}} години',
+        'singularGenitive': 'близько {{count}} годин',
+        'pluralGenitive': 'близько {{count}} годин'
+    };
+    var4.regular = var6;
+    var6 = {
+        'singularNominative': 'приблизно за {{count}} годину',
+        'singularGenitive': 'приблизно за {{count}} години',
+        'pluralGenitive': 'приблизно за {{count}} годин'
+    };
+    var4.future = var6;
+    var4 = var5.bind(var0)(var4);
+    var3.aboutXHours = var4;
+    var4 = {};
+    var6 = {
+        'singularNominative': '{{count}} годину',
+        'singularGenitive': '{{count}} години',
+        'pluralGenitive': '{{count}} годин'
+    };
+    var4.regular = var6;
+    var4 = var5.bind(var0)(var4);
+    var3.xHours = var4;
+    var4 = {};
+    var6 = {
+        'singularNominative': '{{count}} день',
+        'singularGenitive': '{{count}} днi',
+        'pluralGenitive': '{{count}} днів'
+    };
+    var4.regular = var6;
+    var4 = var5.bind(var0)(var4);
+    var3.xDays = var4;
+    var4 = {};
+    var6 = {
+        'singularNominative': 'близько {{count}} тижня',
+        'singularGenitive': 'близько {{count}} тижнів',
+        'pluralGenitive': 'близько {{count}} тижнів'
+    };
+    var4.regular = var6;
+    var6 = {
+        'singularNominative': 'приблизно за {{count}} тиждень',
+        'singularGenitive': 'приблизно за {{count}} тижні',
+        'pluralGenitive': 'приблизно за {{count}} тижнів'
+    };
+    var4.future = var6;
+    var4 = var5.bind(var0)(var4);
+    var3.aboutXWeeks = var4;
+    var4 = {};
+    var6 = {
+        'singularNominative': '{{count}} тиждень',
+        'singularGenitive': '{{count}} тижні',
+        'pluralGenitive': '{{count}} тижнів'
+    };
+    var4.regular = var6;
+    var4 = var5.bind(var0)(var4);
+    var3.xWeeks = var4;
+    var4 = {};
+    var6 = {
+        'singularNominative': 'близько {{count}} місяця',
+        'singularGenitive': 'близько {{count}} місяців',
+        'pluralGenitive': 'близько {{count}} місяців'
+    };
+    var4.regular = var6;
+    var6 = {
+        'singularNominative': 'приблизно за {{count}} місяць',
+        'singularGenitive': 'приблизно за {{count}} місяці',
+        'pluralGenitive': 'приблизно за {{count}} місяців'
+    };
+    var4.future = var6;
+    var4 = var5.bind(var0)(var4);
+    var3.aboutXMonths = var4;
+    var4 = {};
+    var6 = {
+        'singularNominative': '{{count}} місяць',
+        'singularGenitive': '{{count}} місяці',
+        'pluralGenitive': '{{count}} місяців'
+    };
+    var4.regular = var6;
+    var4 = var5.bind(var0)(var4);
+    var3.xMonths = var4;
+    var4 = {};
+    var6 = {
+        'singularNominative': 'близько {{count}} року',
+        'singularGenitive': 'близько {{count}} років',
+        'pluralGenitive': 'близько {{count}} років'
+    };
+    var4.regular = var6;
+    var6 = {
+        'singularNominative': 'приблизно за {{count}} рік',
+        'singularGenitive': 'приблизно за {{count}} роки',
+        'pluralGenitive': 'приблизно за {{count}} років'
+    };
+    var4.future = var6;
+    var4 = var5.bind(var0)(var4);
+    var3.aboutXYears = var4;
+    var4 = {};
+    var6 = {
+        'singularNominative': '{{count}} рік',
+        'singularGenitive': '{{count}} роки',
+        'pluralGenitive': '{{count}} років'
+    };
+    var4.regular = var6;
+    var4 = var5.bind(var0)(var4);
+    var3.xYears = var4;
+    var4 = {};
+    var6 = {
+        'singularNominative': 'більше {{count}} року',
+        'singularGenitive': 'більше {{count}} років',
+        'pluralGenitive': 'більше {{count}} років'
+    };
+    var4.regular = var6;
+    var6 = {
+        'singularNominative': 'більше, ніж за {{count}} рік',
+        'singularGenitive': 'більше, ніж за {{count}} роки',
+        'pluralGenitive': 'більше, ніж за {{count}} років'
+    };
+    var4.future = var6;
+    var4 = var5.bind(var0)(var4);
+    var3.overXYears = var4;
+    var4 = {};
+    var6 = {
+        'singularNominative': 'майже {{count}} рік',
+        'singularGenitive': 'майже {{count}} роки',
+        'pluralGenitive': 'майже {{count}} років'
+    };
+    var4.regular = var6;
+    var6 = {
+        'singularNominative': 'майже за {{count}} рік',
+        'singularGenitive': 'майже за {{count}} роки',
+        'pluralGenitive': 'майже за {{count}} років'
+    };
+    var4.future = var6;
+    var4 = var5.bind(var0)(var4);
+    var3.almostXYears = var4;
+    var _closure1_slot0 = var3;
+    var2 = function arg0, arg1, arg2() {
+        _fun22157: for (var _fun22157_ip = 0;;) switch (_fun22157_ip) {
+            case 0:
+                var3 = arg2;
+                if (var3) {
+                    _fun22157_ip = 8;
+                    continue _fun22157
+                }
+            case 6:
+                var3 = {};
+            case 8:
+                var2 = _closure1_slot0;
+                var0 = arg0;
+                var1 = var2[var0];
+                var0 = arg1;
+                var0 = var1.bind(var2)(var0, var3);
+                return var0;
+        }
+    };
+    var1.default = var2;
+    var2 = var1.default;
+    var1 = arg4;
+    var1.exports = var2;
+    return var0;
+})(undefined, undefined, undefined, undefined, undefined, undefined, []);

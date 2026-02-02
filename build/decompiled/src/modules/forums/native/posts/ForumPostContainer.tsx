@@ -200,4 +200,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.ForumPostDisabledContainer = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 5218, 3679, 9714, 4863, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 5220, 3681, 9716, 4865, 2]);

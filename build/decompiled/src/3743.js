@@ -13,598 +13,473 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = var3.bind(var4)(var2, var0, var1);
     var5 = {};
     var0 = {
-        'name': 'ZoomIn',
+        'name': 'FlipInYRight',
         'style': null,
         'duration': 0.3
     };
     var1 = {};
     var3 = {};
-    var6 = {};
-    var7 = 0;
-    var6.scale = var7;
     var4 = new Array(1);
+    var6 = {
+        'perspective': '500px',
+        'rotateY': '90deg',
+        'translateX': '100%'
+    };
     var4[0] = var6;
     var3.transform = var4;
     var1[0] = var3;
     var3 = {};
-    var10 = {};
-    var6 = 1;
-    var10.scale = var6;
     var4 = new Array(1);
-    var4[0] = var10;
+    var6 = {
+        'perspective': '500px',
+        'rotateY': '0deg',
+        'translateX': '0%'
+    };
+    var4[0] = var6;
     var3.transform = var4;
     var1[100] = var3;
     var0.style = var1;
-    var5.ZoomIn = var0;
+    var5.FlipInYRight = var0;
     var0 = {
-        'name': 'ZoomInRotate',
+        'name': 'FlipInYLeft',
         'style': null,
         'duration': 0.3
     };
     var1 = {};
     var3 = {};
     var4 = new Array(1);
-    var10 = {
-        'scale': 0,
-        'rotate': '0.3rad'
+    var6 = {
+        'perspective': '500px',
+        'rotateY': '-90deg',
+        'translateX': '-100%'
     };
-    var4[0] = var10;
+    var4[0] = var6;
     var3.transform = var4;
     var1[0] = var3;
     var3 = {};
     var4 = new Array(1);
-    var10 = {
-        'scale': 1,
-        'rotate': '0deg'
+    var6 = {
+        'perspective': '500px',
+        'rotateY': '0deg',
+        'translateX': '0%'
     };
-    var4[0] = var10;
+    var4[0] = var6;
     var3.transform = var4;
     var1[100] = var3;
     var0.style = var1;
-    var5.ZoomInRotate = var0;
+    var5.FlipInYLeft = var0;
     var0 = {
-        'name': 'ZoomInRight',
+        'name': 'FlipInXUp',
         'style': null,
         'duration': 0.3
     };
     var1 = {};
     var3 = {};
     var4 = new Array(1);
-    var10 = {
-        'translateX': '100vw',
-        'scale': 0
+    var6 = {
+        'perspective': '500px',
+        'rotateX': '90deg',
+        'translateY': '-100%'
     };
-    var4[0] = var10;
+    var4[0] = var6;
     var3.transform = var4;
     var1[0] = var3;
     var3 = {};
     var4 = new Array(1);
-    var10 = {
-        'translateX': '0%',
-        'scale': 1
+    var6 = {
+        'perspective': '500px',
+        'rotateX': '0deg',
+        'translateY': '0%'
     };
-    var4[0] = var10;
+    var4[0] = var6;
     var3.transform = var4;
     var1[100] = var3;
     var0.style = var1;
-    var5.ZoomInRight = var0;
+    var5.FlipInXUp = var0;
     var0 = {
-        'name': 'ZoomInLeft',
+        'name': 'FlipInXDown',
         'style': null,
         'duration': 0.3
     };
     var1 = {};
     var3 = {};
     var4 = new Array(1);
-    var10 = {
-        'translateX': '-100vw',
-        'scale': 0
+    var6 = {
+        'perspective': '500px',
+        'rotateX': '-90deg',
+        'translateY': '100%'
     };
-    var4[0] = var10;
+    var4[0] = var6;
     var3.transform = var4;
     var1[0] = var3;
     var3 = {};
     var4 = new Array(1);
-    var10 = {
-        'translateX': '0%',
-        'scale': 1
+    var6 = {
+        'perspective': '500px',
+        'rotateX': '0deg',
+        'translateY': '0%'
     };
-    var4[0] = var10;
+    var4[0] = var6;
     var3.transform = var4;
     var1[100] = var3;
     var0.style = var1;
-    var5.ZoomInLeft = var0;
+    var5.FlipInXDown = var0;
     var0 = {
-        'name': 'ZoomInUp',
+        'name': 'FlipInEasyX',
         'style': null,
         'duration': 0.3
     };
     var1 = {};
     var3 = {};
     var4 = new Array(1);
-    var10 = {
-        'translateY': '-100vh',
-        'scale': 0
+    var6 = {
+        'perspective': '500px',
+        'rotateX': '90deg'
     };
-    var4[0] = var10;
+    var4[0] = var6;
     var3.transform = var4;
     var1[0] = var3;
     var3 = {};
     var4 = new Array(1);
-    var10 = {
-        'translateY': '0%',
-        'scale': 1
+    var6 = {
+        'perspective': '500px',
+        'rotateX': '0deg'
     };
-    var4[0] = var10;
+    var4[0] = var6;
     var3.transform = var4;
     var1[100] = var3;
     var0.style = var1;
-    var5.ZoomInUp = var0;
+    var5.FlipInEasyX = var0;
     var0 = {
-        'name': 'ZoomInDown',
+        'name': 'FlipInEasyY',
         'style': null,
         'duration': 0.3
     };
     var1 = {};
     var3 = {};
     var4 = new Array(1);
-    var10 = {
-        'translateY': '100vh',
-        'scale': 0
+    var6 = {
+        'perspective': '500px',
+        'rotateY': '90deg'
     };
-    var4[0] = var10;
+    var4[0] = var6;
     var3.transform = var4;
     var1[0] = var3;
     var3 = {};
     var4 = new Array(1);
-    var10 = {
-        'translateY': '0%',
-        'scale': 1
+    var6 = {
+        'perspective': '500px',
+        'rotateY': '0deg'
     };
-    var4[0] = var10;
+    var4[0] = var6;
     var3.transform = var4;
     var1[100] = var3;
     var0.style = var1;
-    var5.ZoomInDown = var0;
-    var0 = {
-        'name': 'ZoomInEasyUp',
-        'style': null,
-        'duration': 0.3
-    };
-    var1 = {};
-    var3 = {};
-    var4 = new Array(1);
-    var10 = {
-        'translateY': '-100%',
-        'scale': 0
-    };
-    var4[0] = var10;
-    var3.transform = var4;
-    var1[0] = var3;
-    var3 = {};
-    var4 = new Array(1);
-    var10 = {
-        'translateY': '0%',
-        'scale': 1
-    };
-    var4[0] = var10;
-    var3.transform = var4;
-    var1[100] = var3;
-    var0.style = var1;
-    var5.ZoomInEasyUp = var0;
-    var0 = {
-        'name': 'ZoomInEasyDown',
-        'style': null,
-        'duration': 0.3
-    };
-    var1 = {};
-    var3 = {};
-    var4 = new Array(1);
-    var10 = {
-        'translateY': '100%',
-        'scale': 0
-    };
-    var4[0] = var10;
-    var3.transform = var4;
-    var1[0] = var3;
-    var3 = {};
-    var4 = new Array(1);
-    var10 = {
-        'translateY': '0%',
-        'scale': 1
-    };
-    var4[0] = var10;
-    var3.transform = var4;
-    var1[100] = var3;
-    var0.style = var1;
-    var5.ZoomInEasyDown = var0;
+    var5.FlipInEasyY = var0;
     var4 = {};
     var0 = {
-        'name': 'ZoomOut',
+        'name': 'FlipOutYRight',
         'style': null,
         'duration': 0.3
     };
     var1 = {};
     var3 = {};
-    var10 = {};
-    var10.scale = var6;
     var6 = new Array(1);
-    var6[0] = var10;
+    var7 = {
+        'perspective': '500px',
+        'rotateY': '0deg',
+        'translateX': '0%'
+    };
+    var6[0] = var7;
     var3.transform = var6;
     var1[0] = var3;
     var3 = {};
-    var10 = {};
-    var10.scale = var7;
     var6 = new Array(1);
-    var6[0] = var10;
+    var7 = {
+        'perspective': '500px',
+        'rotateY': '90deg',
+        'translateX': '100%'
+    };
+    var6[0] = var7;
     var3.transform = var6;
     var1[100] = var3;
     var0.style = var1;
-    var4.ZoomOut = var0;
+    var4.FlipOutYRight = var0;
     var0 = {
-        'name': 'ZoomOutRotate',
+        'name': 'FlipOutYLeft',
         'style': null,
         'duration': 0.3
     };
     var1 = {};
     var3 = {};
     var6 = new Array(1);
-    var10 = {
-        'scale': 1,
-        'rotate': '0rad'
+    var7 = {
+        'perspective': '500px',
+        'rotateY': '0deg',
+        'translateX': '0%'
     };
-    var6[0] = var10;
+    var6[0] = var7;
     var3.transform = var6;
     var1[0] = var3;
     var3 = {};
     var6 = new Array(1);
-    var10 = {
-        'scale': 0,
-        'rotate': '0.3rad'
+    var7 = {
+        'perspective': '500px',
+        'rotateY': '-90deg',
+        'translateX': '-100%'
     };
-    var6[0] = var10;
+    var6[0] = var7;
     var3.transform = var6;
     var1[100] = var3;
     var0.style = var1;
-    var4.ZoomOutRotate = var0;
+    var4.FlipOutYLeft = var0;
     var0 = {
-        'name': 'ZoomOutRight',
+        'name': 'FlipOutXUp',
         'style': null,
         'duration': 0.3
     };
     var1 = {};
     var3 = {};
     var6 = new Array(1);
-    var10 = {
-        'translateX': '0vw',
-        'scale': 1
+    var7 = {
+        'perspective': '500px',
+        'rotateX': '0deg',
+        'translateY': '0%'
     };
-    var6[0] = var10;
+    var6[0] = var7;
     var3.transform = var6;
     var1[0] = var3;
     var3 = {};
     var6 = new Array(1);
-    var10 = {
-        'translateX': '100vw',
-        'scale': 0
+    var7 = {
+        'perspective': '500px',
+        'rotateX': '90deg',
+        'translateY': '-100%'
     };
-    var6[0] = var10;
+    var6[0] = var7;
     var3.transform = var6;
     var1[100] = var3;
     var0.style = var1;
-    var4.ZoomOutRight = var0;
+    var4.FlipOutXUp = var0;
     var0 = {
-        'name': 'ZoomOutLeft',
+        'name': 'FlipOutXDown',
         'style': null,
         'duration': 0.3
     };
     var1 = {};
     var3 = {};
     var6 = new Array(1);
-    var10 = {
-        'translateX': '0vw',
-        'scale': 1
+    var7 = {
+        'perspective': '500px',
+        'rotateX': '0deg',
+        'translateY': '0%'
     };
-    var6[0] = var10;
+    var6[0] = var7;
     var3.transform = var6;
     var1[0] = var3;
     var3 = {};
     var6 = new Array(1);
-    var10 = {
-        'translateX': '-100vw',
-        'scale': 0
+    var7 = {
+        'perspective': '500px',
+        'rotateX': '-90deg',
+        'translateY': '100%'
     };
-    var6[0] = var10;
+    var6[0] = var7;
     var3.transform = var6;
     var1[100] = var3;
     var0.style = var1;
-    var4.ZoomOutLeft = var0;
+    var4.FlipOutXDown = var0;
     var0 = {
-        'name': 'ZoomOutUp',
+        'name': 'FlipOutEasyX',
         'style': null,
         'duration': 0.3
     };
     var1 = {};
     var3 = {};
     var6 = new Array(1);
-    var10 = {
-        'translateX': '0vh',
-        'scale': 1
+    var7 = {
+        'perspective': '500px',
+        'rotateX': '0deg'
     };
-    var6[0] = var10;
+    var6[0] = var7;
     var3.transform = var6;
     var1[0] = var3;
     var3 = {};
     var6 = new Array(1);
-    var10 = {
-        'translateY': '-100vh',
-        'scale': 0
+    var7 = {
+        'perspective': '500px',
+        'rotateX': '90deg'
     };
-    var6[0] = var10;
+    var6[0] = var7;
     var3.transform = var6;
     var1[100] = var3;
     var0.style = var1;
-    var4.ZoomOutUp = var0;
+    var4.FlipOutEasyX = var0;
     var0 = {
-        'name': 'ZoomOutDown',
+        'name': 'FlipOutEasyY',
         'style': null,
         'duration': 0.3
     };
     var1 = {};
     var3 = {};
     var6 = new Array(1);
-    var10 = {
-        'translateX': '0vh',
-        'scale': 1
+    var7 = {
+        'perspective': '500px',
+        'rotateY': '0deg'
     };
-    var6[0] = var10;
+    var6[0] = var7;
     var3.transform = var6;
     var1[0] = var3;
     var3 = {};
     var6 = new Array(1);
-    var10 = {
-        'translateY': '100vh',
-        'scale': 0
+    var7 = {
+        'perspective': '500px',
+        'rotateY': '90deg'
     };
-    var6[0] = var10;
+    var6[0] = var7;
     var3.transform = var6;
     var1[100] = var3;
     var0.style = var1;
-    var4.ZoomOutDown = var0;
-    var0 = {
-        'name': 'ZoomOutEasyUp',
-        'style': null,
-        'duration': 0.3
-    };
-    var1 = {};
-    var3 = {};
-    var6 = new Array(1);
-    var10 = {
-        'translateY': '0%',
-        'scale': 1
-    };
-    var6[0] = var10;
-    var3.transform = var6;
-    var1[0] = var3;
-    var3 = {};
-    var6 = new Array(1);
-    var10 = {
-        'translateY': '-100%',
-        'scale': 0
-    };
-    var6[0] = var10;
-    var3.transform = var6;
-    var1[100] = var3;
-    var0.style = var1;
-    var4.ZoomOutEasyUp = var0;
-    var0 = {
-        'name': 'ZoomOutEasyDown',
-        'style': null,
-        'duration': 0.3
-    };
-    var1 = {};
-    var3 = {};
-    var6 = new Array(1);
-    var10 = {
-        'translateY': '0%',
-        'scale': 1
-    };
-    var6[0] = var10;
-    var3.transform = var6;
-    var1[0] = var3;
-    var3 = {};
-    var6 = new Array(1);
-    var10 = {
-        'translateY': '100%',
-        'scale': 0
-    };
-    var6[0] = var10;
-    var3.transform = var6;
-    var1[100] = var3;
-    var0.style = var1;
-    var4.ZoomOutEasyDown = var0;
+    var4.FlipOutEasyY = var0;
     var3 = {};
     var1 = {};
+    var7 = 0;
     var6 = var9[var7];
     var0 = undefined;
     var11 = var8.bind(var0)(var6);
     var10 = var11.convertAnimationObjectToKeyframes;
-    var6 = var5.ZoomIn;
+    var6 = var5.FlipInYRight;
     var6 = var10.bind(var11)(var6);
     var1.style = var6;
-    var6 = var5.ZoomIn;
+    var6 = var5.FlipInYRight;
     var6 = var6.duration;
     var1.duration = var6;
-    var3.ZoomIn = var1;
+    var3.FlipInYRight = var1;
     var1 = {};
     var6 = var9[var7];
     var11 = var8.bind(var0)(var6);
     var10 = var11.convertAnimationObjectToKeyframes;
-    var6 = var5.ZoomInRotate;
+    var6 = var5.FlipInYLeft;
     var6 = var10.bind(var11)(var6);
     var1.style = var6;
-    var6 = var5.ZoomInRotate;
+    var6 = var5.FlipInYLeft;
     var6 = var6.duration;
     var1.duration = var6;
-    var3.ZoomInRotate = var1;
+    var3.FlipInYLeft = var1;
     var1 = {};
     var6 = var9[var7];
     var11 = var8.bind(var0)(var6);
     var10 = var11.convertAnimationObjectToKeyframes;
-    var6 = var5.ZoomInRight;
+    var6 = var5.FlipInXUp;
     var6 = var10.bind(var11)(var6);
     var1.style = var6;
-    var6 = var5.ZoomInRight;
+    var6 = var5.FlipInXUp;
     var6 = var6.duration;
     var1.duration = var6;
-    var3.ZoomInRight = var1;
+    var3.FlipInXUp = var1;
     var1 = {};
     var6 = var9[var7];
     var11 = var8.bind(var0)(var6);
     var10 = var11.convertAnimationObjectToKeyframes;
-    var6 = var5.ZoomInLeft;
+    var6 = var5.FlipInXDown;
     var6 = var10.bind(var11)(var6);
     var1.style = var6;
-    var6 = var5.ZoomInLeft;
+    var6 = var5.FlipInXDown;
     var6 = var6.duration;
     var1.duration = var6;
-    var3.ZoomInLeft = var1;
+    var3.FlipInXDown = var1;
     var1 = {};
     var6 = var9[var7];
     var11 = var8.bind(var0)(var6);
     var10 = var11.convertAnimationObjectToKeyframes;
-    var6 = var5.ZoomInUp;
+    var6 = var5.FlipInEasyX;
     var6 = var10.bind(var11)(var6);
     var1.style = var6;
-    var6 = var5.ZoomInUp;
+    var6 = var5.FlipInEasyX;
     var6 = var6.duration;
     var1.duration = var6;
-    var3.ZoomInUp = var1;
+    var3.FlipInEasyX = var1;
     var1 = {};
     var6 = var9[var7];
     var11 = var8.bind(var0)(var6);
     var10 = var11.convertAnimationObjectToKeyframes;
-    var6 = var5.ZoomInDown;
+    var6 = var5.FlipInEasyY;
     var6 = var10.bind(var11)(var6);
     var1.style = var6;
-    var6 = var5.ZoomInDown;
+    var6 = var5.FlipInEasyY;
     var6 = var6.duration;
     var1.duration = var6;
-    var3.ZoomInDown = var1;
-    var1 = {};
-    var6 = var9[var7];
-    var11 = var8.bind(var0)(var6);
-    var10 = var11.convertAnimationObjectToKeyframes;
-    var6 = var5.ZoomInEasyUp;
-    var6 = var10.bind(var11)(var6);
-    var1.style = var6;
-    var6 = var5.ZoomInEasyUp;
-    var6 = var6.duration;
-    var1.duration = var6;
-    var3.ZoomInEasyUp = var1;
-    var1 = {};
-    var6 = var9[var7];
-    var11 = var8.bind(var0)(var6);
-    var10 = var11.convertAnimationObjectToKeyframes;
-    var6 = var5.ZoomInEasyDown;
-    var6 = var10.bind(var11)(var6);
-    var1.style = var6;
-    var6 = var5.ZoomInEasyDown;
-    var6 = var6.duration;
-    var1.duration = var6;
-    var3.ZoomInEasyDown = var1;
+    var3.FlipInEasyY = var1;
     var1 = {};
     var6 = {};
     var10 = var9[var7];
     var12 = var8.bind(var0)(var10);
     var11 = var12.convertAnimationObjectToKeyframes;
-    var10 = var4.ZoomOut;
+    var10 = var4.FlipOutYRight;
     var10 = var11.bind(var12)(var10);
     var6.style = var10;
-    var10 = var4.ZoomOut;
+    var10 = var4.FlipOutYRight;
     var10 = var10.duration;
     var6.duration = var10;
-    var1.ZoomOut = var6;
+    var1.FlipOutYRight = var6;
     var6 = {};
     var10 = var9[var7];
     var12 = var8.bind(var0)(var10);
     var11 = var12.convertAnimationObjectToKeyframes;
-    var10 = var4.ZoomOutRotate;
+    var10 = var4.FlipOutYLeft;
     var10 = var11.bind(var12)(var10);
     var6.style = var10;
-    var10 = var4.ZoomOutRotate;
+    var10 = var4.FlipOutYLeft;
     var10 = var10.duration;
     var6.duration = var10;
-    var1.ZoomOutRotate = var6;
+    var1.FlipOutYLeft = var6;
     var6 = {};
     var10 = var9[var7];
     var12 = var8.bind(var0)(var10);
     var11 = var12.convertAnimationObjectToKeyframes;
-    var10 = var4.ZoomOutRight;
+    var10 = var4.FlipOutXUp;
     var10 = var11.bind(var12)(var10);
     var6.style = var10;
-    var10 = var4.ZoomOutRight;
+    var10 = var4.FlipOutXUp;
     var10 = var10.duration;
     var6.duration = var10;
-    var1.ZoomOutRight = var6;
+    var1.FlipOutXUp = var6;
     var6 = {};
     var10 = var9[var7];
     var12 = var8.bind(var0)(var10);
     var11 = var12.convertAnimationObjectToKeyframes;
-    var10 = var4.ZoomOutLeft;
+    var10 = var4.FlipOutXDown;
     var10 = var11.bind(var12)(var10);
     var6.style = var10;
-    var10 = var4.ZoomOutLeft;
+    var10 = var4.FlipOutXDown;
     var10 = var10.duration;
     var6.duration = var10;
-    var1.ZoomOutLeft = var6;
+    var1.FlipOutXDown = var6;
     var6 = {};
     var10 = var9[var7];
     var12 = var8.bind(var0)(var10);
     var11 = var12.convertAnimationObjectToKeyframes;
-    var10 = var4.ZoomOutUp;
+    var10 = var4.FlipOutEasyX;
     var10 = var11.bind(var12)(var10);
     var6.style = var10;
-    var10 = var4.ZoomOutUp;
+    var10 = var4.FlipOutEasyX;
     var10 = var10.duration;
     var6.duration = var10;
-    var1.ZoomOutUp = var6;
-    var6 = {};
-    var10 = var9[var7];
-    var12 = var8.bind(var0)(var10);
-    var11 = var12.convertAnimationObjectToKeyframes;
-    var10 = var4.ZoomOutDown;
-    var10 = var11.bind(var12)(var10);
-    var6.style = var10;
-    var10 = var4.ZoomOutDown;
-    var10 = var10.duration;
-    var6.duration = var10;
-    var1.ZoomOutDown = var6;
-    var6 = {};
-    var10 = var9[var7];
-    var12 = var8.bind(var0)(var10);
-    var11 = var12.convertAnimationObjectToKeyframes;
-    var10 = var4.ZoomOutEasyUp;
-    var10 = var11.bind(var12)(var10);
-    var6.style = var10;
-    var10 = var4.ZoomOutEasyUp;
-    var10 = var10.duration;
-    var6.duration = var10;
-    var1.ZoomOutEasyUp = var6;
+    var1.FlipOutEasyX = var6;
     var6 = {};
     var7 = var9[var7];
     var9 = var8.bind(var0)(var7);
     var8 = var9.convertAnimationObjectToKeyframes;
-    var7 = var4.ZoomOutEasyDown;
+    var7 = var4.FlipOutEasyY;
     var7 = var8.bind(var9)(var7);
     var6.style = var7;
-    var7 = var4.ZoomOutEasyDown;
+    var7 = var4.FlipOutEasyY;
     var7 = var7.duration;
     var6.duration = var7;
-    var1.ZoomOutEasyDown = var6;
-    var2.ZoomInData = var5;
-    var2.ZoomOutData = var4;
-    var2.ZoomIn = var3;
-    var2.ZoomOut = var1;
+    var1.FlipOutEasyY = var6;
+    var2.FlipInData = var5;
+    var2.FlipOutData = var4;
+    var2.FlipIn = var3;
+    var2.FlipOut = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3738]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3740]);

@@ -46,21 +46,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2 = var4.bind(var3)(var1);
         var1 = var2.useAnimatedStyle;
         var0 = function() {
-            _fun37451: for (var _fun37451_ip = 0;;) switch (_fun37451_ip) {
+            _fun37455: for (var _fun37455_ip = 0;;) switch (_fun37455_ip) {
                 case 0:
                     var1 = _closure2_slot0;
                     var0 = null;
                     if (!(var0 != var1)) {
-                        _fun37451_ip = 271;
-                        continue _fun37451
+                        _fun37455_ip = 271;
+                        continue _fun37455
                     }
                 case 16:
                     var0 = _closure2_slot1;
                     var1 = {};
                     var3 = {};
                     if (var0) {
-                        _fun37451_ip = 231;
-                        continue _fun37451
+                        _fun37455_ip = 231;
+                        continue _fun37455
                     }
                 case 30:
                     var12 = _closure1_slot0;
@@ -106,8 +106,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0[0] = var3;
                     var1.transform = var0;
                     var0 = var1;
-                    _fun37451_ip = 269;
-                    continue _fun37451;
+                    _fun37455_ip = 269;
+                    continue _fun37455;
                 case 231:
                     var4 = _closure2_slot0;
                     var2 = 56;
@@ -120,8 +120,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1.transform = var2;
                     var0 = var1;
                 case 269:
-                    _fun37451_ip = 301;
-                    continue _fun37451;
+                    _fun37455_ip = 301;
+                    continue _fun37455;
                 case 271:
                     var1 = {};
                     var3 = {};
@@ -310,4 +310,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.ButtonShine = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 33, 4048, 669, 3165, 3679, 4056, 1297, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 33, 4050, 669, 3167, 3681, 4058, 1297, 2]);

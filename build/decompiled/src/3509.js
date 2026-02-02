@@ -1,30 +1,36 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = function arg0() {
-        _fun31520: for (var _fun31520_ip = 0;;) switch (_fun31520_ip) {
+    var1 = require;
+    var _closure1_slot0 = var1;
+    var1 = dependencyMap;
+    var _closure1_slot1 = var1;
+    var1 = function() {
+        _fun31521: for (var _fun31521_ip = 0;;) switch (_fun31521_ip) {
             case 0:
-                var3 = arg0;
                 var2 = this;
-                var0 = var2.has;
-                var0 = var0.bind(var2)(var3);
-                if (!var0) {
-                    _fun31520_ip = 28;
-                    continue _fun31520
-                }
-            case 18:
-                var1 = var2.__data__;
-                var0 = delete var1[var3];
-            case 28:
-                var3 = var2.size;
+                var5 = _closure1_slot0;
+                var0 = _closure1_slot1;
                 var1 = 0;
-                if (!var0) {
-                    _fun31520_ip = 41;
-                    continue _fun31520
+                var3 = var0[var1];
+                var0 = undefined;
+                var3 = var5.bind(var0)(var3);
+                if (var3) {
+                    _fun31521_ip = 33;
+                    continue _fun31521
                 }
-            case 38:
-                var1 = 1;
-            case 41:
-                var1 = var3 - var1;
+            case 29:
+                var3 = {};
+                _fun31521_ip = 57;
+                continue _fun31521;
+            case 33:
+                var5 = _closure1_slot0;
+                var4 = _closure1_slot1;
+                var4 = var4[var1];
+                var5 = var5.bind(var0)(var4);
+                var4 = null;
+                var3 = var5.bind(var0)(var4);
+            case 57:
+                var2.__data__ = var3;
                 var2.size = var1;
                 return var0;
         }
@@ -33,4 +39,4 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0.exports = var1;
     var0 = undefined;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, []);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3510]);

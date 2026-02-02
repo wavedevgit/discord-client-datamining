@@ -97,7 +97,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/activities/native/VoiceControlsToggleNuxActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun110893: for (var _fun110893_ip = 0;;) switch (_fun110893_ip) {
+        _fun110894: for (var _fun110894_ip = 0;;) switch (_fun110894_ip) {
             case 0:
                 var0 = arg0;
                 var0 = var0.markAsDismissed;
@@ -139,8 +139,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = var4.bind(var5)(var2, var1);
                 var17 = 1.5;
                 if (!var0) {
-                    _fun110893_ip = 171;
-                    continue _fun110893
+                    _fun110894_ip = 171;
+                    continue _fun110894
                 }
             case 161:
                 var17 = 2.0875;
@@ -173,7 +173,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var16.contentContainer;
                 var6.style = var8;
                 var8 = function arg0() {
-                    _fun110896: for (var _fun110896_ip = 0;;) switch (_fun110896_ip) {
+                    _fun110897: for (var _fun110897_ip = 0;;) switch (_fun110897_ip) {
                         case 0:
                             var0 = arg0;
                             var0 = var0.nativeEvent;
@@ -183,8 +183,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var0 = _closure2_slot2;
                             var1 = var3;
                             if (!var0) {
-                                _fun110896_ip = 44;
-                                continue _fun110896
+                                _fun110897_ip = 44;
+                                continue _fun110897
                             }
                         case 37:
                             var0 = 2;
@@ -297,4 +297,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 1298, 1369, 33, 1297, 671, 5324, 566, 4894, 8800, 3900, 1234, 4836, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 1298, 1369, 33, 1297, 671, 5326, 566, 4896, 8802, 3902, 1234, 4838, 2]);

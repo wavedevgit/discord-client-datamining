@@ -144,7 +144,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/voice_panel/native/controls/activities/ActivityShelfItemSummary.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun111337: for (var _fun111337_ip = 0;;) switch (_fun111337_ip) {
+        _fun111338: for (var _fun111338_ip = 0;;) switch (_fun111338_ip) {
             case 0:
                 var0 = arg0;
                 var9 = var0.channelId;
@@ -153,8 +153,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var12 = var0.submitting;
                 var3 = undefined;
                 if (!(var12 === var3)) {
-                    _fun111337_ip = 33;
-                    continue _fun111337
+                    _fun111338_ip = 33;
+                    continue _fun111338
                 }
             case 31:
                 var12 = false;
@@ -195,13 +195,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     'lineClamp': 2
                 };
                 if (var12) {
-                    _fun111337_ip = 184;
-                    continue _fun111337
+                    _fun111338_ip = 184;
+                    continue _fun111338
                 }
             case 176:
                 var15 = var13.overlayActivityNameText;
-                _fun111337_ip = 190;
-                continue _fun111337;
+                _fun111338_ip = 190;
+                continue _fun111338;
             case 184:
                 var15 = var13.loadingTextColor;
             case 190:
@@ -224,8 +224,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var13[1] = var14;
                 var7.style = var13;
                 if (!var12) {
-                    _fun111337_ip = 320;
-                    continue _fun111337
+                    _fun111338_ip = 320;
+                    continue _fun111338
                 }
             case 270:
                 var15 = _closure1_slot5;
@@ -262,4 +262,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 33, 1297, 671, 3199, 14278, 8621, 5416, 4054, 4839, 3679, 4061, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 33, 1297, 671, 3201, 14279, 8623, 5418, 4056, 4841, 3681, 4063, 2]);

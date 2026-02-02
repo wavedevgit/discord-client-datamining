@@ -102,4 +102,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useCoachmark = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 491, 6979, 5169, 6985, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 491, 6981, 5171, 6987, 2]);

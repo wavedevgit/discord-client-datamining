@@ -50,15 +50,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.bind(var6)(var4);
     var2.setSystemTheme = var3;
     var3 = function() {
-        _fun27917: for (var _fun27917_ip = 0;;) switch (_fun27917_ip) {
+        _fun27921: for (var _fun27921_ip = 0;;) switch (_fun27921_ip) {
             case 0:
                 var1 = _closure1_slot2;
                 var2 = var1.useSystemTheme;
                 var1 = _closure1_slot3;
                 var1 = var1.OFF;
                 if (!(var2 !== var1)) {
-                    _fun27917_ip = 62;
-                    continue _fun27917
+                    _fun27921_ip = 62;
+                    continue _fun27921
                 }
             case 27:
                 var2 = _closure1_slot4;
@@ -160,4 +160,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.refreshTheme = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3156, 3157, 806, 3158, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3158, 3159, 806, 3160, 2]);

@@ -141,7 +141,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var2 = var6.bind(var7)(var1);
             var1 = var2.useAnimatedStyle;
             var0 = function() {
-                _fun48154: for (var _fun48154_ip = 0;;) switch (_fun48154_ip) {
+                _fun48158: for (var _fun48158_ip = 0;;) switch (_fun48158_ip) {
                     case 0:
                         var0 = {};
                         var3 = _closure1_slot0;
@@ -153,14 +153,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var11 = var12.withSpring;
                         var2 = _closure3_slot0;
                         if (var2) {
-                            _fun48154_ip = 54;
-                            continue _fun48154
+                            _fun48158_ip = 54;
+                            continue _fun48158
                         }
                     case 42:
                         var2 = _closure3_slot2;
                         var10 = var2.borderColor;
-                        _fun48154_ip = 64;
-                        continue _fun48154;
+                        _fun48158_ip = 64;
+                        continue _fun48158;
                     case 54:
                         var2 = _closure3_slot1;
                         var10 = var2.borderColor;
@@ -179,14 +179,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var3 = var4.withSpring;
                         var2 = _closure3_slot0;
                         if (var2) {
-                            _fun48154_ip = 140;
-                            continue _fun48154
+                            _fun48158_ip = 140;
+                            continue _fun48158
                         }
                     case 129:
                         var2 = _closure3_slot2;
                         var2 = var2.backgroundColor;
-                        _fun48154_ip = 149;
-                        continue _fun48154;
+                        _fun48158_ip = 149;
+                        continue _fun48158;
                     case 140:
                         var6 = _closure3_slot1;
                         var2 = var6.backgroundColor;
@@ -237,13 +237,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var2 = var7.bind(var6)(var1);
             var1 = var2.useAnimatedStyle;
             var0 = function() {
-                _fun48156: for (var _fun48156_ip = 0;;) switch (_fun48156_ip) {
+                _fun48160: for (var _fun48160_ip = 0;;) switch (_fun48160_ip) {
                     case 0:
                         var0 = _closure3_slot0;
                         var6 = 0.5;
                         if (!var0) {
-                            _fun48156_ip = 23;
-                            continue _fun48156
+                            _fun48160_ip = 23;
+                            continue _fun48160
                         }
                     case 20:
                         var6 = 1;
@@ -259,8 +259,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var2 = _closure3_slot1;
                         var11 = 0;
                         if (!var2) {
-                            _fun48156_ip = 67;
-                            continue _fun48156
+                            _fun48160_ip = 67;
+                            continue _fun48160
                         }
                     case 64:
                         var11 = 1;
@@ -281,8 +281,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var9 = _closure3_slot1;
                         var3 = 1;
                         if (var9) {
-                            _fun48156_ip = 139;
-                            continue _fun48156
+                            _fun48160_ip = 139;
+                            continue _fun48160
                         }
                     case 136:
                         var3 = var6;
@@ -358,4 +358,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.FormCheckbox = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 1297, 671, 3679, 4045, 3124, 5380, 4040, 4046, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 1297, 671, 3681, 4047, 3126, 5382, 4042, 4048, 2]);

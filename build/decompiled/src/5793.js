@@ -1,304 +1,259 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = {};
-    var0 = [240, 248, 255];
-    var1.aliceblue = var0;
-    var0 = [250, 235, 215];
-    var1.antiquewhite = var0;
-    var0 = [0, 255, 255];
-    var1.aqua = var0;
-    var0 = [127, 255, 212];
-    var1.aquamarine = var0;
-    var0 = [240, 255, 255];
-    var1.azure = var0;
-    var0 = [245, 245, 220];
-    var1.beige = var0;
-    var0 = [255, 228, 196];
-    var1.bisque = var0;
-    var0 = [0, 0, 0];
-    var1.black = var0;
-    var0 = [255, 235, 205];
-    var1.blanchedalmond = var0;
-    var0 = [0, 0, 255];
-    var1.blue = var0;
-    var0 = [138, 43, 226];
-    var1.blueviolet = var0;
-    var0 = [165, 42, 42];
-    var1.brown = var0;
-    var0 = [222, 184, 135];
-    var1.burlywood = var0;
-    var0 = [95, 158, 160];
-    var1.cadetblue = var0;
-    var0 = [127, 255, 0];
-    var1.chartreuse = var0;
-    var0 = [210, 105, 30];
-    var1.chocolate = var0;
-    var0 = [255, 127, 80];
-    var1.coral = var0;
-    var0 = [100, 149, 237];
-    var1.cornflowerblue = var0;
-    var0 = [255, 248, 220];
-    var1.cornsilk = var0;
-    var0 = [220, 20, 60];
-    var1.crimson = var0;
-    var0 = [0, 255, 255];
-    var1.cyan = var0;
-    var0 = [0, 0, 139];
-    var1.darkblue = var0;
-    var0 = [0, 139, 139];
-    var1.darkcyan = var0;
-    var0 = [184, 134, 11];
-    var1.darkgoldenrod = var0;
-    var0 = [169, 169, 169];
-    var1.darkgray = var0;
-    var0 = [0, 100, 0];
-    var1.darkgreen = var0;
-    var0 = [169, 169, 169];
-    var1.darkgrey = var0;
-    var0 = [189, 183, 107];
-    var1.darkkhaki = var0;
-    var0 = [139, 0, 139];
-    var1.darkmagenta = var0;
-    var0 = [85, 107, 47];
-    var1.darkolivegreen = var0;
-    var0 = [255, 140, 0];
-    var1.darkorange = var0;
-    var0 = [153, 50, 204];
-    var1.darkorchid = var0;
-    var0 = [139, 0, 0];
-    var1.darkred = var0;
-    var0 = [233, 150, 122];
-    var1.darksalmon = var0;
-    var0 = [143, 188, 143];
-    var1.darkseagreen = var0;
-    var0 = [72, 61, 139];
-    var1.darkslateblue = var0;
-    var0 = [47, 79, 79];
-    var1.darkslategray = var0;
-    var0 = [47, 79, 79];
-    var1.darkslategrey = var0;
-    var0 = [0, 206, 209];
-    var1.darkturquoise = var0;
-    var0 = [148, 0, 211];
-    var1.darkviolet = var0;
-    var0 = [255, 20, 147];
-    var1.deeppink = var0;
-    var0 = [0, 191, 255];
-    var1.deepskyblue = var0;
-    var0 = [105, 105, 105];
-    var1.dimgray = var0;
-    var0 = [105, 105, 105];
-    var1.dimgrey = var0;
-    var0 = [30, 144, 255];
-    var1.dodgerblue = var0;
-    var0 = [178, 34, 34];
-    var1.firebrick = var0;
-    var0 = [255, 250, 240];
-    var1.floralwhite = var0;
-    var0 = [34, 139, 34];
-    var1.forestgreen = var0;
-    var0 = [255, 0, 255];
-    var1.fuchsia = var0;
-    var0 = [220, 220, 220];
-    var1.gainsboro = var0;
-    var0 = [248, 248, 255];
-    var1.ghostwhite = var0;
-    var0 = [255, 215, 0];
-    var1.gold = var0;
-    var0 = [218, 165, 32];
-    var1.goldenrod = var0;
-    var0 = [128, 128, 128];
-    var1.gray = var0;
-    var0 = [0, 128, 0];
-    var1.green = var0;
-    var0 = [173, 255, 47];
-    var1.greenyellow = var0;
-    var0 = [128, 128, 128];
-    var1.grey = var0;
-    var0 = [240, 255, 240];
-    var1.honeydew = var0;
-    var0 = [255, 105, 180];
-    var1.hotpink = var0;
-    var0 = [205, 92, 92];
-    var1.indianred = var0;
-    var0 = [75, 0, 130];
-    var1.indigo = var0;
-    var0 = [255, 255, 240];
-    var1.ivory = var0;
-    var0 = [240, 230, 140];
-    var1.khaki = var0;
-    var0 = [230, 230, 250];
-    var1.lavender = var0;
-    var0 = [255, 240, 245];
-    var1.lavenderblush = var0;
-    var0 = [124, 252, 0];
-    var1.lawngreen = var0;
-    var0 = [255, 250, 205];
-    var1.lemonchiffon = var0;
-    var0 = [173, 216, 230];
-    var1.lightblue = var0;
-    var0 = [240, 128, 128];
-    var1.lightcoral = var0;
-    var0 = [224, 255, 255];
-    var1.lightcyan = var0;
-    var0 = [250, 250, 210];
-    var1.lightgoldenrodyellow = var0;
-    var0 = [211, 211, 211];
-    var1.lightgray = var0;
-    var0 = [144, 238, 144];
-    var1.lightgreen = var0;
-    var0 = [211, 211, 211];
-    var1.lightgrey = var0;
-    var0 = [255, 182, 193];
-    var1.lightpink = var0;
-    var0 = [255, 160, 122];
-    var1.lightsalmon = var0;
-    var0 = [32, 178, 170];
-    var1.lightseagreen = var0;
-    var0 = [135, 206, 250];
-    var1.lightskyblue = var0;
-    var0 = [119, 136, 153];
-    var1.lightslategray = var0;
-    var0 = [119, 136, 153];
-    var1.lightslategrey = var0;
-    var0 = [176, 196, 222];
-    var1.lightsteelblue = var0;
-    var0 = [255, 255, 224];
-    var1.lightyellow = var0;
-    var0 = [0, 255, 0];
-    var1.lime = var0;
-    var0 = [50, 205, 50];
-    var1.limegreen = var0;
-    var0 = [250, 240, 230];
-    var1.linen = var0;
-    var0 = [255, 0, 255];
-    var1.magenta = var0;
-    var0 = [128, 0, 0];
-    var1.maroon = var0;
-    var0 = [102, 205, 170];
-    var1.mediumaquamarine = var0;
-    var0 = [0, 0, 205];
-    var1.mediumblue = var0;
-    var0 = [186, 85, 211];
-    var1.mediumorchid = var0;
-    var0 = [147, 112, 219];
-    var1.mediumpurple = var0;
-    var0 = [60, 179, 113];
-    var1.mediumseagreen = var0;
-    var0 = [123, 104, 238];
-    var1.mediumslateblue = var0;
-    var0 = [0, 250, 154];
-    var1.mediumspringgreen = var0;
-    var0 = [72, 209, 204];
-    var1.mediumturquoise = var0;
-    var0 = [199, 21, 133];
-    var1.mediumvioletred = var0;
-    var0 = [25, 25, 112];
-    var1.midnightblue = var0;
-    var0 = [245, 255, 250];
-    var1.mintcream = var0;
-    var0 = [255, 228, 225];
-    var1.mistyrose = var0;
-    var0 = [255, 228, 181];
-    var1.moccasin = var0;
-    var0 = [255, 222, 173];
-    var1.navajowhite = var0;
-    var0 = [0, 0, 128];
-    var1.navy = var0;
-    var0 = [253, 245, 230];
-    var1.oldlace = var0;
-    var0 = [128, 128, 0];
-    var1.olive = var0;
-    var0 = [107, 142, 35];
-    var1.olivedrab = var0;
-    var0 = [255, 165, 0];
-    var1.orange = var0;
-    var0 = [255, 69, 0];
-    var1.orangered = var0;
-    var0 = [218, 112, 214];
-    var1.orchid = var0;
-    var0 = [238, 232, 170];
-    var1.palegoldenrod = var0;
-    var0 = [152, 251, 152];
-    var1.palegreen = var0;
-    var0 = [175, 238, 238];
-    var1.paleturquoise = var0;
-    var0 = [219, 112, 147];
-    var1.palevioletred = var0;
-    var0 = [255, 239, 213];
-    var1.papayawhip = var0;
-    var0 = [255, 218, 185];
-    var1.peachpuff = var0;
-    var0 = [205, 133, 63];
-    var1.peru = var0;
-    var0 = [255, 192, 203];
-    var1.pink = var0;
-    var0 = [221, 160, 221];
-    var1.plum = var0;
-    var0 = [176, 224, 230];
-    var1.powderblue = var0;
-    var0 = [128, 0, 128];
-    var1.purple = var0;
-    var0 = [102, 51, 153];
-    var1.rebeccapurple = var0;
-    var0 = [255, 0, 0];
-    var1.red = var0;
-    var0 = [188, 143, 143];
-    var1.rosybrown = var0;
-    var0 = [65, 105, 225];
-    var1.royalblue = var0;
-    var0 = [139, 69, 19];
-    var1.saddlebrown = var0;
-    var0 = [250, 128, 114];
-    var1.salmon = var0;
-    var0 = [244, 164, 96];
-    var1.sandybrown = var0;
-    var0 = [46, 139, 87];
-    var1.seagreen = var0;
-    var0 = [255, 245, 238];
-    var1.seashell = var0;
-    var0 = [160, 82, 45];
-    var1.sienna = var0;
-    var0 = [192, 192, 192];
-    var1.silver = var0;
-    var0 = [135, 206, 235];
-    var1.skyblue = var0;
-    var0 = [106, 90, 205];
-    var1.slateblue = var0;
-    var0 = [112, 128, 144];
-    var1.slategray = var0;
-    var0 = [112, 128, 144];
-    var1.slategrey = var0;
-    var0 = [255, 250, 250];
-    var1.snow = var0;
-    var0 = [0, 255, 127];
-    var1.springgreen = var0;
-    var0 = [70, 130, 180];
-    var1.steelblue = var0;
-    var0 = [210, 180, 140];
-    var1.tan = var0;
-    var0 = [0, 128, 128];
-    var1.teal = var0;
-    var0 = [216, 191, 216];
-    var1.thistle = var0;
-    var0 = [255, 99, 71];
-    var1.tomato = var0;
-    var0 = [64, 224, 208];
-    var1.turquoise = var0;
-    var0 = [238, 130, 238];
-    var1.violet = var0;
-    var0 = [245, 222, 179];
-    var1.wheat = var0;
-    var0 = [255, 255, 255];
-    var1.white = var0;
-    var0 = [245, 245, 245];
-    var1.whitesmoke = var0;
-    var0 = [255, 255, 0];
-    var1.yellow = var0;
-    var0 = [154, 205, 50];
-    var1.yellowgreen = var0;
-    var0 = module;
-    var0.exports = var1;
+    var6 = require;
+    var3 = dependencyMap;
+    var _closure1_slot0 = var6;
+    var _closure1_slot1 = var3;
+    var2 = {};
+    var _closure1_slot2 = var2;
+    var0 = global;
+    var5 = var0.Object;
+    var4 = var5.keys;
+    var0 = 0;
+    var3 = var3[var0];
     var0 = undefined;
+    var3 = var6.bind(var0)(var3);
+    var4 = var4.bind(var5)(var3);
+    var3 = var4.forEach;
+    var1 = function(arg0) { // Environment: var1
+        var4 = arg0;
+        var _closure2_slot0 = var4;
+        var7 = _closure1_slot2;
+        var2 = {};
+        var7[var4] = var2;
+        var2 = global;
+        var12 = var2.Object;
+        var11 = var12.defineProperty;
+        var10 = var7[var4];
+        var9 = {};
+        var5 = _closure1_slot0;
+        var6 = _closure1_slot1;
+        var3 = 0;
+        var8 = var6[var3];
+        var0 = undefined;
+        var8 = var5.bind(var0)(var8);
+        var8 = var8[var4];
+        var8 = var8.channels;
+        var9.value = var8;
+        var8 = 'channels';
+        var8 = var11.bind(var12)(var10, var8, var9);
+        var10 = var2.Object;
+        var9 = var10.defineProperty;
+        var8 = var7[var4];
+        var7 = {};
+        var3 = var6[var3];
+        var3 = var5.bind(var0)(var3);
+        var3 = var3[var4];
+        var3 = var3.labels;
+        var7.value = var3;
+        var3 = 'labels';
+        var3 = var9.bind(var10)(var8, var3, var7);
+        var3 = 1;
+        var3 = var6[var3];
+        var3 = var5.bind(var0)(var3);
+        var4 = var3.bind(var0)(var4);
+        var _closure2_slot1 = var4;
+        var3 = var2.Object;
+        var2 = var3.keys;
+        var3 = var2.bind(var3)(var4);
+        var2 = var3.forEach;
+        var1 = function(arg0) { // Environment: var1
+            var4 = arg0;
+            var2 = _closure2_slot1;
+            var3 = var2[var4];
+            var5 = _closure1_slot2;
+            var2 = _closure2_slot0;
+            var7 = var5[var2];
+            var6 = function arg0() {
+                _fun51251: for (var _fun51251_ip = 0;;) switch (_fun51251_ip) {
+                    case 0:
+                        var1 = arg0;
+                        var _closure4_slot0 = var1;
+                        var0 = function() {
+                            _fun51252: for (var _fun51252_ip = 0;;) switch (_fun51252_ip) {
+                                case 0:
+                                    var5 = undefined;
+                                    var6 = undefined;
+                                    var1 = arguments.length;
+                                    var4 = global;
+                                    var0 = var4.Array;
+                                    var2 = var0.prototype;
+                                    var2 = Object.create(var2, {
+                                        constructor: {
+                                            value: var0
+                                        }
+                                    });
+                                    var9 = var2;
+                                    var8 = var1;
+                                    var0 = new var9[var0](var8, var7);
+                                    var2 = var0 instanceof Object ? var0 : var2;
+                                    var3 = 0;
+                                    var7 = var3 < var1;
+                                    var0 = 0;
+                                    if (!var7) {
+                                        _fun51252_ip = 64;
+                                        continue _fun51252
+                                    }
+                                case 49:
+                                    var7 = arguments[var0];
+                                    var2[var0] = var7;
+                                    var0 = var0 + 1;
+                                    if (var0 < var1) {
+                                        _fun51252_ip = 49;
+                                        continue _fun51252
+                                    }
+                                case 64:
+                                    var0 = var2[var3];
+                                    var1 = null;
+                                    if (!(var1 != var0)) {
+                                        _fun51252_ip = 159;
+                                        continue _fun51252
+                                    }
+                                case 74:
+                                    var6 = var0.length;
+                                    var1 = 1;
+                                    if (!(var6 > var1)) {
+                                        _fun51252_ip = 89;
+                                        continue _fun51252
+                                    }
+                                case 86:
+                                    var2 = var0;
+                                case 89:
+                                    var1 = _closure4_slot0;
+                                    var1 = var1.bind(var5)(var2);
+                                    var5 = 'object';
+                                    var2 = typeof var1;
+                                    if (!(var5 === var2)) {
+                                        _fun51252_ip = 157;
+                                        continue _fun51252
+                                    }
+                                case 112:
+                                    var2 = var1.length;
+                                    var5 = var3 < var2;
+                                    var3 = 0;
+                                    if (!var5) {
+                                        _fun51252_ip = 157;
+                                        continue _fun51252
+                                    }
+                                case 126:
+                                    var7 = var4.Math;
+                                    var6 = var7.round;
+                                    var5 = var1[var3];
+                                    var5 = var6.bind(var7)(var5);
+                                    var1[var3] = var5;
+                                    var3 = var3 + 1;
+                                    if (var3 < var2) {
+                                        _fun51252_ip = 126;
+                                        continue _fun51252
+                                    }
+                                case 157:
+                                    return var1;
+                                case 159:
+                                    return var0;
+                            }
+                        };
+                        var2 = 'conversion';
+                        var2 = var2 in var1;
+                        if (!var2) {
+                            _fun51251_ip = 37;
+                            continue _fun51251
+                        }
+                    case 25:
+                        var1 = var1.conversion;
+                        var0.conversion = var1;
+                    case 37:
+                        return var0;
+                }
+            };
+            var0 = undefined;
+            var6 = var6.bind(var0)(var3);
+            var7[var4] = var6;
+            var2 = var5[var2];
+            var2 = var2[var4];
+            var1 = function arg0() {
+                _fun51253: for (var _fun51253_ip = 0;;) switch (_fun51253_ip) {
+                    case 0:
+                        var1 = arg0;
+                        var _closure4_slot0 = var1;
+                        var0 = function() {
+                            _fun51254: for (var _fun51254_ip = 0;;) switch (_fun51254_ip) {
+                                case 0:
+                                    var3 = undefined;
+                                    var5 = undefined;
+                                    var4 = arguments.length;
+                                    var0 = global;
+                                    var0 = var0.Array;
+                                    var1 = var0.prototype;
+                                    var1 = Object.create(var1, {
+                                        constructor: {
+                                            value: var0
+                                        }
+                                    });
+                                    var8 = var1;
+                                    var7 = var4;
+                                    var0 = new var8[var0](var7, var6);
+                                    var2 = var0 instanceof Object ? var0 : var1;
+                                    var0 = 0;
+                                    var6 = var0 < var4;
+                                    var1 = 0;
+                                    if (!var6) {
+                                        _fun51254_ip = 64;
+                                        continue _fun51254
+                                    }
+                                case 49:
+                                    var6 = arguments[var1];
+                                    var2[var1] = var6;
+                                    var1 = var1 + 1;
+                                    if (var1 < var4) {
+                                        _fun51254_ip = 49;
+                                        continue _fun51254
+                                    }
+                                case 64:
+                                    var1 = var2[var0];
+                                    var4 = null;
+                                    var0 = var1;
+                                    if (!(var4 != var0)) {
+                                        _fun51254_ip = 104;
+                                        continue _fun51254
+                                    }
+                                case 77:
+                                    var5 = var1.length;
+                                    var4 = 1;
+                                    if (!(var5 > var4)) {
+                                        _fun51254_ip = 92;
+                                        continue _fun51254
+                                    }
+                                case 89:
+                                    var2 = var1;
+                                case 92:
+                                    var1 = _closure4_slot0;
+                                    var0 = var1.bind(var3)(var2);
+                                case 104:
+                                    return var0;
+                            }
+                        };
+                        var2 = 'conversion';
+                        var2 = var2 in var1;
+                        if (!var2) {
+                            _fun51253_ip = 37;
+                            continue _fun51253
+                        }
+                    case 25:
+                        var1 = var1.conversion;
+                        var0.conversion = var1;
+                    case 37:
+                        return var0;
+                }
+            };
+            var1 = var1.bind(var0)(var3);
+            var2.raw = var1;
+            return var0;
+        };
+        var1 = var2.bind(var3)(var1);
+        return var0;
+    };
+    var1 = var3.bind(var4)(var1);
+    var1 = arg4;
+    var1.exports = var2;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, []);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5794, 5796]);

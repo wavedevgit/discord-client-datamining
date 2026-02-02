@@ -1,7 +1,7 @@
 // modules/user_settings/native/appearance/FontScaleStore.tsx
 // @ts-nocheck
 export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun37428: for (var _fun37428_ip = 0;;) switch (_fun37428_ip) {
+    _fun37432: for (var _fun37432_ip = 0;;) switch (_fun37432_ip) {
         case 0:
             var5 = require;
             var2 = exports;
@@ -21,24 +21,24 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var3 = var4.isAndroid;
             var3 = var3.bind(var4)();
             if (var3) {
-                _fun37428_ip = 81;
-                continue _fun37428
+                _fun37432_ip = 85;
+                continue _fun37432
             }
         case 69:
             var4 = {
                 'fontScale': 1,
                 'isClassicChatFontScaleEnabled': false
             };
-            _fun37428_ip = 108;
-            continue _fun37428;
-        case 81:
+            _fun37432_ip = 112;
+            continue _fun37432;
+        case 85:
             var3 = 1;
             var7 = var6[var3];
             var3 = metroImportDefault;
             var7 = var3.bind(var0)(var7);
             var3 = var7.getCustomFontScale;
             var4 = var3.bind(var7)();
-        case 108:
+        case 112:
             var3 = {};
             var7 = var4.fontScale;
             var3.persistedFontScale = var7;
@@ -68,4 +68,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var2.useFontScaleStore = var1;
             return var0;
     }
-})(undefined, undefined, undefined, undefined, undefined, undefined, [478, 4051, 797, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [478, 4053, 797, 2]);

@@ -41,13 +41,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.isInMentionRaidExperiment = var3;
     var1 = function arg0() {
-        _fun69693: for (var _fun69693_ip = 0;;) switch (_fun69693_ip) {
+        _fun69697: for (var _fun69697_ip = 0;;) switch (_fun69697_ip) {
             case 0:
                 var4 = arguments[1];
                 var2 = undefined;
                 if (!(var4 === var2)) {
-                    _fun69693_ip = 11;
-                    continue _fun69693
+                    _fun69697_ip = 11;
+                    continue _fun69697
                 }
             case 9:
                 var4 = true;
@@ -73,4 +73,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useIsMentionRaidExperimentEnabled = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [8692, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [8694, 2]);

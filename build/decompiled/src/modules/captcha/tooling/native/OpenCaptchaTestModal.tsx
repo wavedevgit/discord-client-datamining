@@ -47,13 +47,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = _closure1_slot3;
         var1 = function*() { // Environment: var1
             var0 = function*() { // Original name: ?anon_0_, environment: var0
-                _fun86408: for (var _fun86408_ip = 0;;) switch (_fun86408_ip) {
+                _fun86412: for (var _fun86412_ip = 0;;) switch (_fun86412_ip) {
                     case 0:
                         StartGenerator();
                         ResumeGenerator(result_out_reg = 0, return_bool_out_reg = 1);
                         if (var1) {
-                            _fun86408_ip = 88;
-                            continue _fun86408
+                            _fun86412_ip = 88;
+                            continue _fun86412
                         }
                     case 9:
                         var5 = undefined;
@@ -73,8 +73,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     case 60:
                         ResumeGenerator(result_out_reg = 1, return_bool_out_reg = 3);
                         if (var3) {
-                            _fun86408_ip = 85;
-                            continue _fun86408
+                            _fun86412_ip = 85;
+                            continue _fun86412
                         }
                     case 66:
                         var3 = var1.default;
@@ -102,4 +102,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.showCaptchaTestModal = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 31, 33, 4525, 11135, 1307, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 31, 33, 4527, 11137, 1307, 2]);

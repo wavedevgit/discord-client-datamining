@@ -127,7 +127,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot13 = var4;
     var8 = var7.memo;
     var4 = function(arg0) { // Environment: var3
-        _fun82898: for (var _fun82898_ip = 0;;) switch (_fun82898_ip) {
+        _fun82902: for (var _fun82902_ip = 0;;) switch (_fun82902_ip) {
             case 0:
                 var1 = arg0;
                 var18 = var1.onClose;
@@ -152,8 +152,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var8 == var5;
                 var4 = undefined;
                 if (var7) {
-                    _fun82898_ip = 109;
-                    continue _fun82898
+                    _fun82902_ip = 109;
+                    continue _fun82902
                 }
             case 103:
                 var4 = var5.completedAt;
@@ -164,19 +164,19 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var7.useState;
                 var4 = var6;
                 if (!(var8 == var4)) {
-                    _fun82898_ip = 157;
-                    continue _fun82898
+                    _fun82902_ip = 157;
+                    continue _fun82902
                 }
             case 133:
                 var9 = _closure1_slot10;
                 if (var10) {
-                    _fun82898_ip = 148;
-                    continue _fun82898
+                    _fun82902_ip = 148;
+                    continue _fun82902
                 }
             case 140:
                 var8 = var9.WATCH_VIDEO;
-                _fun82898_ip = 154;
-                continue _fun82898;
+                _fun82902_ip = 154;
+                continue _fun82902;
             case 148:
                 var8 = var9.POST_WATCH_VIDEO;
             case 154:
@@ -207,7 +207,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2[1] = var1;
                 var2[2] = var16;
                 var1 = function(arg0) { // Environment: var0
-                    _fun82899: for (var _fun82899_ip = 0;;) switch (_fun82899_ip) {
+                    _fun82903: for (var _fun82903_ip = 0;;) switch (_fun82903_ip) {
                         case 0:
                             var5 = arg0;
                             var2 = _closure1_slot0;
@@ -218,15 +218,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var4 = var2.bind(var0)(var1);
                             var3 = var4.lockOrientation;
                             if (var5) {
-                                _fun82899_ip = 51;
-                                continue _fun82899
+                                _fun82903_ip = 51;
+                                continue _fun82903
                             }
                         case 37:
                             var2 = 'PORTRAIT';
                             var1 = true;
                             var1 = var3.bind(var4)(var2, var1);
-                            _fun82899_ip = 63;
-                            continue _fun82899;
+                            _fun82903_ip = 63;
+                            continue _fun82903;
                         case 51:
                             var2 = 'LANDSCAPE';
                             var1 = true;
@@ -246,13 +246,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var1.questId = var7;
                             var6 = _closure1_slot6;
                             if (var5) {
-                                _fun82899_ip = 132;
-                                continue _fun82899
+                                _fun82903_ip = 132;
+                                continue _fun82903
                             }
                         case 124:
                             var5 = var6.QUEST_VIDEO_FULLSCREEN_EXITED;
-                            _fun82899_ip = 138;
-                            continue _fun82899;
+                            _fun82903_ip = 138;
+                            continue _fun82903;
                         case 132:
                             var5 = var6.QUEST_VIDEO_FULLSCREEN_ENTERED;
                         case 138:
@@ -291,12 +291,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7[0] = var10;
                 var7[1] = var6;
                 var6 = function() { // Environment: var0
-                    _fun82900: for (var _fun82900_ip = 0;;) switch (_fun82900_ip) {
+                    _fun82904: for (var _fun82904_ip = 0;;) switch (_fun82904_ip) {
                         case 0:
                             var1 = _closure2_slot4;
                             if (!var1) {
-                                _fun82900_ip = 20;
-                                continue _fun82900
+                                _fun82904_ip = 20;
+                                continue _fun82904
                             }
                         case 10:
                             var3 = _closure2_slot0;
@@ -304,8 +304,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var1 = var2 == var3;
                         case 20:
                             if (!var1) {
-                                _fun82900_ip = 47;
-                                continue _fun82900
+                                _fun82904_ip = 47;
+                                continue _fun82904
                             }
                         case 23:
                             var2 = _closure2_slot6;
@@ -352,8 +352,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = _closure1_slot10;
                 var6 = var6.POST_WATCH_VIDEO;
                 if (!(var14 === var6)) {
-                    _fun82898_ip = 464;
-                    continue _fun82898
+                    _fun82902_ip = 464;
+                    continue _fun82902
                 }
             case 461:
                 var4 = var5;
@@ -509,7 +509,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1[0] = var5;
                 var1[1] = var14;
                 var0 = function() { // Environment: var0
-                    _fun82905: for (var _fun82905_ip = 0;;) switch (_fun82905_ip) {
+                    _fun82909: for (var _fun82909_ip = 0;;) switch (_fun82909_ip) {
                         case 0:
                             var2 = _closure2_slot9;
                             var1 = var2.set;
@@ -518,8 +518,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var3 = var0.POST_WATCH_VIDEO;
                             var0 = 0;
                             if (!(var4 === var3)) {
-                                _fun82905_ip = 38;
-                                continue _fun82905
+                                _fun82909_ip = 38;
+                                continue _fun82909
                             }
                         case 35:
                             var0 = 1;
@@ -611,8 +611,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = var11.WATCH_VIDEO;
                 var12 = var14 === var11;
                 if (!var12) {
-                    _fun82898_ip = 1192;
-                    continue _fun82898
+                    _fun82902_ip = 1192;
+                    continue _fun82902
                 }
             case 1130:
                 var19 = _closure1_slot7;
@@ -636,8 +636,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var12 = var12.POST_WATCH_VIDEO;
                 var12 = var14 === var12;
                 if (!var12) {
-                    _fun82898_ip = 1264;
-                    continue _fun82898
+                    _fun82902_ip = 1264;
+                    continue _fun82902
                 }
             case 1217:
                 var15 = _closure1_slot7;
@@ -819,4 +819,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.default = var3;
     var2.VideoQuestModalSteps = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 660, 33, 1297, 671, 10623, 7779, 5224, 5217, 8151, 3679, 4040, 1568, 6420, 10624, 4697, 10627, 10666, 5275, 9955, 5193, 7464, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 660, 33, 1297, 671, 10625, 7781, 5226, 5219, 8153, 3681, 4042, 1568, 6422, 10626, 4699, 10629, 10668, 5277, 9957, 5195, 7466, 2]);

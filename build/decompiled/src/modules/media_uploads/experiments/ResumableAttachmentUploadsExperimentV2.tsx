@@ -99,4 +99,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getResumableAttachmentUploadsV2Config = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3074, 1588, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3076, 1588, 2]);

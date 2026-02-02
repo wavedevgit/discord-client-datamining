@@ -107,7 +107,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/main_tabs_v2/native/friends/screens/UsernameSearchScreen.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun108635: for (var _fun108635_ip = 0;;) switch (_fun108635_ip) {
+        _fun108636: for (var _fun108636_ip = 0;;) switch (_fun108636_ip) {
             case 0:
                 var0 = arg0;
                 var7 = var0.navigation;
@@ -155,22 +155,22 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = var3.addListener;
                     var1 = 'transitionEnd';
                     var0 = function(arg0) { // Environment: var0
-                        _fun108638: for (var _fun108638_ip = 0;;) switch (_fun108638_ip) {
+                        _fun108639: for (var _fun108639_ip = 0;;) switch (_fun108639_ip) {
                             case 0:
                                 var0 = arg0;
                                 var0 = var0.data;
                                 var0 = var0.closing;
                                 if (var0) {
-                                    _fun108638_ip = 45;
-                                    continue _fun108638
+                                    _fun108639_ip = 45;
+                                    continue _fun108639
                                 }
                             case 17:
                                 var0 = _closure2_slot1;
                                 var1 = var0.current;
                                 var0 = null;
                                 if (!(var0 != var1)) {
-                                    _fun108638_ip = 45;
-                                    continue _fun108638
+                                    _fun108639_ip = 45;
+                                    continue _fun108639
                                 }
                             case 35:
                                 var0 = var1.focus;
@@ -197,14 +197,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.bind(var2)();
                 var16 = null;
                 if (!var1) {
-                    _fun108635_ip = 191;
-                    continue _fun108635
+                    _fun108636_ip = 191;
+                    continue _fun108636
                 }
             case 179:
                 var16 = null;
                 if (!(var16 !== var9)) {
-                    _fun108635_ip = 191;
-                    continue _fun108635
+                    _fun108636_ip = 191;
+                    continue _fun108636
                 }
             case 185:
                 var16 = var13.iosPaddingThemeAdjust;
@@ -289,4 +289,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 660, 33, 1297, 671, 795, 4856, 8857, 478, 8671, 5734, 12481, 1234, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 660, 33, 1297, 671, 795, 4858, 8859, 478, 8673, 5736, 12482, 1234, 2]);

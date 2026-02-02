@@ -1,266 +1,133 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun24455: for (var _fun24455_ip = 0;;) switch (_fun24455_ip) {
+    _fun24449: for (var _fun24449_ip = 0;;) switch (_fun24449_ip) {
         case 0:
             var3 = require;
             var2 = function arg0() {
                 var3 = arg0;
                 var2 = var3.defineLocale;
                 var1 = {};
-                var5 = '一月_二月_三月_四月_五月_六月_七月_八月_九月_十月_十一月_十二月';
+                var5 = 'tháng 1_tháng 2_tháng 3_tháng 4_tháng 5_tháng 6_tháng 7_tháng 8_tháng 9_tháng 10_tháng 11_tháng 12';
                 var4 = var5.split;
-                var6 = '_';
-                var4 = var4.bind(var5)(var6);
+                var7 = '_';
+                var4 = var4.bind(var5)(var7);
                 var1.months = var4;
-                var5 = '1月_2月_3月_4月_5月_6月_7月_8月_9月_10月_11月_12月';
+                var5 = 'Th01_Th02_Th03_Th04_Th05_Th06_Th07_Th08_Th09_Th10_Th11_Th12';
                 var4 = var5.split;
-                var4 = var4.bind(var5)(var6);
+                var4 = var4.bind(var5)(var7);
                 var1.monthsShort = var4;
-                var5 = '星期日_星期一_星期二_星期三_星期四_星期五_星期六';
-                var4 = var5.split;
-                var4 = var4.bind(var5)(var6);
-                var1.weekdays = var4;
-                var5 = '週日_週一_週二_週三_週四_週五_週六';
-                var4 = var5.split;
-                var4 = var4.bind(var5)(var6);
-                var1.weekdaysShort = var4;
-                var5 = '日_一_二_三_四_五_六';
-                var4 = var5.split;
-                var4 = var4.bind(var5)(var6);
-                var1.weekdaysMin = var4;
-                var4 = {
-                    'LT': 'HH:mm',
-                    'LTS': 'HH:mm:ss',
-                    'L': 'YYYY/MM/DD',
-                    'LL': 'YYYY年M月D日',
-                    'LLL': 'YYYY年M月D日 HH:mm',
-                    'LLLL': 'YYYY年M月D日dddd HH:mm',
-                    'l': 'YYYY/M/D',
-                    'll': 'YYYY年M月D日',
-                    'lll': 'YYYY年M月D日 HH:mm',
-                    'llll': 'YYYY年M月D日dddd HH:mm'
-                };
-                var1.longDateFormat = var4;
-                var4 = /凌晨|早上|上午|中午|下午|晚上/;
+                var4 = true;
+                var1.monthsParseExact = var4;
+                var6 = 'chủ nhật_thứ hai_thứ ba_thứ tư_thứ năm_thứ sáu_thứ bảy';
+                var5 = var6.split;
+                var5 = var5.bind(var6)(var7);
+                var1.weekdays = var5;
+                var6 = 'CN_T2_T3_T4_T5_T6_T7';
+                var5 = var6.split;
+                var5 = var5.bind(var6)(var7);
+                var1.weekdaysShort = var5;
+                var5 = var6.split;
+                var5 = var5.bind(var6)(var7);
+                var1.weekdaysMin = var5;
+                var1.weekdaysParseExact = var4;
+                var4 = /sa|ch/i;
                 var1.meridiemParse = var4;
-                var4 = function arg0, arg1() {
-                    _fun24457: for (var _fun24457_ip = 0;;) switch (_fun24457_ip) {
+                var4 = function arg0() {
+                    var2 = /^ch$/i;
+                    var1 = var2.test;
+                    var0 = arg0;
+                    var0 = var1.bind(var2)(var0);
+                    return var0;
+                };
+                var1.isPM = var4;
+                var4 = function arg0, arg1, arg2() {
+                    _fun24452: for (var _fun24452_ip = 0;;) switch (_fun24452_ip) {
                         case 0:
-                            var4 = arg0;
-                            var5 = arg1;
-                            var3 = 12;
-                            if (!(var3 === var4)) {
-                                _fun24457_ip = 15;
-                                continue _fun24457
+                            var2 = arg2;
+                            var1 = arg0;
+                            var0 = 12;
+                            if (!(!(var1 < var0))) {
+                                _fun24452_ip = 28;
+                                continue _fun24452
                             }
                         case 13:
-                            var4 = 0;
-                        case 15:
-                            var1 = '凌晨';
-                            var0 = var4;
-                            if (!(var1 !== var5)) {
-                                _fun24457_ip = 112;
-                                continue _fun24457
+                            var0 = 'CH';
+                            if (!var2) {
+                                _fun24452_ip = 26;
+                                continue _fun24452
                             }
+                        case 20:
+                            var0 = 'ch';
+                        case 26:
+                            _fun24452_ip = 42;
+                            continue _fun24452;
                         case 28:
-                            var1 = '早上';
-                            var0 = var4;
-                            if (!(var1 !== var5)) {
-                                _fun24457_ip = 112;
-                                continue _fun24457
+                            var1 = 'SA';
+                            if (!var2) {
+                                _fun24452_ip = 39;
+                                continue _fun24452
                             }
-                        case 41:
-                            var1 = '上午';
-                            var0 = var4;
-                            if (!(var1 !== var5)) {
-                                _fun24457_ip = 112;
-                                continue _fun24457
-                            }
-                        case 54:
-                            var1 = '中午';
-                            if (!(var1 !== var5)) {
-                                _fun24457_ip = 92;
-                                continue _fun24457
-                            }
-                        case 64:
-                            var1 = '下午';
-                            if (!(var1 !== var5)) {
-                                _fun24457_ip = 86;
-                                continue _fun24457
-                            }
-                        case 74:
-                            var2 = '晚上';
-                            var1 = undefined;
-                            if (!(var2 === var5)) {
-                                _fun24457_ip = 90;
-                                continue _fun24457
-                            }
-                        case 86:
-                            var1 = var4 + var3;
-                        case 90:
-                            _fun24457_ip = 109;
-                            continue _fun24457;
-                        case 92:
-                            var5 = 11;
-                            var2 = var4;
-                            if (!(!(var4 >= var5))) {
-                                _fun24457_ip = 106;
-                                continue _fun24457
-                            }
-                        case 102:
-                            var2 = var4 + var3;
-                        case 106:
-                            var1 = var2;
-                        case 109:
+                        case 35:
+                            var1 = 'sa';
+                        case 39:
                             var0 = var1;
-                        case 112:
-                            return var0;
-                    }
-                };
-                var1.meridiemHour = var4;
-                var4 = function arg0, arg1, arg2() {
-                    _fun24458: for (var _fun24458_ip = 0;;) switch (_fun24458_ip) {
-                        case 0:
-                            var1 = 100;
-                            var0 = arg0;
-                            var1 = var1 * var0;
-                            var0 = arg1;
-                            var6 = var1 + var0;
-                            var0 = '凌晨';
-                            var1 = 600;
-                            if (!(!(var6 < var1))) {
-                                _fun24458_ip = 115;
-                                continue _fun24458
-                            }
-                        case 33:
-                            var1 = '早上';
-                            var2 = 900;
-                            if (!(!(var6 < var2))) {
-                                _fun24458_ip = 112;
-                                continue _fun24458
-                            }
-                        case 49:
-                            var2 = '上午';
-                            var3 = 1130;
-                            if (!(!(var6 < var3))) {
-                                _fun24458_ip = 109;
-                                continue _fun24458
-                            }
-                        case 65:
-                            var3 = '中午';
-                            var4 = 1230;
-                            if (!(!(var6 < var4))) {
-                                _fun24458_ip = 106;
-                                continue _fun24458
-                            }
-                        case 81:
-                            var4 = '晚上';
-                            var5 = 1800;
-                            if (!(var6 < var5)) {
-                                _fun24458_ip = 103;
-                                continue _fun24458
-                            }
-                        case 97:
-                            var4 = '下午';
-                        case 103:
-                            var3 = var4;
-                        case 106:
-                            var2 = var3;
-                        case 109:
-                            var1 = var2;
-                        case 112:
-                            var0 = var1;
-                        case 115:
+                        case 42:
                             return var0;
                     }
                 };
                 var1.meridiem = var4;
                 var4 = {
-                    'sameDay': '[今天] LT',
-                    'nextDay': '[明天] LT',
-                    'nextWeek': '[下]dddd LT',
-                    'lastDay': '[昨天] LT',
-                    'lastWeek': '[上]dddd LT',
+                    'LT': 'HH:mm',
+                    'LTS': 'HH:mm:ss',
+                    'L': 'DD/MM/YYYY',
+                    'LL': 'D MMMM [năm] YYYY',
+                    'LLL': 'D MMMM [năm] YYYY HH:mm',
+                    'LLLL': 'dddd, D MMMM [năm] YYYY HH:mm',
+                    'l': 'DD/M/YYYY',
+                    'll': 'D MMM YYYY',
+                    'lll': 'D MMM YYYY HH:mm',
+                    'llll': 'ddd, D MMM YYYY HH:mm'
+                };
+                var1.longDateFormat = var4;
+                var4 = {
+                    'sameDay': '[Hôm nay lúc] LT',
+                    'nextDay': '[Ngày mai lúc] LT',
+                    'nextWeek': 'dddd [tuần tới lúc] LT',
+                    'lastDay': '[Hôm qua lúc] LT',
+                    'lastWeek': 'dddd [tuần rồi lúc] LT',
                     'sameElse': 'L'
                 };
                 var1.calendar = var4;
-                var4 = /\d{1,2}(日|月|週)/;
+                var4 = {
+                    'future': '%s tới',
+                    'past': '%s trước',
+                    's': 'vài giây',
+                    'ss': '%d giây',
+                    'm': 'một phút',
+                    'mm': '%d phút',
+                    'h': 'một giờ',
+                    'hh': '%d giờ',
+                    'd': 'một ngày',
+                    'dd': '%d ngày',
+                    'M': 'một tháng',
+                    'MM': '%d tháng',
+                    'y': 'một năm',
+                    'yy': '%d năm'
+                };
+                var1.relativeTime = var4;
+                var4 = /\d{1,2}/;
                 var1.dayOfMonthOrdinalParse = var4;
-                var0 = function arg0, arg1() {
-                    _fun24459: for (var _fun24459_ip = 0;;) switch (_fun24459_ip) {
-                        case 0:
-                            var1 = arg0;
-                            var2 = arg1;
-                            var0 = 'd';
-                            if (!(var0 !== var2)) {
-                                _fun24459_ip = 82;
-                                continue _fun24459
-                            }
-                        case 14:
-                            var0 = 'D';
-                            if (!(var0 !== var2)) {
-                                _fun24459_ip = 82;
-                                continue _fun24459
-                            }
-                        case 22:
-                            var0 = 'DDD';
-                            if (!(var0 !== var2)) {
-                                _fun24459_ip = 82;
-                                continue _fun24459
-                            }
-                        case 32:
-                            var0 = 'M';
-                            if (!(var0 !== var2)) {
-                                _fun24459_ip = 70;
-                                continue _fun24459
-                            }
-                        case 40:
-                            var0 = 'w';
-                            if (!(var0 !== var2)) {
-                                _fun24459_ip = 58;
-                                continue _fun24459
-                            }
-                        case 48:
-                            var0 = 'W';
-                            if (!(var0 !== var2)) {
-                                _fun24459_ip = 58;
-                                continue _fun24459
-                            }
-                        case 56:
-                            return var1;
-                        case 58:
-                            var0 = '週';
-                            var0 = var1 + var0;
-                            return var0;
-                        case 70:
-                            var0 = '月';
-                            var0 = var1 + var0;
-                            return var0;
-                        case 82:
-                            var0 = '日';
-                            var0 = var1 + var0;
-                            return var0;
-                    }
+                var0 = function arg0() {
+                    var0 = arg0;
+                    return var0;
                 };
                 var1.ordinal = var0;
                 var0 = {
-                    'future': '%s內',
-                    'past': '%s前',
-                    's': '幾秒',
-                    'ss': '%d 秒',
-                    'm': '1 分鐘',
-                    'mm': '%d 分鐘',
-                    'h': '1 小時',
-                    'hh': '%d 小時',
-                    'd': '1 天',
-                    'dd': '%d 天',
-                    'M': '1 個月',
-                    'MM': '%d 個月',
-                    'y': '1 年',
-                    'yy': '%d 年'
+                    'dow': 1,
+                    'doy': 4
                 };
-                var1.relativeTime = var0;
-                var0 = 'zh-tw';
+                var1.week = var0;
+                var0 = 'vi';
                 var0 = var2.bind(var3)(var0, var1);
                 return var0;
             };
@@ -268,22 +135,22 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var0 = arg5;
             var0 = typeof var0;
             if (!(var1 === var0)) {
-                _fun24455_ip = 44;
-                continue _fun24455
+                _fun24449_ip = 44;
+                continue _fun24449
             }
         case 24:
             var1 = undefined;
             var0 = arg4;
             if (!(var1 !== var0)) {
-                _fun24455_ip = 44;
-                continue _fun24455
+                _fun24449_ip = 44;
+                continue _fun24449
             }
         case 33:
             var4 = 'function';
             var0 = typeof var3;
             if (!(var4 !== var0)) {
-                _fun24455_ip = 121;
-                continue _fun24455
+                _fun24449_ip = 121;
+                continue _fun24449
             }
         case 44:
             var0 = global;
@@ -291,30 +158,30 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var5 = 'function';
             var4 = typeof var4;
             if (!(var5 === var4)) {
-                _fun24455_ip = 78;
-                continue _fun24455
+                _fun24449_ip = 78;
+                continue _fun24449
             }
         case 63:
             var4 = var0.define;
             var4 = var4.amd;
             if (var4) {
-                _fun24455_ip = 95;
-                continue _fun24455
+                _fun24449_ip = 95;
+                continue _fun24449
             }
         case 78:
             var4 = this;
             var5 = var4.moment;
             var4 = undefined;
             var4 = var2.bind(var4)(var5);
-            _fun24455_ip = 140;
-            continue _fun24455;
+            _fun24449_ip = 140;
+            continue _fun24449;
         case 95:
             var5 = var0.define;
             var4 = undefined;
             var0 = ['../moment'];
             var0 = var5.bind(var4)(var0, var2);
-            _fun24455_ip = 140;
-            continue _fun24455;
+            _fun24449_ip = 140;
+            continue _fun24449;
         case 121:
             var4 = arg6;
             var0 = 0;
@@ -325,4 +192,4 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var0 = undefined;
             return var0;
     }
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3004]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3006]);

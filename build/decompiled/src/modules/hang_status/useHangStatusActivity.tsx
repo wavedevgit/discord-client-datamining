@@ -66,4 +66,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useHangStatusActivity = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3569, 660, 566, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3571, 660, 566, 2]);

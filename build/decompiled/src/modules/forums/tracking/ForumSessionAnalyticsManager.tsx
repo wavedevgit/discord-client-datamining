@@ -55,15 +55,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = 'getForumChannelSessionId';
         var0.key = var4;
         var1 = function arg0() {
-            _fun53436: for (var _fun53436_ip = 0;;) switch (_fun53436_ip) {
+            _fun53440: for (var _fun53440_ip = 0;;) switch (_fun53440_ip) {
                 case 0:
                     var3 = arg0;
                     var0 = this;
                     var2 = var0.session;
                     var1 = null;
                     if (!(var1 == var2)) {
-                        _fun53436_ip = 38;
-                        continue _fun53436
+                        _fun53440_ip = 38;
+                        continue _fun53440
                     }
                 case 18:
                     var2 = _closure1_slot4;
@@ -74,8 +74,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1 = var0.session;
                     var1 = var1.channelId;
                     if (!(var1 !== var3)) {
-                        _fun53436_ip = 73;
-                        continue _fun53436
+                        _fun53440_ip = 73;
+                        continue _fun53440
                     }
                 case 53:
                     var2 = _closure1_slot4;

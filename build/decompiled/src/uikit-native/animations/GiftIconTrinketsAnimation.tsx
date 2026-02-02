@@ -216,7 +216,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot12 = var3;
     var3 = var6.memo;
     var1 = function(arg0) { // Environment: var1
-        _fun90402: for (var _fun90402_ip = 0;;) switch (_fun90402_ip) {
+        _fun90406: for (var _fun90406_ip = 0;;) switch (_fun90406_ip) {
             case 0:
                 var0 = arg0;
                 var1 = _closure1_slot8;
@@ -252,14 +252,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0.bind(var1)(var20);
                 var8 = !var0;
                 if (var6) {
-                    _fun90402_ip = 146;
-                    continue _fun90402
+                    _fun90406_ip = 146;
+                    continue _fun90406
                 }
             case 138:
                 var0 = null;
                 if (!var8) {
-                    _fun90402_ip = 422;
-                    continue _fun90402
+                    _fun90406_ip = 422;
+                    continue _fun90406
                 }
             case 146:
                 var3 = _closure1_slot7;
@@ -270,8 +270,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = 'none';
                 var1.pointerEvents = var5;
                 if (!var8) {
-                    _fun90402_ip = 332;
-                    continue _fun90402
+                    _fun90406_ip = 332;
+                    continue _fun90406
                 }
             case 180:
                 var14 = _closure1_slot6;
@@ -314,8 +314,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = new Array(2);
                 var5[0] = var8;
                 if (!var6) {
-                    _fun90402_ip = 408;
-                    continue _fun90402
+                    _fun90406_ip = 408;
+                    continue _fun90406
                 }
             case 343:
                 var9 = _closure1_slot6;
@@ -351,4 +351,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.GiftIconTrinketsAnimation = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1298, 33, 1297, 4047, 4056, 4844, 566, 1607, 3679, 6561, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1298, 33, 1297, 4049, 4058, 4846, 566, 1607, 3681, 6563, 2]);

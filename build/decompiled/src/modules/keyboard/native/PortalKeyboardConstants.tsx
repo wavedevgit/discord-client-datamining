@@ -29,4 +29,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.KEYBOARD_ANIMATION_DURATION = var3;
     var2.KEYBOARD_ANIMATION_CONFIG = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [4896, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [4898, 2]);

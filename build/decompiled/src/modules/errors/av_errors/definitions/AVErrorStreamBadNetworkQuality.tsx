@@ -32,7 +32,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var3 = var1.bind(var2)();
         var2 = var3.map;
         var1 = function(arg0) { // Environment: var1
-            _fun117564: for (var _fun117564_ip = 0;;) switch (_fun117564_ip) {
+            _fun117565: for (var _fun117565_ip = 0;;) switch (_fun117565_ip) {
                 case 0:
                     var4 = arg0;
                     var1 = _closure1_slot2;
@@ -42,8 +42,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1 = var0.BAD;
                     var0 = null;
                     if (!(var3 === var1)) {
-                        _fun117564_ip = 110;
-                        continue _fun117564
+                        _fun117565_ip = 110;
+                        continue _fun117565
                     }
                 case 37:
                     var1 = {};
@@ -102,4 +102,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.AVErrorStreamBadNetworkQualityDefinition = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3568, 660, 7967, 14938, 1304, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3570, 660, 7969, 14939, 1304, 2]);

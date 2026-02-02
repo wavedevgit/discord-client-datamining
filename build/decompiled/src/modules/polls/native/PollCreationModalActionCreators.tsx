@@ -59,4 +59,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.closeCreatePollModal = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [4525, 13941, 1307, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [4527, 13942, 1307, 2]);

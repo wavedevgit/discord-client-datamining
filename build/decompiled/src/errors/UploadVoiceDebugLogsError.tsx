@@ -61,36 +61,36 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = 'displayMessage';
         var0.key = var4;
         var1 = function() {
-            _fun28830: for (var _fun28830_ip = 0;;) switch (_fun28830_ip) {
+            _fun28834: for (var _fun28834_ip = 0;;) switch (_fun28834_ip) {
                 case 0:
                     var0 = this;
                     var2 = var0.code;
                     var1 = _closure1_slot4;
                     var1 = var1.NO_FILE;
                     if (!(var1 !== var2)) {
-                        _fun28830_ip = 328;
-                        continue _fun28830
+                        _fun28834_ip = 328;
+                        continue _fun28834
                     }
                 case 28:
                     var1 = _closure1_slot4;
                     var1 = var1.PROGRESS;
                     if (!(var1 !== var2)) {
-                        _fun28830_ip = 267;
-                        continue _fun28830
+                        _fun28834_ip = 267;
+                        continue _fun28834
                     }
                 case 45:
                     var1 = _closure1_slot4;
                     var1 = var1.UPLOAD;
                     if (!(var1 !== var2)) {
-                        _fun28830_ip = 206;
-                        continue _fun28830
+                        _fun28834_ip = 206;
+                        continue _fun28834
                     }
                 case 62:
                     var1 = _closure1_slot4;
                     var1 = var1.READ;
                     if (!(var1 !== var2)) {
-                        _fun28830_ip = 145;
-                        continue _fun28830
+                        _fun28834_ip = 145;
+                        continue _fun28834
                     }
                 case 76:
                     var1 = _closure1_slot4;

@@ -1,175 +1,263 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
+    var6 = require;
     var1 = exports;
-    var0 = global;
-    var5 = var0.Object;
-    var4 = var5.defineProperty;
-    var3 = {};
-    var0 = true;
-    var3.value = var0;
-    var0 = '__esModule';
-    var0 = var4.bind(var5)(var1, var0, var3);
-    var0 = undefined;
-    var1.default = var0;
-    var3 = {};
-    var4 = {
-        'one': 'λιγότερο από ένα δευτερόλεπτο',
-        'other': 'λιγότερο από {{count}} δευτερόλεπτα'
-    };
-    var3.lessThanXSeconds = var4;
-    var4 = {
-        'one': '1 δευτερόλεπτο',
-        'other': '{{count}} δευτερόλεπτα'
-    };
-    var3.xSeconds = var4;
-    var4 = 'μισό λεπτό';
-    var3.halfAMinute = var4;
-    var4 = {
-        'one': 'λιγότερο από ένα λεπτό',
-        'other': 'λιγότερο από {{count}} λεπτά'
-    };
-    var3.lessThanXMinutes = var4;
-    var4 = {
-        'one': '1 λεπτό',
-        'other': '{{count}} λεπτά'
-    };
-    var3.xMinutes = var4;
-    var4 = {
-        'one': 'περίπου 1 ώρα',
-        'other': 'περίπου {{count}} ώρες'
-    };
-    var3.aboutXHours = var4;
-    var4 = {
-        'one': '1 ώρα',
-        'other': '{{count}} ώρες'
-    };
-    var3.xHours = var4;
-    var4 = {
-        'one': '1 ημέρα',
-        'other': '{{count}} ημέρες'
-    };
-    var3.xDays = var4;
-    var4 = {
-        'one': 'περίπου 1 εβδομάδα',
-        'other': 'περίπου {{count}} εβδομάδες'
-    };
-    var3.aboutXWeeks = var4;
-    var4 = {
-        'one': '1 εβδομάδα',
-        'other': '{{count}} εβδομάδες'
-    };
-    var3.xWeeks = var4;
-    var4 = {
-        'one': 'περίπου 1 μήνας',
-        'other': 'περίπου {{count}} μήνες'
-    };
-    var3.aboutXMonths = var4;
-    var4 = {
-        'one': '1 μήνας',
-        'other': '{{count}} μήνες'
-    };
-    var3.xMonths = var4;
-    var4 = {
-        'one': 'περίπου 1 χρόνο',
-        'other': 'περίπου {{count}} χρόνια'
-    };
-    var3.aboutXYears = var4;
-    var4 = {
-        'one': '1 χρόνο',
-        'other': '{{count}} χρόνια'
-    };
-    var3.xYears = var4;
-    var4 = {
-        'one': 'πάνω από 1 χρόνο',
-        'other': 'πάνω από {{count}} χρόνια'
-    };
-    var3.overXYears = var4;
-    var4 = {
-        'one': 'περίπου 1 χρόνο',
-        'other': 'περίπου {{count}} χρόνια'
-    };
-    var3.almostXYears = var4;
-    var _closure1_slot0 = var3;
-    var2 = function arg0, arg1, arg2() {
-        _fun21849: for (var _fun21849_ip = 0;;) switch (_fun21849_ip) {
+    var7 = dependencyMap;
+    var5 = function arg0() {
+        _fun21847: for (var _fun21847_ip = 0;;) switch (_fun21847_ip) {
             case 0:
-                var7 = arg1;
-                var1 = arg2;
-                var2 = _closure1_slot0;
-                var0 = arg0;
-                var2 = var2[var0];
-                var4 = 'string';
-                var0 = typeof var2;
-                var3 = var2;
-                if (!(var4 !== var0)) {
-                    _fun21849_ip = 90;
-                    continue _fun21849
-                }
-            case 34:
-                var0 = 1;
-                if (!(var0 !== var7)) {
-                    _fun21849_ip = 81;
-                    continue _fun21849
-                }
-            case 41:
-                var6 = var2.other;
-                var5 = var6.replace;
-                var0 = global;
-                var4 = var0.String;
-                var0 = undefined;
-                var4 = var4.bind(var0)(var7);
-                var0 = '{{count}}';
-                var0 = var5.bind(var6)(var0, var4);
-                _fun21849_ip = 87;
-                continue _fun21849;
-            case 81:
-                var0 = var2.one;
-            case 87:
-                var3 = var0;
-            case 90:
-                var2 = null;
-                var0 = var3;
-                if (!(var2 != var1)) {
-                    _fun21849_ip = 157;
-                    continue _fun21849
-                }
-            case 99:
-                var2 = var1.addSuffix;
-                var0 = var3;
+                var2 = arg0;
                 if (!var2) {
-                    _fun21849_ip = 157;
-                    continue _fun21849
+                    _fun21847_ip = 18;
+                    continue _fun21847
                 }
-            case 111:
-                var2 = var1.comparison;
-                if (!var2) {
-                    _fun21849_ip = 132;
-                    continue _fun21849
+            case 6:
+                var1 = var2.__esModule;
+                var0 = var2;
+                if (var1) {
+                    _fun21847_ip = 27;
+                    continue _fun21847
                 }
-            case 120:
-                var2 = var1.comparison;
-                var1 = 0;
-                if (!(!(var2 > var1))) {
-                    _fun21849_ip = 144;
-                    continue _fun21849
-                }
-            case 132:
-                var1 = ' πριν';
-                var1 = var3 + var1;
-                _fun21849_ip = 154;
-                continue _fun21849;
-            case 144:
-                var2 = 'σε ';
-                var1 = var2 + var3;
-            case 154:
+            case 18:
+                var1 = {};
+                var1.default = var2;
                 var0 = var1;
-            case 157:
+            case 27:
                 return var0;
         }
     };
+    var0 = global;
+    var4 = var0.Object;
+    var3 = var4.defineProperty;
+    var2 = {};
+    var0 = true;
+    var2.value = var0;
+    var0 = '__esModule';
+    var0 = var3.bind(var4)(var1, var0, var2);
+    var0 = undefined;
+    var1.default = var0;
+    var2 = 0;
+    var2 = var7[var2];
+    var2 = var6.bind(var0)(var2);
+    var3 = var5.bind(var0)(var2);
+    var2 = {};
+    var4 = 1;
+    var4 = var7[var4];
+    var4 = var6.bind(var0)(var4);
+    var4 = var5.bind(var0)(var4);
+    var5 = var4.default;
+    var4 = {};
+    var6 = /^(\d+)(\.)?/i;
+    var4.matchPattern = var6;
+    var6 = /\d+/i;
+    var4.parsePattern = var6;
+    var6 = function arg0() {
+        var0 = global;
+        var2 = var0.parseInt;
+        var1 = undefined;
+        var0 = arg0;
+        var0 = var2.bind(var1)(var0);
+        return var0;
+    };
+    var4.valueCallback = var6;
+    var4 = var5.bind(var0)(var4);
+    var2.ordinalNumber = var4;
+    var7 = var3.default;
+    var4 = {};
+    var5 = {};
+    var6 = /^(v\.? ?Chr\.?|n\.? ?Chr\.?)/i;
+    var5.narrow = var6;
+    var6 = /^(v\.? ?Chr\.?|n\.? ?Chr\.?)/i;
+    var5.abbreviated = var6;
+    var6 = /^(vor Christus|vor unserer Zeitrechnung|nach Christus|unserer Zeitrechnung)/i;
+    var5.wide = var6;
+    var4.matchPatterns = var5;
+    var6 = 'wide';
+    var4.defaultMatchWidth = var6;
+    var5 = {};
+    var9 = new Array(2);
+    var10 = /^v/i;
+    var9[0] = var10;
+    var10 = /^n/i;
+    var9[1] = var10;
+    var5.any = var9;
+    var4.parsePatterns = var5;
+    var5 = 'any';
+    var4.defaultParseWidth = var5;
+    var4 = var7.bind(var0)(var4);
+    var2.era = var4;
+    var7 = var3.default;
+    var4 = {};
+    var9 = {};
+    var10 = /^[1234]/i;
+    var9.narrow = var10;
+    var10 = /^q[1234]/i;
+    var9.abbreviated = var10;
+    var10 = /^[1234](\.)? Quartal/i;
+    var9.wide = var10;
+    var4.matchPatterns = var9;
+    var4.defaultMatchWidth = var6;
+    var9 = {};
+    var10 = new Array(4);
+    var11 = /1/i;
+    var10[0] = var11;
+    var11 = /2/i;
+    var10[1] = var11;
+    var11 = /3/i;
+    var10[2] = var11;
+    var11 = /4/i;
+    var10[3] = var11;
+    var9.any = var10;
+    var4.parsePatterns = var9;
+    var4.defaultParseWidth = var5;
+    var8 = function arg0() {
+        var1 = arg0;
+        var0 = 1;
+        var0 = var1 + var0;
+        return var0;
+    };
+    var4.valueCallback = var8;
+    var4 = var7.bind(var0)(var4);
+    var2.quarter = var4;
+    var7 = var3.default;
+    var4 = {};
+    var8 = {};
+    var9 = /^[jfmasond]/i;
+    var8.narrow = var9;
+    var9 = /^(j[aä]n|feb|mär[z]?|apr|mai|jun[i]?|jul[i]?|aug|sep|okt|nov|dez)\.?/i;
+    var8.abbreviated = var9;
+    var9 = /^(januar|februar|märz|april|mai|juni|juli|august|september|oktober|november|dezember)/i;
+    var8.wide = var9;
+    var4.matchPatterns = var8;
+    var4.defaultMatchWidth = var6;
+    var8 = {};
+    var9 = new Array(12);
+    var10 = /^j/i;
+    var9[0] = var10;
+    var10 = /^f/i;
+    var9[1] = var10;
+    var10 = /^m/i;
+    var9[2] = var10;
+    var10 = /^a/i;
+    var9[3] = var10;
+    var10 = /^m/i;
+    var9[4] = var10;
+    var10 = /^j/i;
+    var9[5] = var10;
+    var10 = /^j/i;
+    var9[6] = var10;
+    var10 = /^a/i;
+    var9[7] = var10;
+    var10 = /^s/i;
+    var9[8] = var10;
+    var10 = /^o/i;
+    var9[9] = var10;
+    var10 = /^n/i;
+    var9[10] = var10;
+    var10 = /^d/i;
+    var9[11] = var10;
+    var8.narrow = var9;
+    var9 = new Array(12);
+    var10 = /^j[aä]/i;
+    var9[0] = var10;
+    var10 = /^f/i;
+    var9[1] = var10;
+    var10 = /^mär/i;
+    var9[2] = var10;
+    var10 = /^ap/i;
+    var9[3] = var10;
+    var10 = /^mai/i;
+    var9[4] = var10;
+    var10 = /^jun/i;
+    var9[5] = var10;
+    var10 = /^jul/i;
+    var9[6] = var10;
+    var10 = /^au/i;
+    var9[7] = var10;
+    var10 = /^s/i;
+    var9[8] = var10;
+    var10 = /^o/i;
+    var9[9] = var10;
+    var10 = /^n/i;
+    var9[10] = var10;
+    var10 = /^d/i;
+    var9[11] = var10;
+    var8.any = var9;
+    var4.parsePatterns = var8;
+    var4.defaultParseWidth = var5;
+    var4 = var7.bind(var0)(var4);
+    var2.month = var4;
+    var7 = var3.default;
+    var4 = {};
+    var8 = {};
+    var9 = /^[smdmf]/i;
+    var8.narrow = var9;
+    var9 = /^(so|mo|di|mi|do|fr|sa)/i;
+    var8.short = var9;
+    var9 = /^(son?|mon?|die?|mit?|don?|fre?|sam?)\.?/i;
+    var8.abbreviated = var9;
+    var9 = /^(sonntag|montag|dienstag|mittwoch|donnerstag|freitag|samstag)/i;
+    var8.wide = var9;
+    var4.matchPatterns = var8;
+    var4.defaultMatchWidth = var6;
+    var8 = {};
+    var9 = new Array(7);
+    var10 = /^so/i;
+    var9[0] = var10;
+    var10 = /^mo/i;
+    var9[1] = var10;
+    var10 = /^di/i;
+    var9[2] = var10;
+    var10 = /^mi/i;
+    var9[3] = var10;
+    var10 = /^do/i;
+    var9[4] = var10;
+    var10 = /^f/i;
+    var9[5] = var10;
+    var10 = /^sa/i;
+    var9[6] = var10;
+    var8.any = var9;
+    var4.parsePatterns = var8;
+    var4.defaultParseWidth = var5;
+    var4 = var7.bind(var0)(var4);
+    var2.day = var4;
+    var4 = var3.default;
+    var3 = {};
+    var7 = {};
+    var8 = /^(vm\.?|nm\.?|Mitternacht|Mittag|morgens|nachm\.?|abends|nachts)/i;
+    var7.narrow = var8;
+    var8 = /^(vorm\.?|nachm\.?|Mitternacht|Mittag|morgens|nachm\.?|abends|nachts)/i;
+    var7.abbreviated = var8;
+    var8 = /^(vormittags|nachmittags|Mitternacht|Mittag|morgens|nachmittags|abends|nachts)/i;
+    var7.wide = var8;
+    var3.matchPatterns = var7;
+    var3.defaultMatchWidth = var6;
+    var6 = {};
+    var7 = {};
+    var8 = /^v/i;
+    var7.am = var8;
+    var8 = /^n/i;
+    var7.pm = var8;
+    var8 = /^Mitte/i;
+    var7.midnight = var8;
+    var8 = /^Mitta/i;
+    var7.noon = var8;
+    var8 = /morgens/i;
+    var7.morning = var8;
+    var8 = /nachmittags/i;
+    var7.afternoon = var8;
+    var8 = /abends/i;
+    var7.evening = var8;
+    var8 = /nachts/i;
+    var7.night = var8;
+    var6.any = var7;
+    var3.parsePatterns = var6;
+    var3.defaultParseWidth = var5;
+    var3 = var4.bind(var0)(var3);
+    var2.dayPeriod = var3;
     var1.default = var2;
     var2 = var1.default;
     var1 = arg4;
     var1.exports = var2;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, []);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1686, 1687]);

@@ -32,7 +32,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'lib/WindowVisibilityUtils.native.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function() {
-        _fun64491: for (var _fun64491_ip = 0;;) switch (_fun64491_ip) {
+        _fun64495: for (var _fun64495_ip = 0;;) switch (_fun64495_ip) {
             case 0:
                 var2 = _closure1_slot2;
                 var1 = var2.getState;
@@ -50,8 +50,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var0.bind(var1)();
                 var0 = !var2;
                 if (!var2) {
-                    _fun64491_ip = 72;
-                    continue _fun64491
+                    _fun64495_ip = 72;
+                    continue _fun64495
                 }
             case 69:
                 var0 = var1;
@@ -61,4 +61,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5246, 660, 7996, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5248, 660, 7998, 2]);

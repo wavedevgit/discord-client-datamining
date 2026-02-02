@@ -1,989 +1,1717 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var6 = require;
+    var5 = require;
+    var3 = metroImportDefault;
     var2 = exports;
-    var7 = dependencyMap;
-    var _closure1_slot0 = var6;
-    var _closure1_slot1 = var7;
-    var0 = global;
-    var5 = var0.Object;
-    var4 = var5.defineProperty;
-    var3 = {};
-    var0 = true;
-    var3.value = var0;
-    var0 = '__esModule';
-    var0 = var4.bind(var5)(var2, var0, var3);
-    var0 = 0;
-    var3 = var7[var0];
-    var0 = undefined;
-    var4 = var6.bind(var0)(var3);
-    var3 = var4.Keyboard;
-    var4 = var4.Platform;
-    var _closure1_slot2 = var4;
-    var4 = {
-        'initialPosition': 0,
-        'initialKeyboardState': null,
-        'isScrollablePositionLocked': false
-    };
-    var5 = 1;
-    var5 = var7[var5];
-    var5 = var6.bind(var0)(var5);
-    var5 = var5.KEYBOARD_STATE;
-    var5 = var5.UNDETERMINED;
-    var4.initialKeyboardState = var5;
-    var _closure1_slot3 = var4;
-    var3 = var3.dismiss;
-    var _closure1_slot4 = var3;
-    var4 = {};
-    var3 = 'function pnpm_useGestureEventsHandlersDefaultTsx1(context){Object.keys(context).map(function(key){context[key]=undefined;});}';
-    var4.code = var3;
-    var3 = function arg0() {
-        var3 = arg0;
-        var _closure2_slot0 = var3;
-        var1 = global;
-        var2 = var1.Object;
-        var1 = var2.keys;
-        var2 = var1.bind(var2)(var3);
-        var1 = var2.map;
-        var0 = function(arg0) { // Environment: var0
-            var2 = _closure2_slot0;
-            var0 = undefined;
-            var1 = arg0;
-            var2[var1] = var0;
-            return var0;
-        };
-        var0 = var1.bind(var2)(var0);
-        var0 = undefined;
-        return var0;
-    };
-    var5 = {};
-    var3.__closure = var5;
-    var5 = 16627033127293.0;
-    var3.__workletHash = var5;
-    var3.__initData = var4;
-    var _closure1_slot5 = var3;
-    var3 = {};
-    var4 = 'function handleOnStart_Pnpm_useGestureEventsHandlersDefaultTsx2(__,_){const{stopAnimation,animatedKeyboardState,enableBlurKeyboardOnGesture,KEYBOARD_STATE,runOnJS,dismissKeyboard,context,animatedPosition,animatedScrollableContentOffsetY}=this.__closure;stopAnimation();let initialKeyboardState=animatedKeyboardState.value;if(enableBlurKeyboardOnGesture&&initialKeyboardState===KEYBOARD_STATE.SHOWN){initialKeyboardState=KEYBOARD_STATE.HIDDEN;runOnJS(dismissKeyboard)();}context.value={...context.value,initialPosition:animatedPosition.value,initialKeyboardState:animatedKeyboardState.value};if(animatedScrollableContentOffsetY.value>0){context.value={...context.value,isScrollablePositionLocked:true};}}';
-    var3.code = var4;
-    var _closure1_slot6 = var3;
-    var3 = {};
-    var4 = 'function handleOnChange_Pnpm_useGestureEventsHandlersDefaultTsx3(source,{translationY:translationY}){const{animatedHighestSnapPoint,isInTemporaryPosition,context,KEYBOARD_STATE,enablePanDownToClose,animatedContainerHeight,animatedSnapPoints,GESTURE_SOURCE,isScrollableRefreshable,animatedPosition,animatedScrollableContentOffsetY,clamp,enableOverDrag,animatedScrollableType,SCROLLABLE_TYPE,overDragResistanceFactor}=this.__closure;let highestSnapPoint=animatedHighestSnapPoint.value;if(isInTemporaryPosition.value&&context.value.initialKeyboardState===KEYBOARD_STATE.SHOWN){highestSnapPoint=context.value.initialPosition;}if(isInTemporaryPosition.value&&context.value.initialPosition<highestSnapPoint){highestSnapPoint=context.value.initialPosition;}const lowestSnapPoint=enablePanDownToClose?animatedContainerHeight.value:animatedSnapPoints.value[0];if(source===GESTURE_SOURCE.CONTENT&&isScrollableRefreshable.value&&animatedPosition.value===highestSnapPoint){return;}const negativeScrollableContentOffset=context.value.initialPosition===highestSnapPoint&&source===GESTURE_SOURCE.CONTENT||!context.value.isScrollablePositionLocked?animatedScrollableContentOffsetY.value*-1:0;const draggedPosition=context.value.initialPosition+translationY;const accumulatedDraggedPosition=draggedPosition+negativeScrollableContentOffset;const clampedPosition=clamp(accumulatedDraggedPosition,highestSnapPoint,lowestSnapPoint);if(context.value.isScrollablePositionLocked&&source===GESTURE_SOURCE.CONTENT&&animatedPosition.value===highestSnapPoint){context.value={...context.value,isScrollablePositionLocked:false};}if(enableOverDrag){if((source===GESTURE_SOURCE.HANDLE||animatedScrollableType.value===SCROLLABLE_TYPE.VIEW)&&draggedPosition<highestSnapPoint){const resistedPosition=highestSnapPoint-Math.sqrt(1+(highestSnapPoint-draggedPosition))*overDragResistanceFactor;animatedPosition.value=resistedPosition;return;}if(source===GESTURE_SOURCE.HANDLE&&draggedPosition>lowestSnapPoint){const resistedPosition=lowestSnapPoint+Math.sqrt(1+(draggedPosition-lowestSnapPoint))*overDragResistanceFactor;animatedPosition.value=resistedPosition;return;}if(source===GESTURE_SOURCE.CONTENT&&draggedPosition+negativeScrollableContentOffset>lowestSnapPoint){const resistedPosition=lowestSnapPoint+Math.sqrt(1+(draggedPosition+negativeScrollableContentOffset-lowestSnapPoint))*overDragResistanceFactor;animatedPosition.value=resistedPosition;return;}}animatedPosition.value=clampedPosition;}';
-    var3.code = var4;
-    var _closure1_slot7 = var3;
-    var3 = {};
-    var4 = "function handleOnEnd_Pnpm_useGestureEventsHandlersDefaultTsx4(source,{translationY:translationY,absoluteY:absoluteY,velocityY:velocityY}){const{animatedHighestSnapPoint,animatedPosition,GESTURE_SOURCE,isScrollableRefreshable,isInTemporaryPosition,context,animateToPosition,ANIMATION_SOURCE,animatedScrollableType,SCROLLABLE_TYPE,KEYBOARD_STATE,Platform,WINDOW_HEIGHT,animatedKeyboardHeight,runOnJS,dismissKeyboard,animatedSnapPoints,enablePanDownToClose,animatedClosedPosition,snapPoint,animatedScrollableContentOffsetY}=this.__closure;const highestSnapPoint=animatedHighestSnapPoint.value;const isSheetAtHighestSnapPoint=animatedPosition.value===highestSnapPoint;if(source===GESTURE_SOURCE.CONTENT&&isScrollableRefreshable.value&&isSheetAtHighestSnapPoint){return;}if(isInTemporaryPosition.value&&context.value.initialPosition>=animatedPosition.value){if(context.value.initialPosition>animatedPosition.value){animateToPosition(context.value.initialPosition,ANIMATION_SOURCE.GESTURE,velocityY/2);}return;}const isScrollable=animatedScrollableType.value!==SCROLLABLE_TYPE.UNDETERMINED&&animatedScrollableType.value!==SCROLLABLE_TYPE.VIEW;if(context.value.initialKeyboardState===KEYBOARD_STATE.SHOWN&&animatedPosition.value>context.value.initialPosition){if(!(Platform.OS==='ios'&&isScrollable&&absoluteY>WINDOW_HEIGHT-animatedKeyboardHeight.value)){runOnJS(dismissKeyboard)();}}if(isInTemporaryPosition.value){isInTemporaryPosition.value=false;}const snapPoints=animatedSnapPoints.value.slice();if(enablePanDownToClose){snapPoints.unshift(animatedClosedPosition.value);}const destinationPoint=snapPoint(translationY+context.value.initialPosition,velocityY,snapPoints);if(destinationPoint===animatedPosition.value){return;}const wasGestureHandledByScrollView=source===GESTURE_SOURCE.CONTENT&&animatedScrollableContentOffsetY.value>0;if(wasGestureHandledByScrollView&&isSheetAtHighestSnapPoint){return;}animateToPosition(destinationPoint,ANIMATION_SOURCE.GESTURE,velocityY/2);}";
-    var3.code = var4;
-    var _closure1_slot8 = var3;
-    var3 = {};
-    var4 = 'function handleOnFinalize_Pnpm_useGestureEventsHandlersDefaultTsx5(){const{resetContext,context}=this.__closure;resetContext(context);}';
-    var3.code = var4;
-    var _closure1_slot9 = var3;
-    var1 = function() {
-        var4 = _closure1_slot0;
-        var6 = _closure1_slot1;
-        var2 = 2;
-        var3 = var6[var2];
-        var2 = undefined;
-        var5 = var4.bind(var2)(var3);
-        var3 = var5.useBottomSheetInternal;
-        var3 = var3.bind(var5)();
-        var15 = var3.animatedPosition;
-        var _closure2_slot0 = var15;
-        var13 = var3.animatedSnapPoints;
-        var _closure2_slot1 = var13;
-        var25 = var3.animatedKeyboardState;
-        var _closure2_slot2 = var25;
-        var16 = var3.animatedKeyboardHeight;
-        var _closure2_slot3 = var16;
-        var22 = var3.animatedContainerHeight;
-        var _closure2_slot4 = var22;
-        var14 = var3.animatedScrollableType;
-        var _closure2_slot5 = var14;
-        var17 = var3.animatedHighestSnapPoint;
-        var _closure2_slot6 = var17;
-        var18 = var3.animatedClosedPosition;
-        var _closure2_slot7 = var18;
-        var12 = var3.animatedScrollableContentOffsetY;
-        var _closure2_slot8 = var12;
-        var24 = var3.enableOverDrag;
-        var _closure2_slot9 = var24;
-        var21 = var3.enablePanDownToClose;
-        var _closure2_slot10 = var21;
-        var23 = var3.overDragResistanceFactor;
-        var _closure2_slot11 = var23;
-        var20 = var3.isInTemporaryPosition;
-        var _closure2_slot12 = var20;
-        var19 = var3.isScrollableRefreshable;
-        var _closure2_slot13 = var19;
-        var26 = var3.enableBlurKeyboardOnGesture;
-        var _closure2_slot14 = var26;
-        var11 = var3.animateToPosition;
-        var _closure2_slot15 = var11;
-        var27 = var3.stopAnimation;
-        var _closure2_slot16 = var27;
-        var3 = 3;
-        var5 = var6[var3];
-        var7 = var4.bind(var2)(var5);
-        var5 = var7.useSharedValue;
-        var8 = global;
-        var10 = var8.Object;
-        var9 = var10.assign;
-        var8 = _closure1_slot3;
-        var0 = {};
-        var0 = var9.bind(var10)(var0, var8);
-        var5 = var5.bind(var7)(var0);
-        var _closure2_slot17 = var5;
-        var0 = {};
-        var7 = var6[var3];
-        var10 = var4.bind(var2)(var7);
-        var9 = var10.useWorkletCallback;
-        var7 = function() { // Environment: var1
-            var0 = function arg0, arg1() {
-                _fun45243: for (var _fun45243_ip = 0;;) switch (_fun45243_ip) {
-                    case 0:
-                        var1 = _closure2_slot16;
-                        var0 = undefined;
-                        var1 = var1.bind(var0)();
-                        var1 = _closure2_slot2;
-                        var4 = var1.value;
-                        var1 = _closure2_slot14;
-                        if (!var1) {
-                            _fun45243_ip = 68;
-                            continue _fun45243
-                        }
-                    case 29:
-                        var5 = _closure1_slot0;
-                        var6 = _closure1_slot1;
-                        var3 = 1;
-                        var3 = var6[var3];
-                        var3 = var5.bind(var0)(var3);
-                        var3 = var3.KEYBOARD_STATE;
-                        var3 = var3.SHOWN;
-                        var1 = var4 === var3;
-                    case 68:
-                        if (!var1) {
-                            _fun45243_ip = 136;
-                            continue _fun45243
-                        }
-                    case 71:
-                        var4 = _closure1_slot0;
-                        var5 = _closure1_slot1;
-                        var3 = 1;
-                        var3 = var5[var3];
-                        var3 = var4.bind(var0)(var3);
-                        var3 = var3.KEYBOARD_STATE;
-                        var3 = var3.HIDDEN;
-                        var3 = 3;
-                        var3 = var5[var3];
-                        var4 = var4.bind(var0)(var3);
-                        var3 = var4.runOnJS;
-                        var1 = _closure1_slot4;
-                        var1 = var3.bind(var4)(var1);
-                        var1 = var1.bind(var0)();
-                    case 136:
-                        var4 = _closure2_slot17;
-                        var1 = global;
-                        var8 = var1.Object;
-                        var7 = var8.assign;
-                        var6 = var4.value;
-                        var5 = {};
-                        var3 = _closure2_slot0;
-                        var3 = var3.value;
-                        var5.initialPosition = var3;
-                        var3 = _closure2_slot2;
-                        var3 = var3.value;
-                        var5.initialKeyboardState = var3;
-                        var3 = {};
-                        var3 = var7.bind(var8)(var3, var6, var5);
-                        var4.value = var3;
-                        var3 = _closure2_slot8;
-                        var4 = var3.value;
-                        var3 = 0;
-                        if (!(var4 > var3)) {
-                            _fun45243_ip = 262;
-                            continue _fun45243
-                        }
-                    case 218:
-                        var2 = _closure2_slot17;
-                        var6 = var1.Object;
-                        var5 = var6.assign;
-                        var4 = var2.value;
-                        var3 = {};
-                        var1 = true;
-                        var3.isScrollablePositionLocked = var1;
-                        var1 = {};
-                        var1 = var5.bind(var6)(var1, var4, var3);
-                        var2.value = var1;
-                    case 262:
-                        return var0;
-                }
-            };
-            var2 = {};
-            var1 = _closure2_slot16;
-            var2.stopAnimation = var1;
-            var1 = _closure2_slot2;
-            var2.animatedKeyboardState = var1;
-            var1 = _closure2_slot14;
-            var2.enableBlurKeyboardOnGesture = var1;
-            var6 = _closure1_slot0;
-            var7 = _closure1_slot1;
-            var4 = 1;
-            var4 = var7[var4];
-            var5 = undefined;
-            var4 = var6.bind(var5)(var4);
-            var4 = var4.KEYBOARD_STATE;
-            var2.KEYBOARD_STATE = var4;
-            var4 = 3;
-            var4 = var7[var4];
-            var4 = var6.bind(var5)(var4);
-            var4 = var4.runOnJS;
-            var2.runOnJS = var4;
-            var4 = _closure1_slot4;
-            var2.dismissKeyboard = var4;
-            var4 = _closure2_slot17;
-            var2.context = var4;
-            var4 = _closure2_slot0;
-            var2.animatedPosition = var4;
-            var3 = _closure2_slot8;
-            var2.animatedScrollableContentOffsetY = var3;
-            var0.__closure = var2;
-            var2 = 9400766587341.0;
-            var0.__workletHash = var2;
-            var1 = _closure1_slot6;
-            var0.__initData = var1;
-            return var0;
-        };
-        var8 = var7.bind(var2)();
-        var7 = new Array(5);
-        var7[0] = var27;
-        var7[1] = var26;
-        var7[2] = var15;
-        var7[3] = var25;
-        var7[4] = var12;
-        var7 = var9.bind(var10)(var8, var7);
-        var0.handleOnStart = var7;
-        var7 = var6[var3];
-        var10 = var4.bind(var2)(var7);
-        var9 = var10.useWorkletCallback;
-        var7 = function() { // Environment: var1
-            var0 = function arg0, arg1() {
-                _fun45245: for (var _fun45245_ip = 0;;) switch (_fun45245_ip) {
-                    case 0:
-                        var9 = arg0;
-                        var0 = arg1;
-                        var8 = var0.translationY;
-                        var0 = _closure2_slot6;
-                        var2 = var0.value;
-                        var0 = _closure2_slot12;
-                        var0 = var0.value;
-                        if (!var0) {
-                            _fun45245_ip = 92;
-                            continue _fun45245
-                        }
-                    case 36:
-                        var3 = _closure2_slot17;
-                        var3 = var3.value;
-                        var4 = var3.initialKeyboardState;
-                        var6 = _closure1_slot0;
-                        var5 = _closure1_slot1;
-                        var3 = 1;
-                        var5 = var5[var3];
-                        var3 = undefined;
-                        var3 = var6.bind(var3)(var5);
-                        var3 = var3.KEYBOARD_STATE;
-                        var3 = var3.SHOWN;
-                        var0 = var4 === var3;
-                    case 92:
-                        if (!var0) {
-                            _fun45245_ip = 110;
-                            continue _fun45245
-                        }
-                    case 95:
-                        var0 = _closure2_slot17;
-                        var0 = var0.value;
-                        var2 = var0.initialPosition;
-                    case 110:
-                        var0 = _closure2_slot12;
-                        var0 = var0.value;
-                        if (!var0) {
-                            _fun45245_ip = 141;
-                            continue _fun45245
-                        }
-                    case 122:
-                        var3 = _closure2_slot17;
-                        var3 = var3.value;
-                        var3 = var3.initialPosition;
-                        var0 = var3 < var2;
-                    case 141:
-                        if (!var0) {
-                            _fun45245_ip = 159;
-                            continue _fun45245
-                        }
-                    case 144:
-                        var0 = _closure2_slot17;
-                        var0 = var0.value;
-                        var2 = var0.initialPosition;
-                    case 159:
-                        var0 = _closure2_slot10;
-                        if (var0) {
-                            _fun45245_ip = 183;
-                            continue _fun45245
-                        }
-                    case 166:
-                        var0 = _closure2_slot1;
-                        var3 = var0.value;
-                        var0 = 0;
-                        var4 = var3[var0];
-                        _fun45245_ip = 192;
-                        continue _fun45245;
-                    case 183:
-                        var0 = _closure2_slot4;
-                        var4 = var0.value;
-                    case 192:
-                        var3 = _closure1_slot0;
-                        var0 = _closure1_slot1;
-                        var5 = 1;
-                        var0 = var0[var5];
-                        var6 = undefined;
-                        var0 = var3.bind(var6)(var0);
-                        var0 = var0.GESTURE_SOURCE;
-                        var0 = var0.CONTENT;
-                        if (!(var9 === var0)) {
-                            _fun45245_ip = 261;
-                            continue _fun45245
-                        }
-                    case 233:
-                        var0 = _closure2_slot13;
-                        var0 = var0.value;
-                        if (!var0) {
-                            _fun45245_ip = 261;
-                            continue _fun45245
-                        }
-                    case 245:
-                        var0 = _closure2_slot0;
-                        var0 = var0.value;
-                        if (!(var0 !== var2)) {
-                            _fun45245_ip = 700;
-                            continue _fun45245
-                        }
-                    case 261:
-                        var0 = _closure2_slot17;
-                        var0 = var0.value;
-                        var0 = var0.initialPosition;
-                        if (!(var0 === var2)) {
-                            _fun45245_ip = 313;
-                            continue _fun45245
-                        }
-                    case 280:
-                        var3 = _closure1_slot0;
-                        var0 = _closure1_slot1;
-                        var0 = var0[var5];
-                        var0 = var3.bind(var6)(var0);
-                        var0 = var0.GESTURE_SOURCE;
-                        var0 = var0.CONTENT;
-                        if (!(var9 !== var0)) {
-                            _fun45245_ip = 333;
-                            continue _fun45245
-                        }
-                    case 313:
-                        var0 = _closure2_slot17;
-                        var0 = var0.value;
-                        var0 = var0.isScrollablePositionLocked;
-                        var3 = 0;
-                        if (var0) {
-                            _fun45245_ip = 352;
-                            continue _fun45245
-                        }
-                    case 333:
-                        var0 = _closure2_slot8;
-                        var10 = var0.value;
-                        var0 = -1;
-                        var3 = var0 * var10;
-                    case 352:
-                        var10 = _closure2_slot17;
-                        var0 = var10.value;
-                        var0 = var0.initialPosition;
-                        var0 = var0 + var8;
-                        var12 = var0 + var3;
-                        var11 = _closure1_slot0;
-                        var13 = _closure1_slot1;
-                        var8 = 4;
-                        var8 = var13[var8];
-                        var11 = var11.bind(var6)(var8);
-                        var8 = var11.clamp;
-                        var8 = var8.bind(var11)(var12, var2, var4);
-                        var10 = var10.value;
-                        var10 = var10.isScrollablePositionLocked;
-                        if (!var10) {
-                            _fun45245_ip = 455;
-                            continue _fun45245
-                        }
-                    case 422:
-                        var12 = _closure1_slot0;
-                        var11 = _closure1_slot1;
-                        var11 = var11[var5];
-                        var11 = var12.bind(var6)(var11);
-                        var11 = var11.GESTURE_SOURCE;
-                        var11 = var11.CONTENT;
-                        var10 = var9 === var11;
-                    case 455:
-                        if (!var10) {
-                            _fun45245_ip = 471;
-                            continue _fun45245
-                        }
-                    case 458:
-                        var11 = _closure2_slot0;
-                        var11 = var11.value;
-                        var10 = var11 === var2;
-                    case 471:
-                        if (!var10) {
-                            _fun45245_ip = 520;
-                            continue _fun45245
-                        }
-                    case 474:
-                        var11 = _closure2_slot17;
-                        var10 = global;
-                        var15 = var10.Object;
-                        var14 = var15.assign;
-                        var13 = var11.value;
-                        var12 = {};
-                        var10 = false;
-                        var12.isScrollablePositionLocked = var10;
-                        var10 = {};
-                        var10 = var14.bind(var15)(var10, var13, var12);
-                        var11.value = var10;
-                    case 520:
-                        var10 = _closure2_slot9;
-                        if (!var10) {
-                            _fun45245_ip = 690;
-                            continue _fun45245
-                        }
-                    case 530:
-                        var11 = _closure1_slot0;
-                        var10 = _closure1_slot1;
-                        var10 = var10[var5];
-                        var10 = var11.bind(var6)(var10);
-                        var10 = var10.GESTURE_SOURCE;
-                        var10 = var10.HANDLE;
-                        if (!(var9 !== var10)) {
-                            _fun45245_ip = 605;
-                            continue _fun45245
-                        }
-                    case 563:
-                        var10 = _closure2_slot5;
-                        var11 = var10.value;
-                        var12 = _closure1_slot0;
-                        var10 = _closure1_slot1;
-                        var10 = var10[var5];
-                        var10 = var12.bind(var6)(var10);
-                        var10 = var10.SCROLLABLE_TYPE;
-                        var10 = var10.VIEW;
-                        if (!(var11 === var10)) {
-                            _fun45245_ip = 612;
-                            continue _fun45245
-                        }
-                    case 605:
-                        if (!(!(var0 < var2))) {
-                            _fun45245_ip = 812;
-                            continue _fun45245
-                        }
-                    case 612:
-                        var11 = _closure1_slot0;
-                        var10 = _closure1_slot1;
-                        var10 = var10[var5];
-                        var10 = var11.bind(var6)(var10);
-                        var10 = var10.GESTURE_SOURCE;
-                        var10 = var10.HANDLE;
-                        if (!(var9 === var10)) {
-                            _fun45245_ip = 649;
-                            continue _fun45245
-                        }
-                    case 645:
-                        if (!(!(var0 > var4))) {
-                            _fun45245_ip = 759;
-                            continue _fun45245
-                        }
-                    case 649:
-                        var10 = _closure1_slot0;
-                        var7 = _closure1_slot1;
-                        var7 = var7[var5];
-                        var7 = var10.bind(var6)(var7);
-                        var7 = var7.GESTURE_SOURCE;
-                        var7 = var7.CONTENT;
-                        if (!(var9 === var7)) {
-                            _fun45245_ip = 690;
-                            continue _fun45245
-                        }
-                    case 682:
-                        var7 = var0 + var3;
-                        if (!(!(var7 > var4))) {
-                            _fun45245_ip = 702;
-                            continue _fun45245
-                        }
-                    case 690:
-                        var7 = _closure2_slot0;
-                        var7.value = var8;
-                    case 700:
-                        return var6;
-                    case 702:
-                        var6 = global;
-                        var7 = var6.Math;
-                        var6 = var7.sqrt;
-                        var3 = var0 + var3;
-                        var3 = var3 - var4;
-                        var3 = var3 + var5;
-                        var6 = var6.bind(var7)(var3);
-                        var3 = _closure2_slot11;
-                        var3 = var6 * var3;
-                        var3 = var4 + var3;
-                        var6 = _closure2_slot0;
-                        var6.value = var3;
-                        var3 = undefined;
-                        return var3;
-                    case 759:
-                        var3 = global;
-                        var7 = var3.Math;
-                        var6 = var7.sqrt;
-                        var3 = var0 - var4;
-                        var3 = var3 + var5;
-                        var6 = var6.bind(var7)(var3);
-                        var3 = _closure2_slot11;
-                        var3 = var6 * var3;
-                        var3 = var4 + var3;
-                        var4 = _closure2_slot0;
-                        var4.value = var3;
-                        var3 = undefined;
-                        return var3;
-                    case 812:
-                        var3 = global;
-                        var4 = var3.Math;
-                        var3 = var4.sqrt;
-                        var0 = var2 - var0;
-                        var0 = var0 + var5;
-                        var3 = var3.bind(var4)(var0);
-                        var0 = _closure2_slot11;
-                        var0 = var3 * var0;
-                        var0 = var2 - var0;
-                        var1 = _closure2_slot0;
-                        var1.value = var0;
-                        var0 = undefined;
-                        return var0;
-                }
-            };
-            var2 = {};
-            var1 = _closure2_slot6;
-            var2.animatedHighestSnapPoint = var1;
-            var1 = _closure2_slot12;
-            var2.isInTemporaryPosition = var1;
-            var1 = _closure2_slot17;
-            var2.context = var1;
-            var6 = _closure1_slot0;
-            var7 = _closure1_slot1;
-            var4 = 1;
-            var8 = var7[var4];
-            var5 = undefined;
-            var8 = var6.bind(var5)(var8);
-            var8 = var8.KEYBOARD_STATE;
-            var2.KEYBOARD_STATE = var8;
-            var8 = _closure2_slot10;
-            var2.enablePanDownToClose = var8;
-            var8 = _closure2_slot4;
-            var2.animatedContainerHeight = var8;
-            var8 = _closure2_slot1;
-            var2.animatedSnapPoints = var8;
-            var8 = var7[var4];
-            var8 = var6.bind(var5)(var8);
-            var8 = var8.GESTURE_SOURCE;
-            var2.GESTURE_SOURCE = var8;
-            var8 = _closure2_slot13;
-            var2.isScrollableRefreshable = var8;
-            var8 = _closure2_slot0;
-            var2.animatedPosition = var8;
-            var8 = _closure2_slot8;
-            var2.animatedScrollableContentOffsetY = var8;
-            var8 = 4;
-            var8 = var7[var8];
-            var8 = var6.bind(var5)(var8);
-            var8 = var8.clamp;
-            var2.clamp = var8;
-            var8 = _closure2_slot9;
-            var2.enableOverDrag = var8;
-            var8 = _closure2_slot5;
-            var2.animatedScrollableType = var8;
-            var4 = var7[var4];
-            var4 = var6.bind(var5)(var4);
-            var4 = var4.SCROLLABLE_TYPE;
-            var2.SCROLLABLE_TYPE = var4;
-            var3 = _closure2_slot11;
-            var2.overDragResistanceFactor = var3;
-            var0.__closure = var2;
-            var2 = 6221237616078.0;
-            var0.__workletHash = var2;
-            var1 = _closure1_slot7;
-            var0.__initData = var1;
-            return var0;
-        };
-        var8 = var7.bind(var2)();
-        var7 = new Array(11);
-        var7[0] = var24;
-        var7[1] = var21;
-        var7[2] = var23;
-        var7[3] = var20;
-        var7[4] = var19;
-        var7[5] = var17;
-        var7[6] = var22;
-        var7[7] = var13;
-        var7[8] = var15;
-        var7[9] = var14;
-        var7[10] = var12;
-        var7 = var9.bind(var10)(var8, var7);
-        var0.handleOnChange = var7;
-        var7 = var6[var3];
-        var10 = var4.bind(var2)(var7);
-        var9 = var10.useWorkletCallback;
-        var7 = function() { // Environment: var1
-            var0 = function arg0, arg1() {
-                _fun45247: for (var _fun45247_ip = 0;;) switch (_fun45247_ip) {
-                    case 0:
-                        var7 = arg0;
-                        var0 = arg1;
-                        var11 = var0.translationY;
-                        var1 = var0.absoluteY;
-                        var5 = var0.velocityY;
-                        var0 = _closure2_slot6;
-                        var1 = var0.value;
-                        var0 = _closure2_slot0;
-                        var0 = var0.value;
-                        var4 = var0 === var1;
-                        var8 = _closure1_slot0;
-                        var0 = _closure1_slot1;
-                        var6 = 1;
-                        var3 = var0[var6];
-                        var0 = undefined;
-                        var3 = var8.bind(var0)(var3);
-                        var3 = var3.GESTURE_SOURCE;
-                        var3 = var3.CONTENT;
-                        if (!(var7 === var3)) {
-                            _fun45247_ip = 108;
-                            continue _fun45247
-                        }
-                    case 90:
-                        var3 = _closure2_slot13;
-                        var3 = var3.value;
-                        if (!var3) {
-                            _fun45247_ip = 108;
-                            continue _fun45247
-                        }
-                    case 102:
-                        if (var4) {
-                            _fun45247_ip = 690;
-                            continue _fun45247
-                        }
-                    case 108:
-                        var3 = _closure2_slot12;
-                        var3 = var3.value;
-                        if (!var3) {
-                            _fun45247_ip = 151;
-                            continue _fun45247
-                        }
-                    case 120:
-                        var3 = _closure2_slot17;
-                        var3 = var3.value;
-                        var8 = var3.initialPosition;
-                        var3 = _closure2_slot0;
-                        var3 = var3.value;
-                        if (!(!(var8 >= var3))) {
-                            _fun45247_ip = 600;
-                            continue _fun45247
-                        }
-                    case 151:
-                        var3 = _closure2_slot5;
-                        var8 = var3.value;
-                        var9 = _closure1_slot0;
-                        var3 = _closure1_slot1;
-                        var3 = var3[var6];
-                        var3 = var9.bind(var0)(var3);
-                        var3 = var3.SCROLLABLE_TYPE;
-                        var3 = var3.UNDETERMINED;
-                        if (!(var8 !== var3)) {
-                            _fun45247_ip = 231;
-                            continue _fun45247
-                        }
-                    case 193:
-                        var3 = _closure2_slot5;
-                        var3 = var3.value;
-                        var8 = _closure1_slot0;
-                        var3 = _closure1_slot1;
-                        var3 = var3[var6];
-                        var3 = var8.bind(var0)(var3);
-                        var3 = var3.SCROLLABLE_TYPE;
-                        var3 = var3.VIEW;
-                    case 231:
-                        var3 = _closure2_slot17;
-                        var3 = var3.value;
-                        var8 = var3.initialKeyboardState;
-                        var9 = _closure1_slot0;
-                        var3 = _closure1_slot1;
-                        var3 = var3[var6];
-                        var3 = var9.bind(var0)(var3);
-                        var3 = var3.KEYBOARD_STATE;
-                        var3 = var3.SHOWN;
-                        var3 = var8 === var3;
-                        if (!var3) {
-                            _fun45247_ip = 310;
-                            continue _fun45247
-                        }
-                    case 282:
-                        var8 = _closure2_slot0;
-                        var9 = var8.value;
-                        var8 = _closure2_slot17;
-                        var8 = var8.value;
-                        var8 = var8.initialPosition;
-                        var3 = var9 > var8;
-                    case 310:
-                        if (!var3) {
-                            _fun45247_ip = 351;
-                            continue _fun45247
-                        }
-                    case 313:
-                        var8 = _closure1_slot0;
-                        var9 = _closure1_slot1;
-                        var3 = 3;
-                        var3 = var9[var3];
-                        var9 = var8.bind(var0)(var3);
-                        var8 = var9.runOnJS;
-                        var3 = _closure1_slot4;
-                        var3 = var8.bind(var9)(var3);
-                        var3 = var3.bind(var0)();
-                    case 351:
-                        var3 = _closure2_slot12;
-                        var3 = var3.value;
-                        if (!var3) {
-                            _fun45247_ip = 375;
-                            continue _fun45247
-                        }
-                    case 363:
-                        var8 = _closure2_slot12;
-                        var3 = false;
-                        var8.value = var3;
-                    case 375:
-                        var3 = _closure2_slot1;
-                        var8 = var3.value;
-                        var3 = var8.slice;
-                        var10 = var3.bind(var8)();
-                        var3 = _closure2_slot10;
-                        if (!var3) {
-                            _fun45247_ip = 420;
-                            continue _fun45247
-                        }
-                    case 400:
-                        var8 = var10.unshift;
-                        var3 = _closure2_slot7;
-                        var3 = var3.value;
-                        var3 = var8.bind(var10)(var3);
-                    case 420:
-                        var8 = _closure1_slot0;
-                        var9 = _closure1_slot1;
-                        var3 = 5;
-                        var3 = var9[var3];
-                        var9 = var8.bind(var0)(var3);
-                        var8 = var9.snapPoint;
-                        var3 = _closure2_slot17;
-                        var3 = var3.value;
-                        var3 = var3.initialPosition;
-                        var3 = var11 + var3;
-                        var8 = var8.bind(var9)(var3, var5, var10);
-                        var3 = _closure2_slot0;
-                        var3 = var3.value;
-                        if (!(var8 !== var3)) {
-                            _fun45247_ip = 690;
-                            continue _fun45247
-                        }
-                    case 488:
-                        var9 = _closure1_slot0;
-                        var3 = _closure1_slot1;
-                        var3 = var3[var6];
-                        var3 = var9.bind(var0)(var3);
-                        var3 = var3.GESTURE_SOURCE;
-                        var3 = var3.CONTENT;
-                        var3 = var7 === var3;
-                        if (!var3) {
-                            _fun45247_ip = 539;
-                            continue _fun45247
-                        }
-                    case 524:
-                        var7 = _closure2_slot8;
-                        var9 = var7.value;
-                        var7 = 0;
-                        var3 = var9 > var7;
-                    case 539:
-                        if (!var3) {
-                            _fun45247_ip = 545;
-                            continue _fun45247
-                        }
-                    case 542:
-                        var3 = var4;
-                    case 545:
-                        if (var3) {
-                            _fun45247_ip = 690;
-                            continue _fun45247
-                        }
-                    case 551:
-                        var7 = _closure2_slot15;
-                        var4 = _closure1_slot0;
-                        var3 = _closure1_slot1;
-                        var3 = var3[var6];
-                        var3 = var4.bind(var0)(var3);
-                        var3 = var3.ANIMATION_SOURCE;
-                        var4 = var3.GESTURE;
-                        var3 = 2;
-                        var3 = var5 / var3;
-                        var3 = var7.bind(var0)(var8, var4, var3);
-                        _fun45247_ip = 690;
-                        continue _fun45247;
-                    case 600:
-                        var3 = _closure2_slot17;
-                        var3 = var3.value;
-                        var4 = var3.initialPosition;
-                        var3 = _closure2_slot0;
-                        var3 = var3.value;
-                        if (!(var4 > var3)) {
-                            _fun45247_ip = 690;
-                            continue _fun45247
-                        }
-                    case 628:
-                        var4 = _closure2_slot15;
-                        var2 = _closure2_slot17;
-                        var2 = var2.value;
-                        var3 = var2.initialPosition;
-                        var2 = _closure1_slot0;
-                        var1 = _closure1_slot1;
-                        var1 = var1[var6];
-                        var1 = var2.bind(var0)(var1);
-                        var1 = var1.ANIMATION_SOURCE;
-                        var2 = var1.GESTURE;
-                        var1 = 2;
-                        var1 = var5 / var1;
-                        var1 = var4.bind(var0)(var3, var2, var1);
-                    case 690:
-                        return var0;
-                }
-            };
-            var2 = {};
-            var1 = _closure2_slot6;
-            var2.animatedHighestSnapPoint = var1;
-            var1 = _closure2_slot0;
-            var2.animatedPosition = var1;
-            var6 = _closure1_slot0;
-            var7 = _closure1_slot1;
-            var4 = 1;
-            var8 = var7[var4];
-            var5 = undefined;
-            var8 = var6.bind(var5)(var8);
-            var8 = var8.GESTURE_SOURCE;
-            var2.GESTURE_SOURCE = var8;
-            var8 = _closure2_slot13;
-            var2.isScrollableRefreshable = var8;
-            var8 = _closure2_slot12;
-            var2.isInTemporaryPosition = var8;
-            var8 = _closure2_slot17;
-            var2.context = var8;
-            var8 = _closure2_slot15;
-            var2.animateToPosition = var8;
-            var8 = var7[var4];
-            var8 = var6.bind(var5)(var8);
-            var8 = var8.ANIMATION_SOURCE;
-            var2.ANIMATION_SOURCE = var8;
-            var8 = _closure2_slot5;
-            var2.animatedScrollableType = var8;
-            var8 = var7[var4];
-            var8 = var6.bind(var5)(var8);
-            var8 = var8.SCROLLABLE_TYPE;
-            var2.SCROLLABLE_TYPE = var8;
-            var8 = var7[var4];
-            var8 = var6.bind(var5)(var8);
-            var8 = var8.KEYBOARD_STATE;
-            var2.KEYBOARD_STATE = var8;
-            var8 = _closure1_slot2;
-            var2.Platform = var8;
-            var4 = var7[var4];
-            var4 = var6.bind(var5)(var4);
-            var4 = var4.WINDOW_HEIGHT;
-            var2.WINDOW_HEIGHT = var4;
-            var4 = _closure2_slot3;
-            var2.animatedKeyboardHeight = var4;
-            var4 = 3;
-            var4 = var7[var4];
-            var4 = var6.bind(var5)(var4);
-            var4 = var4.runOnJS;
-            var2.runOnJS = var4;
-            var4 = _closure1_slot4;
-            var2.dismissKeyboard = var4;
-            var4 = _closure2_slot1;
-            var2.animatedSnapPoints = var4;
-            var4 = _closure2_slot10;
-            var2.enablePanDownToClose = var4;
-            var4 = _closure2_slot7;
-            var2.animatedClosedPosition = var4;
-            var4 = 5;
-            var4 = var7[var4];
-            var4 = var6.bind(var5)(var4);
-            var4 = var4.snapPoint;
-            var2.snapPoint = var4;
-            var3 = _closure2_slot8;
-            var2.animatedScrollableContentOffsetY = var3;
-            var0.__closure = var2;
-            var2 = 8667894097210.0;
-            var0.__workletHash = var2;
-            var1 = _closure1_slot8;
-            var0.__initData = var1;
-            return var0;
-        };
-        var8 = var7.bind(var2)();
-        var7 = new Array(11);
-        var7[0] = var21;
-        var7[1] = var20;
-        var7[2] = var19;
-        var7[3] = var18;
-        var7[4] = var17;
-        var7[5] = var16;
-        var7[6] = var15;
-        var7[7] = var14;
-        var7[8] = var13;
-        var7[9] = var12;
-        var7[10] = var11;
-        var7 = var9.bind(var10)(var8, var7);
-        var0.handleOnEnd = var7;
-        var3 = var6[var3];
-        var4 = var4.bind(var2)(var3);
-        var3 = var4.useWorkletCallback;
-        var1 = function() { // Environment: var1
-            var0 = function() {
-                var2 = _closure1_slot5;
-                var1 = _closure2_slot17;
+    var8 = dependencyMap;
+    var _closure1_slot0 = var5;
+    var _closure1_slot1 = var3;
+    var _closure1_slot2 = var8;
+    var0 = function() {
+        _fun45214: for (var _fun45214_ip = 0;;) switch (_fun45214_ip) {
+            case 0:
+            case 2: // try_start_0
+                var1 = global;
+                var2 = var1.Boolean;
+                var2 = var2.prototype;
+                var3 = var2.valueOf;
+                var2 = var3.call;
+                var7 = var1.Reflect;
+                var6 = var7.construct;
+                var5 = var1.Boolean;
+                var4 = new Array(0);
+                var1 = function() { // Environment: var0
+                    var0 = undefined;
+                    return var0;
+                };
+                var1 = var6.bind(var7)(var5, var4, var1);
+                var1 = var2.bind(var3)(var1);
+                var1 = !var1;
+                var _closure2_slot0 = var1;
+            case 70: // try_end0
+                _fun45214_ip = 74;
+                continue _fun45214;
+            case 72: // catch_target0
+                CatchBlockStart(arg_register = 1);
+            case 74:
+                var1 = function() {
+                    var0 = _closure2_slot0;
+                    var0 = !var0;
+                    var0 = !var0;
+                    return var0;
+                };
+                _closure1_slot17 = var1;
                 var0 = undefined;
-                var1 = var2.bind(var0)(var1);
+                var0 = var1.bind(var0)();
                 return var0;
-            };
-            var2 = {};
-            var3 = _closure1_slot5;
-            var2.resetContext = var3;
-            var3 = _closure2_slot17;
-            var2.context = var3;
-            var0.__closure = var2;
-            var2 = 8824211868683.0;
-            var0.__workletHash = var2;
-            var1 = _closure1_slot9;
-            var0.__initData = var1;
-            return var0;
+        }
+    };
+    var _closure1_slot17 = var0;
+    var7 = global;
+    var9 = var7.Object;
+    var6 = var9.defineProperty;
+    var1 = {};
+    var0 = true;
+    var1.value = var0;
+    var0 = '__esModule';
+    var0 = var6.bind(var9)(var2, var0, var1);
+    var0 = 0;
+    var1 = var8[var0];
+    var0 = undefined;
+    var1 = var3.bind(var0)(var1);
+    var _closure1_slot3 = var1;
+    var1 = 1;
+    var1 = var8[var1];
+    var1 = var3.bind(var0)(var1);
+    var _closure1_slot4 = var1;
+    var1 = 2;
+    var1 = var8[var1];
+    var1 = var3.bind(var0)(var1);
+    var _closure1_slot5 = var1;
+    var1 = 3;
+    var1 = var8[var1];
+    var1 = var3.bind(var0)(var1);
+    var _closure1_slot6 = var1;
+    var1 = 4;
+    var1 = var8[var1];
+    var1 = var3.bind(var0)(var1);
+    var _closure1_slot7 = var1;
+    var1 = 5;
+    var6 = var8[var1];
+    var3 = arg3;
+    var3 = var3.bind(var0)(var6);
+    var _closure1_slot8 = var3;
+    var1 = var8[var1];
+    var1 = var5.bind(var0)(var1);
+    var3 = var1.Component;
+    var1 = 6;
+    var1 = var8[var1];
+    var1 = var5.bind(var0)(var1);
+    var6 = var1.Animated;
+    var _closure1_slot9 = var6;
+    var6 = var1.StyleSheet;
+    var9 = var1.View;
+    var _closure1_slot10 = var9;
+    var9 = var1.Keyboard;
+    var _closure1_slot11 = var9;
+    var9 = var1.StatusBar;
+    var _closure1_slot12 = var9;
+    var1 = var1.I18nManager;
+    var _closure1_slot13 = var1;
+    var1 = 7;
+    var1 = var8[var1];
+    var1 = var5.bind(var0)(var1);
+    var5 = var1.jsx;
+    var _closure1_slot14 = var5;
+    var1 = var1.jsxs;
+    var _closure1_slot15 = var1;
+    var1 = function(arg0) { // Environment: var4
+        var3 = function arg0() {
+            _fun45218: for (var _fun45218_ip = 0;;) switch (_fun45218_ip) {
+                case 0:
+                    var3 = arg0;
+                    var6 = this;
+                    var0 = _closure1_slot3;
+                    var4 = _closure2_slot0;
+                    var5 = undefined;
+                    var0 = var0.bind(var5)(var6, var4);
+                    var11 = new Array(1);
+                    var11[0] = var3;
+                    var0 = _closure1_slot6;
+                    var10 = var0.bind(var5)(var4);
+                    var4 = _closure1_slot5;
+                    var0 = _closure1_slot17;
+                    var0 = var0.bind(var5)();
+                    if (var0) {
+                        _fun45218_ip = 75;
+                        continue _fun45218
+                    }
+                case 62:
+                    var0 = var10.apply;
+                    var0 = var0.bind(var10)(var6, var11);
+                    _fun45218_ip = 109;
+                    continue _fun45218;
+                case 75:
+                    var7 = global;
+                    var9 = var7.Reflect;
+                    var8 = var9.construct;
+                    var7 = _closure1_slot6;
+                    var7 = var7.bind(var5)(var6);
+                    var7 = var7.constructor;
+                    var0 = var8.bind(var9)(var10, var11, var7);
+                case 109:
+                    var0 = var4.bind(var5)(var6, var0);
+                    var _closure3_slot0 = var0;
+                    var5 = _closure1_slot8;
+                    var4 = var5.createRef;
+                    var4 = var4.bind(var5)();
+                    var0.accessibilityIsModalView = var4;
+                    var4 = var5.createRef;
+                    var4 = var4.bind(var5)();
+                    var0.pointerEventsView = var4;
+                    var4 = var5.createRef;
+                    var4 = var4.bind(var5)();
+                    var0.panGestureHandler = var4;
+                    var4 = false;
+                    var0.drawerShown = var4;
+                    var4 = function(arg0, arg1) { // Environment: var2
+                        _fun45219: for (var _fun45219_ip = 0;;) switch (_fun45219_ip) {
+                            case 0:
+                                var3 = arg0;
+                                var0 = arg1;
+                                var2 = var3.drawerPosition;
+                                var10 = var3.drawerWidth;
+                                var1 = var3.drawerType;
+                                var7 = var0.dragX;
+                                var6 = var0.touchX;
+                                var9 = var0.drawerTranslation;
+                                var11 = var0.containerWidth;
+                                var0 = 'left';
+                                if (!(var0 === var2)) {
+                                    _fun45219_ip = 80;
+                                    continue _fun45219
+                                }
+                            case 56:
+                                var2 = var6.setValue;
+                                var0 = 0;
+                                var0 = var2.bind(var6)(var0);
+                                var4 = var7;
+                                var5 = var6;
+                                _fun45219_ip = 226;
+                                continue _fun45219;
+                            case 80:
+                                var13 = _closure1_slot9;
+                                var2 = var13.multiply;
+                                var0 = var13.Value;
+                                var8 = var0.prototype;
+                                var8 = Object.create(var8, {
+                                    constructor: {
+                                        value: var0
+                                    }
+                                });
+                                var16 = -1;
+                                var19 = var8;
+                                var18 = var16;
+                                var0 = new var19[var0](var18, var17);
+                                var0 = var0 instanceof Object ? var0 : var8;
+                                var4 = var2.bind(var13)(var0, var7);
+                                var12 = var13.add;
+                                var0 = var13.Value;
+                                var8 = var0.prototype;
+                                var8 = Object.create(var8, {
+                                    constructor: {
+                                        value: var0
+                                    }
+                                });
+                                var19 = var8;
+                                var18 = var11;
+                                var0 = new var19[var0](var18, var17);
+                                var8 = var0 instanceof Object ? var0 : var8;
+                                var14 = var13.multiply;
+                                var0 = var13.Value;
+                                var15 = var0.prototype;
+                                var15 = Object.create(var15, {
+                                    constructor: {
+                                        value: var0
+                                    }
+                                });
+                                var19 = var15;
+                                var18 = var16;
+                                var0 = new var19[var0](var18, var17);
+                                var0 = var0 instanceof Object ? var0 : var15;
+                                var0 = var14.bind(var13)(var0, var6);
+                                var5 = var12.bind(var13)(var8, var0);
+                                var8 = var6.setValue;
+                                var8 = var8.bind(var6)(var11);
+                            case 226:
+                                var0 = 'front';
+                                var8 = var4;
+                                if (!(var0 === var1)) {
+                                    _fun45219_ip = 375;
+                                    continue _fun45219
+                                }
+                            case 242:
+                                var2 = _closure1_slot9;
+                                var1 = var2.add;
+                                var11 = var2.multiply;
+                                var13 = var2.Value;
+                                var0 = var13.prototype;
+                                var12 = Object.create(var0, {
+                                    constructor: {
+                                        value: var13
+                                    }
+                                });
+                                var18 = -1;
+                                var19 = var12;
+                                var0 = new var19[var13](var18, var17);
+                                var0 = var0 instanceof Object ? var0 : var12;
+                                var0 = var11.bind(var2)(var0, var4);
+                                var5 = var1.bind(var2)(var5, var0);
+                                var1 = var5.interpolate;
+                                var0 = {};
+                                var12 = 1;
+                                var13 = var10 - var12;
+                                var11 = new Array(3);
+                                var11[0] = var13;
+                                var11[1] = var10;
+                                var12 = var10 + var12;
+                                var11[2] = var12;
+                                var0.inputRange = var11;
+                                var11 = [0, 0, 1];
+                                var0.outputRange = var11;
+                                var1 = var1.bind(var5)(var0);
+                                var0 = var2.add;
+                                var8 = var0.bind(var2)(var4, var1);
+                            case 375:
+                                var2 = _closure3_slot0;
+                                var5 = _closure1_slot9;
+                                var4 = var5.add;
+                                var8 = var4.bind(var5)(var8, var9);
+                                var5 = var8.interpolate;
+                                var4 = {};
+                                var9 = [0];
+                                var9[1] = var10;
+                                var4.inputRange = var9;
+                                var9 = [0, 1];
+                                var4.outputRange = var9;
+                                var9 = 'clamp';
+                                var4.extrapolate = var9;
+                                var4 = var5.bind(var8)(var4);
+                                var2.openValue = var4;
+                                var4 = {};
+                                var3 = var3.useNativeAnimations;
+                                var4.useNativeDriver = var3;
+                                var2 = var2.props;
+                                var2 = var2.onDrawerSlide;
+                                if (!var2) {
+                                    _fun45219_ip = 502;
+                                    continue _fun45219
+                                }
+                            case 489:
+                                var2 = function(arg0) { // Environment: var2
+                                    _fun45220: for (var _fun45220_ip = 0;;) switch (_fun45220_ip) {
+                                        case 0:
+                                            var0 = global;
+                                            var2 = var0.Math;
+                                            var1 = var2.floor;
+                                            var4 = var0.Math;
+                                            var3 = var4.abs;
+                                            var0 = arg0;
+                                            var0 = var0.nativeEvent;
+                                            var0 = var0.translationX;
+                                            var0 = var3.bind(var4)(var0);
+                                            var3 = var1.bind(var2)(var0);
+                                            var1 = _closure3_slot0;
+                                            var2 = var1.state;
+                                            var2 = var2.containerWidth;
+                                            var2 = var3 / var2;
+                                            var1 = var1.props;
+                                            var3 = var1.onDrawerSlide;
+                                            var1 = null;
+                                            if (!(var1 != var3)) {
+                                                _fun45220_ip = 110;
+                                                continue _fun45220
+                                            }
+                                        case 90:
+                                            var0 = _closure3_slot0;
+                                            var1 = var0.props;
+                                            var0 = var1.onDrawerSlide;
+                                            var0 = var0.bind(var1)(var2);
+                                        case 110:
+                                            var0 = undefined;
+                                            return var0;
+                                    }
+                                };
+                                var4.listener = var2;
+                            case 502:
+                                var1 = _closure3_slot0;
+                                var3 = _closure1_slot9;
+                                var2 = var3.event;
+                                var5 = {};
+                                var0 = {};
+                                var0.translationX = var7;
+                                var0.x = var6;
+                                var5.nativeEvent = var0;
+                                var0 = new Array(1);
+                                var0[0] = var5;
+                                var0 = var2.bind(var3)(var0, var4);
+                                var1.onGestureEvent = var0;
+                                var0 = undefined;
+                                return var0;
+                        }
+                    };
+                    var0.updateAnimatedEvent = var4;
+                    var4 = function(arg0) { // Environment: var2
+                        var0 = arg0;
+                        var3 = var0.nativeEvent;
+                        var2 = _closure3_slot0;
+                        var1 = var2.setState;
+                        var0 = {};
+                        var3 = var3.layout;
+                        var3 = var3.width;
+                        var0.containerWidth = var3;
+                        var0 = var1.bind(var2)(var0);
+                        var0 = undefined;
+                        return var0;
+                    };
+                    var0.handleContainerLayout = var4;
+                    var4 = function(arg0, arg1) { // Environment: var2
+                        _fun45222: for (var _fun45222_ip = 0;;) switch (_fun45222_ip) {
+                            case 0:
+                                var1 = _closure3_slot0;
+                                var1 = var1.props;
+                                var2 = var1.onDrawerStateChanged;
+                                var1 = null;
+                                if (!(var1 != var2)) {
+                                    _fun45222_ip = 51;
+                                    continue _fun45222
+                                }
+                            case 24:
+                                var0 = _closure3_slot0;
+                                var3 = var0.props;
+                                var2 = var3.onDrawerStateChanged;
+                                var1 = arg0;
+                                var0 = arg1;
+                                var0 = var2.bind(var3)(var1, var0);
+                            case 51:
+                                var0 = undefined;
+                                return var0;
+                        }
+                    };
+                    var0.emitStateChanged = var4;
+                    var4 = function(arg0) { // Environment: var2
+                        _fun45223: for (var _fun45223_ip = 0;;) switch (_fun45223_ip) {
+                            case 0:
+                                var0 = arg0;
+                                var4 = var0.nativeEvent;
+                                var3 = var4.oldState;
+                                var5 = _closure1_slot0;
+                                var0 = _closure1_slot2;
+                                var6 = 8;
+                                var1 = var0[var6];
+                                var0 = undefined;
+                                var1 = var5.bind(var0)(var1);
+                                var1 = var1.State;
+                                var1 = var1.ACTIVE;
+                                if (!(var3 !== var1)) {
+                                    _fun45223_ip = 242;
+                                    continue _fun45223
+                                }
+                            case 59:
+                                var3 = var4.state;
+                                var5 = _closure1_slot0;
+                                var1 = _closure1_slot2;
+                                var1 = var1[var6];
+                                var1 = var5.bind(var0)(var1);
+                                var1 = var1.State;
+                                var1 = var1.ACTIVE;
+                                if (!(var3 === var1)) {
+                                    _fun45223_ip = 267;
+                                    continue _fun45223
+                                }
+                            case 100:
+                                var3 = _closure3_slot0;
+                                var6 = var3.emitStateChanged;
+                                var7 = 'Dragging';
+                                var5 = false;
+                                var5 = var6.bind(var3)(var7, var5);
+                                var6 = var3.setState;
+                                var5 = {};
+                                var5.drawerState = var7;
+                                var5 = var6.bind(var3)(var5);
+                                var3 = var3.props;
+                                var5 = var3.keyboardDismissMode;
+                                var3 = 'on-drag';
+                                if (!(var3 === var5)) {
+                                    _fun45223_ip = 180;
+                                    continue _fun45223
+                                }
+                            case 166:
+                                var5 = _closure1_slot11;
+                                var3 = var5.dismiss;
+                                var3 = var3.bind(var5)();
+                            case 180:
+                                var3 = _closure3_slot0;
+                                var3 = var3.props;
+                                var3 = var3.hideStatusBar;
+                                if (!var3) {
+                                    _fun45223_ip = 267;
+                                    continue _fun45223
+                                }
+                            case 198:
+                                var5 = _closure1_slot12;
+                                var3 = var5.setHidden;
+                                var1 = _closure3_slot0;
+                                var1 = var1.props;
+                                var2 = var1.statusBarAnimation;
+                                if (var2) {
+                                    _fun45223_ip = 232;
+                                    continue _fun45223
+                                }
+                            case 226:
+                                var2 = 'slide';
+                            case 232:
+                                var1 = true;
+                                var1 = var3.bind(var5)(var1, var2);
+                                _fun45223_ip = 267;
+                                continue _fun45223;
+                            case 242:
+                                var3 = _closure3_slot0;
+                                var2 = var3.handleRelease;
+                                var1 = {};
+                                var1.nativeEvent = var4;
+                                var1 = var2.bind(var3)(var1);
+                            case 267:
+                                return var0;
+                        }
+                    };
+                    var0.openingHandlerStateChange = var4;
+                    var4 = function(arg0) { // Environment: var2
+                        _fun45224: for (var _fun45224_ip = 0;;) switch (_fun45224_ip) {
+                            case 0:
+                                var0 = arg0;
+                                var2 = var0.nativeEvent;
+                                var1 = _closure3_slot0;
+                                var1 = var1.drawerShown;
+                                if (!var1) {
+                                    _fun45224_ip = 72;
+                                    continue _fun45224
+                                }
+                            case 25:
+                                var3 = var2.oldState;
+                                var5 = _closure1_slot0;
+                                var4 = _closure1_slot2;
+                                var2 = 8;
+                                var4 = var4[var2];
+                                var2 = undefined;
+                                var2 = var5.bind(var2)(var4);
+                                var2 = var2.State;
+                                var2 = var2.ACTIVE;
+                                var1 = var3 === var2;
+                            case 72:
+                                if (!var1) {
+                                    _fun45224_ip = 100;
+                                    continue _fun45224
+                                }
+                            case 75:
+                                var2 = _closure3_slot0;
+                                var2 = var2.props;
+                                var3 = var2.drawerLockMode;
+                                var2 = 'locked-open';
+                                var1 = var2 !== var3;
+                            case 100:
+                                if (!var1) {
+                                    _fun45224_ip = 117;
+                                    continue _fun45224
+                                }
+                            case 103:
+                                var1 = _closure3_slot0;
+                                var0 = var1.closeDrawer;
+                                var0 = var0.bind(var1)();
+                            case 117:
+                                var0 = undefined;
+                                return var0;
+                        }
+                    };
+                    var0.onTapHandlerStateChange = var4;
+                    var4 = function(arg0) { // Environment: var2
+                        _fun45225: for (var _fun45225_ip = 0;;) switch (_fun45225_ip) {
+                            case 0:
+                                var0 = arg0;
+                                var1 = var0.nativeEvent;
+                                var2 = _closure3_slot0;
+                                var3 = var2.props;
+                                var4 = var3.drawerWidth;
+                                var11 = var3.drawerPosition;
+                                var8 = var3.drawerType;
+                                var2 = var2.state;
+                                var9 = var2.containerWidth;
+                                var7 = var1.translationX;
+                                var6 = var1.velocityX;
+                                var5 = var1.x;
+                                var10 = 'left';
+                                var2 = var7;
+                                var3 = var6;
+                                var1 = var5;
+                                if (!(var10 !== var11)) {
+                                    _fun45225_ip = 94;
+                                    continue _fun45225
+                                }
+                            case 84:
+                                var2 = -var7;
+                                var1 = var9 - var5;
+                                var3 = -var6;
+                            case 94:
+                                var7 = var1 - var2;
+                                var6 = 0;
+                                var5 = 'front';
+                                var1 = 0;
+                                if (!(var5 === var8)) {
+                                    _fun45225_ip = 128;
+                                    continue _fun45225
+                                }
+                            case 112:
+                                var8 = var7 > var4;
+                                var5 = 0;
+                                if (!var8) {
+                                    _fun45225_ip = 125;
+                                    continue _fun45225
+                                }
+                            case 121:
+                                var5 = var7 - var4;
+                            case 125:
+                                var1 = var5;
+                            case 128:
+                                var2 = var2 + var1;
+                                var1 = _closure3_slot0;
+                                var5 = var1.drawerShown;
+                                var1 = 0;
+                                if (!var5) {
+                                    _fun45225_ip = 150;
+                                    continue _fun45225
+                                }
+                            case 147:
+                                var1 = var4;
+                            case 150:
+                                var2 = var2 + var1;
+                                var1 = 0.05;
+                                var1 = var1 * var3;
+                                var5 = var2 + var1;
+                                var1 = 2;
+                                var1 = var4 / var1;
+                                if (!(!(var5 > var1))) {
+                                    _fun45225_ip = 202;
+                                    continue _fun45225
+                                }
+                            case 183:
+                                var5 = _closure3_slot0;
+                                var1 = var5.animateDrawer;
+                                var1 = var1.bind(var5)(var2, var6, var3);
+                                _fun45225_ip = 219;
+                                continue _fun45225;
+                            case 202:
+                                var1 = _closure3_slot0;
+                                var0 = var1.animateDrawer;
+                                var0 = var0.bind(var1)(var2, var4, var3);
+                            case 219:
+                                var0 = undefined;
+                                return var0;
+                        }
+                    };
+                    var0.handleRelease = var4;
+                    var4 = function(arg0) { // Environment: var2
+                        _fun45226: for (var _fun45226_ip = 0;;) switch (_fun45226_ip) {
+                            case 0:
+                                var9 = arg0;
+                                var0 = _closure3_slot0;
+                                var0.drawerShown = var9;
+                                var0 = var0.accessibilityIsModalView;
+                                var4 = var0.current;
+                                var0 = null;
+                                if (!(var0 != var4)) {
+                                    _fun45226_ip = 51;
+                                    continue _fun45226
+                                }
+                            case 33:
+                                var3 = var4.setNativeProps;
+                                var2 = {};
+                                var2.accessibilityViewIsModal = var9;
+                                var2 = var3.bind(var4)(var2);
+                            case 51:
+                                var2 = _closure3_slot0;
+                                var2 = var2.pointerEventsView;
+                                var4 = var2.current;
+                                if (!(var0 != var4)) {
+                                    _fun45226_ip = 99;
+                                    continue _fun45226
+                                }
+                            case 70:
+                                var3 = var4.setNativeProps;
+                                var2 = {};
+                                var5 = 'none';
+                                if (!var9) {
+                                    _fun45226_ip = 89;
+                                    continue _fun45226
+                                }
+                            case 85:
+                                var5 = 'auto';
+                            case 89:
+                                var2.pointerEvents = var5;
+                                var2 = var3.bind(var4)(var2);
+                            case 99:
+                                var2 = _closure3_slot0;
+                                var2 = var2.props;
+                                var3 = var2.drawerPosition;
+                                var4 = var2.minSwipeDistance;
+                                var8 = var2.edgeWidth;
+                                var2 = 'left';
+                                var6 = var2 === var3;
+                                var2 = -1;
+                                var5 = var2;
+                                if (!var6) {
+                                    _fun45226_ip = 149;
+                                    continue _fun45226
+                                }
+                            case 146:
+                                var5 = 1;
+                            case 149:
+                                var3 = _closure3_slot0;
+                                var7 = var3.drawerShown;
+                                var3 = 1;
+                                if (!var7) {
+                                    _fun45226_ip = 168;
+                                    continue _fun45226
+                                }
+                            case 165:
+                                var3 = var2;
+                            case 168:
+                                var2 = {};
+                                var7 = 0;
+                                if (var6) {
+                                    _fun45226_ip = 196;
+                                    continue _fun45226
+                                }
+                            case 175:
+                                var2.right = var7;
+                                var6 = undefined;
+                                if (var9) {
+                                    _fun45226_ip = 187;
+                                    continue _fun45226
+                                }
+                            case 184:
+                                var6 = var8;
+                            case 187:
+                                var2.width = var6;
+                                var6 = var2;
+                                _fun45226_ip = 215;
+                                continue _fun45226;
+                            case 196:
+                                var2.left = var7;
+                                var7 = undefined;
+                                if (var9) {
+                                    _fun45226_ip = 208;
+                                    continue _fun45226
+                                }
+                            case 205:
+                                var7 = var8;
+                            case 208:
+                                var2.width = var7;
+                                var6 = var2;
+                            case 215:
+                                var1 = _closure3_slot0;
+                                var1 = var1.panGestureHandler;
+                                var2 = var1.current;
+                                if (!(var0 != var2)) {
+                                    _fun45226_ip = 265;
+                                    continue _fun45226
+                                }
+                            case 234:
+                                var1 = var2.setNativeProps;
+                                var0 = {};
+                                var0.hitSlop = var6;
+                                var3 = var5 * var3;
+                                var3 = var3 * var4;
+                                var0.activeOffsetX = var3;
+                                var0 = var1.bind(var2)(var0);
+                            case 265:
+                                var0 = undefined;
+                                return var0;
+                        }
+                    };
+                    var0.updateShowing = var4;
+                    var4 = function(arg0, arg1, arg2, arg3) { // Environment: var2
+                        _fun45227: for (var _fun45227_ip = 0;;) switch (_fun45227_ip) {
+                            case 0:
+                                var12 = arg0;
+                                var8 = arg1;
+                                var10 = arg2;
+                                var7 = arg3;
+                                var0 = _closure3_slot0;
+                                var3 = var0.state;
+                                var4 = var3.dragX;
+                                var3 = var4.setValue;
+                                var9 = 0;
+                                var3 = var3.bind(var4)(var9);
+                                var3 = var0.state;
+                                var4 = var3.touchX;
+                                var3 = var4.setValue;
+                                var0 = var0.props;
+                                var6 = var0.drawerPosition;
+                                var5 = 'left';
+                                var0 = 0;
+                                if (!(var5 !== var6)) {
+                                    _fun45227_ip = 98;
+                                    continue _fun45227
+                                }
+                            case 83:
+                                var5 = _closure3_slot0;
+                                var5 = var5.state;
+                                var0 = var5.containerWidth;
+                            case 98:
+                                var0 = var3.bind(var4)(var0);
+                                var0 = null;
+                                if (!(var0 != var12)) {
+                                    _fun45227_ip = 249;
+                                    continue _fun45227
+                                }
+                            case 112:
+                                var3 = _closure3_slot0;
+                                var3 = var3.props;
+                                var3 = var3.useNativeAnimations;
+                                var5 = var12;
+                                if (!var3) {
+                                    _fun45227_ip = 223;
+                                    continue _fun45227
+                                }
+                            case 133:
+                                if (!(var12 < var8)) {
+                                    _fun45227_ip = 141;
+                                    continue _fun45227
+                                }
+                            case 137:
+                                if (!(!(var10 > var9))) {
+                                    _fun45227_ip = 190;
+                                    continue _fun45227
+                                }
+                            case 141:
+                                var4 = var12 > var8;
+                                if (!var4) {
+                                    _fun45227_ip = 152;
+                                    continue _fun45227
+                                }
+                            case 148:
+                                var4 = var10 < var9;
+                            case 152:
+                                var3 = var12;
+                                if (!var4) {
+                                    _fun45227_ip = 188;
+                                    continue _fun45227
+                                }
+                            case 158:
+                                var4 = global;
+                                var11 = var4.Math;
+                                var6 = var11.max;
+                                var4 = 60;
+                                var4 = var10 / var4;
+                                var4 = var12 + var4;
+                                var3 = var6.bind(var11)(var4, var8);
+                            case 188:
+                                _fun45227_ip = 220;
+                                continue _fun45227;
+                            case 190:
+                                var4 = global;
+                                var11 = var4.Math;
+                                var6 = var11.min;
+                                var4 = 60;
+                                var4 = var10 / var4;
+                                var4 = var12 + var4;
+                                var3 = var6.bind(var11)(var4, var8);
+                            case 220:
+                                var5 = var3;
+                            case 223:
+                                var3 = _closure3_slot0;
+                                var3 = var3.state;
+                                var4 = var3.drawerTranslation;
+                                var3 = var4.setValue;
+                                var3 = var3.bind(var4)(var5);
+                            case 249:
+                                var6 = var9 !== var8;
+                                var _closure4_slot0 = var6;
+                                var3 = _closure3_slot0;
+                                var4 = var3.updateShowing;
+                                var4 = var4.bind(var3)(var6);
+                                var4 = var3.emitStateChanged;
+                                var11 = 'Settling';
+                                var4 = var4.bind(var3)(var11, var6);
+                                var5 = var3.setState;
+                                var4 = {};
+                                var4.drawerState = var11;
+                                var4 = var5.bind(var3)(var4);
+                                var3 = var3.props;
+                                var3 = var3.hideStatusBar;
+                                if (!var3) {
+                                    _fun45227_ip = 365;
+                                    continue _fun45227
+                                }
+                            case 322:
+                                var5 = _closure1_slot12;
+                                var4 = var5.setHidden;
+                                var3 = _closure3_slot0;
+                                var3 = var3.props;
+                                var3 = var3.statusBarAnimation;
+                                if (var3) {
+                                    _fun45227_ip = 359;
+                                    continue _fun45227
+                                }
+                            case 353:
+                                var3 = 'slide';
+                            case 359:
+                                var3 = var4.bind(var5)(var6, var3);
+                            case 365:
+                                var5 = _closure1_slot9;
+                                var4 = var5.spring;
+                                var6 = _closure3_slot0;
+                                var2 = var6.state;
+                                var3 = var2.drawerTranslation;
+                                var2 = {};
+                                var2.velocity = var10;
+                                var2.bounciness = var9;
+                                var2.toValue = var8;
+                                var6 = var6.props;
+                                var6 = var6.useNativeAnimations;
+                                var2.useNativeDriver = var6;
+                                var8 = var0 != var7;
+                                var0 = undefined;
+                                var6 = undefined;
+                                if (!var8) {
+                                    _fun45227_ip = 440;
+                                    continue _fun45227
+                                }
+                            case 437:
+                                var6 = var7;
+                            case 440:
+                                var2.speed = var6;
+                                var3 = var4.bind(var5)(var3, var2);
+                                var2 = var3.start;
+                                var1 = function(arg0) { // Environment: var1
+                                    _fun45228: for (var _fun45228_ip = 0;;) switch (_fun45228_ip) {
+                                        case 0:
+                                            var0 = arg0;
+                                            var0 = var0.finished;
+                                            if (!var0) {
+                                                _fun45228_ip = 192;
+                                                continue _fun45228
+                                            }
+                                        case 15:
+                                            var2 = _closure3_slot0;
+                                            var4 = var2.emitStateChanged;
+                                            var3 = _closure4_slot0;
+                                            var5 = 'Idle';
+                                            var3 = var4.bind(var2)(var5, var3);
+                                            var4 = var2.setState;
+                                            var3 = {};
+                                            var6 = _closure4_slot0;
+                                            var3.drawerOpened = var6;
+                                            var3 = var4.bind(var2)(var3);
+                                            var2 = var2.state;
+                                            var3 = var2.drawerState;
+                                            var2 = 'Dragging';
+                                            if (!(var3 !== var2)) {
+                                                _fun45228_ip = 112;
+                                                continue _fun45228
+                                            }
+                                        case 90:
+                                            var4 = _closure3_slot0;
+                                            var3 = var4.setState;
+                                            var2 = {};
+                                            var2.drawerState = var5;
+                                            var2 = var3.bind(var4)(var2);
+                                        case 112:
+                                            var2 = _closure4_slot0;
+                                            var1 = _closure3_slot0;
+                                            var1 = var1.props;
+                                            if (var2) {
+                                                _fun45228_ip = 161;
+                                                continue _fun45228
+                                            }
+                                        case 128:
+                                            var3 = var1.onDrawerClose;
+                                            var2 = null;
+                                            if (!(var2 != var3)) {
+                                                _fun45228_ip = 192;
+                                                continue _fun45228
+                                            }
+                                        case 140:
+                                            var2 = _closure3_slot0;
+                                            var3 = var2.props;
+                                            var2 = var3.onDrawerClose;
+                                            var2 = var2.bind(var3)();
+                                            _fun45228_ip = 192;
+                                            continue _fun45228;
+                                        case 161:
+                                            var2 = var1.onDrawerOpen;
+                                            var1 = null;
+                                            if (!(var1 != var2)) {
+                                                _fun45228_ip = 192;
+                                                continue _fun45228
+                                            }
+                                        case 173:
+                                            var0 = _closure3_slot0;
+                                            var1 = var0.props;
+                                            var0 = var1.onDrawerOpen;
+                                            var0 = var0.bind(var1)();
+                                        case 192:
+                                            var0 = undefined;
+                                            return var0;
+                                    }
+                                };
+                                var1 = var2.bind(var3)(var1);
+                                return var0;
+                        }
+                    };
+                    var0.animateDrawer = var4;
+                    var4 = function() { // Environment: var2
+                        _fun45229: for (var _fun45229_ip = 0;;) switch (_fun45229_ip) {
+                            case 0:
+                                var0 = undefined;
+                                var1 = undefined;
+                                var2 = arguments.length;
+                                var6 = 0;
+                                if (!(var2 > var6)) {
+                                    _fun45229_ip = 21;
+                                    continue _fun45229
+                                }
+                            case 13:
+                                var2 = arguments[var6];
+                                if (!(var0 === var2)) {
+                                    _fun45229_ip = 25;
+                                    continue _fun45229
+                                }
+                            case 21:
+                                var2 = {};
+                                _fun45229_ip = 29;
+                                continue _fun45229;
+                            case 25:
+                                var2 = arguments[var6];
+                            case 29:
+                                var5 = _closure3_slot0;
+                                var4 = var5.animateDrawer;
+                                var3 = var5.props;
+                                var3 = var3.drawerWidth;
+                                var7 = var2.velocity;
+                                var6 = 0;
+                                if (!var7) {
+                                    _fun45229_ip = 70;
+                                    continue _fun45229
+                                }
+                            case 64:
+                                var6 = var2.velocity;
+                            case 70:
+                                var8 = var2.speed;
+                                var12 = var5;
+                                var11 = undefined;
+                                var10 = var3;
+                                var9 = var6;
+                                var2 = var12[var4](var11, var10, var9, var8, var7);
+                                var2 = _closure3_slot0;
+                                var1 = var2.forceUpdate;
+                                var1 = var1.bind(var2)();
+                                return var0;
+                        }
+                    };
+                    var0.openDrawer = var4;
+                    var4 = function() { // Environment: var2
+                        _fun45230: for (var _fun45230_ip = 0;;) switch (_fun45230_ip) {
+                            case 0:
+                                var0 = undefined;
+                                var1 = undefined;
+                                var2 = arguments.length;
+                                var6 = 0;
+                                if (!(var2 > var6)) {
+                                    _fun45230_ip = 21;
+                                    continue _fun45230
+                                }
+                            case 13:
+                                var2 = arguments[var6];
+                                if (!(var0 === var2)) {
+                                    _fun45230_ip = 25;
+                                    continue _fun45230
+                                }
+                            case 21:
+                                var2 = {};
+                                _fun45230_ip = 29;
+                                continue _fun45230;
+                            case 25:
+                                var2 = arguments[var6];
+                            case 29:
+                                var5 = _closure3_slot0;
+                                var4 = var5.animateDrawer;
+                                var7 = var2.velocity;
+                                var3 = 0;
+                                if (!var7) {
+                                    _fun45230_ip = 59;
+                                    continue _fun45230
+                                }
+                            case 53:
+                                var3 = var2.velocity;
+                            case 59:
+                                var8 = var2.speed;
+                                var12 = var5;
+                                var11 = undefined;
+                                var10 = 0;
+                                var9 = var3;
+                                var2 = var12[var4](var11, var10, var9, var8, var7);
+                                var2 = _closure3_slot0;
+                                var1 = var2.forceUpdate;
+                                var1 = var1.bind(var2)();
+                                return var0;
+                        }
+                    };
+                    var0.closeDrawer = var4;
+                    var4 = function() { // Environment: var2
+                        _fun45231: for (var _fun45231_ip = 0;;) switch (_fun45231_ip) {
+                            case 0:
+                                var1 = _closure1_slot1;
+                                var2 = _closure1_slot2;
+                                var0 = 9;
+                                var0 = var2[var0];
+                                var3 = undefined;
+                                var4 = var1.bind(var3)(var0);
+                                var0 = _closure3_slot0;
+                                var2 = var0.openValue;
+                                var1 = 'should be set';
+                                var1 = var4.bind(var3)(var2, var1);
+                                var7 = {};
+                                var0 = var0.state;
+                                var1 = var0.drawerState;
+                                var0 = 'Idle';
+                                if (!(var1 === var0)) {
+                                    _fun45231_ip = 98;
+                                    continue _fun45231
+                                }
+                            case 73:
+                                var0 = _closure3_slot0;
+                                var0 = var0.state;
+                                var1 = var0.drawerOpened;
+                                var0 = 0;
+                                if (!var1) {
+                                    _fun45231_ip = 96;
+                                    continue _fun45231
+                                }
+                            case 93:
+                                var0 = 1;
+                            case 96:
+                                _fun45231_ip = 108;
+                                continue _fun45231;
+                            case 98:
+                                var1 = _closure3_slot0;
+                                var0 = var1.openValue;
+                            case 108:
+                                var7.opacity = var0;
+                                var9 = _closure3_slot0;
+                                var0 = var9.props;
+                                var0 = var0.overlayColor;
+                                var7.backgroundColor = var0;
+                                var2 = _closure1_slot14;
+                                var1 = _closure1_slot0;
+                                var4 = _closure1_slot2;
+                                var0 = 10;
+                                var0 = var4[var0];
+                                var0 = var1.bind(var3)(var0);
+                                var1 = var0.TapGestureHandler;
+                                var0 = {};
+                                var4 = var9.onTapHandlerStateChange;
+                                var0.onHandlerStateChange = var4;
+                                var4 = _closure1_slot9;
+                                var5 = var4.View;
+                                var4 = {};
+                                var10 = var9.drawerShown;
+                                var9 = 'none';
+                                if (!var10) {
+                                    _fun45231_ip = 202;
+                                    continue _fun45231
+                                }
+                            case 198:
+                                var9 = 'auto';
+                            case 202:
+                                var4.pointerEvents = var9;
+                                var8 = _closure3_slot0;
+                                var8 = var8.pointerEventsView;
+                                var4.ref = var8;
+                                var6 = _closure1_slot16;
+                                var8 = var6.overlay;
+                                var6 = new Array(2);
+                                var6[0] = var8;
+                                var6[1] = var7;
+                                var4.style = var6;
+                                var4 = var2.bind(var3)(var5, var4);
+                                var0.children = var4;
+                                var0 = var2.bind(var3)(var1, var0);
+                                return var0;
+                        }
+                    };
+                    var0.renderOverlay = var4;
+                    var4 = function() { // Environment: var2
+                        _fun45232: for (var _fun45232_ip = 0;;) switch (_fun45232_ip) {
+                            case 0:
+                                var0 = _closure3_slot0;
+                                var1 = var0.props;
+                                var0 = var1.drawerBackgroundColor;
+                                var2 = var1.drawerWidth;
+                                var3 = var1.drawerPosition;
+                                var14 = var1.drawerType;
+                                var12 = var1.drawerContainerStyle;
+                                var9 = var1.contentContainerStyle;
+                                var1 = 'left';
+                                var4 = var1 === var3;
+                                var1 = _closure1_slot13;
+                                var3 = var1.isRTL;
+                                var1 = var4;
+                                if (var3) {
+                                    _fun45232_ip = 80;
+                                    continue _fun45232
+                                }
+                            case 77:
+                                var1 = !var4;
+                            case 80:
+                                var11 = {};
+                                var11.backgroundColor = var0;
+                                var11.width = var2;
+                                var0 = _closure3_slot0;
+                                var13 = var0.openValue;
+                                var5 = _closure1_slot1;
+                                var3 = _closure1_slot2;
+                                var0 = 9;
+                                var0 = var3[var0];
+                                var3 = undefined;
+                                var5 = var5.bind(var3)(var0);
+                                var0 = 'should be set';
+                                var0 = var5.bind(var3)(var13, var0);
+                                var6 = 'front';
+                                var10 = undefined;
+                                if (!(var6 !== var14)) {
+                                    _fun45232_ip = 244;
+                                    continue _fun45232
+                                }
+                            case 146:
+                                var0 = {};
+                                var15 = {};
+                                var16 = var13.interpolate;
+                                var5 = {};
+                                var17 = [0, 1];
+                                var5.inputRange = var17;
+                                var18 = [0];
+                                if (var4) {
+                                    _fun45232_ip = 198;
+                                    continue _fun45232
+                                }
+                            case 186:
+                                var17 = -var2;
+                                var18[1] = var17;
+                                var17 = var18;
+                                _fun45232_ip = 205;
+                                continue _fun45232;
+                            case 198:
+                                var18[1] = var2;
+                                var17 = var18;
+                            case 205:
+                                var5.outputRange = var17;
+                                var17 = 'clamp';
+                                var5.extrapolate = var17;
+                                var5 = var16.bind(var13)(var5);
+                                var15.translateX = var5;
+                                var5 = new Array(1);
+                                var5[0] = var15;
+                                var0.transform = var5;
+                                var10 = var0;
+                            case 244:
+                                var16 = 0;
+                                var5 = 'back';
+                                var0 = 0;
+                                if (!(var5 !== var14)) {
+                                    _fun45232_ip = 372;
+                                    continue _fun45232
+                                }
+                            case 256:
+                                var17 = var2;
+                                if (!var4) {
+                                    _fun45232_ip = 265;
+                                    continue _fun45232
+                                }
+                            case 262:
+                                var17 = -var2;
+                            case 265:
+                                var2 = _closure3_slot0;
+                                var2 = var2.state;
+                                var4 = var2.drawerState;
+                                var2 = 'Idle';
+                                if (!(var4 === var2)) {
+                                    _fun45232_ip = 315;
+                                    continue _fun45232
+                                }
+                            case 290:
+                                var2 = _closure3_slot0;
+                                var2 = var2.state;
+                                var4 = var2.drawerOpened;
+                                var2 = 0;
+                                if (var4) {
+                                    _fun45232_ip = 313;
+                                    continue _fun45232
+                                }
+                            case 310:
+                                var2 = var17;
+                            case 313:
+                                _fun45232_ip = 369;
+                                continue _fun45232;
+                            case 315:
+                                var5 = var13.interpolate;
+                                var4 = {};
+                                var15 = [0, 1];
+                                var4.inputRange = var15;
+                                var15 = new Array(2);
+                                var15[0] = var17;
+                                var15[1] = var16;
+                                var4.outputRange = var15;
+                                var15 = 'clamp';
+                                var4.extrapolate = var15;
+                                var2 = var5.bind(var13)(var4);
+                            case 369:
+                                var0 = var2;
+                            case 372:
+                                var13 = {};
+                                var2 = {};
+                                var2.translateX = var0;
+                                var0 = new Array(1);
+                                var0[0] = var2;
+                                var13.transform = var0;
+                                var0 = 'row';
+                                if (!var1) {
+                                    _fun45232_ip = 406;
+                                    continue _fun45232
+                                }
+                            case 400:
+                                var0 = 'row-reverse';
+                            case 406:
+                                var13.flexDirection = var0;
+                                var2 = _closure1_slot15;
+                                var4 = _closure1_slot9;
+                                var1 = var4.View;
+                                var0 = {};
+                                var5 = _closure1_slot16;
+                                var5 = var5.main;
+                                var0.style = var5;
+                                var5 = _closure3_slot0;
+                                var5 = var5.handleContainerLayout;
+                                var0.onLayout = var5;
+                                var5 = var4.View;
+                                var4 = {};
+                                if (!(var6 !== var14)) {
+                                    _fun45232_ip = 477;
+                                    continue _fun45232
+                                }
+                            case 465:
+                                var6 = _closure1_slot16;
+                                var14 = var6.containerInFront;
+                                _fun45232_ip = 487;
+                                continue _fun45232;
+                            case 477:
+                                var6 = _closure1_slot16;
+                                var14 = var6.containerOnBack;
+                            case 487:
+                                var6 = new Array(3);
+                                var6[0] = var14;
+                                var6[1] = var10;
+                                var6[2] = var9;
+                                var4.style = var6;
+                                var6 = _closure3_slot0;
+                                var9 = var6.drawerShown;
+                                var6 = 'yes';
+                                if (!var9) {
+                                    _fun45232_ip = 532;
+                                    continue _fun45232
+                                }
+                            case 526:
+                                var6 = 'no-hide-descendants';
+                            case 532:
+                                var4.importantForAccessibility = var6;
+                                var6 = _closure3_slot0;
+                                var6 = var6.props;
+                                var6 = var6.children;
+                                var9 = 'function';
+                                var6 = typeof var6;
+                                if (!(var9 !== var6)) {
+                                    _fun45232_ip = 578;
+                                    continue _fun45232
+                                }
+                            case 562:
+                                var6 = _closure3_slot0;
+                                var6 = var6.props;
+                                var9 = var6.children;
+                                _fun45232_ip = 603;
+                                continue _fun45232;
+                            case 578:
+                                var6 = _closure3_slot0;
+                                var14 = var6.props;
+                                var10 = var14.children;
+                                var6 = var6.openValue;
+                                var9 = var10.bind(var14)(var6);
+                            case 603:
+                                var6 = new Array(2);
+                                var6[0] = var9;
+                                var10 = _closure3_slot0;
+                                var7 = var10.renderOverlay;
+                                var7 = var7.bind(var10)();
+                                var6[1] = var7;
+                                var4.children = var6;
+                                var5 = var2.bind(var3)(var5, var4);
+                                var4 = new Array(2);
+                                var4[0] = var5;
+                                var7 = _closure1_slot14;
+                                var5 = _closure1_slot9;
+                                var6 = var5.View;
+                                var5 = {};
+                                var9 = 'box-none';
+                                var5.pointerEvents = var9;
+                                var9 = var10.accessibilityIsModalView;
+                                var5.ref = var9;
+                                var9 = var10.drawerShown;
+                                var5.accessibilityViewIsModal = var9;
+                                var9 = _closure1_slot16;
+                                var14 = var9.drawerContainer;
+                                var9 = new Array(3);
+                                var9[0] = var14;
+                                var9[1] = var13;
+                                var9[2] = var12;
+                                var5.style = var9;
+                                var9 = _closure1_slot10;
+                                var8 = {};
+                                var8.style = var11;
+                                var12 = var10.props;
+                                var11 = var12.renderNavigationView;
+                                var10 = var10.openValue;
+                                var10 = var11.bind(var12)(var10);
+                                var8.children = var10;
+                                var8 = var7.bind(var3)(var9, var8);
+                                var5.children = var8;
+                                var5 = var7.bind(var3)(var6, var5);
+                                var4[1] = var5;
+                                var0.children = var4;
+                                var0 = var2.bind(var3)(var1, var0);
+                                return var0;
+                        }
+                    };
+                    var0.renderDrawer = var4;
+                    var2 = function(arg0) { // Environment: var2
+                        _fun45233: for (var _fun45233_ip = 0;;) switch (_fun45233_ip) {
+                            case 0:
+                                var2 = arg0;
+                                var1 = _closure3_slot0;
+                                var3 = var1.panGestureHandler;
+                                var3.current = var2;
+                                var1 = var1.props;
+                                var3 = var1.onGestureRef;
+                                var1 = null;
+                                if (!(var1 != var3)) {
+                                    _fun45233_ip = 59;
+                                    continue _fun45233
+                                }
+                            case 39:
+                                var0 = _closure3_slot0;
+                                var1 = var0.props;
+                                var0 = var1.onGestureRef;
+                                var0 = var0.bind(var1)(var2);
+                            case 59:
+                                var0 = undefined;
+                                return var0;
+                        }
+                    };
+                    var0.setPanGestureRef = var2;
+                    var1 = _closure1_slot9;
+                    var2 = var1.Value;
+                    var4 = var2.prototype;
+                    var4 = Object.create(var4, {
+                        constructor: {
+                            value: var2
+                        }
+                    });
+                    var15 = var4;
+                    var14 = 0;
+                    var2 = new var15[var2](var14, var13);
+                    var5 = var2 instanceof Object ? var2 : var4;
+                    var2 = var1.Value;
+                    var4 = var2.prototype;
+                    var4 = Object.create(var4, {
+                        constructor: {
+                            value: var2
+                        }
+                    });
+                    var15 = var4;
+                    var2 = new var15[var2](var14, var13);
+                    var4 = var2 instanceof Object ? var2 : var4;
+                    var1 = var1.Value;
+                    var2 = var1.prototype;
+                    var2 = Object.create(var2, {
+                        constructor: {
+                            value: var1
+                        }
+                    });
+                    var15 = var2;
+                    var1 = new var15[var1](var14, var13);
+                    var2 = var1 instanceof Object ? var1 : var2;
+                    var1 = {
+                        'dragX': null,
+                        'touchX': null,
+                        'drawerTranslation': null,
+                        'containerWidth': 0,
+                        'drawerState': 'Idle',
+                        'drawerOpened': false
+                    };
+                    var1.dragX = var5;
+                    var1.touchX = var4;
+                    var1.drawerTranslation = var2;
+                    var0.state = var1;
+                    var2 = var0.updateAnimatedEvent;
+                    var1 = var0.state;
+                    var1 = var2.bind(var0)(var3, var1);
+                    return var0;
+            }
         };
-        var2 = var1.bind(var2)();
-        var1 = new Array(1);
-        var1[0] = var5;
-        var1 = var3.bind(var4)(var2, var1);
-        var0.handleOnFinalize = var1;
+        var _closure2_slot0 = var3;
+        var4 = _closure1_slot7;
+        var2 = undefined;
+        var1 = arg0;
+        var1 = var4.bind(var2)(var3, var1);
+        var1 = _closure1_slot4;
+        var4 = {};
+        var0 = 'shouldComponentUpdate';
+        var4.key = var0;
+        var0 = function arg0, arg1() {
+            _fun45234: for (var _fun45234_ip = 0;;) switch (_fun45234_ip) {
+                case 0:
+                    var3 = arg0;
+                    var2 = arg1;
+                    var1 = this;
+                    var0 = var1.props;
+                    var4 = var0.drawerPosition;
+                    var0 = var3.drawerPosition;
+                    var0 = var4 === var0;
+                    if (!var0) {
+                        _fun45234_ip = 54;
+                        continue _fun45234
+                    }
+                case 33:
+                    var4 = var1.props;
+                    var5 = var4.drawerWidth;
+                    var4 = var3.drawerWidth;
+                    var0 = var5 === var4;
+                case 54:
+                    if (!var0) {
+                        _fun45234_ip = 78;
+                        continue _fun45234
+                    }
+                case 57:
+                    var4 = var1.props;
+                    var5 = var4.drawerType;
+                    var4 = var3.drawerType;
+                    var0 = var5 === var4;
+                case 78:
+                    if (!var0) {
+                        _fun45234_ip = 102;
+                        continue _fun45234
+                    }
+                case 81:
+                    var4 = var1.state;
+                    var5 = var4.containerWidth;
+                    var4 = var2.containerWidth;
+                    var0 = var5 === var4;
+                case 102:
+                    if (var0) {
+                        _fun45234_ip = 117;
+                        continue _fun45234
+                    }
+                case 105:
+                    var0 = var1.updateAnimatedEvent;
+                    var0 = var0.bind(var1)(var3, var2);
+                case 117:
+                    var0 = true;
+                    return var0;
+            }
+        };
+        var4.value = var0;
+        var0 = new Array(2);
+        var0[0] = var4;
+        var4 = {};
+        var6 = 'render';
+        var4.key = var6;
+        var5 = function() {
+            _fun45235: for (var _fun45235_ip = 0;;) switch (_fun45235_ip) {
+                case 0:
+                    var5 = this;
+                    var0 = var5.props;
+                    var1 = var0.drawerPosition;
+                    var7 = var0.drawerLockMode;
+                    var2 = var0.edgeWidth;
+                    var6 = var0.minSwipeDistance;
+                    var0 = 'left';
+                    var3 = var0 === var1;
+                    var0 = -1;
+                    var8 = var0;
+                    if (!var3) {
+                        _fun45235_ip = 55;
+                        continue _fun45235
+                    }
+                case 52:
+                    var8 = 1;
+                case 55:
+                    var1 = var5.drawerShown;
+                    var4 = 1;
+                    if (!var1) {
+                        _fun45235_ip = 70;
+                        continue _fun45235
+                    }
+                case 67:
+                    var4 = var0;
+                case 70:
+                    var0 = {};
+                    var1 = 0;
+                    if (var3) {
+                        _fun45235_ip = 104;
+                        continue _fun45235
+                    }
+                case 77:
+                    var0.right = var1;
+                    var9 = var5.drawerShown;
+                    var3 = undefined;
+                    if (var9) {
+                        _fun45235_ip = 95;
+                        continue _fun45235
+                    }
+                case 92:
+                    var3 = var2;
+                case 95:
+                    var0.width = var3;
+                    var9 = var0;
+                    _fun45235_ip = 129;
+                    continue _fun45235;
+                case 104:
+                    var0.left = var1;
+                    var3 = var5.drawerShown;
+                    var1 = undefined;
+                    if (var3) {
+                        _fun45235_ip = 122;
+                        continue _fun45235
+                    }
+                case 119:
+                    var1 = var2;
+                case 122:
+                    var0.width = var1;
+                    var9 = var0;
+                case 129:
+                    var3 = _closure1_slot14;
+                    var1 = _closure1_slot0;
+                    var2 = _closure1_slot2;
+                    var0 = 11;
+                    var0 = var2[var0];
+                    var2 = undefined;
+                    var0 = var1.bind(var2)(var0);
+                    var1 = var0.PanGestureHandler;
+                    var0 = {};
+                    var10 = var5.props;
+                    var10 = var10.userSelect;
+                    var0.userSelect = var10;
+                    var10 = var5.props;
+                    var10 = var10.activeCursor;
+                    var0.activeCursor = var10;
+                    var10 = var5.props;
+                    var10 = var10.mouseButton;
+                    var0.mouseButton = var10;
+                    var10 = var5.props;
+                    var10 = var10.enableContextMenu;
+                    var0.enableContextMenu = var10;
+                    var10 = var5.setPanGestureRef;
+                    var0.ref = var10;
+                    var0.hitSlop = var9;
+                    var4 = var8 * var4;
+                    var4 = var4 * var6;
+                    var0.activeOffsetX = var4;
+                    var4 = new Array(2);
+                    var6 = -15;
+                    var4[0] = var6;
+                    var6 = 15;
+                    var4[1] = var6;
+                    var0.failOffsetY = var4;
+                    var4 = var5.onGestureEvent;
+                    var0.onGestureEvent = var4;
+                    var4 = var5.openingHandlerStateChange;
+                    var0.onHandlerStateChange = var4;
+                    var4 = var5.props;
+                    var4 = var4.enableTrackpadTwoFingerGesture;
+                    var0.enableTrackpadTwoFingerGesture = var4;
+                    var4 = 'locked-closed';
+                    var4 = var4 !== var7;
+                    if (!var4) {
+                        _fun45235_ip = 345;
+                        continue _fun45235
+                    }
+                case 335:
+                    var6 = 'locked-open';
+                    var4 = var6 !== var7;
+                case 345:
+                    var0.enabled = var4;
+                    var4 = var5.renderDrawer;
+                    var4 = var4.bind(var5)();
+                    var0.children = var4;
+                    var0 = var3.bind(var2)(var1, var0);
+                    return var0;
+            }
+        };
+        var4.value = var5;
+        var0[1] = var4;
+        var0 = var1.bind(var2)(var3, var0);
         return var0;
     };
-    var2.useGestureEventsHandlersDefault = var1;
+    var1 = var1.bind(var0)(var3);
+    var3 = {
+        'drawerWidth': 200,
+        'drawerPosition': 'left',
+        'useNativeAnimations': true,
+        'drawerType': 'front',
+        'edgeWidth': 20,
+        'minSwipeDistance': 3,
+        'overlayColor': 'rgba(0, 0, 0, 0.7)',
+        'drawerLockMode': 'unlocked',
+        'enableTrackpadTwoFingerGesture': false
+    };
+    var1.defaultProps = var3;
+    var3 = {
+        'Left': 'left',
+        'Right': 'right'
+    };
+    var1.positions = var3;
+    var5 = var6.create;
+    var3 = {};
+    var12 = var7.Object;
+    var11 = var12.assign;
+    var10 = var6.absoluteFillObject;
+    var9 = {};
+    var8 = {
+        'zIndex': 1001,
+        'flexDirection': 'row'
+    };
+    var8 = var11.bind(var12)(var9, var10, var8);
+    var3.drawerContainer = var8;
+    var12 = var7.Object;
+    var11 = var12.assign;
+    var10 = var6.absoluteFillObject;
+    var9 = {};
+    var8 = 1002;
+    var9.zIndex = var8;
+    var8 = {};
+    var8 = var11.bind(var12)(var8, var10, var9);
+    var3.containerInFront = var8;
+    var11 = var7.Object;
+    var10 = var11.assign;
+    var9 = var6.absoluteFillObject;
+    var8 = {};
+    var8 = var10.bind(var11)(var8, var9);
+    var3.containerOnBack = var8;
+    var8 = {
+        'flex': 1,
+        'zIndex': 0,
+        'overflow': 'hidden'
+    };
+    var3.main = var8;
+    var11 = var7.Object;
+    var10 = var11.assign;
+    var9 = var6.absoluteFillObject;
+    var8 = {};
+    var7 = 1000;
+    var8.zIndex = var7;
+    var7 = {};
+    var7 = var10.bind(var11)(var7, var9, var8);
+    var3.overlay = var7;
+    var3 = var5.bind(var6)(var3);
+    var _closure1_slot16 = var3;
+    var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 4897, 4904, 3680, 5007, 5008]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 15, 17, 18, 31, 27, 33, 4931, 44, 4944, 4956]);

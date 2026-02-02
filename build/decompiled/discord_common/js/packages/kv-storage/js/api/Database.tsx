@@ -373,7 +373,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1 = var2.raw;
                     var0 = null;
                     if (!(var0 != var1)) {
-                        _fun18512_ip = 88;
+                        _fun18512_ip = 92;
                         continue _fun18512
                     }
                 case 14:
@@ -394,14 +394,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var3 = arg0;
                     var0.reason = var3;
                     var0 = var1.bind(var2)(var0);
-                    _fun18512_ip = 106;
+                    _fun18512_ip = 110;
                     continue _fun18512;
-                case 88:
+                case 92:
                     var1 = global;
                     var2 = var1.Promise;
                     var1 = var2.resolve;
                     var0 = var1.bind(var2)();
-                case 106:
+                case 110:
                     return var0;
             }
         };

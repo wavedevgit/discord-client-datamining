@@ -34,7 +34,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/polls/chat/usePollMessageContextItemTypes.tsx';
     var4 = var5.bind(var6)(var4);
     var3 = function arg0() {
-        _fun77866: for (var _fun77866_ip = 0;;) switch (_fun77866_ip) {
+        _fun77870: for (var _fun77870_ip = 0;;) switch (_fun77870_ip) {
             case 0:
                 var3 = arg0;
                 var4 = _closure1_slot0;
@@ -58,14 +58,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var3.isPoll;
                 var1 = var1.bind(var3)();
                 if (!var1) {
-                    _fun77866_ip = 169;
-                    continue _fun77866
+                    _fun77870_ip = 169;
+                    continue _fun77870
                 }
             case 79:
                 var1 = null;
                 if (!(var1 != var2)) {
-                    _fun77866_ip = 169;
-                    continue _fun77866
+                    _fun77870_ip = 169;
+                    continue _fun77870
                 }
             case 85:
                 var1 = new Array(0);
@@ -78,8 +78,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var5.bind(var6)(var2);
                 var2 = !var2;
                 if (!var2) {
-                    _fun77866_ip = 144;
-                    continue _fun77866
+                    _fun77870_ip = 144;
+                    continue _fun77870
                 }
             case 129:
                 var3 = var3.author;
@@ -87,8 +87,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var3 === var4;
             case 144:
                 if (!var2) {
-                    _fun77866_ip = 167;
-                    continue _fun77866
+                    _fun77870_ip = 167;
+                    continue _fun77870
                 }
             case 147:
                 var3 = var1.push;

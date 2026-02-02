@@ -1,7 +1,7 @@
 // modules/premium/sounds/soundmoji/native/views/SoundmojiActionSheet.tsx
 // @ts-nocheck
 export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun88712: for (var _fun88712_ip = 0;;) switch (_fun88712_ip) {
+    _fun88716: for (var _fun88716_ip = 0;;) switch (_fun88716_ip) {
         case 0:
             var4 = require;
             var10 = metroImportDefault;
@@ -73,8 +73,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var13 = var11.bind(var13)();
             var11 = undefined;
             if (!var13) {
-                _fun88712_ip = 270;
-                continue _fun88712
+                _fun88716_ip = 270;
+                continue _fun88716
             }
         case 267:
             var11 = var12;
@@ -106,7 +106,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var3 = 'modules/premium/sounds/soundmoji/native/views/SoundmojiActionSheet.tsx';
             var3 = var4.bind(var5)(var3);
             var1 = function arg0() {
-                _fun88713: for (var _fun88713_ip = 0;;) switch (_fun88713_ip) {
+                _fun88717: for (var _fun88717_ip = 0;;) switch (_fun88717_ip) {
                     case 0:
                         var1 = arg0;
                         var8 = var1.guildId;
@@ -149,8 +149,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var1 = var14 == var16;
                         var0 = null;
                         if (var1) {
-                            _fun88713_ip = 525;
-                            continue _fun88713
+                            _fun88717_ip = 525;
+                            continue _fun88717
                         }
                     case 111:
                         var3 = _closure1_slot5;
@@ -173,16 +173,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var8 = var16.emojiId;
                         var9 = var14 != var8;
                         if (var9) {
-                            _fun88713_ip = 203;
-                            continue _fun88713
+                            _fun88717_ip = 203;
+                            continue _fun88717
                         }
                     case 193:
                         var8 = var16.emojiName;
                         var9 = var14 != var8;
                     case 203:
                         if (!var9) {
-                            _fun88713_ip = 310;
-                            continue _fun88713
+                            _fun88717_ip = 310;
+                            continue _fun88717
                         }
                     case 206:
                         var11 = _closure1_slot5;
@@ -206,8 +206,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var17 = var14 != var15;
                         var14 = '';
                         if (!var17) {
-                            _fun88713_ip = 300;
-                            continue _fun88713
+                            _fun88717_ip = 300;
+                            continue _fun88717
                         }
                     case 297:
                         var14 = var15;
@@ -270,4 +270,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var2.default = var1;
             return var0;
     }
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 478, 4758, 4894, 5731, 8515, 4839, 1234, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 478, 4760, 4896, 5733, 8517, 4841, 1234, 2]);

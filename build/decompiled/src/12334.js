@@ -1,25 +1,26 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = function() { // Environment: var0
-        var2 = this;
-        var _closure2_slot0 = var2;
-        var3 = global;
-        var5 = var3.clearTimeout;
-        var4 = var2.resetTimer;
-        var0 = undefined;
-        var4 = var5.bind(var0)(var4);
-        var4 = var3.setTimeout;
-        var3 = function() { // Environment: var1
-            var1 = _closure2_slot0;
-            var0 = var1.resetSequences;
-            var0 = var0.bind(var1)();
-            var0 = undefined;
-            return var0;
-        };
-        var1 = 1000;
-        var1 = var4.bind(var0)(var3, var1);
-        var2.resetTimer = var1;
-        return var0;
+    var1 = function(arg0) { // Environment: var0
+        _fun94373: for (var _fun94373_ip = 0;;) switch (_fun94373_ip) {
+            case 0:
+                var1 = arg0;
+                var0 = var1.stopPropagation;
+                if (var0) {
+                    _fun94373_ip = 22;
+                    continue _fun94373
+                }
+            case 12:
+                var0 = true;
+                var1.cancelBubble = var0;
+                _fun94373_ip = 32;
+                continue _fun94373;
+            case 22:
+                var0 = var1.stopPropagation;
+                var0 = var0.bind(var1)();
+            case 32:
+                var0 = undefined;
+                return var0;
+        }
     };
     var0 = arg4;
     var0.exports = var1;

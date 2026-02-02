@@ -1,566 +1,204 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var6 = metroImportDefault;
+    var7 = require;
+    var5 = metroImportDefault;
     var2 = exports;
-    var5 = dependencyMap;
-    var _closure1_slot0 = var6;
+    var6 = dependencyMap;
+    var _closure1_slot0 = var7;
     var _closure1_slot1 = var5;
-    var0 = global;
-    var7 = var0.Object;
-    var4 = var7.defineProperty;
-    var3 = {};
-    var0 = true;
-    var3.value = var0;
-    var0 = '__esModule';
-    var0 = var4.bind(var7)(var2, var0, var3);
-    var4 = 0;
-    var3 = var5[var4];
-    var0 = undefined;
-    var3 = var6.bind(var0)(var3);
-    var _closure1_slot2 = var3;
-    var3 = 1;
-    var5 = var5[var3];
-    var3 = require;
-    var3 = var3.bind(var0)(var5);
-    var5 = var3.processColor;
-    var3 = /\s+/;
-    var _closure1_slot3 = var3;
-    var3 = {};
-    var3.type = var4;
-    var4 = 'black';
-    var4 = var5.bind(var0)(var4);
-    var3.payload = var4;
-    var _closure1_slot4 = var3;
-    var3 = function arg0() {
-        _fun48486: for (var _fun48486_ip = 0;;) switch (_fun48486_ip) {
+    var _closure1_slot2 = var6;
+    var0 = function() {
+        _fun48480: for (var _fun48480_ip = 0;;) switch (_fun48480_ip) {
             case 0:
-                var1 = arg0;
-                var0 = {};
-                var6 = var1.floodColor;
-                var3 = var1.floodOpacity;
-                var1 = null;
-                if (!(var1 != var6)) {
-                    _fun48486_ip = 37;
-                    continue _fun48486
-                }
-            case 23:
-                if (var6) {
-                    _fun48486_ip = 46;
-                    continue _fun48486
-                }
-            case 26:
-                var4 = 'number';
-                var2 = typeof var6;
-                if (!(var4 !== var2)) {
-                    _fun48486_ip = 46;
-                    continue _fun48486
-                }
-            case 37:
-                var2 = _closure1_slot4;
-                _fun48486_ip = 76;
-                continue _fun48486;
-            case 46:
-                var7 = _closure1_slot0;
-                var5 = _closure1_slot1;
-                var4 = 2;
-                var4 = var5[var4];
-                var5 = undefined;
-                var4 = var7.bind(var5)(var4);
-                var2 = var4.bind(var5)(var6);
-            case 76:
-                var0.floodColor = var2;
-                if (!(var1 != var3)) {
-                    _fun48486_ip = 122;
-                    continue _fun48486
-                }
-            case 86:
-                var4 = _closure1_slot0;
-                var2 = _closure1_slot1;
-                var1 = 3;
-                var1 = var2[var1];
-                var2 = undefined;
-                var1 = var4.bind(var2)(var1);
-                var1 = var1.bind(var2)(var3);
-                var0.floodOpacity = var1;
-            case 122:
-                return var0;
-        }
-    };
-    var2.default = var3;
-    var3 = function arg0() {
-        var1 = arg0;
-        var0 = {};
-        var2 = var1.x;
-        var0.x = var2;
-        var2 = var1.y;
-        var0.y = var2;
-        var2 = var1.width;
-        var0.width = var2;
-        var2 = var1.height;
-        var0.height = var2;
-        var1 = var1.result;
-        var0.result = var1;
-        return var0;
-    };
-    var2.extractFilter = var3;
-    var3 = function arg0() {
-        _fun48488: for (var _fun48488_ip = 0;;) switch (_fun48488_ip) {
-            case 0:
-                var2 = arg0;
-                var0 = var2.in;
-                if (var0) {
-                    _fun48488_ip = 16;
-                    continue _fun48488
-                }
-            case 12:
-                var0 = {};
-                _fun48488_ip = 32;
-                continue _fun48488;
-            case 16:
-                var1 = {};
-                var2 = var2.in;
-                var1.in1 = var2;
-                var0 = var1;
-            case 32:
-                return var0;
-        }
-    };
-    var2.extractIn = var3;
-    var3 = function arg0() {
-        _fun48489: for (var _fun48489_ip = 0;;) switch (_fun48489_ip) {
-            case 0:
-                var1 = arg0;
-                var0 = {};
-                var2 = var1.in2;
-                if (!var2) {
-                    _fun48489_ip = 26;
-                    continue _fun48489
-                }
-            case 14:
-                var2 = var1.in2;
-                var0.in2 = var2;
-            case 26:
-                var2 = var1.mode;
-                if (!var2) {
-                    _fun48489_ip = 45;
-                    continue _fun48489
-                }
-            case 34:
-                var1 = var1.mode;
-                var0.mode = var1;
-            case 45:
-                return var0;
-        }
-    };
-    var2.extractFeBlend = var3;
-    var3 = function arg0() {
-        _fun48490: for (var _fun48490_ip = 0;;) switch (_fun48490_ip) {
-            case 0:
-                var1 = arg0;
-                var0 = {};
-                var4 = var1.values;
-                var3 = undefined;
-                if (!(var3 !== var4)) {
-                    _fun48490_ip = 209;
-                    continue _fun48490
-                }
-            case 21:
-                var3 = global;
-                var6 = var3.Array;
-                var5 = var6.isArray;
-                var4 = var1.values;
-                var5 = var5.bind(var6)(var4);
-                var4 = var1.values;
-                if (var5) {
-                    _fun48490_ip = 188;
-                    continue _fun48490
-                }
-            case 55:
-                var6 = 'number';
-                var5 = typeof var4;
-                if (!(var6 !== var5)) {
-                    _fun48490_ip = 167;
-                    continue _fun48490
-                }
-            case 66:
-                var5 = var1.values;
-                var6 = 'string';
-                var5 = typeof var5;
-                if (!(var6 !== var5)) {
-                    _fun48490_ip = 106;
-                    continue _fun48490
-                }
-            case 82:
-                var7 = var3.console;
-                var6 = var7.warn;
-                var5 = 'Invalid value for FeColorMatrix `values` prop';
-                var5 = var6.bind(var7)(var5);
-                _fun48490_ip = 209;
-                continue _fun48490;
-            case 106:
-                var7 = var1.values;
-                var6 = var7.split;
-                var5 = _closure1_slot3;
-                var6 = var6.bind(var7)(var5);
-                var5 = var6.map;
-                var3 = var3.parseFloat;
-                var6 = var5.bind(var6)(var3);
-                var5 = var6.filter;
-                var3 = function(arg0) { // Environment: var2
-                    var0 = global;
-                    var2 = var0.isNaN;
-                    var1 = undefined;
-                    var0 = arg0;
-                    var0 = var2.bind(var1)(var0);
+            case 2: // try_start_0
+                var1 = global;
+                var2 = var1.Boolean;
+                var2 = var2.prototype;
+                var3 = var2.valueOf;
+                var2 = var3.call;
+                var7 = var1.Reflect;
+                var6 = var7.construct;
+                var5 = var1.Boolean;
+                var4 = new Array(0);
+                var1 = function() { // Environment: var0
+                    var0 = undefined;
+                    return var0;
+                };
+                var1 = var6.bind(var7)(var5, var4, var1);
+                var1 = var2.bind(var3)(var1);
+                var1 = !var1;
+                var _closure2_slot0 = var1;
+            case 70: // try_end0
+                _fun48480_ip = 74;
+                continue _fun48480;
+            case 72: // catch_target0
+                CatchBlockStart(arg_register = 1);
+            case 74:
+                var1 = function() {
+                    var0 = _closure2_slot0;
+                    var0 = !var0;
                     var0 = !var0;
                     return var0;
                 };
-                var3 = var5.bind(var6)(var3);
-                var0.values = var3;
-                _fun48490_ip = 209;
-                continue _fun48490;
-            case 167:
-                var5 = var1.values;
-                var3 = new Array(1);
-                var3[0] = var5;
-                var0.values = var3;
-                _fun48490_ip = 209;
-                continue _fun48490;
-            case 188:
-                var3 = var4.map;
-                var2 = function(arg0) { // Environment: var2
-                    _fun48491: for (var _fun48491_ip = 0;;) switch (_fun48491_ip) {
-                        case 0:
-                            var3 = arg0;
-                            var2 = 'number';
-                            var1 = typeof var3;
-                            var0 = var3;
-                            if (!(var2 !== var1)) {
-                                _fun48491_ip = 32;
-                                continue _fun48491
-                            }
-                        case 17:
-                            var1 = global;
-                            var2 = var1.parseFloat;
-                            var1 = undefined;
-                            var0 = var2.bind(var1)(var3);
-                        case 32:
-                            return var0;
+                _closure1_slot9 = var1;
+                var0 = undefined;
+                var0 = var1.bind(var0)();
+                return var0;
+        }
+    };
+    var _closure1_slot9 = var0;
+    var3 = global;
+    var9 = var3.Object;
+    var8 = var9.defineProperty;
+    var4 = {};
+    var0 = true;
+    var4.value = var0;
+    var0 = '__esModule';
+    var0 = var8.bind(var9)(var2, var0, var4);
+    var0 = 0;
+    var4 = var6[var0];
+    var0 = undefined;
+    var4 = var5.bind(var0)(var4);
+    var _closure1_slot3 = var4;
+    var4 = 1;
+    var4 = var6[var4];
+    var4 = var5.bind(var0)(var4);
+    var _closure1_slot4 = var4;
+    var4 = 2;
+    var4 = var6[var4];
+    var4 = var5.bind(var0)(var4);
+    var _closure1_slot5 = var4;
+    var4 = 3;
+    var4 = var6[var4];
+    var4 = var5.bind(var0)(var4);
+    var _closure1_slot6 = var4;
+    var4 = 4;
+    var4 = var6[var4];
+    var4 = var5.bind(var0)(var4);
+    var _closure1_slot7 = var4;
+    var4 = 5;
+    var4 = var6[var4];
+    var4 = var5.bind(var0)(var4);
+    var4 = 6;
+    var4 = var6[var4];
+    var4 = var7.bind(var0)(var4);
+    var4 = var4.jsx;
+    var _closure1_slot8 = var4;
+    var4 = 9;
+    var4 = var6[var4];
+    var4 = var5.bind(var0)(var4);
+    var1 = function(arg0) { // Environment: var1
+        var3 = function() {
+            _fun48484: for (var _fun48484_ip = 0;;) switch (_fun48484_ip) {
+                case 0:
+                    var3 = this;
+                    var2 = undefined;
+                    var4 = undefined;
+                    var0 = _closure1_slot3;
+                    var1 = _closure2_slot0;
+                    var0 = var0.bind(var2)(var3, var1);
+                    var0 = _closure1_slot6;
+                    var8 = var0.bind(var2)(var1);
+                    var1 = _closure1_slot5;
+                    var0 = _closure1_slot9;
+                    var0 = var0.bind(var2)();
+                    if (var0) {
+                        _fun48484_ip = 69;
+                        continue _fun48484
                     }
-                };
-                var2 = var3.bind(var4)(var2);
-                var0.values = var2;
-            case 209:
-                var2 = var1.type;
-                if (!var2) {
-                    _fun48490_ip = 228;
-                    continue _fun48490
-                }
-            case 217:
-                var1 = var1.type;
-                var0.type = var1;
-            case 228:
-                return var0;
-        }
-    };
-    var2.extractFeColorMatrix = var3;
-    var3 = function arg0() {
-        _fun48493: for (var _fun48493_ip = 0;;) switch (_fun48493_ip) {
-            case 0:
-                var2 = arg0;
-                var _closure2_slot0 = var2;
-                var0 = {};
-                var3 = var2.in;
-                if (var3) {
-                    _fun48493_ip = 24;
-                    continue _fun48493
-                }
-            case 20:
-                var3 = '';
-            case 24:
-                var0.in1 = var3;
-                var3 = var2.in2;
-                if (var3) {
-                    _fun48493_ip = 42;
-                    continue _fun48493
-                }
-            case 38:
-                var3 = '';
-            case 42:
-                var0.in2 = var3;
-                var2 = var2.operator;
-                if (var2) {
-                    _fun48493_ip = 60;
-                    continue _fun48493
-                }
-            case 56:
-                var2 = 'over';
-            case 60:
-                var0.operator1 = var2;
-                var _closure2_slot1 = var0;
-                var3 = ['k1', 'k2', 'k3', 'k4'];
-                var2 = var3.forEach;
-                var1 = function(arg0) { // Environment: var1
-                    _fun48494: for (var _fun48494_ip = 0;;) switch (_fun48494_ip) {
-                        case 0:
-                            var3 = arg0;
-                            var0 = _closure2_slot0;
-                            var2 = var0[var3];
-                            var0 = undefined;
-                            if (!(var0 !== var2)) {
-                                _fun48494_ip = 54;
-                                continue _fun48494
-                            }
-                        case 20:
-                            var2 = _closure2_slot1;
-                            var4 = global;
-                            var4 = var4.Number;
-                            var1 = _closure2_slot0;
-                            var1 = var1[var3];
-                            var1 = var4.bind(var0)(var1);
-                            if (var1) {
-                                _fun48494_ip = 50;
-                                continue _fun48494
-                            }
-                        case 48:
-                            var1 = 0;
-                        case 50:
-                            var2[var3] = var1;
-                        case 54:
-                            return var0;
-                    }
-                };
-                var1 = var2.bind(var3)(var1);
-                return var0;
-        }
-    };
-    var2.extractFeComposite = var3;
-    var3 = function arg0() {
-        _fun48495: for (var _fun48495_ip = 0;;) switch (_fun48495_ip) {
-            case 0:
-                var1 = arg0;
-                var0 = {};
-                var2 = global;
-                var5 = var2.Array;
-                var4 = var5.isArray;
-                var3 = var1.stdDeviation;
-                var3 = var4.bind(var5)(var3);
-                if (var3) {
-                    _fun48495_ip = 298;
-                    continue _fun48495
-                }
-            case 35:
-                var3 = var1.stdDeviation;
-                var6 = 'string';
-                var3 = typeof var3;
-                if (!(var6 === var3)) {
-                    _fun48495_ip = 82;
-                    continue _fun48495
-                }
-            case 52:
-                var7 = var1.stdDeviation;
-                var5 = var7.match;
-                var4 = _closure1_slot3;
-                var4 = var5.bind(var7)(var4);
-                if (var4) {
-                    _fun48495_ip = 217;
-                    continue _fun48495
-                }
-            case 82:
-                var4 = var1.stdDeviation;
-                var5 = 'number';
-                var4 = typeof var4;
-                var4 = var5 === var4;
-                if (var4) {
-                    _fun48495_ip = 148;
-                    continue _fun48495
-                }
-            case 102:
-                var5 = var1.stdDeviation;
-                var5 = typeof var5;
-                var5 = var6 === var5;
-                if (!var5) {
-                    _fun48495_ip = 145;
-                    continue _fun48495
-                }
-            case 118:
-                var8 = var1.stdDeviation;
-                var7 = var8.match;
-                var6 = _closure1_slot3;
-                var6 = var7.bind(var8)(var6);
-                var5 = !var6;
-            case 145:
-                var4 = var5;
-            case 148:
-                if (!var4) {
-                    _fun48495_ip = 369;
-                    continue _fun48495
-                }
-            case 154:
-                var5 = var2.Number;
-                var4 = var1.stdDeviation;
-                var6 = undefined;
-                var4 = var5.bind(var6)(var4);
-                if (var4) {
-                    _fun48495_ip = 178;
-                    continue _fun48495
-                }
-            case 176:
-                var4 = 0;
-            case 178:
-                var0.stdDeviationX = var4;
-                var5 = var2.Number;
-                var4 = var1.stdDeviation;
-                var4 = var5.bind(var6)(var4);
-                if (var4) {
-                    _fun48495_ip = 206;
-                    continue _fun48495
-                }
-            case 204:
-                var4 = 0;
-            case 206:
-                var0.stdDeviationY = var4;
-                _fun48495_ip = 369;
-                continue _fun48495;
-            case 217:
-                var5 = var1.stdDeviation;
-                var4 = var5.split;
-                var3 = _closure1_slot3;
-                var7 = var4.bind(var5)(var3);
-                var5 = var2.Number;
-                var4 = 0;
-                var3 = var7[var4];
-                var6 = undefined;
-                var3 = var5.bind(var6)(var3);
-                if (var3) {
-                    _fun48495_ip = 261;
-                    continue _fun48495
-                }
-            case 259:
-                var3 = 0;
-            case 261:
-                var0.stdDeviationX = var3;
-                var5 = var2.Number;
-                var3 = 1;
-                var3 = var7[var3];
-                var3 = var5.bind(var6)(var3);
-                if (var3) {
-                    _fun48495_ip = 290;
-                    continue _fun48495
-                }
-            case 288:
-                var3 = 0;
-            case 290:
-                var0.stdDeviationY = var3;
-                _fun48495_ip = 369;
-                continue _fun48495;
-            case 298:
-                var6 = var2.Number;
-                var4 = var1.stdDeviation;
-                var3 = 0;
-                var4 = var4[var3];
-                var5 = undefined;
-                var4 = var6.bind(var5)(var4);
-                if (var4) {
-                    _fun48495_ip = 328;
-                    continue _fun48495
-                }
-            case 326:
-                var4 = 0;
-            case 328:
-                var0.stdDeviationX = var4;
-                var4 = var2.Number;
-                var6 = var1.stdDeviation;
-                var2 = 1;
-                var2 = var6[var2];
-                var2 = var4.bind(var5)(var2);
-                if (var2) {
-                    _fun48495_ip = 363;
-                    continue _fun48495
-                }
-            case 361:
-                var2 = 0;
-            case 363:
-                var0.stdDeviationY = var2;
-            case 369:
-                var2 = var1.edgeMode;
-                if (!var2) {
-                    _fun48495_ip = 390;
-                    continue _fun48495
-                }
-            case 378:
-                var1 = var1.edgeMode;
-                var0.edgeMode = var1;
-            case 390:
-                return var0;
-        }
-    };
-    var2.extractFeGaussianBlur = var3;
-    var1 = function arg0, arg1() {
-        _fun48496: for (var _fun48496_ip = 0;;) switch (_fun48496_ip) {
-            case 0:
-                var2 = arg0;
-                var1 = arg1;
-                var _closure2_slot0 = var1;
-                var1 = new Array(0);
-                var3 = var2.children;
-                if (var3) {
-                    _fun48496_ip = 30;
-                    continue _fun48496
-                }
-            case 24:
-                var4 = new Array(0);
-                _fun48496_ip = 64;
-                continue _fun48496;
-            case 30:
-                var3 = _closure1_slot2;
-                var5 = var3.Children;
-                var3 = var5.map;
-                var2 = var2.children;
-                var0 = function(arg0) { // Environment: var0
-                    var3 = _closure1_slot2;
-                    var2 = var3.cloneElement;
-                    var1 = {};
-                    var0 = _closure2_slot0;
-                    var1.parent = var0;
-                    var0 = arg0;
-                    var0 = var2.bind(var3)(var0, var1);
+                case 51:
+                    var6 = var8.apply;
+                    var4 = arguments;
+                    var0 = var4;
+                    var0 = var6.bind(var8)(var3, var0);
+                    _fun48484_ip = 105;
+                    continue _fun48484;
+                case 69:
+                    var6 = global;
+                    var7 = var6.Reflect;
+                    var6 = var7.construct;
+                    var5 = _closure1_slot6;
+                    var5 = var5.bind(var2)(var3);
+                    var5 = var5.constructor;
+                    var4 = arguments;
+                    var0 = var6.bind(var7)(var8, var4, var5);
+                case 105:
+                    var0 = var1.bind(var2)(var3, var0);
                     return var0;
-                };
-                var4 = var3.bind(var5)(var2, var0);
-            case 64:
-                var3 = var4.length;
-                var2 = 0;
-                var5 = var2 < var3;
-                var0 = '';
-                if (!var5) {
-                    _fun48496_ip = 120;
-                    continue _fun48496
-                }
-            case 82:
-                var5 = var4[var2];
-                var5 = var5.props;
-                var6 = var5.in;
-                var5 = var1.push;
-                if (var6) {
-                    _fun48496_ip = 108;
-                    continue _fun48496
-                }
-            case 105:
-                var6 = var0;
-            case 108:
-                var5 = var5.bind(var1)(var6);
-                var2 = var2 + 1;
-                if (var2 < var3) {
-                    _fun48496_ip = 82;
-                    continue _fun48496
-                }
-            case 120:
-                var0 = {};
-                var0.nodes = var1;
+            }
+        };
+        var _closure2_slot0 = var3;
+        var5 = _closure1_slot7;
+        var2 = undefined;
+        var4 = arg0;
+        var4 = var5.bind(var2)(var3, var4);
+        var1 = _closure1_slot4;
+        var4 = {};
+        var5 = 'render';
+        var4.key = var5;
+        var0 = function() {
+            var0 = this;
+            var _closure3_slot0 = var0;
+            var3 = _closure1_slot8;
+            var6 = _closure1_slot1;
+            var11 = _closure1_slot2;
+            var1 = 7;
+            var1 = var11[var1];
+            var2 = undefined;
+            var1 = var6.bind(var2)(var1);
+            var6 = global;
+            var8 = var6.Object;
+            var7 = var8.assign;
+            var6 = {};
+            var5 = function arg0() {
+                var2 = _closure3_slot0;
+                var1 = var2.refMethod;
+                var0 = arg0;
+                var0 = var1.bind(var2)(var0);
                 return var0;
-        }
+            };
+            var6.ref = var5;
+            var10 = _closure1_slot0;
+            var9 = 8;
+            var4 = var11[var9];
+            var12 = var10.bind(var2)(var4);
+            var5 = var12.extractFilter;
+            var4 = var0.props;
+            var16 = var5.bind(var12)(var4);
+            var4 = var11[var9];
+            var13 = var10.bind(var2)(var4);
+            var12 = var13.extractIn;
+            var4 = var0.props;
+            var15 = var12.bind(var13)(var4);
+            var9 = var11[var9];
+            var10 = var10.bind(var2)(var9);
+            var9 = var10.extractFeBlend;
+            var0 = var0.props;
+            var14 = var9.bind(var10)(var0);
+            var18 = var8;
+            var17 = var6;
+            var0 = var18[var7](var17, var16, var15, var14, var13);
+            var0 = var3.bind(var2)(var1, var0);
+            return var0;
+        };
+        var4.value = var0;
+        var0 = new Array(1);
+        var0[0] = var4;
+        var0 = var1.bind(var2)(var3, var0);
+        return var0;
     };
-    var2.extractFeMerge = var1;
+    var1 = var1.bind(var0)(var4);
+    var4 = 'FeBlend';
+    var1.displayName = var4;
+    var7 = var3.Object;
+    var6 = var7.assign;
+    var5 = var1.defaultPrimitiveProps;
+    var4 = {};
+    var3 = 'normal';
+    var4.mode = var3;
+    var3 = {};
+    var3 = var6.bind(var7)(var3, var5, var4);
+    var1.defaultProps = var3;
+    var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 5440, 5428]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 15, 17, 18, 31, 33, 5461, 5462, 5463]);

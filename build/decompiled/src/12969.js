@@ -20,7 +20,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var3.bind(var0)(var4);
     var _closure1_slot2 = var3;
     var1 = function() {
-        _fun99880: for (var _fun99880_ip = 0;;) switch (_fun99880_ip) {
+        _fun99879: for (var _fun99879_ip = 0;;) switch (_fun99879_ip) {
             case 0:
                 var3 = _closure1_slot2;
                 var2 = var3.useContext;
@@ -32,8 +32,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = var4.bind(var1)(var0);
                 var0 = var2.bind(var3)(var0);
                 if (!(var1 !== var0)) {
-                    _fun99880_ip = 46;
-                    continue _fun99880
+                    _fun99879_ip = 46;
+                    continue _fun99879
                 }
             case 44:
                 return var0;
@@ -46,7 +46,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         value: var2
                     }
                 });
-                var5 = "Couldn't find the header height using Reanimated. Are you inside a screen in a navigator with a header and your NavigationContainer is wrapped in ReanimatedScreenProvider?";
+                var5 = "Couldn't find values for reanimated transition progress. Are you inside a screen in Native Stack?";
                 var6 = var1;
                 var0 = new var6[var2](var5, var4);
                 var0 = var0 instanceof Object ? var0 : var1;
@@ -55,4 +55,4 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 12965]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 12967]);

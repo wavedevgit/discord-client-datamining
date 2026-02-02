@@ -22,7 +22,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'uikit-native/experimental/Shadows.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Environment: var1
-        _fun44373: for (var _fun44373_ip = 0;;) switch (_fun44373_ip) {
+        _fun44377: for (var _fun44377_ip = 0;;) switch (_fun44377_ip) {
             case 0:
                 var0 = arg0;
                 var7 = var0.xOffset;
@@ -42,8 +42,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0.bind(var1)();
                 var1 = {};
                 if (var0) {
-                    _fun44373_ip = 116;
-                    continue _fun44373
+                    _fun44377_ip = 116;
+                    continue _fun44377
                 }
             case 84:
                 var0 = {};
@@ -53,8 +53,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0.shadowOffset = var1;
                 var0.shadowOpacity = var5;
                 var0.shadowRadius = var4;
-                _fun44373_ip = 129;
-                continue _fun44373;
+                _fun44377_ip = 129;
+                continue _fun44377;
             case 116:
                 var1.elevation = var3;
                 var1.shadowColor = var2;

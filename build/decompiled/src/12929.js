@@ -13,114 +13,85 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var5.value = var0;
     var0 = '__esModule';
     var0 = var6.bind(var7)(var2, var0, var5);
-    var0 = 0;
+    var0 = 1;
     var3 = var3[var0];
     var0 = undefined;
     var4 = var4.bind(var0)(var3);
     var3 = var4.defineIntegration;
-    var1 = function() { // Environment: var1
-        var0 = {};
-        var1 = 'ModuleMetadata';
-        var0.name = var1;
-        var1 = function arg0() {
-            var3 = arg0;
-            var _closure3_slot0 = var3;
-            var4 = var3.on;
-            var2 = 'beforeEnvelope';
-            var1 = function(arg0) { // Environment: var0
-                var2 = _closure1_slot0;
-                var1 = _closure1_slot1;
-                var0 = 1;
-                var1 = var1[var0];
-                var0 = undefined;
-                var4 = var2.bind(var0)(var1);
-                var3 = var4.forEachEnvelopeItem;
-                var2 = arg0;
-                var1 = function(arg0, arg1) { // Environment: var1
-                    _fun99573: for (var _fun99573_ip = 0;;) switch (_fun99573_ip) {
-                        case 0:
-                            var2 = arg0;
-                            var1 = 'event';
-                            var0 = arg1;
-                            if (!(var1 === var0)) {
-                                _fun99573_ip = 90;
-                                continue _fun99573
-                            }
-                        case 14:
-                            var0 = global;
-                            var1 = var0.Array;
-                            var0 = var1.isArray;
-                            var0 = var0.bind(var1)(var2);
-                            var4 = undefined;
-                            var1 = undefined;
-                            if (!var0) {
-                                _fun99573_ip = 46;
-                                continue _fun99573
-                            }
-                        case 39:
-                            var0 = 1;
-                            var1 = var2[var0];
-                        case 46:
-                            if (!var1) {
-                                _fun99573_ip = 90;
-                                continue _fun99573
-                            }
-                        case 49:
-                            var3 = _closure1_slot0;
-                            var5 = _closure1_slot1;
-                            var0 = 2;
-                            var0 = var5[var0];
-                            var3 = var3.bind(var4)(var0);
-                            var0 = var3.stripMetadataFromStackFrames;
-                            var0 = var0.bind(var3)(var1);
-                            var0 = 1;
-                            var2[var0] = var1;
-                        case 90:
-                            var0 = undefined;
-                            return var0;
-                    }
-                };
-                var1 = var3.bind(var4)(var2, var1);
-                return var0;
-            };
-            var1 = var4.bind(var3)(var2, var1);
-            var2 = var3.on;
-            var1 = 'applyFrameMetadata';
-            var0 = function(arg0) { // Environment: var0
-                _fun99574: for (var _fun99574_ip = 0;;) switch (_fun99574_ip) {
-                    case 0:
-                        var3 = arg0;
-                        var0 = var3.type;
-                        if (var0) {
-                            _fun99574_ip = 71;
-                            continue _fun99574
-                        }
-                    case 11:
-                        var1 = _closure3_slot0;
-                        var0 = var1.getOptions;
-                        var0 = var0.bind(var1)();
-                        var2 = var0.stackParser;
-                        var4 = _closure1_slot0;
-                        var1 = _closure1_slot1;
-                        var0 = 2;
-                        var1 = var1[var0];
-                        var0 = undefined;
-                        var1 = var4.bind(var0)(var1);
-                        var0 = var1.addMetadataToStackFrames;
-                        var0 = var0.bind(var1)(var2, var3);
-                    case 71:
-                        var0 = undefined;
-                        return var0;
+    var1 = function() {
+        _fun99568: for (var _fun99568_ip = 0;;) switch (_fun99568_ip) {
+            case 0:
+                var4 = undefined;
+                var3 = undefined;
+                var0 = arguments.length;
+                var2 = 0;
+                if (!(var0 > var2)) {
+                    _fun99568_ip = 23;
+                    continue _fun99568
                 }
-            };
-            var0 = var2.bind(var3)(var1, var0);
-            var0 = undefined;
-            return var0;
-        };
-        var0.setup = var1;
-        return var0;
+            case 15:
+                var0 = arguments[var2];
+                if (!(var4 === var0)) {
+                    _fun99568_ip = 27;
+                    continue _fun99568
+                }
+            case 23:
+                var0 = {};
+                _fun99568_ip = 31;
+                continue _fun99568;
+            case 27:
+                var0 = arguments[var2];
+            case 31:
+                var2 = var0.limit;
+                if (var2) {
+                    _fun99568_ip = 42;
+                    continue _fun99568
+                }
+            case 39:
+                var2 = 5;
+            case 42:
+                var _closure2_slot0 = var2;
+                var0 = var0.key;
+                if (var0) {
+                    _fun99568_ip = 58;
+                    continue _fun99568
+                }
+            case 54:
+                var0 = 'cause';
+            case 58:
+                var _closure2_slot1 = var0;
+                var0 = {};
+                var2 = 'LinkedErrors';
+                var0.name = var2;
+                var1 = function arg0, arg1, arg2() {
+                    var1 = arg2;
+                    var0 = var1.getOptions;
+                    var1 = var0.bind(var1)();
+                    var3 = _closure1_slot0;
+                    var4 = _closure1_slot1;
+                    var2 = 0;
+                    var5 = var4[var2];
+                    var0 = undefined;
+                    var9 = var3.bind(var0)(var5);
+                    var8 = var9.applyAggregateErrorsToEvent;
+                    var2 = var4[var2];
+                    var2 = var3.bind(var0)(var2);
+                    var16 = var2.exceptionFromError;
+                    var15 = var1.stackParser;
+                    var14 = var1.maxValueLength;
+                    var13 = _closure2_slot1;
+                    var12 = _closure2_slot0;
+                    var11 = arg0;
+                    var10 = arg1;
+                    var17 = var9;
+                    var1 = var17[var8](var16, var15, var14, var13, var12, var11, var10, var9);
+                    return var0;
+                };
+                var0.preprocessEvent = var1;
+                return var0;
+        }
     };
     var1 = var3.bind(var4)(var1);
-    var2.moduleMetadataIntegration = var1;
+    var2.linkedErrorsIntegration = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [12913, 12824, 12930]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [12825, 12914]);

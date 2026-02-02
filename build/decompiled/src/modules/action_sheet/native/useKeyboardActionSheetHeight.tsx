@@ -9,7 +9,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var3;
     var0 = function arg0, arg1, arg2() {
-        _fun87406: for (var _fun87406_ip = 0;;) switch (_fun87406_ip) {
+        _fun87410: for (var _fun87410_ip = 0;;) switch (_fun87410_ip) {
             case 0:
                 var2 = arg2;
                 var0 = arg1;
@@ -26,8 +26,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0.top;
                 var1 = var1 - var0;
                 if (!(var2 >= var1)) {
-                    _fun87406_ip = 64;
-                    continue _fun87406
+                    _fun87410_ip = 64;
+                    continue _fun87410
                 }
             case 61:
                 var1 = var2;
@@ -106,4 +106,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getKeyboardActionSheetHeight = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [4666, 1568, 1464, 4859, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [4668, 1568, 1464, 4861, 2]);

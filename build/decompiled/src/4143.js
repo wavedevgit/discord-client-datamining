@@ -8,52 +8,67 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = global;
     var5 = var0.Object;
     var4 = var5.defineProperty;
-    var2 = {};
+    var3 = {};
     var0 = true;
-    var2.value = var0;
+    var3.value = var0;
     var0 = '__esModule';
-    var0 = var4.bind(var5)(var1, var0, var2);
+    var0 = var4.bind(var5)(var1, var0, var3);
     var0 = {};
-    var2 = function arg0() {
-        _fun37982: for (var _fun37982_ip = 0;;) switch (_fun37982_ip) {
+    var3 = function arg0() {
+        _fun37980: for (var _fun37980_ip = 0;;) switch (_fun37980_ip) {
             case 0:
-                var7 = arg0;
-                var1 = !var7;
-                var0 = !var1;
-                if (var1) {
-                    _fun37982_ip = 67;
-                    continue _fun37982
+                var2 = arg0;
+                var0 = var2;
+                var5 = undefined;
+                var1 = undefined;
+                if (var2) {
+                    _fun37980_ip = 17;
+                    continue _fun37980
                 }
-            case 12:
-                var3 = _closure1_slot3;
-                var2 = var3.includes;
-                var8 = _closure1_slot0;
-                var4 = _closure1_slot1;
-                var6 = 0;
-                var5 = var4[var6];
-                var4 = undefined;
-                var5 = var8.bind(var4)(var5);
-                var4 = var5.getStringFromDataView;
-                var1 = _closure1_slot2;
-                var1 = var4.bind(var5)(var7, var6, var1);
-                var0 = var2.bind(var3)(var1);
-            case 67:
+            case 13:
+                var2 = false;
+                return var2;
+            case 17: // try_start_0
+                var3 = _closure1_slot0;
+                var2 = _closure1_slot1;
+                var4 = 0;
+                var2 = var2[var4];
+                var3 = var3.bind(var5)(var2);
+                var2 = var3.parseBox;
+                var2 = var2.bind(var3)(var0, var4);
+                var1 = var2;
+                var0 = var2;
+                if (!var2) {
+                    _fun37980_ip = 76;
+                    continue _fun37980
+                }
+            case 60:
+                var2 = var1.majorBrand;
+                var1 = 'avif';
+                var0 = var1 === var2;
+            case 76: // try_end0
+                return var0;
+            case 78: // catch_target0
+                CatchBlockStart(arg_register = 0);
+                var0 = false;
                 return var0;
         }
     };
-    var0.isGifFile = var2;
-    var2 = function() {
-        var0 = {};
-        var1 = 0;
-        var0.gifHeaderOffset = var1;
+    var0.isAvifFile = var3;
+    var2 = function arg0() {
+        var2 = _closure1_slot0;
+        var1 = _closure1_slot1;
+        var0 = 0;
+        var1 = var1[var0];
+        var0 = undefined;
+        var2 = var2.bind(var0)(var1);
+        var1 = var2.findOffsets;
+        var0 = arg0;
+        var0 = var1.bind(var2)(var0);
         return var0;
     };
-    var0.findOffsets = var2;
-    var2 = 6;
-    var _closure1_slot2 = var2;
-    var2 = ['GIF87a', 'GIF89a'];
-    var _closure1_slot3 = var2;
+    var0.findAvifOffsets = var2;
     var1.default = var0;
     var0 = undefined;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [4129]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [4140]);

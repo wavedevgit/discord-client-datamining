@@ -1,302 +1,278 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
+    var6 = require;
     var1 = exports;
-    var0 = global;
-    var5 = var0.Object;
-    var4 = var5.defineProperty;
-    var3 = {};
-    var0 = true;
-    var3.value = var0;
-    var0 = '__esModule';
-    var0 = var4.bind(var5)(var1, var0, var3);
-    var0 = undefined;
-    var1.default = var0;
-    var3 = {};
-    var4 = {};
-    var5 = {
-        'one': 'weniger als 1 Sekunde',
-        'other': 'weniger als {{count}} Sekunden'
-    };
-    var4.standalone = var5;
-    var5 = {
-        'one': 'weniger als 1 Sekunde',
-        'other': 'weniger als {{count}} Sekunden'
-    };
-    var4.withPreposition = var5;
-    var3.lessThanXSeconds = var4;
-    var4 = {};
-    var5 = {
-        'one': '1 Sekunde',
-        'other': '{{count}} Sekunden'
-    };
-    var4.standalone = var5;
-    var5 = {
-        'one': '1 Sekunde',
-        'other': '{{count}} Sekunden'
-    };
-    var4.withPreposition = var5;
-    var3.xSeconds = var4;
-    var4 = {
-        'standalone': 'halbe Minute',
-        'withPreposition': 'halben Minute'
-    };
-    var3.halfAMinute = var4;
-    var4 = {};
-    var5 = {
-        'one': 'weniger als 1 Minute',
-        'other': 'weniger als {{count}} Minuten'
-    };
-    var4.standalone = var5;
-    var5 = {
-        'one': 'weniger als 1 Minute',
-        'other': 'weniger als {{count}} Minuten'
-    };
-    var4.withPreposition = var5;
-    var3.lessThanXMinutes = var4;
-    var4 = {};
-    var5 = {
-        'one': '1 Minute',
-        'other': '{{count}} Minuten'
-    };
-    var4.standalone = var5;
-    var5 = {
-        'one': '1 Minute',
-        'other': '{{count}} Minuten'
-    };
-    var4.withPreposition = var5;
-    var3.xMinutes = var4;
-    var4 = {};
-    var5 = {
-        'one': 'etwa 1 Stunde',
-        'other': 'etwa {{count}} Stunden'
-    };
-    var4.standalone = var5;
-    var5 = {
-        'one': 'etwa 1 Stunde',
-        'other': 'etwa {{count}} Stunden'
-    };
-    var4.withPreposition = var5;
-    var3.aboutXHours = var4;
-    var4 = {};
-    var5 = {
-        'one': '1 Stunde',
-        'other': '{{count}} Stunden'
-    };
-    var4.standalone = var5;
-    var5 = {
-        'one': '1 Stunde',
-        'other': '{{count}} Stunden'
-    };
-    var4.withPreposition = var5;
-    var3.xHours = var4;
-    var4 = {};
-    var5 = {
-        'one': '1 Tag',
-        'other': '{{count}} Tage'
-    };
-    var4.standalone = var5;
-    var5 = {
-        'one': '1 Tag',
-        'other': '{{count}} Tagen'
-    };
-    var4.withPreposition = var5;
-    var3.xDays = var4;
-    var4 = {};
-    var5 = {
-        'one': 'etwa 1 Woche',
-        'other': 'etwa {{count}} Wochen'
-    };
-    var4.standalone = var5;
-    var5 = {
-        'one': 'etwa 1 Woche',
-        'other': 'etwa {{count}} Wochen'
-    };
-    var4.withPreposition = var5;
-    var3.aboutXWeeks = var4;
-    var4 = {};
-    var5 = {
-        'one': '1 Woche',
-        'other': '{{count}} Wochen'
-    };
-    var4.standalone = var5;
-    var5 = {
-        'one': '1 Woche',
-        'other': '{{count}} Wochen'
-    };
-    var4.withPreposition = var5;
-    var3.xWeeks = var4;
-    var4 = {};
-    var5 = {
-        'one': 'etwa 1 Monat',
-        'other': 'etwa {{count}} Monate'
-    };
-    var4.standalone = var5;
-    var5 = {
-        'one': 'etwa 1 Monat',
-        'other': 'etwa {{count}} Monaten'
-    };
-    var4.withPreposition = var5;
-    var3.aboutXMonths = var4;
-    var4 = {};
-    var5 = {
-        'one': '1 Monat',
-        'other': '{{count}} Monate'
-    };
-    var4.standalone = var5;
-    var5 = {
-        'one': '1 Monat',
-        'other': '{{count}} Monaten'
-    };
-    var4.withPreposition = var5;
-    var3.xMonths = var4;
-    var4 = {};
-    var5 = {
-        'one': 'etwa 1 Jahr',
-        'other': 'etwa {{count}} Jahre'
-    };
-    var4.standalone = var5;
-    var5 = {
-        'one': 'etwa 1 Jahr',
-        'other': 'etwa {{count}} Jahren'
-    };
-    var4.withPreposition = var5;
-    var3.aboutXYears = var4;
-    var4 = {};
-    var5 = {
-        'one': '1 Jahr',
-        'other': '{{count}} Jahre'
-    };
-    var4.standalone = var5;
-    var5 = {
-        'one': '1 Jahr',
-        'other': '{{count}} Jahren'
-    };
-    var4.withPreposition = var5;
-    var3.xYears = var4;
-    var4 = {};
-    var5 = {
-        'one': 'mehr als 1 Jahr',
-        'other': 'mehr als {{count}} Jahre'
-    };
-    var4.standalone = var5;
-    var5 = {
-        'one': 'mehr als 1 Jahr',
-        'other': 'mehr als {{count}} Jahren'
-    };
-    var4.withPreposition = var5;
-    var3.overXYears = var4;
-    var4 = {};
-    var5 = {
-        'one': 'fast 1 Jahr',
-        'other': 'fast {{count}} Jahre'
-    };
-    var4.standalone = var5;
-    var5 = {
-        'one': 'fast 1 Jahr',
-        'other': 'fast {{count}} Jahren'
-    };
-    var4.withPreposition = var5;
-    var3.almostXYears = var4;
-    var _closure1_slot0 = var3;
-    var2 = function arg0, arg1, arg2() {
-        _fun21835: for (var _fun21835_ip = 0;;) switch (_fun21835_ip) {
+    var7 = dependencyMap;
+    var5 = function arg0() {
+        _fun21833: for (var _fun21833_ip = 0;;) switch (_fun21833_ip) {
             case 0:
-                var3 = arg0;
-                var8 = arg1;
-                var1 = arg2;
-                var2 = null;
-                if (!(var2 != var1)) {
-                    _fun21835_ip = 24;
-                    continue _fun21835
-                }
-            case 15:
-                var0 = var1.addSuffix;
-                if (var0) {
-                    _fun21835_ip = 43;
-                    continue _fun21835
-                }
-            case 24:
-                var0 = _closure1_slot0;
-                var0 = var0[var3];
-                var4 = var0.standalone;
-                _fun21835_ip = 60;
-                continue _fun21835;
-            case 43:
-                var0 = _closure1_slot0;
-                var0 = var0[var3];
-                var4 = var0.withPreposition;
-            case 60:
-                var5 = 'string';
-                var0 = typeof var4;
-                var3 = var4;
-                if (!(var5 !== var0)) {
-                    _fun21835_ip = 130;
-                    continue _fun21835
-                }
-            case 74:
-                var0 = 1;
-                if (!(var0 !== var8)) {
-                    _fun21835_ip = 121;
-                    continue _fun21835
-                }
-            case 81:
-                var7 = var4.other;
-                var6 = var7.replace;
-                var0 = global;
-                var5 = var0.String;
-                var0 = undefined;
-                var5 = var5.bind(var0)(var8);
-                var0 = '{{count}}';
-                var0 = var6.bind(var7)(var0, var5);
-                _fun21835_ip = 127;
-                continue _fun21835;
-            case 121:
-                var0 = var4.one;
-            case 127:
-                var3 = var0;
-            case 130:
-                var0 = var3;
-                if (!(var2 != var1)) {
-                    _fun21835_ip = 195;
-                    continue _fun21835
-                }
-            case 137:
-                var2 = var1.addSuffix;
-                var0 = var3;
+                var2 = arg0;
                 if (!var2) {
-                    _fun21835_ip = 195;
-                    continue _fun21835
+                    _fun21833_ip = 18;
+                    continue _fun21833
                 }
-            case 149:
-                var2 = var1.comparison;
-                if (!var2) {
-                    _fun21835_ip = 170;
-                    continue _fun21835
+            case 6:
+                var1 = var2.__esModule;
+                var0 = var2;
+                if (var1) {
+                    _fun21833_ip = 27;
+                    continue _fun21833
                 }
-            case 158:
-                var2 = var1.comparison;
-                var1 = 0;
-                if (!(!(var2 > var1))) {
-                    _fun21835_ip = 182;
-                    continue _fun21835
-                }
-            case 170:
-                var1 = 'vor ';
-                var1 = var1 + var3;
-                _fun21835_ip = 192;
-                continue _fun21835;
-            case 182:
-                var2 = 'in ';
-                var1 = var2 + var3;
-            case 192:
+            case 18:
+                var1 = {};
+                var1.default = var2;
                 var0 = var1;
-            case 195:
+            case 27:
                 return var0;
         }
     };
+    var0 = global;
+    var4 = var0.Object;
+    var3 = var4.defineProperty;
+    var2 = {};
+    var0 = true;
+    var2.value = var0;
+    var0 = '__esModule';
+    var0 = var3.bind(var4)(var1, var0, var2);
+    var0 = undefined;
+    var1.default = var0;
+    var2 = 0;
+    var2 = var7[var2];
+    var2 = var6.bind(var0)(var2);
+    var3 = var5.bind(var0)(var2);
+    var2 = {};
+    var4 = 1;
+    var4 = var7[var4];
+    var4 = var6.bind(var0)(var4);
+    var4 = var5.bind(var0)(var4);
+    var5 = var4.default;
+    var4 = {};
+    var6 = /^(\d+)(\.)?/i;
+    var4.matchPattern = var6;
+    var6 = /\d+/i;
+    var4.parsePattern = var6;
+    var6 = function arg0() {
+        var0 = global;
+        var3 = var0.parseInt;
+        var2 = undefined;
+        var1 = arg0;
+        var0 = 10;
+        var0 = var3.bind(var2)(var1, var0);
+        return var0;
+    };
+    var4.valueCallback = var6;
+    var4 = var5.bind(var0)(var4);
+    var2.ordinalNumber = var4;
+    var6 = var3.default;
+    var4 = {};
+    var5 = {};
+    var7 = /^(fKr|fvt|eKr|vt)/i;
+    var5.narrow = var7;
+    var7 = /^(f\.Kr\.?|f\.v\.t\.?|e\.Kr\.?|v\.t\.)/i;
+    var5.abbreviated = var7;
+    var7 = /^(f.Kr.|før vesterlandsk tidsregning|e.Kr.|vesterlandsk tidsregning)/i;
+    var5.wide = var7;
+    var4.matchPatterns = var5;
+    var7 = 'wide';
+    var4.defaultMatchWidth = var7;
+    var5 = {};
+    var9 = new Array(2);
+    var10 = /^f/i;
+    var9[0] = var10;
+    var10 = /^(v|e)/i;
+    var9[1] = var10;
+    var5.any = var9;
+    var4.parsePatterns = var5;
+    var5 = 'any';
+    var4.defaultParseWidth = var5;
+    var4 = var6.bind(var0)(var4);
+    var2.era = var4;
+    var6 = var3.default;
+    var4 = {};
+    var9 = {};
+    var10 = /^[1234]/i;
+    var9.narrow = var10;
+    var10 = /^[1234]. kvt\./i;
+    var9.abbreviated = var10;
+    var10 = /^[1234]\.? kvartal/i;
+    var9.wide = var10;
+    var4.matchPatterns = var9;
+    var4.defaultMatchWidth = var7;
+    var9 = {};
+    var10 = new Array(4);
+    var11 = /1/i;
+    var10[0] = var11;
+    var11 = /2/i;
+    var10[1] = var11;
+    var11 = /3/i;
+    var10[2] = var11;
+    var11 = /4/i;
+    var10[3] = var11;
+    var9.any = var10;
+    var4.parsePatterns = var9;
+    var4.defaultParseWidth = var5;
+    var8 = function arg0() {
+        var1 = arg0;
+        var0 = 1;
+        var0 = var1 + var0;
+        return var0;
+    };
+    var4.valueCallback = var8;
+    var4 = var6.bind(var0)(var4);
+    var2.quarter = var4;
+    var6 = var3.default;
+    var4 = {};
+    var8 = {};
+    var9 = /^[jfmasond]/i;
+    var8.narrow = var9;
+    var9 = /^(jan.|feb.|mar.|apr.|maj|jun.|jul.|aug.|sep.|okt.|nov.|dec.)/i;
+    var8.abbreviated = var9;
+    var9 = /^(januar|februar|marts|april|maj|juni|juli|august|september|oktober|november|december)/i;
+    var8.wide = var9;
+    var4.matchPatterns = var8;
+    var4.defaultMatchWidth = var7;
+    var8 = {};
+    var9 = new Array(12);
+    var10 = /^j/i;
+    var9[0] = var10;
+    var10 = /^f/i;
+    var9[1] = var10;
+    var10 = /^m/i;
+    var9[2] = var10;
+    var10 = /^a/i;
+    var9[3] = var10;
+    var10 = /^m/i;
+    var9[4] = var10;
+    var10 = /^j/i;
+    var9[5] = var10;
+    var10 = /^j/i;
+    var9[6] = var10;
+    var10 = /^a/i;
+    var9[7] = var10;
+    var10 = /^s/i;
+    var9[8] = var10;
+    var10 = /^o/i;
+    var9[9] = var10;
+    var10 = /^n/i;
+    var9[10] = var10;
+    var10 = /^d/i;
+    var9[11] = var10;
+    var8.narrow = var9;
+    var9 = new Array(12);
+    var10 = /^ja/i;
+    var9[0] = var10;
+    var10 = /^f/i;
+    var9[1] = var10;
+    var10 = /^mar/i;
+    var9[2] = var10;
+    var10 = /^ap/i;
+    var9[3] = var10;
+    var10 = /^maj/i;
+    var9[4] = var10;
+    var10 = /^jun/i;
+    var9[5] = var10;
+    var10 = /^jul/i;
+    var9[6] = var10;
+    var10 = /^au/i;
+    var9[7] = var10;
+    var10 = /^s/i;
+    var9[8] = var10;
+    var10 = /^o/i;
+    var9[9] = var10;
+    var10 = /^n/i;
+    var9[10] = var10;
+    var10 = /^d/i;
+    var9[11] = var10;
+    var8.any = var9;
+    var4.parsePatterns = var8;
+    var4.defaultParseWidth = var5;
+    var4 = var6.bind(var0)(var4);
+    var2.month = var4;
+    var6 = var3.default;
+    var4 = {};
+    var8 = {};
+    var9 = /^[smtofl]/i;
+    var8.narrow = var9;
+    var9 = /^(søn.|man.|tir.|ons.|tor.|fre.|lør.)/i;
+    var8.short = var9;
+    var9 = /^(søn|man|tir|ons|tor|fre|lør)/i;
+    var8.abbreviated = var9;
+    var9 = /^(søndag|mandag|tirsdag|onsdag|torsdag|fredag|lørdag)/i;
+    var8.wide = var9;
+    var4.matchPatterns = var8;
+    var4.defaultMatchWidth = var7;
+    var7 = {};
+    var8 = new Array(7);
+    var9 = /^s/i;
+    var8[0] = var9;
+    var9 = /^m/i;
+    var8[1] = var9;
+    var9 = /^t/i;
+    var8[2] = var9;
+    var9 = /^o/i;
+    var8[3] = var9;
+    var9 = /^t/i;
+    var8[4] = var9;
+    var9 = /^f/i;
+    var8[5] = var9;
+    var9 = /^l/i;
+    var8[6] = var9;
+    var7.narrow = var8;
+    var8 = new Array(7);
+    var9 = /^s/i;
+    var8[0] = var9;
+    var9 = /^m/i;
+    var8[1] = var9;
+    var9 = /^ti/i;
+    var8[2] = var9;
+    var9 = /^o/i;
+    var8[3] = var9;
+    var9 = /^to/i;
+    var8[4] = var9;
+    var9 = /^f/i;
+    var8[5] = var9;
+    var9 = /^l/i;
+    var8[6] = var9;
+    var7.any = var8;
+    var4.parsePatterns = var7;
+    var4.defaultParseWidth = var5;
+    var4 = var6.bind(var0)(var4);
+    var2.day = var4;
+    var4 = var3.default;
+    var3 = {};
+    var6 = {};
+    var7 = /^(a|p|midnat|middag|(om) (morgenen|eftermiddagen|aftenen|natten))/i;
+    var6.narrow = var7;
+    var7 = /^([ap]\.?\s?m\.?|midnat|middag|(om) (morgenen|eftermiddagen|aftenen|natten))/i;
+    var6.any = var7;
+    var3.matchPatterns = var6;
+    var3.defaultMatchWidth = var5;
+    var6 = {};
+    var7 = {};
+    var8 = /^a/i;
+    var7.am = var8;
+    var8 = /^p/i;
+    var7.pm = var8;
+    var8 = /midnat/i;
+    var7.midnight = var8;
+    var8 = /middag/i;
+    var7.noon = var8;
+    var8 = /morgen/i;
+    var7.morning = var8;
+    var8 = /eftermiddag/i;
+    var7.afternoon = var8;
+    var8 = /aften/i;
+    var7.evening = var8;
+    var8 = /nat/i;
+    var7.night = var8;
+    var6.any = var7;
+    var3.parsePatterns = var6;
+    var3.defaultParseWidth = var5;
+    var3 = var4.bind(var0)(var3);
+    var2.dayPeriod = var3;
     var1.default = var2;
     var2 = var1.default;
     var1 = arg4;
     var1.exports = var2;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, []);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1686, 1687]);

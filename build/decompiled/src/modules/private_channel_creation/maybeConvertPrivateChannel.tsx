@@ -28,7 +28,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/private_channel_creation/maybeConvertPrivateChannel.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun54234: for (var _fun54234_ip = 0;;) switch (_fun54234_ip) {
+        _fun54238: for (var _fun54238_ip = 0;;) switch (_fun54238_ip) {
             case 0:
                 var3 = arg0;
                 var1 = _closure1_slot0;
@@ -39,8 +39,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var1.bind(var4)(var0);
                 var0 = var0.FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID;
                 if (!(var3 === var0)) {
-                    _fun54234_ip = 100;
-                    continue _fun54234
+                    _fun54238_ip = 100;
+                    continue _fun54238
                 }
             case 38:
                 var1 = _closure1_slot3;
@@ -49,8 +49,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = null;
                 var3 = var0 == var1;
                 if (var3) {
-                    _fun54234_ip = 98;
-                    continue _fun54234
+                    _fun54238_ip = 98;
+                    continue _fun54238
                 }
             case 61:
                 var3 = _closure1_slot1;
@@ -70,4 +70,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1372, 5606, 3904, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1372, 5608, 3906, 2]);

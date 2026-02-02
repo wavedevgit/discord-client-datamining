@@ -80,7 +80,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/app_launcher/native/screens/application_view/app/sort/CommandListSortButton.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun107977: for (var _fun107977_ip = 0;;) switch (_fun107977_ip) {
+        _fun107978: for (var _fun107978_ip = 0;;) switch (_fun107978_ip) {
             case 0:
                 var0 = arg0;
                 var1 = var0.sortOrder;
@@ -93,16 +93,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = _closure1_slot4;
                 var0 = var0.POPULAR;
                 if (!(var0 !== var1)) {
-                    _fun107977_ip = 125;
-                    continue _fun107977
+                    _fun107978_ip = 125;
+                    continue _fun107978
                 }
             case 52:
                 var0 = _closure1_slot4;
                 var0 = var0.ALPHABETICAL;
                 var11 = undefined;
                 if (!(var0 === var1)) {
-                    _fun107977_ip = 180;
-                    continue _fun107977
+                    _fun107978_ip = 180;
+                    continue _fun107978
                 }
             case 68:
                 var5 = _closure1_slot0;
@@ -117,8 +117,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0.t;
                 var0 = var0.m8xsti;
                 var11 = var1.bind(var2)(var0);
-                _fun107977_ip = 180;
-                continue _fun107977;
+                _fun107978_ip = 180;
+                continue _fun107978;
             case 125:
                 var5 = _closure1_slot0;
                 var6 = _closure1_slot2;
@@ -230,4 +230,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 13895, 4837, 33, 1297, 671, 1234, 4865, 3237, 13907, 1307, 3900, 7329, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 13896, 4839, 33, 1297, 671, 1234, 4867, 3239, 13908, 1307, 3902, 7331, 2]);

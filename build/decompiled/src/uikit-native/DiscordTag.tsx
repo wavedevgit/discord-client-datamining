@@ -61,7 +61,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'uikit-native/DiscordTag.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun66180: for (var _fun66180_ip = 0;;) switch (_fun66180_ip) {
+        _fun66184: for (var _fun66184_ip = 0;;) switch (_fun66184_ip) {
             case 0:
                 var0 = arg0;
                 var10 = var0.user;
@@ -72,8 +72,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var0.hideBotTag;
                 var3 = undefined;
                 if (!(var7 === var3)) {
-                    _fun66180_ip = 46;
-                    continue _fun66180
+                    _fun66184_ip = 46;
+                    continue _fun66184
                 }
             case 44:
                 var7 = false;
@@ -87,15 +87,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0.style = var4;
                 var8 = null;
                 if (!(var8 == var13)) {
-                    _fun66180_ip = 269;
-                    continue _fun66180
+                    _fun66184_ip = 269;
+                    continue _fun66184
                 }
             case 85:
                 var4 = var8 != var10;
                 var5 = null;
                 if (!var4) {
-                    _fun66180_ip = 267;
-                    continue _fun66180
+                    _fun66184_ip = 267;
+                    continue _fun66184
                 }
             case 97:
                 var12 = _closure1_slot5;
@@ -120,8 +120,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var16 = var16.bind(var10)();
                 var16 = !var16;
                 if (!var16) {
-                    _fun66180_ip = 253;
-                    continue _fun66180
+                    _fun66184_ip = 253;
+                    continue _fun66184
                 }
             case 179:
                 var19 = _closure1_slot5;
@@ -145,8 +145,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4.children = var15;
                 var5 = var12.bind(var3)(var11, var4);
             case 267:
-                _fun66180_ip = 328;
-                continue _fun66180;
+                _fun66184_ip = 328;
+                continue _fun66184;
             case 269:
                 var12 = _closure1_slot4;
                 var11 = _closure1_slot0;
@@ -170,8 +170,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var8 == var10;
                 var12 = undefined;
                 if (var5) {
-                    _fun66180_ip = 351;
-                    continue _fun66180
+                    _fun66184_ip = 351;
+                    continue _fun66184
                 }
             case 345:
                 var12 = var10.bot;
@@ -179,14 +179,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = true;
                 var5 = null;
                 if (!(var11 === var12)) {
-                    _fun66180_ip = 421;
-                    continue _fun66180
+                    _fun66184_ip = 421;
+                    continue _fun66184
                 }
             case 359:
                 var5 = null;
                 if (var7) {
-                    _fun66180_ip = 421;
-                    continue _fun66180
+                    _fun66184_ip = 421;
+                    continue _fun66184
                 }
             case 364:
                 var8 = _closure1_slot4;
@@ -211,4 +211,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 3900, 5729, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 3902, 5731, 2]);

@@ -1,175 +1,276 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
+    var6 = require;
     var1 = exports;
-    var0 = global;
-    var5 = var0.Object;
-    var4 = var5.defineProperty;
-    var3 = {};
-    var0 = true;
-    var3.value = var0;
-    var0 = '__esModule';
-    var0 = var4.bind(var5)(var1, var0, var3);
-    var0 = undefined;
-    var1.default = var0;
-    var3 = {};
-    var4 = {
-        'one': 'mindre end ét sekund',
-        'other': 'mindre end {{count}} sekunder'
-    };
-    var3.lessThanXSeconds = var4;
-    var4 = {
-        'one': '1 sekund',
-        'other': '{{count}} sekunder'
-    };
-    var3.xSeconds = var4;
-    var4 = 'ét halvt minut';
-    var3.halfAMinute = var4;
-    var4 = {
-        'one': 'mindre end ét minut',
-        'other': 'mindre end {{count}} minutter'
-    };
-    var3.lessThanXMinutes = var4;
-    var4 = {
-        'one': '1 minut',
-        'other': '{{count}} minutter'
-    };
-    var3.xMinutes = var4;
-    var4 = {
-        'one': 'cirka 1 time',
-        'other': 'cirka {{count}} timer'
-    };
-    var3.aboutXHours = var4;
-    var4 = {
-        'one': '1 time',
-        'other': '{{count}} timer'
-    };
-    var3.xHours = var4;
-    var4 = {
-        'one': '1 dag',
-        'other': '{{count}} dage'
-    };
-    var3.xDays = var4;
-    var4 = {
-        'one': 'cirka 1 uge',
-        'other': 'cirka {{count}} uger'
-    };
-    var3.aboutXWeeks = var4;
-    var4 = {
-        'one': '1 uge',
-        'other': '{{count}} uger'
-    };
-    var3.xWeeks = var4;
-    var4 = {
-        'one': 'cirka 1 måned',
-        'other': 'cirka {{count}} måneder'
-    };
-    var3.aboutXMonths = var4;
-    var4 = {
-        'one': '1 måned',
-        'other': '{{count}} måneder'
-    };
-    var3.xMonths = var4;
-    var4 = {
-        'one': 'cirka 1 år',
-        'other': 'cirka {{count}} år'
-    };
-    var3.aboutXYears = var4;
-    var4 = {
-        'one': '1 år',
-        'other': '{{count}} år'
-    };
-    var3.xYears = var4;
-    var4 = {
-        'one': 'over 1 år',
-        'other': 'over {{count}} år'
-    };
-    var3.overXYears = var4;
-    var4 = {
-        'one': 'næsten 1 år',
-        'other': 'næsten {{count}} år'
-    };
-    var3.almostXYears = var4;
-    var _closure1_slot0 = var3;
-    var2 = function arg0, arg1, arg2() {
-        _fun21821: for (var _fun21821_ip = 0;;) switch (_fun21821_ip) {
+    var7 = dependencyMap;
+    var5 = function arg0() {
+        _fun21819: for (var _fun21819_ip = 0;;) switch (_fun21819_ip) {
             case 0:
-                var7 = arg1;
-                var1 = arg2;
-                var2 = _closure1_slot0;
-                var0 = arg0;
-                var2 = var2[var0];
-                var4 = 'string';
-                var0 = typeof var2;
-                var3 = var2;
-                if (!(var4 !== var0)) {
-                    _fun21821_ip = 90;
-                    continue _fun21821
-                }
-            case 34:
-                var0 = 1;
-                if (!(var0 !== var7)) {
-                    _fun21821_ip = 81;
-                    continue _fun21821
-                }
-            case 41:
-                var6 = var2.other;
-                var5 = var6.replace;
-                var0 = global;
-                var4 = var0.String;
-                var0 = undefined;
-                var4 = var4.bind(var0)(var7);
-                var0 = '{{count}}';
-                var0 = var5.bind(var6)(var0, var4);
-                _fun21821_ip = 87;
-                continue _fun21821;
-            case 81:
-                var0 = var2.one;
-            case 87:
-                var3 = var0;
-            case 90:
-                var2 = null;
-                var0 = var3;
-                if (!(var2 != var1)) {
-                    _fun21821_ip = 157;
-                    continue _fun21821
-                }
-            case 99:
-                var2 = var1.addSuffix;
-                var0 = var3;
+                var2 = arg0;
                 if (!var2) {
-                    _fun21821_ip = 157;
-                    continue _fun21821
+                    _fun21819_ip = 18;
+                    continue _fun21819
                 }
-            case 111:
-                var2 = var1.comparison;
-                if (!var2) {
-                    _fun21821_ip = 132;
-                    continue _fun21821
+            case 6:
+                var1 = var2.__esModule;
+                var0 = var2;
+                if (var1) {
+                    _fun21819_ip = 27;
+                    continue _fun21819
                 }
-            case 120:
-                var2 = var1.comparison;
-                var1 = 0;
-                if (!(!(var2 > var1))) {
-                    _fun21821_ip = 144;
-                    continue _fun21821
-                }
-            case 132:
-                var1 = ' siden';
-                var1 = var3 + var1;
-                _fun21821_ip = 154;
-                continue _fun21821;
-            case 144:
-                var2 = 'om ';
-                var1 = var2 + var3;
-            case 154:
+            case 18:
+                var1 = {};
+                var1.default = var2;
                 var0 = var1;
-            case 157:
+            case 27:
                 return var0;
         }
     };
+    var0 = global;
+    var4 = var0.Object;
+    var3 = var4.defineProperty;
+    var2 = {};
+    var0 = true;
+    var2.value = var0;
+    var0 = '__esModule';
+    var0 = var3.bind(var4)(var1, var0, var2);
+    var0 = undefined;
+    var1.default = var0;
+    var2 = 0;
+    var2 = var7[var2];
+    var2 = var6.bind(var0)(var2);
+    var3 = var5.bind(var0)(var2);
+    var2 = {};
+    var4 = 1;
+    var4 = var7[var4];
+    var4 = var6.bind(var0)(var4);
+    var4 = var5.bind(var0)(var4);
+    var5 = var4.default;
+    var4 = {};
+    var6 = /^(\d+)\.?/i;
+    var4.matchPattern = var6;
+    var6 = /\d+/i;
+    var4.parsePattern = var6;
+    var6 = function arg0() {
+        var0 = global;
+        var3 = var0.parseInt;
+        var2 = undefined;
+        var1 = arg0;
+        var0 = 10;
+        var0 = var3.bind(var2)(var1, var0);
+        return var0;
+    };
+    var4.valueCallback = var6;
+    var4 = var5.bind(var0)(var4);
+    var2.ordinalNumber = var4;
+    var6 = var3.default;
+    var4 = {};
+    var5 = {};
+    var7 = /^(p[řr](\.|ed) Kr\.|p[řr](\.|ed) n\. l\.|po Kr\.|n\. l\.)/i;
+    var5.narrow = var7;
+    var7 = /^(p[řr](\.|ed) Kr\.|p[řr](\.|ed) n\. l\.|po Kr\.|n\. l\.)/i;
+    var5.abbreviated = var7;
+    var7 = /^(p[řr](\.|ed) Kristem|p[řr](\.|ed) na[šs][íi]m letopo[čc]tem|po Kristu|na[šs]eho letopo[čc]tu)/i;
+    var5.wide = var7;
+    var4.matchPatterns = var5;
+    var7 = 'wide';
+    var4.defaultMatchWidth = var7;
+    var5 = {};
+    var9 = new Array(2);
+    var10 = /^p[řr]/i;
+    var9[0] = var10;
+    var10 = /^(po|n)/i;
+    var9[1] = var10;
+    var5.any = var9;
+    var4.parsePatterns = var5;
+    var5 = 'any';
+    var4.defaultParseWidth = var5;
+    var4 = var6.bind(var0)(var4);
+    var2.era = var4;
+    var6 = var3.default;
+    var4 = {};
+    var9 = {};
+    var10 = /^[1234]/i;
+    var9.narrow = var10;
+    var10 = /^[1234]\. [čc]tvrtlet[íi]/i;
+    var9.abbreviated = var10;
+    var10 = /^[1234]\. [čc]tvrtlet[íi]/i;
+    var9.wide = var10;
+    var4.matchPatterns = var9;
+    var4.defaultMatchWidth = var7;
+    var9 = {};
+    var10 = new Array(4);
+    var11 = /1/i;
+    var10[0] = var11;
+    var11 = /2/i;
+    var10[1] = var11;
+    var11 = /3/i;
+    var10[2] = var11;
+    var11 = /4/i;
+    var10[3] = var11;
+    var9.any = var10;
+    var4.parsePatterns = var9;
+    var4.defaultParseWidth = var5;
+    var8 = function arg0() {
+        var1 = arg0;
+        var0 = 1;
+        var0 = var1 + var0;
+        return var0;
+    };
+    var4.valueCallback = var8;
+    var4 = var6.bind(var0)(var4);
+    var2.quarter = var4;
+    var6 = var3.default;
+    var4 = {};
+    var8 = {};
+    var9 = /^[lúubdkčcszřrlp]/i;
+    var8.narrow = var9;
+    var9 = /^(led|[úu]no|b[řr]e|dub|kv[ěe]|[čc]vn|[čc]vc|srp|z[áa][řr]|[řr][íi]j|lis|pro)/i;
+    var8.abbreviated = var9;
+    var9 = /^(leden|ledna|[úu]nora?|b[řr]ezen|b[řr]ezna|duben|dubna|kv[ěe]ten|kv[ěe]tna|[čc]erven(ec|ce)?|[čc]ervna|srpen|srpna|z[áa][řr][íi]|[řr][íi]jen|[řr][íi]jna|listopad(a|u)?|prosinec|prosince)/i;
+    var8.wide = var9;
+    var4.matchPatterns = var8;
+    var4.defaultMatchWidth = var7;
+    var8 = {};
+    var9 = new Array(12);
+    var10 = /^l/i;
+    var9[0] = var10;
+    var10 = /^[úu]/i;
+    var9[1] = var10;
+    var10 = /^b/i;
+    var9[2] = var10;
+    var10 = /^d/i;
+    var9[3] = var10;
+    var10 = /^k/i;
+    var9[4] = var10;
+    var10 = /^[čc]/i;
+    var9[5] = var10;
+    var10 = /^[čc]/i;
+    var9[6] = var10;
+    var10 = /^s/i;
+    var9[7] = var10;
+    var10 = /^z/i;
+    var9[8] = var10;
+    var10 = /^[řr]/i;
+    var9[9] = var10;
+    var10 = /^l/i;
+    var9[10] = var10;
+    var10 = /^p/i;
+    var9[11] = var10;
+    var8.narrow = var9;
+    var9 = new Array(12);
+    var10 = /^led/i;
+    var9[0] = var10;
+    var10 = /^[úu]n/i;
+    var9[1] = var10;
+    var10 = /^b[řr]e/i;
+    var9[2] = var10;
+    var10 = /^dub/i;
+    var9[3] = var10;
+    var10 = /^kv[ěe]/i;
+    var9[4] = var10;
+    var10 = /^[čc]vn|[čc]erven(?!\w)|[čc]ervna/i;
+    var9[5] = var10;
+    var10 = /^[čc]vc|[čc]erven(ec|ce)/i;
+    var9[6] = var10;
+    var10 = /^srp/i;
+    var9[7] = var10;
+    var10 = /^z[áa][řr]/i;
+    var9[8] = var10;
+    var10 = /^[řr][íi]j/i;
+    var9[9] = var10;
+    var10 = /^lis/i;
+    var9[10] = var10;
+    var10 = /^pro/i;
+    var9[11] = var10;
+    var8.any = var9;
+    var4.parsePatterns = var8;
+    var4.defaultParseWidth = var5;
+    var4 = var6.bind(var0)(var4);
+    var2.month = var4;
+    var6 = var3.default;
+    var4 = {};
+    var8 = {};
+    var9 = /^[npuúsčps]/i;
+    var8.narrow = var9;
+    var9 = /^(ne|po|[úu]t|st|[čc]t|p[áa]|so)/i;
+    var8.short = var9;
+    var9 = /^(ned|pon|[úu]te|st[rř]|[čc]tv|p[áa]t|sob)/i;
+    var8.abbreviated = var9;
+    var9 = /^(ned[ěe]le|pond[ěe]l[íi]|[úu]ter[ýy]|st[řr]eda|[čc]tvrtek|p[áa]tek|sobota)/i;
+    var8.wide = var9;
+    var4.matchPatterns = var8;
+    var4.defaultMatchWidth = var7;
+    var7 = {};
+    var8 = new Array(7);
+    var9 = /^n/i;
+    var8[0] = var9;
+    var9 = /^p/i;
+    var8[1] = var9;
+    var9 = /^[úu]/i;
+    var8[2] = var9;
+    var9 = /^s/i;
+    var8[3] = var9;
+    var9 = /^[čc]/i;
+    var8[4] = var9;
+    var9 = /^p/i;
+    var8[5] = var9;
+    var9 = /^s/i;
+    var8[6] = var9;
+    var7.narrow = var8;
+    var8 = new Array(7);
+    var9 = /^ne/i;
+    var8[0] = var9;
+    var9 = /^po/i;
+    var8[1] = var9;
+    var9 = /^[úu]t/i;
+    var8[2] = var9;
+    var9 = /^st/i;
+    var8[3] = var9;
+    var9 = /^[čc]t/i;
+    var8[4] = var9;
+    var9 = /^p[áa]/i;
+    var8[5] = var9;
+    var9 = /^so/i;
+    var8[6] = var9;
+    var7.any = var8;
+    var4.parsePatterns = var7;
+    var4.defaultParseWidth = var5;
+    var4 = var6.bind(var0)(var4);
+    var2.day = var4;
+    var4 = var3.default;
+    var3 = {};
+    var6 = {};
+    var7 = /^dopoledne|dop\.?|odpoledne|odp\.?|p[ůu]lnoc|poledne|r[áa]no|odpoledne|ve[čc]er|(v )?noci?/i;
+    var6.any = var7;
+    var3.matchPatterns = var6;
+    var3.defaultMatchWidth = var5;
+    var6 = {};
+    var7 = {};
+    var8 = /^dop/i;
+    var7.am = var8;
+    var8 = /^odp/i;
+    var7.pm = var8;
+    var8 = /^p[ůu]lnoc/i;
+    var7.midnight = var8;
+    var8 = /^poledne/i;
+    var7.noon = var8;
+    var8 = /r[áa]no/i;
+    var7.morning = var8;
+    var8 = /odpoledne/i;
+    var7.afternoon = var8;
+    var8 = /ve[čc]er/i;
+    var7.evening = var8;
+    var8 = /noc/i;
+    var7.night = var8;
+    var6.any = var7;
+    var3.parsePatterns = var6;
+    var3.defaultParseWidth = var5;
+    var3 = var4.bind(var0)(var3);
+    var2.dayPeriod = var3;
     var1.default = var2;
     var2 = var1.default;
     var1 = arg4;
     var1.exports = var2;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, []);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1686, 1687]);

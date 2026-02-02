@@ -32,15 +32,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var9 = var9.GAME_UPDATE;
     var1.getQueryId = var9;
     var9 = function arg0, arg1() {
-        _fun117995: for (var _fun117995_ip = 0;;) switch (_fun117995_ip) {
+        _fun117996: for (var _fun117996_ip = 0;;) switch (_fun117996_ip) {
             case 0:
                 var4 = arg1;
                 var3 = null;
                 var1 = var3 != var4;
                 var0 = null;
                 if (!var1) {
-                    _fun117995_ip = 43;
-                    continue _fun117995
+                    _fun117996_ip = 43;
+                    continue _fun117996
                 }
             case 14:
                 var2 = _closure1_slot2;
@@ -49,8 +49,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var3 != var1;
                 var0 = null;
                 if (!var2) {
-                    _fun117995_ip = 43;
-                    continue _fun117995
+                    _fun117996_ip = 43;
+                    continue _fun117996
                 }
             case 40:
                 var0 = var1;
@@ -60,27 +60,27 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var1.get = var9;
     var9 = function arg0, arg1() {
-        _fun117996: for (var _fun117996_ip = 0;;) switch (_fun117996_ip) {
+        _fun117997: for (var _fun117997_ip = 0;;) switch (_fun117997_ip) {
             case 0:
                 var4 = arg0;
                 var3 = arg1;
                 var0 = null;
                 if (!(var0 != var4)) {
-                    _fun117996_ip = 16;
-                    continue _fun117996
+                    _fun117997_ip = 16;
+                    continue _fun117997
                 }
             case 12:
                 if (!(var0 == var3)) {
-                    _fun117996_ip = 36;
-                    continue _fun117996
+                    _fun117997_ip = 36;
+                    continue _fun117997
                 }
             case 16:
                 var0 = global;
                 var1 = var0.Promise;
                 var0 = var1.resolve;
                 var0 = var0.bind(var1)();
-                _fun117996_ip = 73;
-                continue _fun117996;
+                _fun117997_ip = 73;
+                continue _fun117997;
             case 36:
                 var5 = _closure1_slot0;
                 var2 = _closure1_slot1;
@@ -96,14 +96,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var1.load = var9;
     var9 = function arg0, arg1() {
-        _fun117997: for (var _fun117997_ip = 0;;) switch (_fun117997_ip) {
+        _fun117998: for (var _fun117998_ip = 0;;) switch (_fun117998_ip) {
             case 0:
                 var3 = arg1;
                 var0 = null;
                 var0 = var0 != var3;
                 if (!var0) {
-                    _fun117997_ip = 30;
-                    continue _fun117997
+                    _fun117998_ip = 30;
+                    continue _fun117998
                 }
             case 12:
                 var2 = _closure1_slot2;
@@ -115,14 +115,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var1.getIsLoading = var9;
     var8 = function arg0, arg1() {
-        _fun117998: for (var _fun117998_ip = 0;;) switch (_fun117998_ip) {
+        _fun117999: for (var _fun117999_ip = 0;;) switch (_fun117999_ip) {
             case 0:
                 var3 = arg1;
                 var0 = null;
                 var1 = var0 != var3;
                 if (!var1) {
-                    _fun117998_ip = 30;
-                    continue _fun117998
+                    _fun117999_ip = 30;
+                    continue _fun117999
                 }
             case 12:
                 var2 = _closure1_slot2;
@@ -142,4 +142,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.useGameUpdateData = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [14997, 660, 566, 14998, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [14998, 660, 566, 14999, 2]);

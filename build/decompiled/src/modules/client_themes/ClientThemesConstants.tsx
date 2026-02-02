@@ -1336,4 +1336,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.REDESIGN_STANDARD_BACKGROUND_THEMES = var3;
     var2.BACKGROUND_GRADIENT_PRESETS_MAP = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [483, 3170, 1311, 1234, 22, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [483, 3172, 1311, 1234, 22, 2]);

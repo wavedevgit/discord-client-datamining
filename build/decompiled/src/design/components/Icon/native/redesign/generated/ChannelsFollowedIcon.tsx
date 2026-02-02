@@ -33,15 +33,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'design/components/Icon/native/redesign/generated/ChannelsFollowedIcon.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Environment: var1
-        _fun109180: for (var _fun109180_ip = 0;;) switch (_fun109180_ip) {
+        _fun109181: for (var _fun109181_ip = 0;;) switch (_fun109181_ip) {
             case 0:
                 var2 = arg0;
                 var5 = var2.style;
                 var6 = var2.color;
                 var3 = undefined;
                 if (!(var6 === var3)) {
-                    _fun109180_ip = 53;
-                    continue _fun109180
+                    _fun109181_ip = 53;
+                    continue _fun109181
                 }
             case 19:
                 var1 = _closure1_slot1;
@@ -83,4 +83,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.ChannelsFollowedIcon = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 671, 3109, 14011, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 671, 3111, 14012, 2]);
