@@ -22,18 +22,12 @@ public final class ga {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public /* synthetic */ ga(ea eaVar, fa faVar) {
-        hc hcVar;
-        da daVar;
-        ba baVar;
         wa waVar;
         za zaVar;
         s2 s2Var;
-        hcVar = eaVar.f43140a;
-        this.f43214a = hcVar;
-        daVar = eaVar.f43141b;
-        this.f43215b = daVar;
-        baVar = eaVar.f43142c;
-        this.f43216c = baVar;
+        this.f43214a = eaVar.f43140a;
+        this.f43215b = eaVar.f43141b;
+        this.f43216c = eaVar.f43142c;
         waVar = eaVar.f43143d;
         this.f43217d = waVar;
         zaVar = eaVar.f43144e;
