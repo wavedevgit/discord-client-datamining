@@ -33,10 +33,11 @@ n.d(t, {
     NJ: () => e5,
     Ng: () => ty,
     Nh: () => te,
+    Nv: () => tT,
     Oy: () => Z,
     PJ: () => tn,
     PR: () => tD,
-    Ph: () => v,
+    Ph: () => A,
     Py: () => tU,
     QH: () => ep,
     QR: () => tL,
@@ -61,7 +62,6 @@ n.d(t, {
     ZA: () => K,
     ZJ: () => B,
     _U: () => ee,
-    _W: () => tT,
     _h: () => ti,
     _i: () => $,
     _m: () => eJ,
@@ -71,6 +71,7 @@ n.d(t, {
     cV: () => q,
     ce: () => tO,
     cy: () => ei,
+    dM: () => tS,
     dS: () => e1,
     dz: () => eg,
     eF: () => tA,
@@ -81,9 +82,9 @@ n.d(t, {
     gG: () => ev,
     gM: () => X,
     gR: () => e_,
+    gx: () => tC,
     hI: () => eF,
     he: () => eH,
-    hq: () => tC,
     iA: () => e8,
     ii: () => tc,
     j1: () => eq,
@@ -94,7 +95,6 @@ n.d(t, {
     kK: () => tp,
     l0: () => to,
     lI: () => i,
-    mM: () => tS,
     n8: () => Q,
     nx: () => j,
     o: () => eu,
@@ -102,14 +102,14 @@ n.d(t, {
     pD: () => ez,
     qN: () => tF,
     qv: () => tx,
-    rf: () => C,
+    rf: () => T,
     rk: () => tr,
     rl: () => tN,
     s5: () => em,
     sQ: () => ed,
     sW: () => tG,
     ss: () => ts,
-    t7: () => I,
+    t7: () => S,
     tZ: () => eQ,
     uo: () => eC,
     uw: () => tt,
@@ -118,7 +118,7 @@ n.d(t, {
     vF: () => eT,
     vU: () => tj,
     vV: () => ek,
-    vb: () => A,
+    vb: () => I,
     w2: () => e9,
     w6: () => tu,
     w9: () => es,
@@ -128,7 +128,7 @@ n.d(t, {
     x0: () => tf,
     x6: () => er,
     xV: () => tm,
-    xy: () => T,
+    xy: () => v,
     yc: () => tB,
     yq: () => eW,
     zE: () => tR
@@ -265,24 +265,7 @@ function O(e) {
     return e instanceof Error ? "".concat(e.name, ": ").concat(e.message, "\n").concat(e.stack) : t
 }
 
-function v() {
-    return r.initLibdiscore()
-}
-
-function A() {
-    r.crash()
-}
-
-function I(e, t) {
-    return r.rustMultiply(e, t)
-}
-
-function S(e) {
-    let t = r.__wbindgen_export_4.get(e);
-    return r.__externref_table_dealloc(e), t
-}
-
-function T(e) {
+function v(e) {
     let t, n;
     try {
         let i = r.generateLaunchSignature(e);
@@ -292,8 +275,25 @@ function T(e) {
     }
 }
 
-function C(e, t, n, i, a) {
+function A() {
+    return r.initLibdiscore()
+}
+
+function I() {
+    r.crash()
+}
+
+function S(e, t) {
+    return r.rustMultiply(e, t)
+}
+
+function T(e, t, n, i, a) {
     r.installLogCallback(e, t, n, i, a)
+}
+
+function C(e) {
+    let t = r.__wbindgen_export_4.get(e);
+    return r.__externref_table_dealloc(e), t
 }
 
 function N(e, t) {
@@ -305,11 +305,11 @@ function w(e, t) {
 }
 
 function R(e, t, n) {
-    r.closure601_externref_shim(e, t, n)
+    r.closure628_externref_shim(e, t, n)
 }
 
 function P(e, t, n, i) {
-    r.closure637_externref_shim(e, t, n, i)
+    r.closure664_externref_shim(e, t, n, i)
 }
 let D = ["bytes"],
     L = ["omit", "same-origin", "include"],
@@ -379,8 +379,8 @@ class V {
     }
     connectStore(e) {
         let t = r.fluxapi_connectStore(this.__wbg_ptr, e);
-        if (t[2]) throw S(t[1]);
-        return S(t[0])
+        if (t[2]) throw C(t[1]);
+        return C(t[0])
     }
     dispatchAction(e, t) {
         let n = u(e, r.__wbindgen_malloc, r.__wbindgen_realloc),
@@ -986,15 +986,15 @@ function tI(e) {
 }
 
 function tS(e, t, n) {
-    return b(e, t, 602, R)
+    return b(e, t, 442, N)
 }
 
 function tT(e, t, n) {
-    return b(e, t, 415, N)
+    return b(e, t, 482, w)
 }
 
 function tC(e, t, n) {
-    return b(e, t, 455, w)
+    return b(e, t, 629, R)
 }
 
 function tN(e, t) {
