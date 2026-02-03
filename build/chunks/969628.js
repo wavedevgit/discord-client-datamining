@@ -69,6 +69,9 @@ let a = {
                         label: "Default",
                         value: "default"
                     }, {
+                        label: "Brand",
+                        value: "brand"
+                    }, {
                         label: "Expressive",
                         value: "expressive"
                     }]

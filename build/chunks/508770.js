@@ -27,7 +27,8 @@ let c = (e, t) => {
 
 function u(e) {
     return "string" == typeof e || e.hasOwnProperty("text") ? {
-        type: e
+        type: e,
+        variant: "brand"
     } : e
 }
 
