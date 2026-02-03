@@ -24,8 +24,9 @@ function b(e) {
         onClick: n,
         count: r,
         compact: i,
-        collapsedReason: a
-    } = e, c = (0, s.YW)({
+        collapsedReason: a,
+        canUncollapse: c = !0
+    } = e, d = (0, s.YW)({
         collapsedReason: a
     }).with({
         collapsedReason: m.t["VFWjc+"]
@@ -43,23 +44,30 @@ function b(e) {
         size: "md",
         color: "currentColor",
         className: g.Q6
-    }));
+    })), h = c ? d : (0, l.jsx)(o.DUT, {
+        tag: "span",
+        onClick: n,
+        className: g.Y4,
+        children: d
+    });
     return (0, l.jsx)(u.A, {
         compact: i,
         role: "group",
         childrenMessageContent: (0, l.jsx)(p.A, {
             compact: i,
             className: g.L9,
-            iconNode: c,
+            iconNode: h,
             children: (0, l.jsxs)("div", {
                 className: g.Fo,
                 children: [m.intl.format(a, {
                     count: r
-                }), " —", " ", (0, l.jsx)(o.DUT, {
-                    tag: "span",
-                    onClick: n,
-                    className: g.rB,
-                    children: t ? m.intl.string(m.t.fgq1gs) : m.intl.string(m.t.XJuakA)
+                }), c && (0, l.jsxs)(l.Fragment, {
+                    children: [" — ", (0, l.jsx)(o.DUT, {
+                        tag: "span",
+                        onClick: n,
+                        className: g.rB,
+                        children: t ? m.intl.string(m.t.fgq1gs) : m.intl.string(m.t.XJuakA)
+                    })]
                 })]
             })
         })
@@ -72,29 +80,33 @@ let _ = r.memo(function(e) {
         channel: i,
         compact: s = !1,
         unreadId: o,
-        collapsedReason: u
+        collapsedReason: u,
+        canUncollapse: p = !0
     } = e, {
-        hasJumpTarget: p = !1
-    } = n, [m, _] = r.useState(p), y = r.useCallback(() => _(e => !e), []);
-    r.useEffect(() => {
-        p && _(!0)
+        hasJumpTarget: m = !1
+    } = n, [_, y] = r.useState(m && p), [v, E] = r.useState(!1), O = r.useCallback(() => {
+        p ? y(e => !e) : E(!0)
     }, [p]);
-    let v = n.hasUnread ? n.content.length - 1 : n.content.length;
+    if (r.useEffect(() => {
+            m && p && y(!0)
+        }, [m, p]), v) return null;
+    let C = n.hasUnread ? n.content.length - 1 : n.content.length;
     return (0, l.jsxs)("div", {
         className: a()({
             [A._A]: !0,
-            [g.sz]: m
+            [g.sz]: _
         }),
-        children: [n.hasUnread && (!m || (null == (t = n.content[0]) ? void 0 : t.type) === f.TZK.DIVIDER) ? (0, l.jsx)(h.A, {
+        children: [n.hasUnread && (!_ || (null == (t = n.content[0]) ? void 0 : t.type) === f.TZK.DIVIDER) ? (0, l.jsx)(h.A, {
             isUnread: !0,
             id: o
         }, "divider") : null, (0, l.jsx)(b, {
-            count: v,
+            count: C,
             compact: s,
-            expanded: m,
-            onClick: y,
-            collapsedReason: u
-        }, "collapsed-message-item"), m ? n.content.map((e, t) => {
+            expanded: _,
+            onClick: O,
+            collapsedReason: u,
+            canUncollapse: p
+        }, "collapsed-message-item"), _ ? n.content.map((e, t) => {
             if (e.type === f.TZK.DIVIDER && t > 0) {
                 var r, a;
                 let e = null != (r = null == (a = n.content[t + 1]) ? void 0 : a.isGroupStart) && r;

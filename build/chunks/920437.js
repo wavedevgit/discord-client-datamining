@@ -35,8 +35,8 @@ var l = n(627968),
     R = n(834942),
     D = n(576705),
     M = n(287809),
-    L = n(488926),
-    k = n(137577),
+    k = n(488926),
+    L = n(137577),
     U = n(786051),
     G = n(652215),
     F = n(360469),
@@ -332,12 +332,12 @@ function q(e) {
     }), A = !!(0, y.Qd)(o), b = (0, s.bG)([O.A], () => O.A.shouldShowPopout(a)), E = (0, s.bG)([D.A], () => D.A.can(G.xBc.SEND_MESSAGES, r)), S = (0, s.bG)([v.A], () => v.A.getRequest(a)), {
         showLinkedLobbyApplicationLoadingIndicator: x,
         requiredLinkedLobbyApplication: j
-    } = (0, k.A)(r.linkedLobby), I = z(W({}, c), {
+    } = (0, L.A)(r.linkedLobby), I = z(W({}, c), {
         guild: o,
         isLurking: h,
         isFollowable: u,
         shouldShowLurkerModeSuccessPopout: b,
-        showLurkerModeUpsellPopout: h && null != o && L.MJ(G.xBc.SEND_MESSAGES, r),
+        showLurkerModeUpsellPopout: h && null != o && k.MJ(G.xBc.SEND_MESSAGES, r),
         theme: T.A.theme,
         canSendMessages: E,
         channelFollowingUsersSeen: null != d ? d.usersSeenEver : null,

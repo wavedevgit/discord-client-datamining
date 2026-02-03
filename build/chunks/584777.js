@@ -76,7 +76,7 @@ function M() {
                 user: n,
                 comparator: g.Ay.getName(n)
             }), e
-        }, []).sort(k)
+        }, []).sort(L)
     }(e), !0;
     let t = null != e ? e.recipients : [];
     if (null != l) {
@@ -111,13 +111,13 @@ function M() {
     return !1
 }
 
-function L() {
+function k() {
     if (!C) return !1;
     let e = T;
     return (T = y.A.getFriendCount() > 0) !== e
 }
 
-function k(e, t) {
+function L(e, t) {
     if (b.A.hasConsented(E.YAq.PERSONALIZATION)) {
         var n, l, r, i;
         let a = null != (n = null == (r = p.A.getUserAffinity(e.user.id)) ? void 0 : r.communicationProbability) ? n : 0,
@@ -156,7 +156,7 @@ function G() {
 
 function F(e) {
     if (e.key !== E.TLS) return !1;
-    C = !0, L(), l = G(), P = null, D("")
+    C = !0, k(), l = G(), P = null, D("")
 }
 
 function H(e) {
@@ -169,7 +169,7 @@ function B() {
 }
 class V extends(r = s.Ay.Store) {
     initialize() {
-        this.waitFor(A.A, b.A, d.A, _.A, y.A, p.A, v.default), this.syncWith([v.default, A.A], M), this.syncWith([y.A], L)
+        this.waitFor(A.A, b.A, d.A, _.A, y.A, p.A, v.default), this.syncWith([v.default, A.A], M), this.syncWith([y.A], k)
     }
     getResults() {
         return I
@@ -219,7 +219,7 @@ let K = new V(c.h, {
         MODAL_PUSH: F,
         SHOW_ACTION_SHEET: F,
         PRIVATE_CHANNEL_RECIPIENTS_INVITE_OPEN: function(e) {
-            C = !0, L(), l = G(), P = e.channelId, D("")
+            C = !0, k(), l = G(), P = e.channelId, D("")
         },
         MODAL_POP: H,
         HIDE_ACTION_SHEET: H,

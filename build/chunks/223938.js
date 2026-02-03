@@ -35,8 +35,8 @@ var l = n(627968),
     R = n(31717),
     D = n(638128),
     M = n(522602),
-    L = n(515718),
-    k = n(723702),
+    k = n(515718),
+    L = n(723702),
     U = n(518960),
     G = n(486319),
     F = n(355622),
@@ -111,7 +111,7 @@ let ee = r.memo(r.forwardRef(function(e, t) {
             id: j,
             required: I,
             disabled: T,
-            accessibilityLabel: L,
+            accessibilityLabel: k,
             channel: U,
             type: K,
             focused: Y,
@@ -155,16 +155,16 @@ let ee = r.memo(r.forwardRef(function(e, t) {
     }), {
         isLurking: eD,
         isPendingMember: eM,
-        disabled: eL,
-        canAttachFiles: ek,
+        disabled: ek,
+        canAttachFiles: eL,
         canEveryoneSendMessages: eU
-    } = (0, V.Sk)(U, K, eR, T), eG = !w.D_.useSetting() && !(0, k.isAndroidWeb)() && null != window.ResizeObserver, eF = !eG || !(null == (u = K.commands) ? void 0 : u.enabled) || !Y || "/" !== p, eH = (0, N.A)(), {
+    } = (0, V.Sk)(U, K, eR, T), eG = !w.D_.useSetting() && !(0, L.isAndroidWeb)() && null != window.ResizeObserver, eF = !eG || !(null == (u = K.commands) ? void 0 : u.enabled) || !Y || "/" !== p, eH = (0, N.A)(), {
         fontSize: eB
     } = (0, d.cf)([b.A], () => ({
         fontSize: b.A.fontSize,
         isSubmitButtonEnabled: b.A.isSubmitButtonEnabled
     })), eV = (0, d.bG)([D.A], () => D.A.isEnabled()), eK = (0, P.n)(U);
-    (0, V.N_)(K, eL, U.id);
+    (0, V.N_)(K, ek, U.id);
     let {
         eventEmitter: eW,
         handleEditorSelectionChanged: ez
@@ -261,7 +261,7 @@ let ee = r.memo(r.forwardRef(function(e, t) {
         handleAutocompleteVisibilityChange: te
     } = (0, V.uW)(K, U.id), tt = (0, V.NO)(eN), tn = (0, V.Vu)(eq, K, eN), tl = (0, V.C)({
         editorRef: eN,
-        disabled: eL,
+        disabled: ek,
         textValue: p,
         channelId: U.id,
         chatInputType: K,
@@ -355,14 +355,14 @@ let ee = r.memo(r.forwardRef(function(e, t) {
                                         useSlate: eG,
                                         textValue: p,
                                         richValue: A,
-                                        disabled: eL,
+                                        disabled: ek,
                                         placeholder: ef,
                                         required: I,
-                                        accessibilityLabel: L,
+                                        accessibilityLabel: k,
                                         isPreviewing: (eD || eM) && eU,
                                         channel: U,
                                         type: F.oU.CREATE_ANNOUNCEMENT_POST,
-                                        canPasteFiles: ek,
+                                        canPasteFiles: eL,
                                         uploadPromptCharacterCount: z.CS1,
                                         maxCharacterCount: null != ep ? ep : eH,
                                         allowNewLines: !0,
@@ -394,7 +394,7 @@ let ee = r.memo(r.forwardRef(function(e, t) {
                             children: (0, l.jsx)(W.A, {
                                 channelId: U.id,
                                 type: K,
-                                canAttachFiles: ek,
+                                canAttachFiles: eL,
                                 ignoreFile: null == eC ? void 0 : eC.name,
                                 smallAttachments: !0
                             })
@@ -410,7 +410,7 @@ let ee = r.memo(r.forwardRef(function(e, t) {
                             channel: U
                         }), (0, l.jsx)(B.A, {
                             type: F.oU.CREATE_ANNOUNCEMENT_POST,
-                            disabled: eL,
+                            disabled: ek,
                             channel: U,
                             handleSubmit: eJ,
                             isEmpty: 0 === p.trim().length,
@@ -607,7 +607,7 @@ function er(e) {
         onImageUploaded: n,
         onFocus: i
     } = e, a = r.useRef(null), s = async (e, l) => {
-        let r = await (0, L.bX)(e, l.name, l.type),
+        let r = await (0, k.bX)(e, l.name, l.type),
             i = {
                 id: (0, u.A)(),
                 file: r,

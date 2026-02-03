@@ -35,8 +35,8 @@ var l = n(627968),
     R = n(927813),
     D = n(661191),
     M = n(375901),
-    L = n(857069),
-    k = n(675171),
+    k = n(857069),
+    L = n(675171),
     U = n(806621),
     G = n(636922),
     F = n(371741),
@@ -130,7 +130,7 @@ function et(e) {
         e_ = (0, O.l)(G.id),
         ey = (0, v.j)(G.id, Z.Rx),
         ev = (0, d.E)(G.id),
-        eE = (0, k.A)(),
+        eE = (0, L.A)(),
         eO = function(e, t) {
             if (e.isDM() && null != t)
                 if (t.type === y._j.STRANGER_DANGER) return (0, l.jsx)(C.e, {
@@ -180,14 +180,15 @@ function et(e) {
                 isLastItem: t + 1 === ei.length,
                 isFirstMessage: !0
             }, "forum-post-action-bar-".concat(G.id));
-            if (e.type === J.TZK.MESSAGE_GROUP_BLOCKED || e.type === J.TZK.MESSAGE_GROUP_IGNORED || e.type === J.TZK.MESSAGE_GROUP_SPAMMER) {
-                let t;
-                return t = e.type === J.TZK.MESSAGE_GROUP_BLOCKED ? X.t["+FcYM/"] : e.type === J.TZK.MESSAGE_GROUP_IGNORED ? X.t["VFWjc+"] : X.t.xfkfTK, (0, l.jsx)(H.A, {
+            if (e.type === J.TZK.MESSAGE_GROUP_BLOCKED || e.type === J.TZK.MESSAGE_GROUP_IGNORED || e.type === J.TZK.MESSAGE_GROUP_SPAMMER || e.type === J.TZK.MESSAGE_GROUP_SUSPENDED_USER) {
+                let t, n = !0;
+                return e.type === J.TZK.MESSAGE_GROUP_BLOCKED ? t = X.t["+FcYM/"] : e.type === J.TZK.MESSAGE_GROUP_IGNORED ? t = X.t["VFWjc+"] : e.type === J.TZK.MESSAGE_GROUP_SUSPENDED_USER ? (t = X.t["gLp+Wj"], n = !1) : t = X.t.xfkfTK, (0, l.jsx)(H.A, {
                     unreadId: q.q4,
                     messages: e,
                     channel: G,
                     compact: er,
-                    collapsedReason: t
+                    collapsedReason: t,
+                    canUncollapse: n
                 }, e.key)
             }
             if (null != ec && ec > e.content.timestamp.getTime() * R.A.Millis.SECOND) return;
@@ -209,7 +210,7 @@ function et(e) {
     eI.push(...eT);
     let eN = ei[ei.length - 1];
     if (null != ep && ea.forEach((e, t) => {
-            let n = 0 === t && (0, L.l)(G, eN, new I.Ay({
+            let n = 0 === t && (0, k.l)(G, eN, new I.Ay({
                 type: J.lAJ.DEFAULT,
                 author: ep
             }));

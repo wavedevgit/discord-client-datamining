@@ -35,8 +35,8 @@ var l = n(627968),
     R = n(972995),
     D = n(355622),
     M = n(408018),
-    L = n(223938),
-    k = n(811501),
+    k = n(223938),
+    L = n(811501),
     U = n(20737),
     G = n(133343),
     F = n(35277),
@@ -89,8 +89,8 @@ var l = n(627968),
     eR = n(203982),
     eD = n(661191),
     eM = n(460350),
-    eL = n(518960),
-    ek = n(382287),
+    ek = n(518960),
+    eL = n(382287),
     eU = n(137577),
     eG = n(480870),
     eF = n(390756),
@@ -252,7 +252,7 @@ class e2 extends r.PureComponent {
             announcementComposerEnabled: g
         } = this.props, {
             contentWarningProps: A
-        } = this.state, b = e.type === eW.rbe.GUILD_ANNOUNCEMENT && g ? (0, l.jsx)(L.A, {
+        } = this.state, b = e.type === eW.rbe.GUILD_ANNOUNCEMENT && g ? (0, l.jsx)(k.A, {
             ref: this.props.refInstance,
             textValue: this.state.textValue,
             richValue: this.state.richValue,
@@ -271,7 +271,7 @@ class e2 extends r.PureComponent {
             onKeyDown: this.handleKeyDown,
             renderAttachButton: this.renderAttachButton,
             renderApplicationCommandIcon: this.renderApplicationCommandIcon,
-            promptToUpload: eL.R,
+            promptToUpload: ek.R,
             highlighted: a,
             setEditorRef: e => this.editorRef = e
         }) : (0, l.jsx)(G.Ay, {
@@ -293,7 +293,7 @@ class e2 extends r.PureComponent {
             onKeyDown: this.handleKeyDown,
             renderAttachButton: this.renderAttachButton,
             renderApplicationCommandIcon: this.renderApplicationCommandIcon,
-            promptToUpload: eL.R,
+            promptToUpload: ek.R,
             highlighted: a,
             setEditorRef: e => this.editorRef = e,
             pendingScheduledMessage: m
@@ -537,8 +537,8 @@ class e2 extends r.PureComponent {
                     shouldRefocus: !0
                 };
                 if (null != n && n.length > 0) {
-                    let e = (0, ek.LJ)(n);
-                    if ((0, ek.fJ)(e, null == c ? void 0 : c.id)) return (0, eL.V)(u, e), {
+                    let e = (0, eL.LJ)(n);
+                    if ((0, eL.fJ)(e, null == c ? void 0 : c.id)) return (0, ek.V)(u, e), {
                         shouldClear: !1,
                         shouldRefocus: !1
                     };
@@ -601,7 +601,7 @@ class e2 extends r.PureComponent {
             editorTextContent: this.state.textValue,
             setValue: this.handleSetValue,
             canOnlyUseTextCommands: e
-        })), eJ(this, "renderApplicationCommandIcon", (e, t, n) => (0, l.jsx)(k.A, {
+        })), eJ(this, "renderApplicationCommandIcon", (e, t, n) => (0, l.jsx)(L.A, {
             className: n,
             command: e,
             section: t,

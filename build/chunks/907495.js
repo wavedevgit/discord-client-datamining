@@ -35,8 +35,8 @@ var l = n(627968),
     R = n(580745),
     D = n(71393),
     M = n(834942),
-    L = n(576705),
-    k = n(954571),
+    k = n(576705),
+    L = n(954571),
     U = n(957565),
     G = n(690521),
     F = n(403362),
@@ -202,10 +202,10 @@ function ei(e) {
         } = (0, u.bG)([b.A], () => b.A.getMessage(t.id), [t.id]), v = P.jW.useSetting(), E = P.Q_.useSetting(), C = (0, u.bG)([M.A], () => null == t.guild_id || M.A.canChatInGuild(t.guild_id), [t]), {
             canManageMessages: S,
             canAddNewReactions: x
-        } = (0, u.cf)([L.A], () => ({
-            canAddNewReactions: C && L.A.can(Z.xBc.ADD_REACTIONS, t),
-            canManageMessages: L.A.can(Z.xBc.MANAGE_MESSAGES, t)
-        }), [t, C]), R = (0, j.u)(t, n), k = (0, N.n)(t, n), G = (0, N.R)(n), F = (0, u.bG)([O.A], () => null != t.guild_id && O.A.isLurking(t.guild_id), [t]), z = d.id === m, Y = (S || n.canDeleteOwnMessage(m)) && g && !Z.MRS.UNDELETABLE.has(n.type);
+        } = (0, u.cf)([k.A], () => ({
+            canAddNewReactions: C && k.A.can(Z.xBc.ADD_REACTIONS, t),
+            canManageMessages: k.A.can(Z.xBc.MANAGE_MESSAGES, t)
+        }), [t, C]), R = (0, j.u)(t, n), L = (0, N.n)(t, n), G = (0, N.R)(n), F = (0, u.bG)([O.A], () => null != t.guild_id && O.A.isLurking(t.guild_id), [t]), z = d.id === m, Y = (S || n.canDeleteOwnMessage(m)) && g && !Z.MRS.UNDELETABLE.has(n.type);
         n.type === Z.lAJ.AUTO_MODERATION_ACTION && (Y = Y && S), t.isModeratorReportChannel() && (Y = Y && n.id !== (null == y ? void 0 : y.id) && !(0, K.A)(n));
         let q = (0, H.ul)(n),
             J = (0, V.A)(n, t),
@@ -222,7 +222,7 @@ function ei(e) {
             }),
             $ = t.type === Z.rbe.GUILD_ANNOUNCEMENT && null != h && h.features.has(Z.GuildFeatures.NEWS) && (z || S) && (0, f.A)(n),
             ee = t.getGuildId(),
-            et = null != ee && n.type === Z.lAJ.USER_JOIN && L.A.canWithPartialContext(Z.xBc.MANAGE_GUILD, {
+            et = null != ee && n.type === Z.lAJ.USER_JOIN && k.A.canWithPartialContext(Z.xBc.MANAGE_GUILD, {
                 guildId: ee
             }),
             en = (0, _.m)(n),
@@ -242,7 +242,7 @@ function ei(e) {
             canDelete: Y,
             canReport: q,
             canReply: R,
-            canStartThread: k,
+            canStartThread: L,
             canViewThread: G,
             canForward: en,
             canCopy: U.p5,
@@ -260,7 +260,7 @@ function ei(e) {
             isFocused: o
         }
     }(e), en = r.useRef(null), ei = r.useCallback(() => {
-        R || k.default.track(Z.HAw.MESSAGE_POPOUT_MENU_OPENED_DESKTOP, {
+        R || L.default.track(Z.HAw.MESSAGE_POPOUT_MENU_OPENED_DESKTOP, {
             message_id: n.id,
             channel: n.channel_id,
             location: "expanding_buttons"

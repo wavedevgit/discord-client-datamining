@@ -63,8 +63,8 @@ function C(e) {
     let R = null != n,
         D = !R,
         M = R && null != i,
-        L = null == n && null != i,
-        k = (0, u.zhh)({
+        k = null == n && null != i,
+        L = (0, u.zhh)({
             opacity: +!!R,
             height: 72 * !!R,
             pointerEvents: R ? "auto" : "none",
@@ -113,7 +113,7 @@ function C(e) {
                 easing: y,
                 duration: 200
             } : E,
-            delay: L ? 50 - 50 * e : 200 + 50 * e
+            delay: k ? 50 - 50 * e : 200 + 50 * e
         }), "respect-motion-settings", [n]),
         F = (0, u.pnh)(null == C ? void 0 : C.iconURL, {
             key: w,
@@ -161,7 +161,7 @@ function C(e) {
                 opacity: 0,
                 translateX: 24 * (null != n),
                 translateY: 16 * (null == n),
-                delay: L ? 100 : 50,
+                delay: k ? 100 : 50,
                 config: e => "opacity" === e ? {
                     easing: y,
                     duration: 200
@@ -172,7 +172,7 @@ function C(e) {
     return (0, l.jsxs)(s.animated.div, {
         className: _.TC,
         "aria-hidden": D,
-        style: k,
+        style: L,
         children: [(0, l.jsx)("div", {
             className: a()([_.ab, _.k])
         }), U(e => (0, l.jsx)(s.animated.div, {

@@ -36,8 +36,8 @@ var l = n(627968),
     R = n(566331),
     D = n(768088),
     M = n(256195),
-    L = (n(729365), n(399849)),
-    k = n(275731),
+    k = (n(729365), n(399849)),
+    L = n(275731),
     U = n(345812),
     G = n(652215),
     F = n(806931),
@@ -56,7 +56,7 @@ function W(e) {
         premiumIndicator: o
     } = e, c = (0, s.bG)([x.A], () => x.A.getActiveStreamForUser(t.user.id, t.stream.guildId)), u = (0, U.V)(a);
     return (0, l.jsxs)(l.Fragment, {
-        children: [n || r ? null : (0, l.jsx)(k.A, {
+        children: [n || r ? null : (0, l.jsx)(L.A, {
             participant: t
         }), r || null == c || c.state === G.XYD.ENDED || c.state === G.XYD.FAILED ? null : (0, l.jsx)(E.A, {
             size: m.Ay.Sizes.SMALL,
@@ -77,7 +77,7 @@ function z(e) {
         fit: m,
         popoutType: g,
         width: E,
-        focused: k,
+        focused: L,
         wrapperClassName: U,
         paused: W = !1,
         idle: z = !1,
@@ -97,7 +97,7 @@ function z(e) {
     let ec = (0, A.u)(H.x.STREAM, t.user.id);
     if (r.useEffect(() => {
             K.info("Stream Tile State - activeStream: ".concat(null != et, " | selected: ").concat(n, " | Video: ").concat(null != q, " | MediaEngine: ").concat(T.A.supports(H.O5.VIDEO)))
-        }, [q, et, n]), Z) return (0, l.jsx)(L.A, {
+        }, [q, et, n]), Z) return (0, l.jsx)(k.A, {
         stream: t.stream,
         isSmall: eo,
         selected: n,
@@ -160,14 +160,14 @@ function z(e) {
     });
     else return (0, l.jsxs)(l.Fragment, {
         children: [null != ee ? (0, l.jsx)(C.A, {
-            focused: k,
+            focused: L,
             channelId: ee.id,
             guildId: ee.guild_id,
             streamerId: Q.id,
             hasScreenMessage: null != es,
             stream: X
         }) : null, (0, l.jsx)(O.A, {
-            enableZoom: k,
+            enableZoom: L,
             onResize: i,
             wrapperClassName: a()(g !== f.N.CALL_TILE ? V.tN : void 0, U),
             className: V.Qs,

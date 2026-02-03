@@ -35,8 +35,8 @@ var l = n(627968),
     R = n(15910),
     D = n(599813),
     M = n(652215),
-    L = n(806931),
-    k = n(788868),
+    k = n(806931),
+    L = n(788868),
     U = n(731854),
     G = n(734317),
     F = n(985018),
@@ -198,7 +198,7 @@ function K(e) {
                         children: (0, l.jsx)(b.d, {
                             showUpsell: !0,
                             text: F.intl.format(F.t.XMDm8z, {
-                                nitroTierName: (0, C.Dd)(k.PremiumTypes.TIER_2),
+                                nitroTierName: (0, C.Dd)(L.PremiumTypes.TIER_2),
                                 onClick: () => (0, _.n)()
                             }),
                             button: F.intl.string(F.t.cRCCJ3),
@@ -240,7 +240,7 @@ function K(e) {
                         renderOutputVolume: i,
                         onClose: t,
                         onInteraction: (0, m.s)("AudioDeviceMenu", q, {
-                            entrypoint: L.GK.THREE_DOT
+                            entrypoint: k.GK.THREE_DOT
                         }),
                         minimal: !0
                     }),

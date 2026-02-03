@@ -35,8 +35,8 @@ var l = n(627968),
     R = n(234320),
     D = n(863439),
     M = n(504136),
-    L = n(540385),
-    k = n(830178),
+    k = n(540385),
+    L = n(830178),
     U = n(722432),
     G = n(258024),
     F = n(672341),
@@ -112,20 +112,20 @@ let Y = (0, s.animated)(u.fKU),
                 fontSize: w,
                 keyboardModeEnabled: D,
                 filterAfterTimestamp: M,
-                showingQuarantineBanner: k,
+                showingQuarantineBanner: L,
                 hideSummaries: q = !1,
                 jumpBarClassName: J,
                 typingGradient: Z
             } = e,
             [X, Q] = r.useState(null != (t = S.A.isAtBottom(y.id)) && t),
-            $ = r.useMemo(() => x ? (0, L.bW)({
+            $ = r.useMemo(() => x ? (0, k.bW)({
                 compact: !0,
                 messageGroups: 30,
                 groupRange: 4,
                 attachments: 8,
                 fontSize: w,
                 groupSpacing: A
-            }) : (0, L.bW)({
+            }) : (0, k.bW)({
                 compact: !1,
                 messageGroups: 26,
                 groupRange: 4,
@@ -170,7 +170,7 @@ let Y = (0, s.animated)(u.fKU),
                 scrollManager: ee,
                 specs: $,
                 filterAfterTimestamp: null != M ? M : en,
-                showingQuarantineBanner: k,
+                showingQuarantineBanner: L,
                 hideSummaries: q,
                 jumpToPresent: () => {
                     if (v.hasPresent()) {
@@ -253,7 +253,7 @@ let Y = (0, s.animated)(u.fKU),
                             children: B.intl.string(B.t["Spb3s/"])
                         }), el, (0, l.jsx)("div", {
                             className: a()({
-                                [V.lB]: !k,
+                                [V.lB]: !L,
                                 [V.Ie]: 0 === v.length && !v.loadingMore,
                                 [V.Fb]: 1 === v.length && !v.loadingMore && y.isForumPost() && (null == (n = v.first()) ? void 0 : n.isFirstMessageInForumPost(y))
                             })
@@ -296,7 +296,7 @@ let Y = (0, s.animated)(u.fKU),
             messageGroupSpacing: O,
             fontSize: S,
             messageDisplayCompact: R,
-            renderSpoilers: L,
+            renderSpoilers: k,
             keyboardModeEnabled: U
         } = function() {
             let e = E.hH.useSetting(),
@@ -377,8 +377,8 @@ let Y = (0, s.animated)(u.fKU),
             }
         }(t);
         return (0, l.jsx)(y.Bs.Provider, {
-            value: (0, D.A)(L, d),
-            children: (0, l.jsx)(k.t, {
+            value: (0, D.A)(k, d),
+            children: (0, l.jsx)(L.t, {
                 children: (0, l.jsx)(q, W(K({}, u), {
                     messageGroupSpacing: O,
                     showNewMessagesBar: !0,

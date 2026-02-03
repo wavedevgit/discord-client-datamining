@@ -35,8 +35,8 @@ var l, r = n(136722),
     R = n(320501),
     D = n(803224),
     M = n(576705),
-    L = n(222823),
-    k = n(994500),
+    k = n(222823),
+    L = n(994500),
     U = n(309010),
     G = n(461213),
     F = n(351906),
@@ -121,7 +121,7 @@ function eu(e) {
 }
 class ed extends(l = i.Ay.Store) {
     initialize() {
-        this.waitFor(f.A, P.A, w.A, _.A, R.A, D.A, M.A, k.A, U.A, G.A, j.A, F.A, H.default, B.A)
+        this.waitFor(f.A, P.A, w.A, _.A, R.A, D.A, M.A, L.A, U.A, G.A, j.A, F.A, H.default, B.A)
     }
 }
 Q(ed, "displayName", "NotificationStore"), new ed(s.h, __OVERLAY__ ? {} : {
@@ -200,7 +200,7 @@ Q(ed, "displayName", "NotificationStore"), new ed(s.h, __OVERLAY__ ? {} : {
             channel_id: u.id,
             channel_type: u.type,
             guild_id: u.guild_id,
-            badge: (0, L.Wm)(N, p)
+            badge: (0, k.Wm)(N, p)
         }, {
             omitViewTracking: T,
             tag: a.id,
@@ -284,7 +284,7 @@ Q(ed, "displayName", "NotificationStore"), new ed(s.h, __OVERLAY__ ? {} : {
             c = P.A.getChannel(r),
             u = j.A.getStageInstanceByChannel(r);
         null != o && null != c && null != u && Y.A.showNotification((0, N.Iv)(o, 128), c.name, X.intl.formatToPlainString(X.t.sqnsSP, {
-            channelName: (0, m.m1)(c, H.default, k.A),
+            channelName: (0, m.m1)(c, H.default, L.A),
             channelTopic: null == u ? void 0 : u.topic
         }), {
             notif_type: "Stage Speak Invite"

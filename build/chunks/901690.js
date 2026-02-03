@@ -114,8 +114,8 @@ let N = r.memo(function(e) {
     } = m, {
         onActive: D,
         onPreventIdle: M,
-        onAllowIdle: L
-    } = r.useContext(g.k3), [k, U] = r.useState(!1), [G, F] = r.useState(null), [H, B] = r.useState(null), [V, K] = r.useState(0), [W, z] = r.useState(j), [Y, q] = r.useState(null), [J, Z] = r.useState(null), [X, Q] = r.useState(!1), [$, ee] = r.useState(n), [et, en] = r.useState(!1), [el, er] = r.useState(!1), [ei, ea] = r.useState(16 / 9), [es, eo] = r.useState(!1), [ec, eu] = r.useState(!1), ed = r.useRef(new c.Ep), eh = r.useRef(new c.Ep), ep = r.useRef(new c.Ep), ef = r.useRef(new c.Ep), em = r.useRef(null), eg = r.useRef(null), eA = r.useRef(null), eb = (0, d.zhh)({
+        onAllowIdle: k
+    } = r.useContext(g.k3), [L, U] = r.useState(!1), [G, F] = r.useState(null), [H, B] = r.useState(null), [V, K] = r.useState(0), [W, z] = r.useState(j), [Y, q] = r.useState(null), [J, Z] = r.useState(null), [X, Q] = r.useState(!1), [$, ee] = r.useState(n), [et, en] = r.useState(!1), [el, er] = r.useState(!1), [ei, ea] = r.useState(16 / 9), [es, eo] = r.useState(!1), [ec, eu] = r.useState(!1), ed = r.useRef(new c.Ep), eh = r.useRef(new c.Ep), ep = r.useRef(new c.Ep), ef = r.useRef(new c.Ep), em = r.useRef(null), eg = r.useRef(null), eA = r.useRef(null), eb = (0, d.zhh)({
         value: s,
         config: x(S({}, o.config.stiff), {
             clamp: !0
@@ -157,7 +157,7 @@ let N = r.memo(function(e) {
         let t = ev(e);
         U(!0), B(t), F(t), K(Date.now()), Z(t), q(W)
     }, [ev, e_, W]), eS = r.useCallback(e => {
-        if ((t || e_) && D(), !k || !e_ || null == J || null == Y) return;
+        if ((t || e_) && D(), !L || !e_ || null == J || null == Y) return;
         e.preventDefault(), e.stopPropagation();
         let n = ev(e),
             l = n.x - J.x,
@@ -166,7 +166,7 @@ let N = r.memo(function(e) {
             x: Y.x + l,
             y: Y.y + r
         })), F(n)
-    }, [eE, J, Y, t, ev, k, e_, D]), ex = r.useCallback(e => {
+    }, [eE, J, Y, t, ev, L, e_, D]), ex = r.useCallback(e => {
         e.preventDefault(), e.stopPropagation(), U(!1), Z(null), q(null)
     }, []), ej = r.useCallback(e => {
         if (e_ && null != H && null != G) {
@@ -196,10 +196,10 @@ let N = r.memo(function(e) {
     }, [eO, D]), eR = r.useCallback(() => {
         M("interact")
     }, [M]), eD = r.useCallback(() => {
-        Q(!1), L("interact")
-    }, [L]), eM = r.useCallback(e => {
+        Q(!1), k("interact")
+    }, [k]), eM = r.useCallback(e => {
         e.preventDefault(), e.stopPropagation()
-    }, []), eL = r.useCallback(e => {
+    }, []), ek = r.useCallback(e => {
         if (null == eg.current || null == em.current) return;
         let t = eg.current.getBoundingClientRect(),
             n = em.current.clientWidth,
@@ -210,17 +210,17 @@ let N = r.memo(function(e) {
             x: (.5 - r / t.width) * n * $,
             y: (.5 - i / t.height) * l * $
         }))
-    }, [eE, $]), ek = r.useCallback(e => {
-        e.preventDefault(), e.stopPropagation(), Q(!0), eL({
+    }, [eE, $]), eL = r.useCallback(e => {
+        e.preventDefault(), e.stopPropagation(), Q(!0), ek({
             x: e.clientX,
             y: e.clientY
         })
-    }, [eL]), eU = r.useCallback(e => {
-        e.preventDefault(), e.stopPropagation(), X && eL({
+    }, [ek]), eU = r.useCallback(e => {
+        e.preventDefault(), e.stopPropagation(), X && ek({
             x: e.clientX,
             y: e.clientY
         })
-    }, [X, eL]), eG = r.useCallback(e => {
+    }, [X, ek]), eG = r.useCallback(e => {
         e.preventDefault(), e.stopPropagation(), Q(!1)
     }, []), eF = r.useCallback(e => {
         e.preventDefault(), e.stopPropagation()
@@ -269,9 +269,9 @@ let N = r.memo(function(e) {
                 "--custom-zoom-scale": $,
                 "--custom-pan-x": "".concat(e.x, "px"),
                 "--custom-pan-y": "".concat(e.y, "px"),
-                "--custom-zoom-transition": k || es || et || el ? "none" : "transform 0.15s ease-out"
+                "--custom-zoom-transition": L || es || et || el ? "none" : "transform 0.15s ease-out"
             }
-        }, [eE, k, es, et, el, W, $]),
+        }, [eE, L, es, et, el, W, $]),
         eB = r.useMemo(() => {
             let e = 120 * Math.min(ei, 32 / 9);
             return {
@@ -291,14 +291,14 @@ let N = r.memo(function(e) {
                 "--custom-zoom-indicator-top": "".concat(100 * T(i - l / 2, 0, 1 - l), "%"),
                 "--custom-zoom-indicator-width": "".concat(100 * n, "%"),
                 "--custom-zoom-indicator-height": "".concat(100 * l, "%"),
-                "--custom-zoom-indicator-transition": k || X || et || el ? "none" : "top 0.1s ease-out, left 0.1s ease-out, width 0.1s ease-out, height 0.1s ease-out"
+                "--custom-zoom-indicator-transition": L || X || et || el ? "none" : "top 0.1s ease-out, left 0.1s ease-out, width 0.1s ease-out, height 0.1s ease-out"
             }
-        }, [k, X, et, el, W, $]);
+        }, [L, X, et, el, W, $]);
     return (0, l.jsxs)("div", {
         ref: em,
         className: a()(C.iE, N, {
             [C.rc]: t && e_,
-            [C.d$]: k
+            [C.d$]: L
         }),
         onMouseDown: eC,
         onMouseMove: eS,
@@ -337,7 +337,7 @@ let N = r.memo(function(e) {
                         ref: eg,
                         className: C.Wc,
                         style: eB,
-                        onMouseDown: ek,
+                        onMouseDown: eL,
                         onMouseMove: eU,
                         onMouseUp: eG,
                         children: [(0, l.jsx)(P, {

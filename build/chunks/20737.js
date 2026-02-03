@@ -35,9 +35,9 @@ var l = n(627968),
     R = n(652215),
     D = n(696016),
     M = n(985018),
-    L = n(275825);
+    k = n(275825);
 
-function k(e) {
+function L(e) {
     for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
             l = Object.keys(n);
@@ -92,7 +92,7 @@ let G = r.memo(function(e) {
             let {
                 default: e
             } = await Promise.all([n.e("4918"), n.e("98184")]).then(n.bind(n, 543428));
-            return t => (0, l.jsx)(e, U(k({}, t), {
+            return t => (0, l.jsx)(e, U(L({}, t), {
                 channelId: F.id,
                 onClipClick: e => ee({
                     clips: [e]
@@ -142,7 +142,7 @@ let G = r.memo(function(e) {
     let ey = (0, l.jsx)(o.pa$, {
             size: "refresh_sm",
             color: "currentColor",
-            colorClass: L.dW
+            colorClass: k.dW
         }),
         ev = (0, l.jsx)(o.YNO, {
             targetElementRef: Y,
@@ -160,12 +160,12 @@ let G = r.memo(function(e) {
             renderPopout: e => {
                 switch (ei) {
                     case "recentClips":
-                        return (0, l.jsx)(m.A, U(k({}, e), {
+                        return (0, l.jsx)(m.A, U(L({}, e), {
                             onOpenClips: ed,
                             lastClipsSession: Z
                         }));
                     case "attachMenu":
-                        return (0, l.jsx)(P.A, U(k({}, e), {
+                        return (0, l.jsx)(P.A, U(L({}, e), {
                             onClose: () => ea(null),
                             options: e_,
                             channel: F,
@@ -182,10 +182,10 @@ let G = r.memo(function(e) {
                         throw Error("Invalid popout type provided")
                 }
             },
-            children: e => (0, l.jsx)(N.A, U(k({
+            children: e => (0, l.jsx)(N.A, U(L({
                 ref: Y,
-                className: a()(L.g$, G),
-                childClassName: L.wh,
+                className: a()(k.g$, G),
+                childClassName: k.wh,
                 isActive: !1,
                 "aria-label": M.intl.string(M.t.d56gCa),
                 onDoubleClick: ec ? () => {
@@ -199,7 +199,7 @@ let G = r.memo(function(e) {
         });
     return (0, l.jsxs)(l.Fragment, {
         children: [(0, l.jsx)("div", {
-            className: L.EJ,
+            className: k.EJ,
             children: (0, l.jsx)(c.A, {
                 ref: z,
                 onChange: e => {
@@ -214,7 +214,7 @@ let G = r.memo(function(e) {
                 "aria-hidden": !0
             })
         }), (0, l.jsx)("div", {
-            className: L.Jd,
+            className: k.Jd,
             children: ev
         })]
     })
